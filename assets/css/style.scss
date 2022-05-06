@@ -1,0 +1,51 @@
+---
+---
+
+@import 'jekyll-theme-hacker';
+
+body {
+  font-family: "Helvetica", "Bitstream Vera Sans Mono", "Lucida Console", Terminal;
+  background: #151515;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+th {
+  border: 2px solid orange;
+   background-color: dimgray;
+}
+
+a {
+  text-decoration: none;
+}
+
+td {
+  border: 1px solid orange;
+}
+
+td:nth-child(1) {  
+  border: 2px solid orange;
+  font-weight: bold
+}
+
+.btn {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  border-top: 1px solid rgba(0, 0, 0, 0.35);
+}
+
+.btn_small {
+  display: inline-block; background: -webkit-linear-gradient(top, rgba(40, 40, 40, 0.3), rgba(35, 35, 35, 0.3) 50%, rgba(10, 10, 10, 0.3) 50%, rgba(0, 0, 0, 0.3)); 
+  font-family: Helvetica, Arial, sans-serif; font-weight: bold; 
+  font-size: 13px; 
+  text-decoration: none; text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.75); 
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+  border-top: 1px solid rgba(0, 0, 0, 0.35);
+  padding: 1px 5px; 
+  border-radius: 25px;
+  color: rgba(255, 255, 255, 0.8);
+}

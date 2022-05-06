@@ -1,0 +1,56 @@
+##### Any opinion is welcome.
+##### Feel free to discuss in the [discussions] section.
+##### Feel free report issues in the [issues] section.
+
+### Code Free Contributions
+
+#### There are multiple ways you can add to the guide:
+
+- You can [submit bugs and feature requests](https://github.com/AnonyPla-ng/thgtoa/issues/new) with detailed information about your issue or idea:
+  - If you'd like to propose an addition, please follow the standards outlined here.
+  - If you're reporting an issue, please be sure to include the expected behaviour, the observed behaviour, and steps to reproduce the problem.
+- This can require technical knowledge, but you can also get involved in conversations about bug reports and feature requests. This is a great way to get involved without getting too overwhelmed!
+- [Help fellow committers test recently submitted pull requests](https://github.com/AnonyPla-ng/thgtoa/pulls). Simply by pulling down a pull request and testing it, you can help ensure our new code contributions for stability and quality.
+
+### Content Contributions
+
+For those of you who are looking to add content to the guide, include the following:
+
+##### <u>Pull Requests</u>
+
+- **Do** create a [topic branch] to work on instead of working directly on `master`. This helps to:
+  - Protect the process.
+  - Ensures users are aware of commits on the branch being considered for merge.
+  - Allows for a location for more commits to be offered without mingling with other contributor changes.
+  - Allows contributors to make progress while a PR is still being reviewed.
+- **Do** follow the [50/72 rule] for Git commit messages.
+- **Do** write "WIP" on your PR and/or open a [draft PR] if submitting unfinished changes..
+- **Do** make sure the title of a draft PR makes it immediately clear that it's a draft
+- **Do** target your pull request to the **master branch**.
+- **Do** specify a descriptive title to make searching for your pull request easier.
+- **Don't** leave your pull request description blank.
+- **Don't** abandon your pull request. Being responsive helps us land your changes faster.
+- **Don't** post questions in older closed PRs.
+- **Do** stick to the guide to find common style issues.
+
+When reporting guide issues:
+
+- **Do** write a detailed description of your issue and use a descriptive title.
+- **Do** make it as detailed as possible and don't just submit 50 line changes without explaining.
+- **Don't** file duplicate reports; search for your bug before filing a new report.
+- **Don't** attempt to report issues on a closed PR.
+
+**Thank you** for taking the few moments to read this far! You're already way ahead of the
+curve, so keep it up!
+
+[discussions]: https://github.com/AnonyPla-ng/thgtoa/discussions
+[issues]: https://github.com/AnonyPla-ng/thgtoa/issues
+[help fellow users with open issues]: https://github.com/AnonyPla-ng/thgtoa/issues
+[topic branch]: http://git-scm.com/book/en/Git-Branching-Branching-Workflows#Topic-Branches
+[Qubes#7457]: https://github.com/QubesOS/qubes-issues/issues/7457
+[50/72 rule]: http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html
+[draft pr]: https://help.github.com/en/articles/about-pull-requests#draft-pull-requests
+[console output]: https://docs.github.com/en/free-pro-team@latest/github/writing-on-github/creating-and-highlighting-code-blocks#fenced-code-blocks
+[verification steps]: https://docs.github.com/en/free-pro-team@latest/github/writing-on-github/basic-writing-and-formatting-syntax#task-lists
+[reference associated issues]: https://github.com/blog/1506-closing-issues-via-pull-requests
+[help fellow committers test recently submitted pull requests]: https://github.com/AnonyPla-ng/thgtoa/pulls
