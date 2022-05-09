@@ -15,24 +15,22 @@ Some of those resources may, in order to sustain their project, contain or propo
 All the links below are listed in alphabetical order.
 
 #### General privacy related projects:
-
-- EFF Surveillance Self-Defense <https://ssd.eff.org/>
-- Prism-Break <https://prism-break.org/>
-- Privacy Guides <https://privacyguides.org>
-- Techlore <https://techlore.tech> 
-- The New Oil <https://thenewoil.org> 
+- EFF Surveillance Self-Defense: <https://ssd.eff.org/>
+- Prism-Break: <https://prism-break.org/>
+- Privacy Guides= <https://privacyguides.org>
+- Techlore: <https://techlore.tech> 
+- The New Oil: <https://thenewoil.org> 
 
 #### Blogs and personal websites:
 
 - Continuing Ed <https://edwardsnowden.substack.com/>
-- Madaidan's Insecurities <https://madaidans-insecurities.github.io/>
 
 #### Useful resources:
 
 - KYC? Not me <https://kycnot.me/>
-- Library Genesis <https://en.wikipedia.org/wiki/Library_Genesis> <sup>[[Wikiless]][1]</sup>)(see their latest known URL in the Wikipedia article)
+- Library Genesis <https://en.wikipedia.org/wiki/Library_Genesis> <sup>[[Wikiless]][1]</sup> (see their latest known URL in the Wikipedia article)
 - Real World Onion Sites <https://github.com/alecmuffett/real-world-onion-sites>
-- Sci-Hub <https://en.wikipedia.org/wiki/Sci-Hub> <sup>[[Wikiless]][2]</sup>)(see their latest known URL in the Wikipedia article)
+- Sci-Hub <https://en.wikipedia.org/wiki/Sci-Hub> <sup>[[Wikiless]][2]</sup> (see their latest known URL in the Wikipedia article)
 - Terms of Service, Didn't Read <https://tosdr.org>
 - Whonix Documentation <https://www.whonix.org/wiki/Documentation>
 
