@@ -8,9 +8,6 @@ This guide is an open-source non-profit initiative, [licensed](LICENSE.html) und
 
 **If you'd like to make a donation to help this project, you can do so from [here](donations.html) where you'll also find the project goals. All the donations will be strictly used within the context of this project. All donations and spendings are logged on the donations page.**
 
-**Direct downloads:**
-- <del>CryptPad.fr at: <https://cryptpad.fr/drive/#/2/drive/view/Ughm9CjQJCwB8BIppdtvj5zy4PyE-8Gxn11x9zaqJLI/></del> (temporarily unavailable)
-
 **View the guide:**
 - [In your browser](guide.html)
 - [PDF](export/guide.pdf)
