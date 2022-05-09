@@ -630,7 +630,7 @@ Here is an illustration of the issue you could encounter on Firefox-based browse
 
 Finally, even if you use a custom encrypted DNS server (DoH or DoT) with ECH/eSNI support and OCSP stapling, it might still not be enough as traffic analysis studies[^52] have shown it is still possible to reliably fingerprint and block unwanted requests. Only DNS over Tor was able to show efficient DNS Privacy in recent studies but even that can still be defeated by other means (see [Your Anonymized Tor/VPN traffic][Your Anonymized Tor/VPN traffic:]).
 
-One could also decide to use a Tor Hidden DNS Service or ODoH (Oblivious DNS over HTTPS[^53]) to further increase privacy/anonymity but **unfortunately**, as far as I know, these methods are only provided by Cloudflare as of this writing (<https://blog.cloudflare.com/welcome-hidden-resolver/> <sup>[[Archive.org]][53]</sup>, <https://blog.cloudflare.com/oblivious-dns/> <sup>[[Archive.org]][54]</sup>). These are workable and reasonably secure technical options but there is also a moral choice if you want to use Cloudflare or not (despite the risk posed by some researchers[^54]).
+One could also decide to use a Tor Hidden DNS Service or ODoH (Oblivious DNS over HTTPS[^53]) to further increase privacy/anonymity but **unfortunately**, as far as I know, these methods are only provided by Cloudflare as of this writing (<https://blog.cloudflare.com/welcome-hidden-resolver/> <sup>[[Archive.org]][53]</sup> <https://blog.cloudflare.com/oblivious-dns/> <sup>[[Archive.org]][54]</sup>). These are workable and reasonably secure technical options but there is also a moral choice if you want to use Cloudflare or not (despite the risk posed by some researchers[^54]).
 
 Lastly, there is also this new possibility called DoHoT which stands for DNS over HTTPS over Tor which could also further increase your privacy/anonymity and which you could consider if you are more skilled with Linux. See <https://github.com/alecmuffett/dohot> <sup>[[Archive.org]][55]</sup>. This guide will not help you with this one at this stage, but it might be coming soon.
 
@@ -708,7 +708,7 @@ These have been used at least since 2008 using an attack called "Jasager"[^64] a
 
 Here are some videos explaining more about the topic:
 
--   HOPE 2020, <https://archive.org/details/hopeconf2020/20200725_1800_Advanced_Wi-Fi_Hacking_With_%245_Microcontrollers.mp4>
+-   HOPE 2020 <https://archive.org/details/hopeconf2020/20200725_1800_Advanced_Wi-Fi_Hacking_With_%245_Microcontrollers.mp4>
 
 -   YouTube, Hak5, Wi-Fi Pineapple Mark VII <https://www.youtube.com/watch?v=7v3JR4Wlw4Q> <sup>[[Invidious]][65]</sup>
 
@@ -1022,7 +1022,7 @@ Here is also a recent example just showing what Google Chrome collects on you: <
 
 Here are some other resources on the topic if you cannot see this documentary:
 
--   2017, Behavior Analysis in Social Networks, <https://link.springer.com/10.1007/978-1-4614-7163-9_110198-1> <sup>[[Archive.org]][95]</sup>
+-   2017, Behavior Analysis in Social Networks <https://link.springer.com/10.1007/978-1-4614-7163-9_110198-1> <sup>[[Archive.org]][95]</sup>
 
 -   2017, Social Networks and Positive and Negative Affect <https://www.sciencedirect.com/science/article/pii/S1877042811013747/pdf?md5=253d8f1bb615d5dee195d353dc077d46&pid=1-s2.0-S1877042811013747-main.pdf> <sup>[[Archive.org]][96]</sup>
 
@@ -1424,9 +1424,9 @@ I also highly recommend that you read some documents from a forensics examiner p
 
 -   EnCase Forensic User Guide, <http://encase-docs.opentext.com/documentation/encase/forensic/8.07/Content/Resources/External%20Files/EnCase%20Forensic%20v8.07%20User%20Guide.pdf> <sup>[[Archive.org]][164]</sup>
 
--   FTK Forensic Toolkit, <https://accessdata.com/products-services/forensic-toolkit-ftk> <sup>[[Archive.org]][165]</sup>
+-   FTK Forensic Toolkit <https://accessdata.com/products-services/forensic-toolkit-ftk> <sup>[[Archive.org]][165]</sup>
 
--   SANS Digital Forensics and Incident Response Videos, <https://www.youtube.com/c/SANSDigitalForensics/videos>
+-   SANS Digital Forensics and Incident Response Videos <https://www.youtube.com/c/SANSDigitalForensics/videos>
 
 And finally, here is this very instructive detailed paper on the current state of IOS/Android security from the John Hopkins University: https://securephones.io/main.html[^254].
 
@@ -1700,9 +1700,9 @@ Zero-Trust Security[^391] ("Never trust, always verify").
 
 Here are some various resources about what Zero-Trust Security is:
 
--   DEFCON, Zero Trust a Vision for Securing Cloud, <https://www.youtube.com/watch?v=euSsqXO53GY> <sup>[[Invidious]][218]</sup>
+-   DEFCON, Zero Trust a Vision for Securing Cloud <https://www.youtube.com/watch?v=euSsqXO53GY> <sup>[[Invidious]][218]</sup>
 
--   From the NSA themselves, Embracing a Zero Trust Security Model, <https://media.defense.gov/2021/Feb/25/2002588479/-1/-1/0/CSI_EMBRACING_ZT_SECURITY_MODEL_UOO115131-21.PDF> <sup>[[Archive.org]][219]</sup>
+-   From the NSA themselves, Embracing a Zero Trust Security Model <https://media.defense.gov/2021/Feb/25/2002588479/-1/-1/0/CSI_EMBRACING_ZT_SECURITY_MODEL_UOO115131-21.PDF> <sup>[[Archive.org]][219]</sup>
 
 ## Picking your route:
 
@@ -2462,9 +2462,9 @@ What is Secure Boot **not** protecting you from?
 
 Additionally, several attacks could be possible against Secure Boot as explained (in-depth) in these technical videos:
 
--   Defcon 22, <https://www.youtube.com/watch?v=QDSlWa9xQuA> <sup>[[Invidious]][254]</sup>
+-   Defcon 22 <https://www.youtube.com/watch?v=QDSlWa9xQuA> <sup>[[Invidious]][254]</sup>
 
--   BlackHat 2016, <https://www.youtube.com/watch?v=0fZdL3ufVOI> <sup>[[Invidious]][255]</sup>
+-   BlackHat 2016 <https://www.youtube.com/watch?v=0fZdL3ufVOI> <sup>[[Invidious]][255]</sup>
 
 **So, it can be useful as an added measure against some adversaries but not all. Secure Boot in itself is not encrypting your hard drive. It is an added layer but that is it.**
 
@@ -3212,7 +3212,7 @@ This is how your system will look after this process is done:
 
 ![][305]
 
-(Illustration from Veracrypt Documentation, <https://veracrypt.fr/en/VeraCrypt%20Hidden%20Operating%20System.html> <sup>[[Archive.org]][303]</sup>)
+(Illustration from Veracrypt Documentation <https://veracrypt.fr/en/VeraCrypt%20Hidden%20Operating%20System.html> <sup>[[Archive.org]][303]</sup>)
 
 As you can see this process requires you to have two partitions on your hard drive from the start.
 
@@ -3548,7 +3548,7 @@ Stream isolation is a mitigation technique used to prevent some correlation atta
 
 ![][314]
 
-(Illustration from Marcelo Martins, <https://stakey.club/en/decred-via-tor-network/> <sup>[[Archive.org]][315]</sup>)
+(Illustration from Marcelo Martins <https://stakey.club/en/decred-via-tor-network/> <sup>[[Archive.org]][315]</sup>)
 
 VPN/Proxy over Tor falls on the right-side[^352] meaning using a VPN/Proxy over Tor forces Tor to use one circuit for all activities instead of multiple circuits for each. This means that using a VPN/Proxy over Tor can reduce the effectiveness of Tor in some cases and should therefore be used only for some specific cases:
 
@@ -4695,11 +4695,11 @@ As they say on their website, Qubes OS is a reasonably secure, free, open-source
 
 Qubes OS is not a Linux distribution[^362] but a Xen distribution. It is different from Linux distributions because it will make extensive use of Virtualization and Compartmentalization so that any app will run in a different VM (Qube). As a bonus, Qubes OS integrates Whonix by default and allows for increased privacy and anonymity. It is highly recommended that you document yourself over Qubes OS principles before going this route. Here are some recommended resources:
 
--   Qubes OS Introduction, <https://www.qubes-os.org/intro/> <sup>[[Archive.org]][359]</sup>
+-   Qubes OS Introduction <https://www.qubes-os.org/intro/> <sup>[[Archive.org]][359]</sup>
 
--   Qubes OS Video Tours, <https://www.qubes-os.org/video-tours/> <sup>[[Archive.org]][360]</sup>
+-   Qubes OS Video Tours <https://www.qubes-os.org/video-tours/> <sup>[[Archive.org]][360]</sup>
 
--   Qubes OS Getting Started, <https://www.qubes-os.org/doc/getting-started/> <sup>[[Archive.org]][361]</sup>
+-   Qubes OS Getting Started <https://www.qubes-os.org/doc/getting-started/> <sup>[[Archive.org]][361]</sup>
 
 -   YouTube, Life Behind the Tinfoil: A Look at Qubes and Copperhead - Konstantin Ryabitsev, The Linux Foundation <https://www.youtube.com/watch?v=8cU4hQg6GvU> <sup>[[Invidious]][362]</sup>
 
@@ -4783,7 +4783,7 @@ Stream isolation is a mitigation technique used to prevent some correlation atta
 
 ![][314]
 
-(Illustration from Marcelo Martins, <https://stakey.club/en/decred-via-tor-network/> <sup>[[Archive.org]][315]</sup>)
+(Illustration from Marcelo Martins <https://stakey.club/en/decred-via-tor-network/> <sup>[[Archive.org]][315]</sup>)
 
 VPN/Proxy over Tor falls on the right-side[^365] meaning using a VPN/Proxy over Tor forces Tor to use one circuit for all activities instead of multiple circuits for each. This means that using a VPN/Proxy over Tor can reduce the effectiveness of Tor in some cases and should therefore be used only for some specific cases:
 
@@ -7125,13 +7125,13 @@ Finally, Open-Source apps should always be preferred because they allow third pa
 
 Below you will find a small table showing the state of messaging apps as of the writing of this guide based on my tests and data from the various sources below:
 
--   Wikipedia, <https://en.wikipedia.org/wiki/Comparison_of_instant_messaging_protocols> <sup>[[Wikiless]][453]</sup> <sup>[[Archive.org]][454]</sup>
+-   Wikipedia <https://en.wikipedia.org/wiki/Comparison_of_instant_messaging_protocols> <sup>[[Wikiless]][453]</sup> <sup>[[Archive.org]][454]</sup>
 
--   Wikipedia, <https://en.wikipedia.org/wiki/Comparison_of_cross-platform_instant_messaging_clients> <sup>[[Wikiless]][455]</sup> <sup>[[Archive.org]][456]</sup>
+-   Wikipedia <https://en.wikipedia.org/wiki/Comparison_of_cross-platform_instant_messaging_clients> <sup>[[Wikiless]][455]</sup> <sup>[[Archive.org]][456]</sup>
 
 -   Secure Messaging Apps <https://www.securemessagingapps.com/> <sup>[[Archive.org]][457]</sup>
 
--   ProtonMail Blog, <https://protonmail.com/blog/whatsapp-alternatives/> <sup>[[Archive.org]][458]</sup>
+-   ProtonMail Blog <https://protonmail.com/blog/whatsapp-alternatives/> <sup>[[Archive.org]][458]</sup>
 
 -   Whonix Documentation, Instant Messenger Chat <https://www.whonix.org/wiki/Chat> <sup>[[Archive.org]][459]</sup>
 
@@ -9230,7 +9230,7 @@ OPSEC is often just applying common sense and being cautious about your activiti
 
     -   2015, DEF CON 22 - Zoz - Don't Fuck It Up! <https://www.youtube.com/watch?v=J1q4Ir2J8P8> <sup>[[Invidious]][552]</sup>
 
-    -   2020, Bad Opsec - How Tor Users Got Caught, <https://www.youtube.com/watch?v=GR_U0G-QGA0> <sup>[[Invidious]][553]</sup>
+    -   2020, Bad Opsec - How Tor Users Got Caught <https://www.youtube.com/watch?v=GR_U0G-QGA0> <sup>[[Invidious]][553]</sup>
 
 **FINAL OPSEC DISCLAIMER: KEEP YOUR ANONYMOUS IDENTITIES COMPLETELY SANDBOXED FROM YOUR NORMAL ENVIRONMENT AND REAL IDENTITY. DO NOT SHARE ANYTHING BETWEEN THE ANONYMOUS ENVIRONMENTS AND THE REAL IDENTITY ENVIRONMENT. KEEP THEM COMPLETELY COMPARTMENTALIZED ON EVERY LEVEL. MOST OPSEC FAILURES ARE DUE TO USERS ACCIDENTALLY LEAKING INFORMATION RATHER THAN TECHNICAL FAILURES.**
 
@@ -9404,7 +9404,7 @@ This project for instance is running several Tor Exit nodes using donations to f
 
 -   Thanks to the following individuals for their input and help:
 
-    -   NobodySpecial, <https://git.envs.net/NobodySpecial/whoami>
+    -   NobodySpecial <https://git.envs.net/NobodySpecial/whoami>
 
     -   Mahanihaka
 
@@ -11785,7 +11785,7 @@ If you do nothave a word processor available or don't want to use one, you can a
 
 **Disclaimer: a study archived here: <https://web.archive.org/web/20181125133942/https://www.cs.drexel.edu/~sa499/papers/adversarial_stylometry.pdf> seems to indicate the translation technique is inefficient to prevent stylometry. This step might be useless.**
 
-After being done with spelling and grammar fixes. Use a website or software such as Google Translate (or for a more privacy-friendly version, <https://simplytranslate.org/>) to translate between several different languages before translating back to your original language. These translations back and forth will alter your messages and make fingerprinting more difficult.
+After being done with spelling and grammar fixes. Use a website or software such as Google Translate (or for a more privacy-friendly version <https://simplytranslate.org/>) to translate between several different languages before translating back to your original language. These translations back and forth will alter your messages and make fingerprinting more difficult.
 
 ### Search and replace:
 
@@ -12139,7 +12139,7 @@ You can find some introduction on these on these projects:
 
 [^36]: Wikipedia, DNS over HTTPS: <https://en.wikipedia.org/wiki/DNS_over_HTTPS> <sup>[[Wikiless]][794]</sup> <sup>[[Archive.org]][795]</sup>
 
-[^37]: Wikipedia, DNS over TLS, <https://en.wikipedia.org/wiki/DNS_over_TLS> <sup>[[Wikiless]][796]</sup> <sup>[[Archive.org]][797]</sup>
+[^37]: Wikipedia, DNS over TLS <https://en.wikipedia.org/wiki/DNS_over_TLS> <sup>[[Wikiless]][796]</sup> <sup>[[Archive.org]][797]</sup>
 
 [^38]: Wikipedia, Pi-Hole <https://en.wikipedia.org/wiki/Pi-hole> <sup>[[Wikiless]][798]</sup> <sup>[[Archive.org]][799]</sup>
 
@@ -12265,7 +12265,7 @@ You can find some introduction on these on these projects:
 
 [^99]: Wikipedia, MAC Address <https://en.wikipedia.org/wiki/MAC_address> <sup>[[Wikiless]][872]</sup> <sup>[[Archive.org]][873]</sup>
 
-[^100]: Acyclica Road Trend Product Sheet, <https://web.archive.org/web/https://amsignalinc.com/data-sheets/Acyclica/Acyclica-RoadTrend-Product-Sheet.pdf> <sup>[[Archive.org]][874]</sup>
+[^100]: Acyclica Road Trend Product Sheet <https://web.archive.org/web/https://amsignalinc.com/data-sheets/Acyclica/Acyclica-RoadTrend-Product-Sheet.pdf> <sup>[[Archive.org]][874]</sup>
 
 [^101]: ResearchGate, Tracking Anonymized Bluetooth Devices <https://www.researchgate.net/publication/334590931_Tracking_Anonymized_Bluetooth_Devices/fulltext/5d3308db92851cd04675a469/Tracking-Anonymized-Bluetooth-Devices.pdf> <sup>[[Archive.org]][875]</sup>
 
@@ -12281,7 +12281,7 @@ You can find some introduction on these on these projects:
 
 [^107]: Wikipedia, IME, Disabling the ME <https://en.wikipedia.org/wiki/Intel_Management_Engine#Disabling_the_ME> <sup>[[Wikiless]][878]</sup> <sup>[[Archive.org]][879]</sup>
 
-[^108]: Libreboot, <https://libreboot.org/> <sup>[[Archive.org]][882]</sup> / Coreboot, <https://www.coreboot.org/> <sup>[[Archive.org]](https://web.archive.org/web/20220501042320/https://www.coreboot.org/)</sup>
+[^108]: Libreboot <https://libreboot.org/> <sup>[[Archive.org]][882]</sup> / Coreboot <https://www.coreboot.org/> <sup>[[Archive.org]](https://web.archive.org/web/20220501042320/https://www.coreboot.org/)</sup>
 
 [^109]: Apple, Differential Privacy White Paper <https://www.apple.com/privacy/docs/Differential_Privacy_Overview.pdf> <sup>[[Archive.org]][883]</sup>
 
@@ -12313,7 +12313,7 @@ You can find some introduction on these on these projects:
 
 [^123]: Using Metadata to find Paul Revere (<https://kieranhealy.org/blog/archives/2013/06/09/using-metadata-to-find-paul-revere/> <sup>[[Archive.org]][897]</sup>)
 
-[^124]: Wikipedia, Google SensorVault, <https://en.wikipedia.org/wiki/Sensorvault> <sup>[[Wikiless]][898]</sup> <sup>[[Archive.org]][899]</sup>
+[^124]: Wikipedia, Google SensorVault <https://en.wikipedia.org/wiki/Sensorvault> <sup>[[Wikiless]][898]</sup> <sup>[[Archive.org]][899]</sup>
 
 [^125]: NRKBeta, My Phone Was Spying on Me, so I Tracked Down the Surveillants <https://nrkbeta.no/2020/12/03/my-phone-was-spying-on-me-so-i-tracked-down-the-surveillants/> <sup>[[Archive.org]][900]</sup>
 
@@ -12381,11 +12381,11 @@ You can find some introduction on these on these projects:
 
 [^157]: CNBC, "Facebook has mapped populations in 23 countries as it explores satellites to expand internet" <https://www.cnbc.com/2017/09/01/facebook-has-mapped-human-population-building-internet-in-space.html> <sup>[[Archive.org]][939]</sup>
 
-[^158]: MIT Technology Review, This is how we lost control of our faces, <https://www.technologyreview.com/2021/02/05/1017388/ai-deep-learning-facial-recognition-data-history/> <sup>[[Archive.org]][940]</sup>
+[^158]: MIT Technology Review, This is how we lost control of our faces <https://www.technologyreview.com/2021/02/05/1017388/ai-deep-learning-facial-recognition-data-history/> <sup>[[Archive.org]][940]</sup>
 
 [^159]: Bellingcat, Shadow of a Doubt: Crowdsourcing Time Verification of the MH17 Missile Launch Photo <https://www.bellingcat.com/resources/case-studies/2015/08/07/shadow-of-a-doubt/> <sup>[[Archive.org]][941]</sup>
 
-[^160]: Brown Institute, Open-Source Investigation, <https://brown.columbia.edu/open-source-investigation/> <sup>[[Archive.org]][942]</sup>
+[^160]: Brown Institute, Open-Source Investigation <https://brown.columbia.edu/open-source-investigation/> <sup>[[Archive.org]][942]</sup>
 
 [^161]: NewScientist, Facebook can recognize you in photos even if you're not looking <https://www.newscientist.com/article/dn27761-facebook-can-recognise-you-in-photos-even-if-youre-not-looking/> <sup>[[Archive.org]][943]</sup>
 
@@ -12441,17 +12441,17 @@ You can find some introduction on these on these projects:
 
 [^187]: Vice.com, Cops Got a Drug Dealer's Fingerprints From Photos of His Hand on WhatsApp <https://www.vice.com/en/article/evqk9e/photo-of-fingerprints-used-to-arrest-drug-dealers> <sup>[[Archive.org]][969]</sup>
 
-[^188]: Kraken Blog, <https://blog.kraken.com/post/11905/your-fingerprint-can-be-hacked-for-5-heres-how/> <sup>[[Archive.org]][970]</sup>
+[^188]: Kraken Blog <https://blog.kraken.com/post/11905/your-fingerprint-can-be-hacked-for-5-heres-how/> <sup>[[Archive.org]][970]</sup>
 
 [^189]: JUSTIA Patent, Identification of taste attributes from an audio signal <https://patents.justia.com/patent/10891948> <sup>[[Archive.org]][971]</sup>
 
 [^190]: PYMNTS, Iris Scan Serves As Traveler ID At Dubai Airport <https://www.pymnts.com/news/biometrics/2021/iris-scan-traveler-identification-dubai-airport/> <sup>[[Archive.org]][972]</sup>
 
-[^191]: IMDB, Gattaca 1997, <https://www.imdb.com/title/tt0119177/> <sup>[[Archive.org]][973]</sup>
+[^191]: IMDB, Gattaca 1997 <https://www.imdb.com/title/tt0119177/> <sup>[[Archive.org]][973]</sup>
 
 [^192]: IMDB, Person of Interest 2011 <https://www.imdb.com/title/tt1839578> <sup>[[Archive.org]][974]</sup>
 
-[^193]: IMDB, Minority Report 2002, <https://www.imdb.com/title/tt0181689> <sup>[[Archive.org]][975]</sup>
+[^193]: IMDB, Minority Report 2002 <https://www.imdb.com/title/tt0181689> <sup>[[Archive.org]][975]</sup>
 
 [^194]: Wikipedia, Deepfake <https://en.wikipedia.org/wiki/Deepfake> <sup>[[Wikiless]][976]</sup> <sup>[[Archive.org]][977]</sup>
 
@@ -12517,13 +12517,13 @@ You can find some introduction on these on these projects:
 
 [^225]: CreativeCloud Extension, IMATAG <https://exchange.adobe.com/creativecloud.details.101789.imatag-invisible-watermark-and-image-monitoring.html> <sup>[[Archive.org]][1019]</sup>
 
-[^226]: NexGuard, <https://dtv.nagra.com/nexguard-forensic-watermarking> <sup>[[Archive.org]][1020]</sup>
+[^226]: NexGuard <https://dtv.nagra.com/nexguard-forensic-watermarking> <sup>[[Archive.org]][1020]</sup>
 
-[^227]: Vobile Solutions, <https://www.vobilegroup.com/> <sup>[[Archive.org]][1021]</sup>
+[^227]: Vobile Solutions <https://www.vobilegroup.com/> <sup>[[Archive.org]][1021]</sup>
 
-[^228]: Cinavia, <https://www.cinavia.com/languages/english/pages/technology.html> <sup>[[Archive.org]][1022]</sup>
+[^228]: Cinavia <https://www.cinavia.com/languages/english/pages/technology.html> <sup>[[Archive.org]][1022]</sup>
 
-[^229]: Imatag, <https://www.imatag.com/> <sup>[[Archive.org]][1023]</sup>
+[^229]: Imatag <https://www.imatag.com/> <sup>[[Archive.org]][1023]</sup>
 
 [^230]: Wikipedia, Steganography <https://en.wikipedia.org/wiki/Steganography> <sup>[[Wikiless]][1024]</sup> <sup>[[Archive.org]][1025]</sup>
 
@@ -12537,11 +12537,11 @@ You can find some introduction on these on these projects:
 
 [^235]: Wikipedia, Printing Steganography <https://en.wikipedia.org/wiki/Machine_Identification_Code> <sup>[[Wikiless]][1030]</sup> <sup>[[Archive.org]][1031]</sup>
 
-[^236]: MIT, SeeingYellow, <https://web.archive.org/web/20220224174025/http://seeingyellow.com/> <sup>[[Archive.org]][1032]</sup>
+[^236]: MIT, SeeingYellow <https://web.archive.org/web/20220224174025/http://seeingyellow.com/> <sup>[[Archive.org]][1032]</sup>
 
 [^237]: arXiv, An Analysis of Anonymity in the Bitcoin System <https://arxiv.org/pdf/1107.4524.pdf> <sup>[[Archive.org]][1033]</sup>
 
-[^238]: Bellingcat, How To Track Illegal Funding Campaigns Via Cryptocurrency, <https://www.bellingcat.com/resources/how-tos/2019/03/26/how-to-track-illegal-funding-campaigns-via-cryptocurrency/> <sup>[[Archive.org]][1034]</sup>
+[^238]: Bellingcat, How To Track Illegal Funding Campaigns Via Cryptocurrency <https://www.bellingcat.com/resources/how-tos/2019/03/26/how-to-track-illegal-funding-campaigns-via-cryptocurrency/> <sup>[[Archive.org]][1034]</sup>
 
 [^239]: CoinDesk, Leaked Slides Show How Chainalysis Flags Crypto Suspects for Cops <https://www.coindesk.com/business/2021/09/21/leaked-slides-show-how-chainalysis-flags-crypto-suspects-for-cops/> <sup>[[Archive.org]][1035]</sup>
 
@@ -12551,7 +12551,7 @@ You can find some introduction on these on these projects:
 
 [^242]: YouTube, Breaking Monero <https://www.youtube.com/watch?v=WOyC6OB6ezA&list=PLsSYUeVwrHBnAUre2G_LYDsdo-tD0ov-y> <sup>[[Invidious]][1039]</sup>
 
-[^243]: Monero, Monero vs Princeton Researchers, <https://monero.org/monero-vs-princeton-researchers/> <sup>[[Archive.org]][1040]</sup>
+[^243]: Monero, Monero vs Princeton Researchers <https://monero.org/monero-vs-princeton-researchers/> <sup>[[Archive.org]][1040]</sup>
 
 [^244]: Wikipedia, Cryptocurrency Tumbler <https://en.wikipedia.org/wiki/Cryptocurrency_tumbler> <sup>[[Wikiless]][1041]</sup> <sup>[[Archive.org]][1042]</sup>
 
@@ -12565,13 +12565,13 @@ You can find some introduction on these on these projects:
 
 [^249]: Cellebrite, Unlock cloud-based evidence to solve the case sooner <https://www.cellebrite.com/en/ufed-cloud/> <sup>[[Archive.org]][1048]</sup>
 
-[^250]: Property of the People, Lawful Access to Secure Messaging Apps Data, <https://propertyofthepeople.org/document-detail/?doc-id=21114562> <sup>[[Archive.org]][1049]</sup>
+[^250]: Property of the People, Lawful Access to Secure Messaging Apps Data <https://propertyofthepeople.org/document-detail/?doc-id=21114562> <sup>[[Archive.org]][1049]</sup>
 
 [^251]: Chromium Documentation, Technical analysis of client identification mechanisms <https://sites.google.com/a/chromium.org/dev/Home/chromium-security/client-identification-mechanisms#TOC-Machine-specific-characteristics> <sup>[[Archive.org]][1050]</sup>
 
 [^252]: Mozilla Wiki, Fingerprinting <https://wiki.mozilla.org/Fingerprinting> <sup>[[Archive.org]][1051]</sup>
 
-[^253]: Grayshift, <https://www.grayshift.com/> <sup>[[Archive.org]][1052]</sup>
+[^253]: Grayshift <https://www.grayshift.com/> <sup>[[Archive.org]][1052]</sup>
 
 [^254]: Securephones.io, Data Security on Mobile Devices: Current State of the Art, Open Problems, and Proposed Solutions <https://securephones.io/main.pdf> <sup>[[Archive.org]][1053]</sup>
 
@@ -12595,21 +12595,21 @@ You can find some introduction on these on these projects:
 
 [^264]: IronCoreLabs Blog, "Military Grade Encryption" <https://blog.ironcorelabs.com/military-grade-encryption-69aae0145588> <sup>[[Archive.org]][1063]</sup>
 
-[^265]: Wikipedia, BLAKE2, <https://en.wikipedia.org/wiki/BLAKE_(hash_function)#BLAKE2> <sup>[[Wikiless]][1064]</sup> <sup>[[Archive.org]][1065]</sup>
+[^265]: Wikipedia, BLAKE2 <https://en.wikipedia.org/wiki/BLAKE_(hash_function)#BLAKE2> <sup>[[Wikiless]][1064]</sup> <sup>[[Archive.org]][1065]</sup>
 
-[^266]: Wikipedia, AES Instruction Set, <https://en.wikipedia.org/wiki/AES_instruction_set> <sup>[[Wikiless]][1066]</sup> <sup>[[Archive.org]][1067]</sup>
+[^266]: Wikipedia, AES Instruction Set <https://en.wikipedia.org/wiki/AES_instruction_set> <sup>[[Wikiless]][1066]</sup> <sup>[[Archive.org]][1067]</sup>
 
-[^267]: Wikipedia, ChaCha Variants, <https://en.wikipedia.org/wiki/Salsa20#ChaCha_variant> <sup>[[Wikiless]][1068]</sup> <sup>[[Archive.org]][1069]</sup>
+[^267]: Wikipedia, ChaCha Variants <https://en.wikipedia.org/wiki/Salsa20#ChaCha_variant> <sup>[[Wikiless]][1068]</sup> <sup>[[Archive.org]][1069]</sup>
 
-[^268]: Wikipedia, Serpent, <https://en.wikipedia.org/wiki/Serpent_(cipher)> <sup>[[Wikiless]][1070]</sup> <sup>[[Archive.org]][1071]</sup>
+[^268]: Wikipedia, Serpent <https://en.wikipedia.org/wiki/Serpent_(cipher)> <sup>[[Wikiless]][1070]</sup> <sup>[[Archive.org]][1071]</sup>
 
-[^269]: Wikipedia, TwoFish, <https://en.wikipedia.org/wiki/Twofish> <sup>[[Wikiless]][1072]</sup> <sup>[[Archive.org]][1073]</sup>
+[^269]: Wikipedia, TwoFish <https://en.wikipedia.org/wiki/Twofish> <sup>[[Wikiless]][1072]</sup> <sup>[[Archive.org]][1073]</sup>
 
 [^270]: Lacatora, The PGP Problem <https://latacora.singles/2019/07/16/the-pgp-problem.html> <sup>[[Archive.org]][1074]</sup>
 
-[^271]: Wikipedia, Shor's Algorithm, <https://en.wikipedia.org/wiki/Shor%27s_algorithm> <sup>[[Wikiless]][1075]</sup> <sup>[[Archive.org]][1076]</sup>
+[^271]: Wikipedia, Shor's Algorithm <https://en.wikipedia.org/wiki/Shor%27s_algorithm> <sup>[[Wikiless]][1075]</sup> <sup>[[Archive.org]][1076]</sup>
 
-[^272]: Wikipedia, Gag Order, <https://en.wikipedia.org/wiki/Gag_order> <sup>[[Wikiless]][1077]</sup> <sup>[[Archive.org]][1078]</sup>
+[^272]: Wikipedia, Gag Order <https://en.wikipedia.org/wiki/Gag_order> <sup>[[Wikiless]][1077]</sup> <sup>[[Archive.org]][1078]</sup>
 
 [^273]: Wikipedia, National Security Letter <https://en.wikipedia.org/wiki/National_security_letter> <sup>[[Wikiless]][1079]</sup> <sup>[[Archive.org]][1080]</sup>
 
@@ -12621,13 +12621,13 @@ You can find some introduction on these on these projects:
 
 [^277]: CyberScoop, Court rules encrypted email provider Tutanota must monitor messages in blackmail case <https://www.cyberscoop.com/court-rules-encrypted-email-tutanota-monitor-messages/> <sup>[[Archive.org]][1084]</sup>
 
-[^278]: Heise Online (German), <https://www.heise.de/news/Gericht-zwingt-Mailprovider-Tutanota-zu-Ueberwachungsfunktion-4972460.html> <sup>[[Archive.org]][1085]</sup>
+[^278]: Heise Online (German) <https://www.heise.de/news/Gericht-zwingt-Mailprovider-Tutanota-zu-Ueberwachungsfunktion-4972460.html> <sup>[[Archive.org]][1085]</sup>
 
 [^279]: PCMag, Did PureVPN Cross a Line When It Disclosed User Information? <https://www.pcmag.com/opinions/did-purevpn-cross-a-line-when-it-disclosed-user-information> <sup>[[Archive.org]][1086]</sup>
 
 [^280]: Internet Archive, Wipeyourdata, "No logs" EarthVPN user arrested after police finds logs <https://archive.is/XNuVw#selection-230.0-230.1> <sup>[[Archive.org]][1087]</sup>
 
-[^281]: Wikipedia, Lavabit Suspension and Gag order, <https://en.wikipedia.org/wiki/Lavabit#Suspension_and_gag_order> <sup>[[Wikiless]][1088]</sup> <sup>[[Archive.org]][1089]</sup>
+[^281]: Wikipedia, Lavabit Suspension and Gag order <https://en.wikipedia.org/wiki/Lavabit#Suspension_and_gag_order> <sup>[[Wikiless]][1088]</sup> <sup>[[Archive.org]][1089]</sup>
 
 [^282]: Internet Archive, Invisibler, What Everybody Ought to Know About HideMyAss <https://archive.is/ag9w4#selection-136.0-136.1>
 
@@ -12657,7 +12657,7 @@ You can find some introduction on these on these projects:
 
 [^295]: Defuse.ca, TrueCrypt's Plausible Deniability is Theoretically Useless <https://defuse.ca/truecrypt-plausible-deniability-useless-by-game-theory.htm> <sup>[[Archive.org]][248]</sup>
 
-[^296]: Wikipedia, OONI, <https://en.wikipedia.org/wiki/OONI> <sup>[[Wikiless]][1103]</sup> <sup>[[Archive.org]][1104]</sup>
+[^296]: Wikipedia, OONI <https://en.wikipedia.org/wiki/OONI> <sup>[[Wikiless]][1103]</sup> <sup>[[Archive.org]][1104]</sup>
 
 [^297]: Privacy International, Timeline of SIM Card Registration Laws <https://privacyinternational.org/long-read/3018/timeline-sim-card-registration-laws> <sup>[[Archive.org]][1105]</sup>
 
@@ -12675,9 +12675,9 @@ You can find some introduction on these on these projects:
 
 [^304]: YouTube, 36C3 - Uncover, Understand, Own - Regaining Control Over Your AMD CPU <https://www.youtube.com/watch?v=bKH5nGLgi08&t=2834s> <sup>[[Invidious]][77]</sup>
 
-[^305]: Qubes OS, Anti-Evil Maid, <https://github.com/QubesOS/qubes-antievilmaid> <sup>[[Archive.org]][269]</sup>
+[^305]: Qubes OS, Anti-Evil Maid <https://github.com/QubesOS/qubes-antievilmaid> <sup>[[Archive.org]][269]</sup>
 
-[^306]: QubesOS FAQ, <https://www.qubes-os.org/faq/#is-secure-boot-supported> <sup>[[Archive.org]][369]</sup>
+[^306]: QubesOS FAQ <https://www.qubes-os.org/faq/#is-secure-boot-supported> <sup>[[Archive.org]][369]</sup>
 
 [^307]: Wikipedia, Secure Boot <https://en.wikipedia.org/wiki/Unified_Extensible_Firmware_Interface#Secure_boot> <sup>[[Wikiless]][1014]</sup> <sup>[[Archive.org]][1015]</sup>
 
@@ -12789,7 +12789,7 @@ You can find some introduction on these on these projects:
 
 [^361]: Whonix Documentation, Bridged Adapters Warning <https://www.whonix.org/wiki/Whonix-Gateway_Security#Warning:_Bridged_Networking> <sup>[[Archive.org]][1168]</sup>
 
-[^362]: Qubes OS, FAQ, <https://www.qubes-os.org/faq/#is-qubes-just-another-linux-distribution> <sup>[[Archive.org]][1169]</sup>
+[^362]: Qubes OS, FAQ <https://www.qubes-os.org/faq/#is-qubes-just-another-linux-distribution> <sup>[[Archive.org]][1169]</sup>
 
 [^363]: Qubes OS, System Requirements <https://www.qubes-os.org/doc/system-requirements/> <sup>[[Archive.org]][1170]</sup>
 
@@ -12991,13 +12991,13 @@ You can find some introduction on these on these projects:
 
 [^462]: SANS, Timestamped Registry & NTFS Artifacts from Unallocated Space <https://www.sans.org/blog/timestamped-registry-ntfs-artifacts-from-unallocated-space/> <sup>[[Archive.org]][1284]</sup>
 
-[^463]: DBAN, <https://dban.org/> <sup>[[Archive.org]][1285]</sup>
+[^463]: DBAN <https://dban.org/> <sup>[[Archive.org]][1285]</sup>
 
 [^464]: NYTimes, Lost Passwords Lock Millionaires Out of Their Bitcoin Fortunes <https://www.nytimes.com/2021/01/12/technology/bitcoin-passwords-wallets-fortunes.html> <sup>[[Archive.org]][1106]</sup>
 
 [^465]: CrystalDiskInfo <https://crystalmark.info/en/software/crystaldiskinfo/> <sup>[[Archive.org]][1286]</sup>
 
-[^466]: Wikipedia, Faraday Cage, <https://en.wikipedia.org/wiki/Faraday_cage> <sup>[[Wikiless]][1287]</sup> <sup>[[Archive.org]][1288]</sup>
+[^466]: Wikipedia, Faraday Cage <https://en.wikipedia.org/wiki/Faraday_cage> <sup>[[Wikiless]][1287]</sup> <sup>[[Archive.org]][1288]</sup>
 
 [^467]: Edith Cowan University, A forensic examination of several mobile device Faraday bags & materials to test their effectiveness materials to test their effectiveness <https://ro.ecu.edu.au/cgi/viewcontent.cgi?article=1165&context=adf> <sup>[[Archive.org]][1289]</sup>
 
@@ -13007,7 +13007,7 @@ You can find some introduction on these on these projects:
 
 [^470]: YouTube, Fingerprinting Paper - Forensic Education <https://www.youtube.com/watch?v=sO98kDLkh-M> <sup>[[Invidious]][1292]</sup>
 
-[^471]: Wikipedia, Touch DNA, <https://en.wikipedia.org/wiki/Touch_DNA> <sup>[[Wikiless]][1293]</sup> <sup>[[Archive.org]][1294]</sup>
+[^471]: Wikipedia, Touch DNA <https://en.wikipedia.org/wiki/Touch_DNA> <sup>[[Wikiless]][1293]</sup> <sup>[[Archive.org]][1294]</sup>
 
 [^472]: TheDNAGuide, DNA from Postage Stamps or Hair Samples? Yeeesssss..... <https://www.yourdnaguide.com/ydgblog/dna-hair-samples-postage-stamps> <sup>[[Archive.org]][1295]</sup>
 
@@ -13039,11 +13039,11 @@ You can find some introduction on these on these projects:
 
 [^486]: Wikipedia, Polymorphic Code <https://en.wikipedia.org/wiki/Polymorphic_code> <sup>[[Wikiless]][1318]</sup> <sup>[[Archive.org]][1319]</sup>
 
-[^487]: Whonix Documentation, Use of AV, <https://www.whonix.org/wiki/Malware_and_Firmware_Trojans#The_Utility_of_Antivirus_Tools> <sup>[[Archive.org]][1320]</sup>
+[^487]: Whonix Documentation, Use of AV <https://www.whonix.org/wiki/Malware_and_Firmware_Trojans#The_Utility_of_Antivirus_Tools> <sup>[[Archive.org]][1320]</sup>
 
-[^488]: Whonix Forums, <https://forums.whonix.org/t/installation-of-antivirus-scanners-by-default/9755/8> <sup>[[Archive.org]][1321]</sup>
+[^488]: Whonix Forums <https://forums.whonix.org/t/installation-of-antivirus-scanners-by-default/9755/8> <sup>[[Archive.org]][1321]</sup>
 
-[^489]: AV-Test Security Report 2018-2019, <https://www.av-test.org/fileadmin/pdf/security_report/AV-TEST_Security_Report_2018-2019.pdf> <sup>[[Archive.org]][1322]</sup>
+[^489]: AV-Test Security Report 2018-2019 <https://www.av-test.org/fileadmin/pdf/security_report/AV-TEST_Security_Report_2018-2019.pdf> <sup>[[Archive.org]][1322]</sup>
 
 [^490]: ZDNet, ESET discovers 21 new Linux malware families <https://www.zdnet.com/article/eset-discovers-21-new-linux-malware-families/> <sup>[[Archive.org]][1323]</sup>
 
@@ -13059,13 +13059,13 @@ You can find some introduction on these on these projects:
 
 [^496]: JAMF, The Mac Malware of 2020 <https://resources.jamf.com/documents/macmalware-2020.pdf> <sup>[[Archive.org]][1331]</sup>
 
-[^497]: macOS Security and Privacy Guide, <https://github.com/drduh/macOS-Security-and-Privacy-Guide#viruses-and-malware> <sup>[[Archive.org]][294]</sup>
+[^497]: macOS Security and Privacy Guide <https://github.com/drduh/macOS-Security-and-Privacy-Guide#viruses-and-malware> <sup>[[Archive.org]][294]</sup>
 
-[^498]: ImageTragick.com, <https://imagetragick.com/> <sup>[[Archive.org]][1332]</sup>
+[^498]: ImageTragick.com <https://imagetragick.com/> <sup>[[Archive.org]][1332]</sup>
 
-[^499]: Oracle Virtualbox Documentation, <https://docs.oracle.com/en/virtualization/virtualbox/6.0/admin/hyperv-support.html> <sup>[[Archive.org]][1333]</sup>
+[^499]: Oracle Virtualbox Documentation <https://docs.oracle.com/en/virtualization/virtualbox/6.0/admin/hyperv-support.html> <sup>[[Archive.org]][1333]</sup>
 
-[^500]: Oracle Virtualbox Documentation, <https://docs.oracle.com/en/virtualization/virtualbox/6.0/admin/hyperv-support.html> <sup>[[Archive.org]][1333]</sup>
+[^500]: Oracle Virtualbox Documentation <https://docs.oracle.com/en/virtualization/virtualbox/6.0/admin/hyperv-support.html> <sup>[[Archive.org]][1333]</sup>
 
 [^501]: Lenny Zeltser, Analyzing Malicious Documents Cheat Sheet <https://zeltser.com/analyzing-malicious-documents/> <sup>[[Archive.org]][1334]</sup>
 
