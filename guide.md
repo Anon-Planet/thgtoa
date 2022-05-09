@@ -4,7 +4,7 @@
 
 Version 1.1.4-pre1, May 2022 by Anonymous Planet
 
-**Forever in memory of Lena, 1999-2022**
+<span style="color: red">**Forever in memory of Lena, 1999-2022.**</span>
 
 #### **IMPORTANT RECOMMENDATION FOR UKRAINIANS. ВАЖЛИВА РЕКОМЕНДАЦІЯ ДЛЯ УКРАЇНЦІВ**
 
