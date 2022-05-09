@@ -86,11 +86,11 @@ Precautions while reading this guide and accessing the various links:
 
 -   If you are reading this in PDF or ODT format, you will notice plenty of \`\`\` in place of double quotes (""). These \`\`\` are there to ease conversion into Markdown/HTML format for online viewing of code blocks on the website.
 
-If you do not want the hassle and use one of the browsers below, you could also just install the following extension on your browser: <https://github.com/SimonBrazell/privacy-redirect> <sup>[[Archive.org]][33]</sup> (**Warning, this extension and project seems abandoned or unmaintained, use at your on risk**):
+If you do not want the hassle and use one of the browsers below, you could also just install the following extension on your browser: <https://libredirect.github.io/> <sup>[[Archive.org]][33]</sup> (**Warning, this extension and project seems abandoned or unmaintained, use at your on risk**):
 
--   Firefox: <https://addons.mozilla.org/en-US/firefox/addon/privacy-redirect/>
+-   Firefox: <https://addons.mozilla.org/en-US/firefox/addon/libredirect/https://libredirect.git>
 
--   Chromium-based browsers (Chrome, Brave, Edge): <https://chrome.google.com/webstore/detail/privacy-redirect/pmcmeagblkinmogikoikkdjiligflglb>
+-   Chromium-based browsers (Chrome, Brave, Edge): <https://github.com/libredirect/libredirect/blob/master/chromium.md>
 
 **If you are having trouble accessing any of the many academic articles referenced in this guide due to paywalls, feel free to use Sci-Hub (<https://en.wikipedia.org/wiki/Sci-Hub>** <sup>[[Wikiless]][34]</sup> <sup>[[Archive.org]][35]</sup>**) or LibGen (<https://en.wikipedia.org/wiki/Library_Genesis>** <sup>[[Wikiless]][36]</sup> <sup>[[Archive.org]][37]</sup>**) for finding and reading them. Because Science should be free. All of it. If you are faced with a paywall accessing some resources, consider using <https://12ft.io/>.**
 
@@ -10992,9 +10992,7 @@ Addons to consider on Brave if you want additional protections:
 
 -   ClearURLs (<https://chrome.google.com/webstore/detail/clearurls/lckanjgmijmafbedllaakclkaicjfmnk>)
 
--   Privacy Redirect (<https://github.com/SimonBrazell/privacy-redirect>) (**Warning, this extension and project seems abandoned or unmaintained, use at your on risk**)
-
-    -   While the settings for Invidious and Nitter instances are random, I would recommend setting them to "nitter.net" for Nitter and "yewtu.be" for Invidious.
+-   LibRedirect (<https://libredirect.github.io/>)
 
 That's it and you should be pretty much covered. For full paranoia, you can also just "Block Scripts" to disable Javascript. Note that even disabling Javascript might not protect you fully[^517].
 
@@ -11094,7 +11092,7 @@ That's about it for Edge but you are also free to add extensions from the Chrome
 
 -   ClearURLs (<https://chrome.google.com/webstore/detail/clearurls/lckanjgmijmafbedllaakclkaicjfmnk>)
 
--   Privacy Redirect (<https://github.com/SimonBrazell/privacy-redirect>) (**Warning, this extension and project seems abandoned or unmaintained, use at your on risk**)
+-   LibRedirect (<https://libredirect.github.io/>)
 
 
 ## Safari:
@@ -11373,9 +11371,7 @@ Here are most of the steps combined from the sources above (some have been omitt
 
 -   Privacy Settings (<https://addons.mozilla.org/en-US/firefox/addon/privacy-settings/>)
 
--   Privacy Redirect (<https://addons.mozilla.org/en-US/firefox/addon/privacy-redirect/>) (**Warning, this extension and project seems abandoned or unmaintained, use at your on risk**)
-
-    -   While the settings for Invidious and Nitter instances are random, I would recommend setting them to "nitter.net" for Nitter and "yewtu.be" for Invidious.
+-   LibRedirect (<https://libredirect.github.io/>)
 
 ### Bonus resources:
 
@@ -11501,11 +11497,9 @@ I would recommend the "Safer" level for most cases. The Safest level should only
 
     -   Head over to <https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/> within Tor Browser and install the extension.
 
--   Privacy Redirect: This is very practical if you use the "Safest" mode as Invidious instances require no JavaScript.
+-   LibRedirect: This is very practical if you use the "Safest" mode as Invidious instances require no JavaScript.
 
-    -   Head over to <https://addons.mozilla.org/en-US/firefox/addon/privacy-redirect/> (**Warning, this extension and project seems abandoned or unmaintained, use at your on risk**) within Tor Browser and install the extension.
-
-    -   While the settings for Invidious and Nitter instances are random, I would recommend setting them to "nitter.net" for Nitter and "yewtu.be" for Invidious.
+    -   Head over to <https://libredirect.github.io/> within Tor Browser and install the extension.
 
 Let's keep in mind that even 3 letters agencies recommend blocking ads for their internal users in order to improve security[^526].
 
@@ -11875,7 +11869,7 @@ These recommendations are similar to the ones at the beginning of the guide and 
 
     -   SearX (<https://searx.me/>) instances: list available here: <https://searx.space/>
 
-**(Optional)** Consider the use of the <https://github.com/SimonBrazell/privacy-redirect> <sup>[[Archive.org]][33]</sup> extension to automate the use of the above services (**Warning, this extension and project seems abandoned or unmaintained, use at your on risk**).
+**(Optional)** Consider the use of the <https://libredirect.github.io/> <sup>[[Archive.org]][33]</sup> extension to automate the use of the above services.
 
 # Appendix A6: Mirrors
 
@@ -13445,7 +13439,7 @@ You can find some introduction on these on these projects:
   [30]: https://web.archive.org/web/https://github.com/zedeus/nitter
   [31]: https://web.archive.org/web/https://codeberg.org/orenom/wikiless
   [32]: https://web.archive.org/web/https://scribe.rip/
-  [33]: https://web.archive.org/web/https://github.com/SimonBrazell/privacy-redirect
+  [33]: https://web.archive.org/web/20220509220021/https://libredirect.github.io/
   [34]: https://wikiless.org/wiki/Sci-Hub
   [35]: https://web.archive.org/web/https://en.wikipedia.org/wiki/Sci-Hub
   [36]: https://wikiless.org/wiki/Library_Genesis
