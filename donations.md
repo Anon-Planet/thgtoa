@@ -30,7 +30,7 @@ Here is the address for additional goals:
 Here are the addresses for the main project:
 
 - SegWit address: ```bc1qp9g2c6dquh5lnvft50esxsl97kupdpyqyd4kkv```
-- Legacy address: *(temporarily removed)*
+- Legacy address: ```1BBgBSVe6w4DWq2BewUQhDEjsNovhfPswD```
 
 ![][2]____________________![][3]
     
