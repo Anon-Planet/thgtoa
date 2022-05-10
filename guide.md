@@ -4922,7 +4922,7 @@ We will follow the instructions from their own guide <https://www.qubes-os.org/d
 
 (Secure Boot is not supported as per their FAQ: <https://www.qubes-os.org/faq/#is-secure-boot-supported> <sup>[[Archive.org]][369]</sup> so it should be disabled in the BIOS/UEFI settings.)
 
--   Download the latest Qubes OS 4.0.x installation ISO according to their hardware compatibility list.
+-   Download the latest Qubes OS 4.1.x installation ISO according to their hardware compatibility list.
 
 -   Prepare a USB key with the Qubes OS ISO file
 
