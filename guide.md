@@ -4924,6 +4924,8 @@ We will follow the instructions from their own guide <https://www.qubes-os.org/d
 
 -   Download the latest Qubes OS 4.1.x installation ISO according to their hardware compatibility list.
 
+-   Get and verify the Qubes OS Master Signing key: <https://keys.qubes-os.org/keys/qubes-master-signing-key.asc>
+
 -   Prepare a USB key with the Qubes OS ISO file
 
 -   Install Qubes OS according to the installation guide:
@@ -4931,6 +4933,8 @@ We will follow the instructions from their own guide <https://www.qubes-os.org/d
     -   **If you want to use Tor or VPN over Tor: Check the** "**Enabling system and template updates over the Tor anonymity network using Whonix" during the last step. This will force all Qubes OS updates to go through Tor. While this will significantly reduce your update speed, it will increase your anonymity from the start.** (If you are having issues connecting to Tor due to censorship or blocking, consider using Tor Bridges as recommended earlier. Just follow the tutorial provided here: <https://www.whonix.org/wiki/Bridges> <sup>[[Archive.org]][337]</sup>)
 
     -   If you want to use Tor over VPN or cannot use any of those, leave it unchecked.
+
+    -   Be absolutely sure that you are verifying the signature of the ISO, which you can find on this page: <https://www.qubes-os.org/security/verifying-signatures/>. Check by obtaining the fingerprint from multiple independent sources in several different ways as recommended. This is to ensure the image has not been tampered with. Do not skip this vital step even though we know we are getting the ISO from a trusted source.
 
 -   If you cannot use Tor at all, there is also no point in installing Whonix. So, you should disable Whonix installation within the Software Selection Menu.
 
