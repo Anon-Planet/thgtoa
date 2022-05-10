@@ -17,7 +17,7 @@ All donations and spendings are being logged here below for transparency.
 
 Here is the address for the main project:
 
-- ```4549BGJrEPBfpiPRL9CVGzGMgJnC1Dzf8EXLVfY8Ukrnj7LzkTV611dGf9tuQHiSQjbixsNWiffNiV5fPB3LkyF7UXi3vwQ```
+- ```46crzj54eL493BA68pPT4A1MZyKQxrpZu9tVNsfsoa5nT85QqCt8cDTfy1fcTH1oyjdtUbhmpZ4QcVtfEXB337Ng6PS21ML```
 
 ![][1]
     
@@ -29,8 +29,8 @@ Here is the address for additional goals:
 
 Here are the addresses for the main project:
 
-- SegWit address: ```bc1qtall24j005qsd3dw8wahxhvged4vepn9fjp3my```
-- Legacy address: ```17jYYV1x92fm9EVDbHuQjS5t9Qc44533Jw```
+- SegWit address: ```bc1qp9g2c6dquh5lnvft50esxsl97kupdpyqyd4kkv```
+- Legacy address: *(temporarily removed)*
 
 ![][2]____________________![][3]
     
