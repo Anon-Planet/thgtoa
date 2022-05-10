@@ -15,7 +15,7 @@ This guide is an open-source non-profit initiative, [licensed](LICENSE.html) und
 - [In your browser](guide.html)
 - [PDF](export/guide.pdf)
 - [OpenDocument (ODT)](export/guide.odt)
-- Raw [Markdown](https://raw.githubusercontent.com/AnonyPla-ng/thgtoa/master/guide.md)
+- Raw [Markdown](https://raw.githubusercontent.com/NobodySpecial256/thgtoa/master/guide.md)
 
 Mirrors:
 - Main: <https://anonymousplanet-ng.org>
