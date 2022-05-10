@@ -108,6 +108,6 @@ Spendings log (UTC date):
 Total Monero remaining: **0.540400726224 XMR**
 Total Bitcoin remaining: **0 mBTC**
 
-[1]: media/monero.jpg
-[2]: media/bitcoin-segwit.jpg
-[3]: media/bitcoin-legacy.jpg
+[1]: media/monero.png
+[2]: media/bitcoin-segwit.png
+[3]: media/bitcoin-legacy.png
