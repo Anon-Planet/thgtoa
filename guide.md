@@ -4938,7 +4938,7 @@ We will follow the instructions from their own guide <https://www.qubes-os.org/d
 
 -   If you cannot use Tor at all, there is also no point in installing Whonix. So, you should disable Whonix installation within the Software Selection Menu.
 
-To be sure your Qubes ISO hasn't been tampered with, you should get the Qubes master key fingerprint from multiple different sources. This guide can be used as one of these sources.
+To be sure your Qubes ISO hasn't been tampered with, you should get the Qubes master key fingerprint from multiple different sources. This guide can be used as one source.
 
 The Qubes master signing key fingerprint should match `427F 11FD 0FAA 4B08 0123  F01C DDFA 1A3E 3687 9494`.
 
