@@ -5070,7 +5070,7 @@ This is based on the tutorial provided by Qubes OS themselves (<https://github.c
 
 -   Select Type: Standalone Qube copied from a template
 
--   Select Template: Debian-10 (or Debian-11 if you already have it installed)
+-   Select Template: Debian-11 (the default)
 
 -   Select Networking:
 
@@ -5282,11 +5282,11 @@ See: [Appendix V: What browser to use in your Guest VM/Disposable VM]
 
 #### Fedora Disposable VM:
 
-Within the Applications Menu (upper left), Select the Fedora-3x template (x being the latest Fedora template available in your install):
+Within the Applications Menu (upper left), Select the Fedora-34 template:
 
 -   Go into Qube Settings
 
--   Clone the VM and name it "fedora-3x-brave" (this VM template will have Brave)
+-   Clone the VM and name it "fedora-34-brave" (this VM template will have Brave)
 
 -   Again, go into the Applications Menu and select the clone you just created
 
@@ -5348,7 +5348,7 @@ Basically, follow the tutorial here:
 
 -   Select Type: Standalone Qube copied from a template
 
--   Select Template: Debian-10 (or Debian-11 if you already have it installed)
+-   Select Template: Debian-11
 
 -   Select Networking:
 
