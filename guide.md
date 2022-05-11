@@ -5002,7 +5002,7 @@ After you are connected to a Wi-Fi you need to update Qubes OS and Whonix. You m
 
 ### Updating Whonix from version 15 to version 16:
 
-Follow the instructions on <https://www.whonix.org/wiki/Qubes/Install> <sup>[[Archive.org]][371]</sup>
+Follow the instructions on <https://www.whonix.org/wiki/Qubes/Install> <sup>[[Archive.org]][371]</sup>. *If you're running Qubes 4.1, this is already done for you.*
 
 ### Hardening Qubes OS:
 
