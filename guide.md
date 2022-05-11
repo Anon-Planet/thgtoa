@@ -5282,11 +5282,11 @@ See: [Appendix V: What browser to use in your Guest VM/Disposable VM]
 
 #### Fedora Disposable VM:
 
-Within the Applications Menu (upper left), Select the Fedora-3x template (x being the latest Fedora template available in your install):
+Within the Applications Menu (upper left), Select the Fedora-33 template (x being the latest Fedora template available in your install):
 
 -   Go into Qube Settings
 
--   Clone the VM and name it "fedora-3x-brave" (this VM template will have Brave)
+-   Clone the VM and name it "fedora-32-brave" (this VM template will have Brave)
 
 -   Again, go into the Applications Menu and select the clone you just created
 
