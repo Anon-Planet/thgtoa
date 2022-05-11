@@ -5514,7 +5514,7 @@ Keep in mind that those do not provide a zero-access design (meaning they can ac
 #### A note about Riseup:
 
 RiseUp's warrant canary has been renewed late, with their Twitter posting a cryptic message seeming to tell users not to trust them.
-Due to the suspicious situation, this guide can no longer recommend them.
+Due to the suspicious situation, this guide can no longer recommend them. The collective updated their Warrant Canary[^283] on May 1, 2022 with no explanation to their cryptic tweet about songbirds or why it took so long to update.
 
 *Also see: <https://forums.whonix.org/t/riseup-net-likely-compromised/3195>*
 
