@@ -4940,7 +4940,9 @@ We will follow the instructions from their own guide <https://www.qubes-os.org/d
 
 To be sure your Qubes ISO hasn't been tampered with, you should get the Qubes master key fingerprint from multiple different sources. This guide can be used as one such source.
 
-The Qubes fingerprint should be `427F 11FD 0FAA 4B08 0123  F01C DDFA 1A3E 3687 9494`.
+The Qubes master signing key fingerprint should match `427F 11FD 0FAA 4B08 0123  F01C DDFA 1A3E 3687 9494`.
+
+*Remember to read the guide to verifying signatures on the Qubes website: <https://www.qubes-os.org/security/verifying-signatures/>.*
 
 ### Lid Closure Behavior:
 
