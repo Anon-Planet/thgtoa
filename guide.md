@@ -4934,7 +4934,7 @@ We will follow the instructions from their own guide <https://www.qubes-os.org/d
 
     -   If you want to use Tor over VPN or cannot use any of those, leave it unchecked.
 
-    -   Be absolutely sure that you are verifying the signature of the ISO, which you can find on this page: <https://www.qubes-os.org/security/verifying-signatures/>. Check by obtaining the fingerprint from multiple independent sources in several different ways as recommended. This is to ensure the image has not been tampered with. Do not skip this vital step even though we know we are getting the ISO from a trusted source.
+    -   Be absolutely sure that you are verifying the signature of the ISO, which you can find on this page: <https://www.qubes-os.org/security/verifying-signatures/> <sup>[[Archive.org]][1367]</sup>. Check by obtaining the fingerprint from multiple independent sources in several different ways as recommended. This is to ensure the image has not been tampered with. Do not skip this vital step even though we know we are getting the ISO from a trusted source.
 
 -   If you cannot use Tor at all, there is also no point in installing Whonix. So, you should disable Whonix installation within the Software Selection Menu.
 
@@ -4942,7 +4942,7 @@ To be sure your Qubes ISO hasn't been tampered with, you should get the Qubes ma
 
 The Qubes master signing key fingerprint should match `427F 11FD 0FAA 4B08 0123  F01C DDFA 1A3E 3687 9494`.
 
-*Remember to read the guide to verifying signatures on the Qubes website: <https://www.qubes-os.org/security/verifying-signatures/>.*
+*Remember to read the guide to verifying signatures on the Qubes website: <https://www.qubes-os.org/security/verifying-signatures/> <sup>[[Archive.org]][1367]</sup>.*
 
 ### Lid Closure Behavior:
 
@@ -14801,3 +14801,4 @@ You can find some introduction on these on these projects:
   [1364]: https://web.archive.org/web/https://en.wikipedia.org/wiki/Rubber-hose_cryptanalysis
   [1365]: https://web.archive.org/web/https://github.com/psal/anonymouth
   [1366]: https://web.archive.org/web/https://psal.cs.drexel.edu/index.php/Main_Page
+  [1367]: https://web.archive.org/web/20220511015546/https://www.qubes-os.org/security/verifying-signatures/
