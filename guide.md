@@ -5070,7 +5070,7 @@ This is based on the tutorial provided by Qubes OS themselves (<https://github.c
 
 -   Select Type: Standalone Qube copied from a template
 
--   Select Template: Debian-10 (or Debian-11 if you already have it installed)
+-   Select Template: Debian-11 (the default)
 
 -   Select Networking:
 
