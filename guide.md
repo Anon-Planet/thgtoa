@@ -4938,6 +4938,10 @@ We will follow the instructions from their own guide <https://www.qubes-os.org/d
 
 -   If you cannot use Tor at all, there is also no point in installing Whonix. So, you should disable Whonix installation within the Software Selection Menu.
 
+To be sure your Qubes ISO hasn't been tampered with, you should get the Qubes master key fingerprint from multiple different sources. This guide can be used as one such source.
+
+The Qubes fingerprint should be `427F 11FD 0FAA 4B08 0123  F01C DDFA 1A3E 3687 9494`.
+
 ### Lid Closure Behavior:
 
 Unfortunately, Qubes OS does not support hibernation[^366] which is IMHO an issue regarding cold-boot attacks. To mitigate those, I highly recommend that you configure Qubes OS to shut down on any power action (power button, lid closure). You can do set this from the XFCE Power Manager. Do not use the sleep features.
