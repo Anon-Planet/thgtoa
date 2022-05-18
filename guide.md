@@ -1474,7 +1474,7 @@ Here are some examples:
 
     -   Prefer: SHA-3 or BLAKE2[^265]
 
-    -   Still relatively ok to use: SHA-2 (such as the widely used SHA256 or SHA512)
+    -   Still relatively ok to use: SHA-2 (such as the widely used SHA-256 or SHA-512)
 
     -   Avoid: SHA-1, MD5 (unfortunately still widely used), CRC, MD6 (rarely used)
 
@@ -1496,9 +1496,12 @@ Here are some examples:
 
 -   Password Storage:
 
-    -   Prefer: argon2, scrypt, bcrypt, or if not possible at least PBKDF2 (only as a last resort)
+    -   Prefer: Argon2, scrypt
+      -   If these aren't options, use bcrypt, or if not possible at least PBKDF2 (only as a last resort)f
+      -   Be skeptical of Argon2d, as it's vulnerable to some forms of side-channels. Prefer Argon2i or Argon2id
 
     -   Avoid: SHA-3, SHA-2, SHA-1, MD5
+    
 
 -   Browser Security (HTTPS):
 
@@ -10446,15 +10449,15 @@ Usually, integrity checks[^474] are done using hashes of files (usually stored w
 
 This is because they do not prevent Collision[^478] well enough and could allow an adversary to create a similar but malicious file that would still produce in the same CRC or MD5 hash despite having different content.
 
-For this reason, it is usually recommended to use SHA-based[^479] hashes and the most used is probably the SHA-2[^480] based SHA256 for verifying file integrity. SHA is much more resistant to collisions[^481] than CRC and MD5. And collisions with SHA256 or SHA512 are rare and hard to compute for an adversary.
+For this reason, it is usually recommended to use SHA-based[^479] hashes and the most used is probably the SHA-2[^480] based SHA-256 for verifying file integrity. SHA is much more resistant to collisions[^481] than CRC and MD5. And collisions with SHA-256 or SHA-512 are rare and hard to compute for an adversary.
 
-If a SHA256 checksum is available from the source of the file, you should not hesitate to use it to confirm the integrity of the file.
+If a SHA-256 checksum is available from the source of the file, you should not hesitate to use it to confirm the integrity of the file. *Note: SHA-1 *
 
 This checksum should itself be authenticated/trusted and should be available from an authenticated/trusted source (obviously you should not trust a file just because it has a checksum attached to it alone).
 
-In the case of this guide, the SHA256 checksums are available for each file including the PDFs but are also authenticated using a GPG signature allowing you to verify the authenticity of the checksum. This will bring us to the next section about authenticity.
+In the case of this guide, the SHA-256 checksums are available for each file including the PDFs but are also authenticated using a GPG signature allowing you to verify the authenticity of the checksum. This will bring us to the next section about authenticity.
 
-So how to check checksums? (In this case SHA256 but you could change to SHA512
+So how to check checksums? (In this case SHA-256 but you could change to SHA-512
 
 -   Windows[^482]:
 
