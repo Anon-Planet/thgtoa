@@ -10451,7 +10451,7 @@ This is because they do not prevent Collision[^478] well enough and could allow 
 
 For this reason, it is usually recommended to use SHA-based[^479] hashes and the most used is probably the SHA-2[^480] based SHA-256 for verifying file integrity. SHA is much more resistant to collisions[^481] than CRC and MD5. And collisions with SHA-256 or SHA-512 are rare and hard to compute for an adversary.
 
-If a SHA-256 checksum is available from the source of the file, you should not hesitate to use it to confirm the integrity of the file. *Note: SHA-1 *
+If a SHA-256 checksum is available from the source of the file, you should not hesitate to use it to confirm the integrity of the file. *Note: SHA-1 is not recommended.*
 
 This checksum should itself be authenticated/trusted and should be available from an authenticated/trusted source (obviously you should not trust a file just because it has a checksum attached to it alone).
 
