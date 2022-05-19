@@ -6483,6 +6483,19 @@ Legend:
 <td>No</td>
 <td>Hard</td>
 </tr>
+<tr class="even">
+<td><strong>Cwtch</strong></td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>Easy</td>
+</tr>
 </tbody>
 </table>
 
@@ -7022,6 +7035,14 @@ You are going to have to find a separate way to post there using at least seven 
 
 ![][450]
 
+#### Cwtch:
+
+-   Is this against their ToS? No
+
+-   Will they require a phone number? No, they require only display name and password.
+
+-   Can you post there with Tor or VPN? Yes, Tor can be used with or without a VPN.  It is all done through Tor.
+
 #### Crypto Wallets:
 
 Use any crypto wallet app within the Windows Virtual Machine. But be careful not to transfer anything toward an Exchange or a known Wallet. Crypto is in most cases NOT anonymous and can be traced back to you when you buy/sell any (remember the [Your Cryptocurrencies transactions][Your Cryptocurrencies transactions:] section).
@@ -7124,7 +7145,7 @@ This data can also be protected/obfuscated by some protocols to make metadata ha
 
 -   The Private Group System[^415].
 
-Other Apps like Briar or OnionShare will protect metadata by using the Tor Network as a shield and storing everything locally on-device. Nothing is stored remotely, and all communications are either direct using proximity wi-fi/Bluetooth or remotely through the Tor network.
+Other Apps like Briar, OnionShare and Cwtch will protect metadata by using the Tor Network as a shield and storing everything locally on-device. Nothing is stored remotely, and all communications are either direct using proximity wi-fi/Bluetooth or remotely through the Tor network.
 
 Most apps however and especially closed-source proprietary commercial apps will collect and retain your metadata for various purposes. And such metadata alone is enough to figure out a lot of things about your communications.
 
@@ -7206,8 +7227,8 @@ Below you will find a small table showing the state of messaging apps as of the 
 <td>No</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes (strong)</td>
-<td>Yes</td>
+<td>Yes (strong) <a href="#fn14" class="footnote-ref" id="fnref14" role="doc-noteref"><sup>14</sup></a></td>
+<td>Yes <a href="#fn13" class="footnote-ref" id="fnref13" role="doc-noteref"><sup>13</sup></a></td>
 <td>Good</td>
 <td>Yes</td>
 <td>Natively</td>
@@ -7584,6 +7605,8 @@ Below you will find a small table showing the state of messaging apps as of the 
 <li id="fn10" role="doc-endnote"><p>TechCrunch, Maybe we shouldn’t use Zoom after all, <a href="https://techcrunch.com/2020/03/31/zoom-at-your-own-risk/">https://techcrunch.com/2020/03/31/zoom-at-your-own-risk/</a> <a href="https://web.archive.org/web/https://techcrunch.com/2020/03/31/zoom-at-your-own-risk/"><sup>[Archive.org]</sup></a><a href="#fnref10" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn11" role="doc-endnote"><p>The Incercept, Zoom Meetings Aren’t End-to-End Encrypted, Despite Misleading Marketing <a href="https://theintercept.com/2020/03/31/zoom-meeting-encryption/">https://theintercept.com/2020/03/31/zoom-meeting-encryption/</a> <a href="https://27m3p2uv7igmj6kvd4ql3cct5h3sdwrsajovkkndeufumzyfhlfev4qd.onion/2020/03/31/zoom-meeting-encryption/"><sup>[Tor Mirror]</sup></a> <a href="https://web.archive.org/web/https://theintercept.com/2020/03/31/zoom-meeting-encryption/"><sup>[Archive.org]</sup></a><a href="#fnref11" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn12" role="doc-endnote"><p>Serpentsec, Secure Messaging: Choosing a chat app <a href="https://web.archive.org/web/https://serpentsec.1337.cx/secure-messaging-choosing-a-chat-app">https://web.archive.org/web/https://serpentsec.1337.cx/secure-messaging-choosing-a-chat-app</a><a href="#fnref12" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn13" role="doc-endnote"><p>Cwtch.im, Cwtch <a href="https://web.archive.org/web/https://cwtch.im/">https://web.archive.org/web/https://cwtch.im/</a><a href="#fnref13" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn14" role="doc-endnote"><p>Cwtch SecDev, Cwtch Secure Development Handbook <a href="https://web.archive.org/web/https://docs.openprivacy.ca/cwtch-security-handbook/overview.html">https://web.archive.org/web/https://docs.openprivacy.ca/cwtch-security-handbook/overview.html</a><a href="#fnref14" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
 
