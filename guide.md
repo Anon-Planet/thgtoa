@@ -2713,7 +2713,7 @@ While not supported yet by this guide, it is possible to achieve a form of denia
 
 -   Qubes Forum: <https://forum.qubes-os.org/t/qubes-os-installation-detached-encrypted-boot-and-header/6205> <sup>[[Archive.org]][1368]</sup>
 
-#### **I have only tested the above method myself. It isn't recommended for any person who doesn't know what they are doing. You could end up with a non-bootable system and lose critical data.**
+> **Warning**: **I have only tested the above method myself. It isn't recommended for any person who doesn't know what they are doing. You could end up with a non-bootable system and lose critical data.**
 
 ##### The Veracrypt Way:
 
