@@ -1501,7 +1501,7 @@ Here are some examples:
       -   Be skeptical of Argon2d, as it's vulnerable to some forms of side-channels. Prefer Argon2i or Argon2id
 
     -   Avoid: SHA-3, SHA-2, SHA-1, MD5
-    
+
 
 -   Browser Security (HTTPS):
 
@@ -2707,7 +2707,13 @@ There are several ways to achieve plausible deniability on Linux[^329] and it is
 
 ##### The Detached Headers Way:
 
-While not supported yet by this guide, it is possible to achieve a form of deniability on Linux using LUKS by using detached LUKS headers. For now, I will redirect you toward this page for more information: <https://wiki.archlinux.org/title/Dm-crypt/Specialties#Encrypted_system_using_a_detached_LUKS_header> <sup>[[Archive.org]][275]</sup>
+While not supported yet by this guide, it is possible to achieve a form of deniability on Linux using LUKS by using detached LUKS headers. For now, I will redirect you toward this page for more information: <https://wiki.archlinux.org/title/Dm-crypt/Specialties#Encrypted_system_using_a_detached_LUKS_header> <sup>[[Archive.org]][275]</sup>. Qubes OS uses LUKS for full disk encryption and it is technically possible to achieve a form of deniability by using detached LUKS headers. This is not yet integrated into this guide but you will find a couple tutorials on how to achieve this:
+
+-   Dread onion: <http://dreadytofatroptsdj6io7l3xptbet6onoyno2yv7jicoxknyazubrad.onion/post/af76301c21e1b4a33851>
+
+-   Qubes Forum: <https://forum.qubes-os.org/t/qubes-os-installation-detached-encrypted-boot-and-header/6205> <sup>[[Archive.org]][1368]</sup>
+
+#### **I have only tested the above method myself. It isn't recommended for any person who doesn't know what they are doing. You could end up with a non-bootable system and lose critical data.**
 
 ##### The Veracrypt Way:
 
@@ -4917,7 +4923,11 @@ See [Appendix O: Getting an anonymous VPN/Proxy]
 
 ### Note about Plausible Deniability:
 
-Qubes OS uses LUKS for full disk encryption and it is technically possible to achieve a form of deniability by using detached LUKS headers. This is not yet integrated into this guide but you will find a tutorial on how to achieve this here: <http://dreadytofatroptsdj6io7l3xptbet6onoyno2yv7jicoxknyazubrad.onion/post/af76301c21e1b4a33851> and some more background information within the Linux Host OS section (see [Note about plausible deniability on Linux]).
+Qubes OS uses LUKS for full disk encryption and it is technically possible to achieve a form of deniability by using detached LUKS headers. This is not yet integrated into this guide but you will find a couple tutorials on how to achieve this:
+
+-   Dread onion: <http://dreadytofatroptsdj6io7l3xptbet6onoyno2yv7jicoxknyazubrad.onion/post/af76301c21e1b4a33851>
+
+-   and on the Qubes forum: <https://forum.qubes-os.org/t/qubes-os-installation-detached-encrypted-boot-and-header/6205> **I have only tested this personally and it is not therefore recommended for any person that doesn't know what they are doing.**
 
 ### Installation:
 
@@ -14805,3 +14815,4 @@ You can find some introduction on these on these projects:
   [1365]: https://web.archive.org/web/https://github.com/psal/anonymouth
   [1366]: https://web.archive.org/web/https://psal.cs.drexel.edu/index.php/Main_Page
   [1367]: https://web.archive.org/web/20220511015546/https://www.qubes-os.org/security/verifying-signatures/
+  [1368]: https://web.archive.org/web/20220530102039/https://forum.qubes-os.org/t/qubes-os-installation-detached-encrypted-boot-and-header/6205
