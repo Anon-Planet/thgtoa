@@ -30,6 +30,7 @@ v1.1.4-pre1
 - Removal of https://privacyguides.org/providers/hosting/ (category removed from website)
 - Added a warning about the privacy redirect extension stating it might be abandoned/unmaintained
 - Added Anonymouth for linguistic antiforensics & related links
+- Ability to create plausible deniability using Qubes method and detached LUKS headers
 
 v1.1.3
 - Added dedicated section about gait recognition and other long-range biometric techniques
