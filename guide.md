@@ -6850,7 +6850,7 @@ Unfortunately, you will be extremely limited with that account and to do anythin
 
 -   Will they require a phone number? Maybe. This depends on the IP you are coming from. If you come from Tor, it is likely. From a VPN, it is less likely.
 
--   Can you create accounts through Tor? Yes, but highly likely that a phone number will be required when only an e-mail or a captcha will be required over a VPN. They even have a ".onion" address at <https://protonrmez3lotccipshtkleegetolb73fuirgj7r4o4vfu7ozyd.onion/>.
+-   Can you create accounts through Tor? Yes, but highly likely that a phone number will be required when only an e-mail or a captcha will be required over a VPN. They even have a ".onion" address at <https://protonmailrmez3lotccipshtkleegetolb73fuirgj7r4o4vfu7ozyd.onion/>.
 
 You obviously need an e-mail for your online identity and disposable e-mails are pretty much banned everywhere.
 
