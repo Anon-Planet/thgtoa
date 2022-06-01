@@ -874,7 +874,7 @@ Check yourself:
 
 -   If you are using Windows, you can check the vulnerability status of your CPU using inSpectre <https://www.grc.com/inspectre.htm> <sup>[[Archive.org]][81]</sup>
 
-Some of these can be avoided using Virtualization Software settings that can mitigate such exploits. See this guide for more information <https://www.whonix.org/wiki/Spectre_Meltdown> <sup>[[Archive.org]][82]</sup> (warning: these can severely impact the performance of your VMs).
+Some of these can be avoided using Virtualization Software settings that can mitigate such exploits. See this guide for more information <https://www.whonix.org/wiki/Spectre_Meltdown> <sup>[[Archive.org]][82]</sup> <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/Spectre_Meltdown"><sup>[Tor Mirror]</sup></a> (warning: these can severely impact the performance of your VMs).
 
 I will therefore mitigate some of these issues in this guide by recommending the use of virtual machines on a dedicated anonymous laptop for your sensitive activities that will only be used from an anonymous public network.
 
@@ -1310,7 +1310,7 @@ Many printers will print an invisible watermark allowing for identification of t
 
 Here is an (old but still relevant) list of printers and brands who do not print such tracking dots provided by the EFF <https://www.eff.org/pages/list-printers-which-do-or-do-not-display-tracking-dots> <sup>[[Archive.org]][139]</sup>
 
-Here are also some tips from the Whonix documentation (<https://www.whonix.org/wiki/Printing_and_Scanning> <sup>[[Archive.org]][140]</sup>):
+Here are also some tips from the Whonix documentation (<https://www.whonix.org/wiki/Printing_and_Scanning> <sup>[[Archive.org]][140]</sup>) <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/Printing_and_Scanning"><sup>[Tor Mirror]</sup></a>:
 
 **Do not ever print in Color, usually, watermarks are not present without color toners/cartridges**[^236]**.**
 
@@ -1501,7 +1501,7 @@ Here are some examples:
       -   Be skeptical of Argon2d, as it's vulnerable to some forms of side-channels. Prefer Argon2i or Argon2id
 
     -   Avoid: SHA-3, SHA-2, SHA-1, MD5
-    
+
 
 -   Browser Security (HTTPS):
 
@@ -1647,7 +1647,7 @@ Here is also a good video from the same authors to explain those topics: Black H
 
 ## Some bonus resources:
 
--   Have a look at the Whonix Documentation concerning Data Collection techniques here: <https://www.whonix.org/wiki/Data_Collection_Techniques> <sup>[[Archive.org]][196]</sup>
+-   Have a look at the Whonix Documentation concerning Data Collection techniques here: <https://www.whonix.org/wiki/Data_Collection_Techniques> <sup>[[Archive.org]][196]</sup> <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/Data_Collection_Techniques"><sup>[Tor Mirror]</sup></a>
 
 -   You might also enjoy looking at this service <https://tosdr.org/> <sup>[[Archive.org]][197]</sup> (Terms of Services, Didn't Read) that will give you a good overview of the various ToS of many services.
 
@@ -1879,11 +1879,11 @@ Now that you know what is possible, you should also consider threats and adversa
 
 In all cases, you should read these two pages from the Whonix documentation that will give you in-depth insight into your choices:
 
--   <https://www.whonix.org/wiki/Warning> <sup>[[Archive.org]][221]</sup>
+-   <https://www.whonix.org/wiki/Warning> <sup>[[Archive.org]][221]</sup> <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/Warning"><sup>[Tor Mirror]</sup></a>
 
--   <https://www.whonix.org/wiki/Dev/Threat_Model> <sup>[[Archive.org]][222]</sup>
+-   <https://www.whonix.org/wiki/Dev/Threat_Model> <sup>[[Archive.org]][222]</sup> <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/Dev/Threat_Model"><sup>[Tor Mirror]</sup></a>
 
--   <https://www.whonix.org/wiki/Comparison_with_Others> <sup>[[Archive.org]][223]</sup>
+-   <https://www.whonix.org/wiki/Comparison_with_Others> <sup>[[Archive.org]][223]</sup> <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/Comparison_with_Others"><sup>[Tor Mirror]</sup></a>
 
 You might be asking yourself: "How do I know if I'm in a hostile online environment where activities are actively monitored and blocked?"
 
@@ -2285,7 +2285,7 @@ In that case, as the project outlines it, there should be no traces of any of yo
 
 You might also wonder if this will result in a "Tor over Tor" setup, but it will not. The Whonix VMs will be accessing the network directly through clearnet and not through Tails Onion Routing.
 
-In the future, this could also be supported by the Whonix project themselves as explained here: <https://www.whonix.org/wiki/Whonix-Host> <sup>[[Archive.org]][247]</sup> but it is not yet recommended as of now for end-users.
+In the future, this could also be supported by the Whonix project themselves as explained here: <https://www.whonix.org/wiki/Whonix-Host> <sup>[[Archive.org]][247]</sup> <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/Whonix-Host"><sup>[Tor Mirror]</sup></a> but it is not yet recommended as of now for end-users.
 
 Remember that encryption with or without plausible deniability is not a silver bullet and will be of little use in case of torture. As a matter a fact, depending on who your adversary would be (your threat model), it might be wise not to use Veracrypt (formerly TrueCrypt) at all as shown in this demonstration: <https://defuse.ca/truecrypt-plausible-deniability-useless-by-game-theory.htm> <sup>[[Archive.org]][248]</sup>
 
@@ -2307,7 +2307,7 @@ Here is my guide on how to achieve this:
 
 -   Download the latest HiddenVM release from <https://github.com/aforensics/HiddenVM/releases> <sup>[[Archive.org]][251]</sup>
 
--   Download the latest Whonix XFCE release from <https://www.whonix.org/wiki/VirtualBox/XFCE> <sup>[[Archive.org]][252]</sup>
+-   Download the latest Whonix XFCE release from <https://www.whonix.org/wiki/VirtualBox/XFCE> <sup>[[Archive.org]][252]</sup> <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/VirtualBox/XFCE"><sup>[Tor Mirror]</sup></a>
 
 -   Prepare a USB Key/Drive with Veracrypt
 
@@ -2571,7 +2571,7 @@ The same measures used to mitigate Evil Maid attacks should be in place for Cold
 
 -   You should limit the use of Sleep stand-by and instead use Shutdown or Hibernate to prevent the encryption keys from staying in RAM when your computer goes to sleep. This is because sleep will maintain power in your memory for resuming your activity faster. Only hibernation and shutdown will actually clear the key from the memory[^324].
 
-See also <https://www.whonix.org/wiki/Cold_Boot_Attack_Defense> <sup>[[Archive.org]][262]</sup> and <https://www.whonix.org/wiki/Protection_Against_Physical_Attacks> <sup>[[Archive.org]][263]</sup>
+See also <https://www.whonix.org/wiki/Cold_Boot_Attack_Defense> <sup>[[Archive.org]][262]</sup> and <https://www.whonix.org/wiki/Protection_Against_Physical_Attacks> <sup>[[Archive.org]][263]</sup> <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/Protection_Against_Physical_Attacks"><sup>[Tor Mirror]</sup></a>
 
 Here are also some interesting tools to consider for Linux users to defend against these:
 
@@ -2667,7 +2667,7 @@ If you have no interest in OS-wide plausible deniability and want to learn to us
 
 **In all cases, the host OS should never be used to conduct sensitive activities directly. The host OS will only be used to connect to a public Wi-Fi Access Point. It will be left unused while you conduct sensitive activities and should ideally not be used for any of your day-to-day activities.**
 
-Consider also reading **<https://www.whonix.org/wiki/Full_Disk_Encryption#Encrypting_Whonix_VMs>** <sup>[[Archive.org]][271]</sup>
+Consider also reading **<https://www.whonix.org/wiki/Full_Disk_Encryption#Encrypting_Whonix_VMs>** <sup>[[Archive.org]][271]</sup> <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/Full_Disk_Encryption#Encrypting_Whonix_VMs"><sup>[Tor Mirror]</sup></a>
 
 ### Linux Host OS:
 
@@ -2781,7 +2781,7 @@ For more in-depth and advanced options, refer to:
 
     -   Kconfig-hardened-check: <https://github.com/a13xp0p0v/kconfig-hardened-check>
 
--   Consider the use of KickSecure when using Debian: <https://www.whonix.org/wiki/Kicksecure> <sup>[[Archive.org]][291]</sup>
+-   Consider the use of KickSecure when using Debian: <https://www.whonix.org/wiki/Kicksecure> <sup>[[Archive.org]][291]</sup> <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/Kicksecure"><sup>[Tor Mirror]</sup></a>
 
 -   This interesting article: <http://0pointer.net/blog/authenticated-boot-and-disk-encryption-on-linux.html> <sup>[[Archive.org]][292]</sup>
 
@@ -3469,7 +3469,8 @@ This step and the following steps should be done from within the Host OS. This c
 
 In this route, we will make extensive use of the free Oracle Virtualbox[^348] software. This is a virtualization software in which you can create Virtual Machines that emulate a computer running a specific OS (if you want to use something else like Xen, Qemu, KVM, or VMWARE, feel free to do so but this part of the guide covers Virtualbox only for convenience).
 
-So, you should be aware that Virtualbox is not the virtualization software with the best track record in terms of security and some of the reported issues[^349] have not been completely fixed to this date[^350] and if you are using Linux with a bit more technical skills, you should consider using KVM instead by following the guide available at Whonix here <https://www.whonix.org/wiki/KVM> <sup>[[Archive.org]][308]</sup> and here <https://www.whonix.org/wiki/KVM#Why_Use_KVM_Over_VirtualBox.3F> <sup>[[Archive.org]][309]</sup>
+So, you should be aware that Virtualbox is not the virtualization software with the best track record in terms of security and some of the reported issues[^349] have not been completely fixed to this date[^350] and if you are using Linux with a bit more technical skills, you should consider using KVM instead by following the guide available at Whonix here <https://www.whonix.org/wiki/KVM> <sup>[[Archive.org]][308]</sup> <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/KVM"><sup>[Tor Mirror]</sup></a>
+ and here <https://www.whonix.org/wiki/KVM#Why_Use_KVM_Over_VirtualBox.3F> <sup>[[Archive.org]][309]</sup> <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/KVM#Why_Use_KVM_Over_VirtualBox.3F"><sup>[Tor Mirror]</sup></a>
 
 Some steps should be taken in all cases:
 
@@ -3567,11 +3568,11 @@ Also, note that Stream Isolation does not necessarily change all the nodes in yo
 
 More information at:
 
--   <https://www.whonix.org/wiki/Stream_Isolation> <sup>[[Archive.org]][316]</sup>
+-   <https://www.whonix.org/wiki/Stream_Isolation> <sup>[[Archive.org]][316]</sup> <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/Stream_Isolation"><sup>[Tor Mirror]</sup></a>
 
 -   <https://tails.boum.org/contribute/design/stream_isolation/> <sup>[[Archive.org]][317]</sup>
 
--   <https://www.whonix.org/wiki/Tunnels/Introduction#Comparison_Table> <sup>[[Archive.org]][318]</sup>
+-   <https://www.whonix.org/wiki/Tunnels/Introduction#Comparison_Table> <sup>[[Archive.org]][318]</sup> <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/Tunnels/Introduction#Comparison_Table"><sup>[Tor Mirror]</sup></a>
 
 #### Tor over VPN:
 
@@ -3593,7 +3594,7 @@ You might be wondering: Well, what about using Tor over VPN instead of VPN over 
 
 Note, if you are having issues accessing the Tor Network due to blocking/censorship, you could try using Tor Bridges. See [Appendix X: Using Tor bridges in hostile environments].
 
-It is also possible to consider **VPN over Tor over VPN (User > VPN > Tor > VPN > Internet)** using two cash/Monero paid VPNs instead. This means that you will connect the Host OS to a first VPN from your Public Wi-Fi, then Whonix will connect to Tor, and finally, your VM will connect to a second VPN over Tor over VPN (see <https://www.whonix.org/wiki/Tunnels/Connecting_to_a_VPN_before_Tor> <sup>[[Archive.org]][319]</sup>).
+It is also possible to consider **VPN over Tor over VPN (User > VPN > Tor > VPN > Internet)** using two cash/Monero paid VPNs instead. This means that you will connect the Host OS to a first VPN from your Public Wi-Fi, then Whonix will connect to Tor, and finally, your VM will connect to a second VPN over Tor over VPN (see <https://www.whonix.org/wiki/Tunnels/Connecting_to_a_VPN_before_Tor> <sup>[[Archive.org]][319]</sup> <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/Tunnels/Connecting_to_a_VPN_before_Tor"><sup>[Tor Mirror]</sup></a>).
 
 This will of course have a significant performance impact and might be quite slow, but Tor is necessary somewhere for achieving reasonable anonymity.
 
@@ -3611,9 +3612,9 @@ Just using a VPN or even a VPN over VPN makes no sense as those can be traced ba
 
 For more info, please see the following references:
 
--   <https://www.whonix.org/wiki/Comparison_Of_Tor_with_CGI_Proxies,_Proxy_Chains,_and_VPN_Services#Tor_and_VPN_Services_Comparison> <sup>[[Archive.org]][320]</sup>
+-   <https://www.whonix.org/wiki/Comparison_Of_Tor_with_CGI_Proxies,_Proxy_Chains,_and_VPN_Services#Tor_and_VPN_Services_Comparison> <sup>[[Archive.org]][320]</sup> <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/Comparison_Of_Tor_with_CGI_Proxies,_Proxy_Chains,_and_VPN_Services#Tor_and_VPN_Services_Comparison"><sup>[Tor Mirror]</sup></a>
 
--   <https://www.whonix.org/wiki/Why_does_Whonix_use_Tor> <sup>[[Archive.org]][321]</sup>
+-   <https://www.whonix.org/wiki/Why_does_Whonix_use_Tor> <sup>[[Archive.org]][321]</sup> <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/Why_does_Whonix_use_Tor"><sup>[Tor Mirror]</sup></a>
 
 -   <https://www.researchgate.net/publication/324251041_Anonymity_communication_VPN_and_Tor_a_comparative_study> <sup>[[Archive.org]][322]</sup>
 
@@ -3670,11 +3671,11 @@ For more information, you can also see the discussions here that could help deci
 
 -   Whonix Documentation (in this order):
 
-    -   <https://www.whonix.org/wiki/Tunnels/Introduction> <sup>[[Archive.org]][328]</sup>
+    -   <https://www.whonix.org/wiki/Tunnels/Introduction> <sup>[[Archive.org]][328]</sup> <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/Tunnels/Introduction"><sup>[Tor Mirror]</sup></a>
 
-    -   <https://www.whonix.org/wiki/Tunnels/Connecting_to_Tor_before_a_VPN> <sup>[[Archive.org]][329]</sup>
+    -   <https://www.whonix.org/wiki/Tunnels/Connecting_to_Tor_before_a_VPN> <sup>[[Archive.org]][329]</sup> <sup>[[Archive.org]][328]</sup> <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/Tunnels/Connecting_to_Tor_before_a_VPN"><sup>[Tor Mirror]</sup></a>
 
-    -   <https://www.whonix.org/wiki/Tunnels/Connecting_to_a_VPN_before_Tor> <sup>[[Archive.org]][319]</sup>
+    -   <https://www.whonix.org/wiki/Tunnels/Connecting_to_a_VPN_before_Tor> <sup>[[Archive.org]][319]</sup> <sup>[[Archive.org]][328]</sup> <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/Tunnels/Connecting_to_a_VPN_before_Tor"><sup>[Tor Mirror]</sup></a>
 
 -   Some papers on the matter:
 
@@ -3724,13 +3725,13 @@ You should download a few things within the host OS:
 
 -   The latest version of the Virtualbox installer according to your Host OS <https://www.virtualbox.org/wiki/Downloads> <sup>[[Archive.org]][332]</sup>
 
--   (Skip this if you cannot use Tor natively or through a VPN) The latest Whonix OVA file from <https://www.whonix.org/wiki/Download> <sup>[[Archive.org]][333]</sup> according to your preference (Linux/Windows, with a Desktop interface XFCE for simplicity or only with the text-client for advanced users)
+-   (Skip this if you cannot use Tor natively or through a VPN) The latest Whonix OVA file from <https://www.whonix.org/wiki/Download> <sup>[[Archive.org]][333]</sup> <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/Download"><sup>[Tor Mirror]</sup></a> according to your preference (Linux/Windows, with a Desktop interface XFCE for simplicity or only with the text-client for advanced users)
 
 This will conclude the preparations and you should now be ready to start setting up the final environment that will protect your anonymity online.
 
 #### Virtualbox Hardening recommendations:
 
-For ideal security, you should follow the recommendations provided here for each Virtualbox Virtual Machine <https://www.whonix.org/wiki/Virtualization_Platform_Security#VirtualBox_Hardening> <sup>[[Archive.org]][334]</sup> :
+For ideal security, you should follow the recommendations provided here for each Virtualbox Virtual Machine <https://www.whonix.org/wiki/Virtualization_Platform_Security#VirtualBox_Hardening> <sup>[[Archive.org]][334]</sup> <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/Virtualization_Platform_Security#VirtualBox_Hardening"><sup>[Tor Mirror]</sup></a>:
 
 -   Disable Audio.
 
@@ -3756,7 +3757,7 @@ For ideal security, you should follow the recommendations provided here for each
 
 -   Disable the USB controller which is enabled by default. Set the Pointing Device to "PS/2 Mouse" or changes will revert.
 
-Finally, also follow this recommendation to desync the clock you are your VM compared to your host OS <https://www.whonix.org/wiki/Network_Time_Synchronization#Spoof_the_Initial_Virtual_Hardware_Clock_Offset> <sup>[[Archive.org]][335]</sup>
+Finally, also follow this recommendation to desync the clock you are your VM compared to your host OS <https://www.whonix.org/wiki/Network_Time_Synchronization#Spoof_the_Initial_Virtual_Hardware_Clock_Offset> <sup>[[Archive.org]][335]</sup> <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/Network_Time_Synchronization#Spoof_the_Initial_Virtual_Hardware_Clock_Offset"><sup>[Tor Mirror]</sup></a>
 
 This offset should be within a 60000-millisecond range and should be different for each VM and here are some examples (which can be later applied to any VM):
 
@@ -3768,7 +3769,7 @@ This offset should be within a 60000-millisecond range and should be different f
 
 -   ```VBoxManage modifyvm "Whonix-Workstation-XFCE" --biossystemtimeoffset +27931```
 
-Also, consider applying these mitigations from VirtualBox to mitigate Spectre[^356]/Meltdown[^357] vulnerabilities by running this command from the VirtualBox Program Directory. All of these are described here: <https://www.whonix.org/wiki/Spectre_Meltdown> <sup>[[Archive.org]][82]</sup> (be aware these can impact severely the performance of your VMs but should be done for best security).
+Also, consider applying these mitigations from VirtualBox to mitigate Spectre[^356]/Meltdown[^357] vulnerabilities by running this command from the VirtualBox Program Directory. All of these are described here: <https://www.whonix.org/wiki/Spectre_Meltdown> <sup>[[Archive.org]][82]</sup> <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/Spectre_Meltdown"><sup>[Tor Mirror]</sup></a> (be aware these can impact severely the performance of your VMs but should be done for best security).
 
 Finally, consider the security advice from Virtualbox themselves here <https://www.virtualbox.org/manual/ch13.html> <sup>[[Archive.org]][336]</sup>
 
@@ -3790,13 +3791,13 @@ See [Appendix R: Installing a VPN on your VM or Host OS][Appendix R: Installing 
 
 -   Start Virtualbox on your Host OS.
 
--   Import Whonix file Into Virtualbox following the instructions on <https://www.whonix.org/wiki/VirtualBox/XFCE> <sup>[[Archive.org]][252]</sup>
+-   Import Whonix file Into Virtualbox following the instructions on <https://www.whonix.org/wiki/VirtualBox/XFCE> <sup>[[Archive.org]][252]</sup> <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/VirtualBox/XFCE"><sup>[Tor Mirror]</sup></a>
 
 -   Start the Whonix VMs
 
-Remember at this stage that if you are having issues connecting to Tor due to censorship or blocking, you should consider connecting using Bridges as explained in this tutorial <https://www.whonix.org/wiki/Bridges> <sup>[[Archive.org]][337]</sup>.
+Remember at this stage that if you are having issues connecting to Tor due to censorship or blocking, you should consider connecting using Bridges as explained in this tutorial <https://www.whonix.org/wiki/Bridges> <sup>[[Archive.org]][337]</sup> <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/Bridges"><sup>[Tor Mirror]</sup></a>.
 
--   Update the Whonix VMs by following the instructions on <https://www.whonix.org/wiki/Operating_System_Software_and_Updates#Updates> <sup>[[Archive.org]][338]</sup>
+-   Update the Whonix VMs by following the instructions on <https://www.whonix.org/wiki/Operating_System_Software_and_Updates#Updates> <sup>[[Archive.org]][338]</sup> <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/Operating_System_Software_and_Updates#Updates"><sup>[Tor Mirror]</sup></a>
 
 -   Shutdown the Whonix VMs
 
@@ -3804,7 +3805,7 @@ Remember at this stage that if you are having issues connecting to Tor due to ce
 
 -   Go to the next step
 
-**Important Note: You should also read these very good recommendations over there <https://www.whonix.org/wiki/DoNot>** <sup>[[Archive.org]][339]</sup> **as most of those principles will also apply to this guide. You should also read their general documentation here <https://www.whonix.org/wiki/Documentation>** <sup>[[Archive.org]][340]</sup> **which will also provide tons of advice like this guide.**
+**Important Note: You should also read these very good recommendations over there <https://www.whonix.org/wiki/DoNot>** <sup>[[Archive.org]][339]</sup> <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/DoNot"><sup>[Tor Mirror]</sup></a> **as most of those principles will also apply to this guide. You should also read their general documentation here <https://www.whonix.org/wiki/Documentation>** <sup>[[Archive.org]][340]</sup> <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/Documentation"><sup>[Tor Mirror]</sup></a> **which will also provide tons of advice like this guide.**
 
 ### Pick your guest workstation Virtual Machine:
 
@@ -3828,23 +3829,23 @@ Just use the provided Whonix Workstation VM. **It is the safest and most secure 
 
 **It is also the only VM that will provide Stream Isolation pre-configured for most apps by default**[^358]**.**
 
-If you want additional software on the Workstation (such as another Browser), follow their guide here <https://www.whonix.org/wiki/Install_Software> <sup>[[Archive.org]][341]</sup>
+If you want additional software on the Workstation (such as another Browser), follow their guide here <https://www.whonix.org/wiki/Install_Software> <sup>[[Archive.org]][341]</sup> <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/Install_Software"><sup>[Tor Mirror]</sup></a>
 
-Consider running Whonix in Live Mode if for extra malware protection, See <https://www.whonix.org/wiki/Anti-Forensics_Precautions> <sup>[[Archive.org]][342]</sup>
+Consider running Whonix in Live Mode if for extra malware protection, See <https://www.whonix.org/wiki/Anti-Forensics_Precautions> <sup>[[Archive.org]][342]</sup> <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/Anti-Forensics_Precautions"><sup>[Tor Mirror]</sup></a>
 
 Do not forget to apply the VM hardening recommendations here: [Virtualbox Hardening recommendations].
 
-Consider using AppArmor on your Whonix Workstations by following this guide: <https://www.whonix.org/wiki/AppArmor> <sup>[[Archive.org]][343]</sup>
+Consider using AppArmor on your Whonix Workstations by following this guide: <https://www.whonix.org/wiki/AppArmor> <sup>[[Archive.org]][343]</sup> <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/AppArmor"><sup>[Tor Mirror]</sup></a>
 
 #### Linux (any distro):
 
-**Be careful, any customization you make to the non-Whonix guest VMs (keyboard layout, language, time zone, screen resolution, or other) could be used to fingerprint your VMs later. See <https://www.whonix.org/wiki/VM_Fingerprinting>** <sup>[[Archive.org]][344]</sup>
+**Be careful, any customization you make to the non-Whonix guest VMs (keyboard layout, language, time zone, screen resolution, or other) could be used to fingerprint your VMs later. See <https://www.whonix.org/wiki/VM_Fingerprinting>** <sup>[[Archive.org]][344]</sup> <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/VM_Fingerprinting"><sup>[Tor Mirror]</sup></a>
 
 ##### If you can use Tor (natively or over a VPN):
 
 Use the Linux Distro of your choice. I would recommend Ubuntu or Fedora for convenience but any other would work too. Be sure to not enable any telemetry.
 
-Refer to this tutorial <https://www.whonix.org/wiki/Other_Operating_Systems> <sup>[[Archive.org]][345]</sup> for detailed instructions.
+Refer to this tutorial <https://www.whonix.org/wiki/Other_Operating_Systems> <sup>[[Archive.org]][345]</sup> <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/Other_Operating_Systems"><sup>[Tor Mirror]</sup></a> for detailed instructions.
 
 Consider hardening the VM as recommended in [Hardening Linux].
 
@@ -3862,7 +3863,7 @@ See [Appendix V1: Hardening your Browsers][Appendix V1: Hardening your Browsers:
 
 ### Windows 10 Virtual Machine:
 
-**Be careful, any customization you make to the non-Whonix guest VMs (keyboard layout, language, time zone, screen resolution, or other) could be used to fingerprint your VMs later. See <https://www.whonix.org/wiki/VM_Fingerprinting>** <sup>[[Archive.org]][344]</sup>
+**Be careful, any customization you make to the non-Whonix guest VMs (keyboard layout, language, time zone, screen resolution, or other) could be used to fingerprint your VMs later. See <https://www.whonix.org/wiki/VM_Fingerprinting>** <sup>[[Archive.org]][344]</sup> <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/VM_Fingerprinting"><sup>[Tor Mirror]</sup></a>
 
 #### Windows 10 ISO download:
 
@@ -3872,7 +3873,7 @@ There is also another option you might hear about which is Windows AME (Ameliora
 
 #### If you can use Tor (natively or over a VPN):
 
-Refer to this tutorial <https://www.whonix.org/wiki/Other_Operating_Systems> <sup>[[Archive.org]][345]</sup> for detailed instructions.
+Refer to this tutorial <https://www.whonix.org/wiki/Other_Operating_Systems> <sup>[[Archive.org]][345]</sup> <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/Other_Operating_Systems"><sup>[Tor Mirror]</sup></a> for detailed instructions.
 
 ##### Install:
 
@@ -4008,7 +4009,7 @@ Two possibilities: AnBox or Android-x86
 
 ##### AnBox:
 
-Basically follow the tutorial here for installing AnBox on the Whonix Workstation: <https://www.whonix.org/wiki/Anbox> <sup>[[Archive.org]][347]</sup> for running Android Applications within an AnBox VM.
+Basically follow the tutorial here for installing AnBox on the Whonix Workstation: <https://www.whonix.org/wiki/Anbox> <sup>[[Archive.org]][347]</sup> <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/Anbox"><sup>[Tor Mirror]</sup></a> for running Android Applications within an AnBox VM.
 
 Or follow the instructions here <https://anbox.io/> to install on any other VM **(Linux Only)**
 
@@ -4140,7 +4141,7 @@ Here are the tutorials:
 
 -   Tails: KeePassXC is integrated by default
 
--   Whonix: <https://www.whonix.org/wiki/Keepassxc> <sup>[[Archive.org]][353]</sup>
+-   Whonix: <https://www.whonix.org/wiki/Keepassxc> <sup>[[Archive.org]][353]</sup> <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/Keepassxc"><sup>[Tor Mirror]</sup></a>
 
 -   Linux:
 
@@ -4798,11 +4799,11 @@ VPN/Proxy over Tor falls on the right-side[^365] meaning using a VPN/Proxy over 
 
 More information at:
 
--   <https://www.whonix.org/wiki/Stream_Isolation> <sup>[[Archive.org]][316]</sup>
+-   <https://www.whonix.org/wiki/Stream_Isolation> <sup>[[Archive.org]][316]</sup> <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/Stream_Isolation"><sup>[Tor Mirror]</sup></a>
 
 -   <https://tails.boum.org/contribute/design/stream_isolation/> <sup>[[Archive.org]][317]</sup>
 
--   <https://www.whonix.org/wiki/Tunnels/Introduction#Comparison_Table> <sup>[[Archive.org]][318]</sup>
+-   <https://www.whonix.org/wiki/Tunnels/Introduction#Comparison_Table> <sup>[[Archive.org]][318]</sup> <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/Tunnels/Introduction#Comparison_Table"><sup>[Tor Mirror]</sup></a>
 
 #### Tor over VPN:
 
@@ -4820,9 +4821,9 @@ You might be wondering: Well, what about using Tor over VPN instead of VPN over 
 
     -   This method also does not break Tor Stream isolation.
 
-Note, if you're having issues accessing the Tor Network due to blocking/censorship, you could try using Tor Bridges (see Tor Documentation <https://2019.www.torproject.org/docs/bridges> <sup>[[Archive.org]][244]</sup> and Whonix Documentation <https://www.whonix.org/wiki/Bridges> <sup>[[Archive.org]][337]</sup>).
+Note, if you're having issues accessing the Tor Network due to blocking/censorship, you could try using Tor Bridges (see Tor Documentation <https://2019.www.torproject.org/docs/bridges> <sup>[[Archive.org]][244]</sup> and Whonix Documentation <https://www.whonix.org/wiki/Bridges> <sup>[[Archive.org]][337]</sup> <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/Bridges"><sup>[Tor Mirror]</sup></a>).
 
-It is also possible to consider **VPN over Tor over VPN (User > VPN > Tor > VPN > Internet)** using two cash/Monero paid VPNs instead. This means that you will connect the Host OS to a first VPN from your Public Wi-Fi, then Whonix will connect to Tor, and finally, your VM will connect to a second VPN over Tor over VPN (see <https://www.whonix.org/wiki/Tunnels/Connecting_to_a_VPN_before_Tor> <sup>[[Archive.org]][319]</sup>).
+It is also possible to consider **VPN over Tor over VPN (User > VPN > Tor > VPN > Internet)** using two cash/Monero paid VPNs instead. This means that you will connect the Host OS to a first VPN from your Public Wi-Fi, then Whonix will connect to Tor, and finally, your VM will connect to a second VPN over Tor over VPN (see <https://www.whonix.org/wiki/Tunnels/Connecting_to_a_VPN_before_Tor> <sup>[[Archive.org]][319]</sup> <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/Tunnels/Connecting_to_a_VPN_before_Tor"><sup>[Tor Mirror]</sup></a>).
 
 This will of course have a significant performance impact and might be quite slow, but Tor is necessary somewhere for achieving reasonable anonymity.
 
@@ -4840,9 +4841,9 @@ Just using a VPN or even a VPN over VPN makes no sense as those can be traced ba
 
 For more info, please see the following references:
 
--   <https://www.whonix.org/wiki/Comparison_Of_Tor_with_CGI_Proxies,_Proxy_Chains,_and_VPN_Services#Tor_and_VPN_Services_Comparison> <sup>[[Archive.org]][320]</sup>
+-   <https://www.whonix.org/wiki/Comparison_Of_Tor_with_CGI_Proxies,_Proxy_Chains,_and_VPN_Services#Tor_and_VPN_Services_Comparison> <sup>[[Archive.org]][320]</sup> <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/Comparison_Of_Tor_with_CGI_Proxies,_Proxy_Chains,_and_VPN_Services#Tor_and_VPN_Services_Comparison"><sup>[Tor Mirror]</sup></a>
 
--   <https://www.whonix.org/wiki/Why_does_Whonix_use_Tor> <sup>[[Archive.org]][321]</sup>
+-   <https://www.whonix.org/wiki/Why_does_Whonix_use_Tor> <sup>[[Archive.org]][321]</sup> <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/Why_does_Whonix_use_Tor"><sup>[Tor Mirror]</sup></a>
 
 -   <https://www.researchgate.net/publication/324251041_Anonymity_communication_VPN_and_Tor_a_comparative_study> <sup>[[Archive.org]][322]</sup>
 
@@ -4899,11 +4900,11 @@ For more information, you can also see the discussions here that could help deci
 
 -   Whonix Documentation (in this order):
 
-    -   <https://www.whonix.org/wiki/Tunnels/Introduction> <sup>[[Archive.org]][328]</sup>
+    -   <https://www.whonix.org/wiki/Tunnels/Introduction> <sup>[[Archive.org]][328]</sup> <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/Tunnels/Introduction"><sup>[Tor Mirror]</sup></a>
 
-    -   <https://www.whonix.org/wiki/Tunnels/Connecting_to_Tor_before_a_VPN> <sup>[[Archive.org]][329]</sup>
+    -   <https://www.whonix.org/wiki/Tunnels/Connecting_to_Tor_before_a_VPN> <sup>[[Archive.org]][329]</sup> <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/Tunnels/Connecting_to_Tor_before_a_VPN"><sup>[Tor Mirror]</sup></a>
 
-    -   <https://www.whonix.org/wiki/Tunnels/Connecting_to_a_VPN_before_Tor> <sup>[[Archive.org]][319]</sup>
+    -   <https://www.whonix.org/wiki/Tunnels/Connecting_to_a_VPN_before_Tor> <sup>[[Archive.org]][319]</sup> <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/Tunnels/Connecting_to_a_VPN_before_Tor"><sup>[Tor Mirror]</sup></a>
 
 -   Some papers on the matter:
 
@@ -4933,7 +4934,7 @@ We will follow the instructions from their own guide <https://www.qubes-os.org/d
 
 -   Install Qubes OS according to the installation guide:
 
-    -   **If you want to use Tor or VPN over Tor: Check the** "**Enabling system and template updates over the Tor anonymity network using Whonix" during the last step. This will force all Qubes OS updates to go through Tor. While this will significantly reduce your update speed, it will increase your anonymity from the start.** (If you are having issues connecting to Tor due to censorship or blocking, consider using Tor Bridges as recommended earlier. Just follow the tutorial provided here: <https://www.whonix.org/wiki/Bridges> <sup>[[Archive.org]][337]</sup>)
+    -   **If you want to use Tor or VPN over Tor: Check the** "**Enabling system and template updates over the Tor anonymity network using Whonix" during the last step. This will force all Qubes OS updates to go through Tor. While this will significantly reduce your update speed, it will increase your anonymity from the start.** (If you are having issues connecting to Tor due to censorship or blocking, consider using Tor Bridges as recommended earlier. Just follow the tutorial provided here: <https://www.whonix.org/wiki/Bridges> <sup>[[Archive.org]][337]</sup> <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/Bridges"><sup>[Tor Mirror]</sup></a>)
 
     -   If you want to use Tor over VPN or cannot use any of those, leave it unchecked.
 
@@ -5005,7 +5006,7 @@ After you are connected to a Wi-Fi you need to update Qubes OS and Whonix. You m
 
 ### Updating Whonix from version 15 to version 16:
 
-Follow the instructions on <https://www.whonix.org/wiki/Qubes/Install> <sup>[[Archive.org]][371]</sup>. *If you're running Qubes 4.1, this is already done for you.*
+Follow the instructions on <https://www.whonix.org/wiki/Qubes/Install> <sup>[[Archive.org]][371]</sup> <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/Qubes/Install"><sup>[Tor Mirror]</sup></a>. *If you're running Qubes 4.1, this is already done for you.*
 
 ### Hardening Qubes OS:
 
@@ -5039,9 +5040,9 @@ Basically, AppArmor[^367] is an application sandboxing system. By default, it is
 
 -   About the Whonix VMs, you should consider enabling and using AppArmor, especially on the Whonix VMs of Qubes OS:
 
-    -   First, you should head out and read <https://www.whonix.org/wiki/AppArmor> <sup>[[Archive.org]][343]</sup>
+    -   First, you should head out and read <https://www.whonix.org/wiki/AppArmor> <sup>[[Archive.org]][343]</sup> <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/AppArmor"><sup>[Tor Mirror]</sup></a>
 
-    -   Secondly, you should head out again and read <https://www.whonix.org/wiki/Qubes/AppArmor> <sup>[[Archive.org]][374]</sup>
+    -   Secondly, you should head out again and read <https://www.whonix.org/wiki/Qubes/AppArmor> <sup>[[Archive.org]][374]</sup> <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/Qubes/AppArmor"><sup>[Tor Mirror]</sup></a>
 
 ##### SELinux:
 
@@ -5235,7 +5236,7 @@ Reconfigure your Whonix Gateway VM to use your ProxyVM as NetVM instead of sys-f
 
 -   Click OK
 
--   Create a Whonix Workstation Disposable VM (follow this tutorial <https://www.whonix.org/wiki/Qubes/DisposableVM> <sup>[[Archive.org]][383]</sup>)
+-   Create a Whonix Workstation Disposable VM (follow this tutorial <https://www.whonix.org/wiki/Qubes/DisposableVM> <sup>[[Archive.org]][383]</sup> <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/Qubes/DisposableVM"><sup>[Tor Mirror]</sup></a>)
 
 -   Launch a browser from the VM and Check that you have VPN connectivity, and it should work.
 
@@ -5313,7 +5314,7 @@ You should also consider hardening your browser, see
 
 #### Whonix Disposable VM:
 
-Edit the Whonix Disposable VM template and follow instructions here <https://www.whonix.org/wiki/Install_Software> <sup>[[Archive.org]][341]</sup>
+Edit the Whonix Disposable VM template and follow instructions here <https://www.whonix.org/wiki/Install_Software> <sup>[[Archive.org]][341]</sup> <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/Install_Software"><sup>[Tor Mirror]</sup></a>
 
 #### Additional browser precautions:
 
@@ -5325,7 +5326,7 @@ Edit the Whonix Disposable VM template and follow instructions here <https://www
 
 Because sometimes you want to run mobile Apps anonymously too. You can also set up an Android VM for this purpose. As in other cases, ideally, this VM will also be sitting behind the Whonix Gateway for Tor network connectivity. But this can also be set up as VPN over Tor over VPN.
 
-Since the Android-x86 does not work "well" with Qubes OS (my own experience). I will instead recommend using AnBox (<https://anbox.io/> <sup>[[Archive.org]][385]</sup>) which works "well enough" with Qubes OS. More information can also be found at <https://www.whonix.org/wiki/Anbox> <sup>[[Archive.org]][347]</sup>
+Since the Android-x86 does not work "well" with Qubes OS (my own experience). I will instead recommend using AnBox (<https://anbox.io/> <sup>[[Archive.org]][385]</sup>) which works "well enough" with Qubes OS. More information can also be found at <https://www.whonix.org/wiki/Anbox> <sup>[[Archive.org]][347]</sup> <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/Anbox"><sup>[Tor Mirror]</sup></a>
 
 #### If you can use Tor (natively or over a VPN):
 
@@ -5999,7 +6000,7 @@ This section will show you an overview of the current various requirements on so
 
 -   **Consider using the recommended tools on <https://privacyguides.org>** <sup>[[Archive.org]][417]</sup> **for better privacy instead of the usual mainstream ones.**
 
--   **Consider using the recommended tools on <https://www.whonix.org/wiki/Documentation>** <sup>[[Archive.org]][340]</sup> **as well instead of the usual mainstream ones such as E-mail providers: <https://www.whonix.org/wiki/E-Mail#Anonymity_Friendly_Email_Provider_List>** <sup>[[Archive.org]][418]</sup>
+-   **Consider using the recommended tools on <https://www.whonix.org/wiki/Documentation>** <sup>[[Archive.org]][340]</sup> <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/Documentation"><sup>[Tor Mirror]</sup></a> **as well instead of the usual mainstream ones such as E-mail providers: <https://www.whonix.org/wiki/E-Mail#Anonymity_Friendly_Email_Provider_List>** <sup>[[Archive.org]][418]</sup> <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/E-Mail#Anonymity_Friendly_Email_Provider_List"><sup>[Tor Mirror]</sup></a>
 
 **The following overview does not mention the privacy practices of those platforms but only their requirements for registering an account. If you want to use privacy-aware tools and platforms, head on to <https://privacyguides.org>** <sup>[[Archive.org]][44]</sup>**.**
 
@@ -7038,7 +7039,7 @@ There are only three ways of securely using those anonymously (that I would reco
 
     -   Android-x86 on Virtualbox (see <https://www.android-x86.org/documentation/virtualbox.html> <sup>[[Archive.org]][348]</sup>) that you can also set up easily.
 
-    -   AnBox (<https://anbox.io> <sup>[[Archive.org]][385]</sup>) that you can also set up rather easily including on the Whonix Workstation, see <https://www.whonix.org/wiki/Anbox> <sup>[[Archive.org]][347]</sup>
+    -   AnBox (<https://anbox.io> <sup>[[Archive.org]][385]</sup>) that you can also set up rather easily including on the Whonix Workstation, see <https://www.whonix.org/wiki/Anbox> <sup>[[Archive.org]][347]</sup> <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/Anbox"><sup>[Tor Mirror]</sup></a>
 
 -   **Not recommended:** Using a non-official app (such as Wassapp for WhatsApp) to connect from the Windows VM to the app. Use at your own risk as you could get banned for violating the terms of services by using a non-official App.
 
@@ -7146,7 +7147,7 @@ Below you will find a small table showing the state of messaging apps as of the 
 
 -   ProtonMail Blog, <https://protonmail.com/blog/whatsapp-alternatives/> <sup>[[Archive.org]][458]</sup>
 
--   Whonix Documentation, Instant Messenger Chat <https://www.whonix.org/wiki/Chat> <sup>[[Archive.org]][459]</sup>
+-   Whonix Documentation, Instant Messenger Chat <https://www.whonix.org/wiki/Chat> <sup>[[Archive.org]][459]</sup> <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/Chat"><sup>[Tor Mirror]</sup></a>
 
 -   Have a look at <https://securechatguide.org/featuresmatrix.html> <sup>[[Archive.org]][460]</sup> which is also a good comparison table for messaging apps.
 
@@ -8612,7 +8613,7 @@ I am not aware of any 100% reliable method to delete single files selectively an
 
 In addition, most of these measures here should not be needed since your whole drive should be encrypted and therefore your data should not be accessible for forensic analysis through SSD/HDD examination anyway. So, these are just "bonus measures" for weak/unskilled adversaries.
 
-Consider also reading this documentation if you're going with Whonix <https://www.whonix.org/wiki/Anti-Forensics_Precautions> <sup>[[Archive.org]][342]</sup> as well as their general hardening tutorial for all platforms here <https://www.whonix.org/wiki/System_Hardening_Checklist> <sup>[[Archive.org]][509]</sup>
+Consider also reading this documentation if you're going with Whonix <https://www.whonix.org/wiki/Anti-Forensics_Precautions> <sup>[[Archive.org]][342]</sup> <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/Anti-Forensics_Precautions"><sup>[Tor Mirror]</sup></a> as well as their general hardening tutorial for all platforms here <https://www.whonix.org/wiki/System_Hardening_Checklist> <sup>[[Archive.org]][509]</sup> <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/System_Hardening_Checklist"><sup>[Tor Mirror]</sup></a>
 
 ### Removing Metadata from Files/Documents/Pictures:
 
@@ -8748,7 +8749,7 @@ Tails is great for this; you have nothing to worry about even if you use an SSD 
 
 ### Whonix:
 
-Note that it's possible to run Whonix in Live mode leaving no traces when you shut down the VMs, consider reading their documentation here <https://www.whonix.org/wiki/VM_Live_Mode> <sup>[[Archive.org]][521]</sup> and here <https://www.whonix.org/wiki/Warning#Whonix_.E2.84.A2_Persistence_vs_Live_vs_Amnesic> <sup>[[Archive.org]][221]</sup>.
+Note that it's possible to run Whonix in Live mode leaving no traces when you shut down the VMs, consider reading their documentation here <https://www.whonix.org/wiki/VM_Live_Mode> <sup>[[Archive.org]][521]</sup> <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/VM_Live_Mode"><sup>[Tor Mirror]</sup></a> and here <https://www.whonix.org/wiki/Warning#Whonix_.E2.84.A2_Persistence_vs_Live_vs_Amnesic> <sup>[[Archive.org]][221]</sup> <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/Warning#Whonix_.E2.84.A2_Persistence_vs_Live_vs_Amnesic"><sup>[Tor Mirror]</sup></a>.
 
 ### macOS:
 
@@ -8839,11 +8840,11 @@ Please consider their guidelines <https://github.com/Qubes-Community/Contents/bl
 
 If you are using Whonix on Qubes OS, please consider following some of their guides:
 
--   Whonix System Hardening guide <https://www.whonix.org/wiki/System_Hardening_Checklist> <sup>[[Archive.org]][509]</sup>
+-   Whonix System Hardening guide <https://www.whonix.org/wiki/System_Hardening_Checklist> <sup>[[Archive.org]][509]</sup> <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/System_Hardening_Checklist"><sup>[Tor Mirror]</sup></a>
 
--   Enabling App Armor on Qubes <https://www.whonix.org/wiki/Qubes/AppArmor> <sup>[[Archive.org]][374]</sup>
+-   Enabling App Armor on Qubes <https://www.whonix.org/wiki/Qubes/AppArmor> <sup>[[Archive.org]][374]</sup> <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/Qubes/AppArmor"><sup>[Tor Mirror]</sup></a>
 
--   Also, consider the use of Linux Kernel Guard <https://www.whonix.org/wiki/Linux_Kernel_Runtime_Guard_LKRG> <sup>[[Archive.org]][524]</sup>
+-   Also, consider the use of Linux Kernel Guard <https://www.whonix.org/wiki/Linux_Kernel_Runtime_Guard_LKRG> <sup>[[Archive.org]][524]</sup> <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/Linux_Kernel_Runtime_Guard_LKRG"><sup>[Tor Mirror]</sup></a>
 
 ### Linux (non-Qubes):
 
@@ -8859,7 +8860,7 @@ Nevertheless, you might want to clean some logs. Consider having a look this con
 
 After cleaning up, make sure you have the fstrim utility installed (should be by default on Fedora) and part of the ```util-linux``` package on Debian/Ubuntu. Then just run ```fstrim --all``` on the Host OS. This should be sufficient on SSD drives as explained earlier.
 
-Consider the use of Linux Kernel Guard as an added measure <https://www.whonix.org/wiki/Linux_Kernel_Runtime_Guard_LKRG> <sup>[[Archive.org]][524]</sup>
+Consider the use of Linux Kernel Guard as an added measure <https://www.whonix.org/wiki/Linux_Kernel_Runtime_Guard_LKRG> <sup>[[Archive.org]][524]</sup> <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/Linux_Kernel_Runtime_Guard_LKRG"><sup>[Tor Mirror]</sup></a>
 
 ### Windows:
 
@@ -9227,7 +9228,7 @@ OPSEC is often just applying common sense and being cautious about your activiti
 
 -   Know and always have at your disposal the details of a lawyer that could help you as a last resort in case things go wrong.
 
--   Read those tips here <https://www.whonix.org/wiki/DoNot> <sup>[[Archive.org]][339]</sup>
+-   Read those tips here <https://www.whonix.org/wiki/DoNot> <sup>[[Archive.org]][339]</sup> <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/DoNot"><sup>[Tor Mirror]</sup></a>
 
 -   **Finally, have common sense, do not be dumb, look and learn from others' mistakes, watch/read these:**
 
@@ -10343,7 +10344,7 @@ Ideally, this should "not be an issue" since this guide provides multiple ways o
 
 Download the VPN client installer of your cash paid VPN service and install it on Host OS (Tor over VPN, VPN over Tor over VPN) or the VM of your choice (VPN over Tor):
 
--   Whonix Tutorial (should work with any VPN provider): <https://www.whonix.org/wiki/Tunnels/Connecting_to_a_VPN_before_Tor> <sup>[[Archive.org]][319]</sup> (use the Linux configurations below to get the necessary configuration files)
+-   Whonix Tutorial (should work with any VPN provider): <https://www.whonix.org/wiki/Tunnels/Connecting_to_a_VPN_before_Tor> <sup>[[Archive.org]][319]</sup> <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/Tunnels/Connecting_to_a_VPN_before_Tor"><sup>[Tor Mirror]</sup></a> (use the Linux configurations below to get the necessary configuration files)
 
 -   Windows Tutorials:
 
@@ -10547,7 +10548,7 @@ For some other tutorials, please see:
 
 -   <https://tails.boum.org/install/vm/index.en.html> <sup>[[Archive.org]][662]</sup> (See Basic OpenPGP verification).
 
--   <https://www.whonix.org/wiki/Verify_the_Whonix_images> <sup>[[Archive.org]][663]</sup>
+-   <https://www.whonix.org/wiki/Verify_the_Whonix_images> <sup>[[Archive.org]][663]</sup> <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/Verify_the_Whonix_images"><sup>[Tor Mirror]</sup></a>
 
 All these guides should also apply to any other file with any other key.
 
@@ -11416,7 +11417,7 @@ Each Virtual Machine is a sandbox. Remember the reasons for using them are to pr
 
 In some environments, your ISPs might be trying to prevent you from accessing Tor. Or accessing Tor openly might be a safety risk.
 
-In those cases, it might be necessary to use Tor bridges to connect to the Tor network (see Tor Documentation <https://2019.www.torproject.org/docs/bridges> <sup>[[Archive.org]][244]</sup> and Whonix Documentation <https://www.whonix.org/wiki/Bridges> <sup>[[Archive.org]][337]</sup>).
+In those cases, it might be necessary to use Tor bridges to connect to the Tor network (see Tor Documentation <https://2019.www.torproject.org/docs/bridges> <sup>[[Archive.org]][244]</sup> and Whonix Documentation <https://www.whonix.org/wiki/Bridges> <sup>[[Archive.org]][337]</sup> <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/Bridges"><sup>[Tor Mirror]</sup></a>).
 
 Bridges are special Tor entry nodes that are not listed on the Tor public directory. Some of those are running on people running the Snowflake Browser extension[^520] while others are running on various servers around the world. Most of those bridges are running some type of obfuscation method called obfs4[^521].
 
@@ -11826,7 +11827,7 @@ You might also consider the use of something like AnonyMouth <https://web.archiv
 
 ## Bonus links:
 
--   <https://www.whonix.org/wiki/Surfing_Posting_Blogging#Stylometry> <sup>[[Archive.org]][702]</sup>: Whonix documentation about stylometry.
+-   <https://www.whonix.org/wiki/Surfing_Posting_Blogging#Stylometry> <sup>[[Archive.org]][702]</sup> <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/Surfing_Posting_Blogging#Stylometry"><sup>[Tor Mirror]</sup></a>: Whonix documentation about stylometry.
 
 -   <https://wikipedia.org/wiki/Forensic_linguistics> <sup>[[Wikiless]][703]</sup> <sup>[[Archive.org]][704]</sup>: Gives a brief rundown of the basics of forensic linguistics, not too informative.
 
@@ -12032,7 +12033,7 @@ Here is a checklist of things to verify before sharing information to anyone:
 
 -   Check any writing for possible forensics analysis: see [Appendix A4: Counteracting Forensic Linguistics]
 
--   Have a look at this part of the Whonix documentation: <https://www.whonix.org/wiki/Surfing_Posting_Blogging#Anonymous_File_Sharing> <sup>[[Archive.org]][735]</sup>
+-   Have a look at this part of the Whonix documentation: <https://www.whonix.org/wiki/Surfing_Posting_Blogging#Anonymous_File_Sharing> <sup>[[Archive.org]][735]</sup> <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/Surfing_Posting_Blogging#Anonymous_File_Sharing"><sup>[Tor Mirror]</sup></a>
 
 -   Carefully assess the potential consequences and risks of communicating any sensitive information for you and others (legally, ethically, and morally). Remember ... Do not be evil. Legal is not necessarily Good.
 
@@ -12116,7 +12117,7 @@ You can find some introduction on these on these projects:
 
 [^18]: Tor Project, Who Uses Tor <https://2019.www.torproject.org/about/torusers.html.en> <sup>[[Archive.org]][769]</sup>
 
-[^19]: Whonix Documentation, The importance of Anonymity <https://www.whonix.org/wiki/Anonymity> <sup>[[Archive.org]][770]</sup>
+[^19]: Whonix Documentation, The importance of Anonymity <https://www.whonix.org/wiki/Anonymity> <sup>[[Archive.org]][770]</sup> <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/Anonymity"><sup>[Tor Mirror]</sup></a>
 
 [^20]: Geek Feminism <https://geekfeminism.wikia.org/wiki/Who_is_harmed_by_a_%22Real_Names%22_policy%3F> <sup>[[Archive.org]][771]</sup>
 
@@ -12778,11 +12779,11 @@ You can find some introduction on these on these projects:
 
 [^349]: VirtualBox Ticket 17987 <https://www.virtualbox.org/ticket/17987> <sup>[[Archive.org]][1155]</sup>
 
-[^350]: Whonix Documentation, Spectre Meltdown <https://www.whonix.org/wiki/Spectre_Meltdown#VirtualBox> <sup>[[Archive.org]][82]</sup>
+[^350]: Whonix Documentation, Spectre Meltdown <https://www.whonix.org/wiki/Spectre_Meltdown#VirtualBox> <sup>[[Archive.org]][82]</sup> <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/Spectre_Meltdown#VirtualBox"><sup>[Tor Mirror]</sup></a>
 
-[^351]: Whonix Documentation, Stream Isolation <https://www.whonix.org/wiki/Stream_Isolation> <sup>[[Archive.org]][316]</sup>
+[^351]: Whonix Documentation, Stream Isolation <https://www.whonix.org/wiki/Stream_Isolation> <sup>[[Archive.org]][316]</sup> <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/Stream_Isolation"><sup>[Tor Mirror]</sup></a>
 
-[^352]: Whonix Documentation, Tunnels Comparison Table <https://www.whonix.org/wiki/Tunnels/Introduction#Comparison_Table> <sup>[[Archive.org]][318]</sup>
+[^352]: Whonix Documentation, Tunnels Comparison Table <https://www.whonix.org/wiki/Tunnels/Introduction#Comparison_Table> <sup>[[Archive.org]][318]</sup> <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/Tunnels/Introduction#Comparison_Table"><sup>[Tor Mirror]</sup></a>
 
 [^353]: Wikipedia, Whonix <https://en.wikipedia.org/wiki/Whonix> <sup>[[Wikiless]][1156]</sup> <sup>[[Archive.org]][1157]</sup>
 
@@ -12794,21 +12795,21 @@ You can find some introduction on these on these projects:
 
 [^357]: Wikipedia, Meltdown <https://en.wikipedia.org/wiki/Meltdown_(security_vulnerability)> <sup>[[Wikiless]][1161]</sup> <sup>[[Archive.org]][1162]</sup>
 
-[^358]: Whonix Documentation, Stream Isolation, By Settings <https://www.whonix.org/wiki/Stream_Isolation#By_Settings> <sup>[[Archive.org]][1163]</sup>
+[^358]: Whonix Documentation, Stream Isolation, By Settings <https://www.whonix.org/wiki/Stream_Isolation#By_Settings> <sup>[[Archive.org]][1163]</sup> <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/Stream_Isolation#By_Settings"><sup>[Tor Mirror]</sup></a>
 
 [^359]: Wikipedia, TOTP <https://en.wikipedia.org/wiki/Time-based_One-time_Password_algorithm> <sup>[[Wikiless]][1164]</sup> <sup>[[Archive.org]][1165]</sup>
 
 [^360]: Wikipedia, Multi-Factor Authentication <https://en.wikipedia.org/wiki/Multi-factor_authentication> <sup>[[Wikiless]][1166]</sup> <sup>[[Archive.org]][1167]</sup>
 
-[^361]: Whonix Documentation, Bridged Adapters Warning <https://www.whonix.org/wiki/Whonix-Gateway_Security#Warning:_Bridged_Networking> <sup>[[Archive.org]][1168]</sup>
+[^361]: Whonix Documentation, Bridged Adapters Warning <https://www.whonix.org/wiki/Whonix-Gateway_Security#Warning:_Bridged_Networking> <sup>[[Archive.org]][1168]</sup> <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/Whonix-Gateway_Security#Warning:_Bridged_Networking"><sup>[Tor Mirror]</sup></a>
 
 [^362]: Qubes OS, FAQ, <https://www.qubes-os.org/faq/#is-qubes-just-another-linux-distribution> <sup>[[Archive.org]][1169]</sup>
 
 [^363]: Qubes OS, System Requirements <https://www.qubes-os.org/doc/system-requirements/> <sup>[[Archive.org]][1170]</sup>
 
-[^364]: Whonix Documentation, Stream Isolation <https://www.whonix.org/wiki/Stream_Isolation> <sup>[[Archive.org]][316]</sup>
+[^364]: Whonix Documentation, Stream Isolation <https://www.whonix.org/wiki/Stream_Isolation> <sup>[[Archive.org]][316]</sup> <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/Stream_Isolation"><sup>[Tor Mirror]</sup></a>
 
-[^365]: Whonix Documentation, Tunnels Comparison Table <https://www.whonix.org/wiki/Tunnels/Introduction#Comparison_Table> <sup>[[Archive.org]][318]</sup>
+[^365]: Whonix Documentation, Tunnels Comparison Table <https://www.whonix.org/wiki/Tunnels/Introduction#Comparison_Table> <sup>[[Archive.org]][318]</sup> <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/Tunnels/Introduction#Comparison_Table"><sup>[Tor Mirror]</sup></a>
 
 [^366]: Qubes OS Issues, Simulate Hibernation / Suspend-To-Disk (Issue #2414) <https://github.com/QubesOS/qubes-issues/issues/2414> <sup>[[Archive.org]][1171]</sup>
 
@@ -12870,7 +12871,7 @@ You can find some introduction on these on these projects:
 
 [^395]: Wikipedia, Sim Swapping <https://en.wikipedia.org/wiki/SIM_swap_scam> <sup>[[Wikiless]][1205]</sup> <sup>[[Archive.org]][1206]</sup>
 
-[^396]: Whonix Documentation, Tor Configuration <https://www.whonix.org/wiki/Tor#Edit_Tor_Configuration> <sup>[[Archive.org]][1207]</sup>
+[^396]: Whonix Documentation, Tor Configuration <https://www.whonix.org/wiki/Tor#Edit_Tor_Configuration> <sup>[[Archive.org]][1207]</sup> <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/Tor#Edit_Tor_Configuration"><sup>[Tor Mirror]</sup></a>
 
 [^397]: Tor Browser Documentation, Editing Torrc <https://support.torproject.org/tbb/tbb-editing-torrc/> <sup>[[Archive.org]][1208]</sup>
 
@@ -12970,7 +12971,7 @@ You can find some introduction on these on these projects:
 
 [^445]: Privacyguides.org, Productivity tools <https://privacyguides.org/productivity/> <sup>[[Archive.org]][1261]</sup>
 
-[^446]: Whonix Documentation, Scrubbing Metadata <https://www.whonix.org/wiki/Metadata> <sup>[[Archive.org]][1262]</sup>
+[^446]: Whonix Documentation, Scrubbing Metadata <https://www.whonix.org/wiki/Metadata> <sup>[[Archive.org]][1262]</sup> <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/Metadata"><sup>[Tor Mirror]</sup></a>
 
 [^447]: Tails documentation, MAT <https://gitlab.tails.boum.org/tails/blueprints/-/wikis/doc/mat/> <sup>[[Archive.org]][1263]</sup>
 
@@ -13052,9 +13053,9 @@ You can find some introduction on these on these projects:
 
 [^486]: Wikipedia, Polymorphic Code <https://en.wikipedia.org/wiki/Polymorphic_code> <sup>[[Wikiless]][1318]</sup> <sup>[[Archive.org]][1319]</sup>
 
-[^487]: Whonix Documentation, Use of AV, <https://www.whonix.org/wiki/Malware_and_Firmware_Trojans#The_Utility_of_Antivirus_Tools> <sup>[[Archive.org]][1320]</sup>
+[^487]: Whonix Documentation, Use of AV, <https://www.whonix.org/wiki/Malware_and_Firmware_Trojans#The_Utility_of_Antivirus_Tools> <sup>[[Archive.org]][1320]</sup> <a href="http://dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/wiki/Malware_and_Firmware_Trojans#The_Utility_of_Antivirus_Tools"><sup>[Tor Mirror]</sup></a>
 
-[^488]: Whonix Forums, <https://forums.whonix.org/t/installation-of-antivirus-scanners-by-default/9755/8> <sup>[[Archive.org]][1321]</sup>
+[^488]: Whonix Forums, <https://forums.whonix.org/t/installation-of-antivirus-scanners-by-default/9755/8> <sup>[[Archive.org]][1321]</sup> <a href="http://forums.dds6qkxpwdeubwucdiaord2xgbbeyds25rbsgr73tbfpqpt4a6vjwsyd.onion/t/installation-of-antivirus-scanners-by-default/9755/8"><sup>[Tor Mirror]</sup></a>
 
 [^489]: AV-Test Security Report 2018-2019, <https://www.av-test.org/fileadmin/pdf/security_report/AV-TEST_Security_Report_2018-2019.pdf> <sup>[[Archive.org]][1322]</sup>
 
