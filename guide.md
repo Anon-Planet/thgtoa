@@ -5509,7 +5509,7 @@ It is possible that those services (Proton for instance) might require you to pr
 
 -   Envs.net: <https://envs.net/>
 
-Keep in mind that those do not provide a zero-access design (meaning they can access your e-mail at rest in their database) where only you can access your e-mail.
+Keep in mind that those do not provide a zero-access design (a zero-access design is where only you can access your e-mail - not even the service's admins can read your messages). This means they can access your e-mail at rest in their database.
 
 
 #### A note about Riseup:
