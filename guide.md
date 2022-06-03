@@ -5509,8 +5509,6 @@ It is possible that those services (ProtonMail for instance) might require you t
 
 -   Envs.net: <https://envs.net/>
 
--   CTemplar: <https://ctemplar.com> (unfortunately also requires invitation)
-
 Keep in mind that those do not provide a zero-access design (meaning they can access your e-mail at rest in their database) where only you can access your e-mail.
 
 
