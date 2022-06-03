@@ -1543,7 +1543,7 @@ Many people have the idea that privacy-oriented services such as VPN or E-Mail p
 
 Any of those providers can be forced to silently (without your knowing (using for example a court order with a gag order[^272] or a national security letter[^273]) log your activity to de-anonymize you. There have been several recent examples of those:
 
--   2021, ProtonMail, ProtonMail logged IP address of French activist after an order by Swiss authorities[^274].
+-   2021, Proton, Proton logged IP address of French activist after an order by Swiss authorities[^274].
 
 -   2021, WindScribe, Servers were not encrypted as they should have been allowing MITM attacks by authorities[^275].
 
@@ -4184,7 +4184,7 @@ You might be asking yourself if those VPN clients are trustworthy not to leak an
 
 This is a valid concern but should be taken with a grain of salt.
 
-Remember that all VPN activities are happening from a sandboxed VM on an internal network behind a Network Gateway (the Whonix Gateway). It does not matter much if the VPN client leaves some identifiers on your guest VM. The guest VM is still sandboxed and walled-off from the Host OS. The attack surface is IMHO pretty small especially when using the reputable and recommended VPN providers within the guides (iVPN, Mullvad, ProtonVPN, and maybe Safing.io).
+Remember that all VPN activities are happening from a sandboxed VM on an internal network behind a Network Gateway (the Whonix Gateway). It does not matter much if the VPN client leaves some identifiers on your guest VM. The guest VM is still sandboxed and walled-off from the Host OS. The attack surface is IMHO pretty small especially when using the reputable and recommended VPN providers within the guides (iVPN, Mullvad, Proton VPN, and maybe Safing.io).
 
 At best, the VPN client would know your local IP (internal IP) and some randomized identifiers but should not be able to get anything from the Host OS. And in theory, the VPN client should not send any telemetry back to the VPN provider. If your VPN client does this or asks this, you should consider changing the provider.
 
@@ -5069,7 +5069,7 @@ You could make use of SELinux on your Fedora Templates. But this is up to you. A
 
 **Skip this step if you do not want to use a VPN and just use Tor only or if VPN is not an option either.**
 
-This tutorial should also work with any OpenVPN provider (Mullvad, IVPN, Safing.io, or ProtonVPN for instance).
+This tutorial should also work with any OpenVPN provider (Mullvad, IVPN, Safing.io, or Proton VPN for instance).
 
 This is based on the tutorial provided by Qubes OS themselves (<https://github.com/Qubes-Community/Contents/blob/master/docs/configuration/vpn.md> <sup>[[Archive.org]][377]</sup>). If you are familiar with this process, you can follow their tutorial. Here is mine:
 
@@ -5207,7 +5207,7 @@ When you are done downloading the configuration files within the Disposable Brow
 
     -   IVPN: <https://www.ivpn.net/> <sup>[[Archive.org]][381]</sup> (check the top banner)
 
-    -   ProtonVPN: Follow their instructions here <https://protonvpn.com/support/vpn-ip-change/> <sup>[[Archive.org]][382]</sup>
+    -   Proton VPN: Follow their instructions here <https://protonvpn.com/support/vpn-ip-change/> <sup>[[Archive.org]][382]</sup>
 
 #### VPN over Tor:
 
@@ -5497,7 +5497,7 @@ To not have those issues, you should consider using a VPN over Tor. And the best
 
 Phone verification is advertised by most platforms to verify you are human. But do not be fooled, the main reason for phone verification is not only to check if you are human but also to be able to de-anonymize you if needed.
 
-Most platforms (including the privacy-oriented ones such as Signal/Telegram/ProtonMail will require a phone number to register, and most countries now make it mandatory to submit a proof of ID to register[^381].
+Most platforms (including the privacy-oriented ones such as Signal/Telegram/Proton will require a phone number to register, and most countries now make it mandatory to submit a proof of ID to register[^381].
 
 Fortunately, this guide explained earlier how to get a number for these cases: [Getting an anonymous Phone number][Getting an anonymous Phone number:].
 
@@ -5509,7 +5509,7 @@ Most platforms will not allow you to register using an "anonymous" or disposable
 
 The key thing to this is that it is becoming increasingly difficult to sign-up for a free e-mail account anywhere without providing (you guessed it) ... a cell phone number. That same cell phone number can be used conveniently to track you down in most places.
 
-It is possible that those services (ProtonMail for instance) might require you to provide an e-mail address for registration. In that case, I would recommend you create an e-mail address from these providers:
+It is possible that those services (Proton for instance) might require you to provide an e-mail address for registration. In that case, I would recommend you create an e-mail address from these providers:
 
 -   MailFence: <https://mailfence.com/>
 
@@ -5519,9 +5519,7 @@ It is possible that those services (ProtonMail for instance) might require you t
 
 -   Envs.net: <https://envs.net/>
 
--   CTemplar: <https://ctemplar.com> (unfortunately also requires invitation)
-
-Keep in mind that those do not provide a zero-access design (meaning they can access your e-mail at rest in their database) where only you can access your e-mail.
+Keep in mind that those do not provide a zero-access design (a zero-access design is where only you can access your e-mail - not even the service's admins can read your messages). This means they can access your e-mail at rest in their database.
 
 
 #### A note about Riseup:
@@ -5541,7 +5539,7 @@ If you want to avoid communicating your anonymous e-mail addresses to various pa
 
 -   <https://anonaddy.com/>
 
-These services will allow creating random aliases for your anonymous e-mail (on ProtonMail for example) and could increase your general privacy if you do not want to disclose that e-mail for any purpose. They are both recommended by Privacyguides.org and Privacytools.io. I'm recommending them as well.
+These services will allow creating random aliases for your anonymous e-mail (on Proton for example) and could increase your general privacy if you do not want to disclose that e-mail for any purpose. They are both recommended by Privacyguides.org and Privacytools.io. I'm recommending them as well.
 
 ### User details checking:
 
@@ -6364,7 +6362,7 @@ Legend:
 <td>Hard <strong>(for full functionalities)</strong></td>
 </tr>
 <tr class="even">
-<td><strong>ProtonMail</strong></td>
+<td><strong>Proton Mail</strong></td>
 <td>No</td>
 <td>Maybe</td>
 <td>Likely</td>
@@ -6377,7 +6375,7 @@ Legend:
 <td>Medium</td>
 </tr>
 <tr class="odd">
-<td><strong>ProtonVPN</strong></td>
+<td><strong>Proton VPN</strong></td>
 <td>No</td>
 <td>No</td>
 <td>Yes</td>
@@ -6652,19 +6650,19 @@ GitLab is straightforward and requires no phone number.
 
 -   Can you create accounts through Tor? Yes, but expect some captchas and your phone number will be required
 
-ProtonMail is good ... but to appear less suspicious, it is simply better to also have a mainstream Google Mail account.
+Proton is good ... but to appear less suspicious, it is simply better to also have a mainstream Google Mail account.
 
-As ProtonMail, Google will also most likely require a phone number during sign-up as part of their verification process. However contrary to ProtonMail, Google will store that phone number during the sign-up process and will also limit the number of accounts that can be created during the sign-up[^399]'[^400].
+As Proton, Google will also most likely require a phone number during sign-up as part of their verification process. However contrary to Proton, Google will store that phone number during the sign-up process and will also limit the number of accounts that can be created during the sign-up[^399]'[^400].
 
 From my experience during my research, this count is limited to three accounts/phone numbers. If you are unlucky with your number (if it was previously used by another mobile user), it might be less.
 
 You should therefore use again your online phone number OR your burner phone and pre-paid SIM card to create the account. Do not forget to use the identity details you made up earlier (birthdate). When the account is created, please do take some time to do the following:
 
--   **(Trick)** Log into Google Mail and Go into the Gmail Settings > Go into the mail Forwarding options > Set up a mail forwarding to your ProtonMail Address > Verify (using ProtonMail) > Go back to Gmail and set the forwarding to forward and delete Google copy > Save. This step will allow you to check your Google Mail using ProtonMail instead and will allow you to avoid triggering Google Security checks by Logging in from various VPN/Tor exit IP addresses in the future while storing your sensitive e-mail at ProtonMail instead. This trick will allow you to receive all the e-mails from your Gmail address on your ProtonMail (or other) address without needing to login into your Google account (reducing risks of it being suspended, especially if you use Tor).
+-   **(Trick)** Log into Google Mail on desktop and go into the Gmail Quick Settings > See all Setting > Forwarding and POP/IMAP > Add a forwarding address > Verify (using Proton) > Go back to Gmail and set the forwarding to forward and delete Google copy > Save. This step will allow you to check your Google Mail using Proton instead and will allow you to avoid triggering Google Security checks by Logging in from various VPN/Tor exit IP addresses in the future while storing your sensitive e-mail at Proton instead. This trick will allow you to receive all the e-mails from your Gmail addresses on your Proton (or other) address without needing to login into your Google accounts (reducing risks of it being suspended, especially if you use Tor).
 
 -   Enable 2FA within the Google account settings. First, you will have to enable 2FA using the phone number. Then you will see the option appear to enable 2FA using an Authenticator app. Use that option and set it up with a new KeePassXC TOTP entry. When it is done, remove the phone 2FA from the Google account. This will prevent someone from using that phone number in the future (when you do not have it anymore) to recover/gain access to that account.
 
--   Add ProtonMail as a recovery e-mail address for the account.
+-   Add Proton as a recovery e-mail address for the account.
 
 -   Remove the phone number from the account details as a recovery option.
 
@@ -6676,9 +6674,9 @@ You should therefore use again your online phone number OR your burner phone and
 
     -   YouTube
 
--   Log out and do not touch it unless needed (as mentioned, you will use ProtonMail to check your Gmail).
+-   Log out and do not touch it unless needed (as mentioned, you will use Proton to check your Gmail).
 
-Keep in mind that there are different algorithms in place to check for weird activity. If you receive any mail (on ProtonMail) prompting about a Google Security Warning. Click it and click the button to say, "Yes it was me". It helps.
+Keep in mind that there are different algorithms in place to check for weird activity. If you receive any mail (on Proton) prompting about a Google Security Warning. Click it and click the button to say, "Yes it was me". It helps.
 
 Do not use that account for "sign-up with Google" anywhere unless necessary.
 
@@ -6854,9 +6852,9 @@ After signing up you should set up 2FA authentication within the security option
 
 Unfortunately, you will be extremely limited with that account and to do anything you will need dot complete their verification process which requires a KYC type financial transaction check. So, not very useful.
 
-#### ProtonMail:
+#### Proton:
 
--   Is this against their ToS? No <https://ProtonMail.com/terms-and-conditions> <sup>[[Archive.org]][440]</sup>
+-   Is this against their ToS? No <https://proton.me/legal/terms> <sup>[[Archive.org]][440]</sup>
 
 -   Will they require a phone number? Maybe. This depends on the IP you are coming from. If you come from Tor, it is likely. From a VPN, it is less likely.
 
@@ -6864,7 +6862,7 @@ Unfortunately, you will be extremely limited with that account and to do anythin
 
 You obviously need an e-mail for your online identity and disposable e-mails are pretty much banned everywhere.
 
-ProtonMail is a free e-mail provider based in Switzerland that advocates security and privacy.
+Proton is a free e-mail provider based in Switzerland that advocates security and privacy.
 
 They are recommended by Privacyguides.org[^405]. Their only apparent issue is that they do require (in most cases) a phone number or another e-mail address for registration (when you try to register from a VPN or Tor at least).
 
@@ -6872,7 +6870,7 @@ They claim they do not store/link the phone/e-mail associated with the registrat
 
 This e-mail account can be used for creating a Google/Gmail account.
 
-#### ProtonVPN:
+#### Proton:
 
 -   Is this against their ToS? No <https://protonvpn.com/terms-and-conditions> <sup>[[Archive.org]][441]</sup>
 
@@ -6992,9 +6990,9 @@ Once the account is restored, you should take some time to do the following:
 
 After about a week, you should check Twitter again and the chances are quite high that it will be suspended again for "suspicious activity" or "violating community guidelines" despite you not using it at all (not even a single tweet/follow/like/retweet or DM) but this time by another system. I call this the "Double-tap".
 
-This time you will need to submit an appeal using a form[^407], provide a good reason and wait for the appeal to be processed by Twitter. During that process, you may receive an e-mail (on ProtonMail) asking you to reply to a customer service ticket to prove that you do have access to your e-mail and that it is you. This will be directed toward your Gmail address but will arrive on your ProtonMail.
+This time you will need to submit an appeal using a form[^407], provide a good reason and wait for the appeal to be processed by Twitter. During that process, you may receive an e-mail (on Proton) asking you to reply to a customer service ticket to prove that you do have access to your e-mail and that it is you. This will be directed toward your Gmail address but will arrive on your Proton.
 
-Do not reply from ProtonMail as this will raise suspicions, you must sign in to Gmail (unfortunately) and compose a new mail from there copy-pasting the E-Mail, Subject, and Content from ProtonMail. As well as a reply confirming you have access to that e-mail.
+Do not reply from Proton as this will raise suspicions, you must sign in to Gmail (unfortunately) and compose a new mail from there copy-pasting the E-Mail, Subject, and Content from Proton. As well as a reply confirming you have access to that e-mail.
 
 After a few days, your account should get unsuspended "for good". No issues after that but keep in mind they can still ban your account for any reason if you violate the community guidelines. The phone number and e-mail will then be flagged, and you will have no other option but to get a new identity with a new number to sign-up again. Do not use this account for trolling.
 
@@ -7154,7 +7152,7 @@ Below you will find a small table showing the state of messaging apps as of the 
 
 -   Secure Messaging Apps <https://www.securemessagingapps.com/> <sup>[[Archive.org]][457]</sup>
 
--   ProtonMail Blog, <https://protonmail.com/blog/whatsapp-alternatives/> <sup>[[Archive.org]][458]</sup>
+-   Proton Blog, <https://proton.me/blog/whatsapp-alternatives/> <sup>[[Archive.org]][458]</sup>
 
 -   Whonix Documentation, Instant Messenger Chat <https://www.whonix.org/wiki/Chat> <sup>[[Archive.org]][459]</sup>
 
@@ -7711,8 +7709,8 @@ Consider the following platforms:
 
 -   Cryptpad.fr (<https://cryptpad.fr/>): Free tier limited to 1GB total and recommended by PrivacyGuides.org at <https://privacyguides.org/cloud/> <sup>[[Archive.org]][470]</sup>
 
--   Proton Drive (<https://drive.protonmail.com/>): Paid. Requires users to have ProtonMail "plus tier" or higher. Proton Drive is E2EE and recommended by PrivacyGuides.org
-    - Like ProtonMail and ProtonVPN, it's not easy to sign up anonymously. When you try to register through Tor, they request verification either by phone number, or by providing a donation
+-   Proton Drive (<https://proton.me/drive/>): Paid. Requires users to have "Proton Unlimited" or "Mail Plus". Proton Drive is E2EE and recommended by PrivacyGuides.org
+    - Like Proton and Proton VPN, it's not easy to sign up anonymously. When you try to register through Tor, they request verification either by phone number, or by providing a donation
 
 -   Filen (<https://filen.io/>): free tier limited to 10GB total
 
@@ -10155,13 +10153,13 @@ There are, IMHO, two viable options:
 
 ## Cash/Monero-Paid VPN:
 
-There are three VPN companies recommended by PrivacyGuides.org (<https://www.privacyguides.org/vpn/> <sup>[[Archive.org]][620]</sup>) that accept cash payments: Mullvad, iVPN, and ProtonVPN.
+There are three VPN companies recommended by PrivacyGuides.org (<https://www.privacyguides.org/vpn/> <sup>[[Archive.org]][620]</sup>) that accept cash payments: Mullvad, iVPN, and Proton VPN.
 
 In addition, I will also mention a newcomer to watch: Safing SPN <https://safing.io/> <sup>[[Archive.org]][621]</sup>) which (while still in the alpha stage at the time of this writing) which also accepts cash and has a very distinct new concept for a VPN which provides benefits similar to Tor Stream isolation with their "SPN"). Note that Safing SPN is not available on macOS at the moment. This possibility is "provisional" and at your own risk, but I think was worth mentioning.
 
 Personally, for now, I would recommend Mullvad due to personal experience.
 
-**I would not recommend ProtonVPN as much because they do require an e-mail for registration unlike Mullvad, iVPN, and Safing. Proton also has a tendency to require phone number verification for users who register over Tor.**
+**I would not recommend Proton VPN as much because they do require an e-mail for registration unlike Mullvad, iVPN, and Safing. Proton also has a tendency to require phone number verification for users who register over Tor.**
 
 How does this work?
 
@@ -10363,7 +10361,7 @@ Download the VPN client installer of your cash paid VPN service and install it o
 
     -   Safing: <https://docs.safing.io/portmaster/install/windows> <sup>[[Archive.org]][640]</sup>
 
-    -   ProtonVPN: <https://protonvpn.com/support/protonvpn-windows-vpn-application/> <sup>[[Archive.org]][641]</sup>
+    -   Proton VPN: <https://protonvpn.com/support/protonvpn-windows-vpn-application/> <sup>[[Archive.org]][641]</sup>
 
 -   macOS:
 
@@ -10373,7 +10371,7 @@ Download the VPN client installer of your cash paid VPN service and install it o
 
     -   Safing: Not available on macOS
 
-    -   ProtonVPN: <https://protonvpn.com/support/protonvpn-mac-vpn-application/> <sup>[[Archive.org]][644]</sup>
+    -   Proton VPN: <https://protonvpn.com/support/protonvpn-mac-vpn-application/> <sup>[[Archive.org]][644]</sup>
 
 -   Linux:
 
@@ -10383,7 +10381,7 @@ Download the VPN client installer of your cash paid VPN service and install it o
 
     -   Safing: <https://docs.safing.io/portmaster/install/linux> <sup>[[Archive.org]][647]</sup>
 
-    -   ProtonVPN: <https://protonvpn.com/support/linux-vpn-setup/> <sup>[[Archive.org]][648]</sup>
+    -   Proton VPN: <https://protonvpn.com/support/linux-vpn-setup/> <sup>[[Archive.org]][648]</sup>
 
 **Important note: Tor does not support UDP, and you should use TCP instead with the VPN client in the Tor over VPN cases (on the VMs).**
 
@@ -10395,7 +10393,7 @@ Here are some guides provided by the recommended VPN providers in this guide:
 
     -   iVPN: <https://www.ivpn.net/knowledgebase/general/do-you-offer-a-kill-switch-or-vpn-firewall/> <sup>[[Archive.org]][649]</sup>
 
-    -   ProtonVPN: <https://protonvpn.com/support/what-is-kill-switch/> <sup>[[Archive.org]][650]</sup>
+    -   Proton VPN: <https://protonvpn.com/support/what-is-kill-switch/> <sup>[[Archive.org]][650]</sup>
 
     -   Mullvad: <https://mullvad.net/en/help/using-mullvad-vpn-app/#killswitch> <sup>[[Archive.org]][651]</sup>
 
@@ -10407,7 +10405,7 @@ Here are some guides provided by the recommended VPN providers in this guide:
 
     -   iVPN same as Windows, the option should be in the provided VPN client
 
-    -   ProtonVPN same as Windows with the client, the option should be in the provided VPN client <https://protonvpn.com/blog/macos-vpn-kill-switch/> <sup>[[Archive.org]][652]</sup>
+    -   Proton VPN same as Windows with the client, the option should be in the provided VPN client <https://protonvpn.com/blog/macos-vpn-kill-switch/> <sup>[[Archive.org]][652]</sup>
 
 -   Linux:
 
@@ -10417,7 +10415,7 @@ Here are some guides provided by the recommended VPN providers in this guide:
 
         -   <https://mullvad.net/en/help/linux-openvpn-installation/> <sup>[[Archive.org]][654]</sup>
 
-    -   ProtonVPN: <https://github.com/ProtonVPN/linux-cli/blob/master/USAGE.md#kill-switch> <sup>[[Archive.org]][655]</sup>
+    -   Proton VPN: <https://github.com/ProtonVPN/linux-cli/blob/master/USAGE.md#kill-switch> <sup>[[Archive.org]][655]</sup>
 
     -   iVPN:
 
@@ -11616,7 +11614,13 @@ These steps should upgrade from "reasonably anonymous" to "extra-paranoid anonym
 
 ## When using BTC: bonus step for improving your privacy using obfuscation:
 
-You might want to consider the use of Wasabi (<https://wasabiwallet.io/> <sup>[[Archive.org]][693]</sup>) for your BTC transactions using their "CoinJoin feature"[^527] to further cover your tracks. This would mean swapping your Monero for BTC to a Wasabi Wallet instead of a normal Wallet. And then using that Wasabi Wallet for your BTC transactions using their CoinJoin feature.
+You might want to consider the use of Samourai for Android (<https://samouraiwallet.com>). This wallet uses an implementation of CoinJoin[^527] called Whirlpool[^538].
+
+    <!-- Unverified recommendation: Sparrow for desktop (https://sparrowwallet.com). WARNING: Sparrow has not been thoroughly reviewed by this guide's maintainers and cannot at this point be considered a serious recommendation -->
+
+Mixing BTC in this way should prevent any chain analysis on future transactions. This will not hide any past transactions or the fact you purchased BTC from a KYC exchange. Both wallets support Tor and running your own Bitcoin full node.
+
+Wasabi wallet is not recommended due to censorship of transactions[^536] and vulnerabilities in its CoinJoin implementation[^537].
 
 ## When converting from BTC to Monero:
 
@@ -12636,7 +12640,7 @@ You can find some introduction on these on these projects:
 
 [^273]: Wikipedia, National Security Letter <https://en.wikipedia.org/wiki/National_security_letter> <sup>[[Wikiless]][1079]</sup> <sup>[[Archive.org]][1080]</sup>
 
-[^274]: TechCrunch, ProtonMail logged IP address of French activist after order by Swiss authorities <https://techcrunch.com/2021/09/06/protonmail-logged-ip-address-of-french-activist-after-order-by-swiss-authorities/> <sup>[[Archive.org]][1081]</sup>
+[^274]: TechCrunch, Proton logged IP address of French activist after order by Swiss authorities <https://techcrunch.com/2021/09/06/proton-logged-ip-address-of-french-activist-after-order-by-swiss-authorities/> <sup>[[Archive.org]][1081]</sup>
 
 [^275]: ArsTechnica, VPN servers seized by Ukrainian authorities weren't encrypted <https://arstechnica.com/gadgets/2021/07/vpn-servers-seized-by-ukrainian-authorities-werent-encrypted/> <sup>[[Archive.org]][1082]</sup>
 
@@ -12900,7 +12904,7 @@ You can find some introduction on these on these projects:
 
 [^405]: Privacyguides.org recommended E-mail Providers <https://www.privacyguides.org/email/> <sup>[[Archive.org]][1215]</sup>
 
-[^406]: ProtonMail Registration Human Verification <https://protonmail.com/support/knowledge-base/human-verification/> <sup>[[Archive.org]][1216]</sup>
+[^406]: Proton Registration Human Verification <https://proton.me/support/human-verification/> <sup>[[Archive.org]][1216]</sup>
 
 [^407]: Twitter Appeal Form <https://help.twitter.com/forms/general>
 
@@ -12910,7 +12914,7 @@ You can find some introduction on these on these projects:
 
 [^410]: Wikipedia, Forward Secrecy <https://en.wikipedia.org/wiki/Forward_secrecy> <sup>[[Wikiless]][1220]</sup> <sup>[[Archive.org]][1221]</sup>
 
-[^411]: Protonblog, What is zero-access encryption? <https://protonmail.com/blog/zero-access-encryption/> <sup>[[Archive.org]][1222]</sup>
+[^411]: Proton Blog, What is zero-access encryption? <https://proton.me/blog/zero-access-encryption/> <sup>[[Archive.org]][1222]</sup>
 
 [^412]: Wikipedia, Cambridge Analytica Scandal <https://en.wikipedia.org/wiki/Facebook%E2%80%93Cambridge_Analytica_data_scandal> <sup>[[Wikiless]][1223]</sup> <sup>[[Archive.org]][1224]</sup>
 
@@ -13142,7 +13146,7 @@ You can find some introduction on these on these projects:
 
 [^526]: Vice, The NSA and CIA Use Ad Blockers Because Online Advertising Is So Dangerous <https://www.vice.com/en/article/93ypke/the-nsa-and-cia-use-ad-blockers-because-online-advertising-is-so-dangerous> <sup>[[Archive.org]][1353]</sup>
 
-[^527]: Europol, Wasabi Wallet Report <https://www.tbstat.com/wp/uploads/2020/06/Europol-Wasabi-Wallet-Report.pdf> <sup>[[Archive.org]][1354]</sup>
+[^527]: A Comprehensive Bitcoin CoinJoin Guide <https://bitcoinmagazine.com/technical/a-comprehensive-bitcoin-coinjoin-guide> <sup>[[Archive.org]][1354]</sup>
 
 [^528]: NIST, NIST Has Spoken - Death to Complexity, Long Live the Passphrase! <https://www.sans.org/blog/nist-has-spoken-death-to-complexity-long-live-the-passphrase/> <sup>[[Archive.org]][1355]</sup>
 
@@ -13150,7 +13154,7 @@ You can find some introduction on these on these projects:
 
 [^530]: The Intercept, Passphrases That You Can Memorize --- But That Even the NSA Can't Guess <https://theintercept.com/2015/03/26/passphrases-can-memorize-attackers-cant-guess/> <sup>[[Tor Mirror]][1357]</sup> <sup>[[Archive.org]][1358]</sup>
 
-[^531]: ProtonMail Blog, Let's settle the password vs. passphrase debate once and for all <https://protonmail.com/blog/protonmail-com-blog-password-vs-passphrase/> <sup>[[Archive.org]][1359]</sup>
+[^531]: Proton Blog, Let's settle the password vs. passphrase debate once and for all <https://proton.me/blog/protonmail-com-blog-password-vs-passphrase/> <sup>[[Archive.org]][1359]</sup>
 
 [^532]: YouTube, Edward Snowden on Passwords: Last Week Tonight with John Oliver (HBO) <https://www.youtube.com/watch?v=yzGzB-yYKcc> <sup>[[Invidious]][1360]</sup>
 
@@ -13159,6 +13163,12 @@ You can find some introduction on these on these projects:
 [^534]: Wikipedia, Passphrase <https://en.wikipedia.org/wiki/Passphrase#Passphrase_selection> <sup>[[Wikiless]][1361]</sup> <sup>[[Archive.org]][1362]</sup>
 
 [^535]: Monero Research Lab, Evaluating cryptocurrency security and privacy in a post-quantum world <https://github.com/insight-decentralized-consensus-lab/post-quantum-monero/blob/master/writeups/technical_note.pdf> <sup>[[Archive.org]][1363]</sup>
+
+[^536]: Wasabi Wallet zkSNACKs Blacklisting <https://blog.wasabiwallet.io/zksnacks-blacklisting-update> <sup>[[Archive.org]][1368]</sup>
+
+[^537]: An Analysis and Disclosure Regarding the Deterministic Nature of the Wasabi Wallet CoinJoin Algorithm <https://research.oxt.me/alerts/2020/08/21/Wasabi-Wallet> <sup>[[Archive.org]][1369]</sup>
+
+[^538]: Samourai Whirlpool <https://docs.samourai.io/whirlpool/start><sup>[[Archive.org]][1370]</sup>
 
   [Contents:]: #contents
   [Pre-requisites and limitations:]: #pre-requisites-and-limitations
@@ -13879,7 +13889,7 @@ You can find some introduction on these on these projects:
   [437]: https://web.archive.org/web/https://mullvad.net/en/help/terms-service/
   [438]: https://web.archive.org/web/https://njal.la/tos/
   [439]: https://web.archive.org/web/https://onlyfans.com/terms
-  [440]: https://web.archive.org/web/https://protonmail.com/terms-and-conditions
+  [440]: https://web.archive.org/web/https://proton.me/legal/terms
   [441]: https://web.archive.org/web/https://protonvpn.com/terms-and-conditions
   [442]: https://web.archive.org/web/https://www.redditinc.com/policies
   [443]: https://web.archive.org/web/https://old.reddit.com/r/ShadowBan/comments/8a2gpk/an_unofficial_guide_on_how_to_avoid_being/
@@ -13897,7 +13907,7 @@ You can find some introduction on these on these projects:
   [455]: https://wikiless.org/wiki/Comparison_of_cross-platform_instant_messaging_clients
   [456]: https://web.archive.org/web/https://en.wikipedia.org/wiki/Comparison_of_cross-platform_instant_messaging_clients
   [457]: https://web.archive.org/web/https://www.securemessagingapps.com/
-  [458]: https://web.archive.org/web/https://protonmail.com/blog/whatsapp-alternatives/
+  [458]: https://web.archive.org/web/20220531171438/https://proton.me/blog/whatsapp-alternatives
   [459]: https://web.archive.org/web/https://www.whonix.org/wiki/Chat
   [460]: https://web.archive.org/web/https://securechatguide.org/featuresmatrix.html
   [461]: https://web.archive.org/web/https://www.messenger-matrix.de/messenger-matrix-en.html
@@ -14528,7 +14538,7 @@ You can find some introduction on these on these projects:
   [1078]: https://web.archive.org/web/https://en.wikipedia.org/wiki/Gag_order
   [1079]: https://wikiless.org/wiki/National_security_letter
   [1080]: https://web.archive.org/web/https://en.wikipedia.org/wiki/National_security_letter
-  [1081]: https://web.archive.org/web/https://techcrunch.com/2021/09/06/protonmail-logged-ip-address-of-french-activist-after-order-by-swiss-authorities/
+  [1081]: https://web.archive.org/web/https://techcrunch.com/2021/09/06/proton-logged-ip-address-of-french-activist-after-order-by-swiss-authorities/
   [1082]: https://web.archive.org/web/https://arstechnica.com/gadgets/2021/07/vpn-servers-seized-by-ukrainian-authorities-werent-encrypted/
   [1083]: https://web.archive.org/web/https://www.bleepingcomputer.com/news/security/doublevpn-servers-logs-and-account-info-seized-by-law-enforcement/
   [1084]: https://web.archive.org/web/https://www.cyberscoop.com/court-rules-encrypted-email-tutanota-monitor-messages/
@@ -14663,13 +14673,13 @@ You can find some introduction on these on these projects:
   [1213]: https://web.archive.org/web/https://support.google.com/accounts/answer/1333913?hl=en
   [1214]: https://web.archive.org/web/https://www.jumio.com/features/
   [1215]: https://web.archive.org/web/https://www.privacyguides.org/email/
-  [1216]: https://web.archive.org/web/https://protonmail.com/support/knowledge-base/human-verification/
+  [1216]: https://web.archive.org/web/https://proton.me/support/human-verification
   [1217]: https://web.archive.org/web/https://knowyourmeme.com/memes/good-luck-im-behind-7-proxies
   [1218]: https://wikiless.org/wiki/End-to-end_encryption
   [1219]: https://web.archive.org/web/https://en.wikipedia.org/wiki/End-to-end_encryption
   [1220]: https://wikiless.org/wiki/Forward_secrecy
   [1221]: https://web.archive.org/web/https://en.wikipedia.org/wiki/Forward_secrecy
-  [1222]: https://web.archive.org/web/https://protonmail.com/blog/zero-access-encryption/
+  [1222]: https://web.archive.org/web/https://proton.me/blog/zero-access-encryption/
   [1223]: https://wikiless.org/wiki/Facebook%E2%80%93Cambridge_Analytica_data_scandal
   [1224]: https://web.archive.org/web/https://en.wikipedia.org/wiki/Facebook%E2%80%93Cambridge_Analytica_data_scandal
   [1225]: https://web.archive.org/web/https://signal.org/blog/sealed-sender/
@@ -14801,12 +14811,12 @@ You can find some introduction on these on these projects:
   [1351]: https://web.archive.org/web/https://en.wikipedia.org/wiki/Domain_fronting
   [1352]: https://web.archive.org/web/https://gitlab.torproject.org/tpo/applications/tor-browser/-/issues/17569
   [1353]: https://web.archive.org/web/https://www.vice.com/en/article/93ypke/the-nsa-and-cia-use-ad-blockers-because-online-advertising-is-so-dangerous
-  [1354]: https://web.archive.org/web/https://www.tbstat.com/wp/uploads/2020/06/Europol-Wasabi-Wallet-Report.pdf
+  [1354]: https://web.archive.org/web/20220508125004/https://bitcoinmagazine.com/technical/a-comprehensive-bitcoin-coinjoin-guide
   [1355]: https://web.archive.org/web/https://www.sans.org/blog/nist-has-spoken-death-to-complexity-long-live-the-passphrase/
   [1356]: https://web.archive.org/web/https://www.zdnet.com/article/fbi-recommends-passphrases-over-password-complexity/
   [1357]: https://27m3p2uv7igmj6kvd4ql3cct5h3sdwrsajovkkndeufumzyfhlfev4qd.onion/2015/03/26/passphrases-can-memorize-attackers-cant-guess/
   [1358]: https://web.archive.org/web/https://theintercept.com/2015/03/26/passphrases-can-memorize-attackers-cant-guess/
-  [1359]: https://web.archive.org/web/https://protonmail.com/blog/protonmail-com-blog-password-vs-passphrase/
+  [1359]: https://web.archive.org/web/https://proton.me/blog/protonmail-com-blog-password-vs-passphrase
   [1360]: https://yewtu.be/watch?v=yzGzB-yYKcc
   [1361]: https://wikiless.org/wiki/Passphrase#Passphrase_selection
   [1362]: https://web.archive.org/web/https://en.wikipedia.org/wiki/Passphrase#Passphrase_selection
@@ -14815,4 +14825,6 @@ You can find some introduction on these on these projects:
   [1365]: https://web.archive.org/web/https://github.com/psal/anonymouth
   [1366]: https://web.archive.org/web/https://psal.cs.drexel.edu/index.php/Main_Page
   [1367]: https://web.archive.org/web/20220511015546/https://www.qubes-os.org/security/verifying-signatures/
-  [1368]: https://web.archive.org/web/20220530102039/https://forum.qubes-os.org/t/qubes-os-installation-detached-encrypted-boot-and-header/6205
+  [1368]: https://web.archive.org/web/20220424143857/https://blog.wasabiwallet.io/zksnacks-blacklisting-update/
+  [1369]: https://web.archive.org/web/20220327075818/https://research.oxt.me/alerts/2020/08/21/Wasabi-Wallet
+  [1370]: https://web.archive.org/web/20220510172742/https://docs.samourai.io/whirlpool/start
