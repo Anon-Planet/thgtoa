@@ -11606,7 +11606,9 @@ These steps should upgrade from "reasonably anonymous" to "extra-paranoid anonym
 
 ## When using BTC: bonus step for improving your privacy using obfuscation:
 
-You might want to consider the use of Samourai for Android (<https://samouraiwallet.com>) or Sparrow for desktop (https://sparrowwallet.com). Both of these wallets use an implementation of CoinJoin[^527] called Whirlpool[^538].
+You might want to consider the use of Samourai for Android (<https://samouraiwallet.com>). This wallet uses an implementation of CoinJoin[^527] called Whirlpool[^538].
+
+    <!-- Unverified recommendation: Sparrow for desktop (https://sparrowwallet.com). WARNING: Sparrow has not been thoroughly reviewed by this guide's maintainers and cannot at this point be considered a serious recommendation -->
 
 Mixing BTC in this way should prevent any chain analysis on future transactions. This will not hide any past transactions or the fact you purchased BTC from a KYC exchange. Both wallets support Tor and running your own Bitcoin full node.
 
