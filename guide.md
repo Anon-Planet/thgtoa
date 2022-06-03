@@ -13158,7 +13158,7 @@ You can find some introduction on these on these projects:
 
 [^537]: An Analysis and Disclosure Regarding the Deterministic Nature of the Wasabi Wallet CoinJoin Algorithm <https://research.oxt.me/alerts/2020/08/21/Wasabi-Wallet> <sup>[[Archive.org]][1369]</sup>
 
-[^538]: Samourai Whirlpool <https://docs.samourai.io/whirlpool/start><sup[[Archive.org]][1370]</sup>
+[^538]: Samourai Whirlpool <https://docs.samourai.io/whirlpool/start><sup>[[Archive.org]][1370]</sup>
 
   [Contents:]: #contents
   [Pre-requisites and limitations:]: #pre-requisites-and-limitations
