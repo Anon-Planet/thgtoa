@@ -1501,7 +1501,7 @@ Here are some examples:
       -   Be skeptical of Argon2d, as it's vulnerable to some forms of side-channels. Prefer Argon2i or Argon2id
 
     -   Avoid: SHA-3, SHA-2, SHA-1, MD5
-    
+
 
 -   Browser Security (HTTPS):
 
@@ -11606,7 +11606,13 @@ These steps should upgrade from "reasonably anonymous" to "extra-paranoid anonym
 
 ## When using BTC: bonus step for improving your privacy using obfuscation:
 
-You might want to consider the use of Wasabi (<https://wasabiwallet.io/> <sup>[[Archive.org]][693]</sup>) for your BTC transactions using their "CoinJoin feature"[^527] to further cover your tracks. This would mean swapping your Monero for BTC to a Wasabi Wallet instead of a normal Wallet. And then using that Wasabi Wallet for your BTC transactions using their CoinJoin feature.
+You might want to consider the use of Samourai for Android (<https://samouraiwallet.com>). This wallet uses an implementation of CoinJoin[^527] called Whirlpool[^538].
+
+    <!-- Unverified recommendation: Sparrow for desktop (https://sparrowwallet.com). WARNING: Sparrow has not been thoroughly reviewed by this guide's maintainers and cannot at this point be considered a serious recommendation -->
+
+Mixing BTC in this way should prevent any chain analysis on future transactions. This will not hide any past transactions or the fact you purchased BTC from a KYC exchange. Both wallets support Tor and running your own Bitcoin full node.
+
+Wasabi wallet is not recommended due to censorship of transactions[^536] and vulnerabilities in its CoinJoin implementation[^537].
 
 ## When converting from BTC to Monero:
 
@@ -13132,7 +13138,7 @@ You can find some introduction on these on these projects:
 
 [^526]: Vice, The NSA and CIA Use Ad Blockers Because Online Advertising Is So Dangerous <https://www.vice.com/en/article/93ypke/the-nsa-and-cia-use-ad-blockers-because-online-advertising-is-so-dangerous> <sup>[[Archive.org]][1353]</sup>
 
-[^527]: Europol, Wasabi Wallet Report <https://www.tbstat.com/wp/uploads/2020/06/Europol-Wasabi-Wallet-Report.pdf> <sup>[[Archive.org]][1354]</sup>
+[^527]: A Comprehensive Bitcoin CoinJoin Guide <https://bitcoinmagazine.com/technical/a-comprehensive-bitcoin-coinjoin-guide> <sup>[[Archive.org]][1354]</sup>
 
 [^528]: NIST, NIST Has Spoken - Death to Complexity, Long Live the Passphrase! <https://www.sans.org/blog/nist-has-spoken-death-to-complexity-long-live-the-passphrase/> <sup>[[Archive.org]][1355]</sup>
 
@@ -13149,6 +13155,12 @@ You can find some introduction on these on these projects:
 [^534]: Wikipedia, Passphrase <https://en.wikipedia.org/wiki/Passphrase#Passphrase_selection> <sup>[[Wikiless]][1361]</sup> <sup>[[Archive.org]][1362]</sup>
 
 [^535]: Monero Research Lab, Evaluating cryptocurrency security and privacy in a post-quantum world <https://github.com/insight-decentralized-consensus-lab/post-quantum-monero/blob/master/writeups/technical_note.pdf> <sup>[[Archive.org]][1363]</sup>
+
+[^536]: Wasabi Wallet zkSNACKs Blacklisting <https://blog.wasabiwallet.io/zksnacks-blacklisting-update> <sup>[[Archive.org]][1368]</sup>
+
+[^537]: An Analysis and Disclosure Regarding the Deterministic Nature of the Wasabi Wallet CoinJoin Algorithm <https://research.oxt.me/alerts/2020/08/21/Wasabi-Wallet> <sup>[[Archive.org]][1369]</sup>
+
+[^538]: Samourai Whirlpool <https://docs.samourai.io/whirlpool/start><sup[[Archive.org]][1370]</sup>
 
   [Contents:]: #contents
   [Pre-requisites and limitations:]: #pre-requisites-and-limitations
@@ -14791,7 +14803,7 @@ You can find some introduction on these on these projects:
   [1351]: https://web.archive.org/web/https://en.wikipedia.org/wiki/Domain_fronting
   [1352]: https://web.archive.org/web/https://gitlab.torproject.org/tpo/applications/tor-browser/-/issues/17569
   [1353]: https://web.archive.org/web/https://www.vice.com/en/article/93ypke/the-nsa-and-cia-use-ad-blockers-because-online-advertising-is-so-dangerous
-  [1354]: https://web.archive.org/web/https://www.tbstat.com/wp/uploads/2020/06/Europol-Wasabi-Wallet-Report.pdf
+  [1354]: https://web.archive.org/web/20220508125004/https://bitcoinmagazine.com/technical/a-comprehensive-bitcoin-coinjoin-guide
   [1355]: https://web.archive.org/web/https://www.sans.org/blog/nist-has-spoken-death-to-complexity-long-live-the-passphrase/
   [1356]: https://web.archive.org/web/https://www.zdnet.com/article/fbi-recommends-passphrases-over-password-complexity/
   [1357]: https://27m3p2uv7igmj6kvd4ql3cct5h3sdwrsajovkkndeufumzyfhlfev4qd.onion/2015/03/26/passphrases-can-memorize-attackers-cant-guess/
@@ -14805,3 +14817,6 @@ You can find some introduction on these on these projects:
   [1365]: https://web.archive.org/web/https://github.com/psal/anonymouth
   [1366]: https://web.archive.org/web/https://psal.cs.drexel.edu/index.php/Main_Page
   [1367]: https://web.archive.org/web/20220511015546/https://www.qubes-os.org/security/verifying-signatures/
+  [1368]: https://web.archive.org/web/20220424143857/https://blog.wasabiwallet.io/zksnacks-blacklisting-update/
+  [1369]: https://web.archive.org/web/20220327075818/https://research.oxt.me/alerts/2020/08/21/Wasabi-Wallet
+  [1370]: https://web.archive.org/web/20220510172742/https://docs.samourai.io/whirlpool/start
