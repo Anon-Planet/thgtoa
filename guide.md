@@ -86,9 +86,9 @@ Precautions while reading this guide and accessing the various links:
 
 -   If you are reading this in PDF or ODT format, you will notice plenty of \`\`\` in place of double quotes (""). These \`\`\` are there to ease conversion into Markdown/HTML format for online viewing of code blocks on the website.
 
-If you do not want the hassle and use one of the browsers below, you could also just install the following extension on your browser: <https://libredirect.github.io/> <sup>[[Archive.org]][33]</sup> (**Warning, this extension and project seems abandoned or unmaintained, use at your on risk**):
+If you do not want the hassle and use one of the browsers below, you could also just install the following extension on your browser: <https://libredirect.github.io/> <sup>[[Archive.org]][33]</sup>:
 
--   Firefox: <https://addons.mozilla.org/en-US/firefox/addon/libredirect/https://libredirect.git>
+-   Firefox: <https://addons.mozilla.org/en-US/firefox/addon/libredirect/>
 
 -   Chromium-based browsers (Chrome, Brave, Edge): <https://github.com/libredirect/libredirect/blob/master/chromium.md>
 
