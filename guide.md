@@ -1342,6 +1342,8 @@ Here is the result of the above image:
 
 Of course, this tool is more like "guessing" than really deblurring at this point, but it could be enough to find you using various reverse image searching services.
 
+Last but not least, there are also techniques to deblur/depixelate parts in videos: see https://positive.security/blog/video-depixelation <sup>[[Archive.org]][1371]</sup>
+
 For this reason, it is always extremely important that you correctly redact and curate any document you might want to publish. Blurring is not enough, and you should always completely blacken/remove any sensitive data to avoid any attempt at recovering data from any adversary. Do not pixelized, do not blur, just put a hard black rectangle to redact information.
 
 ## Your Cryptocurrencies transactions:
@@ -14818,3 +14820,5 @@ You can find some introduction on these on these projects:
   [1368]: https://web.archive.org/web/20220424143857/https://blog.wasabiwallet.io/zksnacks-blacklisting-update/
   [1369]: https://web.archive.org/web/20220327075818/https://research.oxt.me/alerts/2020/08/21/Wasabi-Wallet
   [1370]: https://web.archive.org/web/20220510172742/https://docs.samourai.io/whirlpool/start
+  [1371]: https://web.archive.org/web/https://positive.security/blog/video-depixelation
+  
