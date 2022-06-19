@@ -1342,7 +1342,7 @@ Here is the result of the above image:
 
 Of course, this tool is more like "guessing" than really deblurring at this point, but it could be enough to find you using various reverse image searching services.
 
-Last but not least, there are also techniques to deblur/depixelate parts in videos: see https://positive.security/blog/video-depixelation <sup>[[Archive.org]][1371]</sup>
+There are also techniques to deblur/depixelate parts in videos: see <https://positive.security/blog/video-depixelation> <sup>[[Archive.org]][1371]</sup>
 
 For this reason, it is always extremely important that you correctly redact and curate any document you might want to publish. Blurring is not enough, and you should always completely blacken/remove any sensitive data to avoid any attempt at recovering data from any adversary. Do not pixelized, do not blur, just put a hard black rectangle to redact information.
 
