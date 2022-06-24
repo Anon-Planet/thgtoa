@@ -46,9 +46,9 @@ Feel free to submit issues **(please do report anything wrong)** using GitHub Is
 
 Feel free to come to discuss ideas at:
 
--   GitHub Discussions: <https://github.com/AnonyPla-ng/thgtoa/discussions>
+-   <del>GitHub Discussions: <https://github.com/AnonyPla-ng/thgtoa/discussions></del> (temporarily unavailable)
 
--   Rules for our chatrooms: <https://privacy-security-anonymity.github.io/chatrooms-rules/>
+-   <del>Rules for our chatrooms: <https://privacy-security-anonymity.github.io/chatrooms-rules/></del> (temporarily unavailable)
 
 -   Matrix/Element Room: ```#anonymity:matrix.org``` <https://matrix.to/#/#anonymity:matrix.org>
 
@@ -11898,9 +11898,7 @@ Find it online at:
 
 -   Mirror: ~~<https://mirror.anonymousplanet-ng.org>~~ (coming soon)
 
--   IPFS Mirror: ~~<https://ipfs.anonymousplanet-ng.org>~~ (coming soon)
-
--   Tor Mirror: ~~<http://thgtoa7imksbg7rit4grgijl2ef6kc7b56bp56pmtta4g354lydlzkqd.onion>~~ (coming soon)
+-   Tor Mirror: ~~<http://thgtoa7imksbg7rit4grgijl2ef6kc7b56bp56pmtta4g354lydlzkqd.onion>~~ (temporarily unavailable)
 
 -   Archive.org: <https://web.archive.org/web/https://anonymousplanet-ng.org>
 
@@ -11910,11 +11908,9 @@ Find it online at:
 
 Offline versions (best format for the best readability) of this guide at:
 
--   Light Theme PDF: <https://anonymousplanet-ng.org/guide.pdf> <sup>[[Mirror]][725]</sup> <sup>[[Archive.org]][726]</sup> <sup>[[Tor Mirror]][727]</sup>
+-   PDF: <https://anonymousplanet-ng.org/guide.pdf> <sup>[[Mirror]][725]</sup> <sup>[[Archive.org]][726]</sup> <sup>[[Tor Mirror]][727]</sup>
 
--   Dark Theme PDF: ~~<https://anonymousplanet-ng.org/guide-dark.pdf> <sup>[[Mirror]][728]</sup> <sup>[[Archive.org]][729]</sup> <sup>[[Tor Mirror]][730]</sup>~~ (coming soon)
-
--   OpenDocument Text (ODT) version at: <https://anonymousplanet-ng.org/guide.odt> <sup>[[Mirror]][731]</sup> <sup>[[Archive.org]][732]</sup> <sup>[[Tor Mirror]][733]</sup>
+-   <del>OpenDocument Text (ODT) version at: <https://anonymousplanet-ng.org/guide.odt> <sup>[[Mirror]][731]</sup> <sup>[[Archive.org]][732]</sup> <sup>[[Tor Mirror]][733]</sup></del> (temporarily unavailable)
 
 -   All at CryptPad.fr ~~<https://cryptpad.fr/drive/#/2/drive/view/Ughm9CjQJCwB8BIppdtvj5zy4PyE-8Gxn11x9zaqJLI/>~~ (coming soon)
 
