@@ -4,7 +4,7 @@ Welcome.
 
 This is a maintained guide with the aim of providing an introduction to various online tracking techniques, online ID verification techniques, and detailed guidance to creating and maintaining (truly) anonymous online identities. <span style="color: red">**It is written with hope for activists, journalists, scientists, lawyers, whistle-blowers, and good people being oppressed, censored, harassed anywhere!**</span>
 
-This guide is an open-source non-profit initiative, [licensed](LICENSE.html) under **Creative Commons Attribution-NonCommercial 4.0 International** ([cc-by-nc-4.0] <sup>[[Archive.org]][1]</sup>) and is **not sponsored/endorsed by any commercial/governmental entity**. This means that you are free to use my guide for pretty much any purpose **excluding commercially** as long as you do attribute it.
+This guide is an open-source non-profit initiative, [licensed](LICENSE.html) under **Creative Commons Attribution-NonCommercial 4.0 International** ([cc-by-nc-4.0] <sup>[[Archive.org]][1]</sup>) and is **not sponsored/endorsed by any commercial/governmental entity**. This means that you are free to use our guide for pretty much any purpose **excluding commercially** as long as you do attribute it.
 
 **If you'd like to make a donation to help this project, you can do so from [here](donations.html) where you'll also find the project goals. All the donations will be strictly used within the context of this project. All donations and spendings are logged on the donations page.**
 
@@ -40,7 +40,7 @@ If you want to compare an older ODT file with a newer one, use the LibreWriter c
 
 Feel free to submit issues using Github Issues with the repository link above. Criticism, opinions, and ideas are welcome!
 
-Follow or contact me on:
+#### How to contact us:
 
 Discussion Channels:
 - Matrix room: ```#anonymity:matrix.org``` <https://matrix.to/#/#anonymity:matrix.org>
