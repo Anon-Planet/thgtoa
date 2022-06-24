@@ -17,14 +17,12 @@ All the links below are listed in alphabetical order.
 #### General privacy related projects:
 - EFF Surveillance Self-Defense: <https://ssd.eff.org/>
 - Prism-Break: <https://prism-break.org/>
-- Privacy Guides: <https://privacyguides.org>
 - Techlore: <https://techlore.tech> 
 - The New Oil: <https://thenewoil.org> 
 
 #### Blogs and personal websites:
 
 - Continuing Ed: <https://edwardsnowden.substack.com/>
-- Madaidan's Insecurities: <https://madaidans-insecurities.github.io/>
 
 #### Useful resources:
 
