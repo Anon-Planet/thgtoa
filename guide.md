@@ -11914,7 +11914,7 @@ Offline versions (best format for the best readability) of this guide at:
 
 -   Dark Theme PDF: ~~<https://anonymousplanet-ng.org/guide-dark.pdf> <sup>[[Mirror]][728]</sup> <sup>[[Archive.org]][729]</sup> <sup>[[Tor Mirror]][730]</sup>~~ (coming soon)
 
--   OpenDocument Text (ODT) version at: <https://anonymousplanet-ng.org/guide.odt> <sup>[[Mirror]][731]</sup> <sup>[[Archive.org]][732]</sup> <sup>[[Tor Mirror]][733]</sup>
+-   OpenDocument Text (ODT) version at: <https://anonymousplanet-ng.org//export/guide.odt> <sup>[[Mirror]][731]</sup> <sup>[[Archive.org]][732]</sup> <sup>[[Tor Mirror]][733]</sup>
 
 -   All at CryptPad.fr ~~<https://cryptpad.fr/drive/#/2/drive/view/Ughm9CjQJCwB8BIppdtvj5zy4PyE-8Gxn11x9zaqJLI/>~~ (coming soon)
 
