@@ -17,7 +17,7 @@ Discussion Channels:
 
 **Below you'll find the original about text from the initial founder, Lena, of this guide before she went missing, most links are invalid.**
 
-This text will remain here in memoriam of her legacy and the incredible work she did vastly alone without any contributors. 
+This text will remain here in memoriam of her legacy and the incredible work she wrote alone with few contributors helping a bit on some limited tasks. 
 
 ---
   
