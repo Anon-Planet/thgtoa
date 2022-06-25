@@ -13,8 +13,8 @@ This guide is an open-source non-profit initiative, [licensed](LICENSE.html) und
 
 **View the guide:**
 - [In your browser](guide.html)
-- [PDF](export/guide.pdf)
-- [OpenDocument (ODT)](export/guide.odt)
+- <del>[PDF](export/guide.pdf)</del> (temporarily outdated)
+- <del>[OpenDocument (ODT)](export/guide.odt)</del> (temporarily outdated)
 - Raw [Markdown](https://raw.githubusercontent.com/NobodySpecial256/thgtoa/master/guide.md)
 
 Mirrors:
