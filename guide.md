@@ -5635,6 +5635,8 @@ Here are two services you can use to check your browser Fingerprinting:
 
 -   <https://browserleaks.com/>
 
+-   (Chromium based browsers only) <https://z0ccc.github.io/extension-fingerprints/#>
+
 Chances are you will find your browser fingerprint unique no matter what you do.
 
 ### Human interaction:
