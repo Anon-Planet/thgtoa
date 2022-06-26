@@ -2,7 +2,7 @@
 
 (Or "How I learned to start worrying and love ~~privacy~~ anonymity")
 
-Version 1.1.4-pre1, June 2022 by Anonymous Planet
+Version 1.1.4-pre2, June 2022 by Anonymous Planet
 
 **Forever in memory of Lena, 1999-2022**
 
