@@ -1,3 +1,21 @@
+v1.1.4-pre2
+- Fixed some spelling/grammar
+- Update to contributing guidelines
+- Update of modern-crypto room rules
+- Addition of chatroom-rules for the PSA community
+- Update of verification guide (removed outdated content, fixed links, updates)
+- Removal of CTemplar references since it was shutdown
+- Fixed links to Proton services, references, onion URL, and archives
+- Removal of BTC Wasabi recommedation in favor of Coinjoin alternative and wallet recommendations
+- Re-phrasing of some confusing sentences
+- LibreDirect extension is recommended again
+- Fixed many links formatting
+- Removal of removed content (dark pdf)
+- Fixed links to ODT file
+- Added recommendation to <https://z0ccc.github.io/extension-fingerprints/#> and <https://www.deviceinfo.me/>
+- Removed links to non-existant mirrors 
+- Updated some outdated references(old project)
+
 v1.1.4-pre1
 - Addition of a legacy resources page for the old archives
 - Changes in the about page to reflect the current situation
