@@ -1,7 +1,3 @@
-# Warning:
-
-**_The private keys outlined in this document may have been compromised. This document still needs to be updated to reflect the new verification process. Hang tight while necessary changes are made to maintain integrity of the files._**
-
 ## How to check the files for safety/integrity and authenticity.
 
 The PDF and ODT files in this guide are cryptographically signed using GPG and Minisign. Their integrity can be verified with the published SHA256 Chrecksum Hashes on this website.
