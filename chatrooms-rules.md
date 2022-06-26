@@ -29,8 +29,9 @@ These are currently only enforced on **Anonymity** and **Security**, and not app
 - No upload of any non-media files (binaries, executables, compressed files...)
 - No voice messages (these will be auto-deleted by the bots)
 - **Avoid drifting too much off-topic or move to an off-topic room like #bnonymity**
+- **Any discussion about AnonyPla / Lena whereabouts is only tolerated, to an extent, in the #Bnonymity room.**
 
-Some exceptions can apply, see the [exceptions](#exceptions) section at the bottom of this page.
+Some exceptions can apply, see the [exceptions](#exceptions) section at the bottom of this page. Violations will be handled at the discretion of the acting moderator.
 
 #### Rules for Nothing To Hide Privacy:<a name="nth"></a>
 - Zero tolerance for discussion of how to commit illicit acts
@@ -52,7 +53,7 @@ See <https://artemislena.eu/coc.html>
 - No hate speech (No racism, no homophobia, no transphobia...)
 - No spammerino (scams, ads, flooding...)
 - No doxxing
-- No Porn, no Gore, no Hentai...
+- No NSFW content (no Porn, no Gore, no Hentai...)
 - All of the above can result in an insta-ban depending on the severity
 
 #### Exceptions:<a name="exceptions"></a>
@@ -72,5 +73,4 @@ Currently, the following rooms are sharing a common PSA banlist for serious offe
 This means that those PSA bans are effectively applied on all those rooms and can be issued by admins of these rooms. See the next section for information about appeals.
 
 #### Ban Appeals:<a name="appeals"></a>
-- **If your ban is a local ban issued by room moderators of a specific room: please contact the mods of the room in question to state your case for appealing. PSA Admins cannot and will not assist you with local bans.**
-- If your ban is a PSA ban (usually formatted as: "date, reason, appeal status") and you are banned on several PSA rooms: please send an e-mail to <appeal@psa.aleeas.com> to state your case for appealing. This will notify the admins who can assess your appeal.
+- **Please contact the mods or admins of the room in question to state your case for appealing.**
