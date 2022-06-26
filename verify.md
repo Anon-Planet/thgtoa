@@ -12,12 +12,10 @@ SHA256 Checksums, signatures, and virustotal checks of the releases files (conta
 
 The GPG signatures for each PDF and ODT files are available here:
 - PDF (Light Theme) Main and Mirrors: [guide.pdf.asc](guide.pdf.asc)
-- PDF (Dark Theme) Main and Mirrors: [guide-dark.pdf.asc](guide-dark.pdf.asc)
 - ODT Main and Mirrors: [guide.odt.asc](guide.odt.asc)
 
 The Minisign signatures for each PDF and ODT files are available here:
 - PDF (Light Theme) Main and Mirrors: [guide.pdf.minisig](guide.pdf.minisig)
-- PDF (Dark Theme) Main and Mirrors: [guide-dark.pdf.minisig](guide-dark.pdf.minisig)
 - ODT Main and Mirrors: [guide.odt.minisig](guide.odt.minisig)
 
 ### How to check the integrity of the files using the SHA256 Checksums:
@@ -47,27 +45,24 @@ Now to verify the files with GPG signatures, you should first install gpg on you
 
 Import the GPG key using the following command from a command prompt or terminal:
 
-```gpg --auto-key-locate nodefault,wkd --locate-keys 0xEB16B6AB4AB7BA61F33E2DFD0051E9A589DAB601```
+```gpg --auto-key-locate nodefault,wkd --locate-keys 42FF35DB9DE7C088AB0FD4A70C216A52F6DF4920```
 
-In theory this command should fetch the key from the a default pool server. If this doesn't work, you can also download/view it directly from here: <https://anonymousplanet-ng.org/AnonymousPlanet_0x89DAB601_public.asc> <sup>[[Mirror]][12]</sup> <sup>[[Tor Mirror]][14]</sup>
+In theory this command should fetch the key from the a default pool server. If this doesn't work, you can also download/view it directly from here: <https://anonymousplanet-ng.org/42FF35DB9DE7C088AB0FD4A70C216A52F6DF4920.asc> <sup>[[Mirror]][12]</sup>
 
 For redundancy, you can also verify the authenticity of this GPG signature using:
-- My Keybase.io profile <https://keybase.io/anonymousplanet>
-- My Keyoxide.org profile <https://keyoxide.org/eb16b6ab4ab7ba61f33e2dfd0051e9a589dab601>
 
-As well as the published key on (search for the fingerprint ```0xEB16B6AB4AB7BA61F33E2DFD0051E9A589DAB601```):
+As well as the published key on (search for the fingerprint ```42FF35DB9DE7C088AB0FD4A70C216A52F6DF4920```):
 - <https://pgp.mit.edu>
 - <https://keys.openpgp.org>
 - <https://keyserver.ubuntu.com>
 
 You should then import it manually by issuing the following command on any OS:
 
-```gpg --import AnonymousPlanet_0x89DAB601_public.asc```
+```gpg --import 42FF35DB9DE7C088AB0FD4A70C216A52F6DF4920.asc```
 
 Finally, verify the asc signature file (links above) against the PDF files by issuing the following commands:
 
 ```gpg --verify guide.pdf.asc guide.pdf"```
-```gpg --verify guide-dark.pdf.asc guide-dark.pdf"```
 
 This should output a result showing it matches and it's ok.
 
@@ -85,7 +80,6 @@ To verify the files with Minisign:
 
 The PDF and ODT files in this guide have been checked by VirusTotal, see the links below but do not trust them blindly and check the hashes matches and re-upload to VT if needed (**Note that this guide does not endorse VirusTotal. It should be used with extreme caution and never with any sensitive files due to their privacy policies**):
 - Light Theme: [[VirusTotal]][light_virustotal]
-- Dark Theme: [[VirusTotal]][dark_virustotal]
 - ODT file: [[VirusTotal]][odt_virustotal]
 
 ### Additional manual safety checks for the PDF files:
