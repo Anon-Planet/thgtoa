@@ -29,6 +29,7 @@ These are currently only enforced on **Anonymity** and **Security**, and not app
 - No upload of any non-media files (binaries, executables, compressed files...)
 - No voice messages (these will be auto-deleted by the bots)
 - **Avoid drifting too much off-topic or move to an off-topic room like #bnonymity**
+- **Any discussion about AnonyPla / Lena whereabouts will not be tolerated in #Anonymity, #Security, and ##psa-ot rooms. You may discuss this in the #Bnonymity room. If you do not respect this rule, you will risk being warned, kicked or even banned depending on the circumstances.
 
 Some exceptions can apply, see the [exceptions](#exceptions) section at the bottom of this page.
 
@@ -72,5 +73,4 @@ Currently, the following rooms are sharing a common PSA banlist for serious offe
 This means that those PSA bans are effectively applied on all those rooms and can be issued by admins of these rooms. See the next section for information about appeals.
 
 #### Ban Appeals:<a name="appeals"></a>
-- **If your ban is a local ban issued by room moderators of a specific room: please contact the mods of the room in question to state your case for appealing. PSA Admins cannot and will not assist you with local bans.**
-- If your ban is a PSA ban (usually formatted as: "date, reason, appeal status") and you are banned on several PSA rooms: please send an e-mail to <appeal@psa.aleeas.com> to state your case for appealing. This will notify the admins who can assess your appeal.
+- **Please contact the mods or admins of the room in question to state your case for appealing.**
