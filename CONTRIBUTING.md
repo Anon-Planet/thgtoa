@@ -40,6 +40,10 @@ When reporting guide issues:
 - **Don't** file duplicate reports; search for your bug before filing a new report.
 - **Don't** attempt to report issues on a closed PR.
 
+### Large PRs
+
+Please split large sets of changes into multiple PRs. For example, a PR that adds Windows 11 support, removes Windows AME references, and fixes typos can be split into 3 PRs. This makes PRs easier to review prior to merging.
+
 **Thank you** for taking the few moments to read this far! You're already way ahead of the
 curve, so keep it up!
 
