@@ -46,9 +46,9 @@ Feel free to submit issues **(please do report anything wrong)** using GitHub Is
 
 Feel free to come to discuss ideas at:
 
--   GitHub Discussions: <https://github.com/AnonyPla-ng/thgtoa/discussions>
+-   <del>GitHub Discussions: <https://github.com/AnonyPla-ng/thgtoa/discussions></del> (temporarily unavailable)
 
--   Rules for our chatrooms: <https://privacy-security-anonymity.github.io/chatrooms-rules/>
+-   <del>Rules for our chatrooms: <https://privacy-security-anonymity.github.io/chatrooms-rules/></del> (temporarily unavailable)
 
 -   Matrix/Element Room: ```#anonymity:matrix.org``` <https://matrix.to/#/#anonymity:matrix.org>
 
@@ -11900,12 +11900,6 @@ Find it online at:
 
 -   Original: <https://anonymousplanet-ng.org>
 
--   Mirror: ~~<https://mirror.anonymousplanet-ng.org>~~ (coming soon)
-
--   IPFS Mirror: ~~<https://ipfs.anonymousplanet-ng.org>~~ (coming soon)
-
--   Tor Mirror: ~~<http://thgtoa7imksbg7rit4grgijl2ef6kc7b56bp56pmtta4g354lydlzkqd.onion>~~ (coming soon)
-
 -   Archive.org: <https://web.archive.org/web/https://anonymousplanet-ng.org>
 
 -   Archive.today: <https://archive.fo/anonymousplanet-ng.org>
@@ -11914,13 +11908,9 @@ Find it online at:
 
 Offline versions (best format for the best readability) of this guide at:
 
--   Light Theme PDF: <https://anonymousplanet-ng.org/guide.pdf> <sup>[[Mirror]][725]</sup> <sup>[[Archive.org]][726]</sup> <sup>[[Tor Mirror]][727]</sup>
+-   PDF: <https://anonymousplanet-ng.org/export/guide.pdf> <sup>[[Mirror]][725]</sup> <sup>[[Archive.org]][726]</sup> <sup>[[Tor Mirror]][727]</sup>
 
--   Dark Theme PDF: ~~<https://anonymousplanet-ng.org/guide-dark.pdf> <sup>[[Mirror]][728]</sup> <sup>[[Archive.org]][729]</sup> <sup>[[Tor Mirror]][730]</sup>~~ (coming soon)
-
--   OpenDocument Text (ODT) version at: <https://anonymousplanet-ng.org//export/guide.odt> <sup>[[Mirror]][731]</sup> <sup>[[Archive.org]][732]</sup> <sup>[[Tor Mirror]][733]</sup>
-
--   All at CryptPad.fr ~~<https://cryptpad.fr/drive/#/2/drive/view/Ughm9CjQJCwB8BIppdtvj5zy4PyE-8Gxn11x9zaqJLI/>~~ (coming soon)
+-   OpenDocument Text (ODT) version at: <https://anonymousplanet-ng.org/export/guide.odt> <sup>[[Mirror]][731]</sup> <sup>[[Archive.org]][732]</sup> <sup>[[Tor Mirror]][733]</sup>
 
 # Appendix A7: Comparing versions
 
@@ -14176,15 +14166,15 @@ You can find some introduction on these on these projects:
   [https://nitter.net]: https://nitter.fdn.fr
   [723]: https://web.archive.org/web/https://github.com/spikecodes/libreddit
   [724]: https://web.archive.org/web/https://simplytranslate.org/
-  [725]: https://mirror.anonymousplanet-ng.org/guide.pdf
-  [726]: https://web.archive.org/web/https://anonymousplanet-ng.org/guide.pdf
+  [725]: https://mirror.anonymousplanet-ng.org/export/guide.pdf
+  [726]: https://web.archive.org/web/https://anonymousplanet-ng.org/export/guide.pdf
   [727]: http://thgtoa7imksbg7rit4grgijl2ef6kc7b56bp56pmtta4g354lydlzkqd.onion/guide.pdf
-  [728]: https://mirror.anonymousplanet-ng.org/guide-dark.pdf
-  [729]: https://web.archive.org/web/https://anonymousplanet-ng.org/guide-dark.pdf
-  [730]: http://thgtoa7imksbg7rit4grgijl2ef6kc7b56bp56pmtta4g354lydlzkqd.onion/guide-dark.pdf
-  [731]: https://mirror.anonymousplanet-ng.org/guide.odt
-  [732]: https://web.archive.org/web/https://anonymousplanet-ng.org/guide.odt
-  [733]: http://thgtoa7imksbg7rit4grgijl2ef6kc7b56bp56pmtta4g354lydlzkqd.onion/guide.odt
+  [728]: https://mirror.anonymousplanet-ng.org/export/guide-dark.pdf
+  [729]: https://web.archive.org/web/https://anonymousplanet-ng.org/export/guide-dark.pdf
+  [730]: http://thgtoa7imksbg7rit4grgijl2ef6kc7b56bp56pmtta4g354lydlzkqd.onion/export/guide-dark.pdf
+  [731]: https://mirror.anonymousplanet-ng.org/export/guide.odt
+  [732]: https://web.archive.org/web/https://anonymousplanet-ng.org/export/guide.odt
+  [733]: http://thgtoa7imksbg7rit4grgijl2ef6kc7b56bp56pmtta4g354lydlzkqd.onion/export/guide.odt
   [734]: https://web.archive.org/web/https://help.libreoffice.org/7.1/en-US/text/shared/guide/redlining_doccompare.html
   [735]: https://web.archive.org/web/https://www.whonix.org/wiki/Surfing_Posting_Blogging#Anonymous_File_Sharing
   [736]: https://yewtu.be/watch?v=H33ggs7bh8M
