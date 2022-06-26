@@ -8,7 +8,7 @@ v1.1.4-pre2
 - Fixed links to Proton services, references, onion URL, and archives
 - Removal of BTC Wasabi recommedation in favor of Coinjoin alternative and wallet recommendations
 - Re-phrasing of some confusing sentences
-- LibreDirect extension is recommended again
+- LibRedirect extension is recommended again
 - Fixed many links formatting
 - Removal of removed content (dark pdf)
 - Fixed links to ODT file
