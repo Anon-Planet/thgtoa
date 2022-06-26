@@ -11908,9 +11908,9 @@ Find it online at:
 
 Offline versions (best format for the best readability) of this guide at:
 
--   PDF: <https://anonymousplanet-ng.org/export/guide.pdf> <sup>[[Mirror]][725]</sup> <sup>[[Archive.org]][726]</sup> <sup>[[Tor Mirror]][727]</sup>
+-   PDF: <https://anonymousplanet-ng.org/export/guide.pdf> <sup>[[Archive.org]][726]</sup> <sup>[[Tor Mirror]][727]</sup>
 
--   OpenDocument Text (ODT) version at: <https://anonymousplanet-ng.org/export/guide.odt> <sup>[[Mirror]][731]</sup> <sup>[[Archive.org]][732]</sup> <sup>[[Tor Mirror]][733]</sup>
+-   OpenDocument Text (ODT) version at: <https://anonymousplanet-ng.org/export/guide.odt> <sup>[[Archive.org]][732]</sup> <sup>[[Tor Mirror]][733]</sup>
 
 # Appendix A7: Comparing versions
 
