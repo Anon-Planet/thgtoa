@@ -70,7 +70,7 @@ This should output a result showing it matches and it's ok.
 
 To verify the files with Minisign:
 
-- You should first dowbload minisign from https://jedisct1.github.io/minisign/
+- You should first dowbload minisign from <https://jedisct1.github.io/minisign/>
 - Download the files along with their *.minisig signature file (they should be in the same directory)
 - Download the Minisign public key available on the website and repository: [minisign.pub](minisign.pub) (again place it in the same directory for convenience)
 - Run the following command in a command prompt or terminal: ```minisign -Vm guide.pdf -p minisign.pub```
