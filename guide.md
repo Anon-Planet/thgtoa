@@ -11896,10 +11896,6 @@ Find it online at:
 
 -   Original: <https://anonymousplanet-ng.org>
 
--   Mirror: ~~<https://mirror.anonymousplanet-ng.org>~~ (coming soon)
-
--   Tor Mirror: ~~<http://thgtoa7imksbg7rit4grgijl2ef6kc7b56bp56pmtta4g354lydlzkqd.onion>~~ (temporarily unavailable)
-
 -   Archive.org: <https://web.archive.org/web/https://anonymousplanet-ng.org>
 
 -   Archive.today: <https://archive.fo/anonymousplanet-ng.org>
@@ -11908,9 +11904,9 @@ Find it online at:
 
 Offline versions (best format for the best readability) of this guide at:
 
--   PDF: <https://anonymousplanet-ng.org/guide.pdf> <sup>[[Mirror]][725]</sup> <sup>[[Archive.org]][726]</sup> <sup>[[Tor Mirror]][727]</sup>
+-   PDF: <https://anonymousplanet-ng.org/export/guide.pdf> <sup>[[Mirror]][725]</sup> <sup>[[Archive.org]][726]</sup> <sup>[[Tor Mirror]][727]</sup>
 
--   <del>OpenDocument Text (ODT) version at: <https://anonymousplanet-ng.org/guide.odt> <sup>[[Mirror]][731]</sup> <sup>[[Archive.org]][732]</sup> <sup>[[Tor Mirror]][733]</sup></del> (temporarily unavailable)
+-   OpenDocument Text (ODT) version at: <https://anonymousplanet-ng.org/export/guide.odt> <sup>[[Mirror]][731]</sup> <sup>[[Archive.org]][732]</sup> <sup>[[Tor Mirror]][733]</sup>
 
 -   All at CryptPad.fr ~~<https://cryptpad.fr/drive/#/2/drive/view/Ughm9CjQJCwB8BIppdtvj5zy4PyE-8Gxn11x9zaqJLI/>~~ (coming soon)
 
@@ -14168,15 +14164,15 @@ You can find some introduction on these on these projects:
   [https://nitter.net]: https://nitter.fdn.fr
   [723]: https://web.archive.org/web/https://github.com/spikecodes/libreddit
   [724]: https://web.archive.org/web/https://simplytranslate.org/
-  [725]: https://mirror.anonymousplanet-ng.org/guide.pdf
-  [726]: https://web.archive.org/web/https://anonymousplanet-ng.org/guide.pdf
+  [725]: https://mirror.anonymousplanet-ng.org/export/guide.pdf
+  [726]: https://web.archive.org/web/https://anonymousplanet-ng.org/export/guide.pdf
   [727]: http://thgtoa7imksbg7rit4grgijl2ef6kc7b56bp56pmtta4g354lydlzkqd.onion/guide.pdf
-  [728]: https://mirror.anonymousplanet-ng.org/guide-dark.pdf
-  [729]: https://web.archive.org/web/https://anonymousplanet-ng.org/guide-dark.pdf
-  [730]: http://thgtoa7imksbg7rit4grgijl2ef6kc7b56bp56pmtta4g354lydlzkqd.onion/guide-dark.pdf
-  [731]: https://mirror.anonymousplanet-ng.org/guide.odt
-  [732]: https://web.archive.org/web/https://anonymousplanet-ng.org/guide.odt
-  [733]: http://thgtoa7imksbg7rit4grgijl2ef6kc7b56bp56pmtta4g354lydlzkqd.onion/guide.odt
+  [728]: https://mirror.anonymousplanet-ng.org/export/guide-dark.pdf
+  [729]: https://web.archive.org/web/https://anonymousplanet-ng.org/export/guide-dark.pdf
+  [730]: http://thgtoa7imksbg7rit4grgijl2ef6kc7b56bp56pmtta4g354lydlzkqd.onion/export/guide-dark.pdf
+  [731]: https://mirror.anonymousplanet-ng.org/export/guide.odt
+  [732]: https://web.archive.org/web/https://anonymousplanet-ng.org/export/guide.odt
+  [733]: http://thgtoa7imksbg7rit4grgijl2ef6kc7b56bp56pmtta4g354lydlzkqd.onion/export/guide.odt
   [734]: https://web.archive.org/web/https://help.libreoffice.org/7.1/en-US/text/shared/guide/redlining_doccompare.html
   [735]: https://web.archive.org/web/https://www.whonix.org/wiki/Surfing_Posting_Blogging#Anonymous_File_Sharing
   [736]: https://yewtu.be/watch?v=H33ggs7bh8M
