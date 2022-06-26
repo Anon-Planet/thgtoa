@@ -42,13 +42,11 @@ This guide is a non-profit open-source initiative, licensed under Creative Commo
 
 -   For help in comparing versions see [Appendix A7: Comparing versions]
 
-Feel free to submit issues **(please do report anything wrong)** using GitHub Issues at: <https://github.com/AnonyPla-ng/thgtoa/issues>
+Feel free to submit issues **(please do report anything wrong)** using GitHub Issues at: <https://github.com/NobodySpecial256/thgtoa/issues>
 
 Feel free to come to discuss ideas at:
 
--   <del>GitHub Discussions: <https://github.com/AnonyPla-ng/thgtoa/discussions></del> (temporarily unavailable)
-
--   <del>Rules for our chatrooms: <https://privacy-security-anonymity.github.io/chatrooms-rules/></del> (temporarily unavailable)
+-   Rules for our chatrooms: <https://anonymousplanet-ng.org/chatrooms-rules.html>
 
 -   Matrix/Element Room: ```#anonymity:matrix.org``` <https://matrix.to/#/#anonymity:matrix.org>
 
