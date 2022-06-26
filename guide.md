@@ -1747,7 +1747,7 @@ First, here is a small basic UML diagram showing your available options accordin
 
         -   **You could go for Tails, Whonix routes.**
 
-    -   It is new and it has great specs (more than 16GB or for a perfect experience 32GB of RAM, >250GB of disk space, recent fast CPU):
+    -   It is new and it has great specs (more than 16GB or ideally 32GB of RAM, >250GB of disk space, recent fast CPU):
 
         -   **You could go for any route, but I would recommend Qubes OS if your threat model allows it.**
 
@@ -2551,7 +2551,7 @@ You can mitigate this attack by doing the following (as recommended earlier):
 
 -   Set up BIOS/UEFI/Firmware passwords to prevent any unauthorized boot of an unauthorized device.
 
--   Some OSes and Encryption software have anti-EvilMaid protection that can be enabled. This is the case with Windows/Veracrypt and QubeOS (only on intel CPUs).
+-   Some OSes and Encryption software have anti-EvilMaid protection that can be enabled. This is the case with Windows/Veracrypt and QubeOS (only on Intel CPUs).
 
 ##### Cold-Boot Attack:
 
@@ -3928,7 +3928,7 @@ Refer to this tutorial <https://www.whonix.org/wiki/Other_Operating_Systems> <su
 
 -   Windows might prompt you if you want to be "discoverable" on this network. Click NO. Always stay on a "public network" if prompted.
 
-**Every time you will power on this VM in the future, you should ideally change its Ethernet Mac Address before each boot. You can do this in Virtualbox > Settings > Network > Advanced > Click the refresh button next to the MAC address. You can only do this while the VM is powered off.**
+**Every time you will power on this VM in the future, you should make sure to change its Ethernet Mac Address before each boot. You can do this in Virtualbox > Settings > Network > Advanced > Click the refresh button next to the MAC address. You can only do this while the VM is powered off.**
 
 #### If you cannot use Tor:
 
@@ -3962,7 +3962,7 @@ See [Appendix P: Accessing the internet as safely as possible when Tor and VPNs 
 
 -   Windows will prompt you if you want to be discoverable on this network. Click NO.
 
-**Every time you will power on this VM in the future, you should change its Ethernet Mac Address before each boot. You can do this in Virtualbox > Settings > Network > Advanced > Click the refresh button next to the MAC address. You can only do this while the VM is powered off.**
+**Every time you will power on this VM in the future, you should make sure to change its Ethernet Mac Address before each boot. You can do this in Virtualbox > Settings > Network > Advanced > Click the refresh button next to the MAC address. You can only do this while the VM is powered off.**
 
 #### Choose a browser within the VM:
 
@@ -4995,7 +4995,7 @@ Remember this should be done from a safe place (see [Find some safe places with 
 
 ### Upgrading Qubes OS from 4.0.x to 4.1.x (you should do it)
 
-Personaly, I wouldn't do it in-place and do a fresh install. 
+Personally, I wouldn't do it in-place and do a fresh install. 
 
 But if you really want to, it's technically possible by following this guide: <https://www.qubes-os.org/doc/upgrade/4.1/> <sup>[[Archive.org]][1372]</sup>
 
@@ -5079,9 +5079,12 @@ This tutorial should also work with any OpenVPN provider (Mullvad, IVPN, Safing.
 
 This is based on the tutorial provided by Qubes OS themselves (<https://github.com/Qubes-Community/Contents/blob/master/docs/configuration/vpn.md> <sup>[[Archive.org]][377]</sup>). This part of the guide needs reworking and update, please follow their tutorial. 
 
-    -   If you are going for VPN over Tor, you need to go into the settings of the ProxyVM you made and select sys-vpn as networking, the sys-vpn VM should have sys-whonix in networking. You can test check usually on the home page of your VPN provider if it works. Alternatively you can just run a VPN client on the ProxyVM.
+    -   If you are going for VPN over Tor, you need to go into the settings of the ProxyVM you made and select "sys-vpn" for networking.
+        -   An easier way to setup your ProxyVM is to simply run a VPN client on the ProxyVM.
+        -   Usually when you connect to your VPN provider's website, it'll tell you whether your traffic is being properly routed through the VPN.
 
-    -   If you are going for Tor over VPN, the opposite should be done, the ProxyVM should have sys-tor as networking and the sys-tor VM should have sys-VPN as networking , test the VM connectivity to the internet by launching a Browser within the ProxyVM and access  <https://check.torproject.org> <sup>[[Archive.org]][378]</sup> (It should say you are connected to Tor)
+    -   If you are going for Tor over VPN, the opposite should be done, the ProxyVM should have its networking set as "sys-tor" and the "sys-tor" VM should have "sys-vpn" for its networking.
+        -   Test the VM connectivity to the internet by launching a Browser within the ProxyVM. Visit <https://check.torproject.org> <sup>[[Archive.org]][378]</sup> (It should say you are connected to Tor)
 
 #### Download the VPN configuration from your cash/Monero paid VPN provider:
 
@@ -5279,7 +5282,7 @@ Within the Applications Menu (upper left), Select the Fedora-34 template:
 
 -   Go into Qube Settings
 
--   Clone the VM and name it "sys-fedora-3x-brave" (this VM template will have Brave)
+-   Clone the VM and name it "fedora-3x-brave" (this VM template will have Brave)
 
 -   Again, go into the Applications Menu and select the clone you just created
 
@@ -5337,7 +5340,7 @@ Basically, follow the tutorial here:
 
 -   Click Create Qubes VM
 
--   Name and label as you wish: I suggest "sys-Android"
+-   Name and label as you wish: I suggest "Android"
 
 -   Select Type: Standalone Qube copied from a template
 
