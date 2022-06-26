@@ -2813,7 +2813,8 @@ I also recommend that you do the initial installation completely offline to avoi
 
 As a light introduction for new macOS users, consider <https://www.youtube.com/watch?v=lFx5icuE6Io> <sup>[[Invidious]][293]</sup>
 
-Now to go more in-depth in securing and hardening your macOS, I recommend reading this GitHub guide which should cover many of the issues: <https://github.com/drduh/macOS-Security-and-Privacy-Guide> <sup>[[Archive.org]][294]</sup>
+Now to go more in-depth in securing and hardening your macOS, I recommend reading this guide which covers many of the issues: <https://www.bejarano.io/hardening-macos/> <sup>[[Archive.org]][294]</sup>
+
 
 Here are the basic steps you should take after your offline installation:
 
@@ -13720,7 +13721,7 @@ You can find some introduction on these on these projects:
   [291]: https://web.archive.org/web/https://www.whonix.org/wiki/Kicksecure
   [292]: https://web.archive.org/web/http://0pointer.net/blog/authenticated-boot-and-disk-encryption-on-linux.html
   [293]: https://yewtu.be/watch?v=lFx5icuE6Io
-  [294]: https://web.archive.org/web/https://github.com/drduh/macOS-Security-and-Privacy-Guide
+  [294]: https://web.archive.org/web/https://www.bejarano.io/hardening-macos/
   [295]: https://web.archive.org/web/https://support.apple.com/en-us/HT204455
   [296]: https://web.archive.org/web/https://sneak.berlin/20201112/your-computer-isnt-yours/
   [297]: https://web.archive.org/web/https://blog.jacopo.io/en/post/apple-ocsp/
