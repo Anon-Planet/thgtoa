@@ -31,7 +31,7 @@ These are currently only enforced on **Anonymity** and **Security**, and not app
 - **Avoid drifting too much off-topic or move to an off-topic room like #bnonymity**
 - **Any discussion about AnonyPla / Lena whereabouts is only tolerated, to an extent, in the #Bnonymity room.**
 
-Some exceptions can apply, see the [exceptions](#exceptions) section at the bottom of this page.
+Some exceptions can apply, see the [exceptions](#exceptions) section at the bottom of this page. Violations will be handled at the discretion of the acting moderator.
 
 #### Rules for Nothing To Hide Privacy:<a name="nth"></a>
 - Zero tolerance for discussion of how to commit illicit acts
@@ -53,7 +53,7 @@ See <https://artemislena.eu/coc.html>
 - No hate speech (No racism, no homophobia, no transphobia...)
 - No spammerino (scams, ads, flooding...)
 - No doxxing
-- No Porn, no Gore, no Hentai...
+- No NSFW content (no Porn, no Gore, no Hentai...)
 - All of the above can result in an insta-ban depending on the severity
 
 #### Exceptions:<a name="exceptions"></a>
