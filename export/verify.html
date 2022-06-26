@@ -18,14 +18,12 @@
 <header id="title-block-header">
 <h1 class="title">The Hitchhiker&#39;s Guide to Online Anonymity</h1>
 </header>
-<h1 id="warning">Warning:</h1>
-<p><strong><em>The private keys outlined in this document may have been compromised. This document still needs to be updated to reflect the new verification process. Hang tight while necessary changes are made to maintain integrity of the files.</em></strong></p>
 <h2 id="how-to-check-the-files-for-safetyintegrity-and-authenticity.">How to check the files for safety/integrity and authenticity.</h2>
 <p>The PDF and ODT files in this guide are cryptographically signed using GPG and Minisign. Their integrity can be verified with the published SHA256 Chrecksum Hashes on this website.</p>
 <p>SHA256 Checksums of all the PDF and ODT files are available here in the <a href="sha256sum.txt">sha256sum.txt</a> file.</p>
 <p>SHA256 Checksums, signatures, and virustotal checks of the releases files (containing the whole repository) are available within release information at <a href="https://github.com/AnonyPla-ng/thgtoa/releases/latest" class="uri">https://github.com/AnonyPla-ng/thgtoa/releases/latest</a></p>
-<p>The GPG signatures for each PDF and ODT files are available here: - PDF (Light Theme) Main and Mirrors: <a href="guide.pdf.asc">guide.pdf.asc</a> - PDF (Dark Theme) Main and Mirrors: <a href="guide-dark.pdf.asc">guide-dark.pdf.asc</a> - ODT Main and Mirrors: <a href="guide.odt.asc">guide.odt.asc</a></p>
-<p>The Minisign signatures for each PDF and ODT files are available here: - PDF (Light Theme) Main and Mirrors: <a href="guide.pdf.minisig">guide.pdf.minisig</a> - PDF (Dark Theme) Main and Mirrors: <a href="guide-dark.pdf.minisig">guide-dark.pdf.minisig</a> - ODT Main and Mirrors: <a href="guide.odt.minisig">guide.odt.minisig</a></p>
+<p>The GPG signatures for each PDF and ODT files are available here: - PDF (Light Theme) Main and Mirrors: <a href="guide.pdf.asc">guide.pdf.asc</a> - ODT Main and Mirrors: <a href="guide.odt.asc">guide.odt.asc</a></p>
+<p>The Minisign signatures for each PDF and ODT files are available here: - PDF (Light Theme) Main and Mirrors: <a href="guide.pdf.minisig">guide.pdf.minisig</a> - ODT Main and Mirrors: <a href="guide.odt.minisig">guide.odt.minisig</a></p>
 <h3 id="how-to-check-the-integrity-of-the-files-using-the-sha256-checksums">How to check the integrity of the files using the SHA256 Checksums:</h3>
 <p>Please do the following:</p>
 <p>Windows: - From a command prompt, run <code>certutil -hashfile filename.txt sha256</code> - Compare the result with the hash in the online checksum files. They should match.</p>
@@ -35,26 +33,26 @@
 <h3 id="how-to-verify-the-the-authenticity-and-integrity-of-the-files-using-gpg">How to verify the the authenticity and integrity of the files using GPG:</h3>
 <p>Now to verify the files with GPG signatures, you should first install gpg on your system: - Windows: Install gpg4win from <a href="https://www.gpg4win.org/download.html" class="uri">https://www.gpg4win.org/download.html</a> - MacOS: Install GPG Tools from <a href="https://gpgtools.org/" class="uri">https://gpgtools.org/</a> - Linux: gpg should be installed by default</p>
 <p>Import the GPG key using the following command from a command prompt or terminal:</p>
-<p><code>gpg --auto-key-locate nodefault,wkd --locate-keys 0xEB16B6AB4AB7BA61F33E2DFD0051E9A589DAB601</code></p>
-<p>In theory this command should fetch the key from the a default pool server. If this doesn’t work, you can also download/view it directly from here: <a href="https://anonymousplanet-ng.org/AnonymousPlanet_0x89DAB601_public.asc" class="uri">https://anonymousplanet-ng.org/AnonymousPlanet_0x89DAB601_public.asc</a> <sup>[[Mirror]][12]</sup> <sup>[[Tor Mirror]][14]</sup></p>
-<p>For redundancy, you can also verify the authenticity of this GPG signature using: - My Keybase.io profile <a href="https://keybase.io/anonymousplanet" class="uri">https://keybase.io/anonymousplanet</a> - My Keyoxide.org profile <a href="https://keyoxide.org/eb16b6ab4ab7ba61f33e2dfd0051e9a589dab601" class="uri">https://keyoxide.org/eb16b6ab4ab7ba61f33e2dfd0051e9a589dab601</a></p>
-<p>As well as the published key on (search for the fingerprint <code>0xEB16B6AB4AB7BA61F33E2DFD0051E9A589DAB601</code>): - <a href="https://pgp.mit.edu" class="uri">https://pgp.mit.edu</a> - <a href="https://keys.openpgp.org" class="uri">https://keys.openpgp.org</a> - <a href="https://keyserver.ubuntu.com" class="uri">https://keyserver.ubuntu.com</a></p>
+<p><code>gpg --auto-key-locate nodefault,wkd --locate-keys 42FF35DB9DE7C088AB0FD4A70C216A52F6DF4920</code></p>
+<p>In theory this command should fetch the key from the a default pool server. If this doesn’t work, you can also download/view it directly from here: <a href="https://anonymousplanet-ng.org/42FF35DB9DE7C088AB0FD4A70C216A52F6DF4920.asc" class="uri">https://anonymousplanet-ng.org/42FF35DB9DE7C088AB0FD4A70C216A52F6DF4920.asc</a> <sup>[[Mirror]][12]</sup></p>
+<p>For redundancy, you can also verify the authenticity of this GPG signature using:</p>
+<p>As well as the published key on (search for the fingerprint <code>42FF35DB9DE7C088AB0FD4A70C216A52F6DF4920</code>): - <a href="https://pgp.mit.edu" class="uri">https://pgp.mit.edu</a> - <a href="https://keys.openpgp.org" class="uri">https://keys.openpgp.org</a> - <a href="https://keyserver.ubuntu.com" class="uri">https://keyserver.ubuntu.com</a></p>
 <p>You should then import it manually by issuing the following command on any OS:</p>
-<p><code>gpg --import AnonymousPlanet_0x89DAB601_public.asc</code></p>
+<p><code>gpg --import 42FF35DB9DE7C088AB0FD4A70C216A52F6DF4920.asc</code></p>
 <p>Finally, verify the asc signature file (links above) against the PDF files by issuing the following commands:</p>
-<p><code>gpg --verify guide.pdf.asc guide.pdf&quot;</code> <code>gpg --verify guide-dark.pdf.asc guide-dark.pdf&quot;</code></p>
+<p><code>gpg --verify guide.pdf.asc guide.pdf&quot;</code></p>
 <p>This should output a result showing it matches and it’s ok.</p>
 <h3 id="how-to-verify-the-the-authenticity-and-integrity-of-the-files-using-minisign">How to verify the the authenticity and integrity of the files using Minisign:</h3>
 <p>To verify the files with Minisign:</p>
 <ul>
-<li>You should first dowbload minisign from https://jedisct1.github.io/minisign/</li>
+<li>You should first dowbload minisign from <a href="https://jedisct1.github.io/minisign/" class="uri">https://jedisct1.github.io/minisign/</a></li>
 <li>Download the files along with their *.minisig signature file (they should be in the same directory)</li>
 <li>Download the Minisign public key available on the website and repository: <a href="minisign.pub">minisign.pub</a> (again place it in the same directory for convenience)</li>
 <li>Run the following command in a command prompt or terminal: <code>minisign -Vm guide.pdf -p minisign.pub</code></li>
 <li>Output should show <code>Signature and comment signature verified</code></li>
 </ul>
 <h3 id="how-to-check-the-safety-of-the-files-using-virustotal">How to check the safety of the files using VirusTotal:</h3>
-<p>The PDF and ODT files in this guide have been checked by VirusTotal, see the links below but do not trust them blindly and check the hashes matches and re-upload to VT if needed (<strong>Note that this guide does not endorse VirusTotal. It should be used with extreme caution and never with any sensitive files due to their privacy policies</strong>): - Light Theme: <a href="https://www.virustotal.com/gui/file/21dfa2f7da668156275e4ca2bc82091f347739967a278cf24a062c15a3944016?nocache=1">[VirusTotal]</a> - Dark Theme: <a href="https://www.virustotal.com/gui/file/45d4ed258a202d4f0c49d848d6f52333782e6f912c1b67b1125a442de2ff5b7c?nocache=1">[VirusTotal]</a> - ODT file: <a href="https://www.virustotal.com/gui/file/df8554f732dc54b530fd831548f0727934f2e03ad1518ac33061d0995eab2172?nocache=1">[VirusTotal]</a></p>
+<p>The PDF and ODT files in this guide have been checked by VirusTotal, see the links below but do not trust them blindly and check the hashes matches and re-upload to VT if needed (<strong>Note that this guide does not endorse VirusTotal. It should be used with extreme caution and never with any sensitive files due to their privacy policies</strong>): - Light Theme: <a href="https://www.virustotal.com/gui/file/21dfa2f7da668156275e4ca2bc82091f347739967a278cf24a062c15a3944016?nocache=1">[VirusTotal]</a> - ODT file: <a href="https://www.virustotal.com/gui/file/df8554f732dc54b530fd831548f0727934f2e03ad1518ac33061d0995eab2172?nocache=1">[VirusTotal]</a></p>
 <h3 id="additional-manual-safety-checks-for-the-pdf-files">Additional manual safety checks for the PDF files:</h3>
 <p>For additional safety; you can always double check the PDF files using PDFID which you can download at <a href="https://blog.didierstevens.com/programs/pdf-tools/" class="uri">https://blog.didierstevens.com/programs/pdf-tools/</a> (You might be wondering why should trust a random python script? Well it’s open-source and well-known. It’s probably a safer bet than trusting a random PDF).</p>
 <p>Here are the steps:</p>
