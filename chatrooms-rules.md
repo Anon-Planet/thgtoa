@@ -40,7 +40,7 @@ Some exceptions can apply, see the [exceptions](#exceptions) section at the bott
 - Be respectful
 
 #### Rules for Modern Cryptography:<a name="moderncrypto"></a>
-See <https://nobodyspecial.neocities.org/rules.md.html> 
+See <https://anonymousplanet-ng.org/moderncrypto-rules.html>
 
 #### Rules for OS Security:<a name="ossecurity"></a>
 See <https://artemislena.eu/coc.html>
