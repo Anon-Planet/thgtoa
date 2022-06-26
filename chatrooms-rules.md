@@ -53,7 +53,7 @@ See <https://artemislena.eu/coc.html>
 - No hate speech (No racism, no homophobia, no transphobia...)
 - No spammerino (scams, ads, flooding...)
 - No doxxing
-- No NSFW content (no Porn, no Gore, no Hentai...)
+- No NSFW media (pics and/or vids) content (no Porn, no Gore, no Hentai, No Lolicon...)
 - All of the above can result in an insta-ban depending on the severity
 
 #### Exceptions:<a name="exceptions"></a>
