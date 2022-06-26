@@ -5634,6 +5634,10 @@ Here are two services you can use to check your browser Fingerprinting:
 -   <https://amiunique.org>
 
 -   <https://browserleaks.com/>
+    
+-   <https://www.deviceinfo.me/>
+
+-   (Chromium based browsers only) <https://z0ccc.github.io/extension-fingerprints/#>
 
 Chances are you will find your browser fingerprint unique no matter what you do.
 
