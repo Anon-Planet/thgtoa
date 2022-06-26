@@ -29,7 +29,7 @@ These are currently only enforced on **Anonymity** and **Security**, and not app
 - No upload of any non-media files (binaries, executables, compressed files...)
 - No voice messages (these will be auto-deleted by the bots)
 - **Avoid drifting too much off-topic or move to an off-topic room like #bnonymity**
-- **Any discussion about AnonyPla / Lena whereabouts will not be tolerated in #Anonymity, #Security, and ##psa-ot rooms. You may discuss this in the #Bnonymity room. If you do not respect this rule, you will risk being warned, kicked or even banned depending on the circumstances.
+- **Any discussion about AnonyPla / Lena whereabouts is only tolerated, to an extent, in the #Bnonymity room.**
 
 Some exceptions can apply, see the [exceptions](#exceptions) section at the bottom of this page.
 
