@@ -1,4 +1,4 @@
-v1.1.x (unpublished yet)
+v1.1.x (unreleased but online)
 - Fixed some spelling/grammar
 - Update to contributing guidelines
 - Update of modern-crypto room rules
