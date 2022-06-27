@@ -502,7 +502,7 @@ First, you could also consider these more general resources on privacy and secur
 
 -   Privacy Tools*: <https://privacytools.io> <sup>[[Archive.org]][45]</sup>
 
-* Note that these websites could contain affiliate/sponsored content and/or merchandising. This guide does not endorse and is not sponsored by any commercial entity in any way.
+\* Note that these websites could contain affiliate/sponsored content and/or merchandising. This guide does not endorse and is not sponsored by any commercial entity in any way.
 
 If you skipped those, you should really still consider viewing this YouTube playlist from the Techlore Go Incognito project (<https://github.com/techlore-official/go-incognito> <sup>[[Archive.org]][46]</sup>) as an introduction before going further: <https://www.youtube.com/playlist?list=PL3KeV6Ui_4CayDGHw64OFXEPHgXLkrtJO> <sup>[[Invidious]][47]</sup>. This guide will cover many of the topics in the videos of this playlist with more details and references as well as some added topics not covered within that series. This will just take you 2 or 3 hours to watch it all.
 
