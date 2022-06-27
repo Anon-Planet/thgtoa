@@ -448,7 +448,7 @@ You must consider your threat model[^12] before going further.
 
 (Illustration by Randall Munroe, xkcd.com, licensed under CC BY-NC 2.5)
 
-Will this guide help you protect your privacy from OSINT researchers like Bellingcat[^13], Doxing[^14] trolls on 4chan[^15], and others that have no access to the NSA toolbox? More likely. Tho I would not be so sure about 4chan.
+Will this guide help you protect your privacy from OSINT researchers like Bellingcat[^13], Doxing[^14] trolls on 4chan[^15], and others that have no access to the NSA toolbox? More likely. Tho we would not be so sure about 4chan.
 
 Here is a basic simplified threat model for this guide:
 
@@ -636,7 +636,7 @@ Here is an illustration showing the current state of DNS and HTTPS privacy based
 
 ![][56]
 
-As for your normal daily use (non-sensitive), remember that only Firefox-based browsers support ECH (formerly eSNI) so far and that it is only useful with websites hosted behind Cloudflare CDN at this stage. If you prefer a Chrome-based version (which is understandable for some due to some better-integrated features like on-the-fly Translation), then I would recommend the use of Brave instead which supports all Chrome extensions and offers much better privacy than Chrome.
+As for your normal daily use (non-sensitive), remember that only Firefox-based browsers support ECH (formerly eSNI) so far and that it is only useful with websites hosted behind Cloudflare CDN at this stage. If you prefer a Chrome-based version (which is understandable for some due to some better-integrated features like on-the-fly Translation), then we would recommend the use of Brave instead which supports all Chrome extensions and offers much better privacy than Chrome.
 
 But the story does not stop there right. Now because after all this, even if you encrypt your DNS and use all possible mitigations. Simple IP requests to any server will probably allow an adversary to still detect which site you are visiting. And this is simply because the majority of websites have unique IPs tied to them as explained here: <https://blog.apnic.net/2019/08/23/what-can-you-learn-from-an-ip-address/> <sup>[[Archive.org]][57]</sup>. This means that an adversary can create a dataset of known websites for instance including their IPs and then match this dataset against the IP you ask for. In most cases, this will result in a correct guess of the website you are visiting. This means that despite OCSP stapling, despite ECH/eSNI, despite using Encrypted DNS ... An adversary can still guess the website you are visiting anyway.
 
@@ -1438,7 +1438,7 @@ There is a frequent adage among the infosec community: "Don't roll your own cryp
 
 And there are reasons[^255]'[^256]'[^257]'[^258] for that:
 
-I would not want people discouraged from studying and innovating in the crypto field because of that adage. So instead, I would recommend people to be cautious with "Roll your own crypto" because it is not necessarily good crypto:
+We would not want people discouraged from studying and innovating in the crypto field because of that adage. So instead, we would recommend people to be cautious with "Roll your own crypto" because it is not necessarily good crypto:
 
 -   Good cryptography is not easy and usually takes years of research to develop and fine-tune.
 
@@ -1749,7 +1749,7 @@ First, here is a small basic UML diagram showing your available options accordin
 
     -   It is new and it has great specs (more than 16GB or for a perfect experience 32GB of RAM, >250GB of disk space, recent fast CPU):
 
-        -   **You could go for any route, but I would recommend Qubes OS if your threat model allows it.**
+        -   **You could go for any route, but we would recommend Qubes OS if your threat model allows it.**
 
     -   If it is an ARM-based M1 Mac:
 
@@ -1765,7 +1765,7 @@ First, here is a small basic UML diagram showing your available options accordin
 
             -   **Qubes OS is not supported on ARM architecture yet.**
 
-**Your only option on M1 Macs is probably to stick with Tor Browses for now. But I would guess that if you can afford an M1 Mac you should probably get a dedicated x86 laptop for more sensitive activities.**
+**Your only option on M1 Macs is probably to stick with Tor Browses for now. But we would guess that if you can afford an M1 Mac you should probably get a dedicated x86 laptop for more sensitive activities.**
 
 ### Skills:
 
@@ -1915,7 +1915,7 @@ This is rather easy. Leave your smartphone on and at home. Have some cash and go
 
 *A note regarding your current phone:* The point of leaving your smartphone on is to create avoid leaking the fact that you're not using the device. If a smartphone is turned off, this creates a metadata trail that can be used to correlate the time your smartphone was turned off with the activation of your burner. If possible, leave your phone doing something (for example, watching YouTube on auto-play) to obscure the metadata trail further. This will not make it impossible to correlate your inactivity, but may make it more difficult if your phone's usage patterns can look convincing while you buy your burner.
 
-I would recommend getting an old "dumbphone" with a removable battery (old Nokia if your mobile networks still allow those to connect as some countries phased out 1G-2G completely). This is to avoid the automatic sending/gathering of any telemetry/diagnostic data on the phone itself. You should never connect that phone to any Wi-Fi.
+We would recommend getting an old "dumbphone" with a removable battery (old Nokia if your mobile networks still allow those to connect as some countries phased out 1G-2G completely). This is to avoid the automatic sending/gathering of any telemetry/diagnostic data on the phone itself. You should never connect that phone to any Wi-Fi.
 
 **Site Note: Be careful of some sellers as shown here <https://therecord.media/malware-found-preinstalled-in-classic-push-button-phones-sold-in-russia/>** <sup>[[Archive.org]][226]</sup>
 
@@ -1939,7 +1939,7 @@ See [Appendix N: Warning about smartphones and smart devices]
 
 Double-check that the mobile operators selling the pre-paid SIM cards will accept the SIM activation and top-up without any ID registration of any kind before going there. Ideally, they should accept SIM activation and top-up from the country you live in.
 
-I would recommend GiffGaff in the UK as they are "affordable", do not require identification for activation and top-up, and will even allow you to change your number up to two times from their website. One GiffGaff prepaid SIM card will therefore grant you three numbers to use for your needs.
+We would recommend GiffGaff in the UK as they are "affordable", do not require identification for activation and top-up, and will even allow you to change your number up to two times from their website. One GiffGaff prepaid SIM card will therefore grant you three numbers to use for your needs.
 
 Power off the phone after activation/top-up and before going home. Do not ever power it on again unless you are not at a place that can be used to reveal your identity and ideally leave your real phone on but at home before going to the safe place with only your burner phone.
 
@@ -1985,7 +1985,7 @@ Therefore IMHO, it is just more convenient, cheaper, and less risky to just get 
 
 **Skip this step if you have no intention of creating anonymous accounts on most mainstream platforms but just want anonymous browsing or if the platforms you will use allow registration without a phone number.**
 
-Get at least one or two decent size generic USB keys (at least 16GB but I would recommend 32GB).
+Get at least one or two decent size generic USB keys (at least 16GB but we would recommend 32GB).
 
 Please do not buy or use gimmicky self-encrypting devices such as these: <https://syscall.eu/blog/2018/03/12/aigo_part1/> <sup>[[Archive.org]][235]</sup>
 
@@ -2085,7 +2085,9 @@ You will find details about each level here: <https://tb-manual.torproject.org/s
 
     -   Any media playback is "click to play" (disabled by default)
 
-I would recommend the "Safer" level for most cases. The Safest level should only be enabled if you think you are accessing suspicious or dangerous websites and/or if you are extra paranoid.
+We would recommend the "Safer" level for most cases. The Safest level should be enabled if you think you are accessing suspicious or dangerous websites and/or if you are extra paranoid.
+
+If you are extra paranoid, use the "Safest" level by default and consider downgrading to Safer is the website is unusable because of Javascript blocking.
 
 However, the Safer level should be used with some extra precautions while using some websites: see [Appendix A5: Additional browser precautions with JavaScript enabled].
 
@@ -2171,7 +2173,7 @@ As with the desktop version, you need to know there are safety levels in Onion B
 
         -   Ads and Pop-Ups are blocked
 
-I would recommend the "Silver" level for most cases. The Gold level should only be enabled if you think you are accessing suspicious or dangerous websites or if you are extra paranoid. The Gold mode will also most likely break many websites that rely actively on JavaScript.
+We would recommend the "Silver" level for most cases. The Gold level should only be enabled if you think you are accessing suspicious or dangerous websites or if you are extra paranoid. The Gold mode will also most likely break many websites that rely actively on JavaScript.
 
 As JavaScript is enabled in the Silver mode, please see [Appendix A5: Additional browser precautions with JavaScript enabled].
 
@@ -2253,7 +2255,9 @@ When using Tor Browser, you should click the little shield Icon (upper right, ne
 
     -   Any media playback is "click to play" (disabled by default)
 
-I would recommend the "Safer" level for most cases. The Safest level should only be enabled if you think you are accessing suspicious or dangerous websites or if you are extra paranoid. The Safest mode will also most likely break many websites that rely actively on JavaScript.
+We would recommend the "Safer" level for most cases. The Safest level should be enabled if you think you are accessing suspicious or dangerous websites or if you are extra paranoid. The Safest mode will also most likely break many websites that rely actively on JavaScript.
+
+If you are extra paranoid, use the "Safest" level by default and consider downgrading to Safer is the website is unusable because of Javascript blocking.
 
 Lastly, while using Tor Browser on Tails on the "Safer" level, please consider [Appendix A5: Additional browser precautions with JavaScript enabled]
 
@@ -2311,7 +2315,7 @@ Here is my guide on how to achieve this:
 
 -   Prepare a USB Key/Drive with Veracrypt
 
-    -   Create a Hidden Volume on the USB/Key Drive (I would recommend at least 16GB for the hidden volume)
+    -   Create a Hidden Volume on the USB/Key Drive (We would recommend at least 16GB for the hidden volume)
 
     -   In the Outer Volume, place some decoy files
 
@@ -2375,7 +2379,7 @@ All future online steps performed with this laptop should ideally be done from a
 
 ### Some laptop recommendations:
 
-I would strongly recommend getting a "business grade" laptop (meaning not consumer/gaming-grade laptop) if you can. For instance, some ThinkPad from Lenovo (my personal favorite).
+We would strongly recommend getting a "business grade" laptop (meaning not consumer/gaming-grade laptop) if you can. For instance, some ThinkPad from Lenovo (my personal favorite).
 
 This is because those business laptops usually offer better and more customizable security features (especially in the BIOS/UEFI settings) with longer support than most consumer laptops (Asus, MSI, Gigabyte, Acer...). The interesting features to look for are IMHO:
 
@@ -2559,7 +2563,7 @@ Cold Boot attacks[^319] are trickier than the Evil Maid Attack but can be part o
 
 The idea is rather simple, as shown in this video[^320], an adversary could theoretically quickly boot your device on a special USB key that would copy the content of the RAM (the memory) of the device after you shut it down. If the USB ports are disabled or if they feel like they need more time, they could open it and "cool down" the memory using a spray or other chemicals (liquid nitrogen for instance) preventing the memory from decaying. They could then be able to copy its content for analysis. This memory dump could contain the key to decrypt your device. We will later apply a few principles to mitigate these.
 
-In the case of Plausible Deniability, there have been some forensics studies[^321] about technically proving the presence of the hidden data with a simple forensic examination (without a Cold Boot/Evil Maid Attack) but these have been contested by other studies[^322] and by the maintainer of Veracrypt[^323] so I would not worry too much about those yet.
+In the case of Plausible Deniability, there have been some forensics studies[^321] about technically proving the presence of the hidden data with a simple forensic examination (without a Cold Boot/Evil Maid Attack) but these have been contested by other studies[^322] and by the maintainer of Veracrypt[^323] so we would not worry too much about those yet.
 
 The same measures used to mitigate Evil Maid attacks should be in place for Cold Boot attacks with some added ones:
 
@@ -2701,7 +2705,7 @@ For other distros, you will have to document yourself, but it will likely be sim
 
 #### Note about plausible deniability on Linux:
 
-There are several ways to achieve plausible deniability on Linux[^329] and it is possible to achieve. Here are some more details about some of the ways I would recommend. All these options require some higher level of skills at using Linux.
+There are several ways to achieve plausible deniability on Linux[^329] and it is possible to achieve. Here are some more details about some of the ways we would recommend. All these options require some higher level of skills at using Linux.
 
 ##### The Detached Headers Way:
 
@@ -2863,7 +2867,7 @@ You could block OCSP reporting by issuing the following command in Terminal:
 
 But you should document yourself on the actual issue before acting. This page is a good place to start: <https://blog.jacopo.io/en/post/apple-ocsp/> <sup>[[Archive.org]][297]</sup>
 
-Up to you really. I would block it because I do not want any telemetry at all from my OS to the mothership without my specific consent. None.
+Up to you really. We would block it because I do not want any telemetry at all from my OS to the mothership without my specific consent. None.
 
 ##### Enable Full Disk encryption (Filevault):
 
@@ -3185,9 +3189,9 @@ This route is rather straightforward and will just encrypt your current Operatin
 
     -   If you have no sensitive data yet on this laptop, select None
 
-    -   If you have sensitive data on an SSD, Trim alone should take care of it[^342] but I would recommend one pass (random data) just to be sure.
+    -   If you have sensitive data on an SSD, Trim alone should take care of it[^342] but we would recommend one pass (random data) just to be sure.
 
-    -   If you have sensitive data on an HDD, there is no Trim, and I would recommend at least 1-pass.
+    -   If you have sensitive data on an HDD, there is no Trim, and we would recommend at least 1-pass.
 
 -   Test your setup. Veracrypt will now reboot your system to test the bootloader before encryption. This test must pass for encryption to go forward.
 
@@ -3573,7 +3577,7 @@ More information at:
 
 #### Tor over VPN:
 
-You might be wondering: Well, what about using Tor over VPN instead of VPN over Tor? Well, I would not necessarily it:
+You might be wondering: Well, what about using Tor over VPN instead of VPN over Tor? Well, we would not necessarily it:
 
 -   Disadvantages:
 
@@ -3840,7 +3844,7 @@ Consider using AppArmor on your Whonix Workstations by following this guide: <ht
 
 ##### If you can use Tor (natively or over a VPN):
 
-Use the Linux Distro of your choice. I would recommend Ubuntu or Fedora for convenience but any other would work too. Be sure to not enable any telemetry.
+Use the Linux Distro of your choice. we would recommend Ubuntu or Fedora for convenience but any other would work too. Be sure to not enable any telemetry.
 
 Refer to this tutorial <https://www.whonix.org/wiki/Other_Operating_Systems> <sup>[[Archive.org]][345]</sup> for detailed instructions.
 
@@ -3848,7 +3852,7 @@ Consider hardening the VM as recommended in [Hardening Linux].
 
 ##### If you cannot use Tor:
 
-Use the Linux Distro of your choice. I would recommend Ubuntu or Fedora for convenience but any other would work too. Be sure to not enable any telemetry. You could go with the risky route: See [Appendix P: Accessing the internet as safely as possible when Tor and VPNs are not an option]
+Use the Linux Distro of your choice. we would recommend Ubuntu or Fedora for convenience but any other would work too. Be sure to not enable any telemetry. You could go with the risky route: See [Appendix P: Accessing the internet as safely as possible when Tor and VPNs are not an option]
 
 ##### Choose a browser within the VM:
 
@@ -4010,7 +4014,7 @@ Just use the tutorials as is and see [Appendix P: Accessing the internet as safe
 
 Two possibilities: AnBox or Android-x86
 
-Personally, I would recommend AnBox over Android-x86 but it requires Linux
+Personally, we would recommend AnBox over Android-x86 but it requires Linux
 
 ##### AnBox:
 
@@ -4194,7 +4198,7 @@ This step will allow you to configure your Host OS so that only the Whonix Gatew
 
 There are three ways to do this:
 
--   The Lazy Way (not really recommended): not supported by Whonix and might have some security implications as you will expose the Whonix Gateway VM to the Public Wi-Fi network. I would recommend against this unless you are in a hurry or very lazy.
+-   The Lazy Way (not really recommended): not supported by Whonix and might have some security implications as you will expose the Whonix Gateway VM to the Public Wi-Fi network. we would recommend against this unless you are in a hurry or very lazy.
 
     -   **This method will not work with Wi-Fi captive portals requiring any registration to connect.**
 
@@ -4326,7 +4330,7 @@ Yet this will still not be supported by the Whonix project, but it is fine as th
 
 This option will require an additional VM between the Host OS and the Whonix Gateway to act as a Network Bridge.
 
-For this purpose, I will recommend the use of a lightweight Linux Distro. Any will do but the easiest IMHO will be an Ubuntu-based distro and I would recommend the lightweight XUbuntu as it will be extremely easy to configure this setup.
+For this purpose, I will recommend the use of a lightweight Linux Distro. Any will do but the easiest IMHO will be an Ubuntu-based distro and we would recommend the lightweight XUbuntu as it will be extremely easy to configure this setup.
 
 Why XUbuntu and not Ubuntu or KUbuntu? Because XUbuntu uses an XFCE desktop environment which is lightweight and this VM will only serve as a proxy and nothing else.
 
@@ -4538,7 +4542,7 @@ This way will not go against Whonix recommendations (as it will not expose the W
 
 This option will require an additional VM between the Host OS and the Whonix Gateway to act as a Network Bridge and to connect to the Wi-Fi network. **This option requires a working USB Wi-Fi Dongle that will be passed through to a bridge VM.**
 
-For this purpose, I will recommend the use of a lightweight Linux Distro. Any will do but the easiest IMHO will be an Ubuntu-based distro and I would recommend the lightweight XUbuntu as it will be extremely easy to configure this setup.
+For this purpose, I will recommend the use of a lightweight Linux Distro. Any will do but the easiest IMHO will be an Ubuntu-based distro and we would recommend the lightweight XUbuntu as it will be extremely easy to configure this setup.
 
 Why XUbuntu and not Ubuntu or KUbuntu? Because XUbuntu uses an XFCE desktop environment which is lightweight and this VM will only serve as a proxy and nothing else.
 
@@ -4720,7 +4724,7 @@ Qubes OS is not a Linux distribution[^362] but a Xen distribution. It is differe
 
 This OS is recommended by prominent figures such as Edward Snowden, PrivacyGuides.org.
 
-Qubes is the best option in this guide for people who are more comfortable with Linux and tech in general. But it has some downsides such as the lack of OS-wide plausible deniability, its hardware requirements, and its hardware compatibility. While you can run this on 4GB of RAM as per their requirements <sup>[[Archive.org]][363]</sup>, the recommended RAM is 16GB. I would recommend against using Qubes OS if you have less than 8GB of RAM. If you want a comfortable experience, you should have 16GB, if you want a particularly enjoyable experience, you should have 24GB or 32GB.
+Qubes is the best option in this guide for people who are more comfortable with Linux and tech in general. But it has some downsides such as the lack of OS-wide plausible deniability, its hardware requirements, and its hardware compatibility. While you can run this on 4GB of RAM as per their requirements <sup>[[Archive.org]][363]</sup>, the recommended RAM is 16GB. We would recommend against using Qubes OS if you have less than 8GB of RAM. If you want a comfortable experience, you should have 16GB, if you want a particularly enjoyable experience, you should have 24GB or 32GB.
 
 The reason for this RAM requirement is that each app will run in a different VM and each of those VM will require and allocate a certain amount of memory that will not be available for other apps. If you are running native Windows apps within Qubes OS Qubes, the ram overhead will be significant.
 
@@ -4995,7 +4999,7 @@ Remember this should be done from a safe place (see [Find some safe places with 
 
 ### Upgrading Qubes OS from 4.0.x to 4.1.x (you should do it)
 
-Personaly, I wouldn't do it in-place and do a fresh install. 
+Personaly, we wouldn't do it in-place and do a fresh install. 
 
 But if you really want to, it's technically possible by following this guide: <https://www.qubes-os.org/doc/upgrade/4.1/> <sup>[[Archive.org]][1372]</sup>
 
@@ -5019,7 +5023,7 @@ After you are connected to a Wi-Fi you need to update Qubes OS and Whonix. You m
 
 ### Upgrading Whonix from version 15 to version 16:
 
-Again, you should really do this ASAP. I would use a fresh install but it's technically possible to do it in-place, see <https://www.whonix.org/wiki/Release_Upgrade_Whonix_15_to_Whonix_16> <sup>[[Archive.org]][1376]</sup>
+Again, you should really do this ASAP. We would use a fresh install but it's technically possible to do it in-place, see <https://www.whonix.org/wiki/Release_Upgrade_Whonix_15_to_Whonix_16> <sup>[[Archive.org]][1376]</sup>
 
 Follow the instructions on <https://www.whonix.org/wiki/Qubes/Install> <sup>[[Archive.org]][371]</sup>. *If you're running Qubes 4.1.x, this is already done for you.*
 
@@ -5489,7 +5493,7 @@ Most platforms will not allow you to register using an "anonymous" or disposable
 
 The key thing to this is that it is becoming increasingly difficult to sign-up for a free e-mail account anywhere without providing (you guessed it) ... a cell phone number. That same cell phone number can be used conveniently to track you down in most places.
 
-It is possible that those services (Proton for instance) might require you to provide an e-mail address for registration. In that case, I would recommend you create an e-mail address from these providers:
+It is possible that those services (Proton for instance) might require you to provide an e-mail address for registration. In that case, we would recommend you create an e-mail address from these providers:
 
 -   MailFence: <https://mailfence.com/>
 
@@ -5513,7 +5517,7 @@ Due to the suspicious situation, this guide can no longer recommend them.
 
 #### Protecting your anonymous online identities e-mails using Aliasing services:
 
-If you want to avoid communicating your anonymous e-mail addresses to various parties. I would strongly suggest considering using e-mail aliasing services such as:
+If you want to avoid communicating your anonymous e-mail addresses to various parties. we would strongly suggest considering using e-mail aliasing services such as:
 
 -   <https://simplelogin.io/> (preferred first choice due to more options available to the free tier)
 
@@ -5725,7 +5729,7 @@ Now that you have a basic understanding of all the ways you can be de-anonymized
 
 -   Above all, you cannot trust people
 
-So what? Well instead of not trusting anyone or anything, I would advise to **"Trust but verify"**[^390] (or "Never trust, always verify" if you are more hardcore about it and want to apply Zero-Trust Security[^391]) instead.
+So what? Well instead of not trusting anyone or anything, we would advise to **"Trust but verify"**[^390] (or "Never trust, always verify" if you are more hardcore about it and want to apply Zero-Trust Security[^391]) instead.
 
 **Do not start this process unless:**
 
@@ -6970,7 +6974,7 @@ Ideally, you should find a way to buy/sell crypto with cash from an unknown pers
 
 #### What about those mobile-only apps (WhatsApp/Signal)?
 
-There are only three ways of securely using those anonymously (that I would recommend). Using a VPN on your phone is not one of those ways. All of those are, unfortunately, "tedious" to say the least.
+There are only three ways of securely using those anonymously (that we would recommend). Using a VPN on your phone is not one of those ways. All of those are, unfortunately, "tedious" to say the least.
 
 -   Use an Android Emulator within the Windows VM and run the App through your multi-layer of Tor/VPN. The drawback is that such emulators are usually quite resource-hungry and will slow down your VM and use more battery. Here is also an (outdated) guide on this matter: <https://www.bellingcat.com/resources/how-tos/2018/08/23/creating-android-open-source-research-device-pc/> <sup>[[Archive.org]][451]</sup>. As for myself, I will recommend the use of:
 
@@ -7924,7 +7928,7 @@ You will have two options here:
 
     -   This method is the easiest to manage.
 
-I made extensive testing using live backups utilities (Macrium Reflect, EaseUS Todo Reflect, Déjà Dup...) and personally I do not think it is worth it. Instead, I would recommend that you periodically back up your system with a simple Clonezilla image. It is much easier to perform, much easier to restore, and usually works reliably without issues in all cases. And contrary to many beliefs, it is not that slow with most backups taking about an hour depending on the speed of your destination media.
+I made extensive testing using live backups utilities (Macrium Reflect, EaseUS Todo Reflect, Déjà Dup...) and personally I do not think it is worth it. Instead, we would recommend that you periodically back up your system with a simple Clonezilla image. It is much easier to perform, much easier to restore, and usually works reliably without issues in all cases. And contrary to many beliefs, it is not that slow with most backups taking about an hour depending on the speed of your destination media.
 
 For backing up single files while you work, I recommend using file containers or encrypted media directly and manually as explained in the earlier section.
 
@@ -7970,7 +7974,7 @@ Follow the steps in [Appendix E: Clonezilla]
 
 #### macOS:
 
-I would recommend just using the native Time Machine backup with encryption (and a strong passphrase that could be the same as your OS) as per the guides provided at Apple: <https://support.apple.com/en-ie/guide/mac-help/mh21241/mac> <sup>[[Archive.org]][477]</sup> and <https://support.apple.com/en-ie/guide/mac-help/mh11421/11.0/mac/11.0> <sup>[[Archive.org]][478]</sup>.
+we would recommend just using the native Time Machine backup with encryption (and a strong passphrase that could be the same as your OS) as per the guides provided at Apple: <https://support.apple.com/en-ie/guide/mac-help/mh21241/mac> <sup>[[Archive.org]][477]</sup> and <https://support.apple.com/en-ie/guide/mac-help/mh11421/11.0/mac/11.0> <sup>[[Archive.org]][478]</sup>.
 
 So, plug in an external drive and it should prompt you to use it as a Time Machine backup.
 
@@ -8556,7 +8560,7 @@ Consider also reading this documentation if you're going with Whonix <https://ww
 
 #### Pictures and videos:
 
-On Windows, macOS, and Linux I would recommend ExifTool (<https://exiftool.org/> <sup>[[Archive.org]][510]</sup>) and/or ExifCleaner (<https://exifcleaner.com/> <sup>[[Archive.org]][511]</sup>) that allows viewing and/or removing those properties.
+On Windows, macOS, and Linux we would recommend ExifTool (<https://exiftool.org/> <sup>[[Archive.org]][510]</sup>) and/or ExifCleaner (<https://exifcleaner.com/> <sup>[[Archive.org]][511]</sup>) that allows viewing and/or removing those properties.
 
 **ExifTool is natively available on Tails and Whonix Workstation.**
 
@@ -8610,7 +8614,7 @@ It is actually simple, just install exiftool and run:
 
 First, here is a tutorial to remove metadata from Office documents: <https://support.microsoft.com/en-us/office/remove-hidden-data-and-personal-information-by-inspecting-documents-presentations-or-workbooks-356b7b5d-77af-44fe-a07f-9aa4d085966f> <sup>[[Archive.org]][518]</sup>. Make sure however that you do use the latest version of Office with the latest security updates.
 
-Alternatively, on Windows, macOS, Qubes OS, and Linux I would recommend ExifTool (<https://exiftool.org/> <sup>[[Archive.org]][510]</sup>) and/or ExifCleaner (<https://exifcleaner.com/> <sup>[[Archive.org]][511]</sup>) that allows viewing and/or removing those properties
+Alternatively, on Windows, macOS, Qubes OS, and Linux we would recommend ExifTool (<https://exiftool.org/> <sup>[[Archive.org]][510]</sup>) and/or ExifCleaner (<https://exifcleaner.com/> <sup>[[Archive.org]][511]</sup>) that allows viewing and/or removing those properties
 
 ##### ExifCleaner:
 
@@ -8656,7 +8660,7 @@ It is actually simple, just install exiftool and run:
 
         -   "Remove personal information on saving"
 
-In addition, on Windows, macOS, Qubes OS, and Linux I would recommend ExifTool (<https://exiftool.org/> <sup>[[Archive.org]][510]</sup>) and/or ExifCleaner (<https://exifcleaner.com/> <sup>[[Archive.org]][511]</sup>) that allows viewing and/or removing additional properties
+In addition, on Windows, macOS, Qubes OS, and Linux we would recommend ExifTool (<https://exiftool.org/> <sup>[[Archive.org]][510]</sup>) and/or ExifCleaner (<https://exifcleaner.com/> <sup>[[Archive.org]][511]</sup>) that allows viewing and/or removing additional properties
 
 ##### ExifCleaner:
 
@@ -8674,7 +8678,7 @@ It is actually simple, jut install exiftool and run:
 
 Another option good tool IMHO to remove metadata from various documents is the open-source mat2 recommended by privacyguides.org[^445] (<https://0xacab.org/jvoisin/mat2> <sup>[[Archive.org]][519]</sup>) which you can use on Linux quite easily. I never managed to make it work properly within Windows due to various dependencies issues despite the provided instructions. It is however very straightforward to install and use on Linux.
 
-So, I would suggest creating a small Debian VM within Virtualbox (behind your Whonix Gateway) which you can then use from your other VMs to analyze various files from a convenient web interface. For this see [Appendix L: Creating a mat2-web guest VM for removing metadata from files]
+So, we would suggest creating a small Debian VM within Virtualbox (behind your Whonix Gateway) which you can then use from your other VMs to analyze various files from a convenient web interface. For this see [Appendix L: Creating a mat2-web guest VM for removing metadata from files]
 
 ![][520]
 
@@ -8761,7 +8765,7 @@ In addition, macOS keeps various logs of mounted devices, connected devices, kno
 
 See this section of this guide for guidance on where to find and how to delete such artifacts: <https://github.com/drduh/macOS-Security-and-Privacy-Guide#metadata-and-artifacts> <sup>[[Archive.org]][294]</sup>
 
-Many of those can be deleted using various commercial third-party tools but I would personally recommend using the free and well-known Onyx which you can find here: <https://www.titanium-software.fr/en/onyx.html> <sup>[[Archive.org]][522]</sup>. Unfortunately, it is closed-source, but it is notarized, signed, and has been trusted for many years.
+Many of those can be deleted using various commercial third-party tools but we would personally recommend using the free and well-known Onyx which you can find here: <https://www.titanium-software.fr/en/onyx.html> <sup>[[Archive.org]][522]</sup>. Unfortunately, it is closed-source, but it is notarized, signed, and has been trusted for many years.
 
 ##### Force a Trim operation after cleaning:
 
@@ -8927,7 +8931,7 @@ Here are the steps for PrivaZer:
 
     -   Select What you want to be cleaned (skip the shell bag part since you used the other utility for that)
 
-        -   **You should just skip the free space cleaning part if using an SSD and instead just use the native Windows Optimize function (see below) which should be more than enough. I would only use this on an HDD drive.**
+        -   **You should just skip the free space cleaning part if using an SSD and instead just use the native Windows Optimize function (see below) which should be more than enough. We would only use this on an HDD drive.**
 
     -   (If you did select Free Space cleaning) Select Clean Options and make sure your type of Storage is well detected (HDD vs SSD).
 
@@ -8935,15 +8939,15 @@ Here are the steps for PrivaZer:
 
         -   If you have an SSD drive:
 
-            -   Secure Overwriting Tab: I would just pick Normal Deletion + Trim (Trim itself should be enough[^342]). Secure Deletion with Trim[^339] (1 pass) might be redundant and overkill here if you intend to overwrite the free space anyway.
+            -   Secure Overwriting Tab: We would just pick Normal Deletion + Trim (Trim itself should be enough[^342]). Secure Deletion with Trim[^339] (1 pass) might be redundant and overkill here if you intend to overwrite the free space anyway.
 
-            -   Free Space Tab: Personally, and again "just to be sure", I would select Normal Cleanup which will fill the entire free space with Data. I do not really trust Smart Cleanup as it does not actually fill all the free space of the SSD with Data. But again, this is probably not needed and overkill in most cases.
+            -   Free Space Tab: Personally, and again "just to be sure", we would select Normal Cleanup which will fill the entire free space with Data. I do not really trust Smart Cleanup as it does not actually fill all the free space of the SSD with Data. But again, this is probably not needed and overkill in most cases.
 
         -   If you have an HDD drive:
 
-            -   Secure Overwriting Tab: I would just pick Secure Deletion (1 pass).
+            -   Secure Overwriting Tab: We would just pick Secure Deletion (1 pass).
 
-            -   Free Space: I would just pick Smart Cleanup as there is no reason to overwrite sectors without data on an HDD drive.
+            -   Free Space: We would just pick Smart Cleanup as there is no reason to overwrite sectors without data on an HDD drive.
 
     -   Select Clean and Pick your flavor:
 
@@ -8975,7 +8979,7 @@ Here are the steps for BleachBit:
 
     -   Select any other traces you want to remove from their list
 
-        -   Again, as with the earlier utility, I would not clean the free space on an SSD drive because I think the Windows native "optimize" utility is enough (see below) and that filling up the free space on a trim enabled SSD is just completely overkill and unnecessary.
+        -   Again, as with the earlier utility, we would not clean the free space on an SSD drive because I think the Windows native "optimize" utility is enough (see below) and that filling up the free space on a trim enabled SSD is just completely overkill and unnecessary.
 
     -   Click Clean and wait. This will take a while and will fill your whole free space with data on both HDD and SSD drives.
 
@@ -9863,7 +9867,7 @@ If you are experiencing issues connecting to Tor due to Censorship or Blocking, 
 
 ## If you cannot use Tor:
 
-Because it is too dangerous/risky/suspicious. I would recommend as a last resort using Firefox, or Brave only using Private Windows for now.
+Because it is too dangerous/risky/suspicious. We would recommend as a last resort using Firefox, or Brave only using Private Windows for now.
 
 See [Appendix P: Accessing the internet as safely as possible when Tor and VPNs are not an option] before continuing.
 
@@ -9893,7 +9897,7 @@ In this guide I will recommend two-third native tools and two third-party tools:
 
     -   The closed-source utility PrivaZer <https://privazer.com/> <sup>[[Archive.org]][588]</sup>
 
-I prefer PrivaZer because it has more customization and smarter features, but I would understand if you do not trust them and prefer open-source software in which case I would recommend BleachBit which offers a bit less customization but similar functionalities.
+I prefer PrivaZer because it has more customization and smarter features, but we would understand if you do not trust them and prefer open-source software in which case we would recommend BleachBit which offers a bit less customization but similar functionalities.
 
 Both these tools can be used for cleaning many things such as:
 
@@ -10269,9 +10273,9 @@ There are three VPN companies recommended by PrivacyGuides.org (<https://www.pri
 
 In addition, I will also mention a newcomer to watch: Safing SPN <https://safing.io/> <sup>[[Archive.org]][621]</sup>) which (while still in the alpha stage at the time of this writing) which also accepts cash and has a very distinct new concept for a VPN which provides benefits similar to Tor Stream isolation with their "SPN"). Note that Safing SPN is not available on macOS at the moment. This possibility is "provisional" and at your own risk, but I think was worth mentioning.
 
-Personally, for now, I would recommend Mullvad due to personal experience.
+Personally, for now, we would recommend Mullvad due to personal experience.
 
-**I would not recommend Proton VPN as much because they do require an e-mail for registration unlike Mullvad, iVPN, and Safing. Proton also has a tendency to require phone number verification for users who register over Tor.**
+**We would not recommend Proton VPN as much because they do require an e-mail for registration unlike Mullvad, iVPN, and Safing. Proton also has a tendency to require phone number verification for users who register over Tor.**
 
 How does this work?
 
@@ -10415,11 +10419,11 @@ In that case, my last resort recommendation is to connect safely **from a distan
 
 -   Start and use the Unsafe Browser
 
-**I would strongly recommend the use of a long-range "Yagi" type directional Antenna with a suitable USB Wi-Fi Adapter. At least this will allow you to connect to public Wi-Fis from a "safe distance" but keep in mind that triangulation by a motivated adversary is still possible with the right equipment. So, this option should not be used during an extended period (minutes at best). See [Appendix Q: Using long-range Antenna to connect to Public Wi-Fis from a safe distance][Appendix Q: Using long-range Antenna to connect to Public Wi-Fis from a safe distance:].**
+**We would strongly recommend the use of a long-range "Yagi" type directional Antenna with a suitable USB Wi-Fi Adapter. At least this will allow you to connect to public Wi-Fis from a "safe distance" but keep in mind that triangulation by a motivated adversary is still possible with the right equipment. So, this option should not be used during an extended period (minutes at best). See [Appendix Q: Using long-range Antenna to connect to Public Wi-Fis from a safe distance][Appendix Q: Using long-range Antenna to connect to Public Wi-Fis from a safe distance:].**
 
 Using Tails should prevent local data leaks (such as MAC addresses or telemetry) and allow you to use a Browser to get what you want (utilities, VPN account) before leaving that place as fast as possible.
 
-You could also use the other routes (Whonix and Qubes OS without using Tor/VPN) instead of Tails in such hostile environments if you want data persistence but this might be riskier. I would not risk it personally unless there was absolutely no other option. If you go for this option, you will only do sensitive activities from a reversible/disposable VM in all cases. Never from the Host OS.
+You could also use the other routes (Whonix and Qubes OS without using Tor/VPN) instead of Tails in such hostile environments if you want data persistence but this might be riskier. We would not risk it personally unless there was absolutely no other option. If you go for this option, you will only do sensitive activities from a reversible/disposable VM in all cases. Never from the Host OS.
 
 **If you resort to this, please keep your online time as short as possible (minutes and not hours).**
 
@@ -10437,7 +10441,7 @@ These antennas are widely available on various online shops for a cheap price (A
 
 Such antennas need to be combined with specific USB adapters that have an external Antenna plug and sufficiently high power to use them.
 
-**I would recommend the AWUS036 series in the Alfa brand of adapters (see <https://www.alfa.com.tw/>** <sup>[[Archive.org]][633]</sup>**).** But you could also go with some other brands if you want such as the TP-Link TL-WN722 (see <https://www.tp-link.com/us/home-networking/usb-adapter/tl-wn722n/> <sup>[[Archive.org]][634]</sup>).
+**We would recommend the AWUS036 series in the Alfa brand of adapters (see <https://www.alfa.com.tw/>** <sup>[[Archive.org]][633]</sup>**).** But you could also go with some other brands if you want such as the TP-Link TL-WN722 (see <https://www.tp-link.com/us/home-networking/usb-adapter/tl-wn722n/> <sup>[[Archive.org]][634]</sup>).
 
 See this post for a comparison of various adapters: <https://www.wirelesshack.org/best-kali-linux-compatible-usb-adapter-dongles.html> <sup>[[Archive.org]][635]</sup> (Usually those antennas are used by Penetration Testers to probe Wi-Fis from a distance and are often discussed within the scope of the Kali Linux distribution).
 
@@ -10719,7 +10723,7 @@ So, if you are in doubt:
 
 -   For non-sensitive files, I do encourage you to check any documents/images/videos/archives/programs you intend to open with VirusTotal (or other similar tools) because ... Why not? (Either by uploading or checking hashes).
 
--   For sensitive files, I would recommend at least an offline unprivileged ClamAV scan of the files.
+-   For sensitive files, we would recommend at least an offline unprivileged ClamAV scan of the files.
 
 For instance, this guide's PDF files were submitted to VirusTotal because it is meant to be public knowledge and I see no valid argument against it. It does not guarantee the absence of malware, but it does not hurt to add this check.
 
@@ -10803,7 +10807,7 @@ The situation might look desperate, but it is not necessarily the case as there 
 
 There are plenty of methods you could use to bypass those restrictions locally. One of them would be to use portable apps[^502]. Those apps do not require installation on your system and can be run from a USB key or anywhere else.
 
-**But this is not a method I would recommend.**
+**But this is not a method we would recommend.**
 
 This is because those portable apps will not necessarily hide themselves (or be able to hide themselves) from the usage reports and forensic examination. This method is just too risky and will probably arise issues if noticed if you are in such a hostile environment.
 
@@ -10811,7 +10815,7 @@ Even the most basic controls (supervision or parental) will send out detailed ap
 
 ## Bootable Live Systems:
 
-This method is the one I would recommend in those cases.
+This method is the one we would recommend in those cases.
 
 It is relatively easy for your adversary to prevent this by setting up firmware BIOS/UEFI (see [Bios/UEFI/Firmware Settings of your laptop][Bios/UEFI/Firmware Settings of your laptop:]) controls but usually most adversaries will overlook this possibility which requires more technical knowledge than just relying on Software.
 
@@ -10831,7 +10835,7 @@ The BIOS/UEFI password on the other hand is much harder to bypass without risks.
 
 -   Guess/Know the password so that you can change the boot order of your laptop without raising suspicions
 
--   Reset the password using various methods to remove the password. **I would not recommend doing this because if your adversaries went the extra length of enabling this security feature, they probably will be suspicious if it were disabled, and this might increase suspicion and decrease your plausible deniability considerably.**
+-   Reset the password using various methods to remove the password. **we would not recommend doing this because if your adversaries went the extra length of enabling this security feature, they probably will be suspicious if it were disabled, and this might increase suspicion and decrease your plausible deniability considerably.**
 
 Again, this feature is usually overlooked by most unskilled/lazy adversaries and in my experience left disabled.
 
@@ -11011,7 +11015,7 @@ Cons:
 
 -   Even if you could, it lacks the best Extensions available for Firefox and Chrome.
 
-Overall, I would not recommend using Safari on a macOS VM but instead, go for another Browser such as Brave or Firefox.
+Overall, we would not recommend using Safari on a macOS VM but instead, go for another Browser such as Brave or Firefox.
 
 ## Firefox:
 
@@ -11039,7 +11043,7 @@ Security (especially sandboxing) of Firefox is arguably weaker than Chromium-bas
 
 If you are extra paranoid and want to use Tor Browser and have "Tor over VPN over Tor", you could go with Tor Browser within the VM as well. This is IMHO completely pointless/useless.
 
-I would not recommend this option. It is just silly.
+We would not recommend this option. It is just silly.
 
 # Appendix V1: Hardening your Browsers:
 
@@ -11264,7 +11268,7 @@ macOS Only:
 
 Consider [Appendix A5: Additional browser precautions with JavaScript enabled]
 
-That's about it. Unfortunately, you will not be able to add extensions as those will require you to sign in into the App Store which you cannot do from a macOS VM. Again, I would not recommend sticking to Safari in a macOS VM but instead switching to Brave or Firefox.
+That's about it. Unfortunately, you will not be able to add extensions as those will require you to sign in into the App Store which you cannot do from a macOS VM. Again, we would not recommend sticking to Safari in a macOS VM but instead switching to Brave or Firefox.
 
 ## Firefox:
 
@@ -11592,7 +11596,7 @@ This is valid for Windows, Linux, and macOS.
 
 ![][688]
 
--   Personally, in the case of censorship or blocking, I would recommend using Meek-Azure bridges if needed. And Snowflake bridges as a second option.
+-   Personally, in the case of censorship or blocking, we would recommend using Meek-Azure bridges if needed. And Snowflake bridges as a second option.
 
 ![][686]
 
@@ -11622,7 +11626,9 @@ This is valid for Windows, Linux, and macOS.
 
 ![][690]
 
-I would recommend the "Safest" level by default. The "Safer" level should only be enabled if you think you need access to a website not working without JavaScript. The Safest mode will  most likely break many websites that rely actively on JavaScript.
+We would recommend the "Safest" level by default. The "Safer" level should be enabled if you think you need access to a website not working without JavaScript. The Safest mode will  most likely break many websites that rely actively on JavaScript.
+    
+If you are extra paranoid, use the "Safest" level by default and consider downgrading to Safer is the website is unusable because of Javascript blocking.
 
 **Optional and not recommended by the Tor Project**: If you are not using the "Safest" level, I will diverge from some but agree with others (for instance the Tails project and others[^525]) and will actually recommend some modifications of the default Tor Browser in the addition of two extensions:
 
@@ -11960,7 +11966,7 @@ You might also consider the use of something like AnonyMouth <https://web.archiv
 
 -   <https://wikipedia.org/wiki/Stylometry> <sup>[[Wikiless]][707]</sup> <sup>[[Archive.org]][708]</sup>: Gives a brief overview of Stylometry.
 
--   <https://wikipedia.org/wiki/Content_similarity_detection> <sup>[[Wikiless]][709]</sup> <sup>[[Archive.org]][710]</sup>: I would recommend reading this, quite informative.
+-   <https://wikipedia.org/wiki/Content_similarity_detection> <sup>[[Wikiless]][709]</sup> <sup>[[Archive.org]][710]</sup>: We would recommend reading this, quite informative.
 
 -   <https://wikipedia.org/wiki/Author_profiling> <sup>[[Wikiless]][711]</sup> <sup>[[Archive.org]][712]</sup>: Read through this as well if you are interested in this topic.
 
@@ -11976,7 +11982,7 @@ You might also consider the use of something like AnonyMouth <https://web.archiv
 
 -   <https://media.defcon.org/DEF%20CON%2026/DEF%20CON%2026%20presentations/DEFCON-26-Matt-Wixey-Betrayed-by-the-Keyboard-Updated.pdf> <sup>[[Archive.org]][721]</sup>: Explains how your writing style can be used to track you, I highly recommend reading through these slides, or watching the accompanying presentation on YouTube, this is quite similar to the last presentation.
 
--   <https://i.blackhat.com/us-18/Wed-August-8/us-18-Wixey-Every-ROSE-Has-Its-Thorn-The-Dark-Art-Of-Remote-Online-Social-Engineering.pdf> <sup>[[Archive.org]][722]</sup>: This goes over how to potentially spot deception through the internet, and presents a checklist to see how trustworthy someone is. I would advise reading the slides or watching the presentation on YouTube.
+-   <https://i.blackhat.com/us-18/Wed-August-8/us-18-Wixey-Every-ROSE-Has-Its-Thorn-The-Dark-Art-Of-Remote-Online-Social-Engineering.pdf> <sup>[[Archive.org]][722]</sup>: This goes over how to potentially spot deception through the internet, and presents a checklist to see how trustworthy someone is. We would advise reading the slides or watching the presentation on YouTube.
 
 # Appendix A5: Additional browser precautions with JavaScript enabled
 
