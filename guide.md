@@ -497,7 +497,7 @@ First, you could also consider these more general resources on privacy and secur
 -   The New Oil: <https://thenewoil.org/> <sup>[[Archive.org]][42]</sup>
 -   Techlore videos: <https://www.youtube.com/c/Techlore> <sup>[[Invidious]][43]</sup>
 -   Privacy Guides: <https://privacyguides.org/> <sup>[[Archive.org]][44]</sup>
--   Madaidain's Insecurities: <https://madaidans-insecurities.github.io/> <sup>[[Archive.org]][45]</sup>
+-   Madaidan's Insecurities: <https://madaidans-insecurities.github.io/> <sup>[[Archive.org]][45]</sup>
 
 * Note that these websites could contain affiliate/sponsored content and/or merchandising. This guide does not endorse and is not sponsored by any commercial entity in any way.
 
