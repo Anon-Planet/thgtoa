@@ -7431,7 +7431,7 @@ Below you will find a small table showing the state of messaging apps as of the 
 <td>Via Proxy<sup>3</sup> or Virtualization</td>
 <td>Medium<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a></td>
 <td>Yes</td>
-<td><a href="https://github.com/TokTok/c-toxcore/issues/426">Known cryptographic weaknesses</a></td>
+<td>Known cryptographic weaknesses<a href="#fn14" class="footnote-ref" id="fnref14" role="doc-noteref"><sup>14</sup></a></td>
 </tr>
 <tr class="even">
 <td><p>Session</p>
@@ -7492,7 +7492,7 @@ Below you will find a small table showing the state of messaging apps as of the 
 <td>Virtualization</td>
 <td>Bad</td>
 <td>No</td>
-<td><a href="https://www.theguardian.com/technology/2013/may/09/snapchat-photos-not-deleted">Deleted/expired messages are easily recoverable</a></td>
+<td>Deleted/expired messages are easily recoverable<a href="#fn15" class="footnote-ref" id="fnref15" role="doc-noteref"><sup>15</sup></a>,<a href="#fn16" class="footnote-ref" id="fnref16" role="doc-noteref"><sup>16</sup></a></td>
 </tr>
 <tr class="even">
 <td>Teams (avoid)</td>
@@ -7632,6 +7632,9 @@ Below you will find a small table showing the state of messaging apps as of the 
 <li id="fn11" role="doc-endnote"><p>The Incercept, Zoom Meetings Aren’t End-to-End Encrypted, Despite Misleading Marketing <a href="https://theintercept.com/2020/03/31/zoom-meeting-encryption/">https://theintercept.com/2020/03/31/zoom-meeting-encryption/</a> <a href="https://27m3p2uv7igmj6kvd4ql3cct5h3sdwrsajovkkndeufumzyfhlfev4qd.onion/2020/03/31/zoom-meeting-encryption/"><sup>[Tor Mirror]</sup></a> <a href="https://web.archive.org/web/https://theintercept.com/2020/03/31/zoom-meeting-encryption/"><sup>[Archive.org]</sup></a><a href="#fnref11" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn12" role="doc-endnote"><p>Serpentsec, Secure Messaging: Choosing a chat app <a href="https://web.archive.org/web/https://serpentsec.1337.cx/secure-messaging-choosing-a-chat-app">https://web.archive.org/web/https://serpentsec.1337.cx/secure-messaging-choosing-a-chat-app</a><a href="#fnref12" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn13" role="doc-endnote"><p>Berty, Development, <a href="https://berty.tech">https://berty.tech</a><a href="#fn13" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn14" role="doc-endnote"><p>Tox Handshake Vulnerable to KCI, <a href="https://github.com/TokTok/c-toxcore/issues/426">https://github.com/TokTok/c-toxcore/issues/426</a><a href="#fn13" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn15" role="doc-endnote"><p>The Guardian, Deleted Snapchat photos recovered 'within days' by forensics company, <a href="https://www.theguardian.com/technology/2013/may/09/snapchat-photos-not-deleted">https://www.theguardian.com/technology/2013/may/09/snapchat-photos-not-deleted</a><a href="#fn13" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn16" role="doc-endnote"><p>The Guardian, Snapchat's expired snaps are not deleted, just hidden, <a href="https://web.archive.org/web/20131115224243/https://www.theguardian.com/media-network/partner-zone-infosecurity/snapchat-photos-not-deleted-hidden">https://web.archive.org/web/20131115224243/https://www.theguardian.com/media-network/partner-zone-infosecurity/snapchat-photos-not-deleted-hidden</a><a href="#fn13" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
 
