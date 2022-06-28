@@ -11899,7 +11899,7 @@ You can find some introduction on these on these projects:
 
 # References:
 
-[^1]: English translation of German Telemedia Act - <https://www.huntonprivacyblog.com/wp-content/uploads/sites/28/2016/02/Telemedia_Act__TMA_.pdf> <sup>[[Archive.org]][747]</sup>. §13 VI
+[^1]: English translation of German Telemedia Act - <https://www.huntonprivacyblog.com/wp-content/uploads/sites/28/2016/02/Telemedia_Act__TMA_.pdf> <sup>[[Archive.org]][747]</sup>. Section 13, Article 6, "The service provider must enable the use of Telemedia and payment for them to occur anonymously or via a pseudonym where this is technically possible and reasonable. The recipient of the service is to be informed about this possibility."
 
 [^2]: Wikipedia, Real-Name System Germany - <https://en.wikipedia.org/wiki/Real-name_system#Germany> <sup>[[Wikiless]][415]</sup> <sup>[[Archive.org]][416]</sup>
 
@@ -12641,339 +12641,339 @@ You can find some introduction on these on these projects:
 
 [^371]: Wikipedia, Captcha - <https://en.wikipedia.org/wiki/CAPTCHA> <sup>[[Wikiless]][1176]</sup> <sup>[[Archive.org]][1177]</sup>
 
-[^372]: Wikipedia, Turing Test <https://en.wikipedia.org/wiki/Turing_test> <sup>[[Wikiless]][1178]</sup> <sup>[[Archive.org]][1179]</sup>
+[^372]: Wikipedia, Turing Test - <https://en.wikipedia.org/wiki/Turing_test> <sup>[[Wikiless]][1178]</sup> <sup>[[Archive.org]][1179]</sup>
 
-[^373]: Google reCAPTCHA <https://www.google.com/recaptcha/about/> <sup>[[Archive.org]][1180]</sup>
+[^373]: Google reCAPTCHA - <https://www.google.com/recaptcha/about/> <sup>[[Archive.org]][1180]</sup>
 
-[^374]: hCaptcha <https://www.hcaptcha.com/> <sup>[[Archive.org]][1181]</sup>
+[^374]: hCaptcha - <https://www.hcaptcha.com/> <sup>[[Archive.org]][1181]</sup>
 
-[^375]: hCaptcha, hCaptcha Is Now the Largest Independent CAPTCHA Service, Runs on 15% Of The Internet <https://www.hcaptcha.com/post/hcaptcha-now-the-largest-independent-captcha-service> <sup>[[Archive.org]][1182]</sup>
+[^375]: hCaptcha, hCaptcha Is Now the Largest Independent CAPTCHA Service, Runs on 15% Of The Internet - <https://www.hcaptcha.com/post/hcaptcha-now-the-largest-independent-captcha-service> <sup>[[Archive.org]][1182]</sup>
 
-[^376]: Nearcyan.com, You (probably) don't need ReCAPTCHA <https://nearcyan.com/you-probably-dont-need-recaptcha/> <sup>[[Archive.org]][1183]</sup>
+[^376]: Nearcyan.com, You (probably) don't need ReCAPTCHA - <https://nearcyan.com/you-probably-dont-need-recaptcha/> <sup>[[Archive.org]][1183]</sup>
 
-[^377]: ArsTechnica, "Google's reCAPTCHA turns "invisible," will separate bots from people without challenges" <https://arstechnica.com/gadgets/2017/03/googles-recaptcha-announces-invisible-background-captchas/> <sup>[[Archive.org]][1184]</sup>
+[^377]: ArsTechnica, "Google's reCAPTCHA turns "invisible," will separate bots from people without challenges" - <https://arstechnica.com/gadgets/2017/03/googles-recaptcha-announces-invisible-background-captchas/> <sup>[[Archive.org]][1184]</sup>
 
-[^378]: BlackHat Asia 2016, "I'm not a human: Breaking the Google reCAPTCHA" <https://www.blackhat.com/docs/asia-16/materials/asia-16-Sivakorn-Im-Not-a-Human-Breaking-the-Google-reCAPTCHA-wp.pdf> <sup>[[Archive.org]][1185]</sup>
+[^378]: BlackHat Asia 2016, "I'm not a human: Breaking the Google reCAPTCHA" - <https://www.blackhat.com/docs/asia-16/materials/asia-16-Sivakorn-Im-Not-a-Human-Breaking-the-Google-reCAPTCHA-wp.pdf> <sup>[[Archive.org]][1185]</sup>
 
-[^379]: Google Blog <https://security.googleblog.com/2014/12/are-you-robot-introducing-no-captcha.html> <sup>[[Archive.org]][1186]</sup>
+[^379]: Google Blog - <https://security.googleblog.com/2014/12/are-you-robot-introducing-no-captcha.html> <sup>[[Archive.org]][1186]</sup>
 
-[^380]: Cloudflare Blog, Cloudflare supports Privacy Pass <https://blog.cloudflare.com/cloudflare-supports-privacy-pass/> <sup>[[Archive.org]][1187]</sup>
+[^380]: Cloudflare Blog, Cloudflare supports Privacy Pass - <https://blog.cloudflare.com/cloudflare-supports-privacy-pass/> <sup>[[Archive.org]][1187]</sup>
 
-[^381]: Privacy International, Timeline of SIM Card Registration Laws <https://privacyinternational.org/long-read/3018/timeline-sim-card-registration-laws> <sup>[[Archive.org]][1105]</sup>
+[^381]: Privacy International, Timeline of SIM Card Registration Laws - <https://privacyinternational.org/long-read/3018/timeline-sim-card-registration-laws> <sup>[[Archive.org]][1105]</sup>
 
-[^382]: Wikipedia, Device Fingerprinting <https://en.wikipedia.org/wiki/Device_fingerprint> <sup>[[Wikiless]][1188]</sup> <sup>[[Archive.org]][1189]</sup>
+[^382]: Wikipedia, Device Fingerprinting - <https://en.wikipedia.org/wiki/Device_fingerprint> <sup>[[Wikiless]][1188]</sup> <sup>[[Archive.org]][1189]</sup>
 
-[^383]: Developers Google Blog, Guidance to developers affected by our effort to block less secure browsers and applications <https://developers.googleblog.com/2020/08/guidance-for-our-effort-to-block-less-secure-browser-and-apps.html> <sup>[[Archive.org]][1190]</sup>
+[^383]: Developers Google Blog, Guidance to developers affected by our effort to block less secure browsers and applications - <https://developers.googleblog.com/2020/08/guidance-for-our-effort-to-block-less-secure-browser-and-apps.html> <sup>[[Archive.org]][1190]</sup>
 
-[^384]: Google Help, Access age-restricted content & features <https://support.google.com/accounts/answer/10071085> <sup>[[Archive.org]][1191]</sup>
+[^384]: Google Help, Access age-restricted content & features - <https://support.google.com/accounts/answer/10071085> <sup>[[Archive.org]][1191]</sup>
 
-[^385]: Wikipedia, Dark Pattern <https://en.wikipedia.org/wiki/Dark_pattern> <sup>[[Wikiless]][1192]</sup> <sup>[[Archive.org]][1193]</sup>
+[^385]: Wikipedia, Dark Pattern - <https://en.wikipedia.org/wiki/Dark_pattern> <sup>[[Wikiless]][1192]</sup> <sup>[[Archive.org]][1193]</sup>
 
-[^386]: The Verge, Tinder will give you a verified blue check mark if you pass its catfishing test <https://www.theverge.com/2020/1/23/21077423/tinder-photo-verification-blue-checkmark-safety-center-launch-noonlight> <sup>[[Archive.org]][1194]</sup>
+[^386]: The Verge, Tinder will give you a verified blue check mark if you pass its catfishing test - <https://www.theverge.com/2020/1/23/21077423/tinder-photo-verification-blue-checkmark-safety-center-launch-noonlight> <sup>[[Archive.org]][1194]</sup>
 
-[^387]: DigitalInformationWorld, Facebook will now require you to Create a Video Selfie for Identity Verification <https://www.digitalinformationworld.com/2020/03/facebook-is-now-demanding-some-users-to-create-a-video-selfie-for-identity-verification.html> <sup>[[Archive.org]][1195]</sup>
+[^387]: DigitalInformationWorld, Facebook will now require you to Create a Video Selfie for Identity Verification - <https://www.digitalinformationworld.com/2020/03/facebook-is-now-demanding-some-users-to-create-a-video-selfie-for-identity-verification.html> <sup>[[Archive.org]][1195]</sup>
 
-[^388]: Vice.com, PornHub Announces 'Biometric Technology' to Verify Users <https://www.vice.com/en/article/m7a4eq/pornhub-new-verification-policy-biometric-id> <sup>[[Archive.org]][1196]</sup>
+[^388]: Vice.com, PornHub Announces 'Biometric Technology' to Verify Users - <https://www.vice.com/en/article/m7a4eq/pornhub-new-verification-policy-biometric-id> <sup>[[Archive.org]][1196]</sup>
 
-[^389]: Variety, China Launches Hotline to Report Online Comments That 'Distort' History or 'Deny' Its Cultural Excellence <https://variety.com/2021/digital/news/china-censorship-hotline-historical-nihilism-1234950554/> <sup>[[Archive.org]][1197]</sup>
+[^389]: Variety, China Launches Hotline to Report Online Comments That 'Distort' History or 'Deny' Its Cultural Excellence - <https://variety.com/2021/digital/news/china-censorship-hotline-historical-nihilism-1234950554/> <sup>[[Archive.org]][1197]</sup>
 
-[^390]: Wikipedia, Trust but verify <https://en.wikipedia.org/wiki/Trust,_but_verify> <sup>[[Wikiless]][776]</sup> <sup>[[Archive.org]][777]</sup>
+[^390]: Wikipedia, Trust but verify - <https://en.wikipedia.org/wiki/Trust,_but_verify> <sup>[[Wikiless]][776]</sup> <sup>[[Archive.org]][777]</sup>
 
-[^391]: Wikipedia, Zero-trust Security Model <https://en.wikipedia.org/wiki/Zero_trust_security_model> <sup>[[Wikiless]][1198]</sup> <sup>[[Archive.org]][1199]</sup>
+[^391]: Wikipedia, Zero-trust Security Model - <https://en.wikipedia.org/wiki/Zero_trust_security_model> <sup>[[Wikiless]][1198]</sup> <sup>[[Archive.org]][1199]</sup>
 
-[^392]: Wikipedia, Espionage, Organization <https://en.wikipedia.org/wiki/Espionage#Organization> <sup>[[Wikiless]][1200]</sup> <sup>[[Archive.org]][1201]</sup>
+[^392]: Wikipedia, Espionage, Organization - <https://en.wikipedia.org/wiki/Espionage#Organization> <sup>[[Wikiless]][1200]</sup> <sup>[[Archive.org]][1201]</sup>
 
-[^393]: Medium.com, Kyle McDonald, How to recognize fake AI-generated images <https://kcimc.medium.com/how-to-recognize-fake-ai-generated-images-4d1f6f9a2842><sup>[[Scribe.rip]][1202]</sup> <sup>[[Archive.org]][1203]</sup>
+[^393]: Medium.com, Kyle McDonald, How to recognize fake AI-generated images - <https://kcimc.medium.com/how-to-recognize-fake-ai-generated-images-4d1f6f9a2842><sup>[[Scribe.rip]][1202]</sup> <sup>[[Archive.org]][1203]</sup>
 
-[^394]: Jayway Blog, Using ML to detect fake face images created by AI <https://blog.jayway.com/2020/03/06/using-ml-to-detect-fake-face-images-created-by-ai/> <sup>[[Archive.org]][1204]</sup>
+[^394]: Jayway Blog, Using ML to detect fake face images created by AI - <https://blog.jayway.com/2020/03/06/using-ml-to-detect-fake-face-images-created-by-ai/> <sup>[[Archive.org]][1204]</sup>
 
-[^395]: Wikipedia, Sim Swapping <https://en.wikipedia.org/wiki/SIM_swap_scam> <sup>[[Wikiless]][1205]</sup> <sup>[[Archive.org]][1206]</sup>
+[^395]: Wikipedia, Sim Swapping - <https://en.wikipedia.org/wiki/SIM_swap_scam> <sup>[[Wikiless]][1205]</sup> <sup>[[Archive.org]][1206]</sup>
 
-[^396]: Whonix Documentation, Tor Configuration <https://www.whonix.org/wiki/Tor#Edit_Tor_Configuration> <sup>[[Archive.org]][1207]</sup>
+[^396]: Whonix Documentation, Tor Configuration - <https://www.whonix.org/wiki/Tor#Edit_Tor_Configuration> <sup>[[Archive.org]][1207]</sup>
 
-[^397]: Tor Browser Documentation, Editing Torrc <https://support.torproject.org/tbb/tbb-editing-torrc/> <sup>[[Archive.org]][1208]</sup>
+[^397]: Tor Browser Documentation, Editing Torrc - <https://support.torproject.org/tbb/tbb-editing-torrc/> <sup>[[Archive.org]][1208]</sup>
 
 [^398]: Facebook Onion Website <http://facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion/>
 
-[^399]: Google Help <https://support.google.com/accounts/answer/114129?hl=en> <sup>[[Archive.org]][1209]</sup>
+[^399]: Google Help - <https://support.google.com/accounts/answer/114129?hl=en> <sup>[[Archive.org]][1209]</sup>
 
-[^400]: Google Help, Customer Matching Process <https://support.google.com/google-ads/answer/7474263?hl=en> <sup>[[Archive.org]][1210]</sup>
+[^400]: Google Help, Customer Matching Process - <https://support.google.com/google-ads/answer/7474263?hl=en> <sup>[[Archive.org]][1210]</sup>
 
-[^401]: Google, Your account is disabled <https://support.google.com/accounts/answer/40695> <sup>[[Archive.org]][1211]</sup>
+[^401]: Google, Your account is disabled - <https://support.google.com/accounts/answer/40695> <sup>[[Archive.org]][1211]</sup>
 
-[^402]: Google, Request to restore the account <https://support.google.com/accounts/contact/disabled2> <sup>[[Archive.org]][1212]</sup>
+[^402]: Google, Request to restore the account - <https://support.google.com/accounts/contact/disabled2> <sup>[[Archive.org]][1212]</sup>
 
-[^403]: Google Help, Update your account to meet age requirements <https://support.google.com/accounts/answer/1333913?hl=en> <sup>[[Archive.org]][1213]</sup>
+[^403]: Google Help, Update your account to meet age requirements - <https://support.google.com/accounts/answer/1333913?hl=en> <sup>[[Archive.org]][1213]</sup>
 
-[^404]: Jumio, ID verification features <https://www.jumio.com/features/> <sup>[[Archive.org]][1214]</sup>
+[^404]: Jumio, ID verification features - <https://www.jumio.com/features/> <sup>[[Archive.org]][1214]</sup>
 
-[^405]: Privacyguides.org recommended E-mail Providers <https://www.privacyguides.org/email/> <sup>[[Archive.org]][1215]</sup>
+[^405]: Privacyguides.org recommended E-mail Providers - <https://www.privacyguides.org/email/> <sup>[[Archive.org]][1215]</sup>
 
-[^406]: Proton Registration Human Verification <https://proton.me/support/human-verification/> <sup>[[Archive.org]][1216]</sup>
+[^406]: Proton Registration Human Verification - <https://proton.me/support/human-verification/> <sup>[[Archive.org]][1216]</sup>
 
-[^407]: Twitter Appeal Form <https://help.twitter.com/forms/general>
+[^407]: Twitter Appeal Form - <https://help.twitter.com/forms/general>
 
-[^408]: KnowYourMeme, Good Luck, I'm Behind 7 Proxies <https://knowyourmeme.com/memes/good-luck-im-behind-7-proxies> <sup>[[Archive.org]][1217]</sup>
+[^408]: KnowYourMeme, Good Luck, I'm Behind 7 Proxies - <https://knowyourmeme.com/memes/good-luck-im-behind-7-proxies> <sup>[[Archive.org]][1217]</sup>
 
-[^409]: Wikipedia, end-to-end encryption <https://en.wikipedia.org/wiki/End-to-end_encryption> <sup>[[Wikiless]][1218]</sup> <sup>[[Archive.org]][1219]</sup>
+[^409]: Wikipedia, end-to-end encryption - <https://en.wikipedia.org/wiki/End-to-end_encryption> <sup>[[Wikiless]][1218]</sup> <sup>[[Archive.org]][1219]</sup>
 
-[^410]: Wikipedia, Forward Secrecy <https://en.wikipedia.org/wiki/Forward_secrecy> <sup>[[Wikiless]][1220]</sup> <sup>[[Archive.org]][1221]</sup>
+[^410]: Wikipedia, Forward Secrecy - <https://en.wikipedia.org/wiki/Forward_secrecy> <sup>[[Wikiless]][1220]</sup> <sup>[[Archive.org]][1221]</sup>
 
-[^411]: Proton Blog, What is zero-access encryption? <https://proton.me/blog/zero-access-encryption/> <sup>[[Archive.org]][1222]</sup>
+[^411]: Proton Blog, What is zero-access encryption? - <https://proton.me/blog/zero-access-encryption/> <sup>[[Archive.org]][1222]</sup>
 
-[^412]: Wikipedia, Cambridge Analytica Scandal <https://en.wikipedia.org/wiki/Facebook%E2%80%93Cambridge_Analytica_data_scandal> <sup>[[Wikiless]][1223]</sup> <sup>[[Archive.org]][1224]</sup>
+[^412]: Wikipedia, Cambridge Analytica Scandal - <https://en.wikipedia.org/wiki/Facebook%E2%80%93Cambridge_Analytica_data_scandal> <sup>[[Wikiless]][1223]</sup> <sup>[[Archive.org]][1224]</sup>
 
-[^413]: Signal Blog, Technology preview: Sealed sender for Signal <https://signal.org/blog/sealed-sender/> <sup>[[Archive.org]][1225]</sup>
+[^413]: Signal Blog, Technology preview: Sealed sender for Signal - <https://signal.org/blog/sealed-sender/> <sup>[[Archive.org]][1225]</sup>
 
-[^414]: Signal Blog, Private Contact Discovery <https://signal.org/blog/private-contact-discovery/> <sup>[[Archive.org]][1226]</sup>
+[^414]: Signal Blog, Private Contact Discovery - <https://signal.org/blog/private-contact-discovery/> <sup>[[Archive.org]][1226]</sup>
 
-[^415]: Signal Blog, Private Group System <https://signal.org/blog/signal-private-group-system/> <sup>[[Archive.org]][1227]</sup>
+[^415]: Signal Blog, Private Group System - <https://signal.org/blog/signal-private-group-system/> <sup>[[Archive.org]][1227]</sup>
 
-[^416]: Privacyguides.org, File-Sharing <https://www.privacyguides.org/file-sharing/> <sup>[[Archive.org]][1228]</sup>
+[^416]: Privacyguides.org, File-Sharing - <https://www.privacyguides.org/file-sharing/> <sup>[[Archive.org]][1228]</sup>
 
-[^417]: Privacyguides.org, Real-Time Communication <https://www.privacyguides.org/real-time-communication/> <sup>[[Archive.org]][1229]</sup>
+[^417]: Privacyguides.org, Real-Time Communication - <https://www.privacyguides.org/real-time-communication/> <sup>[[Archive.org]][1229]</sup>
 
-[^418]: GetSession.org, The Session Protocol: What's changing --- and why <https://getsession.org/session-protocol-explained/> <sup>[[Archive.org]][1230]</sup>
+[^418]: GetSession.org, The Session Protocol: What's changing --- and why - <https://getsession.org/session-protocol-explained/> <sup>[[Archive.org]][1230]</sup>
 
-[^419]: Quarkslab, Audit of Session Secure Messaging Application <https://blog.quarkslab.com/audit-of-session-secure-messaging-application.html> <sup>[[Archive.org]][1231]</sup>
+[^419]: Quarkslab, Audit of Session Secure Messaging Application - <https://blog.quarkslab.com/audit-of-session-secure-messaging-application.html> <sup>[[Archive.org]][1231]</sup>
 
-[^420]: Techlore, Top 5 BEST Messengers For Privacy <https://www.youtube.com/watch?v=aVwl892hqb4> <sup>[[Invidious]][1232]</sup>
+[^420]: Techlore, Top 5 BEST Messengers For Privacy - <https://www.youtube.com/watch?v=aVwl892hqb4> <sup>[[Invidious]][1232]</sup>
 
-[^421]: Wikipedia, IPFS <https://en.wikipedia.org/wiki/InterPlanetary_File_System> <sup>[[Wikiless]][1233]</sup> <sup>[[Archive.org]][1234]</sup>
+[^421]: Wikipedia, IPFS - <https://en.wikipedia.org/wiki/InterPlanetary_File_System> <sup>[[Wikiless]][1233]</sup> <sup>[[Archive.org]][1234]</sup>
 
-[^422]: Praxis Films, Open Letter from Laura Poitras <https://www.praxisfilms.org/open-letter-from-laura-poitras/> <sup>[[Archive.org]][1235]</sup>
+[^422]: Praxis Films, Open Letter from Laura Poitras - <https://www.praxisfilms.org/open-letter-from-laura-poitras/> <sup>[[Archive.org]][1235]</sup>
 
-[^423]: Wikipedia, SecureDrop <https://en.wikipedia.org/wiki/SecureDrop> <sup>[[Wikiless]][1236]</sup> <sup>[[Archive.org]][1237]</sup>
+[^423]: Wikipedia, SecureDrop - <https://en.wikipedia.org/wiki/SecureDrop> <sup>[[Wikiless]][1236]</sup> <sup>[[Archive.org]][1237]</sup>
 
-[^424]: Wikipedia, TPM <https://en.wikipedia.org/wiki/Trusted_Platform_Module> <sup>[[Wikiless]][1238]</sup> <sup>[[Archive.org]][1239]</sup>
+[^424]: Wikipedia, TPM - <https://en.wikipedia.org/wiki/Trusted_Platform_Module> <sup>[[Wikiless]][1238]</sup> <sup>[[Archive.org]][1239]</sup>
 
-[^425]: Wikipedia, Pastebin <https://en.wikipedia.org/wiki/Pastebin> <sup>[[Wikiless]][1240]</sup> <sup>[[Archive.org]][1241]</sup>
+[^425]: Wikipedia, Pastebin - <https://en.wikipedia.org/wiki/Pastebin> <sup>[[Wikiless]][1240]</sup> <sup>[[Archive.org]][1241]</sup>
 
-[^426]: Wikipedia, Wear Leveling <https://en.wikipedia.org/wiki/Wear_leveling> <sup>[[Wikiless]][1242]</sup> <sup>[[Archive.org]][1243]</sup>
+[^426]: Wikipedia, Wear Leveling - <https://en.wikipedia.org/wiki/Wear_leveling> <sup>[[Wikiless]][1242]</sup> <sup>[[Archive.org]][1243]</sup>
 
-[^427]: Wikipedia, Trim <https://en.wikipedia.org/wiki/Write_amplification#TRIM> <sup>[[Wikiless]][1244]</sup> <sup>[[Archive.org]][1245]</sup>
+[^427]: Wikipedia, Trim - <https://en.wikipedia.org/wiki/Write_amplification#TRIM> <sup>[[Wikiless]][1244]</sup> <sup>[[Archive.org]][1245]</sup>
 
-[^428]: Wikipedia, Write Amplification <https://en.wikipedia.org/wiki/Write_amplification> <sup>[[Wikiless]][1244]</sup> <sup>[[Archive.org]][1245]</sup>
+[^428]: Wikipedia, Write Amplification - <https://en.wikipedia.org/wiki/Write_amplification> <sup>[[Wikiless]][1244]</sup> <sup>[[Archive.org]][1245]</sup>
 
-[^429]: Wikipedia, Trim Disadvantages <https://en.wikipedia.org/wiki/Trim_(computing)#Disadvantages> <sup>[[Wikiless]][485]</sup> <sup>[[Archive.org]][486]</sup>
+[^429]: Wikipedia, Trim Disadvantages - <https://en.wikipedia.org/wiki/Trim_(computing)#Disadvantages> <sup>[[Wikiless]][485]</sup> <sup>[[Archive.org]][486]</sup>
 
-[^430]: Wikipedia, Garbage Collection <https://en.wikipedia.org/wiki/Write_amplification#Garbage_collection> <sup>[[Wikiless]][1244]</sup> <sup>[[Archive.org]][1245]</sup>
+[^430]: Wikipedia, Garbage Collection - <https://en.wikipedia.org/wiki/Write_amplification#Garbage_collection> <sup>[[Wikiless]][1244]</sup> <sup>[[Archive.org]][1245]</sup>
 
-[^431]: Techgage, Too TRIM? When SSD Data Recovery is Impossible <https://techgage.com/article/too_trim_when_ssd_data_recovery_is_impossible/> <sup>[[Archive.org]][1246]</sup>
+[^431]: Techgage, Too TRIM? When SSD Data Recovery is Impossible - <https://techgage.com/article/too_trim_when_ssd_data_recovery_is_impossible/> <sup>[[Archive.org]][1246]</sup>
 
-[^432]: ResearchGate, Live forensics method for acquisition on the Solid-State Drive (SSD) NVMe TRIM function <https://www.researchgate.net/publication/341761017_Live_forensics_method_for_acquisition_on_the_Solid_State_Drive_SSD_NVMe_TRIM_function> <sup>[[Archive.org]][1247]</sup>
+[^432]: ResearchGate, Live forensics method for acquisition on the Solid-State Drive (SSD) NVMe TRIM function - <https://www.researchgate.net/publication/341761017_Live_forensics_method_for_acquisition_on_the_Solid_State_Drive_SSD_NVMe_TRIM_function> <sup>[[Archive.org]][1247]</sup>
 
-[^433]: ElcomSoft, Life after Trim: Using Factory Access Mode for Imaging SSD Drives <https://blog.elcomsoft.com/2019/01/life-after-trim-using-factory-access-mode-for-imaging-ssd-drives/> <sup>[[Archive.org]][1248]</sup>
+[^433]: ElcomSoft, Life after Trim: Using Factory Access Mode for Imaging SSD Drives - <https://blog.elcomsoft.com/2019/01/life-after-trim-using-factory-access-mode-for-imaging-ssd-drives/> <sup>[[Archive.org]][1248]</sup>
 
-[^434]: Forensic Focus, Forensic Acquisition Of Solid State Drives With Open Source Tools <https://www.forensicfocus.com/articles/forensic-acquisition-of-solid-state-drives-with-open-source-tools/> <sup>[[Archive.org]][1249]</sup>
+[^434]: Forensic Focus, Forensic Acquisition Of Solid State Drives With Open Source Tools - <https://www.forensicfocus.com/articles/forensic-acquisition-of-solid-state-drives-with-open-source-tools/> <sup>[[Archive.org]][1249]</sup>
 
-[^435]: ResearchGate, Solid State Drive Forensics: Where Do We Stand? <https://www.researchgate.net/publication/325976653_Solid_State_Drive_Forensics_Where_Do_We_Stand> <sup>[[Archive.org]][1250]</sup>
+[^435]: ResearchGate, Solid State Drive Forensics: Where Do We Stand? - <https://www.researchgate.net/publication/325976653_Solid_State_Drive_Forensics_Where_Do_We_Stand> <sup>[[Archive.org]][1250]</sup>
 
-[^436]: BleepingComputer, Firmware attack can drop persistent malware in hidden SSD area <https://www.bleepingcomputer.com/news/security/firmware-attack-can-drop-persistent-malware-in-hidden-ssd-area/> <sup>[[Archive.org]][1251]</sup>
+[^436]: BleepingComputer, Firmware attack can drop persistent malware in hidden SSD area - <https://www.bleepingcomputer.com/news/security/firmware-attack-can-drop-persistent-malware-in-hidden-ssd-area/> <sup>[[Archive.org]][1251]</sup>
 
-[^437]: Wikipedia, Parted Magic <https://en.wikipedia.org/wiki/Parted_Magic> <sup>[[Wikiless]][1252]</sup> <sup>[[Archive.org]][1253]</sup>
+[^437]: Wikipedia, Parted Magic - <https://en.wikipedia.org/wiki/Parted_Magic> <sup>[[Wikiless]][1252]</sup> <sup>[[Archive.org]][1253]</sup>
 
-[^438]: Wikipedia, hdparm <https://en.wikipedia.org/wiki/Hdparm> <sup>[[Wikiless]][1254]</sup> <sup>[[Archive.org]][1255]</sup>
+[^438]: Wikipedia, hdparm - <https://en.wikipedia.org/wiki/Hdparm> <sup>[[Wikiless]][1254]</sup> <sup>[[Archive.org]][1255]</sup>
 
-[^439]: GitHub, nvme-cli <https://github.com/linux-nvme/nvme-cli> <sup>[[Archive.org]][1256]</sup>
+[^439]: GitHub, nvme-cli - <https://github.com/linux-nvme/nvme-cli> <sup>[[Archive.org]][1256]</sup>
 
-[^440]: PartedMagic Secure Erase <https://partedmagic.com/secure-erase/> <sup>[[Archive.org]][1257]</sup>
+[^440]: PartedMagic Secure Erase - <https://partedmagic.com/secure-erase/> <sup>[[Archive.org]][1257]</sup>
 
-[^441]: Partedmagic NVMe Secure Erase <https://partedmagic.com/nvme-secure-erase/> <sup>[[Archive.org]][1258]</sup>
+[^441]: Partedmagic NVMe Secure Erase - <https://partedmagic.com/nvme-secure-erase/> <sup>[[Archive.org]][1258]</sup>
 
-[^442]: UFSExplorer, Can I recover data from an encrypted storage? <https://www.ufsexplorer.com/solutions/data-recovery-on-encrypted-storage.php> <sup>[[Archive.org]][1259]</sup>
+[^442]: UFSExplorer, Can I recover data from an encrypted storage? - <https://www.ufsexplorer.com/solutions/data-recovery-on-encrypted-storage.php> <sup>[[Archive.org]][1259]</sup>
 
-[^443]: Apple Developer Documentation <https://developer.apple.com/library/archive/documentation/FileManagement/Conceptual/APFS_Guide/FAQ/FAQ.html> <sup>[[Archive.org]][1260]</sup>
+[^443]: Apple Developer Documentation - <https://developer.apple.com/library/archive/documentation/FileManagement/Conceptual/APFS_Guide/FAQ/FAQ.html> <sup>[[Archive.org]][1260]</sup>
 
-[^444]: EFF, How to: Delete Your Data Securely on macOS <https://ssd.eff.org/en/module/how-delete-your-data-securely-macos> <sup>[[Archive.org]][508]</sup>
+[^444]: EFF, How to: Delete Your Data Securely on macOS - <https://ssd.eff.org/en/module/how-delete-your-data-securely-macos> <sup>[[Archive.org]][508]</sup>
 
-[^445]: Privacyguides.org, Productivity tools <https://privacyguides.org/productivity/> <sup>[[Archive.org]][1261]</sup>
+[^445]: Privacyguides.org, Productivity tools - <https://privacyguides.org/productivity/> <sup>[[Archive.org]][1261]</sup>
 
-[^446]: Whonix Documentation, Scrubbing Metadata <https://www.whonix.org/wiki/Metadata> <sup>[[Archive.org]][1262]</sup>
+[^446]: Whonix Documentation, Scrubbing Metadata - <https://www.whonix.org/wiki/Metadata> <sup>[[Archive.org]][1262]</sup>
 
-[^447]: Tails documentation, MAT <https://gitlab.tails.boum.org/tails/blueprints/-/wikis/doc/mat/> <sup>[[Archive.org]][1263]</sup>
+[^447]: Tails documentation, MAT - <https://gitlab.tails.boum.org/tails/blueprints/-/wikis/doc/mat/> <sup>[[Archive.org]][1263]</sup>
 
-[^448]: GitHub, Disable Gatekeeper on macOS Big Sur (11.x) <https://disable-gatekeeper.github.io/> <sup>[[Archive.org]][1264]</sup>
+[^448]: GitHub, Disable Gatekeeper on macOS Big Sur (11.x) - <https://disable-gatekeeper.github.io/> <sup>[[Archive.org]][1264]</sup>
 
-[^449]: DuckDuckGo help, Cache <https://help.duckduckgo.com/duckduckgo-help-pages/features/cache/> <sup>[[Archive.org]][1265]</sup>
+[^449]: DuckDuckGo help, Cache - <https://help.duckduckgo.com/duckduckgo-help-pages/features/cache/> <sup>[[Archive.org]][1265]</sup>
 
-[^450]: DuckDuckGo help, Sources <https://help.duckduckgo.com/duckduckgo-help-pages/results/sources/> <sup>[[Archive.org]][1266]</sup>
+[^450]: DuckDuckGo help, Sources - <https://help.duckduckgo.com/duckduckgo-help-pages/results/sources/> <sup>[[Archive.org]][1266]</sup>
 
-[^451]: Wikipedia, Dead Drop <https://en.wikipedia.org/wiki/Dead_drop> <sup>[[Wikiless]][1267]</sup> <sup>[[Archive.org]][1268]</sup>
+[^451]: Wikipedia, Dead Drop - <https://en.wikipedia.org/wiki/Dead_drop> <sup>[[Wikiless]][1267]</sup> <sup>[[Archive.org]][1268]</sup>
 
-[^452]: Wikipedia, Secure Communication Obfuscation <https://en.wikipedia.org/wiki/Obfuscation#Secure_communication> <sup>[[Wikiless]][1269]</sup> <sup>[[Archive.org]][1270]</sup>
+[^452]: Wikipedia, Secure Communication Obfuscation - <https://en.wikipedia.org/wiki/Obfuscation#Secure_communication> <sup>[[Wikiless]][1269]</sup> <sup>[[Archive.org]][1270]</sup>
 
-[^453]: Wikipedia, Steganography <https://en.wikipedia.org/wiki/Steganography> <sup>[[Wikiless]][1024]</sup> <sup>[[Archive.org]][1025]</sup>
+[^453]: Wikipedia, Steganography - <https://en.wikipedia.org/wiki/Steganography> <sup>[[Wikiless]][1024]</sup> <sup>[[Archive.org]][1025]</sup>
 
-[^454]: Wikipedia, Kleptography <https://en.wikipedia.org/wiki/Kleptography> <sup>[[Wikiless]][1271]</sup> <sup>[[Archive.org]][1272]</sup>
+[^454]: Wikipedia, Kleptography - <https://en.wikipedia.org/wiki/Kleptography> <sup>[[Wikiless]][1271]</sup> <sup>[[Archive.org]][1272]</sup>
 
-[^455]: Wikipedia, Koalang <https://en.wikipedia.org/wiki/Koalang> <sup>[[Wikiless]][1273]</sup> <sup>[[Archive.org]][1274]</sup>
+[^455]: Wikipedia, Koalang - <https://en.wikipedia.org/wiki/Koalang> <sup>[[Wikiless]][1273]</sup> <sup>[[Archive.org]][1274]</sup>
 
-[^456]: Wikipedia, OPSEC <https://en.wikipedia.org/wiki/Operations_security> <sup>[[Wikiless]][1275]</sup> <sup>[[Archive.org]][1276]</sup>
+[^456]: Wikipedia, OPSEC - <https://en.wikipedia.org/wiki/Operations_security> <sup>[[Wikiless]][1275]</sup> <sup>[[Archive.org]][1276]</sup>
 
-[^457]: Quote Investigator, A Lie Can Travel Halfway Around the World While the Truth Is Putting On Its Shoes <https://quoteinvestigator.com/2014/07/13/truth/> <sup>[[Archive.org]][1277]</sup>
+[^457]: Quote Investigator, A Lie Can Travel Halfway Around the World While the Truth Is Putting On Its Shoes - <https://quoteinvestigator.com/2014/07/13/truth/> <sup>[[Archive.org]][1277]</sup>
 
-[^458]: Privacyguides.org, Operating Systems <https://www.privacyguides.org/tools/#operating-systems> <sup>[[Archive.org]][1278]</sup>
+[^458]: Privacyguides.org, Operating Systems - <https://www.privacyguides.org/tools/#operating-systems> <sup>[[Archive.org]][1278]</sup>
 
-[^459]: Brave Support, What is a Private Window with Tor? <https://support.brave.com/hc/en-us/articles/360018121491-What-is-a-Private-Window-with-Tor> <sup>[[Archive.org]][1279]</sup>
+[^459]: Brave Support, What is a Private Window with Tor? - <https://support.brave.com/hc/en-us/articles/360018121491-What-is-a-Private-Window-with-Tor> <sup>[[Archive.org]][1279]</sup>
 
-[^460]: Medium.com, The Windows USN Journal <https://medium.com/velociraptor-ir/the-windows-usn-journal-f0c55c9010e> <sup>[[Scribe.rip]][1280]</sup> <sup>[[Archive.org]][1281]</sup>
+[^460]: Medium.com, The Windows USN Journal - <https://medium.com/velociraptor-ir/the-windows-usn-journal-f0c55c9010e> <sup>[[Scribe.rip]][1280]</sup> <sup>[[Archive.org]][1281]</sup>
 
-[^461]: Medium.com, Digging into the System Resource Usage Monitor (SRUM) <https://medium.com/velociraptor-ir/digging-into-the-system-resource-usage-monitor-srum-afbadb1a375> <sup>[[Scribe.rip]][1282]</sup> <sup>[[Archive.org]][1283]</sup>
+[^461]: Medium.com, Digging into the System Resource Usage Monitor (SRUM) - <https://medium.com/velociraptor-ir/digging-into-the-system-resource-usage-monitor-srum-afbadb1a375> <sup>[[Scribe.rip]][1282]</sup> <sup>[[Archive.org]][1283]</sup>
 
-[^462]: SANS, Timestamped Registry & NTFS Artifacts from Unallocated Space <https://www.sans.org/blog/timestamped-registry-ntfs-artifacts-from-unallocated-space/> <sup>[[Archive.org]][1284]</sup>
+[^462]: SANS, Timestamped Registry & NTFS Artifacts from Unallocated Space - <https://www.sans.org/blog/timestamped-registry-ntfs-artifacts-from-unallocated-space/> <sup>[[Archive.org]][1284]</sup>
 
-[^463]: DBAN, <https://dban.org/> <sup>[[Archive.org]][1285]</sup>
+[^463]: DBAN - <https://dban.org/> <sup>[[Archive.org]][1285]</sup>
 
-[^464]: NYTimes, Lost Passwords Lock Millionaires Out of Their Bitcoin Fortunes <https://www.nytimes.com/2021/01/12/technology/bitcoin-passwords-wallets-fortunes.html> <sup>[[Archive.org]][1106]</sup>
+[^464]: NYTimes, Lost Passwords Lock Millionaires Out of Their Bitcoin Fortunes - <https://www.nytimes.com/2021/01/12/technology/bitcoin-passwords-wallets-fortunes.html> <sup>[[Archive.org]][1106]</sup>
 
-[^465]: CrystalDiskInfo <https://crystalmark.info/en/software/crystaldiskinfo/> <sup>[[Archive.org]][1286]</sup>
+[^465]: CrystalDiskInfo - <https://crystalmark.info/en/software/crystaldiskinfo/> <sup>[[Archive.org]][1286]</sup>
 
-[^466]: Wikipedia, Faraday Cage, <https://en.wikipedia.org/wiki/Faraday_cage> <sup>[[Wikiless]][1287]</sup> <sup>[[Archive.org]][1288]</sup>
+[^466]: Wikipedia, Faraday Cage - <https://en.wikipedia.org/wiki/Faraday_cage> <sup>[[Wikiless]][1287]</sup> <sup>[[Archive.org]][1288]</sup>
 
-[^467]: Edith Cowan University, A forensic examination of several mobile device Faraday bags & materials to test their effectiveness materials to test their effectiveness <https://ro.ecu.edu.au/cgi/viewcontent.cgi?article=1165&context=adf> <sup>[[Archive.org]][1289]</sup>
+[^467]: Edith Cowan University, A forensic examination of several mobile device Faraday bags & materials to test their effectiveness materials to test their effectiveness - <https://ro.ecu.edu.au/cgi/viewcontent.cgi?article=1165&context=adf> <sup>[[Archive.org]][1289]</sup>
 
-[^468]: arXiv, Deep-Spying: Spying using Smartwatch and Deep Learning <https://arxiv.org/pdf/1512.05616.pdf> <sup>[[Archive.org]][1290]</sup>
+[^468]: arXiv, Deep-Spying: Spying using Smartwatch and Deep Learning - <https://arxiv.org/pdf/1512.05616.pdf> <sup>[[Archive.org]][1290]</sup>
 
-[^469]: Acm.org, Privacy Implications of Accelerometer Data: A Review of Possible Inferences <https://dl.acm.org/doi/pdf/10.1145/3309074.3309076> <sup>[[Archive.org]][1291]</sup>
+[^469]: Acm.org, Privacy Implications of Accelerometer Data: A Review of Possible Inferences - <https://dl.acm.org/doi/pdf/10.1145/3309074.3309076> <sup>[[Archive.org]][1291]</sup>
 
-[^470]: YouTube, Fingerprinting Paper - Forensic Education <https://www.youtube.com/watch?v=sO98kDLkh-M> <sup>[[Invidious]][1292]</sup>
+[^470]: YouTube, Fingerprinting Paper - Forensic Education - <https://www.youtube.com/watch?v=sO98kDLkh-M> <sup>[[Invidious]][1292]</sup>
 
-[^471]: Wikipedia, Touch DNA, <https://en.wikipedia.org/wiki/Touch_DNA> <sup>[[Wikiless]][1293]</sup> <sup>[[Archive.org]][1294]</sup>
+[^471]: Wikipedia, Touch DNA - <https://en.wikipedia.org/wiki/Touch_DNA> <sup>[[Wikiless]][1293]</sup> <sup>[[Archive.org]][1294]</sup>
 
-[^472]: TheDNAGuide, DNA from Postage Stamps or Hair Samples? Yeeesssss..... <https://www.yourdnaguide.com/ydgblog/dna-hair-samples-postage-stamps> <sup>[[Archive.org]][1295]</sup>
+[^472]: TheDNAGuide, DNA from Postage Stamps or Hair Samples? Yeeesssss..... - <https://www.yourdnaguide.com/ydgblog/dna-hair-samples-postage-stamps> <sup>[[Archive.org]][1295]</sup>
 
-[^473]: GitHub, Mhinkie, OONI-Detection <https://github.com/mhinkie/ooni-detection> <sup>[[Archive.org]][1296]</sup>
+[^473]: GitHub, Mhinkie, OONI-Detection - <https://github.com/mhinkie/ooni-detection> <sup>[[Archive.org]][1296]</sup>
 
-[^474]: Wikipedia, File Verification <https://en.wikipedia.org/wiki/File_verification> <sup>[[Wikiless]][1297]</sup> <sup>[[Archive.org]][1298]</sup>
+[^474]: Wikipedia, File Verification - <https://en.wikipedia.org/wiki/File_verification> <sup>[[Wikiless]][1297]</sup> <sup>[[Archive.org]][1298]</sup>
 
-[^475]: Wikipedia, CRC <https://en.wikipedia.org/wiki/Cyclic_redundancy_check> <sup>[[Wikiless]][1299]</sup> <sup>[[Archive.org]][1300]</sup>
+[^475]: Wikipedia, CRC - <https://en.wikipedia.org/wiki/Cyclic_redundancy_check> <sup>[[Wikiless]][1299]</sup> <sup>[[Archive.org]][1300]</sup>
 
-[^476]: Wikipedia, MD5 <https://en.wikipedia.org/wiki/MD5> <sup>[[Wikiless]][1301]</sup> <sup>[[Archive.org]][1302]</sup>
+[^476]: Wikipedia, MD5 - <https://en.wikipedia.org/wiki/MD5> <sup>[[Wikiless]][1301]</sup> <sup>[[Archive.org]][1302]</sup>
 
-[^477]: Wikipedia, MD5 Security <https://en.wikipedia.org/wiki/MD5#Security> <sup>[[Wikiless]][1301]</sup> <sup>[[Archive.org]][1302]</sup>
+[^477]: Wikipedia, MD5 Security - <https://en.wikipedia.org/wiki/MD5#Security> <sup>[[Wikiless]][1301]</sup> <sup>[[Archive.org]][1302]</sup>
 
-[^478]: Wikipedia, Collisions <https://en.wikipedia.org/wiki/Collision_(computer_science)> <sup>[[Wikiless]][1303]</sup> <sup>[[Archive.org]][1304]</sup>
+[^478]: Wikipedia, Collisions - <https://en.wikipedia.org/wiki/Collision_(computer_science)> <sup>[[Wikiless]][1303]</sup> <sup>[[Archive.org]][1304]</sup>
 
-[^479]: Wikipedia, SHA <https://en.wikipedia.org/wiki/Secure_Hash_Algorithms> <sup>[[Wikiless]][1305]</sup> <sup>[[Archive.org]][1306]</sup>
+[^479]: Wikipedia, SHA - <https://en.wikipedia.org/wiki/Secure_Hash_Algorithms> <sup>[[Wikiless]][1305]</sup> <sup>[[Archive.org]][1306]</sup>
 
-[^480]: Wikipedia, SHA-2 <https://en.wikipedia.org/wiki/SHA-2> <sup>[[Wikiless]][1307]</sup> <sup>[[Archive.org]][1308]</sup>
+[^480]: Wikipedia, SHA-2 - <https://en.wikipedia.org/wiki/SHA-2> <sup>[[Wikiless]][1307]</sup> <sup>[[Archive.org]][1308]</sup>
 
-[^481]: Wikipedia, Collision Resistance <https://en.wikipedia.org/wiki/Collision_resistance> <sup>[[Wikiless]][1309]</sup> <sup>[[Archive.org]][1310]</sup>
+[^481]: Wikipedia, Collision Resistance - <https://en.wikipedia.org/wiki/Collision_resistance> <sup>[[Wikiless]][1309]</sup> <sup>[[Archive.org]][1310]</sup>
 
-[^482]: GnuPG Gpg4win Wiki, Check integrity of Gpg4win packages <https://wiki.gnupg.org/Gpg4win/CheckIntegrity> <sup>[[Archive.org]][1311]</sup>
+[^482]: GnuPG Gpg4win Wiki, Check integrity of Gpg4win packages - <https://wiki.gnupg.org/Gpg4win/CheckIntegrity> <sup>[[Archive.org]][1311]</sup>
 
-[^483]: Medium.com, How to verify checksum on Mac <https://medium.com/@EvgeniIvanov/how-to-verify-checksum-on-mac-988f166b0c4f> <sup>[[Scribe.rip]][1312]</sup> <sup>[[Archive.org]][1313]</sup>
+[^483]: Medium.com, How to verify checksum on Mac - <https://medium.com/@EvgeniIvanov/how-to-verify-checksum-on-mac-988f166b0c4f> <sup>[[Scribe.rip]][1312]</sup> <sup>[[Archive.org]][1313]</sup>
 
-[^484]: Wikipedia, GPG <https://en.wikipedia.org/wiki/GNU_Privacy_Guard> <sup>[[Wikiless]][1314]</sup> <sup>[[Archive.org]][1315]</sup>
+[^484]: Wikipedia, GPG - <https://en.wikipedia.org/wiki/GNU_Privacy_Guard> <sup>[[Wikiless]][1314]</sup> <sup>[[Archive.org]][1315]</sup>
 
-[^485]: Wikipedia, Public-Key Cryptography <https://en.wikipedia.org/wiki/Public-key_cryptography> <sup>[[Wikiless]][1316]</sup> <sup>[[Archive.org]][1317]</sup>
+[^485]: Wikipedia, Public-Key Cryptography - <https://en.wikipedia.org/wiki/Public-key_cryptography> <sup>[[Wikiless]][1316]</sup> <sup>[[Archive.org]][1317]</sup>
 
-[^486]: Wikipedia, Polymorphic Code <https://en.wikipedia.org/wiki/Polymorphic_code> <sup>[[Wikiless]][1318]</sup> <sup>[[Archive.org]][1319]</sup>
+[^486]: Wikipedia, Polymorphic Code - <https://en.wikipedia.org/wiki/Polymorphic_code> <sup>[[Wikiless]][1318]</sup> <sup>[[Archive.org]][1319]</sup>
 
-[^487]: Whonix Documentation, Use of AV, <https://www.whonix.org/wiki/Malware_and_Firmware_Trojans#The_Utility_of_Antivirus_Tools> <sup>[[Archive.org]][1320]</sup>
+[^487]: Whonix Documentation, Use of AV - <https://www.whonix.org/wiki/Malware_and_Firmware_Trojans#The_Utility_of_Antivirus_Tools> <sup>[[Archive.org]][1320]</sup>
 
-[^488]: Whonix Forums, <https://forums.whonix.org/t/installation-of-antivirus-scanners-by-default/9755/8> <sup>[[Archive.org]][1321]</sup>
+[^488]: Whonix Forums - <https://forums.whonix.org/t/installation-of-antivirus-scanners-by-default/9755/8> <sup>[[Archive.org]][1321]</sup>
 
-[^489]: AV-Test Security Report 2018-2019, <https://www.av-test.org/fileadmin/pdf/security_report/AV-TEST_Security_Report_2018-2019.pdf> <sup>[[Archive.org]][1322]</sup>
+[^489]: AV-Test Security Report 2018-2019 - <https://www.av-test.org/fileadmin/pdf/security_report/AV-TEST_Security_Report_2018-2019.pdf> <sup>[[Archive.org]][1322]</sup>
 
-[^490]: ZDNet, ESET discovers 21 new Linux malware families <https://www.zdnet.com/article/eset-discovers-21-new-linux-malware-families/> <sup>[[Archive.org]][1323]</sup>
+[^490]: ZDNet, ESET discovers 21 new Linux malware families - <https://www.zdnet.com/article/eset-discovers-21-new-linux-malware-families/> <sup>[[Archive.org]][1323]</sup>
 
-[^491]: NakeSecurity, EvilGnome -- Linux malware aimed at your desktop, not your servers <https://nakedsecurity.sophos.com/2019/07/25/evilgnome-linux-malware-aimed-at-your-laptop-not-your-servers/> <sup>[[Archive.org]][1324]</sup>
+[^491]: NakeSecurity, EvilGnome -- Linux malware aimed at your desktop, not your servers - <https://nakedsecurity.sophos.com/2019/07/25/evilgnome-linux-malware-aimed-at-your-laptop-not-your-servers/> <sup>[[Archive.org]][1324]</sup>
 
-[^492]: Immunify, HiddenWasp: How to detect malware hidden on Linux & IoT <https://blog.imunify360.com/hiddenwasp-how-to-detect-malware-hidden-on-linux-iot> <sup>[[Archive.org]][1325]</sup>
+[^492]: Immunify, HiddenWasp: How to detect malware hidden on Linux & IoT - <https://blog.imunify360.com/hiddenwasp-how-to-detect-malware-hidden-on-linux-iot> <sup>[[Archive.org]][1325]</sup>
 
-[^493]: Wikipedia, Linux Malware <https://en.wikipedia.org/wiki/Linux_malware> <sup>[[Wikiless]][1326]</sup> <sup>[[Archive.org]][1327]</sup>
+[^493]: Wikipedia, Linux Malware - <https://en.wikipedia.org/wiki/Linux_malware> <sup>[[Wikiless]][1326]</sup> <sup>[[Archive.org]][1327]</sup>
 
-[^494]: Wikipedia, macOS Malware <https://en.wikipedia.org/wiki/macOS_malware> <sup>[[Wikiless]][1328]</sup> <sup>[[Archive.org]][1329]</sup>
+[^494]: Wikipedia, macOS Malware - <https://en.wikipedia.org/wiki/macOS_malware> <sup>[[Wikiless]][1328]</sup> <sup>[[Archive.org]][1329]</sup>
 
-[^495]: MacWorld, List of Mac viruses, malware and security flaws <https://www.macworld.co.uk/feature/mac-viruses-list-3668354/> <sup>[[Archive.org]][1330]</sup>
+[^495]: MacWorld, List of Mac viruses, malware and security flaws - <https://www.macworld.co.uk/feature/mac-viruses-list-3668354/> <sup>[[Archive.org]][1330]</sup>
 
-[^496]: JAMF, The Mac Malware of 2020 <https://resources.jamf.com/documents/macmalware-2020.pdf> <sup>[[Archive.org]][1331]</sup>
+[^496]: JAMF, The Mac Malware of 2020 - <https://resources.jamf.com/documents/macmalware-2020.pdf> <sup>[[Archive.org]][1331]</sup>
 
-[^497]: macOS Security and Privacy Guide, <https://github.com/drduh/macOS-Security-and-Privacy-Guide#viruses-and-malware> <sup>[[Archive.org]][294]</sup>
+[^497]: macOS Security and Privacy Guide - <https://github.com/drduh/macOS-Security-and-Privacy-Guide#viruses-and-malware> <sup>[[Archive.org]][294]</sup>
 
-[^498]: ImageTragick.com, <https://imagetragick.com/> <sup>[[Archive.org]][1332]</sup>
+[^498]: ImageTragick.com - <https://imagetragick.com/> <sup>[[Archive.org]][1332]</sup>
 
-[^499]: Oracle Virtualbox Documentation, <https://docs.oracle.com/en/virtualization/virtualbox/6.0/admin/hyperv-support.html> <sup>[[Archive.org]][1333]</sup>
+[^499]: Oracle Virtualbox Documentation - <https://docs.oracle.com/en/virtualization/virtualbox/6.0/admin/hyperv-support.html> <sup>[[Archive.org]][1333]</sup>
 
-[^500]: Oracle Virtualbox Documentation, <https://docs.oracle.com/en/virtualization/virtualbox/6.0/admin/hyperv-support.html> <sup>[[Archive.org]][1333]</sup>
+[^500]: Oracle Virtualbox Documentation - <https://docs.oracle.com/en/virtualization/virtualbox/6.0/admin/hyperv-support.html> <sup>[[Archive.org]][1333]</sup>
 
-[^501]: Lenny Zeltser, Analyzing Malicious Documents Cheat Sheet <https://zeltser.com/analyzing-malicious-documents/> <sup>[[Archive.org]][1334]</sup>
+[^501]: Lenny Zeltser, Analyzing Malicious Documents Cheat Sheet - <https://zeltser.com/analyzing-malicious-documents/> <sup>[[Archive.org]][1334]</sup>
 
-[^502]: Wikipedia, Portable Applications <https://en.wikipedia.org/wiki/Portable_application> <sup>[[Wikiless]][1335]</sup> <sup>[[Archive.org]][1336]</sup>
+[^502]: Wikipedia, Portable Applications - <https://en.wikipedia.org/wiki/Portable_application> <sup>[[Wikiless]][1335]</sup> <sup>[[Archive.org]][1336]</sup>
 
-[^503]: Brave Help, What is a Private Window with Tor Connectivity? <https://support.brave.com/hc/en-us/articles/360018121491-What-is-a-Private-Window-with-Tor> <sup>[[Archive.org]][1279]</sup>
+[^503]: Brave Help, What is a Private Window with Tor Connectivity? - <https://support.brave.com/hc/en-us/articles/360018121491-What-is-a-Private-Window-with-Tor> <sup>[[Archive.org]][1279]</sup>
 
-[^504]: BlackGNU, Brave, the false sensation of privacy <https://blackgnu.net/brave-is-shit.html> <sup>[[Archive.org]][1337]</sup>
+[^504]: BlackGNU, Brave, the false sensation of privacy - <https://blackgnu.net/brave-is-shit.html> <sup>[[Archive.org]][1337]</sup>
 
-[^505]: Brave Help Center, What is "Shields"? <https://support.brave.com/hc/en-us/articles/360022973471-What-is-Shields> <sup>[[Archive.org]][1338]</sup>
+[^505]: Brave Help Center, What is "Shields"? - <https://support.brave.com/hc/en-us/articles/360022973471-What-is-Shields> <sup>[[Archive.org]][1338]</sup>
 
-[^506]: VentureBeat, Browser benchmark battle January 2020: Chrome vs. Firefox vs. Edge vs. Brave <https://venturebeat.com/2020/01/15/browser-benchmark-battle-january-2020-chrome-firefox-edge-brave/view-all/> <sup>[[Archive.org]][1339]</sup>
+[^506]: VentureBeat, Browser benchmark battle January 2020: Chrome vs. Firefox vs. Edge vs. Brave - <https://venturebeat.com/2020/01/15/browser-benchmark-battle-january-2020-chrome-firefox-edge-brave/view-all/> <sup>[[Archive.org]][1339]</sup>
 
-[^507]: Brave.com, Brave, Fingerprinting, and Privacy Budgets <https://brave.com/brave-fingerprinting-and-privacy-budgets/> <sup>[[Archive.org]][159]</sup>
+[^507]: Brave.com, Brave, Fingerprinting, and Privacy Budgets - <https://brave.com/brave-fingerprinting-and-privacy-budgets/> <sup>[[Archive.org]][159]</sup>
 
-[^508]: Madaidan's Insecurities, Firefox and Chromium <https://madaidans-insecurities.github.io/firefox-chromium.html> <sup>[[Archive.org]][1340]</sup>
+[^508]: Madaidan's Insecurities, Firefox and Chromium - <https://madaidans-insecurities.github.io/firefox-chromium.html> <sup>[[Archive.org]][1340]</sup>
 
-[^509]: GrapheneOS, Web Browsing <https://grapheneos.org/usage#web-browsing> <sup>[[Archive.org]][1341]</sup>
+[^509]: GrapheneOS, Web Browsing - <https://grapheneos.org/usage#web-browsing> <sup>[[Archive.org]][1341]</sup>
 
-[^510]: ResearchGate, Web Browser Privacy: What Do Browsers Say When They Phone Home? <https://www.researchgate.net/publication/349979628_Web_Browser_Privacy_What_Do_Browsers_Say_When_They_Phone_Home> <sup>[[Archive.org]][1342]</sup>
+[^510]: ResearchGate, Web Browser Privacy: What Do Browsers Say When They Phone Home? - <https://www.researchgate.net/publication/349979628_Web_Browser_Privacy_What_Do_Browsers_Say_When_They_Phone_Home> <sup>[[Archive.org]][1342]</sup>
 
-[^511]: Duck's pond, Ungoogled-Chromium <https://qua3k.github.io/ungoogled/> <sup>[[Archive.org]][1343]</sup>
+[^511]: Duck's pond, Ungoogled-Chromium - <https://qua3k.github.io/ungoogled/> <sup>[[Archive.org]][1343]</sup>
 
-[^512]: Madaidan's Insecurities, Firefox and Chromium <https://madaidans-insecurities.github.io/firefox-chromium.html> <sup>[[Archive.org]][1340]</sup>
+[^512]: Madaidan's Insecurities, Firefox and Chromium - <https://madaidans-insecurities.github.io/firefox-chromium.html> <sup>[[Archive.org]][1340]</sup>
 
-[^513]: GrapheneOS, Web Browsing <https://grapheneos.org/usage#web-browsing> <sup>[[Archive.org]][1341]</sup>
+[^513]: GrapheneOS, Web Browsing - <https://grapheneos.org/usage#web-browsing> <sup>[[Archive.org]][1341]</sup>
 
-[^514]: Microsoft.com, Microsoft Edge support for Microsoft Defender Application Guard <https://docs.microsoft.com/en-us/deployedge/microsoft-edge-security-windows-defender-application-guard> <sup>[[Archive.org]][1344]</sup>
+[^514]: Microsoft.com, Microsoft Edge support for Microsoft Defender Application Guard - <https://docs.microsoft.com/en-us/deployedge/microsoft-edge-security-windows-defender-application-guard> <sup>[[Archive.org]][1344]</sup>
 
-[^515]: PcMag, Mozilla Signs Lucrative 3-Year Google Search Deal for Firefox <https://www.pcmag.com/news/mozilla-signs-lucrative-3-year-google-search-deal-for-firefox> <sup>[[Archive.org]][1345]</sup>
+[^515]: PcMag, Mozilla Signs Lucrative 3-Year Google Search Deal for Firefox - <https://www.pcmag.com/news/mozilla-signs-lucrative-3-year-google-search-deal-for-firefox> <sup>[[Archive.org]][1345]</sup>
 
-[^516]: Madaidan's Insecurities, Firefox and Chromium <https://madaidans-insecurities.github.io/firefox-chromium.html> <sup>[[Archive.org]][1340]</sup>
+[^516]: Madaidan's Insecurities, Firefox and Chromium - <https://madaidans-insecurities.github.io/firefox-chromium.html> <sup>[[Archive.org]][1340]</sup>
 
-[^517]: FingerprintJS, Demo: Disabling JavaScript Won't Save You from Fingerprinting <https://fingerprintjs.com/blog/disabling-javascript-wont-stop-fingerprinting/> <sup>[[Archive.org]][933]</sup>
+[^517]: FingerprintJS, Demo: Disabling JavaScript Won't Save You from Fingerprinting - <https://fingerprintjs.com/blog/disabling-javascript-wont-stop-fingerprinting/> <sup>[[Archive.org]][933]</sup>
 
-[^518]: Duck's pond, Ungoogled-Chromium <https://qua3k.github.io/ungoogled/> <sup>[[Archive.org]][1343]</sup>
+[^518]: Duck's pond, Ungoogled-Chromium - <https://qua3k.github.io/ungoogled/> <sup>[[Archive.org]][1343]</sup>
 
-[^519]: Wikipedia, Virtualization <https://en.wikipedia.org/wiki/Virtualization> <sup>[[Wikiless]][1346]</sup> <sup>[[Archive.org]][1347]</sup>
+[^519]: Wikipedia, Virtualization - <https://en.wikipedia.org/wiki/Virtualization> <sup>[[Wikiless]][1346]</sup> <sup>[[Archive.org]][1347]</sup>
 
-[^520]: Tor Project, Project Snowflake <https://snowflake.torproject.org/> <sup>[[Archive.org]][563]</sup>
+[^520]: Tor Project, Project Snowflake - <https://snowflake.torproject.org/> <sup>[[Archive.org]][563]</sup>
 
-[^521]: GitHub, Obfs4 Repository <https://github.com/Yawning/obfs4/> <sup>[[Archive.org]][1348]</sup>
+[^521]: GitHub, Obfs4 Repository - <https://github.com/Yawning/obfs4/> <sup>[[Archive.org]][1348]</sup>
 
-[^522]: Tor Browser Manual, Pluggable Transport <https://tb-manual.torproject.org/circumvention/> <sup>[[Archive.org]][1349]</sup>
+[^522]: Tor Browser Manual, Pluggable Transport - <https://tb-manual.torproject.org/circumvention/> <sup>[[Archive.org]][1349]</sup>
 
-[^523]: Tor Browser Manual, Pluggable Transport <https://tb-manual.torproject.org/circumvention/> <sup>[[Archive.org]][1349]</sup>
+[^523]: Tor Browser Manual, Pluggable Transport - <https://tb-manual.torproject.org/circumvention/> <sup>[[Archive.org]][1349]</sup>
 
-[^524]: Wikipedia, Domain Fronting <https://en.wikipedia.org/wiki/Domain_fronting> <sup>[[Wikiless]][1350]</sup> <sup>[[Archive.org]][1351]</sup>
+[^524]: Wikipedia, Domain Fronting - <https://en.wikipedia.org/wiki/Domain_fronting> <sup>[[Wikiless]][1350]</sup> <sup>[[Archive.org]][1351]</sup>
 
-[^525]: GitLab, Tor Browser Issues, Add uBlock Origin to the Tor Browser <https://gitlab.torproject.org/tpo/applications/tor-browser/-/issues/17569> <sup>[[Archive.org]][1352]</sup>
+[^525]: GitLab, Tor Browser Issues, Add uBlock Origin to the Tor Browser - <https://gitlab.torproject.org/tpo/applications/tor-browser/-/issues/17569> <sup>[[Archive.org]][1352]</sup>
 
-[^526]: Vice, The NSA and CIA Use Ad Blockers Because Online Advertising Is So Dangerous <https://www.vice.com/en/article/93ypke/the-nsa-and-cia-use-ad-blockers-because-online-advertising-is-so-dangerous> <sup>[[Archive.org]][1353]</sup>
+[^526]: Vice, The NSA and CIA Use Ad Blockers Because Online Advertising Is So Dangerous - <https://www.vice.com/en/article/93ypke/the-nsa-and-cia-use-ad-blockers-because-online-advertising-is-so-dangerous> <sup>[[Archive.org]][1353]</sup>
 
-[^527]: A Comprehensive Bitcoin CoinJoin Guide <https://bitcoinmagazine.com/technical/a-comprehensive-bitcoin-coinjoin-guide> <sup>[[Archive.org]][1354]</sup>
+[^527]: A Comprehensive Bitcoin CoinJoin Guide - <https://bitcoinmagazine.com/technical/a-comprehensive-bitcoin-coinjoin-guide> <sup>[[Archive.org]][1354]</sup>
 
-[^528]: NIST, NIST Has Spoken - Death to Complexity, Long Live the Passphrase! <https://www.sans.org/blog/nist-has-spoken-death-to-complexity-long-live-the-passphrase/> <sup>[[Archive.org]][1355]</sup>
+[^528]: NIST, NIST Has Spoken - Death to Complexity, Long Live the Passphrase! - <https://www.sans.org/blog/nist-has-spoken-death-to-complexity-long-live-the-passphrase/> <sup>[[Archive.org]][1355]</sup>
 
-[^529]: ZDnet, FBI recommends passphrases over password complexity <https://www.zdnet.com/article/fbi-recommends-passphrases-over-password-complexity/> <sup>[[Archive.org]][1356]</sup>
+[^529]: ZDnet, FBI recommends passphrases over password complexity - <https://www.zdnet.com/article/fbi-recommends-passphrases-over-password-complexity/> <sup>[[Archive.org]][1356]</sup>
 
-[^530]: The Intercept, Passphrases That You Can Memorize --- But That Even the NSA Can't Guess <https://theintercept.com/2015/03/26/passphrases-can-memorize-attackers-cant-guess/> <sup>[[Tor Mirror]][1357]</sup> <sup>[[Archive.org]][1358]</sup>
+[^530]: The Intercept, Passphrases That You Can Memorize --- But That Even the NSA Can't Guess - <https://theintercept.com/2015/03/26/passphrases-can-memorize-attackers-cant-guess/> <sup>[[Tor Mirror]][1357]</sup> <sup>[[Archive.org]][1358]</sup>
 
-[^531]: Proton Blog, Let's settle the password vs. passphrase debate once and for all <https://proton.me/blog/protonmail-com-blog-password-vs-passphrase/> <sup>[[Archive.org]][1359]</sup>
+[^531]: Proton Blog, Let's settle the password vs. passphrase debate once and for all - <https://proton.me/blog/protonmail-com-blog-password-vs-passphrase/> <sup>[[Archive.org]][1359]</sup>
 
-[^532]: YouTube, Edward Snowden on Passwords: Last Week Tonight with John Oliver (HBO) <https://www.youtube.com/watch?v=yzGzB-yYKcc> <sup>[[Invidious]][1360]</sup>
+[^532]: YouTube, Edward Snowden on Passwords: Last Week Tonight with John Oliver (HBO) - <https://www.youtube.com/watch?v=yzGzB-yYKcc> <sup>[[Invidious]][1360]</sup>
 
-[^533]: YouTube, How to Choose a Password -- Computerphile <https://www.youtube.com/watch?v=3NjQ9b3pgIg> <sup>[[Invidious]][699]</sup>
+[^533]: YouTube, How to Choose a Password -- Computerphile - <https://www.youtube.com/watch?v=3NjQ9b3pgIg> <sup>[[Invidious]][699]</sup>
 
-[^534]: Wikipedia, Passphrase <https://en.wikipedia.org/wiki/Passphrase#Passphrase_selection> <sup>[[Wikiless]][1361]</sup> <sup>[[Archive.org]][1362]</sup>
+[^534]: Wikipedia, Passphrase - <https://en.wikipedia.org/wiki/Passphrase#Passphrase_selection> <sup>[[Wikiless]][1361]</sup> <sup>[[Archive.org]][1362]</sup>
 
-[^535]: Monero Research Lab, Evaluating cryptocurrency security and privacy in a post-quantum world <https://github.com/insight-decentralized-consensus-lab/post-quantum-monero/blob/master/writeups/technical_note.pdf> <sup>[[Archive.org]][1363]</sup>
+[^535]: Monero Research Lab, Evaluating cryptocurrency security and privacy in a post-quantum world - <https://github.com/insight-decentralized-consensus-lab/post-quantum-monero/blob/master/writeups/technical_note.pdf> <sup>[[Archive.org]][1363]</sup>
 
-[^536]: Wasabi Wallet zkSNACKs Blacklisting <https://blog.wasabiwallet.io/zksnacks-blacklisting-update> <sup>[[Archive.org]][1368]</sup>
+[^536]: Wasabi Wallet zkSNACKs Blacklisting - <https://blog.wasabiwallet.io/zksnacks-blacklisting-update> <sup>[[Archive.org]][1368]</sup>
 
-[^537]: An Analysis and Disclosure Regarding the Deterministic Nature of the Wasabi Wallet CoinJoin Algorithm <https://research.oxt.me/alerts/2020/08/21/Wasabi-Wallet> <sup>[[Archive.org]][1369]</sup>
+[^537]: An Analysis and Disclosure Regarding the Deterministic Nature of the Wasabi Wallet CoinJoin Algorithm - <https://research.oxt.me/alerts/2020/08/21/Wasabi-Wallet> <sup>[[Archive.org]][1369]</sup>
 
-[^538]: Samourai Whirlpool <https://docs.samourai.io/whirlpool/start><sup>[[Archive.org]][1370]</sup>
+[^538]: Samourai Whirlpool - <https://docs.samourai.io/whirlpool/start><sup>[[Archive.org]][1370]</sup>
 
   [Contents:]: #contents
   [Pre-requisites and limitations:]: #pre-requisites-and-limitations
