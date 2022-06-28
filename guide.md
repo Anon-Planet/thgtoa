@@ -7431,7 +7431,7 @@ Below you will find a small table showing the state of messaging apps as of the 
 <td>Via Proxy<sup>3</sup> or Virtualization</td>
 <td>Medium<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a></td>
 <td>Yes</td>
-<td>Has known cryptographic weaknesses</td>
+<td><a href="https://github.com/TokTok/c-toxcore/issues/426">Known cryptographic weaknesses</a></td>
 </tr>
 <tr class="even">
 <td><p>Session</p>
@@ -7492,7 +7492,7 @@ Below you will find a small table showing the state of messaging apps as of the 
 <td>Virtualization</td>
 <td>Bad</td>
 <td>No</td>
-<td>[Deleted/expired messages are easily recoverable](https://www.theguardian.com/technology/2013/may/09/snapchat-photos-not-deleted)</td>
+<td><a href="https://www.theguardian.com/technology/2013/may/09/snapchat-photos-not-deleted">Deleted/expired messages are easily recoverable</a></td>
 </tr>
 <tr class="even">
 <td>Teams (avoid)</td>
@@ -7612,7 +7612,7 @@ Below you will find a small table showing the state of messaging apps as of the 
 <td>Virtualization</td>
 <td>Bad<a href="#fn12" class="footnote-ref" id="fnref12" role="doc-noteref"><sup>12</sup></a></td>
 <td>No</td>
-<td>[Malware risk](https://www.theguardian.com/technology/2020/apr/02/zoom-technology-security-coronavirus-video-conferencing)</td>
+<td><a href="https://www.theguardian.com/technology/2020/apr/02/zoom-technology-security-coronavirus-video-conferencing">Malware risk</a></td>
 </tr>
 </tbody>
 </table>
