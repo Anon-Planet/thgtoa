@@ -7416,7 +7416,7 @@ Below you will find a small table showing the state of messaging apps as of the 
 <td></td>
 </tr>
 <tr class="odd">
-<td>qTox (avoid)</td>
+<td>Tox (avoid)</td>
 <td>Yes</td>
 <td>No</td>
 <td>No</td>
