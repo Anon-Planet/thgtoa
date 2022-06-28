@@ -11899,7 +11899,7 @@ You can find some introduction on these on these projects:
 
 # References:
 
-[^1]: English translation of German Telemedia Act - <https://www.huntonprivacyblog.com/wp-content/uploads/sites/28/2016/02/Telemedia_Act__TMA_.pdf> <sup>[[Archive.org]][747]</sup>. Section 13, Article 6, "The service provider must enable the use of Telemedia and payment for them to occur anonymously or via a pseudonym where this is technically possible and reasonable. The recipient of the service is to be informed about this possibility. ".
+[^1]: English translation of German Telemedia Act - <https://www.huntonprivacyblog.com/wp-content/uploads/sites/28/2016/02/Telemedia_Act__TMA_.pdf> <sup>[[Archive.org]][747]</sup>. §13 VI
 
 [^2]: Wikipedia, Real-Name System Germany - <https://en.wikipedia.org/wiki/Real-name_system#Germany> <sup>[[Wikiless]][415]</sup> <sup>[[Archive.org]][416]</sup>
 
