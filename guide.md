@@ -494,13 +494,10 @@ There are many ways you can be tracked besides browser cookies and ads, your e-m
 
 First, you could also consider these more general resources on privacy and security to learn more basics:
 
--   The New Oil*: <https://thenewoil.org/> <sup>[[Archive.org]][42]</sup>
-
--   Techlore videos*: <https://www.youtube.com/c/Techlore> <sup>[[Invidious]][43]</sup>
-
+-   The New Oil: <https://thenewoil.org/> <sup>[[Archive.org]][42]</sup>
+-   Techlore videos: <https://www.youtube.com/c/Techlore> <sup>[[Invidious]][43]</sup>
 -   Privacy Guides: <https://privacyguides.org/> <sup>[[Archive.org]][44]</sup>
-
--   Privacy Tools*: <https://privacytools.io> <sup>[[Archive.org]][45]</sup>
+-   Madaidain's Insecurities: <https://madaidans-insecurities.github.io/> <sup>[[Archive.org]][45]</sup>
 
 * Note that these websites could contain affiliate/sponsored content and/or merchandising. This guide does not endorse and is not sponsored by any commercial entity in any way.
 
@@ -13468,7 +13465,7 @@ You can find some introduction on these on these projects:
   [42]: https://web.archive.org/web/https://thenewoil.org/
   [43]: https://yewtu.be/c/Techlore
   [44]: https://web.archive.org/web/https://privacyguides.org/
-  [45]: https://web.archive.org/web/https://privacytools.io/
+  [45]: https://web.archive.org/web/https://madaidans-insecurities.github.io/
   [46]: https://web.archive.org/web/https://github.com/techlore-official/go-incognito
   [47]: https://yewtu.be/playlist?list=PL3KeV6Ui_4CayDGHw64OFXEPHgXLkrtJO
   [48]: https://yewtu.be/watch?v=vrxwXXytEuI
