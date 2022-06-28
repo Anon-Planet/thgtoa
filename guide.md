@@ -2,7 +2,7 @@
 
 (Or "How I learned to start worrying and love ~~privacy~~ anonymity")
 
-Version 1.1.4-pre1, June 2022 by Anonymous Planet
+Version 1.1.4-pre2, June 2022 by Anonymous Planet
 
 **Forever in memory of Lena, 1999-2022**
 
@@ -2813,7 +2813,8 @@ I also recommend that you do the initial installation completely offline to avoi
 
 As a light introduction for new macOS users, consider <https://www.youtube.com/watch?v=lFx5icuE6Io> <sup>[[Invidious]][293]</sup>
 
-Now to go more in-depth in securing and hardening your macOS, I recommend reading this GitHub guide which should cover many of the issues: <https://github.com/drduh/macOS-Security-and-Privacy-Guide> <sup>[[Archive.org]][294]</sup>
+Now to go more in-depth in securing and hardening your macOS, I recommend reading this guide which covers many of the issues: <https://www.bejarano.io/hardening-macos/> <sup>[[Archive.org]][294]</sup>
+
 
 Here are the basic steps you should take after your offline installation:
 
@@ -7184,9 +7185,26 @@ Below you will find a small table showing the state of messaging apps as of the 
 <th>Possible through Tor</th>
 <th>Privacy and Security Track Record ***</th>
 <th>De-centralized</th>
+<th>Additional notes</th>
 </tr>
 </thead>
 <tbody>
+<tr class="even">
+<td><p>Berty</p>
+<p>(avoid)</p></td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes <a href="#fn13" class="footnote-ref" id="fnref13" role="doc-noteref"><sup>13</sup></a></td>
+<td>Good</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Good</td>
+<td>Yes (peer to peer)</td>
+<td>Not sufficiently reviewed by this project, cannot recommend</td>
+</tr>
 <tr class="odd">
 <td>Briar (preferred)</td>
 <td>Yes</td>
@@ -7200,6 +7218,7 @@ Below you will find a small table showing the state of messaging apps as of the 
 <td>Natively<sup>3</sup></td>
 <td>Good</td>
 <td>Yes (peer to peer)</td>
+<td></td>
 </tr>
 <tr class="even">
 <td><p>Cwtch</p>
@@ -7215,6 +7234,7 @@ Below you will find a small table showing the state of messaging apps as of the 
 <td>Natively</td>
 <td>Good</td>
 <td>Yes (peer to peer)</td>
+<td></td>
 </tr>
 <tr class="odd">
 <td><p>Discord</p>
@@ -7230,6 +7250,7 @@ Below you will find a small table showing the state of messaging apps as of the 
 <td>Virtualization</td>
 <td>Bad</td>
 <td>No</td>
+<td></td>
 </tr>
 <tr class="even">
 <td>Element / Matrix.org (preferred)</td>
@@ -7244,6 +7265,7 @@ Below you will find a small table showing the state of messaging apps as of the 
 <td>Via Proxy<sup>3</sup> or Virtualization</td>
 <td>Good</td>
 <td>Partial (federated servers)</td>
+<td></td>
 </tr>
 <tr class="odd">
 <td>Facebook Messenger (avoid)</td>
@@ -7258,6 +7280,7 @@ Below you will find a small table showing the state of messaging apps as of the 
 <td>Virtualization</td>
 <td>Bad</td>
 <td>No</td>
+<td></td>
 </tr>
 <tr class="even">
 <td>OnionShare (preferred)</td>
@@ -7272,6 +7295,7 @@ Below you will find a small table showing the state of messaging apps as of the 
 <td>Natively</td>
 <td>Good</td>
 <td>Yes (peer to peer)</td>
+<td></td>
 </tr>
 <tr class="odd">
 <td>Apple Messages (aka iMessage)</td>
@@ -7286,6 +7310,7 @@ Below you will find a small table showing the state of messaging apps as of the 
 <td>Maybe Virtualization using real Apple device ID</td>
 <td>Bad</td>
 <td>No</td>
+<td></td>
 </tr>
 <tr class="even">
 <td>IRC</td>
@@ -7300,6 +7325,7 @@ Below you will find a small table showing the state of messaging apps as of the 
 <td>Via Proxy<sup>3</sup> or Virtualization</td>
 <td>Good</td>
 <td>No</td>
+<td></td>
 </tr>
 <tr class="odd">
 <td><p>Jami</p>
@@ -7315,6 +7341,7 @@ Below you will find a small table showing the state of messaging apps as of the 
 <td>Via Proxy<sup>3</sup> or Virtualization<sup>9</sup></td>
 <td>Good</td>
 <td>Partial</td>
+<td>Tor breaks some features</td>
 </tr>
 <tr class="even">
 <td>KakaoTalk (avoid)</td>
@@ -7329,6 +7356,7 @@ Below you will find a small table showing the state of messaging apps as of the 
 <td>Virtualization</td>
 <td>Bad</td>
 <td>No</td>
+<td></td>
 </tr>
 <tr class="odd">
 <td>Keybase</td>
@@ -7343,6 +7371,7 @@ Below you will find a small table showing the state of messaging apps as of the 
 <td></td>
 <td></td>
 <td>No</td>
+<td></td>
 </tr>
 <tr class="even">
 <td>Kik (avoid)</td>
@@ -7357,6 +7386,7 @@ Below you will find a small table showing the state of messaging apps as of the 
 <td>Virtualization</td>
 <td>Bad</td>
 <td>No</td>
+<td></td>
 </tr>
 <tr class="odd">
 <td>Line (avoid)</td>
@@ -7371,6 +7401,7 @@ Below you will find a small table showing the state of messaging apps as of the 
 <td>Virtualization</td>
 <td>Bad</td>
 <td>No</td>
+<td></td>
 </tr>
 <tr class="even">
 <td>Pidgin with OTR (avoid)</td>
@@ -7385,9 +7416,10 @@ Below you will find a small table showing the state of messaging apps as of the 
 <td>Via Proxy<sup>3</sup> or Virtualization</td>
 <td>Bad<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a></td>
 <td>No</td>
+<td></td>
 </tr>
 <tr class="odd">
-<td>qTox</td>
+<td>Tox (avoid)</td>
 <td>Yes</td>
 <td>No</td>
 <td>No</td>
@@ -7399,6 +7431,7 @@ Below you will find a small table showing the state of messaging apps as of the 
 <td>Via Proxy<sup>3</sup> or Virtualization</td>
 <td>Medium<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a></td>
 <td>Yes</td>
+<td>Has known cryptographic weaknesses</td>
 </tr>
 <tr class="even">
 <td><p>Session</p>
@@ -7414,6 +7447,7 @@ Below you will find a small table showing the state of messaging apps as of the 
 <td>Via Proxy<sup>3</sup> or Virtualization<sup>10</sup></td>
 <td>Good</td>
 <td>Yes</td>
+<td>Lacks PFS, deniability</td>
 </tr>
 <tr class="odd">
 <td>Signal</td>
@@ -7428,6 +7462,7 @@ Below you will find a small table showing the state of messaging apps as of the 
 <td>Virtualization</td>
 <td>Good</td>
 <td>No</td>
+<td>Requires burner or anonymous VOIP number for anonymous usage</td>
 </tr>
 <tr class="even">
 <td>Skype (avoid)</td>
@@ -7442,6 +7477,7 @@ Below you will find a small table showing the state of messaging apps as of the 
 <td>Virtualization</td>
 <td>Bad</td>
 <td>No</td>
+<td></td>
 </tr>
 <tr class="odd">
 <td>SnapChat (avoid)</td>
@@ -7456,6 +7492,7 @@ Below you will find a small table showing the state of messaging apps as of the 
 <td>Virtualization</td>
 <td>Bad</td>
 <td>No</td>
+<td>[Deleted/expired messages are easily recoverable](https://www.theguardian.com/technology/2013/may/09/snapchat-photos-not-deleted)</td>
 </tr>
 <tr class="even">
 <td>Teams (avoid)</td>
@@ -7470,6 +7507,7 @@ Below you will find a small table showing the state of messaging apps as of the 
 <td>Virtualization</td>
 <td>Bad</td>
 <td>No</td>
+<td></td>
 </tr>
 <tr class="odd">
 <td>Telegram</td>
@@ -7484,6 +7522,7 @@ Below you will find a small table showing the state of messaging apps as of the 
 <td>Via Proxy<sup>3</sup> or Virtualization</td>
 <td>Medium<a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a></td>
 <td>No</td>
+<td></td>
 </tr>
 <tr class="even">
 <td>Viber (avoid)</td>
@@ -7498,6 +7537,7 @@ Below you will find a small table showing the state of messaging apps as of the 
 <td>Virtualization</td>
 <td>Bad</td>
 <td>No</td>
+<td></td>
 </tr>
 <tr class="odd">
 <td>WeChat (avoid)</td>
@@ -7512,6 +7552,7 @@ Below you will find a small table showing the state of messaging apps as of the 
 <td>Virtualization</td>
 <td>Bad</td>
 <td>No</td>
+<td></td>
 </tr>
 <tr class="even">
 <td>WhatsApp (avoid)</td>
@@ -7526,6 +7567,7 @@ Below you will find a small table showing the state of messaging apps as of the 
 <td>Virtualization</td>
 <td>Bad</td>
 <td>No</td>
+<td></td>
 </tr>
 <tr class="odd">
 <td>Wickr Me</td>
@@ -7540,6 +7582,7 @@ Below you will find a small table showing the state of messaging apps as of the 
 <td>Virtualization</td>
 <td>Good</td>
 <td>No</td>
+<td></td>
 </tr>
 <tr class="even">
 <td>Gajim (XMPP) (preferred)</td>
@@ -7554,6 +7597,7 @@ Below you will find a small table showing the state of messaging apps as of the 
 <td>Via Proxy<sup>3</sup> or Virtualization</td>
 <td>Good</td>
 <td>Partial</td>
+<td></td>
 </tr>
 <tr class="odd">
 <td>Zoom (avoid<a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a>)</td>
@@ -7568,6 +7612,7 @@ Below you will find a small table showing the state of messaging apps as of the 
 <td>Virtualization</td>
 <td>Bad<a href="#fn12" class="footnote-ref" id="fnref12" role="doc-noteref"><sup>12</sup></a></td>
 <td>No</td>
+<td>[Malware risk](https://www.theguardian.com/technology/2020/apr/02/zoom-technology-security-coronavirus-video-conferencing)</td>
 </tr>
 </tbody>
 </table>
@@ -7586,6 +7631,7 @@ Below you will find a small table showing the state of messaging apps as of the 
 <li id="fn10" role="doc-endnote"><p>TechCrunch, Maybe we shouldn’t use Zoom after all, <a href="https://techcrunch.com/2020/03/31/zoom-at-your-own-risk/">https://techcrunch.com/2020/03/31/zoom-at-your-own-risk/</a> <a href="https://web.archive.org/web/https://techcrunch.com/2020/03/31/zoom-at-your-own-risk/"><sup>[Archive.org]</sup></a><a href="#fnref10" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn11" role="doc-endnote"><p>The Incercept, Zoom Meetings Aren’t End-to-End Encrypted, Despite Misleading Marketing <a href="https://theintercept.com/2020/03/31/zoom-meeting-encryption/">https://theintercept.com/2020/03/31/zoom-meeting-encryption/</a> <a href="https://27m3p2uv7igmj6kvd4ql3cct5h3sdwrsajovkkndeufumzyfhlfev4qd.onion/2020/03/31/zoom-meeting-encryption/"><sup>[Tor Mirror]</sup></a> <a href="https://web.archive.org/web/https://theintercept.com/2020/03/31/zoom-meeting-encryption/"><sup>[Archive.org]</sup></a><a href="#fnref11" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn12" role="doc-endnote"><p>Serpentsec, Secure Messaging: Choosing a chat app <a href="https://web.archive.org/web/https://serpentsec.1337.cx/secure-messaging-choosing-a-chat-app">https://web.archive.org/web/https://serpentsec.1337.cx/secure-messaging-choosing-a-chat-app</a><a href="#fnref12" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn13" role="doc-endnote"><p>Berty, Development, <a href="https://berty.tech">https://berty.tech</a><a href="#fn13" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
 
@@ -13735,7 +13781,7 @@ You can find some introduction on these on these projects:
   [291]: https://web.archive.org/web/https://www.whonix.org/wiki/Kicksecure
   [292]: https://web.archive.org/web/http://0pointer.net/blog/authenticated-boot-and-disk-encryption-on-linux.html
   [293]: https://yewtu.be/watch?v=lFx5icuE6Io
-  [294]: https://web.archive.org/web/https://github.com/drduh/macOS-Security-and-Privacy-Guide
+  [294]: https://web.archive.org/web/https://www.bejarano.io/hardening-macos/
   [295]: https://web.archive.org/web/https://support.apple.com/en-us/HT204455
   [296]: https://web.archive.org/web/https://sneak.berlin/20201112/your-computer-isnt-yours/
   [297]: https://web.archive.org/web/https://blog.jacopo.io/en/post/apple-ocsp/
