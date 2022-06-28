@@ -8247,7 +8247,6 @@ So, you want to be sure. To achieve 100% secure deletion on an SSD drive, we wil
     -   ATA/NVMe Sanitize Overwrite **(terribly slow, could be dangerous and not recommended)**: This method performs a block erase and then overwrite every storage block (it is the same as Block Erase but will overwrite data in addition). This method is overkill and not necessary IMHO.
 
 -   Physical Destruction:
-
     -   HDDs:
 
         1.  Open the drive (with a screwdriver, usually Torx T8)
@@ -8258,13 +8257,14 @@ So, you want to be sure. To achieve 100% secure deletion on an SSD drive, we wil
 
         4.  Break/Deform/Crush the platters
 
-        5.  Burn them
+        5.  Burn the platters or cook them in an oven (**do not** skip this step)
 
         6.  Separate the debris
 
         7.  Throw away in separate places
 
     -   SSDs:
+        - Ideally you should wipe the drive through other means first, as this method alone is not known to be secure against all attackers
 
         1.  Open the drive
 
