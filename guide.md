@@ -8231,7 +8231,7 @@ So, you want to be sure. To achieve 100% secure deletion on an SSD drive, we wil
                 - If using `srm`, make sure to manually specify that it should perform a Gutmann wipe (`srm -G /dev/sdX`).
         -   SSDs:
             -   Overwrite the drive's contents. Tools like wipe or shred are often overkill, as they perform up to 35 passes. While they work, most SSDs require no more than a couple passes.
-            -   Use `wipe` with only a couple passes: `wipe -qQ2 /dev/sdX` (`-qQ2` means to passes. Replace `2` with the desired number of passes)
+            -   Use `wipe` with only a couple passes: `wipe -qQ2 /dev/sdX` (`-qQ2` means 2 passes. Replace `2` with the desired number of passes)
             -   Use `srm` with a 3-pass overwrite: `srm -P /dev/sdX`
             -   Use `dd`: `dd if=/dev/urandom of=/dev/sdX bs=8M status=progress conv=fsync`. This command will overwrite the drive with random data. To perform multiple passes (I recommend at least 2), simply run the command again until you're satisfied.
                 - The reason you run it twice is because SSDs have hidden ("overprovisioned") storage which can contain remnants of deleted data. Wiping twice forces the drive to wipe its overprovisioned storage. This is only guaranteed to work if each pass writes different data (which is why we wipe with random data on each pass).
