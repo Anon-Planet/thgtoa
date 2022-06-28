@@ -411,9 +411,9 @@ This guide is not intended for:
 -   Helping malicious actors conduct unethical, criminal, or illicit activities (such as trolling, stalking, disinformation, misinformation, harassment, bullying...).
 -   Use by minors.
 
-# Introduction:
+# Introduction
 
-**TLDR for the whole guide: "A strange game. The only winning move is not to play"** [^4]**.**
+**"A strange game. The only winning move is not to play."[^4]**
 
 Making a social media account with a pseudonym or artist/brand name is easy. And it is enough in most use cases to protect your identity as the next George Orwell. There are plenty of people using pseudonyms all over Facebook/Instagram/Twitter/LinkedIn/TikTok/Snapchat/Reddit/... But the vast majority of those are anything but anonymous and can easily be traced to their real identity by your local police officers, random people within the OSINT[^5] (Open-Source Intelligence) community, and trolls[^6] on 4chan[^7].
 
@@ -425,7 +425,7 @@ It is important to understand that the purpose of this guide is anonymity and no
 
 -   **Privacy is about people knowing who you are but not knowing what you are doing.**
 
--   **Anonymity is about people knowing what you are doing but not knowing who you are** [^8]**.**
+-   **Anonymity is about people knowing what you are doing but not knowing who you are.[^8]**
 
 ![][38]
 
@@ -453,27 +453,17 @@ The EFF provides a few security scenarios of what you should consider depending 
 
 If you want to go deeper into threat modeling, see [Appendix B3: Threat modeling resources].
 
-You might think this guide has no legitimate use but there are many[^16]'[^17]'[^18]'[^19]'[^20]'[^21]'[^22] such as:
+You might think this guide has no legitimate use but there are many such as[^16]'[^17]'[^18]'[^19]'[^20]'[^21]'[^22]:
 
 -   Evading Online Censorship[^23]
-
 -   Evading Online Oppression
-
 -   Evading Online Stalking, Doxxing, and Harassment
-
 -   Evading Online Unlawful Government Surveillance
-
 -   Anonymous Online Whistle Blowing
-
 -   Anonymous Online Activism
-
 -   Anonymous Online Journalism
-
 -   Anonymous Online Legal Practice
-
 -   Anonymous Online Academic Activities (For instance accessing scientific research where such resources are blocked). See note below.
-
--   ...
 
 This guide is written with hope for those **good-intended individuals** who might not be knowledgeable enough to consider the big picture of online anonymity and privacy.
 
@@ -12069,55 +12059,55 @@ You can find some introduction on these on these projects:
 
 # References:
 
-[^1]: Germany, [Telemedia Act](https://www.huntonprivacyblog.com/wp-content/uploads/sites/28/2016/02/Telemedia_Act__TMA_.pdf) <sup>[[Archive.org]][3]</sup>. Section 13, Article 6: "The service provider must enable the use of Telemedia and payment for them to occur anonymously or via a pseudonym where this is technically possible and reasonable. The recipient of the service is to be informed about this possibility."
+[^1]: German Telemedia Act - <https://www.huntonprivacyblog.com/wp-content/uploads/sites/28/2016/02/Telemedia_Act__TMA_.pdf> <sup>[[Archive.org]][747]</sup>.
 
-[^2]: Wikipedia, [Real-Name System Germany](https://en.wikipedia.org/wiki/Real-name_system#Germany) <sup>[[Wikiless]][1]</sup> <sup>[[Archive.org]][2]</sup>
+[^2]: Wikipedia, Real-Name System - <https://en.wikipedia.org/wiki/Real-name_system#Germany> <sup>[[Wikiless]][415]</sup> <sup>[[Archive.org]][416]</sup>
 
-[^3]: Wikipedia, [Don't be evil](https://en.wikipedia.org/wiki/Don%27t_be_evil) <sup>[[Wikiless]][4]</sup> <sup>[[Archive.org]][5]</sup>
+[^3]: Wikipedia, Don't be evil - <https://en.wikipedia.org/wiki/Don%27t_be_evil> <sup>[[Wikiless]][748]</sup> <sup>[[Archive.org]][749]</sup>
 
 [^4]: YouTube, WarGames - "The Only Winning Move" <https://www.youtube.com/watch?v=6DGNZnfKYnU> <sup>[[Invidious]][750]</sup>
 
-[^5]: Wikipedia, OSINT <https://en.wikipedia.org/wiki/Open-source_intelligence> <sup>[[Wikiless]][751]</sup> <sup>[[Archive.org]][752]</sup>
+[^5]: Wikipedia, OSINT - <https://en.wikipedia.org/wiki/Open-source_intelligence> <sup>[[Wikiless]][751]</sup> <sup>[[Archive.org]][752]</sup>
 
-[^6]: YouTube Internet Historian Playlist, HWNDU <https://www.youtube.com/playlist?list=PLna1KTNJu3y09Tu70U6yPn28sekaNhOMY> <sup>[[Invidious]][753]</sup>
+[^6]: YouTube Internet Historian Playlist, HWNDU - <https://www.youtube.com/playlist?list=PLna1KTNJu3y09Tu70U6yPn28sekaNhOMY> <sup>[[Invidious]][753]</sup>
 
-[^7]: Wikipedia, 4chan <https://en.wikipedia.org/wiki/4chan> <sup>[[Wikiless]][754]</sup> <sup>[[Archive.org]][755]</sup>
+[^7]: Wikipedia, 4chan - <https://en.wikipedia.org/wiki/4chan> <sup>[[Wikiless]][754]</sup> <sup>[[Archive.org]][755]</sup>
 
-[^8]: PIA, See this good article on the matter <https://www.privateinternetaccess.com/blog/how-does-privacy-differ-from-anonymity-and-why-are-both-important/> <sup>[[Archive.org]][756]</sup> (disclaimer: this is not an endorsement or recommendation for this commercial service).
+[^8]: PIA, How does privacy differ from anonymity and why are both important? - <https://www.privateinternetaccess.com/blog/how-does-privacy-differ-from-anonymity-and-why-are-both-important/> <sup>[[Archive.org]][756]</sup>
 
-[^9]: Medium.com, Privacy, Blockchain and Onion Routing <https://medium.com/unitychain/privacy-blockchain-and-onion-routing-d5609c611841> <sup>[[Scribe.rip]][757]</sup> <sup>[[Archive.org]][758]</sup>
+[^9]: Medium.com, Privacy, Blockchain and Onion Routing - <https://medium.com/unitychain/privacy-blockchain-and-onion-routing-d5609c611841> <sup>[[Scribe.rip]][757]</sup> <sup>[[Archive.org]][758]</sup>
 
-[^10]: This World of Ours, James Mickens <https://scholar.harvard.edu/files/mickens/files/thisworldofours.pdf> <sup>[[Archive.org]][759]</sup>
+[^10]: James Mickens, This World of Ours - <https://scholar.harvard.edu/files/mickens/files/thisworldofours.pdf> <sup>[[Archive.org]][759]</sup> - "If your adversary *is* the Mossad, YOU’RE GONNA DIE AND THERE’S NOTHING THAT YOU CAN DO ABOUT IT."
 
-[^11]: XKCD, Security <https://xkcd.com/538/> <sup>[[Archive.org]][760]</sup>
+[^11]: XKCD, Security - <https://xkcd.com/51/> <sup>[[Archive.org]][760]</sup>
 
-[^12]: Wikipedia, Threat Model <https://en.wikipedia.org/wiki/Threat_model> <sup>[[Wikiless]][761]</sup> <sup>[[Archive.org]][762]</sup>
+[^12]: Wikipedia, Threat Model - <https://en.wikipedia.org/wiki/Threat_model> <sup>[[Wikiless]][761]</sup> <sup>[[Archive.org]][762]</sup>
 
-[^13]: Bellingcat <https://www.bellingcat.com/> <sup>[[Archive.org]][763]</sup>
+[^13]: Bellingcat - <https://www.bellingcat.com/> <sup>[[Archive.org]][763]</sup>
 
-[^14]: Wikipedia, Doxing <https://en.wikipedia.org/wiki/Doxing> <sup>[[Wikiless]][764]</sup> <sup>[[Archive.org]][765]</sup>
+[^14]: Wikipedia, Doxing - <https://en.wikipedia.org/wiki/Doxing> <sup>[[Wikiless]][764]</sup> <sup>[[Archive.org]][765]</sup>
 
-[^15]: YouTube, Internet Historian, The Bikelock Fugitive of Berkeley <https://www.youtube.com/watch?v=muoR8Td44UE> <sup>[[Invidious]][766]</sup>
+[^15]: YouTube, Internet Historian, The Bikelock Fugitive of Berkeley - <https://www.youtube.com/watch?v=muoR8Td44UE> <sup>[[Invidious]][766]</sup>
 
-[^16]: BBC News, Tor Mirror <https://www.bbc.com/news/technology-50150981> <sup>[[Archive.org]][767]</sup>
+[^16]: BBC News, Tor Mirror - <https://www.bbc.com/news/technology-50150981> <sup>[[Archive.org]][767]</sup>
 
-[^17]: GitHub, Real World Onion websites <https://github.com/alecmuffett/real-world-onion-sites> <sup>[[Archive.org]][768]</sup> (updated extremely often)
+[^17]: GitHub, Real World Onion websites - <https://github.com/alecmuffett/real-world-onion-sites> <sup>[[Archive.org]][768]</sup> (updated extremely often)
 
-[^18]: Tor Project, Who Uses Tor <https://2019.www.torproject.org/about/torusers.html.en> <sup>[[Archive.org]][769]</sup>
+[^18]: Tor Project, Who Uses Tor? - <https://2019.www.torproject.org/about/torusers.html.en> <sup>[[Archive.org]][769]</sup>
 
-[^19]: Whonix Documentation, The importance of Anonymity <https://www.whonix.org/wiki/Anonymity> <sup>[[Archive.org]][770]</sup>
+[^19]: Whonix Documentation, The Importance of Anonymity - <https://www.whonix.org/wiki/Anonymity> <sup>[[Archive.org]][770]</sup>
 
-[^20]: Geek Feminism <https://geekfeminism.wikia.org/wiki/Who_is_harmed_by_a_%22Real_Names%22_policy%3F> <sup>[[Archive.org]][771]</sup>
+[^20]: Geek Feminism - <https://geekfeminism.wikia.org/wiki/Who_is_harmed_by_a_%22Real_Names%22_policy%3F> <sup>[[Archive.org]][771]</sup>
 
-[^21]: Tor Project, Tor Users <https://2019.www.torproject.org/about/torusers.html.en> <sup>[[Archive.org]][769]</sup>
+[^21]: Tor Project, Tor Users - <https://2019.www.torproject.org/about/torusers.html.en> <sup>[[Archive.org]][769]</sup>
 
-[^22]: PrivacyHub, Internet Privacy in the Age of Surveillance <https://www.cyberghostvpn.com/privacyhub/internet-privacy-surveillance/> <sup>[[Archive.org]][772]</sup>
+[^22]: PrivacyHub, Internet Privacy in the Age of Surveillance - <https://www.cyberghostvpn.com/privacyhub/internet-privacy-surveillance/> <sup>[[Archive.org]][772]</sup>
 
-[^23]: PIA Blog, 50 Key Stats About Freedom of the Internet Around the World <https://www.privateinternetaccess.com/blog/internet-freedom-around-the-world-in-50-stats/> <sup>[[Archive.org]][773]</sup>
+[^23]: PIA Blog, 50 Key Stats About Freedom of the Internet Around the World - <https://www.privateinternetaccess.com/blog/internet-freedom-around-the-world-in-50-stats/> <sup>[[Archive.org]][773]</sup>
 
-[^24]: Wikipedia, IANAL <https://en.wikipedia.org/wiki/IANAL> <sup>[[Wikiless]][774]</sup> <sup>[[Archive.org]][775]</sup>
+[^24]: Wikipedia, IANAL - <https://en.wikipedia.org/wiki/IANAL> <sup>[[Wikiless]][774]</sup> <sup>[[Archive.org]][775]</sup>
 
-[^25]: Wikipedia, Trust but verify <https://en.wikipedia.org/wiki/Trust,_but_verify> <sup>[[Wikiless]][776]</sup> <sup>[[Archive.org]][777]</sup>
+[^25]: Wikipedia, Trust but verify - <https://en.wikipedia.org/wiki/Trust,_but_verify> <sup>[[Wikiless]][776]</sup> <sup>[[Archive.org]][777]</sup>
 
 [^26]: Wikipedia, IP Address <https://en.wikipedia.org/wiki/IP_address> <sup>[[Wikiless]][778]</sup> <sup>[[Archive.org]][779]</sup>
 
