@@ -12069,11 +12069,11 @@ You can find some introduction on these on these projects:
 
 # References:
 
-[^1]: English translation of German Telemedia Act <https://www.huntonprivacyblog.com/wp-content/uploads/sites/28/2016/02/Telemedia_Act__TMA_.pdf> <sup>[[Archive.org]][747]</sup>. Section 13, Article 6, "The service provider must enable the use of Telemedia and payment for them to occur anonymously or via a pseudonym where this is technically possible and reasonable. The recipient of the service is to be informed about this possibility. ".
+[^1]: Germany, [Telemedia Act](https://www.huntonprivacyblog.com/wp-content/uploads/sites/28/2016/02/Telemedia_Act__TMA_.pdf) <sup>[[Archive.org]][3]</sup>. Section 13, Article 6: "The service provider must enable the use of Telemedia and payment for them to occur anonymously or via a pseudonym where this is technically possible and reasonable. The recipient of the service is to be informed about this possibility."
 
-[^2]: Wikipedia, Real-Name System Germany <https://en.wikipedia.org/wiki/Real-name_system#Germany> <sup>[[Wikiless]][415]</sup> <sup>[[Archive.org]][416]</sup>
+[^2]: Wikipedia, [Real-Name System Germany](https://en.wikipedia.org/wiki/Real-name_system#Germany) <sup>[[Wikiless]][1]</sup> <sup>[[Archive.org]][2]</sup>
 
-[^3]: Wikipedia, Don't be evil <https://en.wikipedia.org/wiki/Don%27t_be_evil> <sup>[[Wikiless]][748]</sup> <sup>[[Archive.org]][749]</sup>
+[^3]: Wikipedia, [Don't be evil](https://en.wikipedia.org/wiki/Don%27t_be_evil) <sup>[[Wikiless]][4]</sup> <sup>[[Archive.org]][5]</sup>
 
 [^4]: YouTube, WarGames - "The Only Winning Move" <https://www.youtube.com/watch?v=6DGNZnfKYnU> <sup>[[Invidious]][750]</sup>
 
