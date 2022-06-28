@@ -392,32 +392,23 @@ Finally note that this guide does mention and even recommends various commercial
 
 # Pre-requisites and limitations:
 
-## Pre-requisites:
+## Pre-requisites
 
--   Understanding of the English language (in this case US English).
+* Understanding of the English language (in this case US English).
+* Be a permanent resident in Germany, where the courts have upheld [the legality of not using real names on online platforms](https://www.huntonprivacyblog.com/wp-content/uploads/sites/28/2016/02/Telemedia_Act__TMA_.pdf) (§13 VI of the German Telemedia Act of 2007[^1]'[^2]). **Alternatively be a resident of any other country where you can confirm and verify the legality of this guide yourself**.
+* This guide will assume you already have access to some (Windows/Linux/macOS) laptop computer (ideally not a work/shared device) and a basic understanding of how it works.
+* Have patience, as this process could take several weeks to complete, if you want to go through all the content.
+* Have some free time on your hands to dedicate to this process (or a lot depending on the route you pick).
+* Be prepared to read a lot of references (do read them), guides (do not skip them) and follow a lot of how-to tutorials thoroughly (do not skip them either).
+* Don't be evil (for real this time)[^3].
 
--   Be a permanent resident in Germany where the courts have upheld the legality of not using real names on online platforms (§13 VI of the German Telemedia Act of 2007[^1]'[^2]). **Alternatively, be a resident of any other country where you can confirm and verify the legality of this guide yourself.**
-
--   This guide will assume you already have access to some (Windows/Linux/macOS) laptop computer (ideally not a work/shared device) and a basic understanding of how it works.
-
--   Have patience as this process could take several weeks to complete if you want to go through all the content.
-
--   Have some free time on your hands to dedicate to this process (or a lot depending on the route you pick).
-
--   Be prepared to read a lot of references (do read them), guides (do not skip them), and follow a lot of how-to tutorials thoroughly (do not skip them either).
-
--   Don't be evil (for real this time)[^3].
-
-## Limitations:
+## Limitations
 
 This guide is not intended for:
 
 -   Creating machine accounts of any kind (bots).
-
 -   Creating impersonation accounts of existing people (such as identity theft).
-
 -   Helping malicious actors conduct unethical, criminal, or illicit activities (such as trolling, stalking, disinformation, misinformation, harassment, bullying...).
-
 -   Use by minors.
 
 # Introduction:
