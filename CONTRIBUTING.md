@@ -48,7 +48,7 @@ For an example of what *not* to do, see: <https://github.com/NobodySpecial256/th
 
 ### Updating PRs
 
-While a PR is being reviewed, modifications may be made to it. If this is the case, a new branch will be created for the PR. If you would like to submit a change to a PR that is in the process of being reviewed, *do not update the PR directly*. This will only cause merge conflicts and delay the PR from being merged. Instead, submit your changes to the PR's review branch.
+While a PR is being reviewed, modifications may be made to it by the reviewer prior to merging. If this is the case, a new branch will be created for the PR's review. If you would like to submit a change to a PR that is in the process of being reviewed, *do not update the PR directly*. This will only cause merge conflicts and delay the PR from being merged. Instead, submit your changes to the PR's review branch.
 
 For an example of what *not* to do, see: <https://github.com/NobodySpecial256/thgtoa/pull/51>. Instead of submitting changes to the PR directly, they should have been submitted as changes to the [PR's associated review branch](https://github.com/NobodySpecial256/thgtoa/tree/pr/51).
 
