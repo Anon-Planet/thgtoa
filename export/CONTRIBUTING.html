@@ -62,6 +62,11 @@
 </ul>
 <h3 id="large-prs">Large PRs</h3>
 <p>Please split large sets of changes into multiple PRs. For example, a PR that adds Windows 11 support, removes Windows AME references, and fixes typos can be split into 3 PRs. This makes PRs easier to review prior to merging.</p>
+<p>For an example of what <em>not</em> to do, see: <a href="https://github.com/NobodySpecial256/thgtoa/pull/51" class="uri">https://github.com/NobodySpecial256/thgtoa/pull/51</a>. This PR contains enough changes to split into multiple smaller and individually-reviewable PRs.</p>
+<h3 id="updating-prs">Updating PRs</h3>
+<p>While a PR is being reviewed, modifications may be made to it by the reviewer prior to merging. If this is the case, a new branch will be created for the PR’s review. If you would like to submit a change to a PR that is in the process of being reviewed, <em>do not update the PR directly</em>. This will only cause merge conflicts and delay the PR from being merged. Instead, submit your changes to the PR’s review branch.</p>
+<p>For an example of what <em>not</em> to do, see: <a href="https://github.com/NobodySpecial256/thgtoa/pull/51" class="uri">https://github.com/NobodySpecial256/thgtoa/pull/51</a>. Instead of submitting changes to the PR directly, they should have been submitted as changes to the <a href="https://github.com/NobodySpecial256/thgtoa/tree/pr/51">PR’s associated review branch</a>.</p>
+<hr />
 <p><strong>Thank you</strong> for taking the few moments to read this far! You’re already way ahead of the curve, so keep it up!</p>
 </body>
 </html>
