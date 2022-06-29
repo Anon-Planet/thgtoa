@@ -44,6 +44,16 @@ When reporting guide issues:
 
 Please split large sets of changes into multiple PRs. For example, a PR that adds Windows 11 support, removes Windows AME references, and fixes typos can be split into 3 PRs. This makes PRs easier to review prior to merging.
 
+For an example of what *not* to do, see: <https://github.com/NobodySpecial256/thgtoa/pull/51>. This PR contains enough changes to split into multiple smaller and individually-reviewable PRs.
+
+### Updating PRs
+
+While a PR is being reviewed, modifications may be made to it by the reviewer prior to merging. If this is the case, a new branch will be created for the PR's review. If you would like to submit a change to a PR that is in the process of being reviewed, *do not update the PR directly*. This will only cause merge conflicts and delay the PR from being merged. Instead, submit your changes to the PR's review branch.
+
+For an example of what *not* to do, see: <https://github.com/NobodySpecial256/thgtoa/pull/51>. Instead of submitting changes to the PR directly, they should have been submitted as changes to the [PR's associated review branch](https://github.com/NobodySpecial256/thgtoa/tree/pr/51).
+
+---
+
 **Thank you** for taking the few moments to read this far! You're already way ahead of the
 curve, so keep it up!
 

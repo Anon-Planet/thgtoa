@@ -2815,7 +2815,8 @@ I also recommend that you do the initial installation completely offline to avoi
 
 As a light introduction for new macOS users, consider <https://www.youtube.com/watch?v=lFx5icuE6Io> <sup>[[Invidious]][293]</sup>
 
-Now to go more in-depth in securing and hardening your macOS, I recommend reading this GitHub guide which should cover many of the issues: <https://github.com/drduh/macOS-Security-and-Privacy-Guide> <sup>[[Archive.org]][294]</sup>
+Now to go more in-depth in securing and hardening your macOS, I recommend reading this guide which covers many of the issues: <https://www.bejarano.io/hardening-macos/> <sup>[[Archive.org]][294]</sup>
+
 
 Here are the basic steps you should take after your offline installation:
 
@@ -7124,9 +7125,26 @@ Below you will find a small table showing the state of messaging apps as of the 
 <th>Possible through Tor</th>
 <th>Privacy and Security Track Record ***</th>
 <th>De-centralized</th>
+<th>Additional notes</th>
 </tr>
 </thead>
 <tbody>
+<tr class="even">
+<td><p>Berty</p>
+<p>(avoid)</p></td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes <a href="#fn13" class="footnote-ref" id="fnref13" role="doc-noteref"><sup>13</sup></a></td>
+<td>Good</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Good</td>
+<td>Yes (peer to peer)</td>
+<td>Not sufficiently reviewed by this project, cannot recommend</td>
+</tr>
 <tr class="odd">
 <td>Briar (preferred)</td>
 <td>Yes</td>
@@ -7140,6 +7158,7 @@ Below you will find a small table showing the state of messaging apps as of the 
 <td>Natively<sup>3</sup></td>
 <td>Good</td>
 <td>Yes (peer to peer)</td>
+<td></td>
 </tr>
 <tr class="even">
 <td><p>Cwtch</p>
@@ -7155,6 +7174,7 @@ Below you will find a small table showing the state of messaging apps as of the 
 <td>Natively</td>
 <td>Good</td>
 <td>Yes (peer to peer)</td>
+<td></td>
 </tr>
 <tr class="odd">
 <td><p>Discord</p>
@@ -7170,6 +7190,7 @@ Below you will find a small table showing the state of messaging apps as of the 
 <td>Virtualization</td>
 <td>Bad</td>
 <td>No</td>
+<td></td>
 </tr>
 <tr class="even">
 <td>Element / Matrix.org (preferred)</td>
@@ -7184,6 +7205,7 @@ Below you will find a small table showing the state of messaging apps as of the 
 <td>Via Proxy<sup>3</sup> or Virtualization</td>
 <td>Good</td>
 <td>Partial (federated servers)</td>
+<td></td>
 </tr>
 <tr class="odd">
 <td>Facebook Messenger (avoid)</td>
@@ -7198,6 +7220,7 @@ Below you will find a small table showing the state of messaging apps as of the 
 <td>Virtualization</td>
 <td>Bad</td>
 <td>No</td>
+<td></td>
 </tr>
 <tr class="even">
 <td>OnionShare (preferred)</td>
@@ -7212,6 +7235,7 @@ Below you will find a small table showing the state of messaging apps as of the 
 <td>Natively</td>
 <td>Good</td>
 <td>Yes (peer to peer)</td>
+<td></td>
 </tr>
 <tr class="odd">
 <td>Apple Messages (aka iMessage)</td>
@@ -7226,6 +7250,7 @@ Below you will find a small table showing the state of messaging apps as of the 
 <td>Maybe Virtualization using real Apple device ID</td>
 <td>Bad</td>
 <td>No</td>
+<td></td>
 </tr>
 <tr class="even">
 <td>IRC</td>
@@ -7240,6 +7265,7 @@ Below you will find a small table showing the state of messaging apps as of the 
 <td>Via Proxy<sup>3</sup> or Virtualization</td>
 <td>Good</td>
 <td>No</td>
+<td></td>
 </tr>
 <tr class="odd">
 <td><p>Jami</p>
@@ -7255,6 +7281,7 @@ Below you will find a small table showing the state of messaging apps as of the 
 <td>Via Proxy<sup>3</sup> or Virtualization<sup>9</sup></td>
 <td>Good</td>
 <td>Partial</td>
+<td>Tor breaks some features</td>
 </tr>
 <tr class="even">
 <td>KakaoTalk (avoid)</td>
@@ -7269,6 +7296,7 @@ Below you will find a small table showing the state of messaging apps as of the 
 <td>Virtualization</td>
 <td>Bad</td>
 <td>No</td>
+<td></td>
 </tr>
 <tr class="odd">
 <td>Keybase</td>
@@ -7283,6 +7311,7 @@ Below you will find a small table showing the state of messaging apps as of the 
 <td></td>
 <td></td>
 <td>No</td>
+<td></td>
 </tr>
 <tr class="even">
 <td>Kik (avoid)</td>
@@ -7297,6 +7326,7 @@ Below you will find a small table showing the state of messaging apps as of the 
 <td>Virtualization</td>
 <td>Bad</td>
 <td>No</td>
+<td></td>
 </tr>
 <tr class="odd">
 <td>Line (avoid)</td>
@@ -7311,6 +7341,7 @@ Below you will find a small table showing the state of messaging apps as of the 
 <td>Virtualization</td>
 <td>Bad</td>
 <td>No</td>
+<td></td>
 </tr>
 <tr class="even">
 <td>Pidgin with OTR (avoid)</td>
@@ -7325,9 +7356,10 @@ Below you will find a small table showing the state of messaging apps as of the 
 <td>Via Proxy<sup>3</sup> or Virtualization</td>
 <td>Bad<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a></td>
 <td>No</td>
+<td></td>
 </tr>
 <tr class="odd">
-<td>qTox</td>
+<td>Tox (avoid)</td>
 <td>Yes</td>
 <td>No</td>
 <td>No</td>
@@ -7339,6 +7371,7 @@ Below you will find a small table showing the state of messaging apps as of the 
 <td>Via Proxy<sup>3</sup> or Virtualization</td>
 <td>Medium<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a></td>
 <td>Yes</td>
+<td>Known cryptographic weaknesses<a href="#fn14" class="footnote-ref" id="fnref14" role="doc-noteref"><sup>14</sup></a></td>
 </tr>
 <tr class="even">
 <td><p>Session</p>
@@ -7354,6 +7387,7 @@ Below you will find a small table showing the state of messaging apps as of the 
 <td>Via Proxy<sup>3</sup> or Virtualization<sup>10</sup></td>
 <td>Good</td>
 <td>Yes</td>
+<td>Lacks PFS, deniability</td>
 </tr>
 <tr class="odd">
 <td>Signal</td>
@@ -7368,6 +7402,7 @@ Below you will find a small table showing the state of messaging apps as of the 
 <td>Virtualization</td>
 <td>Good</td>
 <td>No</td>
+<td>Requires burner or anonymous VOIP number for anonymous usage</td>
 </tr>
 <tr class="even">
 <td>Skype (avoid)</td>
@@ -7382,6 +7417,7 @@ Below you will find a small table showing the state of messaging apps as of the 
 <td>Virtualization</td>
 <td>Bad</td>
 <td>No</td>
+<td></td>
 </tr>
 <tr class="odd">
 <td>SnapChat (avoid)</td>
@@ -7396,6 +7432,7 @@ Below you will find a small table showing the state of messaging apps as of the 
 <td>Virtualization</td>
 <td>Bad</td>
 <td>No</td>
+<td>Deleted/expired messages are easily recoverable<a href="#fn15" class="footnote-ref" id="fnref15" role="doc-noteref"><sup>15</sup></a>,<a href="#fn16" class="footnote-ref" id="fnref16" role="doc-noteref"><sup>16</sup></a></td>
 </tr>
 <tr class="even">
 <td>Teams (avoid)</td>
@@ -7410,6 +7447,7 @@ Below you will find a small table showing the state of messaging apps as of the 
 <td>Virtualization</td>
 <td>Bad</td>
 <td>No</td>
+<td></td>
 </tr>
 <tr class="odd">
 <td>Telegram</td>
@@ -7424,6 +7462,7 @@ Below you will find a small table showing the state of messaging apps as of the 
 <td>Via Proxy<sup>3</sup> or Virtualization</td>
 <td>Medium<a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a></td>
 <td>No</td>
+<td></td>
 </tr>
 <tr class="even">
 <td>Viber (avoid)</td>
@@ -7438,6 +7477,7 @@ Below you will find a small table showing the state of messaging apps as of the 
 <td>Virtualization</td>
 <td>Bad</td>
 <td>No</td>
+<td></td>
 </tr>
 <tr class="odd">
 <td>WeChat (avoid)</td>
@@ -7452,6 +7492,7 @@ Below you will find a small table showing the state of messaging apps as of the 
 <td>Virtualization</td>
 <td>Bad</td>
 <td>No</td>
+<td></td>
 </tr>
 <tr class="even">
 <td>WhatsApp (avoid)</td>
@@ -7466,6 +7507,7 @@ Below you will find a small table showing the state of messaging apps as of the 
 <td>Virtualization</td>
 <td>Bad</td>
 <td>No</td>
+<td></td>
 </tr>
 <tr class="odd">
 <td>Wickr Me</td>
@@ -7480,6 +7522,7 @@ Below you will find a small table showing the state of messaging apps as of the 
 <td>Virtualization</td>
 <td>Good</td>
 <td>No</td>
+<td></td>
 </tr>
 <tr class="even">
 <td>Gajim (XMPP) (preferred)</td>
@@ -7494,6 +7537,7 @@ Below you will find a small table showing the state of messaging apps as of the 
 <td>Via Proxy<sup>3</sup> or Virtualization</td>
 <td>Good</td>
 <td>Partial</td>
+<td></td>
 </tr>
 <tr class="odd">
 <td>Zoom (avoid<a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a>)</td>
@@ -7508,6 +7552,7 @@ Below you will find a small table showing the state of messaging apps as of the 
 <td>Virtualization</td>
 <td>Bad<a href="#fn12" class="footnote-ref" id="fnref12" role="doc-noteref"><sup>12</sup></a></td>
 <td>No</td>
+<td>Malware risk<a href="#fn17" class="footnote-ref" id="fnref17" role="doc-noteref"><sup>17</sup></a></td>
 </tr>
 </tbody>
 </table>
@@ -7526,6 +7571,11 @@ Below you will find a small table showing the state of messaging apps as of the 
 <li id="fn10" role="doc-endnote"><p>TechCrunch, Maybe we shouldn’t use Zoom after all, <a href="https://techcrunch.com/2020/03/31/zoom-at-your-own-risk/">https://techcrunch.com/2020/03/31/zoom-at-your-own-risk/</a> <a href="https://web.archive.org/web/https://techcrunch.com/2020/03/31/zoom-at-your-own-risk/"><sup>[Archive.org]</sup></a><a href="#fnref10" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn11" role="doc-endnote"><p>The Incercept, Zoom Meetings Aren’t End-to-End Encrypted, Despite Misleading Marketing <a href="https://theintercept.com/2020/03/31/zoom-meeting-encryption/">https://theintercept.com/2020/03/31/zoom-meeting-encryption/</a> <a href="https://27m3p2uv7igmj6kvd4ql3cct5h3sdwrsajovkkndeufumzyfhlfev4qd.onion/2020/03/31/zoom-meeting-encryption/"><sup>[Tor Mirror]</sup></a> <a href="https://web.archive.org/web/https://theintercept.com/2020/03/31/zoom-meeting-encryption/"><sup>[Archive.org]</sup></a><a href="#fnref11" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn12" role="doc-endnote"><p>Serpentsec, Secure Messaging: Choosing a chat app <a href="https://web.archive.org/web/https://serpentsec.1337.cx/secure-messaging-choosing-a-chat-app">https://web.archive.org/web/https://serpentsec.1337.cx/secure-messaging-choosing-a-chat-app</a><a href="#fnref12" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn13" role="doc-endnote"><p>Berty, Development, <a href="https://berty.tech">https://berty.tech</a><a href="#fn13" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn14" role="doc-endnote"><p>Tox Handshake Vulnerable to KCI, <a href="https://github.com/TokTok/c-toxcore/issues/426">https://github.com/TokTok/c-toxcore/issues/426</a><a href="#fn13" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn15" role="doc-endnote"><p>The Guardian, Deleted Snapchat photos recovered 'within days' by forensics company, <a href="https://www.theguardian.com/technology/2013/may/09/snapchat-photos-not-deleted">https://www.theguardian.com/technology/2013/may/09/snapchat-photos-not-deleted</a><a href="#fn13" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn16" role="doc-endnote"><p>The Guardian, Snapchat's expired snaps are not deleted, just hidden, <a href="https://web.archive.org/web/20131115224243/https://www.theguardian.com/media-network/partner-zone-infosecurity/snapchat-photos-not-deleted-hidden">https://web.archive.org/web/20131115224243/https://www.theguardian.com/media-network/partner-zone-infosecurity/snapchat-photos-not-deleted-hidden</a><a href="#fn13" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn17" role="doc-endnote"><p>The Guardian, ‘Zoom is malware’: why experts worry about the video conferencing platform, <a href="https://www.theguardian.com/technology/2020/apr/02/zoom-technology-security-coronavirus-video-conferencing">https://www.theguardian.com/technology/2020/apr/02/zoom-technology-security-coronavirus-video-conferencing</a><a href="#fn13" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
 
@@ -8109,12 +8159,28 @@ So, you want to be sure. To achieve 100% secure deletion on an SSD drive, we wil
 -   Easy options for less experienced users:
 
     -   If available, just use the Secure Erase option available from your BIOS/UEFI (ATA/NVME Secure Erase or Sanitize).
+        - It's worth noting that this relies on your drive's firmware. Some drive manufacturers have messed up the implementation, causing data to still be recoverable.
 
     -   Just re-install a fresh operating system (delete/quick format the drive) and re-encrypt it. The full disk encryption process should erase all previous data from the disk.
 
     -   Buy PartedMagic[^437] for 11$ and use it to erase any disk.
 
 -   Technical options for more advanced users:
+
+    -   Overwrite the entire drive's contents
+        -   HDDs:
+            -   Overwrite the drive's contents using a tool like [srm](https://www.howtogeek.com/425232/how-to-securely-delete-files-on-linux/), [wipe](https://linux.die.net/man/1/wipe), [shred, etc.](https://recoverit.wondershare.com/harddrive-tips/format-and-wipe-linux-disk.html). Ideally you want to use the Gutmann method, which was created for most effective data erasure on all drives. This method also works on SSDs, although it is overkill.
+            -   Simply overwriting the drive's contents is not always enough. Dedicated secure deletion tools are designed to perform multiple passes to more effectively wipe data. This is expecially important on older drives. I recommend using either `wipe` or `srm`.
+                - If using `wipe`, just use its default options (`wipe /dev/sdX`), as the defaults are tuned to most effectively wipe data on HDDs.
+                - If using `srm`, make sure to manually specify that it should perform a Gutmann wipe (`srm -G /dev/sdX`).
+        -   SSDs:
+            -   Overwrite the drive's contents. Tools like wipe or shred are often overkill, as they perform up to 35 passes. While they work, most SSDs require no more than a couple passes.
+            -   Use `wipe` with only a couple passes: `wipe -qQ2 /dev/sdX`.
+                - `-qQ2` means 2 passes. Replace `2` with the desired number of passes.
+            -   Use `srm` with a 3-pass overwrite: `srm -P /dev/sdX`.
+            -   Use `dd`: `dd if=/dev/urandom of=/dev/sdX bs=8M status=progress conv=fsync`. This command will overwrite the drive with random data. To perform multiple passes (I recommend at least 2), simply run the command again until you're satisfied.
+                - The reason you run it twice is because SSDs have hidden ("overprovisioned") storage which can contain remnants of deleted data. Wiping twice forces the drive to wipe its overprovisioned storage. This is only guaranteed to work if each pass writes different data (which is why we wipe with random data on each pass).
+                - `bs=8M` writes 8MiB blocks at a time. This doesn't affect the quality of the data deletion, but adjusting it could affect how long it takes to wipe the drive.
 
     -   ATA/NVMe Secure Erase: This method will remove the mapping table that keeps track of allocated data on the storage Blocks but does not destroy the actual data.
 
@@ -8125,7 +8191,6 @@ So, you want to be sure. To achieve 100% secure deletion on an SSD drive, we wil
     -   ATA/NVMe Sanitize Overwrite **(terribly slow, could be dangerous and not recommended)**: This method performs a block erase and then overwrite every storage block (it is the same as Block Erase but will overwrite data in addition). This method is overkill and not necessary IMHO.
 
 -   Physical Destruction:
-
     -   HDDs:
 
         1.  Open the drive (with a screwdriver, usually Torx T8)
@@ -8136,13 +8201,14 @@ So, you want to be sure. To achieve 100% secure deletion on an SSD drive, we wil
 
         4.  Break/Deform/Crush the platters
 
-        5.  Burn them
+        5.  Burn the platters or cook them in an oven (**do not** skip this step)
 
         6.  Separate the debris
 
         7.  Throw away in separate places
 
     -   SSDs:
+        - Ideally you should wipe the drive through other means first, as this method alone is not known to be secure against all attackers
 
         1.  Open the drive
 
@@ -13839,7 +13905,7 @@ You can find some introduction on these on these projects:
   [291]: https://web.archive.org/web/https://www.whonix.org/wiki/Kicksecure
   [292]: https://web.archive.org/web/http://0pointer.net/blog/authenticated-boot-and-disk-encryption-on-linux.html
   [293]: https://yewtu.be/watch?v=lFx5icuE6Io
-  [294]: https://web.archive.org/web/https://github.com/drduh/macOS-Security-and-Privacy-Guide
+  [294]: https://web.archive.org/web/https://www.bejarano.io/hardening-macos/
   [295]: https://web.archive.org/web/https://support.apple.com/en-us/HT204455
   [296]: https://web.archive.org/web/https://sneak.berlin/20201112/your-computer-isnt-yours/
   [297]: https://web.archive.org/web/https://blog.jacopo.io/en/post/apple-ocsp/
