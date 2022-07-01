@@ -7079,22 +7079,6 @@ Finally, Open-Source apps should always be preferred because they allow third pa
 
 #### Comparison:
 
-Below you will find a small table showing the state of messaging apps as of the writing of this guide based on my tests and data from the various sources below:
-
--   Wikipedia, <https://en.wikipedia.org/wiki/Comparison_of_instant_messaging_protocols> <sup>[[Wikiless]][453]</sup> <sup>[[Archive.org]][454]</sup>
-
--   Wikipedia, <https://en.wikipedia.org/wiki/Comparison_of_cross-platform_instant_messaging_clients> <sup>[[Wikiless]][455]</sup> <sup>[[Archive.org]][456]</sup>
-
--   Secure Messaging Apps <https://www.securemessagingapps.com/> <sup>[[Archive.org]][457]</sup>
-
--   Proton Blog, <https://proton.me/blog/whatsapp-alternatives/> <sup>[[Archive.org]][458]</sup>
-
--   Whonix Documentation, Instant Messenger Chat <https://www.whonix.org/wiki/Chat> <sup>[[Archive.org]][459]</sup>
-
--   Have a look at <https://securechatguide.org/featuresmatrix.html> <sup>[[Archive.org]][460]</sup> which is also a good comparison table for messaging apps.
-
--   Messenger-Matrix.de at <https://www.messenger-matrix.de/messenger-matrix-en.html> <sup>[[Archive.org]][461]</sup>
-
 <table>
 <colgroup>
 <col style="width: 9%" />
@@ -7682,6 +7666,22 @@ While I do not recommend most of the messaging platforms for the various reasons
 The ones that are preferred are recommended due to their stance on privacy, their default settings, their crypto choices but also because they allow convenient anonymous sign-up without going through the many hassles of having a phone number/e-mail verification method and are open source.
 
 Those should be privileged in most cases. Yes, this guide has a discord server, and a Twitter account despite those not being recommended at all for their stance on privacy and their struggle with anonymity. But this is about me acting appropriately in making this guide available to the many and conveniently using my experience and knowledge to do so as anonymously as possible.
+
+You can also consult the following external resources for more comparisons:
+
+-   Wikipedia, <https://en.wikipedia.org/wiki/Comparison_of_instant_messaging_protocols> <sup>[[Wikiless]][453]</sup> <sup>[[Archive.org]][454]</sup>
+
+-   Wikipedia, <https://en.wikipedia.org/wiki/Comparison_of_cross-platform_instant_messaging_clients> <sup>[[Wikiless]][455]</sup> <sup>[[Archive.org]][456]</sup>
+
+-   Secure Messaging Apps <https://www.securemessagingapps.com/> <sup>[[Archive.org]][457]</sup>
+
+-   Proton Blog, <https://proton.me/blog/whatsapp-alternatives/> <sup>[[Archive.org]][458]</sup>
+
+-   Whonix Documentation, Instant Messenger Chat <https://www.whonix.org/wiki/Chat> <sup>[[Archive.org]][459]</sup>
+
+-   Have a look at <https://securechatguide.org/featuresmatrix.html> <sup>[[Archive.org]][460]</sup> which is also a good comparison table for messaging apps.
+
+-   Messenger-Matrix.de at <https://www.messenger-matrix.de/messenger-matrix-en.html> <sup>[[Archive.org]][461]</sup>
 
 **I do not endorse or recommend some mainstream platforms for anonymity including the much-praised Signal which to this date still requires a phone number to register and contact others. In the context of this guide, I strongly recommend against using Signal if possible.**
 
