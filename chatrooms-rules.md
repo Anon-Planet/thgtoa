@@ -28,6 +28,7 @@ These are currently only enforced on **Anonymity**, **Security**, and **#psa-ot:
 - No NSFW content (no Porn, no Gore, no Hentai...)
 - No upload of any non-media files (binaries, executables, compressed files...)
 - No voice messages (these will be auto-deleted by the bots)
+- External bots are forbidden unless explicit permission from an Admin
 - Moderation for small offenses (off-topic talking for example) will follow a 3 step system: Warning > Kick > Ban (those can be appealed,  see the end of this page).
 - Moderation for heavy offenses (CSAM for example) might result in an immediate ban and possibly an immediate permaban where an appeal will be denied. Some of those heavy offenses might result in a report to the server admins or even the authorities.
 - All kicks and bans shall have a clear reason and bans shall have an expiration time. It is up to the person being banned to contact the moderators or adminds of the room to request unban based on expiration.
