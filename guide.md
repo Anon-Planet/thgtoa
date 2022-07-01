@@ -7663,9 +7663,7 @@ Any safe options for mobile devices? **Yes, but these are not endorsed/recommend
 
 While I do not recommend most of the messaging platforms for the various reasons outlined above (phone number and e-mail requirements), this does not mean it is not possible to use them anonymously if you know what you are doing. You can use even Facebook Messenger anonymously by taking the necessary precautions outlined in this guide (virtualization behind a Tor Gateway on a non-persistent OS).
 
-The ones that are preferred are recommended due to their stance on privacy, their default settings, their crypto choices but also because they allow convenient anonymous sign-up without going through the many hassles of having a phone number/e-mail verification method and are open source.
-
-Those should be privileged in most cases. Yes, this guide has a discord server, and a Twitter account despite those not being recommended at all for their stance on privacy and their struggle with anonymity. But this is about me acting appropriately in making this guide available to the many and conveniently using my experience and knowledge to do so as anonymously as possible.
+The ones that are preferred are recommended due to their stance on privacy, their default settings, their crypto choices but also because they allow convenient anonymous sign-up without going through the many hassles of having a phone number/e-mail verification method and are open source. Those should be privileged in most cases.
 
 You can also consult the following external resources for more comparisons:
 
