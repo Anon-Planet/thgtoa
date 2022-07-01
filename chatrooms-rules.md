@@ -13,8 +13,8 @@ You will find here the rules for the rooms part of the PSA Community. These rule
 - [PSA Bans](#psabans)
 - [Ban Appeals](#appeals)
 
-#### General default rules for PSA rooms **unless specific rules are mentioned below**:<a name="general"></a>
-These are currently only enforced on **Anonymity** and **Security**, and not applied on rooms  with their own ruleset below.
+#### General default rules for all PSA rooms **unless some rooms opt for their own specific rules.**:<a name="general"></a>
+These are currently only enforced on **Anonymity**, **Security**, and **#psa-ot:envs.net (PSA Off-Topic)** but not applied on rooms with their own ruleset below like: **Nothing to hide privacy**, **Nothing to hide privacy off-topic**, **Modern Cryptography**, **OS Security**.
 
 - Keep it legal
 - English only
@@ -28,7 +28,10 @@ These are currently only enforced on **Anonymity** and **Security**, and not app
 - No NSFW content (no Porn, no Gore, no Hentai...)
 - No upload of any non-media files (binaries, executables, compressed files...)
 - No voice messages (these will be auto-deleted by the bots)
-- **Avoid drifting too much off-topic or move to an off-topic room like #bnonymity**
+- Moderation for small offenses (off-topic talking for example) will follow a 3 step system: Warning > Kick > Ban (those can be appealed,  see the end of this page).
+- Moderation for heavy offenses (CSAM for example) might result in an immediate ban and possibly an immediate permaban where an appeal will be denied. Some of those heavy offenses might result in a report to the server admins or even the authorities.
+- All kicks and bans shall have a clear reason and bans shall have an expiration time. It is up to the person being banned to contact the moderators or adminds of the room to request unban based on expiration.
+- **Avoid drifting too much off-topic or move to an off-topic room like #bnonymity (lax moderation) or PSA Off-Topic (#psa-ot:envs.net and normal moderation) **
 - **Any discussion about AnonyPla / Lena whereabouts is only tolerated, to an extent, in the #Bnonymity room.**
 
 Some exceptions can apply, see the [exceptions](#exceptions) section at the bottom of this page. Violations will be handled at the discretion of the acting moderator.
@@ -63,14 +66,20 @@ See <https://artemislena.eu/coc.html>
 - Talks about torrenting anonymously are allowed unless the purpose is blatantly illegal
 
 #### PSA Bans:<a name="psabans"></a>
-Currently, the following rooms are sharing a common PSA banlist for serious offenders:
-- #Anonymity
-- #Security
-- #Bnonymity
-- #OS-Security
-- #ModernCrypto
 
-This means that those PSA bans are effectively applied on all those rooms and can be issued by admins of these rooms. See the next section for information about appeals.
+Due to unfortunate events, this is temporarily suspended unril we replace our bot.
+
+<del>Currently, the following rooms are sharing a common PSA banlist for serious offenders:</del>
+- <del>#Anonymity</del>
+- <del>#Security</del>
+- <del>#Bnonymity</del>
+- <del>#OS-Security</del>
+- <del>#ModernCrypto</del>
+
+<del>This means that those PSA bans are effectively applied on all those rooms and can be issued by admins of these rooms. See the next section for information about appeals.</del>
 
 #### Ban Appeals:<a name="appeals"></a>
-- **Please contact the mods or admins of the room in question to state your case for appealing.**
+
+Everyone has a right to appeal a ban. Depending on the gravity of the offense, serious offenders will need an admin to judge. Small offenders can be judged by moderators. If an appeal is granted, it doesn't mean the convictions are dropped. The person appealing might be granted release on probation and might be re-banned on any violation.
+
+In all cases: **Contact the mods or admins of the room in question to state your case for appealing.**
