@@ -29,9 +29,9 @@ These are currently only enforced on **Anonymity**, **Security**, and **#psa-ot:
 - No upload of any non-media files (binaries, executables, compressed files...)
 - No voice messages (these will be auto-deleted by the bots)
 - External bots are forbidden unless explicit permission from an Admin
-- Moderation for small offenses (off-topic talking for example) will follow a 3 step system: Warning > Kick > Ban (those can be appealed,  see the end of this page).
+- Moderation for small offenses (off-topic talking for example) will follow a 3 step system: Warning > Kick > Ban (those can be appealed, see the end of this page).
 - Moderation for heavy offenses (CSAM for example) might result in an immediate ban and possibly an immediate permaban where an appeal will be denied. Some of those heavy offenses might result in a report to the server admins or even the authorities.
-- All kicks and bans shall have a clear reason and bans shall have an expiration time. It is up to the person being banned to contact the moderators or adminds of the room to request unban based on expiration.
+- All kicks and bans shall have a clear reason and bans shall have an expiration time. It is up to the person being banned to contact the moderators or admins of the room to request unban based on expiration.
 - **Avoid drifting too much off-topic or move to an off-topic room like #bnonymity (lax moderation) or PSA Off-Topic (#psa-ot:envs.net and normal moderation) **
 - **Any discussion about AnonyPla / Lena whereabouts is only tolerated, to an extent, in the #Bnonymity room.**
 
@@ -68,7 +68,7 @@ See <https://artemislena.eu/coc.html>
 
 #### PSA Bans:<a name="psabans"></a>
 
-Due to unfortunate events, this is temporarily suspended unril we replace our bot.
+Due to unfortunate events, this is temporarily suspended until we replace our bot.
 
 <del>Currently, the following rooms are sharing a common PSA banlist for serious offenders:</del>
 - <del>#Anonymity</del>
@@ -81,6 +81,6 @@ Due to unfortunate events, this is temporarily suspended unril we replace our bo
 
 #### Ban Appeals:<a name="appeals"></a>
 
-Everyone has a right to appeal a ban. Depending on the gravity of the offense, serious offenders will need an admin to judge. Small offenders can be judged by moderators. If an appeal is granted, it doesn't mean the convictions are dropped. The person appealing might be granted release on probation and might be re-banned on any violation.
+Everyone has a right to appeal a ban. Depending on the gravity of the offense, serious offenders will need an admin to judge. Small offenders can be judged by moderators. If an appeal is granted, it doesn't mean the convictions are dropped.
 
 In all cases: **Contact the mods or admins of the room in question to state your case for appealing.**
