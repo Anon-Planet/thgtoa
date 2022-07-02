@@ -6444,7 +6444,7 @@ Legend:
 <tr class="odd">
 <td><strong>Twitter</strong></td>
 <td>No</td>
-<td>Likely</td>
+<td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -6889,7 +6889,7 @@ After signing up you should do the following:
 
 -   Is this against their ToS? No <https://twitter.com/en/tos>
 
--   Will they require a phone number? They might not at sign-up, but they will just after sign-up or later.
+-   Will they require a phone number? Extremely likely, possibly now a requirement in all cases.
 
 -   Can you create accounts through Tor? Yes, but expect some captchas and your phone number will be required after a while.
 
@@ -6917,7 +6917,7 @@ Once the account is restored, you should take some time to do the following:
 
 -   Disable geolocation of tweets
 
--   Remove the phone number from the account
+-   **Caution:** Remove the phone number from the account (at your own risk, this often leads to suspension of the account)
 
 -   Follow some people based
 
