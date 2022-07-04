@@ -7155,36 +7155,36 @@ Below you will find a small table showing the state of messaging apps as of the 
 
 -   Messenger-Matrix.de at <https://www.messenger-matrix.de/messenger-matrix-en.html> <sup>[[Archive.org]][461]</sup>
 
-| App [1] | E2EE [2] | Roll Your Own Crypto | Perfect Forward Secrecy | Zero-Access Encryption-at-rest [6] | Metadata Protection | Open-Source | Default Privacy Settings | Native Anonymous Sign-up | Tor optional | Privacy and Security Track Record | De-centralization | Additional notes |
+| App \[1\] | E2EE \[2\] | Roll Your Own Crypto | Perfect Forward Secrecy | Zero-Access Encryption-at-rest \[6\] | Metadata Protection | Open-Source | Default Privacy Settings | Native Anonymous Sign-up | Tor optional | Privacy and Security Track Record | De-centralization | Additional notes |
 |:--------|:--------|:--------|:--------|:--------|:--------|:--------|:--------|:--------|:--------|:--------|:--------|--------:|
-| Berty | Yes | No | Yes | Yes | Yes | Yes [13] | Good | Yes | Yes | Good | Yes | Not sufficiently reviewed by this project, cannot recommend |
-| Briar | Yes | No | Yes | Yes | Yes | Yes | Good | Yes | Native [3] | Good | Yes | |
+| Berty | Yes | No | Yes | Yes | Yes | Yes \[13\] | Good | Yes | Yes | Good | Yes | Not sufficiently reviewed by this project, cannot recommend |
+| Briar | Yes | No | Yes | Yes | Yes | Yes | Good | Yes | Native \[3\] | Good | Yes | |
 | Cwtch | Yes | No | Yes | Yes | Yes | Yes | Good | Yes | Native | Good | Yes | |
-| Discord | No | No [7] | No | No | No | No | Bad | E-Mail | Virtualization | Bad | No | |  
-| Element | Yes | No | Yes | Yes | Poor [2] | Yes | Good | Yes | Via Proxy or Virtualization [3] | Good | Partial | |
-| Facebook Messenger (avoid) | Partial (1:1/opt-in) | Closed-source [7] | Yes | No | No | No | Bad | E-Mail and Phone required | Virtualization | Bad | No | |
-| OnionShare (preferred) | Yes | No | TBD [8] | TBD [8] | Yes (strong) | Yes | Good | Yes | Natively | Good | Yes (peer to peer) | |
-| Apple Messages (aka iMessage) | Yes | Closed-source [7] | No | Partial | No | No | Good | Apple device Required | Maybe (Virtualization using real Apple device ID) | Bad | No | |
-| IRC | Yes (OTR plugins) | No | No | No | No | Yes | Bad | Yes | Via Proxy or Virtualization [3] | Good | No | |
-| Jami (preferred) | Yes | No | Yes | Yes | Partial | Yes | Good | Yes | Via Proxy [3] or Virtualization [9] | Good | Partial | Tor breaks some features |
-| KakaoTalk (avoid) | Yes | Closed-source [7] | No [4] | No | No | No | Bad | No (but possible) | Virtualization | Bad | No |
+| Discord | No | No \[7\] | No | No | No | No | Bad | E-Mail | Virtualization | Bad | No | |  
+| Element | Yes | No | Yes | Yes | Poor \[2\] | Yes | Good | Yes | Via Proxy or Virtualization \[3\] | Good | Partial | |
+| Facebook Messenger (avoid) | Partial (1:1/opt-in) | Closed-source \[7\] | Yes | No | No | No | Bad | E-Mail and Phone required | Virtualization | Bad | No | |
+| OnionShare (preferred) | Yes | No | TBD \[8\] | TBD \[8\] | Yes (strong) | Yes | Good | Yes | Natively | Good | Yes (peer to peer) | |
+| Apple Messages (aka iMessage) | Yes | Closed-source \[7\] | No | Partial | No | No | Good | Apple device Required | Maybe (Virtualization using real Apple device ID) | Bad | No | |
+| IRC | Yes (OTR plugins) | No | No | No | No | Yes | Bad | Yes | Via Proxy or Virtualization \[3\] | Good | No | |
+| Jami (preferred) | Yes | No | Yes | Yes | Partial | Yes | Good | Yes | Via Proxy \[3\] or Virtualization \[9\] | Good | Partial | Tor breaks some features |
+| KakaoTalk (avoid) | Yes | Closed-source \[7\] | No \[4\] | No | No | No | Bad | No (but possible) | Virtualization | Bad | No |
 | Keybase | Yes | No | Partial (exploding message) | No | No | Yes | Good  | E-Mail Required | | | No | |
-| Kik (avoid) | No | Closed-source [7] | No | No | No | No | Bad | No (but possible) | Virtualization | Bad | No | 
-| Line (avoid) | Partial (opt-in) | Closed-source [7] | No | No | No | No | Bad | No (but possible) | Virtualization | Bad | No | |  
-| Pidgin with OTR (avoid) | Yes (OTR) [5] | No | Yes | No | No | Yes | Bad | Yes | Via Proxy or Virtualization [3] | Bad [6] | No | |
-| Tox (avoid) | Yes | No | No | No | No | Yes | Good | Yes | Via Proxy or Virtualization [3] | Medium [7] | Yes | Known cryptographic weaknesses [14] | 
-| Session (Preferred only on iOS) | Yes | No | No | Yes | Yes | Yes | Good | Yes | Via Proxy [3] or Virtualization [10] | Good | Yes | Lacks PFS, deniability |
+| Kik (avoid) | No | Closed-source \[7\] | No | No | No | No | Bad | No (but possible) | Virtualization | Bad | No | 
+| Line (avoid) | Partial (opt-in) | Closed-source \[7\] | No | No | No | No | Bad | No (but possible) | Virtualization | Bad | No | |  
+| Pidgin with OTR (avoid) | Yes (OTR) \[5\] | No | Yes | No | No | Yes | Bad | Yes | Via Proxy or Virtualization \[3\] | Bad \[6\] | No | |
+| Tox (avoid) | Yes | No | No | No | No | Yes | Good | Yes | Via Proxy or Virtualization \[3\] | Medium \[7\] | Yes | Known cryptographic weaknesses \[14\] | 
+| Session (Preferred only on iOS) | Yes | No | No | Yes | Yes | Yes | Good | Yes | Via Proxy \[3\] or Virtualization \[10\] | Good | Yes | Lacks PFS, deniability |
 | Signal | Yes | No | Yes | Yes | Yes (moderate) | Yes | Good | Phone Required | Virtualization | Good | No | Requires burner or anonymous VOIP number for anonymous usage |
-| Skype (avoid) | Partial (1:1/opt-in) | Closed-source [7] | No | No | No | No | Bad | No (but possible) | Virtualization | Bad | No | |
-| SnapChat (avoid) | No | Closed-source [7] | No | No | No | No | Bad | No (but possible | Virtualization | Bad | No | Deleted/expired messages are easily recoverable [15,16] |
-| Teams (avoid) | Yes | Closed-source [7] | No | No | No | No | Bad | No (but possible) | Virtualization | Bad | No | |
-| Telegram | Partial (1:1/opt-in) | Yes (MTProto) [8] | Partial (secret chats only) | Yes | No | Partial [5] | Medium (E2EE off by default) | Phone Required | Via Proxy [3] or Virtualization | Medium [9] | No | |
-| Viber (avoid) | Partial (1:1) | Closed-source [7] | Yes | No | No | No | Bad | No (but possible) | Virtualization | Bad | No | |  
-| WeChat (avoid) | No | Closed-source [7] | No | No | No | No | Bad | No | Virtualization | Bad | No | |
-| WhatsApp (avoid) | Yes | Closed-source [7] | Yes | No | No | No | Bad | Phone Required | Virtualization | Bad | No | |
+| Skype (avoid) | Partial (1:1/opt-in) | Closed-source \[7\] | No | No | No | No | Bad | No (but possible) | Virtualization | Bad | No | |
+| SnapChat (avoid) | No | Closed-source \[7\] | No | No | No | No | Bad | No (but possible | Virtualization | Bad | No | Deleted/expired messages are easily recoverable \[15,16\] |
+| Teams (avoid) | Yes | Closed-source \[7\] | No | No | No | No | Bad | No (but possible) | Virtualization | Bad | No | |
+| Telegram | Partial (1:1/opt-in) | Yes (MTProto) \[8\] | Partial (secret chats only) | Yes | No | Partial \[5\] | Medium (E2EE off by default) | Phone Required | Via Proxy \[3\] or Virtualization | Medium \[9\] | No | |
+| Viber (avoid) | Partial (1:1) | Closed-source \[7\] | Yes | No | No | No | Bad | No (but possible) | Virtualization | Bad | No | |  
+| WeChat (avoid) | No | Closed-source \[7\] | No | No | No | No | Bad | No | Virtualization | Bad | No | |
+| WhatsApp (avoid) | Yes | Closed-source \[7\] | Yes | No | No | No | Bad | Phone Required | Virtualization | Bad | No | |
 | Wickr Me | Partial (1:1) | No | Yes | No | Yes (moderate) | No | Good | Yes | Virtualization | Good | No | |
-| Gajim (XMPP) (preferred) | Yes | No | Yes | No | No | Yes | Good | Yes | Via Proxy or Virtualization [3] | Good | Partial | |
-| Zoom (avoid) | Disputed [11] | No | TBD [8] | No | No | No | Bad | E-Mail Required | Virtualization | Bad [12] | No | Malware risk [17] | |
+| Gajim (XMPP) (preferred) | Yes | No | Yes | No | No | Yes | Good | Yes | Via Proxy or Virtualization \[3\] | Good | Partial | |
+| Zoom (avoid) | Disputed \[11\] | No | TBD \[8\] | No | No | No | Bad | E-Mail Required | Virtualization | Bad \[12\] | No | Malware risk \[17\] | |
 
 1. Briar Documentation, Bramble Transport Protocol version 4, <https://code.briarproject.org/briar/briar-spec/blob/master/protocols/BTP.md>
 
