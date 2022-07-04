@@ -7147,6 +7147,8 @@ Below you will find a small table showing the state of messaging apps as of the 
 
 -   Secure Messaging Apps <https://www.securemessagingapps.com/> <sup>[[Archive.org]][457]</sup>
 
+-   Bkil, SecuChart <https://bkil.gitlab.io/secuchart/> <sup>[[Archive.org]][1372]</sup>
+
 -   Proton Blog, <https://proton.me/blog/whatsapp-alternatives/> <sup>[[Archive.org]][458]</sup>
 
 -   Whonix Documentation, Instant Messenger Chat <https://www.whonix.org/wiki/Chat> <sup>[[Archive.org]][459]</sup>
@@ -14879,4 +14881,4 @@ You can find some introduction on these on these projects:
   [1369]: https://web.archive.org/web/20220327075818/https://research.oxt.me/alerts/2020/08/21/Wasabi-Wallet
   [1370]: https://web.archive.org/web/20220510172742/https://docs.samourai.io/whirlpool/start
   [1371]: https://web.archive.org/web/https://positive.security/blog/video-depixelation
-  
+  [1372]: https://web.archive.org/web/20220704000814/https://bkil.gitlab.io/secuchart/
