@@ -7156,487 +7156,683 @@ Below you will find a small table showing the state of messaging apps as of the 
 -   Messenger-Matrix.de at <https://www.messenger-matrix.de/messenger-matrix-en.html> <sup>[[Archive.org]][461]</sup>
 
 <table>
-<colgroup>
-<col style="width: 9%" />
-<col style="width: 6%" />
-<col style="width: 7%" />
-<col style="width: 7%" />
-<col style="width: 7%" />
-<col style="width: 8%" />
-<col style="width: 7%" />
-<col style="width: 7%" />
-<col style="width: 9%" />
-<col style="width: 10%" />
-<col style="width: 7%" />
-<col style="width: 8%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>App<sup>0</sup></th>
-<th>e2ee<sup>1</sup></th>
-<th>Roll Your Own Crypto</th>
-<th><p>Perfect</p>
-<p>Forward Secrecy</p></th>
-<th>Zero-Access Encryption at-rest<sup>5</sup></th>
-<th>Metadata Protection (obfuscation, encryption…)</th>
-<th>Open-Source</th>
-<th>Default Privacy Settings</th>
-<th>Native Anonymous Sign-up (no e-mail or phone)</th>
-<th>Possible through Tor</th>
-<th>Privacy and Security Track Record ***</th>
-<th>De-centralized</th>
-<th>Additional notes</th>
-</tr>
-</thead>
-<tbody>
-<tr class="even">
-<td><p>Berty</p>
-<p>(avoid)</p></td>
-<td>Yes</td>
-<td>No</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes <a href="#fn13" class="footnote-ref" id="fnref13" role="doc-noteref"><sup>13</sup></a></td>
-<td>Good</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Good</td>
-<td>Yes (peer to peer)</td>
-<td>Not sufficiently reviewed by this project, cannot recommend</td>
-</tr>
-<tr class="odd">
-<td>Briar (preferred)</td>
-<td>Yes</td>
-<td>No <a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a></td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes (strong)</td>
-<td>Yes</td>
-<td>Good</td>
-<td>Yes</td>
-<td>Natively<sup>3</sup></td>
-<td>Good</td>
-<td>Yes (peer to peer)</td>
-<td></td>
-</tr>
-<tr class="even">
-<td><p>Cwtch</p>
-<p>(preferred)</p></td>
-<td>Yes</td>
-<td>No</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes (strong)</td>
-<td>Yes</td>
-<td>Good</td>
-<td>Yes</td>
-<td>Natively</td>
-<td>Good</td>
-<td>Yes (peer to peer)</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>Discord</p>
-<p>(avoid)</p></td>
-<td>No</td>
-<td>Closed-source<sup>7</sup></td>
-<td>No</td>
-<td>No</td>
-<td>No</td>
-<td>No</td>
-<td>Bad</td>
-<td>E-Mail Required</td>
-<td>Virtualization</td>
-<td>Bad</td>
-<td>No</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>Element / Matrix.org (preferred)</td>
-<td>Yes (opt-in)</td>
-<td>No</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Poor<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a></td>
-<td>Yes</td>
-<td>Good</td>
-<td>Yes</td>
-<td>Via Proxy<sup>3</sup> or Virtualization</td>
-<td>Good</td>
-<td>Partial (federated servers)</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>Facebook Messenger (avoid)</td>
-<td>Partial (Only 1to1 / opt-in)</td>
-<td>Closed-source<sup>7</sup></td>
-<td>Yes</td>
-<td>No</td>
-<td>No</td>
-<td>No</td>
-<td>Bad</td>
-<td>E-Mail and Phone required</td>
-<td>Virtualization</td>
-<td>Bad</td>
-<td>No</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>OnionShare (preferred)</td>
-<td>Yes</td>
-<td>No</td>
-<td>TBD<sup>8</sup></td>
-<td>TBD<sup>8</sup></td>
-<td>Yes (strong)</td>
-<td>Yes</td>
-<td>Good</td>
-<td>Yes</td>
-<td>Natively</td>
-<td>Good</td>
-<td>Yes (peer to peer)</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>Apple Messages (aka iMessage)</td>
-<td>Yes</td>
-<td>Closed-source<sup>7</sup></td>
-<td>No</td>
-<td>Partial</td>
-<td>No</td>
-<td>No</td>
-<td>Good</td>
-<td>Apple device Required</td>
-<td>Maybe Virtualization using real Apple device ID</td>
-<td>Bad</td>
-<td>No</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>IRC</td>
-<td>Yes (OTR plugins)</td>
-<td>No</td>
-<td>No</td>
-<td>No</td>
-<td>No</td>
-<td>Yes</td>
-<td>Bad</td>
-<td>Yes</td>
-<td>Via Proxy<sup>3</sup> or Virtualization</td>
-<td>Good</td>
-<td>No</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td><p>Jami</p>
-<p>(preferred)</p></td>
-<td>Yes</td>
-<td>No<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a></td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Partial</td>
-<td>Yes</td>
-<td>Good</td>
-<td>Yes</td>
-<td>Via Proxy<sup>3</sup> or Virtualization<sup>9</sup></td>
-<td>Good</td>
-<td>Partial</td>
-<td>Tor breaks some features</td>
-</tr>
-<tr class="even">
-<td>KakaoTalk (avoid)</td>
-<td>Yes</td>
-<td>Closed-source<sup>7</sup></td>
-<td>No<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a></td>
-<td>No</td>
-<td>No</td>
-<td>No</td>
-<td>Bad</td>
-<td>No (but possible)</td>
-<td>Virtualization</td>
-<td>Bad</td>
-<td>No</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>Keybase</td>
-<td>Yes</td>
-<td>No</td>
-<td>Partial (exploding message)</td>
-<td>No</td>
-<td>No</td>
-<td>Yes</td>
-<td>Good</td>
-<td>E-Mail Required</td>
-<td></td>
-<td></td>
-<td>No</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>Kik (avoid)</td>
-<td>No</td>
-<td>Closed-source<sup>7</sup></td>
-<td>No</td>
-<td>No</td>
-<td>No</td>
-<td>No</td>
-<td>Bad</td>
-<td>No (but possible)</td>
-<td>Virtualization</td>
-<td>Bad</td>
-<td>No</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>Line (avoid)</td>
-<td>Partial (opt-in)</td>
-<td>Closed-source<sup>7</sup></td>
-<td>No</td>
-<td>No</td>
-<td>No</td>
-<td>No</td>
-<td>Bad</td>
-<td>No (but possible)</td>
-<td>Virtualization</td>
-<td>Bad</td>
-<td>No</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>Pidgin with OTR (avoid)</td>
-<td>Yes (OTR<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a>)</td>
-<td>No</td>
-<td>Yes</td>
-<td>No</td>
-<td>No</td>
-<td>Yes</td>
-<td>Bad</td>
-<td>Yes</td>
-<td>Via Proxy<sup>3</sup> or Virtualization</td>
-<td>Bad<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a></td>
-<td>No</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>Tox (avoid)</td>
-<td>Yes</td>
-<td>No</td>
-<td>No</td>
-<td>No</td>
-<td>No</td>
-<td>Yes</td>
-<td>Good</td>
-<td>Yes</td>
-<td>Via Proxy<sup>3</sup> or Virtualization</td>
-<td>Medium<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a></td>
-<td>Yes</td>
-<td>Known cryptographic weaknesses<a href="#fn14" class="footnote-ref" id="fnref14" role="doc-noteref"><sup>14</sup></a></td>
-</tr>
-<tr class="even">
-<td><p>Session</p>
-<p>(Preferred only on iOS)</p></td>
-<td>Yes</td>
-<td>No</td>
-<td>No</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Good</td>
-<td>Yes</td>
-<td>Via Proxy<sup>3</sup> or Virtualization<sup>10</sup></td>
-<td>Good</td>
-<td>Yes</td>
-<td>Lacks PFS, deniability</td>
-</tr>
-<tr class="odd">
-<td>Signal</td>
-<td>Yes</td>
-<td>No</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes (moderate)</td>
-<td>Yes</td>
-<td>Good</td>
-<td>Phone Required</td>
-<td>Virtualization</td>
-<td>Good</td>
-<td>No</td>
-<td>Requires burner or anonymous VOIP number for anonymous usage</td>
-</tr>
-<tr class="even">
-<td>Skype (avoid)</td>
-<td>Partial (Only 1to1 / opt-in)</td>
-<td>Closed-source<sup>7</sup></td>
-<td>No</td>
-<td>No</td>
-<td>No</td>
-<td>No</td>
-<td>Bad</td>
-<td>No (but possible)</td>
-<td>Virtualization</td>
-<td>Bad</td>
-<td>No</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>SnapChat (avoid)</td>
-<td>No</td>
-<td>Closed-source<sup>7</sup></td>
-<td>No</td>
-<td>No</td>
-<td>No</td>
-<td>No</td>
-<td>Bad</td>
-<td>No (but possible)</td>
-<td>Virtualization</td>
-<td>Bad</td>
-<td>No</td>
-<td>Deleted/expired messages are easily recoverable<a href="#fn15" class="footnote-ref" id="fnref15" role="doc-noteref"><sup>15</sup></a>,<a href="#fn16" class="footnote-ref" id="fnref16" role="doc-noteref"><sup>16</sup></a></td>
-</tr>
-<tr class="even">
-<td>Teams (avoid)</td>
-<td>Yes</td>
-<td>Closed-source<sup>7</sup></td>
-<td>No</td>
-<td>No</td>
-<td>No</td>
-<td>No</td>
-<td>Bad</td>
-<td>No (but possible)</td>
-<td>Virtualization</td>
-<td>Bad</td>
-<td>No</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>Telegram</td>
-<td>Partial (Only 1to1 / opt-in)</td>
-<td>Yes (MTProto<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a>)</td>
-<td>Partial (secret chats only)</td>
-<td>Yes</td>
-<td>No</td>
-<td>Partial<sup>5</sup></td>
-<td>Medium (e2ee off by default)</td>
-<td>Phone Required</td>
-<td>Via Proxy<sup>3</sup> or Virtualization</td>
-<td>Medium<a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a></td>
-<td>No</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>Viber (avoid)</td>
-<td>Partial (Only 1to1)</td>
-<td>Closed-source<sup>7</sup></td>
-<td>Yes</td>
-<td>No</td>
-<td>No</td>
-<td>No</td>
-<td>Bad</td>
-<td>No (but possible)</td>
-<td>Virtualization</td>
-<td>Bad</td>
-<td>No</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>WeChat (avoid)</td>
-<td>No</td>
-<td>Closed-source<sup>7</sup></td>
-<td>No</td>
-<td>No</td>
-<td>No</td>
-<td>No</td>
-<td>Bad</td>
-<td>No</td>
-<td>Virtualization</td>
-<td>Bad</td>
-<td>No</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>WhatsApp (avoid)</td>
-<td>Yes</td>
-<td>Closed-source<sup>7</sup></td>
-<td>Yes</td>
-<td>No</td>
-<td>No</td>
-<td>No</td>
-<td>Bad</td>
-<td>Phone Required</td>
-<td>Virtualization</td>
-<td>Bad</td>
-<td>No</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>Wickr Me</td>
-<td>Partial (Only 1to1)</td>
-<td>No</td>
-<td>Yes</td>
-<td>No</td>
-<td>Yes (moderate)</td>
-<td>No</td>
-<td>Good</td>
-<td>Yes</td>
-<td>Virtualization</td>
-<td>Good</td>
-<td>No</td>
-<td></td>
-</tr>
-<tr class="even">
-<td>Gajim (XMPP) (preferred)</td>
-<td>Yes</td>
-<td>No</td>
-<td>Yes</td>
-<td>No</td>
-<td>No</td>
-<td>Yes</td>
-<td>Good</td>
-<td>Yes</td>
-<td>Via Proxy<sup>3</sup> or Virtualization</td>
-<td>Good</td>
-<td>Partial</td>
-<td></td>
-</tr>
-<tr class="odd">
-<td>Zoom (avoid<a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a>)</td>
-<td>Disputed<a href="#fn11" class="footnote-ref" id="fnref11" role="doc-noteref"><sup>11</sup></a></td>
-<td>No</td>
-<td>TBD<sup>8</sup></td>
-<td>No</td>
-<td>No</td>
-<td>No</td>
-<td>Bad</td>
-<td>E-Mail Required</td>
-<td>Virtualization</td>
-<td>Bad<a href="#fn12" class="footnote-ref" id="fnref12" role="doc-noteref"><sup>12</sup></a></td>
-<td>No</td>
-<td>Malware risk<a href="#fn17" class="footnote-ref" id="fnref17" role="doc-noteref"><sup>17</sup></a></td>
-</tr>
-</tbody>
+  <colgroup>
+    <col style="width: 9%" />
+    <col style="width: 6%" />
+    <col style="width: 7%" />
+    <col style="width: 7%" />
+    <col style="width: 7%" />
+    <col style="width: 8%" />
+    <col style="width: 7%" />
+    <col style="width: 7%" />
+    <col style="width: 9%" />
+    <col style="width: 10%" />
+    <col style="width: 7%" />
+    <col style="width: 8%" />
+  </colgroup>
+  <thead>
+    <tr class="header">
+      <th>App
+      </th>
+      <th>e2ee <sup>2</sup>
+      </th>
+      <th>Roll Your Own Crypto</th>
+      <th>
+        <p>Perfect</p>
+        <p>Forward Secrecy</p>
+      </th>
+      <th>Zero-Access Encryption at-rest <sup>6</sup>
+      </th>
+      <th>Metadata Protection (obfuscation, encryption…)</th>
+      <th>Open-Source</th>
+      <th>Default Privacy Settings</th>
+      <th>Native Anonymous Sign-up (no e-mail or phone)</th>
+      <th>Possible through Tor</th>
+      <th>Privacy and Security Track Record ***</th>
+      <th>De-centralized</th>
+      <th>Additional notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="even">
+      <td>
+        <p>Berty</p>
+        <p>(avoid)</p>
+      </td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes <a href="#fn13" class="footnote-ref" id="fnref13" role="doc-noteref">
+          <sup>13</sup>
+        </a>
+      </td>
+      <td>Good</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Good</td>
+      <td>Yes (peer to peer)</td>
+      <td>Not sufficiently reviewed by this project, cannot recommend</td>
+    </tr>
+    <tr class="odd">
+      <td>Briar (preferred)</td>
+      <td>Yes</td>
+      <td>No <a href="#fnbriar1" class="footnote-ref" id="fnbriar1" role="doc-noteref">
+          <sup>1</sup>
+        </a>
+      </td>
+      <td>Yes<a href="#fnbriar1" class="footnote-ref" id="fnbriar1" role="doc-noteref">
+          <sup>1</sup>
+        </a></td>
+      <td>Yes</td>
+      <td>Yes (strong)</td>
+      <td>Yes</td>
+      <td>Good</td>
+      <td>Yes</td>
+      <td>Natively <sup>3</sup>
+      </td>
+      <td>Good</td>
+      <td>Yes (peer to peer)</td>
+      <td></td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p>Cwtch</p>
+        <p>(preferred)</p>
+      </td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes (strong)</td>
+      <td>Yes</td>
+      <td>Good</td>
+      <td>Yes</td>
+      <td>Natively</td>
+      <td>Good</td>
+      <td>Yes (peer to peer)<a href="#fn18" class="footnote-ref" id="fn18" role="doc-noteref">
+          <sup>18</sup>
+        </a></td>
+      <td></td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <p>Discord</p>
+        <p>(avoid)</p>
+      </td>
+      <td>No</td>
+      <td>Closed-source <sup>7</sup>
+      </td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Bad</td>
+      <td>E-Mail Required</td>
+      <td>Virtualization</td>
+      <td>Bad</td>
+      <td>No</td>
+      <td></td>
+    </tr>
+    <tr class="even">
+      <td>Element / Matrix.org (preferred)</td>
+      <td>Yes (opt-in)</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Poor <a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref">
+          <sup>2</sup>
+        </a>
+      </td>
+      <td>Yes</td>
+      <td>Good</td>
+      <td>Yes</td>
+      <td>Via Proxy <sup>3</sup> or Virtualization </td>
+      <td>Good</td>
+      <td>Partial (federated servers)</td>
+      <td></td>
+    </tr>
+    <tr class="odd">
+      <td>Facebook Messenger (avoid)</td>
+      <td>Partial (Only 1to1 / opt-in)</td>
+      <td>Closed-source <sup>7</sup>
+      </td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Bad</td>
+      <td>E-Mail and Phone required</td>
+      <td>Virtualization</td>
+      <td>Bad</td>
+      <td>No</td>
+      <td></td>
+    </tr>
+    <tr class="even">
+      <td>OnionShare (preferred)</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>TBD <sup>8</sup>
+      </td>
+      <td>TBD <sup>8</sup>
+      </td>
+      <td>Yes (strong)</td>
+      <td>Yes</td>
+      <td>Good</td>
+      <td>Yes</td>
+      <td>Natively</td>
+      <td>Good</td>
+      <td>Yes (peer to peer)</td>
+      <td></td>
+    </tr>
+    <tr class="odd">
+      <td>Apple Messages (aka iMessage)</td>
+      <td>Yes</td>
+      <td>Closed-source <sup>7</sup>
+      </td>
+      <td>No</td>
+      <td>Partial</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Good</td>
+      <td>Apple device Required</td>
+      <td>Maybe Virtualization using real Apple device ID</td>
+      <td>Bad</td>
+      <td>No</td>
+      <td></td>
+    </tr>
+    <tr class="even">
+      <td>IRC</td>
+      <td>Yes (OTR plugins)</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Bad</td>
+      <td>Yes</td>
+      <td>Via Proxy <sup>3</sup> or Virtualization </td>
+      <td>Good</td>
+      <td>No</td>
+      <td></td>
+    </tr>
+    <tr class="odd">
+      <td>
+        <p>Jami</p>
+        <p>(preferred)</p>
+      </td>
+      <td>Yes</td>
+      <td>No <a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref">
+          <sup>3</sup>
+        </a>
+      </td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Partial</td>
+      <td>Yes</td>
+      <td>Good</td>
+      <td>Yes</td>
+      <td>Via Proxy <sup>3</sup> or Virtualization <sup>9</sup>
+      </td>
+      <td>Good</td>
+      <td>Partial</td>
+      <td>Tor breaks some features</td>
+    </tr>
+    <tr class="even">
+      <td>KakaoTalk (avoid)</td>
+      <td>Yes</td>
+      <td>Closed-source <sup>7</sup>
+      </td>
+      <td>No <a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref">
+          <sup>4</sup>
+        </a>
+      </td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Bad</td>
+      <td>No (but possible)</td>
+      <td>Virtualization</td>
+      <td>Bad</td>
+      <td>No</td>
+      <td></td>
+    </tr>
+    <tr class="odd">
+      <td>Keybase</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>Partial (exploding message)</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Good</td>
+      <td>E-Mail Required</td>
+      <td></td>
+      <td></td>
+      <td>No</td>
+      <td></td>
+    </tr>
+    <tr class="even">
+      <td>Kik (avoid)</td>
+      <td>No</td>
+      <td>Closed-source <sup>7</sup>
+      </td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Bad</td>
+      <td>No (but possible)</td>
+      <td>Virtualization</td>
+      <td>Bad</td>
+      <td>No</td>
+      <td></td>
+    </tr>
+    <tr class="odd">
+      <td>Line (avoid)</td>
+      <td>Partial (opt-in)</td>
+      <td>Closed-source <sup>7</sup>
+      </td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Bad</td>
+      <td>No (but possible)</td>
+      <td>Virtualization</td>
+      <td>Bad</td>
+      <td>No</td>
+      <td></td>
+    </tr>
+    <tr class="even">
+      <td>Pidgin with OTR (avoid)</td>
+      <td>Yes (OTR <a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref">
+          <sup>5</sup>
+        </a>) </td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Bad</td>
+      <td>Yes</td>
+      <td>Via Proxy <sup>3</sup> or Virtualization </td>
+      <td>Bad <a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref">
+          <sup>6</sup>
+        </a>
+      </td>
+      <td>No</td>
+      <td></td>
+    </tr>
+    <tr class="odd">
+      <td>Tox (avoid)</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Good</td>
+      <td>Yes</td>
+      <td>Via Proxy <sup>3</sup> or Virtualization </td>
+      <td>Medium <a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref">
+          <sup>7</sup>
+        </a>
+      </td>
+      <td>Yes</td>
+      <td>Known cryptographic weaknesses <a href="#fn14" class="footnote-ref" id="fnref14" role="doc-noteref">
+          <sup>14</sup>
+        </a>
+      </td>
+    </tr>
+    <tr class="even">
+      <td>
+        <p>Session</p>
+        <p>(Preferred only on iOS)</p>
+      </td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Good</td>
+      <td>Yes</td>
+      <td>Via Proxy <sup>3</sup> or Virtualization <sup>10</sup>
+      </td>
+      <td>Good</td>
+      <td>Yes</td>
+      <td>Lacks PFS, deniability</td>
+    </tr>
+    <tr class="odd">
+      <td>Signal</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes (moderate)</td>
+      <td>Yes</td>
+      <td>Good</td>
+      <td>Phone Required</td>
+      <td>Virtualization</td>
+      <td>Good</td>
+      <td>No</td>
+      <td>Requires burner or anonymous VOIP number for anonymous usage</td>
+    </tr>
+    <tr class="even">
+      <td>Skype (avoid)</td>
+      <td>Partial (Only 1to1 / opt-in)</td>
+      <td>Closed-source <sup>7</sup>
+      </td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Bad</td>
+      <td>No (but possible)</td>
+      <td>Virtualization</td>
+      <td>Bad</td>
+      <td>No</td>
+      <td></td>
+    </tr>
+    <tr class="odd">
+      <td>SnapChat (avoid)</td>
+      <td>No</td>
+      <td>Closed-source <sup>7</sup>
+      </td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Bad</td>
+      <td>No (but possible)</td>
+      <td>Virtualization</td>
+      <td>Bad</td>
+      <td>No</td>
+      <td>Deleted/expired messages are easily recoverable <a href="#fn15" class="footnote-ref" id="fnref15" role="doc-noteref">
+          <sup>15</sup>
+        </a>, <a href="#fn16" class="footnote-ref" id="fnref16" role="doc-noteref">
+          <sup>16</sup>
+        </a>
+      </td>
+    </tr>
+    <tr class="even">
+      <td>Teams (avoid)</td>
+      <td>Yes</td>
+      <td>Closed-source <sup>7</sup>
+      </td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Bad</td>
+      <td>No (but possible)</td>
+      <td>Virtualization</td>
+      <td>Bad</td>
+      <td>No</td>
+      <td></td>
+    </tr>
+    <tr class="odd">
+      <td>Telegram</td>
+      <td>Partial (Only 1to1 / opt-in)</td>
+      <td>Yes (MTProto <a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref">
+          <sup>8</sup>
+        </a>) </td>
+      <td>Partial (secret chats only)</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>Partial <sup>5</sup>
+      </td>
+      <td>Medium (e2ee off by default)</td>
+      <td>Phone Required</td>
+      <td>Via Proxy <sup>3</sup> or Virtualization </td>
+      <td>Medium <a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref">
+          <sup>9</sup>
+        </a>
+      </td>
+      <td>No</td>
+      <td></td>
+    </tr>
+    <tr class="even">
+      <td>Viber (avoid)</td>
+      <td>Partial (Only 1to1)</td>
+      <td>Closed-source <sup>7</sup>
+      </td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Bad</td>
+      <td>No (but possible)</td>
+      <td>Virtualization</td>
+      <td>Bad</td>
+      <td>No</td>
+      <td></td>
+    </tr>
+    <tr class="odd">
+      <td>WeChat (avoid)</td>
+      <td>No</td>
+      <td>Closed-source <sup>7</sup>
+      </td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Bad</td>
+      <td>No</td>
+      <td>Virtualization</td>
+      <td>Bad</td>
+      <td>No</td>
+      <td></td>
+    </tr>
+    <tr class="even">
+      <td>WhatsApp (avoid)</td>
+      <td>Yes</td>
+      <td>Closed-source <sup>7</sup>
+      </td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Bad</td>
+      <td>Phone Required</td>
+      <td>Virtualization</td>
+      <td>Bad</td>
+      <td>No</td>
+      <td></td>
+    </tr>
+    <tr class="odd">
+      <td>Wickr Me</td>
+      <td>Partial (Only 1to1)</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>Yes (moderate)</td>
+      <td>No</td>
+      <td>Good</td>
+      <td>Yes</td>
+      <td>Virtualization</td>
+      <td>Good</td>
+      <td>No</td>
+      <td></td>
+    </tr>
+    <tr class="even">
+      <td>Gajim (XMPP) (preferred)</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Good</td>
+      <td>Yes</td>
+      <td>Via Proxy <sup>3</sup> or Virtualization </td>
+      <td>Good</td>
+      <td>Partial</td>
+      <td></td>
+    </tr>
+    <tr class="odd">
+      <td>Zoom (avoid <a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref">
+          <sup>10</sup>
+        </a>) </td>
+      <td>Disputed <a href="#fn11" class="footnote-ref" id="fnref11" role="doc-noteref">
+          <sup>11</sup>
+        </a>
+      </td>
+      <td>No</td>
+      <td>TBD <sup>8</sup>
+      </td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Bad</td>
+      <td>E-Mail Required</td>
+      <td>Virtualization</td>
+      <td>Bad <a href="#fn12" class="footnote-ref" id="fnref12" role="doc-noteref">
+          <sup>12</sup>
+        </a>
+      </td>
+      <td>No</td>
+      <td>Malware risk <a href="#fn17" class="footnote-ref" id="fnref17" role="doc-noteref">
+          <sup>17</sup>
+        </a>
+      </td>
+    </tr>
+  </tbody>
 </table>
 <section class="footnotes footnotes-end-of-document" role="doc-endnotes">
-<hr />
-<ol>
-<li id="fn1" role="doc-endnote"><p>Briar Documentation, Bramble Transport Protocol version 4 <a href="https://code.briarproject.org/briar/briar-spec/blob/master/protocols/BTP.md">https://code.briarproject.org/briar/briar-spec/blob/master/protocols/BTP.md</a> <a href="https://web.archive.org/web/https://code.briarproject.org/briar/briar-spec/blob/master/protocols/BTP.md"><sup>[Archive.org]</sup></a><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2" role="doc-endnote"><p>Serpentsec, Matrix <a href="https://web.archive.org/web/https://serpentsec.1337.cx/matrix">https://web.archive.org/web/https://serpentsec.1337.cx/matrix</a><a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn3" role="doc-endnote"><p>Wikipedia, GnuTLS, <a href="https://en.wikipedia.org/wiki/GnuTLS">https://en.wikipedia.org/wiki/GnuTLS</a> <a href="https://wikiless.org/wiki/GnuTLS"><sup>[Wikiless]</sup></a> <a href="https://web.archive.org/web/https://en.wikipedia.org/wiki/GnuTLS"><sup>[Archive.org]</sup></a><a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn4" role="doc-endnote"><p>KTH ROYAL INSTITUTE OF TECHNOLOGYSCHOOL OF ELECTRICAL ENGINEERING, A Security and Privacy Audit of KakaoTalk’s End-to-End Encryption <a href="http://www.diva-portal.org/smash/get/diva2:1046438/FULLTEXT01.pdf">www.diva-portal.org/smash/get/diva2:1046438/FULLTEXT01.pdf</a> <a href="https://web.archive.org/web/http://www.diva-portal.org/smash/get/diva2:1046438/FULLTEXT01.pdf"><sup>[Archive.org]</sup></a><a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn5" role="doc-endnote"><p>Wikipedia, OTR <a href="https://en.wikipedia.org/wiki/Off-the-Record_Messaging">https://en.wikipedia.org/wiki/Off-the-Record_Messaging</a> <a href="https://wikiless.org/wiki/Off-the-Record_Messaging"><sup>[Wikiless]</sup></a> <a href="https://web.archive.org/web/https://en.wikipedia.org/wiki/Off-the-Record_Messaging"><sup>[Archive.org]</sup></a><a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn6" role="doc-endnote"><p>Pidgin Security Advisories, <a href="https://www.pidgin.im/about/security/advisories/">https://www.pidgin.im/about/security/advisories/</a> <a href="https://web.archive.org/web/https://www.pidgin.im/about/security/advisories/"><sup>[Archive.org]</sup></a><a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn7" role="doc-endnote"><p>Whonix Forum, Tox Integration <a href="https://forums.whonix.org/t/tox-qtox-whonix-integration/1219">https://forums.whonix.org/t/tox-qtox-whonix-integration/1219</a> <a href="https://web.archive.org/web/https://forums.whonix.org/t/tox-qtox-whonix-integration/1219"><sup>[Archive.org]</sup></a><a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn8" role="doc-endnote"><p>Telegram Documentation, MTProto Mobile Protocol <a href="https://core.telegram.org/mtproto">https://core.telegram.org/mtproto</a> <a href="https://web.archive.org/web/https://core.telegram.org/mtproto"><sup>[Archive.org]</sup></a><a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn9" role="doc-endnote"><p>Wikipedia, Telegram Security Breaches, <a href="https://en.wikipedia.org/wiki/Telegram_(software)#Security_breaches">https://en.wikipedia.org/wiki/Telegram_(software)#Security_breaches</a> <a href="https://wikiless.org/wiki/Telegram_(software)"><sup>[Wikiless]</sup></a> <a href="https://web.archive.org/web/https://en.wikipedia.org/wiki/Telegram_(software)#Security_breaches"><sup>[Archive.org]</sup></a><a href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn10" role="doc-endnote"><p>TechCrunch, Maybe we shouldn’t use Zoom after all, <a href="https://techcrunch.com/2020/03/31/zoom-at-your-own-risk/">https://techcrunch.com/2020/03/31/zoom-at-your-own-risk/</a> <a href="https://web.archive.org/web/https://techcrunch.com/2020/03/31/zoom-at-your-own-risk/"><sup>[Archive.org]</sup></a><a href="#fnref10" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn11" role="doc-endnote"><p>The Incercept, Zoom Meetings Aren’t End-to-End Encrypted, Despite Misleading Marketing <a href="https://theintercept.com/2020/03/31/zoom-meeting-encryption/">https://theintercept.com/2020/03/31/zoom-meeting-encryption/</a> <a href="https://27m3p2uv7igmj6kvd4ql3cct5h3sdwrsajovkkndeufumzyfhlfev4qd.onion/2020/03/31/zoom-meeting-encryption/"><sup>[Tor Mirror]</sup></a> <a href="https://web.archive.org/web/https://theintercept.com/2020/03/31/zoom-meeting-encryption/"><sup>[Archive.org]</sup></a><a href="#fnref11" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn12" role="doc-endnote"><p>Serpentsec, Secure Messaging: Choosing a chat app <a href="https://web.archive.org/web/https://serpentsec.1337.cx/secure-messaging-choosing-a-chat-app">https://web.archive.org/web/https://serpentsec.1337.cx/secure-messaging-choosing-a-chat-app</a><a href="#fnref12" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn13" role="doc-endnote"><p>Berty, Development, <a href="https://berty.tech">https://berty.tech</a><a href="#fn13" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn14" role="doc-endnote"><p>Tox Handshake Vulnerable to KCI, <a href="https://github.com/TokTok/c-toxcore/issues/426">https://github.com/TokTok/c-toxcore/issues/426</a><a href="#fn13" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn15" role="doc-endnote"><p>The Guardian, Deleted Snapchat photos recovered 'within days' by forensics company, <a href="https://www.theguardian.com/technology/2013/may/09/snapchat-photos-not-deleted">https://www.theguardian.com/technology/2013/may/09/snapchat-photos-not-deleted</a><a href="#fn13" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn16" role="doc-endnote"><p>The Guardian, Snapchat's expired snaps are not deleted, just hidden, <a href="https://web.archive.org/web/20131115224243/https://www.theguardian.com/media-network/partner-zone-infosecurity/snapchat-photos-not-deleted-hidden">https://web.archive.org/web/20131115224243/https://www.theguardian.com/media-network/partner-zone-infosecurity/snapchat-photos-not-deleted-hidden</a><a href="#fn13" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn17" role="doc-endnote"><p>The Guardian, ‘Zoom is malware’: why experts worry about the video conferencing platform, <a href="https://www.theguardian.com/technology/2020/apr/02/zoom-technology-security-coronavirus-video-conferencing">https://www.theguardian.com/technology/2020/apr/02/zoom-technology-security-coronavirus-video-conferencing</a><a href="#fn13" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
+  <hr />
+  <ol>
+    <li id="fnbriar1" role="doc-endnote">
+      <p>Briar Documentation, Bramble Transport Protocol version 4 <a href="https://code.briarproject.org/briar/briar-spec/blob/master/protocols/BTP.md">https://code.briarproject.org/briar/briar-spec/blob/master/protocols/BTP.md</a><a href="#fnbriar1" class="footnote-back" role="doc-backlink">↩︎</a
+      </p>
+    </li>
+    <li id="fn2" role="doc-endnote">
+      <p>Serpentsec, Matrix <a href="https://web.archive.org/web/https://serpentsec.1337.cx/matrix">https://web.archive.org/web/https://serpentsec.1337.cx/matrix</a>
+        <a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a>
+      </p>
+    </li>
+    <li id="fn3" role="doc-endnote">
+      <p>Wikipedia, GnuTLS, <a href="https://en.wikipedia.org/wiki/GnuTLS">https://en.wikipedia.org/wiki/GnuTLS</a>
+        <a href="https://wikiless.org/wiki/GnuTLS">
+          <sup>[Wikiless]</sup>
+        </a>
+        <a href="https://web.archive.org/web/https://en.wikipedia.org/wiki/GnuTLS">
+          <sup>[Archive.org]</sup>
+        </a>
+        <a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a>
+      </p>
+    </li>
+    <li id="fn4" role="doc-endnote">
+      <p>KTH Royal Institute of Technology, School of Electrical Engineering, A Security and Privacy Audit of KakaoTalk’s End-to-End Encryption <a href="http://www.diva-portal.org/smash/get/diva2:1046438/FULLTEXT01.pdf">www.diva-portal.org/smash/get/diva2:1046438/FULLTEXT01.pdf</a>
+        <a href="https://web.archive.org/web/http://www.diva-portal.org/smash/get/diva2:1046438/FULLTEXT01.pdf">
+          <sup>[Archive.org]</sup>
+        </a>
+        <a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a>
+      </p>
+    </li>
+    <li id="fn5" role="doc-endnote">
+      <p>Wikipedia, OTR <a href="https://en.wikipedia.org/wiki/Off-the-Record_Messaging">https://en.wikipedia.org/wiki/Off-the-Record_Messaging</a>
+        <a href="https://wikiless.org/wiki/Off-the-Record_Messaging">
+          <sup>[Wikiless]</sup>
+        </a>
+        <a href="https://web.archive.org/web/https://en.wikipedia.org/wiki/Off-the-Record_Messaging">
+          <sup>[Archive.org]</sup>
+        </a>
+        <a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a>
+      </p>
+    </li>
+    <li id="fn6" role="doc-endnote">
+      <p>Pidgin Security Advisories, <a href="https://www.pidgin.im/about/security/advisories/">https://www.pidgin.im/about/security/advisories/</a>
+        <a href="https://web.archive.org/web/https://www.pidgin.im/about/security/advisories/">
+          <sup>[Archive.org]</sup>
+        </a>
+        <a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a>
+      </p>
+    </li>
+    <li id="fn7" role="doc-endnote">
+      <p>Whonix Forum, Tox Integration <a href="https://forums.whonix.org/t/tox-qtox-whonix-integration/1219">https://forums.whonix.org/t/tox-qtox-whonix-integration/1219</a>
+        <a href="https://web.archive.org/web/https://forums.whonix.org/t/tox-qtox-whonix-integration/1219">
+          <sup>[Archive.org]</sup>
+        </a>
+        <a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a>
+      </p>
+    </li>
+    <li id="fn8" role="doc-endnote">
+      <p>Telegram Documentation, MTProto Mobile Protocol <a href="https://core.telegram.org/mtproto">https://core.telegram.org/mtproto</a>
+        <a href="https://web.archive.org/web/https://core.telegram.org/mtproto">
+          <sup>[Archive.org]</sup>
+        </a>
+        <a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a>
+      </p>
+    </li>
+    <li id="fn9" role="doc-endnote">
+      <p>Wikipedia, Telegram Security Breaches, <a href="https://en.wikipedia.org/wiki/Telegram_(software)#Security_breaches">https://en.wikipedia.org/wiki/Telegram_(software)#Security_breaches</a>
+        <a href="https://wikiless.org/wiki/Telegram_(software)">
+          <sup>[Wikiless]</sup>
+        </a>
+        <a href="https://web.archive.org/web/https://en.wikipedia.org/wiki/Telegram_(software)#Security_breaches">
+          <sup>[Archive.org]</sup>
+        </a>
+        <a href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a>
+      </p>
+    </li>
+    <li id="fn10" role="doc-endnote">
+      <p>TechCrunch, Maybe we shouldn’t use Zoom after all, <a href="https://techcrunch.com/2020/03/31/zoom-at-your-own-risk/">https://techcrunch.com/2020/03/31/zoom-at-your-own-risk/</a>
+        <a href="https://web.archive.org/web/https://techcrunch.com/2020/03/31/zoom-at-your-own-risk/">
+          <sup>[Archive.org]</sup>
+        </a>
+        <a href="#fnref10" class="footnote-back" role="doc-backlink">↩︎</a>
+      </p>
+    </li>
+    <li id="fn11" role="doc-endnote">
+      <p>The Incercept, Zoom Meetings Aren’t End-to-End Encrypted, Despite Misleading Marketing <a href="https://theintercept.com/2020/03/31/zoom-meeting-encryption/">https://theintercept.com/2020/03/31/zoom-meeting-encryption/</a>
+        <a href="https://27m3p2uv7igmj6kvd4ql3cct5h3sdwrsajovkkndeufumzyfhlfev4qd.onion/2020/03/31/zoom-meeting-encryption/">
+          <sup>[Tor Mirror]</sup>
+        </a>
+        <a href="https://web.archive.org/web/https://theintercept.com/2020/03/31/zoom-meeting-encryption/">
+          <sup>[Archive.org]</sup>
+        </a>
+        <a href="#fnref11" class="footnote-back" role="doc-backlink">↩︎</a>
+      </p>
+    </li>
+    <li id="fn12" role="doc-endnote">
+      <p>Serpentsec, Secure Messaging: Choosing a chat app <a href="https://web.archive.org/web/https://serpentsec.1337.cx/secure-messaging-choosing-a-chat-app">https://web.archive.org/web/https://serpentsec.1337.cx/secure-messaging-choosing-a-chat-app</a>
+        <a href="#fnref12" class="footnote-back" role="doc-backlink">↩︎</a>
+      </p>
+    </li>
+    <li id="fn13" role="doc-endnote">
+      <p>Berty, Development, <a href="https://berty.tech">https://berty.tech</a>
+        <a href="#fn13" class="footnote-back" role="doc-backlink">↩︎</a>
+      </p>
+    </li>
+    <li id="fn14" role="doc-endnote">
+      <p>Tox Handshake Vulnerable to KCI, <a href="https://github.com/TokTok/c-toxcore/issues/426">https://github.com/TokTok/c-toxcore/issues/426</a>
+        <a href="#fn13" class="footnote-back" role="doc-backlink">↩︎</a>
+      </p>
+    </li>
+    <li id="fn15" role="doc-endnote">
+      <p>The Guardian, Deleted Snapchat photos recovered 'within days' by forensics company, <a href="https://www.theguardian.com/technology/2013/may/09/snapchat-photos-not-deleted">https://www.theguardian.com/technology/2013/may/09/snapchat-photos-not-deleted</a>
+        <a href="#fn13" class="footnote-back" role="doc-backlink">↩︎</a>
+      </p>
+    </li>
+    <li id="fn16" role="doc-endnote">
+      <p>The Guardian, Snapchat's expired snaps are not deleted, just hidden, <a href="https://web.archive.org/web/20131115224243/https://www.theguardian.com/media-network/partner-zone-infosecurity/snapchat-photos-not-deleted-hidden">https://web.archive.org/web/20131115224243/https://www.theguardian.com/media-network/partner-zone-infosecurity/snapchat-photos-not-deleted-hidden</a>
+        <a href="#fn13" class="footnote-back" role="doc-backlink">↩︎</a>
+      </p>
+    </li>
+    <li id="fn17" role="doc-endnote">
+      <p>The Guardian, ‘Zoom is malware’: why experts worry about the video conferencing platform, <a href="https://www.theguardian.com/technology/2020/apr/02/zoom-technology-security-coronavirus-video-conferencing">https://www.theguardian.com/technology/2020/apr/02/zoom-technology-security-coronavirus-video-conferencing</a>
+        <a href="#fn13" class="footnote-back" role="doc-backlink">↩︎</a>
+      </p>
+    </li>
+    <li id="fn18" role="doc-endnote">
+      <p>Cwtch uses Tor to provide routing and connections. <a href="https://docs.cwtch.im/docs/tor">https://docs.cwtch.im/docs/tor</a>
+        <a href="#fn18" class="footnote-back" role="doc-backlink">↩︎</a>
+      </p>
+    </li>
+  </ol>
 </section>
 
 **Legend:**
