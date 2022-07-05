@@ -38,7 +38,7 @@ author:
 social:
   name: AnonymousPlanet
   links:
-    - https://github.com/NobodySpecial256/thgtoa
+    - https://github.com/Anon-Planet/thgtoa
 exclude:
     - Gemfile
     - Gemfile.lock
