@@ -7,7 +7,6 @@ You will find here the rules for the rooms part of the PSA Community. These rule
 - [General Rules](#general)
 - [Nothing To Hide Privacy Room Rules](#nth)
 - [Modern Cryprography Room Rules](#moderncrypto)
-- [OS Security Room Rules](#ossecurity)
 - [Bnonymity Room Rules](#bnonymity)
 - [Exceptions](#exceptions)
 - [PSA Bans](#psabans)
@@ -43,9 +42,6 @@ Some exceptions can apply, see the [exceptions](#exceptions) section at the bott
 #### Rules for Modern Cryptography:<a name="moderncrypto"></a>
 See <https://anonymousplanet-ng.org/moderncrypto-rules.html>
 
-#### Rules for OS Security:<a name="ossecurity"></a>
-See <https://artemislena.eu/coc.html>
-
 #### Rules for Bnonymity:<a name="bnonymity"></a>
 - Keep it legal (seriously)
 - English only (no Russian, no Chinese, English only)
@@ -67,7 +63,6 @@ Currently, the following rooms are sharing a common PSA banlist for serious offe
 - #Anonymity
 - #Security
 - #Bnonymity
-- #OS-Security
 - #ModernCrypto
 
 This means that those PSA bans are effectively applied on all those rooms and can be issued by admins of these rooms. See the next section for information about appeals.
