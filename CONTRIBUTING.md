@@ -32,9 +32,10 @@ For those of you who are looking to add content to the guide, include the follow
 - **Don't** abandon your pull request. Being responsive helps us land your changes faster.
 - **Don't** post questions in older closed PRs.
 - **Do** stick to the guide to find common style issues.
-- **Don't** make mass changes (such as replacing "I" with "we" using automated serach/replace functionality.
+- **Don't** make mass changes (such as replacing "I" with "we") using automated serach/replace functionality.
   - Search/replace doesn't understand context, and as such, will inevitably cause inconsistencies and make the guide harder to read.
   - If it's part of a larger PR, it'll also make the reviewer's life harder, as they'll have to go through manually and undo everything by hand.
+  - *If you're going to make mass changes, take the time to do it properly*. Otherwise I'll just have to undo it anyway.
 
 When reporting guide issues:
 
