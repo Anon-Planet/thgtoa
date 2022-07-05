@@ -5,6 +5,7 @@ plugins:
   - jekyll-relative-links
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-remote-theme
 relative_links:
   enabled: true
   collections: true
@@ -12,7 +13,7 @@ title: The Hitchhiker's Guide to Online Anonymity
 description: The Hitchhiker's Guide to Online Anonymity
 tagline: The Hitchhiker's Guide to Online Anonymity
 author: AnonymousPlanet
-theme: jekyll-theme-hacker
+remote_theme: pages-themes/hacker@v0.2.0
 github:
   home_url: index.html
   pdf_url: export/guide.pdf
