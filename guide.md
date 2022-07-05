@@ -2,7 +2,7 @@
 
 (Or "How I learned to start worrying and love ~~privacy~~ anonymity")
 
-Version 1.1.4-pre2, June 2022 by Anonymous Planet
+Version 1.1.5, June 2022 by Anonymous Planet
 
 **Forever in memory of Lena, 1999-2022**
 
@@ -383,7 +383,7 @@ Finally note that this guide does mention and even recommends various commercial
 -   [Appendix A9: Installing a Zcash wallet:]
     -   [Debian 11 VM:]
     -   [Ubuntu 20.04/21.04/21.10 VM:]
-    -   [Windows 10 VM:]
+    -   [Windows 10/11 VM:]
     -   [Whonix Workstation 16 VM:]
 -   [Appendix B1: Checklist of things to verify before sharing information:]
 -   [Appendix B2: Monero Disclaimer]
@@ -448,7 +448,7 @@ You must consider your threat model[^12] before going further.
 
 (Illustration by Randall Munroe, xkcd.com, licensed under CC BY-NC 2.5)
 
-Will this guide help you protect your privacy from OSINT researchers like Bellingcat[^13], Doxing[^14] trolls on 4chan[^15], and others that have no access to the NSA toolbox? More likely. Tho I would not be so sure about 4chan.
+Will this guide help you protect your privacy from OSINT researchers like Bellingcat[^13], Doxing[^14] trolls on 4chan[^15], and others that have no access to the NSA toolbox? More likely. Tho we would not be so sure about 4chan.
 
 Here is a basic simplified threat model for this guide:
 
@@ -502,7 +502,7 @@ First, you could also consider these more general resources on privacy and secur
 
 -   Privacy Tools*: <https://privacytools.io> <sup>[[Archive.org]][45]</sup>
 
-* Note that these websites could contain affiliate/sponsored content and/or merchandising. This guide does not endorse and is not sponsored by any commercial entity in any way.
+\* Note that these websites could contain affiliate/sponsored content and/or merchandising. This guide does not endorse and is not sponsored by any commercial entity in any way.
 
 If you skipped those, you should really still consider viewing this YouTube playlist from the Techlore Go Incognito project (<https://github.com/techlore-official/go-incognito> <sup>[[Archive.org]][46]</sup>) as an introduction before going further: <https://www.youtube.com/playlist?list=PL3KeV6Ui_4CayDGHw64OFXEPHgXLkrtJO> <sup>[[Invidious]][47]</sup>. This guide will cover many of the topics in the videos of this playlist with more details and references as well as some added topics not covered within that series. This will just take you 2 or 3 hours to watch it all.
 
@@ -636,7 +636,7 @@ Here is an illustration showing the current state of DNS and HTTPS privacy based
 
 ![][56]
 
-As for your normal daily use (non-sensitive), remember that only Firefox-based browsers support ECH (formerly eSNI) so far and that it is only useful with websites hosted behind Cloudflare CDN at this stage. If you prefer a Chrome-based version (which is understandable for some due to some better-integrated features like on-the-fly Translation), then I would recommend the use of Brave instead which supports all Chrome extensions and offers much better privacy than Chrome.
+As for your normal daily use (non-sensitive), remember that only Firefox-based browsers support ECH (formerly eSNI) so far and that it is only useful with websites hosted behind Cloudflare CDN at this stage. If you prefer a Chrome-based version (which is understandable for some due to some better-integrated features like on-the-fly Translation), then we would recommend the use of Brave instead which supports all Chrome extensions and offers much better privacy than Chrome.
 
 But the story does not stop there right. Now because after all this, even if you encrypt your DNS and use all possible mitigations. Simple IP requests to any server will probably allow an adversary to still detect which site you are visiting. And this is simply because the majority of websites have unique IPs tied to them as explained here: <https://blog.apnic.net/2019/08/23/what-can-you-learn-from-an-ip-address/> <sup>[[Archive.org]][57]</sup>. This means that an adversary can create a dataset of known websites for instance including their IPs and then match this dataset against the IP you ask for. In most cases, this will result in a correct guess of the website you are visiting. This means that despite OCSP stapling, despite ECH/eSNI, despite using Encrypted DNS ... An adversary can still guess the website you are visiting anyway.
 
@@ -644,7 +644,7 @@ Therefore, to mitigate all these issues (as much as possible and as best as we c
 
 ### Your RFID enabled devices:
 
-RFID stands for Radio-frequency identification[^55], it is the technology used for instance for contactless payments and various identification systems. Of course, your smartphone is among those devices and has RFID contactless payment capabilities through NFC[^56]. As with everything else, such capabilities can be used for tracking by various actors.
+RFID stands for Radio-frequency identification[^59], it is the technology used for instance for contactless payments and various identification systems. Of course, your smartphone is among those devices and has RFID contactless payment capabilities through NFC[^56]. As with everything else, such capabilities can be used for tracking by various actors.
 
 But unfortunately, this is not limited to your smartphone, and you also probably carry some amount of RFID enabled device with you all the time such as:
 
@@ -832,7 +832,7 @@ Your home router/Wi-Fi access point keeps logs of devices that are registered on
 
 Some commercial devices will keep a record of MAC addresses roaming around for various purposes such as road congestion[^100].
 
-**So, it is important again not to bring your phone along when/where you conduct sensitive activities. If you use your own laptop, then it is crucial to hide that MAC address (and Bluetooth address) anywhere you use it and be extra careful not to leak any information. Thankfully many recent OSes now feature or allow the possibility to randomize MAC addresses (Android, IOS, Linux, and Windows 10)** with the notable exception of macOS which does not support this feature even in its latest Big Sur version.
+**So, it is important again not to bring your phone along when/where you conduct sensitive activities. If you use your own laptop, then it is crucial to hide that MAC address (and Bluetooth address) anywhere you use it and be extra careful not to leak any information. Thankfully many recent OSes now feature or allow the possibility to randomize MAC addresses (Android, IOS, Linux, and Windows 10/11)** with the notable exception of macOS which does not support this feature even in its latest Big Sur version.
 
 See [Appendix N: Warning about smartphones and smart devices]
 
@@ -1022,7 +1022,7 @@ Here are some other resources on the topic if you cannot see this documentary:
 
 -   2017, Behavior Analysis in Social Networks, <https://link.springer.com/10.1007/978-1-4614-7163-9_110198-1> <sup>[[Archive.org]][95]</sup>
 
--   2017, Social Networks and Positive and Negative Affect <https://www.sciencedirect.com/science/article/pii/S1877042811013747/pdf?md5=253d8f1bb615d5dee195d353dc077d46&pid=1-s2.0-S1877042811013747-main.pdf> <sup>[[Archive.org]][96]</sup>
+-   2017, Social Networks and Positive and Negative Affect <https://www.sciencedirect.com/science/article/pii/S1877042811013747/pdf?md5=253d8f1bb615d5dee195d353dc077d46&pid=1-s2.0-S1877042811013747-main.pdf> <sup>[[Archive.today]][96]</sup>
 
 -   2015, Using Social Networks Data for Behavior and Sentiment Analysis <https://www.researchgate.net/publication/300562034_Using_Social_Networks_Data_for_Behavior_and_Sentiment_Analysis> <sup>[[Archive.org]][97]</sup>
 
@@ -1374,7 +1374,7 @@ There are specialized commercial forensics solutions available (Magnet Axiom[^24
 
 Notable Examples:
 
--   Apple iCloud: <https://support.apple.com/en-us/HT202303> <sup>[[Archive.org]][153]</sup> : "Messages in iCloud also uses end-to-end encryption. If you have iCloud Backup turned on**, your backup includes a copy of the key protecting your Messages**. This ensures you can recover your Messages if you lose access to iCloud Keychain and your trusted devices. ".
+-   Apple iCloud: <https://support.apple.com/en-us/HT202303> <sup>[[Archive.org]][153]</sup> : "Messages in iCloud also uses end-to-end encryption. If you have iCloud Backup turned on**, your backup includes a copy of the key protecting your Messages**. This ensures you can recover your Messages if you lose access to iCloud Keychain and your trusted devices. ".
 
 -   Google Drive and WhatsApp: <https://faq.whatsapp.com/android/chats/about-google-drive-backups/> <sup>[[Archive.org]][154]</sup>: "**Media and messages you back up aren't protected by WhatsApp end-to-end encryption while in Google Drive**. ". Do however note that Facebook/Whatsapp have announced the rollout of encrypted backups on October 14^th^ 2021 (<https://about.fb.com/news/2021/10/end-to-end-encrypted-backups-on-whatsapp/> <sup>[[Archive.org]][155]</sup>) which should solve this issue.
 
@@ -1438,7 +1438,7 @@ There is a frequent adage among the infosec community: "Don't roll your own cryp
 
 And there are reasons[^255]'[^256]'[^257]'[^258] for that:
 
-I would not want people discouraged from studying and innovating in the crypto field because of that adage. So instead, I would recommend people to be cautious with "Roll your own crypto" because it is not necessarily good crypto:
+We would not want people discouraged from studying and innovating in the crypto field because of that adage. So instead, we would recommend people to be cautious with "Roll your own crypto" because it is not necessarily good crypto:
 
 -   Good cryptography is not easy and usually takes years of research to develop and fine-tune.
 
@@ -1543,7 +1543,7 @@ Many people have the idea that privacy-oriented services such as VPN or E-Mail p
 
 Any of those providers can be forced to silently (without your knowing (using for example a court order with a gag order[^272] or a national security letter[^273]) log your activity to de-anonymize you. There have been several recent examples of those:
 
--   2021, Proton, Proton logged IP address of French activist after an order by Swiss authorities[^274].
+-   2021, Proton, Proton logged IP address of French activist after an order by Swiss authorities (source link unavailable).
 
 -   2021, WindScribe, Servers were not encrypted as they should have been allowing MITM attacks by authorities[^275].
 
@@ -1743,13 +1743,13 @@ First, here is a small basic UML diagram showing your available options accordin
 
         -   **You should go for the Tails route.**
 
-    -   It is not that old, and it has decent specs (at least 6GB of RAM, 250GB of disk space or more, decent CPU):
+    -   It is not that old, and it has decent specs (at least 8GB of RAM, 250GB of disk space or more, decent CPU):
 
         -   **You could go for Tails, Whonix routes.**
 
-    -   It is new and it has great specs (more than 8GB of RAM, >250GB of disk space, recent fast CPU):
+    -   It is new and it has great specs (more than 16GB or for a perfect experience 32GB of RAM, >250GB of disk space, recent fast CPU):
 
-        -   **You could go for any route, but I would recommend Qubes OS if your threat model allows it.**
+        -   **You could go for any route, but we would recommend Qubes OS if your threat model allows it.**
 
     -   If it is an ARM-based M1 Mac:
 
@@ -1765,7 +1765,7 @@ First, here is a small basic UML diagram showing your available options accordin
 
             -   **Qubes OS is not supported on ARM architecture yet.**
 
-**Your only option on M1 Macs is probably to stick with Tor Browses for now. But I would guess that if you can afford an M1 Mac you should probably get a dedicated x86 laptop for more sensitive activities.**
+**Your only option on M1 Macs is probably to stick with Tor Browses for now. But we would guess that if you can afford an M1 Mac you should probably get a dedicated x86 laptop for more sensitive activities.**
 
 ### Skills:
 
@@ -1915,7 +1915,7 @@ This is rather easy. Leave your smartphone on and at home. Have some cash and go
 
 *A note regarding your current phone:* The point of leaving your smartphone on is to create avoid leaking the fact that you're not using the device. If a smartphone is turned off, this creates a metadata trail that can be used to correlate the time your smartphone was turned off with the activation of your burner. If possible, leave your phone doing something (for example, watching YouTube on auto-play) to obscure the metadata trail further. This will not make it impossible to correlate your inactivity, but may make it more difficult if your phone's usage patterns can look convincing while you buy your burner.
 
-I would recommend getting an old "dumbphone" with a removable battery (old Nokia if your mobile networks still allow those to connect as some countries phased out 1G-2G completely). This is to avoid the automatic sending/gathering of any telemetry/diagnostic data on the phone itself. You should never connect that phone to any Wi-Fi.
+We would recommend getting an old "dumbphone" with a removable battery (old Nokia if your mobile networks still allow those to connect as some countries phased out 1G-2G completely). This is to avoid the automatic sending/gathering of any telemetry/diagnostic data on the phone itself. You should never connect that phone to any Wi-Fi.
 
 **Site Note: Be careful of some sellers as shown here <https://therecord.media/malware-found-preinstalled-in-classic-push-button-phones-sold-in-russia/>** <sup>[[Archive.org]][226]</sup>
 
@@ -1939,7 +1939,7 @@ See [Appendix N: Warning about smartphones and smart devices]
 
 Double-check that the mobile operators selling the pre-paid SIM cards will accept the SIM activation and top-up without any ID registration of any kind before going there. Ideally, they should accept SIM activation and top-up from the country you live in.
 
-I would recommend GiffGaff in the UK as they are "affordable", do not require identification for activation and top-up, and will even allow you to change your number up to two times from their website. One GiffGaff prepaid SIM card will therefore grant you three numbers to use for your needs.
+We would recommend GiffGaff in the UK as they are "affordable", do not require identification for activation and top-up, and will even allow you to change your number up to two times from their website. One GiffGaff prepaid SIM card will therefore grant you three numbers to use for your needs.
 
 Power off the phone after activation/top-up and before going home. Do not ever power it on again unless you are not at a place that can be used to reveal your identity and ideally leave your real phone on but at home before going to the safe place with only your burner phone.
 
@@ -1985,7 +1985,7 @@ Therefore IMHO, it is just more convenient, cheaper, and less risky to just get 
 
 **Skip this step if you have no intention of creating anonymous accounts on most mainstream platforms but just want anonymous browsing or if the platforms you will use allow registration without a phone number.**
 
-Get at least one or two decent size generic USB keys (at least 16GB but I would recommend 32GB).
+Get at least one or two decent size generic USB keys (at least 16GB but we would recommend 32GB).
 
 Please do not buy or use gimmicky self-encrypting devices such as these: <https://syscall.eu/blog/2018/03/12/aigo_part1/> <sup>[[Archive.org]][235]</sup>
 
@@ -2085,7 +2085,9 @@ You will find details about each level here: <https://tb-manual.torproject.org/s
 
     -   Any media playback is "click to play" (disabled by default)
 
-I would recommend the "Safer" level for most cases. The Safest level should only be enabled if you think you are accessing suspicious or dangerous websites or if you are extra paranoid.
+We would recommend the "Safer" level for most cases. The Safest level should be enabled if you think you are accessing suspicious or dangerous websites and/or if you are extra paranoid.
+
+If you are extra paranoid, use the "Safest" level by default and consider downgrading to Safer is the website is unusable because of Javascript blocking.
 
 However, the Safer level should be used with some extra precautions while using some websites: see [Appendix A5: Additional browser precautions with JavaScript enabled].
 
@@ -2171,7 +2173,7 @@ As with the desktop version, you need to know there are safety levels in Onion B
 
         -   Ads and Pop-Ups are blocked
 
-I would recommend the "Silver" level for most cases. The Gold level should only be enabled if you think you are accessing suspicious or dangerous websites or if you are extra paranoid. The Gold mode will also most likely break many websites that rely actively on JavaScript.
+We would recommend the "Silver" level for most cases. The Gold level should only be enabled if you think you are accessing suspicious or dangerous websites or if you are extra paranoid. The Gold mode will also most likely break many websites that rely actively on JavaScript.
 
 As JavaScript is enabled in the Silver mode, please see [Appendix A5: Additional browser precautions with JavaScript enabled].
 
@@ -2253,7 +2255,9 @@ When using Tor Browser, you should click the little shield Icon (upper right, ne
 
     -   Any media playback is "click to play" (disabled by default)
 
-I would recommend the "Safer" level for most cases. The Safest level should only be enabled if you think you are accessing suspicious or dangerous websites or if you are extra paranoid. The Safest mode will also most likely break many websites that rely actively on JavaScript.
+We would recommend the "Safer" level for most cases. The Safest level should be enabled if you think you are accessing suspicious or dangerous websites or if you are extra paranoid. The Safest mode will also most likely break many websites that rely actively on JavaScript.
+
+If you are extra paranoid, use the "Safest" level by default and consider downgrading to Safer is the website is unusable because of Javascript blocking.
 
 Lastly, while using Tor Browser on Tails on the "Safer" level, please consider [Appendix A5: Additional browser precautions with JavaScript enabled]
 
@@ -2311,7 +2315,7 @@ Here is my guide on how to achieve this:
 
 -   Prepare a USB Key/Drive with Veracrypt
 
-    -   Create a Hidden Volume on the USB/Key Drive (I would recommend at least 16GB for the hidden volume)
+    -   Create a Hidden Volume on the USB/Key Drive (We would recommend at least 16GB for the hidden volume)
 
     -   In the Outer Volume, place some decoy files
 
@@ -2375,7 +2379,7 @@ All future online steps performed with this laptop should ideally be done from a
 
 ### Some laptop recommendations:
 
-I would strongly recommend getting a "business grade" laptop (meaning not consumer/gaming-grade laptop) if you can. For instance, some ThinkPad from Lenovo (my personal favorite).
+We would strongly recommend getting a "business grade" laptop (meaning not consumer/gaming-grade laptop) if you can. For instance, some ThinkPad from Lenovo (my personal favorite).
 
 This is because those business laptops usually offer better and more customizable security features (especially in the BIOS/UEFI settings) with longer support than most consumer laptops (Asus, MSI, Gigabyte, Acer...). The interesting features to look for are IMHO:
 
@@ -2505,9 +2509,7 @@ This route will make extensive use of Virtual Machines[^310], they will require 
 
 -   Your Linux distribution of choice (excluding Qubes OS)
 
--   Windows 10 (preferably Home edition due to the absence of Bitlocker)
-
-    -   **Windows 11 is not yet supported yet by this guide**
+-   Windows 10/11 (preferably Home edition due to the absence of Bitlocker)
 
 -   macOS (Catalina or higher up to Monterey)
 
@@ -2525,7 +2527,7 @@ This feature can be used at the OS level (a plausible OS and a hidden OS) or at 
 
 This also means you could set up your own advanced "plausible deniability" setup using any Host OS by storing for instance Virtual Machines on a Veracrypt hidden volume container (be careful of traces in the Host OS tho that would need to be cleaned if the host OS is persistent, see [Some additional measures against forensics][Some additional measures against forensics:] section later). There is a project for achieving this within Tails (<https://github.com/aforensics/HiddenVM> <sup>[[Archive.org]][245]</sup>) which would make your Host OS non-persistent and use plausible deniability within Tails.
 
-In the case of Windows, plausible deniability is also the reason you should ideally have Windows 10 Home (and not Pro). This is because Windows 10 Pro natively offers a full-disk encryption system (Bitlocker[^317]) where Windows 10 Home offers no full-disk encryption at all. We will later use third-party open-source software for encryption that will allow full-disk encryption on Windows 10 Home. This will give you a good (plausible) excuse to use this software. While using this software on Windows 10 Pro would be suspicious.
+In the case of Windows, plausible deniability is also the reason you should ideally have Windows 10/11 Home (and not Pro). This is because Windows 10/11 Pro natively offers a full-disk encryption system (Bitlocker[^317]) where Windows 10/11 Home offers no full-disk encryption at all. We will later use third-party open-source software for encryption that will allow full-disk encryption on Windows 10/11 Home. This will give you a good (plausible) excuse to use this software. While using this software on Windows 10/11 Pro would be suspicious.
 
 **Note about Linux:** So, what about Linux and plausible deniability? Yes, it is possible to achieve plausible deniability with Linux too. More information within the Linux Host OS section later.
 
@@ -2553,7 +2555,7 @@ You can mitigate this attack by doing the following (as recommended earlier):
 
 -   Set up BIOS/UEFI/Firmware passwords to prevent any unauthorized boot of an unauthorized device.
 
--   Some OSes and Encryption software have anti-EvilMaid protection that can be enabled. This is the case with Windows/Veracrypt and QubeOS.
+-   Some OSes and Encryption software have anti-EvilMaid protection that can be enabled. This is the case with Windows/Veracrypt and QubeOS (only on intel CPUs).
 
 ##### Cold-Boot Attack:
 
@@ -2561,7 +2563,7 @@ Cold Boot attacks[^319] are trickier than the Evil Maid Attack but can be part o
 
 The idea is rather simple, as shown in this video[^320], an adversary could theoretically quickly boot your device on a special USB key that would copy the content of the RAM (the memory) of the device after you shut it down. If the USB ports are disabled or if they feel like they need more time, they could open it and "cool down" the memory using a spray or other chemicals (liquid nitrogen for instance) preventing the memory from decaying. They could then be able to copy its content for analysis. This memory dump could contain the key to decrypt your device. We will later apply a few principles to mitigate these.
 
-In the case of Plausible Deniability, there have been some forensics studies[^321] about technically proving the presence of the hidden data with a simple forensic examination (without a Cold Boot/Evil Maid Attack) but these have been contested by other studies[^322] and by the maintainer of Veracrypt[^323] so I would not worry too much about those yet.
+In the case of Plausible Deniability, there have been some forensics studies[^321] about technically proving the presence of the hidden data with a simple forensic examination (without a Cold Boot/Evil Maid Attack) but these have been contested by other studies[^322] and by the maintainer of Veracrypt[^323] so we would not worry too much about those yet.
 
 The same measures used to mitigate Evil Maid attacks should be in place for Cold Boot attacks with some added ones:
 
@@ -2575,7 +2577,7 @@ See also <https://www.whonix.org/wiki/Cold_Boot_Attack_Defense> <sup>[[Archive.o
 
 Here are also some interesting tools to consider for Linux users to defend against these:
 
--   <https://github.com/0xPoly/Centry> <sup>[[Archive.org]][264]</sup> (unfortunately unmaintained it seems so I made a fork and pull request updating for Veracrypt <https://github.com/AnonymousPlanet/Centry> <sup>[[Archive.org]][265]</sup> which should still work)
+-   <https://github.com/0xPoly/Centry> <sup>[[Archive.org]][264]</sup> (unfortunately unmaintained it seems)
 
 -   <https://github.com/hephaest0s/usbkill> <sup>[[Archive.org]][266]</sup> (unfortunately unmaintained as well it seems)
 
@@ -2703,7 +2705,7 @@ For other distros, you will have to document yourself, but it will likely be sim
 
 #### Note about plausible deniability on Linux:
 
-There are several ways to achieve plausible deniability on Linux[^329] and it is possible to achieve. Here are some more details about some of the ways I would recommend. All these options require some higher level of skills at using Linux.
+There are several ways to achieve plausible deniability on Linux[^329] and it is possible to achieve. Here are some more details about some of the ways we would recommend. All these options require some higher level of skills at using Linux.
 
 ##### The Detached Headers Way:
 
@@ -2866,7 +2868,7 @@ You could block OCSP reporting by issuing the following command in Terminal:
 
 But you should document yourself on the actual issue before acting. This page is a good place to start: <https://blog.jacopo.io/en/post/apple-ocsp/> <sup>[[Archive.org]][297]</sup>
 
-Up to you really. I would block it because I do not want any telemetry at all from my OS to the mothership without my specific consent. None.
+Up to you really. We would block it because I do not want any telemetry at all from my OS to the mothership without my specific consent. None.
 
 ##### Enable Full Disk encryption (Filevault):
 
@@ -3042,7 +3044,7 @@ Again, as explained earlier. You should never use the sleep/stand-by feature to 
 
 The reason is that Hibernation will actually shut down your laptop completely and clean the memory. Sleep on the other hand will leave the memory powered on (including your decryption key) and could leave your laptop vulnerable to cold-boot attacks.
 
-By default, Windows 10 might not offer you this possibility so you should enable it by following this Microsoft tutorial: <https://docs.microsoft.com/en-us/troubleshoot/windows-client/deployment/disable-and-re-enable-hibernation> <sup>[[Archive.org]][302]</sup>
+By default, Windows 10/11 might not offer you this possibility so you should enable it by following this Microsoft tutorial: <https://docs.microsoft.com/en-us/troubleshoot/windows-client/deployment/disable-and-re-enable-hibernation> <sup>[[Archive.org]][302]</sup>
 
 -   Open an administrator command prompt (right-click on Command Prompt and "Run as Administrator")
 
@@ -3188,9 +3190,9 @@ This route is rather straightforward and will just encrypt your current Operatin
 
     -   If you have no sensitive data yet on this laptop, select None
 
-    -   If you have sensitive data on an SSD, Trim alone should take care of it[^342] but I would recommend one pass (random data) just to be sure.
+    -   If you have sensitive data on an SSD, Trim alone should take care of it[^342] but we would recommend one pass (random data) just to be sure.
 
-    -   If you have sensitive data on an HDD, there is no Trim, and I would recommend at least 1-pass.
+    -   If you have sensitive data on an HDD, there is no Trim, and we would recommend at least 1-pass.
 
 -   Test your setup. Veracrypt will now reboot your system to test the bootloader before encryption. This test must pass for encryption to go forward.
 
@@ -3230,23 +3232,23 @@ This process will do the following:
 
 -   Create a hidden volume within the outer volume of that second partition. This is where the hidden OS will reside.
 
--   Clone your currently running Windows 10 installation onto the hidden volume.
+-   Clone your currently running Windows 10/11 installation onto the hidden volume.
 
--   Wipe your currently running Windows 10.
+-   Wipe your currently running Windows 10/11.
 
--   This means that your current Windows 10 will become the hidden Windows 10 and that you will need to reinstall a fresh decoy Windows 10 OS.
+-   This means that your current Windows 10/11 will become the hidden Windows 10/11 and that you will need to reinstall a fresh decoy Windows 10/11 OS.
 
 **Mandatory if you have an SSD drive and you still want to do this against the recommendation: Disable SSD Trim in Windows**[^343] **(again this is NOT recommended at all as** **disabling Trim in itself is highly suspicious**). **Also** **as mentioned earlier, disabling Trim will reduce the lifetime of your SSD drive and will significantly impact its performance over time (your laptop will become slower and slower over several months of use until it becomes almost unusable, you will then have to clean the drive and re-install everything). But you must do it to prevent data leaks**[^344] **that could allow forensics to defeat your plausible deniability**[^345][^346]**. The only way around this at the moment is to have a laptop with a classic HDD drive instead.**
 
-###### Step 1: Create a Windows 10 install USB key
+###### Step 1: Create a Windows 10/11 install USB key
 
 See [Appendix C: Windows Installation Media Creation][306] and go with the USB key route.
 
-###### Step 2: Boot the USB key and start the Windows 10 install process (Hidden OS)
+###### Step 2: Boot the USB key and start the Windows 10/11 install process (Hidden OS)
 
 -   Insert the USB key into your laptop
 
--   See [Appendix A: Windows Installation] and proceed with installing Windows 10 Home.
+-   See [Appendix A: Windows Installation] and proceed with installing Windows 10/11 Home.
 
 ###### Step 3: Privacy Settings (Hidden OS)
 
@@ -3314,13 +3316,13 @@ Do not connect this OS to your known Wi-Fi. You should download the Veracrypt in
 
 -   Now your Hidden OS will be installed, proceed to the next step
 
-###### Step 5: Reboot and boot the USB key and start the Windows 10 install process again (Decoy OS)
+###### Step 5: Reboot and boot the USB key and start the Windows 10/11 install process again (Decoy OS)
 
 Now that the Hidden OS is fully installed, you will need to install a Decoy OS:
 
 -   Insert the USB key into your laptop
 
--   See [Appendix A: Windows Installation] and proceed with installing Windows 10 Home again (do not install a different version and stick with Home).
+-   See [Appendix A: Windows Installation] and proceed with installing Windows 10/11 Home again (do not install a different version and stick with Home).
 
 ###### Step 6: Privacy settings (Decoy OS)
 
@@ -3438,7 +3440,7 @@ Do not put anything suspicious on the Decoy OS such as:
 
 **Remember that you will need valid excuses for this plausible deniability scenario to work:**
 
--   **You are using Veracrypt because you are using Windows 10 Home which does not feature Bitlocker but still wanted Privacy.**
+-   **You are using Veracrypt because you are using Windows 10/11 Home which does not feature Bitlocker but still wanted Privacy.**
 
 -   **You have two Partitions because you wanted to separate the System and the Data for easy organization and because some Geek friend told you this was better for performance.**
 
@@ -3474,7 +3476,7 @@ So, you should be aware that Virtualbox is not the virtualization software with 
 
 Some steps should be taken in all cases:
 
-**All your sensitive activities will be done from within a guest Virtual Machine running Windows 10 Pro (not Home this time), Linux, or macOS.**
+**All your sensitive activities will be done from within a guest Virtual Machine running Windows 10/11 Pro (not Home this time), Linux, or macOS.**
 
 This has a few advantages that will help you remain anonymous:
 
@@ -3576,7 +3578,7 @@ More information at:
 
 #### Tor over VPN:
 
-You might be wondering: Well, what about using Tor over VPN instead of VPN over Tor? Well, I would not necessarily it:
+You might be wondering: Well, what about using Tor over VPN instead of VPN over Tor? Well, we would not necessarily it:
 
 -   Disadvantages:
 
@@ -3843,7 +3845,7 @@ Consider using AppArmor on your Whonix Workstations by following this guide: <ht
 
 ##### If you can use Tor (natively or over a VPN):
 
-Use the Linux Distro of your choice. I would recommend Ubuntu or Fedora for convenience but any other would work too. Be sure to not enable any telemetry.
+Use the Linux Distro of your choice. we would recommend Ubuntu or Fedora for convenience but any other would work too. Be sure to not enable any telemetry.
 
 Refer to this tutorial <https://www.whonix.org/wiki/Other_Operating_Systems> <sup>[[Archive.org]][345]</sup> for detailed instructions.
 
@@ -3851,7 +3853,7 @@ Consider hardening the VM as recommended in [Hardening Linux].
 
 ##### If you cannot use Tor:
 
-Use the Linux Distro of your choice. I would recommend Ubuntu or Fedora for convenience but any other would work too. Be sure to not enable any telemetry. You could go with the risky route: See [Appendix P: Accessing the internet as safely as possible when Tor and VPNs are not an option]
+Use the Linux Distro of your choice. we would recommend Ubuntu or Fedora for convenience but any other would work too. Be sure to not enable any telemetry. You could go with the risky route: See [Appendix P: Accessing the internet as safely as possible when Tor and VPNs are not an option]
 
 ##### Choose a browser within the VM:
 
@@ -3861,15 +3863,13 @@ See why here: [Appendix V: What browser to use in your Guest VM/Disposable VM]
 
 See [Appendix V1: Hardening your Browsers][Appendix V1: Hardening your Browsers:] as well.
 
-### Windows 10 Virtual Machine:
+### Windows 10/11 Virtual Machine:
 
 **Be careful, any customization you make to the non-Whonix guest VMs (keyboard layout, language, time zone, screen resolution, or other) could be used to fingerprint your VMs later. See <https://www.whonix.org/wiki/VM_Fingerprinting>** <sup>[[Archive.org]][344]</sup>
 
-#### Windows 10 ISO download:
+#### Windows 10 and 11 ISO download:
 
-Go with the Official Windows 10 Pro VM and harden it yourself: see [Appendix C: Windows Installation Media Creation][306] and go with the ISO route.
-
-There is also another option you might hear about which is Windows AME (Ameliorated) from the <https://ameliorated.info/> <sup>[[Archive.org]][346]</sup> project which is a special Windows 10 build stripped from all telemetry/advertising and update components. **I do not recommend this option due to the insecure nature of that release lacking the latest updates/patches and lacking the ability to update completely. I do believe the project general idea is good, but it is just too insecure/risky and contains unnecessary software picked by the dev.**
+Go with the Official Windows 10/11 Pro VM and harden it yourself: see [Appendix C: Windows Installation Media Creation][306] and go with the ISO route.
 
 #### If you can use Tor (natively or over a VPN):
 
@@ -3881,13 +3881,15 @@ Refer to this tutorial <https://www.whonix.org/wiki/Other_Operating_Systems> <su
 
 -   Open Virtualbox
 
--   Select Machine > New > Select Windows 10 64bit
+-   Select Machine > New > Select Windows 10 or Windows 11 64bit
 
--   Allocate a minimum amount of 2048MB but ideally 4096MB if your Ram allows it
+-   Allocate a minimum amount of 2GB for Windows 10 and 4GB for Windows 11
 
 -   Create a Virtual Disk using the VDI format and select Dynamically Allocated
 
--   Keep the disk size at 50GB (this is a maximum; it should not reach that much)
+-   Keep the disk size at 50GB for Windows 10 and 80GB for Windows 11 (this is a maximum; it should not reach that much)
+
+-   Make sure PAE/NX is enabled in System > Processor
 
 -   Select the VM and click Settings, Go into the Network Tab
 
@@ -3899,7 +3901,7 @@ Refer to this tutorial <https://www.whonix.org/wiki/Other_Operating_Systems> <su
 
 -   Click ok and start the VM
 
--   Virtualbox will prompt you to select a Starting disk (the ISO file), select it, and click Start
+-   Virtualbox will prompt you to either push a button to boot the ISO or ask you what to boot, select the ISO or click.
 
 -   Follow the steps in [Appendix A: Windows Installation]
 
@@ -3907,13 +3909,15 @@ Refer to this tutorial <https://www.whonix.org/wiki/Other_Operating_Systems> <su
 
 ##### Network Settings:
 
--   Go back into Settings then Network & Internet
+-   Back to your Windows
 
--   Click Properties (Below Ethernet)
+-   Windows 10: Go back into Settings then Network & Internet. Windows 11: Go into settings, click the upper left menu and pick "Network and Internet"
 
--   Edit IP settings:
+-   Windows 10: Click Properties (Below Ethernet). Windows 11: Click Ethernet
 
--   Enable IPv4 and set the following:
+-   Windows 10: Edit IP settings. Windows 11: Edit IP assignment.
+
+-   Windows 10: Enable IPv4 and set the following, Windows 11: Switch from DHCP to Manual and set the following:
 
     -   IP address ```10.152.152.50``` (increase this IP by one for any other VM)
 
@@ -3921,13 +3925,15 @@ Refer to this tutorial <https://www.whonix.org/wiki/Other_Operating_Systems> <su
 
     -   Gateway ```10.152.152.10``` (this is the Whonix Gateway)
 
-    -   DNS ```10.152.152.10``` (this is again the Whonix Gateway)
+    -   (Windows 10) DNS ```10.152.152.10``` (this is again the Whonix Gateway)
+
+    -   (Windows 11) exit the IP assignment and select DNS server assignment and set it to ```10.152.152.10``` (this is again the Whonix Gateway)
 
     -   Save
 
--   Windows might prompt you if you want to be "discoverable" on this network. Click NO.
+-   Windows might prompt you if you want to be "discoverable" on this network. Click NO. Always stay on a "public network" if prompted.
 
-**Every time you will power on this VM in the future, make sure you change its Ethernet Mac Address before each boot. You can do this in Virtualbox > Settings > Network > Advanced > Click the refresh button next to the MAC address. You can only do this while the VM is powered off.**
+**Every time you will power on this VM in the future, you should ideally change its Ethernet Mac Address before each boot. You can do this in Virtualbox > Settings > Network > Advanced > Click the refresh button next to the MAC address. You can only do this while the VM is powered off.**
 
 #### If you cannot use Tor:
 
@@ -3937,13 +3943,15 @@ See [Appendix P: Accessing the internet as safely as possible when Tor and VPNs 
 
 -   Open Virtualbox
 
--   Select Machine > New > Select Windows 10 64bit
+-   Select Machine > New > Select Windows 10 or 11 64bit
 
--   Allocate a minimum amount of 2048MB but ideally 4096MB if your Ram allows it
+-   Allocate a minimum amount of 4GB of RAM for 11 , 2GB of RAM for 10.
 
 -   Create a Virtual Disk using the VDI format and select Dynamically Allocated
 
--   Keep the disk size at 50GB (this is a maximum; it should not reach that much)
+-   In the System/Processor tab, make sure PAE/NX is enabled.
+
+-   Keep the disk size at 80GB for 11, 50GB for 10 (this is a maximum; it should not reach that much)
 
 -   Go into the Storage Tab, Select the Empty CD and click the icon next to SATA Port 1
 
@@ -3951,15 +3959,15 @@ See [Appendix P: Accessing the internet as safely as possible when Tor and VPNs 
 
 -   Click ok and start the VM
 
--   Virtualbox will prompt you to select a Starting disk (the ISO file), select it, and click Start
+-   Virtualbox will prompt you to either push a button to boot the ISO or ask you what to boot, select the ISO or click.
 
 -   Follow the steps in [Appendix A: Windows Installation]
 
 ##### Network Settings:
 
--   Windows will prompt you if you want to be "discoverable" on this network. Click NO.
+-   Windows will prompt you if you want to be discoverable on this network. Click NO.
 
-**Every time you will power on this VM in the future, make sure you change its Ethernet Mac Address before each boot. You can do this in Virtualbox > Settings > Network > Advanced > Click the refresh button next to the MAC address. You can only do this while the VM is powered off.**
+**Every time you will power on this VM in the future, you should change its Ethernet Mac Address before each boot. You can do this in Virtualbox > Settings > Network > Advanced > Click the refresh button next to the MAC address. You can only do this while the VM is powered off.**
 
 #### Choose a browser within the VM:
 
@@ -3969,7 +3977,7 @@ See why here: [Appendix V: What browser to use in your Guest VM/Disposable VM]
 
 See [Appendix V1: Hardening your Browsers][Appendix V1: Hardening your Browsers:] as well.
 
-#### Additional Privacy settings in Windows 10:
+#### Additional Privacy settings in Windows 10/11:
 
 See [Appendix B: Windows Additional Privacy Settings]
 
@@ -4006,6 +4014,8 @@ Just use the tutorials as is and see [Appendix P: Accessing the internet as safe
 #### Installation:
 
 Two possibilities: AnBox or Android-x86
+
+Personally, we would recommend AnBox over Android-x86 but it requires Linux
 
 ##### AnBox:
 
@@ -4189,7 +4199,7 @@ This step will allow you to configure your Host OS so that only the Whonix Gatew
 
 There are three ways to do this:
 
--   The Lazy Way (not really recommended): not supported by Whonix and might have some security implications as you will expose the Whonix Gateway VM to the Public Wi-Fi network. I would recommend against this unless you are in a hurry or very lazy.
+-   The Lazy Way (not really recommended): not supported by Whonix and might have some security implications as you will expose the Whonix Gateway VM to the Public Wi-Fi network. we would recommend against this unless you are in a hurry or very lazy.
 
     -   **This method will not work with Wi-Fi captive portals requiring any registration to connect.**
 
@@ -4321,7 +4331,7 @@ Yet this will still not be supported by the Whonix project, but it is fine as th
 
 This option will require an additional VM between the Host OS and the Whonix Gateway to act as a Network Bridge.
 
-For this purpose, I will recommend the use of a lightweight Linux Distro. Any will do but the easiest IMHO will be an Ubuntu-based distro and I would recommend the lightweight XUbuntu as it will be extremely easy to configure this setup.
+For this purpose, I will recommend the use of a lightweight Linux Distro. Any will do but the easiest IMHO will be an Ubuntu-based distro and we would recommend the lightweight XUbuntu as it will be extremely easy to configure this setup.
 
 Why XUbuntu and not Ubuntu or KUbuntu? Because XUbuntu uses an XFCE desktop environment which is lightweight and this VM will only serve as a proxy and nothing else.
 
@@ -4332,6 +4342,8 @@ This is how it will look at the end:
 ![][357]
 
 ##### Installing XUbuntu VM:
+
+XUbuntu was picked due the performance of XFCE.
 
 Make sure you are connected to a safe Wi-Fi for this operation.
 
@@ -4531,7 +4543,7 @@ This way will not go against Whonix recommendations (as it will not expose the W
 
 This option will require an additional VM between the Host OS and the Whonix Gateway to act as a Network Bridge and to connect to the Wi-Fi network. **This option requires a working USB Wi-Fi Dongle that will be passed through to a bridge VM.**
 
-For this purpose, I will recommend the use of a lightweight Linux Distro. Any will do but the easiest IMHO will be an Ubuntu-based distro and I would recommend the lightweight XUbuntu as it will be extremely easy to configure this setup.
+For this purpose, I will recommend the use of a lightweight Linux Distro. Any will do but the easiest IMHO will be an Ubuntu-based distro and we would recommend the lightweight XUbuntu as it will be extremely easy to configure this setup.
 
 Why XUbuntu and not Ubuntu or KUbuntu? Because XUbuntu uses an XFCE desktop environment which is lightweight and this VM will only serve as a proxy and nothing else.
 
@@ -4545,7 +4557,7 @@ This is how it will look at the end:
 
 -   Disable Networking on your Host OS completely (Turn off the on-board Wi-Fi completely)
 
--   Plug in and install your USB Wi-Fi Dongle. Connect it to a safe Public Wi-Fi. This should be easy and automatically installed by any recent OS (Windows 10, macOS, Linux).
+-   Plug in and install your USB Wi-Fi Dongle. Connect it to a safe Public Wi-Fi. This should be easy and automatically installed by any recent OS (Windows 10/11, macOS, Linux).
 
 ##### Configuring the Whonix Gateway VM:
 
@@ -4693,7 +4705,7 @@ You are done and can now skip the rest to go to the [Getting Online][Getting Onl
 
 ## The Qubes Route:
 
-**Note that while this route is written for Qubes OS 4.0.x, it should also work with Qubes OS 4.1.x but it hasn't been tested yet. The guide will be updated when Qubes OS 4.1 is released (now at the Release Candidate 3 stage as of this writing).**
+**Note that while this route is written for Qubes OS 4.0.x, it should also work with Qubes OS 4.1.x but it hasn't been tested yet. The guide will be updated and tested for Qubes OS 4.1 soon. In the mean time, you can see the changelog here: <https://www.qubes-os.org/doc/releases/4.1/release-notes/>**
 
 As they say on their website, Qubes OS is a reasonably secure, free, open-source, and security-oriented operating system for single-user desktop computing. Qubes OS leverages and extensively uses Xen-based virtualization to allow for the creation and management of isolated compartments called Qubes.
 
@@ -4713,13 +4725,13 @@ Qubes OS is not a Linux distribution[^362] but a Xen distribution. It is differe
 
 This OS is recommended by prominent figures such as Edward Snowden, PrivacyGuides.org.
 
-Qubes is the best option in this guide for people who are more comfortable with Linux and tech in general. But it has some downsides such as the lack of OS-wide plausible deniability, its hardware requirements, and its hardware compatibility. While you can run this on 4GB of RAM as per their requirements[^363], the recommended RAM is 16GB. I would recommend against using Qubes OS if you have less than 8GB of RAM. If you want a comfortable experience, you should have 16GB, if you want a particularly enjoyable experience, you should have 24GB or 32GB.
+Qubes is the best option in this guide for people who are more comfortable with Linux and tech in general. But it has some downsides such as the lack of OS-wide plausible deniability, its hardware requirements, and its hardware compatibility. While you can run this on 4GB of RAM as per their requirements <sup>[[Archive.org]][363]</sup>, the recommended RAM is 16GB. We would recommend against using Qubes OS if you have less than 8GB of RAM. If you want a comfortable experience, you should have 16GB, if you want a particularly enjoyable experience, you should have 24GB or 32GB.
 
 The reason for this RAM requirement is that each app will run in a different VM and each of those VM will require and allocate a certain amount of memory that will not be available for other apps. If you are running native Windows apps within Qubes OS Qubes, the ram overhead will be significant.
 
 You should also check their hardware compatibility here <https://www.qubes-os.org/hcl/> <sup>[[Archive.org]][365]</sup> before proceeding. Your mileage might vary, and you might experience several issues about hardware compatibility that you will have to troubleshoot and solve yourself.
 
-I think that if you can afford it and are comfortable with the idea of using Linux, you should go with this route as it is probably the best one in terms of security and privacy. The only disadvantage of this route is that it does not provide a way to enable OS-wide plausible deniability[^311], unlike the Whonix route.
+I think that if you can afford it and are comfortable with the idea of using Linux, you should go with this route as it is probably the best one in terms of security and privacy. The only disadvantage of this route is that it does not provide a way to enable OS-wide plausible deniability <sup>[[Archive.org]][311]</sup>, unlike the Whonix route.
 
 ### Pick your connectivity method:
 
@@ -4986,6 +4998,12 @@ Remember this should be done from a safe place (see [Find some safe places with 
 
     -   Open Firefox and register (anonymously) into the Wi-Fi
 
+### Upgrading Qubes OS from 4.0.x to 4.1.x (you should do it)
+
+Personaly, we wouldn't do it in-place and do a fresh install. 
+
+But if you really want to, it's technically possible by following this guide: <https://www.qubes-os.org/doc/upgrade/4.1/> <sup>[[Archive.org]][1372]</sup>
+
 ### Updating Qubes OS:
 
 After you are connected to a Wi-Fi you need to update Qubes OS and Whonix. You must keep Qubes OS always updated before conducting any sensitive activities. Especially your Browser VMs. Normally, Qubes OS will warn you about updates in the upper right corner with a gear icon. As this might take a while in this case due to using Tor, you can force the process by doing the following:
@@ -5004,9 +5022,11 @@ After you are connected to a Wi-Fi you need to update Qubes OS and Whonix. You m
 
 -   If you checked the Tor option during install, wait patiently as this might take a while over Tor
 
-### Updating Whonix from version 15 to version 16:
+### Upgrading Whonix from version 15 to version 16:
 
-Follow the instructions on <https://www.whonix.org/wiki/Qubes/Install> <sup>[[Archive.org]][371]</sup>. *If you're running Qubes 4.1, this is already done for you.*
+Again, you should really do this ASAP. We would use a fresh install but it's technically possible to do it in-place, see <https://www.whonix.org/wiki/Release_Upgrade_Whonix_15_to_Whonix_16> <sup>[[Archive.org]][1376]</sup>
+
+Follow the instructions on <https://www.whonix.org/wiki/Qubes/Install> <sup>[[Archive.org]][371]</sup>. *If you're running Qubes 4.1.x, this is already done for you.*
 
 ### Hardening Qubes OS:
 
@@ -5062,37 +5082,11 @@ You could make use of SELinux on your Fedora Templates. But this is up to you. A
 
 This tutorial should also work with any OpenVPN provider (Mullvad, IVPN, Safing.io, or Proton VPN for instance).
 
-This is based on the tutorial provided by Qubes OS themselves (<https://github.com/Qubes-Community/Contents/blob/master/docs/configuration/vpn.md> <sup>[[Archive.org]][377]</sup>). If you are familiar with this process, you can follow their tutorial. Here is mine:
+This is based on the tutorial provided by Qubes OS themselves (<https://github.com/Qubes-Community/Contents/blob/master/docs/configuration/vpn.md> <sup>[[Archive.org]][377]</sup>). This part of the guide needs reworking and update, please follow their tutorial. 
 
-#### Create the ProxyVM:
+    -   If you are going for VPN over Tor, you need to go into the settings of the ProxyVM you made and select sys-vpn as networking, the sys-vpn VM should have sys-whonix in networking. You can test check usually on the home page of your VPN provider if it works. Alternatively you can just run a VPN client on the ProxyVM.
 
--   Click the Applications icon (upper left corner)
-
--   Click Create Qubes VM
-
--   Name and label as you wish: I suggest "VPNGatewayVM"
-
--   Select Type: Standalone Qube copied from a template
-
--   Select Template: Debian-11 (the default)
-
--   Select Networking:
-
-    -   Select sys-whonix if you want to do VPN over Tor / Tor only (recommended)
-
-    -   Select sys-firewall if you want to do Tor over VPN / No Tor or VPN / Just VPN
-
--   Advanced: Check provides network
-
--   Check "Start Qube automatically on boot"
-
--   Create the VM
-
--   Test your Connectivity:
-
-    -   If you are going for VPN over Tor, Test the VM connectivity to Tor by launching a Browser within the ProxyVM and going to <https://check.torproject.org> <sup>[[Archive.org]][378]</sup> (It should say you are connected to Tor)
-
-    -   If you are going for Tor over VPN, Test the VM connectivity to the internet by launching a Browser within the ProxyVM and access any website.
+    -   If you are going for Tor over VPN, the opposite should be done, the ProxyVM should have sys-tor as networking and the sys-tor VM should have sys-VPN as networking , test the VM connectivity to the internet by launching a Browser within the ProxyVM and access  <https://check.torproject.org> <sup>[[Archive.org]][378]</sup> (It should say you are connected to Tor)
 
 #### Download the VPN configuration from your cash/Monero paid VPN provider:
 
@@ -5208,7 +5202,7 @@ When you are done downloading the configuration files within the Disposable Brow
 
 -   Go into Qube Settings
 
--   Click Clone Qube and name it (like "VPNoverTor")
+-   Click Clone Qube and name it like "sys-VPNoverTor" for example
 
 -   Again, within the Application Menu, Select the Clone you just created
 
@@ -5246,7 +5240,7 @@ Alternatively, you can also create any other type of disposable VM (but less sec
 
 -   Go into Qube Settings
 
--   Click Clone Qube and name it (like "TorOverVPN")
+-   Click Clone Qube and name it like "sys-TorOverVPN" for example
 
 -   Again, within the Application Menu, Select the Clone you just created
 
@@ -5290,7 +5284,7 @@ Within the Applications Menu (upper left), Select the Fedora-34 template:
 
 -   Go into Qube Settings
 
--   Clone the VM and name it "fedora-34-brave" (this VM template will have Brave)
+-   Clone the VM and name it "sys-fedora-3x-brave" (this VM template will have Brave)
 
 -   Again, go into the Applications Menu and select the clone you just created
 
@@ -5300,7 +5294,7 @@ Within the Applications Menu (upper left), Select the Fedora-34 template:
 
 -   Launch a terminal from the VM
 
-If you want to use Brave: apply the instructions from <https://brave.com/linux/> <sup>[[Archive.org]][384]</sup> (Fedora 28+ section) and run the following commands:
+If you want to use Brave: apply the instructions from <https://brave.com/linux/> <sup>[[Archive.org]][384]</sup> and run the following commands:
 
 -   ```sudo dnf install dnf-plugins-core```
 
@@ -5334,7 +5328,7 @@ Later in the Qubes settings during creation:
 
 -   Select Networking
 
--   Change to sys-Whonix to put it behind the Whonix Gateway (over Tor).
+-   Change to sys-whonix to put it behind the Whonix Gateway (over Tor).
 
 #### If you cannot use Tor:
 
@@ -5348,7 +5342,7 @@ Basically, follow the tutorial here:
 
 -   Click Create Qubes VM
 
--   Name and label as you wish: I suggest "Android Box"
+-   Name and label as you wish: I suggest "sys-Android"
 
 -   Select Type: Standalone Qube copied from a template
 
@@ -5500,7 +5494,7 @@ Most platforms will not allow you to register using an "anonymous" or disposable
 
 The key thing to this is that it is becoming increasingly difficult to sign-up for a free e-mail account anywhere without providing (you guessed it) ... a cell phone number. That same cell phone number can be used conveniently to track you down in most places.
 
-It is possible that those services (Proton for instance) might require you to provide an e-mail address for registration. In that case, I would recommend you create an e-mail address from these providers:
+It is possible that those services (Proton for instance) might require you to provide an e-mail address for registration. In that case, we would recommend you create an e-mail address from these providers:
 
 -   MailFence: <https://mailfence.com/>
 
@@ -5524,7 +5518,7 @@ Due to the suspicious situation, this guide can no longer recommend them.
 
 #### Protecting your anonymous online identities e-mails using Aliasing services:
 
-If you want to avoid communicating your anonymous e-mail addresses to various parties. I would strongly suggest considering using e-mail aliasing services such as:
+If you want to avoid communicating your anonymous e-mail addresses to various parties. we would strongly suggest considering using e-mail aliasing services such as:
 
 -   <https://simplelogin.io/> (preferred first choice due to more options available to the free tier)
 
@@ -5633,7 +5627,7 @@ Here are two services you can use to check your browser Fingerprinting:
 -   <https://amiunique.org>
 
 -   <https://browserleaks.com/>
-    
+
 -   <https://www.deviceinfo.me/>
 
 -   (Chromium based browsers only) <https://z0ccc.github.io/extension-fingerprints/#>
@@ -5736,7 +5730,7 @@ Now that you have a basic understanding of all the ways you can be de-anonymized
 
 -   Above all, you cannot trust people
 
-So what? Well instead of not trusting anyone or anything, I would advise to **"Trust but verify"**[^390] (or "Never trust, always verify" if you are more hardcore about it and want to apply Zero-Trust Security[^391]) instead.
+So what? Well instead of not trusting anyone or anything, we would advise to **"Trust but verify"**[^390] (or "Never trust, always verify" if you are more hardcore about it and want to apply Zero-Trust Security[^391]) instead.
 
 **Do not start this process unless:**
 
@@ -6450,7 +6444,7 @@ Legend:
 <tr class="odd">
 <td><strong>Twitter</strong></td>
 <td>No</td>
-<td>Likely</td>
+<td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -6490,6 +6484,8 @@ Legend:
 </table>
 
 * **See [The Real-Name System][Checking if your Tor Exit Node is terrible:] for essential information. See below for details.**
+
+##### Below you'll find a list of "problematic services". If they're not below, it means there are no issues at all with anything (like Briar for example)
 
 #### Amazon:
 
@@ -6532,14 +6528,6 @@ Note that this account will not allow you to set up an Apple mail account. For t
 -   Will they require a phone number? No, they do require an e-mail
 
 -   Can you create accounts through Tor? No
-
-#### Briar:
-
--   Is this against their ToS? No <https://briarproject.org/privacy-policy/> <sup>[[Archive.org]][422]</sup>
-
--   Will they require a phone number? No, they do not even require an e-mail
-
--   Can you create accounts through Tor? Yes
 
 #### Discord:
 
@@ -6685,14 +6673,6 @@ If your account gets banned, you will have no appeal and the forwarding will be 
 
 It is also possible that Google will require an ID check through indirect financial KYC or ID picture check if you try to access/publish mature content on their platform[^403].
 
-#### HackerNews:
-
--   Is this against their ToS? No <https://www.ycombinator.com/legal/#tou> <sup>[[Archive.org]][429]</sup>
-
--   Will they require a phone number? No, they do not even require an e-mail
-
--   Can you create accounts through Tor? Yes
-
 #### Instagram:
 
 -   Is this against their ToS? **Maybe?** I am not sure <https://help.instagram.com/581066165581870?ref=dp> <sup>[[Archive.org]][430]</sup>
@@ -6732,14 +6712,6 @@ After sign-up, do the following:
 -   Will they require a phone number? No, they do not even require an e-mail
 
 -   Can you create accounts through Tor? Nope it does not work for some technical reason
-
-#### iVPN:
-
--   Is this against their ToS? No <https://www.ivpn.net/tos/> <sup>[[Archive.org]][432]</sup>
-
--   Will they require a phone number? No, they do not even require an e-mail
-
--   Can you create accounts through Tor? Yes
 
 #### Kraken:
 
@@ -6813,30 +6785,6 @@ So yes, it is still possible to create an MS account without a phone number and 
 
 After signing up you should set up 2FA authentication within the security options and using KeePassXC TOTP.
 
-#### Mullvad:
-
--   Is this against their ToS? No <https://mullvad.net/en/help/terms-service/> <sup>[[Archive.org]][437]</sup>
-
--   Will they require a phone number? No, they do not even require an e-mail.
-
--   Can you create accounts through Tor? Yes.
-
-#### Njalla:
-
--   Is this against their ToS? No <https://njal.la/tos/> <sup>[[Archive.org]][438]</sup>
-
--   Will they require a phone number? No, but they do require an e-mail or an XMPP (Jabber) account somewhere.
-
--   Can you create accounts through Tor? Yes, they even have a ".onion" address at <http://njallalafimoej5i4eg7vlnqjvmb6zhdh27qxcatdn647jtwwwui3nad.onion/>
-
-#### OnionShare:
-
--   Is this against their ToS? No, they do not even have Terms of Services
-
--   Will they require a phone number? No, they do not even require an e-mail
-
--   Can you create accounts through Tor? Yes (obviously)
-
 #### OnlyFans:
 
 -   Is this against their ToS? No, it looks fine <https://onlyfans.com/terms> <sup>[[Archive.org]][439]</sup>
@@ -6864,14 +6812,6 @@ They are recommended by Privacyguides.org[^405]. Their only apparent issue is th
 They claim they do not store/link the phone/e-mail associated with the registration but only store a hash that is not linked to the account[^406]. If their claim is true and the hash is not linked to your account, and that you followed my guide about the phone number, you should be reasonably safe from tracking.
 
 This e-mail account can be used for creating a Google/Gmail account.
-
-#### Proton:
-
--   Is this against their ToS? No <https://protonvpn.com/terms-and-conditions> <sup>[[Archive.org]][441]</sup>
-
--   Will they require a phone number? No, but they do require an e-mail.
-
--   Can you create accounts through Tor? Yes
 
 #### Reddit:
 
@@ -6949,7 +6889,7 @@ After signing up you should do the following:
 
 -   Is this against their ToS? No <https://twitter.com/en/tos>
 
--   Will they require a phone number? They might not at sign-up, but they will just after sign-up or later.
+-   Will they require a phone number? Extremely likely, possibly now a requirement in all cases.
 
 -   Can you create accounts through Tor? Yes, but expect some captchas and your phone number will be required after a while.
 
@@ -6977,7 +6917,7 @@ Once the account is restored, you should take some time to do the following:
 
 -   Disable geolocation of tweets
 
--   Remove the phone number from the account
+-   **Caution:** Remove the phone number from the account (at your own risk, this often leads to suspension of the account)
 
 -   Follow some people based
 
@@ -7035,7 +6975,7 @@ Ideally, you should find a way to buy/sell crypto with cash from an unknown pers
 
 #### What about those mobile-only apps (WhatsApp/Signal)?
 
-There are only three ways of securely using those anonymously (that I would recommend). Using a VPN on your phone is not one of those ways. All of those are, unfortunately, "tedious" to say the least.
+There are only three ways of securely using those anonymously (that we would recommend). Using a VPN on your phone is not one of those ways. All of those are, unfortunately, "tedious" to say the least.
 
 -   Use an Android Emulator within the Windows VM and run the App through your multi-layer of Tor/VPN. The drawback is that such emulators are usually quite resource-hungry and will slow down your VM and use more battery. Here is also an (outdated) guide on this matter: <https://www.bellingcat.com/resources/how-tos/2018/08/23/creating-android-open-source-research-device-pc/> <sup>[[Archive.org]][451]</sup>. As for myself, I will recommend the use of:
 
@@ -7138,22 +7078,6 @@ Again, it is important to prefer open-source apps with privacy in mind and vario
 Finally, Open-Source apps should always be preferred because they allow third parties to check actual capabilities and weaknesses vs claims of marketing departments. Open-Source does not mean the app should be free or non-commercial. It just means transparency.
 
 #### Comparison:
-
-Below you will find a small table showing the state of messaging apps as of the writing of this guide based on my tests and data from the various sources below:
-
--   Wikipedia, <https://en.wikipedia.org/wiki/Comparison_of_instant_messaging_protocols> <sup>[[Wikiless]][453]</sup> <sup>[[Archive.org]][454]</sup>
-
--   Wikipedia, <https://en.wikipedia.org/wiki/Comparison_of_cross-platform_instant_messaging_clients> <sup>[[Wikiless]][455]</sup> <sup>[[Archive.org]][456]</sup>
-
--   Secure Messaging Apps <https://www.securemessagingapps.com/> <sup>[[Archive.org]][457]</sup>
-
--   Proton Blog, <https://proton.me/blog/whatsapp-alternatives/> <sup>[[Archive.org]][458]</sup>
-
--   Whonix Documentation, Instant Messenger Chat <https://www.whonix.org/wiki/Chat> <sup>[[Archive.org]][459]</sup>
-
--   Have a look at <https://securechatguide.org/featuresmatrix.html> <sup>[[Archive.org]][460]</sup> which is also a good comparison table for messaging apps.
-
--   Messenger-Matrix.de at <https://www.messenger-matrix.de/messenger-matrix-en.html> <sup>[[Archive.org]][461]</sup>
 
 <table>
 <colgroup>
@@ -7739,9 +7663,23 @@ Any safe options for mobile devices? **Yes, but these are not endorsed/recommend
 
 While I do not recommend most of the messaging platforms for the various reasons outlined above (phone number and e-mail requirements), this does not mean it is not possible to use them anonymously if you know what you are doing. You can use even Facebook Messenger anonymously by taking the necessary precautions outlined in this guide (virtualization behind a Tor Gateway on a non-persistent OS).
 
-The ones that are preferred are recommended due to their stance on privacy, their default settings, their crypto choices but also because they allow convenient anonymous sign-up without going through the many hassles of having a phone number/e-mail verification method and are open source.
+The ones that are preferred are recommended due to their stance on privacy, their default settings, their crypto choices but also because they allow convenient anonymous sign-up without going through the many hassles of having a phone number/e-mail verification method and are open source. Those should be privileged in most cases.
 
-Those should be privileged in most cases. Yes, this guide has a discord server, and a Twitter account despite those not being recommended at all for their stance on privacy and their struggle with anonymity. But this is about me acting appropriately in making this guide available to the many and conveniently using my experience and knowledge to do so as anonymously as possible.
+You can also consult the following external resources for more comparisons:
+
+-   Wikipedia, <https://en.wikipedia.org/wiki/Comparison_of_instant_messaging_protocols> <sup>[[Wikiless]][453]</sup> <sup>[[Archive.org]][454]</sup>
+
+-   Wikipedia, <https://en.wikipedia.org/wiki/Comparison_of_cross-platform_instant_messaging_clients> <sup>[[Wikiless]][455]</sup> <sup>[[Archive.org]][456]</sup>
+
+-   Secure Messaging Apps <https://www.securemessagingapps.com/> <sup>[[Archive.org]][457]</sup>
+
+-   Proton Blog, <https://proton.me/blog/whatsapp-alternatives/> <sup>[[Archive.org]][458]</sup>
+
+-   Whonix Documentation, Instant Messenger Chat <https://www.whonix.org/wiki/Chat> <sup>[[Archive.org]][459]</sup>
+
+-   Have a look at <https://securechatguide.org/featuresmatrix.html> <sup>[[Archive.org]][460]</sup> which is also a good comparison table for messaging apps.
+
+-   Messenger-Matrix.de at <https://www.messenger-matrix.de/messenger-matrix-en.html> <sup>[[Archive.org]][461]</sup>
 
 **I do not endorse or recommend some mainstream platforms for anonymity including the much-praised Signal which to this date still requires a phone number to register and contact others. In the context of this guide, I strongly recommend against using Signal if possible.**
 
@@ -8038,7 +7976,7 @@ You will have two options here:
 
     -   This method is the easiest to manage.
 
-I made extensive testing using live backups utilities (Macrium Reflect, EaseUS Todo Reflect, Déjà Dup...) and personally I do not think it is worth it. Instead, I would recommend that you periodically back up your system with a simple Clonezilla image. It is much easier to perform, much easier to restore, and usually works reliably without issues in all cases. And contrary to many beliefs, it is not that slow with most backups taking about an hour depending on the speed of your destination media.
+I made extensive testing using live backups utilities (Macrium Reflect, EaseUS Todo Reflect, Déjà Dup...) and personally I do not think it is worth it. Instead, we would recommend that you periodically back up your system with a simple Clonezilla image. It is much easier to perform, much easier to restore, and usually works reliably without issues in all cases. And contrary to many beliefs, it is not that slow with most backups taking about an hour depending on the speed of your destination media.
 
 For backing up single files while you work, I recommend using file containers or encrypted media directly and manually as explained in the earlier section.
 
@@ -8076,7 +8014,7 @@ Some warnings:
 
 -   You should always have a backup of your Veracrypt rescue disk at hand somewhere to be able to resolve some issues that might still appear after a restore. Remember this rescue disk does not contain your passphrase or any sensitive information. You can store it as is.
 
--   If you changed the HDD/SSD after a failure, Windows 10 may refuse to boot if your hard drive ID is changed. You should also save this ID before backing up as you might need to change the ID of the new drive as Windows 10 might require a matching ID before booting. See [Appendix F: Diskpart]
+-   If you changed the HDD/SSD after a failure, Windows 10/11 may refuse to boot if your hard drive ID is changed. You should also save this ID before backing up as you might need to change the ID of the new drive as Windows 10/11 might require a matching ID before booting. See [Appendix F: Diskpart]
 
 -   **In case you are using Plausible Deniability on Windows. DO NOT back up the hidden OS partition as this image could be used by Forensics to prove the existence of the hidden volume as explained earlier. It is okay to back up the Decoy OS partition without issues, but you should never back up the partition containing the Hidden OS.**
 
@@ -8084,7 +8022,7 @@ Follow the steps in [Appendix E: Clonezilla]
 
 #### macOS:
 
-I would recommend just using the native Time Machine backup with encryption (and a strong passphrase that could be the same as your OS) as per the guides provided at Apple: <https://support.apple.com/en-ie/guide/mac-help/mh21241/mac> <sup>[[Archive.org]][477]</sup> and <https://support.apple.com/en-ie/guide/mac-help/mh11421/11.0/mac/11.0> <sup>[[Archive.org]][478]</sup>.
+we would recommend just using the native Time Machine backup with encryption (and a strong passphrase that could be the same as your OS) as per the guides provided at Apple: <https://support.apple.com/en-ie/guide/mac-help/mh21241/mac> <sup>[[Archive.org]][477]</sup> and <https://support.apple.com/en-ie/guide/mac-help/mh11421/11.0/mac/11.0> <sup>[[Archive.org]][478]</sup>.
 
 So, plug in an external drive and it should prompt you to use it as a Time Machine backup.
 
@@ -8182,7 +8120,7 @@ Most of those old secure deletion utilities were written with HDD in mind and ha
 
 So, what now? Well here comes the Trim[^427] operation. When you delete data on your SSD, your OS should support what is called a Trim operation command and **could (should)** issue this Trim command to the SSD drive periodically (daily, weekly, monthly...). This Trim command will then let know the SSD drive controller that there are pages within blocks containing data that are now free to be really deleted without deleting anything itself.
 
-Trim should be enabled by default on all modern Operating Systems detecting an SSD drive covered in this guide (macOS, Windows 10, Ubuntu, Qubes OS...).
+Trim should be enabled by default on all modern Operating Systems detecting an SSD drive covered in this guide (macOS, Windows 10/11, Ubuntu, Qubes OS 4.1.x ...).
 
 If Trim operations are not done regularly (or at all), then the data is never deleted pro-actively and at some point, all the blocks and pages will be occupied by data. Your OS will not see this and will just see free space as you delete files, but your SSD controller will not (this is called Write Amplification[^428]). This will then force the SSD controller to erase those pages and blocks on the fly which will reduce the write performance. This is because while your OS/SSD can write data to any free page in any bock, erasure is only possible on entire blocks, therefore, forcing your SSD to perform many operations to write new data. Overwriting is just not possible. This will defeat the wear-leveling system and cause performance degradation of your SSD over time. Every time you delete a file on an SSD, your OS should issue a Trim command along with the deletion to let the SSD controller know the pages containing the file data are now free for deletion.
 
@@ -8438,7 +8376,7 @@ Since the Trim operation is not continuous on most recent hard drives but schedu
 
 At this stage, and just delete the file permanently (empty the recycle bin) and trim/garbage collection will do the rest. This should be sufficient.
 
-If you do not want to wait for the periodic Trim (set to Weekly by default in Windows 10), you could also force a disk-wide Trim using the Windows native Optimize tool (see [Appendix H: Windows Cleaning Tools]).
+If you do not want to wait for the periodic Trim (set to Weekly by default in Windows 10/11), you could also force a disk-wide Trim using the Windows native Optimize tool (see [Appendix H: Windows Cleaning Tools]).
 
 If data were deleted by some utility (for instance by Virtualbox when reverting a snapshot), you could also issue a disk-wide Trim to clean anything remaining using the same Optimize tool.
 
@@ -8686,7 +8624,7 @@ Consider also reading this documentation if you're going with Whonix <https://ww
 
 #### Pictures and videos:
 
-On Windows, macOS, and Linux I would recommend ExifTool (<https://exiftool.org/> <sup>[[Archive.org]][510]</sup>) and/or ExifCleaner (<https://exifcleaner.com/> <sup>[[Archive.org]][511]</sup>) that allows viewing and/or removing those properties.
+On Windows, macOS, and Linux we would recommend ExifTool (<https://exiftool.org/> <sup>[[Archive.org]][510]</sup>) and/or ExifCleaner (<https://exifcleaner.com/> <sup>[[Archive.org]][511]</sup>) that allows viewing and/or removing those properties.
 
 **ExifTool is natively available on Tails and Whonix Workstation.**
 
@@ -8740,7 +8678,7 @@ It is actually simple, just install exiftool and run:
 
 First, here is a tutorial to remove metadata from Office documents: <https://support.microsoft.com/en-us/office/remove-hidden-data-and-personal-information-by-inspecting-documents-presentations-or-workbooks-356b7b5d-77af-44fe-a07f-9aa4d085966f> <sup>[[Archive.org]][518]</sup>. Make sure however that you do use the latest version of Office with the latest security updates.
 
-Alternatively, on Windows, macOS, Qubes OS, and Linux I would recommend ExifTool (<https://exiftool.org/> <sup>[[Archive.org]][510]</sup>) and/or ExifCleaner (<https://exifcleaner.com/> <sup>[[Archive.org]][511]</sup>) that allows viewing and/or removing those properties
+Alternatively, on Windows, macOS, Qubes OS, and Linux we would recommend ExifTool (<https://exiftool.org/> <sup>[[Archive.org]][510]</sup>) and/or ExifCleaner (<https://exifcleaner.com/> <sup>[[Archive.org]][511]</sup>) that allows viewing and/or removing those properties
 
 ##### ExifCleaner:
 
@@ -8786,7 +8724,7 @@ It is actually simple, just install exiftool and run:
 
         -   "Remove personal information on saving"
 
-In addition, on Windows, macOS, Qubes OS, and Linux I would recommend ExifTool (<https://exiftool.org/> <sup>[[Archive.org]][510]</sup>) and/or ExifCleaner (<https://exifcleaner.com/> <sup>[[Archive.org]][511]</sup>) that allows viewing and/or removing additional properties
+In addition, on Windows, macOS, Qubes OS, and Linux we would recommend ExifTool (<https://exiftool.org/> <sup>[[Archive.org]][510]</sup>) and/or ExifCleaner (<https://exifcleaner.com/> <sup>[[Archive.org]][511]</sup>) that allows viewing and/or removing additional properties
 
 ##### ExifCleaner:
 
@@ -8804,7 +8742,7 @@ It is actually simple, jut install exiftool and run:
 
 Another option good tool IMHO to remove metadata from various documents is the open-source mat2 recommended by privacyguides.org[^445] (<https://0xacab.org/jvoisin/mat2> <sup>[[Archive.org]][519]</sup>) which you can use on Linux quite easily. I never managed to make it work properly within Windows due to various dependencies issues despite the provided instructions. It is however very straightforward to install and use on Linux.
 
-So, I would suggest creating a small Debian VM within Virtualbox (behind your Whonix Gateway) which you can then use from your other VMs to analyze various files from a convenient web interface. For this see [Appendix L: Creating a mat2-web guest VM for removing metadata from files]
+So, we would suggest creating a small Debian VM within Virtualbox (behind your Whonix Gateway) which you can then use from your other VMs to analyze various files from a convenient web interface. For this see [Appendix L: Creating a mat2-web guest VM for removing metadata from files]
 
 ![][520]
 
@@ -8891,7 +8829,7 @@ In addition, macOS keeps various logs of mounted devices, connected devices, kno
 
 See this section of this guide for guidance on where to find and how to delete such artifacts: <https://github.com/drduh/macOS-Security-and-Privacy-Guide#metadata-and-artifacts> <sup>[[Archive.org]][294]</sup>
 
-Many of those can be deleted using various commercial third-party tools but I would personally recommend using the free and well-known Onyx which you can find here: <https://www.titanium-software.fr/en/onyx.html> <sup>[[Archive.org]][522]</sup>. Unfortunately, it is closed-source, but it is notarized, signed, and has been trusted for many years.
+Many of those can be deleted using various commercial third-party tools but we would personally recommend using the free and well-known Onyx which you can find here: <https://www.titanium-software.fr/en/onyx.html> <sup>[[Archive.org]][522]</sup>. Unfortunately, it is closed-source, but it is notarized, signed, and has been trusted for many years.
 
 ##### Force a Trim operation after cleaning:
 
@@ -9057,7 +8995,7 @@ Here are the steps for PrivaZer:
 
     -   Select What you want to be cleaned (skip the shell bag part since you used the other utility for that)
 
-        -   **You should just skip the free space cleaning part if using an SSD and instead just use the native Windows Optimize function (see below) which should be more than enough. I would only use this on an HDD drive.**
+        -   **You should just skip the free space cleaning part if using an SSD and instead just use the native Windows Optimize function (see below) which should be more than enough. We would only use this on an HDD drive.**
 
     -   (If you did select Free Space cleaning) Select Clean Options and make sure your type of Storage is well detected (HDD vs SSD).
 
@@ -9065,15 +9003,15 @@ Here are the steps for PrivaZer:
 
         -   If you have an SSD drive:
 
-            -   Secure Overwriting Tab: I would just pick Normal Deletion + Trim (Trim itself should be enough[^342]). Secure Deletion with Trim[^339] (1 pass) might be redundant and overkill here if you intend to overwrite the free space anyway.
+            -   Secure Overwriting Tab: We would just pick Normal Deletion + Trim (Trim itself should be enough[^342]). Secure Deletion with Trim[^339] (1 pass) might be redundant and overkill here if you intend to overwrite the free space anyway.
 
-            -   Free Space Tab: Personally, and again "just to be sure", I would select Normal Cleanup which will fill the entire free space with Data. I do not really trust Smart Cleanup as it does not actually fill all the free space of the SSD with Data. But again, this is probably not needed and overkill in most cases.
+            -   Free Space Tab: Personally, and again "just to be sure", we would select Normal Cleanup which will fill the entire free space with Data. I do not really trust Smart Cleanup as it does not actually fill all the free space of the SSD with Data. But again, this is probably not needed and overkill in most cases.
 
         -   If you have an HDD drive:
 
-            -   Secure Overwriting Tab: I would just pick Secure Deletion (1 pass).
+            -   Secure Overwriting Tab: We would just pick Secure Deletion (1 pass).
 
-            -   Free Space: I would just pick Smart Cleanup as there is no reason to overwrite sectors without data on an HDD drive.
+            -   Free Space: We would just pick Smart Cleanup as there is no reason to overwrite sectors without data on an HDD drive.
 
     -   Select Clean and Pick your flavor:
 
@@ -9105,15 +9043,15 @@ Here are the steps for BleachBit:
 
     -   Select any other traces you want to remove from their list
 
-        -   Again, as with the earlier utility, I would not clean the free space on an SSD drive because I think the Windows native "optimize" utility is enough (see below) and that filling up the free space on a trim enabled SSD is just completely overkill and unnecessary.
+        -   Again, as with the earlier utility, we would not clean the free space on an SSD drive because I think the Windows native "optimize" utility is enough (see below) and that filling up the free space on a trim enabled SSD is just completely overkill and unnecessary.
 
     -   Click Clean and wait. This will take a while and will fill your whole free space with data on both HDD and SSD drives.
 
 ##### Force a Trim with Windows Optimize (for SSD drives):
 
-With this Native Windows 10 utility, you can just trigger a Trim on your SSD which should be more than enough to securely clean all deleted files that somehow would have escaped Trim when deleting them.
+With this Native Windows 10/11 utility, you can just trigger a Trim on your SSD which should be more than enough to securely clean all deleted files that somehow would have escaped Trim when deleting them.
 
-Just open Windows Explorer, Right Click on your System Drive and click Properties. Select Tools. Click Optimize and then Optimize again. You are done. That is probably enough in my opinion.
+Just open Windows Explorer, Right Click on your System Drive and click Properties. Select Tools. Click Optimize and Defragment. You are done as this will not defragment but only optimize. Meaning it will initiate a Trim operation (<https://en.wikipedia.org/wiki/Trim_(computing)> <sup>[[Wikiless]][485]</sup> <sup>[[Archive.org]]). 
 
 ![][501]
 
@@ -9491,13 +9429,15 @@ This project for instance is running several Tor Exit nodes using donations to f
 
 # Appendix A: Windows Installation
 
-This is the Windows 10 installation process that should be valid for any Windows 10 install within this guide.
+This is the Windows 10/11 installation process that should be valid for any Windows 10/11  install within this guide.
 
-**Windows 11 is not yet supported by this guide (but it will be in the future at some point).**
+### Windows 10 (See below for Windows 11)
 
 ## Installation:
 
 DO NOT CONNECT WINDOWS TO ANY NETWORK DURING THE INSTALLATION PROCESS (This will allow us to create a Local Account and not use a Microsoft account and it will also prevent any telemetry from being sent out during the install process).
+
+-   (Only for VirtualBox VM Install) Go into the VirtualBox Machine Settings menu. Select network. Unplug the cable.
 
 -   Click "Install Now"
 
@@ -9539,7 +9479,7 @@ DO NOT CONNECT WINDOWS TO ANY NETWORK DURING THE INSTALLATION PROCESS (This will
 
 -   Start the install process
 
--   Select the Region "United Kingdom"
+-   Select the Region "United States"
 
 -   Skip the additional Keyboard Layout
 
@@ -9568,6 +9508,174 @@ DO NOT CONNECT WINDOWS TO ANY NETWORK DURING THE INSTALLATION PROCESS (This will
 -   Do not let apps use Advertising ID
 
 -   Select "Now" at the Cortana prompt
+
+## Privacy Settings:
+
+-   When the install is finished, get into Settings > Go on the top left menu icon and sekect Privacy and Security
+
+    -   When the install is finished, get into Settings > Privacy and do the following:
+
+    -   General: All Off
+
+    -   Speech: Off
+
+    -   Inking and Typing: Off
+
+    -   Diagnostic: Required level at off, options on OFF, **Delete your data**, frequency set to Never
+
+    -   Activity History: all Off and Clear the history
+
+    -   Location, all Off (change button) and clear it
+
+    -   Camera: Disable it (change button)
+
+    -   Microphone: Disable it (change button)
+
+    -   Voice Activation: All Off
+
+    -   Notification: Disable it (change button)
+
+    -   Account info: Disable it (change button)
+
+    -   Contact info: Disable it (change button)
+
+    -   Calendar access: Disable it (change button)
+
+    -   Phone calls: Disable it (change button)
+
+    -   Call History: Disable it (change button)
+
+    -   E-mail: Disable it (change button)
+
+    -   Tasks: Disable it (change button)
+
+    -   Messaging: Disable it (change button)
+
+    -   Radios: Disable it (change button)
+
+    -   Other devices: Set to Off
+
+    -   Background Apps: Disable it (change button)
+
+    -   App Diagnostics: Disable it (change button)
+
+    -   Automatic file download disabled
+
+    -   Documents: Disable it (change button)
+
+    -   Pictures: Disable it (change button)
+
+    -   Videos: Disable it (change button) and set to off
+
+    -   File system: Disable it (change button)
+
+    -   Disable File Indexing by going into the "Indexing Options" (Go into Windows 11 Control Panel, Switch the view to "Large Icons" and select Indexing Options.
+
+    -   Modify the list and remove all locations.
+
+    -   Go into Advanced and click Rebuild.
+
+    -   (Host OS only) Disable Bluetooth in the settings:
+
+    -   Go into Settings
+
+    -   Go into Devices
+
+    -   Select Bluetooth and turn it off
+
+-   (Host OS Only) Tape the Webcam and Microphone anyway for extra paranoia.
+
+-   (Host OS Only) Go into Settings > Network & Internet > Wi-Fi and Enable Random Hardware Address.
+
+### Windows 11
+
+## Installation:
+
+DO NOT CONNECT WINDOWS TO ANY NETWORK DURING THE INSTALLATION PROCESS (This will allow us to create a Local Account and not use a Microsoft account and it will also prevent any telemetry from being sent out during the install process).
+
+-   (Only for VirtualBox VM Install) Go into the VirtualBox Machine Settings menu. Select network. Unplug the cable. For this task, you can also follow this excellent tutorial by Oracle <https://blogs.oracle.com/virtualization/post/install-microsoft-windows-11-on-virtualbox> <sup>[[Archive.org]][1375]</sup>
+
+-   Select your language, currency and keyboard layout
+
+-   Click "Install Now"
+
+-   (Only for VirtualBox VM Install) Push Shift and F10 at the same time
+
+-   (Only for VirtualBox VM Install) Launch "regedit" in the command prompt
+
+-   (Only for VirtualBox VM Install) When the Registry Editor opens, navigate to "HKEY_LOCAL_MACHINE\SYSTEM\Setup", right-click on the "Setup" key and select "New => Key". When prompted to name the key, enter "LabConfig" and press enter.
+
+-   (Only for VirtualBox VM Install) Now right-click on the "LabConfig" key and select "New => DWORD  (32-bit)" value and create a value named "BypassTPMCheck", and set its data to "1". With the same steps create the "BypassRAMCheck" and "BypassSecureBootCheck"
+
+-   Select "I don't have a product key"
+
+-   Accept the agreement
+
+-   Select the flavor you want:
+
+    -   Host OS: Use
+
+        -   You intend to use Plausible Deniability: Windows Home
+
+        -   You do not intend to use Plausible Deniability: Windows Pro
+
+    -   VM OS: Use Windows Pro or Windows Pro N
+
+-   Select Custom Install
+
+-   Storage:
+
+    -   If this is a simple OS installation (Host OS with Simple Encryption) or VM without encryption, **select the whole disk** and proceed with the installation (skip the next step).
+
+    -   If this is part of a plausible deniability encryption set up on the Host OS:
+
+        -   If you are installing Windows for the first time (Hidden OS):
+
+            -   Delete the current partitions
+
+            -   Create the First partition with at least 50GB of disk space (about a third of the total disk space).
+
+            -   Create a second partition with the remaining two-thirds of the total disk space.
+
+        -   If you are installing Windows for the second time (Decoy OS):
+
+            -   Do not Delete the current partitions
+
+            -   Install Windows on the first partition you created during the first install.
+
+        -   Proceed with the install in the first partition
+
+-   Start the install process
+
+-   Select the Region "United States"
+
+-   Select the Keyboard Layout and skip a second layout
+
+-   Select "I don't have internet"
+
+-   Select "Continue with limited setup"
+
+-   Create a username of your choice.
+
+-   Use a password of your choice.
+
+-   Select all three security questions and answer whatever you want (not real data).
+
+-   Ddisable Location
+
+-   Disable find my device
+
+-   Disable optional diagnostic data
+
+-   Only send "required diagnostic data"
+
+-   Do not improve Inking and Typing
+
+-   Disable the tailored experience.
+
+-   Disable the Advertising ID
+
+-   Click Accept
 
 ## Privacy Settings:
 
@@ -9617,7 +9725,11 @@ DO NOT CONNECT WINDOWS TO ANY NETWORK DURING THE INSTALLATION PROCESS (This will
 
     -   App Diagnostics: Disable it (change button)
 
+    -   Automatic file download disabled
+
     -   Documents: Disable it (change button)
+
+    -   Music Library: Disable it (change button)
 
     -   Pictures: Disable it (change button)
 
@@ -9625,13 +9737,13 @@ DO NOT CONNECT WINDOWS TO ANY NETWORK DURING THE INSTALLATION PROCESS (This will
 
     -   File system: Disable it (change button)
 
--   Disable File Indexing by going into the "Indexing Options" (Go into Windows 10 Control Panel, Switch the view to "Large Icons" and select Indexing Options.
+    -   Disable File Indexing by going into the "Indexing Options" (Go into Windows 11 Control Panel, Switch the view to "Large Icons" and select Indexing Options.
 
     -   Modify the list and remove all locations.
 
     -   Go into Advanced and click Rebuild.
 
--   (Host OS only) Disable Bluetooth in the settings:
+    -   (Host OS only) Disable Bluetooth in the settings:
 
     -   Go into Settings
 
@@ -9645,15 +9757,15 @@ DO NOT CONNECT WINDOWS TO ANY NETWORK DURING THE INSTALLATION PROCESS (This will
 
 # Appendix B: Windows Additional Privacy Settings
 
-As written earlier in this guide and as noted by PrivacyGuides.org[^458], Windows 10 is a privacy nightmare. And disabling everything during and after the installation using the settings available to you is not enough. The amount of telemetry data collected by Microsoft is staggering and could defeat your attempts at keeping secrets. You will need to download and use a couple of utilities to (hopefully) force Windows 10 into not sending data back to Microsoft.
+As written earlier in this guide and as noted by PrivacyGuides.org[^458], Windows 10/11 is a privacy nightmare. And disabling everything during and after the installation using the settings available to you is not enough. The amount of telemetry data collected by Microsoft is staggering and could defeat your attempts at keeping secrets. You will need to download and use a couple of utilities to (hopefully) force Windows 10/11 into not sending data back to Microsoft.
 
 Here are the steps in detail:
 
 -   **DO NOT EVER USE A MICROSOFT ACCOUNT TO LOG IN: If you are, you should be re-installing this Windows Machine without connecting to a network and use a local account instead.**
 
-> Do these steps from a different computer to not connect Windows 10 to the internet before those settings are applied. You can download and copy those to the USB key (for transfer onto a Windows 10 fresh installation) or if it is a VM, you can transfer them to the VM within Virtualbox (VM Settings > General > Advanced > Drag n Drop > Enable Host to Guest).
+> Do these steps from a different computer to not connect Windows 10/11 to the internet before those settings are applied. You can download and copy those to the USB key (for transfer onto a Windows 10/11 fresh installation) or if it is a VM, you can transfer them to the VM within Virtualbox (VM Settings > General > Advanced > Drag n Drop > Enable Host to Guest).
 
--   Download and install W10Privacy from <https://www.w10privacy.de/english-home/> <sup>[[Archive.org]][569]</sup>
+-   (For more advanced users) Download and install W10Privacy from <https://www.w10privacy.de/english-home/> <sup>[[Archive.org]][569]</sup>
 
     -   Open the app as Administrator (right-click > more > run as administrator)
 
@@ -9673,19 +9785,23 @@ Here are the steps in detail:
 
     -   Reboot
 
--   Also, consider using ShutUp10 from <https://www.oo-software.com/en/shutup10> <sup>[[Archive.org]][571]</sup>
+-   Also, consider using ShutUp10++ from <https://www.oo-software.com/en/shutup10> <sup>[[Archive.org]][571]</sup>
 
     -   Enable at least all the recommended settings
 
--   Go back one last time Settings > Privacy > Diagnostic and Delete all Data.
+-   Finally, again for users with moderate skils, consider installing Safing portmaster from <https://safing.io/portmaster/> <sup>[[Archive.org]][1373]</sup> (Warning there might be some issues with VPNs (see <https://docs.safing.io/portmaster/install/status/vpn-compatibility> <sup>[[Archive.org]][1374]</sup>
+
+-   Go back one last time to the settings to delete Diagnostic and Delete all Data.
 
 These measures added to the settings during installation should be hopefully sufficient to prevent Microsoft from snooping on your OS.
 
-**You will need to update and re-run W10Privacy and WindowsSpyBlocker frequently and after any Windows update as they tend to silently re-enable telemetry using those updates.**
+**You will need to update and re-run those utilities frequently and after any Windows major update as they tend to silently re-enable telemetry using those updates.**
 
 **As a bonus, it could be interesting to also consider Hardening your Windows Host OS somewhat. See <https://github.com/beerisgood/windows10_hardening>** <sup>[[Archive.org]][572]</sup> (This is a security guide, not a privacy guide. If you use this guide, do not enable Hyper-V as it does not play well with Virtualbox, and do not enable features that were specifically disabled for privacy reasons earlier. Such as SmartScreen, cloud protection...)
 
-# Appendix C: Windows Installation Media Creation
+# Appendix C: Windows Installation Media Creation (Windows 10) or Download (Windows 11)
+
+## Windows 10
 
 These are the steps to create a Windows 10 (21H1) Installation Media using this tool and instructions:
 
@@ -9701,11 +9817,15 @@ These are the steps to create a Windows 10 (21H1) Installation Media using this 
 
 -   Pick which process you want:
 
-    -   If installing on a physical computer: Select USB Flash Drive
+    -   If installing on a physical computer: Select USB Flash Drive.
 
     -   If installing on a Virtual Machine: Select ISO file and save it.
 
 -   Proceed
+
+## Windows 11
+
+- Go to https://www.microsoft.com/software-download/windows11 and download the ISO.
 
 # Appendix D: Using System Rescue to securely wipe an SSD drive.
 
@@ -9799,7 +9919,7 @@ Diskpart can be run from any Windows environment using a command prompt. This in
 
 ## If you can use Tor:
 
-This guide will **only recommend** using Tor Browser within the host OS because it has the best protection by default. The only other acceptable option in my opinion would be to use Brave Browser with a Tor tab **but keep in mind that Brave themselves recommend the use of Tor Browser if you feel your safety depends on being anonymous**[^459]**: "If your personal safety depends on remaining anonymous, we highly recommend using Tor Browser instead of Brave Tor windows. ".**
+This guide will **only recommend** using Tor Browser within the host OS because it has the best protection by default. The only other acceptable option in my opinion would be to use Brave Browser with a Tor tab **but keep in mind that Brave themselves recommend the use of Tor Browser if you feel your safety depends on being anonymous** <sup>[[Archive.org]][459]</sup>**: "If your personal safety depends on remaining anonymous, we highly recommend using Tor Browser instead of Brave Tor windows. ".**
 
 This Browser on the host OS will only be used to download various utilities and will never be used for actual sensitive activities.
 
@@ -9811,7 +9931,7 @@ If you are experiencing issues connecting to Tor due to Censorship or Blocking, 
 
 ## If you cannot use Tor:
 
-Because it is too dangerous/risky/suspicious. I would recommend as a last resort using Firefox, or Brave only using Private Windows for now.
+Because it is too dangerous/risky/suspicious. We would recommend as a last resort using Firefox, or Brave only using Private Windows for now.
 
 See [Appendix P: Accessing the internet as safely as possible when Tor and VPNs are not an option] before continuing.
 
@@ -9827,11 +9947,11 @@ In this guide I will recommend two-third native tools and two third-party tools:
 
 -   Native Tools:
 
-    -   Windows 10 Disk Cleanup Utility: <https://support.microsoft.com/en-us/windows/disk-cleanup-in-windows-10-8a96ff42-5751-39ad-23d6-434b4d5b9a68> <sup>[[Archive.org]][585]</sup>
+    -   Windows 10/11 Disk Cleanup Utility: <https://support.microsoft.com/en-us/windows/disk-cleanup-in-windows-10-8a96ff42-5751-39ad-23d6-434b4d5b9a68> <sup>[[Archive.org]][585]</sup>
 
 > This tool will clean up a bunch of things natively. It is not enough, and I instead recommend using the third-party tools below to clean more stuff. PrivaZer for instance will use the disk cleanup utility directly itself and BleachBit will use its own mechanisms.
 
--   Windows 10 Optimize Utility (Defrag on HDD Drives): <https://support.microsoft.com/en-us/windows/defragment-your-windows-10-pc-048aefac-7f1f-4632-d48a-9700c4ec702a> <sup>[[Archive.org]][586]</sup>
+-   Windows 10/11 Optimize Utility (Defrag on HDD Drives): <https://support.microsoft.com/en-us/windows/defragment-your-windows-10-pc-048aefac-7f1f-4632-d48a-9700c4ec702a> <sup>[[Archive.org]][586]</sup> (yes the tutorial is for Windows 10 but should work on 11 too)
 
 > For security, this tool is particularly useful on SSD drives at this "Optimize" function will in fact force a Disk wide Trim operation to occur. This will most likely be more than enough to make sure any deleted data that was not trimmed before for any reason will be this time. Deleted data with Trim is very unlikely to be recovered as explained before in this guide.
 
@@ -9841,11 +9961,11 @@ In this guide I will recommend two-third native tools and two third-party tools:
 
     -   The closed-source utility PrivaZer <https://privazer.com/> <sup>[[Archive.org]][588]</sup>
 
-I prefer PrivaZer because it has more customization and smarter features, but I would understand if you do not trust them and prefer open-source software in which case I would recommend BleachBit which offers a bit less customization but similar functionalities.
+I prefer PrivaZer because it has more customization and smarter features, but we would understand if you do not trust them and prefer open-source software in which case we would recommend BleachBit which offers a bit less customization but similar functionalities.
 
 Both these tools can be used for cleaning many things such as:
 
--   The Windows USN journal which stores plenty of information[^460].
+-   The Windows USN journal which stores plenty of information.
 
 -   The Windows System Resource Usage Monitor (SRUM)[^461].
 
@@ -9853,7 +9973,7 @@ Both these tools can be used for cleaning many things such as:
 
 -   Various logs
 
--   The free (unallocated) space of your hard drive[^462].
+-   The free (unallocated) space of your hard drive][^462].
 
 -   Secure deletion of files
 
@@ -9871,7 +9991,7 @@ If you want to go with System-Rescue, just head to their website and follow the 
 
 ## Windows:
 
--   Download ShredOS from <https://github.com/PartialVolume/shredos.2020.02> <sup>[[Archive.org]][591]</sup>
+-   Download ShredOS from <https://github.com/PartialVolume/shredos.x86_64> <sup>[[Archive.org]][591]</sup>
 
 -   Unzip the ISO file
 
@@ -9967,7 +10087,7 @@ It is possible Windows will detect your external SSD properly and enable Trim by
 
 ### ATA/NVMe Operations (Secure Erase/Sanitize):
 
-**Use the manufacturer-provided tools to check and perform these operations** ... It is pretty much the only way to be sure it is not only supported but actually works. Some utilities can tell you whether it is supported or not like CrystalDiskInfo[^465] but will not actually check if it is working. See [Appendix J: Manufacturer tools for Wiping HDD and SSD drives][Appendix J: Manufacturer tools for Wiping HDD and SSD drives:].
+**Use the manufacturer-provided tools to check and perform these operations** ... It is pretty much the only way to be sure it is not only supported but actually works. Some utilities can tell you whether it is supported or not like CrystalDiskInfo <sup>[[Archive.org]][465]</sup> but will not actually check if it is working. See [Appendix J: Manufacturer tools for Wiping HDD and SSD drives][Appendix J: Manufacturer tools for Wiping HDD and SSD drives:].
 
 If it does not work. Just decrypt and re-encrypt the whole drive or fill up the free space as instructed in the guide. There is no other way AFAIK. Besides booting up a System Rescue Linux CD and see the next section.
 
@@ -10217,9 +10337,9 @@ There are three VPN companies recommended by PrivacyGuides.org (<https://www.pri
 
 In addition, I will also mention a newcomer to watch: Safing SPN <https://safing.io/> <sup>[[Archive.org]][621]</sup>) which (while still in the alpha stage at the time of this writing) which also accepts cash and has a very distinct new concept for a VPN which provides benefits similar to Tor Stream isolation with their "SPN"). Note that Safing SPN is not available on macOS at the moment. This possibility is "provisional" and at your own risk, but I think was worth mentioning.
 
-Personally, for now, I would recommend Mullvad due to personal experience.
+Personally, for now, we would recommend Mullvad due to personal experience.
 
-**I would not recommend Proton VPN as much because they do require an e-mail for registration unlike Mullvad, iVPN, and Safing. Proton also has a tendency to require phone number verification for users who register over Tor.**
+**We would not recommend Proton VPN as much because they do require an e-mail for registration unlike Mullvad, iVPN, and Safing. Proton also has a tendency to require phone number verification for users who register over Tor.**
 
 How does this work?
 
@@ -10363,11 +10483,11 @@ In that case, my last resort recommendation is to connect safely **from a distan
 
 -   Start and use the Unsafe Browser
 
-**I would strongly recommend the use of a long-range "Yagi" type directional Antenna with a suitable USB Wi-Fi Adapter. At least this will allow you to connect to public Wi-Fis from a "safe distance" but keep in mind that triangulation by a motivated adversary is still possible with the right equipment. So, this option should not be used during an extended period (minutes at best). See [Appendix Q: Using long-range Antenna to connect to Public Wi-Fis from a safe distance][Appendix Q: Using long-range Antenna to connect to Public Wi-Fis from a safe distance:].**
+**We would strongly recommend the use of a long-range "Yagi" type directional Antenna with a suitable USB Wi-Fi Adapter. At least this will allow you to connect to public Wi-Fis from a "safe distance" but keep in mind that triangulation by a motivated adversary is still possible with the right equipment. So, this option should not be used during an extended period (minutes at best). See [Appendix Q: Using long-range Antenna to connect to Public Wi-Fis from a safe distance][Appendix Q: Using long-range Antenna to connect to Public Wi-Fis from a safe distance:].**
 
 Using Tails should prevent local data leaks (such as MAC addresses or telemetry) and allow you to use a Browser to get what you want (utilities, VPN account) before leaving that place as fast as possible.
 
-You could also use the other routes (Whonix and Qubes OS without using Tor/VPN) instead of Tails in such hostile environments if you want data persistence but this might be riskier. I would not risk it personally unless there was absolutely no other option. If you go for this option, you will only do sensitive activities from a reversible/disposable VM in all cases. Never from the Host OS.
+You could also use the other routes (Whonix and Qubes OS without using Tor/VPN) instead of Tails in such hostile environments if you want data persistence but this might be riskier. We would not risk it personally unless there was absolutely no other option. If you go for this option, you will only do sensitive activities from a reversible/disposable VM in all cases. Never from the Host OS.
 
 **If you resort to this, please keep your online time as short as possible (minutes and not hours).**
 
@@ -10385,7 +10505,7 @@ These antennas are widely available on various online shops for a cheap price (A
 
 Such antennas need to be combined with specific USB adapters that have an external Antenna plug and sufficiently high power to use them.
 
-**I would recommend the AWUS036 series in the Alfa brand of adapters (see <https://www.alfa.com.tw/>** <sup>[[Archive.org]][633]</sup>**).** But you could also go with some other brands if you want such as the TP-Link TL-WN722 (see <https://www.tp-link.com/us/home-networking/usb-adapter/tl-wn722n/> <sup>[[Archive.org]][634]</sup>).
+**We would recommend the AWUS036 series in the Alfa brand of adapters (see <https://www.alfa.com.tw/>** <sup>[[Archive.org]][633]</sup>**).** But you could also go with some other brands if you want such as the TP-Link TL-WN722 (see <https://www.tp-link.com/us/home-networking/usb-adapter/tl-wn722n/> <sup>[[Archive.org]][634]</sup>).
 
 See this post for a comparison of various adapters: <https://www.wirelesshack.org/best-kali-linux-compatible-usb-adapter-dongles.html> <sup>[[Archive.org]][635]</sup> (Usually those antennas are used by Penetration Testers to probe Wi-Fis from a distance and are often discussed within the scope of the Kali Linux distribution).
 
@@ -10513,11 +10633,11 @@ The probe can be found here: <https://ooni.org/install/> <sup>[[Archive.org]][65
 
 ## Integrity (if available):
 
-Usually, integrity checks[^474] are done using hashes of files (usually stored within checksum files). Older files could use CRC[^475], more recently MD5[^476] but those present several weaknesses (CRC, MD5[^477]) that make them unreliable for file integrity checks (which does not mean they are not still widely used in other contexts).
+Usually, integrity checks[^474] are done using hashes of files (usually stored within checksum files). Older files could use CRC[^475], more recently MD5[^476] but those present several weaknesses (CRC, MD5 [^477] that make them unreliable for file integrity checks (which does not mean they are not still widely used in other contexts).
 
 This is because they do not prevent Collision[^478] well enough and could allow an adversary to create a similar but malicious file that would still produce in the same CRC or MD5 hash despite having different content.
 
-For this reason, it is usually recommended to use SHA-based[^479] hashes and the most used is probably the SHA-2[^480] based SHA-256 for verifying file integrity. SHA is much more resistant to collisions[^481] than CRC and MD5. And collisions with SHA-256 or SHA-512 are rare and hard to compute for an adversary.
+For this reason, it is usually recommended to use SHA-based [^479] hashes and the most used is probably the SHA-2[^480] based SHA-256 for verifying file integrity. SHA is much more resistant to collisions[^481] than CRC and MD5. And collisions with SHA-256 or SHA-512 are rare and hard to compute for an adversary.
 
 If a SHA-256 checksum is available from the source of the file, you should not hesitate to use it to confirm the integrity of the file. Note that SHA-1 is not recommended, but is better than not having a hash to compare.
 
@@ -10535,7 +10655,7 @@ So how to check checksums? (In this case SHA-256 but you could change to SHA-512
 
     -   Compare your result to one from a source you trust for that file
 
--   macOS[^483]:
+-   macOS :
 
     -   Open a Terminal
 
@@ -10667,7 +10787,7 @@ So, if you are in doubt:
 
 -   For non-sensitive files, I do encourage you to check any documents/images/videos/archives/programs you intend to open with VirusTotal (or other similar tools) because ... Why not? (Either by uploading or checking hashes).
 
--   For sensitive files, I would recommend at least an offline unprivileged ClamAV scan of the files.
+-   For sensitive files, we would recommend at least an offline unprivileged ClamAV scan of the files.
 
 For instance, this guide's PDF files were submitted to VirusTotal because it is meant to be public knowledge and I see no valid argument against it. It does not guarantee the absence of malware, but it does not hurt to add this check.
 
@@ -10751,7 +10871,7 @@ The situation might look desperate, but it is not necessarily the case as there 
 
 There are plenty of methods you could use to bypass those restrictions locally. One of them would be to use portable apps[^502]. Those apps do not require installation on your system and can be run from a USB key or anywhere else.
 
-**But this is not a method I would recommend.**
+**But this is not a method we would recommend.**
 
 This is because those portable apps will not necessarily hide themselves (or be able to hide themselves) from the usage reports and forensic examination. This method is just too risky and will probably arise issues if noticed if you are in such a hostile environment.
 
@@ -10759,7 +10879,7 @@ Even the most basic controls (supervision or parental) will send out detailed ap
 
 ## Bootable Live Systems:
 
-This method is the one I would recommend in those cases.
+This method is the one we would recommend in those cases.
 
 It is relatively easy for your adversary to prevent this by setting up firmware BIOS/UEFI (see [Bios/UEFI/Firmware Settings of your laptop][Bios/UEFI/Firmware Settings of your laptop:]) controls but usually most adversaries will overlook this possibility which requires more technical knowledge than just relying on Software.
 
@@ -10779,7 +10899,7 @@ The BIOS/UEFI password on the other hand is much harder to bypass without risks.
 
 -   Guess/Know the password so that you can change the boot order of your laptop without raising suspicions
 
--   Reset the password using various methods to remove the password. **I would not recommend doing this because if your adversaries went the extra length of enabling this security feature, they probably will be suspicious if it were disabled, and this might increase suspicion and decrease your plausible deniability considerably.**
+-   Reset the password using various methods to remove the password. **we would not recommend doing this because if your adversaries went the extra length of enabling this security feature, they probably will be suspicious if it were disabled, and this might increase suspicion and decrease your plausible deniability considerably.**
 
 Again, this feature is usually overlooked by most unskilled/lazy adversaries and in my experience left disabled.
 
@@ -10959,7 +11079,7 @@ Cons:
 
 -   Even if you could, it lacks the best Extensions available for Firefox and Chrome.
 
-Overall, I would not recommend using Safari on a macOS VM but instead, go for another Browser such as Brave or Firefox.
+Overall, we would not recommend using Safari on a macOS VM but instead, go for another Browser such as Brave or Firefox.
 
 ## Firefox:
 
@@ -10987,13 +11107,13 @@ Security (especially sandboxing) of Firefox is arguably weaker than Chromium-bas
 
 If you are extra paranoid and want to use Tor Browser and have "Tor over VPN over Tor", you could go with Tor Browser within the VM as well. This is IMHO completely pointless/useless.
 
-I would not recommend this option. It is just silly.
+We would not recommend this option. It is just silly.
 
 # Appendix V1: Hardening your Browsers:
 
 ## Brave:
 
--   Download and install Brave browser from <https://brave.com/download/> <sup>[[Archive.org]][680]</sup>
+-   Download and install Brave browser from <https://brave.com/download/> <sup>[[Archive.org]][680]</sup>
 
 -   Open Brave Browser
 
@@ -11212,7 +11332,7 @@ macOS Only:
 
 Consider [Appendix A5: Additional browser precautions with JavaScript enabled]
 
-That's about it. Unfortunately, you will not be able to add extensions as those will require you to sign in into the App Store which you cannot do from a macOS VM. Again, I would not recommend sticking to Safari in a macOS VM but instead switching to Brave or Firefox.
+That's about it. Unfortunately, you will not be able to add extensions as those will require you to sign in into the App Store which you cannot do from a macOS VM. Again, we would not recommend sticking to Safari in a macOS VM but instead switching to Brave or Firefox.
 
 ## Firefox:
 
@@ -11540,7 +11660,7 @@ This is valid for Windows, Linux, and macOS.
 
 ![][688]
 
--   Personally, in the case of censorship or blocking, I would recommend using Meek-Azure bridges if needed. And Snowflake bridges as a second option.
+-   Personally, in the case of censorship or blocking, we would recommend using Meek-Azure bridges if needed. And Snowflake bridges as a second option.
 
 ![][686]
 
@@ -11570,7 +11690,9 @@ This is valid for Windows, Linux, and macOS.
 
 ![][690]
 
-I would recommend the "Safer" level for most cases. The Safest level should only be enabled if you think you are accessing suspicious or dangerous websites or if you are extra paranoid. The Safest mode will also most likely break many websites that rely actively on JavaScript.
+We would recommend the "Safest" level by default. The "Safer" level should be enabled if you think you need access to a website not working without JavaScript. The Safest mode will  most likely break many websites that rely actively on JavaScript.
+    
+If you are extra paranoid, use the "Safest" level by default and consider downgrading to Safer is the website is unusable because of Javascript blocking.
 
 **Optional and not recommended by the Tor Project**: If you are not using the "Safest" level, I will diverge from some but agree with others (for instance the Tails project and others[^525]) and will actually recommend some modifications of the default Tor Browser in the addition of two extensions:
 
@@ -11908,7 +12030,7 @@ You might also consider the use of something like AnonyMouth <https://web.archiv
 
 -   <https://wikipedia.org/wiki/Stylometry> <sup>[[Wikiless]][707]</sup> <sup>[[Archive.org]][708]</sup>: Gives a brief overview of Stylometry.
 
--   <https://wikipedia.org/wiki/Content_similarity_detection> <sup>[[Wikiless]][709]</sup> <sup>[[Archive.org]][710]</sup>: I would recommend reading this, quite informative.
+-   <https://wikipedia.org/wiki/Content_similarity_detection> <sup>[[Wikiless]][709]</sup> <sup>[[Archive.org]][710]</sup>: We would recommend reading this, quite informative.
 
 -   <https://wikipedia.org/wiki/Author_profiling> <sup>[[Wikiless]][711]</sup> <sup>[[Archive.org]][712]</sup>: Read through this as well if you are interested in this topic.
 
@@ -11924,7 +12046,7 @@ You might also consider the use of something like AnonyMouth <https://web.archiv
 
 -   <https://media.defcon.org/DEF%20CON%2026/DEF%20CON%2026%20presentations/DEFCON-26-Matt-Wixey-Betrayed-by-the-Keyboard-Updated.pdf> <sup>[[Archive.org]][721]</sup>: Explains how your writing style can be used to track you, I highly recommend reading through these slides, or watching the accompanying presentation on YouTube, this is quite similar to the last presentation.
 
--   <https://i.blackhat.com/us-18/Wed-August-8/us-18-Wixey-Every-ROSE-Has-Its-Thorn-The-Dark-Art-Of-Remote-Online-Social-Engineering.pdf> <sup>[[Archive.org]][722]</sup>: This goes over how to potentially spot deception through the internet, and presents a checklist to see how trustworthy someone is. I would advise reading the slides or watching the presentation on YouTube.
+-   <https://i.blackhat.com/us-18/Wed-August-8/us-18-Wixey-Every-ROSE-Has-Its-Thorn-The-Dark-Art-Of-Remote-Online-Social-Engineering.pdf> <sup>[[Archive.org]][722]</sup>: This goes over how to potentially spot deception through the internet, and presents a checklist to see how trustworthy someone is. We would advise reading the slides or watching the presentation on YouTube.
 
 # Appendix A5: Additional browser precautions with JavaScript enabled
 
@@ -11974,7 +12096,7 @@ Offline versions (best format for the best readability) of this guide at:
 
 -   PDF: <https://anonymousplanet-ng.org/export/guide.pdf> <sup>[[Archive.org]][726]</sup> <sup>[[Tor Mirror]][727]</sup>
 
--   OpenDocument Text (ODT) version at: <https://anonymousplanet-ng.org/export/guide.odt> <sup>[[Archive.org]][732]</sup> <sup>[[Tor Mirror]][733]</sup>
+-   <del>OpenDocument Text (ODT) version at: <https://anonymousplanet-ng.org/export/guide.odt> <sup>[[Archive.org]][732]</sup> <sup>[[Tor Mirror]][733]</sup></del> **(currently outdated, please use the online version)**
 
 # Appendix A7: Comparing versions
 
@@ -12690,8 +12812,6 @@ You can find some introduction on these on these projects:
 
 [^273]: Wikipedia, National Security Letter <https://en.wikipedia.org/wiki/National_security_letter> <sup>[[Wikiless]][1079]</sup> <sup>[[Archive.org]][1080]</sup>
 
-[^274]: TechCrunch, Proton logged IP address of French activist after order by Swiss authorities <https://techcrunch.com/2021/09/06/proton-logged-ip-address-of-french-activist-after-order-by-swiss-authorities/> <sup>[[Archive.org]][1081]</sup>
-
 [^275]: ArsTechnica, VPN servers seized by Ukrainian authorities weren't encrypted <https://arstechnica.com/gadgets/2021/07/vpn-servers-seized-by-ukrainian-authorities-werent-encrypted/> <sup>[[Archive.org]][1082]</sup>
 
 [^276]: BleepingComputer, DoubleVPN servers, logs, and account info seized by law enforcement <https://www.bleepingcomputer.com/news/security/doublevpn-servers-logs-and-account-info-seized-by-law-enforcement/> <sup>[[Archive.org]][1083]</sup>
@@ -12709,8 +12829,6 @@ You can find some introduction on these on these projects:
 [^282]: Internet Archive, Invisibler, What Everybody Ought to Know About HideMyAss <https://archive.is/ag9w4#selection-136.0-136.1>
 
 [^283]: Wikipedia, Warrant Canary <https://en.wikipedia.org/wiki/Warrant_canary> <sup>[[Wikiless]][1090]</sup> <sup>[[Archive.org]][1091]</sup>
-
-[^284]: Washington Post, The intelligence coup of the century <https://www.washingtonpost.com/graphics/2020/world/national-security/cia-crypto-encryption-machines-espionage/> <sup>[[Archive.org]][1092]</sup>
 
 [^285]: Swissinfo.ch, Second Swiss firm allegedly sold encrypted spying devices <https://www.swissinfo.ch/eng/second-swiss-firm-allegedly-sold-encrypted-spying-devices/46186432> <sup>[[Archive.org]][1093]</sup>
 
@@ -12826,7 +12944,7 @@ You can find some introduction on these on these projects:
 
 [^341]: Veracrypt Documentation, Rescue Disk <https://www.veracrypt.fr/en/VeraCrypt%20Rescue%20Disk.html> <sup>[[Archive.org]][1147]</sup>
 
-[^342]: St Cloud State University, Forensic Research on Solid State Drives using Trim Analysis <https://repository.stcloudstate.edu/cgi/viewcontent.cgi?article=1141&context=msia_etds> <sup>[[Archive.org]][1148]</sup>
+[^342]: St Cloud State University, Forensic Research on Solid State Drives using Trim Analysis <https://web.archive.org//web/20220612095503/https://repository.stcloudstate.edu/cgi/viewcontent.cgi?article=1141&context=msia_etds> <sup>[[Archive.org]][1148]</sup>
 
 [^343]: WindowsCentral, Trim Tutorial <https://www.windowscentral.com/how-ensure-trim-enabled-windows-10-speed-ssd-performance> <sup>[[Archive.org]][1149]</sup>
 
@@ -13076,7 +13194,7 @@ You can find some introduction on these on these projects:
 
 [^466]: Wikipedia, Faraday Cage, <https://en.wikipedia.org/wiki/Faraday_cage> <sup>[[Wikiless]][1287]</sup> <sup>[[Archive.org]][1288]</sup>
 
-[^467]: Edith Cowan University, A forensic examination of several mobile device Faraday bags & materials to test their effectiveness materials to test their effectiveness <https://ro.ecu.edu.au/cgi/viewcontent.cgi?article=1165&context=adf> <sup>[[Archive.org]][1289]</sup>
+[^467]: Edith Cowan University, A forensic examination of several mobile device Faraday bags & materials to test their effectiveness materials to test their effectiveness <https://web.archive.org/web/https://ro.ecu.edu.au/cgi/viewcontent.cgi?article=1165&context=adf> <sup>[[Archive.org]][1289]</sup>
 
 [^468]: arXiv, Deep-Spying: Spying using Smartwatch and Deep Learning <https://arxiv.org/pdf/1512.05616.pdf> <sup>[[Archive.org]][1290]</sup>
 
@@ -13548,7 +13666,7 @@ You can find some introduction on these on these projects:
   [56]: media/image6.jpeg
   [57]: https://web.archive.org/web/https://blog.apnic.net/2019/08/23/what-can-you-learn-from-an-ip-address/
   [58]: https://wikiless.org/wiki/Radio-frequency_identification
-  [59]: https://web.archive.org/web/https://en.wikipedia.org/wiki/Radio-frequency_identification
+  [59]: https://web.archive.org/web/https://web.archive.org/web/20220530073225/https://en.wikipedia.org/wiki/Radio-frequency_identification
   [60]: https://web.archive.org/web/http://rfpose.csail.mit.edu/
   [61]: https://yewtu.be/watch?v=HgDdaMy8KNE
   [62]: https://web.archive.org/web/https://www.news.ucsb.edu/2021/020392/dont-fidget-wifi-will-count-you
@@ -13585,7 +13703,7 @@ You can find some introduction on these on these projects:
   [93]: https://web.archive.org/web/https://mediasonar.com/
   [94]: https://web.archive.org/web/https://www.typingdna.com/
   [95]: https://web.archive.org/web/https://link.springer.com/10.1007/978-1-4614-7163-9_110198-1
-  [96]: https://web.archive.org/web/https://www.sciencedirect.com/science/article/pii/S1877042811013747/pdf?md5=253d8f1bb615d5dee195d353dc077d46&pid=1-s2.0-S1877042811013747-main.pdf
+  [96]: https://archive.ph/iuowI
   [97]: https://web.archive.org/web/https://www.researchgate.net/publication/300562034_Using_Social_Networks_Data_for_Behavior_and_Sentiment_Analysis
   [98]: https://web.archive.org/web/https://www.academia.edu/30936118/A_Survey_on_User_Behaviour_Analysis_in_Social_Networks
   [99]: https://web.archive.org/web/https://web.archive.org/web/https://sci-hub.se/10.1007/978-3-030-02592-2
@@ -13755,7 +13873,6 @@ You can find some introduction on these on these projects:
   [262]: https://web.archive.org/web/https://www.whonix.org/wiki/Cold_Boot_Attack_Defense
   [263]: https://web.archive.org/web/https://www.whonix.org/wiki/Protection_Against_Physical_Attacks
   [264]: https://web.archive.org/web/https://github.com/0xPoly/Centry
-  [265]: https://web.archive.org/web/https://github.com/AnonymousPlanet/Centry
   [266]: https://web.archive.org/web/https://github.com/hephaest0s/usbkill
   [267]: https://web.archive.org/web/https://github.com/Lvl4Sword/Killer
   [268]: https://web.archive.org/web/https://askubuntu.com/questions/153245/how-to-wipe-ram-on-shutdown-prevent-cold-boot-attacks
@@ -13921,26 +14038,20 @@ You can find some introduction on these on these projects:
   [419]: https://web.archive.org/web/https://www.amazon.com/gp/help/customer/display.html?nodeId=202140280
   [420]: https://web.archive.org/web/https://www.apple.com/legal/internet-services/icloud/en/terms.html
   [421]: https://web.archive.org/web/https://www.binance.com/en/terms
-  [422]: https://web.archive.org/web/https://briarproject.org/privacy-policy/
   [423]: https://web.archive.org/web/https://discord.com/terms
   [424]: https://web.archive.org/web/https://element.io/terms-of-service
   [425]: https://web.archive.org/web/https://www.facebook.com/terms.php
   [426]: https://web.archive.org/web/https://docs.github.com/en/free-pro-team@latest/github/site-policy/github-terms-of-service
   [427]: https://web.archive.org/web/https://about.gitlab.com/handbook/legal/subscription-agreement/
   [428]: https://web.archive.org/web/https://policies.google.com/terms
-  [429]: https://web.archive.org/web/https://www.ycombinator.com/legal/
   [430]: https://web.archive.org/web/https://help.instagram.com/581066165581870?ref=dp
   [431]: https://web.archive.org/web/https://jami.net/privacy-policy/
-  [432]: https://web.archive.org/web/https://www.ivpn.net/tos/
   [433]: https://web.archive.org/web/https://www.kraken.com/legal
   [434]: https://web.archive.org/web/https://www.linkedin.com/legal/user-agreement
   [435]: https://web.archive.org/web/https://policy.medium.com/medium-terms-of-service-9db0094a1e0f
   [436]: https://web.archive.org/web/https://www.microsoft.com/en/servicesagreement/
-  [437]: https://web.archive.org/web/https://mullvad.net/en/help/terms-service/
-  [438]: https://web.archive.org/web/https://njal.la/tos/
   [439]: https://web.archive.org/web/https://onlyfans.com/terms
   [440]: https://web.archive.org/web/https://proton.me/legal/terms
-  [441]: https://web.archive.org/web/https://protonvpn.com/terms-and-conditions
   [442]: https://web.archive.org/web/https://www.redditinc.com/policies
   [443]: https://web.archive.org/web/https://old.reddit.com/r/ShadowBan/comments/8a2gpk/an_unofficial_guide_on_how_to_avoid_being/
   [444]: https://web.archive.org/web/https://slashdotmedia.com/terms-of-use/
@@ -14093,7 +14204,7 @@ You can find some introduction on these on these projects:
   [588]: https://web.archive.org/web/https://privazer.com/
   [589]: https://web.archive.org/web/https://www.system-rescue.org/
   [590]: https://web.archive.org/web/https://www.lifewire.com/how-to-erase-a-hard-drive-using-dban-2619148
-  [591]: https://web.archive.org/web/https://github.com/PartialVolume/shredos.2020.02
+  [591]: https://web.archive.org/web/https://github.com/PartialVolume/shredos.x86_64
   [592]: https://web.archive.org/web/https://rufus.ie/
   [593]: https://web.archive.org/web/https://kb.sandisk.com/app/answers/detail/a_id/15108/~/dashboard-support-information
   [594]: https://web.archive.org/web/https://www.seagate.com/support/downloads/seatools/
@@ -14230,15 +14341,10 @@ You can find some introduction on these on these projects:
   [https://nitter.net]: https://nitter.fdn.fr
   [723]: https://web.archive.org/web/https://github.com/spikecodes/libreddit
   [724]: https://web.archive.org/web/https://simplytranslate.org/
-  [725]: https://mirror.anonymousplanet-ng.org/export/guide.pdf
   [726]: https://web.archive.org/web/https://anonymousplanet-ng.org/export/guide.pdf
   [727]: http://thgtoa7imksbg7rit4grgijl2ef6kc7b56bp56pmtta4g354lydlzkqd.onion/guide.pdf
-  [728]: https://mirror.anonymousplanet-ng.org/export/guide-dark.pdf
-  [729]: https://web.archive.org/web/https://anonymousplanet-ng.org/export/guide-dark.pdf
-  [730]: http://thgtoa7imksbg7rit4grgijl2ef6kc7b56bp56pmtta4g354lydlzkqd.onion/export/guide-dark.pdf
-  [731]: https://mirror.anonymousplanet-ng.org/export/guide.odt
   [732]: https://web.archive.org/web/https://anonymousplanet-ng.org/export/guide.odt
-  [733]: http://thgtoa7imksbg7rit4grgijl2ef6kc7b56bp56pmtta4g354lydlzkqd.onion/export/guide.odt
+  [733]: http://thgtoa7imksbg7rit4grgijl2ef6kc7b56bp56pmtta4g354lydlzkqd.onion/guide.odt
   [734]: https://web.archive.org/web/https://help.libreoffice.org/7.1/en-US/text/shared/guide/redlining_doccompare.html
   [735]: https://web.archive.org/web/https://www.whonix.org/wiki/Surfing_Posting_Blogging#Anonymous_File_Sharing
   [736]: https://yewtu.be/watch?v=H33ggs7bh8M
@@ -14599,7 +14705,6 @@ You can find some introduction on these on these projects:
   [1089]: https://web.archive.org/web/https://en.wikipedia.org/wiki/Lavabit
   [1090]: https://wikiless.org/wiki/Warrant_canary
   [1091]: https://web.archive.org/web/https://en.wikipedia.org/wiki/Warrant_canary
-  [1092]: https://web.archive.org/web/https://www.washingtonpost.com/graphics/2020/world/national-security/cia-crypto-encryption-machines-espionage/
   [1093]: https://web.archive.org/web/https://www.swissinfo.ch/eng/second-swiss-firm-allegedly-sold-encrypted-spying-devices/46186432
   [1094]: https://wikiless.org/wiki/The_Lives_of_Others
   [1095]: https://web.archive.org/web/https://en.wikipedia.org/wiki/The_Lives_of_Others
@@ -14879,4 +14984,8 @@ You can find some introduction on these on these projects:
   [1369]: https://web.archive.org/web/20220327075818/https://research.oxt.me/alerts/2020/08/21/Wasabi-Wallet
   [1370]: https://web.archive.org/web/20220510172742/https://docs.samourai.io/whirlpool/start
   [1371]: https://web.archive.org/web/https://positive.security/blog/video-depixelation
-  
+  [1372]: https://web.archive.org/web/https://www.qubes-os.org/doc/upgrade/4.1/
+  [1373]: https://web.archive.org/web/https://safing.io/portmaster/
+  [1374]: https://web.archive.org/web/https://safing.io/portmaster/https://docs.safing.io/portmaster/install/status/vpn-compatibility
+  [1375]: https://web.archive.org/web/https://blogs.oracle.com/virtualization/post/install-microsoft-windows-11-on-virtualbox
+  [1376]: https://web.archive.org/web/https://www.whonix.org/wiki/Release_Upgrade_Whonix_15_to_Whonix_16
