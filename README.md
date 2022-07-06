@@ -40,9 +40,13 @@ If you want to compare an older ODT file with a newer one, use the LibreWriter c
 
 Feel free to submit issues using Github Issues with the repository link above. Criticism, opinions, and ideas are welcome!
 
-Follow or contact me on:
+Follow or contact us on: 
 
-Discussion Channels:
+- Twitter: <https://twitter.com/@anonypla>
+- Mastodon: <https://mastodon.social/@anonymous_planet>
+
+Join our discussion channels:
+
 - Matrix room: ```#anonymity:matrix.org``` <https://matrix.to/#/#anonymity:matrix.org>
 - Matrix space: ```#privacy-security-anonymity:matrix.org``` <https://matrix.to/#/#privacy-security-anonymity:matrix.org>
 
