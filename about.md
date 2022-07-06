@@ -6,14 +6,13 @@ Please share this project if you enjoy it and think it might be useful to others
 
 Follow or contact us on: 
 - Twitter: <https://twitter.com/AnonyPla>
-- Mastodon: <https://mastodon.social/@anonymousplanet>
-- Element/Matrix.org: <del>@anonypla:envs.net, @anonypla:tchncs.de, and @anonypla:matrix.org </del> (all deactivated permanently)
+- Mastodon: <https://mastodon.social/@anonymous_planet>
+- Element/Matrix.org: <https://matrix.to/#/#anonymity:matrix.org
 - E-Mail: <contact@anonymousplanet-ng.org>
 
 Discussion Channels:
 - Matrix room: ```#anonymity:matrix.org``` <https://matrix.to/#/#anonymity:matrix.org>
 - Matrix space: ```#privacy-security-anonymity:matrix.org``` <https://matrix.to/#/#privacy-security-anonymity:matrix.org>
-- Github Discussions: <https://github.com/AnonyPla-ng/thgtoa/discussions>
 
 **Below you'll find the original about text from the initial founder, Lena, of this guide before she went missing, most links are invalid.**
 
@@ -44,8 +43,8 @@ Follow or contact me on:
 - Twitter: <https://twitter.com/AnonyPla> (account taken over and reset for continuing using for the project)
 - Mastodon: <del><https://mastodon.social/@anonypla></del> (account deleted or disabled)
 - Element/Matrix.org: <del>```@anonypla:envs.net``` **(@anonypla:tchncs.de, and @anonypla:matrix.org are currently out of order)**</del> (all acounts are deactivated)
-  - Reddit: <del><https://old.reddit.com/message/compose/?to=AnonyPla></del> (account deleted)
-  - E-Mail: <del><contact@anonymousplanet.org></del> (DNS MX records removed and mail hosting deleted)
+- Reddit: <del><https://old.reddit.com/message/compose/?to=AnonyPla></del> (account deleted)
+- E-Mail: <del><contact@anonymousplanet.org></del> (DNS MX records removed and mail hosting deleted)
 
 Discussion Channels:
 - Matrix room: ```#anonymity:matrix.org``` <https://matrix.to/#/#anonymity:matrix.org>
