@@ -1,5 +1,6 @@
 *.gem
 *.rbc
+*-cache
 /.config
 /coverage/
 /InstalledFiles
@@ -9,6 +10,7 @@
 /test/tmp/
 /test/version_tmp/
 /tmp/
+_posts
 
 ## Environment normalization:
 /.bundle/
