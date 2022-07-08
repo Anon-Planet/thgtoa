@@ -448,7 +448,7 @@ You must consider your threat model[^12] before going further.
 
 (Illustration by Randall Munroe, xkcd.com, licensed under CC BY-NC 2.5)
 
-Will this guide help you protect your privacy from OSINT researchers like Bellingcat[^13], Doxing[^14] trolls on 4chan[^15], and others that have no access to the NSA toolbox? More likely. Tho we would not be so sure about 4chan.
+Will this guide help you protect your privacy from OSINT researchers like Bellingcat[^13], Doxing[^14] trolls on 4chan[^15], and others that have no access to the NSA toolbox? More likely. Tho I would not be so sure about 4chan.
 
 Here is a basic simplified threat model for this guide:
 
@@ -502,7 +502,7 @@ First, you could also consider these more general resources on privacy and secur
 
 -   Privacy Tools*: <https://privacytools.io> <sup>[[Archive.org]][45]</sup>
 
-\* Note that these websites could contain affiliate/sponsored content and/or merchandising. This guide does not endorse and is not sponsored by any commercial entity in any way.
+*Note that these websites could contain affiliate/sponsored content and/or merchandising. This guide does not endorse and is not sponsored by any commercial entity in any way.*
 
 If you skipped those, you should really still consider viewing this YouTube playlist from the Techlore Go Incognito project (<https://github.com/techlore-official/go-incognito> <sup>[[Archive.org]][46]</sup>) as an introduction before going further: <https://www.youtube.com/playlist?list=PL3KeV6Ui_4CayDGHw64OFXEPHgXLkrtJO> <sup>[[Invidious]][47]</sup>. This guide will cover many of the topics in the videos of this playlist with more details and references as well as some added topics not covered within that series. This will just take you 2 or 3 hours to watch it all.
 
@@ -556,7 +556,7 @@ Here are some online resources you can use to find some information about your c
 
     -   <https://check.torproject.org>
 
-For those reasons, we will need to obfuscate and hide that origin IP (the one tied to your identification) or hide it as much as we can through a combination of various means:
+For those reasons, I will need to obfuscate and hide that origin IP (the one tied to your identification) or hide it as much as I can through a combination of various means:
 
 -   Using a public Wi-Fi service (free).
 
@@ -636,11 +636,11 @@ Here is an illustration showing the current state of DNS and HTTPS privacy based
 
 ![][56]
 
-As for your normal daily use (non-sensitive), remember that only Firefox-based browsers support ECH (formerly eSNI) so far and that it is only useful with websites hosted behind Cloudflare CDN at this stage. If you prefer a Chrome-based version (which is understandable for some due to some better-integrated features like on-the-fly Translation), then we would recommend the use of Brave instead which supports all Chrome extensions and offers much better privacy than Chrome.
+As for your normal daily use (non-sensitive), remember that only Firefox-based browsers support ECH (formerly eSNI) so far and that it is only useful with websites hosted behind Cloudflare CDN at this stage. If you prefer a Chrome-based version (which is understandable for some due to some better-integrated features like on-the-fly Translation), then I would recommend the use of Brave instead which supports all Chrome extensions and offers much better privacy than Chrome.
 
 But the story does not stop there right. Now because after all this, even if you encrypt your DNS and use all possible mitigations. Simple IP requests to any server will probably allow an adversary to still detect which site you are visiting. And this is simply because the majority of websites have unique IPs tied to them as explained here: <https://blog.apnic.net/2019/08/23/what-can-you-learn-from-an-ip-address/> <sup>[[Archive.org]][57]</sup>. This means that an adversary can create a dataset of known websites for instance including their IPs and then match this dataset against the IP you ask for. In most cases, this will result in a correct guess of the website you are visiting. This means that despite OCSP stapling, despite ECH/eSNI, despite using Encrypted DNS ... An adversary can still guess the website you are visiting anyway.
 
-Therefore, to mitigate all these issues (as much as possible and as best as we can), this guide will later recommend two solutions: Using Tor and a virtualized (See [Appendix W: Virtualization][Appendix V1: Hardening your Browsers:]) multi-layered solution of VPN over Tor solution (DNS over VPN over Tor or DNS over TOR). Other options will also be explained (Tor over VPN, VPN only, No Tor/VPN) but are less recommended.
+Therefore, to mitigate all these issues (as much as possible and as best as I can), this guide will later recommend two solutions: Using Tor and a virtualized (See [Appendix W: Virtualization][Appendix V1: Hardening your Browsers:]) multi-layered solution of VPN over Tor solution (DNS over VPN over Tor or DNS over TOR). Other options will also be explained (Tor over VPN, VPN only, No Tor/VPN) but are less recommended.
 
 ### Your RFID enabled devices:
 
@@ -918,7 +918,7 @@ It is important to understand that this telemetry data can be tied to your devic
 
 This does not mean for example that Apple devices are terrible choices for good Privacy (tho this might be changing[^111]), but they are certainly not the best choices for (relative) Anonymity. They might protect you from third parties knowing what you are doing but not from themselves. In all likelihood, they certainly know who you are.
 
-Later in this guide, we will use all the means at our disposal to disable and block as much telemetry as possible to mitigate this attack vector in the Operating Systems supported in this guide. These will include Windows, macOS, and even Linux in some regard.
+Later in this guide, I will use all the means at our disposal to disable and block as much telemetry as possible to mitigate this attack vector in the Operating Systems supported in this guide. These will include Windows, macOS, and even Linux in some regard.
 
 See [Appendix N: Warning about smartphones and smart devices]
 
@@ -1082,7 +1082,7 @@ You should never share real individual experiences/details using your anonymous 
 
 "Hell is other people", even if you evade every method listed above, you are not out of the woods yet thanks to the widespread use of advanced Face recognition by everyone.
 
-Companies like Facebook have used advanced face recognition for years[^155]'[^156] and have been using other means (Satellite imagery) to create maps of "people" around the world[^157]. This evolution has been going on for years to the point we can now say "We lost control of our faces"[^158].
+Companies like Facebook have used advanced face recognition for years[^155]'[^156] and have been using other means (Satellite imagery) to create maps of "people" around the world[^157]. This evolution has been going on for years to the point I can now say "we lost control of our faces"[^158].
 
 If you are walking in a touristy place, you will most likely appear in someone's selfie within minutes without knowing it. That person could then go ahead and upload that selfie to various platforms (Twitter, Google Photos, Instagram, Facebook, Snapchat ...). Those platforms will then apply face recognition algorithms to those pictures under the pretext of allowing better/easier tagging or to better organize your photo library. In addition to this, the same picture will provide a precise timestamp and in most cases geolocation of where it was taken. Even if the person does not provide a timestamp and geolocation, it can still be guessed with other means[^159]'[^160].
 
@@ -1438,7 +1438,7 @@ There is a frequent adage among the infosec community: "Don't roll your own cryp
 
 And there are reasons[^255]'[^256]'[^257]'[^258] for that:
 
-We would not want people discouraged from studying and innovating in the crypto field because of that adage. So instead, we would recommend people to be cautious with "Roll your own crypto" because it is not necessarily good crypto:
+We would not want people discouraged from studying and innovating in the crypto field because of that adage. So instead, I would recommend people to be cautious with "Roll your own crypto" because it is not necessarily good crypto:
 
 -   Good cryptography is not easy and usually takes years of research to develop and fine-tune.
 
@@ -1747,9 +1747,9 @@ First, here is a small basic UML diagram showing your available options accordin
 
         -   **You could go for Tails, Whonix routes.**
 
-    -   It is new and it has great specs (more than 16GB or for a perfect experience 32GB of RAM, >250GB of disk space, recent fast CPU):
+    -   It is new and it has great specs (more than 16GB or ideally 32GB of RAM, >250GB of disk space, recent fast CPU):
 
-        -   **You could go for any route, but we would recommend Qubes OS if your threat model allows it.**
+        -   **You could go for any route, but I would recommend Qubes OS if your threat model allows it.**
 
     -   If it is an ARM-based M1 Mac:
 
@@ -1765,7 +1765,7 @@ First, here is a small basic UML diagram showing your available options accordin
 
             -   **Qubes OS is not supported on ARM architecture yet.**
 
-**Your only option on M1 Macs is probably to stick with Tor Browses for now. But we would guess that if you can afford an M1 Mac you should probably get a dedicated x86 laptop for more sensitive activities.**
+**Your only option on M1 Macs is probably to stick with Tor Browses for now. But I would guess that if you can afford an M1 Mac you should probably get a dedicated x86 laptop for more sensitive activities.**
 
 ### Skills:
 
@@ -1985,7 +1985,7 @@ Therefore IMHO, it is just more convenient, cheaper, and less risky to just get 
 
 **Skip this step if you have no intention of creating anonymous accounts on most mainstream platforms but just want anonymous browsing or if the platforms you will use allow registration without a phone number.**
 
-Get at least one or two decent size generic USB keys (at least 16GB but we would recommend 32GB).
+Get at least one or two decent size generic USB keys (at least 16GB but I would recommend 32GB).
 
 Please do not buy or use gimmicky self-encrypting devices such as these: <https://syscall.eu/blog/2018/03/12/aigo_part1/> <sup>[[Archive.org]][235]</sup>
 
@@ -2555,7 +2555,7 @@ You can mitigate this attack by doing the following (as recommended earlier):
 
 -   Set up BIOS/UEFI/Firmware passwords to prevent any unauthorized boot of an unauthorized device.
 
--   Some OSes and Encryption software have anti-EvilMaid protection that can be enabled. This is the case with Windows/Veracrypt and QubeOS (only on intel CPUs).
+-   Some OSes and Encryption software have anti-EvilMaid protection that can be enabled. This is the case with Windows/Veracrypt and QubeOS (only on Intel CPUs).
 
 ##### Cold-Boot Attack:
 
@@ -2563,7 +2563,7 @@ Cold Boot attacks[^319] are trickier than the Evil Maid Attack but can be part o
 
 The idea is rather simple, as shown in this video[^320], an adversary could theoretically quickly boot your device on a special USB key that would copy the content of the RAM (the memory) of the device after you shut it down. If the USB ports are disabled or if they feel like they need more time, they could open it and "cool down" the memory using a spray or other chemicals (liquid nitrogen for instance) preventing the memory from decaying. They could then be able to copy its content for analysis. This memory dump could contain the key to decrypt your device. We will later apply a few principles to mitigate these.
 
-In the case of Plausible Deniability, there have been some forensics studies[^321] about technically proving the presence of the hidden data with a simple forensic examination (without a Cold Boot/Evil Maid Attack) but these have been contested by other studies[^322] and by the maintainer of Veracrypt[^323] so we would not worry too much about those yet.
+In the case of Plausible Deniability, there have been some forensics studies[^321] about technically proving the presence of the hidden data with a simple forensic examination (without a Cold Boot/Evil Maid Attack) but these have been contested by other studies[^322] and by the maintainer of Veracrypt[^323] so I would not worry too much about those yet.
 
 The same measures used to mitigate Evil Maid attacks should be in place for Cold Boot attacks with some added ones:
 
@@ -2705,7 +2705,7 @@ For other distros, you will have to document yourself, but it will likely be sim
 
 #### Note about plausible deniability on Linux:
 
-There are several ways to achieve plausible deniability on Linux[^329] and it is possible to achieve. Here are some more details about some of the ways we would recommend. All these options require some higher level of skills at using Linux.
+There are several ways to achieve plausible deniability on Linux[^329] and it is possible to achieve. Here are some more details about some of the ways I would recommend. All these options require some higher level of skills at using Linux.
 
 ##### The Detached Headers Way:
 
@@ -2828,7 +2828,7 @@ Unfortunately, some attacks are still possible and an adversary could disable th
 
 ##### Enable Hibernation instead of sleep:
 
-Again, this is to prevent some cold-boot and evil-maid attacks by powering down your RAM and cleaning the encryption key when you close the lid. You should always either hibernate or shut down. On macOS, the hibernate feature even has a special option to specifically clear the encryption key from memory when hibernating (while you might have to wait for the memory to decay on other Operating Systems). Once again there are no easy options to do this within the settings so instead, we will have to do this by running a few commands to enable hibernation:
+Again, this is to prevent some cold-boot and evil-maid attacks by powering down your RAM and cleaning the encryption key when you close the lid. You should always either hibernate or shut down. On macOS, the hibernate feature even has a special option to specifically clear the encryption key from memory when hibernating (while you might have to wait for the memory to decay on other Operating Systems). Once again there are no easy options to do this within the settings so instead, I will have to do this by running a few commands to enable hibernation:
 
 -   Open a Terminal
 
@@ -2988,7 +2988,7 @@ But here are the steps:
 
 Unfortunately, this is not enough. With this setup, your Bitlocker key can just be stored as-is in the TPM chip of your computer. This is rather problematic as the key can be extracted in some cases with ease[^334]'[^335]'[^336]'[^337].
 
-To mitigate this, we will have to enable a few more options as per the recommendations of Microsoft[^338]:
+To mitigate this, you will have to enable a few more options as per the recommendations of Microsoft[^338]:
 
 -   Click the Windows icon
 
@@ -3014,7 +3014,7 @@ To mitigate this, we will have to enable a few more options as per the recommend
 
 -   Right Click on it and click "Run as Administrator"
 
--   Run ```manage-bde -protectors -delete c:``` (this will delete current protection: the recovery key we will not need)
+-   Run ```manage-bde -protectors -delete c:``` (this will delete current protection: the recovery key you will not need)
 
 -   Run ```manage-bde -protectors -add c: -TPMAndPIN``` (this will prompt you for a pre-boot password)
 
@@ -3190,9 +3190,9 @@ This route is rather straightforward and will just encrypt your current Operatin
 
     -   If you have no sensitive data yet on this laptop, select None
 
-    -   If you have sensitive data on an SSD, Trim alone should take care of it[^342] but we would recommend one pass (random data) just to be sure.
+    -   If you have sensitive data on an SSD, Trim alone should take care of it[^342] but I would recommend one pass (random data) just to be sure.
 
-    -   If you have sensitive data on an HDD, there is no Trim, and we would recommend at least 1-pass.
+    -   If you have sensitive data on an HDD, there is no Trim, and I would recommend at least 1-pass.
 
 -   Test your setup. Veracrypt will now reboot your system to test the bootloader before encryption. This test must pass for encryption to go forward.
 
@@ -3286,7 +3286,7 @@ Do not connect this OS to your known Wi-Fi. You should download the Veracrypt in
 
 -   Select yes to Large Files
 
--   Create some Entropy by moving the mouse around until the bar is full and select NTFS (do not select exFAT as we want this outer volume to look "normal" and NTFS is normal).
+-   Create some Entropy by moving the mouse around until the bar is full and select NTFS (do not select exFAT as you want this outer volume to look "normal" and NTFS is normal).
 
 -   Format the Outer Volume
 
@@ -3330,7 +3330,7 @@ See [Appendix B: Windows Additional Privacy Settings]
 
 ###### Step 7: Veracrypt installation and encryption process start (Decoy OS)
 
-Now we will encrypt the Decoy OS:
+Now you will encrypt the Decoy OS:
 
 -   Install Veracrypt
 
@@ -3470,7 +3470,7 @@ Remember [Appendix W: Virtualization][Appendix V1: Hardening your Browsers:].
 
 This step and the following steps should be done from within the Host OS. This can either be your Host OS with simple encryption (Windows/Linux/macOS) or your Hidden OS with plausible deniability (Windows only).
 
-In this route, we will make extensive use of the free Oracle Virtualbox[^348] software. This is a virtualization software in which you can create Virtual Machines that emulate a computer running a specific OS (if you want to use something else like Xen, Qemu, KVM, or VMWARE, feel free to do so but this part of the guide covers Virtualbox only for convenience).
+In this route, you will make extensive use of the free Oracle Virtualbox[^348] software. This is a virtualization software in which you can create Virtual Machines that emulate a computer running a specific OS (if you want to use something else like Xen, Qemu, KVM, or VMWARE, feel free to do so but this part of the guide covers Virtualbox only for convenience).
 
 So, you should be aware that Virtualbox is not the virtualization software with the best track record in terms of security and some of the reported issues[^349] have not been completely fixed to this date[^350] and if you are using Linux with a bit more technical skills, you should consider using KVM instead by following the guide available at Whonix here <https://www.whonix.org/wiki/KVM> <sup>[[Archive.org]][308]</sup> and here <https://www.whonix.org/wiki/KVM#Why_Use_KVM_Over_VirtualBox.3F> <sup>[[Archive.org]][309]</sup>
 
@@ -3578,7 +3578,7 @@ More information at:
 
 #### Tor over VPN:
 
-You might be wondering: Well, what about using Tor over VPN instead of VPN over Tor? Well, we would not necessarily it:
+You might be wondering: Well, what about using Tor over VPN instead of VPN over Tor? Well, I would not necessarily recommend it:
 
 -   Disadvantages:
 
@@ -3845,7 +3845,7 @@ Consider using AppArmor on your Whonix Workstations by following this guide: <ht
 
 ##### If you can use Tor (natively or over a VPN):
 
-Use the Linux Distro of your choice. we would recommend Ubuntu or Fedora for convenience but any other would work too. Be sure to not enable any telemetry.
+Use the Linux Distro of your choice. I would recommend Ubuntu or Fedora for convenience but any other would work too. Be sure to not enable any telemetry.
 
 Refer to this tutorial <https://www.whonix.org/wiki/Other_Operating_Systems> <sup>[[Archive.org]][345]</sup> for detailed instructions.
 
@@ -3853,7 +3853,7 @@ Consider hardening the VM as recommended in [Hardening Linux].
 
 ##### If you cannot use Tor:
 
-Use the Linux Distro of your choice. we would recommend Ubuntu or Fedora for convenience but any other would work too. Be sure to not enable any telemetry. You could go with the risky route: See [Appendix P: Accessing the internet as safely as possible when Tor and VPNs are not an option]
+Use the Linux Distro of your choice. I would recommend Ubuntu or Fedora for convenience but any other would work too. Be sure to not enable any telemetry. You could go with the risky route: See [Appendix P: Accessing the internet as safely as possible when Tor and VPNs are not an option]
 
 ##### Choose a browser within the VM:
 
@@ -3933,7 +3933,7 @@ Refer to this tutorial <https://www.whonix.org/wiki/Other_Operating_Systems> <su
 
 -   Windows might prompt you if you want to be "discoverable" on this network. Click NO. Always stay on a "public network" if prompted.
 
-**Every time you will power on this VM in the future, you should ideally change its Ethernet Mac Address before each boot. You can do this in Virtualbox > Settings > Network > Advanced > Click the refresh button next to the MAC address. You can only do this while the VM is powered off.**
+**Every time you will power on this VM in the future, you should make sure to change its Ethernet Mac Address before each boot. You can do this in Virtualbox > Settings > Network > Advanced > Click the refresh button next to the MAC address. You can only do this while the VM is powered off.**
 
 #### If you cannot use Tor:
 
@@ -3967,7 +3967,7 @@ See [Appendix P: Accessing the internet as safely as possible when Tor and VPNs 
 
 -   Windows will prompt you if you want to be discoverable on this network. Click NO.
 
-**Every time you will power on this VM in the future, you should change its Ethernet Mac Address before each boot. You can do this in Virtualbox > Settings > Network > Advanced > Click the refresh button next to the MAC address. You can only do this while the VM is powered off.**
+**Every time you will power on this VM in the future, you should make sure to change its Ethernet Mac Address before each boot. You can do this in Virtualbox > Settings > Network > Advanced > Click the refresh button next to the MAC address. You can only do this while the VM is powered off.**
 
 #### Choose a browser within the VM:
 
@@ -4015,7 +4015,7 @@ Just use the tutorials as is and see [Appendix P: Accessing the internet as safe
 
 Two possibilities: AnBox or Android-x86
 
-Personally, we would recommend AnBox over Android-x86 but it requires Linux
+Personally, I would recommend AnBox over Android-x86 but it requires Linux
 
 ##### AnBox:
 
@@ -4199,7 +4199,7 @@ This step will allow you to configure your Host OS so that only the Whonix Gatew
 
 There are three ways to do this:
 
--   The Lazy Way (not really recommended): not supported by Whonix and might have some security implications as you will expose the Whonix Gateway VM to the Public Wi-Fi network. we would recommend against this unless you are in a hurry or very lazy.
+-   The Lazy Way (not really recommended): not supported by Whonix and might have some security implications as you will expose the Whonix Gateway VM to the Public Wi-Fi network. I would recommend against this unless you are in a hurry or very lazy.
 
     -   **This method will not work with Wi-Fi captive portals requiring any registration to connect.**
 
@@ -4219,7 +4219,7 @@ The illustration below shows the result of this step:
 
 ##### Configuration of the Whonix Gateway VM:
 
-For this to work, we will need to change some configurations on the Whonix Gateway VM. We will need to add a DHCP client to the Whonix Gateway to receive IP addresses from the network. To do those changes the Host OS will still have to have internet access allowed for now.
+For this to work, I will need to change some configurations on the Whonix Gateway VM. We will need to add a DHCP client to the Whonix Gateway to receive IP addresses from the network. To do those changes the Host OS will still have to have internet access allowed for now.
 
 So here is how:
 
@@ -4267,7 +4267,7 @@ So here is how:
 
 ##### Configuration of the Host OS:
 
-Now we must block internet access from your Host OS while still allowing the VM to connect. This will be done by connecting to Wi-Fi with the Host OS but without assigning itself an IP address. The VM will then use your Wi-fi association to get an IP address.
+Now you must block internet access from your Host OS while still allowing the VM to connect. This will be done by connecting to Wi-Fi with the Host OS but without assigning itself an IP address. The VM will then use your Wi-fi association to get an IP address.
 
 ###### Windows Host OS:
 
@@ -4331,7 +4331,7 @@ Yet this will still not be supported by the Whonix project, but it is fine as th
 
 This option will require an additional VM between the Host OS and the Whonix Gateway to act as a Network Bridge.
 
-For this purpose, I will recommend the use of a lightweight Linux Distro. Any will do but the easiest IMHO will be an Ubuntu-based distro and we would recommend the lightweight XUbuntu as it will be extremely easy to configure this setup.
+For this purpose, I will recommend the use of a lightweight Linux Distro. Any will do but the easiest IMHO will be an Ubuntu-based distro and I would recommend the lightweight XUbuntu as it will be extremely easy to configure this setup.
 
 Why XUbuntu and not Ubuntu or KUbuntu? Because XUbuntu uses an XFCE desktop environment which is lightweight and this VM will only serve as a proxy and nothing else.
 
@@ -4465,7 +4465,7 @@ By default, the Whonix Gateway has no DHCP client and will require one to get an
 
 ##### Configuration of the Host OS:
 
-Now we must block internet access from your Host OS while still allowing the XUbuntu Bridge VM to connect. This will be done by connecting to Wi-Fi with the Host OS but without assigning itself a gateway address. The VM will then use your Wi-fi association to get an IP address.
+Now you must block internet access from your Host OS while still allowing the XUbuntu Bridge VM to connect. This will be done by connecting to Wi-Fi with the Host OS but without assigning itself a gateway address. The VM will then use your Wi-fi association to get an IP address.
 
 If necessary, from the XUbuntu Bridge VM, you will be able to launch a Browser to enter information into any captive/registration portal on the Wi-Fi network.
 
@@ -4543,7 +4543,7 @@ This way will not go against Whonix recommendations (as it will not expose the W
 
 This option will require an additional VM between the Host OS and the Whonix Gateway to act as a Network Bridge and to connect to the Wi-Fi network. **This option requires a working USB Wi-Fi Dongle that will be passed through to a bridge VM.**
 
-For this purpose, I will recommend the use of a lightweight Linux Distro. Any will do but the easiest IMHO will be an Ubuntu-based distro and we would recommend the lightweight XUbuntu as it will be extremely easy to configure this setup.
+For this purpose, I will recommend the use of a lightweight Linux Distro. Any will do but the easiest IMHO will be an Ubuntu-based distro and I would recommend the lightweight XUbuntu as it will be extremely easy to configure this setup.
 
 Why XUbuntu and not Ubuntu or KUbuntu? Because XUbuntu uses an XFCE desktop environment which is lightweight and this VM will only serve as a proxy and nothing else.
 
@@ -4675,7 +4675,7 @@ At this stage, your Host OS should have no network at all and your XUbuntu VM sh
 
 ##### Additional configuration of the Whonix Gateway VM:
 
-Now it is time to configure the Whonix Gateway VM to get access from the shared network from the bridge VM we just made on the earlier step:
+Now it is time to configure the Whonix Gateway VM to get access from the shared network from the bridge VM you just made on the earlier step:
 
 -   Go into the VirtualBox Application and select the Whonix Gateway VM
 
@@ -4950,7 +4950,7 @@ We will follow the instructions from their own guide <https://www.qubes-os.org/d
 
     -   If you want to use Tor over VPN or cannot use any of those, leave it unchecked.
 
-    -   Be absolutely sure that you are verifying the signature of the ISO, which you can find on this page: <https://www.qubes-os.org/security/verifying-signatures/> <sup>[[Archive.org]][1367]</sup>. Check by obtaining the fingerprint from multiple independent sources in several different ways as recommended. This is to ensure the image has not been tampered with. Do not skip this vital step even though we know we are getting the ISO from a trusted source, because it's possible for the Qubes website to be compromised.
+    -   Be absolutely sure that you are verifying the signature of the ISO, which you can find on this page: <https://www.qubes-os.org/security/verifying-signatures/> <sup>[[Archive.org]][1367]</sup>. Check by obtaining the fingerprint from multiple independent sources in several different ways as recommended. This is to ensure the image has not been tampered with. Do not skip this vital step even though you know you are getting the ISO from a trusted source, because it's possible for the Qubes website to be compromised.
 
 -   If you cannot use Tor at all, there is also no point in installing Whonix. So, you should disable Whonix installation within the Software Selection Menu.
 
@@ -5000,7 +5000,7 @@ Remember this should be done from a safe place (see [Find some safe places with 
 
 ### Upgrading Qubes OS from 4.0.x to 4.1.x (you should do it)
 
-Personaly, we wouldn't do it in-place and do a fresh install. 
+Personally, I wouldn't do it in-place and do a fresh install. 
 
 But if you really want to, it's technically possible by following this guide: <https://www.qubes-os.org/doc/upgrade/4.1/> <sup>[[Archive.org]][1372]</sup>
 
@@ -5066,7 +5066,7 @@ Basically, AppArmor[^367] is an application sandboxing system. By default, it is
 
 ##### SELinux:
 
-SELinux[^368] is similar to AppArmor. The differences between SELinux and AppArmor are technical details into which we will not get.
+SELinux[^368] is similar to AppArmor. The differences between SELinux and AppArmor are technical details into which I will not get.
 
 Here is a good explanation of what it is: <https://www.youtube.com/watch?v=_WOKRaM-HI4> <sup>[[Invidious]][375]</sup>
 
@@ -5084,9 +5084,12 @@ This tutorial should also work with any OpenVPN provider (Mullvad, IVPN, Safing.
 
 This is based on the tutorial provided by Qubes OS themselves (<https://github.com/Qubes-Community/Contents/blob/master/docs/configuration/vpn.md> <sup>[[Archive.org]][377]</sup>). This part of the guide needs reworking and update, please follow their tutorial. 
 
-    -   If you are going for VPN over Tor, you need to go into the settings of the ProxyVM you made and select sys-vpn as networking, the sys-vpn VM should have sys-whonix in networking. You can test check usually on the home page of your VPN provider if it works. Alternatively you can just run a VPN client on the ProxyVM.
+    -   If you are going for VPN over Tor, you need to go into the settings of the ProxyVM you made and select "sys-vpn" for networking.
+        -   An easier way to setup your ProxyVM is to simply run a VPN client on the ProxyVM.
+        -   Usually when you connect to your VPN provider's website, it'll tell you whether your traffic is being properly routed through the VPN.
 
-    -   If you are going for Tor over VPN, the opposite should be done, the ProxyVM should have sys-tor as networking and the sys-tor VM should have sys-VPN as networking , test the VM connectivity to the internet by launching a Browser within the ProxyVM and access  <https://check.torproject.org> <sup>[[Archive.org]][378]</sup> (It should say you are connected to Tor)
+    -   If you are going for Tor over VPN, the opposite should be done, the ProxyVM should have its networking set as "sys-tor" and the "sys-tor" VM should have "sys-vpn" for its networking.
+        -   Test the VM connectivity to the internet by launching a Browser within the ProxyVM. Visit <https://check.torproject.org> <sup>[[Archive.org]][378]</sup> (It should say you are connected to Tor)
 
 #### Download the VPN configuration from your cash/Monero paid VPN provider:
 
@@ -5284,7 +5287,7 @@ Within the Applications Menu (upper left), Select the Fedora-34 template:
 
 -   Go into Qube Settings
 
--   Clone the VM and name it "sys-fedora-3x-brave" (this VM template will have Brave)
+-   Clone the VM and name it "fedora-3x-brave" (this VM template will have Brave)
 
 -   Again, go into the Applications Menu and select the clone you just created
 
@@ -5342,7 +5345,7 @@ Basically, follow the tutorial here:
 
 -   Click Create Qubes VM
 
--   Name and label as you wish: I suggest "sys-Android"
+-   Name and label as you wish: I suggest "Android"
 
 -   Select Type: Standalone Qube copied from a template
 
@@ -5374,7 +5377,7 @@ Now you will have to follow the instructions from here: <https://github.com/anbo
 
     -   ```sudo apt install snapd```
 
-Now we will follow their other tutorial from here: <https://github.com/anbox/anbox/blob/master/docs/install.md> <sup>[[Archive.org]][387]</sup>:
+Now you will follow their other tutorial from here: <https://github.com/anbox/anbox/blob/master/docs/install.md> <sup>[[Archive.org]][387]</sup>:
 
 -   Install AnBox by running:
 
@@ -5494,7 +5497,7 @@ Most platforms will not allow you to register using an "anonymous" or disposable
 
 The key thing to this is that it is becoming increasingly difficult to sign-up for a free e-mail account anywhere without providing (you guessed it) ... a cell phone number. That same cell phone number can be used conveniently to track you down in most places.
 
-It is possible that those services (Proton for instance) might require you to provide an e-mail address for registration. In that case, we would recommend you create an e-mail address from these providers:
+It is possible that those services (Proton for instance) might require you to provide an e-mail address for registration. In that case, I would recommend you create an e-mail address from these providers:
 
 -   MailFence: <https://mailfence.com/>
 
@@ -5518,7 +5521,7 @@ Due to the suspicious situation, this guide can no longer recommend them.
 
 #### Protecting your anonymous online identities e-mails using Aliasing services:
 
-If you want to avoid communicating your anonymous e-mail addresses to various parties. we would strongly suggest considering using e-mail aliasing services such as:
+If you want to avoid communicating your anonymous e-mail addresses to various parties. I would strongly suggest considering using e-mail aliasing services such as:
 
 -   <https://simplelogin.io/> (preferred first choice due to more options available to the free tier)
 
@@ -5662,7 +5665,7 @@ This is for instance now the case on YouTube for some European Users[^384] but a
 
 ### Sign-in with some platform:
 
-Why do this user-verification ourselves when we can just ask others to deal with it?
+"Why do this user-verification ourselves when we can just ask others to deal with it?"
 
 You will notice this, and you probably already encountered this. Some apps/platforms will ask/require you to sign in with a well-known and well-used reputable platform instead of their own system (Sign-in with Google/Facebook/Apple/Twitter).
 
@@ -5690,7 +5693,7 @@ Recently even platforms such as PornHub decided to implement similar measures in
 
 This verification is extremely hard to defeat but possible. A method to possibly defeat those would be to use "deep fake" technology software such as the open-source FaceSwap <https://github.com/deepfakes/faceswap> <sup>[[Archive.org]][397]</sup> to generate the required verification pictures using a randomly computer-generated face that would be swapped over the picture of a complicit model (or a stock photo).
 
-Unfortunately, some apps require direct access to a smartphone camera to process the verification. In that case, we will need to find a way to do such "face swaps" on the fly using a filter and another way to feed this into the camera used by the app. A possible approach would be similar to this impressive project <https://github.com/iperov/DeepFaceLive> <sup>[[Archive.org]][398]</sup>.
+Unfortunately, some apps require direct access to a smartphone camera to process the verification. In that case, you will need to find a way to do such "face swaps" on the fly using a filter and another way to feed this into the camera used by the app. A possible approach would be similar to this impressive project <https://github.com/iperov/DeepFaceLive> <sup>[[Archive.org]][398]</sup>.
 
 ### Manual reviews:
 
@@ -5730,7 +5733,7 @@ Now that you have a basic understanding of all the ways you can be de-anonymized
 
 -   Above all, you cannot trust people
 
-So what? Well instead of not trusting anyone or anything, we would advise to **"Trust but verify"**[^390] (or "Never trust, always verify" if you are more hardcore about it and want to apply Zero-Trust Security[^391]) instead.
+So what? Well instead of not trusting anyone or anything, I would advise to **"Trust but verify"**[^390] (or "Never trust, always verify" if you are more hardcore about it and want to apply Zero-Trust Security[^391]) instead.
 
 **Do not start this process unless:**
 
@@ -6975,7 +6978,7 @@ Ideally, you should find a way to buy/sell crypto with cash from an unknown pers
 
 #### What about those mobile-only apps (WhatsApp/Signal)?
 
-There are only three ways of securely using those anonymously (that we would recommend). Using a VPN on your phone is not one of those ways. All of those are, unfortunately, "tedious" to say the least.
+There are only three ways of securely using those anonymously (that I would recommend). Using a VPN on your phone is not one of those ways. All of those are, unfortunately, "tedious" to say the least.
 
 -   Use an Android Emulator within the Windows VM and run the App through your multi-layer of Tor/VPN. The drawback is that such emulators are usually quite resource-hungry and will slow down your VM and use more battery. Here is also an (outdated) guide on this matter: <https://www.bellingcat.com/resources/how-tos/2018/08/23/creating-android-open-source-research-device-pc/> <sup>[[Archive.org]][451]</sup>. As for myself, I will recommend the use of:
 
@@ -7976,7 +7979,7 @@ You will have two options here:
 
     -   This method is the easiest to manage.
 
-I made extensive testing using live backups utilities (Macrium Reflect, EaseUS Todo Reflect, Déjà Dup...) and personally I do not think it is worth it. Instead, we would recommend that you periodically back up your system with a simple Clonezilla image. It is much easier to perform, much easier to restore, and usually works reliably without issues in all cases. And contrary to many beliefs, it is not that slow with most backups taking about an hour depending on the speed of your destination media.
+I made extensive testing using live backups utilities (Macrium Reflect, EaseUS Todo Reflect, Déjà Dup...) and personally I do not think it is worth it. Instead, I would recommend that you periodically back up your system with a simple Clonezilla image. It is much easier to perform, much easier to restore, and usually works reliably without issues in all cases. And contrary to many beliefs, it is not that slow with most backups taking about an hour depending on the speed of your destination media.
 
 For backing up single files while you work, I recommend using file containers or encrypted media directly and manually as explained in the earlier section.
 
@@ -8152,7 +8155,7 @@ Within the context of this guide which also uses full disk encryption. Deletion 
 
 ![][487]
 
-So, you want to be sure. To achieve 100% secure deletion on an SSD drive, we will need to use specific SSD techniques (If you are using an HDD drive, skip this part and go to your OS of choice):
+So, you want to be sure. To achieve 100% secure deletion on an SSD drive, you will need to use specific SSD techniques (If you are using an HDD drive, skip this part and go to your OS of choice):
 
 -   Easy options for less experienced users:
 
