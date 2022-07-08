@@ -876,7 +876,7 @@ Some of these can be avoided using Virtualization Software settings that can mit
 
 I will therefore mitigate some of these issues in this guide by recommending the use of virtual machines on a dedicated anonymous laptop for your sensitive activities that will only be used from an anonymous public network.
 
-**In addition, You will recommend the use of AMD CPUs vs Intel CPUs.**
+**In addition, we recommend the use of AMD CPUs instead of Intel CPUs.**
 
 ## Your Operating Systems and Apps telemetry services:
 
@@ -918,7 +918,7 @@ It is important to understand that this telemetry data can be tied to your devic
 
 This does not mean for example that Apple devices are terrible choices for good Privacy (tho this might be changing[^111]), but they are certainly not the best choices for (relative) Anonymity. They might protect you from third parties knowing what you are doing but not from themselves. In all likelihood, they certainly know who you are.
 
-Later in this guide,Wewill use all the means at our disposal to disable and block as much telemetry as possible to mitigate this attack vector in the Operating Systems supported in this guide. These will include Windows, macOS, and even Linux in some regard.
+Later in this guide, we will use all the means at our disposal to disable and block as much telemetry as possible to mitigate this attack vector in the Operating Systems supported in this guide. These will include Windows, macOS, and even Linux in some regard.
 
 See [Appendix N: Warning about smartphones and smart devices]
 
@@ -1082,7 +1082,7 @@ You should never share real individual experiences/details using your anonymous 
 
 "Hell is other people", even if you evade every method listed above, you are not out of the woods yet thanks to the widespread use of advanced Face recognition by everyone.
 
-Companies like Facebook have used advanced face recognition for years[^155]'[^156] and have been using other means (Satellite imagery) to create maps of "people" around the world[^157]. This evolution has been going on for years to the pointWecan now say "we lost control of our faces"[^158].
+Companies like Facebook have used advanced face recognition for years[^155]'[^156] and have been using other means (Satellite imagery) to create maps of "people" around the world[^157]. This evolution has been going on for years to the point we can now say "we lost control of our faces"[^158].
 
 If you are walking in a touristy place, you will most likely appear in someone's selfie within minutes without knowing it. That person could then go ahead and upload that selfie to various platforms (Twitter, Google Photos, Instagram, Facebook, Snapchat ...). Those platforms will then apply face recognition algorithms to those pictures under the pretext of allowing better/easier tagging or to better organize your photo library. In addition to this, the same picture will provide a precise timestamp and in most cases geolocation of where it was taken. Even if the person does not provide a timestamp and geolocation, it can still be guessed with other means[^159]'[^160].
 
