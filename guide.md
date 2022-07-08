@@ -556,7 +556,7 @@ Here are some online resources you can use to find some information about your c
 
     -   <https://check.torproject.org>
 
-For those reasons, You will need to obfuscate and hide that origin IP (the one tied to your identification) or hide it as much as we can through a combination of various means:
+For those reasons, you will need to obfuscate and hide that origin IP (the one tied to your identification) or hide it as much as we can through a combination of various means:
 
 -   Using a public Wi-Fi service (free).
 
@@ -644,7 +644,7 @@ Therefore, to mitigate all these issues (as much as possible and as best as we c
 
 ### Your RFID enabled devices:
 
-RFID stands for Radio-frequency identification[^59], it is the technology used for instance for contactless payments and various identification systems. Of course, your smartphone is among those devices and has RFID contactless payment capabilities through NFC[^56]. As with everything else, such capabilities can be used for tracking by various actors.
+RFID stands for Radio-frequency identification[^55], it is the technology used for instance for contactless payments and various identification systems. Of course, your smartphone is among those devices and has RFID contactless payment capabilities through NFC[^56]. As with everything else, such capabilities can be used for tracking by various actors.
 
 But unfortunately, this is not limited to your smartphone, and you also probably carry some amount of RFID enabled device with you all the time such as:
 
