@@ -2223,7 +2223,7 @@ It does however have some drawbacks:
 
 You should also read Tails Documentation, Warnings, and limitations, before going further <https://tails.boum.org/doc/about/warnings/index.en.html> <sup>[[Archive.org]][241]</sup>
 
-Taking all this into account and the fact that their documentation is great,Wewill just redirect you towards their well-made and well-maintained tutorial:
+Taking all this into account and the fact that their documentation is great, we will just redirect you towards their well-made and well-maintained tutorial:
 
 <https://tails.boum.org/install/index.en.html> <sup>[[Archive.org]][242]</sup>, pick your flavor and proceed.
 
@@ -3971,7 +3971,7 @@ See [Appendix P: Accessing the internet as safely as possible when Tor and VPNs 
 
 #### Choose a browser within the VM:
 
-This time,Wewill recommend Brave browser.
+This time, we will recommend Brave browser.
 
 See why here: [Appendix V: What browser to use in your Guest VM/Disposable VM]
 
@@ -4219,7 +4219,7 @@ The illustration below shows the result of this step:
 
 ##### Configuration of the Whonix Gateway VM:
 
-For this to work,Wewill need to change some configurations on the Whonix Gateway VM. we will need to add a DHCP client to the Whonix Gateway to receive IP addresses from the network. To do those changes the Host OS will still have to have internet access allowed for now.
+For this to work, we will need to change some configurations on the Whonix Gateway VM. we will need to add a DHCP client to the Whonix Gateway to receive IP addresses from the network. To do those changes the Host OS will still have to have internet access allowed for now.
 
 So here is how:
 
@@ -4543,7 +4543,7 @@ This way will not go against Whonix recommendations (as it will not expose the W
 
 This option will require an additional VM between the Host OS and the Whonix Gateway to act as a Network Bridge and to connect to the Wi-Fi network. **This option requires a working USB Wi-Fi Dongle that will be passed through to a bridge VM.**
 
-For this purpose,Wewill recommend the use of a lightweight Linux Distro. Any will do but the easiest IMHO will be an Ubuntu-based distro and we would recommend the lightweight XUbuntu as it will be extremely easy to configure this setup.
+For this purpose, we will recommend the use of a lightweight Linux Distro. Any will do but the easiest IMHO will be an Ubuntu-based distro and we would recommend the lightweight XUbuntu as it will be extremely easy to configure this setup.
 
 Why XUbuntu and not Ubuntu or KUbuntu? Because XUbuntu uses an XFCE desktop environment which is lightweight and this VM will only serve as a proxy and nothing else.
 
@@ -8071,7 +8071,7 @@ If you do intend to store sensitive data on "mainstream platforms" (Dropbox, Goo
 
 ### Information:
 
-If you just want to save information (text),Wewill recommend the use of secure and private pastebins[^425]. Mostly we will stick to the ones recommended by PrivacyGuides.org (<https://www.privacyguides.org/productivity/#paste-services> <sup>[[Archive.org]][480]</sup> ) :
+If you just want to save information (text), we will recommend the use of secure and private pastebins[^425]. Mostly we will stick to the ones recommended by PrivacyGuides.org (<https://www.privacyguides.org/productivity/#paste-services> <sup>[[Archive.org]][480]</sup> ) :
 
 -   <https://privatebin.info/>
 
