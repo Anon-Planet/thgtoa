@@ -3190,9 +3190,9 @@ This route is rather straightforward and will just encrypt your current Operatin
 
     -   If you have no sensitive data yet on this laptop, select None
 
-    -   If you have sensitive data on an SSD, Trim alone should take care of it[^342] butWewould recommend one pass (random data) just to be sure.
+    -   If you have sensitive data on an SSD, Trim alone should take care of it[^342] but we would recommend one pass (random data) just to be sure.
 
-    -   If you have sensitive data on an HDD, there is no Trim, andWewould recommend at least 1-pass.
+    -   If you have sensitive data on an HDD, there is no Trim, and we Swould recommend at least 1-pass.
 
 -   Test your setup. Veracrypt will now reboot your system to test the bootloader before encryption. This test must pass for encryption to go forward.
 
