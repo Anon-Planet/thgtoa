@@ -11813,7 +11813,7 @@ Wasabi wallet is not recommended due to censorship of transactions[^536] and vul
 
 # Appendix A1: Recommended VPS hosting providers
 
-I will only recommend providers that accept Monero as payment and here is my personal shortlist:
+We will only recommend providers that accept Monero as payment and here is my personal shortlist:
 
 -   **Njalla <https://njal.la/> (my personal favorite but quite expensive, recommended by PrivacyGuides.org.**
 
@@ -11877,7 +11877,7 @@ Watch this insightful video by Computerphile: <https://www.youtube.com/watch?v=3
 
 Which search engine to pick in your VMs?
 
-I will not go into too many details. Just pick one from PrivacyGuides.org (<https://www.privacyguides.org/search-engines/> <sup>[[Archive.org]][700]</sup>).
+We will not go into too many details. Just pick one from PrivacyGuides.org (<https://www.privacyguides.org/search-engines/> <sup>[[Archive.org]][700]</sup>).
 
 Personally, my favorites are:
 
