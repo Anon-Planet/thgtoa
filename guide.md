@@ -874,7 +874,7 @@ Check yourself:
 
 Some of these can be avoided using Virtualization Software settings that can mitigate such exploits. See this guide for more information <https://www.whonix.org/wiki/Spectre_Meltdown> <sup>[[Archive.org]][82]</sup> (warning: these can severely impact the performance of your VMs).
 
-I will therefore mitigate some of these issues in this guide by recommending the use of virtual machines on a dedicated anonymous laptop for your sensitive activities that will only be used from an anonymous public network.
+We will therefore mitigate some of these issues in this guide by recommending the use of virtual machines on a dedicated anonymous laptop for your sensitive activities that will only be used from an anonymous public network.
 
 **In addition, we recommend the use of AMD CPUs instead of Intel CPUs.**
 
@@ -5805,7 +5805,7 @@ Tools that can help with this:
 
 Now is also the moment where you could finally consider getting an online phone number as explained in the [Online Phone Number (less recommended)] section.
 
-I will help you bit by listing a few tips we learned while researching over the years **(disclaimer: this is based on my individual experiences alone)**:
+We will help you bit by listing a few tips we learned while researching over the years **(disclaimer: this is based on my individual experiences alone)**:
 
 -   "Some animals are more equal than others".
 
@@ -7594,7 +7594,7 @@ Finally, Open-Source apps should always be preferred because they allow third pa
 
 **Remember: [Appendix B1: Checklist of things to verify before sharing information][Appendix B1: Checklist of things to verify before sharing information:].**
 
-I will recommend these options in that order (as also recommend by Privacyguides.org[^416]'[^417] except for Session and Cwtch):
+We will recommend these options in that order (as also recommend by Privacyguides.org[^416]'[^417] except for Session and Cwtch):
 
 -   macOS:
 
@@ -7945,7 +7945,7 @@ To do this, when mounting the Decoy Volume, select Mount Options and Check the "
 
 -  We strongly recommend storing such containers on external USB keys that you will only mount from your guest VMs and never from your Host OS. **After each modification to the files, you should clean the free space on the USB disk and make sure that any backup of such containers is absolutely identical on each key and your computer. See the [How to securely delete specific files/folders/data on your HDD/SSD and Thumb drives][How to securely delete specific files/folders/data on your HDD/SSD and Thumb drives:] section of this guide for help on doing this.**
 
--   If you have time, **I will even recommend that you delete wipe the keys completely before making any modification on such containers on your computer (if you do not work from the USB key directly).** This is to prevent an adversary that would seize your assets before you could update the keys from having multiple versions of the containers that could lead to proving the existence of hidden data using forensics techniques.
+-   If you have time, **We will even recommend that you delete wipe the keys completely before making any modification on such containers on your computer (if you do not work from the USB key directly).** This is to prevent an adversary that would seize your assets before you could update the keys from having multiple versions of the containers that could lead to proving the existence of hidden data using forensics techniques.
 
 -   **Do not ever store such containers on cloud storage platforms that have backups and where you have no direct control over permanent deletion. They might keep "old versions" of your files which can then also be used by forensics to prove the existence of hidden data.**
 
@@ -7997,7 +7997,7 @@ You will need a separate external drive with at least the same or more free spac
 
 ##### Ubuntu (or any other distro of choice):
 
-I will recommend the use of the open-source Clonezilla utility for convenience and reliability but there are many other native Linux utilities and methods you could use for this purpose.
+We will recommend the use of the open-source Clonezilla utility for convenience and reliability but there are many other native Linux utilities and methods you could use for this purpose.
 
 So, you should follow the steps in [Appendix E: Clonezilla]
 
@@ -8009,7 +8009,7 @@ So, you should follow the steps in [Appendix E: Clonezilla]
 
 #### Windows:
 
-I will only recommend the use of the open-source and free Clonezilla utility for this purpose. There are commercial utilities that offer the same functionality, but we do not see any advantage in using any of them vs Clonezilla.
+We will only recommend the use of the open-source and free Clonezilla utility for this purpose. There are commercial utilities that offer the same functionality, but we do not see any advantage in using any of them vs Clonezilla.
 
 Some warnings:
 
