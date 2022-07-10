@@ -12099,7 +12099,7 @@ Offline versions (best format for the best readability) of this guide at:
 
 -   PDF: <https://anonymousplanet-ng.org/export/guide.pdf> <sup>[[Archive.org]][726]</sup> <sup>[[Tor Mirror]][727]</sup>
 
--   OpenDocument Text (ODT) version at: <https://anonymousplanet-ng.org/export/guide.odt> <sup>[[Archive.org]][732]</sup> <sup>[[Tor Mirror]][733]</sup>
+-   <del>OpenDocument Text (ODT) version at: <https://anonymousplanet-ng.org/export/guide.odt> <sup>[[Archive.org]][732]</sup> <sup>[[Tor Mirror]][733]</sup></del> **(currently outdated, please use the online version)**
 
 # Appendix A7: Comparing versions
 
@@ -12832,6 +12832,8 @@ You can find some introduction on these on these projects:
 [^282]: Internet Archive, Invisibler, What Everybody Ought to Know About HideMyAss <https://archive.is/ag9w4#selection-136.0-136.1>
 
 [^283]: Wikipedia, Warrant Canary <https://en.wikipedia.org/wiki/Warrant_canary> <sup>[[Wikiless]][1090]</sup> <sup>[[Archive.org]][1091]</sup>
+    
+[^284]: Washington Post, The intelligence coup of the century <https://www.washingtonpost.com/graphics/2020/world/national-security/cia-crypto-encryption-machines-espionage/> <sup>[[Archive.org]][1092]</sup>
 
 [^285]: Swissinfo.ch, Second Swiss firm allegedly sold encrypted spying devices <https://www.swissinfo.ch/eng/second-swiss-firm-allegedly-sold-encrypted-spying-devices/46186432> <sup>[[Archive.org]][1093]</sup>
 
@@ -14708,6 +14710,7 @@ You can find some introduction on these on these projects:
   [1089]: https://web.archive.org/web/https://en.wikipedia.org/wiki/Lavabit
   [1090]: https://wikiless.org/wiki/Warrant_canary
   [1091]: https://web.archive.org/web/https://en.wikipedia.org/wiki/Warrant_canary
+  [1092]: https://web.archive.org/web/https://www.washingtonpost.com/graphics/2020/world/national-security/cia-crypto-encryption-machines-espionage/
   [1093]: https://web.archive.org/web/https://www.swissinfo.ch/eng/second-swiss-firm-allegedly-sold-encrypted-spying-devices/46186432
   [1094]: https://wikiless.org/wiki/The_Lives_of_Others
   [1095]: https://web.archive.org/web/https://en.wikipedia.org/wiki/The_Lives_of_Others
