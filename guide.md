@@ -5703,7 +5703,7 @@ Some countries have even developed hotlines where you can report any subversive 
 
 Pros: Usually that verdict is "final", and you will probably avoid further issues if you are good.
 
-Cons: Usually that verdict is "final", and you will probably be banned without any appeal possibility if you are not good. Sometimes those reviews end up on the platform just ghosting you and cancel you without any reason whatsoever. Any appeal will be left unanswered, ignored, or will generate some random dark pattern bug when trying to appeal that specific identity (this happens on Instagram for instance where if your account gets "suspended" obviously by some manual review, trying to complete the appeal form will just throw an error and tell you to try again later (I have been trying this same appeal for that identity for the past 6 months at least).
+Cons: Usually that verdict is "final", and you will probably be banned without any appeal possibility if you are not good. Sometimes those reviews end up on the platform just ghosting you and cancel you without any reason whatsoever. Any appeal will be left unanswered, ignored, or will generate some random dark pattern bug when trying to appeal that specific identity (this happens on Instagram for instance where if your account gets "suspended" obviously by some manual review, trying to complete the appeal form will just throw an error and tell you to try again later (We have been trying this same appeal for that identity for the past 6 months at least).
 
 ## Getting Online:
 
@@ -8065,7 +8065,7 @@ For smaller files, consider:
 
 -   Filen (<https://filen.io/>): free tier limited to 10GB total
 
-I am currently not aware of any online storage/hosting platform accepting cash payments unlike providers mentioned before.
+We are currently not aware of any online storage/hosting platform accepting cash payments unlike providers mentioned before.
 
 If you do intend to store sensitive data on "mainstream platforms" (Dropbox, Google Drive, OneDrive...), **remember not to ever store plausible deniability containers on those and remember to encrypt and check (for metadata...) anything locally before uploading there**. Either with software like Veracrypt or with a software like Cryptomator (<https://cryptomator.org/>). Do not ever upload non-encrypted files on those platforms and repeating myself, only access them from a secure shielded VM.
 
@@ -8617,7 +8617,7 @@ If Trim is not supported, you might have to ensure secure data deletion by:
 
 Note that the same SSD issue discussed in the earlier section will arise here. You can never really be 100% sure your SSD data is deleted when you ask it to do so unless you wipe the whole drive using specific methods above.
 
-I am not aware of any 100% reliable method to delete single files selectively and securely on SSD drives unless overwriting ALL the free space (which might reduce the lifespan of your SSD) after Deletion + Trim of these files. Without doing that, you will have to trust the SSD Trim operation **which in my opinion is enough**. **It is reasonable and again very unlikely that forensics will be able to restore your files after a Deletion with Trim.**
+We are not aware of any 100% reliable method to delete single files selectively and securely on SSD drives unless overwriting ALL the free space (which might reduce the lifespan of your SSD) after Deletion + Trim of these files. Without doing that, you will have to trust the SSD Trim operation **which in my opinion is enough**. **It is reasonable and again very unlikely that forensics will be able to restore your files after a Deletion with Trim.**
 
 In addition, most of these measures here should not be needed since your whole drive should be encrypted and therefore your data should not be accessible for forensic analysis through SSD/HDD examination anyway. So, these are just "bonus measures" for weak/unskilled adversaries.
 
@@ -9162,7 +9162,7 @@ Have a look at those websites:
 
 ## Hidden communications in plain sight:
 
-You must keep in mind that using all those security measures (encryption, plausible deniability, VPN, tor, secure operating systems ...) can make you suspicious just by using them. Using could be the equivalent of stating openly "I have something to hide" to an observer which could then motivate some adversaries to investigate/survey you further.
+You must keep in mind that using all those security measures (encryption, plausible deniability, VPN, tor, secure operating systems ...) can make you suspicious just by using them. Using could be the equivalent of stating openly "I something to hide" to an observer which could then motivate some adversaries to investigate/survey you further.
 
 So, there are other ways you could exchange or send messages online to others in case of need without disclosing your identity or establishing direct communication with them. These have been in use by various organizations for decades and can be of help if you do not want to attract attention by using secure tech while still communicating some sensitive information without attracting attention.
 
@@ -10124,7 +10124,7 @@ If it does not work, we are not aware of any reliable method to enable TRIM besi
 
 ### ATA/NVMe Operations (Secure Erase/Sanitize):
 
-I am not aware of any method of doing so reliably and safely on macOS. So, you will have to try one of these options:
+We are not aware of any method of doing so reliably and safely on macOS. So, you will have to try one of these options:
 
 -   Use a bootable System Rescue USB Linux to do it
 
