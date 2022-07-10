@@ -2017,7 +2017,7 @@ This part of the guide will help you in setting up the simplest and easiest way 
 
 So, what is Tor Browser? Tor Browser (<https://www.torproject.org/> <sup>[[Archive.org]][236]</sup>) is a web browser like Safari/Firefox/Chrome/Edge/Brave designed with privacy and anonymity in mind.
 
-This browser is different from other browsers as it will connect to the internet through the Tor Network using Onion Routing.We first recommend that you watch this very nice introduction video by the Tor Project themselves: <https://www.youtube.com/watch?v=JWII85UlzKw> <sup>[[Invidious]][237]</sup>. After that, you should probably head over to their page to read their quick overview here: <https://2019.www.torproject.org/about/overview.html.en> <sup>[[Archive.org]][238]</sup>. Without going into too many technical details, Tor Browser is an easy and simple "fire and forget" solution to browse the web anonymously from pretty much any device. It is probably sufficient for most people and can be used from any computer or smartphone.
+This browser is different from other browsers as it will connect to the internet through the Tor Network using Onion Routing. We first recommend that you watch this very nice introduction video by the Tor Project themselves: <https://www.youtube.com/watch?v=JWII85UlzKw> <sup>[[Invidious]][237]</sup>. After that, you should probably head over to their page to read their quick overview here: <https://2019.www.torproject.org/about/overview.html.en> <sup>[[Archive.org]][238]</sup>. Without going into too many technical details, Tor Browser is an easy and simple "fire and forget" solution to browse the web anonymously from pretty much any device. It is probably sufficient for most people and can be used from any computer or smartphone.
 
 Here are several ways to set it up for all main OSes.
 
@@ -3354,7 +3354,7 @@ Now you will encrypt the Decoy OS:
 
 -   Click Next as the Generated Keys screen
 
--   To rescue disk[^347] or not rescue disk, well that is up to you.Werecommend making one (just in case), just make sure to store it outside your encrypted drive (USB key for instance or wait and see the end of this guide for guidance on safe backups). This rescue disk will not store your passphrase and you will still need it to use it.
+-   To rescue disk[^347] or not rescue disk, well that is up to you. We recommend making one (just in case), just make sure to store it outside your encrypted drive (USB key for instance or wait and see the end of this guide for guidance on safe backups). This rescue disk will not store your passphrase and you will still need it to use it.
 
 -   Wipe mode: Select 1-Pass just to be safe
 
@@ -4331,7 +4331,7 @@ Yet this will still not be supported by the Whonix project, but it is fine as th
 
 This option will require an additional VM between the Host OS and the Whonix Gateway to act as a Network Bridge.
 
-For this purpose,we will recommend the use of a lightweight Linux Distro. Any will do but the easiest IMHO will be an Ubuntu-based distro and we would recommend the lightweight XUbuntu as it will be extremely easy to configure this setup.
+For this purpose, we will recommend the use of a lightweight Linux Distro. Any will do but the easiest IMHO will be an Ubuntu-based distro and we would recommend the lightweight XUbuntu as it will be extremely easy to configure this setup.
 
 Why XUbuntu and not Ubuntu or KUbuntu? Because XUbuntu uses an XFCE desktop environment which is lightweight and this VM will only serve as a proxy and nothing else.
 
@@ -5961,7 +5961,7 @@ Unfortunately, not using your real identity is against the ToS (Terms of Service
 
 This does not mean that it is illegal in other places but that it might be a breach of their Terms of Services if you do not have the law on your side. **Remember this guide only endorses this for German users residing in Germany.**
 
-On my side ,we strongly condemn this type of real-name policy. See for instance this Wikipedia article giving some examples: <https://en.wikipedia.org/wiki/Facebook_real-name_policy_controversy> <sup>[[Wikiless]][408]</sup> <sup>[[Archive.org]][409]</sup>
+On my side, we strongly condemn this type of real-name policy. See for instance this Wikipedia article giving some examples: <https://en.wikipedia.org/wiki/Facebook_real-name_policy_controversy> <sup>[[Wikiless]][408]</sup> <sup>[[Archive.org]][409]</sup>
 
 Here are some more references about the German case for reference:
 
@@ -7963,7 +7963,7 @@ You will have two options here:
 
     -   This backup can be done while the Operating System is running.
 
-    -   This backup will not be encrypted using the disk encryption but using the Backup utility encryption algorithm (which you will have to trust and cannot really control for most). Alternatively, you could encrypt the backup media yourself separately (for instance with Veracrypt).We are not aware of any free or non-free utility that natively supports Veracrypt.
+    -   This backup will not be encrypted using the disk encryption but using the Backup utility encryption algorithm (which you will have to trust and cannot really control for most). Alternatively, you could encrypt the backup media yourself separately (for instance with Veracrypt). We are not aware of any free or non-free utility that natively supports Veracrypt.
 
     -   Some utilities will allow for differential/incremental backups instead of full backups.
 
@@ -10120,7 +10120,7 @@ So, if it is supported (and enabled on your external SSD), you should be able to
 
 If your disk supports it but it is not enabled in macOS. You could try issuing a "sudo trimforce enable" command from the Terminal and see if it enables Trim on your external SSD. And then again check the first aid command if it is not APFS (see this Tutorial for info <https://www.lifewire.com/enable-trim-for-ssd-in-os-x-yosemite-2260789> <sup>[[Archive.org]][606]</sup>)
 
-If it does not work,Weam not aware of any reliable method to enable TRIM besides the commercial utility Trim Enabler here <https://cindori.org/trimenabler/> <sup>[[Archive.org]][607]</sup> which claims support for external drives.
+If it does not work, we are not aware of any reliable method to enable TRIM besides the commercial utility Trim Enabler here <https://cindori.org/trimenabler/> <sup>[[Archive.org]][607]</sup> which claims support for external drives.
 
 ### ATA/NVMe Operations (Secure Erase/Sanitize):
 
