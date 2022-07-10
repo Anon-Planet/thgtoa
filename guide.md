@@ -1438,7 +1438,7 @@ There is a frequent adage among the infosec community: "Don't roll your own cryp
 
 And there are reasons[^255]'[^256]'[^257]'[^258] for that:
 
-We would not want people discouraged from studying and innovating in the crypto field because of that adage. So instead,We would recommend people to be cautious with "Roll your own crypto" because it is not necessarily good crypto:
+We would not want people discouraged from studying and innovating in the crypto field because of that adage. So instead, we would recommend people to be cautious with "Roll your own crypto" because it is not necessarily good crypto:
 
 -   Good cryptography is not easy and usually takes years of research to develop and fine-tune.
 
@@ -1951,7 +1951,7 @@ There are many commercial services offering numbers to receive SMS messages onli
 
 There are some forums and subreddits (like r/phoneverification/) where users will offer the service of receiving such SMS messages for you for a small fee (using PayPal or some crypto payment). Unfortunately, these are full of scammers and very risky in terms of anonymity. **You should not use those under any circumstance.**
 
-To this date,we do not know any reputable service that would offer this service and accept cash payments (by post for instance) like some VPN providers. But a few services are providing online phone numbers and do accept Monero which could be reasonably anonymous (yet less recommended than that physical way in the earlier chapter) that you could consider:
+To this date, we do not know any reputable service that would offer this service and accept cash payments (by post for instance) like some VPN providers. But a few services are providing online phone numbers and do accept Monero which could be reasonably anonymous (yet less recommended than that physical way in the earlier chapter) that you could consider:
 
 -   **Recommended**: Do not require any identification (even e-mail):
 
@@ -2673,7 +2673,7 @@ Consider also reading **<https://www.whonix.org/wiki/Full_Disk_Encryption#Encryp
 
 ### Linux Host OS:
 
-As mentioned earlier, wedo not recommend using your daily laptop for sensitive activities. Or at leastWedo not recommend using your in-place OS for these. Doing that might result in unwanted data leaks that could be used to de-anonymize you. If you have a dedicated laptop for this, you should reinstall a fresh clean OS. If you do not want to wipe your laptop and start over, you should consider the Tails route or proceed at your own risk.
+As mentioned earlier, we do not recommend using your daily laptop for sensitive activities. Or at least we do not recommend using your in-place OS for these. Doing that might result in unwanted data leaks that could be used to de-anonymize you. If you have a dedicated laptop for this, you should reinstall a fresh clean OS. If you do not want to wipe your laptop and start over, you should consider the Tails route or proceed at your own risk.
 
 I also recommend that you do the initial installation completely offline to avoid any data leak.
 
@@ -3582,7 +3582,7 @@ You might be wondering: Well, what about using Tor over VPN instead of VPN over 
 
 -   Disadvantages:
 
-    -   Your VPN provider is just another ISP that will then know your origin IP and wi ll be able to de-anonymize you if required. We do not trust them. We prefer a situation where your VPN provider does not know who you are. It does not add much in terms of anonymity.
+    -   Your VPN provider is just another ISP that will then know your origin IP and will be able to de-anonymize you if required. We do not trust them. We prefer a situation where your VPN provider does not know who you are. It does not add much in terms of anonymity.
 
     -   This would result in you connecting to various services using the IP of a Tor Exit Node which is banned/flagged in many places. It does not help in terms of convenience.
 
