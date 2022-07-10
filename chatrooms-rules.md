@@ -7,7 +7,6 @@ You will find here the rules for the rooms part of the PSA Community. These rule
 - [General Rules](#general)
 - [Nothing To Hide Privacy Room Rules](#nth)
 - [Modern Cryprography Room Rules](#moderncrypto)
-- [OS Security Room Rules](#ossecurity)
 - [Bnonymity Room Rules](#bnonymity)
 - [Exceptions](#exceptions)
 - [PSA Bans](#psabans)
