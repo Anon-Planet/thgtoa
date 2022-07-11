@@ -5,28 +5,8 @@
 Version 1.1.5, June 2022 by Anonymous Planet
 
 **Forever in memory of Lena, 1999-2022**
-
-#### **IMPORTANT RECOMMENDATION FOR UKRAINIANS. ВАЖЛИВА РЕКОМЕНДАЦІЯ ДЛЯ УКРАЇНЦІВ**
-
-This is a message for the people of Ukraine.
-
-We strongly recommend that you use Briar for communicating with people nearby.
-
-You can find it here: <https://briarproject.org/>
-
-With this application, you can communicate even when there is no internet.
-
---------------------------------------------------------------------------
-
-Це послання до народу України.
-
-Ми наполегливо рекомендуємо вам використовувати Briar для спілкування з людьми поблизу!
-
-Ви можете знайти його тут: <https://briarproject.org/> і тут: <https://briarproject.org/quick-start/uk/>.
-
-За допомогою цієї програми ви можете спілкуватися, навіть коли немає Інтернету.
-
---------------------------------------------------------------------------
+ 
+####Деякі рекомендації для українців – у [Додатку В4]. Some informations for Ukrainians in [Appendix B4:].
 
 **This guide is a work in progress**. While we are doing the best we can to correct issues, inaccuracies, and improve the content, general structure, and readability; it will probably never be "finished".
 
@@ -54,9 +34,9 @@ Feel free to come to discuss ideas at:
 
 Follow us on:
 
--   Twitter at <https://twitter.com/AnonyPla> (account recovered)
+-   Twitter at <https://twitter.com/AnonyPla>
 
--   Mastodon at <https://mastodon.social/@anonypla> (account recovered)
+-   Mastodon at <https://mastodon.social/@anonypla>
 
 To contact me, see the updated information on the website or send an e-mail to <contact@anonymousplanet-ng.org>
 
@@ -388,6 +368,7 @@ Finally note that this guide does mention and even recommends various commercial
 -   [Appendix B1: Checklist of things to verify before sharing information:]
 -   [Appendix B2: Monero Disclaimer]
 -   [Appendix B3: Threat modeling resources]
+-	[Appendix B4]
 -   [References:]
 
 # Pre-requisites and limitations:
@@ -12265,6 +12246,20 @@ You can find some introduction on these on these projects:
 
 -   Online Operations Security: [https://web.archive.org/web/20210711215728/https://github.com/devbret/online-OPSEC]
 
+# Appendix B4:
+
+## спілкування / Communication:
+
+Це послання до народу України. Ми настійно рекомендуємо вам використовувати Briar для спілкування. Ви можете знайти його тут: <https://briarproject.org/ . 
+За допомогою цієї програми ви можете спілкуватися, навіть коли немає Інтернету.
+Посібник тут: <https://briarproject.org/manual/uk//> , Швидкий початок: <https://briarproject.org/quick-start/uk/>
+
+--------------------------------------------------------------------------
+
+This is a message for the people of Ukraine. We strongly recommend that you use Briar for communicating. You can find it here: <https://briarproject.org/>
+With this application, you can communicate even when there is no internet.
+The manual is here: <https://briarproject.org/manual> , quick-start guie here: <https://briarproject.org/quick-start/>
+
 ---
 
 # References:
@@ -13636,6 +13631,7 @@ You can find some introduction on these on these projects:
   [Appendix B1: Checklist of things to verify before sharing information:]: #appendix-b1-checklist-of-things-to-verify-before-sharing-information
   [Appendix B2: Monero Disclaimer]: #appendix-b2-monero-disclaimer
   [Appendix B3: Threat modeling resources]: #appendix-b3-threat-modeling-resources
+  [Appendix B4]: #appendix-b4
   [References:]: #references
   [cc-by-nc-4.0]: https://creativecommons.org/licenses/by-nc/4.0/
   [27]: https://web.archive.org/web/https://creativecommons.org/licenses/by-nc/4.0/
@@ -13898,7 +13894,6 @@ You can find some introduction on these on these projects:
   [281]: https://web.archive.org/web/20211011215449/https://blog.ivansmirnov.name/how-to-set-up-hibernate-on-ubuntu-20-04/
   [282]: https://web.archive.org/web/http://ubuntuhandbook.org/index.php/2020/05/lid-close-behavior-ubuntu-20-04/
   [283]: https://web.archive.org/web/https://tipsonubuntu.com/2018/04/28/change-lid-close-action-ubuntu-18-04-lts/
-  [284]: https://web.archive.org/web/https://help.ubuntu.com/community/EnableHibernateWithEncryptedSwap
   [285]: https://web.archive.org/web/https://help.ubuntu.com/community/AnonymizingNetworkMACAddresses
   [286]: https://web.archive.org/web/https://josh.works/shell-script-basics-change-mac-address
   [287]: https://yewtu.be/watch?v=Sa0KqbpLye4
