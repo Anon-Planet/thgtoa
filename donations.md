@@ -4,14 +4,11 @@ All donations and spendings are being logged here below for transparency.
 
 <span style="color: red">***Current project donation goals:***</span>
 
-- <del>Maintenance for the Tor Exit Nodes, see them here: <https://metrics.torproject.org/rs.html#search/family:970814F267BF3DE9DFF2A0F8D4019F80C68AEE26></del> (All have been taken down)
-- <del>Move the Tor .onion hosting on a different cheaper VPS by April 1st, 2022, and extend hosting for 2 more years.</del> (The VPS was taken down and the onion site is unavailable for the moment)
-- <del>Set-up more Tor Exit nodes if funding allows it.</del>
-- Recover the project and salvage what is possible
-    
-<span style="color: red">***Additional goals:***</span>
+- Funding for a VPS for hosting our .onion website
+- Funding for a VPS for hosting various services
+- Funding for extending our domain name
+- Funding for a decent mail hosting
 
-- **Help Fund Lena's cremation and fees (about 2000€ total so around 9 XMR today)**
 
 **Donate anonymously using Monero (XMR):**
 
@@ -20,10 +17,6 @@ Here is the address for the main project:
 - ```46crzj54eL493BA68pPT4A1MZyKQxrpZu9tVNsfsoa5nT85QqCt8cDTfy1fcTH1oyjdtUbhmpZ4QcVtfEXB337Ng6PS21ML```
 
 ![][1]
-    
-Here is the address for additional goals:
-
-- ```coming soon```
 
 **Donate using Bitcoin (BTC):**
 
@@ -33,11 +26,7 @@ Here are the addresses for the main project:
 - Legacy address: ```1BBgBSVe6w4DWq2BewUQhDEjsNovhfPswD```
 
 ![][2]____________________![][3]
-    
- Here are the addresses for additional goals:
-    
-- SegWit address: ```coming soon```
-- Legacy address: ```coming soon```
+
 
 **Thank you for any contribution. All donations will be mentioned within this file.**
     
