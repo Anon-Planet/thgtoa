@@ -93,8 +93,9 @@ Spendings log (UTC date):
 - 2021-10-30: 0.240787814495 XMR (+fees) for a Synapse Hosting VPS (12 months) with bots to help grow the community. This is a test program that will be converted into a Tor Exit Node in case of failure
 - 2022-01-01: 0.28055816111 XMR (+fees) for renewal 1 year of Tor Exit Node 02
 - 2022-02-02: 0.966793601024 XMR (+fees) for sponsoring a related external special project in line with the Universal Declaration of Human Rights (details will remain indisclosed to protect project members)
+- 2022-07-11: 0.503232784687 XMR (+fees) for 1984.is VPS (12 months)
 
-Total Monero remaining: **0.540400726224 XMR**
+Total Monero remaining: **0.037136719397 XMR**
 Total Bitcoin remaining: **0 mBTC**
 
 [1]: media/monero.png
