@@ -4725,7 +4725,7 @@ Qubes OS is not a Linux distribution[^362] but a Xen distribution. It is differe
 
 This OS is recommended by prominent figures such as Edward Snowden, PrivacyGuides.org.
 
-Qubes is the best option in this guide for people who are more comfortable with Linux and tech in general. But it has some downsides such as the lack of OS-wide plausible deniability, its hardware requirements, and its hardware compatibility. While you can run this on 4GB of RAM as per their requirements <sup>[[Archive.org]][363]</sup>, the recommended RAM is 16GB. We would recommend against using Qubes OS if you have less than 8GB of RAM. If you want a comfortable experience, you should have 16GB, if you want a particularly enjoyable experience, you should have 24GB or 32GB.
+Qubes is the best option in this guide for people who are more comfortable with Linux and tech in general. But it has some downsides such as the lack of OS-wide plausible deniability, its hardware requirements, and its hardware compatibility. While you can run this on 4GB of RAM as per their requirements <sup>[[Archive.org]][^363]</sup>, the recommended RAM is 16GB. We would recommend against using Qubes OS if you have less than 8GB of RAM. If you want a comfortable experience, you should have 16GB, if you want a particularly enjoyable experience, you should have 24GB or 32GB.
 
 The reason for this RAM requirement is that each app will run in a different VM and each of those VM will require and allocate a certain amount of memory that will not be available for other apps. If you are running native Windows apps within Qubes OS Qubes, the ram overhead will be significant.
 
@@ -9922,7 +9922,7 @@ Diskpart can be run from any Windows environment using a command prompt. This in
 
 ## If you can use Tor:
 
-This guide will **only recommend** using Tor Browser within the host OS because it has the best protection by default. The only other acceptable option in my opinion would be to use Brave Browser with a Tor tab **but keep in mind that Brave themselves recommend the use of Tor Browser if you feel your safety depends on being anonymous** <sup>[[Archive.org]][459]</sup>**: "If your personal safety depends on remaining anonymous, we highly recommend using Tor Browser instead of Brave Tor windows. ".**
+This guide will **only recommend** using Tor Browser within the host OS because it has the best protection by default. The only other acceptable option in my opinion would be to use Brave Browser with a Tor tab **but keep in mind that Brave themselves recommend the use of Tor Browser if you feel your safety depends on being anonymous** <sup>[[Archive.org]][^459]</sup>**: "If your personal safety depends on remaining anonymous, we highly recommend using Tor Browser instead of Brave Tor windows. ".**
 
 This Browser on the host OS will only be used to download various utilities and will never be used for actual sensitive activities.
 
@@ -9968,7 +9968,7 @@ I prefer PrivaZer because it has more customization and smarter features, but we
 
 Both these tools can be used for cleaning many things such as:
 
--   The Windows USN journal which stores plenty of information.
+-   The Windows USN journal which stores plenty of information[^460].
 
 -   The Windows System Resource Usage Monitor (SRUM)[^461].
 
@@ -10090,7 +10090,7 @@ It is possible Windows will detect your external SSD properly and enable Trim by
 
 ### ATA/NVMe Operations (Secure Erase/Sanitize):
 
-**Use the manufacturer-provided tools to check and perform these operations** ... It is pretty much the only way to be sure it is not only supported but actually works. Some utilities can tell you whether it is supported or not like CrystalDiskInfo <sup>[[Archive.org]][465]</sup> but will not actually check if it is working. See [Appendix J: Manufacturer tools for Wiping HDD and SSD drives][Appendix J: Manufacturer tools for Wiping HDD and SSD drives:].
+**Use the manufacturer-provided tools to check and perform these operations** ... It is pretty much the only way to be sure it is not only supported but actually works. Some utilities can tell you whether it is supported or not like CrystalDiskInfo <sup>[[Archive.org]][^465]</sup> but will not actually check if it is working. See [Appendix J: Manufacturer tools for Wiping HDD and SSD drives][Appendix J: Manufacturer tools for Wiping HDD and SSD drives:].
 
 If it does not work. Just decrypt and re-encrypt the whole drive or fill up the free space as instructed in the guide. There is no other way AFAIK. Besides booting up a System Rescue Linux CD and see the next section.
 
@@ -10658,7 +10658,7 @@ So how to check checksums? (In this case SHA-256 but you could change to SHA-512
 
     -   Compare your result to one from a source you trust for that file
 
--   macOS :
+-   macOS[^483]:
 
     -   Open a Terminal
 
