@@ -4,7 +4,7 @@ v1.1.5
 - Updated and fixed many broken URLs and saved them in the Wayback Machine
 - Noted that https://mastodon.social/@anonypla is gone? added strike-through
 - Adapted Qubes OS hardware requirements that were too low for a decent experience (RAM) according to their recommendation
-- Put more incentive to use Tor Browser Safest mode as long as it doesn't break anything and switch to Safer if necessary and with precautions linked in an appendix
+- Put more incentive to use Tor Browser Safest mode as long as it does not break anything and switch to Safer if necessary and with precautions linked in an appendix
 - Precision that Anti-Evil Maid on Qubes OS is only available on Intel CPUs 
 - Removed dead link of Centry Fork project
 - Added Windows 11 support to the guide
@@ -12,9 +12,9 @@ v1.1.5
 - Added link to official guide to upgrade from Qubes 4.0.X to 4.1.X (fresh or in-place)
 - Fixed issue in Qubes OS Tor over VPN and VPN over Tor Networking cases that were just plain wrong
 - Added guidance to run Windows 11 within Virtualbox + link to official guide from Oracle
-- Added recommendation to install/use Safing PortMaster and added a link for some compatibility issues between portmaster and some VPNs
+- Added recommendation to install/use Safing PortMaster and added a link for some compatibility issues between Portmaster and some VPNs
 - Removed Windows AME completely from the guide
-- Replaced the "I would" by a "We would" since it's now a group effort and project
+- Replaced the "I would" by a "We would" since it is now a group effort and project
 - Added a safest recommendation for more paranoid people in security level choices in Tor
 
 v1.1.4-pre2
