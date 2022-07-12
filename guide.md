@@ -992,7 +992,7 @@ See [Appendix N: Warning about smartphones and smart devices]
 
 ### Your Digital Fingerprint, Footprint, and Online Behavior:
 
-This is the part where you should watch the documentary "The Social Dilemma"[^143] on Netflix as they cover this topic much better than anyone else IMHO.
+This is the part where you should watch the documentary "The Social Dilemma"[^143] on Netflix as they cover this topic much better than anyone else.
 
 This includes is the way you write (stylometry) [^144]'[^145], the way you behave[^146]'[^147]. The way you click. The way you browse. The fonts you use on your browser[^148]. Fingerprinting is being used to guess who someone is by the way that user is behaving. You might be using specific pedantic words or making specific spelling mistakes that could give you away using a simple Google search for similar features because you typed comparably on some Reddit post 5 years ago using a not so anonymous Reddit account[^149]. The words you type in a search engine alone can be used against you as the authorities now have warrants to find users who used specific keywords in search engines[^150].
 
@@ -1979,7 +1979,7 @@ Now, what if you have no money? Well, in that case, you will have to try your lu
 
 **DISCLAIMER:We cannot vouch for any of these providers and therefore we will still recommend doing it yourself physically. In this case, you will have to rely on the anonymity of Monero and you should not use any service that requires any kind of identification using your real identity. Please do read [Appendix B2: Monero Disclaimer].**
 
-Therefore IMHO, it is just more convenient, cheaper, and less risky to just get a pre-paid SIM card from one of the physical places that still sell them for cash without requiring ID registration. But at least there is an alternative if you have no other choice.
+Therefore, it is just more convenient, cheaper, and less risky to just get a pre-paid SIM card from one of the physical places that still sell them for cash without requiring ID registration. But at least there is an alternative if you have no other choice.
 
 ### Get a USB key:
 
@@ -2381,7 +2381,7 @@ All future online steps performed with this laptop should ideally be done from a
 
 We would strongly recommend getting a "business grade" laptop (meaning not consumer/gaming-grade laptop) if you can. For instance, some ThinkPad from Lenovo (my personal favorite).
 
-This is because those business laptops usually offer better and more customizable security features (especially in the BIOS/UEFI settings) with longer support than most consumer laptops (Asus, MSI, Gigabyte, Acer...). The interesting features to look for are IMHO:
+This is because those business laptops usually offer better and more customizable security features (especially in the BIOS/UEFI settings) with longer support than most consumer laptops (Asus, MSI, Gigabyte, Acer...). The interesting features to look for are:
 
 -   Better custom Secure Boot **settings (where you can selectively manage all the keys and not just use the Standard ones)**
 
@@ -3630,7 +3630,7 @@ For more info, please see the following references:
 
 If you cannot use VPN nor Tor where you are, you probably are in a very hostile environment where surveillance and control are extremely high.
 
-Just do not, it is not worth it and too risky IMHO. You can be de-anonymized almost instantly by any motivated adversary that could get to your physical location in a matter of minutes.
+Just do not, it is not worth it and too risky. You can be de-anonymized almost instantly by any motivated adversary that could get to your physical location in a matter of minutes.
 
 Do not forget to check back on [Adversaries (threats)] and [Appendix S: Check your network for surveillance/censorship using OONI].
 
@@ -4189,7 +4189,7 @@ You might be asking yourself if those VPN clients are trustworthy not to leak an
 
 This is a valid concern but should be taken with a grain of salt.
 
-Remember that all VPN activities are happening from a sandboxed VM on an internal network behind a Network Gateway (the Whonix Gateway). It does not matter much if the VPN client leaves some identifiers on your guest VM. The guest VM is still sandboxed and walled-off from the Host OS. The attack surface is IMHO pretty small especially when using the reputable and recommended VPN providers within the guides (iVPN, Mullvad, Proton VPN, and maybe Safing.io).
+Remember that all VPN activities are happening from a sandboxed VM on an internal network behind a Network Gateway (the Whonix Gateway). It does not matter much if the VPN client leaves some identifiers on your guest VM. The guest VM is still sandboxed and walled-off from the Host OS. The attack surface is small especially when using the reputable and recommended VPN providers within the guides (iVPN, Mullvad, Proton VPN, and maybe Safing.io).
 
 At best, the VPN client would know your local IP (internal IP) and some randomized identifiers but should not be able to get anything from the Host OS. And in theory, the VPN client should not send any telemetry back to the VPN provider. If your VPN client does this or asks this, you should consider changing the provider.
 
@@ -4209,7 +4209,8 @@ There are three ways to do this:
 
 #### The Lazy Way (**not supported by Whonix** but it will work if you are in a hurry, see further for the better way):
 
-**This way is not supported by the Whonix project**[^361] but we will go ahead and give this option anyway. IMHO this is helpful to prevent your Host OS from leaking any information while you are using the Whonix VMs.
+
+**This way is not supported by the Whonix project**[^361] but I will go ahead and give this option anyway. This is helpful to prevent your Host OS from leaking any information while you are using the Whonix VMs.
 
 **Note that this option as-is will only work on Wi-Fis without a captive portal (where you must enter some information to unlock access).**
 
@@ -4331,7 +4332,7 @@ Yet this will still not be supported by the Whonix project, but it is fine as th
 
 This option will require an additional VM between the Host OS and the Whonix Gateway to act as a Network Bridge.
 
-For this purpose, we will recommend the use of a lightweight Linux Distro. Any will do but the easiest IMHO will be an Ubuntu-based distro and we would recommend the lightweight XUbuntu as it will be extremely easy to configure this setup.
+For this purpose, I will recommend the use of a lightweight Linux Distro. Any will do but the easiest will be an Ubuntu-based distro and I would recommend the lightweight XUbuntu as it will be extremely easy to configure this setup.
 
 Why XUbuntu and not Ubuntu or KUbuntu? Because XUbuntu uses an XFCE desktop environment which is lightweight and this VM will only serve as a proxy and nothing else.
 
@@ -4543,7 +4544,7 @@ This way will not go against Whonix recommendations (as it will not expose the W
 
 This option will require an additional VM between the Host OS and the Whonix Gateway to act as a Network Bridge and to connect to the Wi-Fi network. **This option requires a working USB Wi-Fi Dongle that will be passed through to a bridge VM.**
 
-For this purpose, we will recommend the use of a lightweight Linux Distro. Any will do but the easiest IMHO will be an Ubuntu-based distro and we would recommend the lightweight XUbuntu as it will be extremely easy to configure this setup.
+For this purpose, I will recommend the use of a lightweight Linux Distro. Any will do but the easiest will be an Ubuntu-based distro and I would recommend the lightweight XUbuntu as it will be extremely easy to configure this setup.
 
 Why XUbuntu and not Ubuntu or KUbuntu? Because XUbuntu uses an XFCE desktop environment which is lightweight and this VM will only serve as a proxy and nothing else.
 
@@ -4705,7 +4706,7 @@ You are done and can now skip the rest to go to the [Getting Online][Getting Onl
 
 ## The Qubes Route:
 
-**Note that while this route is written for Qubes OS 4.0.x, it should also work with Qubes OS 4.1.x but it hasn't been tested yet. The guide will be updated and tested for Qubes OS 4.1 soon. In the mean time, you can see the changelog here: <https://www.qubes-os.org/doc/releases/4.1/release-notes/>**
+**Note that the guide has been updated to Qubes OS 4.1**
 
 As they say on their website, Qubes OS is a reasonably secure, free, open-source, and security-oriented operating system for single-user desktop computing. Qubes OS leverages and extensively uses Xen-based virtualization to allow for the creation and management of isolated compartments called Qubes.
 
@@ -4869,7 +4870,7 @@ For more info, please see the following references:
 
 If you cannot use VPN nor Tor where you are, you probably are in a very hostile environment where surveillance and control are extremely high.
 
-Just do not, it is not worth it and too risky IMHO. You can be de-anonymized almost instantly by any motivated adversary that could get to your physical location in a matter of minutes.
+Just do not, it is not worth it and too risky. You can be de-anonymized almost instantly by any motivated adversary that could get to your physical location in a matter of minutes.
 
 Do not forget to check back on [Adversaries (threats)] and [Appendix S: Check your network for surveillance/censorship using OONI].
 
@@ -4930,7 +4931,7 @@ See [Appendix O: Getting an anonymous VPN/Proxy]
 
 ### Note about Plausible Deniability:
 
-Qubes OS uses LUKS for full disk encryption and it is technically possible to achieve a form of deniability by using detached LUKS headers. This is not yet integrated into this guide but you will find a tutorial on how to achieve this here: <http://dreadytofatroptsdj6io7l3xptbet6onoyno2yv7jicoxknyazubrad.onion/post/af76301c21e1b4a33851> and some more background information within the Linux Host OS section (see [Note about plausible deniability on Linux]).
+Qubes OS uses LUKS for full disk encryption and it is technically possible to achieve a form of deniability by using detached LUKS headers. This is not yet integrated into this guide but you will find an evolving tutorial on how to achieve this here: <https://forum.qubes-os.org/t/qubes-os-installation-detached-encrypted-boot-and-header/6205> and some more background information within the Linux Host OS section (see [Note about plausible deniability on Linux]).
 
 ### Installation:
 
@@ -4952,7 +4953,7 @@ You will follow the instructions from their own guide <https://www.qubes-os.org/
 
     -   Be absolutely sure that you are verifying the signature of the ISO, which you can find on this page: <https://www.qubes-os.org/security/verifying-signatures/> <sup>[[Archive.org]][1367]</sup>. Check by obtaining the fingerprint from multiple independent sources in several different ways as recommended. This is to ensure the image has not been tampered with. Do not skip this vital step even though you know you are getting the ISO from a trusted source, because it's possible for the Qubes website to be compromised.
 
--   If you cannot use Tor at all, there is also no point in installing Whonix. So, you should disable Whonix installation within the Software Selection Menu.
+-   If you are prevented from using Tor, there is no point in installing the Whonix VM templates. You can disable Whonix installation during the post-installation, initial setup wizard.
 
 To be sure your Qubes ISO hasn't been tampered with, you should get the Qubes master key fingerprint from multiple different sources. This guide can be used as one source.
 
@@ -4962,7 +4963,20 @@ The Qubes master signing key fingerprint should match `427F 11FD 0FAA 4B08 0123 
 
 ### Lid Closure Behavior:
 
-Unfortunately, Qubes OS does not support hibernation[^366] which is IMHO an issue regarding cold-boot attacks. To mitigate those, we highly recommend that you configure Qubes OS to shut down on any power action (power button, lid closure). You can do set this from the XFCE Power Manager. Do not use the sleep features.
+Unfortunately, Qubes OS does not support hibernation[^366] which is an issue regarding cold-boot attacks. To mitigate those, I highly recommend that you configure Qubes OS to shut down on any power action (power button, lid closure). You can do set this from the XFCE Power Manager. Do not use the sleep features.
+
+### Anti Evil Maid (AEM):
+Anti Evil Maid is an implementation of a TPM-based static trusted boot with a primary goal to prevent Evil Maid attacks. Installing and using AEM requires attaching a USB drive directly to dom0. So the user must make a choice between protecting dom0 from a potentially malicious USB drive, and protecting the system from Evil Maid attacks. Note that AEM is only compatible with Intel CPUs and Legacy boot options.
+
+The preference for mitigating any evil maid attack is to maintain physical control of your device at all times. If that is not possible, then this might be relevant to your threat model.
+
+See the following links for more details and installation instructions:
+
+- <https://www.qubes-os.org/doc/anti-evil-maid/> <sup>[[Archive.org]][1378]</sup>
+
+- <https://blog.invisiblethings.org/2011/09/07/anti-evil-maid.html> <sup>[[Archive.org]][1379]</sup>
+
+- <https://github.com/QubesOS/qubes-antievilmaid> <sup>[[Archive.org]][1380]</sup>
 
 ### Connect to a Public Wi-Fi:
 
@@ -5010,17 +5024,17 @@ After you are connected to a Wi-Fi you need to update Qubes OS and Whonix. You m
 
 -   Click the upper left Applications icon
 
--   Select System Tools
+-   Select Qubes Tools
 
--   Select Qubes Update and Launch it
+-   Select Qubes Update
 
 -   Check the "Enable updates for Qubes without known available updates"
 
 -   Select all the Qubes
 
--   Click Next and update
+-   Click Next and wait for updates to complete
 
--   If you checked the Tor option during install, wait patiently as this might take a while over Tor
+-   If you checked the Tor option during install, be patient as this might take a while over Tor
 
 ### Upgrading Whonix from version 15 to version 16:
 
@@ -5082,7 +5096,33 @@ You could make use of SELinux on your Fedora Templates. But this is up to you. A
 
 This tutorial should also work with any OpenVPN provider (Mullvad, IVPN, Safing.io, or Proton VPN for instance).
 
-This is based on the tutorial provided by Qubes OS themselves (<https://github.com/Qubes-Community/Contents/blob/master/docs/configuration/vpn.md> <sup>[[Archive.org]][377]</sup>). This part of the guide needs reworking and update, please follow their tutorial. 
+This is based on the tutorial provided by Qubes OS themselves (<https://github.com/Qubes-Community/Contents/blob/master/docs/configuration/vpn.md> <sup>[[Archive.org]][377]</sup>). If you are familiar with this process, you can follow their tutorial.
+
+Alternatively, Mullvad also have a help article that guides you through setting up a Proxy VM <https://mullvad.net/en/help/qubes-os-4-and-mullvad-vpn/> <sup>[[Archive.org]][1377]</sup>.
+
+#### Create the ProxyVM:
+
+-   Click the Applications icon (upper left corner)
+
+-   Click Create Qubes VM
+
+-   Name and label as you wish: I suggest "VPNGatewayVM"
+
+-   Select Type: Standalone Qube copied from a template
+
+-   Select Template: Debian-11 (the default)
+
+-   Select Networking:
+
+    -   Select sys-whonix if you want to do VPN over Tor / Tor only (recommended)
+
+    -   Select sys-firewall if you want to do Tor over VPN / No Tor or VPN / Just VPN
+
+-   Advanced: Check provides network
+
+-   Check "Start Qube automatically on boot"
+
+-   Create the VM
 
     -   If you are going for VPN over Tor, you need to go into the settings of the ProxyVM you made and select "sys-vpn" for networking.
         -   An easier way to setup your ProxyVM is to simply run a VPN client on the ProxyVM.
@@ -5283,11 +5323,11 @@ See: [Appendix V: What browser to use in your Guest VM/Disposable VM]
 
 #### Fedora Disposable VM:
 
-Within the Applications Menu (upper left), Select the Fedora-34 template:
+Within the Applications Menu (upper left), Select the Fedora-36 template:
 
 -   Go into Qube Settings
 
--   Clone the VM and name it "fedora-3x-brave" (this VM template will have Brave)
+-   Clone the VM and name it "fedora-36-brave" (this VM template will have Brave)
 
 -   Again, go into the Applications Menu and select the clone you just created
 
@@ -5301,13 +5341,14 @@ If you want to use Brave: apply the instructions from <https://brave.com/linux/>
 
 -   ```sudo dnf install dnf-plugins-core```
 
--   ```sudo dnf config-manager --add-repo https://brave-browser-rpm-release.s3.brave.com/x86_64/```
+-   ```sudo dnf config-manager --add-repo
+https://brave-browser-rpm-release.s3.brave.com/x86_64/```
 
 -   ```sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc```
 
 -   ```sudo dnf install brave-browser```
 
-You should also consider hardening your browser, see
+You should also consider hardening your browser, see [Appendix V1: Hardening your Browsers][Appendix V1: Hardening your Browsers:]
 
 #### Whonix Disposable VM:
 
@@ -5409,35 +5450,23 @@ If you want to install apps on this emulator:
 
     -   ```adb install my-app.apk```
 
-That's it, you should now have an Android Qube over Tor (or anything else) capable of running pretty much any App you can sideload with ADB. This is, for now, and IMHO, the easiest way to get Android emulation on Qubes OS.
+That's it, you should now have an Android Qube over Tor (or anything else) capable of running pretty much any App you can sideload with ADB. This is, for now, the easiest way to get Android emulation on Qubes OS.
 
 ### KeePassXC:
 
-You will need something to store your data (logins/passwords, identities, and TOTP[^369] information).
+You will need somewhere to store your data (logins/passwords, identities, and TOTP[^369] information).
 
-For this purpose, we strongly recommend KeePassXC because of its integrated TOTP feature. This is the ability to create entries for 2FA[^370] authentication with the authenticator feature.
+For this purpose, KeePassXC is recommended because of its integrated TOTP feature. This is the ability to create entries for 2FA[^370] authentication with the authenticator feature.
 
-In the context of Qubes OS you should store your sensitive information within the Domain-vault Qube:
+In the context of Qubes OS you should store your sensitive information within the vault Qube:
 
--   First, click the Applications icon (upper left) and select the Domain: Vault Qube.
+-   First, click the Applications icon (upper left) and select the vault Qube.
 
 -   Click Qubes Settings
 
--   Temporarily enable network by changing the network to your VPN ProxyVM you created earlier
+-   Select the Applications tab
 
--   Open a terminal within the Domain: Vault Qube
-
--   Type: ```sudo dnf install keepassxc``` and wait for it to install
-
--   Close the terminal and disable the network by changing back the network to (none)
-
--   Go back into the Domain: Vault Qube Settings and into the Applications tab
-
--   Click Refresh
-
--   Add KeePassXC to the Selected tab
-
--   Launch KeePassXC within the Domain: Vault Qube
+-   From the list of available applications, add KeePassXC to the list of selected applications.
 
 You are done and can now skip the rest to go to the "[Creating your anonymous online identities][Creating new identities:]" part.
 
@@ -5825,7 +5854,7 @@ We will help you bit by listing a few tips we learned while researching over the
 
 -   Similarly, origin IP geolocation (your IP/location when you go to "whatsmyipaddress.com") should match your identity location as much as possible (When using a VPN over Tor, you can pick this in the VPN client if you use the VPN over Tor approach or just create a new identity in Tor Browser or Brave Tor Tab until you get an appropriate Exit node, or configure Tor to restrict your Exit Nodes). Consider excluding any exit IP that is not located in Western Europe/US/Canada/Japan/South Korea/Australia/New Zealand as you will have fewer issues. Ideally, you should get a European Union IP to get additional GDPR protection and if possible, a German exit IP due to their legal stance on using anonymous accounts on online platforms.
 
--   Brave Browser (Chromium-based) with a Private Tor Tab has (IMHO) a better acceptance level than Tor Browser (Firefox based). You will experience fewer issues with captchas and online platforms[^383] if you use Brave than if you use Tor Browser (feel free to try this yourself).
+-   Brave Browser (Chromium-based) with a Private Tor Tab has a better acceptance level than Tor Browser (Firefox based). You will experience fewer issues with captchas and online platforms[^383] if you use Brave than if you use Tor Browser (feel free to try this yourself).
 
 -   For every identity, you should have a matching profile picture associated with it. For this purpose, we recommend you just go to <https://thispersondoesnotexist.com/> <sup>[[Archive.org]][399]</sup> and generate a computer-generated profile picture (Do note that algorithms have been developed[^393]'[^394] to detect these and it might not work 100% of the time). You can also generate such pictures yourself from your computer if you prefer by using the open-source StyleGan project here <https://github.com/NVlabs/stylegan2> <sup>[[Archive.org]][400]</sup>. Just refresh the page until you find a picture that matches your identity in all aspects (age, sex, and ethnicity) and save that picture. It would be even better to have several pictures associated with that identity, butWedo not have an "easy way" of doing that yet.
 
@@ -7865,7 +7894,7 @@ Without SecureDrop you could consider:
 
 -   Using any other platform (even Twitter DMs) but again using GPG to encrypt the message for the recipient.
 
-What you should avoid IMHO:
+What you should avoid:
 
 -   Do not send physical materials using the post due to the risk of leaving DNA/Fingerprints or other traceable information (see [Cash-Paid VPN (preferred)][Cash/Monero-Paid VPN:]).
 
@@ -8189,7 +8218,7 @@ So, you want to be sure. To achieve 100% secure deletion on an SSD drive, you wi
 
     -   ATA/NVMe Sanitize Block Erase: This method performs an actual block erase on every storage block and will destroy the data and change the encryption key if present.
 
-    -   ATA/NVMe Sanitize Overwrite **(terribly slow, could be dangerous and not recommended)**: This method performs a block erase and then overwrite every storage block (it is the same as Block Erase but will overwrite data in addition). This method is overkill and not necessary IMHO.
+    -   ATA/NVMe Sanitize Overwrite **(terribly slow, could be dangerous and not recommended)**: This method performs a block erase and then overwrite every storage block (it is the same as Block Erase but will overwrite data in addition). This method is overkill and not necessary.
 
 -   Physical Destruction:
     -   HDDs:
@@ -8743,7 +8772,7 @@ It is actually simple, jut install exiftool and run:
 
 #### All-in-one Tool:
 
-Another option good tool IMHO to remove metadata from various documents is the open-source mat2 recommended by privacyguides.org[^445] (<https://0xacab.org/jvoisin/mat2> <sup>[[Archive.org]][519]</sup>) which you can use on Linux quite easily. We never managed to make it work properly within Windows due to various dependencies issues despite the provided instructions. It is however very straightforward to install and use on Linux.
+Another option good tool to remove metadata from various documents is the open-source mat2 recommended by privacyguides.org[^445] (<https://0xacab.org/jvoisin/mat2> <sup>[[Archive.org]][519]</sup>) which you can use on Linux quite easily. I never managed to make it work properly within Windows due to various dependencies issues despite the provided instructions. It is however very straightforward to install and use on Linux.
 
 So, we would suggest creating a small Debian VM within Virtualbox (behind your Whonix Gateway) which you can then use from your other VMs to analyze various files from a convenient web interface. For this see [Appendix L: Creating a mat2-web guest VM for removing metadata from files]
 
@@ -10332,7 +10361,7 @@ Addititionally, if using a smartphone as a burner, know that they send a lot of 
 
 If you follow my advice, you will also need a VPN subscription but this time you will need an anonymous one that cannot be tied to you by the financial system. Meaning you will need to buy a VPN subscription with cash or a reasonably private cryptocurrency (Monero). You will later use this VPN to connect to the various services anonymously but never directly from your IP.
 
-There are, IMHO, two viable options:
+There are, two viable options:
 
 ## Cash/Monero-Paid VPN:
 
@@ -10568,7 +10597,7 @@ Download the VPN client installer of your cash paid VPN service and install it o
 
 **Important note: Tor does not support UDP, and you should use TCP instead with the VPN client in the Tor over VPN cases (on the VMs).**
 
-In all cases, you should set the VPN to start from boot and enable the "kill switch" if you can. This is an extra step since this guide proposes solutions that all fall back on the Tor network in case of VPN failure. Still recommended IMHO.
+In all cases, you should set the VPN to start from boot and enable the "kill switch" if you can. This is an extra step since this guide proposes solutions that all fall back on the Tor network in case of VPN failure.
 
 Here are some guides provided by the recommended VPN providers in this guide:
 
@@ -10924,7 +10953,7 @@ If you are to resort to this, you should never do so from a monitored/known netw
 
 # Appendix V: What browser to use in your Guest VM/Disposable VM
 
-There are IMHO 6 possibilities of browser to use on your guest/disposable VM:
+There are 6 possibilities of browser to use on your guest/disposable VM:
 
 -   Brave (Chromium-based)
 
@@ -11108,7 +11137,7 @@ Security (especially sandboxing) of Firefox is arguably weaker than Chromium-bas
 
 ## Tor Browser:
 
-If you are extra paranoid and want to use Tor Browser and have "Tor over VPN over Tor", you could go with Tor Browser within the VM as well. This is IMHO completely pointless/useless.
+If you are extra paranoid and want to use Tor Browser and have "Tor over VPN over Tor", you could go with Tor Browser within the VM as well. This is completely pointless/useless.
 
 We would not recommend this option. It is just silly.
 
@@ -11723,7 +11752,7 @@ But what if the service you want does not accept Monero but does accept a more m
 
 **Bitcoin and other "mainstream cryptocurrencies" are not anonymous at all (Remember [Your Cryptocurrencies transactions][Your Cryptocurrencies transactions:]) and you should never ever purchase, for example, Bitcoin from an exchange and then use these directly for purchasing services anonymously. This will not work, and the transaction can be traced easily.**
 
--   **Stay away from Crypto Mixers and Tumblers.** You might think this is a good idea but not only are they IMHO useless with cryptocurrencies such as BTC/ETH/LTC, but they are also dangerous as you might end up trading your currency for dirty currency from illicit activities. Use Monero to anonymize your crypto. Use a normal KYC-enabled Exchange to buy/sell your Monero (such as Kraken) or (at your own risk), use a service like LocalMonero.
+-   **Stay away from Crypto Mixers and Tumblers.** You might think this is a good idea but not only are they useless with cryptocurrencies such as BTC/ETH/LTC, but they are also dangerous as you might end up trading your currency for dirty currency from illicit activities. Use Monero to anonymize your crypto. Use a normal KYC-enabled Exchange to buy/sell your Monero (such as Kraken) or (at your own risk), use a service like LocalMonero.
 
 -   **Stay away from what are in my opinion risky private/anonymizing wallets such as <https://we.incognito.org>.** Use a safer method outlined below.
 
@@ -12239,7 +12268,7 @@ Also please consider reading: **<https://github.com/monero-project/monero/blob/m
 
 **If you feel extra paranoid and want the highest safety level possible,** see the [Extra-Paranoid anonymous option][Extra-Paranoid anonymous option:].
 
-**Use these at your own risk, sending cash payments to providers accepting cash (through the postal service) is always a better solution if/when possible, IMHO.**
+**Use these at your own risk, sending cash payments to providers accepting cash (through the postal service) is always a better solution if/when possible.**
 
 # Appendix B3: Threat modeling resources
 
@@ -14995,3 +15024,7 @@ You can find some introduction on these on these projects:
   [1374]: https://web.archive.org/web/https://safing.io/portmaster/https://docs.safing.io/portmaster/install/status/vpn-compatibility
   [1375]: https://web.archive.org/web/https://blogs.oracle.com/virtualization/post/install-microsoft-windows-11-on-virtualbox
   [1376]: https://web.archive.org/web/https://www.whonix.org/wiki/Release_Upgrade_Whonix_15_to_Whonix_16
+  [1377]: https://web.archive.org/web/https://mullvad.net/en/help/qubes-os-4-and-mullvad-vpn/
+  [1378]: https://web.archive.org/web/https://www.qubes-os.org/doc/anti-evil-maid/
+  [1379]: https://web.archive.org/web/https://blog.invisiblethings.org/2011/09/07/anti-evil-maid.html
+  [1380]: https://web.archive.org/web/https://github.com/QubesOS/qubes-antievilmaid
