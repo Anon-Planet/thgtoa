@@ -628,6 +628,8 @@ Here is an illustration of the issue you could encounter on Firefox-based browse
 
 Finally, even if you use a custom encrypted DNS server (DoH or DoT) with ECH/eSNI support and OCSP stapling, it might still not be enough as traffic analysis studies[^52] have shown it is still possible to reliably fingerprint and block unwanted requests. Only DNS over Tor was able to show efficient DNS Privacy in recent studies but even that can still be defeated by other means (see [Your Anonymized Tor/VPN traffic][Your Anonymized Tor/VPN traffic:]).
 
+It should be noted that new initiatives are on track to solve some of these issues like for example Oblivious HTTP (see <https://www.ietf.org/archive/id/draft-ietf-ohai-ohttp-01.html> <sup>[[Archive.org]][1377]</sup>)
+
 One could also decide to use a Tor Hidden DNS Service or ODoH (Oblivious DNS over HTTPS[^53]) to further increase privacy/anonymity but **unfortunately**, as far as we know, these methods are only provided by Cloudflare as of this writing (<https://blog.cloudflare.com/welcome-hidden-resolver/> <sup>[[Archive.org]][53]</sup>, <https://blog.cloudflare.com/oblivious-dns/> <sup>[[Archive.org]][54]</sup>). These are workable and reasonably secure technical options but there is also a moral choice if you want to use Cloudflare or not (despite the risk posed by some researchers[^54]).
 
 Lastly, there is also this new possibility called DoHoT which stands for DNS over HTTPS over Tor which could also further increase your privacy/anonymity and which you could consider if you are more skilled with Linux. See <https://github.com/alecmuffett/dohot> <sup>[[Archive.org]][55]</sup>. This guide will not help you with this one at this stage, but it might be coming soon.
@@ -14995,3 +14997,4 @@ You can find some introduction on these on these projects:
   [1374]: https://web.archive.org/web/https://safing.io/portmaster/https://docs.safing.io/portmaster/install/status/vpn-compatibility
   [1375]: https://web.archive.org/web/https://blogs.oracle.com/virtualization/post/install-microsoft-windows-11-on-virtualbox
   [1376]: https://web.archive.org/web/https://www.whonix.org/wiki/Release_Upgrade_Whonix_15_to_Whonix_16
+  [1377]: https://web.archive.org/web/https://www.ietf.org/archive/id/draft-ietf-ohai-ohttp-01.html
