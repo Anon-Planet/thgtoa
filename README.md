@@ -43,7 +43,7 @@ Follow or contact us:
 - Matrix room: ```#anonymity:matrix.org``` <https://matrix.to/#/#anonymity:matrix.org>
 - Matrix space: ```#privacy-security-anonymity:matrix.org``` <https://matrix.to/#/#privacy-security-anonymity:matrix.org>
 - Twitter at https://twitter.com/AnonyPla 
-- Mastodon at https://mastodon.social/@anonypla
+- Mastodon at https://mastodon.social/@anonymousplanet
 
 Have a good read and feel free to share and/or recommend it!
 
