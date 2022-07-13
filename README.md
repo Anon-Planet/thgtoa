@@ -1,12 +1,10 @@
 Welcome.
 
-**[IMPORTANT RECOMMENDATION FOR UKRAINIANS. ВАЖЛИВА РЕКОМЕНДАЦІЯ ДЛЯ УКРАЇНЦІВ](briar.html)**
-
 This is a maintained guide with the aim of providing an introduction to various online tracking techniques, online ID verification techniques, and detailed guidance to creating and maintaining (truly) anonymous online identities. <span style="color: red">**It is written with hope for activists, journalists, scientists, lawyers, whistle-blowers, and good people being oppressed, censored, harassed anywhere!**</span>
 
-This guide is an open-source non-profit initiative, [licensed](LICENSE.html) under **Creative Commons Attribution-NonCommercial 4.0 International** ([cc-by-nc-4.0] <sup>[[Archive.org]][1]</sup>) and is **not sponsored/endorsed by any commercial/governmental entity**. This means that you are free to use my guide for pretty much any purpose **excluding commercially** as long as you do attribute it.
+This guide is an open-source non-profit initiative, [licensed](LICENSE.html) under **Creative Commons Attribution-NonCommercial 4.0 International** ([cc-by-nc-4.0] <sup>[[Archive.org]][1]</sup>) and is **not sponsored/endorsed by any commercial/governmental entity**. This means that you are free to use our guide for pretty much any purpose **excluding commercially** as long as you do attribute it. There are no ads or any affiliate link.
 
-**If you'd like to make a donation to help this project, you can do so from [here](donations.html) where you'll also find the project goals. All the donations will be strictly used within the context of this project. All donations and spendings are logged on the donations page.**
+**If you would like to make a donation to help this project, you can do so from [here](donations.html) where you will also find the project goals. All the donations will be strictly used within the context of this project. All donations and spendings are logged on the donations page.**
 
 **Direct downloads:**
 - <del>CryptPad.fr at: <https://cryptpad.fr/drive/#/2/drive/view/Ughm9CjQJCwB8BIppdtvj5zy4PyE-8Gxn11x9zaqJLI/></del> (temporarily unavailable)
@@ -18,7 +16,7 @@ This guide is an open-source non-profit initiative, [licensed](LICENSE.html) und
 - Raw [Markdown](https://raw.githubusercontent.com/NobodySpecial256/thgtoa/master/guide.md)
 
 Mirrors:
-- Main: <https://anonymousplanet-ng.org>
+- **Coming soon**
 
 The guide and all the files are also readily available on Archive.org and Archive.today:
 
@@ -28,7 +26,7 @@ The guide and all the files are also readily available on Archive.org and Archiv
 
 If you want to access/see the original/legacy project, please see the [legacy resources](legacy.html) page.
 
-If you want to see the changes between your PDF and the latest PDF, you could use one of these tools (I do not endorse those):
+If you want to see the changes between your PDF and the latest PDF, you could use one of these tools (we do not endorse those):
 
 - <https://tools.pdf24.org/en/compare-pdf>
 - <https://products.aspose.app/pdf/comparison>
@@ -40,11 +38,12 @@ If you want to compare an older ODT file with a newer one, use the LibreWriter c
 
 Feel free to submit issues using Github Issues with the repository link above. Criticism, opinions, and ideas are welcome!
 
-Follow or contact me on:
+Follow or contact us:
 
-Discussion Channels:
 - Matrix room: ```#anonymity:matrix.org``` <https://matrix.to/#/#anonymity:matrix.org>
 - Matrix space: ```#privacy-security-anonymity:matrix.org``` <https://matrix.to/#/#privacy-security-anonymity:matrix.org>
+- Twitter at https://twitter.com/AnonyPla 
+- Mastodon at https://mastodon.social/@anonypla
 
 Have a good read and feel free to share and/or recommend it!
 
