@@ -486,7 +486,7 @@ You might think this guide has no legitimate use but there are many[^16]'[^17]'[
 
 This guide is written with hope for those **good-intended individuals** who might not be knowledgeable enough to consider the big picture of online anonymity and privacy.
 
-**Lastly, use it at your own risk. Anything in here is not legal advice and you should verify compliance with your local law before use (IANAL**[^24]**). "Trust but verify"**[^25] **all the information yourself (or even better, "Never Trust, always verify"**[^391]**). We strongly encourage you to inform yourself and do not hesitate to check any information in this guide with outside sources in case of doubt. Please do report any mistake you spot to us as we welcome criticism. Even harsh but sound criticism is welcome and will result in having the necessary corrections made as quickly as possible.**
+**Lastly, use it at your own risk. Anything in here is not legal advice and you should verify compliance with your local law before use (IANAL**[^24]**). "Trust but verify"**[^25] **all the information yourself (or even better, "Never Trust, always verify"**[^390]**). We strongly encourage you to inform yourself and do not hesitate to check any information in this guide with outside sources in case of doubt. Please do report any mistake you spot to us as we welcome criticism. Even harsh but sound criticism is welcome and will result in having the necessary corrections made as quickly as possible.**
 
 # Understanding some basics of how some information can lead back to you and how to mitigate some:
 
@@ -1008,7 +1008,7 @@ Here are some examples:
 
 -   For example, as a basis of authentication, a user's typing speed, keystroke depressions, patterns of error (say accidentally hitting an "l" instead of a "k" on three out of every seven transactions) and mouse movements establish that person's unique pattern of behavior[^152]. Some commercial services such as TypingDNA (<https://www.typingdna.com/> <sup>[[Archive.org]][94]</sup>) even offer such analysis as a replacement for two-factor authentications.
 
--   This technology is also widely used in CAPTCHAS[^371] services to verify that you are "human" and can be used to fingerprint a user.
+-   This technology is also widely used in CAPTCHAS[^370] services to verify that you are "human" and can be used to fingerprint a user.
 
 -   See [Appendix A4: Counteracting Forensic Linguistics].
 
@@ -1388,7 +1388,7 @@ The only way to mitigate this is to encrypt your data on your side and then only
 
 ## Your Browser and Device Fingerprints:
 
-Your Browser and Device Fingerprints[^382] are set of properties/capabilities of your System/Browser. These are used on most websites for invisible user tracking but also to adapt the website user experience depending on their browser. For instance, websites will be able to provide a "mobile experience" if you are using a mobile browser or propose a specific language/geographic version depending on your fingerprint. Most of those techniques work with recent Browsers like Chromium-based[^251] browsers (such as Chrome/Edge) or Firefox[^252] unless taking specific measures.
+Your Browser and Device Fingerprints[^381] are set of properties/capabilities of your System/Browser. These are used on most websites for invisible user tracking but also to adapt the website user experience depending on their browser. For instance, websites will be able to provide a "mobile experience" if you are using a mobile browser or propose a specific language/geographic version depending on your fingerprint. Most of those techniques work with recent Browsers like Chromium-based[^251] browsers (such as Chrome/Edge) or Firefox[^252] unless taking specific measures.
 
 You can find a lot of detailed information and publications about this on these resources:
 
@@ -1545,25 +1545,25 @@ Any of those providers can be forced to silently (without your knowing (using fo
 
 -   2021, Proton, Proton logged IP address of French activist after an order by Swiss authorities (source link unavailable).
 
--   2021, WindScribe, Servers were not encrypted as they should have been allowing MITM attacks by authorities[^275].
+-   2021, WindScribe, Servers were not encrypted as they should have been allowing MITM attacks by authorities[^274].
 
--   2021, DoubleVPN servers, logs, and account info seized by law enforcement[^276].
+-   2021, DoubleVPN servers, logs, and account info seized by law enforcement[^275].
 
--   2021, The Germany-based mail provider Tutanota was forced to monitor specific accounts for 3 months[^277].
+-   2021, The Germany-based mail provider Tutanota was forced to monitor specific accounts for 3 months[^276].
 
--   2020, The Germany-based mail provider Tutanota was forced to implement a backdoor to intercept and save copies of the unencrypted e-mails of one user[^278] (they did not decrypt the stored e-mail).
+-   2020, The Germany-based mail provider Tutanota was forced to implement a backdoor to intercept and save copies of the unencrypted e-mails of one user[^277] (they did not decrypt the stored e-mail).
 
--   2017, PureVPN was forced to disclose information of one user to the FBI[^279].
+-   2017, PureVPN was forced to disclose information of one user to the FBI[^278].
 
--   2014, an EarthVPN user was arrested based on logs provider to the Dutch Police[^280].
+-   2014, an EarthVPN user was arrested based on logs provider to the Dutch Police[^279].
 
--   2013, Secure E-Mail provider Lavabit shuts down after fighting a secret gag order[^281].
+-   2013, Secure E-Mail provider Lavabit shuts down after fighting a secret gag order[^280].
 
--   2011, HideMyAss user was de-anonymized, and logs were provided to the FBI[^282].
+-   2011, HideMyAss user was de-anonymized, and logs were provided to the FBI[^281].
 
-Some providers have implemented the use of a Warrant Canary[^283] that would allow their users to find out if they have been compromised by such orders, but this has not been tested yet as far as we know.
+Some providers have implemented the use of a Warrant Canary[^282] that would allow their users to find out if they have been compromised by such orders, but this has not been tested yet as far as we know.
 
-Finally, it is now well known that some companies might be sponsored front ends for some state adversaries (see the Crypto AG story[^284] and Omnisec story[^285]).
+Finally, it is now well known that some companies might be sponsored front ends for some state adversaries (see the Crypto AG story[^283] and Omnisec story[^284]).
 
 For these reasons, you mustn't trust such providers for your privacy despite all their claims. In most cases, you will be the last person to know if any of your accounts were targeted by such orders and you might never know at all.
 
@@ -1575,9 +1575,9 @@ If the VPN provider knows nothing about you, it should mitigate any issue due to
 
 ![][171]
 
-(Illustration: an excellent movie we highly recommend: Das Leben der Anderen[^286])
+(Illustration: an excellent movie we highly recommend: Das Leben der Anderen[^285])
 
-Many advanced techniques can be used by skilled adversaries[^287] to bypass your security measures provided they already know where your devices are. Many of those techniques are detailed here <https://cyber.bgu.ac.il/advanced-cyber/airgap> <sup>[[Archive.org]][172]</sup> (Air-Gap Research Page, Cyber-Security Research Center, Ben-Gurion University of the Negev, Israel) but also in this report <https://www.welivesecurity.com/wp-content/uploads/2021/12/eset_jumping_the_air_gap_wp.pdf> <sup>[[Archive.org]][173]</sup> (ESET, JUMPING
+Many advanced techniques can be used by skilled adversaries[^286] to bypass your security measures provided they already know where your devices are. Many of those techniques are detailed here <https://cyber.bgu.ac.il/advanced-cyber/airgap> <sup>[[Archive.org]][172]</sup> (Air-Gap Research Page, Cyber-Security Research Center, Ben-Gurion University of the Negev, Israel) but also in this report <https://www.welivesecurity.com/wp-content/uploads/2021/12/eset_jumping_the_air_gap_wp.pdf> <sup>[[Archive.org]][173]</sup> (ESET, JUMPING
 
 THE AIR GAP: 15 years of nation-state effort) and include:
 
@@ -1619,17 +1619,17 @@ THE AIR GAP: 15 years of nation-state effort) and include:
 
 -   **Attacks not requiring malware:**
 
-    -   Observing a blank wall in a room from a distance to figure how many people are in a room and what they are doing[^288]. Publication with demonstration: <http://wallcamera.csail.mit.edu/> <sup>[[Archive.org]][190]</sup>
+    -   Observing a blank wall in a room from a distance to figure how many people are in a room and what they are doing[^287]. Publication with demonstration: <http://wallcamera.csail.mit.edu/> <sup>[[Archive.org]][190]</sup>
 
-    -   Observing a reflective bag of snacks in a room from a distance to reconstruct the entire room[^289]. Publication with photographic examples: <https://arxiv.org/pdf/2001.04642.pdf> <sup>[[Archive.org]][191]</sup>
+    -   Observing a reflective bag of snacks in a room from a distance to reconstruct the entire room[^288]. Publication with photographic examples: <https://arxiv.org/pdf/2001.04642.pdf> <sup>[[Archive.org]][191]</sup>
 
-    -   Measuring floor vibrations to identify individuals and determine their health condition and mood[^290]. Publication with demonstration: <https://engineering.cmu.edu/news-events/news/2020/02/17-mauraders-map.html> <sup>[[Archive.org]][192]</sup>
+    -   Measuring floor vibrations to identify individuals and determine their health condition and mood[^289]. Publication with demonstration: <https://engineering.cmu.edu/news-events/news/2020/02/17-mauraders-map.html> <sup>[[Archive.org]][192]</sup>
 
-    -   Observing a light bulb from a distance to listen to the sound in the room[^291] **without any malware**: Demonstration: <https://www.youtube.com/watch?v=t32QvpfOHqw> <sup>[[Invidious]][193]</sup>. It should be noted that this type of attack is not new at all and there have been articles about such techniques as far back as 2013[^292] and that you can even buy devices to perform this yourself such as here: <http://www.gcomtech.com/ccp0-prodshow/laser-surveillance-laser-listening.html> <sup>[[Archive.org]][194]</sup>
+    -   Observing a light bulb from a distance to listen to the sound in the room[^290] **without any malware**: Demonstration: <https://www.youtube.com/watch?v=t32QvpfOHqw> <sup>[[Invidious]][193]</sup>. It should be noted that this type of attack is not new at all and there have been articles about such techniques as far back as 2013[^291] and that you can even buy devices to perform this yourself such as here: <http://www.gcomtech.com/ccp0-prodshow/laser-surveillance-laser-listening.html> <sup>[[Archive.org]][194]</sup>
 
 Here is also a good video from the same authors to explain those topics: Black Hat, The Air-Gap Jumpers <https://www.youtube.com/watch?v=YKRtFgunyj4> <sup>[[Invidious]][195]</sup>
 
-**Realistically, this guide will be of little help against such adversaries as such malware could be implanted on the devices by a manufacturer, anyone in the middle**[^293]**, or by anyone with physical access to the air-gapped computer but there are still some ways to mitigate such techniques:**
+**Realistically, this guide will be of little help against such adversaries as such malware could be implanted on the devices by a manufacturer, anyone in the middle**[^292]**, or by anyone with physical access to the air-gapped computer but there are still some ways to mitigate such techniques:**
 
 -   Do not conduct sensitive activity while connected to an untrusted/unsecured power line to prevent power line leaks.
 
@@ -1699,7 +1699,7 @@ If you still do not think such information can be used by various actors to trac
 
 Personally, in the context of this guide, it is also interesting to have a look at your security model. And in this context,we only have one to recommend:
 
-Zero-Trust Security[^391] ("Never trust, always verify").
+Zero-Trust Security[^390] ("Never trust, always verify").
 
 Here are some various resources about what Zero-Trust Security is:
 
@@ -1809,7 +1809,7 @@ Now that you know what is possible, you should also consider threats and adversa
 
     -   **The Qubes OS route (best but requires budget/time and some skills).**
 
--   If you want system-wide plausible deniability[^311]'[^294] despite the risks[^295]'[^314], consider:
+-   If you want system-wide plausible deniability[^310]'[^293] despite the risks[^294]'[^313], consider:
 
     -   **The Tails Route including the persistent plausible deniability section (see [Persistent Plausible Deniability using Whonix within Tails][Persistent Plausible Deniability using Whonix within Tails:]).**
 
@@ -1889,7 +1889,7 @@ You might be asking yourself: "How do I know if I'm in a hostile online environm
 
 -   First read more about it at the EFF here: <https://ssd.eff.org/en/module/understanding-and-circumventing-network-censorship> <sup>[[Archive.org]][224]</sup>
 
--   Check some data yourself here on the Tor Project OONI[^296] (Open Observatory of Network Interference) website: <https://explorer.ooni.org/>
+-   Check some data yourself here on the Tor Project OONI[^295] (Open Observatory of Network Interference) website: <https://explorer.ooni.org/>
 
 -   Have a look at <https://censoredplanet.org/> and see if they have data about your country.
 
@@ -1929,7 +1929,7 @@ When you are certain the phone is in working order, disable Bluetooth then power
 
 ##### Getting an anonymous pre-paid SIM card:
 
-This is the hardest part of the whole guide. It is a SPOF (Single Point of Failure). The places where you can still buy prepaid SIM cards without ID registration are getting increasingly limited due to various KYC type regulations[^297].
+This is the hardest part of the whole guide. It is a SPOF (Single Point of Failure). The places where you can still buy prepaid SIM cards without ID registration are getting increasingly limited due to various KYC type regulations[^296].
 
 So here is a list of places where you can still get them now: <https://prepaid-data-sim-card.fandom.com/wiki/Registration_Policies_Per_Country> <sup>[[Archive.org]][227]</sup>
 
@@ -1989,7 +1989,7 @@ Get at least one or two decent size generic USB keys (at least 16GB but we would
 
 Please do not buy or use gimmicky self-encrypting devices such as these: <https://syscall.eu/blog/2018/03/12/aigo_part1/> <sup>[[Archive.org]][235]</sup>
 
-Some might be very efficient[^298] but many are gimmicky gadgets that offer no real protection[^299].
+Some might be very efficient[^297] but many are gimmicky gadgets that offer no real protection[^298].
 
 ### Find some safe places with decent public Wi-Fi:
 
@@ -2095,7 +2095,7 @@ Now, you are really done, and you can now surf the web anonymously from your And
 
 ### iOS:
 
-While the official Tor Browser is not yet available for iOS, there is an alternative called Onion Browser endorsed by the Tor Project[^300].
+While the official Tor Browser is not yet available for iOS, there is an alternative called Onion Browser endorsed by the Tor Project[^299].
 
 -   Head over to <https://apps.apple.com/us/app/onion-browser/id519296448>
 
@@ -2197,13 +2197,13 @@ This part of the guide will help you in setting up Tails if one of the following
 
 -   You decide to go with Tails anyway
 
-Tails[^301] stands for **The Amnesic Incognito Live System**. It is a bootable Live Operating System running from a USB key that is designed for leaving no traces and forcing all connections through the Tor network.
+Tails[^300] stands for **The Amnesic Incognito Live System**. It is a bootable Live Operating System running from a USB key that is designed for leaving no traces and forcing all connections through the Tor network.
 
 You insert the Tails USB key into your laptop, boot from it and you have a full operating system running with privacy and anonymity in mind. As soon as you shut down the computer, everything will be gone unless you saved it somewhere.
 
 Tails is an amazingly straightforward way to get going in no time with what you have and without much learning. It has extensive documentation and tutorials.
 
-**WARNING: Tails is not always up to date with their bundled software. And not always up to date with the Tor Browser updates either. You should always make sure you are using the latest version of Tails and you should use extreme caution when using bundled apps within Tails that might be vulnerable to exploits and reveal your location**[^302]**.**
+**WARNING: Tails is not always up to date with their bundled software. And not always up to date with the Tor Browser updates either. You should always make sure you are using the latest version of Tails and you should use extreme caution when using bundled apps within Tails that might be vulnerable to exploits and reveal your location**[^301]**.**
 
 It does however have some drawbacks:
 
@@ -2267,7 +2267,7 @@ When you are done and have a working Tails on your laptop, go to the [Creating y
 
 Consider checking the <https://github.com/aforensics/HiddenVM> <sup>[[Archive.org]][245]</sup> project for Tails.
 
-This project is a clever idea of a one-click self-contained VM solution that you could store on an encrypted disk using plausible deniability[^311] (see [The Whonix route:] first chapters and also for some explanations about Plausible deniability, as well as the [How to securely delete specific files/folders/data on your HDD/SSD and Thumb drives:] section at the end of this guide for more understanding).
+This project is a clever idea of a one-click self-contained VM solution that you could store on an encrypted disk using plausible deniability[^310] (see [The Whonix route:] first chapters and also for some explanations about Plausible deniability, as well as the [How to securely delete specific files/folders/data on your HDD/SSD and Thumb drives:] section at the end of this guide for more understanding).
 
 This would allow the creation of a hybrid system mixing Tails with the Virtualization options of the Whonix route in this guide.
 
@@ -2299,7 +2299,7 @@ Remember that encryption with or without plausible deniability is not a silver b
 
 CAUTION: Please see [**Appendix K: Considerations for using external SSD drives**][Appendix K: Considerations for using external SSD drives] and [**Understanding HDD vs SSD**][Understanding HDD vs SSD:] sections if you consider storing such hidden VMs on an external SSD drive:
 
--   **Do not use hidden volumes on SSD drives as this is not supported/recommended by Veracrypt**[^303]**.**
+-   **Do not use hidden volumes on SSD drives as this is not supported/recommended by Veracrypt**[^302]**.**
 
 -   **Use instead file containers instead of encrypted volumes.**
 
@@ -2387,7 +2387,7 @@ This is because those business laptops usually offer better and more customizabl
 
 -   HDD/SSD passwords in addition to just BIOS/UEFI passwords.
 
--   AMD laptops could be more interesting as some provide the ability to disable AMD PSP (the AMD equivalent of Intel IME) from the BIOS/UEFI settings by default. And, because AFAIK, AMD PSP was audited and contrary to IME was not found to have any "evil" functionalities[^304]. However, if you are going for the Qubes OS Route consider Intel CPUs as Qubes OS does not support AMD with their anti-evil-maid system[^305].
+-   AMD laptops could be more interesting as some provide the ability to disable AMD PSP (the AMD equivalent of Intel IME) from the BIOS/UEFI settings by default. And, because AFAIK, AMD PSP was audited and contrary to IME was not found to have any "evil" functionalities[^303]. However, if you are going for the Qubes OS Route consider Intel CPUs as Qubes OS does not support AMD with their anti-evil-maid system[^304].
 
 -   Secure Wipe tools from the BIOS (especially useful for SSD/NVMe drives, see [Appendix M: BIOS/UEFI options to wipe disks in various Brands]).
 
@@ -2435,7 +2435,7 @@ Once you are in there, you will need to apply a few recommended settings:
 
 -   Disable AMD PSP if you can (AMD's equivalent to IME, see [Your CPU][Your CPU:])
 
--   Disable Secure Boot if you intend to use Qubes OS as they do not support it out of the box[^306]. Keep it on if you intend to use Linux/Windows.
+-   Disable Secure Boot if you intend to use Qubes OS as they do not support it out of the box[^305]. Keep it on if you intend to use Linux/Windows.
 
 -   Check if your laptop BIOS has a secure erase option for your HDD/SSD that could be convenient in case of need.
 
@@ -2443,9 +2443,9 @@ Only enable those on a "need to use" basis and disable them again after use. Thi
 
 ##### About Secure boot:
 
-So, what is Secure Boot[^307]? In short, it is a UEFI security feature designed to prevent your computer from booting an operating system from which the bootloader was not signed by specific keys stored in the UEFI firmware of your laptop.
+So, what is Secure Boot[^306]? In short, it is a UEFI security feature designed to prevent your computer from booting an operating system from which the bootloader was not signed by specific keys stored in the UEFI firmware of your laptop.
 
-When the operating system (or the Bootloader[^308]) supports it, you can store the keys of your bootloader in your UEFI firmware, and this will prevent booting up any unauthorized Operating System (such as a live OS USB or anything similar).
+When the operating system (or the Bootloader[^307]) supports it, you can store the keys of your bootloader in your UEFI firmware, and this will prevent booting up any unauthorized Operating System (such as a live OS USB or anything similar).
 
 Secure Boot settings are protected by the password you set up to access the BIOS/UEFI settings. If you have that password, you can disable Secure Boot and allow unsigned OSes to boot on your system. This can help mitigate some Evil-Maid attacks (explained later in this guide).
 
@@ -2491,7 +2491,7 @@ At some point, you will inevitably leave this laptop alone somewhere. You will n
 
 It is important to know that it is trivially easy for some specialists to install a key logger in your laptop, or to just make a clone copy of your hard drive that could later allow them to detect the presence of encrypted data in it using forensic techniques (more on that later).
 
-Here is a good cheap method to make your laptop tamper-proof using Nail Polish (with glitter) <https://mullvad.net/en/help/how-tamper-protect-laptop/> <sup>[[Archive.org]][258]</sup> [^309] (with pictures).
+Here is a good cheap method to make your laptop tamper-proof using Nail Polish (with glitter) <https://mullvad.net/en/help/how-tamper-protect-laptop/> <sup>[[Archive.org]][258]</sup> [^308] (with pictures).
 
 While this is a good cheap method, it could also raise suspicions as it is quite "noticeable" and might just reveal that you "have something to hide". So, there are more subtle ways of achieving the same result. You could also for instance make a close-up macro photography of the back screws of your laptop or just use a small amount of candle wax within one of the screws that could just look like usual dirt. You could then check for tampering by comparing the photographs of the screws with new ones. Their orientation might have changed a bit if your adversary was not careful enough (Tightening them exactly the same way they were before). Or the wax within the bottom of a screw head might have been damaged compared to before.
 
@@ -2505,7 +2505,7 @@ In riskier environments, check your laptop for tampering before using it regular
 
 ### Picking your Host OS (the OS installed on your laptop):
 
-This route will make extensive use of Virtual Machines[^310], they will require a host OS to run the Virtualization software. You have three recommended choices in this part of the guide:
+This route will make extensive use of Virtual Machines[^309], they will require a host OS to run the Virtualization software. You have three recommended choices in this part of the guide:
 
 -   Your Linux distribution of choice (excluding Qubes OS)
 
@@ -2515,11 +2515,11 @@ This route will make extensive use of Virtual Machines[^310], they will require 
 
 In addition, chances are high that your Mac is or has been tied to an Apple account (at the time of purchase or after signing-in) and therefore its unique hardware identifiers could lead back to you in case of hardware identifiers leak.
 
-Linux is also not necessarily the best choice for anonymity depending on your threat model. This is because using Windows will allow us to **conveniently** use Plausible Deniability[^311] (aka Deniable Encryption[^312]) easily at the OS level. Windows is also unfortunately at the same time a privacy nightmare[^313] but is the only easy to set up option for using OS-wide plausible deniability. Windows telemetry and telemetry blocking are also widely documented which should mitigate many issues.
+Linux is also not necessarily the best choice for anonymity depending on your threat model. This is because using Windows will allow us to **conveniently** use Plausible Deniability[^310] (aka Deniable Encryption[^311]) easily at the OS level. Windows is also unfortunately at the same time a privacy nightmare[^312] but is the only easy to set up option for using OS-wide plausible deniability. Windows telemetry and telemetry blocking are also widely documented which should mitigate many issues.
 
-**So, what is Plausible Deniability?** You can cooperate with an adversary requesting access to your device/data without revealing your true secret. All this using Deniable Encryption[^314].
+**So, what is Plausible Deniability?** You can cooperate with an adversary requesting access to your device/data without revealing your true secret. All this using Deniable Encryption[^313].
 
-A soft lawful adversary could ask for your encrypted laptop password. At first, you could refuse to give out any password (using your "right to remain silent", "right not to incriminate yourself") but some countries are implementing laws[^315]'[^316] to exempt this from such rights (because terrorists and "think of the children"). In that case, you might have to reveal the password or face jail time in contempt of court. This is where plausible deniability will come into play.
+A soft lawful adversary could ask for your encrypted laptop password. At first, you could refuse to give out any password (using your "right to remain silent", "right not to incriminate yourself") but some countries are implementing laws[^314]'[^315] to exempt this from such rights (because terrorists and "think of the children"). In that case, you might have to reveal the password or face jail time in contempt of court. This is where plausible deniability will come into play.
 
 You could then reveal a password, but that password will only give access to "plausible data" (a decoy OS). The forensics will be well aware that it is possible for you to have hidden data but should not be able to prove this **(if you do this right)**. You will have cooperated, and the investigators will have access to something but not what you actually want to hide. Since the burden of proof should lie on their side, they will have no options but to believe you unless they have proof that you have hidden data.
 
@@ -2527,7 +2527,7 @@ This feature can be used at the OS level (a plausible OS and a hidden OS) or at 
 
 This also means you could set up your own advanced "plausible deniability" setup using any Host OS by storing for instance Virtual Machines on a Veracrypt hidden volume container (be careful of traces in the Host OS tho that would need to be cleaned if the host OS is persistent, see [Some additional measures against forensics][Some additional measures against forensics:] section later). There is a project for achieving this within Tails (<https://github.com/aforensics/HiddenVM> <sup>[[Archive.org]][245]</sup>) which would make your Host OS non-persistent and use plausible deniability within Tails.
 
-In the case of Windows, plausible deniability is also the reason you should ideally have Windows 10/11 Home (and not Pro). This is because Windows 10/11 Pro natively offers a full-disk encryption system (Bitlocker[^317]) where Windows 10/11 Home offers no full-disk encryption at all. You will later use third-party open-source software for encryption that will allow full-disk encryption on Windows 10/11 Home. This will give you a good (plausible) excuse to use this software. While using this software on Windows 10/11 Pro would be suspicious.
+In the case of Windows, plausible deniability is also the reason you should ideally have Windows 10/11 Home (and not Pro). This is because Windows 10/11 Pro natively offers a full-disk encryption system (Bitlocker[^316]) where Windows 10/11 Home offers no full-disk encryption at all. You will later use third-party open-source software for encryption that will allow full-disk encryption on Windows 10/11 Home. This will give you a good (plausible) excuse to use this software. While using this software on Windows 10/11 Pro would be suspicious.
 
 **Note about Linux:** So, what about Linux and plausible deniability? Yes, it is possible to achieve plausible deniability with Linux too. More information within the Linux Host OS section later.
 
@@ -2545,7 +2545,7 @@ See <https://en.wikipedia.org/wiki/Rubber-hose_cryptanalysis> <sup>[[Wikiless]][
 
 ##### Evil-Maid Attack:
 
-Evil Maid Attacks[^318] are conducted when someone tampers with your laptop while you are away. To install to clone your hard drive, install malware or a key logger. If they can clone your hard drive, they can compare one image of your hard drive at the time they took it while you were away with the hard drive when they seize it from you. If you used the laptop again in between, forensics examiners might be able to prove the existence of the hidden data by looking at the variations between the two images in what should be an empty/unused space. This could lead to compelling evidence of the existence of hidden data. If they install a key logger or malware within your laptop (software or hardware), they will be able to simply get the password from you for later use when they seize it. Such attacks can be done at your home, your hotel, a border crossing, or anywhere you leave your devices unattended.
+Evil Maid Attacks[^317] are conducted when someone tampers with your laptop while you are away. To install to clone your hard drive, install malware or a key logger. If they can clone your hard drive, they can compare one image of your hard drive at the time they took it while you were away with the hard drive when they seize it from you. If you used the laptop again in between, forensics examiners might be able to prove the existence of the hidden data by looking at the variations between the two images in what should be an empty/unused space. This could lead to compelling evidence of the existence of hidden data. If they install a key logger or malware within your laptop (software or hardware), they will be able to simply get the password from you for later use when they seize it. Such attacks can be done at your home, your hotel, a border crossing, or anywhere you leave your devices unattended.
 
 You can mitigate this attack by doing the following (as recommended earlier):
 
@@ -2559,11 +2559,11 @@ You can mitigate this attack by doing the following (as recommended earlier):
 
 ##### Cold-Boot Attack:
 
-Cold Boot attacks[^319] are trickier than the Evil Maid Attack but can be part of an Evil Maid attack as it requires an adversary to come into possession of your laptop while you are actively using your device or shortly afterward.
+Cold Boot attacks[^318] are trickier than the Evil Maid Attack but can be part of an Evil Maid attack as it requires an adversary to come into possession of your laptop while you are actively using your device or shortly afterward.
 
-The idea is rather simple, as shown in this video[^320], an adversary could theoretically quickly boot your device on a special USB key that would copy the content of the RAM (the memory) of the device after you shut it down. If the USB ports are disabled or if they feel like they need more time, they could open it and "cool down" the memory using a spray or other chemicals (liquid nitrogen for instance) preventing the memory from decaying. They could then be able to copy its content for analysis. This memory dump could contain the key to decrypt your device. You will later apply a few principles to mitigate these.
+The idea is rather simple, as shown in this video[^319], an adversary could theoretically quickly boot your device on a special USB key that would copy the content of the RAM (the memory) of the device after you shut it down. If the USB ports are disabled or if they feel like they need more time, they could open it and "cool down" the memory using a spray or other chemicals (liquid nitrogen for instance) preventing the memory from decaying. They could then be able to copy its content for analysis. This memory dump could contain the key to decrypt your device. You will later apply a few principles to mitigate these.
 
-In the case of Plausible Deniability, there have been some forensics studies[^321] about technically proving the presence of the hidden data with a simple forensic examination (without a Cold Boot/Evil Maid Attack) but these have been contested by other studies[^322] and by the maintainer of Veracrypt[^323] so we would not worry too much about those yet.
+In the case of Plausible Deniability, there have been some forensics studies[^320] about technically proving the presence of the hidden data with a simple forensic examination (without a Cold Boot/Evil Maid Attack) but these have been contested by other studies[^321] and by the maintainer of Veracrypt[^322] so we would not worry too much about those yet.
 
 The same measures used to mitigate Evil Maid attacks should be in place for Cold Boot attacks with some added ones:
 
@@ -2571,7 +2571,7 @@ The same measures used to mitigate Evil Maid attacks should be in place for Cold
 
 -   Do enable the option to Wipe keys from memory if a device is inserted in Veracrypt.
 
--   You should limit the use of Sleep stand-by and instead use Shutdown or Hibernate to prevent the encryption keys from staying in RAM when your computer goes to sleep. This is because sleep will maintain power in your memory for resuming your activity faster. Only hibernation and shutdown will actually clear the key from the memory[^324].
+-   You should limit the use of Sleep stand-by and instead use Shutdown or Hibernate to prevent the encryption keys from staying in RAM when your computer goes to sleep. This is because sleep will maintain power in your memory for resuming your activity faster. Only hibernation and shutdown will actually clear the key from the memory[^323].
 
 See also <https://www.whonix.org/wiki/Cold_Boot_Attack_Defense> <sup>[[Archive.org]][262]</sup> and <https://www.whonix.org/wiki/Protection_Against_Physical_Attacks> <sup>[[Archive.org]][263]</sup>
 
@@ -2607,17 +2607,17 @@ Here are some examples of such leaks:
 
 ###### Windows:
 
--   Windows ShellBags that are stored within the Windows Registry silently storing various histories of accessed volumes/files/folders[^325].
+-   Windows ShellBags that are stored within the Windows Registry silently storing various histories of accessed volumes/files/folders[^324].
 
--   Windows Indexing keeping traces of the files present in your user folder by default[^326].
+-   Windows Indexing keeping traces of the files present in your user folder by default[^325].
 
--   Recent lists (aka Jump Lists) in Windows and various apps keeping traces of recently accessed documents[^327].
+-   Recent lists (aka Jump Lists) in Windows and various apps keeping traces of recently accessed documents[^326].
 
 -   Many more traces in various logs, please see this convenient interesting poster for more insight: <https://www.sans.org/security-resources/posters/windows-forensic-analysis/170/download> <sup>[[Archive.org]][270]</sup>
 
 ###### macOS:
 
--   Gatekeeper[^328] and XProtect keeping track of your download history in a local database and file attributes.
+-   Gatekeeper[^327] and XProtect keeping track of your download history in a local database and file attributes.
 
 -   Spotlight Indexing
 
@@ -2705,7 +2705,7 @@ For other distros, you will have to document yourself, but it will likely be sim
 
 #### Note about plausible deniability on Linux:
 
-There are several ways to achieve plausible deniability on Linux[^329] and it is possible to achieve. Here are some more details about some of the ways we would recommend. All these options require some higher level of skills at using Linux.
+There are several ways to achieve plausible deniability on Linux[^328] and it is possible to achieve. Here are some more details about some of the ways we would recommend. All these options require some higher level of skills at using Linux.
 
 ##### The Detached Headers Way:
 
@@ -2924,7 +2924,7 @@ See [Appendix B: Windows Additional Privacy Settings]
 
 ###### If you intend to use system-wide plausible deniability:
 
-Veracrypt[^330] is the software we will recommend for full-disk encryption, file encryption, and plausible deniability. It is a fork of the well-known but deprecated and unmaintained TrueCrypt. It can be used for:
+Veracrypt[^329] is the software we will recommend for full-disk encryption, file encryption, and plausible deniability. It is a fork of the well-known but deprecated and unmaintained TrueCrypt. It can be used for:
 
 -   Full Disk simple encryption (your hard drive is encrypted with one passphrase).
 
@@ -2934,17 +2934,17 @@ Veracrypt[^330] is the software we will recommend for full-disk encryption, file
 
 -   File container with plausible deniability (it is the same large file but depending on the passphrase you use when mounting it, you will either mount a "hidden volume" or the "decoy volume").
 
-It is to my knowledge the only (convenient and usable by anyone) free, open-source, and openly audited[^331] encryption software that also provides plausible deniability for widespread use and it works with Windows Home Edition.
+It is to my knowledge the only (convenient and usable by anyone) free, open-source, and openly audited[^330] encryption software that also provides plausible deniability for widespread use and it works with Windows Home Edition.
 
 Go ahead and download and install Veracrypt from: <https://www.veracrypt.fr/en/Downloads.html> <sup>[[Archive.org]][300]</sup>
 
 After installation, please take a moment to review the following options that will help mitigate some attacks:
 
--   Encrypt the memory with a Veracrypt option[^332] (settings > performance/driver options > encrypt RAM) at a cost of 5-15% performance. This setting will also disable hibernation (which does not actively clear the key when hibernating) and instead encrypt the memory altogether to mitigate some cold-boot attacks. More details about this feature here: <https://sourceforge.net/p/veracrypt/discussion/technical/thread/3961542951/> <sup>[[Archive.org]][261]</sup>
+-   Encrypt the memory with a Veracrypt option[^331] (settings > performance/driver options > encrypt RAM) at a cost of 5-15% performance. This setting will also disable hibernation (which does not actively clear the key when hibernating) and instead encrypt the memory altogether to mitigate some cold-boot attacks. More details about this feature here: <https://sourceforge.net/p/veracrypt/discussion/technical/thread/3961542951/> <sup>[[Archive.org]][261]</sup>
 
 -   Enable the Veracrypt option to wipe the keys from memory if a new device is inserted (system > settings > security > clear keys from memory if a new device is inserted). This could help in case your system is seized while still on (but locked).
 
--   Enable the Veracrypt option to mount volumes as removable volumes (Settings > Preferences > Mount volume as removable media). This will prevent Windows from writing some logs about your mounts in the Event logs[^333] and prevent some local data leaks.
+-   Enable the Veracrypt option to mount volumes as removable volumes (Settings > Preferences > Mount volume as removable media). This will prevent Windows from writing some logs about your mounts in the Event logs[^332] and prevent some local data leaks.
 
 -   Be careful and have a good situational awareness if you sense something weird. Shut your laptop down as fast as possible.
 
@@ -2986,9 +2986,9 @@ But here are the steps:
 
 -   Encryption should now be started in the background (you can check by clicking the Bitlocker icon on the lower right side of the taskbar).
 
-Unfortunately, this is not enough. With this setup, your Bitlocker key can just be stored as-is in the TPM chip of your computer. This is rather problematic as the key can be extracted in some cases with ease[^334]'[^335]'[^336]'[^337].
+Unfortunately, this is not enough. With this setup, your Bitlocker key can just be stored as-is in the TPM chip of your computer. This is rather problematic as the key can be extracted in some cases with ease[^333]'[^334]'[^335]'[^336].
 
-To mitigate this, you will have to enable a few more options as per the recommendations of Microsoft[^338]:
+To mitigate this, you will have to enable a few more options as per the recommendations of Microsoft[^337]:
 
 -   Click the Windows icon
 
@@ -3138,7 +3138,7 @@ Now you will have to pick your next step between two options:
 
         -   Requires full wipe of your laptop
 
-        -   No use with an SSD drive due to the requirement of disabling Trim[^339] Operations[^340]. This will severely degrade the performance/health of your SSD drive over time.
+        -   No use with an SSD drive due to the requirement of disabling Trim[^338] Operations[^339]. This will severely degrade the performance/health of your SSD drive over time.
 
 **As you can see, Route C only offers two privacy advantages over the others, and it will only be of use against a soft lawful adversary. Remember <https://en.wikipedia.org/wiki/Rubber-hose_cryptanalysis>** <sup>[[Wikiless]][249]</sup> <sup>[[Archive.org]][250]</sup>**.**
 
@@ -3184,13 +3184,13 @@ This route is rather straightforward and will just encrypt your current Operatin
 
 -   Click Next as the Generated Keys screen
 
--   To rescue disk[^341] or not rescue disk, well that is up to you. We recommend making one (just in case), just make sure to store it outside your encrypted drive (USB key for instance or wait and see the end of this guide for guidance on safe backups). This rescue disk will not store your passphrase and you will still need it to use it.
+-   To rescue disk[^340] or not rescue disk, well that is up to you. We recommend making one (just in case), just make sure to store it outside your encrypted drive (USB key for instance or wait and see the end of this guide for guidance on safe backups). This rescue disk will not store your passphrase and you will still need it to use it.
 
 -   Wipe mode:
 
     -   If you have no sensitive data yet on this laptop, select None
 
-    -   If you have sensitive data on an SSD, Trim alone should take care of it[^342] but we would recommend one pass (random data) just to be sure.
+    -   If you have sensitive data on an SSD, Trim alone should take care of it[^341] but we would recommend one pass (random data) just to be sure.
 
     -   If you have sensitive data on an HDD, there is no Trim, and we Swould recommend at least 1-pass.
 
@@ -3238,7 +3238,7 @@ This process will do the following:
 
 -   This means that your current Windows 10/11 will become the hidden Windows 10/11 and that you will need to reinstall a fresh decoy Windows 10/11 OS.
 
-**Mandatory if you have an SSD drive and you still want to do this against the recommendation: Disable SSD Trim in Windows**[^343] **(again this is NOT recommended at all as** **disabling Trim in itself is highly suspicious**). **Also** **as mentioned earlier, disabling Trim will reduce the lifetime of your SSD drive and will significantly impact its performance over time (your laptop will become slower and slower over several months of use until it becomes almost unusable, you will then have to clean the drive and re-install everything). But you must do it to prevent data leaks**[^344] **that could allow forensics to defeat your plausible deniability**[^345][^346]**. The only way around this at the moment is to have a laptop with a classic HDD drive instead.**
+**Mandatory if you have an SSD drive and you still want to do this against the recommendation: Disable SSD Trim in Windows**[^342] **(again this is NOT recommended at all as** **disabling Trim in itself is highly suspicious**). **Also** **as mentioned earlier, disabling Trim will reduce the lifetime of your SSD drive and will significantly impact its performance over time (your laptop will become slower and slower over several months of use until it becomes almost unusable, you will then have to clean the drive and re-install everything). But you must do it to prevent data leaks**[^343] **that could allow forensics to defeat your plausible deniability**[^344][^345]**. The only way around this at the moment is to have a laptop with a classic HDD drive instead.**
 
 ###### Step 1: Create a Windows 10/11 install USB key
 
@@ -3354,7 +3354,7 @@ Now you will encrypt the Decoy OS:
 
 -   Click Next as the Generated Keys screen
 
--   To rescue disk[^347] or not rescue disk, well that is up to you. We recommend making one (just in case), just make sure to store it outside your encrypted drive (USB key for instance or wait and see the end of this guide for guidance on safe backups). This rescue disk will not store your passphrase and you will still need it to use it.
+-   To rescue disk[^346] or not rescue disk, well that is up to you. We recommend making one (just in case), just make sure to store it outside your encrypted drive (USB key for instance or wait and see the end of this guide for guidance on safe backups). This rescue disk will not store your passphrase and you will still need it to use it.
 
 -   Wipe mode: Select 1-Pass just to be safe
 
@@ -3470,9 +3470,9 @@ Remember [Appendix W: Virtualization][Appendix V1: Hardening your Browsers:].
 
 This step and the following steps should be done from within the Host OS. This can either be your Host OS with simple encryption (Windows/Linux/macOS) or your Hidden OS with plausible deniability (Windows only).
 
-In this route, you will make extensive use of the free Oracle Virtualbox[^348] software. This is a virtualization software in which you can create Virtual Machines that emulate a computer running a specific OS (if you want to use something else like Xen, Qemu, KVM, or VMWARE, feel free to do so but this part of the guide covers Virtualbox only for convenience).
+In this route, you will make extensive use of the free Oracle Virtualbox[^347] software. This is a virtualization software in which you can create Virtual Machines that emulate a computer running a specific OS (if you want to use something else like Xen, Qemu, KVM, or VMWARE, feel free to do so but this part of the guide covers Virtualbox only for convenience).
 
-So, you should be aware that Virtualbox is not the virtualization software with the best track record in terms of security and some of the reported issues[^349] have not been completely fixed to this date[^350] and if you are using Linux with a bit more technical skills, you should consider using KVM instead by following the guide available at Whonix here <https://www.whonix.org/wiki/KVM> <sup>[[Archive.org]][308]</sup> and here <https://www.whonix.org/wiki/KVM#Why_Use_KVM_Over_VirtualBox.3F> <sup>[[Archive.org]][309]</sup>
+So, you should be aware that Virtualbox is not the virtualization software with the best track record in terms of security and some of the reported issues[^348] have not been completely fixed to this date[^349] and if you are using Linux with a bit more technical skills, you should consider using KVM instead by following the guide available at Whonix here <https://www.whonix.org/wiki/KVM> <sup>[[Archive.org]][308]</sup> and here <https://www.whonix.org/wiki/KVM#Why_Use_KVM_Over_VirtualBox.3F> <sup>[[Archive.org]][309]</sup>
 
 Some steps should be taken in all cases:
 
@@ -3548,7 +3548,7 @@ If an adversary somehow manages to compromise the Tor network too, they will onl
 
 If an adversary somehow compromises your VM OS (with malware or an exploit for instance), they will be trapped within the internal Network of Whonix and should be unable to reveal the IP of the public Wi-Fi.
 
-**This solution however has one main drawback to consider: Interference with Tor Stream Isolation**[^351].
+**This solution however has one main drawback to consider: Interference with Tor Stream Isolation**[^350].
 
 Stream isolation is a mitigation technique used to prevent some correlation attacks by having different Tor Circuits for each application. Here is an illustration to show what stream isolation is:
 
@@ -3556,7 +3556,7 @@ Stream isolation is a mitigation technique used to prevent some correlation atta
 
 (Illustration from Marcelo Martins, <https://stakey.club/en/decred-via-tor-network/> <sup>[[Archive.org]][315]</sup>)
 
-VPN/Proxy over Tor falls on the right-side[^352] meaning using a VPN/Proxy over Tor forces Tor to use one circuit for all activities instead of multiple circuits for each. This means that using a VPN/Proxy over Tor can reduce the effectiveness of Tor in some cases and should therefore be used only for some specific cases:
+VPN/Proxy over Tor falls on the right-side[^351] meaning using a VPN/Proxy over Tor forces Tor to use one circuit for all activities instead of multiple circuits for each. This means that using a VPN/Proxy over Tor can reduce the effectiveness of Tor in some cases and should therefore be used only for some specific cases:
 
 -   When your destination service does not allow Tor Exit nodes.
 
@@ -3693,7 +3693,7 @@ See [Appendix O: Getting an anonymous VPN/Proxy]
 
 **Skip this step if you cannot use Tor.**
 
-This route will use Virtualization and Whonix[^353] as part of the anonymization process. Whonix is a Linux distribution composed of two Virtual Machines:
+This route will use Virtualization and Whonix[^352] as part of the anonymization process. Whonix is a Linux distribution composed of two Virtual Machines:
 
 -   The Whonix Workstation (this is a VM where you can conduct sensitive activities)
 
@@ -3715,11 +3715,11 @@ Whonix is well maintained and has extensive and incredibly detailed documentatio
 
 #### A note on Virtualbox Snapshots:
 
-Later, you will create and run several Virtual Machines within Virtualbox for your sensitive activities. Virtualbox provides a feature called "Snapshots"[^354] that allow for saving the state of a VM at any point in time. If for any reason later you want to go back to that state, you can restore that snapshot at any moment.
+Later, you will create and run several Virtual Machines within Virtualbox for your sensitive activities. Virtualbox provides a feature called "Snapshots"[^353] that allow for saving the state of a VM at any point in time. If for any reason later you want to go back to that state, you can restore that snapshot at any moment.
 
 **I strongly recommend that you do make use of this feature by creating a snapshot after the initial installation/update of each VM. This snapshot should be done before its use for any sensitive/anonymous activity.**
 
-This will allow you to turn your VMs into a kind of disposable "Live Operating Systems" (like Tails discussed earlier). Meaning that you will be able to erase all the traces of your activities within a VM by restoring a Snapshot to an earlier state. Of course, this will not be "as good" as Tails (where everything is stored in memory) as there might be traces of this activity left on your hard disk. Forensics studies have shown the ability to recover data from a reverted VM[^355]. Fortunately, there will be ways to remove those traces after the deletion or reverting to an earlier snapshot. Such techniques will be discussed in the [Some additional measures against forensics][Some additional measures against forensics:] section of this guide.
+This will allow you to turn your VMs into a kind of disposable "Live Operating Systems" (like Tails discussed earlier). Meaning that you will be able to erase all the traces of your activities within a VM by restoring a Snapshot to an earlier state. Of course, this will not be "as good" as Tails (where everything is stored in memory) as there might be traces of this activity left on your hard disk. Forensics studies have shown the ability to recover data from a reverted VM[^354]. Fortunately, there will be ways to remove those traces after the deletion or reverting to an earlier snapshot. Such techniques will be discussed in the [Some additional measures against forensics][Some additional measures against forensics:] section of this guide.
 
 #### Download Virtualbox and Whonix utilities:
 
@@ -3771,7 +3771,7 @@ This offset should be within a 60000-millisecond range and should be different f
 
 -   ```VBoxManage modifyvm "Whonix-Workstation-XFCE" --biossystemtimeoffset +27931```
 
-Also, consider applying these mitigations from VirtualBox to mitigate Spectre[^356]/Meltdown[^357] vulnerabilities by running this command from the VirtualBox Program Directory. All of these are described here: <https://www.whonix.org/wiki/Spectre_Meltdown> <sup>[[Archive.org]][82]</sup> (be aware these can impact severely the performance of your VMs but should be done for best security).
+Also, consider applying these mitigations from VirtualBox to mitigate Spectre[^355]/Meltdown[^356] vulnerabilities by running this command from the VirtualBox Program Directory. All of these are described here: <https://www.whonix.org/wiki/Spectre_Meltdown> <sup>[[Archive.org]][82]</sup> (be aware these can impact severely the performance of your VMs but should be done for best security).
 
 Finally, consider the security advice from Virtualbox themselves here <https://www.virtualbox.org/manual/ch13.html> <sup>[[Archive.org]][336]</sup>
 
@@ -3829,7 +3829,7 @@ If you cannot use Tor, you can use a Custom VM of your choice that will ideally 
 
 Just use the provided Whonix Workstation VM. **It is the safest and most secure way to go on this route.**
 
-**It is also the only VM that will provide Stream Isolation pre-configured for most apps by default**[^358]**.**
+**It is also the only VM that will provide Stream Isolation pre-configured for most apps by default**[^357]**.**
 
 If you want additional software on the Workstation (such as another Browser), follow their guide here <https://www.whonix.org/wiki/Install_Software> <sup>[[Archive.org]][341]</sup>
 
@@ -4141,9 +4141,9 @@ See [Appendix V1: Hardening your Browsers][Appendix V1: Hardening your Browsers:
 
 ### KeepassXC:
 
-You will need something to store your data (logins/passwords, identities, and TOTP[^359] information).
+You will need something to store your data (logins/passwords, identities, and TOTP[^358] information).
 
-For this purpose, we strongly recommend KeePassXC because of its integrated TOTP feature. This is the ability to create entries for 2FA[^360] authentication with the authenticator feature.
+For this purpose, we strongly recommend KeePassXC because of its integrated TOTP feature. This is the ability to create entries for 2FA[^359] authentication with the authenticator feature.
 
 Remember this should ideally be installed on your Guest VM and not on your Host OS. You should never do any sensitive activities from your Host OS.
 
@@ -4210,7 +4210,7 @@ There are three ways to do this:
 #### The Lazy Way (**not supported by Whonix** but it will work if you are in a hurry, see further for the better way):
 
 
-**This way is not supported by the Whonix project**[^361] but I will go ahead and give this option anyway. This is helpful to prevent your Host OS from leaking any information while you are using the Whonix VMs.
+**This way is not supported by the Whonix project**[^360] but I will go ahead and give this option anyway. This is helpful to prevent your Host OS from leaking any information while you are using the Whonix VMs.
 
 **Note that this option as-is will only work on Wi-Fis without a captive portal (where you must enter some information to unlock access).**
 
@@ -4710,7 +4710,7 @@ You are done and can now skip the rest to go to the [Getting Online][Getting Onl
 
 As they say on their website, Qubes OS is a reasonably secure, free, open-source, and security-oriented operating system for single-user desktop computing. Qubes OS leverages and extensively uses Xen-based virtualization to allow for the creation and management of isolated compartments called Qubes.
 
-Qubes OS is not a Linux distribution[^362] but a Xen distribution. It is different from Linux distributions because it will make extensive use of Virtualization and Compartmentalization so that any app will run in a different VM (Qube). As a bonus, Qubes OS integrates Whonix by default and allows for increased privacy and anonymity. It is highly recommended that you document yourself over Qubes OS principles before going this route. Here are some recommended resources:
+Qubes OS is not a Linux distribution[^361] but a Xen distribution. It is different from Linux distributions because it will make extensive use of Virtualization and Compartmentalization so that any app will run in a different VM (Qube). As a bonus, Qubes OS integrates Whonix by default and allows for increased privacy and anonymity. It is highly recommended that you document yourself over Qubes OS principles before going this route. Here are some recommended resources:
 
 -   Qubes OS Introduction, <https://www.qubes-os.org/intro/> <sup>[[Archive.org]][359]</sup>
 
@@ -4794,7 +4794,7 @@ If an adversary somehow manages to compromise the Tor network too, they will onl
 
 If an adversary somehow compromises your VM OS (with malware or an exploit for instance), they will be trapped within the internal Network of Whonix and should be unable to reveal the IP of the public Wi-Fi.
 
-**This solution however has one main drawback to consider: Interference with Tor Stream Isolation**[^364].
+**This solution however has one main drawback to consider: Interference with Tor Stream Isolation**[^363].
 
 Stream isolation is a mitigation technique used to prevent some correlation attacks by having different Tor Circuits for each application. Here is an illustration to show what stream isolation is:
 
@@ -4802,7 +4802,7 @@ Stream isolation is a mitigation technique used to prevent some correlation atta
 
 (Illustration from Marcelo Martins, <https://stakey.club/en/decred-via-tor-network/> <sup>[[Archive.org]][315]</sup>)
 
-VPN/Proxy over Tor falls on the right-side[^365] meaning using a VPN/Proxy over Tor forces Tor to use one circuit for all activities instead of multiple circuits for each. This means that using a VPN/Proxy over Tor can reduce the effectiveness of Tor in some cases and should therefore be used only for some specific cases:
+VPN/Proxy over Tor falls on the right-side[^364] meaning using a VPN/Proxy over Tor forces Tor to use one circuit for all activities instead of multiple circuits for each. This means that using a VPN/Proxy over Tor can reduce the effectiveness of Tor in some cases and should therefore be used only for some specific cases:
 
 -   When your destination service does not allow Tor Exit nodes.
 
@@ -4963,7 +4963,7 @@ The Qubes master signing key fingerprint should match `427F 11FD 0FAA 4B08 0123 
 
 ### Lid Closure Behavior:
 
-Unfortunately, Qubes OS does not support hibernation[^366] which is an issue regarding cold-boot attacks. To mitigate those, I highly recommend that you configure Qubes OS to shut down on any power action (power button, lid closure). You can do set this from the XFCE Power Manager. Do not use the sleep features.
+Unfortunately, Qubes OS does not support hibernation[^365] which is an issue regarding cold-boot attacks. To mitigate those, I highly recommend that you configure Qubes OS to shut down on any power action (power button, lid closure). You can do set this from the XFCE Power Manager. Do not use the sleep features.
 
 ### Anti Evil Maid (AEM):
 Anti Evil Maid is an implementation of a TPM-based static trusted boot with a primary goal to prevent Evil Maid attacks. Installing and using AEM requires attaching a USB drive directly to dom0. So the user must make a choice between protecting dom0 from a potentially malicious USB drive, and protecting the system from Evil Maid attacks. Note that AEM is only compatible with Intel CPUs and Legacy boot options.
@@ -5054,7 +5054,7 @@ While Qubes OS is already sandboxing everything by design, it is also useful to 
 
 "AppArmor is a Mandatory Access Control framework. When enabled, AppArmor confines programs according to a set of rules that specify what files a given program can access. This initiative-taking approach helps protect the system against both known and unknown vulnerabilities" (Debian.org).
 
-Basically, AppArmor[^367] is an application sandboxing system. By default, it is not enabled but supported by Qubes OS.
+Basically, AppArmor[^366] is an application sandboxing system. By default, it is not enabled but supported by Qubes OS.
 
 -   About the Fedora VMs:
 
@@ -5080,7 +5080,7 @@ Basically, AppArmor[^367] is an application sandboxing system. By default, it is
 
 ##### SELinux:
 
-SELinux[^368] is similar to AppArmor. The differences between SELinux and AppArmor are technical details into which we will not get.
+SELinux[^367] is similar to AppArmor. The differences between SELinux and AppArmor are technical details into which we will not get.
 
 Here is a good explanation of what it is: <https://www.youtube.com/watch?v=_WOKRaM-HI4> <sup>[[Invidious]][375]</sup>
 
@@ -5454,9 +5454,9 @@ That's it, you should now have an Android Qube over Tor (or anything else) capab
 
 ### KeePassXC:
 
-You will need somewhere to store your data (logins/passwords, identities, and TOTP[^369] information).
+You will need somewhere to store your data (logins/passwords, identities, and TOTP[^368] information).
 
-For this purpose, KeePassXC is recommended because of its integrated TOTP feature. This is the ability to create entries for 2FA[^370] authentication with the authenticator feature.
+For this purpose, KeePassXC is recommended because of its integrated TOTP feature. This is the ability to create entries for 2FA[^369] authentication with the authenticator feature.
 
 In the context of Qubes OS you should store your sensitive information within the vault Qube:
 
@@ -5480,21 +5480,21 @@ You are done and can now skip the rest to go to the "[Creating your anonymous on
 
 (Illustrations by Randall Munroe, xkcd.com, licensed under CC BY-NC 2.5)
 
-Captcha[^371] stands for "Completely Automated Public Turing test to tell Computers and Humans Apart" are Turing tests[^372] puzzles you need to complete before accessing a form/website. You will mostly encounter those provided by Google (reCAPTCHA service[^373]) and Cloudflare (hCaptcha[^374]). hCaptcha is used on 15% of the internet by their own metrics[^375].
+Captcha[^370] stands for "Completely Automated Public Turing test to tell Computers and Humans Apart" are Turing tests[^371] puzzles you need to complete before accessing a form/website. You will mostly encounter those provided by Google (reCAPTCHA service[^372]) and Cloudflare (hCaptcha[^373]). hCaptcha is used on 15% of the internet by their own metrics[^374].
 
 They are designed to separate bots from humans but are also clearly used to deter anonymous and private users from accessing services.
 
-If you often use VPNs or Tor, you will quickly encounter many captchas everywhere[^376]. Quite often when using Tor, even if you succeed in solving all the puzzles (sometimes dozens in a row), you will still be denied after solving the puzzles.
+If you often use VPNs or Tor, you will quickly encounter many captchas everywhere[^375]. Quite often when using Tor, even if you succeed in solving all the puzzles (sometimes dozens in a row), you will still be denied after solving the puzzles.
 
 See <https://gitlab.torproject.org/legacy/trac/-/wikis/org/doc/ListOfServicesBlockingTor> <sup>[[Archive.org]][312]</sup>
 
-While most people think those puzzles are only about solving a little puzzle, it is important to understand that it is much more complex, and that modern Captchas uses advanced machine learning and risk analysis algorithms to check if you are human[^377]:
+While most people think those puzzles are only about solving a little puzzle, it is important to understand that it is much more complex, and that modern Captchas uses advanced machine learning and risk analysis algorithms to check if you are human[^376]:
 
--   They check your browser, cookies, and browsing history using Browser fingerprinting[^378].
+-   They check your browser, cookies, and browsing history using Browser fingerprinting[^377].
 
 -   They track your cursor movements (speed, accuracy) and use algorithms to decide if it is "human/organic".
 
--   They track your behavior before/during/after the tests to ensure you are "human"[^379].
+-   They track your behavior before/during/after the tests to ensure you are "human"[^378].
 
 It is also highly likely that those platforms could already reliably identify you based on the unique way you interact with those puzzles. This could work despite obfuscation of your IP address / Browser and clearing all cookies.
 
@@ -5502,7 +5502,7 @@ You will often experience several in a row (sometimes endlessly) and sometimes e
 
 You will also have (in my experience) more Captchas (Google's reCAPTCHA) if you do not use a Chromium-based browser. But this can be mitigated by using a Chromium-based browsers such as Brave. There is also a Browser extension called Buster that could help you those <https://github.com/dessant/buster> <sup>[[Archive.org]][390]</sup>.
 
-As for Cloudflare (hCaptcha), you could also use their Accessibility solution here (<https://www.hcaptcha.com/accessibility> <sup>[[Archive.org]][391]</sup>) which would allow you to sign-up (with your anonymous identity created later) and set a cookie within your Browser that would allow you to bypass their captchas. Another solution to mitigate hCaptcha would be to use their own solution called "Privacy Pass"[^380] <https://privacypass.github.io/> <sup>[[Archive.org]][392]</sup> in the form of a Browser extension you could install in your VM Browser.
+As for Cloudflare (hCaptcha), you could also use their Accessibility solution here (<https://www.hcaptcha.com/accessibility> <sup>[[Archive.org]][391]</sup>) which would allow you to sign-up (with your anonymous identity created later) and set a cookie within your Browser that would allow you to bypass their captchas. Another solution to mitigate hCaptcha would be to use their own solution called "Privacy Pass"[^379] <https://privacypass.github.io/> <sup>[[Archive.org]][392]</sup> in the form of a Browser extension you could install in your VM Browser.
 
 You should therefore deal with those carefully and force yourself to alter the way you are solving them (speed/movement/accuracy/...) to prevent "Captcha Fingerprinting".
 
@@ -5514,7 +5514,7 @@ To not have those issues, you should consider using a VPN over Tor. And the best
 
 Phone verification is advertised by most platforms to verify you are human. But do not be fooled, the main reason for phone verification is not only to check if you are human but also to be able to de-anonymize you if needed.
 
-Most platforms (including the privacy-oriented ones such as Signal/Telegram/Proton will require a phone number to register, and most countries now make it mandatory to submit a proof of ID to register[^381].
+Most platforms (including the privacy-oriented ones such as Signal/Telegram/Proton will require a phone number to register, and most countries now make it mandatory to submit a proof of ID to register[^380].
 
 Fortunately, this guide explained earlier how to get a number for these cases: [Getting an anonymous Phone number][Getting an anonymous Phone number:].
 
@@ -5610,9 +5610,9 @@ For this reason, this guide does recommend the use of VPN over Tor (and not Tor 
 
 ### Browser and Device Fingerprinting:
 
-Browser and Device[^382] Fingerprinting are usually integrated into the Captcha services but also in other various services.
+Browser and Device[^381] Fingerprinting are usually integrated into the Captcha services but also in other various services.
 
-Many platforms (like Google[^383]) will check your browser for various capabilities and settings and block Browsers they do not like. This is one of the reasons we recommend using Chromium-based Browsers such as Brave Browser over Tor Browser within this VM.
+Many platforms (like Google[^382]) will check your browser for various capabilities and settings and block Browsers they do not like. This is one of the reasons we recommend using Chromium-based Browsers such as Brave Browser over Tor Browser within this VM.
 
 Here are some of the things they check within recent browsers:
 
@@ -5688,7 +5688,7 @@ Simple and efficient, some platforms will require you to perform a financial tra
 
 While this might seem innocent, this is obviously an ID verification and de-anonymization method. This is just indirectly relying on third-party financial KYC[^240] regulations.
 
-This is for instance now the case on YouTube for some European Users[^384] but also used by services like Amazon that requires a valid payment method for creating an account.
+This is for instance now the case on YouTube for some European Users[^383] but also used by services like Amazon that requires a valid payment method for creating an account.
 
 ![][394]
 
@@ -5698,7 +5698,7 @@ This is for instance now the case on YouTube for some European Users[^384] but a
 
 You will notice this, and you probably already encountered this. Some apps/platforms will ask/require you to sign in with a well-known and well-used reputable platform instead of their own system (Sign-in with Google/Facebook/Apple/Twitter).
 
-This option is often presented as the "default one", hiding away the "Sign-in with e-mail and password" with clever Dark Patterns[^385] and unfortunately sometimes needed.
+This option is often presented as the "default one", hiding away the "Sign-in with e-mail and password" with clever Dark Patterns[^384] and unfortunately sometimes needed.
 
 This method will delegate the verification process on those platforms instead of assuming that you will not be able to create an anonymous Google/Facebook/Apple/Twitter account with ease.
 
@@ -5712,13 +5712,13 @@ Some platforms/apps will require you to take a live picture of yourself either d
 
 ![][395]
 
-This guide will not cover this one (yet) as it is mainly used on financial platforms (that will be able to identify you with other means anyway) and some dating apps like Tinder[^386]. Unfortunately, this method is now also sometimes being used on Facebook[^387] and Instagram as part of their verification methods (tho we did not face it yet so far).
+This guide will not cover this one (yet) as it is mainly used on financial platforms (that will be able to identify you with other means anyway) and some dating apps like Tinder[^385]. Unfortunately, this method is now also sometimes being used on Facebook[^386] and Instagram as part of their verification methods (tho we did not face it yet so far).
 
 ![][396]
 
 In some cases, these verifications must be done from your Smartphone and with an "in-app" camera to prevent you from sending a previously saved (edited) image.
 
-Recently even platforms such as PornHub decided to implement similar measures in the future[^388].
+Recently even platforms such as PornHub decided to implement similar measures in the future[^387].
 
 This verification is extremely hard to defeat but possible. A method to possibly defeat those would be to use "deep fake" technology software such as the open-source FaceSwap <https://github.com/deepfakes/faceswap> <sup>[[Archive.org]][397]</sup> to generate the required verification pictures using a randomly computer-generated face that would be swapped over the picture of a complicit model (or a stock photo).
 
@@ -5728,7 +5728,7 @@ Unfortunately, some apps require direct access to a smartphone camera to process
 
 These can be triggered by any of the above and just means someone (usually specialized employees) will review your profile manually and decide whether it is real or not based on their subjective opinion.
 
-Some countries have even developed hotlines where you can report any subversive content[^389].
+Some countries have even developed hotlines where you can report any subversive content[^388].
 
 Pros: Usually that verdict is "final", and you will probably avoid further issues if you are good.
 
@@ -5762,7 +5762,7 @@ Now that you have a basic understanding of all the ways you can be de-anonymized
 
 -   Above all, you cannot trust people
 
-So what? Well instead of not trusting anyone or anything, we would advise to **"Trust but verify"**[^390] (or "Never trust, always verify" if you are more hardcore about it and want to apply Zero-Trust Security[^391]) instead.
+So what? Well instead of not trusting anyone or anything, we would advise to **"Trust but verify"**[^389] (or "Never trust, always verify" if you are more hardcore about it and want to apply Zero-Trust Security[^390]) instead.
 
 **Do not start this process unless:**
 
@@ -5780,7 +5780,7 @@ So what? Well instead of not trusting anyone or anything, we would advise to **"
 
 ### Creating new identities:
 
-This is the fun part where you will now create your identities from thin air. These identities do not exist but should be plausible and look "organic". They should ideally have a story, a "legend" (yes this is the real term for this[^392]).
+This is the fun part where you will now create your identities from thin air. These identities do not exist but should be plausible and look "organic". They should ideally have a story, a "legend" (yes this is the real term for this[^391]).
 
 What is a legend? Well, it is a full back-story for your character:
 
@@ -5854,9 +5854,9 @@ We will help you bit by listing a few tips we learned while researching over the
 
 -   Similarly, origin IP geolocation (your IP/location when you go to "whatsmyipaddress.com") should match your identity location as much as possible (When using a VPN over Tor, you can pick this in the VPN client if you use the VPN over Tor approach or just create a new identity in Tor Browser or Brave Tor Tab until you get an appropriate Exit node, or configure Tor to restrict your Exit Nodes). Consider excluding any exit IP that is not located in Western Europe/US/Canada/Japan/South Korea/Australia/New Zealand as you will have fewer issues. Ideally, you should get a European Union IP to get additional GDPR protection and if possible, a German exit IP due to their legal stance on using anonymous accounts on online platforms.
 
--   Brave Browser (Chromium-based) with a Private Tor Tab has a better acceptance level than Tor Browser (Firefox based). You will experience fewer issues with captchas and online platforms[^383] if you use Brave than if you use Tor Browser (feel free to try this yourself).
+-   Brave Browser (Chromium-based) with a Private Tor Tab has a better acceptance level than Tor Browser (Firefox based). You will experience fewer issues with captchas and online platforms[^382] if you use Brave than if you use Tor Browser (feel free to try this yourself).
 
--   For every identity, you should have a matching profile picture associated with it. For this purpose, we recommend you just go to <https://thispersondoesnotexist.com/> <sup>[[Archive.org]][399]</sup> and generate a computer-generated profile picture (Do note that algorithms have been developed[^393]'[^394] to detect these and it might not work 100% of the time). You can also generate such pictures yourself from your computer if you prefer by using the open-source StyleGan project here <https://github.com/NVlabs/stylegan2> <sup>[[Archive.org]][400]</sup>. Just refresh the page until you find a picture that matches your identity in all aspects (age, sex, and ethnicity) and save that picture. It would be even better to have several pictures associated with that identity, butWedo not have an "easy way" of doing that yet.
+-   For every identity, you should have a matching profile picture associated with it. For this purpose, we recommend you just go to <https://thispersondoesnotexist.com/> <sup>[[Archive.org]][399]</sup> and generate a computer-generated profile picture (Do note that algorithms have been developed[^392]'[^393] to detect these and it might not work 100% of the time). You can also generate such pictures yourself from your computer if you prefer by using the open-source StyleGan project here <https://github.com/NVlabs/stylegan2> <sup>[[Archive.org]][400]</sup>. Just refresh the page until you find a picture that matches your identity in all aspects (age, sex, and ethnicity) and save that picture. It would be even better to have several pictures associated with that identity, butWedo not have an "easy way" of doing that yet.
 
     -   **Bonus**, you could also make it more real by using this service (with an anonymous identity) <https://www.myheritage.com/deep-nostalgia> <sup>[[Archive.org]][401]</sup> to make a picture more lifelike. Here is an example:
 
@@ -5884,7 +5884,7 @@ Note: If you make several pictures of the same identity using some of the tools 
 
 -   Adapt your language/writing to the identity to not raise suspicions and lower your chances of being fingerprinted by online platforms. Be especially careful with using pedantic words and figures of speech/quotes that could allow some people to guess your writing is very similar to that person with this Twitter handle or this Reddit user. See [Appendix A4: Counteracting Forensic Linguistics].
 
--   **Always use TOTP 2FA (not SMS to prevent Sim Swapping attacks**[^395] **and to keep your identity working when your pre-paid card expires) using KeePassXC when available to secure your logins to various platforms.**
+-   **Always use TOTP 2FA (not SMS to prevent Sim Swapping attacks**[^394] **and to keep your identity working when your pre-paid card expires) using KeePassXC when available to secure your logins to various platforms.**
 
 -   Remember [Appendix A2: Guidelines for passwords and passphrases].
 
@@ -5892,9 +5892,9 @@ Here is also a good guide on this specific topic: <https://gendersec.tacticaltec
 
 Note: If you are having trouble finding an exit node in the country of your choice you can force using specific countries for Exit Nodes (and therefore exit countries) on Tor by editing the torrc file on the Whonix Gateway or even the Tor Browser:
 
--   Whonix/Tails: Create/Edit a file ```/usr/local/etc/torrc.d/50_user.conf```[^396].
+-   Whonix/Tails: Create/Edit a file ```/usr/local/etc/torrc.d/50_user.conf```[^395].
 
--   On Tor Browser: Edit the torrc file located at ```Browser/TorBrowser/Data/Tor```[^397].
+-   On Tor Browser: Edit the torrc file located at ```Browser/TorBrowser/Data/Tor```[^396].
 
 Once you are in the file, you can do the following:
 
@@ -6597,7 +6597,7 @@ When people stand behind their opinions and actions, our community is safer and 
 
 -   Will they require a phone number? Yes, and probably more later
 
--   Can you create accounts through Tor? Yes, but it is very difficult and their onion address[^398] will not help. In most cases, you'll just have a random error at sign-up and your account suspended after sign-in."
+-   Can you create accounts through Tor? Yes, but it is very difficult and their onion address[^397] will not help. In most cases, you'll just have a random error at sign-up and your account suspended after sign-in."
 
 But this clause of their ToS is illegal in Germany (see [Requirements][Pre-requisites and limitations:]).
 
@@ -6667,7 +6667,7 @@ GitLab is straightforward and requires no phone number.
 
 Proton is good ... but to appear less suspicious, it is simply better to also have a mainstream Google Mail account.
 
-As Proton, Google will also most likely require a phone number during sign-up as part of their verification process. However contrary to Proton, Google will store that phone number during the sign-up process and will also limit the number of accounts that can be created during the sign-up[^399]'[^400].
+As Proton, Google will also most likely require a phone number during sign-up as part of their verification process. However contrary to Proton, Google will store that phone number during the sign-up process and will also limit the number of accounts that can be created during the sign-up[^398]'[^399].
 
 From my experience during my research, this count is limited to three accounts/phone numbers. If you are unlucky with your number (if it was previously used by another mobile user), it might be less.
 
@@ -6697,13 +6697,13 @@ Do not use that account for "sign-up with Google" anywhere unless necessary.
 
 Be extremely careful if you decide to use the account for Google activities (such as Google Maps reviews or YouTube Comments) as those can easily trigger some checks (Negative reviews, Comments breaking Community Guidelines on YouTube).
 
-If your account gets suspended [^401] (this can happen on sign-up, after signing-up or after using it in some Google services), you can still get it unsuspended by submitting[^402] an appeal/verification (which will again require your Phone number and possibly an e-mail contact with Google support with the reason). **Suspension of the account does not disable the e-mail forwarding, but the suspended account will be deleted after a while.**
+If your account gets suspended [^400] (this can happen on sign-up, after signing-up or after using it in some Google services), you can still get it unsuspended by submitting[^401] an appeal/verification (which will again require your Phone number and possibly an e-mail contact with Google support with the reason). **Suspension of the account does not disable the e-mail forwarding, but the suspended account will be deleted after a while.**
 
 After suspension, if your Google account is restored, you should be fine.
 
 If your account gets banned, you will have no appeal and the forwarding will be disabled. Your phone number will be flagged, and you will not be able to use it to sign-up on a different account. Be careful when using those to avoid losing them. They are precious.
 
-It is also possible that Google will require an ID check through indirect financial KYC or ID picture check if you try to access/publish mature content on their platform[^403].
+It is also possible that Google will require an ID check through indirect financial KYC or ID picture check if you try to access/publish mature content on their platform[^402].
 
 #### Instagram:
 
@@ -6769,7 +6769,7 @@ LinkedIn is far less aggressive than twitter but will nonetheless require a vali
 
 LinkedIn however is relying a lot on reports and user/customer moderation. You should not create a profile with an occupation inside a private corporation or a small startup company. The company employees are monitoring LinkedIn activity and receive notifications when new people join. They can then report your profile as fake, and your profile will then be suspended or banned pending appeal.
 
-LinkedIn will then require you to go through a verification process that will, unfortunately, require you to send an ID proof (identity card, passport, driver's license). This ID verification is processed by a company called Jumio[^404] that specializes in ID proofing. This is most likely a dead end as this would force you to develop some strong Photoshop skills.
+LinkedIn will then require you to go through a verification process that will, unfortunately, require you to send an ID proof (identity card, passport, driver's license). This ID verification is processed by a company called Jumio[^403] that specializes in ID proofing. This is most likely a dead end as this would force you to develop some strong Photoshop skills.
 
 Instead, you are far less likely to be reported if you just stay vague (say you are a student/intern/freelance) or pretend you work for a large public institution that is too large for anyone to care or check.
 
@@ -6839,9 +6839,9 @@ You obviously need an e-mail for your online identity and disposable e-mails are
 
 Proton is a free e-mail provider based in Switzerland that advocates security and privacy.
 
-They are recommended by Privacyguides.org[^405]. Their only apparent issue is that they do require (in most cases) a phone number or another e-mail address for registration (when you try to register from a VPN or Tor at least).
+They are recommended by Privacyguides.org[^404]. Their only apparent issue is that they do require (in most cases) a phone number or another e-mail address for registration (when you try to register from a VPN or Tor at least).
 
-They claim they do not store/link the phone/e-mail associated with the registration but only store a hash that is not linked to the account[^406]. If their claim is true and the hash is not linked to your account, and that you followed my guide about the phone number, you should be reasonably safe from tracking.
+They claim they do not store/link the phone/e-mail associated with the registration but only store a hash that is not linked to the account[^405]. If their claim is true and the hash is not linked to your account, and that you followed my guide about the phone number, you should be reasonably safe from tracking.
 
 This e-mail account can be used for creating a Google/Gmail account.
 
@@ -6957,7 +6957,7 @@ Once the account is restored, you should take some time to do the following:
 
 After about a week, you should check Twitter again and the chances are quite high that it will be suspended again for "suspicious activity" or "violating community guidelines" despite you not using it at all (not even a single tweet/follow/like/retweet or DM) but this time by another system. We call this the "Double-tap".
 
-This time you will need to submit an appeal using a form[^407], provide a good reason and wait for the appeal to be processed by Twitter. During that process, you may receive an e-mail (on Proton) asking you to reply to a customer service ticket to prove that you do have access to your e-mail and that it is you. This will be directed toward your Gmail address but will arrive on your Proton.
+This time you will need to submit an appeal using a form[^406], provide a good reason and wait for the appeal to be processed by Twitter. During that process, you may receive an e-mail (on Proton) asking you to reply to a customer service ticket to prove that you do have access to your e-mail and that it is you. This will be directed toward your Gmail address but will arrive on your Proton.
 
 Do not reply from Proton as this will raise suspicions, you must sign in to Gmail (unfortunately) and compose a new mail from there copy-pasting the E-Mail, Subject, and Content from Proton. As well as a reply confirming you have access to that e-mail.
 
@@ -6993,7 +6993,7 @@ Note that you will not be able to enable 2FA on Twitch using only e-mail. This f
 
 4chan is 4chan ... This guide will not explain 4chan to you. They block Tor exit nodes and known VPN IP ranges.
 
-You are going to have to find a separate way to post there using at least seven proxies[^408] that are not known by 4chan blocking system (hint: Anonymous VPS using Monero is probably your best option).
+You are going to have to find a separate way to post there using at least seven proxies[^407] that are not known by 4chan blocking system (hint: Anonymous VPS using Monero is probably your best option).
 
 ![][450]
 
@@ -7037,7 +7037,7 @@ Before going further, there are also some key basic concepts you should understa
 
 #### End-to-end Encryption:
 
-End-to-end Encryption[^409] (aka e2ee) is a rather simple concept. It just means only you and your destination know each-others public encryption keys and no one in between that would be eavesdropping would be able to decrypt the communication.
+End-to-end Encryption[^408] (aka e2ee) is a rather simple concept. It just means only you and your destination know each-others public encryption keys and no one in between that would be eavesdropping would be able to decrypt the communication.
 
 However, the term is often used differently depending on the provider:
 
@@ -7061,7 +7061,7 @@ It is not that rolling your own crypto is bad in essence, it is that good crypto
 
 #### Forward Secrecy:
 
-Forward Secrecy[^410] (FS aka PFS for Perfect Forward Secrecy) is a property of the key agreement protocol of some of those messaging apps and is a companion feature of e2ee. This happens before you establish communication with the destination. The "Forward" refers to the future in time and means that every time you establish a new e2ee communication, a new set of keys will be generated for that specific session. The goal of forward secrecy is to maintain the secrecy of past communications (sessions) even if the current one is compromised. If an adversary manages to get hold of your current e2ee keys, that adversary will then be limited to the content of the single session and will not be able to easily decrypt past ones.
+Forward Secrecy[^409] (FS aka PFS for Perfect Forward Secrecy) is a property of the key agreement protocol of some of those messaging apps and is a companion feature of e2ee. This happens before you establish communication with the destination. The "Forward" refers to the future in time and means that every time you establish a new e2ee communication, a new set of keys will be generated for that specific session. The goal of forward secrecy is to maintain the secrecy of past communications (sessions) even if the current one is compromised. If an adversary manages to get hold of your current e2ee keys, that adversary will then be limited to the content of the single session and will not be able to easily decrypt past ones.
 
 This has some user experience drawbacks like for instance, a new device could not be able to conveniently access the remotely stored chat history without additional steps.
 
@@ -7073,7 +7073,7 @@ Some providers and apps claiming to offer e2ee do not offer FS/PFS sometimes for
 
 #### Zero-Access Encryption at rest:
 
-Zero-Access Encryption[^411] at rest is used when you store data at some provider (let us say your chat history or chat backups) but this history or backup is encrypted on your side and cannot be read or decrypted by the provider hosting it.
+Zero-Access Encryption[^410] at rest is used when you store data at some provider (let us say your chat history or chat backups) but this history or backup is encrypted on your side and cannot be read or decrypted by the provider hosting it.
 
 Zero-Access encryption is an added feature/companion to e2ee but is applied mainly to data at rest and not communications.
 
@@ -7081,7 +7081,7 @@ Examples of this issue would be iMessage and WhatsApp, see the [Your Cloud backu
 
 So again, it is best to prefer Apps/Providers that do offer Zero-Access Encryption at rest and cannot read/access any of your data/metadata even at rest and not only limited to communications.
 
-Such a feature would have prevented important hacks such as the Cambridge Analytica scandal[^412] if it were implemented.
+Such a feature would have prevented important hacks such as the Cambridge Analytica scandal[^411] if it were implemented.
 
 #### Metadata Protection:
 
@@ -7093,11 +7093,11 @@ End-to-end Encryption does not in itself protect an eavesdropper from harvesting
 
 This data can also be protected/obfuscated by some protocols to make metadata harvesting substantially harder for eavesdroppers. This is the case for instance with the Signal Protocol which does offer some added protection with features like:
 
--   The Sealed Sender option[^413].
+-   The Sealed Sender option[^412].
 
--   The Private Contact Discovery[^414].
+-   The Private Contact Discovery[^413].
 
--   The Private Group System[^415].
+-   The Private Group System[^414].
 
 Other Apps like Briar or OnionShare will protect metadata by using the Tor Network as a shield and storing everything locally on-device. Nothing is stored remotely, and all communications are either direct using proximity wi-fi/Bluetooth or remotely through the Tor network.
 
@@ -7623,7 +7623,7 @@ Finally, Open-Source apps should always be preferred because they allow third pa
 
 **Remember: [Appendix B1: Checklist of things to verify before sharing information][Appendix B1: Checklist of things to verify before sharing information:].**
 
-We will recommend these options in that order (as also recommend by Privacyguides.org[^416]'[^417] except for Session and Cwtch):
+We will recommend these options in that order (as also recommend by Privacyguides.org[^415]'[^416] except for Session and Cwtch):
 
 -   macOS:
 
@@ -7689,7 +7689,7 @@ Any safe options for mobile devices? **Yes, but these are not endorsed/recommend
 
 -   iOS:
 
-    -   Due to the lack of any better option and while it is **normally not recommended**: Session Messenger: <https://getsession.org/> <sup>[[Archive.org]][469]</sup>. Why is it not recommended these days within the privacy community? Well, it is because they recently[^418] dropped two key security features from their protocol: Perfect Forward Secrecy and Deniability which are considered rather essential in most other apps. Yet Session has been audited[^419] with satisfactory results but that audit does not mention these changes. We also currently lack sufficient information on LokiNet (the Onion Routing Network used by Session) to endorse it. Session is still recommended by some like Techlore[^420].
+    -   Due to the lack of any better option and while it is **normally not recommended**: Session Messenger: <https://getsession.org/> <sup>[[Archive.org]][469]</sup>. Why is it not recommended these days within the privacy community? Well, it is because they recently[^417] dropped two key security features from their protocol: Perfect Forward Secrecy and Deniability which are considered rather essential in most other apps. Yet Session has been audited[^418] with satisfactory results but that audit does not mention these changes. We also currently lack sufficient information on LokiNet (the Onion Routing Network used by Session) to endorse it. Session is still recommended by some like Techlore[^419].
 
 **Note that all the non-native Tor options must be used over Tor for safety (from Tails or a guest OS running behind the Whonix Gateway such as the Whonix Workstation or an Android-x86 VM).**
 
@@ -7728,7 +7728,7 @@ Consider the following platforms:
 
 -   Filen (<https://filen.io/>): free tier limited to 10GB total
 
-Consider the use of IPFS[^421]:
+Consider the use of IPFS[^420]:
 
 -   Pinata (<https://www.pinata.cloud/>): Free tier limited to 1GB total
 
@@ -7866,9 +7866,9 @@ Here is a comparative table of recommended/included software compiled from vario
 
 You might be interested in communicating information to some organization such as the press anonymously.
 
-If you must do so, you should take some steps because you cannot trust any organization to protect your anonymity[^422]. See [Appendix B1: Checklist of things to verify before sharing information][Appendix B1: Checklist of things to verify before sharing information:].
+If you must do so, you should take some steps because you cannot trust any organization to protect your anonymity[^421]. See [Appendix B1: Checklist of things to verify before sharing information][Appendix B1: Checklist of things to verify before sharing information:].
 
-For this, we strongly recommend the use of SecureDrop[^423] (<https://securedrop.org/> <sup>[[Archive.org]][471]</sup>) which is an open-source project from the Freedom of the Press Foundation.
+For this, we strongly recommend the use of SecureDrop[^422] (<https://securedrop.org/> <sup>[[Archive.org]][471]</sup>) which is an open-source project from the Freedom of the Press Foundation.
 
 -   Do take a moment to their read their "source guide" here: <https://docs.securedrop.org/en/stable/source.html> <sup>[[Archive.org]][472]</sup>
 
@@ -8042,7 +8042,7 @@ We will only recommend the use of the open-source and free Clonezilla utility fo
 
 Some warnings:
 
--   If you use Bitlocker for encryption with TPM[^424] enabled, you might need to save your Bitlocker Key (safely) somewhere as well as this might be needed to restore your drive if your HDD/SSD or other hardware parts changed. Another option would be to use Bitlocker without the use of TPM which would not require this option. But again, we do not recommend using Bitlocker at all.
+-   If you use Bitlocker for encryption with TPM[^423] enabled, you might need to save your Bitlocker Key (safely) somewhere as well as this might be needed to restore your drive if your HDD/SSD or other hardware parts changed. Another option would be to use Bitlocker without the use of TPM which would not require this option. But again, we do not recommend using Bitlocker at all.
 
 -   You should always have a backup of your Veracrypt rescue disk at hand somewhere to be able to resolve some issues that might still appear after a restore. Remember this rescue disk does not contain your passphrase or any sensitive information. You can store it as is.
 
@@ -8100,7 +8100,7 @@ If you do intend to store sensitive data on "mainstream platforms" (Dropbox, Goo
 
 ### Information:
 
-If you just want to save information (text), we will recommend the use of secure and private pastebins[^425]. Mostly we will stick to the ones recommended by PrivacyGuides.org (<https://www.privacyguides.org/productivity/#paste-services> <sup>[[Archive.org]][480]</sup> ) :
+If you just want to save information (text), we will recommend the use of secure and private pastebins[^424]. Mostly we will stick to the ones recommended by PrivacyGuides.org (<https://www.privacyguides.org/productivity/#paste-services> <sup>[[Archive.org]][480]</sup> ) :
 
 -   <https://privatebin.info/>
 
@@ -8142,7 +8142,7 @@ The methods and utilities to manage/wipe them will vary depending on the type of
 
 ### Wear-Leveling.
 
-These drives use a technique called wear leveling[^426]. At a high level, wear leveling works as follows. The space on every disk is divided into blocks that are themselves divided into pages, like the chapters in a book are made of pages. When a file is written to disk, it is assigned to a certain set of pages and blocks. If you wanted to overwrite the file in an HDD, then all you would have to do is tell the disk to overwrite those blocks. But in SSDs and USB drives, erasing and re-writing the same block can wear it out. Each block can only be erased and rewritten a limited number of times before that block just will not work anymore (the same way if you keep writing and erasing with a pencil and paper, eventually the paper might rip and be useless). To counteract this, SSDs and USB drives will try to make sure that the number of times each block has been erased and rewritten is about the same so that the drive will last as long as possible (thus the term wear leveling). As a side effect, sometimes instead of erasing and writing the block, a file was originally stored on, the drive will instead leave that block alone, mark it as invalid, and just write the modified file to a different block. This is like leaving the chapter in the book unchanged, writing the modified file on a different page, and then just updating the book's table of contents to point to the new location. All of this occurs at a very low level in the electronics of the disk, so the operating system does not even realize it has happened. This means, however, that even if you try to overwrite a file, there is no guarantee the drive will actually overwrite it, and that's why secure deletion with SSDs is so much harder.
+These drives use a technique called wear leveling[^425]. At a high level, wear leveling works as follows. The space on every disk is divided into blocks that are themselves divided into pages, like the chapters in a book are made of pages. When a file is written to disk, it is assigned to a certain set of pages and blocks. If you wanted to overwrite the file in an HDD, then all you would have to do is tell the disk to overwrite those blocks. But in SSDs and USB drives, erasing and re-writing the same block can wear it out. Each block can only be erased and rewritten a limited number of times before that block just will not work anymore (the same way if you keep writing and erasing with a pencil and paper, eventually the paper might rip and be useless). To counteract this, SSDs and USB drives will try to make sure that the number of times each block has been erased and rewritten is about the same so that the drive will last as long as possible (thus the term wear leveling). As a side effect, sometimes instead of erasing and writing the block, a file was originally stored on, the drive will instead leave that block alone, mark it as invalid, and just write the modified file to a different block. This is like leaving the chapter in the book unchanged, writing the modified file on a different page, and then just updating the book's table of contents to point to the new location. All of this occurs at a very low level in the electronics of the disk, so the operating system does not even realize it has happened. This means, however, that even if you try to overwrite a file, there is no guarantee the drive will actually overwrite it, and that's why secure deletion with SSDs is so much harder.
 
 Wear-leveling alone can therefore be a disadvantage for security and an advantage for adversaries such as forensics examiners. This feature makes classic "secure deletion" counter-productive and useless and is why this feature was removed on some Operating Systems like macOS (as from version 10.11 El Capitan) where you could enable it before on the Recycle Bin.
 
@@ -8150,11 +8150,11 @@ Most of those old secure deletion utilities were written with HDD in mind and ha
 
 ### Trim Operations:
 
-So, what now? Well here comes the Trim[^427] operation. When you delete data on your SSD, your OS should support what is called a Trim operation command and **could (should)** issue this Trim command to the SSD drive periodically (daily, weekly, monthly...). This Trim command will then let know the SSD drive controller that there are pages within blocks containing data that are now free to be really deleted without deleting anything itself.
+So, what now? Well here comes the Trim[^426] operation. When you delete data on your SSD, your OS should support what is called a Trim operation command and **could (should)** issue this Trim command to the SSD drive periodically (daily, weekly, monthly...). This Trim command will then let know the SSD drive controller that there are pages within blocks containing data that are now free to be really deleted without deleting anything itself.
 
 Trim should be enabled by default on all modern Operating Systems detecting an SSD drive covered in this guide (macOS, Windows 10/11, Ubuntu, Qubes OS 4.1.x ...).
 
-If Trim operations are not done regularly (or at all), then the data is never deleted pro-actively and at some point, all the blocks and pages will be occupied by data. Your OS will not see this and will just see free space as you delete files, but your SSD controller will not (this is called Write Amplification[^428]). This will then force the SSD controller to erase those pages and blocks on the fly which will reduce the write performance. This is because while your OS/SSD can write data to any free page in any bock, erasure is only possible on entire blocks, therefore, forcing your SSD to perform many operations to write new data. Overwriting is just not possible. This will defeat the wear-leveling system and cause performance degradation of your SSD over time. Every time you delete a file on an SSD, your OS should issue a Trim command along with the deletion to let the SSD controller know the pages containing the file data are now free for deletion.
+If Trim operations are not done regularly (or at all), then the data is never deleted pro-actively and at some point, all the blocks and pages will be occupied by data. Your OS will not see this and will just see free space as you delete files, but your SSD controller will not (this is called Write Amplification[^427]). This will then force the SSD controller to erase those pages and blocks on the fly which will reduce the write performance. This is because while your OS/SSD can write data to any free page in any bock, erasure is only possible on entire blocks, therefore, forcing your SSD to perform many operations to write new data. Overwriting is just not possible. This will defeat the wear-leveling system and cause performance degradation of your SSD over time. Every time you delete a file on an SSD, your OS should issue a Trim command along with the deletion to let the SSD controller know the pages containing the file data are now free for deletion.
 
 **So, Trim itself does not delete any data but just marks it for deletion.** Data deleted without using Trim (if Trim has been disabled/blocked/delayed for instance) will still be deleted at some point by the SSD garbage collection or if you want to overwrite what the OS sees at free space. But it might stick around for a bit longer than if you use Trim.
 
@@ -8166,17 +8166,17 @@ As you can see in the above illustration, data (from a file) will be written to 
 
 In addition to marking files for deletion (on reputable SSD drives), Trim usually makes those unreadable using a method called "Deterministic Read After Trim" or "Deterministic Zeroes After Trim". This means that if an adversary tries to read data from a trimmed page/block and somehow manages to disable garbage collection, the controller will not return any meaningful data.
 
-**Trim is your ally and should always be enabled when using an SSD drive and should offer sufficient reasonable protection**. And this is also the reason you should not use Veracrypt Plausible deniability on a Trim enabled SSD as this feature is incompatible with Trim[^429].
+**Trim is your ally and should always be enabled when using an SSD drive and should offer sufficient reasonable protection**. And this is also the reason you should not use Veracrypt Plausible deniability on a Trim enabled SSD as this feature is incompatible with Trim[^428].
 
 ### Garbage Collection:
 
-Garbage collection[^430] is an internal process running within your SSD drive that looks for data marked for erasure. This process is done by the SSD controller, and you have no control over it. If you go back to the illustration above, you will see that Garbage collection is the last step and will notice that some pages are marked for deletion in a specific block, then copy the valid pages (not marked for deletion) to a different free destination block and then will be able to erase the source block entirely.
+Garbage collection[^429] is an internal process running within your SSD drive that looks for data marked for erasure. This process is done by the SSD controller, and you have no control over it. If you go back to the illustration above, you will see that Garbage collection is the last step and will notice that some pages are marked for deletion in a specific block, then copy the valid pages (not marked for deletion) to a different free destination block and then will be able to erase the source block entirely.
 
 Garbage collection in itself does NOT require Trim to function, but it will be much faster and more efficient if Trim is performed. Garbage collection is one of the processes that will actually erase data from your SSD drive permanently.
 
 ### Conclusion:
 
-So, the fact is that it is very unlikely[^431]'[^432] and difficult for a forensic examiner to be able to recover data from a Trimmed SSD but it is not completely impossible either[^433]'[^434]'[^435] if they are fast enough and have access to extensive equipment, skills, and motivation[^436].
+So, the fact is that it is very unlikely[^430]'[^431] and difficult for a forensic examiner to be able to recover data from a Trimmed SSD but it is not completely impossible either[^432]'[^433]'[^434] if they are fast enough and have access to extensive equipment, skills, and motivation[^435].
 
 Within the context of this guide which also uses full disk encryption. Deletion and Trim should be reasonably secure enough on any SSD drive and will be recommended as the standard method of deletion.
 
@@ -8193,7 +8193,7 @@ So, you want to be sure. To achieve 100% secure deletion on an SSD drive, you wi
 
     -   Just re-install a fresh operating system (delete/quick format the drive) and re-encrypt it. The full disk encryption process should erase all previous data from the disk.
 
-    -   Buy PartedMagic[^437] for 11$ and use it to erase any disk.
+    -   Buy PartedMagic[^436] for 11$ and use it to erase any disk.
 
 -   Technical options for more advanced users:
 
@@ -8252,11 +8252,11 @@ So, you want to be sure. To achieve 100% secure deletion on an SSD drive, you wi
 
     -   Bonus: See <https://www.youtube.com/watch?v=-bpX8YvNg6Y> <sup>[[Invidious]][488]</sup>
 
-For maximum overkill paranoia security, Sanitize Block Erase option should be preferred but Secure Erase is probably more than enough when considering your drive is already encrypted. Unfortunately, are no **free** easy (bootable with a graphical menu) all-in-one tools available and you will be left with either going with drive manufacturers provided tools, the free manual hdparm[^438] , and nvme-cli[^439] utilities or going with a commercial tool such as PartedMagic.
+For maximum overkill paranoia security, Sanitize Block Erase option should be preferred but Secure Erase is probably more than enough when considering your drive is already encrypted. Unfortunately, are no **free** easy (bootable with a graphical menu) all-in-one tools available and you will be left with either going with drive manufacturers provided tools, the free manual hdparm[^437] , and nvme-cli[^438] utilities or going with a commercial tool such as PartedMagic.
 
 This guide will therefore recommend the use of the free utilities hdparm and nvme-cli using a Live System Rescue system.
 
-If you can afford it, just buy Parted Magic for 11$ which provides an easy-to-use graphical tool for wiping SSD drives using the option of your choice[^440]'[^441].
+If you can afford it, just buy Parted Magic for 11$ which provides an easy-to-use graphical tool for wiping SSD drives using the option of your choice[^439]'[^440].
 
 **Note:** **Again, before proceeding, you should check your BIOS as some will offer a built-in tool to securely erase your drive (ATA/NVMe Secure Erase or ATA/NVMe Sanitize). If this is available, you should use that, and the following steps will not be necessary. Check this before going ahead to avoid the hassle, see [Appendix M: BIOS/UEFI options to wipe disks in various Brands]).**
 
@@ -8394,7 +8394,7 @@ The same principles from the earlier chapters apply to this one. The same issues
 
 With an HDD drive, you can securely delete files by just deleting them and then apply one or more "passes" to overwrite the data in question. This can be done with many utilities on all OSes.
 
-With an SSD drive, however, again everything becomes a bit complicated because you are never sure anything is really deleted due to wear leveling, reliance on the Trim operation, and garbage collection of the drive. An adversary that has the decryption key of your SSD (whether it is LUKS, Filevault 2, Veracrypt, or Bitlocker) could unlock your drive and then attempt a recovery using classic recovery utilities[^442] and could succeed if the data were not trimmed properly. But this is again highly unlikely.
+With an SSD drive, however, again everything becomes a bit complicated because you are never sure anything is really deleted due to wear leveling, reliance on the Trim operation, and garbage collection of the drive. An adversary that has the decryption key of your SSD (whether it is LUKS, Filevault 2, Veracrypt, or Bitlocker) could unlock your drive and then attempt a recovery using classic recovery utilities[^441] and could succeed if the data were not trimmed properly. But this is again highly unlikely.
 
 Since the Trim operation is not continuous on most recent hard drives but scheduled, simply forcing a Trim operation should be enough. But again, the only way to be 100% sure a file is securely deleted from your unlocked encrypted SSD is to again overwrite all the free space after deletion of the files in question or to decrypt/re-encrypt the drive. But this is overkill and not necessary. A simple disk-wide Trim should be sufficient.
 
@@ -8610,7 +8610,7 @@ Repeat these steps on any other partition if there are separate partitions on th
 
 Just permanently delete the file (and empty recycle bin) and it should be unrecoverable due to trim operations and garbage collection.
 
--   If your file system is APFS, you do not need to worry about Trim, it happens asynchronously as the OS writes data[^443] according to their documentation.
+-   If your file system is APFS, you do not need to worry about Trim, it happens asynchronously as the OS writes data[^442] according to their documentation.
 
 "Does Apple File System support TRIM operations?
 
@@ -8622,7 +8622,7 @@ Yes. TRIM operations are issued asynchronously from when files are deleted or fr
 
 #### System/Internal, External HDD drive or a Thumb Drive:
 
-Unfortunately, Apple has removed the secure erase options from the trash bin even for HDD drives[^444]. So, you are left with using other tools:
+Unfortunately, Apple has removed the secure erase options from the trash bin even for HDD drives[^443]. So, you are left with using other tools:
 
 -   Permanent Eraser <http://www.edenwaith.com/products/permanent%20eraser/> <sup>[[Archive.org]][507]</sup>
 
@@ -8772,13 +8772,13 @@ It is actually simple, jut install exiftool and run:
 
 #### All-in-one Tool:
 
-Another option good tool to remove metadata from various documents is the open-source mat2 recommended by privacyguides.org[^445] (<https://0xacab.org/jvoisin/mat2> <sup>[[Archive.org]][519]</sup>) which you can use on Linux quite easily. I never managed to make it work properly within Windows due to various dependencies issues despite the provided instructions. It is however very straightforward to install and use on Linux.
+Another option good tool to remove metadata from various documents is the open-source mat2 recommended by privacyguides.org[^444] (<https://0xacab.org/jvoisin/mat2> <sup>[[Archive.org]][519]</sup>) which you can use on Linux quite easily. I never managed to make it work properly within Windows due to various dependencies issues despite the provided instructions. It is however very straightforward to install and use on Linux.
 
 So, we would suggest creating a small Debian VM within Virtualbox (behind your Whonix Gateway) which you can then use from your other VMs to analyze various files from a convenient web interface. For this see [Appendix L: Creating a mat2-web guest VM for removing metadata from files]
 
 ![][520]
 
-Mat2 is also pre-installed on the Whonix Workstation VM[^446] and available on Tails by default[^447].
+Mat2 is also pre-installed on the Whonix Workstation VM[^445] and available on Tails by default[^446].
 
 ### Tails:
 
@@ -8810,7 +8810,7 @@ This is a goldmine for forensics, and you should disable this:
 
 -   Run the following command to lock the file and prevent further download history from being written there: ```sudo chflags schg ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV2```
 
-Lastly, you can also disable Gatekeeper altogether by issuing the following command in the terminal[^448]:
+Lastly, you can also disable Gatekeeper altogether by issuing the following command in the terminal[^447]:
 
 -   ```sudo spctl --master-disable```
 
@@ -8923,7 +8923,7 @@ Then let us re-randomize the MAC addresses of your Virtual Machines and the Blue
 
 ##### Event logs:
 
-Windows Event logs will keep many various pieces of information that could contain traces of your activities such as the devices that were mounted (including Veracrypt NTFS volumes for instance[^333]), your network connections, app crash information, and various errors. It is always best to clean those up regularly. Do not do this on the Decoy OS.
+Windows Event logs will keep many various pieces of information that could contain traces of your activities such as the devices that were mounted (including Veracrypt NTFS volumes for instance[^332]), your network connections, app crash information, and various errors. It is always best to clean those up regularly. Do not do this on the Decoy OS.
 
 -   Start, search for Event Viewer, and launch Event Viewer:
 
@@ -8977,7 +8977,7 @@ Now it is time to clear the history of the Wi-Fi you connect to. Unfortunately, 
 
 ##### Shellbags:
 
-As explained earlier, Shellbags are basically histories of accessed volumes/files on your computer. Remember that shellbags are exceptionally useful sources of information for forensics[^325] and you need to clean those. Especially if you mounted any "hidden volume" anywhere. Again, you should not do this on the Decoy OS:
+As explained earlier, Shellbags are basically histories of accessed volumes/files on your computer. Remember that shellbags are exceptionally useful sources of information for forensics[^324] and you need to clean those. Especially if you mounted any "hidden volume" anywhere. Again, you should not do this on the Decoy OS:
 
 -   Download Shellbag Analyzer & Cleaner from <https://privazer.com/en/download-shellbag-analyzer-shellbag-cleaner.php> <sup>[[Archive.org]][527]</sup>
 
@@ -9035,7 +9035,7 @@ Here are the steps for PrivaZer:
 
         -   If you have an SSD drive:
 
-            -   Secure Overwriting Tab: We would just pick Normal Deletion + Trim (Trim itself should be enough[^342]). Secure Deletion with Trim[^339] (1 pass) might be redundant and overkill here if you intend to overwrite the free space anyway.
+            -   Secure Overwriting Tab: We would just pick Normal Deletion + Trim (Trim itself should be enough[^341]). Secure Deletion with Trim[^338] (1 pass) might be redundant and overkill here if you intend to overwrite the free space anyway.
 
             -   Free Space Tab: Personally, and again "just to be sure", we would select Normal Cleanup which will fill the entire free space with Data. We do not really trust Smart Cleanup as it does not actually fill all the free space of the SSD with Data. But again, this is probably not needed and overkill in most cases.
 
@@ -9129,9 +9129,9 @@ This might take several days to process. Be patient.
 
 ### DuckDuckGo:
 
-DuckDuckGo does not store a cached version of pages[^449] and will instead forward you to a Google/Bing cached version if available.
+DuckDuckGo does not store a cached version of pages[^448] and will instead forward you to a Google/Bing cached version if available.
 
-In addition, DuckDuckGo source most of their searches from Bing (and not Google)[^450] and therefore removing the content from Bing should in time have it removed it from DuckDuckGo too.
+In addition, DuckDuckGo source most of their searches from Bing (and not Google)[^449] and therefore removing the content from Bing should in time have it removed it from DuckDuckGo too.
 
 ### Yandex:
 
@@ -9195,7 +9195,7 @@ You must keep in mind that using all those security measures (encryption, plausi
 
 So, there are other ways you could exchange or send messages online to others in case of need without disclosing your identity or establishing direct communication with them. These have been in use by various organizations for decades and can be of help if you do not want to attract attention by using secure tech while still communicating some sensitive information without attracting attention.
 
-A commonly used technique that combines the idea of a Dead Drop[^451] and Secure Communication Obfuscation[^452] through Steganography[^453] and/or Kleptography[^454] and has many names such as Koalang[^455] or "Talking Around" or even "Social Steganography". This technique is very old and still widely used nowadays by teenagers to bypass parental control. It is hiding in plain sight.
+A commonly used technique that combines the idea of a Dead Drop[^450] and Secure Communication Obfuscation[^451] through Steganography[^452] and/or Kleptography[^453] and has many names such as Koalang[^454] or "Talking Around" or even "Social Steganography". This technique is very old and still widely used nowadays by teenagers to bypass parental control. It is hiding in plain sight.
 
 Here is one example if you want to let someone know something is wrong and they should go dark? That they should immediately wipe all their data, get rid of their burner phones and sensitive information?
 
@@ -9227,7 +9227,7 @@ Most likely if someone went through your document to read it and re-placed it ca
 
 # Some last OPSEC thoughts:
 
-Wait, what is OPSEC? Well, OPSEC means Operations Security[^456]. The basic definition is: "OPSEC is the process of protecting individual pieces of data that could be grouped together to give the bigger picture ".
+Wait, what is OPSEC? Well, OPSEC means Operations Security[^455]. The basic definition is: "OPSEC is the process of protecting individual pieces of data that could be grouped together to give the bigger picture ".
 
 OPSEC is often just applying common sense and being cautious about your activities including in the physical world:
 
@@ -9333,7 +9333,7 @@ You should also know that most of the digital information described in length in
 
 You should not hesitate to question this type of information from any source in this age of disinformation.
 
-**"A lie can travel halfway around the world while the truth is putting on its shoes"**[^457]
+**"A lie can travel halfway around the world while the truth is putting on its shoes"**[^456]
 
 Please keep thinking for yourself, use critical thinking, and keep an open mind. "Sapere Aude" (Dare to know!).
 
@@ -9635,7 +9635,7 @@ DO NOT CONNECT WINDOWS TO ANY NETWORK DURING THE INSTALLATION PROCESS (This will
 
 -   (Only for VirtualBox VM Install) Launch "regedit" in the command prompt
 
--   (Only for VirtualBox VM Install) When the Registry Editor opens, navigate to "HKEY_LOCAL_MACHINE\SYSTEM\Setup", right-click on the "Setup" key and select "New => Key". When prompted to name the key, enter "LabConfig" and press enter.
+-   (Only for VirtualBox VM Install) When the Registry Editor opens, navigate to "HKEY_LOCAL_MACHINE\SYSTEM\Setup", right-click on the "Setup" key and select "New Key". When prompted to name the key, enter "LabConfig" and press enter.
 
 -   (Only for VirtualBox VM Install) Now right-click on the "LabConfig" key and select "New => DWORD  (32-bit)" value and create a value named "BypassTPMCheck", and set its data to "1". With the same steps create the "BypassRAMCheck" and "BypassSecureBootCheck"
 
@@ -9789,7 +9789,7 @@ DO NOT CONNECT WINDOWS TO ANY NETWORK DURING THE INSTALLATION PROCESS (This will
 
 # Appendix B: Windows Additional Privacy Settings
 
-As written earlier in this guide and as noted by PrivacyGuides.org[^458], Windows 10/11 is a privacy nightmare. And disabling everything during and after the installation using the settings available to you is not enough. The amount of telemetry data collected by Microsoft is staggering and could defeat your attempts at keeping secrets. You will need to download and use a couple of utilities to (hopefully) force Windows 10/11 into not sending data back to Microsoft.
+As written earlier in this guide and as noted by PrivacyGuides.org[^457], Windows 10/11 is a privacy nightmare. And disabling everything during and after the installation using the settings available to you is not enough. The amount of telemetry data collected by Microsoft is staggering and could defeat your attempts at keeping secrets. You will need to download and use a couple of utilities to (hopefully) force Windows 10/11 into not sending data back to Microsoft.
 
 Here are the steps in detail:
 
@@ -9999,13 +9999,13 @@ Both these tools can be used for cleaning many things such as:
 
 -   The Windows USN journal which stores plenty of information.
 
--   The Windows System Resource Usage Monitor (SRUM)[^461].
+-   The Windows System Resource Usage Monitor (SRUM)[^460].
 
 -   Various histories of various programs (such as the recent lists).
 
 -   Various logs
 
--   The free (unallocated) space of your hard drive][^462].
+-   The free (unallocated) space of your hard drive][^461].
 
 -   Secure deletion of files
 
@@ -10015,7 +10015,7 @@ Both these utilities can delete files and can overwrite the free space after del
 
 # Appendix I: Using ShredOS to securely wipe an HDD drive:
 
-Several utilities are recommended (like the old unmaintained DBAN[^463] or System Rescue CD (<https://www.system-rescue.org/> <sup>[[Archive.org]][589]</sup>)) for this but we will recommend the use of ShredOS.
+Several utilities are recommended (like the old unmaintained DBAN[^462] or System Rescue CD (<https://www.system-rescue.org/> <sup>[[Archive.org]][589]</sup>)) for this but we will recommend the use of ShredOS.
 
 Feel free to go with DBAN instead if you want (using this tutorial: <https://www.lifewire.com/how-to-erase-a-hard-drive-using-dban-2619148> <sup>[[Archive.org]][590]</sup>), the process is basically the same but will not work out of the box with UEFI laptops.
 
@@ -10093,7 +10093,7 @@ Unfortunately, most of these tools are Windows only.
 
 Please do not buy or use gimmicky self-encrypting devices such as these: <https://syscall.eu/blog/2018/03/12/aigo_part1/> <sup>[[Archive.org]][235]</sup>
 
-Some might be very efficient[^464] but many are gimmicky gadgets.
+Some might be very efficient[^463] but many are gimmicky gadgets.
 
 If you want to use an external SSD drive for sensitive storage:
 
@@ -10119,7 +10119,7 @@ It is possible Windows will detect your external SSD properly and enable Trim by
 
 ### ATA/NVMe Operations (Secure Erase/Sanitize):
 
-**Use the manufacturer-provided tools to check and perform these operations** ... It is pretty much the only way to be sure it is not only supported but actually works. Some utilities can tell you whether it is supported or not like CrystalDiskInfo <sup>[[Archive.org]][465]</sup> but will not actually check if it is working. See [Appendix J: Manufacturer tools for Wiping HDD and SSD drives][Appendix J: Manufacturer tools for Wiping HDD and SSD drives:].
+**Use the manufacturer-provided tools to check and perform these operations** ... It is pretty much the only way to be sure it is not only supported but actually works. Some utilities can tell you whether it is supported or not like CrystalDiskInfo <sup>[[Archive.org]][^464]</sup> but will not actually check if it is working. See [Appendix J: Manufacturer tools for Wiping HDD and SSD drives][Appendix J: Manufacturer tools for Wiping HDD and SSD drives:].
 
 If it does not work. Just decrypt and re-encrypt the whole drive or fill up the free space as instructed in the guide. There is no other way AFAIK. Besides booting up a System Rescue Linux CD and see the next section.
 
@@ -10143,7 +10143,7 @@ See also this tutorial <https://code.mendhak.com/securely-wipe-ssd/> <sup>[[Arch
 
 ### Trim Support:
 
-According to Apple Documentation[^455], Trim is supported on APFS (asynchronously) and HFS+ (through period trim or first-aid).
+According to Apple Documentation[^454], Trim is supported on APFS (asynchronously) and HFS+ (through period trim or first-aid).
 
 So, if it is supported (and enabled on your external SSD), you should be able to issue a Trim on a non-APFS drive using Disk Utility and First Aid which should issue a Trim.
 
@@ -10337,9 +10337,9 @@ When conducting sensitive activities, remember that:
 
 -   **You should not bring your real smartphone or smart devices with you (even turned off).** Correlation attacks are possible on the Cell Networks to find which phone "turned off" before your burner phone "turned on". While this might not work the first time, after a few times, the net will tighten, and you will get compromised. It is better to leave your main smartphone at home online (see this article (Russian, use Google Translate link): <https://biboroda.livejournal.com/4894724.html> <sup>[[Google Translate]][613]</sup> <sup>[[Archive.org]][614]</sup>**)**
 
--   **Again, do not take them with you unless it is absolutely necessary.** **If you really must,** you could consider powering it off and removing the battery or, if not possible, the use of a faraday cage[^466] bag to store your devices. There are many such faraday "signal blocking" bags available for sale and some of these have been studied[^467] for their effectiveness. If you cannot afford such bags, you can probably achieve a "decent result" with one or several sheets of aluminum foil (as shown in the previously linked study).
+-   **Again, do not take them with you unless it is absolutely necessary.** **If you really must,** you could consider powering it off and removing the battery or, if not possible, the use of a faraday cage[^465] bag to store your devices. There are many such faraday "signal blocking" bags available for sale and some of these have been studied[^466] for their effectiveness. If you cannot afford such bags, you can probably achieve a "decent result" with one or several sheets of aluminum foil (as shown in the previously linked study).
 
-    -   Warning: consider that sensor data itself can also be reliably used to track you[^468]'[^469].
+    -   Warning: consider that sensor data itself can also be reliably used to track you[^467]'[^468].
 
 -   **Consider leaving your smart devices at home online and doing something (watching YouTube/Netflix or something similar) instead of taking them with you powered off. This will mitigate tracking efforts but also create digital traces that could indicate you were at home.**
 
@@ -10391,7 +10391,7 @@ How does this work?
 
 For extra-security consider:
 
--   Wearing gloves while manipulating anything to avoid leaving fingerprints[^470] and touch DNA[^471].
+-   Wearing gloves while manipulating anything to avoid leaving fingerprints[^469] and touch DNA[^470].
   - A less-obvious alternative could be to put super glue on your fingertips, to avoid making it obvious you're wearing gloves. However, this can prevent effective use of touchscreens, as well as failing to as effectively prevent you from touch DNA. Also, if spotted, it can be quite suspicious to be caught with super glue on your fingers.
 
 -   Do not use any material/currency that was manipulated by someone that can be related to you in any way.
@@ -10400,7 +10400,7 @@ For extra-security consider:
 
 -   Be careful if you print anything that it is not watermarked by your printer (See [Printing Watermarking]).
 
--   Do not lick the envelope or the stamps[^472] if you use them to avoid leaving DNA traces.
+-   Do not lick the envelope or the stamps[^471] if you use them to avoid leaving DNA traces.
 
 -   Make sure there are no obvious DNA traces in or on the materials (like hairs).
 
@@ -10637,13 +10637,13 @@ Here are some guides provided by the recommended VPN providers in this guide:
 
 # Appendix S: Check your network for surveillance/censorship using OONI
 
-So, what is OONI? OONI stands for Open Observatory of Network Interference and is a sub-project of the Tor Project[^296].
+So, what is OONI? OONI stands for Open Observatory of Network Interference and is a sub-project of the Tor Project[^295].
 
 First OONI will allow you to check online for surveillance/censorship in your country just by looking at their Explorer that features test results from other people. This can be done here: <https://explorer.ooni.org/>
 
 But these tests are limited and could not apply to your personal situation. If that is the case, you could consider running the OONI Probe yourself and running the tests yourself.
 
-The problem is that your network providers will be able to see those tests and your attempts at connecting to various services if the network is monitored. The other issue is that there are solutions to prevent OONI from working properly[^473].
+The problem is that your network providers will be able to see those tests and your attempts at connecting to various services if the network is monitored. The other issue is that there are solutions to prevent OONI from working properly[^472].
 
 While this might not be important in a normal environment, this could put you at risk in a hostile environment. **So, running these tests can be risky.**
 
@@ -10665,11 +10665,11 @@ The probe can be found here: <https://ooni.org/install/> <sup>[[Archive.org]][65
 
 ## Integrity (if available):
 
-Usually, integrity checks[^474] are done using hashes of files (usually stored within checksum files). Older files could use CRC[^475], more recently MD5[^476] but those present several weaknesses (CRC, MD5 [^477] that make them unreliable for file integrity checks (which does not mean they are not still widely used in other contexts).
+Usually, integrity checks[^473] are done using hashes of files (usually stored within checksum files). Older files could use CRC[^474], more recently MD5[^475] but those present several weaknesses (CRC, MD5 [^476] that make them unreliable for file integrity checks (which does not mean they are not still widely used in other contexts).
 
-This is because they do not prevent Collision[^478] well enough and could allow an adversary to create a similar but malicious file that would still produce in the same CRC or MD5 hash despite having different content.
+This is because they do not prevent Collision[^477] well enough and could allow an adversary to create a similar but malicious file that would still produce in the same CRC or MD5 hash despite having different content.
 
-For this reason, it is usually recommended to use SHA-based [^479] hashes and the most used is probably the SHA-2[^480] based SHA-256 for verifying file integrity. SHA is much more resistant to collisions[^481] than CRC and MD5. And collisions with SHA-256 or SHA-512 are rare and hard to compute for an adversary.
+For this reason, it is usually recommended to use SHA-based [^478] hashes and the most used is probably the SHA-2[^479] based SHA-256 for verifying file integrity. SHA is much more resistant to collisions[^480] than CRC and MD5. And collisions with SHA-256 or SHA-512 are rare and hard to compute for an adversary.
 
 If a SHA-256 checksum is available from the source of the file, you should not hesitate to use it to confirm the integrity of the file. Note that SHA-1 is not recommended, but is better than not having a hash to compare.
 
@@ -10679,7 +10679,7 @@ In the case of this guide, the SHA-256 checksums are available for each file inc
 
 So how to check checksums? (In this case SHA-256 but you could change to SHA-512
 
--   Windows[^482]:
+-   Windows[^481]:
 
     -   Open a Command Prompt
 
@@ -10709,7 +10709,7 @@ So how to check checksums? (In this case SHA-256 but you could change to SHA-512
 
 ## Authenticity (if available):
 
-Integrity is one thing. Authenticity is another thing. This is a process where you can verify some information is authentic and from the expected source. This is usually done by signing information (using GPG[^484] for instance) using public-key cryptography[^485].
+Integrity is one thing. Authenticity is another thing. This is a process where you can verify some information is authentic and from the expected source. This is usually done by signing information (using GPG[^483] for instance) using public-key cryptography[^484].
 
 Signing can serve both purposes and allow you to check for both integrity and authenticity.
 
@@ -10777,17 +10777,17 @@ All these guides should also apply to any other file with any other key.
 
 ### Anti-Virus Software:
 
-You might be asking yourself, what about Anti-Virus solutions? Well, no ... these are not perfect solutions against many modern malware and viruses using polymorphic code[^486]. But it does not mean they cannot help against less sophisticated and known attacks. It depends on how to use them as AV software can become an attack vector in itself.
+You might be asking yourself, what about Anti-Virus solutions? Well, no ... these are not perfect solutions against many modern malware and viruses using polymorphic code[^485]. But it does not mean they cannot help against less sophisticated and known attacks. It depends on how to use them as AV software can become an attack vector in itself.
 
 Again, this is all a matter of threat modeling. Can AV software help you against the NSA? Probably not. Can it help you against less resourceful adversaries using known malware? Probably.
 
-Some will just argue against them broadly like Whonix[^487] but this topic is being discussed and disputed even at Whonix[^488] by other members of their community.
+Some will just argue against them broadly like Whonix[^486] but this topic is being discussed and disputed even at Whonix[^487] by other members of their community.
 
 Contrary to popular myths perpetuating the idea that only Windows is subject to malware and that detection tools are useless on Linux and macOS:
 
--   Yes, there are viruses and malware for Linux[^489]'[^490]'[^491]'[^492]'[^493]
+-   Yes, there are viruses and malware for Linux[^488]'[^489]'[^490]'[^491]'[^492]
 
--   Yes, there are viruses and malware for macOS[^501]'[^494][^495]'[^496][^497]
+-   Yes, there are viruses and malware for macOS[^500]'[^493][^494]'[^495][^496]
 
 My take on the matter is on the pragmatic side. There is still room for some AV software for some selective and limited use. But it depends on which one and how you use them:
 
@@ -10867,19 +10867,19 @@ Now, what if you think the PDF is still suspicious? Fear not ... there are more 
 
 -   **Qubes OS:** Consider using <https://github.com/QubesOS/qubes-app-linux-pdf-converter> <sup>[[Archive.org]][671]</sup> which will convert your PDF into a flattened image file. This should theoretically remove any malicious code in it. Note that this will also render the PDF formatting useless (such as links, headings, bookmarks, and references).
 
--   **(Deprecated) Linux/Qubes OS** (or possibly macOS through Homebrew or Windows through Cygwin): Consider not using <https://github.com/firstlookmedia/pdf-redact-tools> <sup>[[Archive.org]][672]</sup> which will also turn your PDF into a flattened image file. Again, this should theoretically remove any malicious code in it. Again, this will also render the PDF formatting useless (such as links, headings, bookmarks, and references). **Note that this tool is deprecated and relies on a library called "ImageMagick" which is known for several security issues**[^498]**. You should not use this tool even if it is recommended in some other guides.**
+-   **(Deprecated) Linux/Qubes OS** (or possibly macOS through Homebrew or Windows through Cygwin): Consider not using <https://github.com/firstlookmedia/pdf-redact-tools> <sup>[[Archive.org]][672]</sup> which will also turn your PDF into a flattened image file. Again, this should theoretically remove any malicious code in it. Again, this will also render the PDF formatting useless (such as links, headings, bookmarks, and references). **Note that this tool is deprecated and relies on a library called "ImageMagick" which is known for several security issues**[^497]**. You should not use this tool even if it is recommended in some other guides.**
 
--   **Windows/Linux/Qubes/OS/macOS:** Consider using <https://github.com/firstlookmedia/dangerzone> <sup>[[Archive.org]][673]</sup> which was inspired by Qubes PDF Converted above and does the same but is well maintained and works on all OSes. This tool also works with Images, ODF files, and Office files (Warning: On Windows, this tool requires Docker-Desktop installed and this might (will) interfere with Virtualbox and other Virtualization software because it requires enabling Hyper-V. VirtualBox and Hyper-V do not play nice together[^499]. Consider installing this within a Linux VM for convenience instead of a Windows OS).
+-   **Windows/Linux/Qubes/OS/macOS:** Consider using <https://github.com/firstlookmedia/dangerzone> <sup>[[Archive.org]][673]</sup> which was inspired by Qubes PDF Converted above and does the same but is well maintained and works on all OSes. This tool also works with Images, ODF files, and Office files (Warning: On Windows, this tool requires Docker-Desktop installed and this might (will) interfere with Virtualbox and other Virtualization software because it requires enabling Hyper-V. VirtualBox and Hyper-V do not play nice together[^498]. Consider installing this within a Linux VM for convenience instead of a Windows OS).
 
 #### Other types of files:
 
 Here are some various resources for this purpose where you will find what tool to use for what type:
 
--   **For Documents/Pictures:** Consider using <https://github.com/firstlookmedia/dangerzone> <sup>[[Archive.org]][673]</sup> which was inspired by Qubes PDF Converted above and does the same but is well maintained and works on all OSes. This tool also works with Images, ODF files, and Office files (Warning: On Windows, this tool requires Docker-Desktop installed and this might (will) interfere with Virtualbox and other Virtualization software because it requires enabling Hyper-V. VirtualBox and Hyper-V do not play nice together[^500]. Consider installing this within a Linux VM for convenience instead of a Windows OS).
+-   **For Documents/Pictures:** Consider using <https://github.com/firstlookmedia/dangerzone> <sup>[[Archive.org]][673]</sup> which was inspired by Qubes PDF Converted above and does the same but is well maintained and works on all OSes. This tool also works with Images, ODF files, and Office files (Warning: On Windows, this tool requires Docker-Desktop installed and this might (will) interfere with Virtualbox and other Virtualization software because it requires enabling Hyper-V. VirtualBox and Hyper-V do not play nice together[^499]. Consider installing this within a Linux VM for convenience instead of a Windows OS).
 
 -   **For Videos:** Be extremely careful, use an up-to-date player in a sandboxed environment. Remember <https://www.vice.com/en/article/v7gd9b/facebook-helped-fbi-hack-child-predator-buster-hernandez> <sup>[[Archive.org]][674]</sup>
 
--   This practical cheat sheet from SANS: <https://digital-forensics.sans.org/media/analyzing-malicious-document-files.pdf> <sup>[[Archive.org]][675]</sup> (warning, many of those tools might be harder to use on Windows and you might consider using them from a Linux OS such as Tails, Whonix Workstation, or a Linux distribution of your choice as explained later in this guide. There are also other guides out there[^501] that might be of use).
+-   This practical cheat sheet from SANS: <https://digital-forensics.sans.org/media/analyzing-malicious-document-files.pdf> <sup>[[Archive.org]][675]</sup> (warning, many of those tools might be harder to use on Windows and you might consider using them from a Linux OS such as Tails, Whonix Workstation, or a Linux distribution of your choice as explained later in this guide. There are also other guides out there[^500] that might be of use).
 
 -   This GitHub repository with various resources on malware analysis: <https://github.com/rshipp/awesome-malware-analysis> <sup>[[Archive.org]][668]</sup>
 
@@ -10901,7 +10901,7 @@ The situation might look desperate, but it is not necessarily the case as there 
 
 ## Portable Apps:
 
-There are plenty of methods you could use to bypass those restrictions locally. One of them would be to use portable apps[^502]. Those apps do not require installation on your system and can be run from a USB key or anywhere else.
+There are plenty of methods you could use to bypass those restrictions locally. One of them would be to use portable apps[^501]. Those apps do not require installation on your system and can be run from a USB key or anywhere else.
 
 **But this is not a method we would recommend.**
 
@@ -11047,19 +11047,19 @@ Another useful resource to be considered for comparing browsers is: <https://pri
 
 ## Brave:
 
-**This is my recommended/preferred choice for a Browser within your guest VMs. This is not my recommended choice for a Browser within your Host OS where we strictly recommend Tor Browser as they recommend it themselves**[^503]**.**
+**This is my recommended/preferred choice for a Browser within your guest VMs. This is not my recommended choice for a Browser within your Host OS where we strictly recommend Tor Browser as they recommend it themselves**[^502]**.**
 
-Why Brave despite the controversies[^504]?
+Why Brave despite the controversies[^503]?
 
 -   You will encounter fewer issues later with account creations (captchas ...). This is based on my experiences trying to create plenty of online identities using various browsers. You will have to trust me on that.
 
--   You will enjoy native ad-blocking where none is available in others by default without adding extensions[^505].
+-   You will enjoy native ad-blocking where none is available in others by default without adding extensions[^504].
 
--   Performance is arguably better than Firefox[^506].
+-   Performance is arguably better than Firefox[^505].
 
--   Brave is arguably better at fingerprinting resistance than others[^507].
+-   Brave is arguably better at fingerprinting resistance than others[^506].
 
--   Security of Chromium-based Browser is arguably better and more secure than Firefox[^508]'[^509]. Within the context of this guide, security should be privileged to prevent any vulnerability or exploit from gaining access to the VM.
+-   Security of Chromium-based Browser is arguably better and more secure than Firefox[^507]'[^508]. Within the context of this guide, security should be privileged to prevent any vulnerability or exploit from gaining access to the VM.
 
 -   Comparison of both by Mozilla: <https://www.mozilla.org/en-US/firefox/browsers/compare/brave/> <sup>[[Archive.org]][678]</sup>
 
@@ -11067,11 +11067,11 @@ Why Brave despite the controversies[^504]?
 
 -   The whole traffic will be routed over a VPN over Tor anyway. So even if you mistakenly opt-in for some telemetry, it is not so important. Remember that in this anonymity threat model, we are mostly after anonymity and security. The privacy of our online identities does not matter that much unless the privacy issue is also a security issue that could help deanonymize you.
 
--   Brave was found to be sending no identifiable telemetry compared to other browsers[^510].
+-   Brave was found to be sending no identifiable telemetry compared to other browsers[^509].
 
 ## Ungoogled-Chromium:
 
-**This browser is considered a security liability due to their systemic lagging on security patches**[^511]**.**
+**This browser is considered a security liability due to their systemic lagging on security patches**[^510]**.**
 
 **It is strongly advised not to use Ungoogled-Chromium.**
 
@@ -11081,13 +11081,13 @@ This is for Windows users only. Edge is a solid choice too.
 
 -   You will encounter fewer issues later with account creations (captchas ...). This is based on my experiences trying to create plenty of online identities using various browsers. You will have to trust me on that.
 
--   Better Security than Firefox as it is Chromium-based[^512]'[^513].
+-   Better Security than Firefox as it is Chromium-based[^511]'[^512].
 
 -   Better Performance than Firefox.
 
 -   The whole traffic will be router through Tor anyway.
 
--   Can benefit from additional security using Microsoft Defender Application Guard (MDAG)[^514]. Note that this feature cannot be enabled in a Virtualbox VM unfortunately.
+-   Can benefit from additional security using Microsoft Defender Application Guard (MDAG)[^513]. Note that this feature cannot be enabled in a Virtualbox VM unfortunately.
 
 -   Native tracker blocking (Similar to Brave Shields).
 
@@ -11121,7 +11121,7 @@ Pros:
 
 -   Well, it is out of the "Chromium" world and not taking part in expanding Chromium market share
 
--   In addition to being out of the Chromium world, it is also completely out of the Google world (despite the Mozilla Foundation being almost entirely funded by Google[^515]).
+-   In addition to being out of the Chromium world, it is also completely out of the Google world (despite the Mozilla Foundation being almost entirely funded by Google[^514]).
 
 -   An impressive amount of customization through extensions for every possible need.
 
@@ -11131,7 +11131,7 @@ Cons:
 
 -   Poorer performance compared to Chromium.
 
-Security (especially sandboxing) of Firefox is arguably weaker than Chromium-based browsers[^516].
+Security (especially sandboxing) of Firefox is arguably weaker than Chromium-based browsers[^515].
 
 -   You will experience more captchas (this is based on my tests).
 
@@ -11227,11 +11227,11 @@ Addons to consider on Brave if you want additional protections:
 
 -   LibRedirect (<https://libredirect.github.io/>)
 
-That's it and you should be pretty much covered. For full paranoia, you can also just "Block Scripts" to disable Javascript. Note that even disabling Javascript might not protect you fully[^517].
+That's it and you should be pretty much covered. For full paranoia, you can also just "Block Scripts" to disable Javascript. Note that even disabling Javascript might not protect you fully[^516].
 
 ## Ungoogled-Chromium:
 
-**This browser is considered a security liability due to their systemic lagging on security patches**[^518]**.**
+**This browser is considered a security liability due to their systemic lagging on security patches**[^517]**.**
 
 **It is strongly advised not to use Ungoogled-Chromium.**
 
@@ -11616,7 +11616,7 @@ Here are also two recent guides to harden Firefox:
 
 # Appendix W: Virtualization
 
-So, you might ask yourself, what is Virtualization[^519]?
+So, you might ask yourself, what is Virtualization[^518]?
 
 Basically, it is like the Inception movie with computers. You have emulated software computers called Virtual Machines running on a physical computer. And you can even have Virtual Machines running within Virtual machines if you want to (but this will require a more powerful laptop in some cases).
 
@@ -11638,13 +11638,13 @@ In some environments, your ISPs might be trying to prevent you from accessing To
 
 In those cases, it might be necessary to use Tor bridges to connect to the Tor network (see Tor Documentation <https://2019.www.torproject.org/docs/bridges> <sup>[[Archive.org]][244]</sup> and Whonix Documentation <https://www.whonix.org/wiki/Bridges> <sup>[[Archive.org]][337]</sup>).
 
-Bridges are special Tor entry nodes that are not listed on the Tor public directory. Some of those are running on people running the Snowflake Browser extension[^520] while others are running on various servers around the world. Most of those bridges are running some type of obfuscation method called obfs4[^521].
+Bridges are special Tor entry nodes that are not listed on the Tor public directory. Some of those are running on people running the Snowflake Browser extension[^519] while others are running on various servers around the world. Most of those bridges are running some type of obfuscation method called obfs4[^520].
 
-Here is the definition from the Tor Browser Manual[^522]: "obfs4 makes Tor traffic look random and prevents censors from finding bridges by Internet scanning. obfs4 bridges are less likely to be blocked than its predecessor, obfs3 bridges".
+Here is the definition from the Tor Browser Manual[^521]: "obfs4 makes Tor traffic look random and prevents censors from finding bridges by Internet scanning. obfs4 bridges are less likely to be blocked than its predecessor, obfs3 bridges".
 
 Some of those are called "Meek" bridges and are using a technique called "Domain Fronting" where your Tor client (Tails, Tor Browser, Whonix Gateway) will connect to a common CDN used by other services. To a censor, it would appear you are connecting to a normal website such as Microsoft.com. See <https://gitlab.torproject.org/legacy/trac/-/wikis/doc/meek> for more information.
 
-As per their definition from their manual[^523]: "meek transports make it look like you are browsing a major web site instead of using Tor. meek-azure makes it look like you are using a Microsoft web site". This is a type of "domain fronting" [^524].
+As per their definition from their manual[^522]: "meek transports make it look like you are browsing a major web site instead of using Tor. meek-azure makes it look like you are using a Microsoft web site". This is a type of "domain fronting" [^523].
 
 Lastly, there are also bridges called Snowflake bridges that rely on users running the snowflake extension in their browser to become themselves entry nodes. See <https://snowflake.torproject.org/> <sup>[[Archive.org]][563]</sup>.
 
@@ -11726,7 +11726,7 @@ We would recommend the "Safest" level by default. The "Safer" level should be en
     
 If you are extra paranoid, use the "Safest" level by default and consider downgrading to Safer is the website is unusable because of Javascript blocking.
 
-**Optional and not recommended by the Tor Project**: If you are not using the "Safest" level, we will diverge from some but agree with others (for instance the Tails project and others[^525]) and will actually recommend some modifications of the default Tor Browser in the addition of two extensions:
+**Optional and not recommended by the Tor Project**: If you are not using the "Safest" level, we will diverge from some but agree with others (for instance the Tails project and others[^524]) and will actually recommend some modifications of the default Tor Browser in the addition of two extensions:
 
 -   uBlock Origin (as it is the case on Tails) while leaving the extension on the default settings:
 
@@ -11736,7 +11736,7 @@ If you are extra paranoid, use the "Safest" level by default and consider downgr
 
     -   Head over to <https://libredirect.github.io/> within Tor Browser and install the extension.
 
-Let's keep in mind that even 3 letters agencies recommend blocking ads for their internal users in order to improve security[^526].
+Let's keep in mind that even 3 letters agencies recommend blocking ads for their internal users in order to improve security[^525].
 
 If you did not go for the above **personal and not officially recommended options**, the Safer level should still be used with some extra precautions while using some websites: see [Appendix A5: Additional browser precautions with JavaScript enabled].
 
@@ -11828,13 +11828,13 @@ These steps should upgrade from "reasonably anonymous" to "extra-paranoid anonym
 
 ## When using BTC: bonus step for improving your privacy using obfuscation:
 
-You might want to consider the use of Samourai for Android (<https://samouraiwallet.com>). This wallet uses an implementation of CoinJoin[^527] called Whirlpool[^538].
+You might want to consider the use of Samourai for Android (<https://samouraiwallet.com>). This wallet uses an implementation of CoinJoin[^526] called Whirlpool[^537].
 
     <!-- Unverified recommendation: Sparrow for desktop (https://sparrowwallet.com). WARNING: Sparrow has not been thoroughly reviewed by this guide's maintainers and cannot at this point be considered a serious recommendation -->
 
 Mixing BTC in this way should prevent any chain analysis on future transactions. This will not hide any past transactions or the fact you purchased BTC from a KYC exchange. Both wallets support Tor and running your own Bitcoin full node.
 
-Wasabi wallet is not recommended due to censorship of transactions[^536] and vulnerabilities in its CoinJoin implementation[^537].
+Wasabi wallet is not recommended due to censorship of transactions[^535] and vulnerabilities in its CoinJoin implementation[^536].
 
 ## When converting from BTC to Monero:
 
@@ -11870,7 +11870,7 @@ If the service does not accept Monero but does accept BTC, consider the followin
 
 # Appendix A2: Guidelines for passwords and passphrases
 
-My opinion (and the one of many[^528]'[^529]'[^530]'[^531]'[^532]'[^533]) is that passphrases are generally better than passwords. So instead of thinking of better passwords, forget them altogether and use passphrases instead (when possible). Or just use a password manager with very long passwords (such as KeePassXC, the preferred password manager in this guide).
+My opinion (and the one of many[^527]'[^528]'[^529]'[^530]'[^531]'[^532]) is that passphrases are generally better than passwords. So instead of thinking of better passwords, forget them altogether and use passphrases instead (when possible). Or just use a password manager with very long passwords (such as KeePassXC, the preferred password manager in this guide).
 
 The well-known shown-below XKCD <https://xkcd.com/936/> <sup>[[Archive.org]][696]</sup> is still valid despite some people disputing it (See <https://www.explainxkcd.com/wiki/index.php/936:_Password_Strength> <sup>[[Archive.org]][697]</sup>). Yes, it is quite old now and is a little bit outdated and might be misinterpreted. But generally, it is still valid and a good argument for using passphrases instead of passwords.
 
@@ -11878,7 +11878,7 @@ The well-known shown-below XKCD <https://xkcd.com/936/> <sup>[[Archive.org]][696
 
 (Illustration by Randall Munroe, xkcd.com, licensed under CC BY-NC 2.5)
 
-Here are some recommendations (based on Wikipedia[^534]):
+Here are some recommendations (based on Wikipedia[^533]):
 
 -   Long enough to be hard to guess (typically four words is a minimum, five or more is better).
 
@@ -12260,7 +12260,7 @@ Here is a checklist of things to verify before sharing information to anyone:
 
 First, please read this small introduction video to Monero: <https://www.youtube.com/watch?v=H33ggs7bh8M> <sup>[[Invidious]][736]</sup>
 
-The anonymity of Monero depends on its crypto algorithms. If you do use Monero from a KYC Exchange. You can be almost certain that you are safe today. But you might not be in the long-term future if Monero algorithms are ever broken[^535] (think Quantum Computing). Do keep in mind that KYC regulations might force operators (such as Crypto Exchanges) to keep your financial records for up to 10 years and that you, therefore, need Monero algorithms to not be broken for the next 10 years as well.
+The anonymity of Monero depends on its crypto algorithms. If you do use Monero from a KYC Exchange. You can be almost certain that you are safe today. But you might not be in the long-term future if Monero algorithms are ever broken[^534] (think Quantum Computing). Do keep in mind that KYC regulations might force operators (such as Crypto Exchanges) to keep your financial records for up to 10 years and that you, therefore, need Monero algorithms to not be broken for the next 10 years as well.
 
 You may want to watch this insightful video for more details: [**https://www.youtube.com/watch?v=j02QoI4ZlnU**][] <sup>[[Invidious]][737]</sup>
 
@@ -12844,533 +12844,533 @@ You can find some introduction on these on these projects:
 
 [^273]: Wikipedia, National Security Letter <https://en.wikipedia.org/wiki/National_security_letter> <sup>[[Wikiless]][1079]</sup> <sup>[[Archive.org]][1080]</sup>
 
-[^275]: ArsTechnica, VPN servers seized by Ukrainian authorities weren't encrypted <https://arstechnica.com/gadgets/2021/07/vpn-servers-seized-by-ukrainian-authorities-werent-encrypted/> <sup>[[Archive.org]][1082]</sup>
+[^274]: ArsTechnica, VPN servers seized by Ukrainian authorities weren't encrypted <https://arstechnica.com/gadgets/2021/07/vpn-servers-seized-by-ukrainian-authorities-werent-encrypted/> <sup>[[Archive.org]][1082]</sup>
 
-[^276]: BleepingComputer, DoubleVPN servers, logs, and account info seized by law enforcement <https://www.bleepingcomputer.com/news/security/doublevpn-servers-logs-and-account-info-seized-by-law-enforcement/> <sup>[[Archive.org]][1083]</sup>
+[^275]: BleepingComputer, DoubleVPN servers, logs, and account info seized by law enforcement <https://www.bleepingcomputer.com/news/security/doublevpn-servers-logs-and-account-info-seized-by-law-enforcement/> <sup>[[Archive.org]][1083]</sup>
 
-[^277]: CyberScoop, Court rules encrypted email provider Tutanota must monitor messages in blackmail case <https://www.cyberscoop.com/court-rules-encrypted-email-tutanota-monitor-messages/> <sup>[[Archive.org]][1084]</sup>
+[^276]: CyberScoop, Court rules encrypted email provider Tutanota must monitor messages in blackmail case <https://www.cyberscoop.com/court-rules-encrypted-email-tutanota-monitor-messages/> <sup>[[Archive.org]][1084]</sup>
 
-[^278]: Heise Online (German), <https://www.heise.de/news/Gericht-zwingt-Mailprovider-Tutanota-zu-Ueberwachungsfunktion-4972460.html> <sup>[[Archive.org]][1085]</sup>
+[^277]: Heise Online (German), <https://www.heise.de/news/Gericht-zwingt-Mailprovider-Tutanota-zu-Ueberwachungsfunktion-4972460.html> <sup>[[Archive.org]][1085]</sup>
 
-[^279]: PCMag, Did PureVPN Cross a Line When It Disclosed User Information? <https://www.pcmag.com/opinions/did-purevpn-cross-a-line-when-it-disclosed-user-information> <sup>[[Archive.org]][1086]</sup>
+[^278]: PCMag, Did PureVPN Cross a Line When It Disclosed User Information? <https://www.pcmag.com/opinions/did-purevpn-cross-a-line-when-it-disclosed-user-information> <sup>[[Archive.org]][1086]</sup>
 
-[^280]: Internet Archive, Wipeyourdata, "No logs" EarthVPN user arrested after police finds logs <https://archive.is/XNuVw#selection-230.0-230.1> <sup>[[Archive.org]][1087]</sup>
+[^279]: Internet Archive, Wipeyourdata, "No logs" EarthVPN user arrested after police finds logs <https://archive.is/XNuVw#selection-230.0-230.1> <sup>[[Archive.org]][1087]</sup>
 
-[^281]: Wikipedia, Lavabit Suspension and Gag order, <https://en.wikipedia.org/wiki/Lavabit#Suspension_and_gag_order> <sup>[[Wikiless]][1088]</sup> <sup>[[Archive.org]][1089]</sup>
+[^280]: Wikipedia, Lavabit Suspension and Gag order, <https://en.wikipedia.org/wiki/Lavabit#Suspension_and_gag_order> <sup>[[Wikiless]][1088]</sup> <sup>[[Archive.org]][1089]</sup>
 
-[^282]: Internet Archive, Invisibler, What Everybody Ought to Know About HideMyAss <https://archive.is/ag9w4#selection-136.0-136.1>
+[^281]: Internet Archive, Invisibler, What Everybody Ought to Know About HideMyAss <https://archive.is/ag9w4#selection-136.0-136.1>
 
-[^283]: Wikipedia, Warrant Canary <https://en.wikipedia.org/wiki/Warrant_canary> <sup>[[Wikiless]][1090]</sup> <sup>[[Archive.org]][1091]</sup>
+[^282]: Wikipedia, Warrant Canary <https://en.wikipedia.org/wiki/Warrant_canary> <sup>[[Wikiless]][1090]</sup> <sup>[[Archive.org]][1091]</sup>
     
-[^284]: Washington Post, The intelligence coup of the century <https://www.washingtonpost.com/graphics/2020/world/national-security/cia-crypto-encryption-machines-espionage/> <sup>[[Archive.org]][1092]</sup>
+[^283]: Washington Post, The intelligence coup of the century <https://www.washingtonpost.com/graphics/2020/world/national-security/cia-crypto-encryption-machines-espionage/> <sup>[[Archive.org]][1092]</sup>
 
-[^285]: Swissinfo.ch, Second Swiss firm allegedly sold encrypted spying devices <https://www.swissinfo.ch/eng/second-swiss-firm-allegedly-sold-encrypted-spying-devices/46186432> <sup>[[Archive.org]][1093]</sup>
+[^284]: Swissinfo.ch, Second Swiss firm allegedly sold encrypted spying devices <https://www.swissinfo.ch/eng/second-swiss-firm-allegedly-sold-encrypted-spying-devices/46186432> <sup>[[Archive.org]][1093]</sup>
 
-[^286]: Wikipedia, Das Leben der Anderen <https://en.wikipedia.org/wiki/The_Lives_of_Others> <sup>[[Wikiless]][1094]</sup> <sup>[[Archive.org]][1095]</sup>
+[^285]: Wikipedia, Das Leben der Anderen <https://en.wikipedia.org/wiki/The_Lives_of_Others> <sup>[[Wikiless]][1094]</sup> <sup>[[Archive.org]][1095]</sup>
 
-[^287]: Wired, Mind the Gap: This Researcher Steals Data With Noise, Light, and Magnets <https://www.wired.com/story/air-gap-researcher-mordechai-guri/> <sup>[[Archive.org]][1096]</sup>
+[^286]: Wired, Mind the Gap: This Researcher Steals Data With Noise, Light, and Magnets <https://www.wired.com/story/air-gap-researcher-mordechai-guri/> <sup>[[Archive.org]][1096]</sup>
 
-[^288]: Scientific American, A Blank Wall Can Show How Many People Are in a Room and What They're Doing <https://www.scientificamerican.com/article/a-blank-wall-can-show-how-many-people-are-in-a-room-and-what-theyre-doing/> <sup>[[Archive.org]][1097]</sup>
+[^287]: Scientific American, A Blank Wall Can Show How Many People Are in a Room and What They're Doing <https://www.scientificamerican.com/article/a-blank-wall-can-show-how-many-people-are-in-a-room-and-what-theyre-doing/> <sup>[[Archive.org]][1097]</sup>
 
-[^289]: Scientific American, A Shiny Snack Bag's Reflections Can Reconstruct the Room around It <https://www.scientificamerican.com/article/a-shiny-snack-bags-reflections-can-reconstruct-the-room-around-it/> <sup>[[Archive.org]][1098]</sup>
+[^288]: Scientific American, A Shiny Snack Bag's Reflections Can Reconstruct the Room around It <https://www.scientificamerican.com/article/a-shiny-snack-bags-reflections-can-reconstruct-the-room-around-it/> <sup>[[Archive.org]][1098]</sup>
 
-[^290]: Scientific American, Footstep Sensors Identify People by Gait <https://www.scientificamerican.com/article/footstep-sensors-identify-people-by-gait/> <sup>[[Archive.org]][1099]</sup>
+[^289]: Scientific American, Footstep Sensors Identify People by Gait <https://www.scientificamerican.com/article/footstep-sensors-identify-people-by-gait/> <sup>[[Archive.org]][1099]</sup>
 
-[^291]: Ben Nassi, Lamphone <https://www.nassiben.com/lamphone> <sup>[[Archive.org]][1100]</sup>
+[^290]: Ben Nassi, Lamphone <https://www.nassiben.com/lamphone> <sup>[[Archive.org]][1100]</sup>
 
-[^292]: The Guardian, Laser spying: is it really practical? <https://www.theguardian.com/world/2013/aug/22/gchq-warned-laser-spying-guardian-offices> <sup>[[Archive.org]][1101]</sup>
+[^291]: The Guardian, Laser spying: is it really practical? <https://www.theguardian.com/world/2013/aug/22/gchq-warned-laser-spying-guardian-offices> <sup>[[Archive.org]][1101]</sup>
 
-[^293]: ArsTechnica, Photos of an NSA "upgrade" factory show Cisco router getting implant <https://arstechnica.com/tech-policy/2014/05/photos-of-an-nsa-upgrade-factory-show-cisco-router-getting-implant/> <sup>[[Archive.org]][1102]</sup>
+[^292]: ArsTechnica, Photos of an NSA "upgrade" factory show Cisco router getting implant <https://arstechnica.com/tech-policy/2014/05/photos-of-an-nsa-upgrade-factory-show-cisco-router-getting-implant/> <sup>[[Archive.org]][1102]</sup>
 
-[^294]: Wikipedia, Rubber-hose Cryptanalysis <https://en.wikipedia.org/wiki/Rubber-hose_cryptanalysis> <sup>[[Archive.org]][1364]</sup>
+[^293]: Wikipedia, Rubber-hose Cryptanalysis <https://en.wikipedia.org/wiki/Rubber-hose_cryptanalysis> <sup>[[Archive.org]][1364]</sup>
 
-[^295]: Defuse.ca, TrueCrypt's Plausible Deniability is Theoretically Useless <https://defuse.ca/truecrypt-plausible-deniability-useless-by-game-theory.htm> <sup>[[Archive.org]][248]</sup>
+[^294]: Defuse.ca, TrueCrypt's Plausible Deniability is Theoretically Useless <https://defuse.ca/truecrypt-plausible-deniability-useless-by-game-theory.htm> <sup>[[Archive.org]][248]</sup>
 
-[^296]: Wikipedia, OONI, <https://en.wikipedia.org/wiki/OONI> <sup>[[Wikiless]][1103]</sup> <sup>[[Archive.org]][1104]</sup>
+[^295]: Wikipedia, OONI, <https://en.wikipedia.org/wiki/OONI> <sup>[[Wikiless]][1103]</sup> <sup>[[Archive.org]][1104]</sup>
 
-[^297]: Privacy International, Timeline of SIM Card Registration Laws <https://privacyinternational.org/long-read/3018/timeline-sim-card-registration-laws> <sup>[[Archive.org]][1105]</sup>
+[^296]: Privacy International, Timeline of SIM Card Registration Laws <https://privacyinternational.org/long-read/3018/timeline-sim-card-registration-laws> <sup>[[Archive.org]][1105]</sup>
 
-[^298]: NYTimes, Lost Passwords Lock Millionaires Out of Their Bitcoin Fortunes <https://www.nytimes.com/2021/01/12/technology/bitcoin-passwords-wallets-fortunes.html> <sup>[[Archive.org]][1106]</sup>
+[^297]: NYTimes, Lost Passwords Lock Millionaires Out of Their Bitcoin Fortunes <https://www.nytimes.com/2021/01/12/technology/bitcoin-passwords-wallets-fortunes.html> <sup>[[Archive.org]][1106]</sup>
 
-[^299]: Usenix.org, Shedding too much Light on a Microcontroller's Firmware Protection <https://www.usenix.org/system/files/conference/woot17/woot17-paper-obermaier.pdf> <sup>[[Archive.org]][1107]</sup>
+[^298]: Usenix.org, Shedding too much Light on a Microcontroller's Firmware Protection <https://www.usenix.org/system/files/conference/woot17/woot17-paper-obermaier.pdf> <sup>[[Archive.org]][1107]</sup>
 
-[^300]: TorProject.org, Can I run Tor Browser on an iOS device? <https://support.torproject.org/tormobile/tormobile-3/> <sup>[[Archive.org]][1108]</sup>
+[^299]: TorProject.org, Can I run Tor Browser on an iOS device? <https://support.torproject.org/tormobile/tormobile-3/> <sup>[[Archive.org]][1108]</sup>
 
-[^301]: Wikipedia, Tails <https://en.wikipedia.org/wiki/Tails_(operating_system)> <sup>[[Wikiless]][1109]</sup> <sup>[[Archive.org]][1110]</sup>
+[^300]: Wikipedia, Tails <https://en.wikipedia.org/wiki/Tails_(operating_system)> <sup>[[Wikiless]][1109]</sup> <sup>[[Archive.org]][1110]</sup>
 
-[^302]: Vice.com, Facebook Helped the FBI Hack a Child Predator <https://www.vice.com/en/article/v7gd9b/facebook-helped-fbi-hack-child-predator-buster-hernandez> <sup>[[Archive.org]][674]</sup>
+[^301]: Vice.com, Facebook Helped the FBI Hack a Child Predator <https://www.vice.com/en/article/v7gd9b/facebook-helped-fbi-hack-child-predator-buster-hernandez> <sup>[[Archive.org]][674]</sup>
 
-[^303]: Veracrypt Documentation, Trim Operations <https://www.veracrypt.fr/en/Trim%20Operation.html> <sup>[[Archive.org]][1111]</sup>
+[^302]: Veracrypt Documentation, Trim Operations <https://www.veracrypt.fr/en/Trim%20Operation.html> <sup>[[Archive.org]][1111]</sup>
 
-[^304]: YouTube, 36C3 - Uncover, Understand, Own - Regaining Control Over Your AMD CPU <https://www.youtube.com/watch?v=bKH5nGLgi08&t=2834s> <sup>[[Invidious]][77]</sup>
+[^303]: YouTube, 36C3 - Uncover, Understand, Own - Regaining Control Over Your AMD CPU <https://www.youtube.com/watch?v=bKH5nGLgi08&t=2834s> <sup>[[Invidious]][77]</sup>
 
-[^305]: Qubes OS, Anti-Evil Maid, <https://github.com/QubesOS/qubes-antievilmaid> <sup>[[Archive.org]][269]</sup>
+[^304]: Qubes OS, Anti-Evil Maid, <https://github.com/QubesOS/qubes-antievilmaid> <sup>[[Archive.org]][269]</sup>
 
-[^306]: QubesOS FAQ, <https://www.qubes-os.org/faq/#is-secure-boot-supported> <sup>[[Archive.org]][369]</sup>
+[^305]: QubesOS FAQ, <https://www.qubes-os.org/faq/#is-secure-boot-supported> <sup>[[Archive.org]][369]</sup>
 
-[^307]: Wikipedia, Secure Boot <https://en.wikipedia.org/wiki/Unified_Extensible_Firmware_Interface#Secure_boot> <sup>[[Wikiless]][1014]</sup> <sup>[[Archive.org]][1015]</sup>
+[^306]: Wikipedia, Secure Boot <https://en.wikipedia.org/wiki/Unified_Extensible_Firmware_Interface#Secure_boot> <sup>[[Wikiless]][1014]</sup> <sup>[[Archive.org]][1015]</sup>
 
-[^308]: Wikipedia, Booting <https://en.wikipedia.org/wiki/Booting> <sup>[[Wikiless]][1112]</sup> <sup>[[Archive.org]][1113]</sup>
+[^307]: Wikipedia, Booting <https://en.wikipedia.org/wiki/Booting> <sup>[[Wikiless]][1112]</sup> <sup>[[Archive.org]][1113]</sup>
 
-[^309]: Wired, Don't Want Your Laptop Tampered With? Just Add Glitter Nail Polish <https://www.wired.com/2013/12/better-data-security-nail-polish/> <sup>[[Archive.org]][1114]</sup>
+[^308]: Wired, Don't Want Your Laptop Tampered With? Just Add Glitter Nail Polish <https://www.wired.com/2013/12/better-data-security-nail-polish/> <sup>[[Archive.org]][1114]</sup>
 
-[^310]: Wikipedia, Virtual Machine <https://en.wikipedia.org/wiki/Virtual_machine> <sup>[[Wikiless]][1115]</sup> <sup>[[Archive.org]][1116]</sup>
+[^309]: Wikipedia, Virtual Machine <https://en.wikipedia.org/wiki/Virtual_machine> <sup>[[Wikiless]][1115]</sup> <sup>[[Archive.org]][1116]</sup>
 
-[^311]: Wikipedia, Plausible Deniability <https://en.wikipedia.org/wiki/Plausible_deniability> <sup>[[Wikiless]][1117]</sup> <sup>[[Archive.org]][1118]</sup>
+[^310]: Wikipedia, Plausible Deniability <https://en.wikipedia.org/wiki/Plausible_deniability> <sup>[[Wikiless]][1117]</sup> <sup>[[Archive.org]][1118]</sup>
 
-[^312]: Wikipedia, Deniable Encryption <https://en.wikipedia.org/wiki/Deniable_encryption> <sup>[[Wikiless]][1119]</sup> <sup>[[Archive.org]][1120]</sup>
+[^311]: Wikipedia, Deniable Encryption <https://en.wikipedia.org/wiki/Deniable_encryption> <sup>[[Wikiless]][1119]</sup> <sup>[[Archive.org]][1120]</sup>
 
-[^313]: PrivacyGuides.org, Don't use Windows 10 - It's a privacy nightmare <https://web.archive.org/web/20220313023015/https://www.privacyguides.org/tools/#operating-systems#win10> <sup>[[Archive.org]][1121]</sup>
+[^312]: PrivacyGuides.org, Don't use Windows 10 - It's a privacy nightmare <https://web.archive.org/web/20220313023015/https://www.privacyguides.org/tools/#operating-systems#win10> <sup>[[Archive.org]][1121]</sup>
 
-[^314]: Wikipedia, Deniable Encryption <https://en.wikipedia.org/wiki/Deniable_encryption> <sup>[[Wikiless]][1119]</sup> <sup>[[Archive.org]][1120]</sup>
+[^313]: Wikipedia, Deniable Encryption <https://en.wikipedia.org/wiki/Deniable_encryption> <sup>[[Wikiless]][1119]</sup> <sup>[[Archive.org]][1120]</sup>
 
-[^315]: Wikipedia, Key Disclosure Laws <https://en.wikipedia.org/wiki/Key_disclosure_law> <sup>[[Wikiless]][554]</sup> <sup>[[Archive.org]][555]</sup>
+[^314]: Wikipedia, Key Disclosure Laws <https://en.wikipedia.org/wiki/Key_disclosure_law> <sup>[[Wikiless]][554]</sup> <sup>[[Archive.org]][555]</sup>
 
-[^316]: GP Digital, World map of encryption laws and policies <https://www.gp-digital.org/world-map-of-encryption/> <sup>[[Archive.org]][556]</sup>
+[^315]: GP Digital, World map of encryption laws and policies <https://www.gp-digital.org/world-map-of-encryption/> <sup>[[Archive.org]][556]</sup>
 
-[^317]: Wikipedia, Bitlocker <https://en.wikipedia.org/wiki/BitLocker> <sup>[[Wikiless]][1122]</sup> <sup>[[Archive.org]][1123]</sup>
+[^316]: Wikipedia, Bitlocker <https://en.wikipedia.org/wiki/BitLocker> <sup>[[Wikiless]][1122]</sup> <sup>[[Archive.org]][1123]</sup>
 
-[^318]: Wikipedia, Evil Maid Attack <https://en.wikipedia.org/wiki/Evil_maid_attack> <sup>[[Wikiless]][1124]</sup> <sup>[[Archive.org]][1125]</sup>
+[^317]: Wikipedia, Evil Maid Attack <https://en.wikipedia.org/wiki/Evil_maid_attack> <sup>[[Wikiless]][1124]</sup> <sup>[[Archive.org]][1125]</sup>
 
-[^319]: Wikipedia, Cold Boot Attack <https://en.wikipedia.org/wiki/Cold_boot_attack> <sup>[[Wikiless]][1126]</sup> <sup>[[Archive.org]][1127]</sup>
+[^318]: Wikipedia, Cold Boot Attack <https://en.wikipedia.org/wiki/Cold_boot_attack> <sup>[[Wikiless]][1126]</sup> <sup>[[Archive.org]][1127]</sup>
 
-[^320]: CITP 2008 (<https://www.youtube.com/watch?v=JDaicPIgn9U>) <sup>[[Invidious]][1128]</sup>
+[^319]: CITP 2008 (<https://www.youtube.com/watch?v=JDaicPIgn9U>) <sup>[[Invidious]][1128]</sup>
 
-[^321]: ResearchGate, Defeating Plausible Deniability of VeraCrypt Hidden Operating Systems <https://www.researchgate.net/publication/318155607_Defeating_Plausible_Deniability_of_VeraCrypt_Hidden_Operating_Systems> <sup>[[Archive.org]][1129]</sup>
+[^320]: ResearchGate, Defeating Plausible Deniability of VeraCrypt Hidden Operating Systems <https://www.researchgate.net/publication/318155607_Defeating_Plausible_Deniability_of_VeraCrypt_Hidden_Operating_Systems> <sup>[[Archive.org]][1129]</sup>
 
-[^322]: SANS.org, Mission Implausible: Defeating Plausible Deniability with Digital Forensics <https://www.sans.org/reading-room/whitepapers/forensics/mission-implausible-defeating-plausible-deniability-digital-forensics-39500> <sup>[[Archive.org]][1130]</sup>
+[^321]: SANS.org, Mission Implausible: Defeating Plausible Deniability with Digital Forensics <https://www.sans.org/reading-room/whitepapers/forensics/mission-implausible-defeating-plausible-deniability-digital-forensics-39500> <sup>[[Archive.org]][1130]</sup>
 
-[^323]: SourceForge, Veracrypt Forum <https://sourceforge.net/p/veracrypt/discussion/technical/thread/53f33faf/> <sup>[[Archive.org]][1131]</sup>
+[^322]: SourceForge, Veracrypt Forum <https://sourceforge.net/p/veracrypt/discussion/technical/thread/53f33faf/> <sup>[[Archive.org]][1131]</sup>
 
-[^324]: Microsoft, BitLocker Countermeasures <https://docs.microsoft.com/en-us/windows/security/information-protection/bitlocker/bitlocker-countermeasures> <sup>[[Archive.org]][1132]</sup>
+[^323]: Microsoft, BitLocker Countermeasures <https://docs.microsoft.com/en-us/windows/security/information-protection/bitlocker/bitlocker-countermeasures> <sup>[[Archive.org]][1132]</sup>
 
-[^325]: SANS, Windows ShellBag Forensics in-depth <https://www.sans.org/reading-room/whitepapers/forensics/windows-shellbag-forensics-in-depth-34545> <sup>[[Archive.org]][1133]</sup>
+[^324]: SANS, Windows ShellBag Forensics in-depth <https://www.sans.org/reading-room/whitepapers/forensics/windows-shellbag-forensics-in-depth-34545> <sup>[[Archive.org]][1133]</sup>
 
-[^326]: University of York, Forensic data recovery from the Windows Search Database <https://eprints.whiterose.ac.uk/75046/1/Forensic_Data_Recovery_From_The_Windows_Search_Database_preprint_DIIN328.pdf> <sup>[[Archive.org]][1134]</sup>
+[^325]: University of York, Forensic data recovery from the Windows Search Database <https://eprints.whiterose.ac.uk/75046/1/Forensic_Data_Recovery_From_The_Windows_Search_Database_preprint_DIIN328.pdf> <sup>[[Archive.org]][1134]</sup>
 
-[^327]: A forensic insight into Windows 10 Jump Lists <https://web.archive.org/web/https://cyberforensicator.com/wp-content/uploads/2017/01/1-s2.0-S1742287616300202-main.2-14.pdf> <sup>[[Archive.org]][1135]</sup>
+[^326]: A forensic insight into Windows 10 Jump Lists <https://web.archive.org/web/https://cyberforensicator.com/wp-content/uploads/2017/01/1-s2.0-S1742287616300202-main.2-14.pdf> <sup>[[Archive.org]][1135]</sup>
 
-[^328]: Wikipedia, Gatekeeper <https://en.wikipedia.org/wiki/Gatekeeper_(macOS)> <sup>[[Wikiless]][1136]</sup> <sup>[[Archive.org]][1137]</sup>
+[^327]: Wikipedia, Gatekeeper <https://en.wikipedia.org/wiki/Gatekeeper_(macOS)> <sup>[[Wikiless]][1136]</sup> <sup>[[Archive.org]][1137]</sup>
 
-[^329]: Alpine Linux Wiki, Setting up a laptop <https://wiki.alpinelinux.org/wiki/Setting_up_a_laptop> <sup>[[Archive.org]][1138]</sup>
+[^328]: Alpine Linux Wiki, Setting up a laptop <https://wiki.alpinelinux.org/wiki/Setting_up_a_laptop> <sup>[[Archive.org]][1138]</sup>
 
-[^330]: Wikipedia Veracrypt <https://en.wikipedia.org/wiki/VeraCrypt> <sup>[[Wikiless]][1139]</sup> <sup>[[Archive.org]][1140]</sup>
+[^329]: Wikipedia Veracrypt <https://en.wikipedia.org/wiki/VeraCrypt> <sup>[[Wikiless]][1139]</sup> <sup>[[Archive.org]][1140]</sup>
 
-[^331]: OSTIF Veracrypt Audit, 2016 <https://web.archive.org/web/https://ostif.org/the-veracrypt-audit-results/>
+[^330]: OSTIF Veracrypt Audit, 2016 <https://web.archive.org/web/https://ostif.org/the-veracrypt-audit-results/>
 
-[^332]: Veracrypt Documentation, Unencrypted Data in RAM <https://www.veracrypt.fr/en/Unencrypted%20Data%20in%20RAM.html> <sup>[[Archive.org]][1141]</sup>
+[^331]: Veracrypt Documentation, Unencrypted Data in RAM <https://www.veracrypt.fr/en/Unencrypted%20Data%20in%20RAM.html> <sup>[[Archive.org]][1141]</sup>
 
-[^333]: Veracrypt Documentation, Data Leaks <https://www.veracrypt.fr/code/VeraCrypt/plain/doc/html/Data%20Leaks.html> <sup>[[Archive.org]][1142]</sup>
+[^332]: Veracrypt Documentation, Data Leaks <https://www.veracrypt.fr/code/VeraCrypt/plain/doc/html/Data%20Leaks.html> <sup>[[Archive.org]][1142]</sup>
 
-[^334]: Dolos Group, From Stolen Laptop to Inside the Company Network <https://dolosgroup.io/blog/2021/7/9/from-stolen-laptop-to-inside-the-company-network> <sup>[[Archive.org]][1143]</sup>
+[^333]: Dolos Group, From Stolen Laptop to Inside the Company Network <https://dolosgroup.io/blog/2021/7/9/from-stolen-laptop-to-inside-the-company-network> <sup>[[Archive.org]][1143]</sup>
 
-[^335]: Trammell Hudson's Projects, Understanding TPM Sniffing Attacks <https://trmm.net/tpm-sniffing/> <sup>[[Archive.org]][1144]</sup>
+[^334]: Trammell Hudson's Projects, Understanding TPM Sniffing Attacks <https://trmm.net/tpm-sniffing/> <sup>[[Archive.org]][1144]</sup>
 
-[^336]: Jon Aubrey, attacking laptops that are protected by Microsoft Bitlocker drive encryption <https://twitter.com/SecurityJon/status/1445020885472235524> <sup>[[Nitter]][1145]</sup>
+[^335]: Jon Aubrey, attacking laptops that are protected by Microsoft Bitlocker drive encryption <https://twitter.com/SecurityJon/status/1445020885472235524> <sup>[[Nitter]][1145]</sup>
 
-[^337]: F-Secure Labs, Sniff, there leaks my BitLocker key <https://labs.f-secure.com/blog/sniff-there-leaks-my-bitlocker-key/> <sup>[[Archive.org]][1146]</sup>
+[^336]: F-Secure Labs, Sniff, there leaks my BitLocker key <https://labs.f-secure.com/blog/sniff-there-leaks-my-bitlocker-key/> <sup>[[Archive.org]][1146]</sup>
 
-[^338]: Microsoft, BitLocker Countermeasures, Attacker countermeasures <https://docs.microsoft.com/en-us/windows/security/information-protection/bitlocker/bitlocker-countermeasures> <sup>[[Archive.org]][1132]</sup>
+[^337]: Microsoft, BitLocker Countermeasures, Attacker countermeasures <https://docs.microsoft.com/en-us/windows/security/information-protection/bitlocker/bitlocker-countermeasures> <sup>[[Archive.org]][1132]</sup>
 
-[^339]: Wikipedia, Trim <https://en.wikipedia.org/wiki/Trim_(computing)> <sup>[[Wikiless]][485]</sup> <sup>[[Archive.org]][486]</sup>
+[^338]: Wikipedia, Trim <https://en.wikipedia.org/wiki/Trim_(computing)> <sup>[[Wikiless]][485]</sup> <sup>[[Archive.org]][486]</sup>
 
-[^340]: Veracrypt Documentation, Trim Operations <https://www.veracrypt.fr/en/Trim%20Operation.html> <sup>[[Archive.org]][1111]</sup>
+[^339]: Veracrypt Documentation, Trim Operations <https://www.veracrypt.fr/en/Trim%20Operation.html> <sup>[[Archive.org]][1111]</sup>
 
-[^341]: Veracrypt Documentation, Rescue Disk <https://www.veracrypt.fr/en/VeraCrypt%20Rescue%20Disk.html> <sup>[[Archive.org]][1147]</sup>
+[^340]: Veracrypt Documentation, Rescue Disk <https://www.veracrypt.fr/en/VeraCrypt%20Rescue%20Disk.html> <sup>[[Archive.org]][1147]</sup>
 
-[^342]: St Cloud State University, Forensic Research on Solid State Drives using Trim Analysis <https://web.archive.org//web/20220612095503/https://repository.stcloudstate.edu/cgi/viewcontent.cgi?article=1141&context=msia_etds> <sup>[[Archive.org]][1148]</sup>
+[^341]: St Cloud State University, Forensic Research on Solid State Drives using Trim Analysis <https://web.archive.org//web/20220612095503/https://repository.stcloudstate.edu/cgi/viewcontent.cgi?article=1141&context=msia_etds> <sup>[[Archive.org]][1148]</sup>
 
-[^343]: WindowsCentral, Trim Tutorial <https://www.windowscentral.com/how-ensure-trim-enabled-windows-10-speed-ssd-performance> <sup>[[Archive.org]][1149]</sup>
+[^342]: WindowsCentral, Trim Tutorial <https://www.windowscentral.com/how-ensure-trim-enabled-windows-10-speed-ssd-performance> <sup>[[Archive.org]][1149]</sup>
 
-[^344]: Veracrypt Documentation, Trim Operation <https://veracrypt.eu/en/docs/trim-operation/> <sup>[[Archive.org]][1150]</sup>
+[^343]: Veracrypt Documentation, Trim Operation <https://veracrypt.eu/en/docs/trim-operation/> <sup>[[Archive.org]][1150]</sup>
 
-[^345]: Black Hat 2018, Perfectly Deniable Steganographic Disk Encryption <https://i.blackhat.com/eu-18/Thu-Dec-6/eu-18-Schaub-Perfectly-Deniable-Steganographic-Disk-Encryption.pdf> <sup>[[Archive.org]][1151]</sup>
+[^344]: Black Hat 2018, Perfectly Deniable Steganographic Disk Encryption <https://i.blackhat.com/eu-18/Thu-Dec-6/eu-18-Schaub-Perfectly-Deniable-Steganographic-Disk-Encryption.pdf> <sup>[[Archive.org]][1151]</sup>
 
-[^346]: Milan Broz's Blog, TRIM & dm-crypt ... problems? <http://asalor.blogspot.com/2011/08/trim-dm-crypt-problems.html> <sup>[[Archive.org]][1152]</sup>
+[^345]: Milan Broz's Blog, TRIM & dm-crypt ... problems? <http://asalor.blogspot.com/2011/08/trim-dm-crypt-problems.html> <sup>[[Archive.org]][1152]</sup>
 
-[^347]: Veracrypt Documentation, Rescue Disk <https://www.veracrypt.fr/en/VeraCrypt%20Rescue%20Disk.html> <sup>[[Archive.org]][1147]</sup>
+[^346]: Veracrypt Documentation, Rescue Disk <https://www.veracrypt.fr/en/VeraCrypt%20Rescue%20Disk.html> <sup>[[Archive.org]][1147]</sup>
 
-[^348]: Wikipedia, Virtualbox <https://en.wikipedia.org/wiki/VirtualBox> <sup>[[Wikiless]][1153]</sup> <sup>[[Archive.org]][1154]</sup>
+[^347]: Wikipedia, Virtualbox <https://en.wikipedia.org/wiki/VirtualBox> <sup>[[Wikiless]][1153]</sup> <sup>[[Archive.org]][1154]</sup>
 
-[^349]: VirtualBox Ticket 17987 <https://www.virtualbox.org/ticket/17987> <sup>[[Archive.org]][1155]</sup>
+[^348]: VirtualBox Ticket 17987 <https://www.virtualbox.org/ticket/17987> <sup>[[Archive.org]][1155]</sup>
 
-[^350]: Whonix Documentation, Spectre Meltdown <https://www.whonix.org/wiki/Spectre_Meltdown#VirtualBox> <sup>[[Archive.org]][82]</sup>
+[^349]: Whonix Documentation, Spectre Meltdown <https://www.whonix.org/wiki/Spectre_Meltdown#VirtualBox> <sup>[[Archive.org]][82]</sup>
 
-[^351]: Whonix Documentation, Stream Isolation <https://www.whonix.org/wiki/Stream_Isolation> <sup>[[Archive.org]][316]</sup>
+[^350]: Whonix Documentation, Stream Isolation <https://www.whonix.org/wiki/Stream_Isolation> <sup>[[Archive.org]][316]</sup>
 
-[^352]: Whonix Documentation, Tunnels Comparison Table <https://www.whonix.org/wiki/Tunnels/Introduction#Comparison_Table> <sup>[[Archive.org]][318]</sup>
+[^351]: Whonix Documentation, Tunnels Comparison Table <https://www.whonix.org/wiki/Tunnels/Introduction#Comparison_Table> <sup>[[Archive.org]][318]</sup>
 
-[^353]: Wikipedia, Whonix <https://en.wikipedia.org/wiki/Whonix> <sup>[[Wikiless]][1156]</sup> <sup>[[Archive.org]][1157]</sup>
+[^352]: Wikipedia, Whonix <https://en.wikipedia.org/wiki/Whonix> <sup>[[Wikiless]][1156]</sup> <sup>[[Archive.org]][1157]</sup>
 
-[^354]: Oracle Virtualbox Manual, Snapshots <https://docs.oracle.com/en/virtualization/virtualbox/6.0/user/snapshots.html> <sup>[[Archive.org]][1158]</sup>
+[^353]: Oracle Virtualbox Manual, Snapshots <https://docs.oracle.com/en/virtualization/virtualbox/6.0/user/snapshots.html> <sup>[[Archive.org]][1158]</sup>
 
-[^355]: Utica College, Forensic Recovery Of Evidence From Deleted Oracle Virtualbox Virtual Machines <https://web.archive.org/web/https://programs.online.utica.edu/sites/default/files/Neal_6_Gonnella_Forensic_Recovery_of_Evidence_from_Deleted_Oracle_VirtualBox_Virtual_Machine.pdf>
+[^354]: Utica College, Forensic Recovery Of Evidence From Deleted Oracle Virtualbox Virtual Machines <https://web.archive.org/web/https://programs.online.utica.edu/sites/default/files/Neal_6_Gonnella_Forensic_Recovery_of_Evidence_from_Deleted_Oracle_VirtualBox_Virtual_Machine.pdf>
 
-[^356]: Wikipedia, Spectre <https://en.wikipedia.org/wiki/Spectre_(security_vulnerability)> <sup>[[Wikiless]][1159]</sup> <sup>[[Archive.org]][1160]</sup>
+[^355]: Wikipedia, Spectre <https://en.wikipedia.org/wiki/Spectre_(security_vulnerability)> <sup>[[Wikiless]][1159]</sup> <sup>[[Archive.org]][1160]</sup>
 
-[^357]: Wikipedia, Meltdown <https://en.wikipedia.org/wiki/Meltdown_(security_vulnerability)> <sup>[[Wikiless]][1161]</sup> <sup>[[Archive.org]][1162]</sup>
+[^356]: Wikipedia, Meltdown <https://en.wikipedia.org/wiki/Meltdown_(security_vulnerability)> <sup>[[Wikiless]][1161]</sup> <sup>[[Archive.org]][1162]</sup>
 
-[^358]: Whonix Documentation, Stream Isolation, By Settings <https://www.whonix.org/wiki/Stream_Isolation#By_Settings> <sup>[[Archive.org]][1163]</sup>
+[^357]: Whonix Documentation, Stream Isolation, By Settings <https://www.whonix.org/wiki/Stream_Isolation#By_Settings> <sup>[[Archive.org]][1163]</sup>
 
-[^359]: Wikipedia, TOTP <https://en.wikipedia.org/wiki/Time-based_One-time_Password_algorithm> <sup>[[Wikiless]][1164]</sup> <sup>[[Archive.org]][1165]</sup>
+[^358]: Wikipedia, TOTP <https://en.wikipedia.org/wiki/Time-based_One-time_Password_algorithm> <sup>[[Wikiless]][1164]</sup> <sup>[[Archive.org]][1165]</sup>
 
-[^360]: Wikipedia, Multi-Factor Authentication <https://en.wikipedia.org/wiki/Multi-factor_authentication> <sup>[[Wikiless]][1166]</sup> <sup>[[Archive.org]][1167]</sup>
+[^359]: Wikipedia, Multi-Factor Authentication <https://en.wikipedia.org/wiki/Multi-factor_authentication> <sup>[[Wikiless]][1166]</sup> <sup>[[Archive.org]][1167]</sup>
 
-[^361]: Whonix Documentation, Bridged Adapters Warning <https://www.whonix.org/wiki/Whonix-Gateway_Security#Warning:_Bridged_Networking> <sup>[[Archive.org]][1168]</sup>
+[^360]: Whonix Documentation, Bridged Adapters Warning <https://www.whonix.org/wiki/Whonix-Gateway_Security#Warning:_Bridged_Networking> <sup>[[Archive.org]][1168]</sup>
 
-[^362]: Qubes OS, FAQ, <https://www.qubes-os.org/faq/#is-qubes-just-another-linux-distribution> <sup>[[Archive.org]][1169]</sup>
+[^361]: Qubes OS, FAQ, <https://www.qubes-os.org/faq/#is-qubes-just-another-linux-distribution> <sup>[[Archive.org]][1169]</sup>
 
-[^363]: Qubes OS, System Requirements <https://www.qubes-os.org/doc/system-requirements/> <sup>[[Archive.org]][1170]</sup>
+[^362]: Qubes OS, System Requirements <https://www.qubes-os.org/doc/system-requirements/> <sup>[[Archive.org]][1170]</sup>
 
-[^364]: Whonix Documentation, Stream Isolation <https://www.whonix.org/wiki/Stream_Isolation> <sup>[[Archive.org]][316]</sup>
+[^363]: Whonix Documentation, Stream Isolation <https://www.whonix.org/wiki/Stream_Isolation> <sup>[[Archive.org]][316]</sup>
 
-[^365]: Whonix Documentation, Tunnels Comparison Table <https://www.whonix.org/wiki/Tunnels/Introduction#Comparison_Table> <sup>[[Archive.org]][318]</sup>
+[^364]: Whonix Documentation, Tunnels Comparison Table <https://www.whonix.org/wiki/Tunnels/Introduction#Comparison_Table> <sup>[[Archive.org]][318]</sup>
 
-[^366]: Qubes OS Issues, Simulate Hibernation / Suspend-To-Disk (Issue #2414) <https://github.com/QubesOS/qubes-issues/issues/2414> <sup>[[Archive.org]][1171]</sup>
+[^365]: Qubes OS Issues, Simulate Hibernation / Suspend-To-Disk (Issue #2414) <https://github.com/QubesOS/qubes-issues/issues/2414> <sup>[[Archive.org]][1171]</sup>
 
-[^367]: Wikipedia, AppArmor <https://en.wikipedia.org/wiki/AppArmor> <sup>[[Wikiless]][1172]</sup> <sup>[[Archive.org]][1173]</sup>
+[^366]: Wikipedia, AppArmor <https://en.wikipedia.org/wiki/AppArmor> <sup>[[Wikiless]][1172]</sup> <sup>[[Archive.org]][1173]</sup>
 
-[^368]: Wikipedia, SELinux <https://en.wikipedia.org/wiki/Security-Enhanced_Linux> <sup>[[Wikiless]][1174]</sup> <sup>[[Archive.org]][1175]</sup>
+[^367]: Wikipedia, SELinux <https://en.wikipedia.org/wiki/Security-Enhanced_Linux> <sup>[[Wikiless]][1174]</sup> <sup>[[Archive.org]][1175]</sup>
 
-[^369]: Wikipedia, TOTP <https://en.wikipedia.org/wiki/Time-based_One-time_Password_algorithm> <sup>[[Wikiless]][1164]</sup> <sup>[[Archive.org]][1165]</sup>
+[^368]: Wikipedia, TOTP <https://en.wikipedia.org/wiki/Time-based_One-time_Password_algorithm> <sup>[[Wikiless]][1164]</sup> <sup>[[Archive.org]][1165]</sup>
 
-[^370]: Wikipedia, Multi-Factor Authentication <https://en.wikipedia.org/wiki/Multi-factor_authentication> <sup>[[Wikiless]][1166]</sup> <sup>[[Archive.org]][1167]</sup>
+[^369]: Wikipedia, Multi-Factor Authentication <https://en.wikipedia.org/wiki/Multi-factor_authentication> <sup>[[Wikiless]][1166]</sup> <sup>[[Archive.org]][1167]</sup>
 
-[^371]: Wikipedia, Captcha <https://en.wikipedia.org/wiki/CAPTCHA> <sup>[[Wikiless]][1176]</sup> <sup>[[Archive.org]][1177]</sup>
+[^370]: Wikipedia, Captcha <https://en.wikipedia.org/wiki/CAPTCHA> <sup>[[Wikiless]][1176]</sup> <sup>[[Archive.org]][1177]</sup>
 
-[^372]: Wikipedia, Turing Test <https://en.wikipedia.org/wiki/Turing_test> <sup>[[Wikiless]][1178]</sup> <sup>[[Archive.org]][1179]</sup>
+[^371]: Wikipedia, Turing Test <https://en.wikipedia.org/wiki/Turing_test> <sup>[[Wikiless]][1178]</sup> <sup>[[Archive.org]][1179]</sup>
 
-[^373]: Google reCAPTCHA <https://www.google.com/recaptcha/about/> <sup>[[Archive.org]][1180]</sup>
+[^372]: Google reCAPTCHA <https://www.google.com/recaptcha/about/> <sup>[[Archive.org]][1180]</sup>
 
-[^374]: hCaptcha <https://www.hcaptcha.com/> <sup>[[Archive.org]][1181]</sup>
+[^373]: hCaptcha <https://www.hcaptcha.com/> <sup>[[Archive.org]][1181]</sup>
 
-[^375]: hCaptcha, hCaptcha Is Now the Largest Independent CAPTCHA Service, Runs on 15% Of The Internet <https://www.hcaptcha.com/post/hcaptcha-now-the-largest-independent-captcha-service> <sup>[[Archive.org]][1182]</sup>
+[^374]: hCaptcha, hCaptcha Is Now the Largest Independent CAPTCHA Service, Runs on 15% Of The Internet <https://www.hcaptcha.com/post/hcaptcha-now-the-largest-independent-captcha-service> <sup>[[Archive.org]][1182]</sup>
 
-[^376]: Nearcyan.com, You (probably) don't need ReCAPTCHA <https://nearcyan.com/you-probably-dont-need-recaptcha/> <sup>[[Archive.org]][1183]</sup>
+[^375]: Nearcyan.com, You (probably) don't need ReCAPTCHA <https://nearcyan.com/you-probably-dont-need-recaptcha/> <sup>[[Archive.org]][1183]</sup>
 
-[^377]: ArsTechnica, "Google's reCAPTCHA turns "invisible," will separate bots from people without challenges" <https://arstechnica.com/gadgets/2017/03/googles-recaptcha-announces-invisible-background-captchas/> <sup>[[Archive.org]][1184]</sup>
+[^376]: ArsTechnica, "Google's reCAPTCHA turns "invisible," will separate bots from people without challenges" <https://arstechnica.com/gadgets/2017/03/googles-recaptcha-announces-invisible-background-captchas/> <sup>[[Archive.org]][1184]</sup>
 
-[^378]: BlackHat Asia 2016, "I'm not a human: Breaking the Google reCAPTCHA" <https://www.blackhat.com/docs/asia-16/materials/asia-16-Sivakorn-Im-Not-a-Human-Breaking-the-Google-reCAPTCHA-wp.pdf> <sup>[[Archive.org]][1185]</sup>
+[^377]: BlackHat Asia 2016, "I'm not a human: Breaking the Google reCAPTCHA" <https://www.blackhat.com/docs/asia-16/materials/asia-16-Sivakorn-Im-Not-a-Human-Breaking-the-Google-reCAPTCHA-wp.pdf> <sup>[[Archive.org]][1185]</sup>
 
-[^379]: Google Blog <https://security.googleblog.com/2014/12/are-you-robot-introducing-no-captcha.html> <sup>[[Archive.org]][1186]</sup>
+[^378]: Google Blog <https://security.googleblog.com/2014/12/are-you-robot-introducing-no-captcha.html> <sup>[[Archive.org]][1186]</sup>
 
-[^380]: Cloudflare Blog, Cloudflare supports Privacy Pass <https://blog.cloudflare.com/cloudflare-supports-privacy-pass/> <sup>[[Archive.org]][1187]</sup>
+[^379]: Cloudflare Blog, Cloudflare supports Privacy Pass <https://blog.cloudflare.com/cloudflare-supports-privacy-pass/> <sup>[[Archive.org]][1187]</sup>
 
-[^381]: Privacy International, Timeline of SIM Card Registration Laws <https://privacyinternational.org/long-read/3018/timeline-sim-card-registration-laws> <sup>[[Archive.org]][1105]</sup>
+[^380]: Privacy International, Timeline of SIM Card Registration Laws <https://privacyinternational.org/long-read/3018/timeline-sim-card-registration-laws> <sup>[[Archive.org]][1105]</sup>
 
-[^382]: Wikipedia, Device Fingerprinting <https://en.wikipedia.org/wiki/Device_fingerprint> <sup>[[Wikiless]][1188]</sup> <sup>[[Archive.org]][1189]</sup>
+[^381]: Wikipedia, Device Fingerprinting <https://en.wikipedia.org/wiki/Device_fingerprint> <sup>[[Wikiless]][1188]</sup> <sup>[[Archive.org]][1189]</sup>
 
-[^383]: Developers Google Blog, Guidance to developers affected by our effort to block less secure browsers and applications <https://developers.googleblog.com/2020/08/guidance-for-our-effort-to-block-less-secure-browser-and-apps.html> <sup>[[Archive.org]][1190]</sup>
+[^382]: Developers Google Blog, Guidance to developers affected by our effort to block less secure browsers and applications <https://developers.googleblog.com/2020/08/guidance-for-our-effort-to-block-less-secure-browser-and-apps.html> <sup>[[Archive.org]][1190]</sup>
 
-[^384]: Google Help, Access age-restricted content & features <https://support.google.com/accounts/answer/10071085> <sup>[[Archive.org]][1191]</sup>
+[^383]: Google Help, Access age-restricted content & features <https://support.google.com/accounts/answer/10071085> <sup>[[Archive.org]][1191]</sup>
 
-[^385]: Wikipedia, Dark Pattern <https://en.wikipedia.org/wiki/Dark_pattern> <sup>[[Wikiless]][1192]</sup> <sup>[[Archive.org]][1193]</sup>
+[^384]: Wikipedia, Dark Pattern <https://en.wikipedia.org/wiki/Dark_pattern> <sup>[[Wikiless]][1192]</sup> <sup>[[Archive.org]][1193]</sup>
 
-[^386]: The Verge, Tinder will give you a verified blue check mark if you pass its catfishing test <https://www.theverge.com/2020/1/23/21077423/tinder-photo-verification-blue-checkmark-safety-center-launch-noonlight> <sup>[[Archive.org]][1194]</sup>
+[^385]: The Verge, Tinder will give you a verified blue check mark if you pass its catfishing test <https://www.theverge.com/2020/1/23/21077423/tinder-photo-verification-blue-checkmark-safety-center-launch-noonlight> <sup>[[Archive.org]][1194]</sup>
 
-[^387]: DigitalInformationWorld, Facebook will now require you to Create a Video Selfie for Identity Verification <https://www.digitalinformationworld.com/2020/03/facebook-is-now-demanding-some-users-to-create-a-video-selfie-for-identity-verification.html> <sup>[[Archive.org]][1195]</sup>
+[^386]: DigitalInformationWorld, Facebook will now require you to Create a Video Selfie for Identity Verification <https://www.digitalinformationworld.com/2020/03/facebook-is-now-demanding-some-users-to-create-a-video-selfie-for-identity-verification.html> <sup>[[Archive.org]][1195]</sup>
 
-[^388]: Vice.com, PornHub Announces 'Biometric Technology' to Verify Users <https://www.vice.com/en/article/m7a4eq/pornhub-new-verification-policy-biometric-id> <sup>[[Archive.org]][1196]</sup>
+[^387]: Vice.com, PornHub Announces 'Biometric Technology' to Verify Users <https://www.vice.com/en/article/m7a4eq/pornhub-new-verification-policy-biometric-id> <sup>[[Archive.org]][1196]</sup>
 
-[^389]: Variety, China Launches Hotline to Report Online Comments That 'Distort' History or 'Deny' Its Cultural Excellence <https://variety.com/2021/digital/news/china-censorship-hotline-historical-nihilism-1234950554/> <sup>[[Archive.org]][1197]</sup>
+[^388]: Variety, China Launches Hotline to Report Online Comments That 'Distort' History or 'Deny' Its Cultural Excellence <https://variety.com/2021/digital/news/china-censorship-hotline-historical-nihilism-1234950554/> <sup>[[Archive.org]][1197]</sup>
 
-[^390]: Wikipedia, Trust but verify <https://en.wikipedia.org/wiki/Trust,_but_verify> <sup>[[Wikiless]][776]</sup> <sup>[[Archive.org]][777]</sup>
+[^389]: Wikipedia, Trust but verify <https://en.wikipedia.org/wiki/Trust,_but_verify> <sup>[[Wikiless]][776]</sup> <sup>[[Archive.org]][777]</sup>
 
-[^391]: Wikipedia, Zero-trust Security Model <https://en.wikipedia.org/wiki/Zero_trust_security_model> <sup>[[Wikiless]][1198]</sup> <sup>[[Archive.org]][1199]</sup>
+[^390]: Wikipedia, Zero-trust Security Model <https://en.wikipedia.org/wiki/Zero_trust_security_model> <sup>[[Wikiless]][1198]</sup> <sup>[[Archive.org]][1199]</sup>
 
-[^392]: Wikipedia, Espionage, Organization <https://en.wikipedia.org/wiki/Espionage#Organization> <sup>[[Wikiless]][1200]</sup> <sup>[[Archive.org]][1201]</sup>
+[^391]: Wikipedia, Espionage, Organization <https://en.wikipedia.org/wiki/Espionage#Organization> <sup>[[Wikiless]][1200]</sup> <sup>[[Archive.org]][1201]</sup>
 
-[^393]: Medium.com, Kyle McDonald, How to recognize fake AI-generated images <https://kcimc.medium.com/how-to-recognize-fake-ai-generated-images-4d1f6f9a2842><sup>[[Scribe.rip]][1202]</sup> <sup>[[Archive.org]][1203]</sup>
+[^392]: Medium.com, Kyle McDonald, How to recognize fake AI-generated images <https://kcimc.medium.com/how-to-recognize-fake-ai-generated-images-4d1f6f9a2842><sup>[[Scribe.rip]][1202]</sup> <sup>[[Archive.org]][1203]</sup>
 
-[^394]: Jayway Blog, Using ML to detect fake face images created by AI <https://blog.jayway.com/2020/03/06/using-ml-to-detect-fake-face-images-created-by-ai/> <sup>[[Archive.org]][1204]</sup>
+[^393]: Jayway Blog, Using ML to detect fake face images created by AI <https://blog.jayway.com/2020/03/06/using-ml-to-detect-fake-face-images-created-by-ai/> <sup>[[Archive.org]][1204]</sup>
 
-[^395]: Wikipedia, Sim Swapping <https://en.wikipedia.org/wiki/SIM_swap_scam> <sup>[[Wikiless]][1205]</sup> <sup>[[Archive.org]][1206]</sup>
+[^394]: Wikipedia, Sim Swapping <https://en.wikipedia.org/wiki/SIM_swap_scam> <sup>[[Wikiless]][1205]</sup> <sup>[[Archive.org]][1206]</sup>
 
-[^396]: Whonix Documentation, Tor Configuration <https://www.whonix.org/wiki/Tor#Edit_Tor_Configuration> <sup>[[Archive.org]][1207]</sup>
+[^395]: Whonix Documentation, Tor Configuration <https://www.whonix.org/wiki/Tor#Edit_Tor_Configuration> <sup>[[Archive.org]][1207]</sup>
 
-[^397]: Tor Browser Documentation, Editing Torrc <https://support.torproject.org/tbb/tbb-editing-torrc/> <sup>[[Archive.org]][1208]</sup>
+[^396]: Tor Browser Documentation, Editing Torrc <https://support.torproject.org/tbb/tbb-editing-torrc/> <sup>[[Archive.org]][1208]</sup>
 
-[^398]: Facebook Onion Website <http://facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion/>
+[^397]: Facebook Onion Website <http://facebookwkhpilnemxj7asaniu7vnjjbiltxjqhye3mhbshg7kx5tfyd.onion/>
 
-[^399]: Google Help <https://support.google.com/accounts/answer/114129?hl=en> <sup>[[Archive.org]][1209]</sup>
+[^398]: Google Help <https://support.google.com/accounts/answer/114129?hl=en> <sup>[[Archive.org]][1209]</sup>
 
-[^400]: Google Help, Customer Matching Process <https://support.google.com/google-ads/answer/7474263?hl=en> <sup>[[Archive.org]][1210]</sup>
+[^399]: Google Help, Customer Matching Process <https://support.google.com/google-ads/answer/7474263?hl=en> <sup>[[Archive.org]][1210]</sup>
 
-[^401]: Google, Your account is disabled <https://support.google.com/accounts/answer/40695> <sup>[[Archive.org]][1211]</sup>
+[^400]: Google, Your account is disabled <https://support.google.com/accounts/answer/40695> <sup>[[Archive.org]][1211]</sup>
 
-[^402]: Google, Request to restore the account <https://support.google.com/accounts/contact/disabled2> <sup>[[Archive.org]][1212]</sup>
+[^401]: Google, Request to restore the account <https://support.google.com/accounts/contact/disabled2> <sup>[[Archive.org]][1212]</sup>
 
-[^403]: Google Help, Update your account to meet age requirements <https://support.google.com/accounts/answer/1333913?hl=en> <sup>[[Archive.org]][1213]</sup>
+[^402]: Google Help, Update your account to meet age requirements <https://support.google.com/accounts/answer/1333913?hl=en> <sup>[[Archive.org]][1213]</sup>
 
-[^404]: Jumio, ID verification features <https://www.jumio.com/features/> <sup>[[Archive.org]][1214]</sup>
+[^403]: Jumio, ID verification features <https://www.jumio.com/features/> <sup>[[Archive.org]][1214]</sup>
 
-[^405]: Privacyguides.org recommended E-mail Providers <https://www.privacyguides.org/email/> <sup>[[Archive.org]][1215]</sup>
+[^404]: Privacyguides.org recommended E-mail Providers <https://www.privacyguides.org/email/> <sup>[[Archive.org]][1215]</sup>
 
-[^406]: Proton Registration Human Verification <https://proton.me/support/human-verification/> <sup>[[Archive.org]][1216]</sup>
+[^405]: Proton Registration Human Verification <https://proton.me/support/human-verification/> <sup>[[Archive.org]][1216]</sup>
 
-[^407]: Twitter Appeal Form <https://help.twitter.com/forms/general>
+[^406]: Twitter Appeal Form <https://help.twitter.com/forms/general>
 
-[^408]: KnowYourMeme, Good Luck, I'm Behind 7 Proxies <https://knowyourmeme.com/memes/good-luck-im-behind-7-proxies> <sup>[[Archive.org]][1217]</sup>
+[^407]: KnowYourMeme, Good Luck, I'm Behind 7 Proxies <https://knowyourmeme.com/memes/good-luck-im-behind-7-proxies> <sup>[[Archive.org]][1217]</sup>
 
-[^409]: Wikipedia, end-to-end encryption <https://en.wikipedia.org/wiki/End-to-end_encryption> <sup>[[Wikiless]][1218]</sup> <sup>[[Archive.org]][1219]</sup>
+[^408]: Wikipedia, end-to-end encryption <https://en.wikipedia.org/wiki/End-to-end_encryption> <sup>[[Wikiless]][1218]</sup> <sup>[[Archive.org]][1219]</sup>
 
-[^410]: Wikipedia, Forward Secrecy <https://en.wikipedia.org/wiki/Forward_secrecy> <sup>[[Wikiless]][1220]</sup> <sup>[[Archive.org]][1221]</sup>
+[^409]: Wikipedia, Forward Secrecy <https://en.wikipedia.org/wiki/Forward_secrecy> <sup>[[Wikiless]][1220]</sup> <sup>[[Archive.org]][1221]</sup>
 
-[^411]: Proton Blog, What is zero-access encryption? <https://proton.me/blog/zero-access-encryption/> <sup>[[Archive.org]][1222]</sup>
+[^410]: Proton Blog, What is zero-access encryption? <https://proton.me/blog/zero-access-encryption/> <sup>[[Archive.org]][1222]</sup>
 
-[^412]: Wikipedia, Cambridge Analytica Scandal <https://en.wikipedia.org/wiki/Facebook%E2%80%93Cambridge_Analytica_data_scandal> <sup>[[Wikiless]][1223]</sup> <sup>[[Archive.org]][1224]</sup>
+[^411]: Wikipedia, Cambridge Analytica Scandal <https://en.wikipedia.org/wiki/Facebook%E2%80%93Cambridge_Analytica_data_scandal> <sup>[[Wikiless]][1223]</sup> <sup>[[Archive.org]][1224]</sup>
 
-[^413]: Signal Blog, Technology preview: Sealed sender for Signal <https://signal.org/blog/sealed-sender/> <sup>[[Archive.org]][1225]</sup>
+[^412]: Signal Blog, Technology preview: Sealed sender for Signal <https://signal.org/blog/sealed-sender/> <sup>[[Archive.org]][1225]</sup>
 
-[^414]: Signal Blog, Private Contact Discovery <https://signal.org/blog/private-contact-discovery/> <sup>[[Archive.org]][1226]</sup>
+[^413]: Signal Blog, Private Contact Discovery <https://signal.org/blog/private-contact-discovery/> <sup>[[Archive.org]][1226]</sup>
 
-[^415]: Signal Blog, Private Group System <https://signal.org/blog/signal-private-group-system/> <sup>[[Archive.org]][1227]</sup>
+[^414]: Signal Blog, Private Group System <https://signal.org/blog/signal-private-group-system/> <sup>[[Archive.org]][1227]</sup>
 
-[^416]: Privacyguides.org, File-Sharing <https://www.privacyguides.org/file-sharing/> <sup>[[Archive.org]][1228]</sup>
+[^415]: Privacyguides.org, File-Sharing <https://www.privacyguides.org/file-sharing/> <sup>[[Archive.org]][1228]</sup>
 
-[^417]: Privacyguides.org, Real-Time Communication <https://www.privacyguides.org/real-time-communication/> <sup>[[Archive.org]][1229]</sup>
+[^416]: Privacyguides.org, Real-Time Communication <https://www.privacyguides.org/real-time-communication/> <sup>[[Archive.org]][1229]</sup>
 
-[^418]: GetSession.org, The Session Protocol: What's changing --- and why <https://getsession.org/session-protocol-explained/> <sup>[[Archive.org]][1230]</sup>
+[^417]: GetSession.org, The Session Protocol: What's changing --- and why <https://getsession.org/session-protocol-explained/> <sup>[[Archive.org]][1230]</sup>
 
-[^419]: Quarkslab, Audit of Session Secure Messaging Application <https://blog.quarkslab.com/audit-of-session-secure-messaging-application.html> <sup>[[Archive.org]][1231]</sup>
+[^418]: Quarkslab, Audit of Session Secure Messaging Application <https://blog.quarkslab.com/audit-of-session-secure-messaging-application.html> <sup>[[Archive.org]][1231]</sup>
 
-[^420]: Techlore, Top 5 BEST Messengers For Privacy <https://www.youtube.com/watch?v=aVwl892hqb4> <sup>[[Invidious]][1232]</sup>
+[^419]: Techlore, Top 5 BEST Messengers For Privacy <https://www.youtube.com/watch?v=aVwl892hqb4> <sup>[[Invidious]][1232]</sup>
 
-[^421]: Wikipedia, IPFS <https://en.wikipedia.org/wiki/InterPlanetary_File_System> <sup>[[Wikiless]][1233]</sup> <sup>[[Archive.org]][1234]</sup>
+[^420]: Wikipedia, IPFS <https://en.wikipedia.org/wiki/InterPlanetary_File_System> <sup>[[Wikiless]][1233]</sup> <sup>[[Archive.org]][1234]</sup>
 
-[^422]: Praxis Films, Open Letter from Laura Poitras <https://www.praxisfilms.org/open-letter-from-laura-poitras/> <sup>[[Archive.org]][1235]</sup>
+[^421]: Praxis Films, Open Letter from Laura Poitras <https://www.praxisfilms.org/open-letter-from-laura-poitras/> <sup>[[Archive.org]][1235]</sup>
 
-[^423]: Wikipedia, SecureDrop <https://en.wikipedia.org/wiki/SecureDrop> <sup>[[Wikiless]][1236]</sup> <sup>[[Archive.org]][1237]</sup>
+[^422]: Wikipedia, SecureDrop <https://en.wikipedia.org/wiki/SecureDrop> <sup>[[Wikiless]][1236]</sup> <sup>[[Archive.org]][1237]</sup>
 
-[^424]: Wikipedia, TPM <https://en.wikipedia.org/wiki/Trusted_Platform_Module> <sup>[[Wikiless]][1238]</sup> <sup>[[Archive.org]][1239]</sup>
+[^423]: Wikipedia, TPM <https://en.wikipedia.org/wiki/Trusted_Platform_Module> <sup>[[Wikiless]][1238]</sup> <sup>[[Archive.org]][1239]</sup>
 
-[^425]: Wikipedia, Pastebin <https://en.wikipedia.org/wiki/Pastebin> <sup>[[Wikiless]][1240]</sup> <sup>[[Archive.org]][1241]</sup>
+[^424]: Wikipedia, Pastebin <https://en.wikipedia.org/wiki/Pastebin> <sup>[[Wikiless]][1240]</sup> <sup>[[Archive.org]][1241]</sup>
 
-[^426]: Wikipedia, Wear Leveling <https://en.wikipedia.org/wiki/Wear_leveling> <sup>[[Wikiless]][1242]</sup> <sup>[[Archive.org]][1243]</sup>
+[^425]: Wikipedia, Wear Leveling <https://en.wikipedia.org/wiki/Wear_leveling> <sup>[[Wikiless]][1242]</sup> <sup>[[Archive.org]][1243]</sup>
 
-[^427]: Wikipedia, Trim <https://en.wikipedia.org/wiki/Write_amplification#TRIM> <sup>[[Wikiless]][1244]</sup> <sup>[[Archive.org]][1245]</sup>
+[^426]: Wikipedia, Trim <https://en.wikipedia.org/wiki/Write_amplification#TRIM> <sup>[[Wikiless]][1244]</sup> <sup>[[Archive.org]][1245]</sup>
 
-[^428]: Wikipedia, Write Amplification <https://en.wikipedia.org/wiki/Write_amplification> <sup>[[Wikiless]][1244]</sup> <sup>[[Archive.org]][1245]</sup>
+[^427]: Wikipedia, Write Amplification <https://en.wikipedia.org/wiki/Write_amplification> <sup>[[Wikiless]][1244]</sup> <sup>[[Archive.org]][1245]</sup>
 
-[^429]: Wikipedia, Trim Disadvantages <https://en.wikipedia.org/wiki/Trim_(computing)#Disadvantages> <sup>[[Wikiless]][485]</sup> <sup>[[Archive.org]][486]</sup>
+[^428]: Wikipedia, Trim Disadvantages <https://en.wikipedia.org/wiki/Trim_(computing)#Disadvantages> <sup>[[Wikiless]][485]</sup> <sup>[[Archive.org]][486]</sup>
 
-[^430]: Wikipedia, Garbage Collection <https://en.wikipedia.org/wiki/Write_amplification#Garbage_collection> <sup>[[Wikiless]][1244]</sup> <sup>[[Archive.org]][1245]</sup>
+[^429]: Wikipedia, Garbage Collection <https://en.wikipedia.org/wiki/Write_amplification#Garbage_collection> <sup>[[Wikiless]][1244]</sup> <sup>[[Archive.org]][1245]</sup>
 
-[^431]: Techgage, Too TRIM? When SSD Data Recovery is Impossible <https://techgage.com/article/too_trim_when_ssd_data_recovery_is_impossible/> <sup>[[Archive.org]][1246]</sup>
+[^430]: Techgage, Too TRIM? When SSD Data Recovery is Impossible <https://techgage.com/article/too_trim_when_ssd_data_recovery_is_impossible/> <sup>[[Archive.org]][1246]</sup>
 
-[^432]: ResearchGate, Live forensics method for acquisition on the Solid-State Drive (SSD) NVMe TRIM function <https://www.researchgate.net/publication/341761017_Live_forensics_method_for_acquisition_on_the_Solid_State_Drive_SSD_NVMe_TRIM_function> <sup>[[Archive.org]][1247]</sup>
+[^431]: ResearchGate, Live forensics method for acquisition on the Solid-State Drive (SSD) NVMe TRIM function <https://www.researchgate.net/publication/341761017_Live_forensics_method_for_acquisition_on_the_Solid_State_Drive_SSD_NVMe_TRIM_function> <sup>[[Archive.org]][1247]</sup>
 
-[^433]: ElcomSoft, Life after Trim: Using Factory Access Mode for Imaging SSD Drives <https://blog.elcomsoft.com/2019/01/life-after-trim-using-factory-access-mode-for-imaging-ssd-drives/> <sup>[[Archive.org]][1248]</sup>
+[^432]: ElcomSoft, Life after Trim: Using Factory Access Mode for Imaging SSD Drives <https://blog.elcomsoft.com/2019/01/life-after-trim-using-factory-access-mode-for-imaging-ssd-drives/> <sup>[[Archive.org]][1248]</sup>
 
-[^434]: Forensic Focus, Forensic Acquisition Of Solid State Drives With Open Source Tools <https://www.forensicfocus.com/articles/forensic-acquisition-of-solid-state-drives-with-open-source-tools/> <sup>[[Archive.org]][1249]</sup>
+[^433]: Forensic Focus, Forensic Acquisition Of Solid State Drives With Open Source Tools <https://www.forensicfocus.com/articles/forensic-acquisition-of-solid-state-drives-with-open-source-tools/> <sup>[[Archive.org]][1249]</sup>
 
-[^435]: ResearchGate, Solid State Drive Forensics: Where Do We Stand? <https://www.researchgate.net/publication/325976653_Solid_State_Drive_Forensics_Where_Do_We_Stand> <sup>[[Archive.org]][1250]</sup>
+[^434]: ResearchGate, Solid State Drive Forensics: Where Do We Stand? <https://www.researchgate.net/publication/325976653_Solid_State_Drive_Forensics_Where_Do_We_Stand> <sup>[[Archive.org]][1250]</sup>
 
-[^436]: BleepingComputer, Firmware attack can drop persistent malware in hidden SSD area <https://www.bleepingcomputer.com/news/security/firmware-attack-can-drop-persistent-malware-in-hidden-ssd-area/> <sup>[[Archive.org]][1251]</sup>
+[^435]: BleepingComputer, Firmware attack can drop persistent malware in hidden SSD area <https://www.bleepingcomputer.com/news/security/firmware-attack-can-drop-persistent-malware-in-hidden-ssd-area/> <sup>[[Archive.org]][1251]</sup>
 
-[^437]: Wikipedia, Parted Magic <https://en.wikipedia.org/wiki/Parted_Magic> <sup>[[Wikiless]][1252]</sup> <sup>[[Archive.org]][1253]</sup>
+[^436]: Wikipedia, Parted Magic <https://en.wikipedia.org/wiki/Parted_Magic> <sup>[[Wikiless]][1252]</sup> <sup>[[Archive.org]][1253]</sup>
 
-[^438]: Wikipedia, hdparm <https://en.wikipedia.org/wiki/Hdparm> <sup>[[Wikiless]][1254]</sup> <sup>[[Archive.org]][1255]</sup>
+[^437]: Wikipedia, hdparm <https://en.wikipedia.org/wiki/Hdparm> <sup>[[Wikiless]][1254]</sup> <sup>[[Archive.org]][1255]</sup>
 
-[^439]: GitHub, nvme-cli <https://github.com/linux-nvme/nvme-cli> <sup>[[Archive.org]][1256]</sup>
+[^438]: GitHub, nvme-cli <https://github.com/linux-nvme/nvme-cli> <sup>[[Archive.org]][1256]</sup>
 
-[^440]: PartedMagic Secure Erase <https://partedmagic.com/secure-erase/> <sup>[[Archive.org]][1257]</sup>
+[^439]: PartedMagic Secure Erase <https://partedmagic.com/secure-erase/> <sup>[[Archive.org]][1257]</sup>
 
-[^441]: Partedmagic NVMe Secure Erase <https://partedmagic.com/nvme-secure-erase/> <sup>[[Archive.org]][1258]</sup>
+[^440]: Partedmagic NVMe Secure Erase <https://partedmagic.com/nvme-secure-erase/> <sup>[[Archive.org]][1258]</sup>
 
-[^442]: UFSExplorer, Can I recover data from an encrypted storage? <https://www.ufsexplorer.com/solutions/data-recovery-on-encrypted-storage.php> <sup>[[Archive.org]][1259]</sup>
+[^441]: UFSExplorer, Can I recover data from an encrypted storage? <https://www.ufsexplorer.com/solutions/data-recovery-on-encrypted-storage.php> <sup>[[Archive.org]][1259]</sup>
 
-[^443]: Apple Developer Documentation <https://developer.apple.com/library/archive/documentation/FileManagement/Conceptual/APFS_Guide/FAQ/FAQ.html> <sup>[[Archive.org]][1260]</sup>
+[^442]: Apple Developer Documentation <https://developer.apple.com/library/archive/documentation/FileManagement/Conceptual/APFS_Guide/FAQ/FAQ.html> <sup>[[Archive.org]][1260]</sup>
 
-[^444]: EFF, How to: Delete Your Data Securely on macOS <https://ssd.eff.org/en/module/how-delete-your-data-securely-macos> <sup>[[Archive.org]][508]</sup>
+[^443]: EFF, How to: Delete Your Data Securely on macOS <https://ssd.eff.org/en/module/how-delete-your-data-securely-macos> <sup>[[Archive.org]][508]</sup>
 
-[^445]: Privacyguides.org, Productivity tools <https://privacyguides.org/productivity/> <sup>[[Archive.org]][1261]</sup>
+[^444]: Privacyguides.org, Productivity tools <https://privacyguides.org/productivity/> <sup>[[Archive.org]][1261]</sup>
 
-[^446]: Whonix Documentation, Scrubbing Metadata <https://www.whonix.org/wiki/Metadata> <sup>[[Archive.org]][1262]</sup>
+[^445]: Whonix Documentation, Scrubbing Metadata <https://www.whonix.org/wiki/Metadata> <sup>[[Archive.org]][1262]</sup>
 
-[^447]: Tails documentation, MAT <https://gitlab.tails.boum.org/tails/blueprints/-/wikis/doc/mat/> <sup>[[Archive.org]][1263]</sup>
+[^446]: Tails documentation, MAT <https://gitlab.tails.boum.org/tails/blueprints/-/wikis/doc/mat/> <sup>[[Archive.org]][1263]</sup>
 
-[^448]: GitHub, Disable Gatekeeper on macOS Big Sur (11.x) <https://disable-gatekeeper.github.io/> <sup>[[Archive.org]][1264]</sup>
+[^447]: GitHub, Disable Gatekeeper on macOS Big Sur (11.x) <https://disable-gatekeeper.github.io/> <sup>[[Archive.org]][1264]</sup>
 
-[^449]: DuckDuckGo help, Cache <https://help.duckduckgo.com/duckduckgo-help-pages/features/cache/> <sup>[[Archive.org]][1265]</sup>
+[^448]: DuckDuckGo help, Cache <https://help.duckduckgo.com/duckduckgo-help-pages/features/cache/> <sup>[[Archive.org]][1265]</sup>
 
-[^450]: DuckDuckGo help, Sources <https://help.duckduckgo.com/duckduckgo-help-pages/results/sources/> <sup>[[Archive.org]][1266]</sup>
+[^449]: DuckDuckGo help, Sources <https://help.duckduckgo.com/duckduckgo-help-pages/results/sources/> <sup>[[Archive.org]][1266]</sup>
 
-[^451]: Wikipedia, Dead Drop <https://en.wikipedia.org/wiki/Dead_drop> <sup>[[Wikiless]][1267]</sup> <sup>[[Archive.org]][1268]</sup>
+[^450]: Wikipedia, Dead Drop <https://en.wikipedia.org/wiki/Dead_drop> <sup>[[Wikiless]][1267]</sup> <sup>[[Archive.org]][1268]</sup>
 
-[^452]: Wikipedia, Secure Communication Obfuscation <https://en.wikipedia.org/wiki/Obfuscation#Secure_communication> <sup>[[Wikiless]][1269]</sup> <sup>[[Archive.org]][1270]</sup>
+[^451]: Wikipedia, Secure Communication Obfuscation <https://en.wikipedia.org/wiki/Obfuscation#Secure_communication> <sup>[[Wikiless]][1269]</sup> <sup>[[Archive.org]][1270]</sup>
 
-[^453]: Wikipedia, Steganography <https://en.wikipedia.org/wiki/Steganography> <sup>[[Wikiless]][1024]</sup> <sup>[[Archive.org]][1025]</sup>
+[^452]: Wikipedia, Steganography <https://en.wikipedia.org/wiki/Steganography> <sup>[[Wikiless]][1024]</sup> <sup>[[Archive.org]][1025]</sup>
 
-[^454]: Wikipedia, Kleptography <https://en.wikipedia.org/wiki/Kleptography> <sup>[[Wikiless]][1271]</sup> <sup>[[Archive.org]][1272]</sup>
+[^453]: Wikipedia, Kleptography <https://en.wikipedia.org/wiki/Kleptography> <sup>[[Wikiless]][1271]</sup> <sup>[[Archive.org]][1272]</sup>
 
-[^455]: Wikipedia, Koalang <https://en.wikipedia.org/wiki/Koalang> <sup>[[Wikiless]][1273]</sup> <sup>[[Archive.org]][1274]</sup>
+[^454]: Wikipedia, Koalang <https://en.wikipedia.org/wiki/Koalang> <sup>[[Wikiless]][1273]</sup> <sup>[[Archive.org]][1274]</sup>
 
-[^456]: Wikipedia, OPSEC <https://en.wikipedia.org/wiki/Operations_security> <sup>[[Wikiless]][1275]</sup> <sup>[[Archive.org]][1276]</sup>
+[^455]: Wikipedia, OPSEC <https://en.wikipedia.org/wiki/Operations_security> <sup>[[Wikiless]][1275]</sup> <sup>[[Archive.org]][1276]</sup>
 
-[^457]: Quote Investigator, A Lie Can Travel Halfway Around the World While the Truth Is Putting On Its Shoes <https://quoteinvestigator.com/2014/07/13/truth/> <sup>[[Archive.org]][1277]</sup>
+[^456]: Quote Investigator, A Lie Can Travel Halfway Around the World While the Truth Is Putting On Its Shoes <https://quoteinvestigator.com/2014/07/13/truth/> <sup>[[Archive.org]][1277]</sup>
 
-[^458]: Privacyguides.org, Operating Systems <https://www.privacyguides.org/tools/#operating-systems> <sup>[[Archive.org]][1278]</sup>
+[^457]: Privacyguides.org, Operating Systems <https://www.privacyguides.org/tools/#operating-systems> <sup>[[Archive.org]][1278]</sup>
 
-[^459]: Brave Support, What is a Private Window with Tor? <https://support.brave.com/hc/en-us/articles/360018121491-What-is-a-Private-Window-with-Tor> <sup>[[Archive.org]][1279]</sup>
+[^458]: Brave Support, What is a Private Window with Tor? <https://support.brave.com/hc/en-us/articles/360018121491-What-is-a-Private-Window-with-Tor> <sup>[[Archive.org]][1279]</sup>
 
-[^460]: Medium.com, The Windows USN Journal <https://medium.com/velociraptor-ir/the-windows-usn-journal-f0c55c9010e> <sup>[[Scribe.rip]][1280]</sup> <sup>[[Archive.org]][1281]</sup>
+[^459]: Medium.com, The Windows USN Journal <https://medium.com/velociraptor-ir/the-windows-usn-journal-f0c55c9010e> <sup>[[Scribe.rip]][1280]</sup> <sup>[[Archive.org]][1281]</sup>
 
-[^461]: Medium.com, Digging into the System Resource Usage Monitor (SRUM) <https://medium.com/velociraptor-ir/digging-into-the-system-resource-usage-monitor-srum-afbadb1a375> <sup>[[Scribe.rip]][1282]</sup> <sup>[[Archive.org]][1283]</sup>
+[^460]: Medium.com, Digging into the System Resource Usage Monitor (SRUM) <https://medium.com/velociraptor-ir/digging-into-the-system-resource-usage-monitor-srum-afbadb1a375> <sup>[[Scribe.rip]][1282]</sup> <sup>[[Archive.org]][1283]</sup>
 
-[^462]: SANS, Timestamped Registry & NTFS Artifacts from Unallocated Space <https://www.sans.org/blog/timestamped-registry-ntfs-artifacts-from-unallocated-space/> <sup>[[Archive.org]][1284]</sup>
+[^461]: SANS, Timestamped Registry & NTFS Artifacts from Unallocated Space <https://www.sans.org/blog/timestamped-registry-ntfs-artifacts-from-unallocated-space/> <sup>[[Archive.org]][1284]</sup>
 
-[^463]: DBAN, <https://dban.org/> <sup>[[Archive.org]][1285]</sup>
+[^462]: DBAN, <https://dban.org/> <sup>[[Archive.org]][1285]</sup>
 
-[^464]: NYTimes, Lost Passwords Lock Millionaires Out of Their Bitcoin Fortunes <https://www.nytimes.com/2021/01/12/technology/bitcoin-passwords-wallets-fortunes.html> <sup>[[Archive.org]][1106]</sup>
+[^463]: NYTimes, Lost Passwords Lock Millionaires Out of Their Bitcoin Fortunes <https://www.nytimes.com/2021/01/12/technology/bitcoin-passwords-wallets-fortunes.html> <sup>[[Archive.org]][1106]</sup>
 
-[^465]: CrystalDiskInfo <https://crystalmark.info/en/software/crystaldiskinfo/> <sup>[[Archive.org]][1286]</sup>
+[^464]: CrystalDiskInfo <https://crystalmark.info/en/software/crystaldiskinfo/> <sup>[[Archive.org]][1286]</sup>
 
-[^466]: Wikipedia, Faraday Cage, <https://en.wikipedia.org/wiki/Faraday_cage> <sup>[[Wikiless]][1287]</sup> <sup>[[Archive.org]][1288]</sup>
+[^465]: Wikipedia, Faraday Cage, <https://en.wikipedia.org/wiki/Faraday_cage> <sup>[[Wikiless]][1287]</sup> <sup>[[Archive.org]][1288]</sup>
 
-[^467]: Edith Cowan University, A forensic examination of several mobile device Faraday bags & materials to test their effectiveness materials to test their effectiveness <https://web.archive.org/web/https://ro.ecu.edu.au/cgi/viewcontent.cgi?article=1165&context=adf> <sup>[[Archive.org]][1289]</sup>
+[^466]: Edith Cowan University, A forensic examination of several mobile device Faraday bags & materials to test their effectiveness materials to test their effectiveness <https://web.archive.org/web/https://ro.ecu.edu.au/cgi/viewcontent.cgi?article=1165&context=adf> <sup>[[Archive.org]][1289]</sup>
 
-[^468]: arXiv, Deep-Spying: Spying using Smartwatch and Deep Learning <https://arxiv.org/pdf/1512.05616.pdf> <sup>[[Archive.org]][1290]</sup>
+[^467]: arXiv, Deep-Spying: Spying using Smartwatch and Deep Learning <https://arxiv.org/pdf/1512.05616.pdf> <sup>[[Archive.org]][1290]</sup>
 
-[^469]: Acm.org, Privacy Implications of Accelerometer Data: A Review of Possible Inferences <https://dl.acm.org/doi/pdf/10.1145/3309074.3309076> <sup>[[Archive.org]][1291]</sup>
+[^468]: Acm.org, Privacy Implications of Accelerometer Data: A Review of Possible Inferences <https://dl.acm.org/doi/pdf/10.1145/3309074.3309076> <sup>[[Archive.org]][1291]</sup>
 
-[^470]: YouTube, Fingerprinting Paper - Forensic Education <https://www.youtube.com/watch?v=sO98kDLkh-M> <sup>[[Invidious]][1292]</sup>
+[^469]: YouTube, Fingerprinting Paper - Forensic Education <https://www.youtube.com/watch?v=sO98kDLkh-M> <sup>[[Invidious]][1292]</sup>
 
-[^471]: Wikipedia, Touch DNA, <https://en.wikipedia.org/wiki/Touch_DNA> <sup>[[Wikiless]][1293]</sup> <sup>[[Archive.org]][1294]</sup>
+[^470]: Wikipedia, Touch DNA, <https://en.wikipedia.org/wiki/Touch_DNA> <sup>[[Wikiless]][1293]</sup> <sup>[[Archive.org]][1294]</sup>
 
-[^472]: TheDNAGuide, DNA from Postage Stamps or Hair Samples? Yeeesssss..... <https://www.yourdnaguide.com/ydgblog/dna-hair-samples-postage-stamps> <sup>[[Archive.org]][1295]</sup>
+[^471]: TheDNAGuide, DNA from Postage Stamps or Hair Samples? Yeeesssss..... <https://www.yourdnaguide.com/ydgblog/dna-hair-samples-postage-stamps> <sup>[[Archive.org]][1295]</sup>
 
-[^473]: GitHub, Mhinkie, OONI-Detection <https://github.com/mhinkie/ooni-detection> <sup>[[Archive.org]][1296]</sup>
+[^472]: GitHub, Mhinkie, OONI-Detection <https://github.com/mhinkie/ooni-detection> <sup>[[Archive.org]][1296]</sup>
 
-[^474]: Wikipedia, File Verification <https://en.wikipedia.org/wiki/File_verification> <sup>[[Wikiless]][1297]</sup> <sup>[[Archive.org]][1298]</sup>
+[^473]: Wikipedia, File Verification <https://en.wikipedia.org/wiki/File_verification> <sup>[[Wikiless]][1297]</sup> <sup>[[Archive.org]][1298]</sup>
 
-[^475]: Wikipedia, CRC <https://en.wikipedia.org/wiki/Cyclic_redundancy_check> <sup>[[Wikiless]][1299]</sup> <sup>[[Archive.org]][1300]</sup>
+[^474]: Wikipedia, CRC <https://en.wikipedia.org/wiki/Cyclic_redundancy_check> <sup>[[Wikiless]][1299]</sup> <sup>[[Archive.org]][1300]</sup>
 
-[^476]: Wikipedia, MD5 <https://en.wikipedia.org/wiki/MD5> <sup>[[Wikiless]][1301]</sup> <sup>[[Archive.org]][1302]</sup>
+[^475]: Wikipedia, MD5 <https://en.wikipedia.org/wiki/MD5> <sup>[[Wikiless]][1301]</sup> <sup>[[Archive.org]][1302]</sup>
 
-[^477]: Wikipedia, MD5 Security <https://en.wikipedia.org/wiki/MD5#Security> <sup>[[Wikiless]][1301]</sup> <sup>[[Archive.org]][1302]</sup>
+[^476]: Wikipedia, MD5 Security <https://en.wikipedia.org/wiki/MD5#Security> <sup>[[Wikiless]][1301]</sup> <sup>[[Archive.org]][1302]</sup>
 
-[^478]: Wikipedia, Collisions <https://en.wikipedia.org/wiki/Collision_(computer_science)> <sup>[[Wikiless]][1303]</sup> <sup>[[Archive.org]][1304]</sup>
+[^477]: Wikipedia, Collisions <https://en.wikipedia.org/wiki/Collision_(computer_science)> <sup>[[Wikiless]][1303]</sup> <sup>[[Archive.org]][1304]</sup>
 
-[^479]: Wikipedia, SHA <https://en.wikipedia.org/wiki/Secure_Hash_Algorithms> <sup>[[Wikiless]][1305]</sup> <sup>[[Archive.org]][1306]</sup>
+[^478]: Wikipedia, SHA <https://en.wikipedia.org/wiki/Secure_Hash_Algorithms> <sup>[[Wikiless]][1305]</sup> <sup>[[Archive.org]][1306]</sup>
 
-[^480]: Wikipedia, SHA-2 <https://en.wikipedia.org/wiki/SHA-2> <sup>[[Wikiless]][1307]</sup> <sup>[[Archive.org]][1308]</sup>
+[^479]: Wikipedia, SHA-2 <https://en.wikipedia.org/wiki/SHA-2> <sup>[[Wikiless]][1307]</sup> <sup>[[Archive.org]][1308]</sup>
 
-[^481]: Wikipedia, Collision Resistance <https://en.wikipedia.org/wiki/Collision_resistance> <sup>[[Wikiless]][1309]</sup> <sup>[[Archive.org]][1310]</sup>
+[^480]: Wikipedia, Collision Resistance <https://en.wikipedia.org/wiki/Collision_resistance> <sup>[[Wikiless]][1309]</sup> <sup>[[Archive.org]][1310]</sup>
 
-[^482]: GnuPG Gpg4win Wiki, Check integrity of Gpg4win packages <https://wiki.gnupg.org/Gpg4win/CheckIntegrity> <sup>[[Archive.org]][1311]</sup>
+[^481]: GnuPG Gpg4win Wiki, Check integrity of Gpg4win packages <https://wiki.gnupg.org/Gpg4win/CheckIntegrity> <sup>[[Archive.org]][1311]</sup>
 
-[^483]: Medium.com, How to verify checksum on Mac <https://medium.com/@EvgeniIvanov/how-to-verify-checksum-on-mac-988f166b0c4f> <sup>[[Scribe.rip]][1312]</sup> <sup>[[Archive.org]][1313]</sup>
+[^482]: Medium.com, How to verify checksum on Mac <https://medium.com/@EvgeniIvanov/how-to-verify-checksum-on-mac-988f166b0c4f> <sup>[[Scribe.rip]][1312]</sup> <sup>[[Archive.org]][1313]</sup>
 
-[^484]: Wikipedia, GPG <https://en.wikipedia.org/wiki/GNU_Privacy_Guard> <sup>[[Wikiless]][1314]</sup> <sup>[[Archive.org]][1315]</sup>
+[^483]: Wikipedia, GPG <https://en.wikipedia.org/wiki/GNU_Privacy_Guard> <sup>[[Wikiless]][1314]</sup> <sup>[[Archive.org]][1315]</sup>
 
-[^485]: Wikipedia, Public-Key Cryptography <https://en.wikipedia.org/wiki/Public-key_cryptography> <sup>[[Wikiless]][1316]</sup> <sup>[[Archive.org]][1317]</sup>
+[^484]: Wikipedia, Public-Key Cryptography <https://en.wikipedia.org/wiki/Public-key_cryptography> <sup>[[Wikiless]][1316]</sup> <sup>[[Archive.org]][1317]</sup>
 
-[^486]: Wikipedia, Polymorphic Code <https://en.wikipedia.org/wiki/Polymorphic_code> <sup>[[Wikiless]][1318]</sup> <sup>[[Archive.org]][1319]</sup>
+[^485]: Wikipedia, Polymorphic Code <https://en.wikipedia.org/wiki/Polymorphic_code> <sup>[[Wikiless]][1318]</sup> <sup>[[Archive.org]][1319]</sup>
 
-[^487]: Whonix Documentation, Use of AV, <https://www.whonix.org/wiki/Malware_and_Firmware_Trojans#The_Utility_of_Antivirus_Tools> <sup>[[Archive.org]][1320]</sup>
+[^486]: Whonix Documentation, Use of AV, <https://www.whonix.org/wiki/Malware_and_Firmware_Trojans#The_Utility_of_Antivirus_Tools> <sup>[[Archive.org]][1320]</sup>
 
-[^488]: Whonix Forums, <https://forums.whonix.org/t/installation-of-antivirus-scanners-by-default/9755/8> <sup>[[Archive.org]][1321]</sup>
+[^487]: Whonix Forums, <https://forums.whonix.org/t/installation-of-antivirus-scanners-by-default/9755/8> <sup>[[Archive.org]][1321]</sup>
 
-[^489]: AV-Test Security Report 2018-2019, <https://www.av-test.org/fileadmin/pdf/security_report/AV-TEST_Security_Report_2018-2019.pdf> <sup>[[Archive.org]][1322]</sup>
+[^488]: AV-Test Security Report 2018-2019, <https://www.av-test.org/fileadmin/pdf/security_report/AV-TEST_Security_Report_2018-2019.pdf> <sup>[[Archive.org]][1322]</sup>
 
-[^490]: ZDNet, ESET discovers 21 new Linux malware families <https://www.zdnet.com/article/eset-discovers-21-new-linux-malware-families/> <sup>[[Archive.org]][1323]</sup>
+[^489]: ZDNet, ESET discovers 21 new Linux malware families <https://www.zdnet.com/article/eset-discovers-21-new-linux-malware-families/> <sup>[[Archive.org]][1323]</sup>
 
-[^491]: NakeSecurity, EvilGnome -- Linux malware aimed at your desktop, not your servers <https://nakedsecurity.sophos.com/2019/07/25/evilgnome-linux-malware-aimed-at-your-laptop-not-your-servers/> <sup>[[Archive.org]][1324]</sup>
+[^490]: NakeSecurity, EvilGnome -- Linux malware aimed at your desktop, not your servers <https://nakedsecurity.sophos.com/2019/07/25/evilgnome-linux-malware-aimed-at-your-laptop-not-your-servers/> <sup>[[Archive.org]][1324]</sup>
 
-[^492]: Immunify, HiddenWasp: How to detect malware hidden on Linux & IoT <https://blog.imunify360.com/hiddenwasp-how-to-detect-malware-hidden-on-linux-iot> <sup>[[Archive.org]][1325]</sup>
+[^491]: Immunify, HiddenWasp: How to detect malware hidden on Linux & IoT <https://blog.imunify360.com/hiddenwasp-how-to-detect-malware-hidden-on-linux-iot> <sup>[[Archive.org]][1325]</sup>
 
-[^493]: Wikipedia, Linux Malware <https://en.wikipedia.org/wiki/Linux_malware> <sup>[[Wikiless]][1326]</sup> <sup>[[Archive.org]][1327]</sup>
+[^492]: Wikipedia, Linux Malware <https://en.wikipedia.org/wiki/Linux_malware> <sup>[[Wikiless]][1326]</sup> <sup>[[Archive.org]][1327]</sup>
 
-[^494]: Wikipedia, macOS Malware <https://en.wikipedia.org/wiki/macOS_malware> <sup>[[Wikiless]][1328]</sup> <sup>[[Archive.org]][1329]</sup>
+[^493]: Wikipedia, macOS Malware <https://en.wikipedia.org/wiki/macOS_malware> <sup>[[Wikiless]][1328]</sup> <sup>[[Archive.org]][1329]</sup>
 
-[^495]: MacWorld, List of Mac viruses, malware and security flaws <https://www.macworld.co.uk/feature/mac-viruses-list-3668354/> <sup>[[Archive.org]][1330]</sup>
+[^494]: MacWorld, List of Mac viruses, malware and security flaws <https://www.macworld.co.uk/feature/mac-viruses-list-3668354/> <sup>[[Archive.org]][1330]</sup>
 
-[^496]: JAMF, The Mac Malware of 2020 <https://resources.jamf.com/documents/macmalware-2020.pdf> <sup>[[Archive.org]][1331]</sup>
+[^495]: JAMF, The Mac Malware of 2020 <https://resources.jamf.com/documents/macmalware-2020.pdf> <sup>[[Archive.org]][1331]</sup>
 
-[^497]: macOS Security and Privacy Guide, <https://github.com/drduh/macOS-Security-and-Privacy-Guide#viruses-and-malware> <sup>[[Archive.org]][294]</sup>
+[^496]: macOS Security and Privacy Guide, <https://github.com/drduh/macOS-Security-and-Privacy-Guide#viruses-and-malware> <sup>[[Archive.org]][294]</sup>
 
-[^498]: ImageTragick.com, <https://imagetragick.com/> <sup>[[Archive.org]][1332]</sup>
+[^497]: ImageTragick.com, <https://imagetragick.com/> <sup>[[Archive.org]][1332]</sup>
+
+[^498]: Oracle Virtualbox Documentation, <https://docs.oracle.com/en/virtualization/virtualbox/6.0/admin/hyperv-support.html> <sup>[[Archive.org]][1333]</sup>
 
 [^499]: Oracle Virtualbox Documentation, <https://docs.oracle.com/en/virtualization/virtualbox/6.0/admin/hyperv-support.html> <sup>[[Archive.org]][1333]</sup>
 
-[^500]: Oracle Virtualbox Documentation, <https://docs.oracle.com/en/virtualization/virtualbox/6.0/admin/hyperv-support.html> <sup>[[Archive.org]][1333]</sup>
+[^500]: Lenny Zeltser, Analyzing Malicious Documents Cheat Sheet <https://zeltser.com/analyzing-malicious-documents/> <sup>[[Archive.org]][1334]</sup>
 
-[^501]: Lenny Zeltser, Analyzing Malicious Documents Cheat Sheet <https://zeltser.com/analyzing-malicious-documents/> <sup>[[Archive.org]][1334]</sup>
+[^501]: Wikipedia, Portable Applications <https://en.wikipedia.org/wiki/Portable_application> <sup>[[Wikiless]][1335]</sup> <sup>[[Archive.org]][1336]</sup>
 
-[^502]: Wikipedia, Portable Applications <https://en.wikipedia.org/wiki/Portable_application> <sup>[[Wikiless]][1335]</sup> <sup>[[Archive.org]][1336]</sup>
+[^502]: Brave Help, What is a Private Window with Tor Connectivity? <https://support.brave.com/hc/en-us/articles/360018121491-What-is-a-Private-Window-with-Tor> <sup>[[Archive.org]][1279]</sup>
 
-[^503]: Brave Help, What is a Private Window with Tor Connectivity? <https://support.brave.com/hc/en-us/articles/360018121491-What-is-a-Private-Window-with-Tor> <sup>[[Archive.org]][1279]</sup>
+[^503]: BlackGNU, Brave, the false sensation of privacy <https://blackgnu.net/brave-is-shit.html> <sup>[[Archive.org]][1337]</sup>
 
-[^504]: BlackGNU, Brave, the false sensation of privacy <https://blackgnu.net/brave-is-shit.html> <sup>[[Archive.org]][1337]</sup>
+[^504]: Brave Help Center, What is "Shields"? <https://support.brave.com/hc/en-us/articles/360022973471-What-is-Shields> <sup>[[Archive.org]][1338]</sup>
 
-[^505]: Brave Help Center, What is "Shields"? <https://support.brave.com/hc/en-us/articles/360022973471-What-is-Shields> <sup>[[Archive.org]][1338]</sup>
+[^505]: VentureBeat, Browser benchmark battle January 2020: Chrome vs. Firefox vs. Edge vs. Brave <https://venturebeat.com/2020/01/15/browser-benchmark-battle-january-2020-chrome-firefox-edge-brave/view-all/> <sup>[[Archive.org]][1339]</sup>
 
-[^506]: VentureBeat, Browser benchmark battle January 2020: Chrome vs. Firefox vs. Edge vs. Brave <https://venturebeat.com/2020/01/15/browser-benchmark-battle-january-2020-chrome-firefox-edge-brave/view-all/> <sup>[[Archive.org]][1339]</sup>
+[^506]: Brave.com, Brave, Fingerprinting, and Privacy Budgets <https://brave.com/brave-fingerprinting-and-privacy-budgets/> <sup>[[Archive.org]][159]</sup>
 
-[^507]: Brave.com, Brave, Fingerprinting, and Privacy Budgets <https://brave.com/brave-fingerprinting-and-privacy-budgets/> <sup>[[Archive.org]][159]</sup>
+[^507]: Madaidan's Insecurities, Firefox and Chromium <https://madaidans-insecurities.github.io/firefox-chromium.html> <sup>[[Archive.org]][1340]</sup>
 
-[^508]: Madaidan's Insecurities, Firefox and Chromium <https://madaidans-insecurities.github.io/firefox-chromium.html> <sup>[[Archive.org]][1340]</sup>
+[^508]: GrapheneOS, Web Browsing <https://grapheneos.org/usage#web-browsing> <sup>[[Archive.org]][1341]</sup>
 
-[^509]: GrapheneOS, Web Browsing <https://grapheneos.org/usage#web-browsing> <sup>[[Archive.org]][1341]</sup>
+[^509]: ResearchGate, Web Browser Privacy: What Do Browsers Say When They Phone Home? <https://www.researchgate.net/publication/349979628_Web_Browser_Privacy_What_Do_Browsers_Say_When_They_Phone_Home> <sup>[[Archive.org]][1342]</sup>
 
-[^510]: ResearchGate, Web Browser Privacy: What Do Browsers Say When They Phone Home? <https://www.researchgate.net/publication/349979628_Web_Browser_Privacy_What_Do_Browsers_Say_When_They_Phone_Home> <sup>[[Archive.org]][1342]</sup>
+[^510]: Duck's pond, Ungoogled-Chromium <https://qua3k.github.io/ungoogled/> <sup>[[Archive.org]][1343]</sup>
 
-[^511]: Duck's pond, Ungoogled-Chromium <https://qua3k.github.io/ungoogled/> <sup>[[Archive.org]][1343]</sup>
+[^511]: Madaidan's Insecurities, Firefox and Chromium <https://madaidans-insecurities.github.io/firefox-chromium.html> <sup>[[Archive.org]][1340]</sup>
 
-[^512]: Madaidan's Insecurities, Firefox and Chromium <https://madaidans-insecurities.github.io/firefox-chromium.html> <sup>[[Archive.org]][1340]</sup>
+[^512]: GrapheneOS, Web Browsing <https://grapheneos.org/usage#web-browsing> <sup>[[Archive.org]][1341]</sup>
 
-[^513]: GrapheneOS, Web Browsing <https://grapheneos.org/usage#web-browsing> <sup>[[Archive.org]][1341]</sup>
+[^513]: Microsoft.com, Microsoft Edge support for Microsoft Defender Application Guard <https://docs.microsoft.com/en-us/deployedge/microsoft-edge-security-windows-defender-application-guard> <sup>[[Archive.org]][1344]</sup>
 
-[^514]: Microsoft.com, Microsoft Edge support for Microsoft Defender Application Guard <https://docs.microsoft.com/en-us/deployedge/microsoft-edge-security-windows-defender-application-guard> <sup>[[Archive.org]][1344]</sup>
+[^514]: PcMag, Mozilla Signs Lucrative 3-Year Google Search Deal for Firefox <https://www.pcmag.com/news/mozilla-signs-lucrative-3-year-google-search-deal-for-firefox> <sup>[[Archive.org]][1345]</sup>
 
-[^515]: PcMag, Mozilla Signs Lucrative 3-Year Google Search Deal for Firefox <https://www.pcmag.com/news/mozilla-signs-lucrative-3-year-google-search-deal-for-firefox> <sup>[[Archive.org]][1345]</sup>
+[^515]: Madaidan's Insecurities, Firefox and Chromium <https://madaidans-insecurities.github.io/firefox-chromium.html> <sup>[[Archive.org]][1340]</sup>
 
-[^516]: Madaidan's Insecurities, Firefox and Chromium <https://madaidans-insecurities.github.io/firefox-chromium.html> <sup>[[Archive.org]][1340]</sup>
+[^516]: FingerprintJS, Demo: Disabling JavaScript Won't Save You from Fingerprinting <https://fingerprintjs.com/blog/disabling-javascript-wont-stop-fingerprinting/> <sup>[[Archive.org]][933]</sup>
 
-[^517]: FingerprintJS, Demo: Disabling JavaScript Won't Save You from Fingerprinting <https://fingerprintjs.com/blog/disabling-javascript-wont-stop-fingerprinting/> <sup>[[Archive.org]][933]</sup>
+[^517]: Duck's pond, Ungoogled-Chromium <https://qua3k.github.io/ungoogled/> <sup>[[Archive.org]][1343]</sup>
 
-[^518]: Duck's pond, Ungoogled-Chromium <https://qua3k.github.io/ungoogled/> <sup>[[Archive.org]][1343]</sup>
+[^518]: Wikipedia, Virtualization <https://en.wikipedia.org/wiki/Virtualization> <sup>[[Wikiless]][1346]</sup> <sup>[[Archive.org]][1347]</sup>
 
-[^519]: Wikipedia, Virtualization <https://en.wikipedia.org/wiki/Virtualization> <sup>[[Wikiless]][1346]</sup> <sup>[[Archive.org]][1347]</sup>
+[^519]: Tor Project, Project Snowflake <https://snowflake.torproject.org/> <sup>[[Archive.org]][563]</sup>
 
-[^520]: Tor Project, Project Snowflake <https://snowflake.torproject.org/> <sup>[[Archive.org]][563]</sup>
+[^520]: GitHub, Obfs4 Repository <https://github.com/Yawning/obfs4/> <sup>[[Archive.org]][1348]</sup>
 
-[^521]: GitHub, Obfs4 Repository <https://github.com/Yawning/obfs4/> <sup>[[Archive.org]][1348]</sup>
+[^521]: Tor Browser Manual, Pluggable Transport <https://tb-manual.torproject.org/circumvention/> <sup>[[Archive.org]][1349]</sup>
 
 [^522]: Tor Browser Manual, Pluggable Transport <https://tb-manual.torproject.org/circumvention/> <sup>[[Archive.org]][1349]</sup>
 
-[^523]: Tor Browser Manual, Pluggable Transport <https://tb-manual.torproject.org/circumvention/> <sup>[[Archive.org]][1349]</sup>
+[^523]: Wikipedia, Domain Fronting <https://en.wikipedia.org/wiki/Domain_fronting> <sup>[[Wikiless]][1350]</sup> <sup>[[Archive.org]][1351]</sup>
 
-[^524]: Wikipedia, Domain Fronting <https://en.wikipedia.org/wiki/Domain_fronting> <sup>[[Wikiless]][1350]</sup> <sup>[[Archive.org]][1351]</sup>
+[^524]: GitLab, Tor Browser Issues, Add uBlock Origin to the Tor Browser <https://gitlab.torproject.org/tpo/applications/tor-browser/-/issues/17569> <sup>[[Archive.org]][1352]</sup>
 
-[^525]: GitLab, Tor Browser Issues, Add uBlock Origin to the Tor Browser <https://gitlab.torproject.org/tpo/applications/tor-browser/-/issues/17569> <sup>[[Archive.org]][1352]</sup>
+[^525]: Vice, The NSA and CIA Use Ad Blockers Because Online Advertising Is So Dangerous <https://www.vice.com/en/article/93ypke/the-nsa-and-cia-use-ad-blockers-because-online-advertising-is-so-dangerous> <sup>[[Archive.org]][1353]</sup>
 
-[^526]: Vice, The NSA and CIA Use Ad Blockers Because Online Advertising Is So Dangerous <https://www.vice.com/en/article/93ypke/the-nsa-and-cia-use-ad-blockers-because-online-advertising-is-so-dangerous> <sup>[[Archive.org]][1353]</sup>
+[^526]: A Comprehensive Bitcoin CoinJoin Guide <https://bitcoinmagazine.com/technical/a-comprehensive-bitcoin-coinjoin-guide> <sup>[[Archive.org]][1354]</sup>
 
-[^527]: A Comprehensive Bitcoin CoinJoin Guide <https://bitcoinmagazine.com/technical/a-comprehensive-bitcoin-coinjoin-guide> <sup>[[Archive.org]][1354]</sup>
+[^527]: NIST, NIST Has Spoken - Death to Complexity, Long Live the Passphrase! <https://www.sans.org/blog/nist-has-spoken-death-to-complexity-long-live-the-passphrase/> <sup>[[Archive.org]][1355]</sup>
 
-[^528]: NIST, NIST Has Spoken - Death to Complexity, Long Live the Passphrase! <https://www.sans.org/blog/nist-has-spoken-death-to-complexity-long-live-the-passphrase/> <sup>[[Archive.org]][1355]</sup>
+[^528]: ZDnet, FBI recommends passphrases over password complexity <https://www.zdnet.com/article/fbi-recommends-passphrases-over-password-complexity/> <sup>[[Archive.org]][1356]</sup>
 
-[^529]: ZDnet, FBI recommends passphrases over password complexity <https://www.zdnet.com/article/fbi-recommends-passphrases-over-password-complexity/> <sup>[[Archive.org]][1356]</sup>
+[^529]: The Intercept, Passphrases That You Can Memorize --- But That Even the NSA Can't Guess <https://theintercept.com/2015/03/26/passphrases-can-memorize-attackers-cant-guess/> <sup>[[Tor Mirror]][1357]</sup> <sup>[[Archive.org]][1358]</sup>
 
-[^530]: The Intercept, Passphrases That You Can Memorize --- But That Even the NSA Can't Guess <https://theintercept.com/2015/03/26/passphrases-can-memorize-attackers-cant-guess/> <sup>[[Tor Mirror]][1357]</sup> <sup>[[Archive.org]][1358]</sup>
+[^530]: Proton Blog, Let's settle the password vs. passphrase debate once and for all <https://proton.me/blog/protonmail-com-blog-password-vs-passphrase/> <sup>[[Archive.org]][1359]</sup>
 
-[^531]: Proton Blog, Let's settle the password vs. passphrase debate once and for all <https://proton.me/blog/protonmail-com-blog-password-vs-passphrase/> <sup>[[Archive.org]][1359]</sup>
+[^531]: YouTube, Edward Snowden on Passwords: Last Week Tonight with John Oliver (HBO) <https://www.youtube.com/watch?v=yzGzB-yYKcc> <sup>[[Invidious]][1360]</sup>
 
-[^532]: YouTube, Edward Snowden on Passwords: Last Week Tonight with John Oliver (HBO) <https://www.youtube.com/watch?v=yzGzB-yYKcc> <sup>[[Invidious]][1360]</sup>
+[^532]: YouTube, How to Choose a Password -- Computerphile <https://www.youtube.com/watch?v=3NjQ9b3pgIg> <sup>[[Invidious]][699]</sup>
 
-[^533]: YouTube, How to Choose a Password -- Computerphile <https://www.youtube.com/watch?v=3NjQ9b3pgIg> <sup>[[Invidious]][699]</sup>
+[^533]: Wikipedia, Passphrase <https://en.wikipedia.org/wiki/Passphrase#Passphrase_selection> <sup>[[Wikiless]][1361]</sup> <sup>[[Archive.org]][1362]</sup>
 
-[^534]: Wikipedia, Passphrase <https://en.wikipedia.org/wiki/Passphrase#Passphrase_selection> <sup>[[Wikiless]][1361]</sup> <sup>[[Archive.org]][1362]</sup>
+[^534]: Monero Research Lab, Evaluating cryptocurrency security and privacy in a post-quantum world <https://github.com/insight-decentralized-consensus-lab/post-quantum-monero/blob/master/writeups/technical_note.pdf> <sup>[[Archive.org]][1363]</sup>
 
-[^535]: Monero Research Lab, Evaluating cryptocurrency security and privacy in a post-quantum world <https://github.com/insight-decentralized-consensus-lab/post-quantum-monero/blob/master/writeups/technical_note.pdf> <sup>[[Archive.org]][1363]</sup>
+[^535]: Wasabi Wallet zkSNACKs Blacklisting <https://blog.wasabiwallet.io/zksnacks-blacklisting-update> <sup>[[Archive.org]][1368]</sup>
 
-[^536]: Wasabi Wallet zkSNACKs Blacklisting <https://blog.wasabiwallet.io/zksnacks-blacklisting-update> <sup>[[Archive.org]][1368]</sup>
+[^536]: An Analysis and Disclosure Regarding the Deterministic Nature of the Wasabi Wallet CoinJoin Algorithm <https://research.oxt.me/alerts/2020/08/21/Wasabi-Wallet> <sup>[[Archive.org]][1369]</sup>
 
-[^537]: An Analysis and Disclosure Regarding the Deterministic Nature of the Wasabi Wallet CoinJoin Algorithm <https://research.oxt.me/alerts/2020/08/21/Wasabi-Wallet> <sup>[[Archive.org]][1369]</sup>
-
-[^538]: Samourai Whirlpool <https://docs.samourai.io/whirlpool/start><sup>[[Archive.org]][1370]</sup>
+[^537]: Samourai Whirlpool <https://docs.samourai.io/whirlpool/start><sup>[[Archive.org]][1370]</sup>
 
   [Contents:]: #contents
   [Pre-requisites and limitations:]: #pre-requisites-and-limitations
