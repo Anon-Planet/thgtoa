@@ -13,7 +13,7 @@ Follow or contact us on:
 Discussion Channels:
 - Matrix room: ```#anonymity:matrix.org``` <https://matrix.to/#/#anonymity:matrix.org>
 - Matrix space: ```#privacy-security-anonymity:matrix.org``` <https://matrix.to/#/#privacy-security-anonymity:matrix.org>
-- Github Discussions: <https://github.com/AnonyPla-ng/thgtoa/discussions>
+- Github Discussions: <https://github.com/Anon-Planet/thgtoa/discussions/>
 
 **Below you'll find the original about text from the initial founder, Lena, of this guide before she went missing, most links are invalid.**
 
