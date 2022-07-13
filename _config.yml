@@ -24,6 +24,8 @@ github:
   about_url: about.html
   minisign_url: minisign.pub
   links_url: links.html
+  twitter_url: https://twitter.com/AnonyPla
+  mastodon_url: https://mastodon.social/@anonymousplanet
 defaults:
   -
     scope:

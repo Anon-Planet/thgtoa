@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="{{ 'assets/css/style.css' }}" id="dark">
     <link rel="stylesheet" href="{{ 'assets/css/light_style.css' }}" media="none" id="light">
     <link rel="shortcut icon" type="image/x-icon" href="media/favicon.ico">
-    <a rel="me" href="https://mastodon.social/@anonymousplanet">Mastodon</a>
   <script>
     function SetDark() {
       document.getElementById('dark').media = "";
@@ -163,7 +162,7 @@ input:checked + .slider::before {
 			{% if page.url != "/guide.html" %}
 				<a href="{{ site.github.guide_url }}" class="btn_small" style="color:#FF0000">View Online</a>
 			{% endif %}
-<!--				<a href="{{ site.github.pdf_url }}" class="btn_small">PDF</a>--><!-- PDF missing due to build issues -->
+				<a href="{{ site.github.pdf_url }}" class="btn_small">PDF</a>
 				<!--<a href="{{ site.github.pdf_dark_url }}" class="btn_small">PDF (Dark)</a>-->
 				<a href="{{ site.github.odt_url }}" class="btn_small">OpenDocument</a>
 			{% if page.url != "/donations.html" %}
@@ -171,7 +170,8 @@ input:checked + .slider::before {
 			{% endif %}
 				<a href="{{ site.github.repository_url }}" target="_blank" class="btn_small">Repository</a>
 				<!--<a href="{{ site.github.keyoxide_url }}" target="_blank" class="btn_small">Keyoxide</a>-->
-				<a href="{{ site.github.twitter_url }}" target="_blank" class="btn_small">Twitter</a>
+				<a rel="me" href="{{ site.github.twitter_url }}" target="_blank" class="btn_small">Twitter</a>
+				<a rel="me" href="{{ site.github.mastodon_url }}" target="_blank" class="btn_small">Mastodon</a>
 				<!--<a rel="me" href="{{ site.github.mastodon_url }}" target="_blank" class="btn_small">Mastodon</a>-->
 			{% if page.url != "/links.html" %}
 				<a href="{{ site.github.links_url }}" class="btn_small">Links</a>

@@ -36,6 +36,7 @@ For those of you who are looking to add content to the guide, include the follow
   - Search/replace doesn't understand context, and as such, will inevitably cause inconsistencies and make the guide harder to read.
   - If it's part of a larger PR, it'll also make the reviewer's life harder, as they'll have to go through manually and undo everything by hand.
   - *If you're going to make mass changes, take the time to do it properly*. Otherwise I'll just have to undo it anyway.
+  - If your change contains backslashes (`\`), wither escape them with another backslash (`\\`) or put them in a ```code block```.
 
 When reporting guide issues:
 
