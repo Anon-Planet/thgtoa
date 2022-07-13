@@ -9635,7 +9635,7 @@ DO NOT CONNECT WINDOWS TO ANY NETWORK DURING THE INSTALLATION PROCESS (This will
 
 -   (Only for VirtualBox VM Install) Launch "regedit" in the command prompt
 
--   (Only for VirtualBox VM Install) When the Registry Editor opens, navigate to "HKEY_LOCAL_MACHINE\SYSTEM\Setup", right-click on the "Setup" key and select "New => Key". When prompted to name the key, enter "LabConfig" and press enter.
+-   (Only for VirtualBox VM Install) When the Registry Editor opens, navigate to ```HKEY_LOCAL_MACHINE\SYSTEM\Setup```, right-click on the "Setup" key and select "New => Key". When prompted to name the key, enter "LabConfig" and press enter.
 
 -   (Only for VirtualBox VM Install) Now right-click on the "LabConfig" key and select "New => DWORD  (32-bit)" value and create a value named "BypassTPMCheck", and set its data to "1". With the same steps create the "BypassRAMCheck" and "BypassSecureBootCheck"
 
