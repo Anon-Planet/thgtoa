@@ -9,6 +9,8 @@
 /test/tmp/
 /test/version_tmp/
 /tmp/
+/_site/
+Gemfile
 
 ## Environment normalization:
 /.bundle/
