@@ -8,23 +8,15 @@ Version 1.1.5, June 2022 by Anonymous Planet
 
 #### **IMPORTANT RECOMMENDATION FOR UKRAINIANS. ВАЖЛИВА РЕКОМЕНДАЦІЯ ДЛЯ УКРАЇНЦІВ**
 
-This is a message for the people of Ukraine.
-
-We strongly recommend that you use Briar for communicating with people nearby.
-
-You can find it here: <https://briarproject.org/>
-
-With this application, you can communicate even when there is no internet.
+Це послання до народу України. Ми настійно рекомендуємо вам використовувати Briar для спілкування. Ви можете знайти його тут: <https://briarproject.org/ . 
+За допомогою цієї програми ви можете спілкуватися, навіть коли немає Інтернету.
+Посібник тут: <https://briarproject.org/manual/uk//> , Швидкий початок: <https://briarproject.org/quick-start/uk/>
 
 --------------------------------------------------------------------------
 
-Це послання до народу України.
-
-Ми наполегливо рекомендуємо вам використовувати Briar для спілкування з людьми поблизу!
-
-Ви можете знайти його тут: <https://briarproject.org/> і тут: <https://briarproject.org/quick-start/uk/>.
-
-За допомогою цієї програми ви можете спілкуватися, навіть коли немає Інтернету.
+This is a message for the people of Ukraine. We strongly recommend that you use Briar for communicating. You can find it here: <https://briarproject.org/>
+With this application, you can communicate even when there is no internet.
+The manual is here: <https://briarproject.org/manual> , quick-start guie here: <https://briarproject.org/quick-start/>
 
 --------------------------------------------------------------------------
 
@@ -54,9 +46,9 @@ Feel free to come to discuss ideas at:
 
 Follow us on:
 
--   Twitter at <https://twitter.com/AnonyPla> (account recovered)
+-   Twitter at <https://twitter.com/AnonyPla>
 
--   Mastodon at <https://mastodon.social/@anonypla> (account recovered)
+-   Mastodon at <https://mastodon.social/@anonymousplanet>
 
 To contact me, see the updated information on the website or send an e-mail to <contact@anonymousplanet-ng.org>
 
