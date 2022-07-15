@@ -4958,9 +4958,14 @@ The Qubes master signing key fingerprint should match `427F 11FD 0FAA 4B08 0123 
 Unfortunately, Qubes OS does not support hibernation[^366] which is an issue regarding cold-boot attacks. To mitigate those, I highly recommend that you configure Qubes OS to shut down on any power action (power button, lid closure). You can do set this from the XFCE Power Manager. Do not use the sleep features.
 
 ### Anti Evil Maid (AEM):
+
+**Warning**, this step only works with Intel CPUs, a legacy BIOS, TPM 1.2. If you do not meet those requirements, skip this step.
+
 Anti Evil Maid is an implementation of a TPM-based static trusted boot with a primary goal to prevent Evil Maid attacks. Installing and using AEM requires attaching a USB drive directly to dom0. So the user must make a choice between protecting dom0 from a potentially malicious USB drive, and protecting the system from Evil Maid attacks. Note that AEM is only compatible with Intel CPUs and Legacy boot options.
 
 The preference for mitigating any evil maid attack is to maintain physical control of your device at all times. If that is not possible, then this might be relevant to your threat model.
+
+Before deciding to use this system, please read [Appendix B5: Important notes evil-maid and tampering](Appendix B4: Important notes evil-maid and tampering:)
 
 See the following links for more details and installation instructions:
 
@@ -9223,29 +9228,39 @@ Wait, what is OPSEC? Well, OPSEC means Operations Security[^456]. The basic defi
 
 OPSEC is often just applying common sense and being cautious about your activities including in the physical world:
 
--   **Remember to use passphrases instead of passwords and use a different one for each service ([Appendix A2: Guidelines for passwords and passphrases]).**
+## Digital and Online OPSEC
+
+-   **Remember to use passphrases or suits of words instead of short passwords and use a different one for each service. See [Appendix A2: Guidelines for passwords and passphrases].**
 
 -   Make sure you are not keeping a copy of this guide anywhere unsafe after. The sole presence of this guide will most likely defeat all your plausible deniability possibilities.
 
--   Consider the use of Haven <https://guardianproject.github.io/haven/> <sup>[[Archive.org]][540]</sup> on some old android phone to keep watch on your home/room while you are away.
-
--   Doxx "yourself" and your identities from time to time by looking for them yourself online using various search engines to monitor your online identities. You can even automate the process somewhat using various tools such as Google Alerts <https://www.google.com/alerts> <sup>[[Archive.org]][541]</sup>.
-
--   Remember [Appendix N: Warning about smartphones and smart devices]. Do not forget your smart devices can compromise your anonymity.
+-   OSINT "yourself" and your identities from time to time by looking for them yourself online using various search engines to monitor your online identities. You can even automate the process somewhat using various tools such as Google Alerts <https://www.google.com/alerts> <sup>[[Archive.org]][541]</sup>.
 
 -   Do not ever use biometrics alone to safeguard your secrets. Biometrics can be used without your consent.
+
+-   Do check the signatures and hashes of software and documents you download before installing/viewing them.
+
+-   Encrypt everything but do not take it for granted. Remember the 5$ wrench.
+
+## Physical and IRL OPSEC
+
+-   Remember the ["Physically Tamper protect your laptop"][Physically Tamper protect your laptop:] section.
+
+-   See ["Appendix B4: Important notes evil-maid and tampering"](Physically Tamper protect your laptop:).
+
+-   Remember the ["How to spot if someone has been searching your stuff, home, or room"](How to spot if someone has been searching your stuff, home, or room:) section.
+
+-   Consider the use of Haven <https://guardianproject.github.io/haven/> <sup>[[Archive.org]][540]</sup> on some old android phone to keep watch on your home/room while you are away.
+
+-   Remember [Appendix N: Warning about smartphones and smart devices]. Do not forget your smart devices can compromise your anonymity.
 
 -   Do not ever travel with those devices if you must pass strong border checks and where they could be illegal or raise suspicion.
 
 -   Do not plug any equipment in that laptop unless you trust it. Use a USB data blocker for charging.
 
--   Do check the signatures and hashes of Software you download before installing them.
-
 -   Remember the first rule of fight club and do not talk to anyone about your sensitive activities using your real identity.
 
 -   Keep a normal life and do not be weird. If you spend all your online time using Tor to access the internet and have no social network accounts at all ... You are already suspicious and attracting unnecessary attention.
-
--   Encrypt everything but do not take it for granted. Remember the 5$ wrench.
 
 -   Keep plausible deniability as an option but remember it will not help against the 5$ wrench either.
 
@@ -9257,9 +9272,11 @@ OPSEC is often just applying common sense and being cautious about your activiti
 
 -   Know and always have at your disposal the details of a lawyer that could help you as a last resort in case things go wrong.
 
+-   Keep your situation awareness high but not too high as to appear suspicious.
+
 -   Read those tips here <https://www.whonix.org/wiki/DoNot> <sup>[[Archive.org]][339]</sup>
 
--   **Finally, have common sense, do not be dumb, look and learn from others' mistakes, watch/read these:**
+-   **Have common sense, do not be dumb, look and learn from others' mistakes, watch/read these:**
 
     -   Medium.com, Darkweb Vendors and the Basic Opsec Mistakes They Keep Making <https://medium.com/@c5/darkweb-vendors-and-the-basic-opsec-mistakes-they-keep-making-e54c285a488c> <sup>[[Scribe.rip]][545]</sup> <sup>[[Archive.org]][546]</sup>
 
@@ -9267,15 +9284,23 @@ OPSEC is often just applying common sense and being cautious about your activiti
 
     -   2020, RSA Conference 2020, When Cybercriminals with Good OpSec Attack <https://www.youtube.com/watch?v=zXmZnU2GdVk> <sup>[[Invidious]][548]</sup>
 
-    -   2015, DEFCON 22, Adrian Crenshaw- Dropping Docs on Darknets: How People Got Caught <https://www.youtube.com/watch?v=eQ2OZKitRwc> <sup>[[Invidious]][549]</sup> ([Slides][] <sup>[[Archive.org]][550]</sup>)
+    -   2015, DEF CON 22, Adrian Crenshaw, Dropping Docs on Darknets: How People Got Caught <https://www.youtube.com/watch?v=eQ2OZKitRwc> <sup>[[Invidious]][549]</sup> ([Slides][] <sup>[[Archive.org]][550]</sup>)
 
     -   2017, Ochko123 - How the Feds Caught Russian Mega-Carder Roman Seleznev <https://www.youtube.com/watch?v=6Chp12sEnWk> <sup>[[Invidious]][551]</sup>
 
-    -   2015, DEF CON 22 - Zoz - Don't Fuck It Up! <https://www.youtube.com/watch?v=J1q4Ir2J8P8> <sup>[[Invidious]][552]</sup>
+    -   2015, DEF CON 22, Zoz, Don't Fuck It Up! <https://www.youtube.com/watch?v=J1q4Ir2J8P8> <sup>[[Invidious]][552]</sup>
 
-    -   2020, Bad Opsec - How Tor Users Got Caught, <https://www.youtube.com/watch?v=GR_U0G-QGA0> <sup>[[Invidious]][553]</sup>
+    -   2020, Bad Opsec, How Tor Users Got Caught, <https://www.youtube.com/watch?v=GR_U0G-QGA0> <sup>[[Invidious]][553]</sup>
 
 **FINAL OPSEC DISCLAIMER: KEEP YOUR ANONYMOUS IDENTITIES COMPLETELY SANDBOXED FROM YOUR NORMAL ENVIRONMENT AND REAL IDENTITY. DO NOT SHARE ANYTHING BETWEEN THE ANONYMOUS ENVIRONMENTS AND THE REAL IDENTITY ENVIRONMENT. KEEP THEM COMPLETELY COMPARTMENTALIZED ON EVERY LEVEL. MOST OPSEC FAILURES ARE DUE TO USERS ACCIDENTALLY LEAKING INFORMATION RATHER THAN TECHNICAL FAILURES.**
+
+# What to do if you detected tampering or searching ?
+
+- In the case of a laptop, they likely placed a key-logger, and possible network and gps capabilities. We recommend to open your laptop take the drive (which should be fully encrypted) and leave for a safe place and abandonning the laptop. Do not try to remove the "bug" as this could put you in physical danger.
+
+- If you detected searching of your room, home... Again we recommend leaving for a safe place while abandoning everything in the room that could also be "bugged".
+
+- Do your best to not let your adversary suspect or know you detected the search and/or the tampering. Be creative. Call a friend for example just to tell you're gonna go to the supermarket to buy food.
 
 # **If you think you got burned:**
 
@@ -12285,6 +12310,16 @@ You can find some introduction on these on these projects:
 -   OWASP: <https://cheatsheetseries.owasp.org/cheatsheets/Threat_Modeling_Cheat_Sheet.html> <sup>[[Archive.org]][746]</sup>
 
 -   Online Operations Security: [https://web.archive.org/web/20210711215728/https://github.com/devbret/online-OPSEC]
+
+# Appendix B4: Important notes evil-maid and tampering
+
+Your context needs to be taken into account. 
+
+Preventing an evil-maid attack attack or tampering might lead to bad consequences. Your adversary might then resort to other means to obtain the key.
+
+On the other hand, allowing the attack but detecting it will not let your adversary know that you are aware of the tampering. You can then take steps safely to not reveal information and possibly leave.
+
+See the [Some last OPSEC thoughts](Some last OPSEC thoughts:) section for some tips.
 
 ---
 
