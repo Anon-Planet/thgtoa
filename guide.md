@@ -1569,9 +1569,7 @@ If the VPN provider knows nothing about you, it should mitigate any issue due to
 
 (Illustration: an excellent movie we highly recommend: Das Leben der Anderen[^286])
 
-Many advanced techniques can be used by skilled adversaries[^287] to bypass your security measures provided they already know where your devices are. Many of those techniques are detailed here <https://cyber.bgu.ac.il/advanced-cyber/airgap> <sup>[[Archive.org]][172]</sup> (Air-Gap Research Page, Cyber-Security Research Center, Ben-Gurion University of the Negev, Israel) but also in this report <https://www.welivesecurity.com/wp-content/uploads/2021/12/eset_jumping_the_air_gap_wp.pdf> <sup>[[Archive.org]][173]</sup> (ESET, JUMPING
-
-THE AIR GAP: 15 years of nation-state effort) and include:
+Many advanced techniques can be used by skilled adversaries[^287] to bypass your security measures provided they already know where your devices are. Many of those techniques are detailed here <https://cyber.bgu.ac.il/advanced-cyber/airgap> <sup>[[Archive.org]][172]</sup> (Air-Gap Research Page, Cyber-Security Research Center, Ben-Gurion University of the Negev, Israel) but also in this report <https://www.welivesecurity.com/wp-content/uploads/2021/12/eset_jumping_the_air_gap_wp.pdf> <sup>[[Archive.org]][173]</sup> (ESET, JUMPING THE AIR GAP: 15 years of nation-state effort) and include:
 
 -   Attacks requiring malware implants:
 
