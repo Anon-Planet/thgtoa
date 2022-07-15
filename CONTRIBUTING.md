@@ -50,9 +50,7 @@ When reporting guide issues:
 
 Please split large sets of changes into multiple PRs. For example, a PR that adds Windows 11 support, removes Windows AME references, and fixes typos can be split into 3 PRs. This makes PRs easier to review prior to merging. Preferably, each PR will be one commit (squash multiple commits) for simplicity sake.
 
-For an example of what *not* to do, see: <https://github.com/Anon-Planet/thgtoa/pull/51>. This PR contains enough changes to split into multiple smaller and individually-reviewable PRs:
-
-  -  
+For an example of what *not* to do, see: <https://github.com/Anon-Planet/thgtoa/pull/51>. This PR contains enough changes to split into multiple smaller and individually-reviewable PRs.
 
 ### Updating PRs
 
