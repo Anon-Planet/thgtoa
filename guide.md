@@ -4965,7 +4965,7 @@ Anti Evil Maid is an implementation of a TPM-based static trusted boot with a pr
 
 The preference for mitigating any evil maid attack is to maintain physical control of your device at all times. If that is not possible, then this might be relevant to your threat model.
 
-Before deciding to use this system, please read [Appendix B5: Important notes evil-maid and tampering](Appendix B4: Important notes evil-maid and tampering:)
+Before deciding to use this system, please read [Appendix B4: Important notes about evil-maid and tampering]
 
 See the following links for more details and installation instructions:
 
@@ -9246,7 +9246,7 @@ OPSEC is often just applying common sense and being cautious about your activiti
 
 -   Remember the ["Physically Tamper protect your laptop"][Physically Tamper protect your laptop:] section.
 
--   See ["Appendix B4: Important notes evil-maid and tampering"](Physically Tamper protect your laptop:).
+-   See ["Appendix B4: Important notes about evil-maid and tampering"][Appendix B4: Important notes about evil-maid and tampering]
 
 -   Remember the ["How to spot if someone has been searching your stuff, home, or room"](How to spot if someone has been searching your stuff, home, or room:) section.
 
@@ -12311,7 +12311,7 @@ You can find some introduction on these on these projects:
 
 -   Online Operations Security: [https://web.archive.org/web/20210711215728/https://github.com/devbret/online-OPSEC]
 
-# Appendix B4: Important notes evil-maid and tampering
+# Appendix B4: Important notes about evil-maid and tampering
 
 Your context needs to be taken into account. 
 
@@ -12319,7 +12319,7 @@ Preventing an evil-maid attack attack or tampering might lead to bad consequence
 
 On the other hand, allowing the attack but detecting it will not let your adversary know that you are aware of the tampering. You can then take steps safely to not reveal information and possibly leave.
 
-See the [Some last OPSEC thoughts](Some last OPSEC thoughts:) section for some tips.
+See the [Some last OPSEC thoughts][Some last OPSEC thoughts:] section for some tips.
 
 ---
 
@@ -13692,6 +13692,7 @@ See the [Some last OPSEC thoughts](Some last OPSEC thoughts:) section for some t
   [Appendix B1: Checklist of things to verify before sharing information:]: #appendix-b1-checklist-of-things-to-verify-before-sharing-information
   [Appendix B2: Monero Disclaimer]: #appendix-b2-monero-disclaimer
   [Appendix B3: Threat modeling resources]: #appendix-b3-threat-modeling-resources
+  [Appendix B4: Important notes about evil-maid and tampering]: #appendix-b4-important-notes-about-evil-maid-and-tampering
   [References:]: #references
   [cc-by-nc-4.0]: https://creativecommons.org/licenses/by-nc/4.0/
   [27]: https://web.archive.org/web/https://creativecommons.org/licenses/by-nc/4.0/
