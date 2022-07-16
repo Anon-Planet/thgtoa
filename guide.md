@@ -9219,9 +9219,13 @@ Most likely if someone went through your document to read it and re-placed it ca
 
 # Some last OPSEC thoughts:
 
-Wait, what is OPSEC? Well, OPSEC means Operations Security[^456]. The basic definition is: "OPSEC is the process of protecting individual pieces of data that could be grouped together to give the bigger picture ".
+Wait, what is OPSEC? Well, OPSEC means Operations Security[^456]. The basic definition is: "OPSEC is the process of protecting individual pieces of data that could be grouped together to give the bigger picture."
 
-OPSEC is often just applying common sense and being cautious about your activities including in the physical world:
+The important step here, and probably the easiest one, is a lesson you can take from the movie Fight Club: the first rule is that you **do not** talk about Fight Club. This applies to many aspects of your online operational security or OPSEC. Taking your time to go through this guide will reward you with the tools and knowledge to embrace a fuller, more secure experience on the internet. Rest assured that this guide will reveal things to you that will frustrate your enemy. You will learn how to protect your operating systems and lockdown your critical information and ensure mission success. But the one thing you must adhere to is this rule of thumb - do not talk about operation details. The biggest adversarial threat to you is OSINT (discussed below and throughout the document). The enemy will gather information on you based on what they observe about you and your activities online and in real life. 
+
+Adversaries take many forms. To some, they are actors of a foreign government, while to others they may be simply a rival company's employee looking to find disgruntled workers to target for further pressuring. To most, the general task of OPSEC is that this is your ship - you must not do anything or say anything to sink your own ship. Simply expressing your frustration with your boss or your work conditions or your equipment, might be enough to generate not only a behavior profile but also a vector of attack. A disgruntled employee, in this example, is what generally provides enough information to warrant pressuring of that employee for further information and possibly even extortion, blackmail, or worse. Failure to implement basic OPSEC can lead to failure at various points. It can lead to serious injury or even death if your threat model is a determined attacker, foreign actor, and so on.
+
+You must live by the simple rule that "loose lips sink ships" - but also that they are usually your lips which will do the sinking. OPSEC is often just applying common sense and being cautious about your activities including in the physical world:
 
 -   **Remember to use passphrases instead of passwords and use a different one for each service ([Appendix A2: Guidelines for passwords and passphrases]).**
 
