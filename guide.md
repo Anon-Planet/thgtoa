@@ -11158,6 +11158,20 @@ We would not recommend this option. It is just silly.
 
 # Appendix V1: Hardening your Browsers:
 
+In this section, we'll discuss hardening your browsers. This has a heavy focus on the difference between Tracking Reduction and Tracking Evasion, and the pros and cons of either. First, let's define what they are [as described by Rohan Kumar](https://seirdy.one/posts/2022/06/25/two-types-of-privacy/):
+
+-   Tracking reduction (TR)
+    -   TR aims to reduce the amount of data collected about an exposed user. It reduces a footprint’s spread primarily by blocking trackers. Sometimes this can increase the size of a footprint.
+
+- Tracking evasion (TE)
+    -   TE reduces the amount of data exposed by a user. Rather than eliminating data collection itself, TE prevents useful data from being made available in the first place. In other words, it reduces a footprint’s size.
+
+Browsers that provide Tracking Reduction are to be used for a more casual [Threat Model][Appendix B3: Threat modeling resources] whereas Tracking Evasion is more complex. But both need to be explored. Tracking Reduction focuses on browsing with less tracking. It involves things like content-blocking, firewalls, opt-outs, flipping telemetry buttons, etc. If you're this far into the guide, you likely have a very good understanding of this already. Tracking Evasion, however, involves techniques like using the portable Tor Browser Bundle to anonymize your footprint and online identity, avoiding identifiable extensions, and using randomized keystroke delays. It's more about minimizing your online footprint, to give you a less fingerprintable browsing environment and internet usage.
+
+A brief mention of this is necessary in determining operation needs for both. You need a certain level of understanding in both to achieve good standards and develop better browsing habits. This can and will overall provide you with a more viable solution to public trackers, government organizations looking to trace/track your browsing habits back to you, even just trolls attempting to doxx you.
+
+The following are the recommended safest routes for each browser according to the current versions of their respective software and the ability each one has to become more secure. In the guide we will provide both Tracking Reduction & Evasion and it will not require you to write even a single line of code.
+
 ## Brave:
 
 -   Download and install Brave browser from <https://brave.com/download/> <sup>[[Archive.org]][680]</sup>
