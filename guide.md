@@ -2085,6 +2085,8 @@ Now, you are really done, and you can now surf the web anonymously from your And
 
 ### iOS:
 
+**Disclaimer: Onion Browser, following a 2018 release on iOS, has had IP leaks via WebRTC. It is still the only officially endorsed browser for the Tor network for iOS. Users should exercise caution when using the browser and check for any DNS leaks.**
+
 While the official Tor Browser is not yet available for iOS, there is an alternative called Onion Browser endorsed by the Tor Project[^300].
 
 -   Head over to <https://apps.apple.com/us/app/onion-browser/id519296448>
