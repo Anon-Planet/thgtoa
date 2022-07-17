@@ -182,6 +182,7 @@ Finally note that this guide does mention and even recommends various commercial
         -   [Note about Plausible Deniability:]
         -   [Installation:]
         -   [Lid Closure Behavior:]
+        -   [Anti Evil Maid (AEM):]
         -   [Connect to a Public Wi-Fi:]
         -   [Updating Qubes OS:]
         -   [Updating Whonix from version 15 to version 16:]
@@ -2547,7 +2548,7 @@ You can mitigate this attack by doing the following (as recommended earlier):
 
 -   Set up BIOS/UEFI/Firmware passwords to prevent any unauthorized boot of an unauthorized device.
 
--   Some OSes and Encryption software have anti-EvilMaid protection that can be enabled. This is the case with Windows/Veracrypt and QubeOS (only on Intel CPUs).
+-   Some OSes and Encryption software have the [Anti Evil Maid (AEM)][Anti Evil Maid (AEM):] protection that can be enabled. This is the case with Windows/Veracrypt and QubeOS (only on Intel CPUs).
 
 ##### Cold-Boot Attack:
 
@@ -13494,6 +13495,7 @@ See the [Some last OPSEC thoughts][Some last OPSEC thoughts:] section for some t
   [Note about Plausible Deniability:]: #note-about-plausible-deniability
   [Installation:]: #installation-3
   [Lid Closure Behavior:]: #lid-closure-behavior
+  [Anti Evil Maid (AEM):]: #anti-evil-maid-aem
   [Connect to a Public Wi-Fi:]: #connect-to-a-public-wi-fi
   [Updating Qubes OS:]: #updating-qubes-os
   [Updating Whonix from version 15 to version 16:]: #updating-whonix-from-version-15-to-version-16
