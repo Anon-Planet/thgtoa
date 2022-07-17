@@ -191,6 +191,7 @@ Finally note that this guide does mention and even recommends various commercial
         -   [Setup a safe Browser within Qubes OS (optional but recommended):]
         -   [Setup an Android VM:]
         -   [KeePassXC:][3]
+-   [Quick note: Correlation vs Attribution:]
 -   [Creating your anonymous online identities:]
     -   [Understanding the methods used to prevent anonymity and verify identity:]
         -   [Captchas:]
@@ -5467,6 +5468,16 @@ In the context of Qubes OS you should store your sensitive information within th
 -   From the list of available applications, add KeePassXC to the list of selected applications.
 
 You are done and can now skip the rest to go to the "[Creating your anonymous online identities][Creating new identities:]" part.
+
+# Quick note: Correlation vs Attribution
+
+**Correlation** is a relationship between two or more variables or **[attributes](https://www.digitalshadows.com/blog-and-research/cyber-attacks-the-challenge-of-attribution-and-response/)**. How are attributions determined? During digital forensic and incident response (DFIR), analysts typically look for indicators of compromise (IoCs) following events that call them to act. These indicators usually consist of IP addresses, names, databases; all of which can prescribe a certain behavioral "tag" to an individual or group. This is called attribution. A principal in statistics is that "correlation does not infer causality". What this means is that, while you may leave certain traces on certain areas of a device or network, that only shows presence of action, i.e., not explicitly your presence. It doesn't show who you are, it only resolves that something occurred and *someone* has done *something*. 
+
+Attribution is required to prove fault or guilt, and is the prime reason why people using the Tor network to access the dark web have been compromised: they left traces that were shown to be connected to their real identities. Your IP can be — but is usually not — a large enough indicator to attribute guilt. This is shown in the infamous NotPetya cyber attacks against the U.S., which were later also released upon Ukraine. Though the White House never *said* it was Russia's doing, they attributed the attack to Russia's [(GRU)](https://www.reuters.com/article/us-britain-russia-gru-factbox/what-is-russias-gru-military-intelligence-agency-idUSKCN1MF1VK) which is a direct office housing the Russian deniable warfare[^311] cyber divisions, uncommonly referred to as "spy makers" in the intelligence community (IC). 
+
+_What is the point_, you may ask? Well, bluntly speaking, this a perfect example because NotPetya, which is now undoubtedly the work of Russian cyber operations against foreign countries and governments, has still never been formally attributed to Russia, only to a known group within Russia (colloquially dubbed [Cozy Bear](https://wikiless.org/wiki/Cozy_Bear)) which can not be confirmed nor denied given that it is highly compartmentalized within the structure of Russia's military. And it's also in part because of the efforts used to disguise itself as a common Ransomware, and because it routinely used the servers of hacked foreign assets not linked to Russia or to its internal networks.
+
+It's all to show you the lengths that state actors will go to. You may not be aware of it, but foreign governments use concealment techniques such as the ones discussed in the sections of this guide. They routinely use Tor, VPNs to conceal traffic; they use hacked devices and access to stolen equipment to perform cyber espionage every day and it makes attribution incredibly difficult, if not improbable, from a forensic examiner's point of view. The problem of correlation is trivial, and you can solve it by simply using IP hiding tools such as a VPN and the Tor network, but still be connected to your IRL name and IP through data leaks or other factors. You can not easily be attributed to your activities if you carefully follow and adopt the given techniques and skills discussed below.
 
 # Creating your anonymous online identities:
 
@@ -13518,6 +13529,7 @@ See the [Some last OPSEC thoughts][Some last OPSEC thoughts:] section for some t
   [Setup a safe Browser within Qubes OS (optional but recommended):]: #setup-a-safe-browser-within-qubes-os-optional-but-recommended
   [Setup an Android VM:]: #setup-an-android-vm
   [3]: #keepassxc-1
+  [Quick note: Correlation vs Attribution:]: #quick-note-correlation-vs-attribution
   [Creating your anonymous online identities:]: #creating-your-anonymous-online-identities
   [Understanding the methods used to prevent anonymity and verify identity:]: #understanding-the-methods-used-to-prevent-anonymity-and-verify-identity
   [Captchas:]: #captchas
