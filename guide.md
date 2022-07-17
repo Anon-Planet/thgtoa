@@ -182,6 +182,7 @@ Finally note that this guide does mention and even recommends various commercial
         -   [Note about Plausible Deniability:]
         -   [Installation:]
         -   [Lid Closure Behavior:]
+        -   [Anti Evil Maid (AEM):]
         -   [Connect to a Public Wi-Fi:]
         -   [Updating Qubes OS:]
         -   [Updating Whonix from version 15 to version 16:]
