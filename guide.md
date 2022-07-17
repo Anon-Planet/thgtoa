@@ -9227,6 +9227,8 @@ Adversaries take many forms. To some, they are actors of a foreign government, w
 
 You must live by the simple rule that "loose lips sink ships" - but also that they are usually your lips which will do the sinking. OPSEC is often just applying common sense and being cautious about your activities including in the physical world:
 
+It is recommended that you learn about the common ways people mess up OPSEC <https://dan-kir.github.io/2022/05/26/OPSEC-notes.html> <sup>[[Archive.org]][[1381]]</sup>. Whatever you do, take OPSEC seriously, and [Don't Fuck It Up!](https://www.youtube.com/watch?v=J1q4Ir2J8P8)
+
 -   **Remember to use passphrases instead of passwords and use a different one for each service ([Appendix A2: Guidelines for passwords and passphrases]).**
 
 -   Make sure you are not keeping a copy of this guide anywhere unsafe after. The sole presence of this guide will most likely defeat all your plausible deniability possibilities.
@@ -15024,3 +15026,5 @@ You can find some introduction on these on these projects:
   [1378]: https://web.archive.org/web/https://www.qubes-os.org/doc/anti-evil-maid/
   [1379]: https://web.archive.org/web/https://blog.invisiblethings.org/2011/09/07/anti-evil-maid.html
   [1380]: https://web.archive.org/web/https://github.com/QubesOS/qubes-antievilmaid
+  [1381]: https://web.archive.org/web/20220717064253/https://dan-kir.github.io/2022/05/26/OPSEC-notes.html
+  [1382]: https://www.youtube.com/watch?v=J1q4Ir2J8P8
