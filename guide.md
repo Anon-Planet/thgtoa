@@ -9227,8 +9227,6 @@ Adversaries take many forms. To some, they are actors of a foreign government, w
 
 You must live by the simple rule that "loose lips sink ships" - but also that they are usually your lips which will do the sinking. OPSEC is often just applying common sense and being cautious about your activities including in the physical world:
 
-It is recommended that you learn about the common ways people mess up OPSEC <https://dan-kir.github.io/2022/05/26/OPSEC-notes.html> <sup>[[Archive.org]][[1381]]</sup>. Whatever you do, take OPSEC seriously, and [Don't Fuck It Up!](https://www.youtube.com/watch?v=J1q4Ir2J8P8)
-
 -   **Remember to use passphrases instead of passwords and use a different one for each service ([Appendix A2: Guidelines for passwords and passphrases]).**
 
 -   Make sure you are not keeping a copy of this guide anywhere unsafe after. The sole presence of this guide will most likely defeat all your plausible deniability possibilities.
@@ -9280,6 +9278,9 @@ It is recommended that you learn about the common ways people mess up OPSEC <htt
     -   2015, DEF CON 22 - Zoz - Don't Fuck It Up! <https://www.youtube.com/watch?v=J1q4Ir2J8P8> <sup>[[Invidious]][552]</sup>
 
     -   2020, Bad Opsec - How Tor Users Got Caught, <https://www.youtube.com/watch?v=GR_U0G-QGA0> <sup>[[Invidious]][553]</sup>
+
+
+It is recommended that you learn about the common ways people mess up OPSEC <https://dan-kir.github.io/2022/05/26/OPSEC-notes.html> <sup>[[Archive.org]][[1381]]</sup>. Whatever you do, take OPSEC seriously, and [Don't Fuck It Up!](https://www.youtube.com/watch?v=J1q4Ir2J8P8)
 
 **FINAL OPSEC DISCLAIMER: KEEP YOUR ANONYMOUS IDENTITIES COMPLETELY SANDBOXED FROM YOUR NORMAL ENVIRONMENT AND REAL IDENTITY. DO NOT SHARE ANYTHING BETWEEN THE ANONYMOUS ENVIRONMENTS AND THE REAL IDENTITY ENVIRONMENT. KEEP THEM COMPLETELY COMPARTMENTALIZED ON EVERY LEVEL. MOST OPSEC FAILURES ARE DUE TO USERS ACCIDENTALLY LEAKING INFORMATION RATHER THAN TECHNICAL FAILURES.**
 
