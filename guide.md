@@ -752,9 +752,10 @@ Recently, one of these attacks was attempted on the Tor Network with more inform
 
 Lastly, do remember that using Tor can already be considered suspicious activity[^76], and its use could be considered malicious by some[^77].
 
-This guide will later propose some mitigations to such attacks by changing your origin from the start (using public wi-fi's for instance). Remember that such attacks are usually carried by highly skilled, highly resourceful, and motivated adversaries and are out of scope from this guide.
+This guide will later propose some mitigations to such attacks by changing your origin from the start (using public wi-fi's for instance). Remember that such attacks are usually carried by highly skilled, highly resourceful, and motivated adversaries and are out of scope from this guide. It is also recommended that you learn about practical correlation attacks, as performed by intelligence agencies: <https://officercia.mirror.xyz/WeAilwJ9V4GIVUkYa7WwBwV2II9dYwpdPTp3fNsPFjo> <sup>[[Archive.org]][1385]</sup>
 
 **Disclaimer: it should also be noted that Tor is not designed to protect against a global adversary. For more information see <https://svn-archive.torproject.org/svn/projects/design-paper/tor-design.pdf> <sup>[[Archive.org]][74]</sup> and specifically, "Part 3. Design goals and assumptions.".**
+
 
 ### Some Devices can be tracked even when offline:
 
@@ -9308,6 +9309,9 @@ You must live by the simple rule that "loose lips sink ships" - but also that th
 
     -   2020, Bad Opsec, How Tor Users Got Caught, <https://www.youtube.com/watch?v=GR_U0G-QGA0> <sup>[[Invidious]][553]</sup>
 
+    - 2022, Master of OpSec Masters: A View Through the Prism of Time, <https://officercia.mirror.xyz/4x2-M4R2cSnID1wpsTO4CQNrMQ5JUFouR-rZ_N4xO-Q> <sup>[[Archive.org]][1383]</sup>
+    - 2022, How can you become a one-man-army OSINT specialist? <https://officercia.mirror.xyz/5KSkJOTgMtvgC36v1GqZ987N-_Oj_zwvGatOk0A47Ws> <sup>[[Archive.org]][1384]</sup>
+
 
 It is recommended that you learn about the common ways people mess up OPSEC <https://dan-kir.github.io/2022/05/26/OPSEC-notes.html> <sup>[[Archive.org]][[1381]]</sup>. Whatever you do, take OPSEC seriously, and [Don't Fuck It Up!](https://www.youtube.com/watch?v=J1q4Ir2J8P8)
 
@@ -15093,3 +15097,6 @@ See the [Some last OPSEC thoughts][Some last OPSEC thoughts:] section for some t
   [1380]: https://web.archive.org/web/https://github.com/QubesOS/qubes-antievilmaid
   [1381]: https://web.archive.org/web/20220717064253/https://dan-kir.github.io/2022/05/26/OPSEC-notes.html
   [1382]: https://www.youtube.com/watch?v=J1q4Ir2J8P8
+  [1383]: https://web.archive.org/web/20220714213939/https://officercia.mirror.xyz/4x2-M4R2cSnID1wpsTO4CQNrMQ5JUFouR-rZ_N4xO-Q
+  [1384]: https://web.archive.org/web/20220718231735/https://officercia.mirror.xyz/5KSkJOTgMtvgC36v1GqZ987N-_Oj_zwvGatOk0A47Ws
+  [1385]: https://web.archive.org/web/20220516000616/https://officercia.mirror.xyz/WeAilwJ9V4GIVUkYa7WwBwV2II9dYwpdPTp3fNsPFjo
