@@ -11814,23 +11814,25 @@ But what if the service you want does not accept Monero but does accept a more m
 
 Despite this, it is possible to safely anonymize Bitcoin through the use of cryptocurrencies with a focus on untraceability such as Monero (XMR) with a few more steps and at a relatively small cost. So, you might be wondering how? Well, it is actually pretty simple:
 
-1.  Purchase Monero at:
+Purchase Monero at:
 
-    a.  a KYC exchange (such as Kraken)
+  -   a KYC exchange (such as Kraken)
 
-    b.  a non-KYC exchange (such as <https://bisq.network/>)
+  -   a non-KYC exchange (such as <https://bisq.network/>)
 
-    c.  from someone on LocalMonero using cash (at your own risk)
+  -   from someone on LocalMonero using cash (at your own risk)
 
-2.  Create a Monero wallet on one of your anonymized VMs (for example, on the Whonix Workstation which includes a Monero GUI wallet natively or using the Monero GUI wallet from <https://www.getmonero.org/downloads/> on other OSes)
+Create a Monero wallet on one of your anonymized VMs (for example, on the Whonix Workstation which includes a Monero GUI wallet natively or using the Monero GUI wallet from <https://www.getmonero.org/downloads/> on other OSes)
 
-3.  Transfer your Monero from the Exchange you bought it from to the wallet on your VM.
+Transfer your Monero from the Exchange you bought it from to the wallet on your VM.
 
-4.  On the same VM (for instance again the Whonix Workstation), create a Bitcoin Wallet (again this is provided natively within the Whonix Workstation)
+On the same VM (for instance again the Whonix Workstation), create a Bitcoin Wallet (again this is provided natively within the Whonix Workstation)
 
-5.  From an anonymized browser (such as Tor Browser), use a non-KYC (Know Your Customer) service swapping service (see [Appendix A8: Crypto Swapping Services without Registration and KYC]) and convert your Monero to BTC and transfer those to the BTC Wallet you have on your anonymized VM
+From an anonymized browser (such as Tor Browser), use a non-KYC (Know Your Customer) service swapping service (see [Appendix A8: Crypto Swapping Services without Registration and KYC]) and convert your Monero to BTC and transfer those to the BTC Wallet you have on your anonymized VM
 
-You should now have an anonymized Bitcoin wallet that can be used for purchasing services that do not accept Monero. **You should never access this wallet from a non-anonymized environment and always use well-thought OPSEC with your BTC transactions. Remember those can be traced back to you.**
+You should now have an anonymized Bitcoin wallet that can be used for purchasing services that do not accept Monero. 
+
+**You should never access this wallet from a non-anonymized environment. Always use well-thought OPSEC with your BTC transactions. Remember those can be traced back to you.**
 
 The origin of those BTC cannot be traced back to your real identity due to the use of Monero **unless Monero is broken**. Please do read [Appendix B2: Monero Disclaimer].
 
@@ -11840,43 +11842,43 @@ The origin of those BTC cannot be traced back to your real identity due to the u
 
 For example, here are two possibilities:
 
-1.  **Buying Monero first option:**
+**Buying Monero first option:**
 
-    a.  Buy Monero (XMR) at either at:
+1.  Buy Monero (XMR) at:
 
-        i.  a KYC exchange (such as Kraken)
+    -   a KYC exchange (such as Kraken)
 
-        ii. a non-KYC exchange (such as <https://bisq.network/>)
+    -   a non-KYC exchange (such as <https://bisq.network/>)
 
-        iii. from someone on LocalMonero using cash (at your own risk)
+    -   LocalMonero using cash (at your own risk)
 
-    b.  Transfer your Monero to your Monero wallet in a secure environment (such as the Monero GUI wallet pre-installed on the Whonix workstation or using the Monero GUI wallet from <https://www.getmonero.org/downloads/> on other OSes).
+2.  Transfer your Monero to your Monero wallet in a secure environment (such as the Monero GUI wallet pre-installed on the Whonix workstation OR using the Monero GUI wallet from <https://www.getmonero.org/downloads/> on other OSes).
 
-    c.  Use a swapping service (see [Appendix A8: Crypto Swapping Services without Registration and KYC]) to exchange your Monero to a Zcash wallet you control in your secure environment (see [Appendix A9: Installing a Zcash wallet][Appendix A9: Installing a Zcash wallet:]).
+3.  Use a swapping service (see [Appendix A8: Crypto Swapping Services without Registration and KYC]) to exchange your Monero to a Zcash wallet you control in your secure environment (see [Appendix A9: Installing a Zcash wallet][Appendix A9: Installing a Zcash wallet:]).
 
-    d.  Transfer your Zcash from one VM Zcash wallet to another VM Zcash wallet you control while making sure you are using shielded addresses (some exchanges allow this directly).
+4.  Transfer your Zcash from one VM Zcash wallet to another VM Zcash wallet you control while making sure you are using shielded addresses (some exchanges allow this directly).
 
-        i.  **Do make sure the wallets are different and change your Tor identity before opening the recipient wallet.**
+**Make sure the wallets are different and change your Tor identity before opening the recipient wallet.**
 
-    e.  Use a swapping service again to exchange your Zcash to Monero/BTC/other (for BTC, use for example the Electrum Wallet on the Whonix Workstation).
+5.  Use a swapping service again to exchange your Zcash to Monero/BTC/other (for BTC, use for example the Electrum Wallet on the Whonix Workstation).
 
-    f.  Use your Monero/BTC/other anonymously.
+6.  Use your Monero/BTC/other anonymously.
 
-2.  **Buying Zcash first option:**
+**Buying Zcash first option:**
 
-    a.  Buy Zcash (see <https://z.cash/exchanges/> <sup>[[Archive.org]][692]</sup>)
+1.  Buy Zcash (see <https://z.cash/exchanges/> <sup>[[Archive.org]][692]</sup>)
 
-    b.  Transfer your Zcash from the to a VM Zcash Wallet (see [Appendix A9: Installing a Zcash wallet][Appendix A9: Installing a Zcash wallet:]).
+2.  Transfer your Zcash from the to a VM Zcash Wallet (see [Appendix A9: Installing a Zcash wallet][Appendix A9: Installing a Zcash wallet:]).
 
-    c.  Transfer your Zcash from your VM Zcash Wallet to another VM Zcash Wallet using shielded addresses.
+3.  Transfer your Zcash from your VM Zcash Wallet to another VM Zcash Wallet using shielded addresses.
 
-        i.  **Do make sure the wallets are different and change your Tor identity before opening the recipient wallet.**
+**Make sure the wallets are different and change your Tor identity before opening the recipient wallet.**
 
-    d.  Use a swapping service (see [Appendix A8: Crypto Swapping Services without Registration and KYC]) to exchange your Zcash to Monero at your VM Monero Wallet (such as the Monero GUI wallet pre-installed on the Whonix workstation or using the Monero GUI wallet from <https://www.getmonero.org/downloads/> on other OSes).
+4.  Use a swapping service (see [Appendix A8: Crypto Swapping Services without Registration and KYC]) to exchange your Zcash to Monero at your VM Monero Wallet (such as the Monero GUI wallet pre-installed on the Whonix workstation or using the Monero GUI wallet from <https://www.getmonero.org/downloads/> on other OSes).
 
-    e.  Now either use your Monero directly to buy from merchants OR use a swapping service to swap your Monero to another cryptocurrency such as BTC/ETH/Other (for BTC, use for example the Electrum Wallet on the Whonix Workstation).
+5.  Now either use your Monero directly to buy from merchants OR use a swapping service to swap your Monero to another cryptocurrency such as BTC/ETH/Other (for BTC, use for example the Electrum Wallet on the Whonix Workstation).
 
-    f.  Use your cryptocurrency anonymously.
+6.  Use your cryptocurrency anonymously.
 
 These steps should upgrade from "reasonably anonymous" to "extra-paranoid anonymous". Even if Monero is broken in the future. Zcash will have to be broken as well. Quite unlikely.
 
@@ -11884,11 +11886,11 @@ These steps should upgrade from "reasonably anonymous" to "extra-paranoid anonym
 
 You might want to consider the use of Samourai for Android (<https://samouraiwallet.com>). This wallet uses an implementation of CoinJoin[^527] called Whirlpool[^538].
 
-    <!-- Unverified recommendation: Sparrow for desktop (https://sparrowwallet.com). WARNING: Sparrow has not been thoroughly reviewed by this guide's maintainers and cannot at this point be considered a serious recommendation -->
-
 Mixing BTC in this way should prevent any chain analysis on future transactions. This will not hide any past transactions or the fact you purchased BTC from a KYC exchange. Both wallets support Tor and running your own Bitcoin full node.
 
-Wasabi wallet is not recommended due to censorship of transactions[^536] and vulnerabilities in its CoinJoin implementation[^537].
+-   **Not recommended:**
+    -   **Wasabi wallet due to censorship of transactions[^536] and vulnerabilities in its CoinJoin implementation[^537].**
+    -   **Sparrow for desktop (https://sparrowwallet.com) has not been thoroughly reviewed. It cannot be considered a serious recommendation.**
 
 ## When converting from BTC to Monero:
 
