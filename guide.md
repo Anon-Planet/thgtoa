@@ -621,7 +621,7 @@ As for your normal daily use (non-sensitive), remember that only Firefox-based b
 
 But the story does not stop there right. Now because after all this, even if you encrypt your DNS and use all possible mitigations. Simple IP requests to any server will probably allow an adversary to still detect which site you are visiting. And this is simply because the majority of websites have unique IPs tied to them as explained here: <https://blog.apnic.net/2019/08/23/what-can-you-learn-from-an-ip-address/> <sup>[[Archive.org]][57]</sup>. This means that an adversary can create a dataset of known websites for instance including their IPs and then match this dataset against the IP you ask for. In most cases, this will result in a correct guess of the website you are visiting. This means that despite OCSP stapling, despite ECH/eSNI, despite using Encrypted DNS ... An adversary can still guess the website you are visiting anyway.
 
-Therefore, to mitigate all these issues (as much as possible and as best as we can), this guide will later recommend two solutions: Using Tor and a virtualized (See [Appendix W: Virtualization:][Appendix V1: Hardening your Browsers:]) multi-layered solution of VPN over Tor solution (DNS over VPN over Tor or DNS over TOR). Other options will also be explained (Tor over VPN, VPN only, No Tor/VPN) but are less recommended.
+Therefore, to mitigate all these issues (as much as possible and as best as we can), this guide will later recommend two solutions: Using Tor and a virtualized (See [Appendix W: Virtualization][Appendix V1: Hardening your Browsers:]) multi-layered solution of VPN over Tor solution (DNS over VPN over Tor or DNS over TOR). Other options will also be explained (Tor over VPN, VPN only, No Tor/VPN) but are less recommended.
 
 ### Your RFID enabled devices:
 
@@ -1185,7 +1185,7 @@ See these good videos for more explanations on the matter:
 
 -   Ange Albertini: Funky File Formats: <https://www.youtube.com/watch?v=hdCs6bPM4is> <sup>[[Invidious]][128]</sup>
 
-You should always use extreme caution. To mitigate these attacks, this guide will later recommend the use of virtualization (See [Appendix W: Virtualization:][Appendix V1: Hardening your Browsers:]) to mitigate leaking any information even in case of opening such a malicious file.
+You should always use extreme caution. To mitigate these attacks, this guide will later recommend the use of virtualization (See [Appendix W: Virtualization][Appendix V1: Hardening your Browsers:]) to mitigate leaking any information even in case of opening such a malicious file.
 
 If you want to learn how to try detecting such malware, see [Appendix T: Checking files for malware:]
 
@@ -1207,7 +1207,7 @@ Here are some steps to mitigate this type of attack:
 
 -   You should not use such apps directly from a hardware system but instead, use a Virtual Machine for compartmentalization.
 
-To reflect these recommendations, this guide will therefore later guide you in the use of Virtualization (See [Appendix W: Virtualization:][Appendix V1: Hardening your Browsers:]) so that even if your Browser/Apps get compromised by a skilled adversary, that adversary will find himself stuck in a sandbox[^212] without being able to access identifying information or compromise your system.
+To reflect these recommendations, this guide will therefore later guide you in the use of Virtualization (See [Appendix W: Virtualization][Appendix V1: Hardening your Browsers:]) so that even if your Browser/Apps get compromised by a skilled adversary, that adversary will find himself stuck in a sandbox[^212] without being able to access identifying information or compromise your system.
 
 ### Malicious USB devices:
 
@@ -1383,7 +1383,7 @@ An adversary could then use such fingerprints to track you across multiple servi
 
 It should also be noted that while some browsers and extensions will offer some fingerprint resistance, this resistance in itself can also be used to fingerprint you as explained here <https://palant.info/2020/12/10/how-anti-fingerprinting-extensions-tend-to-make-fingerprinting-easier/> <sup>[[Archive.org]][160]</sup>
 
-This guide will mitigate these issues by mitigating, obfuscating, and randomizing many of those fingerprinting identifiers by using Virtualization (See [Appendix W: Virtualization:][Appendix V1: Hardening your Browsers:]), using specific recommendations (See [Appendix A5: Additional browser precautions with JavaScript enabled:] and [Appendix V1: Hardening your Browsers][Appendix V1: Hardening your Browsers:]) and using by fingerprinting resistant Browsers (Brave and Tor Browser).
+This guide will mitigate these issues by mitigating, obfuscating, and randomizing many of those fingerprinting identifiers by using Virtualization (See [Appendix W: Virtualization][Appendix V1: Hardening your Browsers:]), using specific recommendations (See [Appendix A5: Additional browser precautions with JavaScript enabled:] and [Appendix V1: Hardening your Browsers][Appendix V1: Hardening your Browsers:]) and using by fingerprinting resistant Browsers (Brave and Tor Browser).
 
 ## Local Data Leaks and Forensics:
 
@@ -1411,7 +1411,7 @@ I also highly recommend that you read some documents from a forensics examiner p
 
 And finally, here is this very instructive detailed paper on the current state of IOS/Android security from the John Hopkins University: https://securephones.io/main.html[^254].
 
-When it comes to your laptop, the forensics techniques are many and widespread. Many of those issues can be mitigated by using full disk encryption, virtualization (See [Appendix W: Virtualization:][Appendix V1: Hardening your Browsers:]), and compartmentalization. This guide will later detail such threats and techniques to mitigate them.
+When it comes to your laptop, the forensics techniques are many and widespread. Many of those issues can be mitigated by using full disk encryption, virtualization (See [Appendix W: Virtualization][Appendix V1: Hardening your Browsers:]), and compartmentalization. This guide will later detail such threats and techniques to mitigate them.
 
 ## Bad Cryptography:
 
@@ -3447,7 +3447,7 @@ Take some time to read again the "Possible Explanations for Existence of Two Ver
 
 ### Virtualbox on your Host OS:
 
-Remember [Appendix W: Virtualization:][Appendix V1: Hardening your Browsers:].
+Remember [Appendix W: Virtualization][Appendix V1: Hardening your Browsers:].
 
 This step and the following steps should be done from within the Host OS. This can either be your Host OS with simple encryption (Windows/Linux/macOS) or your Hidden OS with plausible deniability (Windows only).
 
@@ -3766,7 +3766,7 @@ Remember that in this case, we recommend having two VPN accounts. Both paid with
 
 If you intend to only use Tor over VPN, you only need one VPN account.
 
-See [Appendix R: Installing a VPN on your VM or Host OS:][Appendix R: Installing a VPN on your VM or Host OS:] for instructions.
+See [Appendix R: Installing a VPN on your VM or Host OS][Appendix R: Installing a VPN on your VM or Host OS:] for instructions.
 
 ### Whonix Virtual Machines:
 
@@ -4160,7 +4160,7 @@ Test that KeePassXC is working before going to the next step.
 
 **If you cannot use a VPN at all in a hostile environment, skip this step.**
 
-Otherwise, see [Appendix R: Installing a VPN on your VM or Host OS:][Appendix R: Installing a VPN on your VM or Host OS:] to install a VPN client on your client VM.
+Otherwise, see [Appendix R: Installing a VPN on your VM or Host OS][Appendix R: Installing a VPN on your VM or Host OS:] to install a VPN client on your client VM.
 
 This should conclude the Route and you should now be ready.
 
