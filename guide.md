@@ -11814,23 +11814,23 @@ But what if the service you want does not accept Monero but does accept a more m
 
 Despite this, it is possible to safely anonymize Bitcoin through the use of cryptocurrencies with a focus on untraceability such as Monero (XMR) with a few more steps and at a relatively small cost. So, you might be wondering how? Well, it is actually pretty simple:
 
-Purchase Monero at:
+1. Purchase Monero at:
 
-  -   a KYC exchange (such as Kraken)
+    -   a KYC exchange (such as Kraken)
 
-  -   a non-KYC exchange (such as <https://bisq.network/>)
+    -   a non-KYC exchange (such as <https://bisq.network/>)
 
-  -   from someone on LocalMonero using cash (at your own risk)
+    -   from someone on LocalMonero using cash (at your own risk)
 
-Create a Monero wallet on one of your anonymized VMs (for example, on the Whonix Workstation which includes a Monero GUI wallet natively or using the Monero GUI wallet from <https://www.getmonero.org/downloads/> on other OSes)
+2. Create a Monero wallet on one of your anonymized VMs (for example, on the Whonix Workstation which includes a Monero GUI wallet natively or using the Monero GUI wallet from <https://www.getmonero.org/downloads/> on other OSes)
 
-Transfer your Monero from the Exchange you bought it from to the wallet on your VM.
+3. Transfer your Monero from the Exchange you bought it from to the wallet on your VM.
 
-On the same VM (for instance again the Whonix Workstation), create a Bitcoin Wallet (again this is provided natively within the Whonix Workstation)
+4. On the same VM (for instance again the Whonix Workstation), create a Bitcoin Wallet (again this is provided natively within the Whonix Workstation)
 
-From an anonymized browser (such as Tor Browser), use a non-KYC (Know Your Customer) service swapping service (see [Appendix A8: Crypto Swapping Services without Registration and KYC]) and convert your Monero to BTC and transfer those to the BTC Wallet you have on your anonymized VM
+5. From an anonymized browser (such as Tor Browser), use a non-KYC (Know Your Customer) service swapping service (see [Appendix A8: Crypto Swapping Services without Registration and KYC]) and convert your Monero to BTC and transfer those to the BTC Wallet you have on your anonymized VM
 
-You should now have an anonymized Bitcoin wallet that can be used for purchasing services that do not accept Monero. 
+6. You should now have an anonymized Bitcoin wallet that can be used for purchasing services that do not accept Monero. 
 
 **You should never access this wallet from a non-anonymized environment. Always use well-thought OPSEC with your BTC transactions. Remember those can be traced back to you.**
 
