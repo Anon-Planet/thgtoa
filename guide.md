@@ -2003,9 +2003,9 @@ Here are several ways to set it up for all main OSes.
 
 Please see [Appendix Y: Installing and using desktop Tor Browser:].
 
-#### Mobile Devices:
+### Mobile Devices:
 
-##### Android:
+#### Android:
 
 -   Head over to:
 
@@ -2073,7 +2073,7 @@ However, the Safer level should be used with some extra precautions while using 
 
 Now, you are really done, and you can now surf the web anonymously from your Android device.
 
-##### iOS:
+#### iOS:
 
 **Disclaimer: Onion Browser, following a 2018 release on iOS, has had IP leaks via WebRTC. It is still the only officially endorsed browser for the Tor network for iOS. Users should exercise caution when using the browser and check for any DNS leaks.**
 
