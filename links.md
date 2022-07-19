@@ -23,6 +23,7 @@ All the links below are listed in alphabetical order.
 
 #### Blogs and personal websites:
 
+- CIA Officer's Blog: <https://officercia.mirror.xyz/>
 - Continuing Ed: <https://edwardsnowden.substack.com/>
 - Madaidan's Insecurities: <https://madaidans-insecurities.github.io/>
 
