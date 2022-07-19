@@ -142,8 +142,7 @@ Finally note that this guide does mention and even recommends various commercial
         -   [Get a USB key:]
         -   [Find some safe places with decent public Wi-Fi:]
     -   [The Tor Browser route:]
-        -   [Android:]
-        -   [iOS:]
+        -   [Mobile Devices:]
         -   [Important Warning:]
     -   [The Tails route:]
         -   [Tor Browser settings on Tails:]
@@ -2004,7 +2003,9 @@ Here are several ways to set it up for all main OSes.
 
 Please see [Appendix Y: Installing and using desktop Tor Browser:].
 
-### Android:
+#### Mobile Devices:
+
+##### Android:
 
 -   Head over to:
 
@@ -2072,7 +2073,7 @@ However, the Safer level should be used with some extra precautions while using 
 
 Now, you are really done, and you can now surf the web anonymously from your Android device.
 
-### iOS:
+##### iOS:
 
 **Disclaimer: Onion Browser, following a 2018 release on iOS, has had IP leaks via WebRTC. It is still the only officially endorsed browser for the Tor network for iOS. Users should exercise caution when using the browser and check for any DNS leaks.**
 
@@ -2240,7 +2241,7 @@ We would recommend the "Safer" level for most cases. The Safest level should be 
 
 If you are extra paranoid, use the "Safest" level by default and consider downgrading to Safer is the website is unusable because of Javascript blocking.
 
-Lastly, while using Tor Browser on Tails on the "Safer" level, please consider [Appendix A5: Additional browser precautions with JavaScript enabled:]
+Lastly, while using Tor Browser on Tails on the "Safer" level, please consider [Appendix A5: Additional browser precautions with JavaScript enabled][Appendix A5: Additional browser precautions with JavaScript enabled:].
 
 When you are done and have a working Tails on your laptop, go to the [Creating your anonymous online identities][Creating your anonymous online identities:] step much further in this guide or if you want persistence and plausible deniability, continue with the next section.
 
@@ -2248,7 +2249,7 @@ When you are done and have a working Tails on your laptop, go to the [Creating y
 
 Consider checking the <https://github.com/aforensics/HiddenVM> <sup>[[Archive.org]][245]</sup> project for Tails.
 
-This project is a clever idea of a one-click self-contained VM solution that you could store on an encrypted disk using plausible deniability[^311] (see [The Whonix route:] first chapters and also for some explanations about Plausible deniability, as well as the [How to securely delete specific files/folders/data on your HDD/SSD and Thumb drives:] section at the end of this guide for more understanding).
+This project is a clever idea of a one-click self-contained VM solution that you could store on an encrypted disk using plausible deniability[^311] (see [The Whonix route:] first chapters and also for some explanations about Plausible deniability, as well as the [How to securely delete specific files/folders/data on your HDD/SSD and Thumb drives][How to securely delete specific files/folders/data on your HDD/SSD and Thumb drives:] section at the end of this guide for more understanding).
 
 This would allow the creation of a hybrid system mixing Tails with the Virtualization options of the Whonix route in this guide.
 
@@ -10972,7 +10973,7 @@ If you are to resort to this, you should never do so from a monitored/known netw
 
 **Do not use a live system on a Software supervised/monitored device on a known network.**
 
-**Refer to the Tails route to achieve this. See [The Tails route][The Tor Browser route:] and [Appendix P: Accessing the internet as safely as possible when Tor and VPNs are not an option:] sections.**
+**Refer to the Tails route to achieve this. See [The Tails route][The Tor Browser route:] and [Appendix P: Accessing the internet as safely as possible when Tor and VPNs are not an option][Appendix P: Accessing the internet as safely as possible when Tor and VPNs are not an option:] sections.**
 
 # Appendix V: What browser to use in your Guest VM/Disposable VM:
 
@@ -13475,6 +13476,7 @@ See the [Some last OPSEC thoughts][Some last OPSEC thoughts:] section for some t
   [Get a USB key:]: #get-a-usb-key
   [Find some safe places with decent public Wi-Fi:]: #find-some-safe-places-with-decent-public-wi-fi
   [The Tor Browser route:]: #the-tor-browser-route
+  [Mobile Devices:]: #mobile-devices
   [Important Warning:]: #important-warning
   [The Tails route:]: #the-tails-route
   [Tor Browser settings on Tails:]: #tor-browser-settings-on-tails
