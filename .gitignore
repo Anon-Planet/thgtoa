@@ -1,5 +1,10 @@
 *.gem
 *.rbc
+*.md
+*.md.asc
+*.md.minisig
+*.sh
+Makefile
 /.config
 /coverage/
 /InstalledFiles
