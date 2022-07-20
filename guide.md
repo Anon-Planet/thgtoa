@@ -12172,7 +12172,7 @@ Find it online at:
 
 -   Original: <https://anonymousplanet-ng.org>
     
--   Tor Onion Mirror: <thgtoallkcxrdv37u6knsc3pumk6cq6lqmcqlw3j5vkmyahkxive4jyd.onion>    
+-   Tor Onion Mirror: <http://thgtoallkcxrdv37u6knsc3pumk6cq6lqmcqlw3j5vkmyahkxive4jyd.onion>    
 
 -   Archive.org: <https://web.archive.org/web/https://anonymousplanet-ng.org>
 
