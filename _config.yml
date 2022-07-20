@@ -26,6 +26,7 @@ github:
   links_url: links.html
   twitter_url: https://twitter.com/AnonyPla
   mastodon_url: https://mastodon.social/@anonymousplanet
+  tor_mirror_url: http://thgtoallkcxrdv37u6knsc3pumk6cq6lqmcqlw3j5vkmyahkxive4jyd.onion
 defaults:
   -
     scope:
@@ -46,9 +47,9 @@ exclude:
     - Gemfile.lock
     - .github
     - .gitignore
-include:
-    - LICENSE.md
-    - about.md
-    - legacy.md
-    - briar.md
-    - .well-known
+    - "*.md"
+    - "*.md.asc"
+    - "*.md.asc.minisig"
+    - Makefile
+    - KEY_ROTATION.md.minisig
+    - "*.sh"
