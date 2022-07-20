@@ -18,7 +18,7 @@ This guide is an open-source non-profit initiative, [licensed](LICENSE.html) und
 - Raw [Markdown](https://raw.githubusercontent.com/NobodySpecial256/thgtoa/master/guide.md) (references do not work when viewing this way).
 
 Mirrors:
-- Tor Onion Mirror: <thgtoallkcxrdv37u6knsc3pumk6cq6lqmcqlw3j5vkmyahkxive4jyd.onion>
+- Tor Onion Mirror: <https://thgtoallkcxrdv37u6knsc3pumk6cq6lqmcqlw3j5vkmyahkxive4jyd.onion>
 
 The guide and all the files are also readily available on Archive.org and Archive.today:
 
