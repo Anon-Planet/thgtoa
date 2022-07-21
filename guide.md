@@ -349,7 +349,7 @@ Finally note that this guide does mention and even recommends various commercial
 -   [Appendix Z: Online anonymous payments using cryptocurrencies]
     -   [Reasonably anonymous option:]
     -   [Extra-Paranoid anonymous option:]
-    -   [When using BTC: bonus step for improving your privacy using obfuscation:]
+    -   [Warning about special tumbling, mixing, coinjoining privacy wallets and services:]
     -   [When converting from BTC to Monero:]
 -   [Appendix A1: Recommended VPS hosting providers]
 -   [Appendix A2: Guidelines for passwords and passphrases]
@@ -11894,16 +11894,17 @@ For example, here are two possibilities:
 
 These steps should upgrade from "reasonably anonymous" to "extra-paranoid anonymous". Even if Monero is broken in the future. Zcash will have to be broken as well. Quite unlikely.
 
-## When using BTC: bonus step for improving your privacy using obfuscation:
+## Warning about special tumbling, mixing, coinjoining privacy wallets and services: <sup>[Wikiless](https://wikiless.org/wiki/Cryptocurrency_tumbler) [Archive.org](https://web.archive.org/web/https://wikiless.org/wiki/Cryptocurrency_tumbler)</sup>
 
-You might want to consider the use of Samourai for Android (<https://samouraiwallet.com>). This wallet uses an implementation of CoinJoin[^527] called Whirlpool[^538].
+We are not recommending any as none of those are truly providing anonymity but obfuscation. As of this writing, and as we are aware of, anonymity can be only achieved with Zcash "Shielded Addresses" and Monero. BTC, ETH and many others do not provide anonymity and those wallets and mixing services can be traced. Here are some references about this issue:
 
-    <!-- Unverified recommendation: Sparrow for desktop (https://sparrowwallet.com). WARNING: Sparrow has not been thoroughly reviewed by this guide's maintainers and cannot at this point be considered a serious recommendation -->
-
-Mixing BTC in this way should prevent any chain analysis on future transactions. This will not hide any past transactions or the fact you purchased BTC from a KYC exchange. Both wallets support Tor and running your own Bitcoin full node.
-
-Wasabi wallet is not recommended due to censorship of transactions[^536] and vulnerabilities in its CoinJoin implementation[^537].
-
+-  [Mixing detection on Bitcoin transactions using
+    statistical patterns.](https://arxiv.org/pdf/2204.02019.pdf) <sup>[Archive.org](https://web.archive.org/web/https://arxiv.org/pdf/2204.02019.pdf)</sup>
+-  [An Analysis Of Bitcoin Laundry Services](https://www.researchgate.net/profile/Julio-Hernandez-Castro/publication/319944399_An_Analysis_of_Bitcoin_Laundry_Services/links/5a045d410f7e9beb177883af/An-Analysis-of-Bitcoin-Laundry-Services.pdf?origin=publication_detail) <sup>[Archive.org](https://web.archive.org/web/https://www.researchgate.net/profile/Julio-Hernandez-Castro/publication/319944399_An_Analysis_of_Bitcoin_Laundry_Services/links/5a045d410f7e9beb177883af/An-Analysis-of-Bitcoin-Laundry-Services.pdf?origin=publication_detail)</sup>
+-  [Mixing Strategies in Cryptocurrencies and An Alternative Implementation](https://www.researchgate.net/publication/344485520_Mixing_Strategies_in_Cryptocurrencies_and_An_Alternative_Implementation) <sup>[Archive.org](https://web.archive.org/web/https://www.researchgate.net/publication/344485520_Mixing_Strategies_in_Cryptocurrencies_and_An_Alternative_Implementation)</sup>
+    
+Instead we recommend to use Monero (preferred) and additionaly Zcash to achieve anonymity.
+    
 ## When converting from BTC to Monero:
 
 **Now, as part of any process above, if you want to convert BTC back to Monero**, we recommend not using a swapping service but instead recommend using the new Monero Atomic Swap Tool: <https://unstoppableswap.net/>. This will prevent unnecessary fees and intermediates when using a commercial swapping service. The website is self-explanatory with detailed instructions for all OSes.
@@ -13426,8 +13427,6 @@ See the [Some last OPSEC thoughts][Some last OPSEC thoughts:] section for some t
 
 [^526]: Vice, The NSA and CIA Use Ad Blockers Because Online Advertising Is So Dangerous <https://www.vice.com/en/article/93ypke/the-nsa-and-cia-use-ad-blockers-because-online-advertising-is-so-dangerous> <sup>[[Archive.org]][1353]</sup>
 
-[^527]: A Comprehensive Bitcoin CoinJoin Guide <https://bitcoinmagazine.com/technical/a-comprehensive-bitcoin-coinjoin-guide> <sup>[[Archive.org]][1354]</sup>
-
 [^528]: NIST, NIST Has Spoken - Death to Complexity, Long Live the Passphrase! <https://www.sans.org/blog/nist-has-spoken-death-to-complexity-long-live-the-passphrase/> <sup>[[Archive.org]][1355]</sup>
 
 [^529]: ZDnet, FBI recommends passphrases over password complexity <https://www.zdnet.com/article/fbi-recommends-passphrases-over-password-complexity/> <sup>[[Archive.org]][1356]</sup>
@@ -13443,12 +13442,6 @@ See the [Some last OPSEC thoughts][Some last OPSEC thoughts:] section for some t
 [^534]: Wikipedia, Passphrase <https://en.wikipedia.org/wiki/Passphrase#Passphrase_selection> <sup>[[Wikiless]][1361]</sup> <sup>[[Archive.org]][1362]</sup>
 
 [^535]: Monero Research Lab, Evaluating cryptocurrency security and privacy in a post-quantum world <https://github.com/insight-decentralized-consensus-lab/post-quantum-monero/blob/master/writeups/technical_note.pdf> <sup>[[Archive.org]][1363]</sup>
-
-[^536]: Wasabi Wallet zkSNACKs Blacklisting <https://blog.wasabiwallet.io/zksnacks-blacklisting-update> <sup>[[Archive.org]][1368]</sup>
-
-[^537]: An Analysis and Disclosure Regarding the Deterministic Nature of the Wasabi Wallet CoinJoin Algorithm <https://research.oxt.me/alerts/2020/08/21/Wasabi-Wallet> <sup>[[Archive.org]][1369]</sup>
-
-[^538]: Samourai Whirlpool <https://docs.samourai.io/whirlpool/start><sup>[[Archive.org]][1370]</sup>
 
   [Contents:]: #contents
   [Pre-requisites and limitations:]: #pre-requisites-and-limitations
@@ -13712,7 +13705,7 @@ See the [Some last OPSEC thoughts][Some last OPSEC thoughts:] section for some t
   [Appendix Z: Online anonymous payments using cryptocurrencies]: #appendix-z-online-anonymous-payments-using-cryptocurrencies
   [Reasonably anonymous option:]: #reasonably-anonymous-option
   [Extra-Paranoid anonymous option:]: #extra-paranoid-anonymous-option
-  [When using BTC: bonus step for improving your privacy using obfuscation:]: #when-using-btc-bonus-step-for-improving-your-privacy-using-obfuscation
+  [Warning about special tumbling, mixing, coinjoining privacy wallets and services:]: #warning-about-special-tumbling-mixing-coinjoining-privacy-wallets-and-services
   [When converting from BTC to Monero:]: #when-converting-from-btc-to-monero
   [Appendix A1: Recommended VPS hosting providers]: #appendix-a1-recommended-vps-hosting-providers
   [Appendix A2: Guidelines for passwords and passphrases]: #appendix-a2-guidelines-for-passwords-and-passphrases
@@ -15097,9 +15090,6 @@ See the [Some last OPSEC thoughts][Some last OPSEC thoughts:] section for some t
   [1365]: https://web.archive.org/web/https://github.com/psal/anonymouth
   [1366]: https://web.archive.org/web/https://psal.cs.drexel.edu/index.php/Main_Page
   [1367]: https://web.archive.org/web/20220511015546/https://www.qubes-os.org/security/verifying-signatures/
-  [1368]: https://web.archive.org/web/20220424143857/https://blog.wasabiwallet.io/zksnacks-blacklisting-update/
-  [1369]: https://web.archive.org/web/20220327075818/https://research.oxt.me/alerts/2020/08/21/Wasabi-Wallet
-  [1370]: https://web.archive.org/web/20220510172742/https://docs.samourai.io/whirlpool/start
   [1371]: https://web.archive.org/web/https://positive.security/blog/video-depixelation
   [1372]: https://web.archive.org/web/https://www.qubes-os.org/doc/upgrade/4.1/
   [1373]: https://web.archive.org/web/https://safing.io/portmaster/
