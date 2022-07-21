@@ -1406,8 +1406,8 @@ There was an attack published that can deanonymize users if they have a known al
 
 The attack, published at <https://leakuidatorplusteam.github.io/> <sup>[[Archive.org]][1386]</sup>, can be mitigated using a browser extension:
 
-- https://chrome.google.com/webstore/detail/leakuidator%2B/hhfpajcjkikoocmmhcimllpinjnbedll (Chrome, Edge, and other Chrome-based browsers)
-- https://addons.mozilla.org/en-US/firefox/addon/leakuidatorplus/ (Firefox and Firefox-based browsers)
+- <https://chrome.google.com/webstore/detail/leakuidator%2B/hhfpajcjkikoocmmhcimllpinjnbedll> (Chrome, Edge, and other Chrome-based browsers)
+- <https://addons.mozilla.org/en-US/firefox/addon/leakuidatorplus/> (Firefox and Firefox-based browsers)
 
 It's generally not recommended to install extensions into Tor Browser, because the fact that you have an extension installed can be an extra data point for browser fingerprinting. As such, this extension is only a temporary solution until the fix can be implemented by the browsers' own developers.
 
