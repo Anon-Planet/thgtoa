@@ -126,6 +126,7 @@ Finally note that this guide does mention and even recommends various commercial
     -   [Your Cryptocurrencies transactions:]
     -   [Your Cloud backups/sync services:]
     -   [Your Browser and Device Fingerprints:]
+        -   [Microarchitectural Side-channel Deanonymization Attacks:]
     -   [Local Data Leaks and Forensics:]
     -   [Bad Cryptography:]
     -   [No logging but logging anyway policies:]
@@ -1398,6 +1399,19 @@ An adversary could then use such fingerprints to track you across multiple servi
 It should also be noted that while some browsers and extensions will offer some fingerprint resistance, this resistance in itself can also be used to fingerprint you as explained here <https://palant.info/2020/12/10/how-anti-fingerprinting-extensions-tend-to-make-fingerprinting-easier/> <sup>[[Archive.org]][160]</sup>
 
 This guide will mitigate these issues by mitigating, obfuscating, and randomizing many of those fingerprinting identifiers by using Virtualization (See [Appendix W: Virtualization][Appendix V1: Hardening your Browsers:]), using specific recommendations (See [Appendix A5: Additional browser precautions with JavaScript enabled] and [Appendix V1: Hardening your Browsers][Appendix V1: Hardening your Browsers:]) and using by fingerprinting resistant Browsers (Brave and Tor Browser).
+
+## Microarchitectural Side-channel Deanonymization Attacks:
+
+There was an attack published that can deanonymize users if they have a known alias. For example, an attacker trying to track the activities of a journalist can use that journalist's public Twitter handle to link their anonymous identities with their public one. This breaks compartmentalization of identities and can lead to complete deanonymization, even of users who practice proper OPSEC.
+
+The attack, published at <https://leakuidatorplusteam.github.io/> <sup>[[Archive.org]][1386]</sup>, can be mitigated using a browser extension:
+
+- <https://chrome.google.com/webstore/detail/leakuidator%2B/hhfpajcjkikoocmmhcimllpinjnbedll> (Chrome, Edge, and other Chrome-based browsers)
+- <https://addons.mozilla.org/en-US/firefox/addon/leakuidatorplus/> (Firefox, Tor Browser, and other Firefox-based browsers)
+
+It's generally not recommended to install extensions into Tor Browser, because the fact that you have an extension installed can be an extra data point for browser fingerprinting. As such, this extension is only a temporary solution until the fix can be implemented by the browsers' own developers.
+
+Separating identities via separate browsers or even with VMs is not enough to avoid this attack. However, another solution is to make sure that when you start working with an anonymous identity, you entirely close all activities linked to other identities. The vulnerability only works if you're actively logged into a non-anonymous identity. The issue with this is that it can hinder effective workflow, as multitasking across multiple identities becomes impossible.
 
 ## Local Data Leaks and Forensics:
 
@@ -13475,6 +13489,7 @@ See the [Some last OPSEC thoughts][Some last OPSEC thoughts:] section for some t
   [Your Cryptocurrencies transactions:]: #your-cryptocurrencies-transactions
   [Your Cloud backups/sync services:]: #your-cloud-backupssync-services
   [Your Browser and Device Fingerprints:]: #your-browser-and-device-fingerprints
+  [Microarchitectural Side-channel Deanonymization Attacks:]: #microarchitectural-side-channel-deanonymization-attacks
   [Local Data Leaks and Forensics:]: #local-data-leaks-and-forensics
   [Bad Cryptography:]: #bad-cryptography
   [No logging but logging anyway policies:]: #no-logging-but-logging-anyway-policies
@@ -15100,3 +15115,4 @@ See the [Some last OPSEC thoughts][Some last OPSEC thoughts:] section for some t
   [1383]: https://web.archive.org/web/20220714213939/https://officercia.mirror.xyz/4x2-M4R2cSnID1wpsTO4CQNrMQ5JUFouR-rZ_N4xO-Q
   [1384]: https://web.archive.org/web/20220718231735/https://officercia.mirror.xyz/5KSkJOTgMtvgC36v1GqZ987N-_Oj_zwvGatOk0A47Ws
   [1385]: https://web.archive.org/web/20220516000616/https://officercia.mirror.xyz/WeAilwJ9V4GIVUkYa7WwBwV2II9dYwpdPTp3fNsPFjo
+  [1386]: https://web.archive.org/web/20220720023429/https://leakuidatorplusteam.github.io/
