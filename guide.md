@@ -2266,7 +2266,7 @@ When using Tor Browser, you should click the little shield Icon (upper right, ne
 
 We would recommend the "Safer" level for most cases. The Safest level should be enabled if you think you are accessing suspicious or dangerous websites or if you are extra paranoid. The Safest mode will also most likely break many websites that rely actively on JavaScript.
 
-**Temporary Important Warning: Please see [Microarchitectural Side-channel Deanonymization Attacks:].**
+**Temporary Important Warning: Please see [Microarchitectural Side-channel Deanonymization Attacks][Microarchitectural Side-channel Deanonymization Attacks:].**
 
 If you are extra paranoid, use the "Safest" level by default and consider downgrading to Safer is the website is unusable because of Javascript blocking.
 
