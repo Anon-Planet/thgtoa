@@ -11898,8 +11898,7 @@ These steps should upgrade from "reasonably anonymous" to "extra-paranoid anonym
 
 We are not recommending any as none of those are truly providing anonymity but obfuscation. As of this writing, and as we are aware of, anonymity can be only achieved with Zcash "Shielded Addresses" and Monero. BTC, ETH and many others do not provide anonymity and those wallets and mixing services can be traced. Here are some references about this issue:
 
--  [Mixing detection on Bitcoin transactions using
-    statistical patterns.](https://arxiv.org/pdf/2204.02019.pdf) <sup>[Archive.org](https://web.archive.org/web/https://arxiv.org/pdf/2204.02019.pdf)</sup>
+-  [Mixing detection on Bitcoin transactions using statistical patterns.](https://arxiv.org/pdf/2204.02019.pdf) <sup>[Archive.org](https://web.archive.org/web/https://arxiv.org/pdf/2204.02019.pdf)</sup>
 -  [An Analysis Of Bitcoin Laundry Services](https://www.researchgate.net/profile/Julio-Hernandez-Castro/publication/319944399_An_Analysis_of_Bitcoin_Laundry_Services/links/5a045d410f7e9beb177883af/An-Analysis-of-Bitcoin-Laundry-Services.pdf?origin=publication_detail) <sup>[Archive.org](https://web.archive.org/web/https://www.researchgate.net/profile/Julio-Hernandez-Castro/publication/319944399_An_Analysis_of_Bitcoin_Laundry_Services/links/5a045d410f7e9beb177883af/An-Analysis-of-Bitcoin-Laundry-Services.pdf?origin=publication_detail)</sup>
 -  [Mixing Strategies in Cryptocurrencies and An Alternative Implementation](https://www.researchgate.net/publication/344485520_Mixing_Strategies_in_Cryptocurrencies_and_An_Alternative_Implementation) <sup>[Archive.org](https://web.archive.org/web/https://www.researchgate.net/publication/344485520_Mixing_Strategies_in_Cryptocurrencies_and_An_Alternative_Implementation)</sup>
     
