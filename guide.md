@@ -13489,6 +13489,7 @@ See the [Some last OPSEC thoughts][Some last OPSEC thoughts:] section for some t
   [Your Cryptocurrencies transactions:]: #your-cryptocurrencies-transactions
   [Your Cloud backups/sync services:]: #your-cloud-backupssync-services
   [Your Browser and Device Fingerprints:]: #your-browser-and-device-fingerprints
+  [Microarchitectural Side-channel Deanonymization Attacks:]: #microarchitectural-side-channel-deanonymization-attacks
   [Local Data Leaks and Forensics:]: #local-data-leaks-and-forensics
   [Bad Cryptography:]: #bad-cryptography
   [No logging but logging anyway policies:]: #no-logging-but-logging-anyway-policies
