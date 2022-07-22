@@ -5682,7 +5682,9 @@ Here are some of the things they check within recent browsers:
 
 -   ...
 
-Here are two services you can use to check your browser Fingerprinting:
+Here are services you can use to check your browser fingerprints:
+    
+-   <https://abrahamjuliot.github.io/creepjs/> (Probably the best overall)
 
 -   <https://coveryourtracks.eff.org/>
 
