@@ -11889,8 +11889,9 @@ You might want to consider the use of Samourai for Android (<https://samouraiwal
 Mixing BTC in this way should prevent any chain analysis on future transactions. This will not hide any past transactions or the fact you purchased BTC from a KYC exchange. Both wallets support Tor and running your own Bitcoin full node.
 
 -   **Not recommended:**
-    -   **Wasabi wallet due to censorship of transactions[^536] and vulnerabilities in its CoinJoin implementation[^537].**
-    -   **Sparrow for desktop (https://sparrowwallet.com) has not been thoroughly reviewed. It cannot be considered a serious recommendation.**
+    -   Wasabi wallet, due to censorship of transactions[^536] and vulnerabilities in its CoinJoin implementation[^537].
+    -   Sparrow for desktop (https://sparrowwallet.com), due to the inherent issues with Bitcoin
+    -   *See the following section: [Warning about special tumbling, mixing, coinjoining privacy wallets and services][Warning about special tumbling, mixing, coinjoining privacy wallets and services:]*
 
 ## When converting from BTC to Monero:
 
