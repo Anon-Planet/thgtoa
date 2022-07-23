@@ -1024,6 +1024,8 @@ Here are some other resources on the topic if you cannot see this documentary:
 
 -   2016, A Survey on User Behavior Analysis in Social Networks <https://www.academia.edu/30936118/A_Survey_on_User_Behaviour_Analysis_in_Social_Networks> <sup>[[Archive.org]][98]</sup>
 
+-   2017, DEF CON 25 presentation: [DEF CON 25 - Svea Eckert, Andreas Dewes - Dark Data](https://www.youtube.com/watch?v=1nvYGi7-Lxo) <sup>[[Invidious]](https://yewtu.be/watch?v=1nvYGi7-Lxo)</sup>   
+
 -   2019, Influence and Behavior Analysis in Social Networks and Social Media <https://sci-hub.se/10.1007/978-3-030-02592-2> <sup>[[Archive.org]][99]</sup>
 
 So, how can you mitigate these?
@@ -5524,6 +5526,8 @@ While most people think those puzzles are only about solving a little puzzle, it
 
 It is also highly likely that those platforms could already reliably identify you based on the unique way you interact with those puzzles. This could work despite obfuscation of your IP address / Browser and clearing all cookies.
 
+Watch for example this DEF CON 25 presentation: [DEF CON 25 - Svea Eckert, Andreas Dewes - Dark Data](https://www.youtube.com/watch?v=1nvYGi7-Lxo) <sup>[[Invidious]](https://yewtu.be/watch?v=1nvYGi7-Lxo)</sup>
+
 You will often experience several in a row (sometimes endlessly) and sometimes exceedingly difficult ones involving reading undecipherable characters or identifying various objects on endless pictures sets. You will also have more captchas if you use an ad-blocking system (uBlock for example) or if your account was flagged for any reason for using VPNs or Tor previously.
 
 You will also have (in my experience) more Captchas (Google's reCAPTCHA) if you do not use a Chromium-based browser. But this can be mitigated by using a Chromium-based browsers such as Brave. There is also a Browser extension called Buster that could help you those <https://github.com/dessant/buster> <sup>[[Archive.org]][390]</sup>.
@@ -5678,7 +5682,9 @@ Here are some of the things they check within recent browsers:
 
 -   ...
 
-Here are two services you can use to check your browser Fingerprinting:
+Here are services you can use to check your browser fingerprints:
+    
+-   <https://abrahamjuliot.github.io/creepjs/> (Probably the best overall)
 
 -   <https://coveryourtracks.eff.org/>
 
@@ -9272,6 +9278,8 @@ You must live by the simple rule that "loose lips sink ships" - but also that th
 -   Do not ever use biometrics alone to safeguard your secrets. Biometrics can be used without your consent.
 
 -   Do check the signatures and hashes of software and documents you download before installing/viewing them.
+    
+-   Do not have the same behavior such as visiting the same links on the clearnet then visit the same with the your anoynous online identity. Watch this DEF CON 25 presentation if you didn't before: [DEF CON 25 - Svea Eckert, Andreas Dewes - Dark Data](https://www.youtube.com/watch?v=1nvYGi7-Lxo) <sup>[[Invidious]](https://yewtu.be/watch?v=1nvYGi7-Lxo)</sup>.
 
 -   Encrypt everything but do not take it for granted. Remember the 5$ wrench.
 
@@ -9320,6 +9328,8 @@ You must live by the simple rule that "loose lips sink ships" - but also that th
     -   2015, DEF CON 22, Adrian Crenshaw, Dropping Docs on Darknets: How People Got Caught <https://www.youtube.com/watch?v=eQ2OZKitRwc> <sup>[[Invidious]][549]</sup> ([Slides][] <sup>[[Archive.org]][550]</sup>)
 
     -   2017, Ochko123 - How the Feds Caught Russian Mega-Carder Roman Seleznev <https://www.youtube.com/watch?v=6Chp12sEnWk> <sup>[[Invidious]][551]</sup>
+    
+    -   2017, [DEF CON 25 - Svea Eckert, Andreas Dewes - Dark Data](https://www.youtube.com/watch?v=1nvYGi7-Lxo) <sup>[[Invidious]](https://yewtu.be/watch?v=1nvYGi7-Lxo)</sup>
 
     -   2015, DEF CON 22, Zoz, Don't Fuck It Up! <https://www.youtube.com/watch?v=J1q4Ir2J8P8> <sup>[[Invidious]][552]</sup>
 
