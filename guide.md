@@ -2030,6 +2030,8 @@ This browser is different from other browsers as it will connect to the internet
 
 Here are several ways to set it up for all main OSes.
 
+**Warning:** You should avoid installing extensions in Tor Browser, as they can be used to fingerprint and identify you.
+
 ### Windows, Linux, and macOS:
 
 Please see [Appendix Y: Installing and using desktop Tor Browser].
@@ -11674,23 +11676,15 @@ Here are most of the steps combined from the sources above (some have been omitt
 
 -   NoScript (<https://addons.mozilla.org/en-US/firefox/addon/noscript/>)
 
-    -   Unlike uBlockOrigin, blocks **all** scripts by default, no exceptions. Necessary in regular browser if you want to break all script executions. Not necessary in Tor Browser.
+    -   Blocks **all** scripts by default, no exceptions. Necessary in regular browser if you want to block all script executions. Not necessary in Tor Browser.
 
-    -   Within the options, change **Default** options to check everything except "Ping" and "Unrestricted CSS"
+    -   Within the options, change **Default** options to check everything except "ping", "unrestricted CSS", and "LAN". This will re-enable JavaScript and other web features, to prevent many websites from breaking
 
 -   LibRedirect (<https://libredirect.github.io/>)
 
     -   Redirect less privacy friendly websites like YouTube and Wikipedia to more privacy friendly open-source alternatives
 
 -   Skip Redirect (<https://github.com/sblask/webextension-skip-redirect>)
-
--   CanvasBlocker (<https://github.com/kkapsner/CanvasBlocker>)
-
-    -   non-RFP users only (see: <https://github.com/arkenfox/user.js/wiki/3.3-Overrides-%5BTo-RFP-or-Not%5D#-fingerprinting>)
-
-    -   Good protection against naive scripts, detectable and leaks with advanced scripts
-    
-    -   Randomize canvas and audio, maybe webgl if you use that: the rest is not needed
 
 ### Bonus resources:
 
