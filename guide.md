@@ -11656,37 +11656,39 @@ Here are most of the steps combined from the sources above (some have been omitt
 
         -   Set "browser.send_pings" to false
 
-        -   Set "network.http.sendRefererHeader" to 0 (this might break plenty of websites)
-
         -   Set "change privacy.firstparty.isolate" to true
 
-        -   Set "change network.cookie.lifetimePolicy" to 2 (this deletes all cookies after each session)
+        -   Set "network.http.referer.XOriginPolicy" to "2" or use **Smart Referer** below
 
-        -   Set "network.http.referer.XOriginPolicy" to 2 (Send Referer only when the full hostnames match)
+        -   Set "change network.cookie.lifetimePolicy" to 2 (this deletes all cookies after each session)
 
 ### Addons to install/consider:
 
 -   uBlock Origin (<https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/>)
 
--   LocalCDN (<https://addons.mozilla.org/en-US/firefox/addon/localcdn-fork-of-decentraleyes/>)
+-   Smart Referer (<https://addons.mozilla.org/firefox/addon/smart-referer/>)
 
-    -   Alternatively, Decentraleyes (<https://addons.mozilla.org/en-US/firefox/addon/decentraleyes/>)
-
--   HTTPS Everywhere (<https://addons.mozilla.org/en-US/firefox/addon/https-everywhere/>)
+    -    Set "network.http.referer.XOriginPolicy" value of "2" to "0" (so the extension works). **Disable** the whitelist (uncheck the **Use default whitelist** box) and set **Domain name matching** to **Strict**.
 
 -   NoScript (<https://addons.mozilla.org/en-US/firefox/addon/noscript/>)
 
-    -   Within the options, Change Default options to check everything except "Ping" and "Unrestricted CSS"
+    -   Unlike uBlockOrigin, blocks **all** scripts by default, no exceptions. Necessary in regular browser if you want to break all script executions. Not necessary in Tor Browser.
 
--   ClearURLs (<https://addons.mozilla.org/en-US/firefox/addon/clearurls/>)
-
--   PrivacyBadger (<https://addons.mozilla.org/en-US/firefox/addon/privacy-badger17/>)
-
--   Temporary Containers (<https://addons.mozilla.org/en-US/firefox/addon/temporary-containers/>)
-
--   Privacy Settings (<https://addons.mozilla.org/en-US/firefox/addon/privacy-settings/>)
+    -   Within the options, change **Default** options to check everything except "Ping" and "Unrestricted CSS"
 
 -   LibRedirect (<https://libredirect.github.io/>)
+
+    -   Redirect less privacy friendly websites like YouTube and Wikipedia to more privacy friendly open-source alternatives
+
+-   Skip Redirect (<https://github.com/sblask/webextension-skip-redirect>)
+
+-   CanvasBlocker (<https://github.com/kkapsner/CanvasBlocker>)
+
+    -   non-RFP users only (see: <https://github.com/arkenfox/user.js/wiki/3.3-Overrides-%5BTo-RFP-or-Not%5D#-fingerprinting>)
+
+    -   Good protection against naive scripts, detectable and leaks with advanced scripts
+    
+    -   Randomize canvas and audio, maybe webgl if you use that: the rest is not needed
 
 ### Bonus resources:
 
