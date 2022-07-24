@@ -11512,6 +11512,8 @@ That's about it. Unfortunately, you will not be able to add extensions as those 
 
 ### Advanced settings:
 
+Consider [Arkenfox/user.js](https://github.com/arkenfox/user.js/), a heavily maintained and very easy to use browser config which uses a "user.js" to set all the privacy settings and disk avoidance values. Below we recommend that if you are not setting the Arkenfox config, at least setting the **about:config** values below. Arkenfox applies many others but these are the bare minimum for your protection while browsing. Remember: doing nothing and using a browser with its defaults will already be leaking many identifiable and trackable characteristics which are unique to you. See [Browser and Device Fingerprinting][Browser and Device Fingerprinting:] for more details on why default settings in browsers are unsafe.
+
 Those settings are explained on the following resources in order of recommendation if you want more details about what each setting does:
 
 1.  <https://wiki.archlinux.org/title/Firefox/Privacy> <sup>[[Archive.org]][681]</sup> **(most recommended)**
