@@ -5488,6 +5488,10 @@ In the context of Qubes OS you should store your sensitive information within th
 
 You are done and can now skip the rest to go to the "[Creating your anonymous online identities][Creating new identities:]" part.
 
+### Tutorial for installing Windows based VMs on Qubes OS:
+
+See their tutorial here: <https://github.com/Qubes-Community/Contents/blob/master/docs/os/windows/windows-tools41.md> <sup>[[Archive.org]](https://web.archive.org/web/https://github.com/Qubes-Community/Contents/blob/master/docs/os/windows/windows-tools41.md)</sup>
+
 # Quick note: Correlation vs Attribution
 
 **Correlation** is a relationship between two or more variables or **[attributes](https://www.digitalshadows.com/blog-and-research/cyber-attacks-the-challenge-of-attribution-and-response/)**. How are attributions determined? During digital forensic and incident response (DFIR), analysts typically look for indicators of compromise (IoCs) following events that call them to act. These indicators usually consist of IP addresses, names, databases; all of which can prescribe a certain behavioral "tag" to an individual or group. This is called attribution. A principal in statistics is that "correlation does not infer causality". What this means is that, while you may leave certain traces on certain areas of a device or network, that only shows presence of action, i.e., not explicitly your presence. It doesn't show who you are, it only resolves that something occurred and *someone* has done *something*. 
