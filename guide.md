@@ -170,7 +170,7 @@ Finally note that this guide does mention and even recommends various commercial
         -   [Whonix Virtual Machines:]
         -   [Pick your guest workstation Virtual Machine:]
         -   [Linux Virtual Machine (Whonix or Linux):]
-        -   [Windows 10 Virtual Machine:]
+        -   [Windows 10/11 Virtual Machine:]
         -   [Android Virtual Machine:]
         -   [macOS Virtual Machine:]
         -   [KeepassXC:]
@@ -12292,7 +12292,7 @@ Remember this should only be done on a secure environment such as VM behind the 
 
 -   Click the upper left menu, find then launch ZecWallet Lite
 
-## Windows 10 VM:
+## Windows 10/11 VM:
 
 -   Load the Windows VM
 
@@ -13545,7 +13545,7 @@ See the [Some last OPSEC thoughts][Some last OPSEC thoughts:] section for some t
   [Whonix Virtual Machines:]: #whonix-virtual-machines
   [Pick your guest workstation Virtual Machine:]: #pick-your-guest-workstation-virtual-machine
   [Linux Virtual Machine (Whonix or Linux):]: #linux-virtual-machine-whonix-or-linux
-  [Windows 10 Virtual Machine:]: #windows-10-virtual-machine
+  [Windows 10/11 Virtual Machine:]: #windows-1011-virtual-machine
   [Android Virtual Machine:]: #android-virtual-machine
   [macOS Virtual Machine:]: #macos-virtual-machine
   [KeepassXC:]: #keepassxc
@@ -13753,7 +13753,7 @@ See the [Some last OPSEC thoughts][Some last OPSEC thoughts:] section for some t
   [Appendix A9: Installing a Zcash wallet:]: #appendix-a9-installing-a-zcash-wallet
   [Debian 11 VM:]: #debian-11-vm
   [Ubuntu 20.04/21.04/21.10 VM:]: #ubuntu-20.0421.0421.10-vm
-  [Windows 10 VM:]: #windows-10-vm
+  [Windows 10/11 VM:]: #windows-1011-vm
   [Whonix Workstation 16 VM:]: #whonix-workstation-16-vm
   [Appendix B1: Checklist of things to verify before sharing information:]: #appendix-b1-checklist-of-things-to-verify-before-sharing-information
   [Appendix B2: Monero Disclaimer]: #appendix-b2-monero-disclaimer
