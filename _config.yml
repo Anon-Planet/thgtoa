@@ -42,10 +42,7 @@ social:
   links:
     - https://github.com/NobodySpecial256/thgtoa
 exclude:
-    - Gemfile
-    - Gemfile.lock
-    - .github
-    - .gitignore
+    - export/
 include:
     - LICENSE.md
     - about.md
