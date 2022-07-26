@@ -5,6 +5,7 @@ plugins:
   - jekyll-relative-links
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-optional-front-matter
 relative_links:
   enabled: true
   collections: true
@@ -41,6 +42,8 @@ social:
   name: AnonymousPlanet
   links:
     - https://github.com/NobodySpecial256/thgtoa
+optional_front_matter:
+  remove_originals: true
 exclude:
     - Gemfile
     - Gemfile.lock
