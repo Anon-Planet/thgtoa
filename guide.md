@@ -5869,6 +5869,8 @@ Tools that can help with this:
 -   <https://www.fakenamegenerator.com/>
 
 -   <https://thispersondoesnotexist.com/>
+    
+-   <https://generated.photos/anonymizer>
 
 Now is also the moment where you could finally consider getting an online phone number as explained in the [Online Phone Number (less recommended)] section.
 
@@ -5894,7 +5896,7 @@ We will help you bit by listing a few tips we learned while researching over the
 
 -   Brave Browser (Chromium-based) with a Private Tor Tab has a better acceptance level than Tor Browser (Firefox based). You will experience fewer issues with captchas and online platforms[^383] if you use Brave than if you use Tor Browser (feel free to try this yourself).
 
--   For every identity, you should have a matching profile picture associated with it. For this purpose, we recommend you just go to <https://thispersondoesnotexist.com/> <sup>[[Archive.org]][399]</sup> and generate a computer-generated profile picture (Do note that algorithms have been developed[^393]'[^394] to detect these and it might not work 100% of the time). You can also generate such pictures yourself from your computer if you prefer by using the open-source StyleGan project here <https://github.com/NVlabs/stylegan2> <sup>[[Archive.org]][400]</sup>. Just refresh the page until you find a picture that matches your identity in all aspects (age, sex, and ethnicity) and save that picture. It would be even better to have several pictures associated with that identity, butWedo not have an "easy way" of doing that yet.
+-   For every identity, you should have a matching profile picture associated with it. For this purpose, we recommend you just go to <https://thispersondoesnotexist.com/> <sup>[[Archive.org]][399]</sup> and generate a computer-generated profile picture (Do note that algorithms have been developed[^393]'[^394] to detect these and it might not work 100% of the time). You can also generate such pictures yourself from your computer if you prefer by using the open-source StyleGan project here <https://github.com/NVlabs/stylegan2> <sup>[[Archive.org]][400]</sup>. Just refresh the page until you find a picture that matches your identity in all aspects (age, sex, and ethnicity) and save that picture. It would be even better to have several pictures associated with that identity, butWedo not have an "easy way" of doing that yet. Finally you could also consider this tool: <https://generated.photos/anonymizer>
 
     -   **Bonus**, you could also make it more real by using this service (with an anonymous identity) <https://www.myheritage.com/deep-nostalgia> <sup>[[Archive.org]][401]</sup> to make a picture more lifelike. Here is an example:
 
