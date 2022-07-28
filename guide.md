@@ -6921,7 +6921,7 @@ Telegram is quite straightforward, and you can download their portable Windows a
 
 It will require a phone number (that can only be used once) and nothing else.
 
-In most cases, we had no issues whether it was over Tor or VPN, butWehad a few cases where my telegram account was just banned for violating terms of services (not sure which one?). This again despite not using them for anything.
+In most cases, we had no issues whether it was over Tor or VPN, but we had a few cases where our telegram account was just banned for violating terms of services (not sure which one?). This again despite not using them for anything.
 
 They provide an appeal process through e-mail, but we had no success with getting any answer.
 
