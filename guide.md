@@ -11838,7 +11838,7 @@ But what if the service you want does not accept Monero but does accept a more m
 
 -   **Stay away from Crypto Mixer, Tumblers and Coinjoiners.** You might think this is a good idea but not only are they useless with cryptocurrencies such as BTC/ETH/LTC, but they are also dangerous as you might end up trading your currency for dirty currency from illicit activities. Use Monero to anonymize your crypto. Use a normal KYC-enabled Exchange to buy/sell your Monero (such as Kraken) or (at your own risk), use a service like LocalMonero.
 
--   **Have a look below a couple pages below at "Warning about special tumbling, mixing, coinjoining privacy wallets and services" before proceeding.** 
+-   **See [Warning about special tumbling, mixing, coinjoining privacy wallets and services].** 
 
 ## Reasonably anonymous option:
 
@@ -11912,7 +11912,7 @@ For example, here are two possibilities:
 
 These steps should upgrade from "reasonably anonymous" to "extra-paranoid anonymous". Even if Monero is broken in the future. Zcash will have to be broken as well. Quite unlikely.
 
-## Warning about special tumbling, mixing, coinjoining privacy wallets and services: <sup>[Wikiless](https://wikiless.org/wiki/Cryptocurrency_tumbler) [Archive.org](https://web.archive.org/web/https://wikiless.org/wiki/Cryptocurrency_tumbler)</sup>
+## [Warning about special tumbling, mixing, coinjoining privacy wallets and services]: <sup>[Wikiless](https://wikiless.org/wiki/Cryptocurrency_tumbler) [Archive.org](https://web.archive.org/web/https://wikiless.org/wiki/Cryptocurrency_tumbler)</sup>
 
 We are not recommending any as none of those are truly providing anonymity but obfuscation. As of this writing, and as we are aware of, anonymity can be only achieved with Zcash "Shielded Addresses" and Monero. BTC, ETH and many others do not provide anonymity and those wallets and mixing services can be traced. Here are some references about this issue:
 
@@ -13724,7 +13724,7 @@ See the [Some last OPSEC thoughts][Some last OPSEC thoughts:] section for some t
   [Appendix Z: Online anonymous payments using cryptocurrencies]: #appendix-z-online-anonymous-payments-using-cryptocurrencies
   [Reasonably anonymous option:]: #reasonably-anonymous-option
   [Extra-Paranoid anonymous option:]: #extra-paranoid-anonymous-option
-  [Warning about special tumbling, mixing, coinjoining privacy wallets and services:]: #warning-about-special-tumbling-mixing-coinjoining-privacy-wallets-and-services
+  [Warning about special tumbling, mixing, coinjoining privacy wallets and services]: #warning-about-special-tumbling-mixing-coinjoining-privacy-wallets-and-services-wikiless-archiveorg
   [When converting from BTC to Monero:]: #when-converting-from-btc-to-monero
   [Appendix A1: Recommended VPS hosting providers]: #appendix-a1-recommended-vps-hosting-providers
   [Appendix A2: Guidelines for passwords and passphrases]: #appendix-a2-guidelines-for-passwords-and-passphrases
