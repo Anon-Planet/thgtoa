@@ -11912,7 +11912,7 @@ For example, here are two possibilities:
 
 These steps should upgrade from "reasonably anonymous" to "extra-paranoid anonymous". Even if Monero is broken in the future. Zcash will have to be broken as well. Quite unlikely.
 
-## [Warning about special tumbling, mixing, coinjoining privacy wallets and services]: <sup>[Wikiless](https://wikiless.org/wiki/Cryptocurrency_tumbler) [Archive.org](https://web.archive.org/web/https://wikiless.org/wiki/Cryptocurrency_tumbler)</sup>
+## Warning about special tumbling, mixing, coinjoining privacy wallets and services: <sup>[Wikiless](https://wikiless.org/wiki/Cryptocurrency_tumbler) [Archive.org](https://web.archive.org/web/https://wikiless.org/wiki/Cryptocurrency_tumbler)</sup>
 
 We are not recommending any as none of those are truly providing anonymity but obfuscation. As of this writing, and as we are aware of, anonymity can be only achieved with Zcash "Shielded Addresses" and Monero. BTC, ETH and many others do not provide anonymity and those wallets and mixing services can be traced. Here are some references about this issue:
 
