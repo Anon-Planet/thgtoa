@@ -349,7 +349,7 @@ Finally note that this guide does mention and even recommends various commercial
 -   [Appendix Z: Online anonymous payments using cryptocurrencies]
     -   [Reasonably anonymous option:]
     -   [Extra-Paranoid anonymous option:]
-    -   [Warning about special tumbling, mixing, coinjoining privacy wallets and services:]
+    -   [Warning about special tumbling, mixing, coinjoining privacy wallets and services]
     -   [When converting from BTC to Monero:]
 -   [Appendix A1: Recommended VPS hosting providers]
 -   [Appendix A2: Guidelines for passwords and passphrases]
