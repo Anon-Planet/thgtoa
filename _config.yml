@@ -40,7 +40,10 @@ author:
 social:
   name: AnonymousPlanet
   links:
-    - https://github.com/NobodySpecial256/thgtoa
+    - https://twitter.com/AnonyPla
+    - https://github.com/Anon-Planet
+    - https://matrix.to/#/#privacy-security-anonymity:matrix.org
+    - https://mastodon.social/@anonymousplanet
 exclude:
     - Gemfile
     - Gemfile.lock
