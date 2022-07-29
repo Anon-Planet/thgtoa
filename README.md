@@ -15,7 +15,7 @@ This guide is an open-source non-profit initiative, [licensed](LICENSE.html) und
 - [In your browser](guide.html)
 - <del>[PDF](export/guide.pdf)</del> (temporarily unavailable)
 - <del>[OpenDocument (ODT)](export/guide.odt)</del> (temporarily unavailable)
-- Raw [Markdown](https://raw.githubusercontent.com/NobodySpecial256/thgtoa/master/guide.md) (references do not work when viewing this way).
+- Raw [Markdown](https://github.com/Anon-Planet/thgtoa/raw/master/guide.md) (references do not work when viewing this way).
 
 Mirrors:
 - **Coming soon**
