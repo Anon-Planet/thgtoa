@@ -12213,7 +12213,7 @@ Find it online at:
 
 -   Archive.today over Tor: <http://archiveiya74codqgiixo33q62qlrqtkgmcitqx5u2oeqnmn5bpcbiyd.onion/anonymousplanet-ng.org>
 
-    Offline versions of this guide <del>at:</del> are temporarily unavailable.
+    Offline versions of this guide are temporarily unavailable.
 
 -   <del>PDF: <https://anonymousplanet-ng.org/export/guide.pdf></del> <sup>[[Archive.org]][726]</sup> <sup>[[Tor Mirror]][727]</sup>
 
