@@ -8128,8 +8128,6 @@ For smaller files, consider:
 
 -   Cryptpad.fr (<https://cryptpad.fr/>): Free tier limited to 1GB total and recommended by PrivacyGuides.org at <https://privacyguides.org/cloud/> <sup>[[Archive.org]][470]</sup>
 
--   AnonArchive (<https://anonarchive.org/>): free tier limited to 1GB total
-
 -   Filen (<https://filen.io/>): free tier limited to 10GB total
 
 We are currently not aware of any online storage/hosting platform accepting cash payments unlike providers mentioned before.
@@ -9295,7 +9293,7 @@ You must live by the simple rule that "loose lips sink ships" - but also that th
 
 -   See ["Appendix B4: Important notes about evil-maid and tampering"][Appendix B4: Important notes about evil-maid and tampering]
 
--   Remember the ["How to spot if someone has been searching your stuff, home, or room"](How to spot if someone has been searching your stuff, home, or room:) section.
+-   Remember the [How to spot if someone has been searching your stuff:] section.
 
 -   Consider the use of Haven <https://guardianproject.github.io/haven/> <sup>[[Archive.org]][540]</sup> on some old android phone to keep watch on your home/room while you are away.
 
@@ -12214,11 +12212,11 @@ Find it online at:
 
 -   Archive.today over Tor: <http://archiveiya74codqgiixo33q62qlrqtkgmcitqx5u2oeqnmn5bpcbiyd.onion/anonymousplanet-ng.org>
 
-Offline versions (best format for the best readability) of this guide at:
+    Offline versions of this guide <del>at:</del> are temporarily unavailable.
 
--   PDF: <https://anonymousplanet-ng.org/export/guide.pdf> <sup>[[Archive.org]][726]</sup> <sup>[[Tor Mirror]][727]</sup>
+-   <del>PDF: <https://anonymousplanet-ng.org/export/guide.pdf></del> <sup>[[Archive.org]][726]</sup> <sup>[[Tor Mirror]][727]</sup>
 
--   OpenDocument Text (ODT) version at: <https://anonymousplanet-ng.org/export/guide.odt> <sup>[[Archive.org]][732]</sup> <sup>[[Tor Mirror]][733]</sup>
+-   <del>OpenDocument Text (ODT) version at: <https://anonymousplanet-ng.org/export/guide.odt></del> <sup>[[Archive.org]][732]</sup> <sup>[[Tor Mirror]][733]</sup>
 
 # Appendix A7: Comparing versions
 
