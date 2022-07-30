@@ -12217,7 +12217,8 @@ Find it online at:
 
 -   <del>PDF: <https://anonymousplanet-ng.org/export/guide.pdf></del> <sup>[[Archive.org]][726]</sup> <sup>[[Tor Mirror]][727]</sup>
 
--   <del>OpenDocument Text (ODT) version at: <https://anonymousplanet-ng.org/export/guide.odt></del> <sup>[[Archive.org]][732]</sup> <sup>[[Tor Mirror]][733]</sup>
+-   OpenDocument Text (ODT) version at: <del><https://anonymousplanet-ng.org/export/guide.odt></del> (temporarily disabled) <sup>[[Archive.org]][732]</sup> <sup>[[Tor Mirror]][733]</sup>
+
 
 # Appendix A7: Comparing versions
 
