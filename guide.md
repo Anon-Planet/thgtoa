@@ -9293,7 +9293,8 @@ You must live by the simple rule that "loose lips sink ships" - but also that th
 
 -   See ["Appendix B4: Important notes about evil-maid and tampering"][Appendix B4: Important notes about evil-maid and tampering]
 
--   Remember the [How to spot if someone has been searching your stuff:] section.
+-   Remember the [How to spot if someone has been searching your stuff][How to spot if someone has been searching your stuff:] section.
+
 
 -   Consider the use of Haven <https://guardianproject.github.io/haven/> <sup>[[Archive.org]][540]</sup> on some old android phone to keep watch on your home/room while you are away.
 
