@@ -10438,6 +10438,12 @@ There are, two viable options:
 ## Cash/Monero-Paid VPN:
 
 There are three VPN companies recommended by PrivacyGuides.org (<https://www.privacyguides.org/vpn/> <sup>[[Archive.org]][620]</sup>) that accept cash payments: Mullvad, iVPN, and Proton VPN.
+    
+Here are their logging policies:
+
+-   Mullvad: <https://mullvad.net/en/help/no-logging-data-policy/> <sup>[[Archive.org](https://web.archive.org/web/https://mullvad.net/en/help/no-logging-data-policy/)</sup>
+-   iVPN: <https://www.ivpn.net/privacy/> <sup>[[Archive.org]](https://web.archive.org/web/https://mullvad.net/en/help/no-logging-data-policy/](https://www.ivpn.net/privacy/)</sup>
+-   ProtonVPN: <https://protonvpn.com/support/no-logs-vpn/> <sup>[[Archive.org]](https://web.archive.org/web/https://mullvad.net/en/help/no-logging-data-policy/](https://www.ivpn.net/privacy/)</sup>
 
 In addition, we will also mention a newcomer to watch: Safing SPN <https://safing.io/> <sup>[[Archive.org]][621]</sup>) which (while still in the alpha stage at the time of this writing) which also accepts cash and has a very distinct new concept for a VPN which provides benefits similar to Tor Stream isolation with their "SPN"). Note that Safing SPN is not available on macOS at the moment. This possibility is "provisional" and at your own risk, but we think was worth mentioning.
 
