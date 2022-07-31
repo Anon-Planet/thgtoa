@@ -1,4 +1,7 @@
 v1.1.6-draft
+
+**Special note: we are actively looking for contributors, translators, proofreaders. If you want to contribute and think you can help in some way, we are open to candidates.**
+
 - Tor Mirror now operational and ready <http://thgtoallkcxrdv37u6knsc3pumk6cq6lqmcqlw3j5vkmyahkxive4jyd.onion/>
 - Switch from an account repository to an organization
 - Addition of an Ukrainian disclaimer with a recommendation to use Briar for local communications 
