@@ -1,8 +1,20 @@
+v1.1.6-rc1
+- Tor Mirror now operational and ready <http://thgtoallkcxrdv37u6knsc3pumk6cq6lqmcqlw3j5vkmyahkxive4jyd.onion/>
+- Switch from an account repository to an organization
+- Addition of an Ukrainian disclaimer with a recommendation to use Briar for local communications 
+- Updates of contribution guidelines
+- Restart of the translation project on Transifex. Feel free to join at <https://www.transifex.com/anonymousplanet/the-hitchhikers-guide-to-online-anonymity>
+- PDF and ODT files are temporarily not being provided due to issues we have yet to solve
+- Many link fixes (changes, updates, deletion)
+- Many new references added to various sections
+- Many additions of new information and updates to various sections
+- ?Addition of release files?
+
 v1.1.5
 - Various spelling and grammar fixes
 - Fixed several numbering errors in references
 - Updated and fixed many broken URLs and saved them in the Wayback Machine
-- Noted that https://mastodon.social/@anonypla is gone? added strike-through
+- Noted that <https://mastodon.social/@anonypla> is gone? added strike-through
 - Adapted Qubes OS hardware requirements that were too low for a decent experience (RAM) according to their recommendation
 - Put more incentive to use Tor Browser Safest mode as long as it does not break anything and switch to Safer if necessary and with precautions linked in an appendix
 - Precision that Anti-Evil Maid on Qubes OS is only available on Intel CPUs 
