@@ -10441,7 +10441,7 @@ There are three VPN companies recommended by PrivacyGuides.org (<https://www.pri
     
 Here are their logging policies:
 
--   Mullvad: <https://mullvad.net/en/help/no-logging-data-policy/> <sup>[[Archive.org](https://web.archive.org/web/https://mullvad.net/en/help/no-logging-data-policy/)</sup>
+-   Mullvad: <https://mullvad.net/en/help/no-logging-data-policy/> <sup>[[Archive.org]](https://web.archive.org/web/https://mullvad.net/en/help/no-logging-data-policy/)</sup>
 -   iVPN: <https://www.ivpn.net/privacy/> <sup>[[Archive.org]](https://web.archive.org/web/https://mullvad.net/en/help/no-logging-data-policy/](https://www.ivpn.net/privacy/)</sup>
 -   ProtonVPN: <https://protonvpn.com/support/no-logs-vpn/> <sup>[[Archive.org]](https://web.archive.org/web/https://mullvad.net/en/help/no-logging-data-policy/](https://www.ivpn.net/privacy/)</sup>
 
