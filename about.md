@@ -1,4 +1,6 @@
-Hello, I am Alex. My pronouns are they/them. After unfortunate recent events, I have picked up maintenance of this guide in order to continue the project AnonyPla started. Unfortunately, Lena passed during a complex surgery. We believe she went peacefully in her sleep and she did not suffer. Before her surgery, she gave me access to her accounts to maintain the guide. I will be maintaining her guide, as well as running her Matrix space, from this point. As I said before, I cannot guarantee I'll do everything right, or how she would have done it, but I'm trying my best.
+Hello, I am Alex. My pronouns are they/them. After unfortunate recent events, I have picked up maintenance of this guide in order to continue the project AnonyPla started. Unfortunately, Lena passed during a complex surgery. We believe she went peacefully in her sleep and she did not suffer. Before her surgery, she gave me access to her accounts to maintain the guide. I will be maintaining her guide, as well as administering her Matrix space. As I said before, I cannot guarantee I'll do everything right, or how she would have done it, but I'm trying my best.
+
+It's also no longer a solo project as it was before and I created the Anonymous Planet organization on GitHub. The guide is one of the projects of the Anonymous Planet organization as is the Privacy-Security-Anonymity matrix community. This organization is actively looking for potential collaborators. Feel free to propose your candidature if you feel you could help.
 
 ---
 
@@ -8,7 +10,7 @@ Follow or contact us on:
 - Twitter: <https://twitter.com/AnonyPla>
 - Mastodon: <https://mastodon.social/@anonymousplanet>
 - Element/Matrix.org: <del>@anonypla:envs.net, @anonypla:tchncs.de, and @anonypla:matrix.org </del> (all deactivated permanently)
-- E-Mail: <contact@anonymousplanet-ng.org>
+- E-Mail: <del><contact@anonymousplanet-ng.org></del> (unavailable at the moment)
 
 Discussion Channels:
 - Matrix room: ```#anonymity:matrix.org``` <https://matrix.to/#/#anonymity:matrix.org>
