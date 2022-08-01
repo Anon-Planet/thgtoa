@@ -11787,7 +11787,7 @@ This is valid for Windows, Linux, and macOS.
 
 ## Usage and Precautions:
 
--   After opening Tor Browser, you will see an option to connect, a checkbox to connect automatically and a button to go into Tor Network Settings. The Tor Network settings are there for you to possibly configure Bridges to connect to Tor if you are experiencing issues connecting to Tor due to Censorship or Blocking as explained here: [Appendix X: Using Tor bridges in hostile environments].
+-   After opening Tor Browser, you will see an option to **Connect**, a checkbox to **Always connect automatically** and a button to **Configure connection**. The Tor Network settings are there for you to possibly configure Bridges to connect to Tor if you are experiencing issues connecting to Tor due to Censorship or Blocking. As explained here: [Appendix X: Using Tor bridges in hostile environments], this is now done automatically by the Tor Browser on Desktop.
 
 ![][688]
 
@@ -14443,11 +14443,11 @@ See the [Some last OPSEC thoughts][Some last OPSEC thoughts:] section for some t
   [683]: https://web.archive.org/web/https://chrisx.xyz/blog/yet-another-firefox-hardening-guide/
   [684]: https://web.archive.org/web/https://ebin.city/~werwolf/posts/firefox-hardening-guide/
   [685]: media/image53.jpeg
-  [686]: media/image54.jpeg
+  [686]: media/image54.png
   [687]: https://web.archive.org/web/https://www.torproject.org/download/
-  [688]: media/image55.jpeg
-  [689]: media/image56.jpeg
-  [690]: media/image57.jpeg
+  [688]: media/image55.png
+  [689]: media/image56.png
+  [690]: media/image57.png
   [691]: https://web.archive.org/web/https://z.cash/
   [692]: https://web.archive.org/web/https://z.cash/exchanges/
   [693]: https://web.archive.org/web/https://wasabiwallet.io/
