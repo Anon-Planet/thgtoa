@@ -2057,9 +2057,13 @@ Please see [Appendix Y: Installing and using desktop Tor Browser].
 
 -   Launch Tor Browser
 
--   After Launching, click the upper right **Settings** icon
+-   After launching, click the upper right **Settings** icon
 
--   Select "Config Bridge" and read [Appendix X: Using Tor bridges in hostile environments].
+-   Select **Settings** > **Privacy and security** > **Tor network** 
+
+-   Select **Config Bridge**.
+
+-   Read [Appendix X: Using Tor bridges in hostile environments].
 
 -   **If needed (after reading the appendix above)**, activate the option and select the type of bridge you want:
 
@@ -2079,11 +2083,11 @@ As with the desktop version, you need to know there are safety levels in Tor Bro
 
 -   Click the menu (bottom right)
 
--   Click Settings
+-   Click **Settings**.
 
--   Head over to the Privacy and security section
+-   Head over to the **Privacy and security** section.
 
--   Click Security Settings
+-   Click **Security Settings**.
 
 You will find details about each level here: <https://tb-manual.torproject.org/security-settings/> <sup>[[Archive.org]][240]</sup> but here is a summary:
 
