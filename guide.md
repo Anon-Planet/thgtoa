@@ -551,7 +551,7 @@ Here are some online resources you can use to find some information about your c
 
     -   <https://check.torproject.org>
 
-For those reasons, you will need to obfuscate and hide that origin IP (the one tied to your identification) or hide it as much as we can through a combination of various means:
+For those reasons, you will need to obfuscate and hide that origin IP (the one tied to your identification) or hide it through a combination of various means:
 
 -   Using a public Wi-Fi service (free).
 
@@ -579,9 +579,9 @@ Because it is not encrypted, your ISP and/or any other adversary could still int
 
 As a bonus, many devices and apps will use hardcoded DNS servers bypassing any system setting you could set. This is for example the case with most (70%) Smart TVs and a large part (46%) of Game Consoles[^34]. For these devices, you will have to force them[^35] to stop using their hardcoded DNS service which could make them stop working properly.
 
-A solution to this is to use encrypted DNS using DoH (DNS over HTTPS[^36]), DoT (DNS over TLS[^37]) with a private DNS server (this can be self-hosted locally with a solution like pi-hole[^38], remotely hosted with a solution like nextdns.io or using the solutions provider by your VPN provider or the Tor network). This should prevent your ISP or some go-between from snooping on your requests ... except it might not.
+A solution to this is to use encrypted DNS using DoH (DNS over HTTPS[^36]), DoT (DNS over TLS[^37]) with a private DNS server (this can be self-hosted locally with a solution like pi-hole[^38], remotely hosted with a solution like nextdns.io or using the solutions provided by your VPN provider or the Tor network). This should prevent your ISP or some go-between from snooping on your requests ... except it might not.
 
-Small in-between Disclaimer: **This guide does not necessarily endorse or recommends Cloudflare services even if it is mentioned several times in this section for technical understanding.**
+Small in-between Disclaimer: **This guide does not necessarily endorse or recommend Cloudflare services even if it is mentioned several times in this section for technical understanding.**
 
 Unfortunately, the TLS protocol used in most HTTPS connections in most Browsers (Chrome/Brave among them) will leak the Domain Name again through SNI[^39] handshakes (this can be checked here at Cloudflare: <https://www.cloudflare.com/ssl/encrypted-sni/> <sup>[[Archive.org]][49]</sup> ). **As of the writing of this guide, only Firefox-based browsers supports ECH (Encrypted Client Hello**[^40] **previously known as eSNI**[^41]**) on some websites which will encrypt everything end to end (in addition to using a secure private DNS over TLS/HTTPS) and will allow you to hide your DNS requests from a third party**[^42]**.** And this option is not enabled by default either so you will have to enable it yourself.
 
@@ -625,9 +625,14 @@ Finally, even if you use a custom encrypted DNS server (DoH or DoT) with ECH/eSN
 
 One could also decide to use a Tor Hidden DNS Service or ODoH (Oblivious DNS over HTTPS[^53]) to further increase privacy/anonymity but **unfortunately**, as far as we know, these methods are only provided by Cloudflare as of this writing (<https://blog.cloudflare.com/welcome-hidden-resolver/> <sup>[[Archive.org]][53]</sup>, <https://blog.cloudflare.com/oblivious-dns/> <sup>[[Archive.org]][54]</sup>). These are workable and reasonably secure technical options but there is also a moral choice if you want to use Cloudflare or not (despite the risk posed by some researchers[^54]).
 
+**Note that Oblivious DNS addresses an adversary that eavesdrops on one of the connections listed here but not all. It does not address a global passive adversary (GPA) who can eavesdrop on many or all of these connections**: 
+-   traffic between the client resolver and the recursive resolver
+-   the recursive resolver and the ODNS resolver
+-   the ODNS resolver and an authoritative server.
+
 Lastly, there is also this new possibility called DoHoT which stands for DNS over HTTPS over Tor which could also further increase your privacy/anonymity and which you could consider if you are more skilled with Linux. See <https://github.com/alecmuffett/dohot> <sup>[[Archive.org]][55]</sup>. This guide will not help you with this one at this stage, but it might be coming soon.
 
-Here is an illustration showing the current state of DNS and HTTPS privacy based on my current knowledge.
+Here is an illustration showing the current state of DNS and HTTPS privacy based on our current knowledge.
 
 ![][56]
 
@@ -2038,6 +2043,10 @@ Please see [Appendix Y: Installing and using desktop Tor Browser].
 
 ### Android:
 
+**Note on Tor Browser for Android: The development of Tor Browser for Android is behind desktop Tor Browser Bundle (TBB). Some features are not available yet. E.g., the desktop version of Tor now enables automatic bridges using Moat:**
+
+"**Connection Assist** works by looking up and downloading an up-to-date list of country-specific options to try using your location (with your consent). It manages to do so without needing to connect to the Tor Network first by utilizing [moat](https://support.torproject.org/glossary/moat/) – the same domain-fronting tool that Tor Browser uses to request a bridge from torproject.org."
+
 -   Head over to:
 
     -   Play Store: <https://play.google.com/store/apps/details?id=org.torproject.torbrowser>
@@ -2048,9 +2057,13 @@ Please see [Appendix Y: Installing and using desktop Tor Browser].
 
 -   Launch Tor Browser
 
--   After Launching, click the upper right Settings icon
+-   After launching, click the upper right **Settings** icon
 
--   Select "Config Bridge" and read [Appendix X: Using Tor bridges in hostile environments]
+-   Select **Settings** > **Privacy and security** > **Tor network** 
+
+-   Select **Config Bridge**.
+
+-   Read [Appendix X: Using Tor bridges in hostile environments].
 
 -   **If needed (after reading the appendix above)**, activate the option and select the type of bridge you want:
 
@@ -2062,17 +2075,19 @@ Please see [Appendix Y: Installing and using desktop Tor Browser].
 
 Personally, if you need to use a Bridge (this is not necessary for a non-hostile environment), you should pick a Meek-Azure. Those will probably work even if you are in China and want to bypass the Great Firewall. It is probably the best option to obfuscate your Tor activities if needed and Microsoft servers are usually not blocked.
 
+*Only available for Desktop Tor users: Recently, the Tor Project has made it incredibly simple to access Bridges with **Connection Assist**, and it is now automatically done in hostile or censored regions. Simply open the Tor Browser and the connection will be configured based on your needs on any hostile network. Previously, we had a list of options below this paragraph which were necessary to enable and configure bridges, but now that this is done automatically using [moat](https://support.torproject.org/glossary/moat/).* <sup>[[Archive.org]][1387]</sup>
+
 -   You are almost done
 
 As with the desktop version, you need to know there are safety levels in Tor Browser. On Android, you can access these by following these steps:
 
 -   Click the menu (bottom right)
 
--   Click Settings
+-   Click **Settings**.
 
--   Head over to the Privacy and security section
+-   Head over to the **Privacy and security** section.
 
--   Click Security Settings
+-   Click **Security Settings**.
 
 You will find details about each level here: <https://tb-manual.torproject.org/security-settings/> <sup>[[Archive.org]][240]</sup> but here is a summary:
 
@@ -11729,6 +11744,8 @@ In those cases, it might be necessary to use Tor bridges to connect to the Tor n
 
 Bridges are special Tor entry nodes that are not listed on the Tor public directory. Some of those are running on people running the Snowflake Browser extension[^520] while others are running on various servers around the world. Most of those bridges are running some type of obfuscation method called obfs4[^521].
 
+*Only available for Desktop Tor users: Recently, the Tor Project has made it incredibly simple to access Bridges with **Connection Assist**, and it is now automatically done in hostile or censored regions. Simply open the Tor Browser and the connection will be configured based on your needs on any hostile network. Previously, we had a list of options below this paragraph which were necessary to enable and configure bridges, but now that this is done automatically using [moat](https://support.torproject.org/glossary/moat/).* <sup>[[Archive.org]][1387]</sup>
+
 Here is the definition from the Tor Browser Manual[^522]: "obfs4 makes Tor traffic look random and prevents censors from finding bridges by Internet scanning. obfs4 bridges are less likely to be blocked than its predecessor, obfs3 bridges".
 
 Some of those are called "Meek" bridges and are using a technique called "Domain Fronting" where your Tor client (Tails, Tor Browser, Whonix Gateway) will connect to a common CDN used by other services. To a censor, it would appear you are connecting to a normal website such as Microsoft.com. See <https://gitlab.torproject.org/legacy/trac/-/wikis/doc/meek> for more information.
@@ -11779,7 +11796,7 @@ This is valid for Windows, Linux, and macOS.
 
 ## Usage and Precautions:
 
--   After opening Tor Browser, you will see an option to connect, a checkbox to connect automatically and a button to go into Tor Network Settings. The Tor Network settings are there for you to possibly configure Bridges to connect to Tor if you are experiencing issues connecting to Tor due to Censorship or Blocking as explained here: [Appendix X: Using Tor bridges in hostile environments].
+-   After opening Tor Browser, you will see an option to **Connect**, a checkbox to **Always connect automatically** and a button to **Configure connection**. The Tor Network settings are there for you to possibly configure Bridges to connect to Tor if you are experiencing issues connecting to Tor due to Censorship or Blocking. As explained here: [Appendix X: Using Tor bridges in hostile environments], this is now done automatically by the Tor Browser on Desktop.
 
 ![][688]
 
@@ -14438,11 +14455,11 @@ See the [Some last OPSEC thoughts][Some last OPSEC thoughts:] section for some t
   [683]: https://web.archive.org/web/https://chrisx.xyz/blog/yet-another-firefox-hardening-guide/
   [684]: https://web.archive.org/web/https://ebin.city/~werwolf/posts/firefox-hardening-guide/
   [685]: media/image53.jpeg
-  [686]: media/image54.jpeg
+  [686]: media/image54.png
   [687]: https://web.archive.org/web/https://www.torproject.org/download/
-  [688]: media/image55.jpeg
-  [689]: media/image56.jpeg
-  [690]: media/image57.jpeg
+  [688]: media/image55.png
+  [689]: media/image56.png
+  [690]: media/image57.png
   [691]: https://web.archive.org/web/https://z.cash/
   [692]: https://web.archive.org/web/https://z.cash/exchanges/
   [693]: https://web.archive.org/web/https://wasabiwallet.io/
@@ -15135,3 +15152,4 @@ See the [Some last OPSEC thoughts][Some last OPSEC thoughts:] section for some t
   [1384]: https://web.archive.org/web/20220718231735/https://officercia.mirror.xyz/5KSkJOTgMtvgC36v1GqZ987N-_Oj_zwvGatOk0A47Ws
   [1385]: https://web.archive.org/web/20220516000616/https://officercia.mirror.xyz/WeAilwJ9V4GIVUkYa7WwBwV2II9dYwpdPTp3fNsPFjo
   [1386]: https://web.archive.org/web/20220720023429/https://leakuidatorplusteam.github.io/
+  [1387]: https://web.archive.org/web/20220801151048/https://support.torproject.org/glossary/moat/
