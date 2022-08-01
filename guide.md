@@ -2071,6 +2071,8 @@ Please see [Appendix Y: Installing and using desktop Tor Browser].
 
 Personally, if you need to use a Bridge (this is not necessary for a non-hostile environment), you should pick a Meek-Azure. Those will probably work even if you are in China and want to bypass the Great Firewall. It is probably the best option to obfuscate your Tor activities if needed and Microsoft servers are usually not blocked.
 
+Recently, the Tor Project has made it incredibly simple to access Bridges with **Connection Assist**, and it is now automatically done in hostile or censored regions. Simply open the Tor Browser and the connection will be configured based on your needs on any hostile network. Previously, we had a list of options below this paragraph which were necessary to enable and configure bridges, but now that this is done automatically using [moat](https://support.torproject.org/glossary/moat/).
+
 -   You are almost done
 
 As with the desktop version, you need to know there are safety levels in Tor Browser. On Android, you can access these by following these steps:
@@ -11728,6 +11730,8 @@ Each Virtual Machine is a sandbox. Remember the reasons for using them are to pr
 # Appendix X: Using Tor bridges in hostile environments
 
 Recently, the Tor Project has made it incredibly simple to access Bridges with **Connection Assist**, and it is now automatically done in hostile or censored regions. Simply open the Tor Browser and the connection will be configured based on your needs on any hostile network. Previously, we had a list of options below this paragraph which were necessary to enable and configure bridges, but now this is done automatically using [moat](https://support.torproject.org/glossary/moat/).
+
+
 
 In some environments, your ISPs might be trying to prevent you from accessing Tor. Or accessing Tor openly might be a safety risk.
 
