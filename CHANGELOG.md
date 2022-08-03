@@ -1,12 +1,12 @@
 v1.1.6-draft
 
-**Special note: we are actively looking for contributors, translators, proofreaders. If you want to contribute and think you can help in some way, we are open to candidates.**
+**Special note: we are actively looking for contributors, translators, and proofreaders. If you want to contribute and think you can help in some way, we are open to candidates.**
 
+- **PDF and ODT files are temporarily not being provided due to issues we have yet to solve**
 - Tor Mirror now operational and ready <http://thgtoallkcxrdv37u6knsc3pumk6cq6lqmcqlw3j5vkmyahkxive4jyd.onion/>
 - Addition of an Ukrainian disclaimer with a recommendation to use Briar for local communications 
 - Updates of contribution guidelines
 - Restart of the translation project on Transifex. Feel free to join at <https://www.transifex.com/anonymousplanet/the-hitchhikers-guide-to-online-anonymity>
-- PDF and ODT files are temporarily not being provided due to issues we have yet to solve
 - Many link fixes (changes, updates, deletion)
 - Many new references added to various sections
 - Many additions of new information and updates to various sections
