@@ -16,7 +16,8 @@ v1.1.5
 - Various spelling and grammar fixes
 - Fixed several numbering errors in references
 - Updated and fixed many broken URLs and saved them in the Wayback Machine
-- Noted that <https://mastodon.social/@anonypla> is gone? added strike-through
+- Noted that <https://mastodon.social/@anonypla> acct. is gone
+
 - Adapted Qubes OS hardware requirements that were too low for a decent experience (RAM) according to their recommendation
 - Put more incentive to use Tor Browser Safest mode as long as it does not break anything and switch to Safer if necessary and with precautions linked in an appendix
 - Precision that Anti-Evil Maid on Qubes OS is only available on Intel CPUs 
