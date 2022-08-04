@@ -12390,10 +12390,16 @@ Also please consider reading: **<https://github.com/monero-project/monero/blob/m
 Here are various threat modeling resources if you want to go deeper in threat modeling.
 
 -   The one we recommend: LINDDUN <https://www.linddun.org/> <sup>[[Archive.org]][739]</sup>.
-    - They provide an online tool to help making your threat model online at <https://www.linddun.org/go><sup>[[Archive.org]](https://web.archive.org/web/https://www.linddun.org/go)</sup>.
-    - LINDDUN is focused on Privacy but clearly are also perfectly suitable for Anonymity. 
-    - LINDDUN is accessible to all skill levels including beginners (providing many tutorials) but also suitable for highly skilled users.
-    - LINDDUN is active in the making of the Threat Modeling Manifesto: <https://www.threatmodelingmanifesto.org/> <sup>[[Archive.org]][745]</sup>
+    - Researchers created an online tool to help making your threat model at <https://www.linddun.org/go><sup>[[Archive.org]](https://web.archive.org/web/https://www.linddun.org/go)</sup>.
+    - It is synergistic with STRIDE below.
+    - It is focused on privacy but is clearly perfectly suitable for anonymity.
+    - It is accessible to all skill levels including beginners (providing many tutorials) but also suitable for highly skilled readers.
+    - It is used in the making of the Threat Modeling Manifesto: <https://www.threatmodelingmanifesto.org/> <sup>[[Archive.org]][745]</sup>
+
+![][1389]
+(Illustration from [Wuyts2015])
+
+-   LINDDUN: Linkability, Identifiability, Non-repudiation, Detectability, Disclosure of information, Unawareness, and Non-compliance.
 
 Here are alternative resources and models if LINDDUN doesn't suit you:
     
@@ -13786,6 +13792,7 @@ See the [Some last OPSEC thoughts][Some last OPSEC thoughts:] section for some t
   [Appendix B4: Important notes about evil-maid and tampering]: #appendix-b4-important-notes-about-evil-maid-and-tampering
   [References:]: #references
   [cc-by-nc-4.0]: https://creativecommons.org/licenses/by-nc/4.0/
+  [Wuyts2015]: https://lirias.kuleuven.be/retrieve/295669
   [27]: https://web.archive.org/web/https://creativecommons.org/licenses/by-nc/4.0/
   [https://matrix.to/#/#anonymity:matrix.org]: https://matrix.to/#/
   [28]: https://nitter.net/AnonyPla
@@ -15150,3 +15157,4 @@ See the [Some last OPSEC thoughts][Some last OPSEC thoughts:] section for some t
   [1385]: https://web.archive.org/web/20220516000616/https://officercia.mirror.xyz/WeAilwJ9V4GIVUkYa7WwBwV2II9dYwpdPTp3fNsPFjo
   [1386]: https://web.archive.org/web/20220720023429/https://leakuidatorplusteam.github.io/
   [1387]: https://web.archive.org/web/20220801151048/https://support.torproject.org/glossary/moat/
+  [1389]: media/image59.png
