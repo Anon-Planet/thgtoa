@@ -7459,7 +7459,7 @@ Finally, Open-Source apps should always be preferred because they allow third pa
 <td>Lacks PFS, deniability</td>
 </tr>
 <tr class="odd">
-<td>Signal</td>
+<td>Signal/Molly</td>
 <td>Yes</td>
 <td>No</td>
 <td>Yes</td>
@@ -7766,7 +7766,7 @@ You can also consult the following external resources for more comparisons:
 
 -   Messenger-Matrix.de at <https://www.messenger-matrix.de/messenger-matrix-en.html> <sup>[[Archive.org]][461]</sup>
 
-**We do not endorse or recommend some mainstream platforms for anonymity including the much-praised Signal which to this date still requires a phone number to register and contact others. In the context of this guide, we strongly recommend against using Signal if possible.**
+**We do not endorse or recommend some mainstream platforms for anonymity including the much-praised Signal which to this date still requires a phone number to register and contact others. In the context of this guide, we strongly recommend against using Signal if possible. The same recommendation applies to popular forks of Signal such Molly (<https://molly.im><sup>[[Archive.org]](https://web.archive.org/web/https://molly.im)<sup>)**
 
 ### How to share files publicly but anonymously:
 
