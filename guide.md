@@ -12390,7 +12390,7 @@ Also please consider reading: **<https://github.com/monero-project/monero/blob/m
 Here are various threat modeling resources if you want to go deeper in threat modeling.
 
 -   The one we recommend: LINDDUN <https://www.linddun.org/> <sup>[[Archive.org]][739]</sup>.
-    - Researchers created an online tool to help making your threat model at <https://www.linddun.org/go><sup>[[Archive.org]](https://web.archive.org/web/https://www.linddun.org/go)</sup>.
+    - Researchers created an online tool to help make your threat model at <https://www.linddun.org/go><sup>[[Archive.org]](https://web.archive.org/web/https://www.linddun.org/go)</sup>.
     - It is synergistic with STRIDE below.
     - It is focused on privacy but is clearly perfectly suitable for anonymity.
     - It is accessible to all skill levels including beginners (providing many tutorials) but also suitable for highly skilled readers.
