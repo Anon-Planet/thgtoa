@@ -12231,6 +12231,8 @@ These recommendations are similar to the ones at the beginning of the guide and 
 Find it online at:
 
 -   Original: <https://anonymousplanet-ng.org>
+    
+-   Tor Onion Mirror: <http://thgtoallkcxrdv37u6knsc3pumk6cq6lqmcqlw3j5vkmyahkxive4jyd.onion>    
 
 -   Archive.org: <https://web.archive.org/web/https://anonymousplanet-ng.org>
 
