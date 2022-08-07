@@ -349,7 +349,7 @@ Finally note that this guide does mention and even recommends various commercial
 -   [Appendix Z: Online anonymous payments using cryptocurrencies]
     -   [Reasonably anonymous option:]
     -   [Extra-Paranoid anonymous option:]
-    -   [Warning about special tumbling, mixing, coinjoining privacy wallets and services:]
+    -   [Warning about special tumbling, mixing, coinjoining privacy wallets and services]
     -   [When converting from BTC to Monero:]
 -   [Appendix A1: Recommended VPS hosting providers]
 -   [Appendix A2: Guidelines for passwords and passphrases]
@@ -11860,9 +11860,9 @@ But what if the service you want does not accept Monero but does accept a more m
 
 **Bitcoin and other "mainstream cryptocurrencies" are not anonymous at all (Remember [Your Cryptocurrencies transactions][Your Cryptocurrencies transactions:]) and you should never ever purchase, for example, Bitcoin from an exchange and then use these directly for purchasing services anonymously. This will not work, and the transaction can be traced easily.**
 
--   **Stay away from Crypto Mixers and Tumblers.** You might think this is a good idea but not only are they useless with cryptocurrencies such as BTC/ETH/LTC, but they are also dangerous as you might end up trading your currency for dirty currency from illicit activities. Use Monero to anonymize your crypto. Use a normal KYC-enabled Exchange to buy/sell your Monero (such as Kraken) or (at your own risk), use a service like LocalMonero.
+-   **Stay away from Crypto Mixer, Tumblers and Coinjoiners.** You might think this is a good idea but not only are they useless with cryptocurrencies such as BTC/ETH/LTC, but they are also dangerous as you might end up trading your currency for dirty currency from illicit activities. Use Monero to anonymize your crypto. Use a normal KYC-enabled Exchange to buy/sell your Monero (such as Kraken) or (at your own risk), use a service like LocalMonero.
 
--   **Stay away from what are in my opinion risky private/anonymizing wallets such as <https://we.incognito.org>.** Use a safer method outlined below.
+-   **See [Warning about special tumbling, mixing, coinjoining privacy wallets and services].** 
 
 ## Reasonably anonymous option:
 
@@ -13753,7 +13753,7 @@ See the [Some last OPSEC thoughts][Some last OPSEC thoughts:] section for some t
   [Appendix Z: Online anonymous payments using cryptocurrencies]: #appendix-z-online-anonymous-payments-using-cryptocurrencies
   [Reasonably anonymous option:]: #reasonably-anonymous-option
   [Extra-Paranoid anonymous option:]: #extra-paranoid-anonymous-option
-  [Warning about special tumbling, mixing, coinjoining privacy wallets and services:]: #warning-about-special-tumbling-mixing-coinjoining-privacy-wallets-and-services
+  [Warning about special tumbling, mixing, coinjoining privacy wallets and services]: #warning-about-special-tumbling-mixing-coinjoining-privacy-wallets-and-services-wikiless-archiveorg
   [When converting from BTC to Monero:]: #when-converting-from-btc-to-monero
   [Appendix A1: Recommended VPS hosting providers]: #appendix-a1-recommended-vps-hosting-providers
   [Appendix A2: Guidelines for passwords and passphrases]: #appendix-a2-guidelines-for-passwords-and-passphrases
