@@ -12397,7 +12397,7 @@ Here are various threat modeling resources if you want to go deeper in threat mo
     - It is used in the making of the Threat Modeling Manifesto: <https://www.threatmodelingmanifesto.org/> <sup>[[Archive.org]][745]</sup>
 
 ![][1389]
-(Illustration from [Wuyts2015])
+(Illustration from [LINDDUN 2015])
 
 -   LINDDUN: Linkability, Identifiability, Non-repudiation, Detectability, Disclosure of information, Unawareness, and Non-compliance.
 
@@ -13792,7 +13792,7 @@ See the [Some last OPSEC thoughts][Some last OPSEC thoughts:] section for some t
   [Appendix B4: Important notes about evil-maid and tampering]: #appendix-b4-important-notes-about-evil-maid-and-tampering
   [References:]: #references
   [cc-by-nc-4.0]: https://creativecommons.org/licenses/by-nc/4.0/
-  [Wuyts2015]: https://lirias.kuleuven.be/retrieve/295669
+  [LINDDUN2015]: https://lirias.kuleuven.be/retrieve/295669
   [27]: https://web.archive.org/web/https://creativecommons.org/licenses/by-nc/4.0/
   [https://matrix.to/#/#anonymity:matrix.org]: https://matrix.to/#/
   [28]: https://nitter.net/AnonyPla
