@@ -12333,7 +12333,7 @@ Here are various threat modeling resources if you want to go deeper in threat mo
     - It is used in the making of the Threat Modeling Manifesto: <https://www.threatmodelingmanifesto.org/> <sup>[[Archive.org]][745]</sup>
 
 ![][1389]
-(Illustration from [LINDDUN 2015])
+(Illustration from [LINDDUN2015])
 
 Here are alternative resources and models if LINDDUN doesn't suit you:
     
