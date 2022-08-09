@@ -7970,6 +7970,8 @@ What you should avoid:
 
 -   Do not meet people in real life unless you have absolutely no other option (this is a last resort option).
 
+-   Do not make a copy or print anything sensitive without first removing digital tracking watermarks.
+
 If you intend to break your anonymity to protect your safety:
 
 -   Assess the risks very carefully first.
