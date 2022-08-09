@@ -8,7 +8,7 @@ Version 1.1.6-pre1, August 2022 by Anonymous Planet
 
 #### **IMPORTANT RECOMMENDATION FOR UKRAINIANS. ВАЖЛИВА РЕКОМЕНДАЦІЯ ДЛЯ УКРАЇНЦІВ**
 
-Це послання до народу України. Ми настійно рекомендуємо вам використовувати Briar для спілкування. Ви можете знайти його тут: <https://briarproject.org/ . 
+Це послання до народу України. Ми настійно рекомендуємо вам використовувати Briar для спілкування. Ви можете знайти його тут: <https://briarproject.org/ .
 За допомогою цієї програми ви можете спілкуватися, навіть коли немає Інтернету.
 Посібник тут: <https://briarproject.org/manual/uk/>, Швидкий початок: <https://briarproject.org/quick-start/uk/>
 
@@ -123,6 +123,7 @@ Finally note that this guide does mention and even recommends various commercial
         -   [Properties and Metadata:]
         -   [Watermarking:]
         -   [Pixelized or Blurred Information:]
+        -   [Eliminating Tracking Dots in Printed Documents:]
     -   [Your Cryptocurrencies transactions:]
     -   [Your Cloud backups/sync services:]
     -   [Your Browser and Device Fingerprints:]
@@ -625,7 +626,7 @@ Finally, even if you use a custom encrypted DNS server (DoH or DoT) with ECH/eSN
 
 One could also decide to use a Tor Hidden DNS Service or ODoH (Oblivious DNS over HTTPS[^53]) to further increase privacy/anonymity but **unfortunately**, as far as we know, these methods are only provided by Cloudflare as of this writing (<https://blog.cloudflare.com/welcome-hidden-resolver/> <sup>[[Archive.org]][53]</sup>, <https://blog.cloudflare.com/oblivious-dns/> <sup>[[Archive.org]][54]</sup>). These are workable and reasonably secure technical options but there is also a moral choice if you want to use Cloudflare or not (despite the risk posed by some researchers[^54]).
 
-**Note that Oblivious DNS addresses an adversary that eavesdrops on one of the connections listed here but not all. It does not address a global passive adversary (GPA) who can eavesdrop on many or all of these connections**: 
+**Note that Oblivious DNS addresses an adversary that eavesdrops on one of the connections listed here but not all. It does not address a global passive adversary (GPA) who can eavesdrop on many or all of these connections**:
 -   traffic between the client resolver and the recursive resolver
 -   the recursive resolver and the ODNS resolver
 -   the ODNS resolver and an authoritative server.
@@ -1029,7 +1030,7 @@ Here are some other resources on the topic if you cannot see this documentary:
 
 -   2016, A Survey on User Behavior Analysis in Social Networks <https://www.academia.edu/30936118/A_Survey_on_User_Behaviour_Analysis_in_Social_Networks> <sup>[[Archive.org]][98]</sup>
 
--   2017, DEF CON 25 presentation: [DEF CON 25 - Svea Eckert, Andreas Dewes - Dark Data](https://www.youtube.com/watch?v=1nvYGi7-Lxo) <sup>[[Invidious]](https://yewtu.be/watch?v=1nvYGi7-Lxo)</sup>   
+-   2017, DEF CON 25 presentation: [DEF CON 25 - Svea Eckert, Andreas Dewes - Dark Data](https://www.youtube.com/watch?v=1nvYGi7-Lxo) <sup>[[Invidious]](https://yewtu.be/watch?v=1nvYGi7-Lxo)</sup>
 
 -   2019, Influence and Behavior Analysis in Social Networks and Social Media <https://sci-hub.se/10.1007/978-3-030-02592-2> <sup>[[Archive.org]][99]</sup>
 
@@ -1346,6 +1347,16 @@ Of course, this tool is more like "guessing" than really deblurring at this poin
 There are also techniques to deblur/depixelate parts in videos: see <https://positive.security/blog/video-depixelation> <sup>[[Archive.org]][1371]</sup>
 
 For this reason, it is always extremely important that you correctly redact and curate any document you might want to publish. Blurring is not enough, and you should always completely blacken/remove any sensitive data to avoid any attempt at recovering data from any adversary. Do not pixelized, do not blur, just put a hard black rectangle to redact information.
+
+### Eliminating Tracking Dots in Printed Documents:
+
+Many times, you will want to print a document. The issue with sharing documents, especially sensitive ones, is that it comes with the risk of watermarked pixel tracking dots, which can be used to track a specific document printed using your specific printer's serial number, and, in some cases even the exact model. According to the Electronic Frontier Foundation (EFF), [most new printers](https://www.eff.org/pages/list-printers-which-do-or-do-not-display-tracking-dots) contain these tracking dots. The dots can usually be seen with a special light or some image manipulation, illuminating the near-invisible dots.
+
+In an [affidavit from June 5, 2017](https://www.justice.gov/opa/press-release/file/971331/download), in the case of whistleblower Reality Winner, forensic analysts revealed how they were able to find out she had "printed an intelligence report which contained classified national defense information...from [the NSA] and unlawfully retained it. Approximately a few days later, [Winner] then unlawfully transmitted the intelligence reporting to [The Intercept]." You can read the original article [here](https://theintercept.com/2017/06/05/top-secret-nsa-report-details-russian-hacking-effort-days-before-2016-election/).
+
+In this affidavit, the NSA revealed how it had "determined that six individuals printed this report" and details that they were able to narrow down the exact model of printer, the time and date, and the specific location of the printer itself - all by using the watermarking described in the EFF report. Later in a [report by Errata Security](https://blog.erratasec.com/2017/06/how-intercept-outed-reality-winner.html#.WTbnDBgrLrd), Rob Graham further explained: "The document leaked by the Intercept was from a printer with model number 54, serial number 29535218. The document was printed on May 9, 2017 at 6:20. The NSA almost certainly has a record of who used the printer at that time." Further down, it also states: "These sorts of failures are common with leaks. To fix this yellow-dot problem, use a black-and-white printer, black-and-white scanner, or convert to black-and-white with an image editor. Yes, this code the government forces into our printers is a violation of our 3rd Amendment rights."
+
+In a 2018 paper titled *Forensic Analysis and Anonymisation of Printed Documents*[^536] (IH&MMSec ’18), German researchers not only identify methods to track these digital forensic traces, but they detail how to defeat them with a tool they developed called Deda: <https://dfd.inf.tu-dresden.de/>. It is a toolkit expressly designed for eliminating "artefacts which are stable and e.g. model specific and therefore usable as intrinsic signatures for a specific printer model."
 
 ## Your Cryptocurrencies transactions:
 
@@ -2059,7 +2070,7 @@ Please see [Appendix Y: Installing and using desktop Tor Browser].
 
 -   After launching, click the upper right **Settings** icon
 
--   Select **Settings** > **Privacy and security** > **Tor network** 
+-   Select **Settings** > **Privacy and security** > **Tor network**
 
 -   Select **Config Bridge**.
 
@@ -5049,7 +5060,7 @@ Remember this should be done from a safe place (see [Find some safe places with 
 
 ### Upgrading Qubes OS from 4.0.x to 4.1.x (you should do it)
 
-Personally, we wouldn't do it in-place and do a fresh install. 
+Personally, we wouldn't do it in-place and do a fresh install.
 
 But if you really want to, it's technically possible by following this guide: <https://www.qubes-os.org/doc/upgrade/4.1/> <sup>[[Archive.org]][1372]</sup>
 
@@ -5210,7 +5221,7 @@ When you are done downloading the configuration files within the Disposable Brow
 
     -   Save and exit each file
 
--   Edit the OpenVPN config file (/etc/default/openvpn) by typing ```sudo nano /etc/default/openvpn``` 
+-   Edit the OpenVPN config file (/etc/default/openvpn) by typing ```sudo nano /etc/default/openvpn```
 
     -   Change ```#AUTOSTART="all"``` to ```AUTOSTART="all"``` (in other words, remove the "#")
 
@@ -5511,9 +5522,9 @@ See their tutorial here: <https://github.com/Qubes-Community/Contents/blob/maste
 
 # Quick note: Correlation vs Attribution
 
-**Correlation** is a relationship between two or more variables or **[attributes](https://www.digitalshadows.com/blog-and-research/cyber-attacks-the-challenge-of-attribution-and-response/)**. How are attributions determined? During digital forensic and incident response (DFIR), analysts typically look for indicators of compromise (IoCs) following events that call them to act. These indicators usually consist of IP addresses, names, databases; all of which can prescribe a certain behavioral "tag" to an individual or group. This is called attribution. A principal in statistics is that "correlation does not infer causality". What this means is that, while you may leave certain traces on certain areas of a device or network, that only shows presence of action, i.e., not explicitly your presence. It doesn't show who you are, it only resolves that something occurred and *someone* has done *something*. 
+**Correlation** is a relationship between two or more variables or **[attributes](https://www.digitalshadows.com/blog-and-research/cyber-attacks-the-challenge-of-attribution-and-response/)**. How are attributions determined? During digital forensic and incident response (DFIR), analysts typically look for indicators of compromise (IoCs) following events that call them to act. These indicators usually consist of IP addresses, names, databases; all of which can prescribe a certain behavioral "tag" to an individual or group. This is called attribution. A principal in statistics is that "correlation does not infer causality". What this means is that, while you may leave certain traces on certain areas of a device or network, that only shows presence of action, i.e., not explicitly your presence. It doesn't show who you are, it only resolves that something occurred and *someone* has done *something*.
 
-Attribution is required to prove fault or guilt, and is the prime reason why people using the Tor network to access the dark web have been compromised: they left traces that were shown to be connected to their real identities. Your IP can be — but is usually not — a large enough indicator to attribute guilt. This is shown in the infamous NotPetya cyber attacks against the U.S., which were later also released upon Ukraine. Though the White House never *said* it was Russia's doing, they attributed the attack to Russia's [(GRU)](https://www.reuters.com/article/us-britain-russia-gru-factbox/what-is-russias-gru-military-intelligence-agency-idUSKCN1MF1VK) which is a direct office housing the Russian deniable warfare[^311] cyber divisions, uncommonly referred to as "spy makers" in the intelligence community (IC). 
+Attribution is required to prove fault or guilt, and is the prime reason why people using the Tor network to access the dark web have been compromised: they left traces that were shown to be connected to their real identities. Your IP can be — but is usually not — a large enough indicator to attribute guilt. This is shown in the infamous NotPetya cyber attacks against the U.S., which were later also released upon Ukraine. Though the White House never *said* it was Russia's doing, they attributed the attack to Russia's [(GRU)](https://www.reuters.com/article/us-britain-russia-gru-factbox/what-is-russias-gru-military-intelligence-agency-idUSKCN1MF1VK) which is a direct office housing the Russian deniable warfare[^311] cyber divisions, uncommonly referred to as "spy makers" in the intelligence community (IC).
 
 _What is the point_, you may ask? Well, bluntly speaking, this a perfect example because NotPetya, which is now undoubtedly the work of Russian cyber operations against foreign countries and governments, has still never been formally attributed to Russia, only to a known group within Russia (colloquially dubbed [Cozy Bear](https://wikiless.org/wiki/Cozy_Bear)) which can not be confirmed nor denied given that it is highly compartmentalized within the structure of Russia's military. And it's also in part because of the efforts used to disguise itself as a common Ransomware, and because it routinely used the servers of hacked foreign assets not linked to Russia or to its internal networks.
 
@@ -5704,7 +5715,7 @@ Here are some of the things they check within recent browsers:
 -   ...
 
 Here are services you can use to check your browser fingerprints:
-    
+
 -   <https://abrahamjuliot.github.io/creepjs/> (Probably the best overall)
 
 -   <https://coveryourtracks.eff.org/>
@@ -9134,7 +9145,7 @@ Here are the steps for BleachBit:
 
 With this Native Windows 10/11 utility, you can just trigger a Trim on your SSD which should be more than enough to securely clean all deleted files that somehow would have escaped Trim when deleting them.
 
-Just open Windows Explorer, Right Click on your System Drive and click Properties. Select Tools. Click Optimize and Defragment. You are done as this will not defragment but only optimize. Meaning it will initiate a Trim operation (<https://en.wikipedia.org/wiki/Trim_(computing)> <sup>[[Wikiless]][485]</sup> <sup>[[Archive.org]]). 
+Just open Windows Explorer, Right Click on your System Drive and click Properties. Select Tools. Click Optimize and Defragment. You are done as this will not defragment but only optimize. Meaning it will initiate a Trim operation (<https://en.wikipedia.org/wiki/Trim_(computing)> <sup>[[Wikiless]][485]</sup> <sup>[[Archive.org]]).
 
 ![][501]
 
@@ -9280,7 +9291,7 @@ Most likely if someone went through your document to read it and re-placed it ca
 
 Wait, what is OPSEC? Well, OPSEC means Operations Security[^456]. The basic definition is: "OPSEC is the process of protecting individual pieces of data that could be grouped together to give the bigger picture."
 
-The important step here, and probably the easiest one, is a lesson you can take from the movie Fight Club: the first rule is that you **do not** talk about Fight Club. This applies to many aspects of your online operational security or OPSEC. Taking your time to go through this guide will reward you with the tools and knowledge to embrace a fuller, more secure experience on the internet. Rest assured that this guide will reveal things to you that will frustrate your enemy. You will learn how to protect your operating systems and lockdown your critical information and ensure mission success. But the one thing you must adhere to is this rule of thumb - do not talk about operation details. The biggest adversarial threat to you is OSINT (discussed below and throughout the document). The enemy will gather information on you based on what they observe about you and your activities online and in real life. 
+The important step here, and probably the easiest one, is a lesson you can take from the movie Fight Club: the first rule is that you **do not** talk about Fight Club. This applies to many aspects of your online operational security or OPSEC. Taking your time to go through this guide will reward you with the tools and knowledge to embrace a fuller, more secure experience on the internet. Rest assured that this guide will reveal things to you that will frustrate your enemy. You will learn how to protect your operating systems and lockdown your critical information and ensure mission success. But the one thing you must adhere to is this rule of thumb - do not talk about operation details. The biggest adversarial threat to you is OSINT (discussed below and throughout the document). The enemy will gather information on you based on what they observe about you and your activities online and in real life.
 
 Adversaries take many forms. To some, they are actors of a foreign government, while to others they may be simply a rival company's employee looking to find disgruntled workers to target for further pressuring. To most, the general task of OPSEC is that this is your ship - you must not do anything or say anything to sink your own ship. Simply expressing your frustration with your boss or your work conditions or your equipment, might be enough to generate not only a behavior profile but also a vector of attack. A disgruntled employee, in this example, is what generally provides enough information to warrant pressuring of that employee for further information and possibly even extortion, blackmail, or worse. Failure to implement basic OPSEC can lead to failure at various points. It can lead to serious injury or even death if your threat model is a determined attacker, foreign actor, and so on.
 
@@ -9297,7 +9308,7 @@ You must live by the simple rule that "loose lips sink ships" - but also that th
 -   Do not ever use biometrics alone to safeguard your secrets. Biometrics can be used without your consent.
 
 -   Do check the signatures and hashes of software and documents you download before installing/viewing them.
-    
+
 -   Do not have the same behavior such as visiting the same links on the clearnet then visit the same with the your anoynous online identity. Watch this DEF CON 25 presentation if you didn't before: [DEF CON 25 - Svea Eckert, Andreas Dewes - Dark Data](https://www.youtube.com/watch?v=1nvYGi7-Lxo) <sup>[[Invidious]](https://yewtu.be/watch?v=1nvYGi7-Lxo)</sup>.
 
 -   Encrypt everything but do not take it for granted. Remember the 5$ wrench.
@@ -9348,7 +9359,7 @@ You must live by the simple rule that "loose lips sink ships" - but also that th
     -   2015, DEF CON 22, Adrian Crenshaw, Dropping Docs on Darknets: How People Got Caught <https://www.youtube.com/watch?v=eQ2OZKitRwc> <sup>[[Invidious]][549]</sup> ([Slides][] <sup>[[Archive.org]][550]</sup>)
 
     -   2017, Ochko123 - How the Feds Caught Russian Mega-Carder Roman Seleznev <https://www.youtube.com/watch?v=6Chp12sEnWk> <sup>[[Invidious]][551]</sup>
-    
+
     -   2017, [DEF CON 25 - Svea Eckert, Andreas Dewes - Dark Data](https://www.youtube.com/watch?v=1nvYGi7-Lxo) <sup>[[Invidious]](https://yewtu.be/watch?v=1nvYGi7-Lxo)</sup>
 
     -   2015, DEF CON 22, Zoz, Don't Fuck It Up! <https://www.youtube.com/watch?v=J1q4Ir2J8P8> <sup>[[Invidious]][552]</sup>
@@ -10301,7 +10312,7 @@ This is very lightweight, and we recommend doing it from a VM (VM inside a VM) t
 44. **Remove the default config file** by running ```rm /etc/apache2/sites-enabled/000-default.conf```.
 45. **Edit the apache2 config file** provided by mat2-web by running ```nano /etc/apache2/sites-enabled/apache2.conf```.
 46. **Remove the first line** ```Listen 80``` by typing **Ctrl+K** to cut the line.
-47. **Change the uwsgi path** from ```/var/www/mat2-web/mat2-web.sock``` to ```/run/uwsgi/uwsgi.sock``` and type **Ctrl+X** to exit, followed by **Y** then **Enter**. 
+47. **Change the uwsgi path** from ```/var/www/mat2-web/mat2-web.sock``` to ```/run/uwsgi/uwsgi.sock``` and type **Ctrl+X** to exit, followed by **Y** then **Enter**.
 48. **Copy the uwsgi config file** to **/etc** by running ```cp uwsgi.config /etc/uwsgi/apps-enabled/uwsgi.ini```.
 49. **Edit the uwsgi config file** by typing ```nano /etc/uwsgi/apps-enabled/uwsgi.ini``` and change **uid** and **guid** to ```nobody``` and ```nogroup``` respectively. Save and exit with **Ctrl+X**, followed by **Y**, then **Enter**.
 50. Run ```chown -R 777 /var/www/mat2-web``` to change ownership to **mat2-web**.
@@ -10327,7 +10338,7 @@ After updates, shutdown, change to the **Host-only Adapter**, take a new snapsho
 
 You are done.
 
-Now you can just start this small Mat2 VM when needed. Browse to it from your Guest VM and use the interface to remove any metadata from most files. After each use of this VM, you should revert to the Snapshot to erase all traces. 
+Now you can just start this small Mat2 VM when needed. Browse to it from your Guest VM and use the interface to remove any metadata from most files. After each use of this VM, you should revert to the Snapshot to erase all traces.
 
 **Do not ever expose this VM to any network unless temporarily for updates. This web interface is not suitable for any direct external access.**
 
@@ -10386,7 +10397,7 @@ There are, two viable options:
 ## Cash/Monero-Paid VPN:
 
 There are three VPN companies recommended by PrivacyGuides.org (<https://www.privacyguides.org/vpn/> <sup>[[Archive.org]][620]</sup>) that accept cash payments: Mullvad, iVPN, and Proton VPN.
-    
+
 Here are their logging policies:
 
 -   Mullvad: <https://mullvad.net/en/help/no-logging-data-policy/> <sup>[[Archive.org]](https://web.archive.org/web/https://mullvad.net/en/help/no-logging-data-policy/)</sup>
@@ -10978,7 +10989,7 @@ If you are to resort to this, you should never do so from a monitored/known netw
 **Refer to the Tails route to achieve this. See [The Tails route][The Tor Browser route:] and [Appendix P: Accessing the internet as safely as possible when Tor and VPNs are not an option] sections.**
 
 # Appendix V: What browser to use in your Guest VM/Disposable VM
-    
+
 **Temporary Important Warning: Please see [Microarchitectural Side-channel Deanonymization Attacks:].**
 
 There are 6 possibilities of browser to use on your guest/disposable VM:
@@ -11717,7 +11728,7 @@ Hopefully, these bridges should be enough to get you connected even in a hostile
 If not, consider [Appendix P: Accessing the internet as safely as possible when Tor and VPNs are not an option]
 
 # Appendix Y: Installing and using desktop Tor Browser
-    
+
 **Temporary Important Warning: Please see [Microarchitectural Side-channel Deanonymization Attacks:].**
 
 ## Installation:
@@ -11765,7 +11776,7 @@ This is valid for Windows, Linux, and macOS.
 ![][690]
 
 We would recommend the "Safest" level by default. The "Safer" level should be enabled if you think you need access to a website not working without JavaScript. The Safest mode will  most likely break many websites that rely actively on JavaScript.
-    
+
 If you are extra paranoid, use the "Safest" level by default and consider downgrading to Safer is the website is unusable because of Javascript blocking.
 
 **Optional and not recommended by the Tor Project**: If you are not using the "Safest" level, we will diverge from some but agree with others (for instance the Tails project and others[^525]) and will actually recommend some modifications of the default Tor Browser in the addition of two extensions:
@@ -11796,7 +11807,7 @@ But what if the service you want does not accept Monero but does accept a more m
 
 -   **Stay away from Crypto Mixer, Tumblers and Coinjoiners.** You might think this is a good idea but not only are they useless with cryptocurrencies such as BTC/ETH/LTC, but they are also dangerous as you might end up trading your currency for dirty currency from illicit activities. Use Monero to anonymize your crypto. Use a normal KYC-enabled Exchange to buy/sell your Monero (such as Kraken) or (at your own risk), use a service like LocalMonero.
 
--   **See [Warning about special tumbling, mixing, coinjoining privacy wallets and services].** 
+-   **See [Warning about special tumbling, mixing, coinjoining privacy wallets and services].**
 
 ## Reasonably anonymous option:
 
@@ -11818,7 +11829,7 @@ Despite this, it is possible to safely anonymize Bitcoin through the use of cryp
 
 5. From an anonymized browser (such as Tor Browser), use a non-KYC (Know Your Customer) service swapping service (see [Appendix A8: Crypto Swapping Services without Registration and KYC]) and convert your Monero to BTC and transfer those to the BTC Wallet you have on your anonymized VM
 
-6. You should now have an anonymized Bitcoin wallet that can be used for purchasing services that do not accept Monero. 
+6. You should now have an anonymized Bitcoin wallet that can be used for purchasing services that do not accept Monero.
 
 **You should never access this wallet from a non-anonymized environment. Always use well-thought OPSEC with your BTC transactions. Remember those can be traced back to you.**
 
@@ -11879,9 +11890,9 @@ Mixing BTC in this way should prevent any chain analysis on future transactions.
 -  [Mixing detection on Bitcoin transactions using statistical patterns.](https://arxiv.org/pdf/2204.02019.pdf) <sup>[Archive.org](https://web.archive.org/web/https://arxiv.org/pdf/2204.02019.pdf)</sup>
 -  [An Analysis Of Bitcoin Laundry Services](https://www.researchgate.net/profile/Julio-Hernandez-Castro/publication/319944399_An_Analysis_of_Bitcoin_Laundry_Services/links/5a045d410f7e9beb177883af/An-Analysis-of-Bitcoin-Laundry-Services.pdf?origin=publication_detail) <sup>[Archive.org](https://web.archive.org/web/https://www.researchgate.net/profile/Julio-Hernandez-Castro/publication/319944399_An_Analysis_of_Bitcoin_Laundry_Services/links/5a045d410f7e9beb177883af/An-Analysis-of-Bitcoin-Laundry-Services.pdf?origin=publication_detail)</sup>
 -  [Mixing Strategies in Cryptocurrencies and An Alternative Implementation](https://www.researchgate.net/publication/344485520_Mixing_Strategies_in_Cryptocurrencies_and_An_Alternative_Implementation) <sup>[Archive.org](https://web.archive.org/web/https://www.researchgate.net/publication/344485520_Mixing_Strategies_in_Cryptocurrencies_and_An_Alternative_Implementation)</sup>
-    
+
 Instead we recommend to use Monero (preferred) and additionaly Zcash to achieve anonymity.
-    
+
 ## When converting from BTC to Monero:
 
 **Now, as part of any process above, if you want to convert BTC back to Monero**, we recommend not using a swapping service but instead recommend using the new Monero Atomic Swap Tool: <https://unstoppableswap.net/>. This will prevent unnecessary fees and intermediates when using a commercial swapping service. The website is self-explanatory with detailed instructions for all OSes.
@@ -12101,7 +12112,7 @@ You might also consider the use of something like AnonyMouth <https://web.archiv
 ## Bonus links:
 
 -  <https://seirdy.one/posts/2022/07/09/stylometric-fingerprinting-redux/> <sup>[[Archive.org]](https://web.archive.org/web/https://seirdy.one/posts/2022/07/09/stylometric-fingerprinting-redux/)</sup>: Stylometric fingerprinting redux
-    
+
 -   <https://www.whonix.org/wiki/Surfing_Posting_Blogging#Stylometry> <sup>[[Archive.org]][702]</sup>: Whonix documentation about stylometry.
 
 -   <https://wikipedia.org/wiki/Forensic_linguistics> <sup>[[Wikiless]][703]</sup> <sup>[[Archive.org]][704]</sup>: Gives a brief rundown of the basics of forensic linguistics, not too informative.
@@ -12165,8 +12176,8 @@ These recommendations are similar to the ones at the beginning of the guide and 
 Find it online at:
 
 -   Original: <https://anonymousplanet-ng.org>
-    
--   Tor Onion Mirror: <http://thgtoallkcxrdv37u6knsc3pumk6cq6lqmcqlw3j5vkmyahkxive4jyd.onion>    
+
+-   Tor Onion Mirror: <http://thgtoallkcxrdv37u6knsc3pumk6cq6lqmcqlw3j5vkmyahkxive4jyd.onion>
 
 -   Archive.org: <https://web.archive.org/web/https://anonymousplanet-ng.org>
 
@@ -12347,7 +12358,7 @@ You can find some introduction on these on these projects:
 
 # Appendix B4: Important notes about evil-maid and tampering
 
-Your context needs to be taken into account. 
+Your context needs to be taken into account.
 
 Preventing an evil-maid attack attack or tampering might lead to bad consequences. Your adversary might then resort to other means to obtain the key.
 
@@ -12922,7 +12933,7 @@ See the [Some last OPSEC thoughts][Some last OPSEC thoughts:] section for some t
 [^282]: Internet Archive, Invisibler, What Everybody Ought to Know About HideMyAss <https://archive.is/ag9w4#selection-136.0-136.1>
 
 [^283]: Wikipedia, Warrant Canary <https://en.wikipedia.org/wiki/Warrant_canary> <sup>[[Wikiless]][1090]</sup> <sup>[[Archive.org]][1091]</sup>
-    
+
 [^284]: Washington Post, The intelligence coup of the century <https://www.washingtonpost.com/graphics/2020/world/national-security/cia-crypto-encryption-machines-espionage/> <sup>[[Archive.org]][1092]</sup>
 
 [^285]: Swissinfo.ch, Second Swiss firm allegedly sold encrypted spying devices <https://www.swissinfo.ch/eng/second-swiss-firm-allegedly-sold-encrypted-spying-devices/46186432> <sup>[[Archive.org]][1093]</sup>
@@ -13425,6 +13436,8 @@ See the [Some last OPSEC thoughts][Some last OPSEC thoughts:] section for some t
 
 [^535]: Monero Research Lab, Evaluating cryptocurrency security and privacy in a post-quantum world <https://github.com/insight-decentralized-consensus-lab/post-quantum-monero/blob/master/writeups/technical_note.pdf> <sup>[[Archive.org]][1363]</sup>
 
+[^536]: Richter, Timo et al. “Forensic Analysis and Anonymisation of Printed Documents.” Proceedings of the 6th ACM Workshop on Information Hiding and Multimedia Security (2018) <https://dl.acm.org/doi/10.1145/3206004.3206019> <sup>[[Archive.org]][1388]</sup>
+
   [Contents:]: #contents
   [Pre-requisites and limitations:]: #pre-requisites-and-limitations
   [Pre-requisites:]: #pre-requisites
@@ -13461,6 +13474,7 @@ See the [Some last OPSEC thoughts][Some last OPSEC thoughts:] section for some t
   [Properties and Metadata:]: #properties-and-metadata
   [Watermarking:]: #watermarking
   [Pixelized or Blurred Information:]: #pixelized-or-blurred-information
+  [Eliminating Tracking Dots in Printed Documents:]: #eliminating-tracking-dots-in-printed-documents
   [Your Cryptocurrencies transactions:]: #your-cryptocurrencies-transactions
   [Your Cloud backups/sync services:]: #your-cloud-backupssync-services
   [Your Browser and Device Fingerprints:]: #your-browser-and-device-fingerprints
@@ -15089,3 +15103,4 @@ See the [Some last OPSEC thoughts][Some last OPSEC thoughts:] section for some t
   [1385]: https://web.archive.org/web/20220516000616/https://officercia.mirror.xyz/WeAilwJ9V4GIVUkYa7WwBwV2II9dYwpdPTp3fNsPFjo
   [1386]: https://web.archive.org/web/20220720023429/https://leakuidatorplusteam.github.io/
   [1387]: https://web.archive.org/web/20220801151048/https://support.torproject.org/glossary/moat/
+  [1388]: https://web.archive.org/web/20220809012519/https://dl.acm.org/doi/10.1145/3206004.3206019
