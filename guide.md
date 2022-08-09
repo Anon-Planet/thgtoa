@@ -1063,6 +1063,8 @@ A real use and well-documented case of this was the arrest of the hacker Jeremy 
 
 There are also a few cases involving OSINT at Bellingcat[^154]. Have a look at their very informative (but slightly outdated) toolkit here: <https://docs.google.com/spreadsheets/d/18rtqh8EG2q1xBo2cLNyhIDuK9jrPGwYr9DI2UncoqJQ/edit#gid=930747607> <sup>[[Archive.org]][100]</sup>
 
+**We have an OSINT discussion room in our Matrix community. Feel free to join at ```#OSINT:matrix.org```.**
+
 You can also view some convenient lists of some available OSINT tools here if you want to try them on yourself for example:
 
 -   <https://github.com/jivoi/awesome-osint> <sup>[[Archive.org]][101]</sup>
