@@ -1697,15 +1697,15 @@ If you still do not think such information can be used by various actors to trac
 
 -   Dropbox Transparency Report <https://www.dropbox.com/transparency> <sup>[[Archive.org]][211]</sup>
 
--   Discord Transparency Report <https://blog.discord.com/discord-transparency-report-jan-june-2020-2ef4a3ee346d> <sup>[[Archive.org]][212]</sup>
+-   Discord Transparency Report <https://discord.com/blog/discord-transparency-report-q1-2022> <sup>[[Archive.org]][212]</sup>
 
 -   GitHub Transparency Report <https://github.blog/2021-02-25-2020-transparency-report/> <sup>[[Archive.org]][213]</sup>
 
 -   Snapchat Transparency Report <https://www.snap.com/en-US/privacy/transparency/> <sup>[[Archive.org]][214]</sup>
 
--   TikTok Transparency Report <https://www.tiktok.com/safety/resources/transparency-report?lang=en> <sup>[[Archive.org]][215]</sup>
+-   TikTok Transparency Report <https://www.tiktok.com/transparency/en/information-requests-2021-2/> <sup>[[Archive.org]][215]</sup>
 
--   Reddit Transparency Report <https://www.reddit.com/wiki/transparency> <sup>[[Archive.org]][216]</sup>
+-   Reddit Transparency Report <https://www.redditinc.com/policies/transparency-report-2021> <sup>[[Archive.org]][216]</sup>
 
 -   Twitter Transparency Report <https://transparency.twitter.com/> <sup>[[Archive.org]][217]</sup>
 
@@ -13910,12 +13910,12 @@ See the [Some last OPSEC thoughts][Some last OPSEC thoughts:] section for some t
   [209]: https://web.archive.org/web/https://www.microsoft.com/en-us/corporate-responsibility/law-enforcement-requests-report
   [210]: https://web.archive.org/web/https://www.amazon.com/gp/help/customer/display.html?nodeId=GYSDRGWQ2C2CRYEF
   [211]: https://web.archive.org/web/https://www.dropbox.com/transparency
-  [212]: https://web.archive.org/web/https://blog.discord.com/discord-transparency-report-jan-june-2020-2ef4a3ee346d
+  [212]: https://web.archive.org/web/20220812051950/https://discord.com/blog/discord-transparency-report-q1-2022
   [213]: https://web.archive.org/web/https://github.blog/2021-02-25-2020-transparency-report/
-  [214]: https://web.archive.org/web/https://www.snap.com/en-US/privacy/transparency/
-  [215]: https://web.archive.org/web/https://www.tiktok.com/safety/resources/transparency-report?lang=en
-  [216]: https://web.archive.org/web/https://www.reddit.com/wiki/transparency
-  [217]: https://web.archive.org/web/https://transparency.twitter.com/
+  [214]: https://web.archive.org/web/20220806141853/https://www.snap.com/en-US/privacy/transparency
+  [215]: https://web.archive.org/web/20220812054600/https://www.tiktok.com/transparency/en/information-requests-2021-2/
+  [216]: https://web.archive.org/web/20220812054736/https://www.redditinc.com/policies/transparency-report-2021
+  [217]: https://web.archive.org/web/20220812054839/https://transparency.twitter.com/
   [218]: https://yewtu.be/watch?v=euSsqXO53GY
   [219]: https://web.archive.org/web/https://media.defense.gov/2021/Feb/25/2002588479/-1/-1/0/CSI_EMBRACING_ZT_SECURITY_MODEL_UOO115131-21.PDF
   [220]: media/image18.jpeg
