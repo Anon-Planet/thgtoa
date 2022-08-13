@@ -10361,7 +10361,9 @@ When conducting sensitive activities, remember that:
 
     -   Warning: consider that sensor data itself can also be reliably used to track you[^468]'[^469].
 
--   **Consider leaving your smart devices at home online and doing something (watching YouTube/Netflix or something similar) instead of taking them with you powered off. This will mitigate tracking efforts but also create digital traces that could indicate you were at home.**
+-   Consider leaving your smart devices at home online and doing something (watching YouTube/Netflix or something similar) instead of taking them with you powered off. This will mitigate tracking efforts but also create digital traces that could indicate you were at home.
+    
+    -   **This could also include your car which could for example have a cell network device (including at least an IMEI) and a functionality to call emergency services**
 
 Additionally, if using a smartphone as a burner, know that they send a lot of diagnostics by default. Enough to potentially identify you based on your device usage patterns (a technique known as biometric profiling). You should avoid using your burner unless absolutely necessary, to minimize the information that can be collected and used to identify you.
 
