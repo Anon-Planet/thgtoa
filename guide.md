@@ -106,6 +106,7 @@ Finally note that this guide does mention and even recommends various commercial
         -   [Your Wi-Fi or Ethernet MAC address:]
         -   [Your Bluetooth MAC address:]
     -   [Your CPU:]
+        -   [Types of Attacks:]
     -   [Your Operating Systems and Apps telemetry services:]
     -   [Your Smart devices in general:]
     -   [Yourself:]
@@ -861,17 +862,35 @@ These have already been affected by several security vulnerabilities in the past
 
 There are some not so straightforward ways[^107] to disable the Intel IME on some CPUs and you should do so if you can. For some AMD laptops, you can disable it within the BIOS settings by disabling PSP.
 
-Note that to AMD's defense, so far and AFAIK, there were no security vulnerabilities found for ASP and no backdoors either: See <https://www.youtube.com/watch?v=bKH5nGLgi08&t=2834s> <sup>[[Invidious]][77]</sup>. In addition, AMD PSP does not provide any remote management capabilities contrary to Intel IME.
+Note that, to AMD's defense, there were no security vulnerabilities found for ASP and no backdoors either. See <https://www.youtube.com/watch?v=bKH5nGLgi08&t=2834s> <sup>[[Invidious]][77]</sup>. In addition, AMD PSP does not provide any remote management capabilities contrary to Intel IME.
 
 If you are feeling a bit more adventurous, you could install your own BIOS using Libreboot or Coreboot [^108] if your laptop supports it (be aware that Coreboot does contain some propriety code unlike its fork Libreboot).
 
-In addition, some CPUs have unfixable flaws (especially Intel CPUs) that could be exploited by various malware. Here is a good current list of such vulnerabilities affecting recent widespread CPUs: <https://en.wikipedia.org/wiki/Transient_execution_CPU_vulnerability> <sup>[[Wikiless]][78]</sup> <sup>[[Archive.org]][79]</sup>
-
 Check yourself:
 
--   If you are using Linux you can check the vulnerability status of your CPU to Spectre/Meltdown attacks by using <https://github.com/speed47/spectre-meltdown-checker> <sup>[[Archive.org]][80]</sup> which is available as a package for most Linux distros including Whonix.
+-   If you are using Linux you can check the vulnerability status of your CPU to Spectre/Meltdown attacks by using <https://github.com/speed47/spectre-meltdown-checker> <sup>[[Archive.org]][80]</sup> which is available as a package for most Linux distros including Whonix. Spectre is a transient execution attack. There is also PoC code for Spectre v1 and v2 on iPhone devices here: <https://github.com/cispa/BranchDifferent> <sup>[[Archive.org]](https://web.archive.org/web/20220814122148/https://github.com/cispa/BranchDifferent)</sup> and here <https://misc0110.net/files/applespectre_dimva22.pdf> <sup>[[Archive.org]](https://web.archive.org/web/20220814122652/https://misc0110.net/files/applespectre_dimva22.pdf)</sup>
 
 -   If you are using Windows, you can check the vulnerability status of your CPU using inSpectre <https://www.grc.com/inspectre.htm> <sup>[[Archive.org]][81]</sup>
+
+### Types of Attacks:
+
+Some CPUs have unfixable flaws (especially Intel CPUs) that could be exploited by various malware. Here is a good current list of such vulnerabilities affecting recent widespread CPUs: <https://en.wikipedia.org/wiki/Transient_execution_CPU_vulnerability> <sup>[[Wikiless]](https://wikiless.org/wiki/Transient_execution_CPU_vulnerability)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Transient_execution_CPU_vulnerability)</sup>
+
+Transient execution attacks (formerly called speculative execution side channel methods) and select security issues plague many Intel CPUs. Here you can check your CPU against affected micro-processors <https://www.intel.com/content/www/us/en/developer/topic-technology/software-security-guidance/processors-affected-consolidated-product-cpu-model.html> <sup>[[Archive.org]](https://web.archive.org/web/20220814123250/https://www.intel.com/content/www/us/en/developer/topic-technology/software-security-guidance/processors-affected-consolidated-product-cpu-model.html)</sup>.
+
+The Advanced Programmable Interrupt Controller (APIC) is an integrated CPU component responsible for accepting, prioritizing, and dispatching interrupts to logical processors (LPs). The APIC can operate in xAPIC mode, also known as legacy mode, in which APIC configuration registers are exposed through a memory-mapped I/O (MMIO) page.
+
+Enter AEPIC (stylized ÆPIC), the first architectural CPU bug that leaks stale data from the microarchitecture without using a side channel. It architecturally leaks stale data incorrectly returned by reading undefined APIC-register ranges. This novel method was revealed in the paper *ÆPIC Leak: Architecturally Leaking Uninitialized Data from the
+Microarchitecture* which you can read here: [Borrello2022AEPIC](https://aepicleak.com/aepicleak.pdf) <sup>[[Archive.org]](https://web.archive.org/web/20220812101719/https://aepicleak.com/aepicleak.pdf)</sup>
+
+Model-specific registers (MSRs) and their configuration bits can also be detected automatically on Intel and AMD CPUs: [Kogler2022](https://github.com/IAIK/msrevelio) <sup>[[Archive.org]](https://web.archive.org/web/20220814125349/https://andreaskogler.com/papers/msrtemplating.pdf)</sup>. This allows an attacker (with heavy knowledge of CPU functionality) to view information about the MSRs, which are essentially special CPU registers allowing interaction with low-level CPU features and advanced configuration of the CPU's behavior. Modern x86 CPUs have hundreds of these, which are usually documented very little and in increasingly less verbosity over the past few years.
+
+#### Some other microarchitecture bugs:
+
+- [PLATYPUS](https://platypusattack.com/) <sup>[[Archive.org]](https://web.archive.org/web/20220814132343/https://platypusattack.com/)</sup> - Software-based Power Side-Channel Attacks on x86, which shows how an unprivileged attacker can leak AES-NI keys from Intel SGX and the Linux kernel and break kernel address-space layout randomization (KASLR).
+- [SQUIP](https://www.nextplatform.com/2022/08/11/squip-side-channel-attack-rattles-amds-zen-cores/) <sup>[[Archive.org]](https://web.archive.org/web/20220812082548/https://www.nextplatform.com/2022/08/11/squip-side-channel-attack-rattles-amds-zen-cores/)</sup> - Scheduler Queue Usage via Interface Probing. All of AMD's Zen CPUs are vulnerable to a medium-severity flaw which can allow threat actors to run side-channel attacks.
+
+This guide won't go too deep into side-channel and microarchitecture attacks but we will highlight some issues with both Intel and AMD CPU architectures that will be mitigated throughout. It's important to recognize hardware is just as susceptible to bugs, and therefore exploitation, regardless of manufacturer.
 
 Some of these can be avoided using Virtualization Software settings that can mitigate such exploits. See this guide for more information <https://www.whonix.org/wiki/Spectre_Meltdown> <sup>[[Archive.org]][82]</sup> (warning: these can severely impact the performance of your VMs).
 
@@ -13444,6 +13463,7 @@ See the [Some last OPSEC thoughts][Some last OPSEC thoughts:] section for some t
   [Your Wi-Fi or Ethernet MAC address:]: #your-wi-fi-or-ethernet-mac-address
   [Your Bluetooth MAC address:]: #your-bluetooth-mac-address
   [Your CPU:]: #your-cpu
+  [Types of Attacks:]: #types-of-attacks
   [Your Operating Systems and Apps telemetry services:]: #your-operating-systems-and-apps-telemetry-services
   [Your Smart devices in general:]: #your-smart-devices-in-general
   [Yourself:]: #yourself
@@ -13776,8 +13796,6 @@ See the [Some last OPSEC thoughts][Some last OPSEC thoughts:] section for some t
   [75]: https://yewtu.be/watch?v=siCk4pGGcqA
   [76]: https://yewtu.be/watch?v=mYsTBPqbya8
   [77]: https://yewtu.be/watch?v=bKH5nGLgi08&t=2834s
-  [78]: https://wikiless.org/wiki/Transient_execution_CPU_vulnerability
-  [79]: https://web.archive.org/web/https://en.wikipedia.org/wiki/Transient_execution_CPU_vulnerability
   [80]: https://web.archive.org/web/https://github.com/speed47/spectre-meltdown-checker
   [81]: https://web.archive.org/web/https://www.grc.com/inspectre.htm
   [82]: https://web.archive.org/web/https://www.whonix.org/wiki/Spectre_Meltdown
