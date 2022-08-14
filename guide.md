@@ -106,7 +106,6 @@ Finally note that this guide does mention and even recommends various commercial
         -   [Your Wi-Fi or Ethernet MAC address:]
         -   [Your Bluetooth MAC address:]
     -   [Your CPU:]
-        -   [Types of Attacks:]
     -   [Your Operating Systems and Apps telemetry services:]
     -   [Your Smart devices in general:]
     -   [Yourself:]
@@ -385,6 +384,7 @@ Finally note that this guide does mention and even recommends various commercial
 -   [Appendix B2: Monero Disclaimer]
 -   [Appendix B3: Threat modeling resources]
 -   [Appendix B4: Important notes about evil-maid and tampering]
+-   [Appendix B5: Types of CPU attacks:]
 -   [References:]
 
 # Pre-requisites and limitations:
@@ -872,8 +872,6 @@ Check yourself:
 -   If you are using Linux you can check the vulnerability status of your CPU to Spectre/Meltdown attacks by using <https://github.com/speed47/spectre-meltdown-checker> <sup>[[Archive.org]][80]</sup> which is available as a package for most Linux distros including Whonix. Spectre is a transient execution attack. There is also PoC code for Spectre v1 and v2 on iPhone devices here: <https://github.com/cispa/BranchDifferent> <sup>[[Archive.org]](https://web.archive.org/web/20220814122148/https://github.com/cispa/BranchDifferent)</sup> and here <https://misc0110.net/files/applespectre_dimva22.pdf> <sup>[[Archive.org]](https://web.archive.org/web/20220814122652/https://misc0110.net/files/applespectre_dimva22.pdf)</sup>
 
 -   If you are using Windows, you can check the vulnerability status of your CPU using inSpectre <https://www.grc.com/inspectre.htm> <sup>[[Archive.org]][81]</sup>
-
-### Types of Attacks:
 
 Some CPUs have unfixable flaws (especially Intel CPUs) that could be exploited by various malware. Here is a good current list of such vulnerabilities affecting recent widespread CPUs: <https://en.wikipedia.org/wiki/Transient_execution_CPU_vulnerability> <sup>[[Wikiless]](https://wikiless.org/wiki/Transient_execution_CPU_vulnerability)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Transient_execution_CPU_vulnerability)</sup>
 
@@ -13745,6 +13743,7 @@ See the [Some last OPSEC thoughts][Some last OPSEC thoughts:] section for some t
   [Appendix B2: Monero Disclaimer]: #appendix-b2-monero-disclaimer
   [Appendix B3: Threat modeling resources]: #appendix-b3-threat-modeling-resources
   [Appendix B4: Important notes about evil-maid and tampering]: #appendix-b4-important-notes-about-evil-maid-and-tampering
+  [Appendix B5: Types of CPU attacks:]: #appendix-b5-types-of-cpu-attacks 
   [References:]: #references
   [cc-by-nc-4.0]: https://creativecommons.org/licenses/by-nc/4.0/
   [27]: https://web.archive.org/web/https://creativecommons.org/licenses/by-nc/4.0/
