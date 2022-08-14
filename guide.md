@@ -13466,7 +13466,6 @@ Model-specific registers (MSRs) and their configuration bits can also be detecte
   [Your Wi-Fi or Ethernet MAC address:]: #your-wi-fi-or-ethernet-mac-address
   [Your Bluetooth MAC address:]: #your-bluetooth-mac-address
   [Your CPU:]: #your-cpu
-  [Types of Attacks:]: #types-of-attacks
   [Your Operating Systems and Apps telemetry services:]: #your-operating-systems-and-apps-telemetry-services
   [Your Smart devices in general:]: #your-smart-devices-in-general
   [Yourself:]: #yourself
