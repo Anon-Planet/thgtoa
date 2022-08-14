@@ -384,6 +384,7 @@ Finally note that this guide does mention and even recommends various commercial
 -   [Appendix B1: Checklist of things to verify before sharing information:]
 -   [Appendix B2: Monero Disclaimer]
 -   [Appendix B3: Threat modeling resources]
+-   [Appendix B4: Important notes about evil-maid and tampering]
 -   [References:]
 
 # Pre-requisites and limitations:
