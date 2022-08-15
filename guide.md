@@ -12341,25 +12341,27 @@ Also please consider reading: **<https://github.com/monero-project/monero/blob/m
 
 Here are various threat modeling resources if you want to go deeper in threat modeling.
 
--   (My personal favorite) LINDDUN <https://www.linddun.org/> <sup>[[Archive.org]][739]</sup>
+-   The one we recommend: LINDDUN (Linkability, Identifiability, Non-repudiation, Detectability, Disclosure of information, Unawareness, and Non-compliance) <https://www.linddun.org/> <sup>[[Archive.org]][739]</sup>.
+    - Researchers created an online tool to help make your threat model at <https://www.linddun.org/go><sup>[[Archive.org]](https://web.archive.org/web/https://www.linddun.org/go)</sup>.
+    - It is synergistic with STRIDE below.
+    - It is focused on privacy but is clearly perfectly suitable for anonymity.
+    - It is accessible to all skill levels including beginners (providing many tutorials) but also suitable for highly skilled readers.
+    - It is used in the making of the Threat Modeling Manifesto: <https://www.threatmodelingmanifesto.org/> <sup>[[Archive.org]][745]</sup>
+
+![][1389]
+(Illustration from [LINDDUN2015])
+
+Here are alternative resources and models if LINDDUN doesn't suit you:
+    
+-   Online Operations Security: [https://web.archive.org/web/20210711215728/https://github.com/devbret/online-OPSEC]
 
 -   STRIDE <https://en.wikipedia.org/wiki/STRIDE_%28security%29> <sup>[[Wikiless]][740]</sup> <sup>[[Archive.org]][741]</sup>
 
 -   PASTA <https://versprite.com/tag/pasta-threat-modeling/> <sup>[[Archive.org]][742]</sup>
-
-And there are quite a few others too, see:
-
+    
 -   <https://insights.sei.cmu.edu/blog/threat-modeling-12-available-methods/> <sup>[[Archive.org]][743]</sup>
 
 -   <https://www.geeksforgeeks.org/threat-modelling/> <sup>[[Archive.org]][744]</sup>
-
-You can find some introduction on these on these projects:
-
--   Threat Modeling Manifesto: <https://www.threatmodelingmanifesto.org/> <sup>[[Archive.org]][745]</sup>
-
--   OWASP: <https://cheatsheetseries.owasp.org/cheatsheets/Threat_Modeling_Cheat_Sheet.html> <sup>[[Archive.org]][746]</sup>
-
--   Online Operations Security: [https://web.archive.org/web/20210711215728/https://github.com/devbret/online-OPSEC]
 
 # Appendix B4: Important notes about evil-maid and tampering
 
@@ -13759,6 +13761,7 @@ Model-specific registers (MSRs) and their configuration bits can also be detecte
   [Appendix B5: Types of CPU attacks:]: #appendix-b5-types-of-cpu-attacks 
   [References:]: #references
   [cc-by-nc-4.0]: https://creativecommons.org/licenses/by-nc/4.0/
+  [LINDDUN2015]: https://lirias.kuleuven.be/retrieve/295669
   [27]: https://web.archive.org/web/https://creativecommons.org/licenses/by-nc/4.0/
   [https://matrix.to/#/#anonymity:matrix.org]: https://matrix.to/#/
   [28]: https://nitter.net/AnonyPla
@@ -14482,7 +14485,6 @@ Model-specific registers (MSRs) and their configuration bits can also be detecte
   [743]: https://web.archive.org/web/https://insights.sei.cmu.edu/blog/threat-modeling-12-available-methods/
   [744]: https://web.archive.org/web/https://www.geeksforgeeks.org/threat-modelling/
   [745]: https://web.archive.org/web/https://www.threatmodelingmanifesto.org/
-  [746]: https://web.archive.org/web/https://cheatsheetseries.owasp.org/cheatsheets/Threat_Modeling_Cheat_Sheet.html
   [https://web.archive.org/web/20210711215728/https://github.com/devbret/online-OPSEC]: https://web.archive.org/web/20210711215728/https://github.com/devbret/online-opsec
   [747]: https://web.archive.org/web/https://www.huntonprivacyblog.com/wp-content/uploads/sites/28/2016/02/Telemedia_Act__TMA_.pdf
   [748]: https://wikiless.org/wiki/Don%27t_be_evil
@@ -15122,3 +15124,5 @@ Model-specific registers (MSRs) and their configuration bits can also be detecte
   [1385]: https://web.archive.org/web/20220516000616/https://officercia.mirror.xyz/WeAilwJ9V4GIVUkYa7WwBwV2II9dYwpdPTp3fNsPFjo
   [1386]: https://web.archive.org/web/20220720023429/https://leakuidatorplusteam.github.io/
   [1387]: https://web.archive.org/web/20220801151048/https://support.torproject.org/glossary/moat/
+  [1389]: media/image59.png
+
