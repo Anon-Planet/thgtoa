@@ -68,7 +68,6 @@ Currently, the following rooms are sharing a common PSA banlist for serious offe
 - ```#Security:matrix.org```
 - ```#Bnonymity:matrix.org```
 - ```#OSINT:matrix.org```
-- ```#OS-Security```
 - ```#ModernCrypto:gnuradio.org```
 
 This means that those PSA bans are effectively applied on all those rooms and can be issued by admins of these rooms. See the next section for information about appeals.
