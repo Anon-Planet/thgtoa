@@ -1415,12 +1415,28 @@ This guide will mitigate these issues by mitigating, obfuscating, and randomizin
 
 There was an attack published that can deanonymize users if they have a known alias. For example, an attacker trying to track the activities of a journalist can use that journalist's public Twitter handle to link their anonymous identities with their public one. This breaks compartmentalization of identities and can lead to complete deanonymization, even of users who practice proper OPSEC.
 
-The attack, published at <https://leakuidatorplusteam.github.io/> <sup>[[Archive.org]][1386]</sup>, can be mitigated using a browser extension:
+The attack, published at <https://leakuidatorplusteam.github.io/> <sup>[[Archive.org]][1386]</sup>, can be mitigated using the well-known [NoScript](https://noscript.net/) extension and will be our preferred recommendation.
 
-- <https://chrome.google.com/webstore/detail/leakuidator%2B/hhfpajcjkikoocmmhcimllpinjnbedll> (Chrome, Edge, and other Chrome-based browsers)
-- <https://addons.mozilla.org/en-US/firefox/addon/leakuidatorplus/> (Firefox, Tor Browser, and other Firefox-based browsers)
+## Tor Browser:
 
-It's generally not recommended to install extensions into Tor Browser, because the fact that you have an extension installed can be an extra data point for browser fingerprinting. As such, this extension is only a temporary solution until the fix can be implemented by the browsers' own developers.
+This attack is now prevented by default by an update of [NoScript](https://noscript.net/) (11.4.8 and above) on all security levels. 
+
+## All others:
+
+Installing the [NoScript](https://noscript.net/) extension will prevent the attack **by default only in private Windows** using their new "TabGuard feature". But can be enabled in the NoScript options to work on all Windows. See: 
+
+-  Release tweet: <https://twitter.com/ma1/status/1557751019945299969> <sup>[[Archive.org]](https://web.archive.org/web/https://twitter.com/ma1/status/1557751019945299969)</sup>
+-  User explanation: <https://noscript.net/usage/#crosstab-identity-leak-protection> <sup>[[Archive.org]](https://web.archive.org/web/https://noscript.net/usage/#crosstab-identity-leak-protection)</sup>
+-  Tor Project Forum Post: <https://forum.torproject.net/t/tor-browser-can-leak-your-identity-through-side-channel-attack/4005/2> <sup>[[Archive.org]](https://web.archive.org/web/https://forum.torproject.net/t/tor-browser-can-leak-your-identity-through-side-channel-attack/4005/2)</sup>
+-  NoScript extension for Firefox (Firefox, and other Firefox-based browsers except Tor Browser): https://addons.mozilla.org/en-US/firefox/addon/noscript/
+-  NoScript extension for Chromium based browsers (Brave, Chrome, Edge, and other Chromium-based browsers): https://chrome.google.com/webstore/detail/noscript/doojmbjmlfjjnbmnoijecmcbfeoakpjm?hl=en
+
+### Alternative to NoScript for all other browsers:
+
+The researches who disclosed the issue also made an extension available below. Again, **nothing is required in Tor Browser**. This path is not our preferred path but is still available if you do not want to use NoScript.
+
+-   Lekuidator+ extension for Chromium based browsers (Brave, Chrome, Edge, and other Chromium-based browsers): <https://chrome.google.com/webstore/detail/leakuidator%2B/hhfpajcjkikoocmmhcimllpinjnbedll>
+-   Lekuidator+ extension for Firefox (Firefox, and other Firefox-based browsers except Tor Browser): <https://addons.mozilla.org/en-US/firefox/addon/leakuidatorplus/> 
 
 Separating identities via separate browsers or even with VMs is not enough to avoid this attack. However, another solution is to make sure that when you start working with an anonymous identity, you entirely close all activities linked to other identities. The vulnerability only works if you're actively logged into a non-anonymous identity. The issue with this is that it can hinder effective workflow, as multitasking across multiple identities becomes impossible.
 
@@ -2288,8 +2304,6 @@ When using Tor Browser, you should click the little shield Icon (upper right, ne
     -   Any media playback is "click to play" (disabled by default)
 
 We would recommend the "Safer" level for most cases. The Safest level should be enabled if you think you are accessing suspicious or dangerous websites or if you are extra paranoid. The Safest mode will also most likely break many websites that rely actively on JavaScript.
-
-**Temporary Important Warning: Please see [Microarchitectural Side-channel Deanonymization Attacks][Microarchitectural Side-channel Deanonymization Attacks:].**
 
 If you are extra paranoid, use the "Safest" level by default and consider downgrading to Safer is the website is unusable because of Javascript blocking.
 
@@ -10983,7 +10997,7 @@ If you are to resort to this, you should never do so from a monitored/known netw
 
 # Appendix V: What browser to use in your Guest VM/Disposable VM
     
-**Temporary Important Warning: Please see [Microarchitectural Side-channel Deanonymization Attacks:].**
+**Temporary Important Warning: Please see [Microarchitectural Side-channel Deanonymization Attacks:] for all browsers except Tor Browser.**
 
 There are 6 possibilities of browser to use on your guest/disposable VM:
 
@@ -11721,8 +11735,6 @@ Hopefully, these bridges should be enough to get you connected even in a hostile
 If not, consider [Appendix P: Accessing the internet as safely as possible when Tor and VPNs are not an option]
 
 # Appendix Y: Installing and using desktop Tor Browser
-    
-**Temporary Important Warning: Please see [Microarchitectural Side-channel Deanonymization Attacks:].**
 
 ## Installation:
 
