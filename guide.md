@@ -312,7 +312,7 @@ Finally note that this guide does mention and even recommends various commercial
         -   [Socks Proxy VPS:]
 -   [Appendix P: Accessing the internet as safely as possible when Tor and VPNs are not an option]
 -   [Appendix Q: Using long-range Antenna to connect to Public Wi-Fis from a safe distance:]
--   [Appendix R: Installing a VPN on your VM or Host OS.]
+-   [Appendix R: Installing a VPN on your VM or Host OS]
 -   [Appendix S: Check your network for surveillance/censorship using OONI]
 -   [Appendix T: Checking files for malware]
     -   [Integrity (if available):]
@@ -3815,7 +3815,7 @@ Remember that in this case, we recommend having two VPN accounts. Both paid with
 
 If you intend to only use Tor over VPN, you only need one VPN account.
 
-See [Appendix R: Installing a VPN on your VM or Host OS][Appendix R: Installing a VPN on your VM or Host OS.] for instructions.
+See [Appendix R: Installing a VPN on your VM or Host OS][Appendix R: Installing a VPN on your VM or Host OS] for instructions.
 
 ### Whonix Virtual Machines:
 
@@ -4209,7 +4209,7 @@ Test that KeePassXC is working before going to the next step.
 
 **If you cannot use a VPN at all in a hostile environment, skip this step.**
 
-Otherwise, see [Appendix R: Installing a VPN on your VM or Host OS][Appendix R: Installing a VPN on your VM or Host OS.] to install a VPN client on your client VM.
+Otherwise, see [Appendix R: Installing a VPN on your VM or Host OS][Appendix R: Installing a VPN on your VM or Host OS] to install a VPN client on your client VM.
 
 This should conclude the Route and you should now be ready.
 
@@ -10585,7 +10585,7 @@ The process is simple:
 
 Ideally, this should "not be an issue" since this guide provides multiple ways of hiding your origin IP using VPNs and Tor. But if you are in a situation where VPN and Tor are not an option, then this could be your only security.
 
-# Appendix R: Installing a VPN on your VM or Host OS.
+# Appendix R: Installing a VPN on your VM or Host OS
 
 Download the VPN client installer of your cash paid VPN service and install it on Host OS (Tor over VPN, VPN over Tor over VPN) or the VM of your choice (VPN over Tor):
 
@@ -13650,7 +13650,7 @@ See the [Some last OPSEC thoughts][Some last OPSEC thoughts:] section for some t
   [Socks Proxy VPS:]: #socks-proxy-vps
   [Appendix P: Accessing the internet as safely as possible when Tor and VPNs are not an option]: #appendix-p-accessing-the-internet-as-safely-as-possible-when-tor-and-vpns-are-not-an-option
   [Appendix Q: Using long-range Antenna to connect to Public Wi-Fis from a safe distance:]: #appendix-q-using-long-range-antenna-to-connect-to-public-wi-fis-from-a-safe-distance
-  [Appendix R: Installing a VPN on your VM or Host OS.]: #appendix-r-installing-a-vpn-on-your-vm-or-host-os.
+  [Appendix R: Installing a VPN on your VM or Host OS]: #appendix-r-installing-a-vpn-on-your-vm-or-host-os
   [Appendix S: Check your network for surveillance/censorship using OONI]: #appendix-s-check-your-network-for-surveillancecensorship-using-ooni
   [Appendix T: Checking files for malware]: #appendix-t-checking-files-for-malware
   [Integrity (if available):]: #integrity-if-available
