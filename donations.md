@@ -32,6 +32,7 @@ Here are the addresses for the main project:
     
 Donations log (UTC date/time):
 
+- 2022-07-30 03:51: 0.0222 XMR
 - 2021-02-06 16:48: 0.1 XMR
 - 2021-03-15 00:09: 1.24869 mBTC
 - 2021-03-15 08:41: 0.07896 mBTC
@@ -69,7 +70,7 @@ Donations log (UTC date/time):
 - 2022-02-18 17:27: 0.019 XMR
 - 2022-03-14 10:25: 0.0139887 XMR
 
-Total Monero donations received: **4.734092580358 XMR**
+Total Monero donations received: **4.756292580358 XMR**
 Total Bitcoin donations received: **1.89353 mBTC**
 
 Spendings log (UTC date):
@@ -95,7 +96,7 @@ Spendings log (UTC date):
 - 2022-02-02: 0.966793601024 XMR (+fees) for sponsoring a related external special project in line with the Universal Declaration of Human Rights (details will remain indisclosed to protect project members)
 - 2022-07-11: 0.503232784687 XMR (+fees) for 1984.is VPS (12 months)
 
-Total Monero remaining: **0.037136719397 XMR**
+Total Monero remaining: **0.059336719397 XMR**
 Total Bitcoin remaining: **0 mBTC**
 
 [1]: media/monero.png

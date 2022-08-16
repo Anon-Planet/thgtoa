@@ -2,7 +2,7 @@
 
 (Or "How I learned to start worrying and love ~~privacy~~ anonymity")
 
-Version 1.1.5, June 2022 by Anonymous Planet
+Version 1.1.6-pre1, August 2022 by Anonymous Planet
 
 **Forever in memory of Lena, 1999-2022**
 
@@ -312,7 +312,7 @@ Finally note that this guide does mention and even recommends various commercial
         -   [Socks Proxy VPS:]
 -   [Appendix P: Accessing the internet as safely as possible when Tor and VPNs are not an option]
 -   [Appendix Q: Using long-range Antenna to connect to Public Wi-Fis from a safe distance:]
--   [Appendix R: Installing a VPN on your VM or Host OS.]
+-   [Appendix R: Installing a VPN on your VM or Host OS]
 -   [Appendix S: Check your network for surveillance/censorship using OONI]
 -   [Appendix T: Checking files for malware]
     -   [Integrity (if available):]
@@ -349,7 +349,7 @@ Finally note that this guide does mention and even recommends various commercial
 -   [Appendix Z: Online anonymous payments using cryptocurrencies]
     -   [Reasonably anonymous option:]
     -   [Extra-Paranoid anonymous option:]
-    -   [Warning about special tumbling, mixing, coinjoining privacy wallets and services:]
+    -   [Warning about special tumbling, mixing, coinjoining privacy wallets and services]
     -   [When converting from BTC to Monero:]
 -   [Appendix A1: Recommended VPS hosting providers]
 -   [Appendix A2: Guidelines for passwords and passphrases]
@@ -383,6 +383,8 @@ Finally note that this guide does mention and even recommends various commercial
 -   [Appendix B1: Checklist of things to verify before sharing information:]
 -   [Appendix B2: Monero Disclaimer]
 -   [Appendix B3: Threat modeling resources]
+-   [Appendix B4: Important notes about evil-maid and tampering]
+-   [Appendix B5: Types of CPU attacks:]
 -   [References:]
 
 # Pre-requisites and limitations:
@@ -861,21 +863,23 @@ These have already been affected by several security vulnerabilities in the past
 
 There are some not so straightforward ways[^107] to disable the Intel IME on some CPUs and you should do so if you can. For some AMD laptops, you can disable it within the BIOS settings by disabling PSP.
 
-Note that to AMD's defense, so far and AFAIK, there were no security vulnerabilities found for ASP and no backdoors either: See <https://www.youtube.com/watch?v=bKH5nGLgi08&t=2834s> <sup>[[Invidious]][77]</sup>. In addition, AMD PSP does not provide any remote management capabilities contrary to Intel IME.
+Note that, to AMD's defense, there were no security vulnerabilities found for ASP and no backdoors either. See <https://www.youtube.com/watch?v=bKH5nGLgi08&t=2834s> <sup>[[Invidious]][77]</sup>. In addition, AMD PSP does not provide any remote management capabilities contrary to Intel IME.
 
 If you are feeling a bit more adventurous, you could install your own BIOS using Libreboot or Coreboot [^108] if your laptop supports it (be aware that Coreboot does contain some propriety code unlike its fork Libreboot).
 
-In addition, some CPUs have unfixable flaws (especially Intel CPUs) that could be exploited by various malware. Here is a good current list of such vulnerabilities affecting recent widespread CPUs: <https://en.wikipedia.org/wiki/Transient_execution_CPU_vulnerability> <sup>[[Wikiless]][78]</sup> <sup>[[Archive.org]][79]</sup>
-
 Check yourself:
 
--   If you are using Linux you can check the vulnerability status of your CPU to Spectre/Meltdown attacks by using <https://github.com/speed47/spectre-meltdown-checker> <sup>[[Archive.org]][80]</sup> which is available as a package for most Linux distros including Whonix.
+-   If you are using Linux you can check the vulnerability status of your CPU to Spectre/Meltdown attacks by using <https://github.com/speed47/spectre-meltdown-checker> <sup>[[Archive.org]][80]</sup> which is available as a package for most Linux distros including Whonix. Spectre is a transient execution attack. There is also PoC code for Spectre v1 and v2 on iPhone devices here: <https://github.com/cispa/BranchDifferent> <sup>[[Archive.org]](https://web.archive.org/web/20220814122148/https://github.com/cispa/BranchDifferent)</sup> and here <https://misc0110.net/files/applespectre_dimva22.pdf> <sup>[[Archive.org]](https://web.archive.org/web/20220814122652/https://misc0110.net/files/applespectre_dimva22.pdf)</sup>
 
 -   If you are using Windows, you can check the vulnerability status of your CPU using inSpectre <https://www.grc.com/inspectre.htm> <sup>[[Archive.org]][81]</sup>
 
+Some CPUs have unfixable flaws (especially Intel CPUs) that could be exploited by various malware. Here is a good current list of such vulnerabilities affecting recent widespread CPUs: <https://en.wikipedia.org/wiki/Transient_execution_CPU_vulnerability> <sup>[[Wikiless]](https://wikiless.org/wiki/Transient_execution_CPU_vulnerability)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Transient_execution_CPU_vulnerability)</sup>
+
 Some of these can be avoided using Virtualization Software settings that can mitigate such exploits. See this guide for more information <https://www.whonix.org/wiki/Spectre_Meltdown> <sup>[[Archive.org]][82]</sup> (warning: these can severely impact the performance of your VMs).
 
-We will therefore mitigate some of these issues in this guide by recommending the use of virtual machines on a dedicated anonymous laptop for your sensitive activities that will only be used from an anonymous public network.
+This guide won't go too deep into side-channel and microarchitecture attacks but we will highlight some issues with both Intel and AMD CPU architectures that will be mitigated throughout. It's important to recognize hardware is just as susceptible to bugs, and therefore exploitation, regardless of manufacturer.
+
+We will mitigate some of these issues in this guide by recommending the use of virtual machines on a dedicated anonymous laptop for your sensitive activities that will only be used from an anonymous public network.
 
 **In addition, we recommend the use of AMD CPUs instead of Intel CPUs.**
 
@@ -1062,6 +1066,8 @@ These are clues you might give over time that could point to your real identity.
 A real use and well-documented case of this was the arrest of the hacker Jeremy Hammond[^153] who shared over time several details about his past and was later discovered.
 
 There are also a few cases involving OSINT at Bellingcat[^154]. Have a look at their very informative (but slightly outdated) toolkit here: <https://docs.google.com/spreadsheets/d/18rtqh8EG2q1xBo2cLNyhIDuK9jrPGwYr9DI2UncoqJQ/edit#gid=930747607> <sup>[[Archive.org]][100]</sup>
+
+**We have an OSINT discussion room in our Matrix community. Feel free to join at ```#OSINT:matrix.org```.**
 
 You can also view some convenient lists of some available OSINT tools here if you want to try them on yourself for example:
 
@@ -1411,12 +1417,28 @@ This guide will mitigate these issues by mitigating, obfuscating, and randomizin
 
 There was an attack published that can deanonymize users if they have a known alias. For example, an attacker trying to track the activities of a journalist can use that journalist's public Twitter handle to link their anonymous identities with their public one. This breaks compartmentalization of identities and can lead to complete deanonymization, even of users who practice proper OPSEC.
 
-The attack, published at <https://leakuidatorplusteam.github.io/> <sup>[[Archive.org]][1386]</sup>, can be mitigated using a browser extension:
+The attack, published at <https://leakuidatorplusteam.github.io/> <sup>[[Archive.org]][1386]</sup>, can be mitigated using the well-known [NoScript](https://noscript.net/) extension and will be our preferred recommendation.
 
-- <https://chrome.google.com/webstore/detail/leakuidator%2B/hhfpajcjkikoocmmhcimllpinjnbedll> (Chrome, Edge, and other Chrome-based browsers)
-- <https://addons.mozilla.org/en-US/firefox/addon/leakuidatorplus/> (Firefox, Tor Browser, and other Firefox-based browsers)
+## Tor Browser:
 
-It's generally not recommended to install extensions into Tor Browser, because the fact that you have an extension installed can be an extra data point for browser fingerprinting. As such, this extension is only a temporary solution until the fix can be implemented by the browsers' own developers.
+This attack is now prevented by default by an update of [NoScript](https://noscript.net/) (11.4.8 and above) on all security levels. 
+
+## All others:
+
+Installing the [NoScript](https://noscript.net/) extension will prevent the attack **by default only in private Windows** using their new "TabGuard feature". But can be enabled in the NoScript options to work on all Windows. See: 
+
+-  Release tweet: <https://twitter.com/ma1/status/1557751019945299969> <sup>[[Archive.org]](https://web.archive.org/web/https://twitter.com/ma1/status/1557751019945299969)</sup>
+-  User explanation: <https://noscript.net/usage/#crosstab-identity-leak-protection> <sup>[[Archive.org]](https://web.archive.org/web/https://noscript.net/usage/#crosstab-identity-leak-protection)</sup>
+-  Tor Project Forum Post: <https://forum.torproject.net/t/tor-browser-can-leak-your-identity-through-side-channel-attack/4005/2> <sup>[[Archive.org]](https://web.archive.org/web/https://forum.torproject.net/t/tor-browser-can-leak-your-identity-through-side-channel-attack/4005/2)</sup>
+-  NoScript extension for Firefox (Firefox, and other Firefox-based browsers except Tor Browser): https://addons.mozilla.org/en-US/firefox/addon/noscript/
+-  NoScript extension for Chromium based browsers (Brave, Chrome, Edge, and other Chromium-based browsers): https://chrome.google.com/webstore/detail/noscript/doojmbjmlfjjnbmnoijecmcbfeoakpjm?hl=en
+
+### Alternative to NoScript for all other browsers:
+
+The researches who disclosed the issue also made an extension available below. Again, **nothing is required in Tor Browser**. This path is not our preferred path but is still available if you do not want to use NoScript.
+
+-   Lekuidator+ extension for Chromium based browsers (Brave, Chrome, Edge, and other Chromium-based browsers): <https://chrome.google.com/webstore/detail/leakuidator%2B/hhfpajcjkikoocmmhcimllpinjnbedll>
+-   Lekuidator+ extension for Firefox (Firefox, and other Firefox-based browsers except Tor Browser): <https://addons.mozilla.org/en-US/firefox/addon/leakuidatorplus/> 
 
 Separating identities via separate browsers or even with VMs is not enough to avoid this attack. However, another solution is to make sure that when you start working with an anonymous identity, you entirely close all activities linked to other identities. The vulnerability only works if you're actively logged into a non-anonymous identity. The issue with this is that it can hinder effective workflow, as multitasking across multiple identities becomes impossible.
 
@@ -2284,8 +2306,6 @@ When using Tor Browser, you should click the little shield Icon (upper right, ne
     -   Any media playback is "click to play" (disabled by default)
 
 We would recommend the "Safer" level for most cases. The Safest level should be enabled if you think you are accessing suspicious or dangerous websites or if you are extra paranoid. The Safest mode will also most likely break many websites that rely actively on JavaScript.
-
-**Temporary Important Warning: Please see [Microarchitectural Side-channel Deanonymization Attacks][Microarchitectural Side-channel Deanonymization Attacks:].**
 
 If you are extra paranoid, use the "Safest" level by default and consider downgrading to Safer is the website is unusable because of Javascript blocking.
 
@@ -3815,7 +3835,7 @@ Remember that in this case, we recommend having two VPN accounts. Both paid with
 
 If you intend to only use Tor over VPN, you only need one VPN account.
 
-See [Appendix R: Installing a VPN on your VM or Host OS][Appendix R: Installing a VPN on your VM or Host OS.] for instructions.
+See [Appendix R: Installing a VPN on your VM or Host OS][Appendix R: Installing a VPN on your VM or Host OS] for instructions.
 
 ### Whonix Virtual Machines:
 
@@ -4209,7 +4229,7 @@ Test that KeePassXC is working before going to the next step.
 
 **If you cannot use a VPN at all in a hostile environment, skip this step.**
 
-Otherwise, see [Appendix R: Installing a VPN on your VM or Host OS][Appendix R: Installing a VPN on your VM or Host OS.] to install a VPN client on your client VM.
+Otherwise, see [Appendix R: Installing a VPN on your VM or Host OS][Appendix R: Installing a VPN on your VM or Host OS] to install a VPN client on your client VM.
 
 This should conclude the Route and you should now be ready.
 
@@ -10258,147 +10278,81 @@ Download the latest Debian testing amd64 netinst ISO from <https://www.debian.or
 
 **(Get testing to get the latest mat2 release, stable is a few versions back)**
 
-This is very lightweight, and we recommend doing it from a VM (VM inside a VM) to benefit from Whonix Tor Gateway. While it is possible to put this VM directly behind a Whonix Gateway. Whonix will not easily (AFAIK) allow communications between VMs on its network by default.
-
-You could also just leave it on Clearnet during the install process and then leave it on the Host-Only network later.
-
-Or install it from a VM within a VM then move it to host OS for Host-Only usage:
-
--   Create a new machine with any name like mat2
-
--   Select Linux as Type
-
--   Select Debian (64-bit) as Version
-
--   Leave the default options and click create
-
--   Select the VM and click Settings
-
--   Select System and disable the Floppy disk on the Motherboard tab
-
--   Select the Processor tab and enable PAE/NX
-
--   Select Audio and disable Audio
-
--   Select USB and disable the USB controller
-
--   Select Storage and select the CD drive to mount the Debian Netinst ISO
-
--   Select Network and Attach to NAT
-
--   Launch the VM
-
--   Select Install (not Graphical install)
-
--   Select Language, Location, and Keyboard layout as you wish
-
--   Wait for the network to configure (automatic DHCP)
-
--   Pick a name like "Mat2"
-
--   Leave the domain empty
-
--   Set a Root password as you wish (preferably a good one still)
-
--   Create a new user and password as you wish (preferably a good one still)
-
--   Select the Time Zone of your choice
-
--   Select Guided - Use the entire disk
-
--   Select the only ask available
-
--   Select All files in one partition
-
--   Confirm and write changes to the disk
-
--   Select NO to scan any other CD or DVD
-
--   Select any region and any mirror of your choice and leave proxy blank
-
--   Select no to take part in any survey
-
--   Select only System Standard Utilities (uncheck everything else)
-
--   Select Yes to install GRUB bootloader
-
--   Select /dev/sda and continue
-
--   Complete the install and reboot
-
--   Log in with your user or root (you should never use root directly as a best security practice but in this case, it is "okay")
-
--   Update your install by running ```su apt upgrade``` (but it should be upgraded since it is a net install)
-
--   Install the necessary packages for mat2 by running ```su apt install ffmpeg uwsgi python3-pip uwsgi-plugin-python3 librsvg2-dev git mat2 apache2 libapache2-mod-proxy-uwsgi```
-
--   Go to the /var/www directory by running ```cd /var/www/```
-
--   Clone mat2-web from the mat2-web repository by issuing ```git clone https://0xacab.org/jvoisin/mat2-web.git```
-
--   Create a directory for uploads by running ```mkdir ./mat2-web/uploads/```
-
--   Give permissions to Apache2 to read the files by running ```chown -R www-data:www-data ./mat2-web```
-
--   Enable apache2 uwsgi proxy by running ```/usr/sbin/a2enmod proxy_uwsgi```
-
--   Upgrade pip by running ```python3 -m pip install pip --upgrade```
-
--   Install some python modules by running ```python3 -m pip install flasgger pyyaml flask-restful flask cerberus flask-cors jinja2```
-
--   Move to the config directory of mat2 by running ```cd /var/www/mat2-web/config/```
-
--   Copy the apache2 config file to etc by running ```cp apache2.config /etc/apache2/sites-enabled/apache2.conf```
-
--   Remove the default config file by running ```rm /etc/apache2/sites-enabled/000-default.conf```
-
--   Edit the apache2 config file provided by mat2-web by running ```nano /etc/apache2/sites-enabled/apache2.conf```
-
--   Remove the first line ```Listen 80```
-
--   Change the uwsgi path from ```/var/www/mat2-web/mat2-web.sock``` to ```/run/uwsgi/uwsgi.sock``` and save/exit
-
--   Copy the uwsgi config file to etc by running ```cp uwsgi.config /etc/uwsgi/apps-enabled/uwsgi.ini```
-
--   Edit the uwsgi config file and change uid and guid to ```nobody``` and ```nogroup```
-
--   Run ```chown -R 777 /var/www/mat2-web```
-
--   Restart uwsgi by running ```systemctl restart uwsgi``` (there should be no errors)
-
--   Restart apache2 by running ```systemctl restart apache2``` (there should be no errors)
-
--   Now change the network settings of the VM to "Host Only Network'
-
--   Reboot the VM
-
--   Log into the VM and type ```ip a``` to note the IP address it was assigned.
-
--   From the VM Host OS open a Browser and go to the IP of your Debian VM (for example http://192.168.1.55)
-
--   You should now see a Mat2-Web website running smoothly
-
--   Shutdown the Mat2 VM by running ```shutdown -h now```
-
--   Take a snapshot of the VM within Virtualbox
-
--   Restart the Mat2 VM and you are ready to use Mat2-web to remove metadata from most files
-
--   After use, shut down the VM and revert to the snapshot to remove traces of the uploaded files
-
--   This VM does not require any internet access unless you want to update it in which case you need to place it back on the NAT network and do the next steps.
-
--   For updates of Debian, start the VM and run ```apt update``` followed by ```apt upgrade```
-
--   For updates of mat2-web, go to /var/www/mat2-web and run ```git pull```
-
--   After updates, shutdown, place it back on the Host Network, take a new snapshot, remove the earlier one.
+This is very lightweight, and we recommend doing it from a VM (VM inside a VM) to benefit from Whonix Tor Gateway. While it is possible to put this VM directly behind a Whonix Gateway, Whonix will not easily allow communications between VMs on its network by default. You could also just leave it on Clearnet during the install process and then leave it on the Host-Only network later, or install it from a VM within a VM then move it to host OS for Host-Only usage like we show below:
+
+1. Create a new machine with any name like **Mat2**.
+2. Select **Linux** for the Type.
+3. Select **Debian (64-bit)** as the Version.
+4. Leave the default options and click **Create**.
+5. Select the VM and click **Settings**.
+6. Select **System** and disable the **Floppy disk** on the Motherboard tab.
+7. Select the Processor tab and **enable PAE/NX**.
+8. Select **Audio** and **disable Audio**.
+9. Select **USB** and **disable the USB controller**.
+10. Select **Storage** and select the CD drive to mount the Debian Netinst ISO.
+11. Select **Network** and **Attach to NAT**.
+12. Launch the VM.
+13. Select **Install** (not Graphical install).
+14. Select **Language**, **Location**, and **Keyboard layout** as you wish.
+15. Wait for the network to configure (automatic DHCP). This takes a few seconds.
+16. Pick a name like **Mat2**.
+17. Leave the **domain** empty.
+18. Set a **root** password as you wish (preferably a good one).
+19. Create a new **user** and **password** as you wish (preferably a good one).
+20. Select the **Time Zone** of your choice.
+21. Select **Guided - Use the entire disk**.
+22. Select the only disk available (**/dev/sda** in our case).
+23. Select **All files in one partition**.
+24. Confirm and write changes to the disk.
+25. Select **No** to scan any other CD or DVD.
+26. Select any region and any mirror of your choice and leave **proxy** blank.
+27. Select **No** to take part in any survey.
+28. Select **only System Standard Utilities**. Uncheck everything else using **space**.
+29. Select **Yes** to install GRUB bootloader.
+30. Select **/dev/sda** and continue.
+31. Complete the install and reboot.
+32. Log in with your **user** or **root**. You should never use root directly as a best security practice but in this case, it is okay.
+33. Update your install by running ```apt upgrade```. It should be upgraded since it is a net install, but we're double checking.
+34. Install the necessary packages for mat2 by running ```apt install ffmpeg uwsgi python3-pip uwsgi-plugin-python3 lib35rsvg2-dev git mat2 apache2 libapache2-mod-proxy-uwsgi```.
+35. Go to the **/var/www** directory by running ```cd /var/www/```.
+36. **Clone mat2-web** from the mat2-web repository by issuing ```git clone https://0xacab.org/jvoisin/mat2-web.git```.
+37. **Create a directory for uploads** by running ```mkdir ./mat2-web/uploads/```.
+38. **Give permissions to Apache2** to read the files by running ```chown -R www-data:www-data ./mat2-web```.
+39. **Enable apache2 uwsgi proxy** by running ```/usr/sbin/a2enmod proxy_uwsgi```.
+40. **Upgrade pip** by running ```python3 -m pip install pip --upgrade```.
+41. **Install these Python modules** by running ```python3 -m pip install flasgger pyyaml flask-restful flask cerberus flask-cors jinja2```.
+42. **Move to the config directory** of mat2 by running ```cd /var/www/mat2-web/config/```.
+43. **Copy the apache2 config file** to **/etc** by running ```cp apache2.config /etc/apache2/sites-enabled/apache2.conf```.
+44. **Remove the default config file** by running ```rm /etc/apache2/sites-enabled/000-default.conf```.
+45. **Edit the apache2 config file** provided by mat2-web by running ```nano /etc/apache2/sites-enabled/apache2.conf```.
+46. **Remove the first line** ```Listen 80``` by typing **Ctrl+K** to cut the line.
+47. **Change the uwsgi path** from ```/var/www/mat2-web/mat2-web.sock``` to ```/run/uwsgi/uwsgi.sock``` and type **Ctrl+X** to exit, followed by **Y** then **Enter**. 
+48. **Copy the uwsgi config file** to **/etc** by running ```cp uwsgi.config /etc/uwsgi/apps-enabled/uwsgi.ini```.
+49. **Edit the uwsgi config file** by typing ```nano /etc/uwsgi/apps-enabled/uwsgi.ini``` and change **uid** and **guid** to ```nobody``` and ```nogroup``` respectively. Save and exit with **Ctrl+X**, followed by **Y**, then **Enter**.
+50. Run ```chown -R 777 /var/www/mat2-web``` to change ownership to **mat2-web**.
+51. **Restart uwsgi** by running ```systemctl restart uwsgi```. There should be no errors.
+52. **Restart apache2** by running ```systemctl restart apache2```. There should be no errors.
+53. Now navigate to **Settings** > **Network** > **Attached to** and **select Host-only Adapter**. Click **OK** to save.
+54. Reboot the VM via **Machine** > **Reset**. Confirm the reset.
+55. Log into the VM as the **user** from **Step 19** and type ```ip a```. Note the IP address it was assigned under link/ether, the one that has **192.168.\*.\***.
+56. From the VM Host OS, **open a Browser** and navigate to the IP of your Debian VM. It will be something like: **http://192.168.1.55**.
+57. You should now see a Mat2-Web website running smoothly.
+58. **Shutdown the Mat2 guest VM** by running ```shutdown -h now``` to halt the machine.
+59. **Take a snapshot of the VM** within Virtualbox while the guest VM is shutdown.
+
+**Restart the Mat2 VM* and you are ready to use Mat2-web to remove metadata from most files!**
+
+After use, shut down the VM and revert to the snapshot to remove traces of the uploaded files. This VM does not require any internet access unless you want to update it, in which case, you need to place it back on the **NAT network** and do the next steps.
+
+For updates of Debian, **start the VM** and run ```apt update``` followed by ```apt upgrade```.
+
+For updates of mat2-web, type ```cd /var/www/mat2-web``` and run ```git pull```.
+
+After updates, shutdown, change to the **Host-only Adapter**, take a new snapshot, remove the earlier one.
 
 You are done.
 
-Now you can just start this small mat2 VM when needed, browse to it from your Guest VM and use the interface to remove any metadata from most files.
-
-After each use of this VM, you should revert to the Snapshot to erase all traces.
+Now you can just start this small Mat2 VM when needed. Browse to it from your Guest VM and use the interface to remove any metadata from most files. After each use of this VM, you should revert to the Snapshot to erase all traces. 
 
 **Do not ever expose this VM to any network unless temporarily for updates. This web interface is not suitable for any direct external access.**
 
@@ -10461,8 +10415,8 @@ There are three VPN companies recommended by PrivacyGuides.org (<https://www.pri
 Here are their logging policies:
 
 -   Mullvad: <https://mullvad.net/en/help/no-logging-data-policy/> <sup>[[Archive.org]](https://web.archive.org/web/https://mullvad.net/en/help/no-logging-data-policy/)</sup>
--   iVPN: <https://www.ivpn.net/privacy/> <sup>[[Archive.org]](https://web.archive.org/web/https://mullvad.net/en/help/no-logging-data-policy/](https://www.ivpn.net/privacy/)</sup>
--   ProtonVPN: <https://protonvpn.com/support/no-logs-vpn/> <sup>[[Archive.org]](https://web.archive.org/web/https://mullvad.net/en/help/no-logging-data-policy/](https://www.ivpn.net/privacy/)</sup>
+-   iVPN: <https://www.ivpn.net/privacy/> <sup>[[Archive.org]](https://web.archive.org/web/https://www.ivpn.net/privacy/)</sup>
+-   ProtonVPN: <https://protonvpn.com/support/no-logs-vpn/> <sup>[[Archive.org]](https://web.archive.org/web/https://protonvpn.com/support/no-logs-vpn/)</sup>
 
 In addition, we will also mention a newcomer to watch: Safing SPN <https://safing.io/> <sup>[[Archive.org]][621]</sup>) which (while still in the alpha stage at the time of this writing) which also accepts cash and has a very distinct new concept for a VPN which provides benefits similar to Tor Stream isolation with their "SPN"). Note that Safing SPN is not available on macOS at the moment. This possibility is "provisional" and at your own risk, but we think was worth mentioning.
 
@@ -10656,7 +10610,7 @@ The process is simple:
 
 Ideally, this should "not be an issue" since this guide provides multiple ways of hiding your origin IP using VPNs and Tor. But if you are in a situation where VPN and Tor are not an option, then this could be your only security.
 
-# Appendix R: Installing a VPN on your VM or Host OS.
+# Appendix R: Installing a VPN on your VM or Host OS
 
 Download the VPN client installer of your cash paid VPN service and install it on Host OS (Tor over VPN, VPN over Tor over VPN) or the VM of your choice (VPN over Tor):
 
@@ -11050,7 +11004,7 @@ If you are to resort to this, you should never do so from a monitored/known netw
 
 # Appendix V: What browser to use in your Guest VM/Disposable VM
     
-**Temporary Important Warning: Please see [Microarchitectural Side-channel Deanonymization Attacks:].**
+**Temporary Important Warning: Please see [Microarchitectural Side-channel Deanonymization Attacks:] for all browsers except Tor Browser.**
 
 There are 6 possibilities of browser to use on your guest/disposable VM:
 
@@ -11788,8 +11742,6 @@ Hopefully, these bridges should be enough to get you connected even in a hostile
 If not, consider [Appendix P: Accessing the internet as safely as possible when Tor and VPNs are not an option]
 
 # Appendix Y: Installing and using desktop Tor Browser
-    
-**Temporary Important Warning: Please see [Microarchitectural Side-channel Deanonymization Attacks:].**
 
 ## Installation:
 
@@ -11865,9 +11817,9 @@ But what if the service you want does not accept Monero but does accept a more m
 
 **Bitcoin and other "mainstream cryptocurrencies" are not anonymous at all (Remember [Your Cryptocurrencies transactions][Your Cryptocurrencies transactions:]) and you should never ever purchase, for example, Bitcoin from an exchange and then use these directly for purchasing services anonymously. This will not work, and the transaction can be traced easily.**
 
--   **Stay away from Crypto Mixers and Tumblers.** You might think this is a good idea but not only are they useless with cryptocurrencies such as BTC/ETH/LTC, but they are also dangerous as you might end up trading your currency for dirty currency from illicit activities. Use Monero to anonymize your crypto. Use a normal KYC-enabled Exchange to buy/sell your Monero (such as Kraken) or (at your own risk), use a service like LocalMonero.
+-   **Stay away from Crypto Mixer, Tumblers and Coinjoiners.** You might think this is a good idea but not only are they useless with cryptocurrencies such as BTC/ETH/LTC, but they are also dangerous as you might end up trading your currency for dirty currency from illicit activities. Use Monero to anonymize your crypto. Use a normal KYC-enabled Exchange to buy/sell your Monero (such as Kraken) or (at your own risk), use a service like LocalMonero.
 
--   **Stay away from what are in my opinion risky private/anonymizing wallets such as <https://we.incognito.org>.** Use a safer method outlined below.
+-   **See [Warning about special tumbling, mixing, coinjoining privacy wallets and services].** 
 
 ## Reasonably anonymous option:
 
@@ -12236,6 +12188,8 @@ These recommendations are similar to the ones at the beginning of the guide and 
 Find it online at:
 
 -   Original: <https://anonymousplanet-ng.org>
+    
+-   Tor Onion Mirror: <http://thgtoallkcxrdv37u6knsc3pumk6cq6lqmcqlw3j5vkmyahkxive4jyd.onion>    
 
 -   Archive.org: <https://web.archive.org/web/https://anonymousplanet-ng.org>
 
@@ -12394,25 +12348,27 @@ Also please consider reading: **<https://github.com/monero-project/monero/blob/m
 
 Here are various threat modeling resources if you want to go deeper in threat modeling.
 
--   (My personal favorite) LINDDUN <https://www.linddun.org/> <sup>[[Archive.org]][739]</sup>
+-   The one we recommend: LINDDUN (Linkability, Identifiability, Non-repudiation, Detectability, Disclosure of information, Unawareness, and Non-compliance) <https://www.linddun.org/> <sup>[[Archive.org]][739]</sup>.
+    - Researchers created an online tool to help make your threat model at <https://www.linddun.org/go><sup>[[Archive.org]](https://web.archive.org/web/https://www.linddun.org/go)</sup>.
+    - It is synergistic with STRIDE below.
+    - It is focused on privacy but is clearly perfectly suitable for anonymity.
+    - It is accessible to all skill levels including beginners (providing many tutorials) but also suitable for highly skilled readers.
+    - It is used in the making of the Threat Modeling Manifesto: <https://www.threatmodelingmanifesto.org/> <sup>[[Archive.org]][745]</sup>
+
+![][1389]
+(Illustration from [LINDDUN2015])
+
+Here are alternative resources and models if LINDDUN doesn't suit you:
+    
+-   Online Operations Security: [https://web.archive.org/web/20210711215728/https://github.com/devbret/online-OPSEC]
 
 -   STRIDE <https://en.wikipedia.org/wiki/STRIDE_%28security%29> <sup>[[Wikiless]][740]</sup> <sup>[[Archive.org]][741]</sup>
 
 -   PASTA <https://versprite.com/tag/pasta-threat-modeling/> <sup>[[Archive.org]][742]</sup>
-
-And there are quite a few others too, see:
-
+    
 -   <https://insights.sei.cmu.edu/blog/threat-modeling-12-available-methods/> <sup>[[Archive.org]][743]</sup>
 
 -   <https://www.geeksforgeeks.org/threat-modelling/> <sup>[[Archive.org]][744]</sup>
-
-You can find some introduction on these on these projects:
-
--   Threat Modeling Manifesto: <https://www.threatmodelingmanifesto.org/> <sup>[[Archive.org]][745]</sup>
-
--   OWASP: <https://cheatsheetseries.owasp.org/cheatsheets/Threat_Modeling_Cheat_Sheet.html> <sup>[[Archive.org]][746]</sup>
-
--   Online Operations Security: [https://web.archive.org/web/20210711215728/https://github.com/devbret/online-OPSEC]
 
 # Appendix B4: Important notes about evil-maid and tampering
 
@@ -12423,6 +12379,24 @@ Preventing an evil-maid attack attack or tampering might lead to bad consequence
 On the other hand, allowing the attack but detecting it will not let your adversary know that you are aware of the tampering. You can then take steps safely to not reveal information and possibly leave.
 
 See the [Some last OPSEC thoughts][Some last OPSEC thoughts:] section for some tips.
+
+# Appendix B5: Types of CPU attacks:
+
+Select security issues plague many Intel CPUs, such as transient execution attacks (formerly called speculative execution side channel methods). Here you can check your CPU against affected micro-processors with known bugs <https://www.intel.com/content/www/us/en/developer/topic-technology/software-security-guidance/processors-affected-consolidated-product-cpu-model.html> <sup>[[Archive.org]](https://web.archive.org/web/20220814123250/https://www.intel.com/content/www/us/en/developer/topic-technology/software-security-guidance/processors-affected-consolidated-product-cpu-model.html)</sup>.
+
+The Advanced Programmable Interrupt Controller (APIC) is an integrated CPU component responsible for accepting, prioritizing, and dispatching interrupts to logical processors (LPs). The APIC can operate in xAPIC mode, also known as legacy mode, in which APIC configuration registers are exposed through a memory-mapped I/O (MMIO) page.
+
+Enter AEPIC (stylized ÆPIC), the first architectural CPU bug that leaks stale data from the microarchitecture without using a side channel. It architecturally leaks stale data incorrectly returned by reading undefined APIC-register ranges. This novel method was revealed in the paper *ÆPIC Leak: Architecturally Leaking Uninitialized Data from the
+Microarchitecture* which you can read here: [Borrello2022AEPIC](https://aepicleak.com/aepicleak.pdf) <sup>[[Archive.org]](https://web.archive.org/web/20220812101719/https://aepicleak.com/aepicleak.pdf)</sup>
+
+Model-specific registers (MSRs) and their configuration bits can also be detected automatically on Intel and AMD CPUs: [Kogler2022](https://github.com/IAIK/msrevelio) <sup>[[Archive.org]](https://web.archive.org/web/20220814125349/https://andreaskogler.com/papers/msrtemplating.pdf)</sup>. This allows an attacker (with heavy knowledge of CPU functionality) to view information about the MSRs, which are essentially special CPU registers allowing interaction with low-level CPU features and advanced configuration of the CPU's behavior. Modern x86 CPUs have hundreds of these, which are usually documented very little and in increasingly less verbosity over the past few years.
+
+#### Some other microarchitecture bugs:
+
+- [PLATYPUS](https://platypusattack.com/) <sup>[[Archive.org]](https://web.archive.org/web/20220814132343/https://platypusattack.com/)</sup> - Software-based Power Side-Channel Attacks on x86, which shows how an unprivileged attacker can leak AES-NI keys from Intel SGX and the Linux kernel and break kernel address-space layout randomization (KASLR).
+- [SQUIP](https://www.nextplatform.com/2022/08/11/squip-side-channel-attack-rattles-amds-zen-cores/) <sup>[[Archive.org]](https://web.archive.org/web/20220812082548/https://www.nextplatform.com/2022/08/11/squip-side-channel-attack-rattles-amds-zen-cores/)</sup> - Scheduler Queue Usage via Interface Probing. All of AMD's Zen CPUs are vulnerable to a medium-severity flaw which can allow threat actors to run side-channel attacks.
+- [Hertzbleed](https://www.schneier.com/blog/archives/2022/06/hertzbleed-a-new-side-channel-attack.html) <sup>[[Archive.org]](https://web.archive.org/web/20220712000058/https://www.schneier.com/blog/archives/2022/06/hertzbleed-a-new-side-channel-attack.html)</sup> - Deducing cryptographic keys by analyzing power consumption has long been an attack, but it’s not generally viable because measuring power consumption is often hard. This new attack measures power consumption by measuring time, making it easier to exploit.
+- [Retbleed](https://www.bleepingcomputer.com/news/security/new-retbleed-speculative-execution-cpu-attack-bypasses-retpoline-fixes/) <sup>[[Archive.org]](https://web.archive.org/web/20220804151557/https://www.bleepingcomputer.com/news/security/new-retbleed-speculative-execution-cpu-attack-bypasses-retpoline-fixes/)</sup> - Retbleed focuses on return instructions, which are part of the retpoline software mitigation against the speculative execution class of attacks that became known starting early 2018, with Spectre.
 
 ---
 
@@ -13719,7 +13693,7 @@ See the [Some last OPSEC thoughts][Some last OPSEC thoughts:] section for some t
   [Socks Proxy VPS:]: #socks-proxy-vps
   [Appendix P: Accessing the internet as safely as possible when Tor and VPNs are not an option]: #appendix-p-accessing-the-internet-as-safely-as-possible-when-tor-and-vpns-are-not-an-option
   [Appendix Q: Using long-range Antenna to connect to Public Wi-Fis from a safe distance:]: #appendix-q-using-long-range-antenna-to-connect-to-public-wi-fis-from-a-safe-distance
-  [Appendix R: Installing a VPN on your VM or Host OS.]: #appendix-r-installing-a-vpn-on-your-vm-or-host-os.
+  [Appendix R: Installing a VPN on your VM or Host OS]: #appendix-r-installing-a-vpn-on-your-vm-or-host-os
   [Appendix S: Check your network for surveillance/censorship using OONI]: #appendix-s-check-your-network-for-surveillancecensorship-using-ooni
   [Appendix T: Checking files for malware]: #appendix-t-checking-files-for-malware
   [Integrity (if available):]: #integrity-if-available
@@ -13756,7 +13730,7 @@ See the [Some last OPSEC thoughts][Some last OPSEC thoughts:] section for some t
   [Appendix Z: Online anonymous payments using cryptocurrencies]: #appendix-z-online-anonymous-payments-using-cryptocurrencies
   [Reasonably anonymous option:]: #reasonably-anonymous-option
   [Extra-Paranoid anonymous option:]: #extra-paranoid-anonymous-option
-  [Warning about special tumbling, mixing, coinjoining privacy wallets and services:]: #warning-about-special-tumbling-mixing-coinjoining-privacy-wallets-and-services
+  [Warning about special tumbling, mixing, coinjoining privacy wallets and services]: #warning-about-special-tumbling-mixing-coinjoining-privacy-wallets-and-services-wikiless-archiveorg
   [When converting from BTC to Monero:]: #when-converting-from-btc-to-monero
   [Appendix A1: Recommended VPS hosting providers]: #appendix-a1-recommended-vps-hosting-providers
   [Appendix A2: Guidelines for passwords and passphrases]: #appendix-a2-guidelines-for-passwords-and-passphrases
@@ -13791,8 +13765,10 @@ See the [Some last OPSEC thoughts][Some last OPSEC thoughts:] section for some t
   [Appendix B2: Monero Disclaimer]: #appendix-b2-monero-disclaimer
   [Appendix B3: Threat modeling resources]: #appendix-b3-threat-modeling-resources
   [Appendix B4: Important notes about evil-maid and tampering]: #appendix-b4-important-notes-about-evil-maid-and-tampering
+  [Appendix B5: Types of CPU attacks:]: #appendix-b5-types-of-cpu-attacks 
   [References:]: #references
   [cc-by-nc-4.0]: https://creativecommons.org/licenses/by-nc/4.0/
+  [LINDDUN2015]: https://lirias.kuleuven.be/retrieve/295669
   [27]: https://web.archive.org/web/https://creativecommons.org/licenses/by-nc/4.0/
   [https://matrix.to/#/#anonymity:matrix.org]: https://matrix.to/#/
   [28]: https://nitter.net/AnonyPla
@@ -13845,8 +13821,6 @@ See the [Some last OPSEC thoughts][Some last OPSEC thoughts:] section for some t
   [75]: https://yewtu.be/watch?v=siCk4pGGcqA
   [76]: https://yewtu.be/watch?v=mYsTBPqbya8
   [77]: https://yewtu.be/watch?v=bKH5nGLgi08&t=2834s
-  [78]: https://wikiless.org/wiki/Transient_execution_CPU_vulnerability
-  [79]: https://web.archive.org/web/https://en.wikipedia.org/wiki/Transient_execution_CPU_vulnerability
   [80]: https://web.archive.org/web/https://github.com/speed47/spectre-meltdown-checker
   [81]: https://web.archive.org/web/https://www.grc.com/inspectre.htm
   [82]: https://web.archive.org/web/https://www.whonix.org/wiki/Spectre_Meltdown
@@ -14517,7 +14491,6 @@ See the [Some last OPSEC thoughts][Some last OPSEC thoughts:] section for some t
   [743]: https://web.archive.org/web/https://insights.sei.cmu.edu/blog/threat-modeling-12-available-methods/
   [744]: https://web.archive.org/web/https://www.geeksforgeeks.org/threat-modelling/
   [745]: https://web.archive.org/web/https://www.threatmodelingmanifesto.org/
-  [746]: https://web.archive.org/web/https://cheatsheetseries.owasp.org/cheatsheets/Threat_Modeling_Cheat_Sheet.html
   [https://web.archive.org/web/20210711215728/https://github.com/devbret/online-OPSEC]: https://web.archive.org/web/20210711215728/https://github.com/devbret/online-opsec
   [747]: https://web.archive.org/web/https://www.huntonprivacyblog.com/wp-content/uploads/sites/28/2016/02/Telemedia_Act__TMA_.pdf
   [748]: https://wikiless.org/wiki/Don%27t_be_evil
@@ -15157,3 +15130,4 @@ See the [Some last OPSEC thoughts][Some last OPSEC thoughts:] section for some t
   [1385]: https://web.archive.org/web/20220516000616/https://officercia.mirror.xyz/WeAilwJ9V4GIVUkYa7WwBwV2II9dYwpdPTp3fNsPFjo
   [1386]: https://web.archive.org/web/20220720023429/https://leakuidatorplusteam.github.io/
   [1387]: https://web.archive.org/web/20220801151048/https://support.torproject.org/glossary/moat/
+  [1389]: media/image59.png

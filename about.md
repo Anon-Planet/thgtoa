@@ -8,7 +8,7 @@ Follow or contact us on:
 - Twitter: <https://twitter.com/AnonyPla>
 - Mastodon: <https://mastodon.social/@anonymousplanet>
 - Element/Matrix.org: <del>@anonypla:envs.net, @anonypla:tchncs.de, and @anonypla:matrix.org </del> (all deactivated permanently)
-- E-Mail: <contact@anonymousplanet-ng.org>
+- E-Mail: <anonypla@mailfence.com> (You may use our [PGP public signature](https://github.com/Anon-Planet/thgtoa/blob/master/42FF35DB9DE7C088AB0FD4A70C216A52F6DF4920.asc) to encrypt e-mails. Do not forget to attach your PGP public key if you want an encrypted answer) 
 
 Discussion Channels:
 - Matrix room: ```#anonymity:matrix.org``` <https://matrix.to/#/#anonymity:matrix.org>
