@@ -2095,6 +2095,14 @@ Please see [Appendix Y: Installing and using desktop Tor Browser].
 
     -   Snowflake
 
+-   **If your internet isn't censored**, consider running one of the bridge types to help the network!
+
+    -   Easy: Obsf4 - You can run your own Obsf4 easily with these instructions. <https://community.torproject.org/relay/setup/bridge/>
+
+    -   Medium: Snowflake - More about Snowflakes here. <https://snowflake.torproject.org/>
+
+    -   Hard: Meek - This is the documentation. It's not as simple. <https://gitlab.torproject.org/legacy/trac/-/wikis/doc/meek/#how-to-run-a-meek-server-bridge>
+
 Personally, if you need to use a Bridge (this is not necessary for a non-hostile environment), you should pick a Meek-Azure. Those will probably work even if you are in China and want to bypass the Great Firewall. It is probably the best option to obfuscate your Tor activities if needed and Microsoft servers are usually not blocked.
 
 *Only available for Desktop Tor users: Recently, the Tor Project has made it incredibly simple to access Bridges with **Connection Assist**, and it is now automatically done in hostile or censored regions. Simply open the Tor Browser and the connection will be configured based on your needs on any hostile network. Previously, we had a list of options below this paragraph which were necessary to enable and configure bridges, but now that this is done automatically using [moat](https://support.torproject.org/glossary/moat/).* <sup>[[Archive.org]][1387]</sup>
@@ -2166,6 +2174,14 @@ While the official Tor Browser is not yet available for iOS, there is an alterna
     -   Snowflake
 
     -   (Meek-Azure is unfortunately not available on Onion Browser for iOS (See [commit 21bc18428](https://github.com/OnionBrowser/OnionBrowser/commit/21bc18428368224507b27ee58464ad352f4ec810) for more information.)
+
+-   **If your internet isn't censored**, consider running one of the bridge types to help the network!
+
+    -   Easy: Obsf4 - You can run your own Obsf4 easily with these instructions. <https://community.torproject.org/relay/setup/bridge/>
+
+    -   Medium: Snowflake - More about Snowflakes here. <https://snowflake.torproject.org/>
+
+    -   Hard: Meek - This is the documentation. It's not as simple. <https://gitlab.torproject.org/legacy/trac/-/wikis/doc/meek/#how-to-run-a-meek-server-bridge>
 
 Personally, if you need to use a Bridge (this is not necessary for a non-hostile environment), you should pick a Snowflake one (since Meek-Azure bridges are not available). Those will probably work even if you are in China and want to bypass the Great Firewall. It is probably the best option you have on iOS.
 
