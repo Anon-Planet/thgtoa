@@ -11710,7 +11710,7 @@ Each Virtual Machine is a sandbox. Remember the reasons for using them are to pr
 
 In some environments, your ISPs might be trying to prevent you from accessing Tor. Or accessing Tor openly might be a safety risk.
 
-In those cases, it might be necessary to use Tor bridges to connect to the Tor network (see Tor Documentation <https://2019.www.torproject.org/docs/bridges> <sup>[[Archive.org]][244]</sup> and Whonix Documentation <https://www.whonix.org/wiki/Bridges> <sup>[[Archive.org]][337]</sup>). Optionally, if you are able, you should (seriously!) consider running a bridge <https://blog.torproject.org/run-tor-bridges-defend-open-internet/> <sup>[[Archive.org]][]</sup> yourself, as this would greatly help reduce the amount of censorship in the world.
+In those cases, it might be necessary to use Tor bridges to connect to the Tor network (see Tor Documentation <https://2019.www.torproject.org/docs/bridges> <sup>[[Archive.org]][244]</sup> and Whonix Documentation <https://www.whonix.org/wiki/Bridges> <sup>[[Archive.org]][337]</sup>). Optionally, if you are able, you should (seriously!) consider running a bridge <https://blog.torproject.org/run-tor-bridges-defend-open-internet/> <sup>[[Archive.org]](https://web.archive.org/web/20220708014922/https://blog.torproject.org/run-tor-bridges-defend-open-internet/)</sup> yourself, as this would greatly help reduce the amount of censorship in the world.
 
 Bridges are special Tor entry nodes that are not listed on the Tor public directory. Some of those are running on people running the Snowflake Browser extension[^520] while others are running on various servers around the world. Most of those bridges are running some type of obfuscation method called obfs4[^521].
 
