@@ -1719,15 +1719,15 @@ If you still do not think such information can be used by various actors to trac
 
 -   Dropbox Transparency Report <https://www.dropbox.com/transparency> <sup>[[Archive.org]][211]</sup>
 
--   Discord Transparency Report <https://blog.discord.com/discord-transparency-report-jan-june-2020-2ef4a3ee346d> <sup>[[Archive.org]][212]</sup>
+-   Discord Transparency Report <https://discord.com/blog/discord-transparency-report-q1-2022> <sup>[[Archive.org]][212]</sup>
 
 -   GitHub Transparency Report <https://github.blog/2021-02-25-2020-transparency-report/> <sup>[[Archive.org]][213]</sup>
 
 -   Snapchat Transparency Report <https://www.snap.com/en-US/privacy/transparency/> <sup>[[Archive.org]][214]</sup>
 
--   TikTok Transparency Report <https://www.tiktok.com/safety/resources/transparency-report?lang=en> <sup>[[Archive.org]][215]</sup>
+-   TikTok Transparency Report <https://www.tiktok.com/transparency/en/information-requests-2021-2/> <sup>[[Archive.org]][215]</sup>
 
--   Reddit Transparency Report <https://www.reddit.com/wiki/transparency> <sup>[[Archive.org]][216]</sup>
+-   Reddit Transparency Report <https://www.redditinc.com/policies/transparency-report-2021> <sup>[[Archive.org]][216]</sup>
 
 -   Twitter Transparency Report <https://transparency.twitter.com/> <sup>[[Archive.org]][217]</sup>
 
@@ -2095,6 +2095,14 @@ Please see [Appendix Y: Installing and using desktop Tor Browser].
 
     -   Snowflake
 
+-   **If your internet isn't censored**, consider running one of the bridge types to help the network!
+
+    -   Easy: Obsf4 - You can run your own Obsf4 easily with these instructions. <https://community.torproject.org/relay/setup/bridge/>
+
+    -   Medium: Snowflake - More about Snowflakes here. <https://snowflake.torproject.org/>
+
+    -   Hard: Meek - This is the documentation. It's not as simple. <https://gitlab.torproject.org/legacy/trac/-/wikis/doc/meek/#how-to-run-a-meek-server-bridge>
+
 Personally, if you need to use a Bridge (this is not necessary for a non-hostile environment), you should pick a Meek-Azure. Those will probably work even if you are in China and want to bypass the Great Firewall. It is probably the best option to obfuscate your Tor activities if needed and Microsoft servers are usually not blocked.
 
 *Only available for Desktop Tor users: Recently, the Tor Project has made it incredibly simple to access Bridges with **Connection Assist**, and it is now automatically done in hostile or censored regions. Simply open the Tor Browser and the connection will be configured based on your needs on any hostile network. Previously, we had a list of options below this paragraph which were necessary to enable and configure bridges, but now that this is done automatically using [moat](https://support.torproject.org/glossary/moat/).* <sup>[[Archive.org]][1387]</sup>
@@ -2165,7 +2173,15 @@ While the official Tor Browser is not yet available for iOS, there is an alterna
 
     -   Snowflake
 
-    -   (Meek-Azure is unfortunately not available on Onion Browser for iOS for some reason)
+    -   (Meek-Azure is unfortunately not available on Onion Browser for iOS (See [commit 21bc18428](https://github.com/OnionBrowser/OnionBrowser/commit/21bc18428368224507b27ee58464ad352f4ec810) for more information.)
+
+-   **If your internet isn't censored**, consider running one of the bridge types to help the network!
+
+    -   Easy: Obsf4 - You can run your own Obsf4 easily with these instructions. <https://community.torproject.org/relay/setup/bridge/>
+
+    -   Medium: Snowflake - More about Snowflakes here. <https://snowflake.torproject.org/>
+
+    -   Hard: Meek - This is the documentation. It's not as simple. <https://gitlab.torproject.org/legacy/trac/-/wikis/doc/meek/#how-to-run-a-meek-server-bridge>
 
 Personally, if you need to use a Bridge (this is not necessary for a non-hostile environment), you should pick a Snowflake one (since Meek-Azure bridges are not available). Those will probably work even if you are in China and want to bypass the Great Firewall. It is probably the best option you have on iOS.
 
@@ -5905,6 +5921,9 @@ Tools that can help with this:
 
 -   <https://thispersondoesnotexist.com/>
 
+-   <https://generated.photos/face-generator> (**Generated pictures using this tool have a watermark that you might need to remove using image editing software such as Gimp**)
+    -   **Warning:** This tool requires JavaScript to function and does a lot of fingerprinting. Most of it is being sent to Microsoft Clarity. Even with uBlock installed and on safer level, Tor Browser wasn't efficient at blocking the fingerprinting. This obviously does not work on Safest level. On our tests, only Brave with agressive fingerprinting/ad shields did not send analytics.
+
 Now is also the moment where you could finally consider getting an online phone number as explained in the [Online Phone Number (less recommended)] section.
 
 We will help you bit by listing a few tips we learned while researching over the years **(disclaimer: this is based on my individual experiences alone)**:
@@ -5929,11 +5948,13 @@ We will help you bit by listing a few tips we learned while researching over the
 
 -   Brave Browser (Chromium-based) with a Private Tor Tab has a better acceptance level than Tor Browser (Firefox based). You will experience fewer issues with captchas and online platforms[^383] if you use Brave than if you use Tor Browser (feel free to try this yourself).
 
--   For every identity, you should have a matching profile picture associated with it. For this purpose, we recommend you just go to <https://thispersondoesnotexist.com/> <sup>[[Archive.org]][399]</sup> and generate a computer-generated profile picture (Do note that algorithms have been developed[^393]'[^394] to detect these and it might not work 100% of the time). You can also generate such pictures yourself from your computer if you prefer by using the open-source StyleGan project here <https://github.com/NVlabs/stylegan2> <sup>[[Archive.org]][400]</sup>. Just refresh the page until you find a picture that matches your identity in all aspects (age, sex, and ethnicity) and save that picture. It would be even better to have several pictures associated with that identity, butWedo not have an "easy way" of doing that yet.
+-   For every identity, you should have a matching profile picture associated with it. For this purpose, we recommend you just go to <https://thispersondoesnotexist.com/> or <https://generated.photos/face-generator>* and generate a computer-generated profile picture (Do note that algorithms have been developed[^393]'[^394] to detect these and it might not work 100% of the time). You can also generate such pictures yourself from your computer if you prefer by using the open-source StyleGan project here <https://github.com/NVlabs/stylegan2> <sup>[[Archive.org]][400]</sup>. Just refresh the page until you find a picture that matches your identity in all aspects (age, sex, and ethnicity) and save that picture. It would be even better to have several pictures associated with that identity, butWedo not have an "easy way" of doing that yet.
 
-    -   **Bonus**, you could also make it more real by using this service (with an anonymous identity) <https://www.myheritage.com/deep-nostalgia> <sup>[[Archive.org]][401]</sup> to make a picture more lifelike. Here is an example:
+***Warning:** https://generated.photos/face-generator requires JavaScript to function and does a lot of fingerprinting. Most of it is being sent to Microsoft Clarity. Even with uBlock installed and on safer level, Tor Browser wasn't efficient at blocking the fingerprinting. This obviously does not work on Safest level. On our tests, only Brave with agressive fingerprinting/ad shields did not send analytics.
 
-        -   Original:
+-   **Bonus**, you could also make it more real by using this service (with an anonymous identity) <https://www.myheritage.com/deep-nostalgia> <sup>[[Archive.org]][401]</sup> to make a picture more lifelike. Here is an example:
+
+-   Original:
 
 ![][402]
 
@@ -11694,17 +11715,17 @@ Each Virtual Machine is a sandbox. Remember the reasons for using them are to pr
 
 In some environments, your ISPs might be trying to prevent you from accessing Tor. Or accessing Tor openly might be a safety risk.
 
-In those cases, it might be necessary to use Tor bridges to connect to the Tor network (see Tor Documentation <https://2019.www.torproject.org/docs/bridges> <sup>[[Archive.org]][244]</sup> and Whonix Documentation <https://www.whonix.org/wiki/Bridges> <sup>[[Archive.org]][337]</sup>).
+In those cases, it might be necessary to use Tor bridges to connect to the Tor network (see Tor Documentation <https://2019.www.torproject.org/docs/bridges> <sup>[[Archive.org]][244]</sup> and Whonix Documentation <https://www.whonix.org/wiki/Bridges> <sup>[[Archive.org]][337]</sup>). Optionally, if you are able, you should (seriously!) consider running a bridge <https://blog.torproject.org/run-tor-bridges-defend-open-internet/> <sup>[[Archive.org]](https://web.archive.org/web/20220708014922/https://blog.torproject.org/run-tor-bridges-defend-open-internet/)</sup> yourself, as this would greatly help reduce the amount of censorship in the world.
 
 Bridges are special Tor entry nodes that are not listed on the Tor public directory. Some of those are running on people running the Snowflake Browser extension[^520] while others are running on various servers around the world. Most of those bridges are running some type of obfuscation method called obfs4[^521].
 
 *Only available for Desktop Tor users: Recently, the Tor Project has made it incredibly simple to access Bridges with **Connection Assist**, and it is now automatically done in hostile or censored regions. Simply open the Tor Browser and the connection will be configured based on your needs on any hostile network. Previously, we had a list of options below this paragraph which were necessary to enable and configure bridges, but now that this is done automatically using [moat](https://support.torproject.org/glossary/moat/).* <sup>[[Archive.org]][1387]</sup>
 
-Here is the definition from the Tor Browser Manual[^522]: "obfs4 makes Tor traffic look random and prevents censors from finding bridges by Internet scanning. obfs4 bridges are less likely to be blocked than its predecessor, obfs3 bridges".
+Here is the definition from the Tor Browser Manual[^523]: "obfs4 makes Tor traffic look random and prevents censors from finding bridges by Internet scanning. obfs4 bridges are less likely to be blocked than its predecessor, obfs3 bridges".
 
 Some of those are called "Meek" bridges and are using a technique called "Domain Fronting" where your Tor client (Tails, Tor Browser, Whonix Gateway) will connect to a common CDN used by other services. To a censor, it would appear you are connecting to a normal website such as Microsoft.com. See <https://gitlab.torproject.org/legacy/trac/-/wikis/doc/meek> for more information.
 
-As per their definition from their manual[^523]: "meek transports make it look like you are browsing a major web site instead of using Tor. meek-azure makes it look like you are using a Microsoft web site". This is a type of "domain fronting" [^524].
+As per their definition from their manual: "meek transports make it look like you are browsing a major web site instead of using Tor. meek-azure makes it look like you are using a Microsoft web site". Snowflake bridges make it appear like your connections are phone calls to random internet users. This is a type of "domain fronting" [^524]. See ["domain fronting"](https://www.bamsoftware.com/papers/fronting/#sec:introduction) from the link in the previous paragraph for a detailed explanation of these types of secret "bridges".
 
 Lastly, there are also bridges called Snowflake bridges that rely on users running the snowflake extension in their browser to become themselves entry nodes. See <https://snowflake.torproject.org/> <sup>[[Archive.org]][563]</sup>.
 
@@ -13437,8 +13458,6 @@ Model-specific registers (MSRs) and their configuration bits can also be detecte
 
 [^521]: GitHub, Obfs4 Repository <https://github.com/Yawning/obfs4/> <sup>[[Archive.org]][1348]</sup>
 
-[^522]: Tor Browser Manual, Pluggable Transport <https://tb-manual.torproject.org/circumvention/> <sup>[[Archive.org]][1349]</sup>
-
 [^523]: Tor Browser Manual, Pluggable Transport <https://tb-manual.torproject.org/circumvention/> <sup>[[Archive.org]][1349]</sup>
 
 [^524]: Wikipedia, Domain Fronting <https://en.wikipedia.org/wiki/Domain_fronting> <sup>[[Wikiless]][1350]</sup> <sup>[[Archive.org]][1351]</sup>
@@ -13948,12 +13967,12 @@ Model-specific registers (MSRs) and their configuration bits can also be detecte
   [209]: https://web.archive.org/web/https://www.microsoft.com/en-us/corporate-responsibility/law-enforcement-requests-report
   [210]: https://web.archive.org/web/https://www.amazon.com/gp/help/customer/display.html?nodeId=GYSDRGWQ2C2CRYEF
   [211]: https://web.archive.org/web/https://www.dropbox.com/transparency
-  [212]: https://web.archive.org/web/https://blog.discord.com/discord-transparency-report-jan-june-2020-2ef4a3ee346d
+  [212]: https://web.archive.org/web/20220812051950/https://discord.com/blog/discord-transparency-report-q1-2022
   [213]: https://web.archive.org/web/https://github.blog/2021-02-25-2020-transparency-report/
-  [214]: https://web.archive.org/web/https://www.snap.com/en-US/privacy/transparency/
-  [215]: https://web.archive.org/web/https://www.tiktok.com/safety/resources/transparency-report?lang=en
-  [216]: https://web.archive.org/web/https://www.reddit.com/wiki/transparency
-  [217]: https://web.archive.org/web/https://transparency.twitter.com/
+  [214]: https://web.archive.org/web/20220806141853/https://www.snap.com/en-US/privacy/transparency
+  [215]: https://web.archive.org/web/20220812054600/https://www.tiktok.com/transparency/en/information-requests-2021-2/
+  [216]: https://web.archive.org/web/20220812054736/https://www.redditinc.com/policies/transparency-report-2021
+  [217]: https://web.archive.org/web/20220812054839/https://transparency.twitter.com/
   [218]: https://yewtu.be/watch?v=euSsqXO53GY
   [219]: https://web.archive.org/web/https://media.defense.gov/2021/Feb/25/2002588479/-1/-1/0/CSI_EMBRACING_ZT_SECURITY_MODEL_UOO115131-21.PDF
   [220]: media/image18.jpeg
@@ -14144,7 +14163,6 @@ Model-specific registers (MSRs) and their configuration bits can also be detecte
   [397]: https://web.archive.org/web/https://github.com/deepfakes/faceswap
   [398]: https://web.archive.org/web/https://github.com/iperov/DeepFaceLive
   [Online Phone Number (less recommended)]: #online-phone-number
-  [399]: https://web.archive.org/web/https://thispersondoesnotexist.com/
   [400]: https://web.archive.org/web/https://github.com/NVlabs/stylegan2
   [401]: https://web.archive.org/web/https://www.myheritage.com/deep-nostalgia
   [402]: media/image39.jpeg
@@ -15126,5 +15144,5 @@ Model-specific registers (MSRs) and their configuration bits can also be detecte
   [1385]: https://web.archive.org/web/20220516000616/https://officercia.mirror.xyz/WeAilwJ9V4GIVUkYa7WwBwV2II9dYwpdPTp3fNsPFjo
   [1386]: https://web.archive.org/web/20220720023429/https://leakuidatorplusteam.github.io/
   [1387]: https://web.archive.org/web/20220801151048/https://support.torproject.org/glossary/moat/
+  [1388]: https://web.archive.org/web/20220708014922/https://blog.torproject.org/run-tor-bridges-defend-open-internet/
   [1389]: media/image59.png
-
