@@ -24,7 +24,7 @@ The manual is here: <https://briarproject.org/manual/>, quick-start guide here: 
 
 **There might be some wrong or outdated information in this guide because no human is omniscient, and humans do make mistakes.** **Please do not take this guide as a definitive gospel or truth because it is not. Mistakes have been written in the guide in earlier versions and fixed later when discovered. There are likely still some mistakes in this guide at this moment (hopefully few). Those are fixed as soon as possible when discovered.**
 
-**This guide has been moved, due to recent unfortunate events. The old guide was at [anonymousplanet.org](https://web.archive.org/web/20220227172123/https://anonymousplanet.org/), but has since been moved to <https://anonymousplanet-ng.org>**
+**This guide has been moved, due to recent unfortunate events. The old guide was at [anonymousplanet.org](https://web.archive.org/web/20220227172123/https://anonymousplanet.org/), but has since been moved to <https://anonymousplanet.org>**
 
 **Your experience may vary.** **Remember to check regularly for an updated version of this guide.**
 
@@ -38,7 +38,7 @@ Feel free to submit issues **(please do report anything wrong)** using GitHub Is
 
 Feel free to come to discuss ideas at:
 
--   Rules for our chatrooms: <https://anonymousplanet-ng.org/chatrooms-rules.html>
+-   Rules for our chatrooms: <https://anonymousplanet.org/chatrooms-rules.html>
 
 -   Matrix/Element Room: ```#anonymity:matrix.org``` <https://matrix.to/#/#anonymity:matrix.org>
 
@@ -50,7 +50,7 @@ Follow us on:
 
 -   Mastodon at <https://mastodon.social/@anonymousplanet>
 
-To contact me, see the updated information on the website or send an e-mail to <contact@anonymousplanet-ng.org>
+To contact me, see the updated information on the website or send an e-mail to <contact@anonymousplanet.org>
 
 **Please consider [donating][Donations:] if you enjoy the project and want to support the hosting fees or support the funding of initiatives like the hosting of Tor Exit Nodes.**
 
@@ -9451,7 +9451,7 @@ Consider helping others (see [Helping others staying anonymous][Helping others s
 
 **This project has no funding or sponsoring, and donations are more than welcome.**
 
-See: <https://anonymousplanet-ng.org/donations.html>
+See: <https://anonymousplanet.org/donations.html>
 
 **(Please do verify the checksum and GPG signature of this file for authenticity, this is explained in the README of the repository if you do not know how to do that)**.
 
@@ -12182,21 +12182,21 @@ These recommendations are similar to the ones at the beginning of the guide and 
 
 Find it online at:
 
--   Original: <https://anonymousplanet-ng.org>
+-   Original: <https://anonymousplanet.org>
     
 -   Tor Onion Mirror: <http://thgtoallkcxrdv37u6knsc3pumk6cq6lqmcqlw3j5vkmyahkxive4jyd.onion>    
 
--   Archive.org: <https://web.archive.org/web/https://anonymousplanet-ng.org>
+-   Archive.org: <https://web.archive.org/web/https://anonymousplanet.org>
 
--   Archive.today: <https://archive.fo/anonymousplanet-ng.org>
+-   Archive.today: <https://archive.fo/anonymousplanet.org>
 
--   Archive.today over Tor: <http://archiveiya74codqgiixo33q62qlrqtkgmcitqx5u2oeqnmn5bpcbiyd.onion/anonymousplanet-ng.org>
+-   Archive.today over Tor: <http://archiveiya74codqgiixo33q62qlrqtkgmcitqx5u2oeqnmn5bpcbiyd.onion/anonymousplanet.org>
 
     Offline versions of this guide are temporarily unavailable.
 
--   <del>PDF: <https://anonymousplanet-ng.org/export/guide.pdf></del> <sup>[[Archive.org]][726]</sup> <sup>[[Tor Mirror]][727]</sup>
+-   <del>PDF: <https://anonymousplanet.org/export/guide.pdf></del> <sup>[[Archive.org]][726]</sup> <sup>[[Tor Mirror]][727]</sup>
 
--   OpenDocument Text (ODT) version at: <del><https://anonymousplanet-ng.org/export/guide.odt></del> (temporarily disabled) <sup>[[Archive.org]][732]</sup> <sup>[[Tor Mirror]][733]</sup>
+-   OpenDocument Text (ODT) version at: <del><https://anonymousplanet.org/export/guide.odt></del> (temporarily disabled) <sup>[[Archive.org]][732]</sup> <sup>[[Tor Mirror]][733]</sup>
 
 
 # Appendix A7: Comparing versions
@@ -14298,8 +14298,8 @@ Model-specific registers (MSRs) and their configuration bits can also be detecte
   [554]: https://wikiless.org/wiki/Key_disclosure_law
   [555]: https://web.archive.org/web/https://en.wikipedia.org/wiki/Key_disclosure_law
   [556]: https://web.archive.org/web/https://www.gp-digital.org/world-map-of-encryption/
-  [557]: https://mirror.anonymousplanet-ng.org/donations.html
-  [558]: https://web.archive.org/web/https://anonymousplanet-ng.org/donations.html
+  [557]: https://mirror.anonymousplanet.org/donations.html
+  [558]: https://web.archive.org/web/https://anonymousplanet.org/donations.html
   [559]: http://thgtoa7imksbg7rit4grgijl2ef6kc7b56bp56pmtta4g354lydlzkqd.onion/donations.html
   [560]: media/image48.jpeg
   [561]: media/image49.jpeg
@@ -14470,9 +14470,9 @@ Model-specific registers (MSRs) and their configuration bits can also be detecte
   [https://nitter.net]: https://nitter.fdn.fr
   [723]: https://web.archive.org/web/https://github.com/spikecodes/libreddit
   [724]: https://web.archive.org/web/https://simplytranslate.org/
-  [726]: https://web.archive.org/web/https://anonymousplanet-ng.org/export/guide.pdf
+  [726]: https://web.archive.org/web/https://anonymousplanet.org/export/guide.pdf
   [727]: http://thgtoa7imksbg7rit4grgijl2ef6kc7b56bp56pmtta4g354lydlzkqd.onion/guide.pdf
-  [732]: https://web.archive.org/web/https://anonymousplanet-ng.org/export/guide.odt
+  [732]: https://web.archive.org/web/https://anonymousplanet.org/export/guide.odt
   [733]: http://thgtoa7imksbg7rit4grgijl2ef6kc7b56bp56pmtta4g354lydlzkqd.onion/guide.odt
   [734]: https://web.archive.org/web/https://help.libreoffice.org/7.1/en-US/text/shared/guide/redlining_doccompare.html
   [735]: https://web.archive.org/web/https://www.whonix.org/wiki/Surfing_Posting_Blogging#Anonymous_File_Sharing

@@ -41,7 +41,7 @@ Some exceptions can apply, see the [exceptions](#exceptions) section at the bott
 - Be respectful
 
 #### Rules for Modern Cryptography (```#moderncrypto:gnuradio.org```):<a name="moderncrypto"></a>
-See <https://anonymousplanet-ng.org/moderncrypto-rules.html>
+See <https://anonymousplanet.org/moderncrypto-rules.html>
 
 #### Rules for OS Security:<a name="ossecurity"></a>
 See <https://artemislena.eu/coc.html>
