@@ -5936,9 +5936,9 @@ We will help you bit by listing a few tips we learned while researching over the
 
 ***Warning:** https://generated.photos/face-generator requires JavaScript to function and does a lot of fingerprinting. Most of it is being sent to Microsoft Clarity. Even with uBlock installed and on safer level, Tor Browser wasn't efficient at blocking the fingerprinting. This obviously does not work on Safest level. On our tests, only Brave with agressive fingerprinting/ad shields did not send analytics.
 
-    -   **Bonus**, you could also make it more real by using this service (with an anonymous identity) <https://www.myheritage.com/deep-nostalgia> <sup>[[Archive.org]][401]</sup> to make a picture more lifelike. Here is an example:
+-   **Bonus**, you could also make it more real by using this service (with an anonymous identity) <https://www.myheritage.com/deep-nostalgia> <sup>[[Archive.org]][401]</sup> to make a picture more lifelike. Here is an example:
 
-        -   Original:
+-   Original:
 
 ![][402]
 
