@@ -770,9 +770,7 @@ This guide will later propose some mitigations to such attacks by changing your 
 You have seen this in action/spy/Sci-Fi movies and shows, the protagonists always remove the battery of their phones to make sure it cannot be used. Most people would think that's overkill. Well, unfortunately, no, this is now becoming true at least for some devices:
 
 -   iPhones and iPads (IOS 13 and above)[^78]'[^79]
-
 -   Samsung Phones (Android 10 and above)[^80]
-
 -   MacBooks (macOS 10.15 and above)[^81]
 
 Such devices will continue to broadcast identity information to nearby devices even when offline using Bluetooth Low-Energy[^82]. They do not have access to the devices directly (which are not connected to the internet) but instead use BLE to find them through other nearby devices[^83]. They are using peer-to-peer short-range Bluetooth communication to broadcast their status through nearby online devices.
@@ -2148,6 +2146,8 @@ If you are extra paranoid, use the "Safest" level by default and consider downgr
 However, the Safer level should be used with some extra precautions while using some websites: see [Appendix A5: Additional browser precautions with JavaScript enabled].
 
 Now, you are really done, and you can now surf the web anonymously from your Android device.
+
+**[Warning when using Orbot on Android]**[Appendix B6: Warning using Orbot or Android]
 
 ### iOS:
 
@@ -12413,6 +12413,14 @@ Model-specific registers (MSRs) and their configuration bits can also be detecte
 - [SQUIP](https://www.nextplatform.com/2022/08/11/squip-side-channel-attack-rattles-amds-zen-cores/) <sup>[[Archive.org]](https://web.archive.org/web/20220812082548/https://www.nextplatform.com/2022/08/11/squip-side-channel-attack-rattles-amds-zen-cores/)</sup> - Scheduler Queue Usage via Interface Probing. All of AMD's Zen CPUs are vulnerable to a medium-severity flaw which can allow threat actors to run side-channel attacks.
 - [Hertzbleed](https://www.schneier.com/blog/archives/2022/06/hertzbleed-a-new-side-channel-attack.html) <sup>[[Archive.org]](https://web.archive.org/web/20220712000058/https://www.schneier.com/blog/archives/2022/06/hertzbleed-a-new-side-channel-attack.html)</sup> - Deducing cryptographic keys by analyzing power consumption has long been an attack, but it’s not generally viable because measuring power consumption is often hard. This new attack measures power consumption by measuring time, making it easier to exploit.
 - [Retbleed](https://www.bleepingcomputer.com/news/security/new-retbleed-speculative-execution-cpu-attack-bypasses-retpoline-fixes/) <sup>[[Archive.org]](https://web.archive.org/web/20220804151557/https://www.bleepingcomputer.com/news/security/new-retbleed-speculative-execution-cpu-attack-bypasses-retpoline-fixes/)</sup> - Retbleed focuses on return instructions, which are part of the retpoline software mitigation against the speculative execution class of attacks that became known starting early 2018, with Spectre.
+    
+# Appendix B6: Warning about using Orbot on Android
+    
+While this is often misundestood. Orbot on Android does not make your "selected apps" go through Tor if you add them to the list. Orbot is acting as device wide VPN or as a porxy. The list of apps using Orbot is a whitelist. This list will not make some apps magically use Tor and unchecked ones use the clearnet. This only controls the access to the device wide VPN is using to route traffic. This means that Orbot can only control what app can access the VPN it creates. Other apps will lose connectivity. 
+    
+What is important to know is that if you launch an app (or Android does it automatically) while Orbot is not running/off, the app will just use the normal network without involving Orbot (with the exception of some apps supporting a proxy Orbot).
+    
+As well as you should not be surprised by Tor Browser not working when using Orbot in a VPN mode, as Tor design does not allow "Tor over Tor" (You cannot re-enter the Tor network from a Tor exit node).
 
 ---
 
@@ -13780,6 +13788,7 @@ Model-specific registers (MSRs) and their configuration bits can also be detecte
   [Appendix B3: Threat modeling resources]: #appendix-b3-threat-modeling-resources
   [Appendix B4: Important notes about evil-maid and tampering]: #appendix-b4-important-notes-about-evil-maid-and-tampering
   [Appendix B5: Types of CPU attacks:]: #appendix-b5-types-of-cpu-attacks 
+  [Appendix B6: Warning using Orbot or Android]: #appendix-b6-warning-using-orbot-on-android 
   [References:]: #references
   [cc-by-nc-4.0]: https://creativecommons.org/licenses/by-nc/4.0/
   [LINDDUN2015]: https://lirias.kuleuven.be/retrieve/295669
