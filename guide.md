@@ -2147,7 +2147,7 @@ However, the Safer level should be used with some extra precautions while using 
 
 Now, you are really done, and you can now surf the web anonymously from your Android device.
 
-**[Warning when using Orbot on Android]**[Appendix B6: Warning using Orbot or Android]
+**Please see** [Warning for using Orbot on Android][Appendix B6: Warning for using Orbot on Android].
 
 ### iOS:
 
