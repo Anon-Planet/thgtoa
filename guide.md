@@ -12370,6 +12370,7 @@ Here are various threat modeling resources if you want to go deeper in threat mo
     - It is focused on privacy but is clearly perfectly suitable for anonymity.
     - It is accessible to all skill levels including beginners (providing many tutorials) but also suitable for highly skilled readers.
     - It is used in the making of the Threat Modeling Manifesto: <https://www.threatmodelingmanifesto.org/> <sup>[[Archive.org]][745]</sup>
+    - Here is a video **endorsed and recommended** by LINDDUN designers to help understanding: <https://www.youtube.com/watch?v=zI4SFyq_Xjw> <sup>[[Invidious]](https://yewtu.be/zI4SFyq_Xjw)</sup>
 
 ![][1389]
 (Illustration from [LINDDUN2015])
