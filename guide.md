@@ -12413,14 +12413,14 @@ Model-specific registers (MSRs) and their configuration bits can also be detecte
 - [SQUIP](https://www.nextplatform.com/2022/08/11/squip-side-channel-attack-rattles-amds-zen-cores/) <sup>[[Archive.org]](https://web.archive.org/web/20220812082548/https://www.nextplatform.com/2022/08/11/squip-side-channel-attack-rattles-amds-zen-cores/)</sup> - Scheduler Queue Usage via Interface Probing. All of AMD's Zen CPUs are vulnerable to a medium-severity flaw which can allow threat actors to run side-channel attacks.
 - [Hertzbleed](https://www.schneier.com/blog/archives/2022/06/hertzbleed-a-new-side-channel-attack.html) <sup>[[Archive.org]](https://web.archive.org/web/20220712000058/https://www.schneier.com/blog/archives/2022/06/hertzbleed-a-new-side-channel-attack.html)</sup> - Deducing cryptographic keys by analyzing power consumption has long been an attack, but it’s not generally viable because measuring power consumption is often hard. This new attack measures power consumption by measuring time, making it easier to exploit.
 - [Retbleed](https://www.bleepingcomputer.com/news/security/new-retbleed-speculative-execution-cpu-attack-bypasses-retpoline-fixes/) <sup>[[Archive.org]](https://web.archive.org/web/20220804151557/https://www.bleepingcomputer.com/news/security/new-retbleed-speculative-execution-cpu-attack-bypasses-retpoline-fixes/)</sup> - Retbleed focuses on return instructions, which are part of the retpoline software mitigation against the speculative execution class of attacks that became known starting early 2018, with Spectre.
-    
+
 # Appendix B6: Warning for using Orbot on Android
-    
-While this is often misunderstood. Orbot on Android does not make your "selected apps" go through Tor if you add them to the list. Orbot is acting as device wide VPN or as a proxy. The list of apps using Orbot is a whitelist. This list will not make some apps magically use Tor and unchecked ones use the clear-net. This only ensures the device-wide VPN is using Tor to route traffic. This means that Orbot can only control what app can access the VPN it creates. Other apps will lose connectivity. 
-    
+
+While this is often misunderstood, Orbot on Android does not make your "Tor-Enabled Apps" go through Tor if you add them to the list. Orbot is acting as a device-wide VPN or (also known as a transparent proxy). The list of apps using Orbot is a whitelist. This list will not make some apps magically use Tor and unchecked ones use the clear-net. This only ensures the device-wide VPN is using Tor to route traffic. This means that Orbot can only control what app can access the VPN it creates. Other apps will lose connectivity.
+
 What is important to know is that, if you launch an app (or Android does it automatically) while Orbot is not running, the app will just use the normal network, without involving Orbot (with the exception of some apps supporting a proxy Orbot).
-    
-As well as you should not be surprised by Tor Browser not working when using Orbot in VPN mode, as Tor design does not allow "Tor over Tor" (you cannot re-enter the Tor network from a Tor exit node).
+
+Additionally, you should not be surprised by Tor Browser not working when using Orbot in VPN mode, as the Tor design does not allow "Tor over Tor" (you cannot re-enter the Tor network from a Tor exit node).
 
 This is explained rather well by Alexander Færøy, who is a core developer at the Tor Project, in their [TorifyHOWTO: Tor over Tor](https://gitlab.torproject.org/legacy/trac/-/wikis/doc/TorifyHOWTO#tor-over-tor).
 
@@ -12429,12 +12429,6 @@ This is explained rather well by Alexander Færøy, who is a core developer at t
 And from [a post](https://tor.stackexchange.com/questions/427/is-running-tor-over-tor-dangerous) on the Tor Stack Exchange:
 
 "The danger (beyond the performance hit) which keeps me from running Tor over Tor has to do with timing and congestion measurements. Adversaries watching your traffic at the exit(s) of your circuits have a better chance of linking your Whonix activity with your [Tor Browser Bundle] activity when those shared circuits slow down or drop packets at the same time. This can happen without Tor over Tor when your instances use a common upstream link. The linkage will be made tighter and more explicit if you run the Whonix Tor traffic through your TBB SOCKS5 Tor circuits. This tighter linkage raises the danger of successful correlation."
-    
-While this is often misundestood. Orbot on Android does not make your "selected apps" go through Tor if you add them to the list. Orbot is acting as device wide VPN or as a porxy. The list of apps using Orbot is a whitelist. This list will not make some apps magically use Tor and unchecked ones use the clearnet. This only controls the access to the device wide VPN is using to route traffic. This means that Orbot can only control what app can access the VPN it creates. Other apps will lose connectivity. 
-    
-What is important to know is that if you launch an app (or Android does it automatically) while Orbot is not running/off, the app will just use the normal network without involving Orbot (with the exception of some apps supporting a proxy Orbot).
-    
-As well as you should not be surprised by Tor Browser not working when using Orbot in a VPN mode, as Tor design does not allow "Tor over Tor" (You cannot re-enter the Tor network from a Tor exit node).
 
 ---
 
