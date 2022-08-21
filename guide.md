@@ -13802,7 +13802,7 @@ As well as you should not be surprised by Tor Browser not working when using Orb
   [Appendix B3: Threat modeling resources]: #appendix-b3-threat-modeling-resources
   [Appendix B4: Important notes about evil-maid and tampering]: #appendix-b4-important-notes-about-evil-maid-and-tampering
   [Appendix B5: Types of CPU attacks:]: #appendix-b5-types-of-cpu-attacks 
-  [Appendix B6: Warning using Orbot or Android]: #appendix-b6-warning-using-orbot-on-android 
+  [Appendix B6: Warning for using Orbot on Android]: #appendix-b6-warning-for-using-orbot-on-android 
   [References:]: #references
   [cc-by-nc-4.0]: https://creativecommons.org/licenses/by-nc/4.0/
   [LINDDUN2015]: https://lirias.kuleuven.be/retrieve/295669
