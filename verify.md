@@ -43,7 +43,7 @@ Import the GPG key using the following command from a command prompt or terminal
 
 ```gpg --auto-key-locate nodefault,wkd --locate-keys 42FF35DB9DE7C088AB0FD4A70C216A52F6DF4920```
 
-In theory this command should fetch the key from the a default pool server. If this doesn't work, you can also download/view it directly from here: <https://anonymousplanet-ng.org/42FF35DB9DE7C088AB0FD4A70C216A52F6DF4920.asc> <sup>[[Mirror]][12]</sup>
+In theory this command should fetch the key from the a default pool server. If this doesn't work, you can also download/view it directly from here: <https://anonymousplanet.org/42FF35DB9DE7C088AB0FD4A70C216A52F6DF4920.asc> <sup>[[Mirror]][12]</sup>
 
 For redundancy, you can also verify the authenticity of this GPG signature using:
 
