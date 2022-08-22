@@ -1,3 +1,18 @@
+v1.1.6-pre1
+- Update on Tor Browser route due to major changes
+  - Tor Project has condensed their settings and it is no longer
+    necessary to manually configure bridges.
+- Fix out of date options/settings for Tor on Android
+- Small grammar/spelling fixes
+- Removal and fix of some bad links
+- Removal of AnonArchive (down)
+- "How to spot if someone has been searching your stuff" fixed
+- PDF and ODT builds disabled temporarily
+- Update to social links for SEO plugin
+- Link to Qubes tutorial for installing Windows VMs
+- Added link to Arkenfox/user.js
+- Remove unnecessary addons
+
 v1.1.5
 - Various spelling and grammar fixes
 - Fixed several numbering errors in references

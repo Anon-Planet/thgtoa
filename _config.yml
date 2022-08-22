@@ -6,6 +6,8 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-optional-front-matter
+optional_front_matter:
+  remove_originals: true
 relative_links:
   enabled: true
   collections: true
@@ -27,6 +29,7 @@ github:
   links_url: links.html
   twitter_url: https://twitter.com/AnonyPla
   mastodon_url: https://mastodon.social/@anonymousplanet
+  tor_mirror_url: http://thgtoallkcxrdv37u6knsc3pumk6cq6lqmcqlw3j5vkmyahkxive4jyd.onion
 defaults:
   -
     scope:
@@ -42,8 +45,10 @@ social:
   name: AnonymousPlanet
   links:
     - https://github.com/NobodySpecial256/thgtoa
-optional_front_matter:
-  remove_originals: true
+    - https://twitter.com/AnonyPla
+    - https://github.com/Anon-Planet
+    - https://matrix.to/#/#privacy-security-anonymity:matrix.org
+    - https://mastodon.social/@anonymousplanet
 exclude:
     - Gemfile
     - Gemfile.lock

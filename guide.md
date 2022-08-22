@@ -2,7 +2,7 @@
 
 (Or "How I learned to start worrying and love ~~privacy~~ anonymity")
 
-Version 1.1.5, June 2022 by Anonymous Planet
+Version 1.1.6-pre1, August 2022 by Anonymous Planet
 
 **Forever in memory of Lena, 1999-2022**
 
@@ -24,7 +24,7 @@ The manual is here: <https://briarproject.org/manual/>, quick-start guide here: 
 
 **There might be some wrong or outdated information in this guide because no human is omniscient, and humans do make mistakes.** **Please do not take this guide as a definitive gospel or truth because it is not. Mistakes have been written in the guide in earlier versions and fixed later when discovered. There are likely still some mistakes in this guide at this moment (hopefully few). Those are fixed as soon as possible when discovered.**
 
-**This guide has been moved, due to recent unfortunate events. The old guide was at [anonymousplanet.org](https://web.archive.org/web/20220227172123/https://anonymousplanet.org/), but has since been moved to <https://anonymousplanet-ng.org>**
+**This guide has been moved, due to recent unfortunate events. The old guide was at [anonymousplanet.org](https://web.archive.org/web/20220227172123/https://anonymousplanet.org/), but has since been moved to <https://anonymousplanet.org>**
 
 **Your experience may vary.** **Remember to check regularly for an updated version of this guide.**
 
@@ -34,11 +34,11 @@ This guide is a non-profit open-source initiative, licensed under Creative Commo
 
 -   For help in comparing versions see [Appendix A7: Comparing versions]
 
-Feel free to submit issues **(please do report anything wrong)** using GitHub Issues at: <https://github.com/NobodySpecial256/thgtoa/issues>
+Feel free to submit issues **(please do report anything wrong)** using GitHub Issues at: <https://github.com/Anon-Planet/thgtoa/issues>
 
 Feel free to come to discuss ideas at:
 
--   Rules for our chatrooms: <https://anonymousplanet-ng.org/chatrooms-rules.html>
+-   Rules for our chatrooms: <https://anonymousplanet.org/chatrooms-rules.html>
 
 -   Matrix/Element Room: ```#anonymity:matrix.org``` <https://matrix.to/#/#anonymity:matrix.org>
 
@@ -50,7 +50,7 @@ Follow us on:
 
 -   Mastodon at <https://mastodon.social/@anonymousplanet>
 
-To contact me, see the updated information on the website or send an e-mail to <contact@anonymousplanet-ng.org>
+To contact me, see the updated information on the website or send an e-mail to <contact@anonymousplanet.org>
 
 **Please consider [donating][Donations:] if you enjoy the project and want to support the hosting fees or support the funding of initiatives like the hosting of Tor Exit Nodes.**
 
@@ -312,7 +312,7 @@ Finally note that this guide does mention and even recommends various commercial
         -   [Socks Proxy VPS:]
 -   [Appendix P: Accessing the internet as safely as possible when Tor and VPNs are not an option]
 -   [Appendix Q: Using long-range Antenna to connect to Public Wi-Fis from a safe distance:]
--   [Appendix R: Installing a VPN on your VM or Host OS.]
+-   [Appendix R: Installing a VPN on your VM or Host OS]
 -   [Appendix S: Check your network for surveillance/censorship using OONI]
 -   [Appendix T: Checking files for malware]
     -   [Integrity (if available):]
@@ -349,7 +349,7 @@ Finally note that this guide does mention and even recommends various commercial
 -   [Appendix Z: Online anonymous payments using cryptocurrencies]
     -   [Reasonably anonymous option:]
     -   [Extra-Paranoid anonymous option:]
-    -   [Warning about special tumbling, mixing, coinjoining privacy wallets and services:]
+    -   [Warning about special tumbling, mixing, coinjoining privacy wallets and services]
     -   [When converting from BTC to Monero:]
 -   [Appendix A1: Recommended VPS hosting providers]
 -   [Appendix A2: Guidelines for passwords and passphrases]
@@ -383,6 +383,8 @@ Finally note that this guide does mention and even recommends various commercial
 -   [Appendix B1: Checklist of things to verify before sharing information:]
 -   [Appendix B2: Monero Disclaimer]
 -   [Appendix B3: Threat modeling resources]
+-   [Appendix B4: Important notes about evil-maid and tampering]
+-   [Appendix B5: Types of CPU attacks:]
 -   [References:]
 
 # Pre-requisites and limitations:
@@ -551,7 +553,7 @@ Here are some online resources you can use to find some information about your c
 
     -   <https://check.torproject.org>
 
-For those reasons, you will need to obfuscate and hide that origin IP (the one tied to your identification) or hide it as much as we can through a combination of various means:
+For those reasons, you will need to obfuscate and hide that origin IP (the one tied to your identification) or hide it through a combination of various means:
 
 -   Using a public Wi-Fi service (free).
 
@@ -579,9 +581,9 @@ Because it is not encrypted, your ISP and/or any other adversary could still int
 
 As a bonus, many devices and apps will use hardcoded DNS servers bypassing any system setting you could set. This is for example the case with most (70%) Smart TVs and a large part (46%) of Game Consoles[^34]. For these devices, you will have to force them[^35] to stop using their hardcoded DNS service which could make them stop working properly.
 
-A solution to this is to use encrypted DNS using DoH (DNS over HTTPS[^36]), DoT (DNS over TLS[^37]) with a private DNS server (this can be self-hosted locally with a solution like pi-hole[^38], remotely hosted with a solution like nextdns.io or using the solutions provider by your VPN provider or the Tor network). This should prevent your ISP or some go-between from snooping on your requests ... except it might not.
+A solution to this is to use encrypted DNS using DoH (DNS over HTTPS[^36]), DoT (DNS over TLS[^37]) with a private DNS server (this can be self-hosted locally with a solution like pi-hole[^38], remotely hosted with a solution like nextdns.io or using the solutions provided by your VPN provider or the Tor network). This should prevent your ISP or some go-between from snooping on your requests ... except it might not.
 
-Small in-between Disclaimer: **This guide does not necessarily endorse or recommends Cloudflare services even if it is mentioned several times in this section for technical understanding.**
+Small in-between Disclaimer: **This guide does not necessarily endorse or recommend Cloudflare services even if it is mentioned several times in this section for technical understanding.**
 
 Unfortunately, the TLS protocol used in most HTTPS connections in most Browsers (Chrome/Brave among them) will leak the Domain Name again through SNI[^39] handshakes (this can be checked here at Cloudflare: <https://www.cloudflare.com/ssl/encrypted-sni/> <sup>[[Archive.org]][49]</sup> ). **As of the writing of this guide, only Firefox-based browsers supports ECH (Encrypted Client Hello**[^40] **previously known as eSNI**[^41]**) on some websites which will encrypt everything end to end (in addition to using a secure private DNS over TLS/HTTPS) and will allow you to hide your DNS requests from a third party**[^42]**.** And this option is not enabled by default either so you will have to enable it yourself.
 
@@ -625,9 +627,14 @@ Finally, even if you use a custom encrypted DNS server (DoH or DoT) with ECH/eSN
 
 One could also decide to use a Tor Hidden DNS Service or ODoH (Oblivious DNS over HTTPS[^53]) to further increase privacy/anonymity but **unfortunately**, as far as we know, these methods are only provided by Cloudflare as of this writing (<https://blog.cloudflare.com/welcome-hidden-resolver/> <sup>[[Archive.org]][53]</sup>, <https://blog.cloudflare.com/oblivious-dns/> <sup>[[Archive.org]][54]</sup>). These are workable and reasonably secure technical options but there is also a moral choice if you want to use Cloudflare or not (despite the risk posed by some researchers[^54]).
 
+**Note that Oblivious DNS addresses an adversary that eavesdrops on one of the connections listed here but not all. It does not address a global passive adversary (GPA) who can eavesdrop on many or all of these connections**: 
+-   traffic between the client resolver and the recursive resolver
+-   the recursive resolver and the ODNS resolver
+-   the ODNS resolver and an authoritative server.
+
 Lastly, there is also this new possibility called DoHoT which stands for DNS over HTTPS over Tor which could also further increase your privacy/anonymity and which you could consider if you are more skilled with Linux. See <https://github.com/alecmuffett/dohot> <sup>[[Archive.org]][55]</sup>. This guide will not help you with this one at this stage, but it might be coming soon.
 
-Here is an illustration showing the current state of DNS and HTTPS privacy based on my current knowledge.
+Here is an illustration showing the current state of DNS and HTTPS privacy based on our current knowledge.
 
 ![][56]
 
@@ -763,9 +770,7 @@ This guide will later propose some mitigations to such attacks by changing your 
 You have seen this in action/spy/Sci-Fi movies and shows, the protagonists always remove the battery of their phones to make sure it cannot be used. Most people would think that's overkill. Well, unfortunately, no, this is now becoming true at least for some devices:
 
 -   iPhones and iPads (IOS 13 and above)[^78]'[^79]
-
 -   Samsung Phones (Android 10 and above)[^80]
-
 -   MacBooks (macOS 10.15 and above)[^81]
 
 Such devices will continue to broadcast identity information to nearby devices even when offline using Bluetooth Low-Energy[^82]. They do not have access to the devices directly (which are not connected to the internet) but instead use BLE to find them through other nearby devices[^83]. They are using peer-to-peer short-range Bluetooth communication to broadcast their status through nearby online devices.
@@ -812,7 +817,7 @@ The IMEI and IMSI can be traced back to you in at least six ways:
 
 Here is also a good YouTube video on this topic: DEFCON Safe Mode - Cooper Quintin - Detecting Fake 4G Base Stations in Real-Time <https://www.youtube.com/watch?v=siCk4pGGcqA> <sup>[[Invidious]][75]</sup>
 
-**For these reasons, it is crucial to get dedicated an anonymous phone number and/or an anonymous burner phone with an anonymous pre-paid sim card that is not tied to you in any way (past or present) for conducting sensitive activities (See more practical guidance in [Getting an anonymous Phone number][Getting an anonymous Phone number:] section).**
+**For these reasons, it is crucial to get dedicated an anonymous phone number and/or an anonymous burner phone with an anonymous pre-paid sim card that is not tied to you in any way (past or present) for conducting sensitive activities. It is also possible get an anonymous pre-paid but preferably dedicated number from specific free and paid online services accepting anonymous cryptocurrencies like Monero (Get more practical guidance here: [Getting an anonymous Phone number][Getting an anonymous Phone number:]).**
 
 While there are some smartphones manufacturers like Purism with their Librem series[^98] who claim to have your privacy in mind, they still do not allow IMEI randomization which we believe is a key anti-tracking feature that should be provided by such manufacturers. While this measure will not prevent IMSI tracking within the SIM card, it would at least allow you to keep the same "burner phone" and only switch SIM cards instead of having to switch both for privacy.
 
@@ -856,21 +861,23 @@ These have already been affected by several security vulnerabilities in the past
 
 There are some not so straightforward ways[^107] to disable the Intel IME on some CPUs and you should do so if you can. For some AMD laptops, you can disable it within the BIOS settings by disabling PSP.
 
-Note that to AMD's defense, so far and AFAIK, there were no security vulnerabilities found for ASP and no backdoors either: See <https://www.youtube.com/watch?v=bKH5nGLgi08&t=2834s> <sup>[[Invidious]][77]</sup>. In addition, AMD PSP does not provide any remote management capabilities contrary to Intel IME.
+Note that, to AMD's defense, there were no security vulnerabilities found for ASP and no backdoors either. See <https://www.youtube.com/watch?v=bKH5nGLgi08&t=2834s> <sup>[[Invidious]][77]</sup>. In addition, AMD PSP does not provide any remote management capabilities contrary to Intel IME.
 
 If you are feeling a bit more adventurous, you could install your own BIOS using Libreboot or Coreboot [^108] if your laptop supports it (be aware that Coreboot does contain some propriety code unlike its fork Libreboot).
 
-In addition, some CPUs have unfixable flaws (especially Intel CPUs) that could be exploited by various malware. Here is a good current list of such vulnerabilities affecting recent widespread CPUs: <https://en.wikipedia.org/wiki/Transient_execution_CPU_vulnerability> <sup>[[Wikiless]][78]</sup> <sup>[[Archive.org]][79]</sup>
-
 Check yourself:
 
--   If you are using Linux you can check the vulnerability status of your CPU to Spectre/Meltdown attacks by using <https://github.com/speed47/spectre-meltdown-checker> <sup>[[Archive.org]][80]</sup> which is available as a package for most Linux distros including Whonix.
+-   If you are using Linux you can check the vulnerability status of your CPU to Spectre/Meltdown attacks by using <https://github.com/speed47/spectre-meltdown-checker> <sup>[[Archive.org]][80]</sup> which is available as a package for most Linux distros including Whonix. Spectre is a transient execution attack. There is also PoC code for Spectre v1 and v2 on iPhone devices here: <https://github.com/cispa/BranchDifferent> <sup>[[Archive.org]](https://web.archive.org/web/20220814122148/https://github.com/cispa/BranchDifferent)</sup> and here <https://misc0110.net/files/applespectre_dimva22.pdf> <sup>[[Archive.org]](https://web.archive.org/web/20220814122652/https://misc0110.net/files/applespectre_dimva22.pdf)</sup>
 
 -   If you are using Windows, you can check the vulnerability status of your CPU using inSpectre <https://www.grc.com/inspectre.htm> <sup>[[Archive.org]][81]</sup>
 
+Some CPUs have unfixable flaws (especially Intel CPUs) that could be exploited by various malware. Here is a good current list of such vulnerabilities affecting recent widespread CPUs: <https://en.wikipedia.org/wiki/Transient_execution_CPU_vulnerability> <sup>[[Wikiless]](https://wikiless.org/wiki/Transient_execution_CPU_vulnerability)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Transient_execution_CPU_vulnerability)</sup>
+
 Some of these can be avoided using Virtualization Software settings that can mitigate such exploits. See this guide for more information <https://www.whonix.org/wiki/Spectre_Meltdown> <sup>[[Archive.org]][82]</sup> (warning: these can severely impact the performance of your VMs).
 
-We will therefore mitigate some of these issues in this guide by recommending the use of virtual machines on a dedicated anonymous laptop for your sensitive activities that will only be used from an anonymous public network.
+This guide won't go too deep into side-channel and microarchitecture attacks but we will highlight some issues with both Intel and AMD CPU architectures that will be mitigated throughout. It's important to recognize hardware is just as susceptible to bugs, and therefore exploitation, regardless of manufacturer.
+
+We will mitigate some of these issues in this guide by recommending the use of virtual machines on a dedicated anonymous laptop for your sensitive activities that will only be used from an anonymous public network.
 
 **In addition, we recommend the use of AMD CPUs instead of Intel CPUs.**
 
@@ -1057,6 +1064,8 @@ These are clues you might give over time that could point to your real identity.
 A real use and well-documented case of this was the arrest of the hacker Jeremy Hammond[^153] who shared over time several details about his past and was later discovered.
 
 There are also a few cases involving OSINT at Bellingcat[^154]. Have a look at their very informative (but slightly outdated) toolkit here: <https://docs.google.com/spreadsheets/d/18rtqh8EG2q1xBo2cLNyhIDuK9jrPGwYr9DI2UncoqJQ/edit#gid=930747607> <sup>[[Archive.org]][100]</sup>
+
+**We have an OSINT discussion room in our Matrix community. Feel free to join at ```#OSINT:matrix.org```.**
 
 You can also view some convenient lists of some available OSINT tools here if you want to try them on yourself for example:
 
@@ -1406,12 +1415,28 @@ This guide will mitigate these issues by mitigating, obfuscating, and randomizin
 
 There was an attack published that can deanonymize users if they have a known alias. For example, an attacker trying to track the activities of a journalist can use that journalist's public Twitter handle to link their anonymous identities with their public one. This breaks compartmentalization of identities and can lead to complete deanonymization, even of users who practice proper OPSEC.
 
-The attack, published at <https://leakuidatorplusteam.github.io/> <sup>[[Archive.org]][1386]</sup>, can be mitigated using a browser extension:
+The attack, published at <https://leakuidatorplusteam.github.io/> <sup>[[Archive.org]][1386]</sup>, can be mitigated using the well-known [NoScript](https://noscript.net/) extension and will be our preferred recommendation.
 
-- <https://chrome.google.com/webstore/detail/leakuidator%2B/hhfpajcjkikoocmmhcimllpinjnbedll> (Chrome, Edge, and other Chrome-based browsers)
-- <https://addons.mozilla.org/en-US/firefox/addon/leakuidatorplus/> (Firefox, Tor Browser, and other Firefox-based browsers)
+## Tor Browser:
 
-It's generally not recommended to install extensions into Tor Browser, because the fact that you have an extension installed can be an extra data point for browser fingerprinting. As such, this extension is only a temporary solution until the fix can be implemented by the browsers' own developers.
+This attack is now prevented by default by an update of [NoScript](https://noscript.net/) (11.4.8 and above) on all security levels. 
+
+## All others:
+
+Installing the [NoScript](https://noscript.net/) extension will prevent the attack **by default only in private Windows** using their new "TabGuard feature". But can be enabled in the NoScript options to work on all Windows. See: 
+
+-  Release tweet: <https://twitter.com/ma1/status/1557751019945299969> <sup>[[Archive.org]](https://web.archive.org/web/https://twitter.com/ma1/status/1557751019945299969)</sup>
+-  User explanation: <https://noscript.net/usage/#crosstab-identity-leak-protection> <sup>[[Archive.org]](https://web.archive.org/web/https://noscript.net/usage/#crosstab-identity-leak-protection)</sup>
+-  Tor Project Forum Post: <https://forum.torproject.net/t/tor-browser-can-leak-your-identity-through-side-channel-attack/4005/2> <sup>[[Archive.org]](https://web.archive.org/web/https://forum.torproject.net/t/tor-browser-can-leak-your-identity-through-side-channel-attack/4005/2)</sup>
+-  NoScript extension for Firefox (Firefox, and other Firefox-based browsers except Tor Browser): https://addons.mozilla.org/en-US/firefox/addon/noscript/
+-  NoScript extension for Chromium based browsers (Brave, Chrome, Edge, and other Chromium-based browsers): https://chrome.google.com/webstore/detail/noscript/doojmbjmlfjjnbmnoijecmcbfeoakpjm?hl=en
+
+### Alternative to NoScript for all other browsers:
+
+The researches who disclosed the issue also made an extension available below. Again, **nothing is required in Tor Browser**. This path is not our preferred path but is still available if you do not want to use NoScript.
+
+-   Lekuidator+ extension for Chromium based browsers (Brave, Chrome, Edge, and other Chromium-based browsers): <https://chrome.google.com/webstore/detail/leakuidator%2B/hhfpajcjkikoocmmhcimllpinjnbedll>
+-   Lekuidator+ extension for Firefox (Firefox, and other Firefox-based browsers except Tor Browser): <https://addons.mozilla.org/en-US/firefox/addon/leakuidatorplus/> 
 
 Separating identities via separate browsers or even with VMs is not enough to avoid this attack. However, another solution is to make sure that when you start working with an anonymous identity, you entirely close all activities linked to other identities. The vulnerability only works if you're actively logged into a non-anonymous identity. The issue with this is that it can hinder effective workflow, as multitasking across multiple identities becomes impossible.
 
@@ -1692,15 +1717,15 @@ If you still do not think such information can be used by various actors to trac
 
 -   Dropbox Transparency Report <https://www.dropbox.com/transparency> <sup>[[Archive.org]][211]</sup>
 
--   Discord Transparency Report <https://blog.discord.com/discord-transparency-report-jan-june-2020-2ef4a3ee346d> <sup>[[Archive.org]][212]</sup>
+-   Discord Transparency Report <https://discord.com/blog/discord-transparency-report-q1-2022> <sup>[[Archive.org]][212]</sup>
 
 -   GitHub Transparency Report <https://github.blog/2021-02-25-2020-transparency-report/> <sup>[[Archive.org]][213]</sup>
 
 -   Snapchat Transparency Report <https://www.snap.com/en-US/privacy/transparency/> <sup>[[Archive.org]][214]</sup>
 
--   TikTok Transparency Report <https://www.tiktok.com/safety/resources/transparency-report?lang=en> <sup>[[Archive.org]][215]</sup>
+-   TikTok Transparency Report <https://www.tiktok.com/transparency/en/information-requests-2021-2/> <sup>[[Archive.org]][215]</sup>
 
--   Reddit Transparency Report <https://www.reddit.com/wiki/transparency> <sup>[[Archive.org]][216]</sup>
+-   Reddit Transparency Report <https://www.redditinc.com/policies/transparency-report-2021> <sup>[[Archive.org]][216]</sup>
 
 -   Twitter Transparency Report <https://transparency.twitter.com/> <sup>[[Archive.org]][217]</sup>
 
@@ -2038,6 +2063,10 @@ Please see [Appendix Y: Installing and using desktop Tor Browser].
 
 ### Android:
 
+**Note on Tor Browser for Android: The development of Tor Browser for Android is behind desktop Tor Browser Bundle (TBB). Some features are not available yet. E.g., the desktop version of Tor now enables automatic bridges using Moat:**
+
+"**Connection Assist** works by looking up and downloading an up-to-date list of country-specific options to try using your location (with your consent). It manages to do so without needing to connect to the Tor Network first by utilizing [moat](https://support.torproject.org/glossary/moat/) – the same domain-fronting tool that Tor Browser uses to request a bridge from torproject.org."
+
 -   Head over to:
 
     -   Play Store: <https://play.google.com/store/apps/details?id=org.torproject.torbrowser>
@@ -2048,9 +2077,13 @@ Please see [Appendix Y: Installing and using desktop Tor Browser].
 
 -   Launch Tor Browser
 
--   After Launching, click the upper right Settings icon
+-   After launching, click the upper right **Settings** icon
 
--   Select "Config Bridge" and read [Appendix X: Using Tor bridges in hostile environments]
+-   Select **Settings** > **Privacy and security** > **Tor network** 
+
+-   Select **Config Bridge**.
+
+-   Read [Appendix X: Using Tor bridges in hostile environments].
 
 -   **If needed (after reading the appendix above)**, activate the option and select the type of bridge you want:
 
@@ -2060,7 +2093,17 @@ Please see [Appendix Y: Installing and using desktop Tor Browser].
 
     -   Snowflake
 
+-   **If your internet isn't censored**, consider running one of the bridge types to help the network!
+
+    -   Easy: Obsf4 - You can run your own Obsf4 easily with these instructions. <https://community.torproject.org/relay/setup/bridge/>
+
+    -   Medium: Snowflake - More about Snowflakes here. <https://snowflake.torproject.org/>
+
+    -   Hard: Meek - This is the documentation. It's not as simple. <https://gitlab.torproject.org/legacy/trac/-/wikis/doc/meek/#how-to-run-a-meek-server-bridge>
+
 Personally, if you need to use a Bridge (this is not necessary for a non-hostile environment), you should pick a Meek-Azure. Those will probably work even if you are in China and want to bypass the Great Firewall. It is probably the best option to obfuscate your Tor activities if needed and Microsoft servers are usually not blocked.
+
+*Only available for Desktop Tor users: Recently, the Tor Project has made it incredibly simple to access Bridges with **Connection Assist**, and it is now automatically done in hostile or censored regions. Simply open the Tor Browser and the connection will be configured based on your needs on any hostile network. Previously, we had a list of options below this paragraph which were necessary to enable and configure bridges, but now that this is done automatically using [moat](https://support.torproject.org/glossary/moat/).* <sup>[[Archive.org]][1387]</sup>
 
 -   You are almost done
 
@@ -2068,11 +2111,11 @@ As with the desktop version, you need to know there are safety levels in Tor Bro
 
 -   Click the menu (bottom right)
 
--   Click Settings
+-   Click **Settings**.
 
--   Head over to the Privacy and security section
+-   Head over to the **Privacy and security** section.
 
--   Click Security Settings
+-   Click **Security Settings**.
 
 You will find details about each level here: <https://tb-manual.torproject.org/security-settings/> <sup>[[Archive.org]][240]</sup> but here is a summary:
 
@@ -2104,6 +2147,8 @@ However, the Safer level should be used with some extra precautions while using 
 
 Now, you are really done, and you can now surf the web anonymously from your Android device.
 
+**Please see** [Warning for using Orbot on Android][Appendix B6: Warning for using Orbot on Android].
+
 ### iOS:
 
 **Disclaimer: Onion Browser, following a 2018 release on iOS, has had IP leaks via WebRTC. It is still the only officially endorsed browser for the Tor network for iOS. Users should exercise caution when using the browser and check for any DNS leaks.**
@@ -2128,7 +2173,15 @@ While the official Tor Browser is not yet available for iOS, there is an alterna
 
     -   Snowflake
 
-    -   (Meek-Azure is unfortunately not available on Onion Browser for iOS for some reason)
+    -   (Meek-Azure is unfortunately not available on Onion Browser for iOS (See [commit 21bc18428](https://github.com/OnionBrowser/OnionBrowser/commit/21bc18428368224507b27ee58464ad352f4ec810) for more information.)
+
+-   **If your internet isn't censored**, consider running one of the bridge types to help the network!
+
+    -   Easy: Obsf4 - You can run your own Obsf4 easily with these instructions. <https://community.torproject.org/relay/setup/bridge/>
+
+    -   Medium: Snowflake - More about Snowflakes here. <https://snowflake.torproject.org/>
+
+    -   Hard: Meek - This is the documentation. It's not as simple. <https://gitlab.torproject.org/legacy/trac/-/wikis/doc/meek/#how-to-run-a-meek-server-bridge>
 
 Personally, if you need to use a Bridge (this is not necessary for a non-hostile environment), you should pick a Snowflake one (since Meek-Azure bridges are not available). Those will probably work even if you are in China and want to bypass the Great Firewall. It is probably the best option you have on iOS.
 
@@ -2269,8 +2322,6 @@ When using Tor Browser, you should click the little shield Icon (upper right, ne
     -   Any media playback is "click to play" (disabled by default)
 
 We would recommend the "Safer" level for most cases. The Safest level should be enabled if you think you are accessing suspicious or dangerous websites or if you are extra paranoid. The Safest mode will also most likely break many websites that rely actively on JavaScript.
-
-**Temporary Important Warning: Please see [Microarchitectural Side-channel Deanonymization Attacks][Microarchitectural Side-channel Deanonymization Attacks:].**
 
 If you are extra paranoid, use the "Safest" level by default and consider downgrading to Safer is the website is unusable because of Javascript blocking.
 
@@ -3800,7 +3851,7 @@ Remember that in this case, we recommend having two VPN accounts. Both paid with
 
 If you intend to only use Tor over VPN, you only need one VPN account.
 
-See [Appendix R: Installing a VPN on your VM or Host OS][Appendix R: Installing a VPN on your VM or Host OS.] for instructions.
+See [Appendix R: Installing a VPN on your VM or Host OS][Appendix R: Installing a VPN on your VM or Host OS] for instructions.
 
 ### Whonix Virtual Machines:
 
@@ -4194,7 +4245,7 @@ Test that KeePassXC is working before going to the next step.
 
 **If you cannot use a VPN at all in a hostile environment, skip this step.**
 
-Otherwise, see [Appendix R: Installing a VPN on your VM or Host OS][Appendix R: Installing a VPN on your VM or Host OS.] to install a VPN client on your client VM.
+Otherwise, see [Appendix R: Installing a VPN on your VM or Host OS][Appendix R: Installing a VPN on your VM or Host OS] to install a VPN client on your client VM.
 
 This should conclude the Route and you should now be ready.
 
@@ -5870,6 +5921,9 @@ Tools that can help with this:
 
 -   <https://thispersondoesnotexist.com/>
 
+-   <https://generated.photos/face-generator> (**Generated pictures using this tool have a watermark that you might need to remove using image editing software such as Gimp**)
+    -   **Warning:** This tool requires JavaScript to function and does a lot of fingerprinting. Most of it is being sent to Microsoft Clarity. Even with uBlock installed and on safer level, Tor Browser wasn't efficient at blocking the fingerprinting. This obviously does not work on Safest level. On our tests, only Brave with agressive fingerprinting/ad shields did not send analytics.
+
 Now is also the moment where you could finally consider getting an online phone number as explained in the [Online Phone Number (less recommended)] section.
 
 We will help you bit by listing a few tips we learned while researching over the years **(disclaimer: this is based on my individual experiences alone)**:
@@ -5894,11 +5948,13 @@ We will help you bit by listing a few tips we learned while researching over the
 
 -   Brave Browser (Chromium-based) with a Private Tor Tab has a better acceptance level than Tor Browser (Firefox based). You will experience fewer issues with captchas and online platforms[^383] if you use Brave than if you use Tor Browser (feel free to try this yourself).
 
--   For every identity, you should have a matching profile picture associated with it. For this purpose, we recommend you just go to <https://thispersondoesnotexist.com/> <sup>[[Archive.org]][399]</sup> and generate a computer-generated profile picture (Do note that algorithms have been developed[^393]'[^394] to detect these and it might not work 100% of the time). You can also generate such pictures yourself from your computer if you prefer by using the open-source StyleGan project here <https://github.com/NVlabs/stylegan2> <sup>[[Archive.org]][400]</sup>. Just refresh the page until you find a picture that matches your identity in all aspects (age, sex, and ethnicity) and save that picture. It would be even better to have several pictures associated with that identity, butWedo not have an "easy way" of doing that yet.
+-   For every identity, you should have a matching profile picture associated with it. For this purpose, we recommend you just go to <https://thispersondoesnotexist.com/> or <https://generated.photos/face-generator>* and generate a computer-generated profile picture (Do note that algorithms have been developed[^393]'[^394] to detect these and it might not work 100% of the time). You can also generate such pictures yourself from your computer if you prefer by using the open-source StyleGan project here <https://github.com/NVlabs/stylegan2> <sup>[[Archive.org]][400]</sup>. Just refresh the page until you find a picture that matches your identity in all aspects (age, sex, and ethnicity) and save that picture. It would be even better to have several pictures associated with that identity, butWedo not have an "easy way" of doing that yet.
 
-    -   **Bonus**, you could also make it more real by using this service (with an anonymous identity) <https://www.myheritage.com/deep-nostalgia> <sup>[[Archive.org]][401]</sup> to make a picture more lifelike. Here is an example:
+***Warning:** https://generated.photos/face-generator requires JavaScript to function and does a lot of fingerprinting. Most of it is being sent to Microsoft Clarity. Even with uBlock installed and on safer level, Tor Browser wasn't efficient at blocking the fingerprinting. This obviously does not work on Safest level. On our tests, only Brave with agressive fingerprinting/ad shields did not send analytics.
 
-        -   Original:
+-   **Bonus**, you could also make it more real by using this service (with an anonymous identity) <https://www.myheritage.com/deep-nostalgia> <sup>[[Archive.org]][401]</sup> to make a picture more lifelike. Here is an example:
+
+-   Original:
 
 ![][402]
 
@@ -6921,7 +6977,7 @@ Telegram is quite straightforward, and you can download their portable Windows a
 
 It will require a phone number (that can only be used once) and nothing else.
 
-In most cases, we had no issues whether it was over Tor or VPN, butWehad a few cases where my telegram account was just banned for violating terms of services (not sure which one?). This again despite not using them for anything.
+In most cases, we had no issues whether it was over Tor or VPN, but we had a few cases where our telegram account was just banned for violating terms of services (not sure which one?). This again despite not using them for anything.
 
 They provide an appeal process through e-mail, but we had no success with getting any answer.
 
@@ -8128,8 +8184,6 @@ For smaller files, consider:
 
 -   Cryptpad.fr (<https://cryptpad.fr/>): Free tier limited to 1GB total and recommended by PrivacyGuides.org at <https://privacyguides.org/cloud/> <sup>[[Archive.org]][470]</sup>
 
--   AnonArchive (<https://anonarchive.org/>): free tier limited to 1GB total
-
 -   Filen (<https://filen.io/>): free tier limited to 10GB total
 
 We are currently not aware of any online storage/hosting platform accepting cash payments unlike providers mentioned before.
@@ -9295,7 +9349,8 @@ You must live by the simple rule that "loose lips sink ships" - but also that th
 
 -   See ["Appendix B4: Important notes about evil-maid and tampering"][Appendix B4: Important notes about evil-maid and tampering]
 
--   Remember the ["How to spot if someone has been searching your stuff, home, or room"](How to spot if someone has been searching your stuff, home, or room:) section.
+-   Remember the [How to spot if someone has been searching your stuff][How to spot if someone has been searching your stuff:] section.
+
 
 -   Consider the use of Haven <https://guardianproject.github.io/haven/> <sup>[[Archive.org]][540]</sup> on some old android phone to keep watch on your home/room while you are away.
 
@@ -9417,7 +9472,7 @@ Consider helping others (see [Helping others staying anonymous][Helping others s
 
 **This project has no funding or sponsoring, and donations are more than welcome.**
 
-See: <https://anonymousplanet-ng.org/donations.html>
+See: <https://anonymousplanet.org/donations.html>
 
 **(Please do verify the checksum and GPG signature of this file for authenticity, this is explained in the README of the repository if you do not know how to do that)**.
 
@@ -10239,147 +10294,81 @@ Download the latest Debian testing amd64 netinst ISO from <https://www.debian.or
 
 **(Get testing to get the latest mat2 release, stable is a few versions back)**
 
-This is very lightweight, and we recommend doing it from a VM (VM inside a VM) to benefit from Whonix Tor Gateway. While it is possible to put this VM directly behind a Whonix Gateway. Whonix will not easily (AFAIK) allow communications between VMs on its network by default.
-
-You could also just leave it on Clearnet during the install process and then leave it on the Host-Only network later.
-
-Or install it from a VM within a VM then move it to host OS for Host-Only usage:
-
--   Create a new machine with any name like mat2
-
--   Select Linux as Type
-
--   Select Debian (64-bit) as Version
-
--   Leave the default options and click create
-
--   Select the VM and click Settings
-
--   Select System and disable the Floppy disk on the Motherboard tab
-
--   Select the Processor tab and enable PAE/NX
-
--   Select Audio and disable Audio
-
--   Select USB and disable the USB controller
-
--   Select Storage and select the CD drive to mount the Debian Netinst ISO
-
--   Select Network and Attach to NAT
-
--   Launch the VM
-
--   Select Install (not Graphical install)
-
--   Select Language, Location, and Keyboard layout as you wish
-
--   Wait for the network to configure (automatic DHCP)
-
--   Pick a name like "Mat2"
-
--   Leave the domain empty
-
--   Set a Root password as you wish (preferably a good one still)
-
--   Create a new user and password as you wish (preferably a good one still)
-
--   Select the Time Zone of your choice
-
--   Select Guided - Use the entire disk
-
--   Select the only ask available
-
--   Select All files in one partition
-
--   Confirm and write changes to the disk
-
--   Select NO to scan any other CD or DVD
-
--   Select any region and any mirror of your choice and leave proxy blank
-
--   Select no to take part in any survey
-
--   Select only System Standard Utilities (uncheck everything else)
-
--   Select Yes to install GRUB bootloader
-
--   Select /dev/sda and continue
-
--   Complete the install and reboot
-
--   Log in with your user or root (you should never use root directly as a best security practice but in this case, it is "okay")
-
--   Update your install by running ```su apt upgrade``` (but it should be upgraded since it is a net install)
-
--   Install the necessary packages for mat2 by running ```su apt install ffmpeg uwsgi python3-pip uwsgi-plugin-python3 librsvg2-dev git mat2 apache2 libapache2-mod-proxy-uwsgi```
-
--   Go to the /var/www directory by running ```cd /var/www/```
-
--   Clone mat2-web from the mat2-web repository by issuing ```git clone https://0xacab.org/jvoisin/mat2-web.git```
-
--   Create a directory for uploads by running ```mkdir ./mat2-web/uploads/```
-
--   Give permissions to Apache2 to read the files by running ```chown -R www-data:www-data ./mat2-web```
-
--   Enable apache2 uwsgi proxy by running ```/usr/sbin/a2enmod proxy_uwsgi```
-
--   Upgrade pip by running ```python3 -m pip install pip --upgrade```
-
--   Install some python modules by running ```python3 -m pip install flasgger pyyaml flask-restful flask cerberus flask-cors jinja2```
-
--   Move to the config directory of mat2 by running ```cd /var/www/mat2-web/config/```
-
--   Copy the apache2 config file to etc by running ```cp apache2.config /etc/apache2/sites-enabled/apache2.conf```
-
--   Remove the default config file by running ```rm /etc/apache2/sites-enabled/000-default.conf```
-
--   Edit the apache2 config file provided by mat2-web by running ```nano /etc/apache2/sites-enabled/apache2.conf```
-
--   Remove the first line ```Listen 80```
-
--   Change the uwsgi path from ```/var/www/mat2-web/mat2-web.sock``` to ```/run/uwsgi/uwsgi.sock``` and save/exit
-
--   Copy the uwsgi config file to etc by running ```cp uwsgi.config /etc/uwsgi/apps-enabled/uwsgi.ini```
-
--   Edit the uwsgi config file and change uid and guid to ```nobody``` and ```nogroup```
-
--   Run ```chown -R 777 /var/www/mat2-web```
-
--   Restart uwsgi by running ```systemctl restart uwsgi``` (there should be no errors)
-
--   Restart apache2 by running ```systemctl restart apache2``` (there should be no errors)
-
--   Now change the network settings of the VM to "Host Only Network'
-
--   Reboot the VM
-
--   Log into the VM and type ```ip a``` to note the IP address it was assigned.
-
--   From the VM Host OS open a Browser and go to the IP of your Debian VM (for example http://192.168.1.55)
-
--   You should now see a Mat2-Web website running smoothly
-
--   Shutdown the Mat2 VM by running ```shutdown -h now```
-
--   Take a snapshot of the VM within Virtualbox
-
--   Restart the Mat2 VM and you are ready to use Mat2-web to remove metadata from most files
-
--   After use, shut down the VM and revert to the snapshot to remove traces of the uploaded files
-
--   This VM does not require any internet access unless you want to update it in which case you need to place it back on the NAT network and do the next steps.
-
--   For updates of Debian, start the VM and run ```apt update``` followed by ```apt upgrade```
-
--   For updates of mat2-web, go to /var/www/mat2-web and run ```git pull```
-
--   After updates, shutdown, place it back on the Host Network, take a new snapshot, remove the earlier one.
+This is very lightweight, and we recommend doing it from a VM (VM inside a VM) to benefit from Whonix Tor Gateway. While it is possible to put this VM directly behind a Whonix Gateway, Whonix will not easily allow communications between VMs on its network by default. You could also just leave it on Clearnet during the install process and then leave it on the Host-Only network later, or install it from a VM within a VM then move it to host OS for Host-Only usage like we show below:
+
+1. Create a new machine with any name like **Mat2**.
+2. Select **Linux** for the Type.
+3. Select **Debian (64-bit)** as the Version.
+4. Leave the default options and click **Create**.
+5. Select the VM and click **Settings**.
+6. Select **System** and disable the **Floppy disk** on the Motherboard tab.
+7. Select the Processor tab and **enable PAE/NX**.
+8. Select **Audio** and **disable Audio**.
+9. Select **USB** and **disable the USB controller**.
+10. Select **Storage** and select the CD drive to mount the Debian Netinst ISO.
+11. Select **Network** and **Attach to NAT**.
+12. Launch the VM.
+13. Select **Install** (not Graphical install).
+14. Select **Language**, **Location**, and **Keyboard layout** as you wish.
+15. Wait for the network to configure (automatic DHCP). This takes a few seconds.
+16. Pick a name like **Mat2**.
+17. Leave the **domain** empty.
+18. Set a **root** password as you wish (preferably a good one).
+19. Create a new **user** and **password** as you wish (preferably a good one).
+20. Select the **Time Zone** of your choice.
+21. Select **Guided - Use the entire disk**.
+22. Select the only disk available (**/dev/sda** in our case).
+23. Select **All files in one partition**.
+24. Confirm and write changes to the disk.
+25. Select **No** to scan any other CD or DVD.
+26. Select any region and any mirror of your choice and leave **proxy** blank.
+27. Select **No** to take part in any survey.
+28. Select **only System Standard Utilities**. Uncheck everything else using **space**.
+29. Select **Yes** to install GRUB bootloader.
+30. Select **/dev/sda** and continue.
+31. Complete the install and reboot.
+32. Log in with your **user** or **root**. You should never use root directly as a best security practice but in this case, it is okay.
+33. Update your install by running ```apt upgrade```. It should be upgraded since it is a net install, but we're double checking.
+34. Install the necessary packages for mat2 by running ```apt install ffmpeg uwsgi python3-pip uwsgi-plugin-python3 lib35rsvg2-dev git mat2 apache2 libapache2-mod-proxy-uwsgi```.
+35. Go to the **/var/www** directory by running ```cd /var/www/```.
+36. **Clone mat2-web** from the mat2-web repository by issuing ```git clone https://0xacab.org/jvoisin/mat2-web.git```.
+37. **Create a directory for uploads** by running ```mkdir ./mat2-web/uploads/```.
+38. **Give permissions to Apache2** to read the files by running ```chown -R www-data:www-data ./mat2-web```.
+39. **Enable apache2 uwsgi proxy** by running ```/usr/sbin/a2enmod proxy_uwsgi```.
+40. **Upgrade pip** by running ```python3 -m pip install pip --upgrade```.
+41. **Install these Python modules** by running ```python3 -m pip install flasgger pyyaml flask-restful flask cerberus flask-cors jinja2```.
+42. **Move to the config directory** of mat2 by running ```cd /var/www/mat2-web/config/```.
+43. **Copy the apache2 config file** to **/etc** by running ```cp apache2.config /etc/apache2/sites-enabled/apache2.conf```.
+44. **Remove the default config file** by running ```rm /etc/apache2/sites-enabled/000-default.conf```.
+45. **Edit the apache2 config file** provided by mat2-web by running ```nano /etc/apache2/sites-enabled/apache2.conf```.
+46. **Remove the first line** ```Listen 80``` by typing **Ctrl+K** to cut the line.
+47. **Change the uwsgi path** from ```/var/www/mat2-web/mat2-web.sock``` to ```/run/uwsgi/uwsgi.sock``` and type **Ctrl+X** to exit, followed by **Y** then **Enter**. 
+48. **Copy the uwsgi config file** to **/etc** by running ```cp uwsgi.config /etc/uwsgi/apps-enabled/uwsgi.ini```.
+49. **Edit the uwsgi config file** by typing ```nano /etc/uwsgi/apps-enabled/uwsgi.ini``` and change **uid** and **guid** to ```nobody``` and ```nogroup``` respectively. Save and exit with **Ctrl+X**, followed by **Y**, then **Enter**.
+50. Run ```chown -R 777 /var/www/mat2-web``` to change ownership to **mat2-web**.
+51. **Restart uwsgi** by running ```systemctl restart uwsgi```. There should be no errors.
+52. **Restart apache2** by running ```systemctl restart apache2```. There should be no errors.
+53. Now navigate to **Settings** > **Network** > **Attached to** and **select Host-only Adapter**. Click **OK** to save.
+54. Reboot the VM via **Machine** > **Reset**. Confirm the reset.
+55. Log into the VM as the **user** from **Step 19** and type ```ip a```. Note the IP address it was assigned under link/ether, the one that has **192.168.\*.\***.
+56. From the VM Host OS, **open a Browser** and navigate to the IP of your Debian VM. It will be something like: **http://192.168.1.55**.
+57. You should now see a Mat2-Web website running smoothly.
+58. **Shutdown the Mat2 guest VM** by running ```shutdown -h now``` to halt the machine.
+59. **Take a snapshot of the VM** within Virtualbox while the guest VM is shutdown.
+
+**Restart the Mat2 VM* and you are ready to use Mat2-web to remove metadata from most files!**
+
+After use, shut down the VM and revert to the snapshot to remove traces of the uploaded files. This VM does not require any internet access unless you want to update it, in which case, you need to place it back on the **NAT network** and do the next steps.
+
+For updates of Debian, **start the VM** and run ```apt update``` followed by ```apt upgrade```.
+
+For updates of mat2-web, type ```cd /var/www/mat2-web``` and run ```git pull```.
+
+After updates, shutdown, change to the **Host-only Adapter**, take a new snapshot, remove the earlier one.
 
 You are done.
 
-Now you can just start this small mat2 VM when needed, browse to it from your Guest VM and use the interface to remove any metadata from most files.
-
-After each use of this VM, you should revert to the Snapshot to erase all traces.
+Now you can just start this small Mat2 VM when needed. Browse to it from your Guest VM and use the interface to remove any metadata from most files. After each use of this VM, you should revert to the Snapshot to erase all traces. 
 
 **Do not ever expose this VM to any network unless temporarily for updates. This web interface is not suitable for any direct external access.**
 
@@ -10413,7 +10402,9 @@ When conducting sensitive activities, remember that:
 
     -   Warning: consider that sensor data itself can also be reliably used to track you[^468]'[^469].
 
--   **Consider leaving your smart devices at home online and doing something (watching YouTube/Netflix or something similar) instead of taking them with you powered off. This will mitigate tracking efforts but also create digital traces that could indicate you were at home.**
+-   Consider leaving your smart devices at home online and doing something (watching YouTube/Netflix or something similar) instead of taking them with you powered off. This will mitigate tracking efforts but also create digital traces that could indicate you were at home.
+    
+    -   **This could also include your car which could for example have a cell network device (including at least an IMEI) and a functionality to call emergency services**
 
 Additionally, if using a smartphone as a burner, know that they send a lot of diagnostics by default. Enough to potentially identify you based on your device usage patterns (a technique known as biometric profiling). You should avoid using your burner unless absolutely necessary, to minimize the information that can be collected and used to identify you.
 
@@ -10427,17 +10418,23 @@ Additionally, if using a smartphone as a burner, know that they send a lot of di
 
 -   **Sky ECC: <https://en.wikipedia.org/wiki/Sky_ECC>** <sup>[[Wikiless]][618]</sup> <sup>[[Archive.org]][619]</sup>
 
-**You should never rely on some external commercial service to protect your anonymity.**
+**You should never rely on an external commercial service to ensure your first line of anonymity. But you will see that paid services can still be used later from an already anonymous identity if bought anonymously while observing good operational security.**
 
 # Appendix O: Getting an anonymous VPN/Proxy
 
-If you follow my advice, you will also need a VPN subscription but this time you will need an anonymous one that cannot be tied to you by the financial system. Meaning you will need to buy a VPN subscription with cash or a reasonably private cryptocurrency (Monero). You will later use this VPN to connect to the various services anonymously but never directly from your IP.
+If you follow our advice, you will also need a VPN subscription but this time you will need an anonymous one that cannot be tied to you by the financial system. Meaning you will need to buy a VPN subscription with cash or a reasonably private cryptocurrency (for example Monero). You will later be able to use this VPN to connect to various services anonymously but **never directly from your IP**. This VPN can never be used in any other non-anonymous context without jeopardzing your anonymity.
 
 There are, two viable options:
 
 ## Cash/Monero-Paid VPN:
 
 There are three VPN companies recommended by PrivacyGuides.org (<https://www.privacyguides.org/vpn/> <sup>[[Archive.org]][620]</sup>) that accept cash payments: Mullvad, iVPN, and Proton VPN.
+    
+Here are their logging policies:
+
+-   Mullvad: <https://mullvad.net/en/help/no-logging-data-policy/> <sup>[[Archive.org]](https://web.archive.org/web/https://mullvad.net/en/help/no-logging-data-policy/)</sup>
+-   iVPN: <https://www.ivpn.net/privacy/> <sup>[[Archive.org]](https://web.archive.org/web/https://www.ivpn.net/privacy/)</sup>
+-   ProtonVPN: <https://protonvpn.com/support/no-logs-vpn/> <sup>[[Archive.org]](https://web.archive.org/web/https://protonvpn.com/support/no-logs-vpn/)</sup>
 
 In addition, we will also mention a newcomer to watch: Safing SPN <https://safing.io/> <sup>[[Archive.org]][621]</sup>) which (while still in the alpha stage at the time of this writing) which also accepts cash and has a very distinct new concept for a VPN which provides benefits similar to Tor Stream isolation with their "SPN"). Note that Safing SPN is not available on macOS at the moment. This possibility is "provisional" and at your own risk, but we think was worth mentioning.
 
@@ -10631,7 +10628,7 @@ The process is simple:
 
 Ideally, this should "not be an issue" since this guide provides multiple ways of hiding your origin IP using VPNs and Tor. But if you are in a situation where VPN and Tor are not an option, then this could be your only security.
 
-# Appendix R: Installing a VPN on your VM or Host OS.
+# Appendix R: Installing a VPN on your VM or Host OS
 
 Download the VPN client installer of your cash paid VPN service and install it on Host OS (Tor over VPN, VPN over Tor over VPN) or the VM of your choice (VPN over Tor):
 
@@ -11025,7 +11022,7 @@ If you are to resort to this, you should never do so from a monitored/known netw
 
 # Appendix V: What browser to use in your Guest VM/Disposable VM
     
-**Temporary Important Warning: Please see [Microarchitectural Side-channel Deanonymization Attacks:].**
+**Temporary Important Warning: Please see [Microarchitectural Side-channel Deanonymization Attacks:] for all browsers except Tor Browser.**
 
 There are 6 possibilities of browser to use on your guest/disposable VM:
 
@@ -11720,15 +11717,17 @@ Each Virtual Machine is a sandbox. Remember the reasons for using them are to pr
 
 In some environments, your ISPs might be trying to prevent you from accessing Tor. Or accessing Tor openly might be a safety risk.
 
-In those cases, it might be necessary to use Tor bridges to connect to the Tor network (see Tor Documentation <https://2019.www.torproject.org/docs/bridges> <sup>[[Archive.org]][244]</sup> and Whonix Documentation <https://www.whonix.org/wiki/Bridges> <sup>[[Archive.org]][337]</sup>).
+In those cases, it might be necessary to use Tor bridges to connect to the Tor network (see Tor Documentation <https://2019.www.torproject.org/docs/bridges> <sup>[[Archive.org]][244]</sup> and Whonix Documentation <https://www.whonix.org/wiki/Bridges> <sup>[[Archive.org]][337]</sup>). Optionally, if you are able, you should (seriously!) consider running a bridge <https://blog.torproject.org/run-tor-bridges-defend-open-internet/> <sup>[[Archive.org]](https://web.archive.org/web/20220708014922/https://blog.torproject.org/run-tor-bridges-defend-open-internet/)</sup> yourself, as this would greatly help reduce the amount of censorship in the world.
 
 Bridges are special Tor entry nodes that are not listed on the Tor public directory. Some of those are running on people running the Snowflake Browser extension[^520] while others are running on various servers around the world. Most of those bridges are running some type of obfuscation method called obfs4[^521].
 
-Here is the definition from the Tor Browser Manual[^522]: "obfs4 makes Tor traffic look random and prevents censors from finding bridges by Internet scanning. obfs4 bridges are less likely to be blocked than its predecessor, obfs3 bridges".
+*Only available for Desktop Tor users: Recently, the Tor Project has made it incredibly simple to access Bridges with **Connection Assist**, and it is now automatically done in hostile or censored regions. Simply open the Tor Browser and the connection will be configured based on your needs on any hostile network. Previously, we had a list of options below this paragraph which were necessary to enable and configure bridges, but now that this is done automatically using [moat](https://support.torproject.org/glossary/moat/).* <sup>[[Archive.org]][1387]</sup>
+
+Here is the definition from the Tor Browser Manual[^523]: "obfs4 makes Tor traffic look random and prevents censors from finding bridges by Internet scanning. obfs4 bridges are less likely to be blocked than its predecessor, obfs3 bridges".
 
 Some of those are called "Meek" bridges and are using a technique called "Domain Fronting" where your Tor client (Tails, Tor Browser, Whonix Gateway) will connect to a common CDN used by other services. To a censor, it would appear you are connecting to a normal website such as Microsoft.com. See <https://gitlab.torproject.org/legacy/trac/-/wikis/doc/meek> for more information.
 
-As per their definition from their manual[^523]: "meek transports make it look like you are browsing a major web site instead of using Tor. meek-azure makes it look like you are using a Microsoft web site". This is a type of "domain fronting" [^524].
+As per their definition from their manual: "meek transports make it look like you are browsing a major web site instead of using Tor. meek-azure makes it look like you are using a Microsoft web site". Snowflake bridges make it appear like your connections are phone calls to random internet users. This is a type of "domain fronting" [^524]. See ["domain fronting"](https://www.bamsoftware.com/papers/fronting/#sec:introduction) from the link in the previous paragraph for a detailed explanation of these types of secret "bridges".
 
 Lastly, there are also bridges called Snowflake bridges that rely on users running the snowflake extension in their browser to become themselves entry nodes. See <https://snowflake.torproject.org/> <sup>[[Archive.org]][563]</sup>.
 
@@ -11761,8 +11760,6 @@ Hopefully, these bridges should be enough to get you connected even in a hostile
 If not, consider [Appendix P: Accessing the internet as safely as possible when Tor and VPNs are not an option]
 
 # Appendix Y: Installing and using desktop Tor Browser
-    
-**Temporary Important Warning: Please see [Microarchitectural Side-channel Deanonymization Attacks:].**
 
 ## Installation:
 
@@ -11774,7 +11771,7 @@ This is valid for Windows, Linux, and macOS.
 
 ## Usage and Precautions:
 
--   After opening Tor Browser, you will see an option to connect, a checkbox to connect automatically and a button to go into Tor Network Settings. The Tor Network settings are there for you to possibly configure Bridges to connect to Tor if you are experiencing issues connecting to Tor due to Censorship or Blocking as explained here: [Appendix X: Using Tor bridges in hostile environments].
+-   After opening Tor Browser, you will see an option to **Connect**, a checkbox to **Always connect automatically** and a button to **Configure connection**. The Tor Network settings are there for you to possibly configure Bridges to connect to Tor if you are experiencing issues connecting to Tor due to Censorship or Blocking. As explained here: [Appendix X: Using Tor bridges in hostile environments], this is now done automatically by the Tor Browser on Desktop.
 
 ![][688]
 
@@ -11838,9 +11835,9 @@ But what if the service you want does not accept Monero but does accept a more m
 
 **Bitcoin and other "mainstream cryptocurrencies" are not anonymous at all (Remember [Your Cryptocurrencies transactions][Your Cryptocurrencies transactions:]) and you should never ever purchase, for example, Bitcoin from an exchange and then use these directly for purchasing services anonymously. This will not work, and the transaction can be traced easily.**
 
--   **Stay away from Crypto Mixers and Tumblers.** You might think this is a good idea but not only are they useless with cryptocurrencies such as BTC/ETH/LTC, but they are also dangerous as you might end up trading your currency for dirty currency from illicit activities. Use Monero to anonymize your crypto. Use a normal KYC-enabled Exchange to buy/sell your Monero (such as Kraken) or (at your own risk), use a service like LocalMonero.
+-   **Stay away from Crypto Mixer, Tumblers and Coinjoiners.** You might think this is a good idea but not only are they useless with cryptocurrencies such as BTC/ETH/LTC, but they are also dangerous as you might end up trading your currency for dirty currency from illicit activities. Use Monero to anonymize your crypto. Use a normal KYC-enabled Exchange to buy/sell your Monero (such as Kraken) or (at your own risk), use a service like LocalMonero.
 
--   **Stay away from what are in my opinion risky private/anonymizing wallets such as <https://we.incognito.org>.** Use a safer method outlined below.
+-   **See [Warning about special tumbling, mixing, coinjoining privacy wallets and services].** 
 
 ## Reasonably anonymous option:
 
@@ -12144,6 +12141,8 @@ You might also consider the use of something like AnonyMouth <https://web.archiv
 
 ## Bonus links:
 
+-  <https://seirdy.one/posts/2022/07/09/stylometric-fingerprinting-redux/> <sup>[[Archive.org]](https://web.archive.org/web/https://seirdy.one/posts/2022/07/09/stylometric-fingerprinting-redux/)</sup>: Stylometric fingerprinting redux
+    
 -   <https://www.whonix.org/wiki/Surfing_Posting_Blogging#Stylometry> <sup>[[Archive.org]][702]</sup>: Whonix documentation about stylometry.
 
 -   <https://wikipedia.org/wiki/Forensic_linguistics> <sup>[[Wikiless]][703]</sup> <sup>[[Archive.org]][704]</sup>: Gives a brief rundown of the basics of forensic linguistics, not too informative.
@@ -12206,19 +12205,22 @@ These recommendations are similar to the ones at the beginning of the guide and 
 
 Find it online at:
 
--   Original: <https://anonymousplanet-ng.org>
+-   Original: <https://anonymousplanet.org>
+    
+-   Tor Onion Mirror: <http://thgtoallkcxrdv37u6knsc3pumk6cq6lqmcqlw3j5vkmyahkxive4jyd.onion>    
 
--   Archive.org: <https://web.archive.org/web/https://anonymousplanet-ng.org>
+-   Archive.org: <https://web.archive.org/web/https://anonymousplanet.org>
 
--   Archive.today: <https://archive.fo/anonymousplanet-ng.org>
+-   Archive.today: <https://archive.fo/anonymousplanet.org>
 
--   Archive.today over Tor: <http://archiveiya74codqgiixo33q62qlrqtkgmcitqx5u2oeqnmn5bpcbiyd.onion/anonymousplanet-ng.org>
+-   Archive.today over Tor: <http://archiveiya74codqgiixo33q62qlrqtkgmcitqx5u2oeqnmn5bpcbiyd.onion/anonymousplanet.org>
 
-Offline versions (best format for the best readability) of this guide at:
+    Offline versions of this guide are temporarily unavailable.
 
--   PDF: <https://anonymousplanet-ng.org/export/guide.pdf> <sup>[[Archive.org]][726]</sup> <sup>[[Tor Mirror]][727]</sup>
+-   <del>PDF: <https://anonymousplanet.org/export/guide.pdf></del> <sup>[[Archive.org]][726]</sup> <sup>[[Tor Mirror]][727]</sup>
 
--   OpenDocument Text (ODT) version at: <https://anonymousplanet-ng.org/export/guide.odt> <sup>[[Archive.org]][732]</sup> <sup>[[Tor Mirror]][733]</sup>
+-   OpenDocument Text (ODT) version at: <del><https://anonymousplanet.org/export/guide.odt></del> (temporarily disabled) <sup>[[Archive.org]][732]</sup> <sup>[[Tor Mirror]][733]</sup>
+
 
 # Appendix A7: Comparing versions
 
@@ -12364,25 +12366,28 @@ Also please consider reading: **<https://github.com/monero-project/monero/blob/m
 
 Here are various threat modeling resources if you want to go deeper in threat modeling.
 
--   (My personal favorite) LINDDUN <https://www.linddun.org/> <sup>[[Archive.org]][739]</sup>
+-   The one we recommend: LINDDUN (Linkability, Identifiability, Non-repudiation, Detectability, Disclosure of information, Unawareness, and Non-compliance) <https://www.linddun.org/> <sup>[[Archive.org]][739]</sup>.
+    - Researchers created an online tool to help make your threat model at <https://www.linddun.org/go><sup>[[Archive.org]](https://web.archive.org/web/https://www.linddun.org/go)</sup>.
+    - It is synergistic with STRIDE below.
+    - It is focused on privacy but is clearly perfectly suitable for anonymity.
+    - It is accessible to all skill levels including beginners (providing many tutorials) but also suitable for highly skilled readers.
+    - It is used in the making of the Threat Modeling Manifesto: <https://www.threatmodelingmanifesto.org/> <sup>[[Archive.org]][745]</sup>
+    - Here is a video **endorsed and recommended** by LINDDUN designers to help understanding: <https://www.youtube.com/watch?v=zI4SFyq_Xjw> <sup>[[Invidious]](https://yewtu.be/zI4SFyq_Xjw)</sup>
+
+![][1389]
+(Illustration from [LINDDUN2015])
+
+Here are alternative resources and models if LINDDUN doesn't suit you:
+    
+-   Online Operations Security: [https://web.archive.org/web/20210711215728/https://github.com/devbret/online-OPSEC]
 
 -   STRIDE <https://en.wikipedia.org/wiki/STRIDE_%28security%29> <sup>[[Wikiless]][740]</sup> <sup>[[Archive.org]][741]</sup>
 
 -   PASTA <https://versprite.com/tag/pasta-threat-modeling/> <sup>[[Archive.org]][742]</sup>
-
-And there are quite a few others too, see:
-
+    
 -   <https://insights.sei.cmu.edu/blog/threat-modeling-12-available-methods/> <sup>[[Archive.org]][743]</sup>
 
 -   <https://www.geeksforgeeks.org/threat-modelling/> <sup>[[Archive.org]][744]</sup>
-
-You can find some introduction on these on these projects:
-
--   Threat Modeling Manifesto: <https://www.threatmodelingmanifesto.org/> <sup>[[Archive.org]][745]</sup>
-
--   OWASP: <https://cheatsheetseries.owasp.org/cheatsheets/Threat_Modeling_Cheat_Sheet.html> <sup>[[Archive.org]][746]</sup>
-
--   Online Operations Security: [https://web.archive.org/web/20210711215728/https://github.com/devbret/online-OPSEC]
 
 # Appendix B4: Important notes about evil-maid and tampering
 
@@ -12393,6 +12398,40 @@ Preventing an evil-maid attack attack or tampering might lead to bad consequence
 On the other hand, allowing the attack but detecting it will not let your adversary know that you are aware of the tampering. You can then take steps safely to not reveal information and possibly leave.
 
 See the [Some last OPSEC thoughts][Some last OPSEC thoughts:] section for some tips.
+
+# Appendix B5: Types of CPU attacks:
+
+Select security issues plague many Intel CPUs, such as transient execution attacks (formerly called speculative execution side channel methods). Here you can check your CPU against affected micro-processors with known bugs <https://www.intel.com/content/www/us/en/developer/topic-technology/software-security-guidance/processors-affected-consolidated-product-cpu-model.html> <sup>[[Archive.org]](https://web.archive.org/web/20220814123250/https://www.intel.com/content/www/us/en/developer/topic-technology/software-security-guidance/processors-affected-consolidated-product-cpu-model.html)</sup>.
+
+The Advanced Programmable Interrupt Controller (APIC) is an integrated CPU component responsible for accepting, prioritizing, and dispatching interrupts to logical processors (LPs). The APIC can operate in xAPIC mode, also known as legacy mode, in which APIC configuration registers are exposed through a memory-mapped I/O (MMIO) page.
+
+Enter AEPIC (stylized ÆPIC), the first architectural CPU bug that leaks stale data from the microarchitecture without using a side channel. It architecturally leaks stale data incorrectly returned by reading undefined APIC-register ranges. This novel method was revealed in the paper *ÆPIC Leak: Architecturally Leaking Uninitialized Data from the
+Microarchitecture* which you can read here: [Borrello2022AEPIC](https://aepicleak.com/aepicleak.pdf) <sup>[[Archive.org]](https://web.archive.org/web/20220812101719/https://aepicleak.com/aepicleak.pdf)</sup>
+
+Model-specific registers (MSRs) and their configuration bits can also be detected automatically on Intel and AMD CPUs: [Kogler2022](https://github.com/IAIK/msrevelio) <sup>[[Archive.org]](https://web.archive.org/web/20220814125349/https://andreaskogler.com/papers/msrtemplating.pdf)</sup>. This allows an attacker (with heavy knowledge of CPU functionality) to view information about the MSRs, which are essentially special CPU registers allowing interaction with low-level CPU features and advanced configuration of the CPU's behavior. Modern x86 CPUs have hundreds of these, which are usually documented very little and in increasingly less verbosity over the past few years.
+
+#### Some other microarchitecture bugs:
+
+- [PLATYPUS](https://platypusattack.com/) <sup>[[Archive.org]](https://web.archive.org/web/20220814132343/https://platypusattack.com/)</sup> - Software-based Power Side-Channel Attacks on x86, which shows how an unprivileged attacker can leak AES-NI keys from Intel SGX and the Linux kernel and break kernel address-space layout randomization (KASLR).
+- [SQUIP](https://www.nextplatform.com/2022/08/11/squip-side-channel-attack-rattles-amds-zen-cores/) <sup>[[Archive.org]](https://web.archive.org/web/20220812082548/https://www.nextplatform.com/2022/08/11/squip-side-channel-attack-rattles-amds-zen-cores/)</sup> - Scheduler Queue Usage via Interface Probing. All of AMD's Zen CPUs are vulnerable to a medium-severity flaw which can allow threat actors to run side-channel attacks.
+- [Hertzbleed](https://www.schneier.com/blog/archives/2022/06/hertzbleed-a-new-side-channel-attack.html) <sup>[[Archive.org]](https://web.archive.org/web/20220712000058/https://www.schneier.com/blog/archives/2022/06/hertzbleed-a-new-side-channel-attack.html)</sup> - Deducing cryptographic keys by analyzing power consumption has long been an attack, but it’s not generally viable because measuring power consumption is often hard. This new attack measures power consumption by measuring time, making it easier to exploit.
+- [Retbleed](https://www.bleepingcomputer.com/news/security/new-retbleed-speculative-execution-cpu-attack-bypasses-retpoline-fixes/) <sup>[[Archive.org]](https://web.archive.org/web/20220804151557/https://www.bleepingcomputer.com/news/security/new-retbleed-speculative-execution-cpu-attack-bypasses-retpoline-fixes/)</sup> - Retbleed focuses on return instructions, which are part of the retpoline software mitigation against the speculative execution class of attacks that became known starting early 2018, with Spectre.
+
+# Appendix B6: Warning for using Orbot on Android
+
+While this is often misunderstood, Orbot on Android does not make your "Tor-Enabled Apps" go through Tor if you add them to the list. Orbot is acting as a device-wide VPN or (also known as a transparent proxy). The list of apps using Orbot is a whitelist. This list will not make some apps magically use Tor and unchecked ones use the clear-net. This only ensures the device-wide VPN is using Tor to route traffic. This means that Orbot can only control what app can access the VPN it creates. Other apps will lose connectivity.
+
+What is important to know is that, if you launch an app (or Android does it automatically) while Orbot is not running, the app will just use the normal network, without involving Orbot (with the exception of some apps supporting a proxy Orbot).
+
+Additionally, you should not be surprised by Tor Browser not working when using Orbot in VPN mode, as the Tor design does not allow "Tor over Tor" (you cannot re-enter the Tor network from a Tor exit node).
+
+This is explained rather well by Alexander Færøy, who is a core developer at the Tor Project, in their [TorifyHOWTO: Tor over Tor](https://gitlab.torproject.org/legacy/trac/-/wikis/doc/TorifyHOWTO#tor-over-tor).
+
+"When using a transparent proxy, it is possible to start a Tor session from the client as well as from the transparent proxy (read the warning!), creating a "Tor over Tor" scenario. Doing so produces undefined and potentially unsafe behavior. In theory, however, you can get six hops instead of three, but it is not guaranteed that you'll get three different hops - you could end up with the same hops, maybe in reverse or mixed order. It is not clear if this is safe. It has never been discussed. You can choose an entry/exit point, but you get the best security that Tor can provide when you leave the route selection to Tor; overriding the entry / exit nodes can mess up your anonymity in ways we don't understand. Therefore Tor over Tor usage is highly discouraged."
+
+And from [a post](https://tor.stackexchange.com/questions/427/is-running-tor-over-tor-dangerous) on the Tor Stack Exchange:
+
+"The danger (beyond the performance hit) which keeps me from running Tor over Tor has to do with timing and congestion measurements. Adversaries watching your traffic at the exit(s) of your circuits have a better chance of linking your Whonix activity with your [Tor Browser Bundle] activity when those shared circuits slow down or drop packets at the same time. This can happen without Tor over Tor when your instances use a common upstream link. The linkage will be made tighter and more explicit if you run the Whonix Tor traffic through your TBB SOCKS5 Tor circuits. This tighter linkage raises the danger of successful correlation."
 
 ---
 
@@ -13438,8 +13477,6 @@ See the [Some last OPSEC thoughts][Some last OPSEC thoughts:] section for some t
 
 [^521]: GitHub, Obfs4 Repository <https://github.com/Yawning/obfs4/> <sup>[[Archive.org]][1348]</sup>
 
-[^522]: Tor Browser Manual, Pluggable Transport <https://tb-manual.torproject.org/circumvention/> <sup>[[Archive.org]][1349]</sup>
-
 [^523]: Tor Browser Manual, Pluggable Transport <https://tb-manual.torproject.org/circumvention/> <sup>[[Archive.org]][1349]</sup>
 
 [^524]: Wikipedia, Domain Fronting <https://en.wikipedia.org/wiki/Domain_fronting> <sup>[[Wikiless]][1350]</sup> <sup>[[Archive.org]][1351]</sup>
@@ -13689,7 +13726,7 @@ See the [Some last OPSEC thoughts][Some last OPSEC thoughts:] section for some t
   [Socks Proxy VPS:]: #socks-proxy-vps
   [Appendix P: Accessing the internet as safely as possible when Tor and VPNs are not an option]: #appendix-p-accessing-the-internet-as-safely-as-possible-when-tor-and-vpns-are-not-an-option
   [Appendix Q: Using long-range Antenna to connect to Public Wi-Fis from a safe distance:]: #appendix-q-using-long-range-antenna-to-connect-to-public-wi-fis-from-a-safe-distance
-  [Appendix R: Installing a VPN on your VM or Host OS.]: #appendix-r-installing-a-vpn-on-your-vm-or-host-os.
+  [Appendix R: Installing a VPN on your VM or Host OS]: #appendix-r-installing-a-vpn-on-your-vm-or-host-os
   [Appendix S: Check your network for surveillance/censorship using OONI]: #appendix-s-check-your-network-for-surveillancecensorship-using-ooni
   [Appendix T: Checking files for malware]: #appendix-t-checking-files-for-malware
   [Integrity (if available):]: #integrity-if-available
@@ -13726,7 +13763,7 @@ See the [Some last OPSEC thoughts][Some last OPSEC thoughts:] section for some t
   [Appendix Z: Online anonymous payments using cryptocurrencies]: #appendix-z-online-anonymous-payments-using-cryptocurrencies
   [Reasonably anonymous option:]: #reasonably-anonymous-option
   [Extra-Paranoid anonymous option:]: #extra-paranoid-anonymous-option
-  [Warning about special tumbling, mixing, coinjoining privacy wallets and services:]: #warning-about-special-tumbling-mixing-coinjoining-privacy-wallets-and-services
+  [Warning about special tumbling, mixing, coinjoining privacy wallets and services]: #warning-about-special-tumbling-mixing-coinjoining-privacy-wallets-and-services-wikiless-archiveorg
   [When converting from BTC to Monero:]: #when-converting-from-btc-to-monero
   [Appendix A1: Recommended VPS hosting providers]: #appendix-a1-recommended-vps-hosting-providers
   [Appendix A2: Guidelines for passwords and passphrases]: #appendix-a2-guidelines-for-passwords-and-passphrases
@@ -13761,8 +13798,11 @@ See the [Some last OPSEC thoughts][Some last OPSEC thoughts:] section for some t
   [Appendix B2: Monero Disclaimer]: #appendix-b2-monero-disclaimer
   [Appendix B3: Threat modeling resources]: #appendix-b3-threat-modeling-resources
   [Appendix B4: Important notes about evil-maid and tampering]: #appendix-b4-important-notes-about-evil-maid-and-tampering
+  [Appendix B5: Types of CPU attacks:]: #appendix-b5-types-of-cpu-attacks 
+  [Appendix B6: Warning for using Orbot on Android]: #appendix-b6-warning-for-using-orbot-on-android 
   [References:]: #references
   [cc-by-nc-4.0]: https://creativecommons.org/licenses/by-nc/4.0/
+  [LINDDUN2015]: https://lirias.kuleuven.be/retrieve/295669
   [27]: https://web.archive.org/web/https://creativecommons.org/licenses/by-nc/4.0/
   [https://matrix.to/#/#anonymity:matrix.org]: https://matrix.to/#/
   [28]: https://nitter.net/AnonyPla
@@ -13815,8 +13855,6 @@ See the [Some last OPSEC thoughts][Some last OPSEC thoughts:] section for some t
   [75]: https://yewtu.be/watch?v=siCk4pGGcqA
   [76]: https://yewtu.be/watch?v=mYsTBPqbya8
   [77]: https://yewtu.be/watch?v=bKH5nGLgi08&t=2834s
-  [78]: https://wikiless.org/wiki/Transient_execution_CPU_vulnerability
-  [79]: https://web.archive.org/web/https://en.wikipedia.org/wiki/Transient_execution_CPU_vulnerability
   [80]: https://web.archive.org/web/https://github.com/speed47/spectre-meltdown-checker
   [81]: https://web.archive.org/web/https://www.grc.com/inspectre.htm
   [82]: https://web.archive.org/web/https://www.whonix.org/wiki/Spectre_Meltdown
@@ -13949,12 +13987,12 @@ See the [Some last OPSEC thoughts][Some last OPSEC thoughts:] section for some t
   [209]: https://web.archive.org/web/https://www.microsoft.com/en-us/corporate-responsibility/law-enforcement-requests-report
   [210]: https://web.archive.org/web/https://www.amazon.com/gp/help/customer/display.html?nodeId=GYSDRGWQ2C2CRYEF
   [211]: https://web.archive.org/web/https://www.dropbox.com/transparency
-  [212]: https://web.archive.org/web/https://blog.discord.com/discord-transparency-report-jan-june-2020-2ef4a3ee346d
+  [212]: https://web.archive.org/web/20220812051950/https://discord.com/blog/discord-transparency-report-q1-2022
   [213]: https://web.archive.org/web/https://github.blog/2021-02-25-2020-transparency-report/
-  [214]: https://web.archive.org/web/https://www.snap.com/en-US/privacy/transparency/
-  [215]: https://web.archive.org/web/https://www.tiktok.com/safety/resources/transparency-report?lang=en
-  [216]: https://web.archive.org/web/https://www.reddit.com/wiki/transparency
-  [217]: https://web.archive.org/web/https://transparency.twitter.com/
+  [214]: https://web.archive.org/web/20220806141853/https://www.snap.com/en-US/privacy/transparency
+  [215]: https://web.archive.org/web/20220812054600/https://www.tiktok.com/transparency/en/information-requests-2021-2/
+  [216]: https://web.archive.org/web/20220812054736/https://www.redditinc.com/policies/transparency-report-2021
+  [217]: https://web.archive.org/web/20220812054839/https://transparency.twitter.com/
   [218]: https://yewtu.be/watch?v=euSsqXO53GY
   [219]: https://web.archive.org/web/https://media.defense.gov/2021/Feb/25/2002588479/-1/-1/0/CSI_EMBRACING_ZT_SECURITY_MODEL_UOO115131-21.PDF
   [220]: media/image18.jpeg
@@ -14145,7 +14183,6 @@ See the [Some last OPSEC thoughts][Some last OPSEC thoughts:] section for some t
   [397]: https://web.archive.org/web/https://github.com/deepfakes/faceswap
   [398]: https://web.archive.org/web/https://github.com/iperov/DeepFaceLive
   [Online Phone Number (less recommended)]: #online-phone-number
-  [399]: https://web.archive.org/web/https://thispersondoesnotexist.com/
   [400]: https://web.archive.org/web/https://github.com/NVlabs/stylegan2
   [401]: https://web.archive.org/web/https://www.myheritage.com/deep-nostalgia
   [402]: media/image39.jpeg
@@ -14299,8 +14336,8 @@ See the [Some last OPSEC thoughts][Some last OPSEC thoughts:] section for some t
   [554]: https://wikiless.org/wiki/Key_disclosure_law
   [555]: https://web.archive.org/web/https://en.wikipedia.org/wiki/Key_disclosure_law
   [556]: https://web.archive.org/web/https://www.gp-digital.org/world-map-of-encryption/
-  [557]: https://mirror.anonymousplanet-ng.org/donations.html
-  [558]: https://web.archive.org/web/https://anonymousplanet-ng.org/donations.html
+  [557]: https://mirror.anonymousplanet.org/donations.html
+  [558]: https://web.archive.org/web/https://anonymousplanet.org/donations.html
   [559]: http://thgtoa7imksbg7rit4grgijl2ef6kc7b56bp56pmtta4g354lydlzkqd.onion/donations.html
   [560]: media/image48.jpeg
   [561]: media/image49.jpeg
@@ -14430,11 +14467,11 @@ See the [Some last OPSEC thoughts][Some last OPSEC thoughts:] section for some t
   [683]: https://web.archive.org/web/https://chrisx.xyz/blog/yet-another-firefox-hardening-guide/
   [684]: https://web.archive.org/web/https://ebin.city/~werwolf/posts/firefox-hardening-guide/
   [685]: media/image53.jpeg
-  [686]: media/image54.jpeg
+  [686]: media/image54.png
   [687]: https://web.archive.org/web/https://www.torproject.org/download/
-  [688]: media/image55.jpeg
-  [689]: media/image56.jpeg
-  [690]: media/image57.jpeg
+  [688]: media/image55.png
+  [689]: media/image56.png
+  [690]: media/image57.png
   [691]: https://web.archive.org/web/https://z.cash/
   [692]: https://web.archive.org/web/https://z.cash/exchanges/
   [693]: https://web.archive.org/web/https://wasabiwallet.io/
@@ -14471,9 +14508,9 @@ See the [Some last OPSEC thoughts][Some last OPSEC thoughts:] section for some t
   [https://nitter.net]: https://nitter.fdn.fr
   [723]: https://web.archive.org/web/https://github.com/spikecodes/libreddit
   [724]: https://web.archive.org/web/https://simplytranslate.org/
-  [726]: https://web.archive.org/web/https://anonymousplanet-ng.org/export/guide.pdf
+  [726]: https://web.archive.org/web/https://anonymousplanet.org/export/guide.pdf
   [727]: http://thgtoa7imksbg7rit4grgijl2ef6kc7b56bp56pmtta4g354lydlzkqd.onion/guide.pdf
-  [732]: https://web.archive.org/web/https://anonymousplanet-ng.org/export/guide.odt
+  [732]: https://web.archive.org/web/https://anonymousplanet.org/export/guide.odt
   [733]: http://thgtoa7imksbg7rit4grgijl2ef6kc7b56bp56pmtta4g354lydlzkqd.onion/guide.odt
   [734]: https://web.archive.org/web/https://help.libreoffice.org/7.1/en-US/text/shared/guide/redlining_doccompare.html
   [735]: https://web.archive.org/web/https://www.whonix.org/wiki/Surfing_Posting_Blogging#Anonymous_File_Sharing
@@ -14488,7 +14525,6 @@ See the [Some last OPSEC thoughts][Some last OPSEC thoughts:] section for some t
   [743]: https://web.archive.org/web/https://insights.sei.cmu.edu/blog/threat-modeling-12-available-methods/
   [744]: https://web.archive.org/web/https://www.geeksforgeeks.org/threat-modelling/
   [745]: https://web.archive.org/web/https://www.threatmodelingmanifesto.org/
-  [746]: https://web.archive.org/web/https://cheatsheetseries.owasp.org/cheatsheets/Threat_Modeling_Cheat_Sheet.html
   [https://web.archive.org/web/20210711215728/https://github.com/devbret/online-OPSEC]: https://web.archive.org/web/20210711215728/https://github.com/devbret/online-opsec
   [747]: https://web.archive.org/web/https://www.huntonprivacyblog.com/wp-content/uploads/sites/28/2016/02/Telemedia_Act__TMA_.pdf
   [748]: https://wikiless.org/wiki/Don%27t_be_evil
@@ -15127,3 +15163,6 @@ See the [Some last OPSEC thoughts][Some last OPSEC thoughts:] section for some t
   [1384]: https://web.archive.org/web/20220718231735/https://officercia.mirror.xyz/5KSkJOTgMtvgC36v1GqZ987N-_Oj_zwvGatOk0A47Ws
   [1385]: https://web.archive.org/web/20220516000616/https://officercia.mirror.xyz/WeAilwJ9V4GIVUkYa7WwBwV2II9dYwpdPTp3fNsPFjo
   [1386]: https://web.archive.org/web/20220720023429/https://leakuidatorplusteam.github.io/
+  [1387]: https://web.archive.org/web/20220801151048/https://support.torproject.org/glossary/moat/
+  [1388]: https://web.archive.org/web/20220708014922/https://blog.torproject.org/run-tor-bridges-defend-open-internet/
+  [1389]: media/image59.png
