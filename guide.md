@@ -817,7 +817,7 @@ The IMEI and IMSI can be traced back to you in at least six ways:
 
 Here is also a good YouTube video on this topic: DEFCON Safe Mode - Cooper Quintin - Detecting Fake 4G Base Stations in Real-Time <https://www.youtube.com/watch?v=siCk4pGGcqA> <sup>[[Invidious]][75]</sup>
 
-**For these reasons, it is crucial to get dedicated an anonymous phone number and/or an anonymous burner phone with an anonymous pre-paid sim card that is not tied to you in any way (past or present) for conducting sensitive activities (See more practical guidance in [Getting an anonymous Phone number][Getting an anonymous Phone number:] section).**
+**For these reasons, it is crucial to get dedicated an anonymous phone number and/or an anonymous burner phone with an anonymous pre-paid sim card that is not tied to you in any way (past or present) for conducting sensitive activities. It is also possible get an anonymous pre-paid but preferably dedicated number from specific free and paid online services accepting anonymous cryptocurrencies like Monero (Get more practical guidance here: [Getting an anonymous Phone number][Getting an anonymous Phone number:]).**
 
 While there are some smartphones manufacturers like Purism with their Librem series[^98] who claim to have your privacy in mind, they still do not allow IMEI randomization which we believe is a key anti-tracking feature that should be provided by such manufacturers. While this measure will not prevent IMSI tracking within the SIM card, it would at least allow you to keep the same "burner phone" and only switch SIM cards instead of having to switch both for privacy.
 
@@ -10418,11 +10418,11 @@ Additionally, if using a smartphone as a burner, know that they send a lot of di
 
 -   **Sky ECC: <https://en.wikipedia.org/wiki/Sky_ECC>** <sup>[[Wikiless]][618]</sup> <sup>[[Archive.org]][619]</sup>
 
-**You should never rely on some external commercial service to protect your anonymity.**
+**You should never rely on an external commercial service to ensure your first line of anonymity. But you will see that paid services can still be used later from an already anonymous identity if bought anonymously while observing good operational security.**
 
 # Appendix O: Getting an anonymous VPN/Proxy
 
-If you follow my advice, you will also need a VPN subscription but this time you will need an anonymous one that cannot be tied to you by the financial system. Meaning you will need to buy a VPN subscription with cash or a reasonably private cryptocurrency (Monero). You will later use this VPN to connect to the various services anonymously but never directly from your IP.
+If you follow our advice, you will also need a VPN subscription but this time you will need an anonymous one that cannot be tied to you by the financial system. Meaning you will need to buy a VPN subscription with cash or a reasonably private cryptocurrency (for example Monero). You will later be able to use this VPN to connect to various services anonymously but **never directly from your IP**. This VPN can never be used in any other non-anonymous context without jeopardzing your anonymity.
 
 There are, two viable options:
 
