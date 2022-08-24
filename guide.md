@@ -28,7 +28,7 @@ The manual is here: <https://briarproject.org/manual/>, quick-start guide here: 
 
 **Your experience may vary.** **Remember to check regularly for an updated version of this guide.**
 
-This guide is a non-profit open-source initiative, licensed under Creative Commons **Attribution-NonCommercial** 4.0 International ([cc-by-nc-4.0][] <sup>[[Archive.org]](https://web.archive.org/web/https://creativecommons.org/licenses/by-nc/4.0/)</sup>).
+This guide is a non-profit open-source initiative, licensed under Creative Commons **Attribution-NonCommercial** 4.0 International ([cc-by-nc-4.0](https://creativecommons.org/licenses/by-nc/4.0/) <sup>[[Archive.org]](https://web.archive.org/web/https://creativecommons.org/licenses/by-nc/4.0/)</sup>).
 
 -   For mirrors see [Appendix A6: Mirrors]
 
@@ -491,13 +491,13 @@ There are many ways you can be tracked besides browser cookies and ads, your e-m
 
 First, you could also consider these more general resources on privacy and security to learn more basics:
 
--   The New Oil*: <https://thenewoil.org/> <sup>[[Archive.org]](https://web.archive.org/web/https://thenewoil.org/)</sup>
+-   The New Oil\*: <https://thenewoil.org/> <sup>[[Archive.org]](https://web.archive.org/web/https://thenewoil.org/)</sup>
 
--   Techlore videos*: <https://www.youtube.com/c/Techlore> <sup>[[Invidious]](https://yewtu.be/c/Techlore)</sup>
+-   Techlore videos\*: <https://www.youtube.com/c/Techlore> <sup>[[Invidious]](https://yewtu.be/c/Techlore)</sup>
 
 -   Privacy Guides: <https://privacyguides.org/> <sup>[[Archive.org]](https://web.archive.org/web/https://privacyguides.org/)</sup>
 
--   Privacy Tools*: <https://privacytools.io> <sup>[[Archive.org]](https://web.archive.org/web/https://privacytools.io/)</sup>
+-   Privacy Tools\*: <https://privacytools.io> <sup>[[Archive.org]](https://web.archive.org/web/https://privacytools.io/)</sup>
 
 *Note that these websites could contain affiliate/sponsored content and/or merchandising. This guide does not endorse and is not sponsored by any commercial entity in any way.*
 
@@ -1430,8 +1430,8 @@ Installing the [NoScript](https://noscript.net/) extension will prevent the atta
 -  Release tweet: <https://twitter.com/ma1/status/1557751019945299969> <sup>[[Archive.org]](https://web.archive.org/web/https://twitter.com/ma1/status/1557751019945299969)</sup>
 -  User explanation: <https://noscript.net/usage/#crosstab-identity-leak-protection> <sup>[[Archive.org]](https://web.archive.org/web/https://noscript.net/usage/#crosstab-identity-leak-protection)</sup>
 -  Tor Project Forum Post: <https://forum.torproject.net/t/tor-browser-can-leak-your-identity-through-side-channel-attack/4005/2> <sup>[[Archive.org]](https://web.archive.org/web/https://forum.torproject.net/t/tor-browser-can-leak-your-identity-through-side-channel-attack/4005/2)</sup>
--  NoScript extension for Firefox (Firefox, and other Firefox-based browsers except Tor Browser): https://addons.mozilla.org/en-US/firefox/addon/noscript/
--  NoScript extension for Chromium based browsers (Brave, Chrome, Edge, and other Chromium-based browsers): https://chrome.google.com/webstore/detail/noscript/doojmbjmlfjjnbmnoijecmcbfeoakpjm?hl=en
+-  NoScript extension for Firefox (Firefox, and other Firefox-based browsers except Tor Browser): <https://addons.mozilla.org/en-US/firefox/addon/noscript/>
+-  NoScript extension for Chromium based browsers (Brave, Chrome, Edge, and other Chromium-based browsers): <https://chrome.google.com/webstore/detail/noscript/doojmbjmlfjjnbmnoijecmcbfeoakpjm?hl=en>
 
 ### Alternative to NoScript for all other browsers:
 
@@ -9386,7 +9386,7 @@ You must live by the simple rule that "loose lips sink ships" - but also that th
 
     -   2020, RSA Conference 2020, When Cybercriminals with Good OpSec Attack <https://www.youtube.com/watch?v=zXmZnU2GdVk> <sup>[[Invidious]](https://yewtu.be/watch?v=zXmZnU2GdVk)</sup>
 
-    -   2015, DEF CON 22, Adrian Crenshaw, Dropping Docs on Darknets: How People Got Caught <https://www.youtube.com/watch?v=eQ2OZKitRwc> <sup>[[Invidious]](https://yewtu.be/watch?v=eQ2OZKitRwc)</sup> ([Slides][] <sup>[[Archive.org]](https://web.archive.org/web/https://www.defcon.org/images/defcon-22/dc-22-presentations/Crenshaw/DEFCON-22-Adrian-Crenshaw-Dropping-Docs-on-Darknets-How-People-Got-Caught-UPDATED.pdf)</sup>)
+    -   2015, DEF CON 22, Adrian Crenshaw, Dropping Docs on Darknets: How People Got Caught <https://www.youtube.com/watch?v=eQ2OZKitRwc> <sup>[[Invidious]](https://yewtu.be/watch?v=eQ2OZKitRwc)</sup> ([Slides](https://www.defcon.org/images/defcon-22/dc-22-presentations/Crenshaw/DEFCON-22-Adrian-Crenshaw-Dropping-Docs-on-Darknets-How-People-Got-Caught-UPDATED.pdf) <sup>[[Archive.org]](https://web.archive.org/web/https://www.defcon.org/images/defcon-22/dc-22-presentations/Crenshaw/DEFCON-22-Adrian-Crenshaw-Dropping-Docs-on-Darknets-How-People-Got-Caught-UPDATED.pdf)</sup>)
 
     -   2017, Ochko123 - How the Feds Caught Russian Mega-Carder Roman Seleznev <https://www.youtube.com/watch?v=6Chp12sEnWk> <sup>[[Invidious]](https://yewtu.be/watch?v=6Chp12sEnWk)</sup>
     
@@ -11110,7 +11110,7 @@ Here is a comparison table of one fingerprinting test of various browsers with t
 </tbody>
 </table>
 
--   *: macOS only. **: Windows only.
+-   \*: macOS only. \*\*: Windows only.
 
 Another useful resource to be considered for comparing browsers is: <https://privacytests.org/> <sup>[[Archive.org]](https://web.archive.org/web/https://privacytests.org/)</sup>
 
@@ -12352,7 +12352,7 @@ First, please read this small introduction video to Monero: <https://www.youtube
 
 The anonymity of Monero depends on its crypto algorithms. If you do use Monero from a KYC Exchange. You can be almost certain that you are safe today. But you might not be in the long-term future if Monero algorithms are ever broken[^535] (think Quantum Computing). Do keep in mind that KYC regulations might force operators (such as Crypto Exchanges) to keep your financial records for up to 10 years and that you, therefore, need Monero algorithms to not be broken for the next 10 years as well.
 
-You may want to watch this insightful video for more details: [**https://www.youtube.com/watch?v=j02QoI4ZlnU**][] <sup>[[Invidious]](https://yewtu.be/watch?v=j02QoI4ZlnU)</sup>
+You may want to watch this insightful video for more details: <https://www.youtube.com/watch?v=j02QoI4ZlnU> <sup>[[Invidious]](https://yewtu.be/watch?v=j02QoI4ZlnU)</sup>
 
 Also please consider reading: **<https://github.com/monero-project/monero/blob/master/docs/ANONYMITY_NETWORKS.md#privacy-limitations>** <sup>[[Archive.org]](https://web.archive.org/web/https://github.com/monero-project/monero/blob/master/docs/ANONYMITY_NETWORKS.md#privacy-limitations)</sup>
 
@@ -12372,7 +12372,7 @@ Here are various threat modeling resources if you want to go deeper in threat mo
     - It is used in the making of the Threat Modeling Manifesto: <https://www.threatmodelingmanifesto.org/> <sup>[[Archive.org]](https://web.archive.org/web/https://www.threatmodelingmanifesto.org/)</sup>
 
 ![][1389]
-(Illustration from [LINDDUN2015])
+(Illustration from [LINDDUN2015](https://lirias.kuleuven.be/retrieve/295669)
 
 Here are alternative resources and models if LINDDUN doesn't suit you:
     
@@ -13781,9 +13781,18 @@ Model-specific registers (MSRs) and their configuration bits can also be detecte
   [Appendix B4: Important notes about evil-maid and tampering]: #appendix-b4-important-notes-about-evil-maid-and-tampering
   [Appendix B5: Types of CPU attacks:]: #appendix-b5-types-of-cpu-attacks 
   [References:]: #references
-  [cc-by-nc-4.0]: https://creativecommons.org/licenses/by-nc/4.0/
-  [LINDDUN2015]: https://lirias.kuleuven.be/retrieve/295669
-  [https://matrix.to/#/#anonymity:matrix.org]: https://matrix.to/#/
+  [Tor over VPN]: #tor-over-vpn
+  [The Detached Headers Way]: #the-detached-headers-way
+  [The Veracrypt Way]: #the-veracrypt-way
+  [Route A and B: Simple Encryption using Veracrypt (Windows tutorial)]: #route-a-and-b-simple-encryption-using-veracrypt-windows-tutorial
+  [Adversaries (threats)]: #threats
+  [Virtualbox Hardening recommendations]: #virtualbox-hardening-recommendations
+  [Hardening Linux]: #hardening-linux
+  [Hardening macOS]: #hardening-macos
+  [Note about plausible deniability on Linux]: #note-about-plausible-deniability-on-linux
+  [Online Phone Number (less recommended)]: #online-phone-number
+  [Extra Tools Cleaning]: #extra-tools-cleaning
+  [Printing Watermarking]: #printing-watermarking
   [38]: media/image1.jpeg
   [39]: media/image2.jpeg
   [40]: media/image3.jpeg
@@ -13794,68 +13803,47 @@ Model-specific registers (MSRs) and their configuration bits can also be detecte
   [67]: media/image8.jpeg
   [68]: media/image9.jpeg
   [69]: media/image10.jpeg
-  [96]: https://archive.ph/iuowI
   [113]: media/image11.jpeg
   [115]: media/image12.jpeg
   [133]: media/image13.jpeg
   [142]: media/image14.jpeg
-  [143]: https://scribe.rip/@somdevsangwan/unblurring-images-for-osint-and-more-part-1-5ee36db6a70b
-  [145]: https://scribe.rip/@somdevsangwan/deblurring-images-for-osint-part-2-ba564af8eb5d
   [147]: media/image15.jpeg
   [150]: media/image16.jpeg
   [171]: media/image17.jpeg
   [220]: media/image18.jpeg
-  [228]: http://cryptonx6nsmspsnpicuihgmbbz3qvro4na35od3eht4vojdo7glm6yd.onion
   [246]: media/image19.jpeg
-  [Tor over VPN]: #tor-over-vpn
   [259]: media/image20.jpeg
   [260]: media/image21.jpeg
-  [The Detached Headers Way]: #the-detached-headers-way
-  [The Veracrypt Way]: #the-veracrypt-way
-  [Route A and B: Simple Encryption using Veracrypt (Windows tutorial)]: #route-a-and-b-simple-encryption-using-veracrypt-windows-tutorial
   [305]: media/image22.jpeg
   [306]: #_Appendix_C:_Windows
   [310]: media/image23.jpeg
   [311]: media/image24.jpeg
   [313]: media/image25.jpeg
   [314]: media/image26.jpeg
-  [Adversaries (threats)]: #threats
   [330]: media/image27.jpeg
   [331]: media/image28.jpeg
-  [Virtualbox Hardening recommendations]: #virtualbox-hardening-recommendations
-  [Hardening Linux]: #hardening-linux
-  [Hardening macOS]: #hardening-macos
   [356]: media/image29.jpeg
   [357]: media/image30.jpeg
   [358]: media/image31.jpeg
   [366]: media/image32.jpeg
   [367]: media/image33.jpeg
-  [Note about plausible deniability on Linux]: #note-about-plausible-deniability-on-linux
   [388]: media/image34.jpeg
   [389]: media/image35.jpeg
-  [393]: http://vww6ybal4bd7szmgncyruucpgfkqahzddi37ktceo3ah7ngmcopnpyyd.onion/
   [394]: media/image36.jpeg
   [395]: media/image37.jpeg
   [396]: media/image38.jpeg
-  [Online Phone Number (less recommended)]: #online-phone-number
   [402]: media/image39.jpeg
   [450]: media/image40.jpeg
-  [462]: http://lldan5gahapx5k7iafb3s4ikijc4ni7gx5iywdflkba5y2ezyg6sjgyd.onion/
   [482]: media/image41.jpeg
   [483]: media/image42.jpeg
   [484]: media/image43.jpeg
   [487]: media/image44.jpeg
-  [Extra Tools Cleaning]: #extra-tools-cleaning
   [501]: media/image45.jpeg
   [506]: media/image46.jpeg
-  [519]: https://web.archive.org/web/https://0xacab.org/jvoisin/mat2
   [520]: media/image47.jpeg
-  [Slides]: https://www.defcon.org/images/defcon-22/dc-22-presentations/Crenshaw/DEFCON-22-Adrian-Crenshaw-Dropping-Docs-on-Darknets-How-People-Got-Caught-UPDATED.pdf
-  [559]: http://thgtoa7imksbg7rit4grgijl2ef6kc7b56bp56pmtta4g354lydlzkqd.onion/donations.html
   [560]: media/image48.jpeg
   [561]: media/image49.jpeg
   [562]: media/image50.jpeg
-  [Printing Watermarking]: #printing-watermarking
   [629]: media/image51.jpeg
   [632]: media/image52.jpeg
   [685]: media/image53.jpeg
@@ -13864,6 +13852,5 @@ Model-specific registers (MSRs) and their configuration bits can also be detecte
   [689]: media/image56.png
   [690]: media/image57.png
   [698]: media/image58.jpeg
-  [745]: https://web.archive.org/web/https://www.threatmodelingmanifesto.org/
-  [825]: https://scribe.rip/@brannondorsey/wi-fi-is-broken-3f6054210fa5
   [1389]: media/image59.png
+ 
