@@ -385,7 +385,7 @@ Finally note that this guide does mention and even recommends various commercial
 -   [Appendix B3: Threat modeling resources]
 -   [Appendix B4: Important notes about evil-maid and tampering]
 -   [Appendix B5: Types of CPU attacks:]
--   [Appendix B6: Warning for using Orbot on Android]: #appendix-b6-warning-for-using-orbot-on-android 
+-   [Appendix B6: Warning for using Orbot on Android] 
 -   [References:]
 
 # Pre-requisites and limitations:
