@@ -385,6 +385,7 @@ Finally note that this guide does mention and even recommends various commercial
 -   [Appendix B3: Threat modeling resources]
 -   [Appendix B4: Important notes about evil-maid and tampering]
 -   [Appendix B5: Types of CPU attacks:]
+-   [Appendix B6: Warning for using Orbot on Android]: #appendix-b6-warning-for-using-orbot-on-android 
 -   [References:]
 
 # Pre-requisites and limitations:
@@ -2148,6 +2149,8 @@ If you are extra paranoid, use the "Safest" level by default and consider downgr
 However, the Safer level should be used with some extra precautions while using some websites: see [Appendix A5: Additional browser precautions with JavaScript enabled].
 
 Now, you are really done, and you can now surf the web anonymously from your Android device.
+
+**Please see** [Warning for using Orbot on Android][Appendix B6: Warning for using Orbot on Android].
 
 ### iOS:
 
@@ -10402,7 +10405,9 @@ When conducting sensitive activities, remember that:
 
     -   Warning: consider that sensor data itself can also be reliably used to track you[^468]'[^469].
 
--   **Consider leaving your smart devices at home online and doing something (watching YouTube/Netflix or something similar) instead of taking them with you powered off. This will mitigate tracking efforts but also create digital traces that could indicate you were at home.**
+-   Consider leaving your smart devices at home online and doing something (watching YouTube/Netflix or something similar) instead of taking them with you powered off. This will mitigate tracking efforts but also create digital traces that could indicate you were at home.
+
+    -   **This could also include your car which could for example have a cell network device (including at least an IMEI) and a functionality to call emergency services**
 
 Additionally, if using a smartphone as a burner, know that they send a lot of diagnostics by default. Enough to potentially identify you based on your device usage patterns (a technique known as biometric profiling). You should avoid using your burner unless absolutely necessary, to minimize the information that can be collected and used to identify you.
 
@@ -10416,11 +10421,11 @@ Additionally, if using a smartphone as a burner, know that they send a lot of di
 
 -   **Sky ECC: <https://en.wikipedia.org/wiki/Sky_ECC>** <sup>[[Wikiless]](https://wikiless.org/wiki/Sky_ECC)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Sky_ECC)</sup>
 
-**You should never rely on some external commercial service to protect your anonymity.**
+**You should never rely on an external commercial service to ensure your first line of anonymity. But you will see that paid services can still be used later from an already anonymous identity if bought anonymously while observing good operational security.**
 
 # Appendix O: Getting an anonymous VPN/Proxy
 
-If you follow my advice, you will also need a VPN subscription but this time you will need an anonymous one that cannot be tied to you by the financial system. Meaning you will need to buy a VPN subscription with cash or a reasonably private cryptocurrency (Monero). You will later use this VPN to connect to the various services anonymously but never directly from your IP.
+If you follow our advice, you will also need a VPN subscription but this time you will need an anonymous one that cannot be tied to you by the financial system. Meaning you will need to buy a VPN subscription with cash or a reasonably private cryptocurrency (for example Monero). You will later be able to use this VPN to connect to various services anonymously but **never directly from your IP**. This VPN can never be used in any other non-anonymous context without jeopardzing your anonymity.
 
 There are, two viable options:
 
@@ -12413,6 +12418,22 @@ Model-specific registers (MSRs) and their configuration bits can also be detecte
 - [SQUIP](https://www.nextplatform.com/2022/08/11/squip-side-channel-attack-rattles-amds-zen-cores/) <sup>[[Archive.org]](https://web.archive.org/web/20220812082548/https://www.nextplatform.com/2022/08/11/squip-side-channel-attack-rattles-amds-zen-cores/)</sup> - Scheduler Queue Usage via Interface Probing. All of AMD's Zen CPUs are vulnerable to a medium-severity flaw which can allow threat actors to run side-channel attacks.
 - [Hertzbleed](https://www.schneier.com/blog/archives/2022/06/hertzbleed-a-new-side-channel-attack.html) <sup>[[Archive.org]](https://web.archive.org/web/20220712000058/https://www.schneier.com/blog/archives/2022/06/hertzbleed-a-new-side-channel-attack.html)</sup> - Deducing cryptographic keys by analyzing power consumption has long been an attack, but it’s not generally viable because measuring power consumption is often hard. This new attack measures power consumption by measuring time, making it easier to exploit.
 - [Retbleed](https://www.bleepingcomputer.com/news/security/new-retbleed-speculative-execution-cpu-attack-bypasses-retpoline-fixes/) <sup>[[Archive.org]](https://web.archive.org/web/20220804151557/https://www.bleepingcomputer.com/news/security/new-retbleed-speculative-execution-cpu-attack-bypasses-retpoline-fixes/)</sup> - Retbleed focuses on return instructions, which are part of the retpoline software mitigation against the speculative execution class of attacks that became known starting early 2018, with Spectre.
+    
+# Appendix B6: Warning for using Orbot on Android
+
+While this is often misunderstood, Orbot on Android does not make your "Tor-Enabled Apps" go through Tor if you add them to the list. Orbot is acting as a device-wide VPN or (also known as a transparent proxy). The list of apps using Orbot is a whitelist. This list will not make some apps magically use Tor and unchecked ones use the clear-net. This only ensures the device-wide VPN is using Tor to route traffic. This means that Orbot can only control what app can access the VPN it creates. Other apps will lose connectivity.
+
+What is important to know is that, if you launch an app (or Android does it automatically) while Orbot is not running, the app will just use the normal network, without involving Orbot (with the exception of some apps supporting a proxy Orbot).
+
+Additionally, you should not be surprised by Tor Browser not working when using Orbot in VPN mode, as the Tor design does not allow "Tor over Tor" (you cannot re-enter the Tor network from a Tor exit node).
+
+This is explained rather well by Alexander Færøy, who is a core developer at the Tor Project, in their [TorifyHOWTO: Tor over Tor](https://gitlab.torproject.org/legacy/trac/-/wikis/doc/TorifyHOWTO#tor-over-tor).
+
+"When using a transparent proxy, it is possible to start a Tor session from the client as well as from the transparent proxy (read the warning!), creating a "Tor over Tor" scenario. Doing so produces undefined and potentially unsafe behavior. In theory, however, you can get six hops instead of three, but it is not guaranteed that you'll get three different hops - you could end up with the same hops, maybe in reverse or mixed order. It is not clear if this is safe. It has never been discussed. You can choose an entry/exit point, but you get the best security that Tor can provide when you leave the route selection to Tor; overriding the entry / exit nodes can mess up your anonymity in ways we don't understand. Therefore Tor over Tor usage is highly discouraged."
+
+And from [a post](https://tor.stackexchange.com/questions/427/is-running-tor-over-tor-dangerous) on the Tor Stack Exchange:
+
+"The danger (beyond the performance hit) which keeps me from running Tor over Tor has to do with timing and congestion measurements. Adversaries watching your traffic at the exit(s) of your circuits have a better chance of linking your Whonix activity with your [Tor Browser Bundle] activity when those shared circuits slow down or drop packets at the same time. This can happen without Tor over Tor when your instances use a common upstream link. The linkage will be made tighter and more explicit if you run the Whonix Tor traffic through your TBB SOCKS5 Tor circuits. This tighter linkage raises the danger of successful correlation."
 
 ---
 
@@ -13780,6 +13801,7 @@ Model-specific registers (MSRs) and their configuration bits can also be detecte
   [Appendix B3: Threat modeling resources]: #appendix-b3-threat-modeling-resources
   [Appendix B4: Important notes about evil-maid and tampering]: #appendix-b4-important-notes-about-evil-maid-and-tampering
   [Appendix B5: Types of CPU attacks:]: #appendix-b5-types-of-cpu-attacks 
+  [Appendix B6: Warning for using Orbot on Android]: #appendix-b6-warning-for-using-orbot-on-android 
   [References:]: #references
   [Tor over VPN]: #tor-over-vpn
   [The Detached Headers Way]: #the-detached-headers-way
@@ -13853,4 +13875,3 @@ Model-specific registers (MSRs) and their configuration bits can also be detecte
   [690]: media/image57.png
   [698]: media/image58.jpeg
   [1389]: media/image59.png
- 
