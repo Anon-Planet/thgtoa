@@ -820,7 +820,7 @@ The IMEI and IMSI can be traced back to you in at least six ways:
 
 Here is also a good YouTube video on this topic: DEFCON Safe Mode - Cooper Quintin - Detecting Fake 4G Base Stations in Real-Time <https://www.youtube.com/watch?v=siCk4pGGcqA> <sup>[[Invidious]](https://yewtu.be/watch?v=siCk4pGGcqA)</sup>
 
-**For these reasons, it is crucial to get dedicated an anonymous phone number and/or an anonymous burner phone with an anonymous pre-paid sim card that is not tied to you in any way (past or present) for conducting sensitive activities (See more practical guidance in [Getting an anonymous Phone number][Getting an anonymous Phone number:] section).**
+ **For these reasons, it is crucial to get dedicated an anonymous phone number and/or an anonymous burner phone with an anonymous pre-paid sim card that is not tied to you in any way (past or present) for conducting sensitive activities. It is also possible get an anonymous pre-paid but preferably dedicated number from specific free and paid online services accepting anonymous cryptocurrencies like Monero (Get more practical guidance here: [Getting an anonymous Phone number][Getting an anonymous Phone number:]).**
 
 While there are some smartphones manufacturers like Purism with their Librem series[^98] who claim to have your privacy in mind, they still do not allow IMEI randomization which we believe is a key anti-tracking feature that should be provided by such manufacturers. While this measure will not prevent IMSI tracking within the SIM card, it would at least allow you to keep the same "burner phone" and only switch SIM cards instead of having to switch both for privacy.
 
