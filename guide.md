@@ -10405,7 +10405,7 @@ When conducting sensitive activities, remember that:
 
     -   Warning: consider that sensor data itself can also be reliably used to track you[^468]'[^469].
 
--   Consider leaving your smart devices at home online and doing something (watching YouTube/Netflix or something similar) instead of taking them with you powered off. This will mitigate tracking efforts but also create digital traces that could indicate you were at home.
+    -   Consider leaving your smart devices at home online and doing something (watching YouTube/Netflix or something similar) instead of taking them with you powered off. This will mitigate tracking efforts but also create digital traces that could indicate you were at home.
 
     -   **This could also include your car which could for example have a cell network device (including at least an IMEI) and a functionality to call emergency services**
 
