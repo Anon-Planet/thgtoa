@@ -1295,7 +1295,7 @@ Pictures/Videos often contain visible watermarks indicating who is the owner/cre
 
 So, if you are a whistleblower and thinking about leaking some picture/audio/video file. Think twice. There are chances that those might contain invisible watermarking within them that would include information about you as a viewer. Such watermarks can be enabled with a simple switch in like Zoom (Video[^223] or Audio[^224]) or with extensions[^225] for popular apps such as Adobe Premiere Pro. These can be inserted by various content management systems.
 
-For a recent example where someone leaking a Zoom meeting recording was caught because it was watermarked: <https://theintercept.com/2021/01/18/leak-zoom-meeting/> <sup>[[Tor Mirror]](https://27m3p2uv7igmj6kvd4ql3cct5h3sdwrsajovkkndeufumzyfhlfev4qd.onion/2021/01/18/leak-zoom-meeting/)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://theintercept.com/2021/01/18/leak-zoom-meeting/)</sup>
+For a recent example where someone leaking a Zoom meeting recording was caught because it was watermarked: <https://theintercept.com/2021/01/18/leak-zoom-meeting/> <sup>[[Tor Mirror]](http://27m3p2uv7igmj6kvd4ql3cct5h3sdwrsajovkkndeufumzyfhlfev4qd.onion/2021/01/18/leak-zoom-meeting/)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://theintercept.com/2021/01/18/leak-zoom-meeting/)</sup>
 
 Such watermarks can be inserted by various products[^226]'[^227]'[^228]'[^229] using Steganography[^230] and can resist compression[^231] and re-encoding[^232]'[^233].
 
@@ -6927,7 +6927,7 @@ Unfortunately, you will be extremely limited with that account and to do anythin
 
 -   Will they require a phone number? Maybe. This depends on the IP you are coming from. If you come from Tor, it is likely. From a VPN, it is less likely.
 
--   Can you create accounts through Tor? Yes, but highly likely that a phone number will be required when only an e-mail or a captcha will be required over a VPN. They even have a ".onion" address at <https://protonmailrmez3lotccipshtkleegetolb73fuirgj7r4o4vfu7ozyd.onion/>.
+-   Can you create accounts through Tor? Yes, but highly likely that a phone number will be required when only an e-mail or a captcha will be required over a VPN. They even have a ".onion" address at <http://protonmailrmez3lotccipshtkleegetolb73fuirgj7r4o4vfu7ozyd.onion/>.
 
 You obviously need an e-mail for your online identity and disposable e-mails are pretty much banned everywhere.
 
@@ -7679,7 +7679,7 @@ Finally, Open-Source apps should always be preferred because they allow third pa
 <li id="fn8" role="doc-endnote"><p>Telegram Documentation, MTProto Mobile Protocol <a href="https://core.telegram.org/mtproto">https://core.telegram.org/mtproto</a> <a href="https://web.archive.org/web/https://core.telegram.org/mtproto"><sup>[Archive.org]</sup></a><a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn9" role="doc-endnote"><p>Wikipedia, Telegram Security Breaches, <a href="https://en.wikipedia.org/wiki/Telegram_(software)#Security_breaches">https://en.wikipedia.org/wiki/Telegram_(software)#Security_breaches</a> <a href="https://wikiless.org/wiki/Telegram_(software)"><sup>[Wikiless]</sup></a> <a href="https://web.archive.org/web/https://en.wikipedia.org/wiki/Telegram_(software)#Security_breaches"><sup>[Archive.org]</sup></a><a href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn10" role="doc-endnote"><p>TechCrunch, Maybe we shouldn’t use Zoom after all, <a href="https://techcrunch.com/2020/03/31/zoom-at-your-own-risk/">https://techcrunch.com/2020/03/31/zoom-at-your-own-risk/</a> <a href="https://web.archive.org/web/https://techcrunch.com/2020/03/31/zoom-at-your-own-risk/"><sup>[Archive.org]</sup></a><a href="#fnref10" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn11" role="doc-endnote"><p>The Incercept, Zoom Meetings Aren’t End-to-End Encrypted, Despite Misleading Marketing <a href="https://theintercept.com/2020/03/31/zoom-meeting-encryption/">https://theintercept.com/2020/03/31/zoom-meeting-encryption/</a> <a href="https://27m3p2uv7igmj6kvd4ql3cct5h3sdwrsajovkkndeufumzyfhlfev4qd.onion/2020/03/31/zoom-meeting-encryption/"><sup>[Tor Mirror]</sup></a> <a href="https://web.archive.org/web/https://theintercept.com/2020/03/31/zoom-meeting-encryption/"><sup>[Archive.org]</sup></a><a href="#fnref11" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn11" role="doc-endnote"><p>The Incercept, Zoom Meetings Aren’t End-to-End Encrypted, Despite Misleading Marketing <a href="https://theintercept.com/2020/03/31/zoom-meeting-encryption/">https://theintercept.com/2020/03/31/zoom-meeting-encryption/</a> <a href="http://27m3p2uv7igmj6kvd4ql3cct5h3sdwrsajovkkndeufumzyfhlfev4qd.onion/2020/03/31/zoom-meeting-encryption/"><sup>[Tor Mirror]</sup></a> <a href="https://web.archive.org/web/https://theintercept.com/2020/03/31/zoom-meeting-encryption/"><sup>[Archive.org]</sup></a><a href="#fnref11" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn12" role="doc-endnote"><p>Serpentsec, Secure Messaging: Choosing a chat app <a href="https://web.archive.org/web/https://serpentsec.1337.cx/secure-messaging-choosing-a-chat-app">https://web.archive.org/web/https://serpentsec.1337.cx/secure-messaging-choosing-a-chat-app</a><a href="#fnref12" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn13" role="doc-endnote"><p>Berty, Development, <a href="https://berty.tech">https://berty.tech</a><a href="#fn13" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn14" role="doc-endnote"><p>Tox Handshake Vulnerable to KCI, <a href="https://github.com/TokTok/c-toxcore/issues/426">https://github.com/TokTok/c-toxcore/issues/426</a><a href="#fn13" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
@@ -12003,7 +12003,7 @@ Personally, my favorites are:
 
 Note that some of those have a convenient ".onion" address:
 
--   DuckDuckGo: <https://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/>
+-   DuckDuckGo: <http://duckduckgogg42xjoc72x3sjasowoarfbgcmvfimaftt6twagswzczad.onion/>
 
 In the end, we were often not satisfied with the results of both those search engines and still ended up on Bing or Google.
 
@@ -12602,7 +12602,7 @@ Model-specific registers (MSRs) and their configuration bits can also be detecte
 
 [^92]: Apple, Transparency Report, Device Requests <https://www.apple.com/legal/transparency/device-requests.html> <sup>[[Archive.org]](https://web.archive.org/web/https://www.apple.com/legal/transparency/device-requests.html)</sup>
 
-[^93]: The Intercept, How Cops Can Secretly Track Your Phone <https://theintercept.com/2020/07/31/protests-surveillance-stingrays-dirtboxes-phone-tracking/> <sup>[[Tor Mirror]](https://27m3p2uv7igmj6kvd4ql3cct5h3sdwrsajovkkndeufumzyfhlfev4qd.onion/2020/07/31/protests-surveillance-stingrays-dirtboxes-phone-tracking/)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://theintercept.com/2020/07/31/protests-surveillance-stingrays-dirtboxes-phone-tracking/)</sup>
+[^93]: The Intercept, How Cops Can Secretly Track Your Phone <https://theintercept.com/2020/07/31/protests-surveillance-stingrays-dirtboxes-phone-tracking/> <sup>[[Tor Mirror]](http://27m3p2uv7igmj6kvd4ql3cct5h3sdwrsajovkkndeufumzyfhlfev4qd.onion/2020/07/31/protests-surveillance-stingrays-dirtboxes-phone-tracking/)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://theintercept.com/2020/07/31/protests-surveillance-stingrays-dirtboxes-phone-tracking/)</sup>
 
 [^94]: Wikipedia, IMSI Catcher <https://en.wikipedia.org/wiki/IMSI-catcher> <sup>[[Wikiless]](https://wikiless.org/wiki/IMSI-catcher)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/IMSI-catcher)</sup>
 
@@ -12782,7 +12782,7 @@ Model-specific registers (MSRs) and their configuration bits can also be detecte
 
 [^182]: Washington Post, Huawei tested AI software that could recognize Uighur minorities and alert police, report says <https://www.washingtonpost.com/technology/2020/12/08/huawei-tested-ai-software-that-could-recognize-uighur-minorities-alert-police-report-says/> <sup>[[Archive.org]](https://web.archive.org/web/https://www.washingtonpost.com/technology/2020/12/08/huawei-tested-ai-software-that-could-recognize-uighur-minorities-alert-police-report-says/)</sup>
 
-[^183]: The Intercept, How a Facial Recognition Mismatch Can Ruin Your Life <https://theintercept.com/2016/10/13/how-a-facial-recognition-mismatch-can-ruin-your-life/> <sup>[[Tor Mirror]](https://27m3p2uv7igmj6kvd4ql3cct5h3sdwrsajovkkndeufumzyfhlfev4qd.onion/2016/10/13/how-a-facial-recognition-mismatch-can-ruin-your-life/)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://theintercept.com/2016/10/13/how-a-facial-recognition-mismatch-can-ruin-your-life/)</sup>
+[^183]: The Intercept, How a Facial Recognition Mismatch Can Ruin Your Life <https://theintercept.com/2016/10/13/how-a-facial-recognition-mismatch-can-ruin-your-life/> <sup>[[Tor Mirror]](http://27m3p2uv7igmj6kvd4ql3cct5h3sdwrsajovkkndeufumzyfhlfev4qd.onion/2016/10/13/how-a-facial-recognition-mismatch-can-ruin-your-life/)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://theintercept.com/2016/10/13/how-a-facial-recognition-mismatch-can-ruin-your-life/)</sup>
 
 [^184]: Vice, Facial Recognition Failures Are Locking People Out of Unemployment Systems <https://www.vice.com/en/article/5dbywn/facial-recognition-failures-are-locking-people-out-of-unemployment-systems> <sup>[[Archive.org]](https://web.archive.org/web/https://www.vice.com/en/article/5dbywn/facial-recognition-failures-are-locking-people-out-of-unemployment-systems)</sup>
 
@@ -12838,7 +12838,7 @@ Model-specific registers (MSRs) and their configuration bits can also be detecte
 
 [^210]: BBC, China social media: WeChat and the Surveillance State <https://www.bbc.com/news/blogs-china-blog-48552907> <sup>[[Archive.org]](https://web.archive.org/web/https://www.bbc.com/news/blogs-china-blog-48552907)</sup>
 
-[^211]: The Intercept, Revealed: Massive Chinese Police Database <https://theintercept.com/2021/01/29/china-uyghur-muslim-surveillance-police/> <sup>[[Tor Mirror]](https://27m3p2uv7igmj6kvd4ql3cct5h3sdwrsajovkkndeufumzyfhlfev4qd.onion/2021/01/29/china-uyghur-muslim-surveillance-police/)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://theintercept.com/2021/01/29/china-uyghur-muslim-surveillance-police/)</sup>
+[^211]: The Intercept, Revealed: Massive Chinese Police Database <https://theintercept.com/2021/01/29/china-uyghur-muslim-surveillance-police/> <sup>[[Tor Mirror]](http://27m3p2uv7igmj6kvd4ql3cct5h3sdwrsajovkkndeufumzyfhlfev4qd.onion/2021/01/29/china-uyghur-muslim-surveillance-police/)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://theintercept.com/2021/01/29/china-uyghur-muslim-surveillance-police/)</sup>
 
 [^212]: Wikipedia, Sandbox <https://en.wikipedia.org/wiki/Sandbox_(computer_security)> <sup>[[Wikiless]](https://wikiless.org/wiki/Sandbox_(computer_security))</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Sandbox_(computer_security))</sup>
 
@@ -13470,7 +13470,7 @@ Model-specific registers (MSRs) and their configuration bits can also be detecte
 
 [^529]: ZDnet, FBI recommends passphrases over password complexity <https://www.zdnet.com/article/fbi-recommends-passphrases-over-password-complexity/> <sup>[[Archive.org]](https://web.archive.org/web/https://www.zdnet.com/article/fbi-recommends-passphrases-over-password-complexity/)</sup>
 
-[^530]: The Intercept, Passphrases That You Can Memorize --- But That Even the NSA Can't Guess <https://theintercept.com/2015/03/26/passphrases-can-memorize-attackers-cant-guess/> <sup>[[Tor Mirror]](https://27m3p2uv7igmj6kvd4ql3cct5h3sdwrsajovkkndeufumzyfhlfev4qd.onion/2015/03/26/passphrases-can-memorize-attackers-cant-guess/)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://theintercept.com/2015/03/26/passphrases-can-memorize-attackers-cant-guess/)</sup>
+[^530]: The Intercept, Passphrases That You Can Memorize --- But That Even the NSA Can't Guess <https://theintercept.com/2015/03/26/passphrases-can-memorize-attackers-cant-guess/> <sup>[[Tor Mirror]](http://27m3p2uv7igmj6kvd4ql3cct5h3sdwrsajovkkndeufumzyfhlfev4qd.onion/2015/03/26/passphrases-can-memorize-attackers-cant-guess/)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://theintercept.com/2015/03/26/passphrases-can-memorize-attackers-cant-guess/)</sup>
 
 [^531]: Proton Blog, Let's settle the password vs. passphrase debate once and for all <https://proton.me/blog/protonmail-com-blog-password-vs-passphrase/> <sup>[[Archive.org]](https://web.archive.org/web/https://proton.me/blog/protonmail-com-blog-password-vs-passphrase)</sup>
 
