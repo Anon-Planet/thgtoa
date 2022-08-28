@@ -14,7 +14,7 @@ You will find here the rules for the rooms part of the PSA Community. These rule
 - [Ban Appeals](#appeals)
 
 #### General default rules for PSA rooms **unless specific rules are mentioned below**:<a name="general"></a>
-These are currently only enforced on **Anonymity** and **Security**, and not applied on rooms  with their own ruleset below.
+These are currently enforced on **```#anonymity:matrix.org```**, **```#security:matrix.org```**, **```#OSINT:matrix.org```**, and not applied on rooms with their own ruleset below.
 
 - Keep it legal
 - English only
@@ -29,24 +29,24 @@ These are currently only enforced on **Anonymity** and **Security**, and not app
 - No upload of any non-media files (binaries, executables, compressed files...)
 - No voice messages (these will be auto-deleted by the bots)
 - **Avoid drifting too much off-topic or move to an off-topic room like #bnonymity**
-- **Any discussion about AnonyPla / Lena whereabouts is only tolerated, to an extent, in the #Bnonymity room.**
+- **Any discussion about AnonyPla / Lena whereabouts is only tolerated, to an extent, in the ```#Bnonymity:matrix.org``` room.**
 
 Some exceptions can apply, see the [exceptions](#exceptions) section at the bottom of this page. Violations will be handled at the discretion of the acting moderator.
 
-#### Rules for Nothing To Hide Privacy:<a name="nth"></a>
+#### Rules for Nothing To Hide Privacy (```#privacy:matrix.org```):<a name="nth"></a>
 - Zero tolerance for discussion of how to commit illicit acts
 - LIMIT POLITICAL DISCUSSION TO PRIVACY-RELATED TOPICS ONLY
 - Do not dox others
 - No suspicious links or uploading of non-image binary files
 - Be respectful
 
-#### Rules for Modern Cryptography:<a name="moderncrypto"></a>
-See <https://anonymousplanet-ng.org/moderncrypto-rules.html>
+#### Rules for Modern Cryptography (```#moderncrypto:gnuradio.org```):<a name="moderncrypto"></a>
+See <https://anonymousplanet.org/moderncrypto-rules.html>
 
 #### Rules for OS Security:<a name="ossecurity"></a>
 See <https://artemislena.eu/coc.html>
 
-#### Rules for Bnonymity:<a name="bnonymity"></a>
+#### Rules for Bnonymity (```#bnonymity:matrix.org```):<a name="bnonymity"></a>
 - Keep it legal (seriously)
 - English only (no Russian, no Chinese, English only)
 - Be "somewhat" respectful to each other
@@ -64,11 +64,11 @@ See <https://artemislena.eu/coc.html>
 
 #### PSA Bans:<a name="psabans"></a>
 Currently, the following rooms are sharing a common PSA banlist for serious offenders:
-- #Anonymity
-- #Security
-- #Bnonymity
-- #OS-Security
-- #ModernCrypto
+- ```#Anonymity:matrix.org```
+- ```#Security:matrix.org```
+- ```#Bnonymity:matrix.org```
+- ```#OSINT:matrix.org```
+- ```#ModernCrypto:gnuradio.org```
 
 This means that those PSA bans are effectively applied on all those rooms and can be issued by admins of these rooms. See the next section for information about appeals.
 

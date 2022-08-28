@@ -18,13 +18,13 @@ This guide is an open-source non-profit initiative, [licensed](LICENSE.html) und
 - Raw [Markdown](https://github.com/Anon-Planet/thgtoa/raw/master/guide.md) (references do not work when viewing this way).
 
 Mirrors:
-- **Coming soon**
+- Tor Onion Mirror: <http://thgtoallkcxrdv37u6knsc3pumk6cq6lqmcqlw3j5vkmyahkxive4jyd.onion>
 
 The guide and all the files are also readily available on Archive.org and Archive.today:
 
-- Archive.org: <https://web.archive.org/web/https://anonymousplanet-ng.org/>
-- Archive.today: <https://archive.ph/anonymousplanet-ng.org/>
-- Archive.today over Tor: <http://archiveiya74codqgiixo33q62qlrqtkgmcitqx5u2oeqnmn5bpcbiyd.onion/anonymousplanet-ng.org/>
+- Archive.org: <https://web.archive.org/web/https://anonymousplanet.org/>
+- Archive.today: <https://archive.ph/anonymousplanet.org/>
+- Archive.today over Tor: <http://archiveiya74codqgiixo33q62qlrqtkgmcitqx5u2oeqnmn5bpcbiyd.onion/anonymousplanet.org/>
 
 If you want to access/see the original/legacy project, please see the [legacy resources](legacy.html) page.
 

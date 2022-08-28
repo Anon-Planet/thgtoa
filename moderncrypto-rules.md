@@ -2,7 +2,7 @@
 
 This page documents the rules for my Matrix room, `#moderncrypto:gnuradio.org`.
 
-Modern Crypto is part of the PSA community. See <https://anonymousplanet-ng.org/chatrooms-rules.html>
+Modern Crypto is part of the PSA community. See <https://anonymousplanet.org/chatrooms-rules.html>
 
 ---
 
