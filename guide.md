@@ -12435,19 +12435,19 @@ This is explained rather well by Alexander Færøy, who is a core developer at t
 And from [a post](https://tor.stackexchange.com/questions/427/is-running-tor-over-tor-dangerous) on the Tor Stack Exchange:
 
 "The danger (beyond the performance hit) which keeps me from running Tor over Tor has to do with timing and congestion measurements. Adversaries watching your traffic at the exit(s) of your circuits have a better chance of linking your Whonix activity with your [Tor Browser Bundle] activity when those shared circuits slow down or drop packets at the same time. This can happen without Tor over Tor when your instances use a common upstream link. The linkage will be made tighter and more explicit if you run the Whonix Tor traffic through your TBB SOCKS5 Tor circuits. This tighter linkage raises the danger of successful correlation."
-    
+
 # Appendix B7: Caution about Session Messenger 
-    
+
 Here are our reasons for being cautious about Session messenger in general:
-    
--   The company is based in Australia which has very defavorable privacy laws [^536]' [^537]
--   They also run the Oxen token (cryptocurrency) which to me is a conflict of interest
--   They also run the Lokinet Network which requires Oxen Tokens to run nodes to route Session traffic ... And you need to pay 12K$ to run a node[^538]
--   They dropped critical security features of their protocol (Perfect Forward Secrecy and Deniability)[^418] (which are considered rather essential in most other apps) for "convenience" [^539]
--   Session has been audited[^419] with satisfactory results but that audit does not mention these changes. We also currently lack sufficient information on LokiNet (the Onion Routing Network used by Session) to endorse it. Session is still recommended by some like Techlore[^420].
--   Their funding seems completely opaque
-    
-In short, our opinion is that you may use Session Messenger on iOS due to the absence of a better alternative (such as Briar). But if Briar or another app (maybe Cwtch in the future) becomes available. We recommend going away from session messenger as soon as possible.
+
+-   The company is based in Australia which has very unfavorable privacy laws.[^536]' [^537]
+-   They push their own cryptocurrency, Oxen, a conflict of interest.
+-   They use LokiNet, which requires Oxen to run nodes to route Session traffic, and it costs $12 thousand to run a node.[^538]
+-   They dropped critical security features of their protocol (perfect forward secrecy (PFS) and deniability)[^418] in favor of decentralization.[^539] It would be okay, if the nodes were free to run. This essentially puts their network behind a paywall if you want to run a node, even just to contribute bandwidth to the network like you might with Tor.
+-   Session has been audited[^419] with satisfactory results, but that audit does not mention these changes. We also currently lack sufficient information on LokiNet (the onion routing network used by Session) to endorse it. Session is still recommended by some like Techlore.[^420]
+-   Their funding is completely opaque.
+
+In short, our opinion is that you may use Session Messenger on iOS due to the absence of a better alternative (such as Briar). But if Briar or another app (maybe Cwtch in the future) becomes available, we will recommend going away from Session messenger as soon as possible. It is a last resort.
 
 ---
 
