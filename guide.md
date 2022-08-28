@@ -7503,7 +7503,7 @@ Finally, Open-Source apps should always be preferred because they allow third pa
 <td>Lacks PFS, deniability</td>
 </tr>
 <tr class="odd">
-<td>Signal/Molly</td>
+<td>Signal</td>
 <td>Yes</td>
 <td>No</td>
 <td>Yes</td>
@@ -7667,6 +7667,20 @@ Finally, Open-Source apps should always be preferred because they allow third pa
 <td>No</td>
 <td>Malware risk<a href="#fn17" class="footnote-ref" id="fnref17" role="doc-noteref"><sup>17</sup></a></td>
 </tr>
+<tr class="Even">
+<td>Molly</td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes (strong)</td>
+<td>Yes</td>
+<td>Good</td>
+<td>Phone Required</td>
+<td>Virtualization</td>
+<td>Good</td>
+<td>No</td>
+<td>Requires phone number. Security hardened fork of Signal client.</td>
 </tbody>
 </table>
 <section class="footnotes footnotes-end-of-document" role="doc-endnotes">
