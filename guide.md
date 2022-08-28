@@ -7673,14 +7673,14 @@ Finally, Open-Source apps should always be preferred because they allow third pa
 <td>No</td>
 <td>Yes</td>
 <td>Yes</td>
-<td>Yes (strong)</td>
+<td>Yes (moderate)</td>
 <td>Yes</td>
 <td>Good</td>
 <td>Phone Required</td>
 <td>Virtualization</td>
 <td>Good</td>
 <td>No</td>
-<td>Requires phone number. Security hardened fork of Signal client.</td>
+<td>Requires phone number. Security hardened fork of Signal client. Security may be delayed for up to a week</td>
 </tbody>
 </table>
 <section class="footnotes footnotes-end-of-document" role="doc-endnotes">
