@@ -386,6 +386,7 @@ Finally note that this guide does mention and even recommends various commercial
 -   [Appendix B4: Important notes about evil-maid and tampering]
 -   [Appendix B5: Types of CPU attacks:]
 -   [Appendix B6: Warning for using Orbot on Android] 
+-   [Appendix B7: Caution about Session messenger]
 -   [References:]
 
 # Pre-requisites and limitations:
@@ -7800,7 +7801,7 @@ Any safe options for mobile devices? **Yes, but these are not endorsed/recommend
 
 -   iOS:
 
-    -   Due to the lack of any better option and while it is **normally not recommended**: Session Messenger: <https://getsession.org/> <sup>[[Archive.org]](https://web.archive.org/web/https://getsession.org/)</sup>. Why is it not recommended these days within the privacy community? Well, it is because they recently[^418] dropped two key security features from their protocol: Perfect Forward Secrecy and Deniability which are considered rather essential in most other apps. Yet Session has been audited[^419] with satisfactory results but that audit does not mention these changes. We also currently lack sufficient information on LokiNet (the Onion Routing Network used by Session) to endorse it. Session is still recommended by some like Techlore[^420].
+    -   Due to the lack of any better option and while it is **normally not recommended**: Session Messenger: <https://getsession.org/> <sup>[[Archive.org]](https://web.archive.org/web/https://getsession.org/)</sup>. Why is it not recommended these days within the privacy community? **See: [Appendix B7: Caution about Session messenger][Appendix B7: Caution about Session messenger] to find out why we are cautious about Session Messenger**.
 
 **Note that all the non-native Tor options must be used over Tor for safety (from Tails or a guest OS running behind the Whonix Gateway such as the Whonix Workstation or an Android-x86 VM).**
 
@@ -12447,6 +12448,22 @@ And from [a post](https://tor.stackexchange.com/questions/427/is-running-tor-ove
 
 "The danger (beyond the performance hit) which keeps me from running Tor over Tor has to do with timing and congestion measurements. Adversaries watching your traffic at the exit(s) of your circuits have a better chance of linking your Whonix activity with your [Tor Browser Bundle] activity when those shared circuits slow down or drop packets at the same time. This can happen without Tor over Tor when your instances use a common upstream link. The linkage will be made tighter and more explicit if you run the Whonix Tor traffic through your TBB SOCKS5 Tor circuits. This tighter linkage raises the danger of successful correlation."
 
+# Appendix B7: Caution about Session Messenger 
+
+Here are our reasons for being cautious about Session messenger in general:
+
+-   The company is based in Australia which has very unfavorable privacy laws.[^536]' [^537]
+-   They push their own cryptocurrency, Oxen, which creates a conflict of interest.
+-   They use LokiNet, which requires Oxen to run nodes to route Session traffic, and it costs $12 thousand to run a node.[^538]
+    - The price of running nodes essentially puts their network behind a paywall if you want to run a node, even just to contribute bandwidth to the network like you might with Tor.
+    - Session's developers claim this to be an attempt to prevent [sybil attacks](https://en.wikipedia.org/wiki/Sybil_attack), but many have argued that this only encourages such attacks, by guaranteeing only governments and other well-funded organizations (the people these networks normally try to protect against) will ever have the financial resources to run nodes.
+-   They dropped critical security features of their protocol (perfect forward secrecy (PFS) and deniability)[^418] in favor of long-term message keys and self-deleting cryptographic signatures, which provide much weaker security guarantees. [^539]
+    - This *might* not be as bad, if the nodes are free to run, but they're not.
+-   Session has been audited[^419] with satisfactory results, but that audit does not mention these changes. We also currently lack sufficient information on LokiNet (the onion routing network used by Session) to endorse it. Session is still recommended by some, for example Techlore.[^420]
+-   Their funding is completely opaque.
+
+In short, our opinion is that you may use Session Messenger on iOS due to the absence of a better alternative (such as Briar). But if Briar or another app (maybe Cwtch in the future) becomes available, we will recommend going away from Session messenger as soon as possible. It is a last resort.
+
 ---
 
 # References:
@@ -13514,7 +13531,15 @@ And from [a post](https://tor.stackexchange.com/questions/427/is-running-tor-ove
 [^534]: Wikipedia, Passphrase <https://en.wikipedia.org/wiki/Passphrase#Passphrase_selection> <sup>[[Wikiless]](https://wikiless.org/wiki/Passphrase#Passphrase_selection)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Passphrase#Passphrase_selection)</sup>
 
 [^535]: Monero Research Lab, Evaluating cryptocurrency security and privacy in a post-quantum world <https://github.com/insight-decentralized-consensus-lab/post-quantum-monero/blob/master/writeups/technical_note.pdf> <sup>[[Archive.org]](https://web.archive.org/web/https://github.com/insight-decentralized-consensus-lab/post-quantum-monero/blob/master/writeups/technical_note.pdf)</sup>
+    
+[^536]: Wikipedia, Privacy in Australian Law <https://en.wikipedia.org/wiki/Privacy_in_Australian_law> <sup>[[Wikiless]](https://wikiless.org/wiki/Privacy_in_Australian_law)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Privacy_in_Australian_law)</sup>
 
+[^537]: Parliament of Autralia, Surveillance Legislation Amendment (Identify and Disrupt) Bill 2021, <https://www.aph.gov.au/Parliamentary_Business/Bills_Legislation/Bills_Search_Results/Result?bId=r6623> <sup>[[Archive.org]](https://web.archive.org/web[/https://en.wikipedia.org/wiki/Privacy_in_Australian_law](https://www.aph.gov.au/Parliamentary_Business/Bills_Legislation/Bills_Search_Results/Result?bId=r6623))</sup>
+ 
+[^538]: Lokinet Documentation, Service Nodes, <https://loki.network/service-nodes/> <sup>[[Archive.org]](https://web.archive.org/https://loki.network/service-nodes/)</sup>
+
+[^539]: Session Documentation, Session protocol explained, <https://getsession.org/session-protocol-explained> <sup>[[Archive.org]](https://web.archive.org/[https://loki.network/service-nodes/](https://getsession.org/session-protocol-explained))</sup>
+    
   [Contents:]: #contents
   [Pre-requisites and limitations:]: #pre-requisites-and-limitations
   [Pre-requisites:]: #pre-requisites
@@ -13814,6 +13839,7 @@ And from [a post](https://tor.stackexchange.com/questions/427/is-running-tor-ove
   [Appendix B4: Important notes about evil-maid and tampering]: #appendix-b4-important-notes-about-evil-maid-and-tampering
   [Appendix B5: Types of CPU attacks:]: #appendix-b5-types-of-cpu-attacks 
   [Appendix B6: Warning for using Orbot on Android]: #appendix-b6-warning-for-using-orbot-on-android 
+  [Appendix B7: Caution about Session Messenger]: #appendix-b7-caution-about-session-messenger
   [References:]: #references
   [Tor over VPN]: #tor-over-vpn
   [The Detached Headers Way]: #the-detached-headers-way
