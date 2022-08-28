@@ -12453,10 +12453,13 @@ And from [a post](https://tor.stackexchange.com/questions/427/is-running-tor-ove
 Here are our reasons for being cautious about Session messenger in general:
 
 -   The company is based in Australia which has very unfavorable privacy laws.[^536]' [^537]
--   They push their own cryptocurrency, Oxen, a conflict of interest.
+-   They push their own cryptocurrency, Oxen, which creates a conflict of interest.
 -   They use LokiNet, which requires Oxen to run nodes to route Session traffic, and it costs $12 thousand to run a node.[^538]
--   They dropped critical security features of their protocol (perfect forward secrecy (PFS) and deniability)[^418] in favor of decentralization.[^539] It would be okay, if the nodes were free to run. This essentially puts their network behind a paywall if you want to run a node, even just to contribute bandwidth to the network like you might with Tor.
--   Session has been audited[^419] with satisfactory results, but that audit does not mention these changes. We also currently lack sufficient information on LokiNet (the onion routing network used by Session) to endorse it. Session is still recommended by some like Techlore.[^420]
+    - The price of running nodes essentially puts their network behind a paywall if you want to run a node, even just to contribute bandwidth to the network like you might with Tor.
+    - Session's developers claim this to be an attempt to prevent [sybil attacks](https://en.wikipedia.org/wiki/Sybil_attack), but many have argued that this only encourages such attacks, by guaranteeing only governments and other well-funded organizations (the people these networks normally try to protect against) will ever have the financial resources to run nodes.
+-   They dropped critical security features of their protocol (perfect forward secrecy (PFS) and deniability)[^418] in favor of long-term message keys and self-deleting cryptographic signatures, which provide much weaker security guarantees. [^539]
+    - This *might* not be as bad, if the nodes are free to run, but they're not.
+-   Session has been audited[^419] with satisfactory results, but that audit does not mention these changes. We also currently lack sufficient information on LokiNet (the onion routing network used by Session) to endorse it. Session is still recommended by some, for example Techlore.[^420]
 -   Their funding is completely opaque.
 
 In short, our opinion is that you may use Session Messenger on iOS due to the absence of a better alternative (such as Briar). But if Briar or another app (maybe Cwtch in the future) becomes available, we will recommend going away from Session messenger as soon as possible. It is a last resort.
