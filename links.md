@@ -10,7 +10,7 @@ Some of those resources may, in order to sustain their project, contain or propo
 - Premium content such as ad-free content or updated content
 - Merchandising
 
-**Anonymous Planet does not participate in any sponsoring, adveristing, or affiliate programs for any entity. We only rely on anonymous donations in a closed transparent loop system. Anonymous Planet does not endorse any sponsored/affiliate/premium content that may be present in the links below.**
+**Anonymous Planet does not participate in any sponsoring, endorsement, advertising, or other affiliate programs for any entity. We only rely on anonymous donations in a closed, transparent loop system.**
 
 All the links below are listed in alphabetical order:
 
