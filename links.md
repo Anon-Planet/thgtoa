@@ -7,34 +7,33 @@ Some of those resources may, in order to sustain their project, contain or propo
 - Monetized content through third party platforms (such as YouTube)
 - Affiliate links to commercial services
 - Paid Services such as consultancy
-- Premium content such as ad-free content
+- Premium content such as ad-free content or updated content
 - Merchandising
 
-**anonymousplanet.org does not participate in any sponsoring or affiliate program for any entity. anonymousplanet.org relies only on anonymous donations.**
+**Anonymous Planet does not participate in any sponsoring, adveristing, or affiliate programs for any entity. We only rely on anonymous donations in a closed transparent loop system. Anonymous Planet does not endorse any sponsored/affiliate/premium content that may be present in the links below.**
 
-All the links below are listed in alphabetical order.
+All the links below are listed in alphabetical order:
 
-#### General privacy related projects:
+#### General privacy related projects worth checking out:
 - EFF Surveillance Self-Defense: <https://ssd.eff.org/>
 - Prism-Break: <https://prism-break.org/>
-- Privacy Guides: <https://privacyguides.org>
-- Techlore: <https://techlore.tech> 
-- The New Oil: <https://thenewoil.org> 
+- Privacy Guides: <https://privacyguides.org> 
+- Techlore: <https://techlore.tech> (May contain clearly marked sponsored products/services, premium content, and affiliate links)
+- The New Oil: <https://thenewoil.org> (May contain clearly marked sponsored products/services and affiliate links)
+- PrivacyTools.io: <https://privacytools.io> (May contain clearky marked sponsored product/services and affiliate links)
 
 #### Blogs and personal websites:
 
 - CIA Officer's Blog: <https://officercia.mirror.xyz/>
 - Continuing Ed: <https://edwardsnowden.substack.com/>
 - Madaidan's Insecurities: <https://madaidans-insecurities.github.io/>
+- Seirdy's Home: <https://seirdy.one/>
 
 #### Useful resources:
 
 - KYC? Not me: <https://kycnot.me/>
-- Library Genesis: <https://en.wikipedia.org/wiki/Library_Genesis> <sup>[[Wikiless]][1]</sup> (see their latest known URL in the Wikipedia article)
+- Library Genesis: <https://en.wikipedia.org/wiki/Library_Genesis> <sup>[[Wikiless]](https://wikiless.org/wiki/Library_Genesis)</sup> (see their latest known URL in the Wikipedia article)
 - Real World Onion Sites: <https://github.com/alecmuffett/real-world-onion-sites>
-- Sci-Hub <https://en.wikipedia.org/wiki/Sci-Hub> <sup>[[Wikiless]][2]</sup> (see their latest known URL in the Wikipedia article)
+- Sci-Hub <https://en.wikipedia.org/wiki/Sci-Hub> <sup>[[Wikiless]](https://wikiless.org/wiki/Sci-Hub)</sup> (see their latest known URL in the main Wikipedia article)
 - Terms of Service, Didn't Read: <https://tosdr.org>
 - Whonix Documentation: <https://www.whonix.org/wiki/Documentation>
-
-[1]: https://wikiless.org/wiki/Library_Genesis
-[2]: https://wikiless.org/wiki/Sci-Hub
