@@ -7682,6 +7682,7 @@ Finally, Open-Source apps should always be preferred because they allow third pa
 <td>Good</td>
 <td>No</td>
 <td>Requires phone number. Security hardened fork of Signal client. Security may be delayed for up to a week</td>
+</tr>
 </tbody>
 </table>
 <section class="footnotes footnotes-end-of-document" role="doc-endnotes">
