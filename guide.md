@@ -12373,7 +12373,7 @@ The anonymity of Monero depends on its crypto algorithms. If you do use Monero f
 
 You may want to watch this insightful video for more details: <https://www.youtube.com/watch?v=j02QoI4ZlnU> <sup>[[Invidious]](https://yewtu.be/watch?v=j02QoI4ZlnU)</sup>
 
-Also please consider reading: **<https://github.com/monero-project/monero/blob/master/docs/ANONYMITY_NETWORKS.md#privacy-limitations>** <sup>[[Archive.org]](https://web.archive.org/web/https://github.com/monero-project/monero/blob/master/docs/ANONYMITY_NETWORKS.md#privacy-limitations)</sup>
+Also please consider reading: [Privacy Limitations in Anonymity Networks with Monero](https://github.com/monero-project/monero/blob/master/docs/ANONYMITY_NETWORKS.md#privacy-limitations) <sup>[[Archive.org]](https://web.archive.org/web/https://github.com/monero-project/monero/blob/master/docs/ANONYMITY_NETWORKS.md#privacy-limitations)</sup>
 
 **If you feel extra paranoid and want the highest safety level possible,** see the [Extra-Paranoid anonymous option][Extra-Paranoid anonymous option:].
 
@@ -12383,30 +12383,27 @@ Also please consider reading: **<https://github.com/monero-project/monero/blob/m
 
 Here are various threat modeling resources if you want to go deeper in threat modeling.
 
--   The one we recommend: LINDDUN (Linkability, Identifiability, Non-repudiation, Detectability, Disclosure of information, Unawareness, and Non-compliance) <https://www.linddun.org/> <sup>[[Archive.org]](https://web.archive.org/web/https://www.linddun.org/)</sup>.
-    - Researchers created an online tool to help make your threat model at <https://www.linddun.org/go><sup>[[Archive.org]](https://web.archive.org/web/https://www.linddun.org/go)</sup>.
+-   The one we recommend: LINDDUN <https://www.linddun.org> <sup>[[Archive.org]](https://web.archive.org/web/https://www.linddun.org/)</sup>
+    - Researchers created an online tool to help make your threat model at <https://www.linddun.org/go> <sup>[[Archive.org]](https://web.archive.org/web/https://www.linddun.org/go)</sup>.
     - It is synergistic with STRIDE below.
     - It is focused on privacy but is clearly perfectly suitable for anonymity.
     - It is accessible to all skill levels including beginners (providing many tutorials) but also suitable for highly skilled readers.
     - It is used in the making of the Threat Modeling Manifesto: <https://www.threatmodelingmanifesto.org/> <sup>[[Archive.org]](https://web.archive.org/web/https://www.threatmodelingmanifesto.org/)</sup>
-    - Here are two videos explaining LINDDUN from the designers themselves:
-        - Privacy & prejudice: on privacy threat modeling misconceptions by Kim Wuyts: <https://www.youtube.com/watch?v=zI4SFyq_Xjw> [[Invidious]](https://yewtu.be/watch?v=zI4SFyq_Xjw)</sup>
-        - Privacy Threat Model Using LINDDUN by Kim Wuyts: <https://www.youtube.com/watch?v=C9F8X1j9Zpg> <sup>[[Invidious]](https://yewtu.be/watch?v=C9F8X1j9Zpg>)</sup>
+    - You can read more here: [A Lightweight Approach to Privacy Threat Modeling](https://sion.info/assets/pdf/publications/WuytsIWPE2020.pdf)
+    - Here are two videos from K. Wuyts (imec-DistriNet, KU Leuven) explaining the process:
+        - [Privacy & prejudice: on privacy threat modeling misconceptions](https://www.youtube.com/watch?v=zI4SFyq_Xjw) <sup>[[Invidious]](https://yewtu.be/watch?v=zI4SFyq_Xjw)</sup>
+        - [Privacy Threat Model Using LINDDUN](https://www.youtube.com/watch?v=C9F8X1j9Zpg) <sup>[[Invidious]](https://yewtu.be/watch?v=C9F8X1j9Zpg>)</sup>
 
 ![][1389]
-(Illustration from [LINDDUN2015](https://lirias.kuleuven.be/retrieve/295669)
+(Illustration from [LINDDUN2015](https://lirias.kuleuven.be/retrieve/295669))
 
-Here are alternative resources and models if LINDDUN doesn't suit you:
+Here are alternative resources and methodologies if LINDDUN doesn't suit you:
     
--   Online Operations Security: [https://web.archive.org/web/20210711215728/https://github.com/devbret/online-OPSEC]
-
--   STRIDE <https://en.wikipedia.org/wiki/STRIDE_%28security%29> <sup>[[Wikiless]](https://wikiless.org/wiki/STRIDE_%28security%29)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/STRIDE_%28security%29)</sup>
-
--   PASTA <https://versprite.com/tag/pasta-threat-modeling/> <sup>[[Archive.org]](https://web.archive.org/web/https://versprite.com/tag/pasta-threat-modeling/)</sup>
-    
--   <https://insights.sei.cmu.edu/blog/threat-modeling-12-available-methods/> <sup>[[Archive.org]](https://web.archive.org/web/https://insights.sei.cmu.edu/blog/threat-modeling-12-available-methods/)</sup>
-
--   <https://www.geeksforgeeks.org/threat-modelling/> <sup>[[Archive.org]](https://web.archive.org/web/https://www.geeksforgeeks.org/threat-modelling/)</sup>
+-   Online Operations Security: [https://github.com/devbret/online-OPSEC](https://web.archive.org/web/20210711215728/https://github.com/devbret/online-OPSEC)
+-   Microsoft's STRIDE: <https://en.wikipedia.org/wiki/STRIDE_%28security%29> <sup>[[Wikiless]](https://wikiless.org/wiki/STRIDE_%28security%29)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/STRIDE_%28security%29)</sup>
+-   PASTA: <https://versprite.com/tag/pasta-threat-modeling/> <sup>[[Archive.org]](https://web.archive.org/web/https://versprite.com/tag/pasta-threat-modeling/)</sup>
+-   Threat Modeling: 12 Available Methods: <https://insights.sei.cmu.edu/blog/threat-modeling-12-available-methods> <sup>[[Archive.org]](https://web.archive.org/web/https://insights.sei.cmu.edu/blog/threat-modeling-12-available-methods/)</sup>
+-   Threat Modelling: <https://www.geeksforgeeks.org/threat-modelling/> <sup>[[Archive.org]](https://web.archive.org/web/https://www.geeksforgeeks.org/threat-modelling/)</sup>
 
 # Appendix B4: Important notes about evil-maid and tampering
 
