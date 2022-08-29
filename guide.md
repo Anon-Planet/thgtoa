@@ -12389,6 +12389,9 @@ Here are various threat modeling resources if you want to go deeper in threat mo
     - It is focused on privacy but is clearly perfectly suitable for anonymity.
     - It is accessible to all skill levels including beginners (providing many tutorials) but also suitable for highly skilled readers.
     - It is used in the making of the Threat Modeling Manifesto: <https://www.threatmodelingmanifesto.org/> <sup>[[Archive.org]](https://web.archive.org/web/https://www.threatmodelingmanifesto.org/)</sup>
+    - Here are two videos explaining LINDDUN from the designers themselves:
+        - Privacy & prejudice: on privacy threat modeling misconceptions by Kim Wuyts: <https://www.youtube.com/watch?v=zI4SFyq_Xjw> [[Invidious]](https://yewtu.be/watch?v=zI4SFyq_Xjw)</sup>
+        - Privacy Threat Model Using LINDDUN by Kim Wuyts: <https://www.youtube.com/watch?v=C9F8X1j9Zpg> <sup>[[Invidious]](https://yewtu.be/watch?v=C9F8X1j9Zpg>)</sup>
 
 ![][1389]
 (Illustration from [LINDDUN2015](https://lirias.kuleuven.be/retrieve/295669)
