@@ -7822,7 +7822,7 @@ You can also consult the following external resources for more comparisons (**we
     -   <del>SecureChart.org, <https://securechatguide.org/featuresmatrix.html> <sup>[[Archive.org]](https://web.archive.org/web/https://securechatguide.org/featuresmatrix.html)</sup></del>
     -   <del>Messenger-Matrix.de at <https://www.messenger-matrix.de/messenger-matrix-en.html> <sup>[[Archive.org]](https://web.archive.org/web/https://www.messenger-matrix.de/messenger-matrix-en.html)</sup></del>
 
-**We do not endorse or recommend some mainstream platforms for anonymity including the much-praised Signal which to this date still requires a phone number to register and contact others. In the context of this guide, we strongly recommend against using Signal if possible. The same recommendation applies to popular forks of Signal such as Molly (<https://molly.im><sup>[[Archive.org]](https://web.archive.org/web/https://molly.im)<sup>)**
+**We do not endorse or recommend some mainstream platforms for anonymity including the much-praised Signal which to this date still requires a phone number to register and contact others. In the context of this guide, we strongly recommend against using Signal if possible. The same recommendation applies to popular forks of Signal such as Molly (<https://molly.im><sup>[[Archive.org]](https://web.archive.org/web/https://molly.im)</sup>)**
 
 ### How to share files publicly but anonymously:
 
