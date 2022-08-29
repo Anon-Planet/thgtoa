@@ -12390,7 +12390,7 @@ Here are various threat modeling resources if you want to go deeper in threat mo
     - It is accessible to all skill levels including beginners (providing many tutorials) but also suitable for highly skilled readers.
     - It is used in the making of the Threat Modeling Manifesto: <https://www.threatmodelingmanifesto.org/> <sup>[[Archive.org]](https://web.archive.org/web/https://www.threatmodelingmanifesto.org/)</sup>
     - You can read more here: [A Lightweight Approach to Privacy Threat Modeling](https://sion.info/assets/pdf/publications/WuytsIWPE2020.pdf)
-    - Here are two videos from [Dr. K. Wuyts](https://www.semanticscholar.org/author/K.-Wuyts/6439662) (imec-DistriNet, KU Leuven) explaining the process:
+    - Here are two videos from [Dr. K. Wuyts](https://www.semanticscholar.org/author/Kim-Wuyts/3190241) (imec-DistriNet, KU Leuven) explaining the process:
         - [Privacy & prejudice: on privacy threat modeling misconceptions](https://www.youtube.com/watch?v=zI4SFyq_Xjw) <sup>[[Invidious]](https://yewtu.be/watch?v=zI4SFyq_Xjw)</sup>
         - [Privacy Threat Model Using LINDDUN](https://www.youtube.com/watch?v=C9F8X1j9Zpg) <sup>[[Invidious]](https://yewtu.be/watch?v=C9F8X1j9Zpg>)</sup>
 
