@@ -24,10 +24,10 @@ if [[ "$1" == "" ]]; then
 	cp /home/user/KEY_ROTATION.md.902835EC74825934.minisig ./KEY_ROTATION.md.minisig
 	gpg --armor --export 42FF35DB9DE7C088AB0FD4A70C216A52F6DF4920 > 42FF35DB9DE7C088AB0FD4A70C216A52F6DF4920.asc
 	sha256sum *.md > sha256sum.txt
-	gpg --armor --sign sha256sum.txt
+	gpg --armor --detach-sign sha256sum.txt
 	yes '' | minisign -S -s /home/user/.minisign/minisign.key -m sha256sum.txt
 	b2sum *.md > b2sum.txt
-	gpg --armor --sign b2sum.txt
+	gpg --armor --detach-sign b2sum.txt
 	yes '' | minisign -S -s /home/user/.minisign/minisign.key -m b2sum.txt
 	echo "Signed all files."
 	echo "Done."
