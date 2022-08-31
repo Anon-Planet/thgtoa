@@ -16,7 +16,7 @@ First get the hash of your local file by following these steps for your OS:
 
 Windows:
 - From a command prompt, run ```certutil -hashfile filename.txt sha256```
-- Compare the obtained hash result of your local file to the online files published hash. They should match.
+- Compare the obtained hash result of your local file to the online file's published hash. They should match.
 
 MacOS:
 - From a terminal, run ```shasum -a 256 /full/path/to/your/file```
