@@ -85,7 +85,7 @@ Here are the steps:
 
 ```python pdfid.py file-to-check.pdf```
 
-And you should see the following entries at **0** for safety, this 0 means there is no Javascript or any action that could possibly execute malicious macros, script, etc. Normally this won't be neceessary as most modern PDF readers won't execute those scripts anyway.
+And you should see the following entries at **0** for safety, this 0 means there is no Javascript or any action that could possibly execute malicious macros, scripts, etc. Normally this won't be necessary as most modern PDF readers won't execute those scripts anyway.
 
 ```bash
 /JS                    0 #This indicates the presence of Javascript which could be malicious
