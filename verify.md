@@ -71,8 +71,8 @@ To verify the files with Minisign:
 ### How to check the safety of the files using VT:
 **Note: we not endorse VT. It should be used with extreme caution and never with any sensitive files due to their privacy policies.**
 
-The PDF and ODT files in this guide have been checked by VT, see the links below but do not trust them blindly and check the hashes matches and re-upload to VT if needed:
-- Light Theme: [[VT Scan]](https://www.virustotal.com/gui/file/21dfa2f7da668156275e4ca2bc82091f347739967a278cf24a062c15a3944016?nocache=1)
+The PDF and ODT files in this guide have been checked by VT, see the links below for an example but do not trust these hashes blindly. Check the hashes match and re-upload to VT if needed:
+- PDF file: [[VT Scan]](https://www.virustotal.com/gui/file/21dfa2f7da668156275e4ca2bc82091f347739967a278cf24a062c15a3944016?nocache=1)
 - ODT file: [[VT Scan]](https://www.virustotal.com/gui/file/df8554f732dc54b530fd831548f0727934f2e03ad1518ac33061d0995eab2172?nocache=1)
 
 ### Additional manual safety checks for the PDF files:
