@@ -2829,9 +2829,7 @@ These settings should mitigate cold boot attacks if you can hibernate fast enoug
 
 #### Enable MAC address randomization:
 
--   Ubuntu, follow these steps <https://help.ubuntu.com/community/AnonymizingNetworkMACAddresses> <sup>[[Archive.org]](https://web.archive.org/web/https://help.ubuntu.com/community/AnonymizingNetworkMACAddresses)</sup>.
-
--   Any other distro: you will have to find the documentation yourself, but it should be quite similar to the Ubuntu tutorial.
+-   For Ubuntu, follow these steps <https://help.ubuntu.com/community/AnonymizingNetworkMACAddresses> <sup>[[Archive.org]](https://web.archive.org/web/https://help.ubuntu.com/community/AnonymizingNetworkMACAddresses)</sup>.
 
 -   Consider this tutorial which should still work: <https://josh.works/shell-script-basics-change-mac-address> <sup>[[Archive.org]](https://web.archive.org/web/https://josh.works/shell-script-basics-change-mac-address)</sup>
 
@@ -2852,6 +2850,8 @@ For more in-depth and advanced options, refer to:
     -   Lynis: <https://github.com/CISOfy/lynis>
 
     -   Kconfig-hardened-check: <https://github.com/a13xp0p0v/kconfig-hardened-check>
+
+-   Consider installing Safing Portmaster from <https://safing.io/portmaster/> <sup>[[Archive.org]](https://web.archive.org/web/https://safing.io/portmaster/)</sup> **(Warning: there might be issues with some VPN clients. See: <https://docs.safing.io/portmaster/install/status/vpn-compatibility>** <sup>[[Archive.org]](https://web.archive.org/web/https://safing.io/portmaster/https://docs.safing.io/portmaster/install/status/vpn-compatibility</sup>
 
 -   Consider the use of KickSecure when using Debian: <https://www.whonix.org/wiki/Kicksecure> <sup>[[Archive.org]](https://web.archive.org/web/https://www.whonix.org/wiki/Kicksecure)</sup>
 
@@ -9939,33 +9939,28 @@ Here are the steps in detail:
 
 -   **DO NOT EVER USE A MICROSOFT ACCOUNT TO LOG IN: If you are, you should be re-installing this Windows Machine without connecting to a network and use a local account instead.**
 
-> Do these steps from a different computer to not connect Windows 10/11 to the internet before those settings are applied. You can download and copy those to the USB key (for transfer onto a Windows 10/11 fresh installation) or if it is a VM, you can transfer them to the VM within Virtualbox (VM Settings > General > Advanced > Drag n Drop > Enable Host to Guest).
+-   Do these steps from a different computer. Do not connect Windows 10/11 to the internet before those settings are applied. You can download and copy those to the USB key (for transfer onto a Windows 10/11 fresh installation) or if it is a VM, you can transfer them to the VM within Virtualbox (VM Settings > General > Advanced > Drag n Drop > Enable Host to Guest).
+
 
 -   (For more advanced users) Download and install W10Privacy from <https://www.w10privacy.de/english-home/> <sup>[[Archive.org]](https://web.archive.org/web/https://www.w10privacy.de/english-home/)</sup>
 
     -   Open the app as Administrator (right-click > more > run as administrator)
-
     -   Check all the recommended (Green) settings and save.
-
     -   Optional but recommended (but could break things, use at your own risk), also check the orange/red settings, and save.
-
     -   Reboot
 
 -   Download and run WindowsSpyBlocker from <https://crazymax.dev/WindowsSpyBlocker/download/> <sup>[[Archive.org]](https://web.archive.org/web/https://crazymax.dev/WindowsSpyBlocker/download/)</sup>
 
     -   Type 1 and go into Telemetry
-
     -   Type 1 and go into Firewall
-
     -   Type 2 and add Spy Rules
-
     -   Reboot
 
 -   Also, consider using ShutUp10++ from <https://www.oo-software.com/en/shutup10> <sup>[[Archive.org]](https://web.archive.org/web/https://www.oo-software.com/en/shutup10)</sup>
 
     -   Enable at least all the recommended settings
 
--   Finally, again for users with moderate skils, consider installing Safing portmaster from <https://safing.io/portmaster/> <sup>[[Archive.org]](https://web.archive.org/web/https://safing.io/portmaster/)</sup> (Warning there might be some issues with VPNs (see <https://docs.safing.io/portmaster/install/status/vpn-compatibility> <sup>[[Archive.org]](https://web.archive.org/web/https://safing.io/portmaster/https://docs.safing.io/portmaster/install/status/vpn-compatibility)</sup>
+-   Finally, again for users with moderate skills, consider installing Safing Portmaster from <https://safing.io/portmaster/> <sup>[[Archive.org]](https://web.archive.org/web/https://safing.io/portmaster/)</sup> **(Warning: there might be issues with some VPN clients. See: <https://docs.safing.io/portmaster/install/status/vpn-compatibility>** <sup>[[Archive.org]](https://web.archive.org/web/https://safing.io/portmaster/https://docs.safing.io/portmaster/install/status/vpn-compatibility</sup>
 
 -   Go back one last time to the settings to delete Diagnostic and Delete all Data.
 
