@@ -77,7 +77,7 @@ Temporarily Disabled. <del>The PDF and ODT files in this guide have been checked
 
 ### Additional manual safety checks for the PDF files:
 
-For additional safety, you can always double check the PDF files using the PDFID tool which you can download at <https://blog.didierstevens.com/programs/pdf-tools/>. (You might be wondering: "Why should I trust a random python script?". Well, it is open-source and well-known. It is also probably a safer bet than trusting a random PDF).
+For additional safety, you can always double check the PDF files using the PDFID tool which you can download at <https://blog.didierstevens.com/programs/pdf-tools/>. (You might be wondering: "Why should I trust a random python script?" Well, it is open-source and well-known. It is also probably a safer bet than trusting a random PDF).
 
 Here are the steps:
 
