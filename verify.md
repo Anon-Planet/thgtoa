@@ -30,7 +30,7 @@ All commits and releases on this repository are cryptographically signed and ver
 
 **Do check for the "Verified" tags on each commit or release.**
 
-### How to verify the the authenticity, and integrity of the files using GPG:
+### How to verify the the authenticity and integrity of the files using GPG:
 
 To verify the files with GPG signatures, you should first install gpg on your system:
 - Windows: Install gpg4win from <https://www.gpg4win.org/download.html>
