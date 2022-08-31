@@ -26,7 +26,7 @@ Linux:
 - From a terminal, run ```sha256sum /full/path/to/your/file```
 - Compare the obtained hash result of your local file to the online file's published hash. They should match.
 
-All commits and releases on this repository are cryptographically signed, and verified using the same GPG key.
+All commits and releases on this repository are cryptographically signed and verified using the same GPG key.
 
 **Do check for the "Verified" tags on each commit or release.**
 
