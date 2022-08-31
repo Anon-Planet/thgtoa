@@ -20,7 +20,7 @@ Windows:
 
 MacOS:
 - From a terminal, run ```shasum -a 256 /full/path/to/your/file```
-- Compare the obtained hash result of your local file to the online files published hash. They should match.
+- Compare the obtained hash result of your local file to the online file's published hash. They should match.
 
 Linux:
 - From a terminal, run ```sha256sum /full/path/to/your/file```
