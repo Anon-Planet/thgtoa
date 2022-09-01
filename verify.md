@@ -1,6 +1,6 @@
 ## How to check files for safety/integrity and authenticity:
 
-The PDF and ODT files in this guide are cryptographically signed using GPG and [Minisign](https://jedisct1.github.io/minisign). Their integrity can be verified with the published SHA256 Checksum hashes on this website. SHA256 checksums of all the PDF and ODT files are available here in the [sha256sum.txt](sha256sum.txt) file. SHA256 Checksums, signatures, and VirusTotal ("VT") checks of the releases files (containing the whole repository) are available within the latest release information at <https://github.com/Anon-Planet/thgtoa/releases/latest> which will be available as soon as we have a stable release.
+The PDF and ODT files in this guide are cryptographically signed using GPG and [Minisign](https://jedisct1.github.io/minisign). Their integrity can be verified with the published SHA256 Checksum hashes on this website. SHA256 checksums of all the PDF and ODT files are available here in the [sha256sum.txt](sha256sum.txt) file. SHA256 checksums, signatures, and VirusTotal ("VT") checks of the releases files (containing the whole repository) are available within the latest release information at <https://github.com/Anon-Planet/thgtoa/releases/latest> which will be available as soon as we have a stable release.
 
 The GPG signatures for each PDF and ODT files are available here:
 - <del>PDF (Light Theme) Main and Mirrors: [guide.pdf.asc](guide.pdf.asc)</del> (Currently unavailable)
@@ -10,7 +10,7 @@ The Minisign signatures for each PDF and ODT files are available here:
 - <del>PDF (Light Theme) Main and Mirrors: [guide.pdf.minisig](guide.pdf.minisig)</del> (Currently unavailable)
 - <del>ODT Main and Mirrors: [guide.odt.minisig](guide.odt.minisig)</del> (Currently unavailable)
 
-### How to check the integrity of the files using the SHA256 Checksums:
+### How to check the integrity of the files using the SHA256 checksums:
 
 First get the hash of your local file by following these steps for your OS:
 
@@ -58,7 +58,7 @@ Finally, verify the asc signature file (links above) against the PDF files by is
 
 This should output a result showing it matches and is therefore a good result.
 
-### How to verify the the authenticity, and integrity of the files using Minisign:
+### How to verify the the authenticity and integrity of the files using Minisign:
 
 To verify the files with Minisign:
 
