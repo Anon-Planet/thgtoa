@@ -2829,9 +2829,7 @@ These settings should mitigate cold boot attacks if you can hibernate fast enoug
 
 #### Enable MAC address randomization:
 
--   Ubuntu, follow these steps <https://help.ubuntu.com/community/AnonymizingNetworkMACAddresses> <sup>[[Archive.org]](https://web.archive.org/web/https://help.ubuntu.com/community/AnonymizingNetworkMACAddresses)</sup>.
-
--   Any other distro: you will have to find the documentation yourself, but it should be quite similar to the Ubuntu tutorial.
+-   For Ubuntu, follow these steps <https://help.ubuntu.com/community/AnonymizingNetworkMACAddresses> <sup>[[Archive.org]](https://web.archive.org/web/https://help.ubuntu.com/community/AnonymizingNetworkMACAddresses)</sup>.
 
 -   Consider this tutorial which should still work: <https://josh.works/shell-script-basics-change-mac-address> <sup>[[Archive.org]](https://web.archive.org/web/https://josh.works/shell-script-basics-change-mac-address)</sup>
 
@@ -2852,6 +2850,8 @@ For more in-depth and advanced options, refer to:
     -   Lynis: <https://github.com/CISOfy/lynis>
 
     -   Kconfig-hardened-check: <https://github.com/a13xp0p0v/kconfig-hardened-check>
+
+-   Consider installing Safing Portmaster from <https://safing.io/portmaster/> <sup>[[Archive.org]](https://web.archive.org/web/https://safing.io/portmaster/)</sup> **(Warning: there might be issues with some VPN clients. See: <https://docs.safing.io/portmaster/install/status/vpn-compatibility>** <sup>[[Archive.org]](https://web.archive.org/web/https://safing.io/portmaster/https://docs.safing.io/portmaster/install/status/vpn-compatibility</sup>
 
 -   Consider the use of KickSecure when using Debian: <https://www.whonix.org/wiki/Kicksecure> <sup>[[Archive.org]](https://web.archive.org/web/https://www.whonix.org/wiki/Kicksecure)</sup>
 
@@ -9939,33 +9939,28 @@ Here are the steps in detail:
 
 -   **DO NOT EVER USE A MICROSOFT ACCOUNT TO LOG IN: If you are, you should be re-installing this Windows Machine without connecting to a network and use a local account instead.**
 
-> Do these steps from a different computer to not connect Windows 10/11 to the internet before those settings are applied. You can download and copy those to the USB key (for transfer onto a Windows 10/11 fresh installation) or if it is a VM, you can transfer them to the VM within Virtualbox (VM Settings > General > Advanced > Drag n Drop > Enable Host to Guest).
+-   Do these steps from a different computer. Do not connect Windows 10/11 to the internet before those settings are applied. You can download and copy those to the USB key (for transfer onto a Windows 10/11 fresh installation) or if it is a VM, you can transfer them to the VM within Virtualbox (VM Settings > General > Advanced > Drag n Drop > Enable Host to Guest).
+
 
 -   (For more advanced users) Download and install W10Privacy from <https://www.w10privacy.de/english-home/> <sup>[[Archive.org]](https://web.archive.org/web/https://www.w10privacy.de/english-home/)</sup>
 
     -   Open the app as Administrator (right-click > more > run as administrator)
-
     -   Check all the recommended (Green) settings and save.
-
     -   Optional but recommended (but could break things, use at your own risk), also check the orange/red settings, and save.
-
     -   Reboot
 
 -   Download and run WindowsSpyBlocker from <https://crazymax.dev/WindowsSpyBlocker/download/> <sup>[[Archive.org]](https://web.archive.org/web/https://crazymax.dev/WindowsSpyBlocker/download/)</sup>
 
     -   Type 1 and go into Telemetry
-
     -   Type 1 and go into Firewall
-
     -   Type 2 and add Spy Rules
-
     -   Reboot
 
 -   Also, consider using ShutUp10++ from <https://www.oo-software.com/en/shutup10> <sup>[[Archive.org]](https://web.archive.org/web/https://www.oo-software.com/en/shutup10)</sup>
 
     -   Enable at least all the recommended settings
 
--   Finally, again for users with moderate skils, consider installing Safing portmaster from <https://safing.io/portmaster/> <sup>[[Archive.org]](https://web.archive.org/web/https://safing.io/portmaster/)</sup> (Warning there might be some issues with VPNs (see <https://docs.safing.io/portmaster/install/status/vpn-compatibility> <sup>[[Archive.org]](https://web.archive.org/web/https://safing.io/portmaster/https://docs.safing.io/portmaster/install/status/vpn-compatibility)</sup>
+-   Finally, again for users with moderate skills, consider installing Safing Portmaster from <https://safing.io/portmaster/> <sup>[[Archive.org]](https://web.archive.org/web/https://safing.io/portmaster/)</sup> **(Warning: there might be issues with some VPN clients. See: <https://docs.safing.io/portmaster/install/status/vpn-compatibility>** <sup>[[Archive.org]](https://web.archive.org/web/https://safing.io/portmaster/https://docs.safing.io/portmaster/install/status/vpn-compatibility</sup>
 
 -   Go back one last time to the settings to delete Diagnostic and Delete all Data.
 
@@ -12373,7 +12368,7 @@ The anonymity of Monero depends on its crypto algorithms. If you do use Monero f
 
 You may want to watch this insightful video for more details: <https://www.youtube.com/watch?v=j02QoI4ZlnU> <sup>[[Invidious]](https://yewtu.be/watch?v=j02QoI4ZlnU)</sup>
 
-Also please consider reading: **<https://github.com/monero-project/monero/blob/master/docs/ANONYMITY_NETWORKS.md#privacy-limitations>** <sup>[[Archive.org]](https://web.archive.org/web/https://github.com/monero-project/monero/blob/master/docs/ANONYMITY_NETWORKS.md#privacy-limitations)</sup>
+Also please consider reading: [Privacy Limitations in Anonymity Networks with Monero](https://github.com/monero-project/monero/blob/master/docs/ANONYMITY_NETWORKS.md#privacy-limitations) <sup>[[Archive.org]](https://web.archive.org/web/https://github.com/monero-project/monero/blob/master/docs/ANONYMITY_NETWORKS.md#privacy-limitations)</sup>
 
 **If you feel extra paranoid and want the highest safety level possible,** see the [Extra-Paranoid anonymous option][Extra-Paranoid anonymous option:].
 
@@ -12383,27 +12378,27 @@ Also please consider reading: **<https://github.com/monero-project/monero/blob/m
 
 Here are various threat modeling resources if you want to go deeper in threat modeling.
 
--   The one we recommend: LINDDUN (Linkability, Identifiability, Non-repudiation, Detectability, Disclosure of information, Unawareness, and Non-compliance) <https://www.linddun.org/> <sup>[[Archive.org]](https://web.archive.org/web/https://www.linddun.org/)</sup>.
-    - Researchers created an online tool to help make your threat model at <https://www.linddun.org/go><sup>[[Archive.org]](https://web.archive.org/web/https://www.linddun.org/go)</sup>.
+-   The one we recommend: LINDDUN <https://www.linddun.org> <sup>[[Archive.org]](https://web.archive.org/web/https://www.linddun.org/)</sup>
+    - Researchers created an online tool to help make your threat model at <https://www.linddun.org/go> <sup>[[Archive.org]](https://web.archive.org/web/https://www.linddun.org/go)</sup>.
     - It is synergistic with STRIDE below.
     - It is focused on privacy but is clearly perfectly suitable for anonymity.
     - It is accessible to all skill levels including beginners (providing many tutorials) but also suitable for highly skilled readers.
     - It is used in the making of the Threat Modeling Manifesto: <https://www.threatmodelingmanifesto.org/> <sup>[[Archive.org]](https://web.archive.org/web/https://www.threatmodelingmanifesto.org/)</sup>
+    - You can read more here: [A Lightweight Approach to Privacy Threat Modeling](https://sion.info/assets/pdf/publications/WuytsIWPE2020.pdf)
+    - Here are two videos from [Dr. K. Wuyts](https://www.semanticscholar.org/author/Kim-Wuyts/3190241) (imec-DistriNet, KU Leuven) explaining the process:
+        - [Privacy & prejudice: on privacy threat modeling misconceptions](https://www.youtube.com/watch?v=zI4SFyq_Xjw) <sup>[[Invidious]](https://yewtu.be/watch?v=zI4SFyq_Xjw)</sup>
+        - [Privacy Threat Model Using LINDDUN](https://www.youtube.com/watch?v=C9F8X1j9Zpg) <sup>[[Invidious]](https://yewtu.be/watch?v=C9F8X1j9Zpg>)</sup>
 
 ![][1389]
-(Illustration from [LINDDUN2015](https://lirias.kuleuven.be/retrieve/295669)
+(Illustration from [LINDDUN2015](https://lirias.kuleuven.be/retrieve/295669))
 
-Here are alternative resources and models if LINDDUN doesn't suit you:
+Here are alternative resources and methodologies if LINDDUN doesn't suit you:
     
--   Online Operations Security: [https://web.archive.org/web/20210711215728/https://github.com/devbret/online-OPSEC]
-
--   STRIDE <https://en.wikipedia.org/wiki/STRIDE_%28security%29> <sup>[[Wikiless]](https://wikiless.org/wiki/STRIDE_%28security%29)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/STRIDE_%28security%29)</sup>
-
--   PASTA <https://versprite.com/tag/pasta-threat-modeling/> <sup>[[Archive.org]](https://web.archive.org/web/https://versprite.com/tag/pasta-threat-modeling/)</sup>
-    
--   <https://insights.sei.cmu.edu/blog/threat-modeling-12-available-methods/> <sup>[[Archive.org]](https://web.archive.org/web/https://insights.sei.cmu.edu/blog/threat-modeling-12-available-methods/)</sup>
-
--   <https://www.geeksforgeeks.org/threat-modelling/> <sup>[[Archive.org]](https://web.archive.org/web/https://www.geeksforgeeks.org/threat-modelling/)</sup>
+-   Online Operations Security: [https://github.com/devbret/online-OPSEC](https://web.archive.org/web/20210711215728/https://github.com/devbret/online-OPSEC)
+-   Microsoft's STRIDE: <https://en.wikipedia.org/wiki/STRIDE_%28security%29> <sup>[[Wikiless]](https://wikiless.org/wiki/STRIDE_%28security%29)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/STRIDE_%28security%29)</sup>
+-   PASTA: <https://versprite.com/tag/pasta-threat-modeling/> <sup>[[Archive.org]](https://web.archive.org/web/https://versprite.com/tag/pasta-threat-modeling/)</sup>
+-   Threat Modeling: 12 Available Methods: <https://insights.sei.cmu.edu/blog/threat-modeling-12-available-methods> <sup>[[Archive.org]](https://web.archive.org/web/https://insights.sei.cmu.edu/blog/threat-modeling-12-available-methods/)</sup>
+-   Threat Modelling: <https://www.geeksforgeeks.org/threat-modelling/> <sup>[[Archive.org]](https://web.archive.org/web/https://www.geeksforgeeks.org/threat-modelling/)</sup>
 
 # Appendix B4: Important notes about evil-maid and tampering
 

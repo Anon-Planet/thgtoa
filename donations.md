@@ -32,7 +32,6 @@ Here are the addresses for the main project:
     
 Donations log (UTC date/time):
 
-- 2022-07-30 03:51: 0.0222 XMR
 - 2021-02-06 16:48: 0.1 XMR
 - 2021-03-15 00:09: 1.24869 mBTC
 - 2021-03-15 08:41: 0.07896 mBTC
@@ -69,6 +68,8 @@ Donations log (UTC date/time):
 - 2022-02-03 19:59: 0.013013984 XMR
 - 2022-02-18 17:27: 0.019 XMR
 - 2022-03-14 10:25: 0.0139887 XMR
+- 2022-07-30 03:51: 0.0222 XMR
+- 2022-08-19 : SimpleLogin.io Premium Account for life (**This is not sponsoring/advertising**)
 
 Total Monero donations received: **4.756292580358 XMR**
 Total Bitcoin donations received: **1.89353 mBTC**

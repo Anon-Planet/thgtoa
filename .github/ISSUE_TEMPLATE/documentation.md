@@ -25,7 +25,7 @@ or features you've considered. e.g. "This could instead be
 replaced by <some other program> or <other link>." Make sure it's 
 in scope. -->
 
-**Give any additional relevent context.**
+**Give any additional relevant context.**
 
 <!-- Add any other links and related imagery or data here. We 
 will not entertain any sort of suggestion that doesn't fit in the
