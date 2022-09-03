@@ -9192,7 +9192,7 @@ Here are the steps for BleachBit:
 
 With this Native Windows 10/11 utility, you can just trigger a Trim on your SSD which should be more than enough to securely clean all deleted files that somehow would have escaped Trim when deleting them.
 
-Just open Windows Explorer, Right Click on your System Drive and click Properties. Select Tools. Click Optimize and Defragment. You are done as this will not defragment but only optimize. Meaning it will initiate a Trim operation (<https://en.wikipedia.org/wiki/Trim_(computing)> <sup>[[Wikiless]](https://wikiless.org/wiki/Trim_(computing))</sup> <sup>[[Archive.org]]). 
+Just open Windows Explorer, Right Click on your System Drive and click Properties. Select Tools. Click Optimize and Defragment. You are done as this will not defragment but only optimize. Meaning it will initiate a Trim operation (<https://en.wikipedia.org/wiki/Trim_(computing)> <sup>[[Wikiless]](https://wikiless.org/wiki/Trim_(computing))</sup> <sup>[[Archive.org]](https://web.archive.org/web/20220804150134/https://en.wikipedia.org/wiki/Trim_(computing))).
 
 ![][501]
 
