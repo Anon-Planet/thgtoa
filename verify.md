@@ -1,6 +1,6 @@
 ## How to check files for safety/integrity and authenticity:
 
-The PDF and ODT files in this guide are cryptographically signed using GPG and [Minisign](https://jedisct1.github.io/minisign). Their integrity can be verified with the published SHA256 Checksum hashes on this website. SHA256 checksums of all the PDF and ODT files are available here in the [sha256sum.txt](sha256sum.txt) file. SHA256 checksums, signatures, and VirusTotal ("VT") checks of the releases files (containing the whole repository) are available within the latest release information at <https://github.com/Anon-Planet/thgtoa/releases/latest> which will be available as soon as we have a stable release.
+The **(currently unavailable)** PDF and ODT files of this guide are cryptographically signed using GPG and [Minisign](https://jedisct1.github.io/minisign). Their integrity can be verified with the published SHA256 Checksum hashes on this website. SHA256 checksums of all the PDF and ODT files are available here in the [sha256sum.txt](sha256sum.txt) file. SHA256 checksums, signatures, and VirusTotal ("VT") checks of the releases files (containing the whole repository) are available within the latest release information at <https://github.com/Anon-Planet/thgtoa/releases/latest> which will be available as soon as we have a stable release.
 
 The GPG signatures for each PDF and ODT files are available here:
 - <del>PDF (Light Theme) Main and Mirrors: [guide.pdf.asc](guide.pdf.asc)</del> (Currently unavailable)
@@ -71,7 +71,7 @@ To verify the files with Minisign:
 ### How to check the safety of the files using VT:
 **Note: we not endorse VT. It should be used with extreme caution and never with any sensitive files due to their privacy policies.**
 
-Temporarily Disabled. <del>The PDF and ODT files in this guide have been checked by VT, see the links below for an example but do not trust these hashes blindly. Check the hashes match and re-upload to VT if needed:
+Temporarily Disabled. <del>The PDF and ODT files of this guide have been checked by VT, see the links below for an example but do not trust these hashes blindly. Check the hashes match and re-upload to VT if needed:
 - PDF file: [[VT Scan]](https://www.virustotal.com/gui/file/21dfa2f7da668156275e4ca2bc82091f347739967a278cf24a062c15a3944016?nocache=1)
 - ODT file: [[VT Scan]](https://www.virustotal.com/gui/file/df8554f732dc54b530fd831548f0727934f2e03ad1518ac33061d0995eab2172?nocache=1)</del> 
 
@@ -87,7 +87,7 @@ Here are the steps:
 
 And you should see the following entries at **0** for safety, this 0 means there is no Javascript or any action that could possibly execute malicious macros, scripts, etc. Normally this won't be necessary as most modern PDF readers won't execute those scripts anyway.
 
-```bash
+```
 /JS                    0 #This indicates the presence of Javascript which could be malicious
 /JavaScript            0 #This indicates the presence of Javascript which could be malicious
 /AA                    0 #This indicates the presence of automatic action on opening
