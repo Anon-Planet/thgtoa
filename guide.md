@@ -2851,7 +2851,7 @@ For more in-depth and advanced options, refer to:
 
     -   Kconfig-hardened-check: <https://github.com/a13xp0p0v/kconfig-hardened-check>
 
--   Consider installing Safing Portmaster from <https://safing.io/portmaster/> <sup>[[Archive.org]](https://web.archive.org/web/https://safing.io/portmaster/)</sup> **(Warning: there might be issues with some VPN clients. See: <https://docs.safing.io/portmaster/install/status/vpn-compatibility>** <sup>[[Archive.org]](https://web.archive.org/web/https://safing.io/portmaster/https://docs.safing.io/portmaster/install/status/vpn-compatibility</sup>
+-   Consider installing Safing Portmaster from <https://safing.io/portmaster/> <sup>[[Archive.org]](https://web.archive.org/web/https://safing.io/portmaster/)</sup> **(Warning: there might be issues with some VPN clients. See: <https://docs.safing.io/portmaster/install/status/vpn-compatibility>** <sup>[[Archive.org]](https://web.archive.org/web/https://docs.safing.io/portmaster/install/status/vpn-compatibility)</sup>
 
 -   Consider the use of KickSecure when using Debian: <https://www.whonix.org/wiki/Kicksecure> <sup>[[Archive.org]](https://web.archive.org/web/https://www.whonix.org/wiki/Kicksecure)</sup>
 
@@ -9192,7 +9192,7 @@ Here are the steps for BleachBit:
 
 With this Native Windows 10/11 utility, you can just trigger a Trim on your SSD which should be more than enough to securely clean all deleted files that somehow would have escaped Trim when deleting them.
 
-Just open Windows Explorer, Right Click on your System Drive and click Properties. Select Tools. Click Optimize and Defragment. You are done as this will not defragment but only optimize. Meaning it will initiate a Trim operation (<https://en.wikipedia.org/wiki/Trim_(computing)> <sup>[[Wikiless]](https://wikiless.org/wiki/Trim_(computing))</sup> <sup>[[Archive.org]]). 
+Just open Windows Explorer, Right Click on your System Drive and click Properties. Select Tools. Click Optimize and Defragment. You are done as this will not defragment but only optimize. Meaning it will initiate a Trim operation (<https://en.wikipedia.org/wiki/Trim_(computing)> <sup>[[Wikiless]](https://wikiless.org/wiki/Trim_(computing))</sup> <sup>[[Archive.org]](https://web.archive.org/web/20220804150134/https://en.wikipedia.org/wiki/Trim_(computing))).
 
 ![][501]
 
@@ -9960,7 +9960,7 @@ Here are the steps in detail:
 
     -   Enable at least all the recommended settings
 
--   Finally, again for users with moderate skills, consider installing Safing Portmaster from <https://safing.io/portmaster/> <sup>[[Archive.org]](https://web.archive.org/web/https://safing.io/portmaster/)</sup> **(Warning: there might be issues with some VPN clients. See: <https://docs.safing.io/portmaster/install/status/vpn-compatibility>** <sup>[[Archive.org]](https://web.archive.org/web/https://safing.io/portmaster/https://docs.safing.io/portmaster/install/status/vpn-compatibility</sup>
+-   Finally, again for users with moderate skills, consider installing Safing Portmaster from <https://safing.io/portmaster/> <sup>[[Archive.org]](https://web.archive.org/web/https://safing.io/portmaster)</sup> **(Warning: there might be issues with some VPN clients. See: <https://docs.safing.io/portmaster/install/status/vpn-compatibility>** <sup>[[Archive.org]](https://web.archive.org/web/https://safing.io/portmaster/)</sup>
 
 -   Go back one last time to the settings to delete Diagnostic and Delete all Data.
 

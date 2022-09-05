@@ -1,7 +1,6 @@
 ### A small collection of links to recommended projects/guides/tutorials/resources of interest:
 
 #### Disclaimer:
-
 Some of those resources may, in order to sustain their project, contain or propose:
 - Sponsored commercial content
 - Monetized content through third party platforms (such as YouTube)
@@ -23,14 +22,12 @@ All the links below are listed in alphabetical order:
 - PrivacyTools.io: <https://privacytools.io> (May contain clearly marked sponsored products/services and affiliate links)
 
 #### Blogs and personal websites:
-
 - CIA Officer's Blog: <https://officercia.mirror.xyz/>
 - Continuing Ed: <https://edwardsnowden.substack.com/>
 - Madaidan's Insecurities: <https://madaidans-insecurities.github.io/>
 - Seirdy's Home: <https://seirdy.one/>
 
 #### Useful resources:
-
 - KYC? Not me: <https://kycnot.me/>
 - Library Genesis: <https://en.wikipedia.org/wiki/Library_Genesis> <sup>[[Wikiless]](https://wikiless.org/wiki/Library_Genesis)</sup> (see their latest known URL in the Wikipedia article)
 - Real World Onion Sites: <https://github.com/alecmuffett/real-world-onion-sites>
