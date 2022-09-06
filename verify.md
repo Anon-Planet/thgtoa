@@ -79,7 +79,7 @@ For additional safety, you can always double check the PDF files using the PDFID
 
 Here are the steps:
 
-- Install latest 3.9.x / 3.10.x version of Python on your OS, Download PDFID and, from a command prompt or terminal, run:
+- Install the latest version (e.g., 3.10.6 stable) of Python, download [pdfid](https://didierstevens.com/files/software/pdfid_v0_2_8.zip) and, from a command prompt or terminal, run:
 
 ```python pdfid.py file-to-check.pdf```
 
