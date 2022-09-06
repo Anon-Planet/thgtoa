@@ -67,7 +67,7 @@ To verify the files with Minisign:
 - Output should show ```Signature and comment signature verified```.
 
 ### How to check the relative safety of files or even URLs (such as https://anonymousplanet.org) using VirusTotal:
-**Note: we not endorse VirusTotal. It should be used with extreme caution and never with any sensitive files due to their privacy policies. Do not upload sensitive files to VirusTotal**
+**Note: we do not endorse VirusTotal. It should be used with extreme caution, never with any sensitive files, due to their privacy policies. Do not upload sensitive files to VirusTotal.**
 
 Temporarily Disabled. <del>The PDF and ODT files of this guide have been checked by VT, see the links below for an example but do not trust these hashes blindly. Check the hashes match and re-upload to VT if needed:
 - PDF file: [[VT Scan]](https://www.virustotal.com/gui/file/21dfa2f7da668156275e4ca2bc82091f347739967a278cf24a062c15a3944016?nocache=1)
