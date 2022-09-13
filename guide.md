@@ -11244,71 +11244,89 @@ The following are the recommended safest routes for each browser according to th
 
 -   Download and install Brave browser from <https://brave.com/download/> <sup>[[Archive.org]](https://web.archive.org/web/https://brave.com/download/)</sup>
 
--   Open Brave Browser
+-   **Open** Brave Browser
 
--   Go into Settings
+-   Go into **Settings** > **Appearances** (`brave://settings/appearance`)
 
--   Go to Appearances
+    -   **Disable** "Show Top Sites"
 
-    -   Disable Show Top Sites
+    -   **Disable** "Show Brave Suggested Sites"
 
-    -   Disable Show Brave Suggested Sites
+    -   **Disable** "Show Brave Rewards icon in address bar"
 
-    -   Enable Hide Brave Rewards
+    -   **Enable** "Always show full URLs"
 
-    -   Enable Always show full URL
+-   Go into **Settings** > **Shields** (`brave://settings/shields`)
 
--   Go into Shields
+    -   Set Shields to **Advanced**
 
-    -   Set Shields to Advanced
+    -   Set "Trackers and Ads blocking" to **Aggressive**
 
-    -   Set Trackers and Ads blocking to Aggressive
+    -   Set Upgrade connections to HTTPS to **Enabled**
 
-    -   Set Upgrade to HTTPS to enabled
+    -   Set Cookie blocking to **Only cross-site**
 
-    -   Set Cookie blocking to "Only cross-site"
+    -   Set Fingerprinting blocking to **Standard** or **Strict**
 
-    -   Set Fingerprinting blocking to Standard (or Strict)
+-   Go into **Settings** > **Social media blocking** (`brave://settings/socialBlocking`)
 
--   Go into Social media Blocking
+    -   **Uncheck** everything unless needed
 
-    -   Uncheck everything unless needed
-
--   Go to Search Engine
+-   Go to **Settings** > **Search engine** (`brave://settings/search`)
 
     -   See [Appendix A3: Search Engines]
 
--   Go into Extensions
+-   Go into **Settings** > **Extensions** (`brave://settings/extensions`)
 
-    -   Disable everything except Private Windows with Tor and both Resolve methods set to "Ask"
+    -   **Disable** everything except "Private Window with Tor"
 
--   Go into Wallet
+    -   Set both **Resolve** methods to "Ask"
 
-    -   Disable the wallet
+-   Go into **Settings** > **Wallet** (`brave://settings/wallet`)
 
--   Go into Additional Settings, Privacy, and Security
+    -   **Disable** "Show Brave Wallet icon on toolbar"
 
-    -   Leave WebRTC to Default
+    -   Set **Default Ethereum wallet** to "None"
 
-    -   Disable all the rest
+    -   Set **Default Solana wallet** to "None"
 
-    -   Go into Clear Browsing Data
+-   Go into **Settings** > **Privacy and Security** (`brave://settings/privacy`)
 
-    -   Select On Exit
+    -   Leave **WebRTC** to "Default"
 
-    -   Check all options
+    -   **Disable** "Allow privacy-preserving product analytics (P3A)"
+
+    -   **Disable** "Automatically send daily usage ping to Brave"
+
+    -   Go into "Clear Browsing Data"
+
+        -   Select **On Exit**
+
+        -   Check all options
+
+        -   **Click** "Save"
 
 -   Open a new Tab
 
--   Click Customize in the lower right corner
+-   **Click** "Customize" in the lower right corner
 
-    -   Disable everything except maybe the clock
+    -   **Disable** everything in Customize Dashboard except maybe the clock
 
--   Navigate to brave://adblock
+-   Go into **Settings** > **Shields** > **Content filters** (`brave://settings/shields/filters`)
 
     -   Select any additional adblocking filter you want
 
--   Do not ever enable Brave Rewards (button should be hidden)
+        -   Recommended: **CJX's Annoyance List**, **Easylist-Cookie List**, **Fanboy Annoyances List**, **Fanboy Social List**, **Fanboy's Mobile Notifications List**, and **uBlock Annoyances List**
+
+    -   Add custom filter lists
+
+        -   Add the [Actually Legitimate URL Shortener Tool](https://raw.githubusercontent.com/DandelionSprout/adfilt/master/ClearURLs%20for%20uBo/clear_urls_uboified.txt) which uses the rules found in ClearURLs below
+
+        -   Add the [AdGuard URL Tracking Protection](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_17_TrackParam/filter.txt) which enables generic `$removeparam` rules
+
+    -   To keep all applied filters, **click** "Save"
+
+-   Do not ever enable Brave Rewards (button should be hidden on all sites)
 
 Addons to consider on Brave if you want additional protections:
 
@@ -11320,7 +11338,7 @@ Addons to consider on Brave if you want additional protections:
 
 -   NoScript (<https://chrome.google.com/webstore/detail/noscript/doojmbjmlfjjnbmnoijecmcbfeoakpjm>)
 
--   ClearURLs (<https://chrome.google.com/webstore/detail/clearurls/lckanjgmijmafbedllaakclkaicjfmnk>)
+-   Either ClearURLs (<https://chrome.google.com/webstore/detail/clearurls/lckanjgmijmafbedllaakclkaicjfmnk>) **OR** the custom list above
 
 -   LibRedirect (<https://libredirect.github.io/>)
 
