@@ -70,7 +70,7 @@ Donations log (UTC date/time):
 - 2022-03-14 10:25: 0.0139887 XMR
 - 2022-07-30 03:51: 0.0222 XMR
 - 2022-08-19 : SimpleLogin.io Premium Account for life (**This is not sponsoring/advertising**)
-- 2022-09-19 : 0.345024603905 XMR (Thanks to Rick Deckhard whic is also one of our contributors)
+- 2022-09-19 : 0.345024603905 XMR (Thanks to Rick Deckhard which is also one of our contributors)
 
 Total Monero donations received: **5.101317184263 XMR**
 Total Bitcoin donations received: **1.89353 mBTC**
