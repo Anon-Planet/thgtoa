@@ -2,13 +2,12 @@ Donations to support this project are welcome as the funding of this project is 
 Those donations are mainly used to pay for Tor onion hosting (VPS), mail hosting, domain name registration, and to maintain/run Tor exit nodes. **No profit is ever being made**.
 All donations and spendings are being logged here below for transparency.
 
-<span style="color: red">***Current project donation goals:***</span>
+<span style="color: red">**Current project donation goals:**</span>
 
-- Funding for a VPS for hosting our .onion website
-- Funding for a VPS for hosting various services
-- Funding for extending our domain name
+- <del>Funding for a VPS for hosting our .onion website</del>: **done**
+- <del>Funding for extending our domain name</del>: **Recovery of original domain secured until 2029**
 - Funding for a decent mail hosting
-
+- Funding for a VPS for hosting various services
 
 **Donate anonymously using Monero (XMR):**
 
@@ -80,23 +79,23 @@ Spendings log (UTC date):
 - 2021-03-12: 0.08181086 XMR (+fees) for domain anonymousplanet.org (1 year)
 - 2021-03-16: 1.20179 mBTC (+fees) for domain anonymousplanet.org renewal (extension 3 years totalling 4 years)
 - 2021-04-01: 0.8317 XMR (+fees) for basic VPS for Tor Mirror hosting
-- 2021-04-05: 0.99367 mBTC (+fees +exchange from XMR to BTC) for Mail Hosting (1 year)
-- 2021-04-13: 0.71895 mBTC (+fees +exchange from XMR to BTC) for Mail Hosting (extension to 2 years)
+- <del>2021-04-05: 0.99367 mBTC (+fees +exchange from XMR to BTC) for Mail Hosting (1 year): <span style="color: red">**Lost**</span>
+- <del>2021-04-13: 0.71895 mBTC (+fees +exchange from XMR to BTC) for Mail Hosting (extension to 2 years)</del>: <span style="color: red">**Lost**</span>
 - 2021-04-25: 0.02892 mBTC (Wallet to Wallet transfer fee)
 - 2021-07-13: 0.78463 mBTC (+fees +exchange from BTC to XMR) for consoliation
-- 2021-07-13: 0.067261698061 XMR (+fees) for a Tor Exit Node (01) Hosting (3 months)
-- 2021-07-15: 0.151959953047 XMR (+fees) for a Tor Exit Node (02) Hosting (6 months)
-- 2021-08-16: 0.253331471239 XMR (+fees) for a Tor Exit Node (03) Hosting (12 months)
+- <del>2021-07-13: 0.067261698061 XMR (+fees) for a Tor Exit Node (01) Hosting (3 months)</del>: <span style="color: red">**Lost**</span>
+- <del>2021-07-15: 0.151959953047 XMR (+fees) for a Tor Exit Node (02) Hosting (6 months)</del>: <span style="color: red">**Lost**</span>
+- <del>2021-08-16: 0.253331471239 XMR (+fees) for a Tor Exit Node (03) Hosting (12 months)</del>: <span style="color: red">**Lost**</span>
 - 2021-08-18: AtomicSwap conversion from remaining mBTC (-0.56588) to XMR (+0.081904862179)
-- 2021-08-19: 0.0644 XMR (+fees) for Mail Hosting extension
-- 2021-09-18: 0.246971511836 XMR (+fees) for renewal 1 year of Tor Exit Node 01
+- <del>2021-08-19: 0.0644 XMR (+fees) for Mail Hosting extension</del>: <span style="color: red">**Lost**</span>
+- <del>2021-09-18: 0.246971511836 XMR (+fees) for renewal 1 year of Tor Exit Node 01</del>: <span style="color: red">**Lost**</span>
 - 2021-10-04: 0.26954 XMR (+fees) for securing the anonymousplanet.org domain name until 2029
-- 2021-10-06: 0.236073464623 XMR (+fees) for a Tor Exit Node (04) Hosting (12 months)
-- 2021-10-18: 0.01952 XMR (+fees) for testing a new VPS hosting provider (Privex.io) for one month
-- 2021-10-30: 0.240787814495 XMR (+fees) for a Synapse Hosting VPS (12 months) with bots to help grow the community. This is a test program that will be converted into a Tor Exit Node in case of failure
-- 2022-01-01: 0.28055816111 XMR (+fees) for renewal 1 year of Tor Exit Node 02
-- 2022-02-02: 0.966793601024 XMR (+fees) for sponsoring a related external special project in line with the Universal Declaration of Human Rights (details will remain indisclosed to protect project members)
-- 2022-07-11: 0.503232784687 XMR (+fees) for 1984.is VPS (12 months)
+- <del>2021-10-06: 0.236073464623 XMR (+fees) for a Tor Exit Node (04) Hosting (12 months)</del>: <span style="color: red">**Lost**</span>
+- <del>2021-10-18: 0.01952 XMR (+fees) for testing a new VPS hosting provider (Privex.io) for one month</del>: <span style="color: red">**Ended**</span>
+- <del>2021-10-30: 0.240787814495 XMR (+fees) for a Synapse Hosting VPS (12 months) with bots to help grow the community. This is a test program that will be converted into a Tor Exit Node in case of failure</del>: <span style="color: red">**Lost**</span>
+- <del>2022-01-01: 0.28055816111 XMR (+fees) for renewal 1 year of Tor Exit Node 02</del>: <span style="color: red">**Lost**</span>
+- <del>2022-02-02: 0.966793601024 XMR (+fees) for sponsoring a related external special project in line with the Universal Declaration of Human Rights (details will remain indisclosed to protect project members)</del>: <span style="color: red">**Lost**</span>
+- 2022-07-11: 0.503232784687 XMR (+fees) for 1984.is VPS (12 months): 
 - 2022-09-19: 0.345024603905 XMR (+fees) for upgrading VPS RAM/Disk
 
 Total Monero remaining: **0.059336719397 XMR**
