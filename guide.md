@@ -20,7 +20,7 @@ The manual is here: <https://briarproject.org/manual/>, quick-start guide here: 
 
 --------------------------------------------------------------------------
 
-**This guide is a work in progress**. While we are doing the best we can to correct issues, inaccuracies, and improve the content, general structure, and readability; it will probably never be "finished".
+**This guide is a work in progress**. While we are doing the best we can to correct issues, inaccuracies, and improve the content, general structure, and readability; it will probably never be "finished". This guide has no affiliation with the [Anonymous](https://en.wikipedia.org/wiki/Anonymous_(hacker_group)) <sup>[[Wikiless]](https://wikiless.org/wiki/Anonymous_(hacker_group))</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Anonymous_(hacker_group))</sup> collective/movement.
 
 **There might be some wrong or outdated information in this guide because no human is omniscient, and humans do make mistakes.** **Please do not take this guide as a definitive gospel or truth because it is not. Mistakes have been written in the guide in earlier versions and fixed later when discovered. There are likely still some mistakes in this guide at this moment (hopefully few). Those are fixed as soon as possible when discovered.**
 
