@@ -1399,21 +1399,23 @@ The only way to mitigate this is to encrypt your data on your side and then only
 
 ## Your Browser and Device Fingerprints:
 
-Your Browser and Device Fingerprints[^382] are set of properties/capabilities of your System/Browser. These are used on most websites for invisible user tracking but also to adapt the website user experience depending on their browser. For instance, websites will be able to provide a "mobile experience" if you are using a mobile browser or propose a specific language/geographic version depending on your fingerprint. Most of those techniques work with recent Browsers like Chromium-based[^251] browsers (such as Chrome/Edge) or Firefox[^252] unless taking specific measures.
+Your browser and device fingerprints[^382] are sets of properties/capabilities of your system/browser which can be analyzed. These are used on most websites for invisible user tracking, but can also be used to adapt the user experience (UX) depending on their browser type (e.g., mobile browsers). Some websites will be able to provide a mobile experience if you are using a mobile browser, or propose a specific language/geographic version depending on your fingerprint, your browser’s user agent, or your request headers. Most of those techniques work with recent browsers like Chromium-based browsers[^251] (such as Chrome and Edge) or Firefox[^252], unless the user takes specific precautions.
 
 You can find a lot of detailed information and publications about this on these resources:
 
--   <https://amiunique.org/links> <sup>[[Archive.org]](https://web.archive.org/web/https://amiunique.org/links)</sup>
+-   <https://amiunique.org/links> <sup>[[Archive.org]](https://web.archive.org/web/20220814180236/https://amiunique.org/links)</sup>
 
--   <https://brave.com/brave-fingerprinting-and-privacy-budgets/> <sup>[[Archive.org]](https://web.archive.org/web/https://brave.com/brave-fingerprinting-and-privacy-budgets/)</sup>
+-   <https://uniquemachine.org/> <sup>[[Archive.org]](https://web.archive.org/web/20220715074819/https://uniquemachine.org/)</sup>
 
-Most of the time, those fingerprints will, unfortunately, be unique or nearly unique to your Browser/System. This means that even If you log out from a website and then log back in using a different username, your fingerprint might remain the same if you did not take precautionary measures.
+-   <https://brave.com/brave-fingerprinting-and-privacy-budgets/> <sup>[[Archive.org]](https://web.archive.org/web/20220901000053/https://brave.com/web-standards-at-brave/2-privacy-budgets/)</sup>
 
-An adversary could then use such fingerprints to track you across multiple services even if you have no account on any of them and are using adblocking. These fingerprints could in turn be used to de-anonymize you if you keep the same fingerprint between services.
+Most of the time, those fingerprints will, unfortunately, be unique or nearly unique to your browser/system. This means that even if you log out from a website and then log back in using a different username, your fingerprint might remain the same if you did not take precautionary measures.
 
-It should also be noted that while some browsers and extensions will offer some fingerprint resistance, this resistance in itself can also be used to fingerprint you as explained here <https://palant.info/2020/12/10/how-anti-fingerprinting-extensions-tend-to-make-fingerprinting-easier/> <sup>[[Archive.org]](https://web.archive.org/web/https://palant.info/2020/12/10/how-anti-fingerprinting-extensions-tend-to-make-fingerprinting-easier/)</sup>
+An adversary could then use such a fingerprint to track you across multiple services even if you have no account on any of them and are using adblocking. They are sometimes used to paywall users, e.g. to prevent a reader of a newspaper or magazine from viewing more than 5 articles a day. Some websites use it to verify your identity for security purposes, e.g. to identify whether you are the person owning a bank account vs. someone from another country using a different browser. These fingerprints could in turn be used to deanonymize you if you keep the same fingerprint between services. Each of them alone probably won't identify you uniquely, but there are several data points that can be combined to create a very unique or individual hash of your browser and your identity, including what type of CPU you have, for instance. That can be tracked across not only that website but the entire web.
 
-This guide will mitigate these issues by mitigating, obfuscating, and randomizing many of those fingerprinting identifiers by using Virtualization (See [Appendix W: Virtualization][Appendix V1: Hardening your Browsers:]), using specific recommendations (See [Appendix A5: Additional browser precautions with JavaScript enabled] and [Appendix V1: Hardening your Browsers][Appendix V1: Hardening your Browsers:]) and using by fingerprinting resistant Browsers (Brave and Tor Browser).
+It should also be noted that while some browsers and extensions will offer some fingerprint resistance, this resistance in itself can also be used to fingerprint you as explained here: <https://palant.info/2020/12/10/how-anti-fingerprinting-extensions-tend-to-make-fingerprinting-easier/> <sup>[[Archive.org]](https://web.archive.org/web/https://palant.info/2020/12/10/how-anti-fingerprinting-extensions-tend-to-make-fingerprinting-easier/)</sup>
+
+This guide will mitigate, obfuscate and randomize many of those fingerprinting identifiers by using Virtualization (See [Appendix W: Virtualization][Appendix V1: Hardening your Browsers:]); using specific recommendations (See [Appendix A5: Additional browser precautions with JavaScript enabled] and [Appendix V1: Hardening your Browsers][Appendix V1: Hardening your Browsers:]); and by using fingerprinting-resistant Browsers (Brave and Tor Browser).
 
 ## Microarchitectural Side-channel Deanonymization Attacks:
 
@@ -1421,9 +1423,17 @@ There was an attack published that can deanonymize users if they have a known al
 
 The attack, published at <https://leakuidatorplusteam.github.io/> <sup>[[Archive.org]](https://web.archive.org/web/20220720023429/https://leakuidatorplusteam.github.io/)</sup>, can be mitigated using the well-known [NoScript](https://noscript.net/) extension and will be our preferred recommendation.
 
+One loosely documented attack might take the following approach to fingerprinting: Alice is browsing the web using Firefox. The website she has just visited is using an invisible `iframe` that creates long strings, e.g., sentences or hashes, to produce some non-user-viewable string. These strings are setting a certain font type, Arial. Whether the browser renders this is non-essential, it only matters if the font changes. The `iframe` in this case serves no purpose but to identify whether a user has installed a certain font on their machine. If Alice is using a font that this frame has tried to render, then it is reported back to the website and to the person in control of the website. 
+
+The font renders a box with a specific height and width around itself, so that means a specific height and width of the text contained within. The `iframe` keeps doing this for each installed font to create a list of installed fonts for Alice. Because of stylistic differences between each font family, the same string and the same font size will add up to a different height and a different width than Arial. It is used as a fallback font to display text that won't display otherwise, in the case of a user not having that font on their machine and thus non-viewable from their browser. 
+
+If a font requested by an `iframe` is not available, Arial will be used to show that text to the user. Every time the font measurement (identified by the dimensions of the box produced) changed, it means the font is present on Alice's browser and her machine. By doing this for hundreds of fonts, websites can use this information to track users using their installed fonts across websites. Imagine a website then selling this “anonymized” information as a dataset to advertisement companies to serve you ads based on the websites you visit, because they know every font you have installed on your machine and can now track your identity across the internet. This attack is demonstrated here: [Everything you always wanted to know about web-based device fingerprinting (but were afraid to ask)](https://www.youtube.com/watch?v=5Y1Y96jC5AA) by Dr. Nick Nikiforakis, PhD in Computer Science from KU Leuven. He explains how his team of researchers identified which sites were using such techniques on Alexa's top 10,000 websites. Primarily, they found that of those, 145 were fingerprinting browsers. They were fingerprinted 100% of the time — whether they were using the Do Not Track header, a popular Privacy & Security setting in many browsers, did not matter.
+
+Attacks such as invisible iframes and media elements can be avoided by blocking all scripts globally by using something like uBlock Origin <https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm> or by using NoScript <https://chrome.google.com/webstore/detail/noscript/doojmbjmlfjjnbmnoijecmcbfeoakpjm>. This is highly encouraged, not only to those wishing to be anonymous, but also to general web users.
+
 ## Tor Browser:
 
-This attack is now prevented by default by an update of [NoScript](https://noscript.net/) (11.4.8 and above) on all security levels. 
+**Note: This attack is now prevented by default by an update of [NoScript](https://noscript.net/) (11.4.8 and above) on all security levels in Tor Browser.**
 
 ## All others:
 
