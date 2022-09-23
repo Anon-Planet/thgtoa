@@ -12405,7 +12405,8 @@ We recommend the LINDDUN <https://www.linddun.org> threat modeling method <sup>[
     
 LINDDUN threat modeling tutorials and resources:
   - **We recommend the following quick tutorial video from "The Hated One" YouTube channel with the approval and review from LINDDDUN designers: <https://www.youtube.com/watch?v=6AXkJ3dot2s>** <sup>[[Invidious]](https://yewtu.be/watch?v=6AXkJ3dot2s>)</sup> to get started.
-  - More reources for deeper understanding and usage:
+  - More resources for deeper understanding and usage:
+
     - You can read more here: [A Lightweight Approach to Privacy Threat Modeling](https://sion.info/assets/pdf/publications/WuytsIWPE2020.pdf)
     - Here are two videos from [Dr. K. Wuyts](https://www.semanticscholar.org/author/Kim-Wuyts/3190241) (imec-DistriNet, KU Leuven) explaining the process:
         - [Privacy & prejudice: on privacy threat modeling misconceptions](https://www.youtube.com/watch?v=zI4SFyq_Xjw) <sup>[[Invidious]](https://yewtu.be/watch?v=zI4SFyq_Xjw)</sup>
