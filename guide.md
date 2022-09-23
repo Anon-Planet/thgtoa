@@ -24,8 +24,6 @@ The manual is here: <https://briarproject.org/manual/>, quick-start guide here: 
 
 **There might be some wrong or outdated information in this guide because no human is omniscient, and humans do make mistakes.** **Please do not take this guide as a definitive gospel or truth because it is not. Mistakes have been written in the guide in earlier versions and fixed later when discovered. There are likely still some mistakes in this guide at this moment (hopefully few). Those are fixed as soon as possible when discovered.**
 
-**This guide has been moved, due to recent unfortunate events. The old guide was at [anonymousplanet.org](https://web.archive.org/web/20220227172123/https://anonymousplanet.org/), but has since been moved to <https://anonymousplanet.org>**
-
 **Your experience may vary.** **Remember to check regularly for an updated version of this guide.**
 
 This guide is a non-profit open-source initiative, licensed under Creative Commons **Attribution-NonCommercial** 4.0 International ([cc-by-nc-4.0](https://creativecommons.org/licenses/by-nc/4.0/) <sup>[[Archive.org]](https://web.archive.org/web/https://creativecommons.org/licenses/by-nc/4.0/)</sup>).
