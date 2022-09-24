@@ -126,7 +126,7 @@ Finally note that this guide does mention and even recommends various commercial
     -   [Your Cryptocurrencies transactions:]
     -   [Your Cloud backups/sync services:]
     -   [Your Browser and Device Fingerprints:]
-        -   [Microarchitectural Side-channel Deanonymization Attacks:]
+    -   [Microarchitectural Side-channel Deanonymization Attacks:]
     -   [Local Data Leaks and Forensics:]
     -   [Bad Cryptography:]
     -   [No logging but logging anyway policies:]
@@ -1399,23 +1399,21 @@ The only way to mitigate this is to encrypt your data on your side and then only
 
 ## Your Browser and Device Fingerprints:
 
-Your browser and device fingerprints[^382] are sets of properties/capabilities of your system/browser which can be analyzed. These are used on most websites for invisible user tracking, but can also be used to adapt the user experience (UX) depending on their browser type (e.g., mobile browsers). Some websites will be able to provide a mobile experience if you are using a mobile browser, or propose a specific language/geographic version depending on your fingerprint, your browser’s user agent, or your request headers. Most of those techniques work with recent browsers like Chromium-based browsers[^251] (such as Chrome and Edge) or Firefox[^252], unless the user takes specific precautions.
+Your Browser and Device Fingerprints[^382] are a set of properties/capabilities of your System/Browser. These are used on most websites for invisible user tracking but also to adapt the website user experience depending on their browser. For instance, websites will be able to provide a "mobile experience" if you are using a mobile browser or propose a specific language/geographic version depending on your fingerprint. Most of those techniques work with recent Browsers like Chromium-based[^251] browsers (such as Chrome/Edge) or Firefox[^252] unless taking specific measures. Browser and Device[^382] Fingerprinting are usually integrated into the Captcha services but also in other various services.
 
-You can find a lot of detailed information and publications about this on these resources:
+We will address [Browser and Device Fingerprinting][Browser and Device Fingerprinting:] further down but this is a basic introduction to the methodology behind it and why it is used in practice.
 
--   <https://amiunique.org/links> <sup>[[Archive.org]](https://web.archive.org/web/20220814180236/https://amiunique.org/links)</sup>
+It should also be noted that while some browsers and extensions will offer some fingerprint resistance, this resistance in itself can also be used to fingerprint you as explained here <https://palant.info/2020/12/10/how-anti-fingerprinting-extensions-tend-to-make-fingerprinting-easier/> <sup>[[Archive.org]](https://web.archive.org/web/https://palant.info/2020/12/10/how-anti-fingerprinting-extensions-tend-to-make-fingerprinting-easier/)</sup>
 
--   <https://uniquemachine.org/> <sup>[[Archive.org]](https://web.archive.org/web/20220715074819/https://uniquemachine.org/)</sup>
+This guide will mitigate these issues by randomizing or hiding many of those fingerprinting identifiers by:
 
--   <https://brave.com/brave-fingerprinting-and-privacy-budgets/> <sup>[[Archive.org]](https://web.archive.org/web/20220901000053/https://brave.com/web-standards-at-brave/2-privacy-budgets/)</sup>
+-   Using Virtualization (See [Appendix W: Virtualization]);
 
-Most of the time, those fingerprints will, unfortunately, be unique or nearly unique to your browser/system. This means that even if you log out from a website and then log back in using a different username, your fingerprint might remain the same if you did not take precautionary measures.
+-   Using specific recommendations (See [Appendix A5: Additional browser precautions with JavaScript enabled];
 
-An adversary could then use such a fingerprint to track you across multiple services even if you have no account on any of them and are using adblocking. They are sometimes used to paywall users, e.g. to prevent a reader of a newspaper or magazine from viewing more than 5 articles a day. Some websites use it to verify your identity for security purposes, e.g. to identify whether you are the person owning a bank account vs. someone from another country using a different browser. These fingerprints could in turn be used to deanonymize you if you keep the same fingerprint between services. Each of them alone probably won't identify you uniquely, but there are several data points that can be combined to create a very unique or individual hash of your browser and your identity, including what type of CPU you have, for instance. That can be tracked across not only that website but the entire web.
+-   Using hardening [Appendix V1: Hardening your Browsers][Appendix V1: Hardening your Browsers:]);
 
-It should also be noted that while some browsers and extensions will offer some fingerprint resistance, this resistance in itself can also be used to fingerprint you as explained here: <https://palant.info/2020/12/10/how-anti-fingerprinting-extensions-tend-to-make-fingerprinting-easier/> <sup>[[Archive.org]](https://web.archive.org/web/https://palant.info/2020/12/10/how-anti-fingerprinting-extensions-tend-to-make-fingerprinting-easier/)</sup>
-
-This guide will mitigate, obfuscate and randomize many of those fingerprinting identifiers by using Virtualization (See [Appendix W: Virtualization][Appendix V1: Hardening your Browsers:]); using specific recommendations (See [Appendix A5: Additional browser precautions with JavaScript enabled] and [Appendix V1: Hardening your Browsers][Appendix V1: Hardening your Browsers:]); and by using fingerprinting-resistant Browsers (Brave and Tor Browser).
+-   and by using fingerprint-resistant browsers (like Brave or Tor Browser).
 
 ## Microarchitectural Side-channel Deanonymization Attacks:
 
@@ -5711,9 +5709,7 @@ For this reason, this guide does recommend the use of VPN over Tor (and not Tor 
 
 ### Browser and Device Fingerprinting:
 
-Browser and Device[^382] Fingerprinting are usually integrated into the Captcha services but also in other various services.
-
-Many platforms (like Google[^383]) will check your browser for various capabilities and settings and block Browsers they do not like. This is one of the reasons we recommend using Chromium-based Browsers such as Brave Browser over Tor Browser within this VM.
+Many platforms (like Google[^383]) will check your browser for various capabilities and settings and block browsers they do not like. This is one of the reasons we recommend using Chromium-based browsers such as Brave Browser over Tor Browser within this VM.
 
 Here are some of the things they check within recent browsers:
 
@@ -5751,7 +5747,7 @@ Here are some of the things they check within recent browsers:
 
 -   Browser Permissions: Is your browser allowing some things like geolocation or microphone/webcam access.
 
--   ...
+Most of the time, those fingerprints will, unfortunately, be unique or nearly unique to your browser/system. This means that even If you log out from a website and then log back in using a different username, your fingerprint might remain the same if you did not take precautionary measures. An adversary could then use such fingerprints to track you across multiple services even if you have no account on any of them and are using adblocking. These fingerprints could in turn be used to de-anonymize you if you keep the same fingerprint between services.
 
 Here are services you can use to check your browser fingerprints:
     
