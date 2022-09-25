@@ -1581,7 +1581,7 @@ Many people have the idea that privacy-oriented services such as VPN or E-Mail p
 
 Any of those providers can be forced to silently (without your knowing (using for example a court order with a gag order[^272] or a national security letter[^273]) log your activity to de-anonymize you. There have been several recent examples of those:
 
--   2021, Proton, Proton logged IP address of French activist after an order by Swiss authorities (source link unavailable).
+-   2021, Proton, Proton logged IP address of French activist after an order by Swiss authorities [^274].
 
 -   2021, WindScribe, Servers were not encrypted as they should have been allowing MITM attacks by authorities[^275].
 
@@ -13031,6 +13031,8 @@ In short, our opinion is that you may use Session Messenger on iOS due to the ab
 
 [^273]: Wikipedia, National Security Letter <https://en.wikipedia.org/wiki/National_security_letter> <sup>[[Wikiless]](https://wikiless.org/wiki/National_security_letter)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/National_security_letter)</sup>
 
+[^274]: Proton.me Blog, CEO's explanation <https://proton.me/blog/climate-activist-arrest> <sup>[[Archive.org]](https://web.archive.org/web/20220822102156/https://proton.me/blog/climate-activist-arrest)</sup>    
+    
 [^275]: ArsTechnica, VPN servers seized by Ukrainian authorities weren't encrypted <https://arstechnica.com/gadgets/2021/07/vpn-servers-seized-by-ukrainian-authorities-werent-encrypted/> <sup>[[Archive.org]](https://web.archive.org/web/https://arstechnica.com/gadgets/2021/07/vpn-servers-seized-by-ukrainian-authorities-werent-encrypted/)</sup>
 
 [^276]: BleepingComputer, DoubleVPN servers, logs, and account info seized by law enforcement <https://www.bleepingcomputer.com/news/security/doublevpn-servers-logs-and-account-info-seized-by-law-enforcement/> <sup>[[Archive.org]](https://web.archive.org/web/https://www.bleepingcomputer.com/news/security/doublevpn-servers-logs-and-account-info-seized-by-law-enforcement/)</sup>
