@@ -7,8 +7,7 @@ Please share this project if you enjoy it and think it might be useful to others
 Follow or contact us on: 
 - Twitter: <https://twitter.com/AnonyPla>
 - Mastodon: <https://mastodon.social/@anonymousplanet>
-- Element/Matrix.org: <del>@anonypla:envs.net, @anonypla:tchncs.de, and @anonypla:matrix.org </del> (all deactivated permanently)
-- E-Mail: <contact@anonymousplanet.org> (You may use our [PGP public signature](https://github.com/Anon-Planet/thgtoa/blob/master/42FF35DB9DE7C088AB0FD4A70C216A52F6DF4920.asc) to encrypt e-mails. Do not forget to attach your PGP public key if you want an encrypted answer) 
+- E-Mail: <contact@anonymousplanet.org> (You may use our [PGP public signature](https://anonymousplanet.org/42FF35DB9DE7C088AB0FD4A70C216A52F6DF4920.asc) to encrypt e-mails. Do not forget to attach your PGP public key if you want an encrypted answer) 
 
 Discussion Channels:
 - Matrix room: ```#anonymity:matrix.org``` <https://matrix.to/#/#anonymity:matrix.org>
@@ -39,15 +38,3 @@ Some facts about me:
 - I enjoy good memes, movies, series, and books (and I'm sure some of you will spot some of the many references to those in my project).
 
 Please share this project if you enjoy it and think it might be useful to others.
-
-Follow or contact me on: 
-- Twitter: <https://twitter.com/AnonyPla> (account taken over and reset for continuing using for the project)
-- Mastodon: <del><https://mastodon.social/@anonypla></del> (account deleted or disabled)
-- Element/Matrix.org: <del>```@anonypla:envs.net``` **(@anonypla:tchncs.de, and @anonypla:matrix.org are currently out of order)**</del> (all acounts are deactivated)
-  - Reddit: <del><https://old.reddit.com/message/compose/?to=AnonyPla></del> (account deleted)
-  - E-Mail: <del><contact@anonymousplanet.org></del> (DNS MX records removed and mail hosting deleted)
-
-Discussion Channels:
-- Matrix room: ```#anonymity:matrix.org``` <https://matrix.to/#/#anonymity:matrix.org>
-- Matrix space: ```#privacy-security-anonymity:matrix.org``` <https://matrix.to/#/#privacy-security-anonymity:matrix.org>
-- Github Discussions: <https://github.com/AnonyPla-ng/thgtoa/discussions>
