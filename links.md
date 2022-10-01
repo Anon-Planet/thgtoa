@@ -19,7 +19,6 @@ All the links below are listed in alphabetical order:
 - Privacy Guides: <https://privacyguides.org> 
 - Techlore: <https://techlore.tech> (May contain clearly marked sponsored products/services, premium content, and affiliate links)
 - The New Oil: <https://thenewoil.org> (May contain clearly marked sponsored products/services and affiliate links)
-- PrivacyTools.io: <https://privacytools.io> (May contain clearly marked sponsored products/services and affiliate links)
 
 #### Blogs and personal websites:
 - CIA Officer's Blog: <https://officercia.mirror.xyz/>

@@ -497,8 +497,6 @@ First, you could also consider these more general resources on privacy and secur
 
 -   Privacy Guides: <https://privacyguides.org/> <sup>[[Archive.org]](https://web.archive.org/web/https://privacyguides.org/)</sup>
 
--   Privacy Tools\*: <https://privacytools.io> <sup>[[Archive.org]](https://web.archive.org/web/https://privacytools.io/)</sup>
-
 *Note that these websites could contain affiliate/sponsored content and/or merchandising. This guide does not endorse and is not sponsored by any commercial entity in any way.*
 
 If you skipped those, you should really still consider viewing this YouTube playlist from the Techlore Go Incognito project (<https://github.com/techlore-official/go-incognito> <sup>[[Archive.org]](https://web.archive.org/web/https://github.com/techlore-official/go-incognito)</sup>) as an introduction before going further: <https://www.youtube.com/playlist?list=PL3KeV6Ui_4CayDGHw64OFXEPHgXLkrtJO> <sup>[[Invidious]](https://yewtu.be/playlist?list=PL3KeV6Ui_4CayDGHw64OFXEPHgXLkrtJO)</sup>. This guide will cover many of the topics in the videos of this playlist with more details and references as well as some added topics not covered within that series. This will just take you 2 or 3 hours to watch it all.
@@ -5645,7 +5643,7 @@ If you want to avoid communicating your anonymous e-mail addresses to various pa
 
 -   <https://anonaddy.com/>
 
-These services will allow creating random aliases for your anonymous e-mail (on Proton for example) and could increase your general privacy if you do not want to disclose that e-mail for any purpose. They are both recommended by Privacyguides.org and Privacytools.io. I'm recommending them as well.
+These services will allow creating random aliases for your anonymous e-mail (on Proton for example) and could increase your general privacy if you do not want to disclose that e-mail for any purpose. 
 
 ### User details checking:
 

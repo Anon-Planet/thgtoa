@@ -115,7 +115,6 @@ v1.1.1
 - Added reference to <https://www.vice.com/en/article/m7vqkv/how-fbi-gets-phone-data-att-tmobile-verizon> in the metadata/geo-location section
 - Added reference to <https://fingerprintjs.com/blog/disabling-javascript-wont-stop-fingerprinting/> in several sections about JavaScript
 - Added reference to <https://qua3k.github.io/ungoogled/> in the sections about Ungoogled-Chromium
-- Re-Added Privacytools.io in the Links section
 - Added a general disclaimer on the Links page about websites possibly using sponsorships, affiliate links, paid services, premium offers, and merchandising...
 - Re-Added a Discord server to provide easier access to the community through <https://discord.gg/V8dmd9y7mt> with all the rooms bridged to Matrix rooms
 - Changed the Matrix/Discord communities from being room focused (#anonymity) to a broader "Privacy Security Anonymity" space with a new #security focused room and an off-topic room.
@@ -126,7 +125,6 @@ v1.1.1
 v1.1.0
 - Removed SHA-3 from recommended methods for password storage
 - Added reference to <https://docs.securedrop.org/en/stable/source.html> in the section about communicating sensitive information to various organizations
-- **Pending review** removal of privacytools.io from the guide after discovering sponsored recommendations within the lists on their website. Disclaimer added on the links page.
 - Added reference to <https://web.archive.org/web/20181125133942/https://www.cs.drexel.edu/~sa499/papers/adversarial_stylometry.pdf> in the Stylometry section
 - Added reference to <https://www.whonix.org/wiki/Surfing_Posting_Blogging#Stylometry> in the Stylometry section
 - Added reference to <https://www.whonix.org/wiki/Surfing_Posting_Blogging#Anonymous_File_Sharing> in the appendix checklist of things to check before sharing information
@@ -137,7 +135,6 @@ v1.1.0
 - Various spelling/grammar fixes
 
 v1.0.9
-- Re-Added Privacytools.io (along Privacyguides.org) as a good source of information and recommendations for various services/products/platforms within the guide.
 - Added a Links page to the website with a small collection of recommended projects to visit.
 - Changed the layout of the website to make the buttons a bit smaller
 - Added reference to <https://medium.com/@c5/darkweb-vendors-and-the-basic-opsec-mistakes-they-keep-making-e54c285a488c> in the OPSEC section.
@@ -162,7 +159,6 @@ v1.0.7
 - Added reference to <https://www.scientificamerican.com/article/a-blank-wall-can-show-how-many-people-are-in-a-room-and-what-theyre-doing/> in the targeted techniques section
 - Added reference to <https://www.scientificamerican.com/article/a-shiny-snack-bags-reflections-can-reconstruct-the-room-around-it/> in the targeted techniques section
 - Added reference to <https://www.scientificamerican.com/article/footstep-sensors-identify-people-by-gait/> in the targeted techniques section
-- Switched various links from PrivacyTools.io to PrivacyGuides.org that were forgotten in a previous update
 - Added guidance to share information and files publicly including IPFS
 - Added an appendix containing a checklist of things to verify before sharing any information or file (metadata...)
 - Complete reworking of the Introduction and Prologue for better readability (there was way too much text in there)
@@ -204,7 +200,6 @@ v1.0.5
 v1.0.4
 - Added reference to <https://therecord.media/malware-found-preinstalled-in-classic-push-button-phones-sold-in-russia/> in the burner phone section
 - Added reference to <https://sourceforge.net/p/veracrypt/discussion/technical/thread/3961542951/> in the Veracrypt settings sections
-- Changed Privacytools.io to Privacyguides.org after name change
 - Added reference to <https://github.com/iperov/DeepFaceLive> in the Face recognition section
 - Added reference to <https://www.news.ucsb.edu/2021/020392/dont-fidget-wifi-will-count-you> within the Wi-Fi around you section
 - Matrix room change from #online-anonymity:matrix.org to #anonymity:matrix.org (old alias remains valid)
