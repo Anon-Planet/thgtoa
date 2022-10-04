@@ -4229,7 +4229,7 @@ Here are the tutorials:
 
 -   Windows:
 
-    -   Download from <https://keepassxc.org/download/> <sup>[[Archive.org]](https://web.archive.org/web/https://keepassxc.org/download/)</sup>
+    -   Download from <https://keepassxc.org/download/> <sup>[[Archive.org]](https://web.archive.org/web/https://keepassxc.org/download/)</sup> or Microsoft Store <https://apps.microsoft.com/store/detail/keepassxc/XP8K2L36VP0QMB>
 
     -   Follow the tutorial here <https://KeePassXC.org/docs/KeePassXC_GettingStarted.html#_microsoft_windows/> <sup>[[Archive.org]](https://web.archive.org/web/https://keepassxc.org/docs/KeePassXC_GettingStarted.html)</sup>
 
