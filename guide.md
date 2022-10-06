@@ -101,6 +101,7 @@ Finally note that this guide does mention and even recommends various commercial
         -   [Some Devices can be tracked even when offline:]
     -   [Your Hardware Identifiers:]
         -   [Your IMEI and IMSI (and by extension, your phone number):]
+        -   [Your Cell-Site Location Information:]
         -   [Your Wi-Fi or Ethernet MAC address:]
         -   [Your Bluetooth MAC address:]
     -   [Your CPU:]
@@ -824,6 +825,28 @@ Here is also a good YouTube video on this topic: DEFCON Safe Mode - Cooper Quint
 While there are some smartphones manufacturers like Purism with their Librem series[^98] who claim to have your privacy in mind, they still do not allow IMEI randomization which we believe is a key anti-tracking feature that should be provided by such manufacturers. While this measure will not prevent IMSI tracking within the SIM card, it would at least allow you to keep the same "burner phone" and only switch SIM cards instead of having to switch both for privacy.
 
 See [Appendix N: Warning about smartphones and smart devices]
+
+### Your Cell-Site Location Information:
+
+Wireless carriers produce CSLI or [Cell Data Records](https://cyfor.co.uk/digital-forensics/call-data-record-analysis/) for phones. The Government is able to obtain **thousands** of location identifiers based on who was in a given area at a specific time or range of times. This includes:
+
+-   Date of call
+-   Time of call
+-   Call duration
+-   Number making the call (originating)
+-   Number receiving the call (terminating)
+-   IMEI – International Mobile Equipment Identity
+-   CI – Cell site identity number
+
+This data was pointed to in an article from Vice, titled *["Revealed: US Military Bought Mass Monitoring Tool That Includes Internet Browsing, Email Data"](https://www.vice.com/en/article/y3pnkw/us-military-bought-mass-monitoring-augury-team-cymru-browsing-email-data)* regarding Augury, which is designed to reveal historical subscriber data. Among others, it is a tool used by the Navy, Army, Cyber Command, and the Defense Counterintelligence and Security Agency (DCSA) in the US. Augury gathers a staggering amount of data about a subject, including a subscriber's CSLI. But the UK spy agency GCHQ also has access to the subscriber information given the UK-US agreement made in the CLOUD Act: <https://www.justice.gov/dag/page/file/1153466/download>. At the end of the agreement, it is said this is "encryption neutral", but remember, this doesn't cover metadata, and that's what the governments around the world are heavily focused on. This makes tools like Augury a privacy blunder because it allows governments to warrantlessly gather minute-by-minute data on a user of any devices at any time in an area surrounding an investigation.
+
+"Cell phones perform their wide and growing variety of functions by connecting to a set of radio antennas called "cell sites." Although cell sites are usually mounted on a tower, they can also be found on light posts, flagpoles, church steeples, or the sides of buildings. Cell sites typically have several directional antennas that divide the covered area into sectors. Cell phones continuously scan their environment looking for the best signal, which generally comes from the closest cell site. Most modern devices, such as smartphones, tap into the wireless network several times a minute. Each time the phone connects to a cell site, it generates a time-stamped record known as cell-site location information (CSLI). The precision of this information depends on the size of the geographic area covered by the cell site. The greater the concentration of cell sites, the smaller the coverage area."
+
+Wireless carriers collect and store CSLI for their own business purposes, including finding weak spots in their network and applying "roaming" charges when another carrier routes data through their cell sites. In addition, wireless carriers often sell aggregated location records to data brokers, without individual identifying information of the sort at issue here. Accordingly, modern cell phones generate increasingly vast amounts of increasingly precise CSLI, which can easily be obtained, often without a warrant. [Carpenter v. US, 585 U.S. 2018.](https://supreme.justia.com/cases/federal/us/585/16-402/)
+
+Given that cell phone users voluntarily convey cell-site data to their carriers as "a means of establishing communication," the court concluded that the resulting business records are not entitled to Fourth Amendment protection," [as decided June 22, 2018](https://www.law.cornell.edu/supremecourt/text/16-402) <sup>[[Archive.org]](https://web.archive.org/web/20220826042940/https://www.law.cornell.edu/supremecourt/text/16-402)</sup>
+
+Due to the nature of cell networks and how they work, there is **no** way to not give information like this to your service provider. It is apparently "implied", as evidenced by the [Telephone Consumer Protection Act 47 U.S.C. § 227](https://www.fcc.gov/sites/default/files/tcpa-rules.pdf) <sup>[[Archive.org]](https://web.archive.org/web/20220913181620/https://www.fcc.gov/sites/default/files/tcpa-rules.pdf)</sup>.
 
 ### Your Wi-Fi or Ethernet MAC address:
 
@@ -13573,6 +13596,7 @@ In short, our opinion is that you may use Session Messenger on iOS due to the ab
   [Some Devices can be tracked even when offline:]: #some-devices-can-be-tracked-even-when-offline
   [Your Hardware Identifiers:]: #your-hardware-identifiers
   [Your IMEI and IMSI (and by extension, your phone number):]: #your-imei-and-imsi-and-by-extension-your-phone-number
+  [Your Cell-Site Location Information:]: #your-cell-site-location-information
   [Your Wi-Fi or Ethernet MAC address:]: #your-wi-fi-or-ethernet-mac-address
   [Your Bluetooth MAC address:]: #your-bluetooth-mac-address
   [Your CPU:]: #your-cpu
