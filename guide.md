@@ -3548,9 +3548,9 @@ Some steps should be taken in all cases:
 
 This has a few advantages that will help you remain anonymous:
 
--   It should prevent the guest VM OS (Windows/Linux/macOS), Apps, and any telemetry within the VMs from accessing your hardware directly. Even if your VM is compromised by malware, this malware should not be able to the VM and compromise your actual laptop.
+-   It should prevent the guest VM OS (Windows/Linux/macOS), apps, and any telemetry within the VMs from accessing your hardware directly. Even if your VM is compromised by malware, it should not be able to exit the VM and compromise your actual laptop.
 
--   It will allow us to force all the network traffic from your client VM to run through another Gateway VM that will direct (torify) all the traffic towards the Tor Network. This is a network "kill switch". Your VM will lose its network connectivity completely and go offline if the other VM loses its connection to the Tor Network.
+-   It will allow us to force all the network traffic from your client VM to run through another Gateway VM that will direct (torify) all the traffic towards the Tor Network. This is a network "kill switch". Your VM will lose its network connectivity completely and go offline if the other VM loses its connection to the Tor network.
 
 -   The VM itself that only has internet connectivity through a Tor Network Gateway will connect to your cash-paid VPN service through Tor.
 
