@@ -196,6 +196,7 @@ Finally note that this guide does mention and even recommends various commercial
         -   [Captchas:]
         -   [Phone verification:]
         -   [E-Mail verification:]
+            - [A note about Riseup:]
         -   [User details checking:]
         -   [Proof of ID verification:]
         -   [IP Filters:]
@@ -13668,6 +13669,7 @@ In short, our opinion is that you may use Session Messenger on iOS due to the ab
   [Captchas:]: #captchas
   [Phone verification:]: #phone-verification
   [E-Mail verification:]: #e-mail-verification
+  [A note about Riseup:]: #a-note-about-riseup
   [User details checking:]: #user-details-checking
   [Proof of ID verification:]: #proof-of-id-verification
   [IP Filters:]: #ip-filters
