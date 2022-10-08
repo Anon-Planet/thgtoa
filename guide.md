@@ -2,23 +2,11 @@
 
 (Or "How I learned to start worrying and love ~~privacy~~ anonymity")
 
-Version 1.1.6-pre1, August 2022 by Anonymous Planet
+Version 1.1.6, October 2022 by Anonymous Planet
 
 **Forever in memory of Lena, 1999-2022**
 
-#### **IMPORTANT RECOMMENDATION FOR UKRAINIANS. ВАЖЛИВА РЕКОМЕНДАЦІЯ ДЛЯ УКРАЇНЦІВ**
-
-Це послання до народу України. Ми настійно рекомендуємо вам використовувати Briar для спілкування. Ви можете знайти його тут: <https://briarproject.org/ . 
-За допомогою цієї програми ви можете спілкуватися, навіть коли немає Інтернету.
-Посібник тут: <https://briarproject.org/manual/uk/>, Швидкий початок: <https://briarproject.org/quick-start/uk/>
-
---------------------------------------------------------------------------
-
-This is a message for the people of Ukraine. We strongly recommend that you use Briar for communicating. You can find it here: <https://briarproject.org/>
-With this application, you can communicate even when there is no internet.
-The manual is here: <https://briarproject.org/manual/>, quick-start guide here: <https://briarproject.org/quick-start/>
-
---------------------------------------------------------------------------
+#### Small prelude minimal recommendations concerning Ukraine (Ukrainian, **українська**) and Iran (Farsi, **فارسی**) at [Appendix B8: Localized Recommendations].
 
 **This guide is a work in progress**. While we are doing the best we can to correct issues, inaccuracies, and improve the content, general structure, and readability; it will probably never be "finished". This guide has no affiliation with the [Anonymous](https://en.wikipedia.org/wiki/Anonymous_(hacker_group)) <sup>[[Wikiless]](https://wikiless.org/wiki/Anonymous_(hacker_group))</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Anonymous_(hacker_group))</sup> collective/movement.
 
@@ -385,6 +373,7 @@ Finally note that this guide does mention and even recommends various commercial
 -   [Appendix B5: Types of CPU attacks:]
 -   [Appendix B6: Warning for using Orbot on Android] 
 -   [Appendix B7: Caution about Session messenger]
+-	[Appendix B8: Localized Recommendations]
 -   [References:]
 
 # Pre-requisites and limitations:
@@ -12481,6 +12470,39 @@ Here are our reasons for being cautious about Session messenger in general:
 
 In short, our opinion is that you may use Session Messenger on iOS due to the absence of a better alternative (such as Briar). But if Briar or another app (maybe Cwtch in the future) becomes available, we will recommend going away from Session messenger as soon as possible. It is a last resort.
 
+# Appendix B8: Localized Recommendations
+
+## Україна (Ukraine, UKrainian):
+
+Це послання народу України. Ми наполегливо рекомендуємо вам використовувати Briar для спілкування. Ви можете знайти його тут: <https://briarproject.org/>
+За допомогою цього додатка ви можете спілкуватися, навіть коли немає Інтернету.
+Посібник тут: <https://briarproject.org/manual/uK/> , короткий посібник тут: <https://briarproject.org/quick-start/uk/>.
+Ви можете допомогти перекладу проекту Briar, дотримуючись інструкцій на <https://wiki.localizationlab.org/index.php/Briar>.
+
+--------------------------------------------------------------------------
+
+This is a message for the people of Ukraine. We strongly recommend that you use Briar for communicating. You can find it here: <https://briarproject.org/>
+With this application, you can communicate even when there is no internet.
+The manual is here: <https://briarproject.org/manual/uK/> , quick-start guide here: <https://briarproject.org/quick-start/uk/>.
+You can help the Briar project translation following instructions on <https://wiki.localizationlab.org/index.php/Briar>.
+ 
+## ایران (Iran, Persian):
+
+![][700]
+
+این پیامی برای مردم ایران است. ما قویاً توصیه می کنیم که از Briar برای برقراری ارتباط استفاده کنید. می توانید آن را در اینجا پیدا کنید: <https://briarproject.org/>
+با استفاده از این نرم افزار می توانید حتی زمانی که اینترنت ندارید ارتباط برقرار کنید.
+راهنمای فارسی اینجاست: <https://briarproject.org/manual/fa/>، راهنمای سریع اوکراینی در اینجا: <https://briarproject.org/quick-start/fa/>
+با این اپلیکیشن می توانید به صورت ناشناس و ایمن و بدون اینترنت با سایر معترضان ارتباط برقرار کنید. همچنین توصیه می کنیم این ویدیو از پروژه بریار را که دارای زیرنویس فارسی/فارسی است مشاهده کنید: <https://youtu.be/sKuljekMzTc> <sup>[[Invidious]](https://yewtu.be/watch?v=sKuljekMzTc) </sup> که زیرنویس فارسی را ارائه می دهد.
+می‌توانید به دنبال دستورالعمل‌های <https://wiki.localizationlab.org/index.php/Briar> به ترجمه پروژه Briar کمک کنید.
+
+--------------------------------------------------------------------------
+
+This is a message for the people of Iran. We strongly recommend that you use Briar for communicating. You can find it here: <https://briarproject.org/>
+With this application, you can communicate even when there is no internet.
+The Farsi manual is here: <https://briarproject.org/manual/fa/> , quick-start Ukrainian guide here: <https://briarproject.org/quick-start/fa/>
+With this application, you can communicate with other protesters anonymously and safely without the Internet. We also recommend viewing this video from Briar project which has Persian/Farsi subtitles: <https://youtu.be/sKuljekMzTc> <sup>[[Invidious]](https://yewtu.be/watch?v=sKuljekMzTc)</sup> which offers Persian Farsi subtitles.
+
 ---
 
 # References:
@@ -13857,6 +13879,7 @@ In short, our opinion is that you may use Session Messenger on iOS due to the ab
   [Appendix B5: Types of CPU attacks:]: #appendix-b5-types-of-cpu-attacks 
   [Appendix B6: Warning for using Orbot on Android]: #appendix-b6-warning-for-using-orbot-on-android 
   [Appendix B7: Caution about Session Messenger]: #appendix-b7-caution-about-session-messenger
+  [Appendix B8: Localized Recommendations]: #appendix-b8-localized-recommendations
   [References:]: #references
   [Tor over VPN]: #tor-over-vpn
   [The Detached Headers Way]: #the-detached-headers-way
@@ -13930,3 +13953,4 @@ In short, our opinion is that you may use Session Messenger on iOS due to the ab
   [690]: media/image57.png
   [698]: media/image58.jpeg
   [1389]: media/image59.png
+  [700]: media/image60.png

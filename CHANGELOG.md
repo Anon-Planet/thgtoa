@@ -1,4 +1,4 @@
-v1.1.6-pre1
+v1.1.6
 - Update on Tor Browser route due to major changes
   - Tor Project has condensed their settings and it is no longer
     necessary to manually configure bridges.
@@ -12,6 +12,7 @@ v1.1.6-pre1
 - Link to Qubes tutorial for installing Windows VMs
 - Added link to Arkenfox/user.js
 - Remove unnecessary addons
+- Added recommendation in Farsi for using Briar in Iran to help with their protests and moved those in appendixes in the guide to not clutter the main page
 
 v1.1.5
 - Various spelling and grammar fixes
