@@ -340,6 +340,7 @@ Finally note that this guide does mention and even recommends various commercial
         -   [Addons to install/consider:]
         -   [Bonus resources:]
 -   [Appendix W: Virtualization]
+    -   [Nested virtualization risks]
 -   [Appendix X: Using Tor bridges in hostile environments]
 -   [Appendix Y: Installing and using desktop Tor Browser]
     -   [Installation:][25]
@@ -11741,27 +11742,32 @@ Each Virtual Machine is a sandbox. Remember the reasons for using them are to pr
 
 -   Mitigate online data leaks by being able to enforce strict network rules on Virtual Machines for accessing the network (such as passing through the Tor Network).
 
-There is still an inherently larger attack surface when nesting virtualization.
+## Nested virtualization risks
 
-Some host information that can be leaked through the Virtual Machine include:
+**There is an inherently larger attack surface when nesting virtualization.**
+
+Here's some host information that can be leaked through the Virtual Machine:
 
 -   Organizationally unique identifier or OUI - the unique identifier assigned to VMWare Guest VMs;
     
--   Virtual Windows registry keys like **ProductID** might show the Host Machine's environment: `HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\ProductId XXXXX-123-1234567-12345`;
+-   Virtual Windows registry keys like **ProductID** might show the Host Machine's environment:  
+    `HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\ProductId XXXXX-123-1234567-12345`
 
--   HDD, GPU, and mouse drivers can be exposed through the `HKEY_LOCAL_MACHINE\System\CurrentControlSet\`;
+-   HDD, GPU, and mouse drivers can be exposed through: `HKEY_LOCAL_MACHINE\System\CurrentControlSet\`
 
--   `%WINDIR%\system32\drivers\vmmouse.sys` registry entries (which show that this is a virtual mouse);
+-   Registry entries will show that this is a virtual mouse: `%WINDIR%\system32\drivers\vmmouse.sys`  
 
--   Descriptor Table Registers <https://stackoverflow.com/questions/52505313/what-are-descriptor-registers/52505743#52505743>;
+-   Descriptor Table Registers: <https://stackoverflow.com/questions/52505313/what-are-descriptor-registers/52505743#52505743>
 
     -   Since it's a Virtual Machine using the same CPU cores, the descriptor values are relocated due to there only being space for one of each identifier per CPU. This is a dead giveaway and is used in detection by advanced malware. It's employed by malware architects to tell when the program is being ran in a forensics environment, even such as a Remnux or Flare VM - popular OS and OS addons that are used by experts to analyze the malware.
 
--   VMware Tools detection: In fact, some advanced malware actually automatically detect virtualization. This is trivial; most VMs contain this addon, operating unhidden by the Guest VM (it's user-installed, after successfully launching the VM). You don't want to install the tools in any of the VMs discussed in this guide because it can be easily detected by simple checks. It's not worth the exposure.
+-   VMware Tools detection:
+
+    -   In fact, some advanced malware actually automatically detect virtualization. This is trivial; most VMs contain this addon, operating unhidden by the Guest VM (it's user-installed, after successfully launching the VM). You don't want to install the tools in any of the VMs discussed in this guide because it can be easily detected by simple checks. It's not worth the exposure.
 
 -   Guest VMs also indirectly access the same hardware as the Host.
 
-See <https://www.malwarebytes.com/blog/news/2014/02/a-look-at-malware-with-virtual-machine-detection> for more techniques used by malware to detect virtualization. These techniques are mostly prevented by appending some settings to your config file <https://blog.talosintelligence.com/2009/10/how-does-malware-know-difference.html> (.vmx).
+See <https://www.malwarebytes.com/blog/news/2014/02/a-look-at-malware-with-virtual-machine-detection> for more techniques used by malware to detect virtualization. These techniques are mostly prevented by appending some settings to your VM config file (.vmx). <https://blog.talosintelligence.com/2009/10/how-does-malware-know-difference.html>
 
 # Appendix X: Using Tor bridges in hostile environments
 
@@ -13834,6 +13840,7 @@ In short, our opinion is that you may use Session Messenger on iOS due to the ab
   [Addons to install/consider:]: #addons-to-installconsider
   [Bonus resources:]: #bonus-resources
   [Appendix W: Virtualization]: #appendix-w-virtualization
+  [Nested virtualization risks]: #nested-virtualization-risks
   [Appendix X: Using Tor bridges in hostile environments]: #appendix-x-using-tor-bridges-in-hostile-environments
   [Appendix Y: Installing and using desktop Tor Browser]: #appendix-y-installing-and-using-desktop-tor-browser
   [25]: #installation-6
