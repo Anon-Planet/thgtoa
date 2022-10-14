@@ -11750,7 +11750,7 @@ Here's some host information that can be leaked through the Virtual Machine:
 
 -   Organizationally unique identifier or OUI - the unique identifier assigned to VMWare Guest VMs;
 
--   Virtual Windows registry keys like **ProductID** might show the Host Machine's environment:  
+-   Virtual Windows registry keys like `ProductID` might show the Host Machine's environment:  
     `HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\ProductId XXXXX-123-1234567-12345`
 
 -   HDD, GPU, and mouse drivers can be exposed through: `HKEY_LOCAL_MACHINE\System\CurrentControlSet\`
