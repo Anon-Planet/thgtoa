@@ -11761,10 +11761,6 @@ Here's some host information that can be leaked through the Virtual Machine:
 
     -   Since it's a Virtual Machine using the same CPU cores, the descriptor values are relocated due to there only being space for one of each identifier per CPU. This is a dead giveaway and is used in detection by advanced malware. It's employed by malware architects to tell when the program is being ran in a forensics environment, even such as a Remnux or Flare VM - popular OS and OS addons that are used by experts to analyze the malware.
 
--   VMware Tools detection:
-
-    -   In fact, some advanced malware actually automatically detect virtualization. This is trivial; most VMs contain this addon, operating unhidden by the Guest VM (it's user-installed, after successfully launching the VM). You don't want to install the tools in any of the VMs discussed in this guide because it can be easily detected by simple checks. It's not worth the exposure.
-
 -   Guest VMs also indirectly access the same hardware as the Host.
 
 See <https://www.malwarebytes.com/blog/news/2014/02/a-look-at-malware-with-virtual-machine-detection> for more techniques used by malware to detect virtualization. These techniques are mostly prevented by appending some settings to your VM config file (.vmx). <https://blog.talosintelligence.com/2009/10/how-does-malware-know-difference.html>
