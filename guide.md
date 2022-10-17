@@ -4800,7 +4800,7 @@ The reason for this RAM requirement is that each app will run in a different VM 
 
 You should also check their hardware compatibility here <https://www.qubes-os.org/hcl/> <sup>[[Archive.org]](https://web.archive.org/web/https://www.qubes-os.org/hcl/)</sup> before proceeding. Your mileage might vary, and you might experience several issues about hardware compatibility that you will have to troubleshoot and solve yourself.
 
-I think that if you can afford it and are comfortable with the idea of using Linux, you should go with this route as it is probably the best one in terms of security and privacy. The only disadvantage of this route is that it does not provide a way to enable OS-wide plausible deniability <sup>[[Archive.org]](media/image24.jpeg)</sup>, unlike the Whonix route.
+I think that if you can afford it and are comfortable with the idea of using Linux, you should go with this route as it is probably the best one in terms of security and privacy. The only disadvantage of this route is that it does not provide a way to enable OS-wide [plausible deniability](https://en.wikipedia.org/wiki/Plausible_deniability) <https://en.wikipedia.org/wiki/Plausible_deniability> <sup>[[Wikiless]](https://wikiless.org/wiki/Plausible_deniability)</sup>, unlike the Whonix route. 
 
 ### Pick your connectivity method:
 
