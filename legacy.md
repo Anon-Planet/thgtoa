@@ -8,3 +8,5 @@ The guide and all the files are also readily available on Archive.org and Archiv
 
 Direct downloads:
 - CryptPad.fr *(outdated)* at: <https://cryptpad.fr/drive/#/2/drive/view/Ughm9CjQJCwB8BIppdtvj5zy4PyE-8Gxn11x9zaqJLI/>
+
+[c]: (c) 2022 Anonymous Planet (Licensed under CC BY NC 4.0)

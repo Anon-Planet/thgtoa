@@ -53,3 +53,5 @@ This guide is an open-source non-profit initiative, [licensed](LICENSE) under a 
 [cc-by-nc]: https://creativecommons.org/licenses/by-nc/4.0/
 [cc-by-nc-image]: https://licensebuttons.net/l/by-nc/4.0/88x31.png
 [cc-by-nc-shield]: https://img.shields.io/badge/License-CC%20BY--NC%204.0-blue.svg
+
+[c]: (c) 2022 Anonymous Planet (Licensed under CC BY NC 4.0)

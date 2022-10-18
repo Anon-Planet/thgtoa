@@ -37,3 +37,5 @@ Join the PSA community: `#p-s-a:matrix.org` or `#privacy-security-anonymity:matr
 If you want to invite people to Modern Crypto on Discord : https://discord.gg/PTgXQ8ffmw
 
 If you want to invite people to PSA on Discord : https://discord.gg/V8dmd9y7mt
+
+[c]: (c) 2022 Anonymous Planet (Licensed under CC BY NC 4.0)

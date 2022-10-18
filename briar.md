@@ -9,3 +9,5 @@
 This is a message for the people of Ukraine. We strongly recommend that you use Briar for communicating. You can find it here: <https://briarproject.org/>
 With this application, you can communicate even when there is no internet.
 The manual is here: <https://briarproject.org/manual/> , quick-start guie here: <https://briarproject.org/quick-start/>
+
+[c]: (c) 2022 Anonymous Planet (Licensed under CC BY NC 4.0)

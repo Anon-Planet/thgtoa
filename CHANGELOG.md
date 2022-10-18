@@ -840,3 +840,5 @@ v0.3.x Added MacOS information and various fixes
 v0.2.x Added Qubes OS information and various fixes
 
 v0.1.x Initial Release (missing Qubes OS details and MacOS support)
+
+[c]: (c) 2022 Anonymous Planet (Licensed under CC BY NC 4.0)

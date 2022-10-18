@@ -104,3 +104,5 @@ Total Bitcoin remaining: **0 mBTC**
 [1]: media/monero.png
 [2]: media/bitcoin-segwit.png
 [3]: media/bitcoin-legacy.png
+
+[c]: (c) 2022 Anonymous Planet (Licensed under CC BY NC 4.0)

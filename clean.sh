@@ -1,4 +1,5 @@
 #!/bin/bash
+# (c) 2022 Anonymous Planet (Licensed under CC BY NC 4.0)
 
 rm *.pdf &> /dev/null
 rm *.html &> /dev/null

@@ -73,3 +73,5 @@ curve, so keep it up!
 [verification steps]: https://docs.github.com/en/free-pro-team@latest/github/writing-on-github/basic-writing-and-formatting-syntax#task-lists
 [reference associated issues]: https://github.com/blog/1506-closing-issues-via-pull-requests
 [help fellow committers test recently submitted pull requests]: https://github.com/AnonyPla-ng/thgtoa/pulls
+
+[c]: (c) 2022 Anonymous Planet (Licensed under CC BY NC 4.0)

@@ -38,3 +38,5 @@ Some facts about me:
 - I enjoy good memes, movies, series, and books (and I'm sure some of you will spot some of the many references to those in my project).
 
 Please share this project if you enjoy it and think it might be useful to others.
+
+[c]: (c) 2022 Anonymous Planet (Licensed under CC BY NC 4.0)

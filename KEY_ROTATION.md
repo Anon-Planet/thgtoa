@@ -21,3 +21,5 @@ Files signed using this key pair can be verified with the following command:
 ```
 minisign -Vm <file> -P RWSn9xivowlq/ihAzclDBxhCxbYz4bLkC8E645lHgSUlQNlDvoTxO5Fv
 ```
+
+[c]: (c) 2022 Anonymous Planet (Licensed under CC BY NC 4.0)

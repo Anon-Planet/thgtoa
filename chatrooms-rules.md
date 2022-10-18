@@ -74,3 +74,5 @@ This means that those PSA bans are effectively applied on all those rooms and ca
 
 #### Ban Appeals:<a name="appeals"></a>
 - **Please contact the mods or admins of the room in question to state your case for appealing.**
+
+[c]: (c) 2022 Anonymous Planet (Licensed under CC BY NC 4.0)

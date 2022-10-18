@@ -34,3 +34,5 @@ All the links below are listed in alphabetical order:
 - Sci-Hub <https://en.wikipedia.org/wiki/Sci-Hub> <sup>[[Wikiless]](https://wikiless.org/wiki/Sci-Hub)</sup> (see their latest known URL in the main Wikipedia article)
 - Terms of Service, Didn't Read: <https://tosdr.org>
 - Whonix Documentation: <https://www.whonix.org/wiki/Documentation>
+
+[c]: (c) 2022 Anonymous Planet (Licensed under CC BY NC 4.0)

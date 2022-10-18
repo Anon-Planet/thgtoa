@@ -97,3 +97,5 @@ And you should see the following entries at **0** for safety, this 0 means there
 /EmbeddedFile          0 #This indicates there are embedded files within the PDF
 /XFA                   0 #This indicates the presence of XML Forms within the PDF
 ```
+
+[c]: (c) 2022 Anonymous Planet (Licensed under CC BY NC 4.0)

@@ -1,5 +1,5 @@
 #!/bin/bash
-
+# (c) 2022 Anonymous Planet (Licensed under CC BY NC 4.0)
 if [[ "$1" == "" ]]; then
 	# Build all `md` files
 	for f in *.md; do
