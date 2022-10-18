@@ -4,10 +4,6 @@ Welcome.
 
 This is a maintained guide with the aim of providing an introduction to various online tracking techniques, online ID verification techniques, and detailed guidance to creating and maintaining (truly) anonymous online identities. <span style="color: red">**It is written with hope for activists, journalists, scientists, lawyers, whistle-blowers, and good people being oppressed, censored, harassed anywhere!**</span> This guide has no affiliation with the [Anonymous](https://en.wikipedia.org/wiki/Anonymous_(hacker_group)) <sup>[[Wikiless]](https://wikiless.org/wiki/Anonymous_(hacker_group))</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Anonymous_(hacker_group))</sup> collective/movement.
 
-This guide is an open-source non-profit initiative, [licensed](LICENSE.html) under **Creative Commons Attribution-NonCommercial 4.0 International** ([cc-by-nc-4.0](https://creativecommons.org/licenses/by-nc/4.0/) <sup>[[Archive.org]](https://web.archive.org/web/https://creativecommons.org/licenses/by-nc/4.0/)</sup>) and is **not sponsored/endorsed by any commercial/governmental entity**. This means that you are free to use our guide for pretty much any purpose **excluding commercially** as long as you do attribute it. There are no ads or any affiliate links.
-
-**If you would like to make a donation to help this project, you can do so from [here](donations.html) where you will also find the project goals. All the donations will be strictly used within the context of this project. All donations and spendings are logged on the donations page.**
-
 **Direct downloads alternatives:**
 - **Coming soon**
 
@@ -49,3 +45,11 @@ Discussion Channels:
 - Mastodon at https://mastodon.social/@anonymousplanet
 
 Have a good read and feel free to share and/or recommend it!
+
+This guide is an open-source non-profit initiative, [licensed](LICENSE) under a [Creative Commons Attribution-NonCommercial 4.0 International License][cc-by-nc] <sup>[[Archive.org]](https://web.archive.org/web/https://creativecommons.org/licenses/by-nc/4.0/)</sup> and is **not sponsored/endorsed by any commercial/governmental entity**. This means that you are free to use our guide for pretty much any purpose **excluding commercially** as long as you do attribute it. There are no ads or any affiliate links. 
+
+**Note**: If you would like to make a donation to help this project, you can do so from [here](donations.html) where you will also find the project goals. All the donations will be strictly used within the context of this project. All donations and spendings are logged on the donations page.
+
+[cc-by-nc]: https://creativecommons.org/licenses/by-nc/4.0/
+[cc-by-nc-image]: https://licensebuttons.net/l/by-nc/4.0/88x31.png
+[cc-by-nc-shield]: https://img.shields.io/badge/License-CC%20BY--NC%204.0-blue.svg

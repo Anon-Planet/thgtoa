@@ -51,7 +51,7 @@ exclude:
     - .github
     - .gitignore
 include:
-    - LICENSE.md
+    - LICENSE
     - about.md
     - legacy.md
     - briar.md
