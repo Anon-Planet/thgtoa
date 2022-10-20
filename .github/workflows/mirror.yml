@@ -1,0 +1,43 @@
+name: Mirrors
+
+# Push to all private (configured) mirrors.
+
+on: [ push, create, delete ]
+
+concurrency:
+  group: git-mirror
+
+jobs:
+  gitlab:
+    runs-on: ubuntu-latest
+    steps:
+      - name: GitLab
+        uses: wearerequired/git-mirror-action@v1
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+        with:
+          source-repo: "git@github.com:Anon-Planet/thgtoa.git"
+          destination-repo: "git@gitlab.com:{{ secrets.GITLAB_REPO_USERNAME }}/thgtoa.git"
+
+  codeberg:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Codeberg
+        uses: wearerequired/git-mirror-action@v1
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+        with:
+          source-repo: "git@github.com:Anon-Planet/thgtoa.git"
+          destination-repo: "git@codeberg.org:{{ secrets.CODEBERG_REPO_USERNAME }}/thgtoa.git"
+
+  disroot:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Disroot
+        uses: wearerequired/git-mirror-action@v1
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+        with:
+          source-repo: "git@github.com:Anon-Planet/thgtoa.git"
+          destination-repo: "git@git.disroot.org:{{ secrets.DISROOT_REPO_USERNAME }}/thgtoa.git"
+

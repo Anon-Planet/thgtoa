@@ -1,0 +1,29 @@
+on:
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  upload-files:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        include:
+          - name: "THGTOA"
+            branch: "master"
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ matrix.branch }}
+
+      - name: Scheduled Release
+        run: |
+          zip -rv ${{ matrix.name }}.zip _site
+
+      - uses: softprops/action-gh-release@v1
+        if: startsWith(github.ref, 'refs/tags/')
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          files: |
+            ${{ matrix.name }}.zip
