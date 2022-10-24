@@ -13,7 +13,7 @@ This guide is an open-source non-profit initiative, [licensed](LICENSE.html) und
 
 **View the guide:**
 - [In your browser](guide.html)
-- <del>[PDF](export/guide.pdf)</del> (temporarily unavailable)
+- [PDF](export/guide.pdf) (experimental)
 - <del>[OpenDocument (ODT)](export/guide.odt)</del> (temporarily unavailable)
 - Raw [Markdown](https://github.com/Anon-Planet/thgtoa/raw/master/guide.md) (references do not work when viewing this way).
 
