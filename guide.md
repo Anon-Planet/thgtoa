@@ -111,6 +111,7 @@ Finally note that this guide does mention and even recommends various commercial
         -   [Your Digital Fingerprint, Footprint, and Online Behavior:]
         -   [Your Clues about your Real Life and OSINT:]
         -   [Your Face, Voice, Biometrics, and Pictures:]
+        -   [Gait Recognition and Other Long-Range Biometrics]
         -   [Phishing and Social Engineering:]
     -   [Malware, exploits, and viruses:]
         -   [Malware in your files/documents/e-mails:]
@@ -13583,6 +13584,7 @@ In short, our opinion is that you may use Session Messenger on iOS due to the ab
   [Your Digital Fingerprint, Footprint, and Online Behavior:]: #your-digital-fingerprint-footprint-and-online-behavior
   [Your Clues about your Real Life and OSINT:]: #your-clues-about-your-real-life-and-osint
   [Your Face, Voice, Biometrics, and Pictures:]: #your-face-voice-biometrics-and-pictures
+  [Gait Recognition and Other Long-Range Biometrics]: #gait-recognition-and-other-long-range-biometrics
   [Phishing and Social Engineering:]: #phishing-and-social-engineering
   [Malware, exploits, and viruses:]: #malware-exploits-and-viruses
   [Malware in your files/documents/e-mails:]: #malware-in-your-filesdocumentse-mails
