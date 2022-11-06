@@ -35,26 +35,40 @@ To verify files with GPG signatures, you should first install gpg on your system
 - MacOS: Install GPG Tools from <https://gpgtools.org/>
 - Linux: gpg should be installed by default. If not, use your Linux package manager to install it such as apt (debian) or rpm (red hat).
 
-Import the GPG key from a trusted source of the publisher using the following command from a command prompt or terminal:
+Import the master signing key from a trusted source of the publisher using the following command from a command prompt or terminal:
 
-```gpg --auto-key-locate nodefault,wkd --locate-keys 42FF35DB9DE7C088AB0FD4A70C216A52F6DF4920```
+```gpg --auto-key-locate nodefault,wkd --locate-keys 9EA98278639F1CD853E096CBFF94507587A6A9B9```
 
-In theory this command should fetch the key from the a default pool server. If this doesn't work, you can also download/view it directly from here (in our case): <https://anonymousplanet.org/42FF35DB9DE7C088AB0FD4A70C216A52F6DF4920.asc>
+In theory this command should fetch the key from the a default pool server. If this doesn't work, you can also download/view it directly from here (in our case): <https://anonymousplanet.org/pgp/AnonymousPlanet-Master-Signing-Key_9EA98278639F1CD853E096CBFF94507587A6A9B9.asc>
 
-As well as the published key on any keyserver below (search for the fingerprint ```42FF35DB9DE7C088AB0FD4A70C216A52F6DF4920```):
+As well as the published key on any keyserver below (search for the fingerprint ```9EA98278639F1CD853E096CBFF94507587A6A9B9```):
 - <https://pgp.mit.edu>
 - <https://keys.openpgp.org>
 - <https://keyserver.ubuntu.com>
 
 You should then import it manually by issuing the following command on any OS:
 
-```gpg --import 42FF35DB9DE7C088AB0FD4A70C216A52F6DF4920.asc```
+```gpg --import 9EA98278639F1CD853E096CBFF94507587A6A9B9.asc```
+
+The master signing key allows you to verify all other project-related keys. Once you have the master signing key and are confident it's the correct key (nobody has tampered with it), mark the key as trusted by locally signing it:
+
+```gpg --lsign-key 9EA98278639F1CD853E096CBFF94507587A6A9B9```
+
+Alternatively, if you use Kleopatra, it will ask you to certify the key. Certify the key to mark it as trusted.
+
+Once you have the master key downloaded, imported, and certified, you will obtain a copy of the release key.
+
+```gpg --auto-key-locate nodefault,wkd --locate-keys 83A6CF9EF57AC25B5C7F5D29285E6048A12321B2``` (to import the release signing key)
+
+<https://anonymousplanet.org/pgp/AnonymousPlanet-Master-Signing-Key_9EA98278639F1CD853E096CBFF94507587A6A9B9.asc> (to download the key yourself)
+
+If you use GPG directly, you won't need to mark the release signing key as trusted, because it's already signed by the master signing key. If you use Kleopatra, the process to import the release signing key is the same as importing the master signing key.
 
 Finally, verify the asc signature file (links above) against the PDF file by issuing the following example command:
 
 ```gpg --verify guide.pdf.asc guide.pdf"```
 
-This should output a result showing it matches and is therefore a good result.
+This should output a result showing it matches a signature created by the release signing key, and is therefore a good result.
 
 ### How to verify the the authenticity and integrity of the files using Minisign:
 
