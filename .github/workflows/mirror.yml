@@ -14,10 +14,10 @@ jobs:
       - name: GitLab
         uses: wearerequired/git-mirror-action@v1
         env:
-          SSH_PRIVATE_KEY: ${{ SSH_PRIVATE_KEY }}
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
         with:
           source-repo: "git@github.com:Anon-Planet/thgtoa.git"
-          destination-repo: "git@gitlab.com:{{ GITLAB_REPO_USERNAME }}/thgtoa.git"
+          destination-repo: "git@gitlab.com:{{ secrets.GITLAB_REPO_USERNAME }}/thgtoa.git"
 
   codeberg:
     runs-on: ubuntu-latest
@@ -25,10 +25,10 @@ jobs:
       - name: Codeberg
         uses: wearerequired/git-mirror-action@v1
         env:
-          SSH_PRIVATE_KEY: ${{ SSH_PRIVATE_KEY }}
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
         with:
           source-repo: "git@github.com:Anon-Planet/thgtoa.git"
-          destination-repo: "git@codeberg.org:{{ CODEBERG_REPO_USERNAME }}/thgtoa.git"
+          destination-repo: "git@codeberg.org:{{ secrets.CODEBERG_REPO_USERNAME }}/thgtoa.git"
 
   disroot:
     runs-on: ubuntu-latest
@@ -36,8 +36,8 @@ jobs:
       - name: Disroot
         uses: wearerequired/git-mirror-action@v1
         env:
-          SSH_PRIVATE_KEY: ${{ SSH_PRIVATE_KEY }}
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
         with:
           source-repo: "git@github.com:Anon-Planet/thgtoa.git"
-          destination-repo: "git@git.disroot.org:{{ DISROOT_REPO_USERNAME }}/thgtoa.git"
+          destination-repo: "git@git.disroot.org:{{ secrets.DISROOT_REPO_USERNAME }}/thgtoa.git"
 
