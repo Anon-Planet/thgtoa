@@ -26,7 +26,7 @@ github:
   links_url: links.html
   twitter_url: https://anonymousplanet.org/twitter.html
   mastodon_url: https://mastodon.social/@anonymousplanet
-  tor_mirror_url: http://thgtoallkcxrdv37u6knsc3pumk6cq6lqmcqlw3j5vkmyahkxive4jyd.onion
+  tor_mirror_url: http://thgtoa27ujspeqxasrfvcf5aozqdczvgmwgorrmblh6jn4nino3spcqd.onion/
 defaults:
   -
     scope:
