@@ -1,4 +1,6 @@
-Hello, I am Alex. My pronouns are they/them. After unfortunate recent events, I have picked up maintenance of this guide in order to continue the project AnonyPla started. Unfortunately, Lena passed during a complex surgery. We believe she went peacefully in her sleep and she did not suffer. Before her surgery, she gave me access to her accounts to maintain the guide. I will be maintaining her guide, as well as running her Matrix space, from this point. As I said before, I cannot guarantee I'll do everything right, or how she would have done it, but I'm trying my best.
+The current maintainers of this project are Alex (they/them) and The Hidden (aka No).
+
+After unfortunate events, we have picked up maintenance of this guide in order to continue the project the original founder, Lena, started. Lena faked her death, then returned later. Before her <del>death</del>, she gave me access to her accounts to maintain the guide. I will be maintaining her guide, as well as running her Matrix space, from this point. As we've said before, we cannot guarantee we'll do everything right, or how she would have done it, but we're trying our best.
 
 ---
 
@@ -7,7 +9,7 @@ Please share this project if you enjoy it and think it might be useful to others
 Follow or contact us on: 
 - Twitter: <https://twitter.com/AnonyPla>
 - Mastodon: <https://mastodon.social/@anonymousplanet>
-- E-Mail: <contact@anonymousplanet.org> (You may use our [PGP public signature](https://anonymousplanet.org/42FF35DB9DE7C088AB0FD4A70C216A52F6DF4920.asc) to encrypt e-mails. Do not forget to attach your PGP public key if you want an encrypted answer) 
+- E-Mail: <contact@anonymousplanet.org> (You may use our [PGP public key](https://anonymousplanet.org/pgp/AnonymousPlanet-Email-Key_B6D1757632A280F99F2DCBFDB9AB9D93AFF05B9C.asc) to encrypt e-mails. Do not forget to attach your PGP public key if you want an encrypted answer) 
 
 Discussion Channels:
 - Matrix room: ```#anonymity:matrix.org``` <https://matrix.to/#/#anonymity:matrix.org>
