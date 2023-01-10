@@ -1,0 +1,30 @@
+name: Push to Mirrors
+
+on: [ push, delete, create ]
+
+# Ensures that only one mirror task will run at a time.
+concurrency:
+  group: git-mirror
+
+jobs:
+  gitlab:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Official GitLab Mirror
+        uses: wearerequired/git-mirror-action@v1
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+        with:
+          source-repo: "git@github.com:Anon-Planet/thgtoa.git"
+          destination-repo: "git@gitlab.com:anonymousplanetorg/thgtoa.git"
+
+  codeberg:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Official Codeberg Mirror
+        uses: wearerequired/git-mirror-action@v1
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+        with:
+          source-repo: "git@github.com:Anon-Planet/thgtoa.git"
+          destination-repo: "git@codeberg.org:anonypla/thgtoa.git"
