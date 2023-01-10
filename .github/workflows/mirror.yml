@@ -13,7 +13,7 @@ jobs:
       - name: Official GitLab Mirror
         uses: wearerequired/git-mirror-action@v1
         env:
-          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          SSH_PRIVATE_KEY: ${{ SSH_PRIVATE_KEY }}
         with:
           source-repo: "git@github.com:Anon-Planet/thgtoa.git"
           destination-repo: "git@gitlab.com:anonymousplanetorg/thgtoa.git"
@@ -24,7 +24,7 @@ jobs:
       - name: Official Codeberg Mirror
         uses: wearerequired/git-mirror-action@v1
         env:
-          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          SSH_PRIVATE_KEY: ${{ SSH_PRIVATE_KEY }}
         with:
           source-repo: "git@github.com:Anon-Planet/thgtoa.git"
           destination-repo: "git@codeberg.org:anonypla/thgtoa.git"
