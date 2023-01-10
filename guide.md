@@ -12306,6 +12306,8 @@ Here is a small list of non-KYC crypto swapping services, remember they all have
 
 -   <https://bisq.network/>
 
+-   <https://changenow.io/>
+
 -   Kilo Swap (Onion Hidden Service): <http://mlyusr6htlxsyc7t2f4z53wdxh3win7q3qpxcrbam6jf3dmua7tnzuyd.onion/coinswap>
 
 **Consider having a look at <https://kycnot.me/> which is an open-source project listing non-KYC exchanges/swapping services (repository at <https://codeberg.org/pluja/kycnot.me>).**
