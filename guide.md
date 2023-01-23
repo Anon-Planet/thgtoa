@@ -5698,7 +5698,7 @@ Many platforms' operators and administrators do not want traffic from these IPs 
 -   "Russian troll propaganda!";
 -   "Well, it's noise in the data we sell to advertisers!" (e.g., AdSense or Facebook Ads). 
 
-"Yet we still pay traffic for them so let us just deny them all instead.""
+"Yet we still pay traffic for them so let us just deny them all instead."
 
 Fortunately, those systems are not perfect, and you will (still) be able to get around those restrictions by switching identities (in the case of Tor) and trying to access the website each time until you find an Exit Node that is not yet blacklisted.
 
