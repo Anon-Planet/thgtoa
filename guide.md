@@ -5691,21 +5691,22 @@ In few countries (like Germany), this practice is illegal and online platforms s
 
 As stated previously in this guide, many platforms will apply filters on the IPs of the users. Tor exit nodes are publicly listed, and VPN exit servers are "well known". There are many commercial and free services providing the ability to block those IPs with ease (hi Cloudflare).
 
-Many platforms' operators and administrators do not want traffic from these IPs as they often drive a lot of unlawful/malicious/unprofitable traffic to their platforms. Usually using the same excuses:
+Many platforms' operators and administrators do not want traffic from these IPs as they often drive a lot of unlawful/malicious/unprofitable traffic to their platforms. These platforms usually argue using one of the following points:
 
--   Unlawful because "Think of the children" or "Terrorists".
+-   "Think of the children!";
+-   "Terrorism!";
+-   "Russian troll propaganda!";
+-   "Well, it's noise in the data we sell to advertisers!" (e.g., AdSense or Facebook Ads). 
 
--   Malicious because of "Russian trolls".
+"Yet we still pay traffic for them so let us just deny them all instead.""
 
--   Unprofitable because "Well it's noise in the data we sell to advertisers" (AdSense, Facebook Ads ...). Yet we still pay traffic for them so let us just deny them all instead.
+Fortunately, those systems are not perfect, and you will (still) be able to get around those restrictions by switching identities (in the case of Tor) and trying to access the website each time until you find an Exit Node that is not yet blacklisted.
 
-Fortunately, those systems are not perfect, and you will (still) be able to get around those restrictions by switching identities (in the case of Tor) and looking trying to access the website each time until you find an Exit Node that is not block-listed (yet).
+Some platforms will allow you to log in with a Tor IP but not to sign up (See <https://gitlab.torproject.org/legacy/trac/-/wikis/org/doc/ListOfServicesBlockingTor> <sup>[[Archive.org]](https://web.archive.org/web/https://gitlab.torproject.org/legacy/trac/-/wikis/org/doc/ListOfServicesBlockingTor)</sup>). Those platforms will keep a convenient, permanent log of the IP which you used during sign-up - And some will keep such logs indefinitely, e.g., all the IPs which you have used to log in (hi Facebook).
 
-Sometimes some platforms will allow you to log in with a Tor IP but not sign-up (See <https://gitlab.torproject.org/legacy/trac/-/wikis/org/doc/ListOfServicesBlockingTor> <sup>[[Archive.org]](https://web.archive.org/web/https://gitlab.torproject.org/legacy/trac/-/wikis/org/doc/ListOfServicesBlockingTor)</sup>). Those platforms will keep a convenient permanent log of the IP you used during sign-up. And some will keep such logs indefinitely including all the IPs you used to log in (hi Facebook).
+The tolerance is much higher with VPNs as they are not considered "open proxies", but that will not stop many platforms from making them hard to use by forcing increasingly difficult CAPTCHAs on most VPN users.
 
-The tolerance is much higher with VPNs as they are not considered "open proxies" but that will not stop many platforms from making them hard to use by forcing increasingly difficult captchas on most VPN users.
-
-For this reason, this guide does recommend the use of VPN over Tor (and not Tor over VPN) in certain use cases. **Remember that the best option to avoid those is to use a self-hosted VPN/Proxy over Tor on a cash/Monero paid VPS server**.
+For this reason, this guide does recommend the use of VPN over Tor (and not Tor over VPN) in certain use cases. **Remember that the best option to avoid those is to use a self-hosted VPN/Proxy over Tor on a cash/Monero paid VPS**.
 
 ### Browser and Device Fingerprinting:
 
