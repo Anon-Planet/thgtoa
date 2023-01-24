@@ -347,8 +347,8 @@ Finally note that this guide does mention and even recommends various commercial
     -   [Installation:][25]
     -   [Usage and Precautions:]
 -   [Appendix Z: Online anonymous payments using cryptocurrencies]
-    -   [Reasonably anonymous option:]
-    -   [Extra-Paranoid anonymous option:]
+    -   [Using Bitcoin anonymously option:]
+    -   [Using Monero anonymously option:]
     -   [Warning about special tumbling, mixing, coinjoining privacy wallets and services]
     -   [When converting from BTC to Monero:]
 -   [Appendix A1: Recommended VPS hosting providers]
@@ -1365,9 +1365,9 @@ The main issue is not setting up a random Crypto wallet to receive some currency
 
 There are some cryptocurrencies with privacy/anonymity in mind like Monero but even those have some and warnings to consider[^242]'[^243].
 
-Even if you use Mixers or Tumblers[^244] (services that specialize in "anonymizing" cryptocurrencies by "mixing them"), keep in mind this is only obfuscation[^245] and not actual anonymity[^246]. Not only are they only obfuscation but they could also put you in trouble as you might end up exchanging your crypto against "dirty" crypto that was used in various questionable contexts[^247].
+Use of custodial Mixers or Tumblers[^244] (centralized services that specialize in "anonymizing" cryptocurrencies by "mixing them") are risky as you don't know what's happening on them[^245] and can be trivially de-mixed[^246]. Their centrally-controlled nature could also put you in trouble as they are more susceptible to money-laundering laws[^247].
 
-This does not mean you cannot use Bitcoin anonymously at all. You can actually use Bitcoin anonymously as long as you do not convert it to actual currency and use a Bitcoin wallet from a safe anonymous network. Meaning you should avoid KYC/AML regulations by various exchanges and avoid using the Bitcoin network from any known IP address. See [Appendix Z: Paying anonymously online with BTC (or any other cryptocurrency)][Appendix Z: Online anonymous payments using cryptocurrencies].
+This does not mean you cannot use Bitcoin anonymously at all. You can actually use Bitcoin anonymously as long as you do not convert it to actual currency, use a Bitcoin wallet from a safe anonymous network, and do not reuse addresses or consolidate outputs that were used when spending at different merchants. Meaning you should avoid KYC/AML regulations by various exchanges, avoid using the Bitcoin network from any known IP address, and use a wallet that provides privacy-preserving tools. See [Appendix Z: Paying anonymously online with BTC (or any other cryptocurrency)][Appendix Z: Online anonymous payments using cryptocurrencies].
 
 **Overall, the best option for using Crypto with reasonable anonymity and privacy is still Monero and you should ideally not use any other for sensitive transactions unless you are aware of the limitations and risks involved. Please do read** [Appendix B2: Monero Disclaimer]**.**
 
@@ -11892,29 +11892,35 @@ There are many services that you might want to use (VPS hosting, mail hosting, d
 
 As mentioned before in this guide multiple times, we strongly recommend the use of services accepting cash (that you could send anonymously through the postal services) or Monero which you can buy and use directly and safely.
 
-But what if the service you want does not accept Monero but does accept a more mainstream cryptocurrency such as Bitcoin (BTC) or Ethereum (ETH).
+But what if the service you want does not accept Monero but does accept a more mainstream cryptocurrency such as Bitcoin (BTC) or Ethereum (ETH)?
 
 **Bitcoin and other "mainstream cryptocurrencies" are not anonymous at all (Remember [Your Cryptocurrencies transactions][Your Cryptocurrencies transactions:]) and you should never ever purchase, for example, Bitcoin from an exchange and then use these directly for purchasing services anonymously. This will not work, and the transaction can be traced easily.**
 
--   **Stay away from Crypto Mixer, Tumblers and Coinjoiners.** You might think this is a good idea but not only are they useless with cryptocurrencies such as BTC/ETH/LTC, but they are also dangerous as you might end up trading your currency for dirty currency from illicit activities. Use Monero to anonymize your crypto. Use a normal KYC-enabled Exchange to buy/sell your Monero (such as Kraken) or (at your own risk), use a service like LocalMonero.
+-   **Stay away from custodial Mixers, Tumblers and Coinjoiners.** You might think this is a good idea but not only are they useless with cryptocurrencies such as BTC/ETH/LTC, but they are also dangerous since they also take custody of your coins. Use Monero to anonymize your crypto. Do not use a normal KYC-enabled exchange to buy/sell your Monero (such as Kraken), since this information on your purchases and withdrawals (for intended use) are retained in the exchange. Instead, use a P2P exchange that doesn't require KYC such as what can be found on <https://kycnot.me/>.
 
 -   **See [Warning about special tumbling, mixing, coinjoining privacy wallets and services].** 
 
-## Reasonably anonymous option:
+## Using Bitcoin anonymously option:
 
-Despite this, it is possible to safely anonymize Bitcoin through the use of cryptocurrencies with a focus on untraceability such as Monero (XMR) with a few more steps and at a relatively small cost. So, you might be wondering how? Well, it is actually pretty simple:
+Despite this, it is possible to safely anonymize Bitcoin through the use of non-custodial collaborative transactions and privacy-preserving spending tools. This is possible with a protocol called [ZeroLink](https://code.samourai.io/whirlpool/Whirlpool/-/blob/whirlpool/THEORY.md) and an implementation called Whirlpool which as two clients that utilize it and provide the necessary spending tools, detailed below. So, you might be wondering how? Well, it is actually pretty simple:
 
-1. Purchase Monero at:
+1. Purchase Bitcoin at a non-KYC exchange (such as one found on <https://kycnot.me/>)
 
-    -   a KYC exchange (such as Kraken)
+2. Create a wallet with [Samourai Wallet](https://www.samouraiwallet.com/) (Android) or [Sparrow Wallet](https://www.sparrowwallet.com/) (Desktop). Both of these use the Whirlpool protocol to gain the user forward-facing on-chain privacy on Bitcoin.
 
-    -   a non-KYC exchange (such as <https://bisq.network/>)
+3. Deposit coins into the wallet and follow the relevant instructions ([Samourai](https://docs.samourai.io/wallet/usage), [Sparrow](https://www.sparrowwallet.com/docs/mixing-whirlpool.html)) to remove their historic links.
 
-    -   from someone on LocalMonero using cash (at your own risk)
+4. Funds should only be spent from the Postmix account, as that is the account with the coins that have gained anonymity through Whirlpool.
+
+-   **You should run your own node when using Bitcoin and always use that for connecting from your wallet. You do not need to purchase separate hardware to do so, and it's simple to [do so by using the Tor Network](https://bitcoincoredocs.com/tor.html) as well.**
+
+## Using Monero anonymously option:
+
+1. Purchase Monero at a non-KYC exchange (such as one found on <https://kycnot.me/>)
 
 2. Create a Monero wallet on one of your anonymized VMs (for example, on the Whonix Workstation which includes a Monero GUI wallet natively or using the Monero GUI wallet from <https://www.getmonero.org/downloads/> on other OSes)
 
-3. Transfer your Monero from the Exchange you bought it from to the wallet on your VM.
+3. Transfer your Monero from the wallet you bought it from to the wallet on your VM.
 
 4. On the same VM (for instance again the Whonix Workstation), create a Bitcoin Wallet (again this is provided natively within the Whonix Workstation)
 
@@ -11924,65 +11930,17 @@ Despite this, it is possible to safely anonymize Bitcoin through the use of cryp
 
 **You should never access this wallet from a non-anonymized environment. Always use well-thought OPSEC with your BTC transactions. Remember those can be traced back to you.**
 
-The origin of those BTC cannot be traced back to your real identity due to the use of Monero **unless Monero is broken**. Please do read [Appendix B2: Monero Disclaimer].
-
-## Extra-Paranoid anonymous option:
-
-**As explained in the disclaimer, If you feel extra paranoid,** you could consider using an additional conversion step using a different privacy/anonymity-focused cryptocurrency such as Zcash (<https://z.cash/> <sup>[[Archive.org]](https://web.archive.org/web/https://z.cash/)</sup>).
-
-For example, here are two possibilities:
-
-**Buying Monero first option:**
-
-1.  Buy Monero (XMR) at:
-
-    -   a KYC exchange (such as Kraken)
-
-    -   a non-KYC exchange (such as <https://bisq.network/>)
-
-    -   LocalMonero using cash (at your own risk)
-
-2.  Transfer your Monero to your Monero wallet in a secure environment (such as the Monero GUI wallet pre-installed on the Whonix workstation OR using the Monero GUI wallet from <https://www.getmonero.org/downloads/> on other OSes).
-
-3.  Use a swapping service (see [Appendix A8: Crypto Swapping Services without Registration and KYC]) to exchange your Monero to a Zcash wallet you control in your secure environment (see [Appendix A9: Installing a Zcash wallet][Appendix A9: Installing a Zcash wallet:]).
-
-4.  Transfer your Zcash from one VM Zcash wallet to another VM Zcash wallet you control while making sure you are using shielded addresses (some exchanges allow this directly).
-
-**Make sure the wallets are different and change your Tor identity before opening the recipient wallet.**
-
-5.  Use a swapping service again to exchange your Zcash to Monero/BTC/other (for BTC, use for example the Electrum Wallet on the Whonix Workstation).
-
-6.  Use your Monero/BTC/other anonymously.
-
-**Buying Zcash first option:**
-
-1.  Buy Zcash (see <https://z.cash/exchanges/> <sup>[[Archive.org]](https://web.archive.org/web/https://z.cash/exchanges/)</sup>)
-
-2.  Transfer your Zcash from the to a VM Zcash Wallet (see [Appendix A9: Installing a Zcash wallet][Appendix A9: Installing a Zcash wallet:]).
-
-3.  Transfer your Zcash from your VM Zcash Wallet to another VM Zcash Wallet using shielded addresses.
-
-**Make sure the wallets are different and change your Tor identity before opening the recipient wallet.**
-
-4.  Use a swapping service (see [Appendix A8: Crypto Swapping Services without Registration and KYC]) to exchange your Zcash to Monero at your VM Monero Wallet (such as the Monero GUI wallet pre-installed on the Whonix workstation or using the Monero GUI wallet from <https://www.getmonero.org/downloads/> on other OSes).
-
-5.  Now either use your Monero directly to buy from merchants OR use a swapping service to swap your Monero to another cryptocurrency such as BTC/ETH/Other (for BTC, use for example the Electrum Wallet on the Whonix Workstation).
-
-6.  Use your cryptocurrency anonymously.
-
-These steps should upgrade from "reasonably anonymous" to "extra-paranoid anonymous". Even if Monero is broken in the future. Zcash will have to be broken as well. Quite unlikely.
+The origin of those BTC cannot be traced back to your real identity due to the use of Monero **unless Monero is broken** or if you consolidate outputs from spending at separate merchants. It is recommended to use privacy preserving wallets in the [Bitcoin section](Using Bitcoin anonymously option:). Please do read [Appendix B2: Monero Disclaimer].
 
 ## Warning about special tumbling, mixing, coinjoining privacy wallets and services: <sup>[Wikiless](https://wikiless.org/wiki/Cryptocurrency_tumbler) [Archive.org](https://web.archive.org/web/https://wikiless.org/wiki/Cryptocurrency_tumbler)</sup>
 
-We are not recommending any as none of those are truly providing anonymity but obfuscation. As of this writing, and as we are aware of, anonymity can be only achieved with Zcash "Shielded Addresses" and Monero. BTC, ETH and many others do not provide anonymity and those wallets and mixing services can be traced. Here are some references about this issue:
-
-Mixing BTC in this way should prevent any chain analysis on future transactions. This will not hide any past transactions or the fact you purchased BTC from a KYC exchange. Both wallets support Tor and running your own Bitcoin full node.
+Centralized and custodial tumblers and mixers are not recommended since they do not provide anonymity in a way that truly unlinks an output from its history.  Here are some references about this issue:
 
 -  [Mixing detection on Bitcoin transactions using statistical patterns.](https://arxiv.org/pdf/2204.02019.pdf) <sup>[Archive.org](https://web.archive.org/web/https://arxiv.org/pdf/2204.02019.pdf)</sup>
 -  [An Analysis Of Bitcoin Laundry Services](https://www.researchgate.net/profile/Julio-Hernandez-Castro/publication/319944399_An_Analysis_of_Bitcoin_Laundry_Services/links/5a045d410f7e9beb177883af/An-Analysis-of-Bitcoin-Laundry-Services.pdf?origin=publication_detail) <sup>[Archive.org](https://web.archive.org/web/https://www.researchgate.net/profile/Julio-Hernandez-Castro/publication/319944399_An_Analysis_of_Bitcoin_Laundry_Services/links/5a045d410f7e9beb177883af/An-Analysis-of-Bitcoin-Laundry-Services.pdf?origin=publication_detail)</sup>
 -  [Mixing Strategies in Cryptocurrencies and An Alternative Implementation](https://www.researchgate.net/publication/344485520_Mixing_Strategies_in_Cryptocurrencies_and_An_Alternative_Implementation) <sup>[Archive.org](https://web.archive.org/web/https://www.researchgate.net/publication/344485520_Mixing_Strategies_in_Cryptocurrencies_and_An_Alternative_Implementation)</sup>
-    
-Instead we recommend to use Monero (preferred) and additionaly Zcash to achieve anonymity.
+
+Mixing BTC in this way should prevent any chain analysis on future transactions. This will not hide any past transactions or the fact you purchased BTC from a KYC exchange. Instead we recommend to use Bitcoin wallets that utilize Whirlpool or Monero (preferred).
     
 ## When converting from BTC to Monero:
 
@@ -12418,8 +12376,6 @@ The anonymity of Monero depends on its crypto algorithms. If you do use Monero f
 You may want to watch this insightful video for more details: <https://www.youtube.com/watch?v=j02QoI4ZlnU> <sup>[[Invidious]](https://yewtu.be/watch?v=j02QoI4ZlnU)</sup>
 
 Also please consider reading: [Privacy Limitations in Anonymity Networks with Monero](https://github.com/monero-project/monero/blob/master/docs/ANONYMITY_NETWORKS.md#privacy-limitations) <sup>[[Archive.org]](https://web.archive.org/web/https://github.com/monero-project/monero/blob/master/docs/ANONYMITY_NETWORKS.md#privacy-limitations)</sup>
-
-**If you feel extra paranoid and want the highest safety level possible,** see the [Extra-Paranoid anonymous option][Extra-Paranoid anonymous option:].
 
 **Use these at your own risk, sending cash payments to providers accepting cash (through the postal service) is always a better solution if/when possible.**
 
@@ -13852,8 +13808,8 @@ In short, our opinion is that you may use Session Messenger on iOS due to the ab
   [25]: #installation-6
   [Usage and Precautions:]: #usage-and-precautions
   [Appendix Z: Online anonymous payments using cryptocurrencies]: #appendix-z-online-anonymous-payments-using-cryptocurrencies
-  [Reasonably anonymous option:]: #reasonably-anonymous-option
-  [Extra-Paranoid anonymous option:]: #extra-paranoid-anonymous-option
+  [Using Bitcoin anonymously option:]: #using-bitcoin-anonymously-option
+  [Using Monero anonymously option:]: #using-monero-anonymously-option
   [Warning about special tumbling, mixing, coinjoining privacy wallets and services]: #warning-about-special-tumbling-mixing-coinjoining-privacy-wallets-and-services-wikiless-archiveorg
   [When converting from BTC to Monero:]: #when-converting-from-btc-to-monero
   [Appendix A1: Recommended VPS hosting providers]: #appendix-a1-recommended-vps-hosting-providers
