@@ -168,6 +168,9 @@ input:checked + .slider::before {
 			{% if page.url != "/donations.html" %}
 				<a href="{{ site.github.donations_url }}" class="btn_small">Donate</a>
 			{% endif %}
+			{% if page.url != "/constitution.html" %}
+				<a href="{{ site.github.constitution_url }}" class="btn_small">Constitution</a>
+			{% endif %}
 				<a href="{{ site.github.repository_url }}" target="_blank" class="btn_small">Repository</a>
 				<!--<a href="{{ site.github.keyoxide_url }}" target="_blank" class="btn_small">Keyoxide</a>-->
 				<a rel="me" href="{{ site.github.mastodon_url }}" target="_blank" class="btn_small">Mastodon</a>
