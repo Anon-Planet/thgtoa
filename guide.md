@@ -867,7 +867,7 @@ There are some not so straightforward ways[^107] to disable the Intel IME on som
 
 Note that, to AMD's defense, there were no security vulnerabilities found for ASP and no backdoors either. See <https://www.youtube.com/watch?v=bKH5nGLgi08&t=2834s> <sup>[[Invidious]](https://yewtu.be/watch?v=bKH5nGLgi08&t=2834s)</sup>. In addition, AMD PSP does not provide any remote management capabilities contrary to Intel IME.
 
-If you are feeling a bit more adventurous, you could install your own BIOS using Libreboot or Coreboot [^108] if your laptop supports it (be aware that Coreboot does contain some propriety code unlike its fork Libreboot).
+If you are feeling a bit more adventurous, you could install your own BIOS using Coreboot [^108] or Libreboot (a distribution of Coreboot) if your laptop supports it. Coreboot allows users to add their own microcode or other firmware blobs in order for the machine to function, but this is based upon user choice, and as of Dec 2022, Libreboot has adopted a similar pragmatic approach in order to support newer devices in the Coreboot tree. (Thanks, kind Anon who corrected previous information in this paragraph.)
 
 Check yourself:
 
