@@ -1842,33 +1842,13 @@ Now that you know what is possible, you should also consider threats and adversa
 
 #### Threats:
 
--   If your main concern is a forensic examination of your devices, you should consider:
+-   If your main concern is a forensic examination of your devices, you should consider the Tor Browser route or the Tails route.
 
-    -   **The Tor Browser route.**
+-   If your main concerns are remote adversaries that might uncover your online identity on various platforms, you should consider the Tails, Whonix, or Qubes OS routes (listed in order of difficulty).
 
-    -   **The Tails route.**
+-   If you want system-wide plausible deniability[^311]'[^294] despite the risks[^295]'[^314], consider the Tails route, including the persistent plausible deniability section (see [Persistent Plausible Deniability using Whonix within Tails][Persistent Plausible Deniability using Whonix within Tails:]).**
 
--   If your main concerns are remote adversaries that might uncover your online identity in various platforms, you should consider:
-
-    -   **The Tails route.**
-
-    -   **The Whonix route.**
-
-    -   **The Qubes OS route (best but requires budget/time and some skills).**
-
--   If you want system-wide plausible deniability[^311]'[^294] despite the risks[^295]'[^314], consider:
-
-    -   **The Tails Route including the persistent plausible deniability section (see [Persistent Plausible Deniability using Whonix within Tails][Persistent Plausible Deniability using Whonix within Tails:]).**
-
-    -   **The Whonix Route (This is possible on both Windows and Linux but will require more skills to achieve on Linux).**
-
--   If you are in a hostile environment where Tor/VPN usage alone is impossible/dangerous/suspicious, consider:
-
-    -   **The Tails route (without actually using Tor).**
-
-    -   **The Whonix route (without using Whonix).**
-
-    -   **The Qubes OS route (without actually using Whonix).**
+-   If you are in a hostile environment where Tor/VPN usage alone is impossible/dangerous/suspicious, consider the Tails route (without actually using Tor), or more advanced routes like Whonix or Qubes OS.
 
 #### Adversaries:
 
