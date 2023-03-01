@@ -867,7 +867,7 @@ There are some not so straightforward ways[^107] to disable the Intel IME on som
 
 Note that, to AMD's defense, there were no security vulnerabilities found for ASP and no backdoors either. See <https://www.youtube.com/watch?v=bKH5nGLgi08&t=2834s> <sup>[[Invidious]](https://yewtu.be/watch?v=bKH5nGLgi08&t=2834s)</sup>. In addition, AMD PSP does not provide any remote management capabilities contrary to Intel IME.
 
-If you are feeling a bit more adventurous, you could install your own BIOS using Libreboot or Coreboot [^108] if your laptop supports it (be aware that Coreboot does contain some propriety code unlike its fork Libreboot).
+If you are feeling a bit more adventurous, you could install your own BIOS using Coreboot [^108] or Libreboot (a distribution of Coreboot) if your laptop supports it. Coreboot allows users to add their own microcode or other firmware blobs in order for the machine to function, but this is based upon user choice, and as of Dec 2022, Libreboot has adopted a similar pragmatic approach in order to support newer devices in the Coreboot tree. (Thanks, kind Anon who corrected previous information in this paragraph.)
 
 Check yourself:
 
@@ -1798,21 +1798,21 @@ First, here is a small basic UML diagram showing your available options accordin
 
         -   **You could go for any route, but we would recommend Qubes OS if your threat model allows it.**
 
-    -   If it is an ARM-based M1 Mac:
+    -   If it is an ARM-based M1/M2 Mac:
 
         -   **Not possible currently for these reasons:**
 
-            -   **Virtualization of x86 images on ARM M1 Macs is still limited to commercial software (Parallels) which is not supported by Whonix yet.**
+            -   **Virtualization of Intel x86 images on ARM (M1/M2) hosts is still limited to commercial software (e.g., Parallels, Fusion) which are mostly not supported by Whonix, yet. They are very buggy and for advanced people only. Please seek this information yourself.**
 
-            -   **Virtualbox is not available for ARM architecture yet.**
+            -   **[Virtualbox is now available natively for ARM64 architecture](https://osxdaily.com/2022/10/22/you-can-now-run-virtualbox-on-apple-silicon-m1-m2/) in a package as of October 2022. Download the ["Developer preview for macOS/Arm64 (M1/M2) hosts"](https://www.virtualbox.org/wiki/Downloads).**
 
-            -   **Whonix is not supported on ARM architecture yet.**
+            -   **Whonix does not support macOS easily. "You need to build Whonix using the build script to get it running on Apple Silicon." [See the forum thread](https://www.whonix.org/wiki/MacOS#M1).**
 
-            -   **Tails is not supported on ARM architecture yet.**
+            -   **Tails is not supported on ARM64 architecture yet. [See this thread](https://gitlab.tails.boum.org/tails/blueprints/-/wikis/ARM_platforms/) for more information (keep in mind this page hasn't been updated recently).**
 
-            -   **Qubes OS is not supported on ARM architecture yet.**
+            -   **Qubes OS is not supported on ARM64 architecture yet, but there is work being done to make it available on aarch64, which may be delayed for the unforseeable future..**
 
-**Your only option on M1 Macs is probably to stick with Tor Browses for now. But we would guess that if you can afford an M1 Mac you should probably get a dedicated x86 laptop for more sensitive activities.**
+**The general advice in this guide regarding virtualization software is that it's costly. That said, you should probably get a dedicated laptop, capable of running virtualization software, preferably a 64-bit architecture, to be used for more sensitive activities and testing.**
 
 ### Skills:
 
@@ -2442,15 +2442,15 @@ Note, if during the import you are having issues such as "NS_ERROR_INVALID_ARG (
 
 ### Get a dedicated laptop for your sensitive activities:
 
-Ideally, you should get a dedicated laptop that will not be tied to you in any effortless way (ideally paid with cash anonymously and using the same precautions as previously mentioned for the phone and the SIM card). It is recommended but not mandatory because this guide will help you harden your laptop as much as possible to prevent data leaks through various means. There will be several lines of defense standing between your online identities and yourself that should prevent most adversaries from de-anonymizing you besides state/global actors with considerable resources.
+Ideally, you should get a dedicated laptop that will not be tied to you in any effortless way (ideally paid with cash anonymously and using the same precautions as previously mentioned for the phone and the SIM card). It is recommended but not mandatory. This guide will help you harden your laptop as much as possible to prevent data leaks through various means. There will be several lines of defense standing between your online identities and yourself which should prevent most adversaries from de-anonymizing you - besides state/global actors. It will take considerable resources.
 
-This laptop should ideally be a clean freshly installed Laptop (Running Windows, Linux, or macOS), clean of your normal day-to-day activities, and offline (never connected to the network yet). In the case of a Windows laptop, and if you used it before such a clean install, it should also not be activated (re-installed without a product key). Specifically, in the case of MacBooks, it should never have been tied to your identity before in any means. So, buy second-hand with cash from an unknown stranger who does not know your identity
+This laptop should ideally be a clean, freshly installed laptop (running Windows, Linux, or macOS); which is clean of your normal day-to-day activities; and which is offline (never connected to your home network). In the case of a Windows laptop, and if you used it before such a clean install, it should also not be activated. Simply reinstall without a product key in the case that it came pre-activated. Specifically, in the case of MacBooks, it should never have been tied to your identity before in any means. So, buy secondhand with cash from an unknown stranger who does not know your identity.
 
 This is to mitigate some future issues in case of online leaks (including telemetry from your OS or Apps) that could compromise any unique identifiers of the laptop while using it (MAC Address, Bluetooth Address, and Product key ...). But also, to avoid being tracked back if you need to dispose of the laptop.
 
 If you used this laptop before for different purposes (like your day-to-day activities), all its hardware identifiers are probably known and registered by Microsoft or Apple. If later any of those identifiers is compromised (by malware, telemetry, exploits, human errors ...) they could lead back to you.
 
-The laptop should have at least 250GB of Disk Space **at least 6GB (ideally 8GB or 16GB)** of RAM and should be able to run a couple of Virtual Machines at the same time. It should have a working battery that lasts a few hours.
+The laptop should have at least 250GB of Disk Space **at least 6GB (ideally 8GB or 16GB)** of RAM and should be able to run a couple of Virtual Machines at the same time. It should have a working battery that lasts a few hours. You should aim for something with large storage (1TB+) if possible because we will need as much as possible.
 
 This laptop could have an HDD (7200rpm) or an SSD/NVMe drive. Both possibilities have their benefits and issues that will be detailed later.
 
@@ -2872,11 +2872,11 @@ See [Appendix G: Safe Browser on the Host OS]
 
 ### macOS Host OS:
 
-**Note: At this time, this guide will not support ARM M1 MacBooks (yet). Due to Virtualbox not supporting this architecture yet. It could however be possible if you use commercial tools like VMWare or Parallels but those are not covered in this guide.**
+**Note: Mac M1/M2 chips are now supported natively, or, if you wish to use commercial tools like VMWare Fusion or Parallels Desktop, but those are not covered in this guide. Seek this information yourself.**
 
-As mentioned earlier, we do not recommend using your daily laptop for sensitive activities. Or at leastWedo not recommend using your in-place OS for these. Doing that might result in unwanted data leaks that could be used to de-anonymize you. If you have a dedicated laptop for this, you should reinstall a fresh clean OS. If you do not want to wipe your laptop and start over, you should consider the Tails route or proceed at your own risk.
+As mentioned earlier, we do not recommend using your daily laptop for sensitive activities. Or at least we do not recommend using your in-place OS for these. Doing that might result in unwanted data leaks that could be used to de-anonymize you. If you have a dedicated laptop for this, you should reinstall a fresh clean OS. If you do not want to wipe your laptop and start over, you should consider the Tails route or proceed at your own risk.
 
-I also recommend that you do the initial installation completely offline to avoid any data leak.
+We also recommend that you do the initial installation completely offline to avoid any data leak.
 
 **Do not ever sign in with your Apple account using that Mac.**
 
