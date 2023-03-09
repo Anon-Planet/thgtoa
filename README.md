@@ -2,29 +2,38 @@
 برای ایران_ با هم
 
 
-Welcome.
+ خوش آمدید
 
-**[IMPORTANT RECOMMENDATION FOR UKRAINIANS. ВАЖЛИВА РЕКОМЕНДАЦІЯ ДЛЯ УКРАЇНЦІВ](briar.html)**
+**[توصیه مهم برای ایرانیان مقیم اوکراین . ВАЖЛИВА РЕКОМЕНДАЦІЯ ДЛЯ УКРАЇНЦІВ](briar.html)**
 
-This is a maintained guide with the aim of providing an introduction to various online tracking techniques, online ID verification techniques, and detailed guidance to creating and maintaining (truly) anonymous online identities. <span style="color: red">**It is written with hope for activists, journalists, scientists, lawyers, whistle-blowers, and good people being oppressed, censored, harassed anywhere!**</span> This guide has no affiliation with the [Anonymous](https://en.wikipedia.org/wiki/Anonymous_(hacker_group)) <sup>[[Wikiless]](https://wikiless.org/wiki/Anonymous_(hacker_group))</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Anonymous_(hacker_group))</sup> collective/movement.
+این یک راهنما است که با هدف معرفی تکنیک های مختلف ردیابی آنلاین، تکنیک های احراز هویت آنلاین و روش دقیق ایجاد و حفظ ناشناسی و امنیت هویت های آنلاین تهیه شده است.
 
-This guide is an open-source non-profit initiative, [licensed](LICENSE.html) under **Creative Commons Attribution-NonCommercial 4.0 International** ([cc-by-nc-4.0](https://creativecommons.org/licenses/by-nc/4.0/) <sup>[[Archive.org]](https://web.archive.org/web/https://creativecommons.org/licenses/by-nc/4.0/)</sup>) and is **not sponsored/endorsed by any commercial/governmental entity**. This means that you are free to use our guide for pretty much any purpose **excluding commercially** as long as you do attribute it. There are no ads or any affiliate links.
 
-**If you would like to make a donation to help this project, you can do so from [here](donations.html) where you will also find the project goals. All the donations will be strictly used within the context of this project. All donations and spendings are logged on the donations page.**
+ <span style="color: red">**این راهنما با امید کمک به فعالین مدنی، روزنامه نگاران، دانشمندان،حقوقدان ها هشدار دهنده ها (wistle-blowers) 
+به ویژه در ادارات دولتی، کسانی که خطاکاری یا خطاکاران را لو می دهند و آدم های خوبی که آزار دیده، سرکوب و سانسور میشوند تهیه شده است.
+**<br>
+</span>  این راهنمای هیچ وابستگی و ارتباطی با  [Anonymous](https://en.wikipedia.org/wiki/Anonymous_(hacker_group)) <sup>[[Wikiless]](https://wikiless.org/wiki/Anonymous_(hacker_group))</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Anonymous_(hacker_group))</sup> ندارد.
 
-**Direct downloads alternatives:**
-- **Coming soon**
+این راهنما یک ابتکار منبع باز و غیر انتفاعی   
+, [licensed](LICENSE.html) تحت لیسانس **Creative Commons Attribution-NonCommercial 4.0 International** ([cc-by-nc-4.0](https://creativecommons.org/licenses/by-nc/4.0/)  <sup>[[Archive.org]](https://web.archive.org/web/https://creativecommons.org/licenses/by-nc/4.0/)</sup>)میباشد . **وهمچنین توسط هیچ شرکت تجاری/ دولت ها حمایت/ تایید نشده است .** به این معنا که شما آزاد هستید تا از این راهنما برای هر هدفی **به جز اهداف تجاری**  زمانی که به تجاری نبودن آن اشاره کنید استفاده کنید،   بدون تبلیغات تجاری همزمان با مشاهده اطلاعات (ads) و لینک های وابسته.
 
-**View the guide:**
-- [In your browser](guide.html)
-- <del>[PDF](export/guide.pdf)</del> (temporarily unavailable)
-- <del>[OpenDocument (ODT)](export/guide.odt)</del> (temporarily unavailable)
-- Raw [Markdown](https://github.com/Anon-Planet/thgtoa/raw/master/guide.md) (references do not work when viewing this way).
+**اگر دوست دارین از این پروژه(نویسندگان اصلی آن ونه مترجمان) حمایت مالی کنید میتوانید با استفاده از [این لینک](donations.html) جایی که در آن میتوانید همه اهداف پروژه را نیز پیدا کنید ، اقدام کنید.
+همه حمایت های مالی به صورت کامل در چهارچوب توسعه و تکمیل این پروژه استفاده میشود. همه حمایت های مالی و نحوه خرج شدن آن ها در صفحه دونیشن ها ثبت و به عموم نمایش داده میشوند.** 
+
+**جایگزین های دانلود مستقیم:**
+
+**بزودی**
+
+**مشاهده راهنما در:**
+ [**(کلیک کنید)مرورگر شما**](guide.html)
+- <del>[PDF](export/guide.pdf)</del> (به صورت موقت در دسترس نیست)
+- <del>[OpenDocument (ODT)](export/guide.odt)</del> (به صورت موقت در دسترس نیست)
+- Raw <del>[Markdown](https://github.com/Anon-Planet/thgtoa/raw/master/guide.md)</del> (منابع در این حالت کار نمیکنند).
 
 Mirrors:
 - Tor Onion Mirror: <http://thgtoallkcxrdv37u6knsc3pumk6cq6lqmcqlw3j5vkmyahkxive4jyd.onion>
 
-The guide and all the files are also readily available on Archive.org and Archive.today:
+راهنما و تمام فایل ها به صورت آماده در Archive.org و Archive.today موجود میباشند:
 
 - Archive.org: <https://web.archive.org/web/https://anonymousplanet.org/>
 - Archive.today: <https://archive.ph/anonymousplanet.org/>
@@ -32,24 +41,31 @@ The guide and all the files are also readily available on Archive.org and Archiv
 
 If you want to access/see the original/legacy project, please see the [legacy resources](legacy.html) page.
 
-If you want to see the changes between your PDF and the latest PDF, you could use one of these tools (we do not endorse those):
+اگر میخواهید تغییرات  بین اخرین pdf و pdf خودتان ببینید، میتوانید از یکی از این ابزار ها استفاده کنید (ما این ابزار ها را تایید نمیکنیم):
+
 
 - <https://tools.pdf24.org/en/compare-pdf>
 - <https://products.aspose.app/pdf/comparison>
 - <https://draftable.com/compare>
 
-If you want to compare an older ODT file with a newer one, use the LibreWriter compare features as explained here: <https://help.libreoffice.org/7.1/en-US/text/shared/guide/redlining_doccompare.html> <sup>[[Archive.org]](https://web.archive.org/wen/https://help.libreoffice.org/7.1/en-US/text/shared/guide/redlining_doccompare.html)</sup>)
+اگر میخواهید یک فایل ODT قدیمی تر را با جدیدتر مقایسه کنید، میتوانید از قابلیت Librewriter به شکلی که در لینک زیر توضیح داده شده است استفاده کنید:
 
-**If you want to check the files for integrity, safety, authenticity, please refer to this ["How To"](verify.html).**
+ <https://help.libreoffice.org/7.1/en-US/text/shared/guide/redlining_doccompare.html> <sup>[[Archive.org]](https://web.archive.org/wen/https://help.libreoffice.org/7.1/en-US/text/shared/guide/redlining_doccompare.html)</sup>)
 
-Feel free to submit issues using Github Issues with the repository link above. Criticism, opinions, and ideas are welcome!
+**اگر میخواهید یکپارچگی، امنیت و صحت فایل ها را بررسی کنید میتوانید به [چگونه](verify.html) مراجعه کنید.**
 
-Follow or contact us on:
+اگر میخواهید، میتوانید مسائل مربوط به متن را در  بخش Github Issues این [این ریپازیتوری](https://github.com/Hamid-M-Mostafa/thgtoa) به زبان فارسی مطرح کنید.<br> از نقد، نظر و ایده های شما استقبال میشود! 
 
-Discussion Channels:
+
+Follow or contact us on (نویسندگان اصلی):
+
+**برای ارتباط با مترجمان فارسی زبان فعلا در همین بستر بعنی گیتهاب میتوانید فعالیت کنید.**
+
+Discussion Channels (نویسندگان اصلی):
 - Matrix room: ```#anonymity:matrix.org``` <https://matrix.to/#/#anonymity:matrix.org>
 - Matrix space: ```#privacy-security-anonymity:matrix.org``` <https://matrix.to/#/#privacy-security-anonymity:matrix.org>
 - Twitter at https://twitter.com/AnonyPla 
 - Mastodon at https://mastodon.social/@anonymousplanet
 
-Have a good read and feel free to share and/or recommend it!
+از مطالعه کردن لذت ببرید و مطالب موجود را هر چه بیشتر نشر و یا پیشنهاد(برای مطالعه) بدهید.
+
