@@ -2,7 +2,7 @@
 
 (Or "How I learned to start worrying and love ~~privacy~~ anonymity")
 
-Version 1.1.6-pre1, August 2022 by Anonymous Planet
+Version 1.1.6-pre2, March 2023 by Anonymous Planet
 
 **Forever in memory of Lena, 1999-2022**
 
@@ -20,11 +20,13 @@ The manual is here: <https://briarproject.org/manual/>, quick-start guide here: 
 
 --------------------------------------------------------------------------
 
-**This guide is a work in progress**. While we are doing the best we can to correct issues, inaccuracies, and improve the content, general structure, and readability; it will probably never be "finished". This guide has no affiliation with the [Anonymous](https://en.wikipedia.org/wiki/Anonymous_(hacker_group)) <sup>[[Wikiless]](https://wikiless.org/wiki/Anonymous_(hacker_group))</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Anonymous_(hacker_group))</sup> collective/movement.
+**This guide is a work in progress**. It will probably never be "finished".
 
-**There might be some wrong or outdated information in this guide because no human is omniscient, and humans do make mistakes.** **Please do not take this guide as a definitive gospel or truth because it is not. Mistakes have been written in the guide in earlier versions and fixed later when discovered. There are likely still some mistakes in this guide at this moment (hopefully few). Those are fixed as soon as possible when discovered.**
+**No affiliation with the** [Anonymous](https://en.wikipedia.org/wiki/Anonymous_(hacker_group)) <sup>[[Wikiless]](https://wikiless.org/wiki/Anonymous_(hacker_group))</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Anonymous_(hacker_group))</sup> **collective/movement.**
 
-**Your experience may vary.** **Remember to check regularly for an updated version of this guide.**
+**There might be some wrong or outdated information in this guide because no one is perfect.**
+
+**Your experience may vary. Remember to check regularly for an updated version of this guide.**
 
 This guide is a non-profit open-source initiative, licensed under Creative Commons **Attribution-NonCommercial** 4.0 International ([cc-by-nc-4.0](https://creativecommons.org/licenses/by-nc/4.0/) <sup>[[Archive.org]](https://web.archive.org/web/https://creativecommons.org/licenses/by-nc/4.0/)</sup>).
 
@@ -174,7 +176,7 @@ Finally note that this guide does mention and even recommends various commercial
         -   [macOS Virtual Machine:]
         -   [KeepassXC:]
         -   [VPN client installation (cash/Monero paid):]
-        -   [(Optional) Allowing only the VMs to access the internet while cutting off the Host OS to prevent any leak:]
+        -   [(Optional) VM kill switch:]
         -   [Final step:]
     -   [The Qubes Route:]
         -   [Pick your connectivity method:][1]
@@ -393,29 +395,31 @@ Finally note that this guide does mention and even recommends various commercial
 
 ## Pre-requisites:
 
--   Understanding of the English language (in this case US English).
+-   Understanding of the English language (in this case American English).
 
 -   Be a permanent resident in Germany where the courts have upheld the legality of not using real names on online platforms (§13 VI of the German Telemedia Act of 2007[^1]'[^2]). **Alternatively, be a resident of any other country where you can confirm and verify the legality of this guide yourself.**
 
--   This guide will assume you already have access to some (Windows/Linux/macOS) laptop computer (ideally not a work/shared device) and a basic understanding of how it works.
+-   This guide will assume you already have access to some (Windows/Linux/macOS) laptop computer - ideally not a work/shared device - and a basic understanding of how computers work.
 
--   Have patience as this process could take several weeks to complete if you want to go through all the content.
+-   Have patience, as this process could take several weeks to complete if you want to go through all the content.
 
--   Have some free time on your hands to dedicate to this process (or a lot depending on the route you pick).
+-   Have some free time on your hands to dedicate to this process (depending on which route you pick).
 
--   Be prepared to read a lot of references (do read them), guides (do not skip them), and follow a lot of how-to tutorials thoroughly (do not skip them either).
+-   Be prepared to read a lot of references (do read them), guides (do not skip them), and tutorials thoroughly (do not skip them either).
 
 -   Don't be evil (for real this time)[^3].
+
+-   Understand that there is no common path that will be both quick and easy.
 
 ## Limitations:
 
 This guide is not intended for:
 
--   Creating machine accounts of any kind (bots).
+-   Creating bot accounts of any kind.
 
 -   Creating impersonation accounts of existing people (such as identity theft).
 
--   Helping malicious actors conduct unethical, criminal, or illicit activities (such as trolling, stalking, disinformation, misinformation, harassment, bullying...).
+-   Helping malicious actors conduct unethical, criminal, or illicit activities (such as trolling, stalking, disinformation, misinformation, harassment, bullying, or fraud).
 
 -   Use by minors.
 
@@ -435,7 +439,7 @@ It is important to understand that the purpose of this guide is anonymity and no
 
 -   **Anonymity is about people knowing what you are doing but not knowing who you are** [^8]**.**
 
-![][38]
+![image01](media/image01.jpeg)
 
 (Illustration from[^9])
 
@@ -443,7 +447,7 @@ Will this guide help you protect yourself from the NSA, the FSB, Mark Zuckerberg
 
 You must consider your threat model[^12] before going further.
 
-![][39]
+![image02](media/image02.jpeg)
 
 (Illustration by Randall Munroe, xkcd.com, licensed under CC BY-NC 2.5)
 
@@ -451,9 +455,9 @@ Will this guide help you protect your privacy from OSINT researchers like Bellin
 
 Here is a basic simplified threat model for this guide:
 
-![][40]
+![image40](media/image40.jpeg)
 
-(Note that the "magical amulets/submarine/fake your own death" jokes are quoted from the excellent article "This World of Ours" by James Mickens, 2014above[^10])
+(Note that the "magical amulets/submarine/fake your own death" jokes are quoted from the excellent article "This World of Ours" by James Mickens, 2014.[^10])
 
 Disclaimer: Jokes aside (magical amulet...). Of course, there are also advanced ways to mitigate attacks against such advanced and skilled adversaries but those are just out of the scope of this guide. It is crucially important that you understand the limits of the threat model of this guide. And therefore, this guide will not double in size to help with those advanced mitigations as this is just too complex and will require an exceedingly high knowledge and skill level that is not expected from the targeted audience of this guide.
 
@@ -1331,13 +1335,13 @@ Well, there are techniques for recovering information from such documents, video
 
 Here is for example an open-source project you could use yourself for recovering text from some blurred images yourself: <https://github.com/beurtschipper/Depix> <sup>[[Archive.org]](https://web.archive.org/web/https://github.com/beurtschipper/Depix)</sup>
 
-![][142]
+![image14](media/image14.jpeg)
 
 This is of course an open-source project available for all to use. But you can imagine that such techniques have probably been used before by other adversaries. These could be used to reveal blurred information from published documents that could then be used to de-anonymize you.
 
 There are also tutorials for using such techniques using Photo Editing tools such as GIMP such as <https://medium.com/@somdevsangwan/unblurring-images-for-osint-and-more-part-1-5ee36db6a70b>   <sup>[[Archive.org]](https://web.archive.org/web/https://medium.com/@somdevsangwan/unblurring-images-for-osint-and-more-part-1-5ee36db6a70b)</sup> followed by <https://medium.com/@somdevsangwan/deblurring-images-for-osint-part-2-ba564af8eb5d> <sup>[[Scribe.rip]](https://scribe.rip/@somdevsangwan/deblurring-images-for-osint-part-2-ba564af8eb5d)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://medium.com/@somdevsangwan/deblurring-images-for-osint-part-2-ba564af8eb5d)</sup>
 
-![][147]
+![image15](media/image15.jpeg)
 
 Finally, you will find plenty of deblurring resources here: <https://github.com/subeeshvasu/Awesome-Deblurring> <sup>[[Archive.org]](https://web.archive.org/web/https://github.com/subeeshvasu/Awesome-Deblurring)</sup>
 
@@ -1347,7 +1351,7 @@ Some online services could even help you do this automatically to some extent li
 
 Here is the result of the above image:
 
-![][150]
+![image16](media/image16.jpeg)
 
 Of course, this tool is more like "guessing" than really deblurring at this point, but it could be enough to find you using various reverse image searching services.
 
@@ -1622,7 +1626,7 @@ If the VPN provider knows nothing about you, it should mitigate any issue due to
 
 ## Some Advanced targeted techniques:
 
-![][171]
+![image17](media/image17.jpeg)
 
 (Illustration: an excellent movie we highly recommend: Das Leben der Anderen[^286])
 
@@ -1758,7 +1762,7 @@ Here are some various resources about what Zero-Trust Security is:
 
 First, here is a small basic UML diagram showing your available options according to your skills/budget/time/resources.
 
-![][220]
+![image18](media/image18.jpeg)
 
 ### Timing limitations:
 
@@ -2004,13 +2008,13 @@ Now, what if you have no money? Well, in that case, you will have to try your lu
 
 -   <https://sms24.me>
 
-**DISCLAIMER:We cannot vouch for any of these providers and therefore we will still recommend doing it yourself physically. In this case, you will have to rely on the anonymity of Monero and you should not use any service that requires any kind of identification using your real identity. Please do read [Appendix B2: Monero Disclaimer].**
+**Disclaimer: We cannot vouch for any of these providers. We recommend doing it yourself physically. In this case, you will have to rely on the anonymity of Monero and you should not use any service that requires any kind of identification using your real identity. Please do read [Appendix B2: Monero Disclaimer].**
 
-Therefore, it is just more convenient, cheaper, and less risky to just get a pre-paid SIM card from one of the physical places that still sell them for cash without requiring ID registration. But at least there is an alternative if you have no other choice.
+It is more convenient, cheaper, and less risky to just get a pre-paid SIM card from one of the physical places that still sell them for cash without ID.
 
 ### Get a USB key:
 
-**Skip this step if you have no intention of creating anonymous accounts on most mainstream platforms but just want anonymous browsing or if the platforms you will use allow registration without a phone number.**
+**Skip this step if you have no intention of creating anonymous accounts on most mainstream platforms, but you will want anonymous browsing; or if the platforms which you will use allow registration without a phone number.**
 
 Get at least one or two decent size generic USB keys (at least 16GB but we would recommend 32GB).
 
@@ -2330,9 +2334,9 @@ This project is a clever idea of a one-click self-contained VM solution that you
 
 This would allow the creation of a hybrid system mixing Tails with the Virtualization options of the Whonix route in this guide.
 
-![][246]
+![image19](media/image19.jpeg)
 
-**Note: See [Pick your connectivity method][Pick your connectivity method:] in the Whonix Route for more explanations about Stream Isolation**
+**Note: See** [Pick your connectivity method][Pick your connectivity method:] **in the Whonix Route for more explanations about Stream Isolation**
 
 In short:
 
@@ -2554,7 +2558,9 @@ Here is a good cheap method to make your laptop tamper-proof using Nail Polish (
 
 While this is a good cheap method, it could also raise suspicions as it is quite "noticeable" and might just reveal that you "have something to hide". So, there are more subtle ways of achieving the same result. You could also for instance make a close-up macro photography of the back screws of your laptop or just use a small amount of candle wax within one of the screws that could just look like usual dirt. You could then check for tampering by comparing the photographs of the screws with new ones. Their orientation might have changed a bit if your adversary was not careful enough (Tightening them exactly the same way they were before). Or the wax within the bottom of a screw head might have been damaged compared to before.
 
-![][259]![][260]
+![image20](media/image20.jpeg)
+
+![image21](media/image21.jpeg)
 
 The same techniques can be used with USB ports where you could just put a tiny amount of candle wax within the plug that would be damaged by inserting a USB key in it.
 
@@ -3275,7 +3281,7 @@ Read the Veracrypt Documentation <https://www.veracrypt.fr/en/VeraCrypt%20Hidden
 
 This is how your system will look after this process is done:
 
-![][305]
+![image22](media/image22.jpeg)
 
 (Illustration from Veracrypt Documentation, <https://veracrypt.fr/en/VeraCrypt%20Hidden%20Operating%20System.html> <sup>[[Archive.org]](https://web.archive.org/web/https://www.veracrypt.fr/en/VeraCrypt%20Hidden%20Operating%20System.html)</sup>)
 
@@ -3439,9 +3445,9 @@ Time to test your setup:
 
 Before going to the next step, you should learn the way to mount your Outer Volume safely for writing content on it. This is also explained in this official Veracrypt Documentation <https://www.veracrypt.fr/en/Protection%20of%20Hidden%20Volumes.html> <sup>[[Archive.org]](https://web.archive.org/web/https://www.veracrypt.fr/en/Protection%20of%20Hidden%20Volumes.html)</sup>
 
-**You should do this from a safe trusted place.**
+**You should do this from a safe, trusted space.**
 
-Basically, you are going to mount your Outer Volume while also providing the Hidden Volume passphrase within the Mount Options to protect the Hidden Volume from being overwritten. Veracrypt will then allow you to write data to the Outer volume without risking overwriting any data on the Hidden Volume:
+Basically, you are going to mount your Outer Volume while also providing the Hidden Volume passphrase within the Mount Options to protect the Hidden Volume from being overwritten:
 
 -   Open Veracrypt
 
@@ -3461,29 +3467,29 @@ Basically, you are going to mount your Outer Volume while also providing the Hid
 
 -   Click OK
 
--   You should now be able to open and write to your Outer volume to change the content (copy/move/delete/edit...)
+-   You should now be able to open and write to your Outer Volume to change the content (copy/move/delete/edit...)
 
-This operation will not actually mount the Hidden Volume and should prevent the creation of any forensic evidence that could lead to the discovery of the hidden OS. However, while you are performing this operation, both passwords will be stored in your RAM and therefore you could still be susceptible to a Cold-Boot Attack. To mitigate this, be sure to have the option to encrypt your RAM too as instructed before.
+This operation will not actually mount the Hidden Volume and should prevent the creation of any forensic evidence that could lead to the discovery of the Hidden OS. However, while you are performing this operation, both passwords will be stored in your RAM. You could still be vulnerable to a Cold-Boot Attack. To mitigate this, be sure to have the option to encrypt your RAM as instructed before.
 
-###### Step 10: Leave some forensics evidence of your outer Volume (with the decoy Data) within your Decoy OS
+###### Step 10: Leave some forensics evidence of your Outer Volume (with the decoy Data) within your Decoy OS
 
-We must make the Decoy OS as plausible as possible. We also want your adversary to think you are not that smart.
+We must make the Decoy OS as plausible as possible. We also want your adversary to underestimate your intelligence.
 
-Therefore, it is important to voluntarily leave some forensic evidence of your Decoy Content within your Decoy OS. This evidence will let forensic examiners see that you mounted your Outer Volume frequently to access its content.
+It is important to voluntarily leave some forensic evidence of your Decoy Content within your Decoy OS. This evidence will let forensic examiners see that you mounted your Outer Volume frequently to access its content.
 
 Here are useful tips to leave some forensics evidence:
 
 -   Play the content from the Outer Volume from your Decoy OS (using VLC for instance). Be sure to keep a history of those.
 
--   Edit Documents and work on them.
+-   Edit documents and work on them.
 
--   Enable File Indexing again on the Decoy OS and include the Mounted Outer Volume.
+-   Enable file indexing again on the Decoy OS and include the mounted Outer Volume.
 
--   Unmount it and mount it frequently to watch some Content.
+-   Unmount it and mount it frequently to watch some content or move files around.
 
--   Copy some Content from your Outer Volume to your Decoy OS and then delete it unsafely (just put it in the recycle Bin).
+-   Copy some content from your Outer Volume to your Decoy OS and then delete it unsafely. Just put it in the Recycle Bin, which only someone who is naive would do, thinking it were deleted.
 
--   Have a Torrent Client installed on the Decoy OS use it from time to time to download some similar stuff that you will leave on the Decoy OS.
+-   Have a Torrent Client installed on the Decoy OS; use it from time to time to download some similar stuff that you will leave on the Decoy OS.
 
 -   You could have a VPN client installed on the Decoy OS with a known VPN of yours (non-cash paid).
 
@@ -3495,43 +3501,49 @@ Do not put anything suspicious on the Decoy OS such as:
 
 -   Any suspicious anonymity software such as Tor Browser
 
+-   Any Veracrypt volumes
+
+-   Any documents on anonymity or security
+
+The intention is to make your adversary believe you are not as smart as they thought, to deter them from searching deeper.
+
 ###### Notes:
 
 **Remember that you will need valid excuses for this plausible deniability scenario to work:**
 
--   **You are using Veracrypt because you are using Windows 10/11 Home which does not feature Bitlocker but still wanted Privacy.**
+-   **You are using Veracrypt because you are using Windows 10/11 Home, which do not feature Bitlocker, but you still wanted reasonable Privacy.**
 
--   **You have two Partitions because you wanted to separate the System and the Data for easy organization and because some Geek friend told you this was better for performance.**
+-   **You have two partitions because you wanted to separate the system from the data for easy organization, and because some geeky friend told you this was better for performance.**
 
--   **You have used a weak password for easy convenient booting on the System and a Strong long passphrase on the Outer Volume because you were too lazy to type a strong passphrase at each boot.**
+-   **You have used a weak password for easy convenient booting of the system and a strong, long passphrase on the Outer Volume. You were too lazy to type a strong passphrase at each boot.**
 
--   **You encrypted the second Partition with a different password than the System because you do not want anyone in your entourage to see your stuff. And so, you did not want that data available to anyone.**
+-   **You encrypted the second partition with a different password than the system because you do not want anyone in your group/domain to see your stuff. You did not want that data available to anyone.**
 
 Take some time to read again the "Possible Explanations for Existence of Two Veracrypt Partitions on Single Drive" of the Veracrypt documentation here <https://www.veracrypt.fr/en/VeraCrypt%20Hidden%20Operating%20System.html> <sup>[[Archive.org]](https://web.archive.org/web/https://www.veracrypt.fr/en/VeraCrypt%20Hidden%20Operating%20System.html)</sup>
 
 **Be careful:**
 
--   **You should never mount the Hidden Volume from the Decoy OS (NEVER EVER). If you did this, it would create forensics evidence of the Hidden Volume within the Decoy OS that could jeopardize your attempt at plausible deniability**. If you did this anyway (intentionally or by mistake) from the Decoy OS, there are ways to erase forensics evidence that will be explained later at the end of this guide.
+-   **You should never mount the Hidden Volume from the Decoy OS (NEVER EVER). If you did this, it would create forensic evidence of the Hidden Volume within the Decoy OS which could jeopardize your attempt at plausible deniability**. If you did this anyway (intentionally or by mistake) from the Decoy OS, there are ways to erase forensic evidence that will be explained later at the end of this guide, so this mistake alone isn't a huge deal if you follow the steps in [Some additional measures against forensics][Some additional measures against forensics:].
 
--   **Never Use the Decoy OS from the same network (public Wi-Fi) as the Hidden OS.**
+-   **Never use the Decoy OS from the same network (public Wi-Fi) as the Hidden OS.**
 
--   **When you do mount the Outer Volume from the Decoy OS, do not write any Data within the Outer Volume as this could override what looks like Empty Space but is in fact your Hidden OS. You should always mount it as read-only.**
+-   **When you do mount the Outer Volume from the Decoy OS, do not write any data within the Outer Volume. This could override what looks like empty space, but is in fact your Hidden OS. You should always mount it as read-only.**
 
--   **If you want to change the Decoy content of the Outer Volume, you should use a Live OS USB Key that will run Veracrypt.**
+-   **If you want to change the decoy content of the Outer Volume, you should use a Live OS USB Key that will run Veracrypt.**
 
--   **Note that you will not use the Hidden OS to perform sensitive activities, this will be done later from a VM within the Hidden OS. The Hidden OS is only meant to protect you from a soft adversary that could gain access to your laptop and compel you to reveal your password.**
+-   **Note that you will not use the Hidden OS to perform sensitive activities, this will be done later from a VM within the Hidden OS. The Hidden OS is only meant to protect you from soft lawful adversaries that could gain access to your laptop and compel you to reveal your password.**
 
--   **Be careful of any tampering with your laptop. Evil-Maid Attacks can reveal your hidden OS.**
+-   **Be careful of any tampering with your laptop. Evil-Maid Attacks can reveal your Hidden OS.**
 
 ### Virtualbox on your Host OS:
 
-Remember [Appendix W: Virtualization][Appendix V1: Hardening your Browsers:].
+Remember [Appendix W: Virtualization].
 
 This step and the following steps should be done from within the Host OS. This can either be your Host OS with simple encryption (Windows/Linux/macOS) or your Hidden OS with plausible deniability (Windows only).
 
 In this route, you will make extensive use of the free Oracle Virtualbox[^348] software. This is a virtualization software in which you can create Virtual Machines that emulate a computer running a specific OS (if you want to use something else like Xen, Qemu, KVM, or VMWARE, feel free to do so but this part of the guide covers Virtualbox only for convenience).
 
-So, you should be aware that Virtualbox is not the virtualization software with the best track record in terms of security and some of the reported issues[^349] have not been completely fixed to this date[^350] and if you are using Linux with a bit more technical skills, you should consider using KVM instead by following the guide available at Whonix here <https://www.whonix.org/wiki/KVM> <sup>[[Archive.org]](https://web.archive.org/web/https://www.whonix.org/wiki/KVM)</sup> and here <https://www.whonix.org/wiki/KVM#Why_Use_KVM_Over_VirtualBox.3F> <sup>[[Archive.org]](https://web.archive.org/web/https://www.whonix.org/wiki/KVM#Why_Use_KVM_Over_VirtualBox.3F)</sup>
+So, you should be aware that Virtualbox is not the virtualization software with the best track record in terms of security. Some of the reported issues[^349] have not been completely fixed to date[^350]. If you are using Linux, and you possess a bit more technical skill, you should consider using KVM instead by following the guide available at Whonix here <https://www.whonix.org/wiki/KVM> <sup>[[Archive.org]](https://web.archive.org/web/https://www.whonix.org/wiki/KVM)</sup> and here <https://www.whonix.org/wiki/KVM#Why_Use_KVM_Over_VirtualBox.3F> <sup>[[Archive.org]](https://web.archive.org/web/https://www.whonix.org/wiki/KVM#Why_Use_KVM_Over_VirtualBox.3F)</sup>
 
 Some steps should be taken in all cases:
 
@@ -3539,11 +3551,11 @@ Some steps should be taken in all cases:
 
 This has a few advantages that will help you remain anonymous:
 
--   It should prevent the guest VM OS (Windows/Linux/macOS), Apps, and any telemetry within the VMs from accessing your hardware directly. Even if your VM is compromised by malware, this malware should not be able to the VM and compromise your actual laptop.
+-   It should prevent the guest VM OS (Windows/Linux/macOS), apps, and any telemetry within the VMs from accessing your hardware directly. Even if your VM is compromised by malware, the malware should not be able to access the Host OS and compromise your actual machine.
 
--   It will allow us to force all the network traffic from your client VM to run through another Gateway VM that will direct (torify) all the traffic towards the Tor Network. This is a network "kill switch". Your VM will lose its network connectivity completely and go offline if the other VM loses its connection to the Tor Network.
+-   It will allow us to force all the network traffic from your VM to run through another Gateway VM that will direct all the traffic over the Tor Network. This is a network "kill switch". Your VM will lose its network connectivity completely and go offline if the target network VM loses its connection to the Tor Network.
 
--   The VM itself that only has internet connectivity through a Tor Network Gateway will connect to your cash-paid VPN service through Tor.
+-   The VM itself, which only has internet connectivity through a Tor Network Gateway, will connect to your cash-paid VPN service through Tor.
 
 -   DNS Leaks will be impossible because the VM is on an isolated network that must go through Tor no matter what.
 
@@ -3575,13 +3587,13 @@ There are seven possibilities within this route:
 
     -   No VPN and no Tor (User > Internet)
 
-![][310]
+![image23](media/image23.jpeg)
 
 #### Tor only:
 
 This is the preferred and most recommended solution.
 
-![][311]
+![image24](media/image24.jpeg)
 
 With this solution, all your network goes through Tor, and it should be sufficient to guarantee your anonymity in most cases.
 
@@ -3601,7 +3613,7 @@ This solution can be achieved in two ways:
 
 As you can see in this illustration, if your cash (preferred)/Monero paid VPN/Proxy is compromised by an adversary (despite their privacy statement and no-logging policies), they will only find an anonymous cash/Monero paid VPN/Proxy account connecting to their services from a Tor Exit node.
 
-![][313]
+![image25](media/image25.jpeg)
 
 If an adversary somehow manages to compromise the Tor network too, they will only reveal the IP of a random public Wi-Fi that is not tied to your identity.
 
@@ -3611,7 +3623,7 @@ If an adversary somehow compromises your VM OS (with malware or an exploit for i
 
 Stream isolation is a mitigation technique used to prevent some correlation attacks by having different Tor Circuits for each application. Here is an illustration to show what stream isolation is:
 
-![][314]
+![image26](media/image26.jpeg)
 
 (Illustration from Marcelo Martins, <https://stakey.club/en/decred-via-tor-network/> <sup>[[Archive.org]](https://web.archive.org/web/https://stakey.club/en/decred-via-tor-network/)</sup>)
 
@@ -3762,11 +3774,11 @@ This guide will therefore propose two flavors of this route:
 
 -   The Whonix only route where all traffic is routed through the Tor Network (Tor Only or Tor over VPN).
 
-![][330]
+![image27](media/image27.jpeg)
 
 -   A Whonix hybrid route where all traffic is routed through a cash (preferred)/Monero paid VPN over the Tor Network (VPN over Tor or VPN over Tor over VPN).
 
-![][331]
+![image28](media/image28.jpeg)
 
 You will be able to decide which flavor to use based on my recommendations. We recommend the second one as explained before.
 
@@ -4252,7 +4264,7 @@ Remember that all VPN activities are happening from a sandboxed VM on an interna
 
 At best, the VPN client would know your local IP (internal IP) and some randomized identifiers but should not be able to get anything from the Host OS. And in theory, the VPN client should not send any telemetry back to the VPN provider. If your VPN client does this or asks this, you should consider changing the provider.
 
-### (Optional) Allowing only the VMs to access the internet while cutting off the Host OS to prevent any leak:
+### (Optional) VM kill switch:
 
 This step will allow you to configure your Host OS so that only the Whonix Gateway VM will have access to the internet. This will therefore prevent any "leak" from your Host OS while letting the Whonix Gateway establish the tor connectivity. The other VMs (Whonix Workstation or any other VM you installed behind it will not be affected)
 
@@ -4275,7 +4287,7 @@ There are three ways to do this:
 
 The illustration below shows the result of this step:
 
-![][356]
+![image29](media/image29.jpeg)
 
 ##### Configuration of the Whonix Gateway VM:
 
@@ -4399,7 +4411,7 @@ Of course, you can also achieve this with any other Linux distro if you so decid
 
 This is how it will look at the end:
 
-![][357]
+![image30](media/image30.jpeg)
 
 ##### Installing XUbuntu VM:
 
@@ -4611,7 +4623,7 @@ Of course, you can also achieve this with any other Linux distro if you so decid
 
 This is how it will look at the end:
 
-![][358]
+![image31](media/image31.jpeg)
 
 ##### Configuration of the Host OS:
 
@@ -4821,13 +4833,13 @@ There are seven possibilities within this route:
 
     -   No VPN and no Tor (User > Internet)
 
-![][310]
+![image23](media/image23.jpeg)
 
 #### Tor only:
 
 This is the preferred and most recommended solution.
 
-![][366]
+![image32](media/image32.jpeg)
 
 With this solution, all your network goes through Tor, and it should be sufficient to guarantee your anonymity in most cases.
 
@@ -4847,7 +4859,7 @@ This solution can be achieved in two ways:
 
 As you can see in this illustration, if your cash (preferred)/Monero paid VPN/Proxy is compromised by an adversary (despite their privacy statement and no-logging policies), they will only find an anonymous cash/Monero paid VPN account connecting to their services from a Tor Exit node.
 
-![][367]
+![image33](media/image33.jpeg)
 
 If an adversary somehow manages to compromise the Tor network too, they will only reveal the IP of a random public Wi-Fi that is not tied to your identity.
 
@@ -4857,7 +4869,7 @@ If an adversary somehow compromises your VM OS (with malware or an exploit for i
 
 Stream isolation is a mitigation technique used to prevent some correlation attacks by having different Tor Circuits for each application. Here is an illustration to show what stream isolation is:
 
-![][314]
+![image26](media/image26.jpeg)
 
 (Illustration from Marcelo Martins, <https://stakey.club/en/decred-via-tor-network/> <sup>[[Archive.org]](https://web.archive.org/web/https://stakey.club/en/decred-via-tor-network/)</sup>)
 
@@ -5554,7 +5566,7 @@ It's all to show you the lengths that state actors will go to. You may not be aw
 
 ### Captchas:
 
-![][388]![][389]
+![image34](media/image34.jpeg)![image35](media/image35.jpeg)
 
 (Illustrations by Randall Munroe, xkcd.com, licensed under CC BY-NC 2.5)
 
@@ -5771,7 +5783,7 @@ While this might seem innocent, this is obviously an ID verification and de-anon
 
 This is for instance now the case on YouTube for some European Users[^384] but also used by services like Amazon that requires a valid payment method for creating an account.
 
-![][394]
+![image36](media/image36.jpeg)
 
 ### Sign-in with some platform:
 
@@ -5791,11 +5803,11 @@ This is a common method used on some Crypto trading platforms and some dating Ap
 
 Some platforms/apps will require you to take a live picture of yourself either doing something (a wink, holding an arm up ...) or showing a custom piece of information (a handwritten text, a passport, or ID) within the picture. Sometimes the platform/app will require several pictures to increase their certainty.
 
-![][395]
+![image37](media/image37.jpeg)
 
 This guide will not cover this one (yet) as it is mainly used on financial platforms (that will be able to identify you with other means anyway) and some dating apps like Tinder[^386]. Unfortunately, this method is now also sometimes being used on Facebook[^387] and Instagram as part of their verification methods (tho we did not face it yet so far).
 
-![][396]
+![image38](media/image38.jpeg)
 
 In some cases, these verifications must be done from your Smartphone and with an "in-app" camera to prevent you from sending a previously saved (edited) image.
 
@@ -5948,11 +5960,11 @@ We will help you bit by listing a few tips we learned while researching over the
 
 -   Original:
 
-![][402]
+![image39](media/image39.jpeg)
 
 -   Result (see Online because PDFs do not work well with embedded media):
 
-![](media/after.gif)
+![after-gif](media/after.gif)
 
 Slight issue tho: **MyHeritrage.com bans Tor Exit nodes so you might have again to consider VPN over Tor for this.**
 
@@ -7081,7 +7093,7 @@ Note that you will not be able to enable 2FA on Twitch using only e-mail. This f
 
 You are going to have to find a separate way to post there using at least seven proxies[^408] that are not known by 4chan blocking system (hint: Anonymous VPS using Monero is probably your best option).
 
-![][450]
+![image40](media/image40.jpeg)
 
 #### Crypto Wallets:
 
@@ -8217,7 +8229,7 @@ Just use SyncThing, it is the safest and most secure way to synchronize between 
 
 ## Understanding HDD vs SSD:
 
-![][482]
+![image41](media/image41.jpeg)
 
 If you intend to wipe your whole HDD laptop, the process is rather straightforward. The data is written at a precise location on a magnetic (hard) platter (why it is called a hard drive) and your OS knows precisely where it is on the platter, where to delete it, and where to overwrite it for secure deletion using simple processes (like just overwriting that location over and over until no traces are left).
 
@@ -8229,7 +8241,7 @@ On the other hand, if you are using an SSD drive, the process is not as simple a
 
 Here are examples of the most common formats:
 
-![][483]
+![image42](media/image42.jpeg)
 
 All of these are sold as internal and external drives within enclosures.
 
@@ -8257,7 +8269,7 @@ If Trim operations are not done regularly (or at all), then the data is never de
 
 Here is an illustration from Wikipedia showing how it works on an SSD drive:
 
-![][484]
+![image43](media/image43.jpeg)
 
 As you can see in the above illustration, data (from a file) will be written to the four first pages of Block X. Later new data will be written to the remaining pages and the data from the first files will be marked as invalid (for instance by a Trim operation when deleting a file). As explained on <https://en.wikipedia.org/wiki/Trim_(computing)> <sup>[[Wikiless]](https://wikiless.org/wiki/Trim_(computing))</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Trim_(computing))</sup>; the erase operation can only be done on entire blocks (and not on single pages).
 
@@ -8279,7 +8291,7 @@ Within the context of this guide which also uses full disk encryption. Deletion 
 
 ## How to securely wipe your whole Laptop/Drives if you want to erase everything:
 
-![][487]
+![image44](media/image44.jpeg)
 
 So, you want to be sure. To achieve 100% secure deletion on an SSD drive, you will need to use specific SSD techniques (If you are using an HDD drive, skip this part and go to your OS of choice):
 
@@ -8511,7 +8523,7 @@ If data were deleted by some utility (for instance by Virtualbox when reverting 
 
 Just open Windows Explorer, Right Click on your System Drive and click Properties. Select Tools. Click Optimize and then Optimize again to force a Trim. You are done. That is probably enough in my opinion.
 
-![][501]
+![image45](media/image45.jpeg)
 
 If you want more security and do not trust the Trim operation, then you will have no option but to either:
 
@@ -8715,7 +8727,7 @@ Yes. TRIM operations are issued asynchronously from when files are deleted or fr
 
 -   If your file system is HFS+, you could run First Aid on your System Drive from the Disk Utility which should perform a Trim operation in the details (<https://support.apple.com/en-us/HT210898> <sup>[[Archive.org]](https://web.archive.org/web/https://support.apple.com/en-us/HT210898)</sup>)
 
-![][506]
+![image46](media/image46.jpeg)
 
 #### System/Internal, External HDD drive or a Thumb Drive:
 
@@ -8873,7 +8885,7 @@ Another option good tool to remove metadata from various documents is the open-s
 
 So, we would suggest creating a small Debian VM within Virtualbox (behind your Whonix Gateway) which you can then use from your other VMs to analyze various files from a convenient web interface. For this see [Appendix L: Creating a mat2-web guest VM for removing metadata from files]
 
-![][520]
+![image47](media/image47.jpeg)
 
 Mat2 is also pre-installed on the Whonix Workstation VM[^446] and available on Tails by default[^447].
 
@@ -8966,7 +8978,7 @@ Many of those can be deleted using various commercial third-party tools but we w
 
 -   If your file system is HFS+ (or any other than APFS), you could run First Aid on your System Drive from the Disk Utility which should perform a Trim operation in the details (<https://support.apple.com/en-us/HT210898> <sup>[[Archive.org]](https://web.archive.org/web/https://support.apple.com/en-us/HT210898)</sup>).
 
-![][506]
+![image46](media/image46.jpeg)
 
 ### Linux (Qubes OS):
 
@@ -9182,7 +9194,7 @@ With this Native Windows 10/11 utility, you can just trigger a Trim on your SSD 
 
 Just open Windows Explorer, Right Click on your System Drive and click Properties. Select Tools. Click Optimize and Defragment. You are done as this will not defragment but only optimize. Meaning it will initiate a Trim operation (<https://en.wikipedia.org/wiki/Trim_(computing)> <sup>[[Wikiless]](https://wikiless.org/wiki/Trim_(computing))</sup> <sup>[[Archive.org]](https://web.archive.org/web/20220804150134/https://en.wikipedia.org/wiki/Trim_(computing))).
 
-![][501]
+![image45](media/image45.jpeg)
 
 ## Removing some traces of your identities on search engines and various platforms:
 
@@ -9381,7 +9393,9 @@ You must live by the simple rule that "loose lips sink ships" - but also that th
 
 -   Keep your situation awareness high but not too high as to appear suspicious.
 
--   Read those tips here <https://www.whonix.org/wiki/DoNot> <sup>[[Archive.org]](https://web.archive.org/web/https://www.whonix.org/wiki/DoNot)</sup>
+-   Consider using a physical security key (e.g., YubiCo YubiKey) for various protections against account compromise. **(Not covered in this version of the guide but is a work in progress for later versions.)**
+
+-   Read the tips here <https://www.whonix.org/wiki/DoNot> <sup>[[Archive.org]](https://web.archive.org/web/https://www.whonix.org/wiki/DoNot)</sup>
 
 -   **Have common sense, do not be dumb, look and learn from others' mistakes, watch/read these:**
 
@@ -10550,7 +10564,7 @@ Here are the steps:
 
 -   Set the following options in Putty and connect to your server
 
-![][629]
+![image51](media/image51.jpeg)
 
 -   Connect to your VPS using those settings
 
@@ -10600,7 +10614,7 @@ Consider reading this older but still relevant guide <https://archive.flossmanua
 
 It is possible to access/connect to remote distant Public Wi-Fis from a distance using a cheap directional Antenna that looks like this:
 
-![][632]
+![image52](media/image52.jpeg)
 
 These antennas are widely available on various online shops for a cheap price (Amazon, AliExpress, Banggood ...). The only issue is that they are not discrete, and you might have to find a way to hide it (for instance in a Poster cardboard container in a Backpack). Or in a large enough Bag. Optionally (but riskier) you could even consider using it from your home if you have a nice Window view to various places where some Public Wi-Fi is available.
 
@@ -11721,7 +11735,7 @@ Basically, it is like the Inception movie with computers. You have emulated soft
 
 Here is a little basic illustration of what Virtualization is:
 
-![][685]
+![image53](media/image53.jpeg)
 
 Each Virtual Machine is a sandbox. Remember the reasons for using them are to prevent the following risks:
 
@@ -11748,9 +11762,9 @@ Here's some host information that can be leaked through the Virtual Machine:
 
 -   Descriptor Table Registers: <https://stackoverflow.com/questions/52505313/what-are-descriptor-registers/52505743#52505743>
 
-    -   Since it's a Virtual Machine using the same CPU cores, the descriptor values are relocated due to there only being space for one of each identifier per CPU. This is a dead giveaway and is used in detection by advanced malware. It's employed by malware architects to tell when the program is being ran in a forensics environment, even such as a Remnux or Flare VM - popular OS and OS addons that are used by experts to analyze the malware.
+    -   Since it's a Virtual Machine using the same CPU cores, the descriptor values are relocated due to there only being space for one of each identifier per CPU. This is a dead giveaway and is used in detection by advanced malware. It's employed by malware architects to tell when the program is being ran in a forensics environment (e.g., Remnux or Flare VM) - popular tools/OS that are used by experts to analyze malware.
 
--   Guest VMs also indirectly access the same hardware as the Host.
+-   Guest VMs also indirectly access the same hardware as the Host OS.
 
 See <https://www.malwarebytes.com/blog/news/2014/02/a-look-at-malware-with-virtual-machine-detection> for more techniques used by malware to detect virtualization. These techniques are mostly prevented by appending some settings to your VM config file (.vmx). <https://blog.talosintelligence.com/2009/10/how-does-malware-know-difference.html>
 
@@ -11781,7 +11795,7 @@ First, you should proceed with the following checklist to make sure you cannot c
 
 -   **(Recommended if hostile/risky environment)** Try to get a meek bridge in the Tor connection options (might be your only option if you are for instance in China).
 
-![][686]
+![image54](media/image54.png)
 
 (Illustration from Tor Browser Bridge Configuration)
 
@@ -11815,15 +11829,15 @@ This is valid for Windows, Linux, and macOS.
 
 -   After opening Tor Browser, you will see an option to **Connect**, a checkbox to **Always connect automatically** and a button to **Configure connection**. The Tor Network settings are there for you to possibly configure Bridges to connect to Tor if you are experiencing issues connecting to Tor due to Censorship or Blocking. As explained here: [Appendix X: Using Tor bridges in hostile environments], this is now done automatically by the Tor Browser on Desktop.
 
-![][688]
+![image55](media/image55.png)
 
 -   Personally, in the case of censorship or blocking, we would recommend using Meek-Azure bridges if needed. And Snowflake bridges as a second option.
 
-![][686]
+![image56](media/image56.png)
 
 -   At this point, still before connecting, you should click the little shield Icon (upper right, next to the Address bar) and select your Security level (see <https://tb-manual.torproject.org/security-settings/> <sup>[[Archive.org]](https://web.archive.org/web/https://tb-manual.torproject.org/security-settings/)</sup> for details). Basically, there are three.
 
-![][689]
+![image57](media/image57.png)
 
 -   Standard (the default):
 
@@ -11844,8 +11858,6 @@ This is valid for Windows, Linux, and macOS.
     -   Some fonts and symbols are disabled
 
     -   Any media playback is "click to play" (disabled by default)
-
-![][690]
 
 We would recommend the "Safest" level by default. The "Safer" level should be enabled if you think you need access to a website not working without JavaScript. The Safest mode will  most likely break many websites that rely actively on JavaScript.
     
@@ -11968,7 +11980,7 @@ My opinion (and the one of many[^528]'[^529]'[^530]'[^531]'[^532]'[^533]) is tha
 
 The well-known shown-below XKCD <https://xkcd.com/936/> <sup>[[Archive.org]](https://web.archive.org/web/https://xkcd.com/936/)</sup> is still valid despite some people disputing it (See <https://www.explainxkcd.com/wiki/index.php/936:_Password_Strength> <sup>[[Archive.org]](https://web.archive.org/web/https://www.explainxkcd.com/wiki/index.php/936:_Password_Strength)</sup>). Yes, it is quite old now and is a little bit outdated and might be misinterpreted. But generally, it is still valid and a good argument for using passphrases instead of passwords.
 
-![][698]
+![image58](media/image58.jpeg)
 
 (Illustration by Randall Munroe, xkcd.com, licensed under CC BY-NC 2.5)
 
@@ -12379,7 +12391,7 @@ We recommend the LINDDUN <https://www.linddun.org> threat modeling method <sup>[
   - It is used in the making of the Threat Modeling Manifesto: <https://www.threatmodelingmanifesto.org/> <sup>[[Archive.org]](https://web.archive.org/web/https://www.threatmodelingmanifesto.org/)</sup>
     
 LINDDUN threat modeling tutorials and resources:
-  - **We recommend the following quick tutorial video from "The Hated One" YouTube channel with the approval and review from LINDDDUN designers: <https://www.youtube.com/watch?v=6AXkJ3dot2s>** <sup>[[Invidious]](https://yewtu.be/watch?v=6AXkJ3dot2s>)</sup> to get started.
+  - **We recommend the following quick tutorial video from "The Hated One" YouTube channel with the approval and review from LINDDUN designers: <https://www.youtube.com/watch?v=6AXkJ3dot2s>** <sup>[[Invidious]](https://yewtu.be/watch?v=6AXkJ3dot2s>)</sup> to get started.
   - More resources for deeper understanding and usage:
 
     - You can read more here: [A Lightweight Approach to Privacy Threat Modeling](https://sion.info/assets/pdf/publications/WuytsIWPE2020.pdf)
@@ -12387,7 +12399,7 @@ LINDDUN threat modeling tutorials and resources:
         - [Privacy & prejudice: on privacy threat modeling misconceptions](https://www.youtube.com/watch?v=zI4SFyq_Xjw) <sup>[[Invidious]](https://yewtu.be/watch?v=zI4SFyq_Xjw)</sup>
         - [Privacy Threat Model Using LINDDUN](https://www.youtube.com/watch?v=C9F8X1j9Zpg) <sup>[[Invidious]](https://yewtu.be/watch?v=C9F8X1j9Zpg>)</sup>
 
-![][1389]
+![image59](media/image59.png)
 (Illustration from [LINDDUN2015](https://lirias.kuleuven.be/retrieve/295669))
 
 Here are alternative resources and methodologies if LINDDUN doesn't suit you:
@@ -12448,9 +12460,9 @@ Here are our reasons for being cautious about Session messenger in general:
 
 -   The company is based in Australia which has very unfavorable privacy laws.[^536]' [^537]
 -   They push their own cryptocurrency, Oxen, which creates a conflict of interest.
--   They use LokiNet, which requires Oxen to run nodes to route Session traffic, and it costs $12 thousand to run a node.[^538]
-    - The price of running nodes essentially puts their network behind a paywall if you want to run a node, even just to contribute bandwidth to the network like you might with Tor.
-    - Session's developers claim this to be an attempt to prevent [sybil attacks](https://en.wikipedia.org/wiki/Sybil_attack), but many have argued that this only encourages such attacks, by guaranteeing only governments and other well-funded organizations (the people these networks normally try to protect against) will ever have the financial resources to run nodes.
+-   They use LokiNet, which requires Oxen to run nodes to route Session traffic, and it costs 15,000 $OXEN or 3,750 $OXEN for a shared node[^538], which is about ~$1,800 US dollars or ~$500 US dollars, respectively.
+    - The price of running nodes essentially puts their network behind a paywall if you want to run a node, even just to contribute bandwidth to the network like you might with Tor. But there is a stakeless fork of Lokinet.
+    - Session's developers claim this to be an attempt to prevent [sybil attacks](https://en.wikipedia.org/wiki/Sybil_attack), but many have argued that this only encourages such attacks; by doing so, guaranteeing only governments and other well-funded organizations (the people these networks normally try to protect against) will ever have the financial resources to run nodes. (Eh, it's all pretty debatable. But $OXEN is privacy-focused.)
 -   They dropped critical security features of their protocol (perfect forward secrecy (PFS) and deniability)[^418] in favor of long-term message keys and self-deleting cryptographic signatures, which provide much weaker security guarantees. [^539]
     - This *might* not be as bad, if the nodes are free to run, but they're not.
 -   Session has been audited[^419] with satisfactory results, but that audit does not mention these changes. We also currently lack sufficient information on LokiNet (the onion routing network used by Session) to endorse it. Session is still recommended by some, for example Techlore.[^420]
@@ -13533,379 +13545,319 @@ In short, our opinion is that you may use Session Messenger on iOS due to the ab
 [^538]: Lokinet Documentation, Service Nodes, <https://loki.network/service-nodes/> <sup>[[Archive.org]](https://web.archive.org/https://loki.network/service-nodes/)</sup>
 
 [^539]: Session Documentation, Session protocol explained, <https://getsession.org/session-protocol-explained> <sup>[[Archive.org]](https://web.archive.org/[https://loki.network/service-nodes/](https://getsession.org/session-protocol-explained))</sup>
-    
-  [Contents:]: #contents
-  [Pre-requisites and limitations:]: #pre-requisites-and-limitations
-  [Pre-requisites:]: #pre-requisites
-  [Limitations:]: #limitations
-  [Introduction:]: #introduction
-  [Understanding some basics of how some information can lead back to you and how to mitigate some:]: #understanding-some-basics-of-how-some-information-can-lead-back-to-you-and-how-to-mitigate-some
-  [Your Network:]: #your-network
-  [Your IP address:]: #your-ip-address
-  [Your DNS and IP requests:]: #your-dns-and-ip-requests
-  [Your RFID enabled devices:]: #your-rfid-enabled-devices
-  [The Wi-Fi and Bluetooth devices around you:]: #the-wi-fi-and-bluetooth-devices-around-you
-  [Malicious/Rogue Wi-Fi Access Points:]: #maliciousrogue-wi-fi-access-points
-  [Your Anonymized Tor/VPN traffic:]: #your-anonymized-torvpn-traffic
-  [Some Devices can be tracked even when offline:]: #some-devices-can-be-tracked-even-when-offline
-  [Your Hardware Identifiers:]: #your-hardware-identifiers
-  [Your IMEI and IMSI (and by extension, your phone number):]: #your-imei-and-imsi-and-by-extension-your-phone-number
-  [Your Wi-Fi or Ethernet MAC address:]: #your-wi-fi-or-ethernet-mac-address
-  [Your Bluetooth MAC address:]: #your-bluetooth-mac-address
-  [Your CPU:]: #your-cpu
-  [Your Operating Systems and Apps telemetry services:]: #your-operating-systems-and-apps-telemetry-services
-  [Your Smart devices in general:]: #your-smart-devices-in-general
-  [Yourself:]: #yourself
-  [Your Metadata including your Geo-Location:]: #your-metadata-including-your-geo-location
-  [Your Digital Fingerprint, Footprint, and Online Behavior:]: #your-digital-fingerprint-footprint-and-online-behavior
-  [Your Clues about your Real Life and OSINT:]: #your-clues-about-your-real-life-and-osint
-  [Your Face, Voice, Biometrics, and Pictures:]: #your-face-voice-biometrics-and-pictures
-  [Gait Recognition and Other Long-Range Biometrics]: #gait-recognition-and-other-long-range-biometrics
-  [Phishing and Social Engineering:]: #phishing-and-social-engineering
-  [Malware, exploits, and viruses:]: #malware-exploits-and-viruses
-  [Malware in your files/documents/e-mails:]: #malware-in-your-filesdocumentse-mails
-  [Malware and Exploits in your apps and services:]: #malware-and-exploits-in-your-apps-and-services
-  [Malicious USB devices:]: #malicious-usb-devices
-  [Malware and backdoors in your Hardware Firmware and Operating System:]: #malware-and-backdoors-in-your-hardware-firmware-and-operating-system
-  [Your files, documents, pictures, and videos:]: #your-files-documents-pictures-and-videos
-  [Properties and Metadata:]: #properties-and-metadata
-  [Watermarking:]: #watermarking
-  [Pixelized or Blurred Information:]: #pixelized-or-blurred-information
-  [Your Cryptocurrencies transactions:]: #your-cryptocurrencies-transactions
-  [Your Cloud backups/sync services:]: #your-cloud-backupssync-services
-  [Your Browser and Device Fingerprints:]: #your-browser-and-device-fingerprints
-  [Microarchitectural Side-channel Deanonymization Attacks:]: #microarchitectural-side-channel-deanonymization-attacks
-  [Local Data Leaks and Forensics:]: #local-data-leaks-and-forensics
-  [Bad Cryptography:]: #bad-cryptography
-  [No logging but logging anyway policies:]: #no-logging-but-logging-anyway-policies
-  [Some Advanced targeted techniques:]: #some-advanced-targeted-techniques
-  [Some bonus resources:]: #some-bonus-resources
-  [Notes:]: #notes
-  [General Preparations:]: #general-preparations
-  [Picking your route:]: #picking-your-route
-  [Timing limitations:]: #timing-limitations
-  [Budget/Material limitations:]: #budgetmaterial-limitations
-  [Skills:]: #skills
-  [Adversarial considerations:]: #adversarial-considerations
-  [Steps for all routes:]: #steps-for-all-routes
-  [Getting used to using better passwords:]: #getting-used-to-using-better-passwords
-  [Getting an anonymous Phone number:]: #getting-an-anonymous-phone-number
-  [Get a USB key:]: #get-a-usb-key
-  [Find some safe places with decent public Wi-Fi:]: #find-some-safe-places-with-decent-public-wi-fi
-  [The Tor Browser route:]: #the-tor-browser-route
-  [Windows, Linux, and macOS:]: #windows-linux-and-macos
-  [Android:]: #android
-  [iOS:]: #ios
-  [Important Warning:]: #important-warning
-  [The Tails route:]: #the-tails-route
-  [Tor Browser settings on Tails:]: #tor-browser-settings-on-tails
-  [Persistent Plausible Deniability using Whonix within Tails:]: #persistent-plausible-deniability-using-whonix-within-tails
-  [Steps for all other routes:]: #steps-for-all-other-routes
-  [Get a dedicated laptop for your sensitive activities:]: #get-a-dedicated-laptop-for-your-sensitive-activities
-  [Some laptop recommendations:]: #some-laptop-recommendations
-  [Bios/UEFI/Firmware Settings of your laptop:]: #biosuefifirmware-settings-of-your-laptop
-  [Physically Tamper protect your laptop:]: #physically-tamper-protect-your-laptop
-  [The Whonix route:]: #the-whonix-route
-  [Picking your Host OS (the OS installed on your laptop):]: #picking-your-host-os-the-os-installed-on-your-laptop
-  [Linux Host OS:]: #linux-host-os
-  [macOS Host OS:]: #macos-host-os
-  [Windows Host OS:]: #windows-host-os
-  [Virtualbox on your Host OS:]: #virtualbox-on-your-host-os
-  [Pick your connectivity method:]: #pick-your-connectivity-method
-  [Getting an anonymous VPN/Proxy:]: #getting-an-anonymous-vpnproxy
-  [Whonix:]: #whonix
-  [Tor over VPN:]: #tor-over-vpn-1
-  [Whonix Virtual Machines:]: #whonix-virtual-machines
-  [Pick your guest workstation Virtual Machine:]: #pick-your-guest-workstation-virtual-machine
-  [Linux Virtual Machine (Whonix or Linux):]: #linux-virtual-machine-whonix-or-linux
-  [Windows 10/11 Virtual Machine:]: #windows-1011-virtual-machine
-  [Android Virtual Machine:]: #android-virtual-machine
-  [macOS Virtual Machine:]: #macos-virtual-machine
-  [KeepassXC:]: #keepassxc
-  [VPN client installation (cash/Monero paid):]: #vpn-client-installation-cashmonero-paid
-  [(Optional) Allowing only the VMs to access the internet while cutting off the Host OS to prevent any leak:]: #optional-allowing-only-the-vms-to-access-the-internet-while-cutting-off-the-host-os-to-prevent-any-leak
-  [Final step:]: #final-step
-  [The Qubes Route:]: #the-qubes-route
-  [1]: #pick-your-connectivity-method-1
-  [2]: #getting-an-anonymous-vpnproxy-1
-  [Note about Plausible Deniability:]: #note-about-plausible-deniability
-  [Installation:]: #installation-3
-  [Lid Closure Behavior:]: #lid-closure-behavior
-  [Anti Evil Maid (AEM):]: #anti-evil-maid-aem
-  [Connect to a Public Wi-Fi:]: #connect-to-a-public-wi-fi
-  [Updating Qubes OS:]: #updating-qubes-os
-  [Updating Whonix from version 15 to version 16:]: #updating-whonix-from-version-15-to-version-16
-  [Hardening Qubes OS:]: #hardening-qubes-os
-  [Setup the VPN ProxyVM:]: #setup-the-vpn-proxyvm
-  [Setup a safe Browser within Qubes OS (optional but recommended):]: #setup-a-safe-browser-within-qubes-os-optional-but-recommended
-  [Setup an Android VM:]: #setup-an-android-vm
-  [3]: #keepassxc-1
-  [Quick note: Correlation vs Attribution:]: #quick-note-correlation-vs-attribution
-  [Creating your anonymous online identities:]: #creating-your-anonymous-online-identities
-  [Understanding the methods used to prevent anonymity and verify identity:]: #understanding-the-methods-used-to-prevent-anonymity-and-verify-identity
-  [Captchas:]: #captchas
-  [Phone verification:]: #phone-verification
-  [E-Mail verification:]: #e-mail-verification
-  [User details checking:]: #user-details-checking
-  [Proof of ID verification:]: #proof-of-id-verification
-  [IP Filters:]: #ip-filters
-  [Browser and Device Fingerprinting:]: #browser-and-device-fingerprinting
-  [Human interaction:]: #human-interaction
-  [User Moderation:]: #user-moderation
-  [Behavioral Analysis:]: #behavioral-analysis
-  [Financial transactions:]: #financial-transactions
-  [Sign-in with some platform:]: #sign-in-with-some-platform
-  [Live Face recognition and biometrics (again):]: #live-face-recognition-and-biometrics-again
-  [Manual reviews:]: #manual-reviews
-  [Getting Online:]: #getting-online
-  [Creating new identities:]: #creating-new-identities
-  [Checking if your Tor Exit Node is terrible:]: #checking-if-your-tor-exit-node-is-terrible
-  [The Real-Name System:]: #the-real-name-system
-  [About paid services:]: #about-paid-services
-  [Overview:]: #overview
-  [How to share files privately and/or chat anonymously:]: #how-to-share-files-privately-andor-chat-anonymously
-  [How to share files publicly but anonymously:]: #how-to-share-files-publicly-but-anonymously
-  [Redacting Documents/Pictures/Videos/Audio safely:]: #redacting-documentspicturesvideosaudio-safely
-  [Communicating sensitive information to various known organizations:]: #communicating-sensitive-information-to-various-known-organizations
-  [Maintenance tasks:]: #maintenance-tasks
-  [Backing up your work securely:]: #backing-up-your-work-securely
-  [Offline Backups:]: #offline-backups
-  [Selected Files Backups:]: #selected-files-backups
-  [Full Disk/System Backups:]: #full-disksystem-backups
-  [Online Backups:]: #online-backups
-  [Files:]: #files
-  [Information:]: #information
-  [Synchronizing your files between devices Online:]: #synchronizing-your-files-between-devices-online
-  [Covering your tracks:]: #covering-your-tracks
-  [Understanding HDD vs SSD:]: #understanding-hdd-vs-ssd
-  [Wear-Leveling.]: #wear-leveling.
-  [Trim Operations:]: #trim-operations
-  [Garbage Collection:]: #garbage-collection
-  [Conclusion:]: #conclusion-4
-  [How to securely wipe your whole Laptop/Drives if you want to erase everything:]: #how-to-securely-wipe-your-whole-laptopdrives-if-you-want-to-erase-everything
-  [Linux (all versions including Qubes OS):]: #linux-all-versions-including-qubes-os
-  [Windows:]: #windows-2
-  [macOS:]: #macos-2
-  [How to securely delete specific files/folders/data on your HDD/SSD and Thumb drives:]: #how-to-securely-delete-specific-filesfoldersdata-on-your-hddssd-and-thumb-drives
-  [4]: #windows-3
-  [Linux (non-Qubes OS):]: #linux-non-qubes-os
-  [Linux (Qubes OS):]: #linux-qubes-os
-  [5]: #macos-3
-  [Some additional measures against forensics:]: #some-additional-measures-against-forensics
-  [Removing Metadata from Files/Documents/Pictures:]: #removing-metadata-from-filesdocumentspictures
-  [Tails:]: #tails
-  [6]: #whonix-1
-  [7]: #macos-4
-  [8]: #linux-qubes-os-1
-  [Linux (non-Qubes):]: #linux-non-qubes
-  [9]: #windows-4
-  [Removing some traces of your identities on search engines and various platforms:]: #removing-some-traces-of-your-identities-on-search-engines-and-various-platforms
-  [Google:]: #google-1
-  [Bing:]: #bing
-  [DuckDuckGo:]: #duckduckgo
-  [Yandex:]: #yandex
-  [Qwant:]: #qwant
-  [Yahoo Search:]: #yahoo-search
-  [Baidu:]: #baidu
-  [Wikipedia:]: #wikipedia
-  [Archive.today:]: #archive.today
-  [Internet Archive:]: #internet-archive
-  [Others:]: #others
-  [Some low-tech old-school tricks:]: #some-low-tech-old-school-tricks
-  [Hidden communications in plain sight:]: #hidden-communications-in-plain-sight
-  [How to spot if someone has been searching your stuff:]: #how-to-spot-if-someone-has-been-searching-your-stuff
-  [Some last OPSEC thoughts:]: #some-last-opsec-thoughts
-  [**If you think you got burned:**]: #if-you-think-you-got-burned
-  [If you have some time:]: #if-you-have-some-time
-  [If you have no time:]: #if-you-have-no-time
-  [A small final editorial note:]: #a-small-final-editorial-note
-  [Donations:]: #donations
-  [Helping others staying anonymous:]: #helping-others-staying-anonymous
-  [Acknowledgments:]: #acknowledgments
+
+  [Appendix A1: Recommended VPS hosting providers]: #appendix-a1-recommended-vps-hosting-providers
+  [Appendix A2: Guidelines for passwords and passphrases]: #appendix-a2-guidelines-for-passwords-and-passphrases
+  [Appendix A3: Search Engines]: #appendix-a3-search-engines
+  [Appendix A4: Counteracting Forensic Linguistics]: #appendix-a4-counteracting-forensic-linguistics
+  [Appendix A5: Additional browser precautions with JavaScript enabled]: #appendix-a5-additional-browser-precautions-with-javascript-enabled
+  [Appendix A6: Mirrors]: #appendix-a6-mirrors
+  [Appendix A7: Comparing versions]: #appendix-a7-comparing-versions
+  [Appendix A8: Crypto Swapping Services without Registration and KYC]: #appendix-a8-crypto-swapping-services-without-registration-and-kyc
+  [Appendix A9: Installing a Zcash wallet:]: #appendix-a9-installing-a-zcash-wallet
+  [Appendix B1: Checklist of things to verify before sharing information:]: #appendix-b1-checklist-of-things-to-verify-before-sharing-information
+  [Appendix B2: Monero Disclaimer]: #appendix-b2-monero-disclaimer
+  [Appendix B3: Threat modeling resources]: #appendix-b3-threat-modeling-resources
+  [Appendix B4: Important notes about evil-maid and tampering]: #appendix-b4-important-notes-about-evil-maid-and-tampering
+  [Appendix B5: Types of CPU attacks:]: #appendix-b5-types-of-cpu-attacks
+  [Appendix B6: Warning for using Orbot on Android]: #appendix-b6-warning-for-using-orbot-on-android
+  [Appendix B7: Caution about Session Messenger]: #appendix-b7-caution-about-session-messenger
   [Appendix A: Windows Installation]: #appendix-a-windows-installation
-  [10]: #installation-5
-  [Privacy Settings:]: #privacy-settings
   [Appendix B: Windows Additional Privacy Settings]: #appendix-b-windows-additional-privacy-settings
   [Appendix C: Windows Installation Media Creation]: #appendix-c-windows-installation-media-creation
   [Appendix D: Using System Rescue to securely wipe an SSD drive.]: #appendix-d-using-system-rescue-to-securely-wipe-an-ssd-drive.
   [Appendix E: Clonezilla]: #appendix-e-clonezilla
   [Appendix F: Diskpart]: #appendix-f-diskpart
   [Appendix G: Safe Browser on the Host OS]: #appendix-g-safe-browser-on-the-host-os
-  [If you can use Tor:]: #if-you-can-use-tor-2
-  [If you cannot use Tor:]: #if-you-cannot-use-tor-7
   [Appendix H: Windows Cleaning Tools]: #appendix-h-windows-cleaning-tools
   [Appendix I: Using ShredOS to securely wipe an HDD drive:]: #appendix-i-using-shredos-to-securely-wipe-an-hdd-drive
-  [11]: #windows-5
-  [Linux:]: #linux-2
   [Appendix J: Manufacturer tools for Wiping HDD and SSD drives:]: #appendix-j-manufacturer-tools-for-wiping-hdd-and-ssd-drives
-  [Tools that provide a boot disk for wiping from boot:]: #tools-that-provide-a-boot-disk-for-wiping-from-boot
-  [Tools that provide only support from running OS (for external drives).]: #tools-that-provide-only-support-from-running-os-for-external-drives.
   [Appendix K: Considerations for using external SSD drives]: #appendix-k-considerations-for-using-external-ssd-drives
+  [Appendix L: Creating a mat2-web guest VM for removing metadata from files]: #appendix-l-creating-a-mat2-web-guest-vm-for-removing-metadata-from-files
+  [Appendix M: BIOS/UEFI options to wipe disks in various Brands]: #appendix-m-biosuefi-options-to-wipe-disks-in-various-brands
+  [Appendix N: Warning about smartphones and smart devices]: #appendix-n-warning-about-smartphones-and-smart-devices
+  [Appendix O: Getting an anonymous VPN/Proxy]: #appendix-o-getting-an-anonymous-vpnproxy
+  [Appendix P: Accessing the internet as safely as possible when Tor and VPNs are not an option]: #appendix-p-accessing-the-internet-as-safely-as-possible-when-tor-and-vpns-are-not-an-option
+  [Appendix Q: Using long-range Antenna to connect to Public Wi-Fis from a safe distance:]: #appendix-q-using-long-range-antenna-to-connect-to-public-wi-fis-from-a-safe-distance
+  [Appendix R: Installing a VPN on your VM or Host OS]: #appendix-r-installing-a-vpn-on-your-vm-or-host-os
+  [Appendix S: Check your network for surveillance/censorship using OONI]: #appendix-s-check-your-network-for-surveillancecensorship-using-ooni
+  [Appendix T: Checking files for malware]: #appendix-t-checking-files-for-malware
+  [Appendix U: How to bypass (some) local restrictions on supervised computers]: #appendix-u-how-to-bypass-some-local-restrictions-on-supervised-computers
+  [Appendix V: What browser to use in your Guest VM/Disposable VM]: #appendix-v-what-browser-to-use-in-your-guest-vmdisposable-vm
+  [Appendix V1: Hardening your Browsers:]: #appendix-v1-hardening-your-browsers
+  [Appendix W: Virtualization]: #appendix-w-virtualization
+  [Appendix X: Using Tor bridges in hostile environments]: #appendix-x-using-tor-bridges-in-hostile-environments
+  [Appendix Y: Installing and using desktop Tor Browser]: #appendix-y-installing-and-using-desktop-tor-browser
+  [Appendix Z: Online anonymous payments using cryptocurrencies]: #appendix-z-online-anonymous-payments-using-cryptocurrencies
+  [(Optional) VM kill switch:]: #optional-vm-kill-switch
+  [**If you think you got burned:**]: #if-you-think-you-got-burned
+  [1]: #pick-your-connectivity-method-1
+  [2]: #getting-an-anonymous-vpnproxy-1
+  [3]: #keepassxc-1
+  [4]: #windows-3
+  [5]: #macos-3
+  [6]: #whonix-1
+  [7]: #macos-4
+  [8]: #linux-qubes-os-1
+  [9]: #windows-4
+  [10]: #installation-5
+  [11]: #windows-5
   [12]: #windows-6
-  [Trim Support:]: #trim-support
-  [ATA/NVMe Operations (Secure Erase/Sanitize):]: #atanvme-operations-secure-erasesanitize
   [13]: #linux-3
   [14]: #trim-support-1
   [15]: #atanvme-operations-secure-erasesanitize-1
   [16]: #macos-5
   [17]: #trim-support-2
   [18]: #atanvme-operations-secure-erasesanitize-2
-  [Appendix L: Creating a mat2-web guest VM for removing metadata from files]: #appendix-l-creating-a-mat2-web-guest-vm-for-removing-metadata-from-files
-  [Appendix M: BIOS/UEFI options to wipe disks in various Brands]: #appendix-m-biosuefi-options-to-wipe-disks-in-various-brands
-  [Appendix N: Warning about smartphones and smart devices]: #appendix-n-warning-about-smartphones-and-smart-devices
-  [Appendix O: Getting an anonymous VPN/Proxy]: #appendix-o-getting-an-anonymous-vpnproxy
-  [Cash/Monero-Paid VPN:]: #cashmonero-paid-vpn
-  [Self-hosted VPN/Proxy on a Monero/Cash-paid VPS (for users more familiar with Linux):]: #self-hosted-vpnproxy-on-a-monerocash-paid-vps-for-users-more-familiar-with-linux
-  [VPN VPS:]: #vpn-vps
-  [Socks Proxy VPS:]: #socks-proxy-vps
-  [Appendix P: Accessing the internet as safely as possible when Tor and VPNs are not an option]: #appendix-p-accessing-the-internet-as-safely-as-possible-when-tor-and-vpns-are-not-an-option
-  [Appendix Q: Using long-range Antenna to connect to Public Wi-Fis from a safe distance:]: #appendix-q-using-long-range-antenna-to-connect-to-public-wi-fis-from-a-safe-distance
-  [Appendix R: Installing a VPN on your VM or Host OS]: #appendix-r-installing-a-vpn-on-your-vm-or-host-os
-  [Appendix S: Check your network for surveillance/censorship using OONI]: #appendix-s-check-your-network-for-surveillancecensorship-using-ooni
-  [Appendix T: Checking files for malware]: #appendix-t-checking-files-for-malware
-  [Integrity (if available):]: #integrity-if-available
-  [Authenticity (if available):]: #authenticity-if-available
-  [Security (checking for actual malware):]: #security-checking-for-actual-malware
-  [Anti-Virus Software:]: #anti-virus-software
   [19]: #manual-reviews-1
-  [Appendix U: How to bypass (some) local restrictions on supervised computers]: #appendix-u-how-to-bypass-some-local-restrictions-on-supervised-computers
-  [Portable Apps:]: #portable-apps
-  [Bootable Live Systems:]: #bootable-live-systems
-  [Precautions:]: #precautions
-  [Appendix V: What browser to use in your Guest VM/Disposable VM]: #appendix-v-what-browser-to-use-in-your-guest-vmdisposable-vm
-  [Brave:]: #brave
-  [Ungoogled-Chromium:]: #ungoogled-chromium
-  [Edge:]: #edge
-  [Safari:]: #safari
-  [Firefox:]: #firefox
-  [Tor Browser:]: #tor-browser
-  [Appendix V1: Hardening your Browsers:]: #appendix-v1-hardening-your-browsers
   [20]: #brave-1
   [21]: #ungoogled-chromium-1
   [22]: #edge-1
   [23]: #safari-1
   [24]: #firefox-1
-  [Normal settings:]: #normal-settings
-  [Advanced settings:]: #advanced-settings
-  [Addons to install/consider:]: #addons-to-installconsider
-  [Bonus resources:]: #bonus-resources
-  [Appendix W: Virtualization]: #appendix-w-virtualization
-  [Nested virtualization risks]: #nested-virtualization-risks
-  [Appendix X: Using Tor bridges in hostile environments]: #appendix-x-using-tor-bridges-in-hostile-environments
-  [Appendix Y: Installing and using desktop Tor Browser]: #appendix-y-installing-and-using-desktop-tor-browser
   [25]: #installation-6
+  [26]: #introduction-1
+  [A small final editorial note:]: #a-small-final-editorial-note
+  [ATA/NVMe Operations (Secure Erase/Sanitize):]: #atanvme-operations-secure-erasesanitize
+  [About paid services:]: #about-paid-services
+  [Acknowledgments:]: #acknowledgments
+  [Addons to install/consider:]: #addons-to-installconsider
+  [Advanced settings:]: #advanced-settings
+  [Adversarial considerations:]: #adversarial-considerations
+  [Adversaries (threats)]: #threats
+  [Android Virtual Machine:]: #android-virtual-machine
+  [Android:]: #android
+  [Anti Evil Maid (AEM):]: #anti-evil-maid-aem
+  [Anti-Virus Software:]: #anti-virus-software
+  [Archive.today:]: #archive.today
+  [Authenticity (if available):]: #authenticity-if-available
+  [BTC to Monero only:]: #btc-to-monero-only
+  [Backing up your work securely:]: #backing-up-your-work-securely
+  [Bad Cryptography:]: #bad-cryptography
+  [Baidu:]: #baidu
+  [Behavioral Analysis:]: #behavioral-analysis
+  [Bing:]: #bing
+  [Bios/UEFI/Firmware Settings of your laptop:]: #biosuefifirmware-settings-of-your-laptop
+  [Bonus links:]: #bonus-links
+  [Bonus resources:]: #bonus-resources
+  [Bootable Live Systems:]: #bootable-live-systems
+  [Brave:]: #brave
+  [Browser and Device Fingerprinting:]: #browser-and-device-fingerprinting
+  [Budget/Material limitations:]: #budgetmaterial-limitations
+  [Captchas:]: #captchas
+  [Cash/Monero-Paid VPN:]: #cashmonero-paid-vpn
+  [Checking if your Tor Exit Node is terrible:]: #checking-if-your-tor-exit-node-is-terrible
+  [Communicating sensitive information to various known organizations:]: #communicating-sensitive-information-to-various-known-organizations
+  [Conclusion:]: #conclusion-4
+  [Connect to a Public Wi-Fi:]: #connect-to-a-public-wi-fi
+  [Contents:]: #contents
+  [Covering your tracks:]: #covering-your-tracks
+  [Creating new identities:]: #creating-new-identities
+  [Creating your anonymous online identities:]: #creating-your-anonymous-online-identities
+  [Debian 11 VM:]: #debian-11-vm
+  [Donations:]: #donations
+  [DuckDuckGo:]: #duckduckgo
+  [E-Mail verification:]: #e-mail-verification
+  [Edge:]: #edge
+  [Emoticons:]: #emoticons
+  [Examples:]: #examples
+  [Extra Tools Cleaning]: #extra-tools-cleaning
+  [Files:]: #files
+  [Final advice:]: #final-advice
+  [Final step:]: #final-step
+  [Financial transactions:]: #financial-transactions
+  [Find some safe places with decent public Wi-Fi:]: #find-some-safe-places-with-decent-public-wi-fi
+  [Firefox:]: #firefox
+  [Full Disk/System Backups:]: #full-disksystem-backups
+  [Gait Recognition and Other Long-Range Biometrics]: #gait-recognition-and-other-long-range-biometrics
+  [Garbage Collection:]: #garbage-collection
+  [General Crypto Swapping:]: #general-crypto-swapping
+  [General Preparations:]: #general-preparations
+  [Get a USB key:]: #get-a-usb-key
+  [Get a dedicated laptop for your sensitive activities:]: #get-a-dedicated-laptop-for-your-sensitive-activities
+  [Getting Online:]: #getting-online
+  [Getting an anonymous Phone number:]: #getting-an-anonymous-phone-number
+  [Getting an anonymous VPN/Proxy:]: #getting-an-anonymous-vpnproxy
+  [Getting used to using better passwords:]: #getting-used-to-using-better-passwords
+  [Google:]: #google-1
+  [Hardening Linux]: #hardening-linux
+  [Hardening Qubes OS:]: #hardening-qubes-os
+  [Hardening macOS]: #hardening-macos
+  [Helping others staying anonymous:]: #helping-others-staying-anonymous
+  [Hidden communications in plain sight:]: #hidden-communications-in-plain-sight
+  [How to counteract the efforts of your adversary:]: #how-to-counteract-the-efforts-of-your-adversary
+  [How to securely delete specific files/folders/data on your HDD/SSD and Thumb drives:]: #how-to-securely-delete-specific-filesfoldersdata-on-your-hddssd-and-thumb-drives
+  [How to securely wipe your whole Laptop/Drives if you want to erase everything:]: #how-to-securely-wipe-your-whole-laptopdrives-if-you-want-to-erase-everything
+  [How to share files privately and/or chat anonymously:]: #how-to-share-files-privately-andor-chat-anonymously
+  [How to share files publicly but anonymously:]: #how-to-share-files-publicly-but-anonymously
+  [How to spot if someone has been searching your stuff:]: #how-to-spot-if-someone-has-been-searching-your-stuff
+  [Human interaction:]: #human-interaction
+  [IP Filters:]: #ip-filters
+  [If you can use Tor:]: #if-you-can-use-tor-2
+  [If you cannot use Tor:]: #if-you-cannot-use-tor-7
+  [If you have no time:]: #if-you-have-no-time
+  [If you have some time:]: #if-you-have-some-time
+  [Important Warning:]: #important-warning
+  [Information:]: #information
+  [Installation:]: #installation-3
+  [Integrity (if available):]: #integrity-if-available
+  [Internet Archive:]: #internet-archive
+  [Introduction:]: #introduction
+  [KeepassXC:]: #keepassxc
+  [Lid Closure Behavior:]: #lid-closure-behavior
+  [Limitations:]: #limitations
+  [Linux (Qubes OS):]: #linux-qubes-os
+  [Linux (all versions including Qubes OS):]: #linux-all-versions-including-qubes-os
+  [Linux (non-Qubes OS):]: #linux-non-qubes-os
+  [Linux (non-Qubes):]: #linux-non-qubes
+  [Linux Host OS:]: #linux-host-os
+  [Linux Virtual Machine (Whonix or Linux):]: #linux-virtual-machine-whonix-or-linux
+  [Linux:]: #linux-2
+  [Live Face recognition and biometrics (again):]: #live-face-recognition-and-biometrics-again
+  [Local Data Leaks and Forensics:]: #local-data-leaks-and-forensics
+  [Maintenance tasks:]: #maintenance-tasks
+  [Malicious USB devices:]: #malicious-usb-devices
+  [Malicious/Rogue Wi-Fi Access Points:]: #maliciousrogue-wi-fi-access-points
+  [Malware and Exploits in your apps and services:]: #malware-and-exploits-in-your-apps-and-services
+  [Malware and backdoors in your Hardware Firmware and Operating System:]: #malware-and-backdoors-in-your-hardware-firmware-and-operating-system
+  [Malware in your files/documents/e-mails:]: #malware-in-your-filesdocumentse-mails
+  [Malware, exploits, and viruses:]: #malware-exploits-and-viruses
+  [Manual reviews:]: #manual-reviews
+  [Microarchitectural Side-channel Deanonymization Attacks:]: #microarchitectural-side-channel-deanonymization-attacks
+  [Nested virtualization risks]: #nested-virtualization-risks
+  [No logging but logging anyway policies:]: #no-logging-but-logging-anyway-policies
+  [Normal settings:]: #normal-settings
+  [Note about Plausible Deniability:]: #note-about-plausible-deniability
+  [Note about plausible deniability on Linux]: #note-about-plausible-deniability-on-linux
+  [Notes:]: #notes
+  [Offline Backups:]: #offline-backups
+  [Online Backups:]: #online-backups
+  [Online Phone Number (less recommended)]: #online-phone-number
+  [Others:]: #others
+  [Overview:]: #overview
+  [Persistent Plausible Deniability using Whonix within Tails:]: #persistent-plausible-deniability-using-whonix-within-tails
+  [Phishing and Social Engineering:]: #phishing-and-social-engineering
+  [Phone verification:]: #phone-verification
+  [Physically Tamper protect your laptop:]: #physically-tamper-protect-your-laptop
+  [Pick your connectivity method:]: #pick-your-connectivity-method
+  [Pick your guest workstation Virtual Machine:]: #pick-your-guest-workstation-virtual-machine
+  [Picking your Host OS (the OS installed on your laptop):]: #picking-your-host-os-the-os-installed-on-your-laptop
+  [Picking your route:]: #picking-your-route
+  [Pixelized or Blurred Information:]: #pixelized-or-blurred-information
+  [Portable Apps:]: #portable-apps
+  [Pre-requisites and limitations:]: #pre-requisites-and-limitations
+  [Pre-requisites:]: #pre-requisites
+  [Precautions:]: #precautions
+  [Printing Watermarking]: #printing-watermarking
+  [Privacy Settings:]: #privacy-settings
+  [Proof of ID verification:]: #proof-of-id-verification
+  [Properties and Metadata:]: #properties-and-metadata
+  [Quick note: Correlation vs Attribution:]: #quick-note-correlation-vs-attribution
+  [Qwant:]: #qwant
+  [Redacting Documents/Pictures/Videos/Audio safely:]: #redacting-documentspicturesvideosaudio-safely
+  [References:]: #references
+  [Removing Metadata from Files/Documents/Pictures:]: #removing-metadata-from-filesdocumentspictures
+  [Removing some traces of your identities on search engines and various platforms:]: #removing-some-traces-of-your-identities-on-search-engines-and-various-platforms
+  [Route A and B: Simple Encryption using Veracrypt (Windows tutorial)]: #route-a-and-b-simple-encryption-using-veracrypt-windows-tutorial
+  [Safari:]: #safari
+  [Search and replace:]: #search-and-replace
+  [Security (checking for actual malware):]: #security-checking-for-actual-malware
+  [Selected Files Backups:]: #selected-files-backups
+  [Self-hosted VPN/Proxy on a Monero/Cash-paid VPS (for users more familiar with Linux):]: #self-hosted-vpnproxy-on-a-monerocash-paid-vps-for-users-more-familiar-with-linux
+  [Setup a safe Browser within Qubes OS (optional but recommended):]: #setup-a-safe-browser-within-qubes-os-optional-but-recommended
+  [Setup an Android VM:]: #setup-an-android-vm
+  [Setup the VPN ProxyVM:]: #setup-the-vpn-proxyvm
+  [Sign-in with some platform:]: #sign-in-with-some-platform
+  [Skills:]: #skills
+  [Socks Proxy VPS:]: #socks-proxy-vps
+  [Some Advanced targeted techniques:]: #some-advanced-targeted-techniques
+  [Some Devices can be tracked even when offline:]: #some-devices-can-be-tracked-even-when-offline
+  [Some additional measures against forensics:]: #some-additional-measures-against-forensics
+  [Some bonus resources:]: #some-bonus-resources
+  [Some laptop recommendations:]: #some-laptop-recommendations
+  [Some last OPSEC thoughts:]: #some-last-opsec-thoughts
+  [Some low-tech old-school tricks:]: #some-low-tech-old-school-tricks
+  [Spelling and grammar checking:]: #spelling-and-grammar-checking
+  [Spelling slang and symbols:]: #spelling-slang-and-symbols
+  [Steps for all other routes:]: #steps-for-all-other-routes
+  [Steps for all routes:]: #steps-for-all-routes
+  [Structural features:]: #structural-features
+  [Synchronizing your files between devices Online:]: #synchronizing-your-files-between-devices-online
+  [Tails:]: #tails
+  [Techniques to prevent writeprinting:]: #techniques-to-prevent-writeprinting
+  [The Detached Headers Way]: #the-detached-headers-way
+  [The Qubes Route:]: #the-qubes-route
+  [The Real-Name System:]: #the-real-name-system
+  [The Tails route:]: #the-tails-route
+  [The Tor Browser route:]: #the-tor-browser-route
+  [The Veracrypt Way]: #the-veracrypt-way
+  [The Whonix route:]: #the-whonix-route
+  [The Wi-Fi and Bluetooth devices around you:]: #the-wi-fi-and-bluetooth-devices-around-you
+  [Timing limitations:]: #timing-limitations
+  [Tools that provide a boot disk for wiping from boot:]: #tools-that-provide-a-boot-disk-for-wiping-from-boot
+  [Tools that provide only support from running OS (for external drives).]: #tools-that-provide-only-support-from-running-os-for-external-drives.
+  [Tor Browser settings on Tails:]: #tor-browser-settings-on-tails
+  [Tor Browser:]: #tor-browser
+  [Tor over VPN:]: #tor-over-vpn-1
+  [Tor over VPN]: #tor-over-vpn
+  [Translation technique:]: #translation-technique
+  [Trim Operations:]: #trim-operations
+  [Trim Support:]: #trim-support
+  [Ubuntu 20.04/21.04/21.10 VM:]: #ubuntu-20.0421.0421.10-vm
+  [Understanding HDD vs SSD:]: #understanding-hdd-vs-ssd
+  [Understanding some basics of how some information can lead back to you and how to mitigate some:]: #understanding-some-basics-of-how-some-information-can-lead-back-to-you-and-how-to-mitigate-some
+  [Understanding the methods used to prevent anonymity and verify identity:]: #understanding-the-methods-used-to-prevent-anonymity-and-verify-identity
+  [Ungoogled-Chromium:]: #ungoogled-chromium
+  [Updating Qubes OS:]: #updating-qubes-os
+  [Updating Whonix from version 15 to version 16:]: #updating-whonix-from-version-15-to-version-16
   [Usage and Precautions:]: #usage-and-precautions
-  [Appendix Z: Online anonymous payments using cryptocurrencies]: #appendix-z-online-anonymous-payments-using-cryptocurrencies
+  [User Moderation:]: #user-moderation
+  [User details checking:]: #user-details-checking
   [Using Bitcoin anonymously option:]: #using-bitcoin-anonymously-option
   [Using Monero anonymously option:]: #using-monero-anonymously-option
-  [Warning about special tumbling, mixing, coinjoining privacy wallets and services]: #warning-about-special-tumbling-mixing-coinjoining-privacy-wallets-and-services-wikiless-archiveorg
-  [When converting from BTC to Monero:]: #when-converting-from-btc-to-monero
-  [Appendix A1: Recommended VPS hosting providers]: #appendix-a1-recommended-vps-hosting-providers
-  [Appendix A2: Guidelines for passwords and passphrases]: #appendix-a2-guidelines-for-passwords-and-passphrases
-  [Appendix A3: Search Engines]: #appendix-a3-search-engines
-  [Appendix A4: Counteracting Forensic Linguistics]: #appendix-a4-counteracting-forensic-linguistics
-  [26]: #introduction-1
-  [What does an adversary look for when examining your writing?]: #what-does-an-adversary-look-for-when-examining-your-writing
-  [Examples:]: #examples
-  [How to counteract the efforts of your adversary:]: #how-to-counteract-the-efforts-of-your-adversary
-  [What different linguistic choices could say about you:]: #what-different-linguistic-choices-could-say-about-you
-  [Emoticons:]: #emoticons
-  [Structural features:]: #structural-features
-  [Spelling slang and symbols:]: #spelling-slang-and-symbols
-  [Techniques to prevent writeprinting:]: #techniques-to-prevent-writeprinting
-  [Spelling and grammar checking:]: #spelling-and-grammar-checking
-  [Translation technique:]: #translation-technique
-  [Search and replace:]: #search-and-replace
-  [Final advice:]: #final-advice
-  [Bonus links:]: #bonus-links
-  [Appendix A5: Additional browser precautions with JavaScript enabled]: #appendix-a5-additional-browser-precautions-with-javascript-enabled
-  [Appendix A6: Mirrors]: #appendix-a6-mirrors
-  [Appendix A7: Comparing versions]: #appendix-a7-comparing-versions
-  [Appendix A8: Crypto Swapping Services without Registration and KYC]: #appendix-a8-crypto-swapping-services-without-registration-and-kyc
-  [General Crypto Swapping:]: #general-crypto-swapping
-  [BTC to Monero only:]: #btc-to-monero-only
-  [Appendix A9: Installing a Zcash wallet:]: #appendix-a9-installing-a-zcash-wallet
-  [Debian 11 VM:]: #debian-11-vm
-  [Ubuntu 20.04/21.04/21.10 VM:]: #ubuntu-20.0421.0421.10-vm
-  [Windows 10/11 VM:]: #windows-1011-vm
-  [Whonix Workstation 16 VM:]: #whonix-workstation-16-vm
-  [Appendix B1: Checklist of things to verify before sharing information:]: #appendix-b1-checklist-of-things-to-verify-before-sharing-information
-  [Appendix B2: Monero Disclaimer]: #appendix-b2-monero-disclaimer
-  [Appendix B3: Threat modeling resources]: #appendix-b3-threat-modeling-resources
-  [Appendix B4: Important notes about evil-maid and tampering]: #appendix-b4-important-notes-about-evil-maid-and-tampering
-  [Appendix B5: Types of CPU attacks:]: #appendix-b5-types-of-cpu-attacks 
-  [Appendix B6: Warning for using Orbot on Android]: #appendix-b6-warning-for-using-orbot-on-android 
-  [Appendix B7: Caution about Session Messenger]: #appendix-b7-caution-about-session-messenger
-  [References:]: #references
-  [Tor over VPN]: #tor-over-vpn
-  [The Detached Headers Way]: #the-detached-headers-way
-  [The Veracrypt Way]: #the-veracrypt-way
-  [Route A and B: Simple Encryption using Veracrypt (Windows tutorial)]: #route-a-and-b-simple-encryption-using-veracrypt-windows-tutorial
-  [Adversaries (threats)]: #threats
+  [VPN VPS:]: #vpn-vps
+  [VPN client installation (cash/Monero paid):]: #vpn-client-installation-cashmonero-paid
   [Virtualbox Hardening recommendations]: #virtualbox-hardening-recommendations
-  [Hardening Linux]: #hardening-linux
-  [Hardening macOS]: #hardening-macos
-  [Note about plausible deniability on Linux]: #note-about-plausible-deniability-on-linux
-  [Online Phone Number (less recommended)]: #online-phone-number
-  [Extra Tools Cleaning]: #extra-tools-cleaning
-  [Printing Watermarking]: #printing-watermarking
-  [38]: media/image1.jpeg
-  [39]: media/image2.jpeg
-  [40]: media/image3.jpeg
-  [50]: media/image4.jpeg
-  [52]: media/image5.jpeg
-  [56]: media/image6.jpeg
-  [63]: media/image7.jpeg
-  [67]: media/image8.jpeg
-  [68]: media/image9.jpeg
-  [69]: media/image10.jpeg
-  [113]: media/image11.jpeg
-  [115]: media/image12.jpeg
-  [133]: media/image13.jpeg
-  [142]: media/image14.jpeg
-  [147]: media/image15.jpeg
-  [150]: media/image16.jpeg
-  [171]: media/image17.jpeg
-  [220]: media/image18.jpeg
-  [246]: media/image19.jpeg
-  [259]: media/image20.jpeg
-  [260]: media/image21.jpeg
-  [305]: media/image22.jpeg
-  [306]: #_Appendix_C:_Windows
-  [310]: media/image23.jpeg
-  [311]: media/image24.jpeg
-  [313]: media/image25.jpeg
-  [314]: media/image26.jpeg
-  [330]: media/image27.jpeg
-  [331]: media/image28.jpeg
-  [356]: media/image29.jpeg
-  [357]: media/image30.jpeg
-  [358]: media/image31.jpeg
-  [366]: media/image32.jpeg
-  [367]: media/image33.jpeg
-  [388]: media/image34.jpeg
-  [389]: media/image35.jpeg
-  [394]: media/image36.jpeg
-  [395]: media/image37.jpeg
-  [396]: media/image38.jpeg
-  [402]: media/image39.jpeg
-  [450]: media/image40.jpeg
-  [482]: media/image41.jpeg
-  [483]: media/image42.jpeg
-  [484]: media/image43.jpeg
-  [487]: media/image44.jpeg
-  [501]: media/image45.jpeg
-  [506]: media/image46.jpeg
-  [520]: media/image47.jpeg
-  [560]: media/image48.jpeg
-  [561]: media/image49.jpeg
-  [562]: media/image50.jpeg
-  [629]: media/image51.jpeg
-  [632]: media/image52.jpeg
-  [685]: media/image53.jpeg
-  [686]: media/image54.png
-  [688]: media/image55.png
-  [689]: media/image56.png
-  [690]: media/image57.png
-  [698]: media/image58.jpeg
-  [1389]: media/image59.png
+  [Virtualbox on your Host OS:]: #virtualbox-on-your-host-os
+  [Warning about special tumbling, mixing, coinjoining privacy wallets and services]: #warning-about-special-tumbling-mixing-coinjoining-privacy-wallets-and-services-wikiless-archiveorg
+  [Watermarking:]: #watermarking
+  [Wear-Leveling.]: #wear-leveling.
+  [What different linguistic choices could say about you:]: #what-different-linguistic-choices-could-say-about-you
+  [What does an adversary look for when examining your writing?]: #what-does-an-adversary-look-for-when-examining-your-writing
+  [When converting from BTC to Monero:]: #when-converting-from-btc-to-monero
+  [Whonix Virtual Machines:]: #whonix-virtual-machines
+  [Whonix Workstation 16 VM:]: #whonix-workstation-16-vm
+  [Whonix:]: #whonix
+  [Wikipedia:]: #wikipedia
+  [Windows 10/11 VM:]: #windows-1011-vm
+  [Windows 10/11 Virtual Machine:]: #windows-1011-virtual-machine
+  [Windows Host OS:]: #windows-host-os
+  [Windows, Linux, and macOS:]: #windows-linux-and-macos
+  [Windows:]: #windows-2
+  [Yahoo Search:]: #yahoo-search
+  [Yandex:]: #yandex
+  [Your Anonymized Tor/VPN traffic:]: #your-anonymized-torvpn-traffic
+  [Your Bluetooth MAC address:]: #your-bluetooth-mac-address
+  [Your Browser and Device Fingerprints:]: #your-browser-and-device-fingerprints
+  [Your CPU:]: #your-cpu
+  [Your Cloud backups/sync services:]: #your-cloud-backupssync-services
+  [Your Clues about your Real Life and OSINT:]: #your-clues-about-your-real-life-and-osint
+  [Your Cryptocurrencies transactions:]: #your-cryptocurrencies-transactions
+  [Your DNS and IP requests:]: #your-dns-and-ip-requests
+  [Your Digital Fingerprint, Footprint, and Online Behavior:]: #your-digital-fingerprint-footprint-and-online-behavior
+  [Your Face, Voice, Biometrics, and Pictures:]: #your-face-voice-biometrics-and-pictures
+  [Your Hardware Identifiers:]: #your-hardware-identifiers
+  [Your IMEI and IMSI (and by extension, your phone number):]: #your-imei-and-imsi-and-by-extension-your-phone-number
+  [Your IP address:]: #your-ip-address
+  [Your Metadata including your Geo-Location:]: #your-metadata-including-your-geo-location
+  [Your Network:]: #your-network
+  [Your Operating Systems and Apps telemetry services:]: #your-operating-systems-and-apps-telemetry-services
+  [Your RFID enabled devices:]: #your-rfid-enabled-devices
+  [Your Smart devices in general:]: #your-smart-devices-in-general
+  [Your Wi-Fi or Ethernet MAC address:]: #your-wi-fi-or-ethernet-mac-address
+  [Your files, documents, pictures, and videos:]: #your-files-documents-pictures-and-videos
+  [Yourself:]: #yourself
+  [iOS:]: #ios
+  [macOS Host OS:]: #macos-host-os
+  [macOS Virtual Machine:]: #macos-virtual-machine
+  [macOS:]: #macos-2

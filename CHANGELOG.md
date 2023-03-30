@@ -1,3 +1,10 @@
+v1.1.6-pre2
+- I know, I know. Pre-release? Again??! v1.1.6 coming **very** soon.
+- Update to $OXEN staking prices in Session section
+- Small grammar/spelling fixes
+- Fix image inline linking issue (stop using dual linking)
+- Re-order hardlinks to make it easy to manage
+
 v1.1.6-pre1
 - Update on Tor Browser route due to major changes
   - Tor Project has condensed their settings and it is no longer
