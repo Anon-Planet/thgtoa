@@ -8,14 +8,11 @@ This guide is an open-source non-profit initiative, [licensed](LICENSE.html) und
 
 **If you would like to make a donation to help this project, you can do so from [here](donations.html) where you will also find the project goals. All the donations will be strictly used within the context of this project. All donations and spendings are logged on the donations page.**
 
-**Direct downloads alternatives:**
-- **Coming soon**
-
 **View the guide:**
 - [In your browser](guide.html)
-- <del>[PDF](export/guide.pdf)</del> (temporarily unavailable)
-- <del>[OpenDocument (ODT)](export/guide.odt)</del> (temporarily unavailable)
-- Raw [Markdown](https://github.com/Anon-Planet/thgtoa/raw/master/guide.md) (references do not work when viewing this way).
+- [PDF](export/guide.pdf)
+- [OpenDocument (ODT)](export/guide.odt)
+- Raw [Markdown](https://github.com/Anon-Planet/thgtoa/raw/master/guide.md) text.
 
 Mirrors:
 - Tor Onion Mirror: <http://thgtoa27ujspeqxasrfvcf5aozqdczvgmwgorrmblh6jn4nino3spcqd.onion/>

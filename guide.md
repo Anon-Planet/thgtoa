@@ -2,7 +2,7 @@
 
 (Or "How I learned to start worrying and love ~~privacy~~ anonymity")
 
-Version 1.1.6-pre2, March 2023 by Anonymous Planet
+Version 1.1.6, April 2023 by Anonymous Planet
 
 **Forever in memory of Lena, 1999-2022**
 
@@ -12234,11 +12234,9 @@ Find it online at:
 
 -   Archive.today over Tor: <http://archiveiya74codqgiixo33q62qlrqtkgmcitqx5u2oeqnmn5bpcbiyd.onion/anonymousplanet.org>
 
-    Offline versions of this guide are temporarily unavailable.
+-   PDF: <https://anonymousplanet.org/export/guide.pdf> <sup>[[Archive.org]](https://web.archive.org/web/https://anonymousplanet.org/export/guide.pdf)</sup> <sup>[[Tor Mirror]](http://thgtoa7imksbg7rit4grgijl2ef6kc7b56bp56pmtta4g354lydlzkqd.onion/guide.pdf)</sup>
 
--   <del>PDF: <https://anonymousplanet.org/export/guide.pdf></del> <sup>[[Archive.org]](https://web.archive.org/web/https://anonymousplanet.org/export/guide.pdf)</sup> <sup>[[Tor Mirror]](http://thgtoa7imksbg7rit4grgijl2ef6kc7b56bp56pmtta4g354lydlzkqd.onion/guide.pdf)</sup>
-
--   OpenDocument Text (ODT) version at: <del><https://anonymousplanet.org/export/guide.odt></del> (temporarily disabled) <sup>[[Archive.org]](https://web.archive.org/web/https://anonymousplanet.org/export/guide.odt)</sup> <sup>[[Tor Mirror]](http://thgtoa7imksbg7rit4grgijl2ef6kc7b56bp56pmtta4g354lydlzkqd.onion/guide.odt)</sup>
+-   OpenDocument Text (ODT) version at: <https://anonymousplanet.org/export/guide.odt> <sup>[[Archive.org]](https://web.archive.org/web/https://anonymousplanet.org/export/guide.odt)</sup> <sup>[[Tor Mirror]](http://thgtoa7imksbg7rit4grgijl2ef6kc7b56bp56pmtta4g354lydlzkqd.onion/guide.odt)</sup>
 
 
 # Appendix A7: Comparing versions
