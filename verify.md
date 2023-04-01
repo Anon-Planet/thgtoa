@@ -1,6 +1,6 @@
 ## How to check files for safety/integrity and authenticity:
 
-The **(currently unavailable)** PDF and ODT files of this guide are cryptographically signed using GPG and [Minisign](https://jedisct1.github.io/minisign). Their integrity can be verified with the published SHA256 Checksum hashes on this website. SHA256 checksums of all the PDF and ODT files are available here in the [sha256sum.txt](sha256sum.txt) file. SHA256 checksums, signatures, and VirusTotal ("VT") checks of the releases files (containing the whole repository) are available within the latest release information at <https://github.com/Anon-Planet/thgtoa/releases/latest> which will be available as soon as we have a stable release.
+The PDF and ODT files of this guide are cryptographically signed using GPG and [Minisign](https://jedisct1.github.io/minisign). Their integrity can be verified with the published SHA256 Checksum hashes on this website. SHA256 checksums of all the PDF and ODT files are available here in the [sha256sum.txt](sha256sum.txt) file. SHA256 checksums, signatures, and VirusTotal ("VT") checks of the releases files (containing the whole repository) are available within the latest release information at <https://github.com/Anon-Planet/thgtoa/releases/latest> which will be available as soon as we have a stable release.
 
 The GPG signatures for each PDF and ODT files are available here:
 - PDF (Light Theme) Main and Mirrors: [guide.pdf.asc](guide.pdf.asc)
@@ -84,8 +84,8 @@ To verify the files with Minisign:
 **Note: we do not endorse VirusTotal. It should be used with extreme caution, never with any sensitive files, due to their privacy policies. Do not upload sensitive files to VirusTotal.**
 
 Temporarily Disabled. <del>The PDF and ODT files of this guide have been checked by VT, see the links below for an example but do not trust these hashes blindly. Check the hashes match and re-upload to VT if needed:
-- PDF file: [[VT Scan]](https://www.virustotal.com/gui/file/21dfa2f7da668156275e4ca2bc82091f347739967a278cf24a062c15a3944016?nocache=1)
-- ODT file: [[VT Scan]](https://www.virustotal.com/gui/file/df8554f732dc54b530fd831548f0727934f2e03ad1518ac33061d0995eab2172?nocache=1)</del> 
+- PDF file: [[VT Scan]](https://www.virustotal.com/gui/file/649a35b370a96c02e33ea95796bd5aacd2e30f20280bf38bc62838617ceddd63?nocache=1)
+- ODT file: [[VT Scan]](https://www.virustotal.com/gui/file-analysis/OGI0YTQzZGJlODE1MDhlMTA0YjlhZmUyMmU3ZDcwNmY6MTY4MDMzODM5OQ==) 
 
 ### Additional manual safety checks for the PDF files:
 

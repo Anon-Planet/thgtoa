@@ -1,4 +1,4 @@
-v1.1.6 "The one where the documents all build."
+v1.1.6 **"It's alive...again."**
 
 The thing works now.
 
