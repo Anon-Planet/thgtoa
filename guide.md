@@ -439,7 +439,7 @@ It is important to understand that the purpose of this guide is anonymity and no
 
 -   **Anonymity is about people knowing what you are doing but not knowing who you are** [^8]**.**
 
-![image01](media/image01.jpeg)
+![image01](media/image01.png)
 
 (Illustration from[^9])
 
@@ -447,7 +447,7 @@ Will this guide help you protect yourself from the NSA, the FSB, Mark Zuckerberg
 
 You must consider your threat model[^12] before going further.
 
-![image02](media/image02.jpeg)
+![image02](media/image02.png)
 
 (Illustration by Randall Munroe, xkcd.com, licensed under CC BY-NC 2.5)
 
@@ -455,7 +455,7 @@ Will this guide help you protect your privacy from OSINT researchers like Bellin
 
 Here is a basic simplified threat model for this guide:
 
-![image40](media/image40.jpeg)
+![image40](media/image40.png)
 
 (Note that the "magical amulets/submarine/fake your own death" jokes are quoted from the excellent article "This World of Ours" by James Mickens, 2014.[^10])
 
@@ -1335,13 +1335,13 @@ Well, there are techniques for recovering information from such documents, video
 
 Here is for example an open-source project you could use yourself for recovering text from some blurred images yourself: <https://github.com/beurtschipper/Depix> <sup>[[Archive.org]](https://web.archive.org/web/https://github.com/beurtschipper/Depix)</sup>
 
-![image14](media/image14.jpeg)
+![image14](media/image14.png)
 
 This is of course an open-source project available for all to use. But you can imagine that such techniques have probably been used before by other adversaries. These could be used to reveal blurred information from published documents that could then be used to de-anonymize you.
 
 There are also tutorials for using such techniques using Photo Editing tools such as GIMP such as <https://medium.com/@somdevsangwan/unblurring-images-for-osint-and-more-part-1-5ee36db6a70b>   <sup>[[Archive.org]](https://web.archive.org/web/https://medium.com/@somdevsangwan/unblurring-images-for-osint-and-more-part-1-5ee36db6a70b)</sup> followed by <https://medium.com/@somdevsangwan/deblurring-images-for-osint-part-2-ba564af8eb5d> <sup>[[Scribe.rip]](https://scribe.rip/@somdevsangwan/deblurring-images-for-osint-part-2-ba564af8eb5d)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://medium.com/@somdevsangwan/deblurring-images-for-osint-part-2-ba564af8eb5d)</sup>
 
-![image15](media/image15.jpeg)
+![image15](media/image15.png)
 
 Finally, you will find plenty of deblurring resources here: <https://github.com/subeeshvasu/Awesome-Deblurring> <sup>[[Archive.org]](https://web.archive.org/web/https://github.com/subeeshvasu/Awesome-Deblurring)</sup>
 
@@ -1351,7 +1351,7 @@ Some online services could even help you do this automatically to some extent li
 
 Here is the result of the above image:
 
-![image16](media/image16.jpeg)
+![image16](media/image16.png)
 
 Of course, this tool is more like "guessing" than really deblurring at this point, but it could be enough to find you using various reverse image searching services.
 
@@ -1626,7 +1626,7 @@ If the VPN provider knows nothing about you, it should mitigate any issue due to
 
 ## Some Advanced targeted techniques:
 
-![image17](media/image17.jpeg)
+![image17](media/image17.png)
 
 (Illustration: an excellent movie we highly recommend: Das Leben der Anderen[^286])
 
@@ -1762,7 +1762,7 @@ Here are some various resources about what Zero-Trust Security is:
 
 First, here is a small basic UML diagram showing your available options according to your skills/budget/time/resources.
 
-![image18](media/image18.jpeg)
+![image18](media/image18.png)
 
 ### Timing limitations:
 
@@ -1800,21 +1800,21 @@ First, here is a small basic UML diagram showing your available options accordin
 
     -   It is new and it has great specs (more than 16GB or ideally 32GB of RAM, >250GB of disk space, recent fast CPU):
 
-        -   **You could go for any route, but we would recommend Qubes OS if your threat model allows it.**
+        -   **You could go for any route, but we would recommend Qubes OS if your threat model allows it. Please see the requirements.[^363]**
 
     -   If it is an ARM-based M1/M2 Mac:
 
         -   **Not possible currently for these reasons:**
 
-            -   **Virtualization of Intel x86 images on ARM (M1/M2) hosts is still limited to commercial software (e.g., Parallels, Fusion) which are mostly not supported by Whonix, yet. They are very buggy and for advanced people only. Please seek this information yourself.**
+            -   Virtualization of Intel x86 images on ARM (M1/M2) hosts is still limited to commercial software (e.g., Parallels, Fusion) which are mostly not supported by Whonix, yet. They are very buggy and for advanced people only. Please seek this information yourself.
 
-            -   **[Virtualbox is now available natively for ARM64 architecture](https://osxdaily.com/2022/10/22/you-can-now-run-virtualbox-on-apple-silicon-m1-m2/) in a package as of October 2022. Download the ["Developer preview for macOS/Arm64 (M1/M2) hosts"](https://www.virtualbox.org/wiki/Downloads).**
+            -   [Virtualbox is now available natively for ARM64 architecture](https://osxdaily.com/2022/10/22/you-can-now-run-virtualbox-on-apple-silicon-m1-m2/) in a package as of October 2022. Download the ["Developer preview for macOS/Arm64 (M1/M2) hosts"](https://www.virtualbox.org/wiki/Downloads).
 
-            -   **Whonix does not support macOS easily. "You need to build Whonix using the build script to get it running on Apple Silicon." [See the forum thread](https://www.whonix.org/wiki/MacOS#M1).**
+            -   Whonix does not support macOS easily. "You need to build Whonix using the build script to get it running on Apple Silicon." [See the forum thread](https://www.whonix.org/wiki/MacOS#M1).
 
-            -   **Tails is not supported on ARM64 architecture yet. [See this thread](https://gitlab.tails.boum.org/tails/blueprints/-/wikis/ARM_platforms/) for more information (keep in mind this page hasn't been updated recently).**
+            -   Tails is not supported on ARM64 architecture yet. [See this thread](https://gitlab.tails.boum.org/tails/blueprints/-/wikis/ARM_platforms/) for more information (keep in mind this page hasn't been updated recently).
 
-            -   **Qubes OS is not supported on ARM64 architecture yet, but there is work being done to make it available on aarch64, which may be delayed for the unforseeable future..**
+            -   Qubes OS is not supported on ARM64 architecture yet, but there is work being done to make it available on aarch64, which may be delayed for the unforseeable future..
 
 **The general advice in this guide regarding virtualization software is that it's costly. That said, you should probably get a dedicated laptop, capable of running virtualization software, preferably a 64-bit architecture, to be used for more sensitive activities and testing.**
 
@@ -2334,7 +2334,7 @@ This project is a clever idea of a one-click self-contained VM solution that you
 
 This would allow the creation of a hybrid system mixing Tails with the Virtualization options of the Whonix route in this guide.
 
-![image19](media/image19.jpeg)
+![image19](media/image19.png)
 
 **Note: See** [Pick your connectivity method][Pick your connectivity method:] **in the Whonix Route for more explanations about Stream Isolation**
 
@@ -2558,9 +2558,9 @@ Here is a good cheap method to make your laptop tamper-proof using Nail Polish (
 
 While this is a good cheap method, it could also raise suspicions as it is quite "noticeable" and might just reveal that you "have something to hide". So, there are more subtle ways of achieving the same result. You could also for instance make a close-up macro photography of the back screws of your laptop or just use a small amount of candle wax within one of the screws that could just look like usual dirt. You could then check for tampering by comparing the photographs of the screws with new ones. Their orientation might have changed a bit if your adversary was not careful enough (Tightening them exactly the same way they were before). Or the wax within the bottom of a screw head might have been damaged compared to before.
 
-![image20](media/image20.jpeg)
+![image20](media/image20.png)
 
-![image21](media/image21.jpeg)
+![image21](media/image21.png)
 
 The same techniques can be used with USB ports where you could just put a tiny amount of candle wax within the plug that would be damaged by inserting a USB key in it.
 
@@ -3281,7 +3281,7 @@ Read the Veracrypt Documentation <https://www.veracrypt.fr/en/VeraCrypt%20Hidden
 
 This is how your system will look after this process is done:
 
-![image22](media/image22.jpeg)
+![image22](media/image22.png)
 
 (Illustration from Veracrypt Documentation, <https://veracrypt.fr/en/VeraCrypt%20Hidden%20Operating%20System.html> <sup>[[Archive.org]](https://web.archive.org/web/https://www.veracrypt.fr/en/VeraCrypt%20Hidden%20Operating%20System.html)</sup>)
 
@@ -3587,13 +3587,13 @@ There are seven possibilities within this route:
 
     -   No VPN and no Tor (User > Internet)
 
-![image23](media/image23.jpeg)
+![image23](media/image23.png)
 
 #### Tor only:
 
 This is the preferred and most recommended solution.
 
-![image24](media/image24.jpeg)
+![image24](media/image24.png)
 
 With this solution, all your network goes through Tor, and it should be sufficient to guarantee your anonymity in most cases.
 
@@ -3613,7 +3613,7 @@ This solution can be achieved in two ways:
 
 As you can see in this illustration, if your cash (preferred)/Monero paid VPN/Proxy is compromised by an adversary (despite their privacy statement and no-logging policies), they will only find an anonymous cash/Monero paid VPN/Proxy account connecting to their services from a Tor Exit node.
 
-![image25](media/image25.jpeg)
+![image25](media/image25.png)
 
 If an adversary somehow manages to compromise the Tor network too, they will only reveal the IP of a random public Wi-Fi that is not tied to your identity.
 
@@ -3623,7 +3623,7 @@ If an adversary somehow compromises your VM OS (with malware or an exploit for i
 
 Stream isolation is a mitigation technique used to prevent some correlation attacks by having different Tor Circuits for each application. Here is an illustration to show what stream isolation is:
 
-![image26](media/image26.jpeg)
+![image26](media/image26.png)
 
 (Illustration from Marcelo Martins, <https://stakey.club/en/decred-via-tor-network/> <sup>[[Archive.org]](https://web.archive.org/web/https://stakey.club/en/decred-via-tor-network/)</sup>)
 
@@ -3774,11 +3774,11 @@ This guide will therefore propose two flavors of this route:
 
 -   The Whonix only route where all traffic is routed through the Tor Network (Tor Only or Tor over VPN).
 
-![image27](media/image27.jpeg)
+![image27](media/image27.png)
 
 -   A Whonix hybrid route where all traffic is routed through a cash (preferred)/Monero paid VPN over the Tor Network (VPN over Tor or VPN over Tor over VPN).
 
-![image28](media/image28.jpeg)
+![image28](media/image28.png)
 
 You will be able to decide which flavor to use based on my recommendations. We recommend the second one as explained before.
 
@@ -4287,7 +4287,7 @@ There are three ways to do this:
 
 The illustration below shows the result of this step:
 
-![image29](media/image29.jpeg)
+![image29](media/image29.png)
 
 ##### Configuration of the Whonix Gateway VM:
 
@@ -4411,7 +4411,7 @@ Of course, you can also achieve this with any other Linux distro if you so decid
 
 This is how it will look at the end:
 
-![image30](media/image30.jpeg)
+![image30](media/image30.png)
 
 ##### Installing XUbuntu VM:
 
@@ -4623,7 +4623,7 @@ Of course, you can also achieve this with any other Linux distro if you so decid
 
 This is how it will look at the end:
 
-![image31](media/image31.jpeg)
+![image31](media/image31.png)
 
 ##### Configuration of the Host OS:
 
@@ -4833,13 +4833,13 @@ There are seven possibilities within this route:
 
     -   No VPN and no Tor (User > Internet)
 
-![image23](media/image23.jpeg)
+![image23](media/image23.png)
 
 #### Tor only:
 
 This is the preferred and most recommended solution.
 
-![image32](media/image32.jpeg)
+![image32](media/image32.png)
 
 With this solution, all your network goes through Tor, and it should be sufficient to guarantee your anonymity in most cases.
 
@@ -4859,7 +4859,7 @@ This solution can be achieved in two ways:
 
 As you can see in this illustration, if your cash (preferred)/Monero paid VPN/Proxy is compromised by an adversary (despite their privacy statement and no-logging policies), they will only find an anonymous cash/Monero paid VPN account connecting to their services from a Tor Exit node.
 
-![image33](media/image33.jpeg)
+![image33](media/image33.png)
 
 If an adversary somehow manages to compromise the Tor network too, they will only reveal the IP of a random public Wi-Fi that is not tied to your identity.
 
@@ -4869,7 +4869,7 @@ If an adversary somehow compromises your VM OS (with malware or an exploit for i
 
 Stream isolation is a mitigation technique used to prevent some correlation attacks by having different Tor Circuits for each application. Here is an illustration to show what stream isolation is:
 
-![image26](media/image26.jpeg)
+![image26](media/image26.png)
 
 (Illustration from Marcelo Martins, <https://stakey.club/en/decred-via-tor-network/> <sup>[[Archive.org]](https://web.archive.org/web/https://stakey.club/en/decred-via-tor-network/)</sup>)
 
@@ -5566,7 +5566,7 @@ It's all to show you the lengths that state actors will go to. You may not be aw
 
 ### Captchas:
 
-![image34](media/image34.jpeg)![image35](media/image35.jpeg)
+![image34](media/image34.png)![image35](media/image35.png)
 
 (Illustrations by Randall Munroe, xkcd.com, licensed under CC BY-NC 2.5)
 
@@ -5783,7 +5783,7 @@ While this might seem innocent, this is obviously an ID verification and de-anon
 
 This is for instance now the case on YouTube for some European Users[^384] but also used by services like Amazon that requires a valid payment method for creating an account.
 
-![image36](media/image36.jpeg)
+![image36](media/image36.png)
 
 ### Sign-in with some platform:
 
@@ -5803,11 +5803,11 @@ This is a common method used on some Crypto trading platforms and some dating Ap
 
 Some platforms/apps will require you to take a live picture of yourself either doing something (a wink, holding an arm up ...) or showing a custom piece of information (a handwritten text, a passport, or ID) within the picture. Sometimes the platform/app will require several pictures to increase their certainty.
 
-![image37](media/image37.jpeg)
+![image37](media/image37.png)
 
 This guide will not cover this one (yet) as it is mainly used on financial platforms (that will be able to identify you with other means anyway) and some dating apps like Tinder[^386]. Unfortunately, this method is now also sometimes being used on Facebook[^387] and Instagram as part of their verification methods (tho we did not face it yet so far).
 
-![image38](media/image38.jpeg)
+![image38](media/image38.png)
 
 In some cases, these verifications must be done from your Smartphone and with an "in-app" camera to prevent you from sending a previously saved (edited) image.
 
@@ -5960,7 +5960,7 @@ We will help you bit by listing a few tips we learned while researching over the
 
 -   Original:
 
-![image39](media/image39.jpeg)
+![image39](media/image39.png)
 
 -   Result (see Online because PDFs do not work well with embedded media):
 
@@ -7093,7 +7093,7 @@ Note that you will not be able to enable 2FA on Twitch using only e-mail. This f
 
 You are going to have to find a separate way to post there using at least seven proxies[^408] that are not known by 4chan blocking system (hint: Anonymous VPS using Monero is probably your best option).
 
-![image40](media/image40.jpeg)
+![image40](media/image40.png)
 
 #### Crypto Wallets:
 
@@ -8229,7 +8229,7 @@ Just use SyncThing, it is the safest and most secure way to synchronize between 
 
 ## Understanding HDD vs SSD:
 
-![image41](media/image41.jpeg)
+![image41](media/image41.png)
 
 If you intend to wipe your whole HDD laptop, the process is rather straightforward. The data is written at a precise location on a magnetic (hard) platter (why it is called a hard drive) and your OS knows precisely where it is on the platter, where to delete it, and where to overwrite it for secure deletion using simple processes (like just overwriting that location over and over until no traces are left).
 
@@ -8241,7 +8241,7 @@ On the other hand, if you are using an SSD drive, the process is not as simple a
 
 Here are examples of the most common formats:
 
-![image42](media/image42.jpeg)
+![image42](media/image42.png)
 
 All of these are sold as internal and external drives within enclosures.
 
@@ -8269,7 +8269,7 @@ If Trim operations are not done regularly (or at all), then the data is never de
 
 Here is an illustration from Wikipedia showing how it works on an SSD drive:
 
-![image43](media/image43.jpeg)
+![image43](media/image43.png)
 
 As you can see in the above illustration, data (from a file) will be written to the four first pages of Block X. Later new data will be written to the remaining pages and the data from the first files will be marked as invalid (for instance by a Trim operation when deleting a file). As explained on <https://en.wikipedia.org/wiki/Trim_(computing)> <sup>[[Wikiless]](https://wikiless.org/wiki/Trim_(computing))</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Trim_(computing))</sup>; the erase operation can only be done on entire blocks (and not on single pages).
 
@@ -8291,7 +8291,7 @@ Within the context of this guide which also uses full disk encryption. Deletion 
 
 ## How to securely wipe your whole Laptop/Drives if you want to erase everything:
 
-![image44](media/image44.jpeg)
+![image44](media/image44.png)
 
 So, you want to be sure. To achieve 100% secure deletion on an SSD drive, you will need to use specific SSD techniques (If you are using an HDD drive, skip this part and go to your OS of choice):
 
@@ -8523,7 +8523,7 @@ If data were deleted by some utility (for instance by Virtualbox when reverting 
 
 Just open Windows Explorer, Right Click on your System Drive and click Properties. Select Tools. Click Optimize and then Optimize again to force a Trim. You are done. That is probably enough in my opinion.
 
-![image45](media/image45.jpeg)
+![image45](media/image45.png)
 
 If you want more security and do not trust the Trim operation, then you will have no option but to either:
 
@@ -8727,7 +8727,7 @@ Yes. TRIM operations are issued asynchronously from when files are deleted or fr
 
 -   If your file system is HFS+, you could run First Aid on your System Drive from the Disk Utility which should perform a Trim operation in the details (<https://support.apple.com/en-us/HT210898> <sup>[[Archive.org]](https://web.archive.org/web/https://support.apple.com/en-us/HT210898)</sup>)
 
-![image46](media/image46.jpeg)
+![image46](media/image46.png)
 
 #### System/Internal, External HDD drive or a Thumb Drive:
 
@@ -8885,7 +8885,7 @@ Another option good tool to remove metadata from various documents is the open-s
 
 So, we would suggest creating a small Debian VM within Virtualbox (behind your Whonix Gateway) which you can then use from your other VMs to analyze various files from a convenient web interface. For this see [Appendix L: Creating a mat2-web guest VM for removing metadata from files]
 
-![image47](media/image47.jpeg)
+![image47](media/image47.png)
 
 Mat2 is also pre-installed on the Whonix Workstation VM[^446] and available on Tails by default[^447].
 
@@ -8978,7 +8978,7 @@ Many of those can be deleted using various commercial third-party tools but we w
 
 -   If your file system is HFS+ (or any other than APFS), you could run First Aid on your System Drive from the Disk Utility which should perform a Trim operation in the details (<https://support.apple.com/en-us/HT210898> <sup>[[Archive.org]](https://web.archive.org/web/https://support.apple.com/en-us/HT210898)</sup>).
 
-![image46](media/image46.jpeg)
+![image46](media/image46.png)
 
 ### Linux (Qubes OS):
 
@@ -9194,7 +9194,7 @@ With this Native Windows 10/11 utility, you can just trigger a Trim on your SSD 
 
 Just open Windows Explorer, Right Click on your System Drive and click Properties. Select Tools. Click Optimize and Defragment. You are done as this will not defragment but only optimize. Meaning it will initiate a Trim operation (<https://en.wikipedia.org/wiki/Trim_(computing)> <sup>[[Wikiless]](https://wikiless.org/wiki/Trim_(computing))</sup> <sup>[[Archive.org]](https://web.archive.org/web/20220804150134/https://en.wikipedia.org/wiki/Trim_(computing))).
 
-![image45](media/image45.jpeg)
+![image45](media/image45.png)
 
 ## Removing some traces of your identities on search engines and various platforms:
 
@@ -10564,7 +10564,7 @@ Here are the steps:
 
 -   Set the following options in Putty and connect to your server
 
-![image51](media/image51.jpeg)
+![image51](media/image51.png)
 
 -   Connect to your VPS using those settings
 
@@ -10614,7 +10614,7 @@ Consider reading this older but still relevant guide <https://archive.flossmanua
 
 It is possible to access/connect to remote distant Public Wi-Fis from a distance using a cheap directional Antenna that looks like this:
 
-![image52](media/image52.jpeg)
+![image52](media/image52.png)
 
 These antennas are widely available on various online shops for a cheap price (Amazon, AliExpress, Banggood ...). The only issue is that they are not discrete, and you might have to find a way to hide it (for instance in a Poster cardboard container in a Backpack). Or in a large enough Bag. Optionally (but riskier) you could even consider using it from your home if you have a nice Window view to various places where some Public Wi-Fi is available.
 
@@ -11735,7 +11735,7 @@ Basically, it is like the Inception movie with computers. You have emulated soft
 
 Here is a little basic illustration of what Virtualization is:
 
-![image53](media/image53.jpeg)
+![image53](media/image53.png)
 
 Each Virtual Machine is a sandbox. Remember the reasons for using them are to prevent the following risks:
 
@@ -11980,7 +11980,7 @@ My opinion (and the one of many[^528]'[^529]'[^530]'[^531]'[^532]'[^533]) is tha
 
 The well-known shown-below XKCD <https://xkcd.com/936/> <sup>[[Archive.org]](https://web.archive.org/web/https://xkcd.com/936/)</sup> is still valid despite some people disputing it (See <https://www.explainxkcd.com/wiki/index.php/936:_Password_Strength> <sup>[[Archive.org]](https://web.archive.org/web/https://www.explainxkcd.com/wiki/index.php/936:_Password_Strength)</sup>). Yes, it is quite old now and is a little bit outdated and might be misinterpreted. But generally, it is still valid and a good argument for using passphrases instead of passwords.
 
-![image58](media/image58.jpeg)
+![image58](media/image58.png)
 
 (Illustration by Randall Munroe, xkcd.com, licensed under CC BY-NC 2.5)
 
@@ -13388,10 +13388,6 @@ In short, our opinion is that you may use Session Messenger on iOS due to the ab
 
 [^458]: Privacyguides.org, Operating Systems <https://www.privacyguides.org/tools/#operating-systems> <sup>[[Archive.org]](https://web.archive.org/web/https://www.privacyguides.org/tools/#operating-systems)</sup>
 
-[^459]: Brave Support, What is a Private Window with Tor? <https://support.brave.com/hc/en-us/articles/360018121491-What-is-a-Private-Window-with-Tor> <sup>[[Archive.org]](https://web.archive.org/web/https://support.brave.com/hc/en-us/articles/360018121491-What-is-a-Private-Window-with-Tor)</sup>
-
-[^460]: Medium.com, The Windows USN Journal <https://medium.com/velociraptor-ir/the-windows-usn-journal-f0c55c9010e> <sup>[[Scribe.rip]](https://scribe.rip/velociraptor-ir/the-windows-usn-journal-f0c55c9010e)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://medium.com/velociraptor-ir/the-windows-usn-journal-f0c55c9010e)</sup>
-
 [^461]: Medium.com, Digging into the System Resource Usage Monitor (SRUM) <https://medium.com/velociraptor-ir/digging-into-the-system-resource-usage-monitor-srum-afbadb1a375> <sup>[[Scribe.rip]](https://scribe.rip/velociraptor-ir/digging-into-the-system-resource-usage-monitor-srum-afbadb1a375)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://medium.com/velociraptor-ir/digging-into-the-system-resource-usage-monitor-srum-afbadb1a375)</sup>
 
 [^462]: SANS, Timestamped Registry & NTFS Artifacts from Unallocated Space <https://www.sans.org/blog/timestamped-registry-ntfs-artifacts-from-unallocated-space/> <sup>[[Archive.org]](https://web.archive.org/web/https://www.sans.org/blog/timestamped-registry-ntfs-artifacts-from-unallocated-space/)</sup>
@@ -13399,8 +13395,6 @@ In short, our opinion is that you may use Session Messenger on iOS due to the ab
 [^463]: DBAN, <https://dban.org/> <sup>[[Archive.org]](https://web.archive.org/web/https://dban.org/)</sup>
 
 [^464]: NYTimes, Lost Passwords Lock Millionaires Out of Their Bitcoin Fortunes <https://www.nytimes.com/2021/01/12/technology/bitcoin-passwords-wallets-fortunes.html> <sup>[[Archive.org]](https://web.archive.org/web/https://www.nytimes.com/2021/01/12/technology/bitcoin-passwords-wallets-fortunes.html)</sup>
-
-[^465]: CrystalDiskInfo <https://crystalmark.info/en/software/crystaldiskinfo/> <sup>[[Archive.org]](https://web.archive.org/web/https://crystalmark.info/en/software/crystaldiskinfo/)</sup>
 
 [^466]: Wikipedia, Faraday Cage, <https://en.wikipedia.org/wiki/Faraday_cage> <sup>[[Wikiless]](https://wikiless.org/wiki/Faraday_cage)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Faraday_cage)</sup>
 
@@ -13435,8 +13429,6 @@ In short, our opinion is that you may use Session Messenger on iOS due to the ab
 [^481]: Wikipedia, Collision Resistance <https://en.wikipedia.org/wiki/Collision_resistance> <sup>[[Wikiless]](https://wikiless.org/wiki/Collision_resistance)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Collision_resistance)</sup>
 
 [^482]: GnuPG Gpg4win Wiki, Check integrity of Gpg4win packages <https://wiki.gnupg.org/Gpg4win/CheckIntegrity> <sup>[[Archive.org]](https://web.archive.org/web/https://wiki.gnupg.org/Gpg4win/CheckIntegrity)</sup>
-
-[^483]: Medium.com, How to verify checksum on Mac <https://medium.com/@EvgeniIvanov/how-to-verify-checksum-on-mac-988f166b0c4f> <sup>[[Scribe.rip]](https://web.archive.org/web/https://scribe.rip/@EvgeniIvanov/how-to-verify-checksum-on-mac-988f166b0c4f)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://medium.com/@EvgeniIvanov/how-to-verify-checksum-on-mac-988f166b0c4f)</sup>
 
 [^484]: Wikipedia, GPG <https://en.wikipedia.org/wiki/GNU_Privacy_Guard> <sup>[[Wikiless]](https://wikiless.org/wiki/GNU_Privacy_Guard)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/GNU_Privacy_Guard)</sup>
 
