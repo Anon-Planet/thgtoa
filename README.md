@@ -8,9 +8,6 @@ This guide is an open-source non-profit initiative, [licensed](LICENSE.html) und
 
 **If you would like to make a donation to help this project, you can do so from [here](donations.html) where you will also find the project goals. All the donations will be strictly used within the context of this project. All donations and spendings are logged on the donations page.**
 
-**Direct downloads alternatives:**
-- **Coming soon**
-
 **View the guide:**
 - [In your browser](guide.html)
 - [PDF](export/guide.pdf)
