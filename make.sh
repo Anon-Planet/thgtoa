@@ -43,10 +43,10 @@ fi
 
 bn="$1"
 
-#echo "Generating HTML..."
-#pandoc --self-contained "$bn".md -o export/"$bn".html --metadata title="The Hitchhiker's Guide to Online Anonymity"
-#echo "Generating PDF..."
-#pandoc --self-contained "$bn".md -o export/"$bn".pdf --metadata title="The Hitchhiker's Guide to Online Anonymity" -t context
-#echo "Generating ODT..."
-#pandoc --self-contained "$bn".md -o export/"$bn".odt --metadata title="The Hitchhiker's Guide to Online Anonymity"
+echo "Generating HTML..."
+pandoc --self-contained "$bn".md -o export/"$bn".html --metadata title="The Hitchhiker's Guide to Online Anonymity"
+echo "Generating PDF..."
+pandoc --self-contained "$bn".md -o export/"$bn".pdf --metadata title="The Hitchhiker's Guide to Online Anonymity" -t context
+echo "Generating ODT..."
+pandoc --self-contained "$bn".md -o export/"$bn".odt --metadata title="The Hitchhiker's Guide to Online Anonymity"
 
