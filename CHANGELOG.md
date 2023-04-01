@@ -4,7 +4,10 @@ The thing works now.
 
 - Fixed the errors in pandoc (Tex2PDF) build
 - Updated Tor .onion links
-- Drank a boat load of espresso
+- Drank a lulz amount of espresso
+- Cleaned up garbage
+- Removed unused links
+- Note regarding Alex's absence (they will return)
 
 v1.1.6-pre2
 - I know, I know. Pre-release? Again??! v1.1.6 coming **very** soon.
