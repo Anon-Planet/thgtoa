@@ -2795,7 +2795,7 @@ The steps to achieve this are not yet integrated into this guide but can be foun
 -   Disable Bluetooth if enabled by following this guide <https://www.addictivetips.com/ubuntu-linux-tips/disable-bluetooth-in-ubuntu/> <sup>[[Archive.org]](https://web.archive.org/web/https://www.addictivetips.com/ubuntu-linux-tips/disable-bluetooth-in-ubuntu/)</sup> or issuing the following command:
 
     -   ```sudo systemctl disable bluetooth.service --force```
-
+bejarano.
 -   Disable Indexing if enabled by default (Ubuntu >19.04) by following this guide <https://www.linuxuprising.com/2019/07/how-to-completely-disable-tracker.html> <sup>[[Archive.org]](https://web.archive.org/web/https://www.linuxuprising.com/2019/07/how-to-completely-disable-tracker.html)</sup> or issuing the following commands:
 
     -   ```sudo systemctl --user mask tracker-store.service tracker-miner-fs.service tracker-miner-rss.service tracker-extract.service tracker-miner-apps.service tracker-writeback.service```
@@ -8906,6 +8906,8 @@ Revert to an earlier snapshot on Virtualbox (or any other VM software you are us
 #### Host OS:
 
 Most of the info from this section can also be found at this nice guide <https://github.com/drduh/macOS-Security-and-Privacy-Guide> <sup>[[Archive.org]](https://web.archive.org/web/https://www.bejarano.io/hardening-macos/)</sup>
+    
+Also you can checkout Michael Bazzell's guide <https://inteltechniques.com/ventura.html> <sup>[[Archive.org]](https://web.archive.org/web/https://inteltechniques.com/ventura.html/)</sup>
 
 ##### Quarantine Database (used by Gatekeeper and XProtect):
 
