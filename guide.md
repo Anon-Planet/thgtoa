@@ -8906,6 +8906,8 @@ Revert to an earlier snapshot on Virtualbox (or any other VM software you are us
 #### Host OS:
 
 Most of the info from this section can also be found at this nice guide <https://github.com/drduh/macOS-Security-and-Privacy-Guide> <sup>[[Archive.org]](https://web.archive.org/web/https://www.bejarano.io/hardening-macos/)</sup>
+    
+You can checkout Michael Bazzell's guide <https://inteltechniques.com/ventura.html> <sup>[[Archive.org]](https://web.archive.org/web/https://inteltechniques.com/ventura.html/)</sup>
 
 ##### Quarantine Database (used by Gatekeeper and XProtect):
 
