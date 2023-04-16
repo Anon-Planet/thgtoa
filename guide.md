@@ -4,8 +4,6 @@
 
 Version 1.1.6, April 2023 by Anonymous Planet
 
-**Forever in memory of Lena, 1999-2022**
-
 #### **IMPORTANT RECOMMENDATION FOR UKRAINIANS. ВАЖЛИВА РЕКОМЕНДАЦІЯ ДЛЯ УКРАЇНЦІВ**
 
 Це послання до народу України. Ми настійно рекомендуємо вам використовувати Briar для спілкування. Ви можете знайти його тут: <https://briarproject.org/ . 
@@ -2788,7 +2786,7 @@ The steps to achieve this are not yet integrated into this guide but can be foun
 
 -   If you are not sure, just make sure you did not enable any telemetry and follow this tutorial if needed <https://vitux.com/how-to-force-ubuntu-to-stop-collecting-your-data-from-your-pc/> <sup>[[Archive.org]](https://web.archive.org/web/https://vitux.com/how-to-force-ubuntu-to-stop-collecting-your-data-from-your-pc/)</sup>
 
--   Any other distro: You will need to document yourself and find out yourself how to disable telemetry if there is any.
+-   Any other distro: you will need to document yourself and find out how to disable telemetry.
 
 #### Disable anything unnecessary:
 
@@ -12454,9 +12452,9 @@ And from [a post](https://tor.stackexchange.com/questions/427/is-running-tor-ove
 
 # Appendix B7: Caution about Session Messenger 
 
-Here are our reasons for being cautious about Session messenger in general:
+Here are our reasons:
 
--   The company is based in Australia which has very unfavorable privacy laws.[^536]' [^537]
+-   The company is based in Australia which has very *unfavorable* privacy laws.[^536]' [^537]
 -   They push their own cryptocurrency, Oxen, which creates a conflict of interest.
 -   They use LokiNet, which requires Oxen to run nodes to route Session traffic, and it costs 15,000 $OXEN or 3,750 $OXEN for a shared node[^538], which is about ~$1,800 US dollars or ~$500 US dollars, respectively.
     - The price of running nodes essentially puts their network behind a paywall if you want to run a node, even just to contribute bandwidth to the network like you might with Tor. But there is a stakeless fork of Lokinet.
