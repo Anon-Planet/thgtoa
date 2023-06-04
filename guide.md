@@ -5921,7 +5921,9 @@ Tools that can help with this:
 
 -   <https://www.fakenamegenerator.com/>
 
--   <https://thispersondoesnotexist.com/>
+-   <del><https://thispersondoesnotexist.com/></del> (Defunct)
+    
+-   <https://this-person-does-not-exist.com/en> (Disclaimer: commercial and watermarked)
 
 -   <https://generated.photos/face-generator> (**Generated pictures using this tool have a watermark that you might need to remove using image editing software such as Gimp**)
     -   **Warning:** This tool requires JavaScript to function and does a lot of fingerprinting. Most of it is being sent to Microsoft Clarity. Even with uBlock installed and on safer level, Tor Browser wasn't efficient at blocking the fingerprinting. This obviously does not work on Safest level. On our tests, only Brave with agressive fingerprinting/ad shields did not send analytics.
