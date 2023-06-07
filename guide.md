@@ -1281,7 +1281,7 @@ This can be obvious to many but not to all. Most files have metadata attached to
 
 Here is an example of EXIF data that could be on a picture:
 
-![][133]
+![](media/image13.png)
 
 (Illustration from Wikipedia)
 
@@ -12436,7 +12436,7 @@ Model-specific registers (MSRs) and their configuration bits can also be detecte
     
 # Appendix B6: Warning for using Orbot on Android
 
-While this is often misunderstood, Orbot on Android does not make your "Tor-Enabled Apps" go through Tor if you add them to the list. Orbot is acting as a device-wide VPN or (also known as a transparent proxy). The list of apps using Orbot is a whitelist. This list will not make some apps magically use Tor and unchecked ones use the clear-net. This only ensures the device-wide VPN is using Tor to route traffic. This means that Orbot can only control what app can access the VPN it creates. Other apps will lose connectivity.
+While this is often misunderstood, Orbot on Android does not make your Tor-enabled apps go through Tor if you add them to the list. Orbot is acting as a device-wide VPN (also known as a "transparent proxy"). The list of apps using Orbot is a whitelist. This list will not make some apps magically use Tor and unchecked ones use the clear-net. This only ensures the device-wide VPN is using Tor to route traffic. This means that Orbot can only control what app can access the VPN it creates. Other apps will lose connectivity.
 
 What is important to know is that, if you launch an app (or Android does it automatically) while Orbot is not running, the app will just use the normal network, without involving Orbot (with the exception of some apps supporting a proxy Orbot).
 
