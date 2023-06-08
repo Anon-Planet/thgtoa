@@ -6,11 +6,11 @@
 
 #### There are multiple ways you can add to the guide:
 
-- You can [submit bugs and feature requests](https://github.com/AnonyPla-ng/thgtoa/issues/new) with detailed information about your issue or idea:
+- You can [submit bugs and feature requests](https://github.com/Anon-Planet/thgtoa/issues/new) with detailed information about your issue or idea:
   - If you'd like to propose an addition, please follow the standards outlined here.
   - If you're reporting an issue, please be sure to include the expected behaviour, the observed behaviour, and steps to reproduce the problem.
 - This can require technical knowledge, but you can also get involved in conversations about bug reports and feature requests. This is a great way to get involved without getting too overwhelmed!
-- [Help fellow committers test recently submitted pull requests](https://github.com/AnonyPla-ng/thgtoa/pulls). Simply by pulling down a pull request and testing it, you can help ensure our new code contributions for stability and quality.
+- [Help fellow committers test recently submitted pull requests](https://github.com/Anon-Planet/thgtoa/pulls). Simply by pulling down a pull request and testing it, you can help ensure our new code contributions for stability and quality.
 
 ### Content Contributions
 
@@ -36,7 +36,7 @@ For those of you who are looking to add content to the guide, include the follow
   - Search/replace doesn't understand context, and as such, will inevitably cause inconsistencies and make the guide harder to read.
   - If it's part of a larger PR, it'll also make the reviewer's life harder, as they'll have to go through manually and undo everything by hand.
   - *If you're going to make mass changes, take the time to do it properly*. Otherwise I'll just have to undo it anyway.
-  - If your change contains backslashes (`\`), wither escape them with another backslash (`\\`) or put them in a ```code block```.
+  - If your change contains backslashes (`\`), either escape them with another backslash (`\\`) or put them in a ```code block```.
 
 When reporting guide issues:
 
@@ -62,9 +62,9 @@ For an example of what *not* to do, see: <https://github.com/Anon-Planet/thgtoa/
 **Thank you** for taking the few moments to read this far! You're already way ahead of the
 curve, so keep it up!
 
-[discussions]: https://github.com/AnonyPla-ng/thgtoa/discussions
-[issues]: https://github.com/AnonyPla-ng/thgtoa/issues
-[help fellow users with open issues]: https://github.com/AnonyPla-ng/thgtoa/issues
+[discussions]: https://github.com/Anon-Planet/thgtoa/discussions
+[issues]: https://github.com/Anon-Planet/thgtoa/issues
+[help fellow users with open issues]: https://github.com/Anon-Planet/thgtoa/issues
 [topic branch]: http://git-scm.com/book/en/Git-Branching-Branching-Workflows#Topic-Branches
 [Qubes#7457]: https://github.com/QubesOS/qubes-issues/issues/7457
 [50/72 rule]: http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html
@@ -72,4 +72,4 @@ curve, so keep it up!
 [console output]: https://docs.github.com/en/free-pro-team@latest/github/writing-on-github/creating-and-highlighting-code-blocks#fenced-code-blocks
 [verification steps]: https://docs.github.com/en/free-pro-team@latest/github/writing-on-github/basic-writing-and-formatting-syntax#task-lists
 [reference associated issues]: https://github.com/blog/1506-closing-issues-via-pull-requests
-[help fellow committers test recently submitted pull requests]: https://github.com/AnonyPla-ng/thgtoa/pulls
+[help fellow committers test recently submitted pull requests]: https://github.com/Anon-Planet/thgtoa/pulls
