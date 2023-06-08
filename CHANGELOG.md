@@ -1,3 +1,11 @@
+v1.1.7
+
+- Add A.P. Open Collective link
+- Remove in memoriam for Lena per her wishes
+- Add Lucas as NTH mod
+- Fix missing inline image leftover from previous PRs
+- "Checking if your Tor Exit Node is terrible": reduce to one section and remove subsections
+
 v1.1.6 **"It's alive...again."**
 
 The thing works now.
