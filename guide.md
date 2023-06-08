@@ -531,7 +531,7 @@ Here are some online resources you can use to find some information about your c
 
     -   <https://resolve.rs/ip/geolocation.html>
 
--   Find if an IP is "suspicious" (in blocklists) or has downloaded "things" on some public resources:
+-   Find if an IP is "suspicious" (in blacklists) or has downloaded "things" on some public resources:
 
     -   <https://mxtoolbox.com/blacklists.aspx>
 
@@ -6014,77 +6014,35 @@ Here is the list of possibilities (this is a general list and many of those coun
 
 **Skip this if you are using a VPN/Proxy over Tor (tho you can also do the same checks with a VPN exit node if you want).**
 
-Not all Tor Exit nodes are equal. This is mostly due to what type of "exit policy" their operator applies to them.
+Not all Tor Exit nodes are equal. This is mostly due to what type of "exit policy" their operator applies to them. Some Tor Exit nodes are seen are more or less "clean" and will only show up in the Tor Exit nodes lists. Some other Tor Exit nodes are seen as "dirty" and will show up in dozens of various blacklists. So how do you know if you are on a clean one or a bad one? It is not that simple.
 
-Some Tor Exit nodes are seen are more or less "clean" and will only show up in the Tor Exit nodes lists. Some other Tor Exit nodes are seen as "dirty" and will show up in dozens of various blocklists. So how do you know if you are on a clean one or a bad one? It is not that simple.
+#### This process is very easy:
 
-#### If you are using Tor Browser Bundle (not on Whonix Workstation, on Tails, or on the Host/Guest OS):
+This works whether you're using Tor Browser on a Host OS, in a VM, with Whonix or Qubes OS.
 
--   Go on the target website you want to sign-up for in a first tab
+-   Go on the target website you want to sign up for in a tab
 
--   Click the "lock" icon in the upper left corner
+-   Click the Tor Circuit icon to the left of the "lock" icon in the upper left corner to view your route through the Tor network.
 
--   Look at the third IP (Exit IP) you are using in that tab for that website
+-   Look at the third IP (Exit IP) you are using in that tab for that website. (You can't copy the IP address, but you can type it into the browser address bar if needed.)
 
--   Open a new second tab and go to <https://mxtoolbox.com/blacklists.aspx>
+-   Open a new tab and go to MX Toolbox. <https://mxtoolbox.com/blacklists.aspx>
 
--   Put the Exit IP from the first tab in the search box
+-   Put the Exit IP from the first tab in the search box. You will likely see "We notice you are on a blacklist."
 
--   Check the amount of Blocklists the Tor Exit node is in. Ideally, it should only be in two:
-
-    -   DAN TOR
-
-    -   DAN TOREXIT
-
-    -   If it is in other lists, you might run into issues
-
--   If the Exit Node is "clean" (in few lists), proceed to go back to the first tab and open the site you want to try a sign-up for.
-
-#### If you are using Tor Browser on the Whonix Workstation:
-
--   Open Tor Browser
-
--   Open the first tab and navigate to a site revealing your IP like <https://browserleaks.com/ip>
-
--   Open a second tab and go to <https://mxtoolbox.com/blacklists.aspx>
-
--   Put the Exit IP from the first tab in the search box
-
--   Check the amount of Blocklists the Tor Exit node is in. Ideally, it should only be in two:
+-   Check the amount of blacklists the Tor Exit node is in. Ideally, it should only be in two. If it is in other lists, such as Spamhaus ZEN, you might run into issues:
 
     -   DAN TOR
 
     -   DAN TOREXIT
 
-    -   If it is in other lists, you might run into issues
-
--   If the Exit Node is "clean" (in few lists), proceed to go back to the first tab and open the site you want to try a sign-up for.
-
-#### If you are not using Tor Browser on a guest non-whonix VM behind the Whonix Gateway:
-
--   Open your browser of choice
-
--   Open the first tab and navigate to a site revealing your IP like <https://browserleaks.com/ip>
-
--   Open a second tab and go to <https://mxtoolbox.com/blacklists.aspx>
-
--   Put the Exit IP from the first tab in the search box
-
--   Check the amount of Blocklists the Tor Exit node is in. Ideally, it should only be in two:
-
-    -   DAN TOR
-
-    -   DAN TOREXIT
-
-    -   If it is in other lists, you might run into issues
-
--   If the Exit Node is "clean" (in few lists), proceed to go back to the first tab and open the site you want to try a sign-up for.
+If the Exit Node is "clean" (in few lists), proceed to go back to the first tab and open the site you want to use to sign up.
 
 ### The Real-Name System:
 
-Unfortunately, not using your real identity is against the ToS (Terms of Services) of many services (especially those owned by Microsoft and Facebook). But don't despair, as explained in the [Requirements][Pre-requisites and limitations:], it's still legal in Germany where the courts have upheld up the legality of not using real names on online platforms (§13 VI of the German Telemedia Act of 2007[^1]'[^2]). **Fortunately, ToS cannot override laws** **(yet)**.
+Unfortunately, not using your real identity is against the Terms of Services ("TOS") of many services, especially those owned by Microsoft and Facebook. But don't despair, as explained in the [Requirements][Pre-requisites and limitations:], it's still legal in Germany where the courts have upheld the legality of not using real names on online platforms (§13 VI of the German Telemedia Act of 2007[^1]'[^2]). **Fortunately, ToS cannot override laws** **(yet)**.
 
-This does not mean that it is illegal in other places but that it might be a breach of their Terms of Services if you do not have the law on your side. **Remember this guide only endorses this for German users residing in Germany.**
+This does not mean that it is illegal in other places but that it might be a breach of their TOS if you do not have the law on your side. **Remember this guide only endorses this for German users residing in Germany.**
 
 On my side, we strongly condemn this type of real-name policy. See for instance this Wikipedia article giving some examples: <https://en.wikipedia.org/wiki/Facebook_real-name_policy_controversy> <sup>[[Wikiless]](https://wikiless.org/wiki/Facebook_real-name_policy_controversy)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Facebook_real-name_policy_controversy)</sup>
 
