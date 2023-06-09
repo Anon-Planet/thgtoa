@@ -14,6 +14,7 @@ Some of those resources may, in order to sustain their project, contain or propo
 All the links below are listed in alphabetical order:
 
 #### General privacy related projects worth checking out:
+- AnarSec: <https://www.anarsec.guide/> (Similar content to ours, but not affiliated or sponsored)
 - EFF Surveillance Self-Defense: <https://ssd.eff.org/>
 - Prism-Break: <https://prism-break.org/>
 - Privacy Guides: <https://privacyguides.org> 
