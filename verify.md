@@ -83,9 +83,9 @@ To verify the files with Minisign:
 ### How to check the relative safety of files or even URLs (such as https://anonymousplanet.org) using VirusTotal:
 **Note: we do not endorse VirusTotal. It should be used with extreme caution, never with any sensitive files, due to their privacy policies. Do not upload sensitive files to VirusTotal.**
 
-Temporarily Disabled. <del>The PDF and ODT files of this guide have been checked by VT, see the links below for an example but do not trust these hashes blindly. Check the hashes match and re-upload to VT if needed:
-- PDF file: [[VT Scan]](https://www.virustotal.com/gui/file/649a35b370a96c02e33ea95796bd5aacd2e30f20280bf38bc62838617ceddd63?nocache=1)
-- ODT file: [[VT Scan]](https://www.virustotal.com/gui/file-analysis/OGI0YTQzZGJlODE1MDhlMTA0YjlhZmUyMmU3ZDcwNmY6MTY4MDMzODM5OQ==) 
+The PDF and ODT files of this guide have been automatically scanned by VT, see the links below for an example but do not trust these hashes blindly. Check the hashes match and re-upload to VT if needed:
+- PDF file: [[VT Scan]](https://www.virustotal.com/gui/file/52ae8a7411f826d6b04c5b817bf8cbed0f99957e6a910bcc88065a9a61233af1?nocache=1)
+- ODT file: [[VT Scan]](https://www.virustotal.com/gui/file/390f23ab975488a53135dfe61f66b54393a4bd85bded3a8a5c052975969bb947?nocache=1) 
 
 ### Additional manual safety checks for the PDF files:
 
