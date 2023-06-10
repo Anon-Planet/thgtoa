@@ -42,7 +42,7 @@
 <p><a href="https://anonymousplanet.org/pgp/AnonymousPlanet-Release-Signing-Key_83A6CF9EF57AC25B5C7F5D29285E6048A12321B2.asc" class="uri">https://anonymousplanet.org/pgp/AnonymousPlanet-Release-Signing-Key_83A6CF9EF57AC25B5C7F5D29285E6048A12321B2.asc</a> (to download the key yourself)</p>
 <p>If you use GPG directly, you won’t need to mark the release signing key as trusted, because it’s already signed by the master signing key. If you use Kleopatra, the process to import the release signing key is the same as importing the master signing key.</p>
 <p>Finally, verify the asc signature file (links above) against the PDF file by issuing the following example command:</p>
-<p><code>gpg --verify guide.pdf.asc guide.pdf&quot;</code></p>
+<p><code>gpg --verify guide.pdf.asc guide.pdf</code></p>
 <p>This should output a result showing it matches a signature created by the release signing key, and is therefore a good result.</p>
 <h3 id="how-to-verify-the-the-authenticity-and-integrity-of-the-files-using-minisign">How to verify the the authenticity and integrity of the files using Minisign:</h3>
 <p>To verify the files with Minisign:</p>
@@ -55,7 +55,7 @@
 </ul>
 <h3 id="how-to-check-the-relative-safety-of-files-or-even-urls-such-as-httpsanonymousplanet.org-using-virustotal">How to check the relative safety of files or even URLs (such as https://anonymousplanet.org) using VirusTotal:</h3>
 <p><strong>Note: we do not endorse VirusTotal. It should be used with extreme caution, never with any sensitive files, due to their privacy policies. Do not upload sensitive files to VirusTotal.</strong></p>
-<p>Temporarily Disabled. <del>The PDF and ODT files of this guide have been checked by VT, see the links below for an example but do not trust these hashes blindly. Check the hashes match and re-upload to VT if needed: - PDF file: <a href="https://www.virustotal.com/gui/file/649a35b370a96c02e33ea95796bd5aacd2e30f20280bf38bc62838617ceddd63?nocache=1">[VT Scan]</a> - ODT file: <a href="https://www.virustotal.com/gui/file-analysis/OGI0YTQzZGJlODE1MDhlMTA0YjlhZmUyMmU3ZDcwNmY6MTY4MDMzODM5OQ==">[VT Scan]</a></p>
+<p>The PDF and ODT files of this guide have been automatically scanned by VT, see the links below for an example but do not trust these hashes blindly. Check the hashes match and re-upload to VT if needed: - PDF file: <a href="https://www.virustotal.com/gui/file/52ae8a7411f826d6b04c5b817bf8cbed0f99957e6a910bcc88065a9a61233af1?nocache=1">[VT Scan]</a> - ODT file: <a href="https://www.virustotal.com/gui/file/390f23ab975488a53135dfe61f66b54393a4bd85bded3a8a5c052975969bb947?nocache=1">[VT Scan]</a></p>
 <h3 id="additional-manual-safety-checks-for-the-pdf-files">Additional manual safety checks for the PDF files:</h3>
 <p>For additional safety, you can always double check the PDF files using the PDFID tool which you can download at <a href="https://blog.didierstevens.com/programs/pdf-tools/" class="uri">https://blog.didierstevens.com/programs/pdf-tools/</a>. (You might be wondering: “Why should I trust a random python script?” Well, it is open-source and well-known. It is also probably a safer bet than trusting a random PDF).</p>
 <p>Here are the steps:</p>

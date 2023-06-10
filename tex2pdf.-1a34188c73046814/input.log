@@ -1,0 +1,2946 @@
+open source     > level 1, order 1, name '/usr/share/texmf/tex/context/base/mkiv/cont-yes.mkiv'
+system          > 
+system          > ConTeXt  ver: 2019.03.21 21:39 MKIV beta  fmt: 2023.3.10  int: english/english
+system          > 
+system          > 'cont-new.mkiv' loaded
+open source     > level 2, order 2, name '/usr/share/texmf/tex/context/base/mkiv/cont-new.mkiv'
+system          > beware: some patches loaded from cont-new.mkiv
+close source    > level 2, order 2, name '/usr/share/texmf/tex/context/base/mkiv/cont-new.mkiv'
+
+system          > files > jobname 'input', input './input', result 'input'
+fonts           > latin modern fonts are not preloaded
+languages       > language 'en' is active
+open source     > level 2, order 3, name '/mnt/e/git/thgtoa-dev/tex2pdf.-1a34188c73046814/input.tex'
+languages       > setting righthyphenchar to U+00AD
+selectfont      > The requested font 'Latin Modern Typewriter' has no files for the 'tf' alternative, Latin Modern is used instead.
+fonts           > defining > font 'lmroman10-regular', feature 'locl', script 'latn', no language 'dflt'
+fonts           > defining > font 'lmroman10-regular', feature 'locl', script 'latn', no language 'dflt'
+structure       > sectioning > section @ level 3 : 0.0.1 -> The Hitchhiker's Guide to Online Anonymity
+fonts           > defining > font 'lmroman10-regular', feature 'locl', script 'latn', no language 'dflt'
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.1.0.0.1 -> {\bf IMPORTANT RECOMMENDATION FOR UKRAINIANS. ВАЖЛИВА РЕКОМЕНДАЦІЯ ДЛЯ УКРАЇНЦІВ}
+fonts           > defining > font 'lmroman10-regular', feature 'locl', script 'latn', no language 'dflt'
+fonts           > defining > font 'lmroman10-bold', feature 'locl', script 'latn', no language 'dflt'
+fonts           > checking > char В (U+00412) in font 'LMRoman10-Bold' with id 12: missing
+fonts           > checking > char А (U+00410) in font 'LMRoman10-Bold' with id 12: missing
+fonts           > checking > char Ж (U+00416) in font 'LMRoman10-Bold' with id 12: missing
+fonts           > checking > char Л (U+0041B) in font 'LMRoman10-Bold' with id 12: missing
+fonts           > checking > char И (U+00418) in font 'LMRoman10-Bold' with id 12: missing
+fonts           > checking > char Р (U+00420) in font 'LMRoman10-Bold' with id 12: missing
+fonts           > checking > char Е (U+00415) in font 'LMRoman10-Bold' with id 12: missing
+fonts           > checking > char К (U+0041A) in font 'LMRoman10-Bold' with id 12: missing
+fonts           > checking > char О (U+0041E) in font 'LMRoman10-Bold' with id 12: missing
+fonts           > checking > char М (U+0041C) in font 'LMRoman10-Bold' with id 12: missing
+fonts           > checking > char Н (U+0041D) in font 'LMRoman10-Bold' with id 12: missing
+fonts           > checking > char Д (U+00414) in font 'LMRoman10-Bold' with id 12: missing
+fonts           > checking > char Ц (U+00426) in font 'LMRoman10-Bold' with id 12: missing
+fonts           > checking > char І (U+00406) in font 'LMRoman10-Bold' with id 12: missing
+fonts           > checking > char Я (U+0042F) in font 'LMRoman10-Bold' with id 12: missing
+fonts           > checking > char У (U+00423) in font 'LMRoman10-Bold' with id 12: missing
+fonts           > checking > char Ї (U+00407) in font 'LMRoman10-Bold' with id 12: missing
+fonts           > checking > char Ц (U+00426) in font 'LMRoman10-Regular' with id 1: missing
+fonts           > checking > char е (U+00435) in font 'LMRoman10-Regular' with id 1: missing
+fonts           > checking > char п (U+0043F) in font 'LMRoman10-Regular' with id 1: missing
+fonts           > checking > char о (U+0043E) in font 'LMRoman10-Regular' with id 1: missing
+fonts           > checking > char с (U+00441) in font 'LMRoman10-Regular' with id 1: missing
+fonts           > checking > char л (U+0043B) in font 'LMRoman10-Regular' with id 1: missing
+fonts           > checking > char а (U+00430) in font 'LMRoman10-Regular' with id 1: missing
+fonts           > checking > char н (U+0043D) in font 'LMRoman10-Regular' with id 1: missing
+fonts           > checking > char я (U+0044F) in font 'LMRoman10-Regular' with id 1: missing
+fonts           > checking > char д (U+00434) in font 'LMRoman10-Regular' with id 1: missing
+fonts           > checking > char р (U+00440) in font 'LMRoman10-Regular' with id 1: missing
+fonts           > checking > char у (U+00443) in font 'LMRoman10-Regular' with id 1: missing
+fonts           > checking > char У (U+00423) in font 'LMRoman10-Regular' with id 1: missing
+fonts           > checking > char к (U+0043A) in font 'LMRoman10-Regular' with id 1: missing
+fonts           > checking > char ї (U+00457) in font 'LMRoman10-Regular' with id 1: missing
+fonts           > checking > char и (U+00438) in font 'LMRoman10-Regular' with id 1: missing
+fonts           > checking > char М (U+0041C) in font 'LMRoman10-Regular' with id 1: missing
+fonts           > checking > char т (U+00442) in font 'LMRoman10-Regular' with id 1: missing
+fonts           > checking > char і (U+00456) in font 'LMRoman10-Regular' with id 1: missing
+fonts           > checking > char й (U+00439) in font 'LMRoman10-Regular' with id 1: missing
+fonts           > checking > char м (U+0043C) in font 'LMRoman10-Regular' with id 1: missing
+fonts           > checking > char є (U+00454) in font 'LMRoman10-Regular' with id 1: missing
+fonts           > checking > char в (U+00432) in font 'LMRoman10-Regular' with id 1: missing
+fonts           > checking > char В (U+00412) in font 'LMRoman10-Regular' with id 1: missing
+fonts           > checking > char ж (U+00436) in font 'LMRoman10-Regular' with id 1: missing
+fonts           > checking > char з (U+00437) in font 'LMRoman10-Regular' with id 1: missing
+fonts           > checking > char г (U+00433) in font 'LMRoman10-Regular' with id 1: missing
+fonts           > checking > char З (U+00417) in font 'LMRoman10-Regular' with id 1: missing
+fonts           > checking > char ю (U+0044E) in font 'LMRoman10-Regular' with id 1: missing
+fonts           > checking > char ц (U+00446) in font 'LMRoman10-Regular' with id 1: missing
+fonts           > checking > char ь (U+0044C) in font 'LMRoman10-Regular' with id 1: missing
+fonts           > checking > char І (U+00406) in font 'LMRoman10-Regular' with id 1: missing
+fonts           > checking > char П (U+0041F) in font 'LMRoman10-Regular' with id 1: missing
+fonts           > checking > char б (U+00431) in font 'LMRoman10-Regular' with id 1: missing
+fonts           > checking > char Ш (U+00428) in font 'LMRoman10-Regular' with id 1: missing
+fonts           > checking > char ч (U+00447) in font 'LMRoman10-Regular' with id 1: missing
+backend         > xmp > using file '/usr/share/texmf/tex/context/base/mkiv/lpdf-pdx.xml'
+pages           > flushing realpage 1, userpage 1, subpage 1
+
+Overfull \hbox (143.96376pt too wide) in paragraph at lines 140--143
+ [][][] <1: lmroman10-regular @ 12.0pt> Ma­trix Space re­group­ing sev­eral rooms with sim­i­lar in­ter­ests: <14: lmmono10-regular @ 12.0pt> #privacy-security-anonymity:matrix.org
+
+\hbox(10.42104+4.05261)x426.78743, glue set - 1.0, direction TLT
+.\glue(\leftskip) 17.99011
+.\localpar
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\hbox(10.42104+4.05261)x0.0, glue set - 17.99011fil, direction TLT
+..\glue 0.0 plus 1.0fil minus 1.0fil
+..\hbox(10.42104+4.05261)x17.99011, direction TLT
+...\hbox(10.42104+4.05261)x17.99011, glue set 8.65924fil, direction TLT []
+.\boundary=1
+.etc.
+
+pages           > flushing realpage 2, userpage 2, subpage 2
+structure       > sectioning > section @ level 3 : 0.0.2 -> Contents:
+pages           > flushing realpage 3, userpage 3, subpage 3
+pages           > flushing realpage 4, userpage 4, subpage 4
+pages           > flushing realpage 5, userpage 5, subpage 5
+references      > unknown reference '[][updating-whonix-from-version-15-to-version-16]'
+pages           > flushing realpage 6, userpage 6, subpage 6
+pages           > flushing realpage 7, userpage 7, subpage 7
+references      > unknown reference '[][appendix-c-windows-installation-media-creation]'
+pages           > flushing realpage 8, userpage 8, subpage 8
+pages           > flushing realpage 9, userpage 9, subpage 9
+references      > unknown reference '[][warning-about-special-tumbling-mixing-coinjoining-privacy-wallets-and-services-wikiless-archiveorg]'
+pages           > flushing realpage 10, userpage 10, subpage 10
+structure       > sectioning > section @ level 3 : 0.0.3 -> Pre-requisites and limitations:
+structure       > sectioning > subsection @ level 4 : 0.0.3.1 -> Pre-requisites:
+fonts           > defining > font 'lmroman10-regular', feature 'locl', script 'latn', no language 'dflt'
+fonts           > defining > font 'lmroman10-regular', feature 'locl', script 'latn', no language 'dflt'
+fonts           > defining > font 'lmroman10-regular', feature 'locl', script 'latn', no language 'dflt'
+pages           > flushing realpage 11, userpage 11, subpage 11
+structure       > sectioning > subsection @ level 4 : 0.0.3.2 -> Limitations:
+structure       > sectioning > section @ level 3 : 0.0.4 -> Introduction:
+pages           > flushing realpage 12, userpage 12, subpage 12
+pages           > flushing realpage 13, userpage 13, subpage 13
+floatblocks     > '1' placed (here)
+floatblocks     > '2' placed (here)
+floatblocks     > '3' placed (here)
+pages           > flushing realpage 14, userpage 14, subpage 14
+pages           > flushing realpage 15, userpage 15, subpage 15
+structure       > sectioning > section @ level 3 : 0.0.5 -> Understanding some basics of how some information can lead back to you and how to mitigate some:
+pages           > flushing realpage 16, userpage 16, subpage 16
+fonts           > defining > font 'lmroman10-italic', feature 'locl', script 'latn', no language 'dflt'
+structure       > sectioning > subsection @ level 4 : 0.0.5.1 -> Your Network:
+structure       > sectioning > subsubsection @ level 5 : 0.0.5.1.1 -> Your IP address:
+pages           > flushing realpage 17, userpage 17, subpage 17
+pages           > flushing realpage 18, userpage 18, subpage 18
+structure       > sectioning > subsubsection @ level 5 : 0.0.5.1.2 -> Your DNS and IP requests:
+pages           > flushing realpage 19, userpage 19, subpage 19
+pages           > flushing realpage 20, userpage 20, subpage 20
+pages           > flushing realpage 21, userpage 21, subpage 21
+pages           > flushing realpage 22, userpage 22, subpage 22
+fonts           > checking > char ⇒ (U+021D2) in font 'LMRoman10-Regular' with id 18: missing
+pages           > flushing realpage 23, userpage 23, subpage 23
+structure       > sectioning > subsubsection @ level 5 : 0.0.5.1.3 -> Your RFID enabled devices:
+pages           > flushing realpage 24, userpage 24, subpage 24
+structure       > sectioning > subsubsection @ level 5 : 0.0.5.1.4 -> The Wi-Fi and Bluetooth devices around you:
+pages           > flushing realpage 25, userpage 25, subpage 25
+pages           > flushing realpage 26, userpage 26, subpage 26
+structure       > sectioning > subsubsection @ level 5 : 0.0.5.1.5 -> Malicious/Rogue Wi-Fi Access Points:
+pages           > flushing realpage 27, userpage 27, subpage 27
+structure       > sectioning > subsubsection @ level 5 : 0.0.5.1.6 -> Your Anonymized Tor/VPN traffic:
+pages           > flushing realpage 28, userpage 28, subpage 28
+pages           > flushing realpage 29, userpage 29, subpage 29
+pages           > flushing realpage 30, userpage 30, subpage 30
+structure       > sectioning > subsubsection @ level 5 : 0.0.5.1.7 -> Some Devices can be tracked even when offline:
+pages           > flushing realpage 31, userpage 31, subpage 31
+structure       > sectioning > subsection @ level 4 : 0.0.5.2 -> Your Hardware Identifiers:
+structure       > sectioning > subsubsection @ level 5 : 0.0.5.2.1 -> Your IMEI and IMSI (and by extension, your phone number):
+pages           > flushing realpage 32, userpage 32, subpage 32
+pages           > flushing realpage 33, userpage 33, subpage 33
+pages           > flushing realpage 34, userpage 34, subpage 34
+structure       > sectioning > subsubsection @ level 5 : 0.0.5.2.2 -> Your Wi-Fi or Ethernet MAC address:
+pages           > flushing realpage 35, userpage 35, subpage 35
+structure       > sectioning > subsubsection @ level 5 : 0.0.5.2.3 -> Your Bluetooth MAC address:
+pages           > flushing realpage 36, userpage 36, subpage 36
+structure       > sectioning > subsection @ level 4 : 0.0.5.3 -> Your CPU:
+pages           > flushing realpage 37, userpage 37, subpage 37
+pages           > flushing realpage 38, userpage 38, subpage 38
+structure       > sectioning > subsection @ level 4 : 0.0.5.4 -> Your Operating Systems and Apps telemetry services:
+pages           > flushing realpage 39, userpage 39, subpage 39
+pages           > flushing realpage 40, userpage 40, subpage 40
+structure       > sectioning > subsection @ level 4 : 0.0.5.5 -> Your Smart devices in general:
+pages           > flushing realpage 41, userpage 41, subpage 41
+structure       > sectioning > subsection @ level 4 : 0.0.5.6 -> Yourself:
+pages           > flushing realpage 42, userpage 42, subpage 42
+structure       > sectioning > subsubsection @ level 5 : 0.0.5.6.1 -> Your Metadata including your Geo-Location:
+pages           > flushing realpage 43, userpage 43, subpage 43
+pages           > flushing realpage 44, userpage 44, subpage 44
+structure       > sectioning > subsubsection @ level 5 : 0.0.5.6.2 -> Your Digital Fingerprint, Footprint, and Online Behavior:
+pages           > flushing realpage 45, userpage 45, subpage 45
+pages           > flushing realpage 46, userpage 46, subpage 46
+
+Overfull \hbox (17.04141pt too wide) in paragraph at lines 3182--3186
+ [][][] <1: lmroman10-regular @ 12.0pt> , So­cial Net­works and Pos­i­tive and Neg­a­tive Af­fect  <14: lmmono10-regular @ 12.0pt> h t t p s : / / w w w . s c i e n c e d i r e c t 
+
+\hbox(10.42104+4.05261)x426.78743, glue set - 1.0, direction TLT
+.\glue(\leftskip) 17.99011
+.\localpar
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\hbox(10.42104+4.05261)x0.0, glue set - 17.99011fil, direction TLT
+..\glue 0.0 plus 1.0fil minus 1.0fil
+..\hbox(10.42104+4.05261)x17.99011, direction TLT
+...\hbox(10.42104+4.05261)x17.99011, glue set 8.65924fil, direction TLT []
+.\boundary=1
+.etc.
+
+
+Overfull \hbox (72.33824pt too wide) in paragraph at lines 3182--3186
+ <14: lmmono10-regular @ 12.0pt> . c o m / s c i e n c e / a r t i c l e / p i i / S 1 8 7 7 0 4 2 8 1 1 0 1 3 7 4 7 / p d f ? m d 5 = 2 5 3 d 8 f 1 b b 6 1 5 d 5 d e e 1 9 5 d 3 5 3 d c 0 7 7 d 4 6 
+
+\hbox(8.32343+2.66254)x426.78743, glue set - 1.0, direction TLT
+.\glue(\leftskip) 17.99011
+.<14: lmmono10-regular @ 12.0pt> .
+.\penalty 10000
+.\glue 0.0 plus 0.99945 minus 0.49973
+.\penalty 10000
+.etc.
+
+pages           > flushing realpage 47, userpage 47, subpage 47
+structure       > sectioning > subsubsection @ level 5 : 0.0.5.6.3 -> Your Clues about your Real Life and OSINT:
+pages           > flushing realpage 48, userpage 48, subpage 48
+structure       > sectioning > subsubsection @ level 5 : 0.0.5.6.4 -> Your Face, Voice, Biometrics, and Pictures:
+pages           > flushing realpage 49, userpage 49, subpage 49
+
+Overfull \hbox (3.24426pt too wide) in paragraph at lines 3367--3371
+ [][][] <1: lmroman10-regular @ 12.0pt> Belling­cat, Ad­vanced Guide on Ver­i­fy­ing Video Con­tent  <14: lmmono10-regular @ 12.0pt> h t t p s : / / w w w . b e l l i n g c a t 
+
+\hbox(10.42104+4.05261)x426.78743, glue set - 1.0, direction TLT
+.\glue(\leftskip) 17.99011
+.\localpar
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\hbox(10.42104+4.05261)x0.0, glue set - 17.99011fil, direction TLT
+..\glue 0.0 plus 1.0fil minus 1.0fil
+..\hbox(10.42104+4.05261)x17.99011, direction TLT
+...\hbox(10.42104+4.05261)x17.99011, glue set 8.65924fil, direction TLT []
+.\boundary=1
+.etc.
+
+pages           > flushing realpage 50, userpage 50, subpage 50
+structure       > sectioning > subsubsection @ level 5 : 0.0.5.6.5 -> Gait Recognition and Other Long-Range Biometrics
+pages           > flushing realpage 51, userpage 51, subpage 51
+pages           > flushing realpage 52, userpage 52, subpage 52
+pages           > flushing realpage 53, userpage 53, subpage 53
+pages           > flushing realpage 54, userpage 54, subpage 54
+structure       > sectioning > subsubsection @ level 5 : 0.0.5.6.6 -> Phishing and Social Engineering:
+pages           > flushing realpage 55, userpage 55, subpage 55
+structure       > sectioning > subsection @ level 4 : 0.0.5.7 -> Malware, exploits, and viruses:
+structure       > sectioning > subsubsection @ level 5 : 0.0.5.7.1 -> Malware in your files/documents/e-mails:
+pages           > flushing realpage 56, userpage 56, subpage 56
+structure       > sectioning > subsubsection @ level 5 : 0.0.5.7.2 -> Malware and Exploits in your apps and services:
+pages           > flushing realpage 57, userpage 57, subpage 57
+structure       > sectioning > subsubsection @ level 5 : 0.0.5.7.3 -> Malicious USB devices:
+pages           > flushing realpage 58, userpage 58, subpage 58
+structure       > sectioning > subsubsection @ level 5 : 0.0.5.7.4 -> Malware and backdoors in your Hardware Firmware and Operating System:
+pages           > flushing realpage 59, userpage 59, subpage 59
+structure       > sectioning > subsection @ level 4 : 0.0.5.8 -> Your files, documents, pictures, and videos:
+structure       > sectioning > subsubsection @ level 5 : 0.0.5.8.1 -> Properties and Metadata:
+pages           > flushing realpage 60, userpage 60, subpage 60
+structure       > sectioning > subsubsection @ level 5 : 0.0.5.8.2 -> Watermarking:
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.5.8.2.1 -> Pictures/Videos/Audio:
+pages           > flushing realpage 61, userpage 61, subpage 61
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.5.8.2.2 -> Printing Watermarking:
+pages           > flushing realpage 62, userpage 62, subpage 62
+structure       > sectioning > subsubsection @ level 5 : 0.0.5.8.3 -> Pixelized or Blurred Information:
+floatblocks     > '4' placed (here)
+pages           > flushing realpage 63, userpage 63, subpage 63
+floatblocks     > '5' placed (here)
+floatblocks     > '6' placed (here)
+structure       > sectioning > subsection @ level 4 : 0.0.5.9 -> Your Cryptocurrencies transactions:
+pages           > flushing realpage 64, userpage 64, subpage 64
+
+Overfull \hbox (5.24762pt too wide) in paragraph at lines 4233--4253
+[]<1: lmroman10-regular @ 12.0pt> Use of []“ pri­vate[]” mix­ers, tum­blers[] (cen­tral­ized ser­vices that spe­cial­ize in []“ anonymiz­
+
+\hbox(10.42104+4.05261)x426.78743, glue set - 1.0, direction TLT
+.\localpar
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(0.0+0.0)x0.0, direction TLT
+.<1: lmroman10-regular @ 12.0pt> U
+.<1: lmroman10-regular @ 12.0pt> s
+.<1: lmroman10-regular @ 12.0pt> e
+.etc.
+
+pages           > flushing realpage 65, userpage 65, subpage 65
+structure       > sectioning > subsection @ level 4 : 0.0.5.10 -> Your Cloud backups/sync services:
+pages           > flushing realpage 66, userpage 66, subpage 66
+
+Overfull \hbox (0.92903pt too wide) in paragraph at lines 4333--4343
+ [][][] <1: lmroman10-regular @ 12.0pt> Mi­crosoft OneDrive:  <14: lmmono10-regular @ 12.0pt> h t t p s : / / p r i v a c y . m i c r o s o f t . c o m / e n - u s / p r i v a c y s t a t e m e n t
+
+\hbox(10.42104+4.05261)x426.78743, glue set - 1.0, direction TLT
+.\glue(\leftskip) 17.99011
+.\localpar
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\hbox(10.42104+4.05261)x0.0, glue set - 17.99011fil, direction TLT
+..\glue 0.0 plus 1.0fil minus 1.0fil
+..\hbox(10.42104+4.05261)x17.99011, direction TLT
+...\hbox(10.42104+4.05261)x17.99011, glue set 8.65924fil, direction TLT []
+.\boundary=1
+.etc.
+
+structure       > sectioning > subsection @ level 4 : 0.0.5.11 -> Your Browser and Device Fingerprints:
+pages           > flushing realpage 67, userpage 67, subpage 67
+structure       > sectioning > subsection @ level 4 : 0.0.5.12 -> Microarchitectural Side-channel Deanonymization Attacks:
+pages           > flushing realpage 68, userpage 68, subpage 68
+pages           > flushing realpage 69, userpage 69, subpage 69
+structure       > sectioning > subsection @ level 4 : 0.0.5.13 -> Tor Browser:
+structure       > sectioning > subsection @ level 4 : 0.0.5.14 -> All others:
+structure       > sectioning > subsubsection @ level 5 : 0.0.5.14.1 -> Alternative to NoScript for all other browsers:
+pages           > flushing realpage 70, userpage 70, subpage 70
+structure       > sectioning > subsection @ level 4 : 0.0.5.15 -> Local Data Leaks and Forensics:
+
+Overfull \hbox (22.90549pt too wide) in paragraph at lines 4593--4597
+ <1: lmroman10-regular @ 12.0pt> tion/en­case/foren­sic/./Con­tent/Re­sources/Ex­ter­nal%Files/En­Case%Foren­
+
+\hbox(8.99506+2.99835)x426.78743, direction TLT
+.\glue(\leftskip) 17.99011
+.<1: lmroman10-regular @ 12.0pt> t
+.<1: lmroman10-regular @ 12.0pt> i
+.<1: lmroman10-regular @ 12.0pt> o
+.<1: lmroman10-regular @ 12.0pt> n
+.etc.
+
+pages           > flushing realpage 71, userpage 71, subpage 71
+
+Overfull \hbox (59.7994pt too wide) in paragraph at lines 4605--4612
+<1: lmroman10-regular @ 12.0pt> IOS/An­droid se­cu­rity from the John Hop­kins Uni­ver­sity: https://se­cure­phones.io/main.html[]. 
+
+\hbox(10.42104+4.05261)x426.78743, glue set - 1.0, direction TLT
+.<1: lmroman10-regular @ 12.0pt> I
+.<1: lmroman10-regular @ 12.0pt> O
+.<1: lmroman10-regular @ 12.0pt> S
+.<1: lmroman10-regular @ 12.0pt> /
+.<1: lmroman10-regular @ 12.0pt> A
+.etc.
+
+structure       > sectioning > subsection @ level 4 : 0.0.5.16 -> Bad Cryptography:
+pages           > flushing realpage 72, userpage 72, subpage 72
+pages           > flushing realpage 73, userpage 73, subpage 73
+pages           > flushing realpage 74, userpage 74, subpage 74
+pages           > flushing realpage 75, userpage 75, subpage 75
+structure       > sectioning > subsection @ level 4 : 0.0.5.17 -> No logging but logging anyway policies:
+pages           > flushing realpage 76, userpage 76, subpage 76
+pages           > flushing realpage 77, userpage 77, subpage 77
+structure       > sectioning > subsection @ level 4 : 0.0.5.18 -> Some Advanced targeted techniques:
+floatblocks     > '7' placed (here)
+pages           > flushing realpage 78, userpage 78, subpage 78
+pages           > flushing realpage 79, userpage 79, subpage 79
+pages           > flushing realpage 80, userpage 80, subpage 80
+structure       > sectioning > subsection @ level 4 : 0.0.5.19 -> Some bonus resources:
+pages           > flushing realpage 81, userpage 81, subpage 81
+structure       > sectioning > subsection @ level 4 : 0.0.5.20 -> Notes:
+pages           > flushing realpage 82, userpage 82, subpage 82
+structure       > sectioning > section @ level 3 : 0.0.6 -> General Preparations:
+pages           > flushing realpage 83, userpage 83, subpage 83
+structure       > sectioning > subsection @ level 4 : 0.0.6.1 -> Picking your route:
+floatblocks     > '8' placed (here)
+structure       > sectioning > subsubsection @ level 5 : 0.0.6.1.1 -> Timing limitations:
+structure       > sectioning > subsubsection @ level 5 : 0.0.6.1.2 -> Budget/Material limitations:
+pages           > flushing realpage 84, userpage 84, subpage 84
+fonts           > defining > font 'lmroman10-bold', feature 'locl', script 'latn', no language 'dflt'
+fonts           > defining > font 'lmroman10-bold', feature 'locl', script 'latn', no language 'dflt'
+pages           > flushing realpage 85, userpage 85, subpage 85
+structure       > sectioning > subsubsection @ level 5 : 0.0.6.1.3 -> Skills:
+pages           > flushing realpage 86, userpage 86, subpage 86
+structure       > sectioning > subsubsection @ level 5 : 0.0.6.1.4 -> Adversarial considerations:
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.6.1.4.1 -> Threats:
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.6.1.4.2 -> Adversaries:
+pages           > flushing realpage 87, userpage 87, subpage 87
+pages           > flushing realpage 88, userpage 88, subpage 88
+structure       > sectioning > subsection @ level 4 : 0.0.6.2 -> Steps for all routes:
+structure       > sectioning > subsubsection @ level 5 : 0.0.6.2.1 -> Getting used to using better passwords:
+structure       > sectioning > subsubsection @ level 5 : 0.0.6.2.2 -> Getting an anonymous Phone number:
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.6.2.2.1 -> Physical Burner Phone and prepaid SIM card:
+pages           > flushing realpage 89, userpage 89, subpage 89
+structure       > sectioning > subsubsubsubsection @ level 7 : 0.0.6.2.2.1.1 -> Get a burner phone:
+pages           > flushing realpage 90, userpage 90, subpage 90
+structure       > sectioning > subsubsubsubsection @ level 7 : 0.0.6.2.2.1.2 -> Getting an anonymous pre-paid SIM card:
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.6.2.2.2 -> Online Phone Number:
+pages           > flushing realpage 91, userpage 91, subpage 91
+pages           > flushing realpage 92, userpage 92, subpage 92
+structure       > sectioning > subsubsection @ level 5 : 0.0.6.2.3 -> Get a USB key:
+structure       > sectioning > subsubsection @ level 5 : 0.0.6.2.4 -> Find some safe places with decent public Wi-Fi:
+pages           > flushing realpage 93, userpage 93, subpage 93
+structure       > sectioning > subsection @ level 4 : 0.0.6.3 -> The Tor Browser route:
+pages           > flushing realpage 94, userpage 94, subpage 94
+structure       > sectioning > subsubsection @ level 5 : 0.0.6.3.1 -> Windows, Linux, and macOS:
+structure       > sectioning > subsubsection @ level 5 : 0.0.6.3.2 -> Android:
+pages           > flushing realpage 95, userpage 95, subpage 95
+fonts           > defining > font 'lmroman10-bolditalic', feature 'locl', script 'latn', no language 'dflt'
+pages           > flushing realpage 96, userpage 96, subpage 96
+structure       > sectioning > subsubsection @ level 5 : 0.0.6.3.3 -> iOS:
+pages           > flushing realpage 97, userpage 97, subpage 97
+pages           > flushing realpage 98, userpage 98, subpage 98
+pages           > flushing realpage 99, userpage 99, subpage 99
+structure       > sectioning > subsubsection @ level 5 : 0.0.6.3.4 -> Important Warning:
+structure       > sectioning > subsection @ level 4 : 0.0.6.4 -> The Tails route:
+pages           > flushing realpage 100, userpage 100, subpage 100
+pages           > flushing realpage 101, userpage 101, subpage 101
+structure       > sectioning > subsubsection @ level 5 : 0.0.6.4.1 -> Tor Browser settings on Tails:
+pages           > flushing realpage 102, userpage 102, subpage 102
+structure       > sectioning > subsubsection @ level 5 : 0.0.6.4.2 -> Persistent Plausible Deniability using Whonix within Tails:
+pages           > flushing realpage 103, userpage 103, subpage 103
+floatblocks     > '9' placed (here)
+pages           > flushing realpage 104, userpage 104, subpage 104
+pages           > flushing realpage 105, userpage 105, subpage 105
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.6.4.2.1 -> First Run:
+pages           > flushing realpage 106, userpage 106, subpage 106
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.6.4.2.2 -> Subsequent Runs:
+structure       > sectioning > subsection @ level 4 : 0.0.6.5 -> Steps for all other routes:
+structure       > sectioning > subsubsection @ level 5 : 0.0.6.5.1 -> Get a dedicated laptop for your sensitive activities:
+pages           > flushing realpage 107, userpage 107, subpage 107
+structure       > sectioning > subsubsection @ level 5 : 0.0.6.5.2 -> Some laptop recommendations:
+pages           > flushing realpage 108, userpage 108, subpage 108
+structure       > sectioning > subsubsection @ level 5 : 0.0.6.5.3 -> Bios/UEFI/Firmware Settings of your laptop:
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.6.5.3.1 -> PC:
+pages           > flushing realpage 109, userpage 109, subpage 109
+structure       > sectioning > subsubsubsubsection @ level 7 : 0.0.6.5.3.1.1 -> About Secure boot:
+pages           > flushing realpage 110, userpage 110, subpage 110
+pages           > flushing realpage 111, userpage 111, subpage 111
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.6.5.3.2 -> Mac:
+structure       > sectioning > subsubsection @ level 5 : 0.0.6.5.4 -> Physically Tamper protect your laptop:
+pages           > flushing realpage 112, userpage 112, subpage 112
+floatblocks     > '10' placed (here)
+floatblocks     > 1 saved
+structure       > sectioning > subsection @ level 4 : 0.0.6.6 -> The Whonix route:
+structure       > sectioning > subsubsection @ level 5 : 0.0.6.6.1 -> Picking your Host OS (the OS installed on your laptop):
+pages           > flushing realpage 113, userpage 113, subpage 113
+floatblocks     > 1 moved
+floatblocks     > '11' moved
+pages           > flushing realpage 114, userpage 114, subpage 114
+pages           > flushing realpage 115, userpage 115, subpage 115
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.6.6.1.1 -> Threats with encryption:
+structure       > sectioning > subsubsubsubsection @ level 7 : 0.0.6.6.1.1.1 -> {\bf The 5\$ Wrench:}
+structure       > sectioning > subsubsubsubsection @ level 7 : 0.0.6.6.1.1.2 -> Evil-Maid Attack:
+pages           > flushing realpage 116, userpage 116, subpage 116
+structure       > sectioning > subsubsubsubsection @ level 7 : 0.0.6.6.1.1.3 -> Cold-Boot Attack:
+pages           > flushing realpage 117, userpage 117, subpage 117
+pages           > flushing realpage 118, userpage 118, subpage 118
+structure       > sectioning > subsubsubsubsection @ level 7 : 0.0.6.6.1.1.4 -> About Sleep, Hibernation, and Shutdown:
+structure       > sectioning > subsubsubsubsection @ level 7 : 0.0.6.6.1.1.5 -> Local Data Leaks (traces) and forensics examination:
+pages           > flushing realpage 119, userpage 119, subpage 119
+structure       > sectioning > subsubsubsubsubsection @ level 8 : 0.0.6.6.1.1.5.1 -> Windows:
+structure       > sectioning > subsubsubsubsubsection @ level 8 : 0.0.6.6.1.1.5.2 -> macOS:
+pages           > flushing realpage 120, userpage 120, subpage 120
+structure       > sectioning > subsubsubsubsubsection @ level 8 : 0.0.6.6.1.1.5.3 -> Linux:
+structure       > sectioning > subsubsubsubsection @ level 7 : 0.0.6.6.1.1.6 -> Online Data Leaks:
+pages           > flushing realpage 121, userpage 121, subpage 121
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.6.6.1.2 -> Conclusion:
+structure       > sectioning > subsubsection @ level 5 : 0.0.6.6.2 -> Linux Host OS:
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.6.6.2.1 -> Full disk encryption:
+pages           > flushing realpage 122, userpage 122, subpage 122
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.6.6.2.2 -> Note about plausible deniability on Linux:
+structure       > sectioning > subsubsubsubsection @ level 7 : 0.0.6.6.2.2.1 -> The Detached Headers Way:
+pages           > flushing realpage 123, userpage 123, subpage 123
+structure       > sectioning > subsubsubsubsection @ level 7 : 0.0.6.6.2.2.2 -> The Veracrypt Way:
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.6.6.2.3 -> Reject/Disable any telemetry:
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.6.6.2.4 -> Disable anything unnecessary:
+
+Overfull \hbox (75.13692pt too wide) in paragraph at lines 7658--7659
+ [][][] <14: lmmono10-regular @ 12.0pt> sudo systemctl --user mask tracker-store.service tracker-miner-fs.service 
+
+\hbox(10.42104+4.05261)x426.78743, direction TLT
+.\glue(\leftskip) 35.98022
+.\localpar
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\hbox(10.42104+4.05261)x0.0, glue set - 17.99011fil, direction TLT
+..\glue 0.0 plus 1.0fil minus 1.0fil
+..\hbox(10.42104+4.05261)x17.99011, direction TLT
+...\hbox(10.42104+4.05261)x17.99011, glue set 11.99341fil, direction TLT []
+.\boundary=1
+.etc.
+
+
+Overfull \hbox (94.02632pt too wide) in paragraph at lines 7658--7659
+ <14: lmmono10-regular @ 12.0pt> tracker-miner-rss.service tracker-extract.service tracker-miner-apps.service 
+
+\hbox(7.32797+2.66254)x426.78743, direction TLT
+.\glue(\leftskip) 35.98022
+.<14: lmmono10-regular @ 12.0pt> t
+.<14: lmmono10-regular @ 12.0pt> r
+.<14: lmmono10-regular @ 12.0pt> a
+.<14: lmmono10-regular @ 12.0pt> c
+.etc.
+
+pages           > flushing realpage 124, userpage 124, subpage 124
+structure       > sectioning > subsubsubsubsection @ level 7 : 0.0.6.6.2.4.1 -> Hibernation:
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.6.6.2.5 -> Enable MAC address randomization:
+pages           > flushing realpage 125, userpage 125, subpage 125
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.6.6.2.6 -> Hardening Linux:
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.6.6.2.7 -> Setting up a safe Browser:
+structure       > sectioning > subsubsection @ level 5 : 0.0.6.6.3 -> macOS Host OS:
+pages           > flushing realpage 126, userpage 126, subpage 126
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.6.6.3.1 -> During the install:
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.6.6.3.2 -> Hardening macOS:
+structure       > sectioning > subsubsubsubsection @ level 7 : 0.0.6.6.3.2.1 -> Enable Firmware password with \quotation {disable-reset-capability} option:
+pages           > flushing realpage 127, userpage 127, subpage 127
+structure       > sectioning > subsubsubsubsection @ level 7 : 0.0.6.6.3.2.2 -> Enable Hibernation instead of sleep:
+structure       > sectioning > subsubsubsubsection @ level 7 : 0.0.6.6.3.2.3 -> Disable unnecessary services:
+pages           > flushing realpage 128, userpage 128, subpage 128
+structure       > sectioning > subsubsubsubsection @ level 7 : 0.0.6.6.3.2.4 -> Prevent Apple OCSP calls:
+structure       > sectioning > subsubsubsubsection @ level 7 : 0.0.6.6.3.2.5 -> Enable Full Disk encryption (Filevault):
+structure       > sectioning > subsubsubsubsection @ level 7 : 0.0.6.6.3.2.6 -> MAC Address Randomization:
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.6.6.3.3 -> Setting up a safe Browser:
+structure       > sectioning > subsubsection @ level 5 : 0.0.6.6.4 -> Windows Host OS:
+pages           > flushing realpage 129, userpage 129, subpage 129
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.6.6.4.1 -> Installation:
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.6.6.4.2 -> Enable MAC address randomization:
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.6.6.4.3 -> Setting up a safe Browser:
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.6.6.4.4 -> Enable some additional privacy settings on your Host OS:
+structure       > sectioning > subsubsubsubsection @ level 7 : 0.0.6.6.4.4.1 -> Windows Host OS encryption:
+structure       > sectioning > subsubsubsubsubsection @ level 8 : 0.0.6.6.4.4.1.1 -> If you intend to use system-wide plausible deniability:
+pages           > flushing realpage 130, userpage 130, subpage 130
+pages           > flushing realpage 131, userpage 131, subpage 131
+structure       > sectioning > subsubsubsubsubsection @ level 8 : 0.0.6.6.4.4.1.2 -> If you do not intend to use system-wide plausible deniability:
+pages           > flushing realpage 132, userpage 132, subpage 132
+pages           > flushing realpage 133, userpage 133, subpage 133
+
+Overfull \hbox (7.23523pt too wide) in paragraph at lines 8255--8258
+ [][][] <1: lmroman10-regular @ 12.0pt> A Bit­locker Pre-Boot Pin Screen where you need to en­ter the pass­word/passphrase
+
+\hbox(10.42104+4.05261)x426.78743, glue set - 1.0, direction TLT
+.\glue(\leftskip) 17.99011
+.\localpar
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\hbox(10.42104+4.05261)x0.0, glue set - 17.99011fil, direction TLT
+..\glue 0.0 plus 1.0fil minus 1.0fil
+..\hbox(10.42104+4.05261)x17.99011, direction TLT
+...\hbox(10.42104+4.05261)x17.99011, glue set 8.65924fil, direction TLT []
+.\boundary=1
+.etc.
+
+pages           > flushing realpage 134, userpage 134, subpage 134
+structure       > sectioning > subsubsubsubsection @ level 7 : 0.0.6.6.4.4.2 -> Enable Hibernation (optional):
+pages           > flushing realpage 135, userpage 135, subpage 135
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.6.6.4.5 -> Deciding which sub-route you will take:
+pages           > flushing realpage 136, userpage 136, subpage 136
+pages           > flushing realpage 137, userpage 137, subpage 137
+structure       > sectioning > subsubsubsubsection @ level 7 : 0.0.6.6.4.5.1 -> Route A and B: Simple Encryption using Veracrypt (Windows tutorial)
+pages           > flushing realpage 138, userpage 138, subpage 138
+pages           > flushing realpage 139, userpage 139, subpage 139
+structure       > sectioning > subsubsubsubsection @ level 7 : 0.0.6.6.4.5.2 -> Route B: Plausible Deniability Encryption with a Hidden OS (Windows only)
+
+Overfull \hbox (7.90279pt too wide) in paragraph at lines 8568--8575
+[]<1: lmroman10-regular @ 12.0pt> Read the Ve­r­acrypt Doc­u­men­ta­tion https://www.ve­r­acrypt.fr/en/Ve­r­aCrypt%Hid­
+
+\hbox(8.99506+2.99835)x426.78743, glue set - 1.0, direction TLT
+.\localpar
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(0.0+0.0)x0.0, direction TLT
+.<1: lmroman10-regular @ 12.0pt> R
+.<1: lmroman10-regular @ 12.0pt> e
+.<1: lmroman10-regular @ 12.0pt> a
+.etc.
+
+floatblocks     > '12' placed (here)
+
+Overfull \hbox (25.47777pt too wide) in paragraph at lines 8580--8583
+[]<1: lmroman10-regular @ 12.0pt> (Il­lus­tra­tion from Ve­r­acrypt Doc­u­men­ta­tion, https://ve­r­acrypt.fr/en/Ve­r­aCrypt%Hid­
+
+\hbox(8.99506+2.99835)x426.78743, glue set - 1.0, direction TLT
+.\kern-0.22787 (left margin)
+.\localpar
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(0.0+0.0)x0.0, direction TLT
+.<1: lmroman10-regular @ 12.0pt> (
+.<1: lmroman10-regular @ 12.0pt> I
+.etc.
+
+pages           > flushing realpage 140, userpage 140, subpage 140
+structure       > sectioning > subsubsubsubsubsection @ level 8 : 0.0.6.6.4.5.2.1 -> Step 1: Create a Windows 10/11 install USB key
+structure       > sectioning > subsubsubsubsubsection @ level 8 : 0.0.6.6.4.5.2.2 -> Step 2: Boot the USB key and start the Windows 10/11 install process (Hidden OS)
+pages           > flushing realpage 141, userpage 141, subpage 141
+structure       > sectioning > subsubsubsubsubsection @ level 8 : 0.0.6.6.4.5.2.3 -> Step 3: Privacy Settings (Hidden OS)
+structure       > sectioning > subsubsubsubsubsection @ level 8 : 0.0.6.6.4.5.2.4 -> Step 4: Veracrypt installation and encryption process start (Hidden OS)
+pages           > flushing realpage 142, userpage 142, subpage 142
+structure       > sectioning > subsubsubsubsubsection @ level 8 : 0.0.6.6.4.5.2.5 -> Step 5: Reboot and boot the USB key and start the Windows 10/11 install process again (Decoy OS)
+pages           > flushing realpage 143, userpage 143, subpage 143
+structure       > sectioning > subsubsubsubsubsection @ level 8 : 0.0.6.6.4.5.2.6 -> Step 6: Privacy settings (Decoy OS)
+structure       > sectioning > subsubsubsubsubsection @ level 8 : 0.0.6.6.4.5.2.7 -> Step 7: Veracrypt installation and encryption process start (Decoy OS)
+pages           > flushing realpage 144, userpage 144, subpage 144
+structure       > sectioning > subsubsubsubsubsection @ level 8 : 0.0.6.6.4.5.2.8 -> Step 8: Test your setup (Boot in Both)
+structure       > sectioning > subsubsubsubsubsection @ level 8 : 0.0.6.6.4.5.2.9 -> Step 9: Changing the decoy data on your Outer Volume safely
+pages           > flushing realpage 145, userpage 145, subpage 145
+structure       > sectioning > subsubsubsubsubsection @ level 8 : 0.0.6.6.4.5.2.10 -> Step 10: Leave some forensics evidence of your Outer Volume (with the decoy Data) within your Decoy OS
+pages           > flushing realpage 146, userpage 146, subpage 146
+structure       > sectioning > subsubsubsubsubsection @ level 8 : 0.0.6.6.4.5.2.11 -> Notes:
+pages           > flushing realpage 147, userpage 147, subpage 147
+
+Overfull \hbox (18.66399pt too wide) in paragraph at lines 8993--8998
+<1: lmroman10-regular @ 12.0pt> acrypt Par­ti­tions on Sin­gle Drive[]” of the Ve­r­acrypt doc­u­men­ta­tion here https://www.ve­
+
+\hbox(10.42104+4.05261)x426.78743, glue set - 1.0, direction TLT
+.<1: lmroman10-regular @ 12.0pt> a
+.<1: lmroman10-regular @ 12.0pt> c
+.<1: lmroman10-regular @ 12.0pt> r
+.<1: lmroman10-regular @ 12.0pt> y
+.<1: lmroman10-regular @ 12.0pt> p
+.etc.
+
+pages           > flushing realpage 148, userpage 148, subpage 148
+structure       > sectioning > subsubsection @ level 5 : 0.0.6.6.5 -> Virtualbox on your Host OS:
+pages           > flushing realpage 149, userpage 149, subpage 149
+structure       > sectioning > subsubsection @ level 5 : 0.0.6.6.6 -> Pick your connectivity method:
+pages           > flushing realpage 150, userpage 150, subpage 150
+floatblocks     > '13' placed (here)
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.6.6.6.1 -> Tor only:
+floatblocks     > '14' placed (here)
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.6.6.6.2 -> VPN/Proxy over Tor:
+floatblocks     > 2 saved
+pages           > flushing realpage 151, userpage 151, subpage 151
+floatblocks     > 2 moved
+floatblocks     > '15' moved
+floatblocks     > '16' placed (here)
+pages           > flushing realpage 152, userpage 152, subpage 152
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.6.6.6.3 -> Tor over VPN:
+pages           > flushing realpage 153, userpage 153, subpage 153
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.6.6.6.4 -> VPN only:
+pages           > flushing realpage 154, userpage 154, subpage 154
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.6.6.6.5 -> No VPN/Tor:
+pages           > flushing realpage 155, userpage 155, subpage 155
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.6.6.6.6 -> Conclusion:
+floatblocks     > '17' placed (here)
+pages           > flushing realpage 156, userpage 156, subpage 156
+pages           > flushing realpage 157, userpage 157, subpage 157
+structure       > sectioning > subsubsection @ level 5 : 0.0.6.6.7 -> Getting an anonymous VPN/Proxy:
+structure       > sectioning > subsubsection @ level 5 : 0.0.6.6.8 -> Whonix:
+pages           > flushing realpage 158, userpage 158, subpage 158
+floatblocks     > '18' placed (here)
+
+Overfull \hbox (1.93626pt too wide) in paragraph at lines 9633--9636
+ [][][] <1: lmroman10-regular @ 12.0pt> A Whonix hy­brid route where all traf­fic is routed through a cash (pre­ferred)/Mon­
+
+\hbox(10.42104+4.05261)x426.78743, glue set - 1.0, direction TLT
+.\glue(\leftskip) 17.99011
+.\localpar
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\hbox(10.42104+4.05261)x0.0, glue set - 17.99011fil, direction TLT
+..\glue 0.0 plus 1.0fil minus 1.0fil
+..\hbox(10.42104+4.05261)x17.99011, direction TLT
+...\hbox(10.42104+4.05261)x17.99011, glue set 8.65924fil, direction TLT []
+.\boundary=1
+.etc.
+
+floatblocks     > '19' placed (here)
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.6.6.8.1 -> A note on Virtualbox Snapshots:
+pages           > flushing realpage 159, userpage 159, subpage 159
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.6.6.8.2 -> Download Virtualbox and Whonix utilities:
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.6.6.8.3 -> Virtualbox Hardening recommendations:
+pages           > flushing realpage 160, userpage 160, subpage 160
+
+Overfull \hbox (12.20926pt too wide) in paragraph at lines 9734--9738
+ <1: lmroman10-regular @ 12.0pt> run­ning the fol­low­ing com­mand <14: lmmono10-regular @ 12.0pt> VBoxManage modifyvm "vm-id" --acpi on|off 
+
+\hbox(8.45535+2.74649)x426.78743, glue set - 1.0, direction TLT
+.\glue(\leftskip) 17.99011
+.<1: lmroman10-regular @ 12.0pt> r
+.<1: lmroman10-regular @ 12.0pt> u
+.<1: lmroman10-regular @ 12.0pt> n
+.\discretionary (penalty 50) []
+.etc.
+
+
+Overfull \hbox (0.47795pt too wide) in paragraph at lines 9755--9757
+ [][][] <14: lmmono10-regular @ 12.0pt> VBoxManage modifyvm "Whonix-Gateway-XFCE" --biossystemtimeoffset 
+
+\hbox(10.42104+4.05261)x426.78743, direction TLT
+.\glue(\leftskip) 17.99011
+.\localpar
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\hbox(10.42104+4.05261)x0.0, glue set - 17.99011fil, direction TLT
+..\glue 0.0 plus 1.0fil minus 1.0fil
+..\hbox(10.42104+4.05261)x17.99011, direction TLT
+...\hbox(10.42104+4.05261)x17.99011, glue set 8.65924fil, direction TLT []
+.\boundary=1
+.etc.
+
+
+Overfull \hbox (0.47795pt too wide) in paragraph at lines 9757--9759
+ [][][] <14: lmmono10-regular @ 12.0pt> VBoxManage modifyvm "Whonix-Gateway-XFCE" --biossystemtimeoffset 
+
+\hbox(10.42104+4.05261)x426.78743, direction TLT
+.\glue(\leftskip) 17.99011
+.\localpar
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\hbox(10.42104+4.05261)x0.0, glue set - 17.99011fil, direction TLT
+..\glue 0.0 plus 1.0fil minus 1.0fil
+..\hbox(10.42104+4.05261)x17.99011, direction TLT
+...\hbox(10.42104+4.05261)x17.99011, glue set 8.65924fil, direction TLT []
+.\boundary=1
+.etc.
+
+
+Overfull \hbox (25.66411pt too wide) in paragraph at lines 9759--9761
+ [][][] <14: lmmono10-regular @ 12.0pt> VBoxManage modifyvm "Whonix-Workstation-XFCE" --biossystemtimeoffset 
+
+\hbox(10.42104+4.05261)x426.78743, direction TLT
+.\glue(\leftskip) 17.99011
+.\localpar
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\hbox(10.42104+4.05261)x0.0, glue set - 17.99011fil, direction TLT
+..\glue 0.0 plus 1.0fil minus 1.0fil
+..\hbox(10.42104+4.05261)x17.99011, direction TLT
+...\hbox(10.42104+4.05261)x17.99011, glue set 8.65924fil, direction TLT []
+.\boundary=1
+.etc.
+
+
+Overfull \hbox (25.66411pt too wide) in paragraph at lines 9761--9762
+ [][][] <14: lmmono10-regular @ 12.0pt> VBoxManage modifyvm "Whonix-Workstation-XFCE" --biossystemtimeoffset 
+
+\hbox(10.42104+4.05261)x426.78743, direction TLT
+.\glue(\leftskip) 17.99011
+.\localpar
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\hbox(10.42104+4.05261)x0.0, glue set - 17.99011fil, direction TLT
+..\glue 0.0 plus 1.0fil minus 1.0fil
+..\hbox(10.42104+4.05261)x17.99011, direction TLT
+...\hbox(10.42104+4.05261)x17.99011, glue set 8.65924fil, direction TLT []
+.\boundary=1
+.etc.
+
+
+Overfull \hbox (47.73354pt too wide) in paragraph at lines 9764--9779
+[]<1: lmroman10-regular @ 12.0pt> Also, con­sider ap­ply­ing these mit­i­ga­tions from Vir­tu­al­Box to mit­i­gate Spec­tre[]/Meltdown[]
+
+\hbox(10.42104+4.05261)x426.78743, glue set - 1.0, direction TLT
+.\kern-0.45575 (left margin)
+.\localpar
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(0.0+0.0)x0.0, direction TLT
+.<1: lmroman10-regular @ 12.0pt> A
+.<1: lmroman10-regular @ 12.0pt> l
+.etc.
+
+pages           > flushing realpage 161, userpage 161, subpage 161
+structure       > sectioning > subsubsection @ level 5 : 0.0.6.6.9 -> Tor over VPN:
+structure       > sectioning > subsubsection @ level 5 : 0.0.6.6.10 -> Whonix Virtual Machines:
+pages           > flushing realpage 162, userpage 162, subpage 162
+structure       > sectioning > subsubsection @ level 5 : 0.0.6.6.11 -> Pick your guest workstation Virtual Machine:
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.6.6.11.1 -> If you can use Tor:
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.6.6.11.2 -> If you cannot use Tor:
+structure       > sectioning > subsubsection @ level 5 : 0.0.6.6.12 -> Linux Virtual Machine (Whonix or Linux):
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.6.6.12.1 -> Whonix Workstation {\bf (recommended and preferred)}:
+pages           > flushing realpage 163, userpage 163, subpage 163
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.6.6.12.2 -> Linux (any distro):
+structure       > sectioning > subsubsubsubsection @ level 7 : 0.0.6.6.12.2.1 -> If you can use Tor (natively or over a VPN):
+structure       > sectioning > subsubsubsubsection @ level 7 : 0.0.6.6.12.2.2 -> If you cannot use Tor:
+structure       > sectioning > subsubsubsubsection @ level 7 : 0.0.6.6.12.2.3 -> Choose a browser within the VM:
+pages           > flushing realpage 164, userpage 164, subpage 164
+structure       > sectioning > subsubsection @ level 5 : 0.0.6.6.13 -> Windows 10/11 Virtual Machine:
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.6.6.13.1 -> Windows 10 and 11 ISO download:
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.6.6.13.2 -> If you can use Tor (natively or over a VPN):
+structure       > sectioning > subsubsubsubsection @ level 7 : 0.0.6.6.13.2.1 -> Install:
+pages           > flushing realpage 165, userpage 165, subpage 165
+structure       > sectioning > subsubsubsubsection @ level 7 : 0.0.6.6.13.2.2 -> Network Settings:
+pages           > flushing realpage 166, userpage 166, subpage 166
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.6.6.13.3 -> If you cannot use Tor:
+structure       > sectioning > subsubsubsubsection @ level 7 : 0.0.6.6.13.3.1 -> Install:
+structure       > sectioning > subsubsubsubsection @ level 7 : 0.0.6.6.13.3.2 -> Network Settings:
+pages           > flushing realpage 167, userpage 167, subpage 167
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.6.6.13.4 -> Choose a browser within the VM:
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.6.6.13.5 -> Additional Privacy settings in Windows 10/11:
+structure       > sectioning > subsubsection @ level 5 : 0.0.6.6.14 -> Android Virtual Machine:
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.6.6.14.1 -> If you can use Tor (natively or over a VPN):
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.6.6.14.2 -> If you cannot use Tor:
+pages           > flushing realpage 168, userpage 168, subpage 168
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.6.6.14.3 -> Installation:
+structure       > sectioning > subsubsubsubsection @ level 7 : 0.0.6.6.14.3.1 -> AnBox:
+structure       > sectioning > subsubsubsubsection @ level 7 : 0.0.6.6.14.3.2 -> Android-x86:
+pages           > flushing realpage 169, userpage 169, subpage 169
+structure       > sectioning > subsubsection @ level 5 : 0.0.6.6.15 -> macOS Virtual Machine:
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.6.6.15.1 -> If you can use Tor (natively or over a VPN):
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.6.6.15.2 -> If you cannot use Tor:
+pages           > flushing realpage 170, userpage 170, subpage 170
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.6.6.15.3 -> Installation:
+
+Overfull \hbox (6.77449pt too wide) in paragraph at lines 10365--10367
+ [][][] <14: lmmono10-regular @ 12.0pt> VBoxManage modifyvm "macOSCatalina" ---cpuidset 00000001 000106e5 
+
+\hbox(10.42104+4.05261)x426.78743, direction TLT
+.\glue(\leftskip) 17.99011
+.\localpar
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\hbox(10.42104+4.05261)x0.0, glue set - 17.99011fil, direction TLT
+..\glue 0.0 plus 1.0fil minus 1.0fil
+..\hbox(10.42104+4.05261)x17.99011, direction TLT
+...\hbox(10.42104+4.05261)x17.99011, glue set 8.65924fil, direction TLT []
+.\boundary=1
+.etc.
+
+
+Overfull \hbox (176.78105pt too wide) in paragraph at lines 10367--10369
+ [][][] <14: lmmono10-regular @ 12.0pt> VBoxManage setextradata "macOSCatalina" "VBoxInternal/Devices/efi/0/Config/DmiSystemProduct" 
+
+\hbox(10.42104+4.05261)x426.78743, direction TLT
+.\glue(\leftskip) 17.99011
+.\localpar
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\hbox(10.42104+4.05261)x0.0, glue set - 17.99011fil, direction TLT
+..\glue 0.0 plus 1.0fil minus 1.0fil
+..\hbox(10.42104+4.05261)x17.99011, direction TLT
+...\hbox(10.42104+4.05261)x17.99011, glue set 8.65924fil, direction TLT []
+.\boundary=1
+.etc.
+
+pages           > flushing realpage 171, userpage 171, subpage 171
+
+Overfull \hbox (170.48451pt too wide) in paragraph at lines 10369--10371
+ [][][] <14: lmmono10-regular @ 12.0pt> VBoxManage setextradata "macOSCatalina" "VBoxInternal/Devices/efi/0/Config/DmiBoardProduct" 
+
+\hbox(10.42104+4.05261)x426.78743, direction TLT
+.\glue(\leftskip) 17.99011
+.\localpar
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\hbox(10.42104+4.05261)x0.0, glue set - 17.99011fil, direction TLT
+..\glue 0.0 plus 1.0fil minus 1.0fil
+..\hbox(10.42104+4.05261)x17.99011, direction TLT
+...\hbox(10.42104+4.05261)x17.99011, glue set 8.65924fil, direction TLT []
+.\boundary=1
+.etc.
+
+
+Overfull \hbox (132.70528pt too wide) in paragraph at lines 10371--10373
+ [][][] <14: lmmono10-regular @ 12.0pt> VBoxManage setextradata "macOSCatalina" "VBoxInternal/Devices/smc/0/Config/DeviceKey" 
+
+\hbox(10.42104+4.05261)x426.78743, direction TLT
+.\glue(\leftskip) 17.99011
+.\localpar
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\hbox(10.42104+4.05261)x0.0, glue set - 17.99011fil, direction TLT
+..\glue 0.0 plus 1.0fil minus 1.0fil
+..\hbox(10.42104+4.05261)x17.99011, direction TLT
+...\hbox(10.42104+4.05261)x17.99011, glue set 8.65924fil, direction TLT []
+.\boundary=1
+.etc.
+
+
+Overfull \hbox (6.77428pt too wide) in paragraph at lines 10371--10373
+ <14: lmmono10-regular @ 12.0pt> "ourhardworkbythesewordsguardedpleasedontsteal(c)AppleComputerInc" 
+
+\hbox(8.32343+2.74649)x426.78743, direction TLT
+.\glue(\leftskip) 17.99011
+.<14: lmmono10-regular @ 12.0pt> "
+.<14: lmmono10-regular @ 12.0pt> o
+.<14: lmmono10-regular @ 12.0pt> u
+.<14: lmmono10-regular @ 12.0pt> r
+.etc.
+
+
+Overfull \hbox (183.07759pt too wide) in paragraph at lines 10373--10375
+ [][][] <14: lmmono10-regular @ 12.0pt> VBoxManage setextradata "macOSCatalina" "VBoxInternal/Devices/smc/0/Config/GetKeyFromRealSMC" 
+
+\hbox(10.42104+4.05261)x426.78743, direction TLT
+.\glue(\leftskip) 17.99011
+.\localpar
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\hbox(10.42104+4.05261)x0.0, glue set - 17.99011fil, direction TLT
+..\glue 0.0 plus 1.0fil minus 1.0fil
+..\hbox(10.42104+4.05261)x17.99011, direction TLT
+...\hbox(10.42104+4.05261)x17.99011, glue set 8.65924fil, direction TLT []
+.\boundary=1
+.etc.
+
+
+Overfull \hbox (38.25719pt too wide) in paragraph at lines 10375--10377
+ [][][] <14: lmmono10-regular @ 12.0pt> VBoxManage modifyvm "macOSCatalina" --cpu-profile "Intel Core i7-6700K" 
+
+\hbox(10.42104+4.05261)x426.78743, direction TLT
+.\glue(\leftskip) 17.99011
+.\localpar
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\hbox(10.42104+4.05261)x0.0, glue set - 17.99011fil, direction TLT
+..\glue 0.0 plus 1.0fil minus 1.0fil
+..\hbox(10.42104+4.05261)x17.99011, direction TLT
+...\hbox(10.42104+4.05261)x17.99011, glue set 8.65924fil, direction TLT []
+.\boundary=1
+.etc.
+
+
+Overfull \hbox (69.73988pt too wide) in paragraph at lines 10377--10378
+ [][][] <14: lmmono10-regular @ 12.0pt> VBoxManage setextradata "macOSCatalina" VBoxInternal2/EfiGraphicsResolution 
+
+\hbox(10.42104+4.05261)x426.78743, direction TLT
+.\glue(\leftskip) 17.99011
+.\localpar
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\hbox(10.42104+4.05261)x0.0, glue set - 17.99011fil, direction TLT
+..\glue 0.0 plus 1.0fil minus 1.0fil
+..\hbox(10.42104+4.05261)x17.99011, direction TLT
+...\hbox(10.42104+4.05261)x17.99011, glue set 8.65924fil, direction TLT []
+.\boundary=1
+.etc.
+
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.6.6.15.4 -> Hardening macOS:
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.6.6.15.5 -> Choose a browser within the VM:
+structure       > sectioning > subsubsection @ level 5 : 0.0.6.6.16 -> KeepassXC:
+pages           > flushing realpage 172, userpage 172, subpage 172
+structure       > sectioning > subsubsection @ level 5 : 0.0.6.6.17 -> VPN client installation (cash/Monero paid):
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.6.6.17.1 -> About VPN Client Data Mining/Leaks:
+pages           > flushing realpage 173, userpage 173, subpage 173
+structure       > sectioning > subsubsection @ level 5 : 0.0.6.6.18 -> (Optional) VM kill switch:
+pages           > flushing realpage 174, userpage 174, subpage 174
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.6.6.18.1 -> The Lazy Way ({\bf not supported by Whonix} but it will work if you are in a hurry, see further for the better way):
+floatblocks     > '20' placed (here)
+structure       > sectioning > subsubsubsubsection @ level 7 : 0.0.6.6.18.1.1 -> Configuration of the Whonix Gateway VM:
+pages           > flushing realpage 175, userpage 175, subpage 175
+structure       > sectioning > subsubsubsubsection @ level 7 : 0.0.6.6.18.1.2 -> Configuration of the Host OS:
+pages           > flushing realpage 176, userpage 176, subpage 176
+structure       > sectioning > subsubsubsubsubsection @ level 8 : 0.0.6.6.18.1.2.1 -> Windows Host OS:
+structure       > sectioning > subsubsubsubsubsection @ level 8 : 0.0.6.6.18.1.2.2 -> Linux Host OS:
+pages           > flushing realpage 177, userpage 177, subpage 177
+structure       > sectioning > subsubsubsubsubsection @ level 8 : 0.0.6.6.18.1.2.3 -> macOS Host OS:
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.6.6.18.2 -> The Better Way (recommended):
+pages           > flushing realpage 178, userpage 178, subpage 178
+floatblocks     > '21' placed (here)
+structure       > sectioning > subsubsubsubsection @ level 7 : 0.0.6.6.18.2.1 -> Installing XUbuntu VM:
+pages           > flushing realpage 179, userpage 179, subpage 179
+pages           > flushing realpage 180, userpage 180, subpage 180
+structure       > sectioning > subsubsubsubsection @ level 7 : 0.0.6.6.18.2.2 -> Configuring the Whonix Gateway VM:
+pages           > flushing realpage 181, userpage 181, subpage 181
+structure       > sectioning > subsubsubsubsection @ level 7 : 0.0.6.6.18.2.3 -> Configuration of the Host OS:
+structure       > sectioning > subsubsubsubsubsection @ level 8 : 0.0.6.6.18.2.3.1 -> Windows Host OS:
+pages           > flushing realpage 182, userpage 182, subpage 182
+structure       > sectioning > subsubsubsubsubsection @ level 8 : 0.0.6.6.18.2.3.2 -> Linux Host OS:
+pages           > flushing realpage 183, userpage 183, subpage 183
+structure       > sectioning > subsubsubsubsubsection @ level 8 : 0.0.6.6.18.2.3.3 -> macOS Host OS:
+pages           > flushing realpage 184, userpage 184, subpage 184
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.6.6.18.3 -> The best way:
+floatblocks     > 3 saved
+structure       > sectioning > subsubsubsubsection @ level 7 : 0.0.6.6.18.3.1 -> Configuration of the Host OS:
+structure       > sectioning > subsubsubsubsection @ level 7 : 0.0.6.6.18.3.2 -> Configuring the Whonix Gateway VM:
+pages           > flushing realpage 185, userpage 185, subpage 185
+floatblocks     > 3 moved
+floatblocks     > '22' moved
+pages           > flushing realpage 186, userpage 186, subpage 186
+structure       > sectioning > subsubsubsubsection @ level 7 : 0.0.6.6.18.3.3 -> Installing XUbuntu VM:
+pages           > flushing realpage 187, userpage 187, subpage 187
+structure       > sectioning > subsubsubsubsection @ level 7 : 0.0.6.6.18.3.4 -> Additional configuration of the Whonix Gateway VM:
+pages           > flushing realpage 188, userpage 188, subpage 188
+structure       > sectioning > subsubsection @ level 5 : 0.0.6.6.19 -> Final step:
+structure       > sectioning > subsection @ level 4 : 0.0.6.7 -> The Qubes Route:
+pages           > flushing realpage 189, userpage 189, subpage 189
+pages           > flushing realpage 190, userpage 190, subpage 190
+structure       > sectioning > subsubsection @ level 5 : 0.0.6.7.1 -> Pick your connectivity method:
+pages           > flushing realpage 191, userpage 191, subpage 191
+floatblocks     > '23' placed (here)
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.6.7.1.1 -> Tor only:
+floatblocks     > '24' placed (here)
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.6.7.1.2 -> VPN/Proxy over Tor:
+floatblocks     > 4 saved
+pages           > flushing realpage 192, userpage 192, subpage 192
+floatblocks     > 4 moved
+floatblocks     > '25' moved
+floatblocks     > '26' placed (here)
+pages           > flushing realpage 193, userpage 193, subpage 193
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.6.7.1.3 -> Tor over VPN:
+pages           > flushing realpage 194, userpage 194, subpage 194
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.6.7.1.4 -> VPN only:
+pages           > flushing realpage 195, userpage 195, subpage 195
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.6.7.1.5 -> No VPN/Tor:
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.6.7.1.6 -> Conclusion:
+pages           > flushing realpage 196, userpage 196, subpage 196
+floatblocks     > '27' placed (here)
+pages           > flushing realpage 197, userpage 197, subpage 197
+pages           > flushing realpage 198, userpage 198, subpage 198
+structure       > sectioning > subsubsection @ level 5 : 0.0.6.7.2 -> Getting an anonymous VPN/Proxy:
+structure       > sectioning > subsubsection @ level 5 : 0.0.6.7.3 -> Note about Plausible Deniability:
+structure       > sectioning > subsubsection @ level 5 : 0.0.6.7.4 -> Installation:
+pages           > flushing realpage 199, userpage 199, subpage 199
+structure       > sectioning > subsubsection @ level 5 : 0.0.6.7.5 -> Lid Closure Behavior:
+structure       > sectioning > subsubsection @ level 5 : 0.0.6.7.6 -> Anti Evil Maid (AEM):
+pages           > flushing realpage 200, userpage 200, subpage 200
+structure       > sectioning > subsubsection @ level 5 : 0.0.6.7.7 -> Connect to a Public Wi-Fi:
+pages           > flushing realpage 201, userpage 201, subpage 201
+structure       > sectioning > subsubsection @ level 5 : 0.0.6.7.8 -> Upgrading Qubes OS from 4.0.x to 4.1.x (you should do it)
+structure       > sectioning > subsubsection @ level 5 : 0.0.6.7.9 -> Updating Qubes OS:
+pages           > flushing realpage 202, userpage 202, subpage 202
+structure       > sectioning > subsubsection @ level 5 : 0.0.6.7.10 -> Upgrading Whonix from version 15 to version 16:
+structure       > sectioning > subsubsection @ level 5 : 0.0.6.7.11 -> Hardening Qubes OS:
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.6.7.11.1 -> Application Sandboxing:
+structure       > sectioning > subsubsubsubsection @ level 7 : 0.0.6.7.11.1.1 -> AppArmor:
+pages           > flushing realpage 203, userpage 203, subpage 203
+structure       > sectioning > subsubsubsubsection @ level 7 : 0.0.6.7.11.1.2 -> SELinux:
+structure       > sectioning > subsubsection @ level 5 : 0.0.6.7.12 -> Setup the VPN ProxyVM:
+pages           > flushing realpage 204, userpage 204, subpage 204
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.6.7.12.1 -> Create the ProxyVM:
+pages           > flushing realpage 205, userpage 205, subpage 205
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.6.7.12.2 -> Download the VPN configuration from your cash/Monero paid VPN provider:
+structure       > sectioning > subsubsubsubsection @ level 7 : 0.0.6.7.12.2.1 -> If you can use Tor:
+structure       > sectioning > subsubsubsubsection @ level 7 : 0.0.6.7.12.2.2 -> If you cannot use Tor:
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.6.7.12.3 -> Configure the ProxyVM:
+pages           > flushing realpage 206, userpage 206, subpage 206
+
+Overfull \hbox (3.72037pt too wide) in paragraph at lines 12355--12358
+ [][][] <1: lmroman10-regular @ 12.0pt> In­stall Open­VPN with the fol­low­ing com­mand <14: lmmono10-regular @ 12.0pt> sudo apt-get install openvpn 
+
+\hbox(10.42104+4.05261)x426.78743, glue set - 1.0, direction TLT
+.\glue(\leftskip) 17.99011
+.\localpar
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\hbox(10.42104+4.05261)x0.0, glue set - 17.99011fil, direction TLT
+..\glue 0.0 plus 1.0fil minus 1.0fil
+..\hbox(10.42104+4.05261)x17.99011, direction TLT
+...\hbox(10.42104+4.05261)x17.99011, glue set 8.65924fil, direction TLT []
+.\boundary=1
+.etc.
+
+pages           > flushing realpage 207, userpage 207, subpage 207
+
+Overfull \hbox (6.77449pt too wide) in paragraph at lines 12466--12468
+ [][][] <14: lmmono10-regular @ 12.0pt> iptables -A PR-QBS -t nat -d $virtualif -p udp --dport 53 -j DNAT 
+
+\hbox(10.42104+4.05261)x426.78743, direction TLT
+.\glue(\leftskip) 17.99011
+.\localpar
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\hbox(10.42104+4.05261)x0.0, glue set - 17.99011fil, direction TLT
+..\glue 0.0 plus 1.0fil minus 1.0fil
+..\hbox(10.42104+4.05261)x17.99011, direction TLT
+...\hbox(10.42104+4.05261)x17.99011, glue set 8.65924fil, direction TLT []
+.\boundary=1
+.etc.
+
+
+Overfull \hbox (6.77449pt too wide) in paragraph at lines 12468--12470
+ [][][] <14: lmmono10-regular @ 12.0pt> iptables -A PR-QBS -t nat -d $virtualif -p tcp --dport 53 -j DNAT 
+
+\hbox(10.42104+4.05261)x426.78743, direction TLT
+.\glue(\leftskip) 17.99011
+.\localpar
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\hbox(10.42104+4.05261)x0.0, glue set - 17.99011fil, direction TLT
+..\glue 0.0 plus 1.0fil minus 1.0fil
+..\hbox(10.42104+4.05261)x17.99011, direction TLT
+...\hbox(10.42104+4.05261)x17.99011, glue set 8.65924fil, direction TLT []
+.\boundary=1
+.etc.
+
+
+Overfull \hbox (6.77449pt too wide) in paragraph at lines 12470--12472
+ [][][] <14: lmmono10-regular @ 12.0pt> iptables -A PR-QBS -t nat -d $virtualif -p udp --dport 53 -j DNAT 
+
+\hbox(10.42104+4.05261)x426.78743, direction TLT
+.\glue(\leftskip) 17.99011
+.\localpar
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\hbox(10.42104+4.05261)x0.0, glue set - 17.99011fil, direction TLT
+..\glue 0.0 plus 1.0fil minus 1.0fil
+..\hbox(10.42104+4.05261)x17.99011, direction TLT
+...\hbox(10.42104+4.05261)x17.99011, glue set 8.65924fil, direction TLT []
+.\boundary=1
+.etc.
+
+
+Overfull \hbox (6.77449pt too wide) in paragraph at lines 12472--12473
+ [][][] <14: lmmono10-regular @ 12.0pt> iptables -A PR-QBS -t nat -d $virtualif -p tcp --dport 53 -j DNAT 
+
+\hbox(10.42104+4.05261)x426.78743, direction TLT
+.\glue(\leftskip) 17.99011
+.\localpar
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\hbox(10.42104+4.05261)x0.0, glue set - 17.99011fil, direction TLT
+..\glue 0.0 plus 1.0fil minus 1.0fil
+..\hbox(10.42104+4.05261)x17.99011, direction TLT
+...\hbox(10.42104+4.05261)x17.99011, glue set 8.65924fil, direction TLT []
+.\boundary=1
+.etc.
+
+pages           > flushing realpage 208, userpage 208, subpage 208
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.6.7.12.4 -> VPN over Tor:
+structure       > sectioning > subsubsubsubsection @ level 7 : 0.0.6.7.12.4.1 -> Set up a disposable Browser Qube for VPN over Tor use:
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.6.7.12.5 -> Tor Over VPN:
+pages           > flushing realpage 209, userpage 209, subpage 209
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.6.7.12.6 -> Any other combination? (VPN over Tor over VPN for instance)
+pages           > flushing realpage 210, userpage 210, subpage 210
+structure       > sectioning > subsubsection @ level 5 : 0.0.6.7.13 -> Setup a safe Browser within Qubes OS (optional but recommended):
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.6.7.13.1 -> Fedora Disposable VM:
+
+Overfull \hbox (151.5949pt too wide) in paragraph at lines 12656--12658
+ [][][] <14: lmmono10-regular @ 12.0pt> sudo dnf config-manager --add-repo https://brave-browser-rpm-release.s3.brave.com/x86_64/ 
+
+\hbox(10.42104+4.05261)x426.78743, direction TLT
+.\glue(\leftskip) 17.99011
+.\localpar
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\hbox(10.42104+4.05261)x0.0, glue set - 17.99011fil, direction TLT
+..\glue 0.0 plus 1.0fil minus 1.0fil
+..\hbox(10.42104+4.05261)x17.99011, direction TLT
+...\hbox(10.42104+4.05261)x17.99011, glue set 8.65924fil, direction TLT []
+.\boundary=1
+.etc.
+
+
+Overfull \hbox (88.6295pt too wide) in paragraph at lines 12658--12660
+ [][][] <14: lmmono10-regular @ 12.0pt> sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc 
+
+\hbox(10.42104+4.05261)x426.78743, direction TLT
+.\glue(\leftskip) 17.99011
+.\localpar
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\hbox(10.42104+4.05261)x0.0, glue set - 17.99011fil, direction TLT
+..\glue 0.0 plus 1.0fil minus 1.0fil
+..\hbox(10.42104+4.05261)x17.99011, direction TLT
+...\hbox(10.42104+4.05261)x17.99011, glue set 8.65924fil, direction TLT []
+.\boundary=1
+.etc.
+
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.6.7.13.2 -> Whonix Disposable VM:
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.6.7.13.3 -> Additional browser precautions:
+pages           > flushing realpage 211, userpage 211, subpage 211
+structure       > sectioning > subsubsection @ level 5 : 0.0.6.7.14 -> Setup an Android VM:
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.6.7.14.1 -> If you can use Tor (natively or over a VPN):
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.6.7.14.2 -> If you cannot use Tor:
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.6.7.14.3 -> Installation:
+pages           > flushing realpage 212, userpage 212, subpage 212
+pages           > flushing realpage 213, userpage 213, subpage 213
+structure       > sectioning > subsubsection @ level 5 : 0.0.6.7.15 -> KeePassXC:
+structure       > sectioning > subsubsection @ level 5 : 0.0.6.7.16 -> Tutorial for installing Windows based VMs on Qubes OS:
+pages           > flushing realpage 214, userpage 214, subpage 214
+structure       > sectioning > section @ level 3 : 0.0.7 -> Quick note: Correlation vs Attribution
+pages           > flushing realpage 215, userpage 215, subpage 215
+structure       > sectioning > section @ level 3 : 0.0.8 -> Creating your anonymous online identities:
+structure       > sectioning > subsection @ level 4 : 0.0.8.1 -> Understanding the methods used to prevent anonymity and verify identity:
+structure       > sectioning > subsubsection @ level 5 : 0.0.8.1.1 -> Captchas:
+pages           > flushing realpage 216, userpage 216, subpage 216
+pages           > flushing realpage 217, userpage 217, subpage 217
+structure       > sectioning > subsubsection @ level 5 : 0.0.8.1.2 -> Phone verification:
+pages           > flushing realpage 218, userpage 218, subpage 218
+structure       > sectioning > subsubsection @ level 5 : 0.0.8.1.3 -> E-Mail verification:
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.8.1.3.1 -> A note about Riseup:
+pages           > flushing realpage 219, userpage 219, subpage 219
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.8.1.3.2 -> Protecting your anonymous online identities e-mails using Aliasing services:
+structure       > sectioning > subsubsection @ level 5 : 0.0.8.1.4 -> User details checking:
+structure       > sectioning > subsubsection @ level 5 : 0.0.8.1.5 -> Proof of ID verification:
+pages           > flushing realpage 220, userpage 220, subpage 220
+structure       > sectioning > subsubsection @ level 5 : 0.0.8.1.6 -> IP Filters:
+pages           > flushing realpage 221, userpage 221, subpage 221
+structure       > sectioning > subsubsection @ level 5 : 0.0.8.1.7 -> Browser and Device Fingerprinting:
+pages           > flushing realpage 222, userpage 222, subpage 222
+structure       > sectioning > subsubsection @ level 5 : 0.0.8.1.8 -> Human interaction:
+pages           > flushing realpage 223, userpage 223, subpage 223
+structure       > sectioning > subsubsection @ level 5 : 0.0.8.1.9 -> User Moderation:
+structure       > sectioning > subsubsection @ level 5 : 0.0.8.1.10 -> Behavioral Analysis:
+structure       > sectioning > subsubsection @ level 5 : 0.0.8.1.11 -> Financial transactions:
+pages           > flushing realpage 224, userpage 224, subpage 224
+floatblocks     > '28' placed (here)
+structure       > sectioning > subsubsection @ level 5 : 0.0.8.1.12 -> Sign-in with some platform:
+structure       > sectioning > subsubsection @ level 5 : 0.0.8.1.13 -> Live Face recognition and biometrics (again):
+pages           > flushing realpage 225, userpage 225, subpage 225
+floatblocks     > '29' placed (here)
+floatblocks     > '30' placed (here)
+pages           > flushing realpage 226, userpage 226, subpage 226
+structure       > sectioning > subsubsection @ level 5 : 0.0.8.1.14 -> Manual reviews:
+structure       > sectioning > subsection @ level 4 : 0.0.8.2 -> Getting Online:
+pages           > flushing realpage 227, userpage 227, subpage 227
+pages           > flushing realpage 228, userpage 228, subpage 228
+structure       > sectioning > subsubsection @ level 5 : 0.0.8.2.1 -> Creating new identities:
+pages           > flushing realpage 229, userpage 229, subpage 229
+pages           > flushing realpage 230, userpage 230, subpage 230
+pages           > flushing realpage 231, userpage 231, subpage 231
+
+Overfull \hbox (1.3894pt too wide) in paragraph at lines 13751--13773
+ <1: lmroman10-regular @ 12.0pt> For this pur­pose, we rec­om­mend you just go to  <14: lmmono10-regular @ 12.0pt> h t t p s : / / t h i s p e r s o n d o e s n o t e x i s t 
+
+\hbox(8.32343+2.66254)x426.78743, glue set - 1.0, direction TLT
+.\glue(\leftskip) 17.99011
+.<1: lmroman10-regular @ 12.0pt> F
+.\kern-0.99545 (font)
+.<1: lmroman10-regular @ 12.0pt> o
+.<1: lmroman10-regular @ 12.0pt> r
+.etc.
+
+pages           > flushing realpage 232, userpage 232, subpage 232
+floatblocks     > '31' placed (here)
+floatblocks     > '32' placed (here)
+pages           > flushing realpage 233, userpage 233, subpage 233
+pages           > flushing realpage 234, userpage 234, subpage 234
+
+Overfull \hbox (4.90019pt too wide) in paragraph at lines 13886--13891
+ [][][] <1: lmroman10-regular @ 12.0pt> On Tor Browser: Edit the torrc file lo­cated at <14: lmmono10-regular @ 12.0pt> Browser/TorBrowser/Data/Tor[]<1: lmroman10-regular @ 12.0pt> . 
+
+\hbox(10.42104+4.05261)x426.78743, glue set - 1.0, direction TLT
+.\glue(\leftskip) 17.99011
+.\localpar
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\hbox(10.42104+4.05261)x0.0, glue set - 17.99011fil, direction TLT
+..\glue 0.0 plus 1.0fil minus 1.0fil
+..\hbox(10.42104+4.05261)x17.99011, direction TLT
+...\hbox(10.42104+4.05261)x17.99011, glue set 8.65924fil, direction TLT []
+.\boundary=1
+.etc.
+
+structure       > sectioning > subsubsection @ level 5 : 0.0.8.2.2 -> Checking if your Tor Exit Node is terrible:
+pages           > flushing realpage 235, userpage 235, subpage 235
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.8.2.2.1 -> This process is very easy:
+structure       > sectioning > subsubsection @ level 5 : 0.0.8.2.3 -> The Real-Name System:
+pages           > flushing realpage 236, userpage 236, subpage 236
+pages           > flushing realpage 237, userpage 237, subpage 237
+structure       > sectioning > subsubsection @ level 5 : 0.0.8.2.4 -> About paid services:
+structure       > sectioning > subsubsection @ level 5 : 0.0.8.2.5 -> Overview:
+pages           > flushing realpage 238, userpage 238, subpage 238
+pages           > flushing realpage 239, userpage 239, subpage 239
+structure       > sectioning > subsubsubsubsection @ level 7 : 0.0.8.2.5.0.1 -> Below you'll find a list of \quotation {problematic services}. If they're not below, it means there are no issues at all with anything (like Briar for example)
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.8.2.5.1 -> Amazon:
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.8.2.5.2 -> Apple:
+pages           > flushing realpage 240, userpage 240, subpage 240
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.8.2.5.3 -> Binance:
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.8.2.5.4 -> Discord:
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.8.2.5.5 -> Element:
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.8.2.5.6 -> Facebook:
+pages           > flushing realpage 241, userpage 241, subpage 241
+pages           > flushing realpage 242, userpage 242, subpage 242
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.8.2.5.7 -> GitHub:
+pages           > flushing realpage 243, userpage 243, subpage 243
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.8.2.5.8 -> GitLab:
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.8.2.5.9 -> Google:
+
+Overfull \hbox (5.52184pt too wide) in paragraph at lines 14802--14805
+[]<1: lmroman10-regular @ 12.0pt> From my ex­pe­ri­ence dur­ing my re­search, this count is lim­ited to three ac­counts/phone
+
+\hbox(8.99506+2.99835)x426.78743, glue set - 1.0, direction TLT
+.\localpar
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(0.0+0.0)x0.0, direction TLT
+.<1: lmroman10-regular @ 12.0pt> F
+.\kern-0.99545 (font)
+.<1: lmroman10-regular @ 12.0pt> r
+.etc.
+
+pages           > flushing realpage 244, userpage 244, subpage 244
+pages           > flushing realpage 245, userpage 245, subpage 245
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.8.2.5.10 -> Instagram:
+pages           > flushing realpage 246, userpage 246, subpage 246
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.8.2.5.11 -> Jami:
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.8.2.5.12 -> Kraken:
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.8.2.5.13 -> LinkedIn:
+pages           > flushing realpage 247, userpage 247, subpage 247
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.8.2.5.14 -> MailFence:
+pages           > flushing realpage 248, userpage 248, subpage 248
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.8.2.5.15 -> Medium:
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.8.2.5.16 -> Microsoft:
+
+Overfull \hbox (5.56783pt too wide) in paragraph at lines 15083--15086
+ [][][] <1: lmroman10-regular @ 12.0pt> Is this against their ToS? Yes  <14: lmmono10-regular @ 12.0pt> h t t p s : / / w w w . m i c r o s o f t . c o m / e n / s e r v i c e s a g r e e m e n t 
+
+\hbox(10.42104+4.05261)x426.78743, glue set - 1.0, direction TLT
+.\glue(\leftskip) 17.99011
+.\localpar
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\hbox(10.42104+4.05261)x0.0, glue set - 17.99011fil, direction TLT
+..\glue 0.0 plus 1.0fil minus 1.0fil
+..\hbox(10.42104+4.05261)x17.99011, direction TLT
+...\hbox(10.42104+4.05261)x17.99011, glue set 8.65924fil, direction TLT []
+.\boundary=1
+.etc.
+
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.8.2.5.17 -> OnlyFans:
+pages           > flushing realpage 249, userpage 249, subpage 249
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.8.2.5.18 -> Proton:
+
+Overfull \hbox (143.96863pt too wide) in paragraph at lines 15142--15146
+ <1: lmroman10-regular @ 12.0pt> They even have a []“ .onion[]” ad­dress at  <14: lmmono10-regular @ 12.0pt> h t t p : / / p r o t o n m a i l r m e z 3 l o t c c i p s h t k l e e g e t o l b 7 3 f u i r g j 7 r 4 o 4 v f u 7 o z y d 
+
+\hbox(10.42104+4.05261)x426.78743, glue set - 1.0, direction TLT
+.\glue(\leftskip) 17.99011
+.\kern-0.43176 (left margin)
+.<1: lmroman10-regular @ 12.0pt> T
+.<1: lmroman10-regular @ 12.0pt> h
+.<1: lmroman10-regular @ 12.0pt> e
+.etc.
+
+pages           > flushing realpage 250, userpage 250, subpage 250
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.8.2.5.19 -> Reddit:
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.8.2.5.20 -> Slashdot:
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.8.2.5.21 -> Telegram:
+pages           > flushing realpage 251, userpage 251, subpage 251
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.8.2.5.22 -> Tutanota:
+pages           > flushing realpage 252, userpage 252, subpage 252
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.8.2.5.23 -> Twitter:
+pages           > flushing realpage 253, userpage 253, subpage 253
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.8.2.5.24 -> Twitch:
+pages           > flushing realpage 254, userpage 254, subpage 254
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.8.2.5.25 -> WhatsApp:
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.8.2.5.26 -> 4chan:
+pages           > flushing realpage 255, userpage 255, subpage 255
+floatblocks     > '33' placed (here)
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.8.2.5.27 -> Crypto Wallets:
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.8.2.5.28 -> What about those mobile-only apps (WhatsApp/Signal)?
+
+Overfull \hbox (10.63654pt too wide) in paragraph at lines 15480--15485
+ [][][] <1: lmroman10-regular @ 12.0pt> Android-x on Vir­tu­al­box (see  <14: lmmono10-regular @ 12.0pt> h t t p s : / / w w w . a n d r o i d - x 8 6 . o r g / d o c u m e n t a t i o n 
+
+\hbox(10.42104+4.05261)x426.78743, glue set - 1.0, direction TLT
+.\glue(\leftskip) 35.98022
+.\localpar
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\hbox(10.42104+4.05261)x0.0, glue set - 17.99011fil, direction TLT
+..\glue 0.0 plus 1.0fil minus 1.0fil
+..\hbox(10.42104+4.05261)x17.99011, direction TLT
+...\hbox(10.42104+4.05261)x17.99011, glue set 11.99341fil, direction TLT []
+.\boundary=1
+.etc.
+
+pages           > flushing realpage 256, userpage 256, subpage 256
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.8.2.5.29 -> Anything else:
+structure       > sectioning > subsubsection @ level 5 : 0.0.8.2.6 -> How to share files privately and/or chat anonymously:
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.8.2.6.1 -> End-to-end Encryption:
+pages           > flushing realpage 257, userpage 257, subpage 257
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.8.2.6.2 -> Roll your own crypto:
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.8.2.6.3 -> Forward Secrecy:
+pages           > flushing realpage 258, userpage 258, subpage 258
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.8.2.6.4 -> Zero-Access Encryption at rest:
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.8.2.6.5 -> Metadata Protection:
+pages           > flushing realpage 259, userpage 259, subpage 259
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.8.2.6.6 -> Open-Source:
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.8.2.6.7 -> Comparison:
+pages           > flushing realpage 260, userpage 260, subpage 260
+
+Overfull \hbox (59.86235pt too wide) in paragraph at lines 15713--16131
+<1: lmroman10-regular @ 12.0pt> rity/ad­vi­sories/ [Archive.org]↩︎ Whonix Fo­rum, Tox In­te­gra­tion https://fo­rums.whonix.org/t/tox-
+
+\hbox(8.99506+2.99835)x426.78743, glue set - 1.0, direction TLT
+.<1: lmroman10-regular @ 12.0pt> r
+.<1: lmroman10-regular @ 12.0pt> i
+.<1: lmroman10-regular @ 12.0pt> t
+.\kern-0.33582 (font)
+.<1: lmroman10-regular @ 12.0pt> y
+.etc.
+
+
+Overfull \hbox (12.54314pt too wide) in paragraph at lines 15713--16131
+<1: lmroman10-regular @ 12.0pt> Mo­bile Pro­to­col https://core.telegram.org/mt­proto [Archive.org]↩︎ Wikipedia, Telegram
+
+\hbox(8.99506+2.99835)x426.78743, glue set - 1.0, direction TLT
+.<1: lmroman10-regular @ 12.0pt> M
+.<1: lmroman10-regular @ 12.0pt> o
+.\discretionary (penalty 50) []
+.<1: lmroman10-regular @ 12.0pt> b
+.<1: lmroman10-regular @ 12.0pt> i
+.etc.
+
+
+Overfull \hbox (40.22682pt too wide) in paragraph at lines 15713--16131
+<1: lmroman10-regular @ 12.0pt> Se­cu­rity Breaches, https://en.wikipedia.org/wiki/Telegram_(soft­ware)#Se­cu­rity_breaches
+
+\hbox(8.99506+2.99835)x426.78743, glue set - 1.0, direction TLT
+.<1: lmroman10-regular @ 12.0pt> S
+.<1: lmroman10-regular @ 12.0pt> e
+.\discretionary (penalty 50) []
+.<1: lmroman10-regular @ 12.0pt> c
+.<1: lmroman10-regular @ 12.0pt> u
+.etc.
+
+
+Overfull \hbox (114.19872pt too wide) in paragraph at lines 15713--16131
+<1: lmroman10-regular @ 12.0pt> [Archive.org]↩︎ Ser­pentsec, Se­cure Mes­sag­ing: Choos­ing a chat app https://web.archive.org/web/https://ser­
+
+\hbox(8.99506+2.99835)x426.78743, glue set - 1.0, direction TLT
+.\kern-0.16791 (left margin)
+.<1: lmroman10-regular @ 12.0pt> [
+.<1: lmroman10-regular @ 12.0pt> A
+.<1: lmroman10-regular @ 12.0pt> r
+.<1: lmroman10-regular @ 12.0pt> c
+.etc.
+
+
+Overfull \hbox (55.25616pt too wide) in paragraph at lines 15713--16131
+<1: lmroman10-regular @ 12.0pt> pentsec..cx/secure-messaging-choosing-a-chat-app↩︎ Berty, De­vel­op­ment, https://berty.tech↩︎
+
+\hbox(8.99506+2.99835)x426.78743, glue set - 1.0, direction TLT
+.<1: lmroman10-regular @ 12.0pt> p
+.\kern0.33582 (font)
+.<1: lmroman10-regular @ 12.0pt> e
+.<1: lmroman10-regular @ 12.0pt> n
+.\kern-0.33582 (font)
+.etc.
+
+
+Overfull \hbox (8.51442pt too wide) in paragraph at lines 15713--16131
+<1: lmroman10-regular @ 12.0pt> Tox Hand­shake Vul­ner­a­ble to KCI, https://github.com/Tok­Tok/c-toxcore/is­sues/↩︎
+
+\hbox(8.99506+2.99835)x426.78743, glue set - 1.0, direction TLT
+.\kern-0.43176 (left margin)
+.<1: lmroman10-regular @ 12.0pt> T
+.\kern-0.99545 (font)
+.<1: lmroman10-regular @ 12.0pt> o
+.\kern-0.33582 (font)
+.etc.
+
+
+Overfull \hbox (9.61058pt too wide) in paragraph at lines 15713--16131
+<1: lmroman10-regular @ 12.0pt> https://web.archive.org/web//https://www.the­guardian.com/media-
+
+\hbox(8.99506+2.99835)x426.78743, direction TLT
+.<1: lmroman10-regular @ 12.0pt> h
+.\kern-0.33582 (font)
+.<1: lmroman10-regular @ 12.0pt> t
+.<1: lmroman10-regular @ 12.0pt> t
+.<1: lmroman10-regular @ 12.0pt> p
+.etc.
+
+
+Overfull \hbox (13.83452pt too wide) in paragraph at lines 15713--16131
+<1: lmroman10-regular @ 12.0pt> network/partner-zone-infosecurity/snapchat-photos-not-deleted-hidden↩︎ The Guardian,
+
+\hbox(8.99506+2.99835)x426.78743, glue set - 1.0, direction TLT
+.<1: lmroman10-regular @ 12.0pt> n
+.<1: lmroman10-regular @ 12.0pt> e
+.<1: lmroman10-regular @ 12.0pt> t
+.\kern-0.33582 (font)
+.<1: lmroman10-regular @ 12.0pt> w
+.etc.
+
+
+Overfull \hbox (2.06047pt too wide) in paragraph at lines 15713--16131
+<1: lmroman10-regular @ 12.0pt> https://www.the­guardian.com/tech­nol­ogy//apr//zoom-technology-security-
+
+\hbox(8.99506+2.99835)x426.78743, direction TLT
+.<1: lmroman10-regular @ 12.0pt> h
+.\kern-0.33582 (font)
+.<1: lmroman10-regular @ 12.0pt> t
+.<1: lmroman10-regular @ 12.0pt> t
+.<1: lmroman10-regular @ 12.0pt> p
+.etc.
+
+pages           > flushing realpage 261, userpage 261, subpage 261
+fonts           > checking > char ↩ (U+021A9) in font 'LMRoman10-Regular' with id 1: missing
+fonts           > checking > char ︎ (U+0FE0E) in font 'LMRoman10-Regular' with id 1: missing
+pages           > flushing realpage 262, userpage 262, subpage 262
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.8.2.6.8 -> Conclusion:
+pages           > flushing realpage 263, userpage 263, subpage 263
+pages           > flushing realpage 264, userpage 264, subpage 264
+pages           > flushing realpage 265, userpage 265, subpage 265
+structure       > sectioning > subsubsection @ level 5 : 0.0.8.2.7 -> How to share files publicly but anonymously:
+pages           > flushing realpage 266, userpage 266, subpage 266
+structure       > sectioning > subsubsection @ level 5 : 0.0.8.2.8 -> Redacting Documents/Pictures/Videos/Audio safely:
+pages           > flushing realpage 267, userpage 267, subpage 267
+structure       > sectioning > subsubsection @ level 5 : 0.0.8.2.9 -> Communicating sensitive information to various known organizations:
+pages           > flushing realpage 268, userpage 268, subpage 268
+
+Overfull \hbox (165.47313pt too wide) in paragraph at lines 16632--16635
+ [][][] <1: lmroman10-regular @ 12.0pt> On  <14: lmmono10-regular @ 12.0pt> h t t p s : / / k e y b a s e . i o <1: lmroman10-regular @ 12.0pt> (Tor ad­dress  <14: lmmono10-regular @ 12.0pt> h t t p : / / k e y b a s e 5 w m i l w o k q i r s s c l f n s q r j d s i 7 j d i r 5 w y 7 y 7 i u 3 t a n w m t p 6 o i d 
+
+\hbox(10.42104+4.05261)x426.78743, glue set - 1.0, direction TLT
+.\glue(\leftskip) 35.98022
+.\localpar
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\hbox(10.42104+4.05261)x0.0, glue set - 17.99011fil, direction TLT
+..\glue 0.0 plus 1.0fil minus 1.0fil
+..\hbox(10.42104+4.05261)x17.99011, direction TLT
+...\hbox(10.42104+4.05261)x17.99011, glue set 11.99341fil, direction TLT []
+.\boundary=1
+.etc.
+
+pages           > flushing realpage 269, userpage 269, subpage 269
+structure       > sectioning > subsubsection @ level 5 : 0.0.8.2.10 -> Maintenance tasks:
+structure       > sectioning > section @ level 3 : 0.0.9 -> Backing up your work securely:
+pages           > flushing realpage 270, userpage 270, subpage 270
+structure       > sectioning > subsection @ level 4 : 0.0.9.1 -> Offline Backups:
+structure       > sectioning > subsubsection @ level 5 : 0.0.9.1.1 -> Selected Files Backups:
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.9.1.1.1 -> Requirements:
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.9.1.1.2 -> Veracrypt:
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.9.1.1.3 -> Normal File containers:
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.9.1.1.4 -> Hidden File containers with plausible deniability:
+pages           > flushing realpage 271, userpage 271, subpage 271
+
+Overfull \hbox (1.28864pt too wide) in paragraph at lines 16794--16807
+ <12: lmroman10-bold @ 12.0pt> quire­ments%for%Hid­den%Vol­umes.html <1: lmroman10-regular @ 12.0pt> [Archive.org]<12: lmroman10-bold @ 12.0pt> . Re­mem­
+
+\hbox(8.99506+2.99835)x426.78743, glue set - 1.0, direction TLT
+.\glue(\leftskip) 17.99011
+.<12: lmroman10-bold @ 12.0pt> q
+.<12: lmroman10-bold @ 12.0pt> u
+.<12: lmroman10-bold @ 12.0pt> i
+.<12: lmroman10-bold @ 12.0pt> r
+.etc.
+
+pages           > flushing realpage 272, userpage 272, subpage 272
+structure       > sectioning > subsubsection @ level 5 : 0.0.9.1.2 -> Full Disk/System Backups:
+pages           > flushing realpage 273, userpage 273, subpage 273
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.9.1.2.1 -> Requirements:
+pages           > flushing realpage 274, userpage 274, subpage 274
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.9.1.2.2 -> Some general warnings and considerations:
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.9.1.2.3 -> Linux:
+structure       > sectioning > subsubsubsubsection @ level 7 : 0.0.9.1.2.3.1 -> Ubuntu (or any other distro of choice):
+structure       > sectioning > subsubsubsubsection @ level 7 : 0.0.9.1.2.3.2 -> QubesOS:
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.9.1.2.4 -> Windows:
+pages           > flushing realpage 275, userpage 275, subpage 275
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.9.1.2.5 -> macOS:
+pages           > flushing realpage 276, userpage 276, subpage 276
+structure       > sectioning > subsection @ level 4 : 0.0.9.2 -> Online Backups:
+structure       > sectioning > subsubsection @ level 5 : 0.0.9.2.1 -> Files:
+pages           > flushing realpage 277, userpage 277, subpage 277
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.9.2.1.1 -> Self-hosting:
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.9.2.1.2 -> Cloud-hosting:
+structure       > sectioning > subsubsection @ level 5 : 0.0.9.2.2 -> Information:
+pages           > flushing realpage 278, userpage 278, subpage 278
+structure       > sectioning > subsection @ level 4 : 0.0.9.3 -> Synchronizing your files between devices Online:
+structure       > sectioning > section @ level 3 : 0.0.10 -> Covering your tracks:
+structure       > sectioning > subsection @ level 4 : 0.0.10.1 -> Understanding HDD vs SSD:
+floatblocks     > '34' placed (here)
+pages           > flushing realpage 279, userpage 279, subpage 279
+floatblocks     > '35' placed (here)
+structure       > sectioning > subsubsection @ level 5 : 0.0.10.1.1 -> Wear-Leveling.
+pages           > flushing realpage 280, userpage 280, subpage 280
+structure       > sectioning > subsubsection @ level 5 : 0.0.10.1.2 -> Trim Operations:
+pages           > flushing realpage 281, userpage 281, subpage 281
+floatblocks     > '36' placed (here)
+pages           > flushing realpage 282, userpage 282, subpage 282
+structure       > sectioning > subsubsection @ level 5 : 0.0.10.1.3 -> Garbage Collection:
+structure       > sectioning > subsubsection @ level 5 : 0.0.10.1.4 -> Conclusion:
+pages           > flushing realpage 283, userpage 283, subpage 283
+structure       > sectioning > subsection @ level 4 : 0.0.10.2 -> How to securely wipe your whole Laptop/Drives if you want to erase everything:
+floatblocks     > '37' placed (here)
+pages           > flushing realpage 284, userpage 284, subpage 284
+
+Overfull \hbox (20.83221pt too wide) in paragraph at lines 17455--17461
+ [][][] <1: lmroman10-regular @ 12.0pt> Use <14: lmmono10-regular @ 12.0pt> dd<1: lmroman10-regular @ 12.0pt> : <14: lmmono10-regular @ 12.0pt> dd if=/dev/urandom of=/dev/sdX bs=8M status=progress 
+
+\hbox(10.42104+4.05261)x426.78743, glue set - 1.0, direction TLT
+.\glue(\leftskip) 71.96045
+.\localpar
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\hbox(10.42104+4.05261)x0.0, glue set - 17.99011fil, direction TLT
+..\glue 0.0 plus 1.0fil minus 1.0fil
+..\hbox(10.42104+4.05261)x17.99011, direction TLT
+...\hbox(10.42104+4.05261)x17.99011, glue set 9.13898fil, direction TLT []
+.\boundary=1
+.etc.
+
+pages           > flushing realpage 285, userpage 285, subpage 285
+pages           > flushing realpage 286, userpage 286, subpage 286
+structure       > sectioning > subsubsection @ level 5 : 0.0.10.2.1 -> Linux (all versions including Qubes OS):
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.10.2.1.1 -> System/Internal SSD:
+pages           > flushing realpage 287, userpage 287, subpage 287
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.10.2.1.2 -> External SSD:
+pages           > flushing realpage 288, userpage 288, subpage 288
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.10.2.1.3 -> Internal/System HDD:
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.10.2.1.4 -> External/Secondary HDD and Thumb Drives:
+structure       > sectioning > subsubsection @ level 5 : 0.0.10.2.2 -> Windows:
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.10.2.2.1 -> System/Internal SSD:
+pages           > flushing realpage 289, userpage 289, subpage 289
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.10.2.2.2 -> External SSD:
+pages           > flushing realpage 290, userpage 290, subpage 290
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.10.2.2.3 -> Internal/System HDD:
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.10.2.2.4 -> External/Secondary HDD and Thumb Drives:
+structure       > sectioning > subsubsection @ level 5 : 0.0.10.2.3 -> macOS:
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.10.2.3.1 -> System/Internal SSD:
+pages           > flushing realpage 291, userpage 291, subpage 291
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.10.2.3.2 -> External SSD:
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.10.2.3.3 -> External HDD and Thumb Drives:
+structure       > sectioning > subsection @ level 4 : 0.0.10.3 -> How to securely delete specific files/folders/data on your HDD/SSD and Thumb drives:
+pages           > flushing realpage 292, userpage 292, subpage 292
+structure       > sectioning > subsubsection @ level 5 : 0.0.10.3.1 -> Windows:
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.10.3.1.1 -> System/Internal SSD drive:
+pages           > flushing realpage 293, userpage 293, subpage 293
+floatblocks     > '38' placed (here)
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.10.3.1.2 -> Internal/External HDD or a USB Thumb Drive:
+pages           > flushing realpage 294, userpage 294, subpage 294
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.10.3.1.3 -> External SSD drive:
+structure       > sectioning > subsubsection @ level 5 : 0.0.10.3.2 -> Linux (non-Qubes OS):
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.10.3.2.1 -> System/Internal SSD drive:
+pages           > flushing realpage 295, userpage 295, subpage 295
+pages           > flushing realpage 296, userpage 296, subpage 296
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.10.3.2.2 -> Internal/External HDD drive or a Thumb Drive:
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.10.3.2.3 -> External SSD drive:
+pages           > flushing realpage 297, userpage 297, subpage 297
+structure       > sectioning > subsubsection @ level 5 : 0.0.10.3.3 -> Linux (Qubes OS):
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.10.3.3.1 -> System/Internal SSD drive:
+pages           > flushing realpage 298, userpage 298, subpage 298
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.10.3.3.2 -> Internal/External HDD drive or a Thumb Drive:
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.10.3.3.3 -> External SSD drive:
+pages           > flushing realpage 299, userpage 299, subpage 299
+structure       > sectioning > subsubsection @ level 5 : 0.0.10.3.4 -> macOS:
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.10.3.4.1 -> System/Internal SSD drive:
+pages           > flushing realpage 300, userpage 300, subpage 300
+floatblocks     > '39' placed (here)
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.10.3.4.2 -> System/Internal, External HDD drive or a Thumb Drive:
+pages           > flushing realpage 301, userpage 301, subpage 301
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.10.3.4.3 -> External SSD drive:
+structure       > sectioning > subsection @ level 4 : 0.0.10.4 -> Some additional measures against forensics:
+pages           > flushing realpage 302, userpage 302, subpage 302
+structure       > sectioning > subsubsection @ level 5 : 0.0.10.4.1 -> Removing Metadata from Files/Documents/Pictures:
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.10.4.1.1 -> Pictures and videos:
+structure       > sectioning > subsubsubsubsection @ level 7 : 0.0.10.4.1.1.1 -> ExifCleaner:
+structure       > sectioning > subsubsubsubsection @ level 7 : 0.0.10.4.1.1.2 -> ExifTool:
+structure       > sectioning > subsubsubsubsection @ level 7 : 0.0.10.4.1.1.3 -> Windows Native tool:
+structure       > sectioning > subsubsubsubsection @ level 7 : 0.0.10.4.1.1.4 -> Cloaking/Obfuscating to prevent picture recognition:
+pages           > flushing realpage 303, userpage 303, subpage 303
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.10.4.1.2 -> PDF Documents:
+structure       > sectioning > subsubsubsubsection @ level 7 : 0.0.10.4.1.2.1 -> PDFParanoia (Linux/Windows/macOS/QubesOS):
+structure       > sectioning > subsubsubsubsection @ level 7 : 0.0.10.4.1.2.2 -> ExifCleaner (Linux/Windows/macOS/QubesOS):
+structure       > sectioning > subsubsubsubsection @ level 7 : 0.0.10.4.1.2.3 -> ExifTool (Linux/Windows/macOS/QubesOS):
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.10.4.1.3 -> MS Office Documents:
+structure       > sectioning > subsubsubsubsection @ level 7 : 0.0.10.4.1.3.1 -> ExifCleaner:
+pages           > flushing realpage 304, userpage 304, subpage 304
+structure       > sectioning > subsubsubsubsection @ level 7 : 0.0.10.4.1.3.2 -> ExifTool:
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.10.4.1.4 -> LibreOffice Documents:
+pages           > flushing realpage 305, userpage 305, subpage 305
+structure       > sectioning > subsubsubsubsection @ level 7 : 0.0.10.4.1.4.1 -> ExifCleaner:
+structure       > sectioning > subsubsubsubsection @ level 7 : 0.0.10.4.1.4.2 -> ExifTool:
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.10.4.1.5 -> All-in-one Tool:
+floatblocks     > 5 saved
+structure       > sectioning > subsubsection @ level 5 : 0.0.10.4.2 -> Tails:
+pages           > flushing realpage 306, userpage 306, subpage 306
+floatblocks     > 5 moved
+floatblocks     > '40' moved
+structure       > sectioning > subsubsection @ level 5 : 0.0.10.4.3 -> Whonix:
+structure       > sectioning > subsubsection @ level 5 : 0.0.10.4.4 -> macOS:
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.10.4.4.1 -> Guest OS:
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.10.4.4.2 -> Host OS:
+structure       > sectioning > subsubsubsubsection @ level 7 : 0.0.10.4.4.2.1 -> Quarantine Database (used by Gatekeeper and XProtect):
+
+Overfull \hbox (39.15648pt too wide) in paragraph at lines 18715--18718
+<14: lmmono10-regular @ 12.0pt> sqlite3 ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV2 
+
+\hbox(8.32343+2.7345)x426.78743, direction TLT
+.<14: lmmono10-regular @ 12.0pt> s
+.<14: lmmono10-regular @ 12.0pt> q
+.<14: lmmono10-regular @ 12.0pt> l
+.<14: lmmono10-regular @ 12.0pt> i
+.<14: lmmono10-regular @ 12.0pt> t
+.etc.
+
+pages           > flushing realpage 307, userpage 307, subpage 307
+
+Overfull \hbox (327.76678pt too wide) in paragraph at lines 18723--18726
+ [][][] <1: lmroman10-regular @ 12.0pt> Run the fol­low­ing com­mand to clear the data­base com­pletely: <14: lmmono10-regular @ 12.0pt> :>~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV2 
+
+\hbox(10.42104+4.05261)x426.78743, glue set - 1.0, direction TLT
+.\glue(\leftskip) 17.99011
+.\localpar
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\hbox(10.42104+4.05261)x0.0, glue set - 17.99011fil, direction TLT
+..\glue 0.0 plus 1.0fil minus 1.0fil
+..\hbox(10.42104+4.05261)x17.99011, direction TLT
+...\hbox(10.42104+4.05261)x17.99011, glue set 8.65924fil, direction TLT []
+.\boundary=1
+.etc.
+
+
+Overfull \hbox (245.17346pt too wide) in paragraph at lines 18726--18729
+ <1: lmroman10-regular @ 12.0pt> from be­ing writ­ten there: <14: lmmono10-regular @ 12.0pt> sudo chflags schg ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV2 
+
+\hbox(8.45535+2.74649)x426.78743, glue set - 1.0, direction TLT
+.\glue(\leftskip) 17.99011
+.<1: lmroman10-regular @ 12.0pt> f
+.<1: lmroman10-regular @ 12.0pt> r
+.<1: lmroman10-regular @ 12.0pt> o
+.<1: lmroman10-regular @ 12.0pt> m
+.etc.
+
+
+Overfull \hbox (7.5575pt too wide) in paragraph at lines 18759--18761
+ [][][] <1: lmroman10-regular @ 12.0pt> Run <14: lmmono10-regular @ 12.0pt> xattr -d com.apple.metadata:kMDItemWhereFroms filename <1: lmroman10-regular @ 12.0pt> to re­move
+
+\hbox(10.42104+4.05261)x426.78743, glue set - 1.0, direction TLT
+.\glue(\leftskip) 17.99011
+.\localpar
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\hbox(10.42104+4.05261)x0.0, glue set - 17.99011fil, direction TLT
+..\glue 0.0 plus 1.0fil minus 1.0fil
+..\hbox(10.42104+4.05261)x17.99011, direction TLT
+...\hbox(10.42104+4.05261)x17.99011, glue set 8.65924fil, direction TLT []
+.\boundary=1
+.etc.
+
+pages           > flushing realpage 308, userpage 308, subpage 308
+floatblocks     > '41' placed (here)
+pages           > flushing realpage 309, userpage 309, subpage 309
+structure       > sectioning > subsubsubsubsection @ level 7 : 0.0.10.4.4.2.2 -> Various Artifacts:
+structure       > sectioning > subsubsubsubsection @ level 7 : 0.0.10.4.4.2.3 -> Force a Trim operation after cleaning:
+floatblocks     > '42' placed (here)
+structure       > sectioning > subsubsection @ level 5 : 0.0.10.4.5 -> Linux (Qubes OS):
+pages           > flushing realpage 310, userpage 310, subpage 310
+structure       > sectioning > subsubsection @ level 5 : 0.0.10.4.6 -> Linux (non-Qubes):
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.10.4.6.1 -> Guest OS:
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.10.4.6.2 -> Host OS:
+structure       > sectioning > subsubsection @ level 5 : 0.0.10.4.7 -> Windows:
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.10.4.7.1 -> Guest OS:
+pages           > flushing realpage 311, userpage 311, subpage 311
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.10.4.7.2 -> Host OS:
+structure       > sectioning > subsubsubsubsection @ level 7 : 0.0.10.4.7.2.1 -> Diagnostic Data and Telemetry:
+structure       > sectioning > subsubsubsubsection @ level 7 : 0.0.10.4.7.2.2 -> Event logs:
+pages           > flushing realpage 312, userpage 312, subpage 312
+structure       > sectioning > subsubsubsubsection @ level 7 : 0.0.10.4.7.2.3 -> Veracrypt History:
+structure       > sectioning > subsubsubsubsection @ level 7 : 0.0.10.4.7.2.4 -> Browser History:
+structure       > sectioning > subsubsubsubsection @ level 7 : 0.0.10.4.7.2.5 -> Wi-Fi History:
+pages           > flushing realpage 313, userpage 313, subpage 313
+
+Overfull \hbox (170.61568pt too wide) in paragraph at lines 19102--19105
+ [][][] <1: lmroman10-regular @ 12.0pt> Within Regedit, en­ter this to the ad­dress bar: <14: lmmono10-regular @ 12.0pt> Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows 
+
+\hbox(10.42104+4.05261)x426.78743, glue set - 1.0, direction TLT
+.\glue(\leftskip) 17.99011
+.\localpar
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\hbox(10.42104+4.05261)x0.0, glue set - 17.99011fil, direction TLT
+..\glue 0.0 plus 1.0fil minus 1.0fil
+..\hbox(10.42104+4.05261)x17.99011, direction TLT
+...\hbox(10.42104+4.05261)x17.99011, glue set 8.65924fil, direction TLT []
+.\boundary=1
+.etc.
+
+structure       > sectioning > subsubsubsubsection @ level 7 : 0.0.10.4.7.2.6 -> Shellbags:
+pages           > flushing realpage 314, userpage 314, subpage 314
+structure       > sectioning > subsubsubsubsection @ level 7 : 0.0.10.4.7.2.7 -> Extra Tools Cleaning:
+structure       > sectioning > subsubsubsubsubsection @ level 8 : 0.0.10.4.7.2.7.1 -> PrivaZer:
+pages           > flushing realpage 315, userpage 315, subpage 315
+pages           > flushing realpage 316, userpage 316, subpage 316
+structure       > sectioning > subsubsubsubsubsection @ level 8 : 0.0.10.4.7.2.7.2 -> BleachBit:
+structure       > sectioning > subsubsubsubsection @ level 7 : 0.0.10.4.7.2.8 -> Force a Trim with Windows Optimize (for SSD drives):
+pages           > flushing realpage 317, userpage 317, subpage 317
+floatblocks     > '43' placed (here)
+structure       > sectioning > subsection @ level 4 : 0.0.10.5 -> Removing some traces of your identities on search engines and various platforms:
+pages           > flushing realpage 318, userpage 318, subpage 318
+structure       > sectioning > subsubsection @ level 5 : 0.0.10.5.1 -> Google:
+structure       > sectioning > subsubsection @ level 5 : 0.0.10.5.2 -> Bing:
+structure       > sectioning > subsubsection @ level 5 : 0.0.10.5.3 -> DuckDuckGo:
+pages           > flushing realpage 319, userpage 319, subpage 319
+structure       > sectioning > subsubsection @ level 5 : 0.0.10.5.4 -> Yandex:
+structure       > sectioning > subsubsection @ level 5 : 0.0.10.5.5 -> Qwant:
+structure       > sectioning > subsubsection @ level 5 : 0.0.10.5.6 -> Yahoo Search:
+pages           > flushing realpage 320, userpage 320, subpage 320
+structure       > sectioning > subsubsection @ level 5 : 0.0.10.5.7 -> Baidu:
+structure       > sectioning > subsubsection @ level 5 : 0.0.10.5.8 -> Wikipedia:
+structure       > sectioning > subsubsection @ level 5 : 0.0.10.5.9 -> Archive.today:
+structure       > sectioning > subsubsection @ level 5 : 0.0.10.5.10 -> Internet Archive:
+structure       > sectioning > subsubsection @ level 5 : 0.0.10.5.11 -> Others:
+pages           > flushing realpage 321, userpage 321, subpage 321
+structure       > sectioning > section @ level 3 : 0.0.11 -> Some low-tech old-school tricks:
+structure       > sectioning > subsection @ level 4 : 0.0.11.1 -> Hidden communications in plain sight:
+pages           > flushing realpage 322, userpage 322, subpage 322
+structure       > sectioning > subsection @ level 4 : 0.0.11.2 -> How to spot if someone has been searching your stuff:
+pages           > flushing realpage 323, userpage 323, subpage 323
+structure       > sectioning > section @ level 3 : 0.0.12 -> Some last OPSEC thoughts:
+pages           > flushing realpage 324, userpage 324, subpage 324
+structure       > sectioning > subsection @ level 4 : 0.0.12.1 -> Digital and Online OPSEC
+structure       > sectioning > subsection @ level 4 : 0.0.12.2 -> Physical and IRL OPSEC
+pages           > flushing realpage 325, userpage 325, subpage 325
+pages           > flushing realpage 326, userpage 326, subpage 326
+pages           > flushing realpage 327, userpage 327, subpage 327
+structure       > sectioning > section @ level 3 : 0.0.13 -> What to do if you detected tampering or searching ?
+structure       > sectioning > section @ level 3 : 0.0.14 -> {\bf If you think you got burned:}
+fonts           > defining > font 'lmroman10-bold', feature 'locl', script 'latn', no language 'dflt'
+structure       > sectioning > subsection @ level 4 : 0.0.14.1 -> If you have some time:
+pages           > flushing realpage 328, userpage 328, subpage 328
+structure       > sectioning > subsection @ level 4 : 0.0.14.2 -> If you have no time:
+structure       > sectioning > section @ level 3 : 0.0.15 -> A small final editorial note:
+pages           > flushing realpage 329, userpage 329, subpage 329
+structure       > sectioning > section @ level 3 : 0.0.16 -> Donations:
+structure       > sectioning > section @ level 3 : 0.0.17 -> Helping others staying anonymous:
+pages           > flushing realpage 330, userpage 330, subpage 330
+structure       > sectioning > section @ level 3 : 0.0.18 -> Acknowledgments:
+pages           > flushing realpage 331, userpage 331, subpage 331
+pages           > flushing realpage 332, userpage 332, subpage 332
+structure       > sectioning > section @ level 3 : 0.0.19 -> Appendix A: Windows Installation
+structure       > sectioning > subsubsection @ level 5 : 0.0.19.0.1 -> Windows 10 (See below for Windows 11)
+structure       > sectioning > subsection @ level 4 : 0.0.19.1 -> Installation:
+pages           > flushing realpage 333, userpage 333, subpage 333
+pages           > flushing realpage 334, userpage 334, subpage 334
+structure       > sectioning > subsection @ level 4 : 0.0.19.2 -> Privacy Settings:
+pages           > flushing realpage 335, userpage 335, subpage 335
+pages           > flushing realpage 336, userpage 336, subpage 336
+structure       > sectioning > subsubsection @ level 5 : 0.0.19.2.1 -> Windows 11
+structure       > sectioning > subsection @ level 4 : 0.0.19.3 -> Installation:
+pages           > flushing realpage 337, userpage 337, subpage 337
+pages           > flushing realpage 338, userpage 338, subpage 338
+structure       > sectioning > subsection @ level 4 : 0.0.19.4 -> Privacy Settings:
+pages           > flushing realpage 339, userpage 339, subpage 339
+pages           > flushing realpage 340, userpage 340, subpage 340
+structure       > sectioning > section @ level 3 : 0.0.20 -> Appendix B: Windows Additional Privacy Settings
+pages           > flushing realpage 341, userpage 341, subpage 341
+
+Overfull \hbox (41.27043pt too wide) in paragraph at lines 20657--20660
+ [][][] <1: lmroman10-regular @ 12.0pt> Down­load and run Win­dowsSpy­Blocker from  <14: lmmono10-regular @ 12.0pt> h t t p s : / / c r a z y m a x . d e v / W i n d o w s S p y B l o c k e r 
+
+\hbox(10.42104+4.05261)x426.78743, glue set - 1.0, direction TLT
+.\glue(\leftskip) 17.99011
+.\localpar
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\hbox(10.42104+4.05261)x0.0, glue set - 17.99011fil, direction TLT
+..\glue 0.0 plus 1.0fil minus 1.0fil
+..\hbox(10.42104+4.05261)x17.99011, direction TLT
+...\hbox(10.42104+4.05261)x17.99011, glue set 8.65924fil, direction TLT []
+.\boundary=1
+.etc.
+
+pages           > flushing realpage 342, userpage 342, subpage 342
+structure       > sectioning > section @ level 3 : 0.0.21 -> Appendix C: Windows Installation Media Creation (Windows 10) or Download (Windows 11)
+structure       > sectioning > subsection @ level 4 : 0.0.21.1 -> Windows 10
+structure       > sectioning > subsection @ level 4 : 0.0.21.2 -> Windows 11
+structure       > sectioning > section @ level 3 : 0.0.22 -> Appendix D: Using System Rescue to securely wipe an SSD drive.
+pages           > flushing realpage 343, userpage 343, subpage 343
+pages           > flushing realpage 344, userpage 344, subpage 344
+structure       > sectioning > section @ level 3 : 0.0.23 -> Appendix E: Clonezilla
+structure       > sectioning > section @ level 3 : 0.0.24 -> Appendix F: Diskpart
+pages           > flushing realpage 345, userpage 345, subpage 345
+structure       > sectioning > section @ level 3 : 0.0.25 -> Appendix G: Safe Browser on the Host OS
+structure       > sectioning > subsection @ level 4 : 0.0.25.1 -> If you can use Tor:
+pages           > flushing realpage 346, userpage 346, subpage 346
+structure       > sectioning > subsection @ level 4 : 0.0.25.2 -> If you cannot use Tor:
+structure       > sectioning > section @ level 3 : 0.0.26 -> Appendix H: Windows Cleaning Tools
+pages           > flushing realpage 347, userpage 347, subpage 347
+pages           > flushing realpage 348, userpage 348, subpage 348
+structure       > sectioning > section @ level 3 : 0.0.27 -> Appendix I: Using ShredOS to securely wipe an HDD drive:
+structure       > sectioning > subsection @ level 4 : 0.0.27.1 -> Windows:
+structure       > sectioning > subsection @ level 4 : 0.0.27.2 -> Linux:
+pages           > flushing realpage 349, userpage 349, subpage 349
+structure       > sectioning > section @ level 3 : 0.0.28 -> Appendix J: Manufacturer tools for Wiping HDD and SSD drives:
+structure       > sectioning > subsection @ level 4 : 0.0.28.1 -> Tools that provide a boot disk for wiping from boot:
+pages           > flushing realpage 350, userpage 350, subpage 350
+structure       > sectioning > subsection @ level 4 : 0.0.28.2 -> Tools that provide only support from running OS (for external drives).
+structure       > sectioning > section @ level 3 : 0.0.29 -> Appendix K: Considerations for using external SSD drives
+pages           > flushing realpage 351, userpage 351, subpage 351
+structure       > sectioning > subsection @ level 4 : 0.0.29.1 -> Windows:
+structure       > sectioning > subsubsection @ level 5 : 0.0.29.1.1 -> Trim Support:
+structure       > sectioning > subsubsection @ level 5 : 0.0.29.1.2 -> ATA/NVMe Operations (Secure Erase/Sanitize):
+pages           > flushing realpage 352, userpage 352, subpage 352
+structure       > sectioning > subsection @ level 4 : 0.0.29.2 -> Linux:
+structure       > sectioning > subsubsection @ level 5 : 0.0.29.2.1 -> Trim Support:
+structure       > sectioning > subsubsection @ level 5 : 0.0.29.2.2 -> ATA/NVMe Operations (Secure Erase/Sanitize):
+structure       > sectioning > subsection @ level 4 : 0.0.29.3 -> macOS:
+structure       > sectioning > subsubsection @ level 5 : 0.0.29.3.1 -> Trim Support:
+pages           > flushing realpage 353, userpage 353, subpage 353
+structure       > sectioning > subsubsection @ level 5 : 0.0.29.3.2 -> ATA/NVMe Operations (Secure Erase/Sanitize):
+structure       > sectioning > section @ level 3 : 0.0.30 -> Appendix L: Creating a mat2-web guest VM for removing metadata from files
+pages           > flushing realpage 354, userpage 354, subpage 354
+
+Overfull \hbox (44.25368pt too wide) in paragraph at lines 21448--21451
+ <14: lmmono10-regular @ 12.0pt> uwsgi python3-pip uwsgi-plugin-python3 lib35rsvg2-dev git mat2 apache2 
+
+\hbox(7.4599+2.74649)x426.78743, direction TLT
+.\glue(\leftskip) 23.98682
+.<14: lmmono10-regular @ 12.0pt> u
+.<14: lmmono10-regular @ 12.0pt> w
+.<14: lmmono10-regular @ 12.0pt> s
+.<14: lmmono10-regular @ 12.0pt> g
+.etc.
+
+
+Overfull \hbox (5.3477pt too wide) in paragraph at lines 21462--21465
+ [][][] <12: lmroman10-bold @ 12.0pt> En­able apache uwsgi proxy <1: lmroman10-regular @ 12.0pt> by run­ning <14: lmmono10-regular @ 12.0pt> /usr/sbin/a2enmod proxy_uwsgi<1: lmroman10-regular @ 12.0pt> . 
+
+\hbox(10.42104+4.05261)x426.78743, glue set - 1.0, direction TLT
+.\glue(\leftskip) 23.98682
+.\localpar
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\hbox(10.42104+4.05261)x0.0, glue set - 23.98682fil, direction TLT
+..\glue 0.0 plus 1.0fil minus 1.0fil
+..\hbox(10.42104+4.05261)x23.98682, direction TLT
+...\hbox(10.42104+4.05261)x23.98682, glue set 7.14807fil, direction TLT []
+.\boundary=1
+.etc.
+
+pages           > flushing realpage 355, userpage 355, subpage 355
+
+Overfull \hbox (40.74722pt too wide) in paragraph at lines 21471--21474
+ [][][] <12: lmroman10-bold @ 12.0pt> Move to the con­fig di­rec­tory <1: lmroman10-regular @ 12.0pt> of mat by run­ning <14: lmmono10-regular @ 12.0pt> cd /var/www/mat2-web/config/<1: lmroman10-regular @ 12.0pt> . 
+
+\hbox(10.42104+4.05261)x426.78743, glue set - 1.0, direction TLT
+.\glue(\leftskip) 23.98682
+.\localpar
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\hbox(10.42104+4.05261)x0.0, glue set - 23.98682fil, direction TLT
+..\glue 0.0 plus 1.0fil minus 1.0fil
+..\hbox(10.42104+4.05261)x23.98682, direction TLT
+...\hbox(10.42104+4.05261)x23.98682, glue set 7.80771fil, direction TLT []
+.\boundary=1
+.etc.
+
+
+Overfull \hbox (119.87413pt too wide) in paragraph at lines 21477--21480
+ [][][] <12: lmroman10-bold @ 12.0pt> Re­move the de­fault con­fig file <1: lmroman10-regular @ 12.0pt> by run­ning <14: lmmono10-regular @ 12.0pt> rm /etc/apache2/sites-enabled/000-default.conf<1: lmroman10-regular @ 12.0pt> . 
+
+\hbox(10.42104+4.05261)x426.78743, glue set - 1.0, direction TLT
+.\glue(\leftskip) 23.98682
+.\localpar
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\hbox(10.42104+4.05261)x0.0, glue set - 23.98682fil, direction TLT
+..\glue 0.0 plus 1.0fil minus 1.0fil
+..\hbox(10.42104+4.05261)x23.98682, direction TLT
+...\hbox(10.42104+4.05261)x23.98682, glue set 8.25146fil, direction TLT []
+.\boundary=1
+.etc.
+
+
+Overfull \hbox (102.29509pt too wide) in paragraph at lines 21486--21490
+ [][][] <12: lmroman10-bold @ 12.0pt> Change the uwsgi path <1: lmroman10-regular @ 12.0pt> from <14: lmmono10-regular @ 12.0pt> /var/www/mat2-web/mat2-web.sock <1: lmroman10-regular @ 12.0pt> to <14: lmmono10-regular @ 12.0pt> /run/uwsgi/uwsgi.sock
+
+\hbox(10.42104+4.05261)x426.78743, glue set - 1.0, direction TLT
+.\glue(\leftskip) 23.98682
+.\localpar
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\hbox(10.42104+4.05261)x0.0, glue set - 23.98682fil, direction TLT
+..\glue 0.0 plus 1.0fil minus 1.0fil
+..\hbox(10.42104+4.05261)x23.98682, direction TLT
+...\hbox(10.42104+4.05261)x23.98682, glue set 8.41937fil, direction TLT []
+.\boundary=1
+.etc.
+
+
+Overfull \hbox (154.45978pt too wide) in paragraph at lines 21490--21493
+ [][][] <12: lmroman10-bold @ 12.0pt> Copy the uwsgi con­fig file <1: lmroman10-regular @ 12.0pt> to <12: lmroman10-bold @ 12.0pt> /etc <1: lmroman10-regular @ 12.0pt> by run­ning <14: lmmono10-regular @ 12.0pt> cp uwsgi.config /etc/uwsgi/apps-enabled/uwsgi.ini<1: lmroman10-regular @ 12.0pt> . 
+
+\hbox(10.42104+4.05261)x426.78743, glue set - 1.0, direction TLT
+.\glue(\leftskip) 23.98682
+.\localpar
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\hbox(10.42104+4.05261)x0.0, glue set - 23.98682fil, direction TLT
+..\glue 0.0 plus 1.0fil minus 1.0fil
+..\hbox(10.42104+4.05261)x23.98682, direction TLT
+...\hbox(10.42104+4.05261)x23.98682, glue set 7.69977fil, direction TLT []
+.\boundary=1
+.etc.
+
+
+Overfull \hbox (31.46255pt too wide) in paragraph at lines 21493--21498
+ [][][] <12: lmroman10-bold @ 12.0pt> Edit the uwsgi con­fig file <1: lmroman10-regular @ 12.0pt> by typ­ing <14: lmmono10-regular @ 12.0pt> nano /etc/uwsgi/apps-enabled/uwsgi.ini
+
+\hbox(10.42104+4.05261)x426.78743, glue set - 1.0, direction TLT
+.\glue(\leftskip) 23.98682
+.\localpar
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\hbox(10.42104+4.05261)x0.0, glue set - 23.98682fil, direction TLT
+..\glue 0.0 plus 1.0fil minus 1.0fil
+..\hbox(10.42104+4.05261)x23.98682, direction TLT
+...\hbox(10.42104+4.05261)x23.98682, glue set 7.69977fil, direction TLT []
+.\boundary=1
+.etc.
+
+pages           > flushing realpage 356, userpage 356, subpage 356
+structure       > sectioning > section @ level 3 : 0.0.31 -> Appendix M: BIOS/UEFI options to wipe disks in various Brands
+structure       > sectioning > section @ level 3 : 0.0.32 -> Appendix N: Warning about smartphones and smart devices
+pages           > flushing realpage 357, userpage 357, subpage 357
+pages           > flushing realpage 358, userpage 358, subpage 358
+structure       > sectioning > section @ level 3 : 0.0.33 -> Appendix O: Getting an anonymous VPN/Proxy
+structure       > sectioning > subsection @ level 4 : 0.0.33.1 -> Cash/Monero-Paid VPN:
+pages           > flushing realpage 359, userpage 359, subpage 359
+pages           > flushing realpage 360, userpage 360, subpage 360
+pages           > flushing realpage 361, userpage 361, subpage 361
+structure       > sectioning > subsection @ level 4 : 0.0.33.2 -> Self-hosted VPN/Proxy on a Monero/Cash-paid VPS (for users more familiar with Linux):
+structure       > sectioning > subsubsection @ level 5 : 0.0.33.2.1 -> VPN VPS:
+structure       > sectioning > subsubsection @ level 5 : 0.0.33.2.2 -> Socks Proxy VPS:
+pages           > flushing realpage 362, userpage 362, subpage 362
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.33.2.2.1 -> Linux/macOS:
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.33.2.2.2 -> Windows:
+pages           > flushing realpage 363, userpage 363, subpage 363
+floatblocks     > '44' placed (here)
+structure       > sectioning > section @ level 3 : 0.0.34 -> Appendix P: Accessing the internet as safely as possible when Tor and VPNs are not an option
+pages           > flushing realpage 364, userpage 364, subpage 364
+structure       > sectioning > section @ level 3 : 0.0.35 -> Appendix Q: Using long-range Antenna to connect to Public Wi-Fis from a safe distance:
+pages           > flushing realpage 365, userpage 365, subpage 365
+floatblocks     > '45' placed (here)
+pages           > flushing realpage 366, userpage 366, subpage 366
+structure       > sectioning > section @ level 3 : 0.0.36 -> Appendix R: Installing a VPN on your VM or Host OS
+pages           > flushing realpage 367, userpage 367, subpage 367
+pages           > flushing realpage 368, userpage 368, subpage 368
+structure       > sectioning > section @ level 3 : 0.0.37 -> Appendix S: Check your network for surveillance/censorship using OONI
+pages           > flushing realpage 369, userpage 369, subpage 369
+structure       > sectioning > section @ level 3 : 0.0.38 -> Appendix T: Checking files for malware
+structure       > sectioning > subsection @ level 4 : 0.0.38.1 -> Integrity (if available):
+pages           > flushing realpage 370, userpage 370, subpage 370
+pages           > flushing realpage 371, userpage 371, subpage 371
+structure       > sectioning > subsection @ level 4 : 0.0.38.2 -> Authenticity (if available):
+pages           > flushing realpage 372, userpage 372, subpage 372
+
+Overfull \hbox (41.72665pt too wide) in paragraph at lines 22534--22537
+ [][][] <1: lmroman10-regular @ 12.0pt> Run <14: lmmono10-regular @ 12.0pt> gpg --verify-options show-notations --verify filetoverify.asc 
+
+\hbox(10.42104+4.05261)x426.78743, glue set - 1.0, direction TLT
+.\glue(\leftskip) 53.97034
+.\localpar
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\hbox(10.42104+4.05261)x0.0, glue set - 17.99011fil, direction TLT
+..\glue 0.0 plus 1.0fil minus 1.0fil
+..\hbox(10.42104+4.05261)x17.99011, direction TLT
+...\hbox(10.42104+4.05261)x17.99011, glue set 11.99341fil, direction TLT []
+.\boundary=1
+.etc.
+
+pages           > flushing realpage 373, userpage 373, subpage 373
+
+Overfull \hbox (41.72665pt too wide) in paragraph at lines 22545--22548
+ [][][] <1: lmroman10-regular @ 12.0pt> Run <14: lmmono10-regular @ 12.0pt> gpg --verify-options show-notations --verify filetoverify.asc 
+
+\hbox(10.42104+4.05261)x426.78743, glue set - 1.0, direction TLT
+.\glue(\leftskip) 53.97034
+.\localpar
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\hbox(10.42104+4.05261)x0.0, glue set - 17.99011fil, direction TLT
+..\glue 0.0 plus 1.0fil minus 1.0fil
+..\hbox(10.42104+4.05261)x17.99011, direction TLT
+...\hbox(10.42104+4.05261)x17.99011, glue set 11.99341fil, direction TLT []
+.\boundary=1
+.etc.
+
+
+Overfull \hbox (41.72665pt too wide) in paragraph at lines 22556--22559
+ [][][] <1: lmroman10-regular @ 12.0pt> Run <14: lmmono10-regular @ 12.0pt> gpg --verify-options show-notations --verify filetoverify.asc 
+
+\hbox(10.42104+4.05261)x426.78743, glue set - 1.0, direction TLT
+.\glue(\leftskip) 53.97034
+.\localpar
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\hbox(10.42104+4.05261)x0.0, glue set - 17.99011fil, direction TLT
+..\glue 0.0 plus 1.0fil minus 1.0fil
+..\hbox(10.42104+4.05261)x17.99011, direction TLT
+...\hbox(10.42104+4.05261)x17.99011, glue set 11.99341fil, direction TLT []
+.\boundary=1
+.etc.
+
+structure       > sectioning > subsection @ level 4 : 0.0.38.3 -> Security (checking for actual malware):
+structure       > sectioning > subsubsection @ level 5 : 0.0.38.3.1 -> Anti-Virus Software:
+pages           > flushing realpage 374, userpage 374, subpage 374
+pages           > flushing realpage 375, userpage 375, subpage 375
+pages           > flushing realpage 376, userpage 376, subpage 376
+structure       > sectioning > subsubsection @ level 5 : 0.0.38.3.2 -> Manual Reviews:
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.38.3.2.1 -> PDF files:
+pages           > flushing realpage 377, userpage 377, subpage 377
+
+Overfull \hbox (32.85994pt too wide) in paragraph at lines 65--87
+[]<14: lmmono10-regular @ 12.0pt> /OpenAction 0 #This indicates the presence of automatic action on opening 
+
+\hbox(10.42104+4.05261)x426.78743, direction TLT
+.\localpar
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(10.42104+4.05261)x0.0, direction TLT
+.<14: lmmono10-regular @ 12.0pt> /
+.<14: lmmono10-regular @ 12.0pt> O
+.<14: lmmono10-regular @ 12.0pt> p
+.etc.
+
+
+Overfull \hbox (32.85994pt too wide) in paragraph at lines 89--113
+[]<14: lmmono10-regular @ 12.0pt> /AcroForm 0 #This indicates the presence of AcroForm which could contain 
+
+\hbox(10.42104+4.05261)x426.78743, direction TLT
+.\localpar
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(10.42104+4.05261)x0.0, direction TLT
+.<14: lmmono10-regular @ 12.0pt> /
+.<14: lmmono10-regular @ 12.0pt> A
+.<14: lmmono10-regular @ 12.0pt> c
+.etc.
+
+
+Overfull \hbox (26.5634pt too wide) in paragraph at lines 115--147
+[]<14: lmmono10-regular @ 12.0pt> /JBIG2Decode 0 #This indicates the use of JBIG2 compression which could 
+
+\hbox(10.42104+4.05261)x426.78743, direction TLT
+.\localpar
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(10.42104+4.05261)x0.0, direction TLT
+.<14: lmmono10-regular @ 12.0pt> /
+.<14: lmmono10-regular @ 12.0pt> J
+.<14: lmmono10-regular @ 12.0pt> B
+.etc.
+
+
+Overfull \hbox (20.26686pt too wide) in paragraph at lines 149--179
+[]<14: lmmono10-regular @ 12.0pt> /RichMedia 0 #This indicates the presence of rich media within the PDF 
+
+\hbox(10.42104+4.05261)x426.78743, direction TLT
+.\localpar
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(10.42104+4.05261)x0.0, direction TLT
+.<14: lmmono10-regular @ 12.0pt> /
+.<14: lmmono10-regular @ 12.0pt> R
+.<14: lmmono10-regular @ 12.0pt> i
+.etc.
+
+
+Overfull \hbox (1.37724pt too wide) in paragraph at lines 197--219
+[]<14: lmmono10-regular @ 12.0pt> /EmbeddedFile 0 #This indicates there are embedded files within the 
+
+\hbox(10.42104+4.05261)x426.78743, direction TLT
+.\localpar
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(10.42104+4.05261)x0.0, direction TLT
+.<14: lmmono10-regular @ 12.0pt> /
+.<14: lmmono10-regular @ 12.0pt> E
+.<14: lmmono10-regular @ 12.0pt> m
+.etc.
+
+pages           > flushing realpage 378, userpage 378, subpage 378
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.38.3.2.2 -> Other types of files:
+
+Overfull \hbox (13.22493pt too wide) in paragraph at lines 22847--22862
+ [][][] <12: lmroman10-bold @ 12.0pt> For Doc­u­ments/Pic­tures: <1: lmroman10-regular @ 12.0pt> Con­sider us­ing  <14: lmmono10-regular @ 12.0pt> h t t p s : / / g i t h u b . c o m / f i r s t l o o k m e d i a 
+
+\hbox(10.42104+4.05261)x426.78743, glue set - 1.0, direction TLT
+.\glue(\leftskip) 17.99011
+.\localpar
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\hbox(10.42104+4.05261)x0.0, glue set - 17.99011fil, direction TLT
+..\glue 0.0 plus 1.0fil minus 1.0fil
+..\hbox(10.42104+4.05261)x17.99011, direction TLT
+...\hbox(10.42104+4.05261)x17.99011, glue set 8.65924fil, direction TLT []
+.\boundary=1
+.etc.
+
+pages           > flushing realpage 379, userpage 379, subpage 379
+structure       > sectioning > section @ level 3 : 0.0.39 -> Appendix U: How to bypass (some) local restrictions on supervised computers
+structure       > sectioning > subsection @ level 4 : 0.0.39.1 -> Portable Apps:
+pages           > flushing realpage 380, userpage 380, subpage 380
+structure       > sectioning > subsection @ level 4 : 0.0.39.2 -> Bootable Live Systems:
+pages           > flushing realpage 381, userpage 381, subpage 381
+structure       > sectioning > subsection @ level 4 : 0.0.39.3 -> Precautions:
+structure       > sectioning > section @ level 3 : 0.0.40 -> Appendix V: What browser to use in your Guest VM/Disposable VM
+pages           > flushing realpage 382, userpage 382, subpage 382
+structure       > sectioning > subsection @ level 4 : 0.0.40.1 -> Brave:
+pages           > flushing realpage 383, userpage 383, subpage 383
+structure       > sectioning > subsection @ level 4 : 0.0.40.2 -> Ungoogled-Chromium:
+pages           > flushing realpage 384, userpage 384, subpage 384
+structure       > sectioning > subsection @ level 4 : 0.0.40.3 -> Edge:
+structure       > sectioning > subsection @ level 4 : 0.0.40.4 -> Safari:
+pages           > flushing realpage 385, userpage 385, subpage 385
+structure       > sectioning > subsection @ level 4 : 0.0.40.5 -> Firefox:
+pages           > flushing realpage 386, userpage 386, subpage 386
+structure       > sectioning > subsection @ level 4 : 0.0.40.6 -> Tor Browser:
+structure       > sectioning > section @ level 3 : 0.0.41 -> Appendix V1: Hardening your Browsers:
+pages           > flushing realpage 387, userpage 387, subpage 387
+structure       > sectioning > subsection @ level 4 : 0.0.41.1 -> Brave:
+
+Overfull \hbox (26.5354pt too wide) in paragraph at lines 23390--23392
+ [][][] <1: lmroman10-regular @ 12.0pt> Go into <12: lmroman10-bold @ 12.0pt> Set­tings <1: lmroman10-regular @ 12.0pt> > <12: lmroman10-bold @ 12.0pt> So­cial me­dia block­ing <1: lmroman10-regular @ 12.0pt> (<14: lmmono10-regular @ 12.0pt> brave://settings/socialBlocking<1: lmroman10-regular @ 12.0pt> ) 
+
+\hbox(10.42104+4.05261)x426.78743, glue set - 1.0, direction TLT
+.\glue(\leftskip) 17.99011
+.\localpar
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\hbox(10.42104+4.05261)x0.0, glue set - 17.99011fil, direction TLT
+..\glue 0.0 plus 1.0fil minus 1.0fil
+..\hbox(10.42104+4.05261)x17.99011, direction TLT
+...\hbox(10.42104+4.05261)x17.99011, glue set 8.65924fil, direction TLT []
+.\boundary=1
+.etc.
+
+pages           > flushing realpage 388, userpage 388, subpage 388
+
+Overfull \hbox (47.62143pt too wide) in paragraph at lines 23462--23464
+ [][][] <1: lmroman10-regular @ 12.0pt> Go into <12: lmroman10-bold @ 12.0pt> Set­tings <1: lmroman10-regular @ 12.0pt> > <12: lmroman10-bold @ 12.0pt> Shields <1: lmroman10-regular @ 12.0pt> > <12: lmroman10-bold @ 12.0pt> Con­tent fil­ters <1: lmroman10-regular @ 12.0pt> (<14: lmmono10-regular @ 12.0pt> brave://settings/shields/filters<1: lmroman10-regular @ 12.0pt> ) 
+
+\hbox(10.42104+4.05261)x426.78743, glue set - 1.0, direction TLT
+.\glue(\leftskip) 17.99011
+.\localpar
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\hbox(10.42104+4.05261)x0.0, glue set - 17.99011fil, direction TLT
+..\glue 0.0 plus 1.0fil minus 1.0fil
+..\hbox(10.42104+4.05261)x17.99011, direction TLT
+...\hbox(10.42104+4.05261)x17.99011, glue set 8.65924fil, direction TLT []
+.\boundary=1
+.etc.
+
+pages           > flushing realpage 389, userpage 389, subpage 389
+structure       > sectioning > subsection @ level 4 : 0.0.41.2 -> Ungoogled-Chromium:
+structure       > sectioning > subsection @ level 4 : 0.0.41.3 -> Edge:
+pages           > flushing realpage 390, userpage 390, subpage 390
+pages           > flushing realpage 391, userpage 391, subpage 391
+pages           > flushing realpage 392, userpage 392, subpage 392
+structure       > sectioning > subsection @ level 4 : 0.0.41.4 -> Safari:
+pages           > flushing realpage 393, userpage 393, subpage 393
+structure       > sectioning > subsection @ level 4 : 0.0.41.5 -> Firefox:
+structure       > sectioning > subsubsection @ level 5 : 0.0.41.5.1 -> Normal settings:
+pages           > flushing realpage 394, userpage 394, subpage 394
+structure       > sectioning > subsubsection @ level 5 : 0.0.41.5.2 -> Advanced settings:
+pages           > flushing realpage 395, userpage 395, subpage 395
+pages           > flushing realpage 396, userpage 396, subpage 396
+pages           > flushing realpage 397, userpage 397, subpage 397
+pages           > flushing realpage 398, userpage 398, subpage 398
+structure       > sectioning > subsubsection @ level 5 : 0.0.41.5.3 -> Addons to install/consider:
+structure       > sectioning > subsubsection @ level 5 : 0.0.41.5.4 -> Bonus resources:
+structure       > sectioning > section @ level 3 : 0.0.42 -> Appendix W: Virtualization
+pages           > flushing realpage 399, userpage 399, subpage 399
+floatblocks     > '46' placed (here)
+structure       > sectioning > subsection @ level 4 : 0.0.42.1 -> Nested virtualization risks
+pages           > flushing realpage 400, userpage 400, subpage 400
+
+Overfull \hbox (38.25697pt too wide) in paragraph at lines 24217--24221
+ <14: lmmono10-regular @ 12.0pt> HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\ProductId 
+
+\hbox(8.32343+2.0029)x426.78743, direction TLT
+.\glue(\leftskip) 17.99011
+.<14: lmmono10-regular @ 12.0pt> H
+.<14: lmmono10-regular @ 12.0pt> K
+.<14: lmmono10-regular @ 12.0pt> E
+.<14: lmmono10-regular @ 12.0pt> Y
+.etc.
+
+
+Overfull \hbox (154.61815pt too wide) in paragraph at lines 24221--24224
+ [][][] <1: lmroman10-regular @ 12.0pt> HDD, GPU, and mouse dri­vers can be ex­posed through: <14: lmmono10-regular @ 12.0pt> HKEY_LOCAL_MACHINE\System\CurrentControlSet\ 
+
+\hbox(10.42104+4.05261)x426.78743, glue set - 1.0, direction TLT
+.\glue(\leftskip) 17.99011
+.\localpar
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\hbox(10.42104+4.05261)x0.0, glue set - 17.99011fil, direction TLT
+..\glue 0.0 plus 1.0fil minus 1.0fil
+..\hbox(10.42104+4.05261)x17.99011, direction TLT
+...\hbox(10.42104+4.05261)x17.99011, glue set 8.65924fil, direction TLT []
+.\boundary=1
+.etc.
+
+
+Overfull \hbox (97.81949pt too wide) in paragraph at lines 24224--24227
+ [][][] <1: lmroman10-regular @ 12.0pt> Reg­istry en­tries will show that this is a vir­tual mouse: <14: lmmono10-regular @ 12.0pt> %WINDIR%\system32\drivers\vmmouse.sys 
+
+\hbox(10.42104+4.05261)x426.78743, glue set - 1.0, direction TLT
+.\glue(\leftskip) 17.99011
+.\localpar
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\hbox(10.42104+4.05261)x0.0, glue set - 17.99011fil, direction TLT
+..\glue 0.0 plus 1.0fil minus 1.0fil
+..\hbox(10.42104+4.05261)x17.99011, direction TLT
+...\hbox(10.42104+4.05261)x17.99011, glue set 8.65924fil, direction TLT []
+.\boundary=1
+.etc.
+
+structure       > sectioning > section @ level 3 : 0.0.43 -> Appendix X: Using Tor bridges in hostile environments
+pages           > flushing realpage 401, userpage 401, subpage 401
+pages           > flushing realpage 402, userpage 402, subpage 402
+floatblocks     > '47' placed (here)
+pages           > flushing realpage 403, userpage 403, subpage 403
+structure       > sectioning > section @ level 3 : 0.0.44 -> Appendix Y: Installing and using desktop Tor Browser
+structure       > sectioning > subsection @ level 4 : 0.0.44.1 -> Installation:
+structure       > sectioning > subsection @ level 4 : 0.0.44.2 -> Usage and Precautions:
+floatblocks     > 6 saved
+floatblocks     > 7 saved
+floatblocks     > 8 saved
+pages           > flushing realpage 404, userpage 404, subpage 404
+floatblocks     > 6 moved
+floatblocks     > '48' moved
+floatblocks     > 7 moved
+floatblocks     > '49' moved
+floatblocks     > n of top floats limited to '2'
+floatblocks     > n of bottom floats limited to '0'
+pages           > flushing realpage 405, userpage 405, subpage 405
+floatblocks     > 8 moved
+floatblocks     > '50' moved
+structure       > sectioning > section @ level 3 : 0.0.45 -> Appendix Z: Online anonymous payments using cryptocurrencies
+pages           > flushing realpage 406, userpage 406, subpage 406
+structure       > sectioning > subsection @ level 4 : 0.0.45.1 -> Using Bitcoin anonymously option:
+pages           > flushing realpage 407, userpage 407, subpage 407
+structure       > sectioning > subsection @ level 4 : 0.0.45.2 -> Using Monero anonymously option:
+pages           > flushing realpage 408, userpage 408, subpage 408
+structure       > sectioning > subsection @ level 4 : 0.0.45.3 -> Warning about special tumbling, mixing, coinjoining privacy wallets and services: \useURL [url2927][https://wikiless.org/wiki/Cryptocurrency_tumbler][][Wikiless]\from [url2927] \useURL [url2928][https://web.archive.org/web/https://wikiless.org/wiki/Cryptocurrency_tumbler][][Archive.org]\from [url2928]
+structure       > sectioning > subsection @ level 4 : 0.0.45.4 -> When converting from BTC to Monero:
+structure       > sectioning > section @ level 3 : 0.0.46 -> Appendix A1: Recommended VPS hosting providers
+pages           > flushing realpage 409, userpage 409, subpage 409
+structure       > sectioning > section @ level 3 : 0.0.47 -> Appendix A2: Guidelines for passwords and passphrases
+pages           > flushing realpage 410, userpage 410, subpage 410
+floatblocks     > 9 saved
+pages           > flushing realpage 411, userpage 411, subpage 411
+floatblocks     > 9 moved
+floatblocks     > '51' moved
+structure       > sectioning > section @ level 3 : 0.0.48 -> Appendix A3: Search Engines
+pages           > flushing realpage 412, userpage 412, subpage 412
+
+Overfull \hbox (32.62993pt too wide) in paragraph at lines 24876--24878
+ [][][] <1: lmroman10-regular @ 12.0pt> Duck­DuckGo:  <14: lmmono10-regular @ 12.0pt> h t t p : / / d u c k d u c k g o g g 4 2 x j o c 7 2 x 3 s j a s o w o a r f b g c m v f i m a f t t 6 t w a g s w z c z a d 
+
+\hbox(10.42104+4.05261)x426.78743, glue set - 1.0, direction TLT
+.\glue(\leftskip) 17.99011
+.\localpar
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\hbox(10.42104+4.05261)x0.0, glue set - 17.99011fil, direction TLT
+..\glue 0.0 plus 1.0fil minus 1.0fil
+..\hbox(10.42104+4.05261)x17.99011, direction TLT
+...\hbox(10.42104+4.05261)x17.99011, glue set 8.65924fil, direction TLT []
+.\boundary=1
+.etc.
+
+structure       > sectioning > section @ level 3 : 0.0.49 -> Appendix A4: Counteracting Forensic Linguistics
+structure       > sectioning > subsection @ level 4 : 0.0.49.1 -> Introduction:
+structure       > sectioning > subsection @ level 4 : 0.0.49.2 -> What does an adversary look for when examining your writing?
+pages           > flushing realpage 413, userpage 413, subpage 413
+structure       > sectioning > subsection @ level 4 : 0.0.49.3 -> Examples:
+pages           > flushing realpage 414, userpage 414, subpage 414
+structure       > sectioning > subsection @ level 4 : 0.0.49.4 -> How to counteract the efforts of your adversary:
+pages           > flushing realpage 415, userpage 415, subpage 415
+structure       > sectioning > subsection @ level 4 : 0.0.49.5 -> What different linguistic choices could say about you:
+structure       > sectioning > subsubsection @ level 5 : 0.0.49.5.1 -> Emoticons:
+structure       > sectioning > subsubsection @ level 5 : 0.0.49.5.2 -> Structural features:
+structure       > sectioning > subsubsection @ level 5 : 0.0.49.5.3 -> Spelling slang and symbols:
+pages           > flushing realpage 416, userpage 416, subpage 416
+structure       > sectioning > subsection @ level 4 : 0.0.49.6 -> Techniques to prevent writeprinting:
+structure       > sectioning > subsubsection @ level 5 : 0.0.49.6.1 -> Spelling and grammar checking:
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.49.6.1.1 -> Offline using a word processor:
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.49.6.1.2 -> Online using an online service:
+structure       > sectioning > subsubsection @ level 5 : 0.0.49.6.2 -> Translation technique:
+structure       > sectioning > subsubsection @ level 5 : 0.0.49.6.3 -> Search and replace:
+pages           > flushing realpage 417, userpage 417, subpage 417
+pages           > flushing realpage 418, userpage 418, subpage 418
+structure       > sectioning > subsubsection @ level 5 : 0.0.49.6.4 -> Final advice:
+structure       > sectioning > subsection @ level 4 : 0.0.49.7 -> Bonus links:
+pages           > flushing realpage 419, userpage 419, subpage 419
+
+Overfull \hbox (9.6811pt too wide) in paragraph at lines 25281--25288
+ [][][] <1: lmroman10-regular @ 12.0pt> https://me­dia.de­f­con.org/DEF%CON%/DEF%CON%%pre­sen­
+
+\hbox(10.42104+4.05261)x426.78743, direction TLT
+.\glue(\leftskip) 17.99011
+.\localpar
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\hbox(10.42104+4.05261)x0.0, glue set - 17.99011fil, direction TLT
+..\glue 0.0 plus 1.0fil minus 1.0fil
+..\hbox(10.42104+4.05261)x17.99011, direction TLT
+...\hbox(10.42104+4.05261)x17.99011, glue set 8.65924fil, direction TLT []
+.\boundary=1
+.etc.
+
+
+Overfull \hbox (47.26537pt too wide) in paragraph at lines 25281--25288
+ <1: lmroman10-regular @ 12.0pt> ta­tions/DEFCON--Matt-Wixey-Betrayed-by-the-Keyboard-Updated.pdf [Archive.org]:
+
+\hbox(8.99506+2.99835)x426.78743, glue set - 1.0, direction TLT
+.\glue(\leftskip) 17.99011
+.<1: lmroman10-regular @ 12.0pt> t
+.<1: lmroman10-regular @ 12.0pt> a
+.\discretionary (penalty 50) []
+.<1: lmroman10-regular @ 12.0pt> t
+.etc.
+
+structure       > sectioning > section @ level 3 : 0.0.50 -> Appendix A5: Additional browser precautions with JavaScript enabled
+pages           > flushing realpage 420, userpage 420, subpage 420
+structure       > sectioning > section @ level 3 : 0.0.51 -> Appendix A6: Mirrors
+
+Overfull \hbox (52.53703pt too wide) in paragraph at lines 25370--25373
+ [][][] <1: lmroman10-regular @ 12.0pt> Tor Onion Mir­ror:  <14: lmmono10-regular @ 12.0pt> h t t p : / / t h g t o a l l k c x r d v 3 7 u 6 k n s c 3 p u m k 6 c q 6 l q m c q l w 3 j 5 v k m y a h k x i v e 4 j y d 
+
+\hbox(10.42104+4.05261)x426.78743, glue set - 1.0, direction TLT
+.\glue(\leftskip) 17.99011
+.\localpar
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\hbox(10.42104+4.05261)x0.0, glue set - 17.99011fil, direction TLT
+..\glue 0.0 plus 1.0fil minus 1.0fil
+..\hbox(10.42104+4.05261)x17.99011, direction TLT
+...\hbox(10.42104+4.05261)x17.99011, glue set 8.65924fil, direction TLT []
+.\boundary=1
+.etc.
+
+pages           > flushing realpage 421, userpage 421, subpage 421
+
+Overfull \hbox (80.253pt too wide) in paragraph at lines 25379--25382
+ [][][] <1: lmroman10-regular @ 12.0pt> Archive.to­day over Tor:  <14: lmmono10-regular @ 12.0pt> h t t p : / / a r c h i v e i y a 7 4 c o d q g i i x o 3 3 q 6 2 q l r q t k g m c i t q x 5 u 2 o e q n m n 5 b p c b i y d 
+
+\hbox(10.42104+4.05261)x426.78743, glue set - 1.0, direction TLT
+.\glue(\leftskip) 17.99011
+.\localpar
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\hbox(10.42104+4.05261)x0.0, glue set - 17.99011fil, direction TLT
+..\glue 0.0 plus 1.0fil minus 1.0fil
+..\hbox(10.42104+4.05261)x17.99011, direction TLT
+...\hbox(10.42104+4.05261)x17.99011, glue set 8.65924fil, direction TLT []
+.\boundary=1
+.etc.
+
+structure       > sectioning > section @ level 3 : 0.0.52 -> Appendix A7: Comparing versions
+structure       > sectioning > section @ level 3 : 0.0.53 -> Appendix A8: Crypto Swapping Services without Registration and KYC
+structure       > sectioning > subsection @ level 4 : 0.0.53.1 -> General Crypto Swapping:
+pages           > flushing realpage 422, userpage 422, subpage 422
+
+Overfull \hbox (137.50417pt too wide) in paragraph at lines 25436--25438
+ [][][] <1: lmroman10-regular @ 12.0pt> Kilo Swap (Onion Hid­den Ser­vice):  <14: lmmono10-regular @ 12.0pt> h t t p : / / m l y u s r 6 h t l x s y c 7 t 2 f 4 z 5 3 w d x h 3 w i n 7 q 3 q p x c r b a m 6 j f 3 d m u a 7 t n z u y d 
+
+\hbox(10.42104+4.05261)x426.78743, glue set - 1.0, direction TLT
+.\glue(\leftskip) 17.99011
+.\localpar
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\hbox(10.42104+4.05261)x0.0, glue set - 17.99011fil, direction TLT
+..\glue 0.0 plus 1.0fil minus 1.0fil
+..\hbox(10.42104+4.05261)x17.99011, direction TLT
+...\hbox(10.42104+4.05261)x17.99011, glue set 8.65924fil, direction TLT []
+.\boundary=1
+.etc.
+
+structure       > sectioning > subsection @ level 4 : 0.0.53.2 -> BTC to Monero only:
+structure       > sectioning > section @ level 3 : 0.0.54 -> Appendix A9: Installing a Zcash wallet:
+structure       > sectioning > subsection @ level 4 : 0.0.54.1 -> Debian 11 VM:
+pages           > flushing realpage 423, userpage 423, subpage 423
+structure       > sectioning > subsection @ level 4 : 0.0.54.2 -> Ubuntu 20.04/21.04/21.10 VM:
+structure       > sectioning > subsection @ level 4 : 0.0.54.3 -> Windows 10/11 VM:
+structure       > sectioning > subsection @ level 4 : 0.0.54.4 -> Whonix Workstation 16 VM:
+pages           > flushing realpage 424, userpage 424, subpage 424
+structure       > sectioning > section @ level 3 : 0.0.55 -> Appendix B1: Checklist of things to verify before sharing information:
+pages           > flushing realpage 425, userpage 425, subpage 425
+structure       > sectioning > section @ level 3 : 0.0.56 -> Appendix B2: Monero Disclaimer
+structure       > sectioning > section @ level 3 : 0.0.57 -> Appendix B3: Threat modeling resources
+pages           > flushing realpage 426, userpage 426, subpage 426
+
+Overfull \hbox (1.37724pt too wide) in paragraph at lines 5--31
+[]<14: lmmono10-regular @ 12.0pt> - You can read more here: [A Lightweight Approach to Privacy Threat 
+
+\hbox(10.42104+4.05261)x426.78743, direction TLT
+.\localpar
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(10.42104+4.05261)x0.0, direction TLT
+.<14: lmmono10-regular @ 12.0pt> -
+.<14: lmmono10-regular @ 12.0pt>  
+.\penalty 0
+.etc.
+
+
+Overfull \hbox (13.97032pt too wide) in paragraph at lines 5--31
+<14: lmmono10-regular @ 12.0pt> Modeling](https://sion.info/assets/pdf/publications/WuytsIWPE2020.pdf) 
+
+\hbox(8.32343+2.74649)x426.78743, direction TLT
+.<14: lmmono10-regular @ 12.0pt> M
+.<14: lmmono10-regular @ 12.0pt> o
+.<14: lmmono10-regular @ 12.0pt> d
+.<14: lmmono10-regular @ 12.0pt> e
+.<14: lmmono10-regular @ 12.0pt> l
+.etc.
+
+
+Overfull \hbox (202.8665pt too wide) in paragraph at lines 32--62
+[]<14: lmmono10-regular @ 12.0pt> - Here are two videos from [Dr. K. Wuyts](https://www.semanticscholar.org/author/Kim-Wuyts/3190241) 
+
+\hbox(10.42104+4.05261)x426.78743, direction TLT
+.\localpar
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(10.42104+4.05261)x0.0, direction TLT
+.<14: lmmono10-regular @ 12.0pt> -
+.<14: lmmono10-regular @ 12.0pt>  
+.\penalty 0
+.etc.
+
+
+Overfull \hbox (303.61113pt too wide) in paragraph at lines 63--87
+[]<14: lmmono10-regular @ 12.0pt>     - [Privacy & prejudice: on privacy threat modeling misconceptions](https://www.youtube.com/watch?v=zI4SFyq_Xjw) 
+
+\hbox(10.42104+4.05261)x426.78743, direction TLT
+.\localpar
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(10.42104+4.05261)x0.0, direction TLT
+.<14: lmmono10-regular @ 12.0pt>  
+.\penalty 0
+.<14: lmmono10-regular @ 12.0pt>  
+.etc.
+
+
+Overfull \hbox (127.30803pt too wide) in paragraph at lines 88--106
+[]<14: lmmono10-regular @ 12.0pt>     - [Privacy Threat Model Using LINDDUN](https://www.youtube.com/watch?v=C9F8X1j9Zpg) 
+
+\hbox(10.42104+4.05261)x426.78743, direction TLT
+.\localpar
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(10.42104+4.05261)x0.0, direction TLT
+.<14: lmmono10-regular @ 12.0pt>  
+.\penalty 0
+.<14: lmmono10-regular @ 12.0pt>  
+.etc.
+
+pages           > flushing realpage 427, userpage 427, subpage 427
+structure       > sectioning > section @ level 3 : 0.0.58 -> Appendix B4: Important notes about evil-maid and tampering
+structure       > sectioning > section @ level 3 : 0.0.59 -> Appendix B5: Types of CPU attacks:
+pages           > flushing realpage 428, userpage 428, subpage 428
+structure       > sectioning > subsubsubsection @ level 6 : 0.0.59.0.0.1 -> Some other microarchitecture bugs:
+structure       > sectioning > section @ level 3 : 0.0.60 -> Appendix B6: Warning for using Orbot on Android
+pages           > flushing realpage 429, userpage 429, subpage 429
+structure       > sectioning > section @ level 3 : 0.0.61 -> Appendix B7: Caution about Session Messenger
+
+Overfull \hbox (0.60649pt too wide) in paragraph at lines 25849--25859
+ [][][] <1: lmroman10-regular @ 12.0pt> The com­pany is based in Aus­tralia which has very <26: lmroman10-italic @ 12.0pt> un­fa­vor­able <1: lmroman10-regular @ 12.0pt> pri­vacy laws.[]’[] 
+
+\hbox(10.42104+4.05261)x426.78743, glue set - 1.0, direction TLT
+.\glue(\leftskip) 17.99011
+.\localpar
+..\localinterlinepenalty=0
+..\localbrokenpenalty=0
+..\localleftbox=null
+..\localrightbox=null
+.\hbox(0.0+0.0)x0.0, direction TLT
+.\hbox(10.42104+4.05261)x0.0, glue set - 17.99011fil, direction TLT
+..\glue 0.0 plus 1.0fil minus 1.0fil
+..\hbox(10.42104+4.05261)x17.99011, direction TLT
+...\hbox(10.42104+4.05261)x17.99011, glue set 8.65924fil, direction TLT []
+.\boundary=1
+.etc.
+
+pages           > flushing realpage 430, userpage 430, subpage 430
+pages           > flushing realpage 431, userpage 431, subpage 431
+structure       > sectioning > section @ level 3 : 0.0.62 -> References:
+pages           > flushing realpage 432, userpage 432, subpage 432
+close source    > level 2, order 3, name '/mnt/e/git/thgtoa-dev/tex2pdf.-1a34188c73046814/input.tex'
+close source    > level 1, order 3, name '/usr/share/texmf/tex/context/base/mkiv/cont-yes.mkiv'
+
+system          > start used files
+
+system          > text: input
+
+system          > stop used files
+
+
+system          > start used files
+
+system          >    1: filename=char-prv.lua filetype=tex format=tex foundname=/usr/share/texmf/tex/context/base/mkiv/char-prv.lua fullname=/usr/share/texmf/tex/context/base/mkiv/char-prv.lua usedmethod=database
+system          >    2: filename=cont-yes.mkiv filetype=tex foundname=/usr/share/texmf/tex/context/base/mkiv/cont-yes.mkiv fullname=/usr/share/texmf/tex/context/base/mkiv/cont-yes.mkiv usedmethod=database
+system          >    3: filename=publ-imp-default.lua filetype=lua foundname=/usr/share/texmf/tex/context/base/mkiv/publ-imp-default.lua fullname=/usr/share/texmf/tex/context/base/mkiv/publ-imp-default.lua usedmethod=database
+system          >    4: filename=cont-new.mkiv filetype=tex foundname=/usr/share/texmf/tex/context/base/mkiv/cont-new.mkiv fullname=/usr/share/texmf/tex/context/base/mkiv/cont-new.mkiv usedmethod=database
+system          >    5: filename=lang-exc.lua filetype=lua foundname=/usr/share/texmf/tex/context/base/mkiv/lang-exc.lua fullname=/usr/share/texmf/tex/context/base/mkiv/lang-exc.lua usedmethod=database
+system          >    6: filename=lang-us.lua filetype=lua foundname=/usr/share/texmf/tex/context/patterns/mkiv/lang-us.lua fullname=/usr/share/texmf/tex/context/patterns/mkiv/lang-us.lua usedmethod=database
+system          >    7: filename=/mnt/e/git/thgtoa-dev/tex2pdf.-1a34188c73046814/input.tex foundname=/mnt/e/git/thgtoa-dev/tex2pdf.-1a34188c73046814/input.tex fullname=/mnt/e/git/thgtoa-dev/tex2pdf.-1a34188c73046814/input.tex usedmethod=direct
+system          >    8: filename=lm.lfg filetype=tex foundname=/usr/share/texmf/tex/context/fonts/mkiv/lm.lfg fullname=/usr/share/texmf/tex/context/fonts/mkiv/lm.lfg usedmethod=database
+system          >    9: filename=lm-math.lfg filetype=tex foundname=/usr/share/texmf/tex/context/fonts/mkiv/lm-math.lfg fullname=/usr/share/texmf/tex/context/fonts/mkiv/lm-math.lfg usedmethod=database
+system          >   10: filename=lm-math.map filetype=map format=map foundname=/usr/share/texmf/fonts/map/dvips/lm/lm-math.map fullname=/usr/share/texmf/fonts/map/dvips/lm/lm-math.map usedmethod=database
+system          >   11: filename=lm-rm.map filetype=map format=map foundname=/usr/share/texmf/fonts/map/dvips/lm/lm-rm.map fullname=/usr/share/texmf/fonts/map/dvips/lm/lm-rm.map usedmethod=database
+system          >   12: filename=mkiv-base.map filetype=map format=map foundname=/usr/share/texmf/fonts/map/pdftex/context/mkiv-base.map fullname=/usr/share/texmf/fonts/map/pdftex/context/mkiv-base.map usedmethod=database
+system          >   13: filename=lmroman10-regular.otf filetype=otf format=otf foundname=/usr/share/texmf/fonts/opentype/public/lm/lmroman10-regular.otf fullname=/usr/share/texmf/fonts/opentype/public/lm/lmroman10-regular.otf usedmethod=database
+system          >   14: filename=cmunrm.otf filetype=otf format=otf foundname=/usr/share/texlive/texmf-dist/fonts/opentype/public/cm-unicode/cmunrm.otf fullname=/usr/share/texlive/texmf-dist/fonts/opentype/public/cm-unicode/cmunrm.otf usedmethod=database
+system          >   15: filename=latinmodern-math.otf filetype=otf format=otf foundname=/usr/share/texmf/fonts/opentype/public/lm-math/latinmodern-math.otf fullname=/usr/share/texmf/fonts/opentype/public/lm-math/latinmodern-math.otf usedmethod=database
+system          >   16: filename=lmroman10-bold.otf filetype=otf format=otf foundname=/usr/share/texmf/fonts/opentype/public/lm/lmroman10-bold.otf fullname=/usr/share/texmf/fonts/opentype/public/lm/lmroman10-bold.otf usedmethod=database
+system          >   17: filename=cmunbx.otf filetype=otf format=otf foundname=/usr/share/texlive/texmf-dist/fonts/opentype/public/cm-unicode/cmunbx.otf fullname=/usr/share/texlive/texmf-dist/fonts/opentype/public/cm-unicode/cmunbx.otf usedmethod=database
+system          >   18: filename=lmmono10-regular filetype=otf format=otf foundname=/usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf fullname=/usr/share/texmf/fonts/opentype/public/lm/lmmono10-regular.otf usedmethod=database
+system          >   19: filename=lpdf-pdx.xml filetype=tex foundname=/usr/share/texmf/tex/context/base/mkiv/lpdf-pdx.xml fullname=/usr/share/texmf/tex/context/base/mkiv/lpdf-pdx.xml usedmethod=database
+system          >   20: filename=lmmonolt10-bold filetype=otf format=otf foundname=/usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf fullname=/usr/share/texmf/fonts/opentype/public/lm/lmmonolt10-bold.otf usedmethod=database
+system          >   21: filename=.././tex2pdf.-1a34188c73046814/6c1f5a9deb304a3afd443e665a7e61c8ae88ebb1.png format=tex foundname=.././tex2pdf.-1a34188c73046814/6c1f5a9deb304a3afd443e665a7e61c8ae88ebb1.png fullname=/mnt/e/git/thgtoa-dev/tex2pdf.-1a34188c73046814/6c1f5a9deb304a3afd443e665a7e61c8ae88ebb1.png usedmethod=direct
+system          >   22: filename=.././tex2pdf.-1a34188c73046814/f96c08d2009e512bde929817a9db4a77225c85d3.png format=tex foundname=.././tex2pdf.-1a34188c73046814/f96c08d2009e512bde929817a9db4a77225c85d3.png fullname=/mnt/e/git/thgtoa-dev/tex2pdf.-1a34188c73046814/f96c08d2009e512bde929817a9db4a77225c85d3.png usedmethod=direct
+system          >   23: filename=.././tex2pdf.-1a34188c73046814/209a5add37a22e27eb7b941aaaffd5a9933f6d07.png format=tex foundname=.././tex2pdf.-1a34188c73046814/209a5add37a22e27eb7b941aaaffd5a9933f6d07.png fullname=/mnt/e/git/thgtoa-dev/tex2pdf.-1a34188c73046814/209a5add37a22e27eb7b941aaaffd5a9933f6d07.png usedmethod=direct
+system          >   24: filename=lmroman10-italic.otf filetype=otf format=otf foundname=/usr/share/texmf/fonts/opentype/public/lm/lmroman10-italic.otf fullname=/usr/share/texmf/fonts/opentype/public/lm/lmroman10-italic.otf usedmethod=database
+system          >   25: filename=cmunti.otf filetype=otf format=otf foundname=/usr/share/texlive/texmf-dist/fonts/opentype/public/cm-unicode/cmunti.otf fullname=/usr/share/texlive/texmf-dist/fonts/opentype/public/cm-unicode/cmunti.otf usedmethod=database
+system          >   26: filename=.././tex2pdf.-1a34188c73046814/2ea3ec068530d8b4c654a4dd1567ef05949062de.png format=tex foundname=.././tex2pdf.-1a34188c73046814/2ea3ec068530d8b4c654a4dd1567ef05949062de.png fullname=/mnt/e/git/thgtoa-dev/tex2pdf.-1a34188c73046814/2ea3ec068530d8b4c654a4dd1567ef05949062de.png usedmethod=direct
+system          >   27: filename=.././tex2pdf.-1a34188c73046814/8c97c975e37c2792538e508a4a8c0a7ddce0c40e.png format=tex foundname=.././tex2pdf.-1a34188c73046814/8c97c975e37c2792538e508a4a8c0a7ddce0c40e.png fullname=/mnt/e/git/thgtoa-dev/tex2pdf.-1a34188c73046814/8c97c975e37c2792538e508a4a8c0a7ddce0c40e.png usedmethod=direct
+system          >   28: filename=.././tex2pdf.-1a34188c73046814/697c4bdfe82ded26f96471e66af08ac5a49c4107.png format=tex foundname=.././tex2pdf.-1a34188c73046814/697c4bdfe82ded26f96471e66af08ac5a49c4107.png fullname=/mnt/e/git/thgtoa-dev/tex2pdf.-1a34188c73046814/697c4bdfe82ded26f96471e66af08ac5a49c4107.png usedmethod=direct
+system          >   29: filename=.././tex2pdf.-1a34188c73046814/80dd775aa8d16e6e8776e3ff627b45b661d10949.png format=tex foundname=.././tex2pdf.-1a34188c73046814/80dd775aa8d16e6e8776e3ff627b45b661d10949.png fullname=/mnt/e/git/thgtoa-dev/tex2pdf.-1a34188c73046814/80dd775aa8d16e6e8776e3ff627b45b661d10949.png usedmethod=direct
+system          >   30: filename=.././tex2pdf.-1a34188c73046814/a56e4587b1199b03f2e2f69dd1cec9540440c565.png format=tex foundname=.././tex2pdf.-1a34188c73046814/a56e4587b1199b03f2e2f69dd1cec9540440c565.png fullname=/mnt/e/git/thgtoa-dev/tex2pdf.-1a34188c73046814/a56e4587b1199b03f2e2f69dd1cec9540440c565.png usedmethod=direct
+system          >   31: filename=.././tex2pdf.-1a34188c73046814/5039d0baf9b2f223fb7e3228a8e4606f8c126171.png format=tex foundname=.././tex2pdf.-1a34188c73046814/5039d0baf9b2f223fb7e3228a8e4606f8c126171.png fullname=/mnt/e/git/thgtoa-dev/tex2pdf.-1a34188c73046814/5039d0baf9b2f223fb7e3228a8e4606f8c126171.png usedmethod=direct
+system          >   32: filename=lmroman10-bolditalic.otf filetype=otf format=otf foundname=/usr/share/texmf/fonts/opentype/public/lm/lmroman10-bolditalic.otf fullname=/usr/share/texmf/fonts/opentype/public/lm/lmroman10-bolditalic.otf usedmethod=database
+system          >   33: filename=cmunbi.otf filetype=otf format=otf foundname=/usr/share/texlive/texmf-dist/fonts/opentype/public/cm-unicode/cmunbi.otf fullname=/usr/share/texlive/texmf-dist/fonts/opentype/public/cm-unicode/cmunbi.otf usedmethod=database
+system          >   34: filename=.././tex2pdf.-1a34188c73046814/67f5e6d6a057d0b015934661fba6f7d7bf386403.png format=tex foundname=.././tex2pdf.-1a34188c73046814/67f5e6d6a057d0b015934661fba6f7d7bf386403.png fullname=/mnt/e/git/thgtoa-dev/tex2pdf.-1a34188c73046814/67f5e6d6a057d0b015934661fba6f7d7bf386403.png usedmethod=direct
+system          >   35: filename=.././tex2pdf.-1a34188c73046814/a0a9bd8f5400eecc92075b502854bb202c2de9fc.png format=tex foundname=.././tex2pdf.-1a34188c73046814/a0a9bd8f5400eecc92075b502854bb202c2de9fc.png fullname=/mnt/e/git/thgtoa-dev/tex2pdf.-1a34188c73046814/a0a9bd8f5400eecc92075b502854bb202c2de9fc.png usedmethod=direct
+system          >   36: filename=.././tex2pdf.-1a34188c73046814/7285fc77e7eb3c0381a6dd18d8378bf0422a363b.png format=tex foundname=.././tex2pdf.-1a34188c73046814/7285fc77e7eb3c0381a6dd18d8378bf0422a363b.png fullname=/mnt/e/git/thgtoa-dev/tex2pdf.-1a34188c73046814/7285fc77e7eb3c0381a6dd18d8378bf0422a363b.png usedmethod=direct
+system          >   37: filename=.././tex2pdf.-1a34188c73046814/4f7142de5d77f6ca1331e5447ea064a93b94e87c.png format=tex foundname=.././tex2pdf.-1a34188c73046814/4f7142de5d77f6ca1331e5447ea064a93b94e87c.png fullname=/mnt/e/git/thgtoa-dev/tex2pdf.-1a34188c73046814/4f7142de5d77f6ca1331e5447ea064a93b94e87c.png usedmethod=direct
+system          >   38: filename=.././tex2pdf.-1a34188c73046814/ad5dac2a0c32b6db732493569d7134218c54534b.png format=tex foundname=.././tex2pdf.-1a34188c73046814/ad5dac2a0c32b6db732493569d7134218c54534b.png fullname=/mnt/e/git/thgtoa-dev/tex2pdf.-1a34188c73046814/ad5dac2a0c32b6db732493569d7134218c54534b.png usedmethod=direct
+system          >   39: filename=.././tex2pdf.-1a34188c73046814/4c5dddb8843b891eb249928e3907ff9878265a57.png format=tex foundname=.././tex2pdf.-1a34188c73046814/4c5dddb8843b891eb249928e3907ff9878265a57.png fullname=/mnt/e/git/thgtoa-dev/tex2pdf.-1a34188c73046814/4c5dddb8843b891eb249928e3907ff9878265a57.png usedmethod=direct
+system          >   40: filename=.././tex2pdf.-1a34188c73046814/4ccbbc189aa8cae0ea882310ecaeb4c1b3f6acb0.png format=tex foundname=.././tex2pdf.-1a34188c73046814/4ccbbc189aa8cae0ea882310ecaeb4c1b3f6acb0.png fullname=/mnt/e/git/thgtoa-dev/tex2pdf.-1a34188c73046814/4ccbbc189aa8cae0ea882310ecaeb4c1b3f6acb0.png usedmethod=direct
+system          >   41: filename=.././tex2pdf.-1a34188c73046814/a32a269c6ea46148dddc02bb954ddeb6e5805666.png format=tex foundname=.././tex2pdf.-1a34188c73046814/a32a269c6ea46148dddc02bb954ddeb6e5805666.png fullname=/mnt/e/git/thgtoa-dev/tex2pdf.-1a34188c73046814/a32a269c6ea46148dddc02bb954ddeb6e5805666.png usedmethod=direct
+system          >   42: filename=.././tex2pdf.-1a34188c73046814/b966aa3e3d5aabca8c7865ad45c2585ac031fa87.png format=tex foundname=.././tex2pdf.-1a34188c73046814/b966aa3e3d5aabca8c7865ad45c2585ac031fa87.png fullname=/mnt/e/git/thgtoa-dev/tex2pdf.-1a34188c73046814/b966aa3e3d5aabca8c7865ad45c2585ac031fa87.png usedmethod=direct
+system          >   43: filename=.././tex2pdf.-1a34188c73046814/3519fa6fbdac01618e225d534c5918474bd78346.png format=tex foundname=.././tex2pdf.-1a34188c73046814/3519fa6fbdac01618e225d534c5918474bd78346.png fullname=/mnt/e/git/thgtoa-dev/tex2pdf.-1a34188c73046814/3519fa6fbdac01618e225d534c5918474bd78346.png usedmethod=direct
+system          >   44: filename=.././tex2pdf.-1a34188c73046814/c7837d016afb2456fc0abad51408405b8fd44efd.png format=tex foundname=.././tex2pdf.-1a34188c73046814/c7837d016afb2456fc0abad51408405b8fd44efd.png fullname=/mnt/e/git/thgtoa-dev/tex2pdf.-1a34188c73046814/c7837d016afb2456fc0abad51408405b8fd44efd.png usedmethod=direct
+system          >   45: filename=.././tex2pdf.-1a34188c73046814/29596f395807873100e641cf2387680899958a47.png format=tex foundname=.././tex2pdf.-1a34188c73046814/29596f395807873100e641cf2387680899958a47.png fullname=/mnt/e/git/thgtoa-dev/tex2pdf.-1a34188c73046814/29596f395807873100e641cf2387680899958a47.png usedmethod=direct
+system          >   46: filename=.././tex2pdf.-1a34188c73046814/45f855034bc1c4fc299ce9e1baca4e3bea7609fd.png format=tex foundname=.././tex2pdf.-1a34188c73046814/45f855034bc1c4fc299ce9e1baca4e3bea7609fd.png fullname=/mnt/e/git/thgtoa-dev/tex2pdf.-1a34188c73046814/45f855034bc1c4fc299ce9e1baca4e3bea7609fd.png usedmethod=direct
+system          >   47: filename=.././tex2pdf.-1a34188c73046814/f60ad50fd1483e104fbb457400a4a4c70a917183.png format=tex foundname=.././tex2pdf.-1a34188c73046814/f60ad50fd1483e104fbb457400a4a4c70a917183.png fullname=/mnt/e/git/thgtoa-dev/tex2pdf.-1a34188c73046814/f60ad50fd1483e104fbb457400a4a4c70a917183.png usedmethod=direct
+system          >   48: filename=.././tex2pdf.-1a34188c73046814/9d551d82a85f0049229b0fa18bd65c8e1f999512.png format=tex foundname=.././tex2pdf.-1a34188c73046814/9d551d82a85f0049229b0fa18bd65c8e1f999512.png fullname=/mnt/e/git/thgtoa-dev/tex2pdf.-1a34188c73046814/9d551d82a85f0049229b0fa18bd65c8e1f999512.png usedmethod=direct
+system          >   49: filename=lmmono10-italic filetype=otf format=otf foundname=/usr/share/texmf/fonts/opentype/public/lm/lmmono10-italic.otf fullname=/usr/share/texmf/fonts/opentype/public/lm/lmmono10-italic.otf usedmethod=database
+system          >   50: filename=.././tex2pdf.-1a34188c73046814/d2d7a46a2008590aac1d17ab621aba1862b88100.png format=tex foundname=.././tex2pdf.-1a34188c73046814/d2d7a46a2008590aac1d17ab621aba1862b88100.png fullname=/mnt/e/git/thgtoa-dev/tex2pdf.-1a34188c73046814/d2d7a46a2008590aac1d17ab621aba1862b88100.png usedmethod=direct
+system          >   51: filename=.././tex2pdf.-1a34188c73046814/d95b67fc7103589e5e710e081a879f94777c384b.png format=tex foundname=.././tex2pdf.-1a34188c73046814/d95b67fc7103589e5e710e081a879f94777c384b.png fullname=/mnt/e/git/thgtoa-dev/tex2pdf.-1a34188c73046814/d95b67fc7103589e5e710e081a879f94777c384b.png usedmethod=direct
+system          >   52: filename=.././tex2pdf.-1a34188c73046814/6abef583a82ae896d7a4d535564864d136a79111.png format=tex foundname=.././tex2pdf.-1a34188c73046814/6abef583a82ae896d7a4d535564864d136a79111.png fullname=/mnt/e/git/thgtoa-dev/tex2pdf.-1a34188c73046814/6abef583a82ae896d7a4d535564864d136a79111.png usedmethod=direct
+system          >   53: filename=.././tex2pdf.-1a34188c73046814/6f4b39fdeaff3ec0d38d54195d9222a4a7360d38.png format=tex foundname=.././tex2pdf.-1a34188c73046814/6f4b39fdeaff3ec0d38d54195d9222a4a7360d38.png fullname=/mnt/e/git/thgtoa-dev/tex2pdf.-1a34188c73046814/6f4b39fdeaff3ec0d38d54195d9222a4a7360d38.png usedmethod=direct
+system          >   54: filename=.././tex2pdf.-1a34188c73046814/6ebbe83efdf8b825bf4e449fe99ff6fb4ad6c612.png format=tex foundname=.././tex2pdf.-1a34188c73046814/6ebbe83efdf8b825bf4e449fe99ff6fb4ad6c612.png fullname=/mnt/e/git/thgtoa-dev/tex2pdf.-1a34188c73046814/6ebbe83efdf8b825bf4e449fe99ff6fb4ad6c612.png usedmethod=direct
+system          >   55: filename=.././tex2pdf.-1a34188c73046814/3f1dd7d8f22bd7d274405fae575f7fe26b9710c8.png format=tex foundname=.././tex2pdf.-1a34188c73046814/3f1dd7d8f22bd7d274405fae575f7fe26b9710c8.png fullname=/mnt/e/git/thgtoa-dev/tex2pdf.-1a34188c73046814/3f1dd7d8f22bd7d274405fae575f7fe26b9710c8.png usedmethod=direct
+system          >   56: filename=.././tex2pdf.-1a34188c73046814/2df2d0b5bf2e5009139a3a2be98c1222bad392e1.png format=tex foundname=.././tex2pdf.-1a34188c73046814/2df2d0b5bf2e5009139a3a2be98c1222bad392e1.png fullname=/mnt/e/git/thgtoa-dev/tex2pdf.-1a34188c73046814/2df2d0b5bf2e5009139a3a2be98c1222bad392e1.png usedmethod=direct
+system          >   57: filename=.././tex2pdf.-1a34188c73046814/f714cdfaa68a568871b0d69fadeb3d0807ee782e.png format=tex foundname=.././tex2pdf.-1a34188c73046814/f714cdfaa68a568871b0d69fadeb3d0807ee782e.png fullname=/mnt/e/git/thgtoa-dev/tex2pdf.-1a34188c73046814/f714cdfaa68a568871b0d69fadeb3d0807ee782e.png usedmethod=direct
+system          >   58: filename=.././tex2pdf.-1a34188c73046814/eec357c2a4f93c6863432df1ca7e8ddf486f7007.png format=tex foundname=.././tex2pdf.-1a34188c73046814/eec357c2a4f93c6863432df1ca7e8ddf486f7007.png fullname=/mnt/e/git/thgtoa-dev/tex2pdf.-1a34188c73046814/eec357c2a4f93c6863432df1ca7e8ddf486f7007.png usedmethod=direct
+system          >   59: filename=.././tex2pdf.-1a34188c73046814/83059567ea6b8d9938d0c0df3a7cd07e84a78ba1.png format=tex foundname=.././tex2pdf.-1a34188c73046814/83059567ea6b8d9938d0c0df3a7cd07e84a78ba1.png fullname=/mnt/e/git/thgtoa-dev/tex2pdf.-1a34188c73046814/83059567ea6b8d9938d0c0df3a7cd07e84a78ba1.png usedmethod=direct
+system          >   60: filename=.././tex2pdf.-1a34188c73046814/e527d2bd40752c865c72d972115864784dfee63f.png format=tex foundname=.././tex2pdf.-1a34188c73046814/e527d2bd40752c865c72d972115864784dfee63f.png fullname=/mnt/e/git/thgtoa-dev/tex2pdf.-1a34188c73046814/e527d2bd40752c865c72d972115864784dfee63f.png usedmethod=direct
+system          >   61: filename=.././tex2pdf.-1a34188c73046814/f7d944af668902072796d24866daeb5ea33ef361.png format=tex foundname=.././tex2pdf.-1a34188c73046814/f7d944af668902072796d24866daeb5ea33ef361.png fullname=/mnt/e/git/thgtoa-dev/tex2pdf.-1a34188c73046814/f7d944af668902072796d24866daeb5ea33ef361.png usedmethod=direct
+system          >   62: filename=.././tex2pdf.-1a34188c73046814/f9e0d691359d2b48fa315e60f32965192acbe83f.png format=tex foundname=.././tex2pdf.-1a34188c73046814/f9e0d691359d2b48fa315e60f32965192acbe83f.png fullname=/mnt/e/git/thgtoa-dev/tex2pdf.-1a34188c73046814/f9e0d691359d2b48fa315e60f32965192acbe83f.png usedmethod=direct
+system          >   63: filename=.././tex2pdf.-1a34188c73046814/b2f67a77185443adc8917dde05f91affaa9ed0ba.png format=tex foundname=.././tex2pdf.-1a34188c73046814/b2f67a77185443adc8917dde05f91affaa9ed0ba.png fullname=/mnt/e/git/thgtoa-dev/tex2pdf.-1a34188c73046814/b2f67a77185443adc8917dde05f91affaa9ed0ba.png usedmethod=direct
+system          >   64: filename=.././tex2pdf.-1a34188c73046814/af22c16af5b6ac7d08658c7c9acd7f4f76dfa4d7.png format=tex foundname=.././tex2pdf.-1a34188c73046814/af22c16af5b6ac7d08658c7c9acd7f4f76dfa4d7.png fullname=/mnt/e/git/thgtoa-dev/tex2pdf.-1a34188c73046814/af22c16af5b6ac7d08658c7c9acd7f4f76dfa4d7.png usedmethod=direct
+system          >   65: filename=.././tex2pdf.-1a34188c73046814/ebc51d7d99cf460893a3a2944936d7eae6503921.png format=tex foundname=.././tex2pdf.-1a34188c73046814/ebc51d7d99cf460893a3a2944936d7eae6503921.png fullname=/mnt/e/git/thgtoa-dev/tex2pdf.-1a34188c73046814/ebc51d7d99cf460893a3a2944936d7eae6503921.png usedmethod=direct
+system          >   66: filename=.././tex2pdf.-1a34188c73046814/58f77ec3710646c76044e70f04d744ba188a891f.png format=tex foundname=.././tex2pdf.-1a34188c73046814/58f77ec3710646c76044e70f04d744ba188a891f.png fullname=/mnt/e/git/thgtoa-dev/tex2pdf.-1a34188c73046814/58f77ec3710646c76044e70f04d744ba188a891f.png usedmethod=direct
+system          >   67: filename=.././tex2pdf.-1a34188c73046814/e2563c82e94be8ff9b5768e97f3fec315cd38aa3.png format=tex foundname=.././tex2pdf.-1a34188c73046814/e2563c82e94be8ff9b5768e97f3fec315cd38aa3.png fullname=/mnt/e/git/thgtoa-dev/tex2pdf.-1a34188c73046814/e2563c82e94be8ff9b5768e97f3fec315cd38aa3.png usedmethod=direct
+system          >   68: filename=.././tex2pdf.-1a34188c73046814/901f25aab05bcd463af156777e4c2082069303a4.png format=tex foundname=.././tex2pdf.-1a34188c73046814/901f25aab05bcd463af156777e4c2082069303a4.png fullname=/mnt/e/git/thgtoa-dev/tex2pdf.-1a34188c73046814/901f25aab05bcd463af156777e4c2082069303a4.png usedmethod=direct
+system          >   69: filename=.././tex2pdf.-1a34188c73046814/e2b3ac87b481d2d3fb02c83602f4f7b714460246.png format=tex foundname=.././tex2pdf.-1a34188c73046814/e2b3ac87b481d2d3fb02c83602f4f7b714460246.png fullname=/mnt/e/git/thgtoa-dev/tex2pdf.-1a34188c73046814/e2b3ac87b481d2d3fb02c83602f4f7b714460246.png usedmethod=direct
+system          >   70: filename=.././tex2pdf.-1a34188c73046814/eb7fa739d64e0cd1e1e44df456e1231f370a4a94.png format=tex foundname=.././tex2pdf.-1a34188c73046814/eb7fa739d64e0cd1e1e44df456e1231f370a4a94.png fullname=/mnt/e/git/thgtoa-dev/tex2pdf.-1a34188c73046814/eb7fa739d64e0cd1e1e44df456e1231f370a4a94.png usedmethod=direct
+system          >   71: filename=.././tex2pdf.-1a34188c73046814/fd53e813bad3f6ff1a41c93677fc836106411992.png format=tex foundname=.././tex2pdf.-1a34188c73046814/fd53e813bad3f6ff1a41c93677fc836106411992.png fullname=/mnt/e/git/thgtoa-dev/tex2pdf.-1a34188c73046814/fd53e813bad3f6ff1a41c93677fc836106411992.png usedmethod=direct
+system          >   72: filename=.././tex2pdf.-1a34188c73046814/6773ad6f3fb9b8aceee4e4a7c846cf566ccc05ae.png format=tex foundname=.././tex2pdf.-1a34188c73046814/6773ad6f3fb9b8aceee4e4a7c846cf566ccc05ae.png fullname=/mnt/e/git/thgtoa-dev/tex2pdf.-1a34188c73046814/6773ad6f3fb9b8aceee4e4a7c846cf566ccc05ae.png usedmethod=direct
+
+system          > stop used files
+
+
+system          > start commandline options
+
+system          > batchmode="true"
+system          > currentrun="3"
+system          > fulljobname="./input.tex"
+system          > input="./input.tex"
+system          > kindofrun="2"
+system          > maxnofruns="9"
+system          > texmfbinpath="/usr/bin"
+
+system          > stop commandline options
+
+
+system          > start commandline files
+
+system          >    1: ./input.tex
+
+system          > stop commandline files
+
+
+modules         > start used modules
+
+
+modules         > stop used modules
+
+
+references      > start missing references
+
+references      >    1  [][appendix-c-windows-installation-media-creation]
+references      >    1  [][updating-whonix-from-version-15-to-version-16]
+references      >    2  [][warning-about-special-tumbling-mixing-coinjoining-privacy-wallets-and-services-wikiless-archiveorg]
+
+references      > stop missing references
+
+
+fonts           > start missing characters: /usr/share/texmf/fonts/opentype/public/lm/lmroman10-bold.otf
+
+fonts           >    8  U+00406  І  CYRILLIC CAPITAL LETTER BYELORUSSIAN-UKRAINIAN I
+fonts           >    4  U+00407  Ї  CYRILLIC CAPITAL LETTER YI
+fonts           >   16  U+00410  А  CYRILLIC CAPITAL LETTER A
+fonts           >   12  U+00412  В  CYRILLIC CAPITAL LETTER VE
+fonts           >    8  U+00414  Д  CYRILLIC CAPITAL LETTER DE
+fonts           >    8  U+00415  Е  CYRILLIC CAPITAL LETTER IE
+fonts           >    4  U+00416  Ж  CYRILLIC CAPITAL LETTER ZHE
+fonts           >    4  U+00418  И  CYRILLIC CAPITAL LETTER I
+fonts           >    8  U+0041A  К  CYRILLIC CAPITAL LETTER KA
+fonts           >    8  U+0041B  Л  CYRILLIC CAPITAL LETTER EL
+fonts           >    4  U+0041C  М  CYRILLIC CAPITAL LETTER EM
+fonts           >    8  U+0041D  Н  CYRILLIC CAPITAL LETTER EN
+fonts           >    4  U+0041E  О  CYRILLIC CAPITAL LETTER O
+fonts           >    8  U+00420  Р  CYRILLIC CAPITAL LETTER ER
+fonts           >    4  U+00423  У  CYRILLIC CAPITAL LETTER U
+fonts           >    8  U+00426  Ц  CYRILLIC CAPITAL LETTER TSE
+fonts           >    8  U+0042F  Я  CYRILLIC CAPITAL LETTER YA
+
+fonts           > stop missing characters
+
+
+fonts           > start missing characters: /usr/share/texmf/fonts/opentype/public/lm/lmroman10-regular.otf
+
+fonts           >    6  U+00406  І  CYRILLIC CAPITAL LETTER BYELORUSSIAN-UKRAINIAN I
+fonts           >    6  U+00412  В  CYRILLIC CAPITAL LETTER VE
+fonts           >    6  U+00417  З  CYRILLIC CAPITAL LETTER ZE
+fonts           >    6  U+0041C  М  CYRILLIC CAPITAL LETTER EM
+fonts           >    6  U+0041F  П  CYRILLIC CAPITAL LETTER PE
+fonts           >    6  U+00423  У  CYRILLIC CAPITAL LETTER U
+fonts           >    6  U+00426  Ц  CYRILLIC CAPITAL LETTER TSE
+fonts           >    6  U+00428  Ш  CYRILLIC CAPITAL LETTER SHA
+fonts           >   84  U+00430  а  CYRILLIC SMALL LETTER A
+fonts           >    6  U+00431  б  CYRILLIC SMALL LETTER BE
+fonts           >   54  U+00432  в  CYRILLIC SMALL LETTER VE
+fonts           >   18  U+00433  г  CYRILLIC SMALL LETTER GHE
+fonts           >   36  U+00434  д  CYRILLIC SMALL LETTER DE
+fonts           >   60  U+00435  е  CYRILLIC SMALL LETTER IE
+fonts           >   12  U+00436  ж  CYRILLIC SMALL LETTER ZHE
+fonts           >    6  U+00437  з  CYRILLIC SMALL LETTER ZE
+fonts           >   84  U+00438  и  CYRILLIC SMALL LETTER I
+fonts           >   24  U+00439  й  CYRILLIC SMALL LETTER SHORT I
+fonts           >   54  U+0043A  к  CYRILLIC SMALL LETTER KA
+fonts           >   30  U+0043B  л  CYRILLIC SMALL LETTER EL
+fonts           >   48  U+0043C  м  CYRILLIC SMALL LETTER EM
+fonts           >   90  U+0043D  н  CYRILLIC SMALL LETTER EN
+fonts           >  126  U+0043E  о  CYRILLIC SMALL LETTER O
+fonts           >   36  U+0043F  п  CYRILLIC SMALL LETTER PE
+fonts           >   42  U+00440  р  CYRILLIC SMALL LETTER ER
+fonts           >   42  U+00441  с  CYRILLIC SMALL LETTER ES
+fonts           >   90  U+00442  т  CYRILLIC SMALL LETTER TE
+fonts           >   48  U+00443  у  CYRILLIC SMALL LETTER U
+fonts           >    6  U+00446  ц  CYRILLIC SMALL LETTER TSE
+fonts           >    6  U+00447  ч  CYRILLIC SMALL LETTER CHE
+fonts           >    6  U+0044C  ь  CYRILLIC SMALL LETTER SOFT SIGN
+fonts           >    6  U+0044E  ю  CYRILLIC SMALL LETTER YU
+fonts           >   24  U+0044F  я  CYRILLIC SMALL LETTER YA
+fonts           >   18  U+00454  є  CYRILLIC SMALL LETTER UKRAINIAN IE
+fonts           >   36  U+00456  і  CYRILLIC SMALL LETTER BYELORUSSIAN-UKRAINIAN I
+fonts           >   12  U+00457  ї  CYRILLIC SMALL LETTER YI
+fonts           >  102  U+021A9  ↩  LEFTWARDS ARROW WITH HOOK
+fonts           >    6  U+021D2  ⇒  RIGHTWARDS DOUBLE ARROW
+fonts           >  102  U+0FE0E  ︎  VARIATION SELECTOR-0x000F
+
+fonts           > stop missing characters
+
+
+mkiv lua stats  > used config file: /usr/share/texmf/web2c/texmfcnf.lua;/usr/share/texlive/texmf-dist/web2c/texmfcnf.lua
+mkiv lua stats  > used cache path: readable: '/var/lib/texmf/luatex-cache/context/b47c3d3cee7cb6c86268d0595268c442' | readable+writable: '/home/user/.texlive2019/texmf-var/luatex-cache/context/b47c3d3cee7cb6c86268d0595268c442'
+mkiv lua stats  > resource resolver: loadtime 0.050 seconds, 0 scans with scantime 0.000 seconds, 0 shared scans, 72 found files, scanned paths: <none>
+mkiv lua stats  > stored bytecode data: 443 modules (0.154 sec), 93 tables (0.007 sec), 536 chunks (0.160 sec)
+mkiv lua stats  > traced context: maxstack: 1370, freed: 1, unreachable: 1369
+mkiv lua stats  > cleaned up reserved nodes: 54 nodes, 9 lists of 440
+mkiv lua stats  > node memory usage: 571 glue, 3 kern, 8 penalty, 2307 attribute, 51 glue_spec, 574 attribute_list, 2 temp, 2 user_defined
+mkiv lua stats  > node list callback tasks: 8 unique task lists, 10 instances (re)created, 109956 calls
+mkiv lua stats  > h-node processing time: 1.204 seconds including kernel
+mkiv lua stats  > inserted spaces in output: 88359
+mkiv lua stats  > attribute processing time: 0.245 seconds front- and backend
+mkiv lua stats  > driver time: 2.905 seconds 
+mkiv lua stats  > used backend: pdf (backend for directly generating pdf output)
+mkiv lua stats  > jobdata time: 0.118 seconds saving, 0.064 seconds loading
+mkiv lua stats  > callbacks: internal: 209790, file: 26931, direct: 106, late: 8766, function 124882, total: 370475 (860 per page)
+mkiv lua stats  > randomizer: resumed with value 0.55576374242082
+mkiv lua stats  > v-node processing time: 0.139 seconds 
+mkiv lua stats  > result saved in file: input.pdf, compresslevel 3, objectcompresslevel 1
+mkiv lua stats  > loaded patterns: en::1, load time: 0.000
+mkiv lua stats  > structure elements: 25174 element chains identified
+mkiv lua stats  > interactive elements: 5779 references, 1745 destinations
+mkiv lua stats  > loaded fonts: 12 files: cmunbi.otf, cmunbx.otf, cmunrm.otf, cmunti.otf, latinmodern-math.otf, lmmono10-italic.otf, lmmono10-regular.otf, lmmonolt10-bold.otf, lmroman10-bold.otf, lmroman10-bolditalic.otf, lmroman10-italic.otf, lmroman10-regular.otf
+mkiv lua stats  > font engine: otf 3.107, afm 1.513, tfm 1.000, 36 instances, 22 shared in backend, 2 common vectors, 20 common hashes, load time 0.181 seconds 
+mkiv lua stats  > math processing time: 0.014 seconds 
+mkiv lua stats  > graphics processing time: 0.715 seconds including tex, 52 processed images, 47 unique asked, 47 bad names
+mkiv lua stats  > pdf annotations: 5779 links (5736 unique), 0 special
+mkiv lua stats  > cross referencing: 4799 identified, 3 unknown
+mkiv lua stats  > used platform: linux-64, type: unix, binary subtree: usr
+mkiv lua stats  > used engine: luatex version 1.1 with functionality level 7127, banner: this is luatex, version 1.10.0 (tex live 2019/debian)
+mkiv lua stats  > control sequences: 45798 of 65536 + 100000
+mkiv lua stats  > lua properties: engine: lua 5.3, used memory: 206 MB (ctx: 196 MB), hash chars: min(64,40), symbol mask: utf (τεχ)
+mkiv lua stats  > runtime: 12.212 seconds, 432 processed pages, 432 shipped pages, 35.375 pages/second
+
