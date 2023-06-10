@@ -66,7 +66,7 @@ If you use GPG directly, you won't need to mark the release signing key as trust
 
 Finally, verify the asc signature file (links above) against the PDF file by issuing the following example command:
 
-```gpg --verify guide.pdf.asc guide.pdf"```
+```gpg --verify guide.pdf.asc guide.pdf```
 
 This should output a result showing it matches a signature created by the release signing key, and is therefore a good result.
 
