@@ -1,3 +1,4 @@
+---
 name: Release: Scan with VT
 
 on:
@@ -19,3 +20,6 @@ jobs:
           vt_api_key: ${{ secrets.VT_API_KEY }}
           files: |
             export/*.pdf
+
+      - name: Calculate SHA-256 Hashes
+        run: find . -type f -print0 | xargs -0 sha2
