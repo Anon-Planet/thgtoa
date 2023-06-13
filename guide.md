@@ -278,7 +278,7 @@ Finally note that this guide does mention and even recommends various commercial
     -   [Privacy Settings:]
 -   [Appendix B: Windows Additional Privacy Settings]
 -   [Appendix C: Windows Installation Media Creation]
--   [Appendix D: Using System Rescue to securely wipe an SSD drive.]
+-   [Appendix D: Using System Rescue to securely wipe an SSD drive]
 -   [Appendix E: Clonezilla]
 -   [Appendix F: Diskpart]
 -   [Appendix G: Safe Browser on the Host OS]
@@ -8331,7 +8331,7 @@ If you can afford it, just buy Parted Magic for 11$ which provides an easy-to-us
 
 -   Option A: Check if your BIOS/UEFI has a built-in option to do so and if it does, use the correct option ("ATA/NVMe Secure Erase" or "ATA/NVMe Sanitize"). Do not use wipe with passes on an SSD drive.
 
--   Option B: See [Appendix D: Using System Rescue to securely wipe an SSD drive.]
+-   Option B: See [Appendix D: Using System Rescue to securely wipe an SSD drive]
 
 -   Option C: Wipe your disk and re-install Linux with new full disk encryption to overwrite all sectors with new encrypted data. **This method will be terribly slow compared to Option A and B as it will slowly overwrite your whole SSD. Also, note that this might not be the default behavior when using LUKS. You might have to check the option to also encrypt the empty space for this effectively wipe the drive.**
 
@@ -8385,7 +8385,7 @@ Unfortunately, you will not be able to wipe your Host OS using the Microsoft bui
 
 -   Option B: Check [Appendix J: Manufacturer tools for Wiping HDD and SSD drives.][Appendix J: Manufacturer tools for Wiping HDD and SSD drives:]
 
--   Option C: See [Appendix D: Using System Rescue to securely wipe an SSD drive.]
+-   Option C: See [Appendix D: Using System Rescue to securely wipe an SSD drive]
 
 -   Option D: Wipe your disk and re-install Windows before performing new full disk encryption (using Veracrypt or Bitlocker) to overwrite all sectors with new encrypted data. **This method will be slower compared to Option A and B as it will overwrite your whole SSD.**
 
@@ -8431,7 +8431,7 @@ Unfortunately, the macOS Recovery disk utility will not be able to perform a sec
 
 In most cases, if your disk was encrypted with Filevault and you just perform a normal erase, it should be "enough" according to them. It is not according to me, so you have no option besides re-installing macOS again and re-encrypt it with Filevault again after re-installing. This should perform a "crypto erase" by overwriting your earlier install and encryption. This method will be quite slow, unfortunately.
 
-If you want to do a faster secure erase (or have no time to perform a re-install and re-encryption), you can try using the method described in [Appendix D: Using System Rescue to securely wipe an SSD drive][Appendix D: Using System Rescue to securely wipe an SSD drive.] **(This will not work on M1 Macs)**. **Be careful tho as this will also erase your recovery partition which is needed to reinstall macOS.**
+If you want to do a faster secure erase (or have no time to perform a re-install and re-encryption), you can try using the method described in [Appendix D: Using System Rescue to securely wipe an SSD drive][Appendix D: Using System Rescue to securely wipe an SSD drive] **(This will not work on M1 Macs)**. **Be careful tho as this will also erase your recovery partition which is needed to reinstall macOS.**
 
 #### External SSD:
 
@@ -9956,7 +9956,7 @@ These are the steps to create a Windows 10 (21H1) Installation Media using this 
 
 - Go to https://www.microsoft.com/software-download/windows11 and download the ISO.
 
-# Appendix D: Using System Rescue to securely wipe an SSD drive.
+# Appendix D: Using System Rescue to securely wipe an SSD drive
 
 These instructions are valid for all Operating Systems:
 
@@ -13511,7 +13511,7 @@ In short, our opinion is that you may use Session Messenger on iOS due to the ab
   [Appendix A: Windows Installation]: #appendix-a-windows-installation
   [Appendix B: Windows Additional Privacy Settings]: #appendix-b-windows-additional-privacy-settings
   [Appendix C: Windows Installation Media Creation]: #appendix-c-windows-installation-media-creation
-  [Appendix D: Using System Rescue to securely wipe an SSD drive.]: #appendix-d-using-system-rescue-to-securely-wipe-an-ssd-drive.
+  [Appendix D: Using System Rescue to securely wipe an SSD drive]: #appendix-d-using-system-rescue-to-securely-wipe-an-ssd-drive
   [Appendix E: Clonezilla]: #appendix-e-clonezilla
   [Appendix F: Diskpart]: #appendix-f-diskpart
   [Appendix G: Safe Browser on the Host OS]: #appendix-g-safe-browser-on-the-host-os
