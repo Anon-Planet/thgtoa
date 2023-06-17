@@ -1,3 +1,9 @@
+v1.1.8-pre.1
+
+- Add AnarSec to links
+- Fix automatic VirusTotal scans
+- Invidious shutdown
+
 v1.1.7
 
 - Add A.P. Open Collective link

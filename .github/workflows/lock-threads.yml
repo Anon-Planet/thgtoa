@@ -1,0 +1,36 @@
+name: 'Lock Threads'
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+permissions:
+  issues: write
+  pull-requests: write
+
+concurrency:
+  group: lock
+
+jobs:
+  action:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: dessant/lock-threads@v4
+        with:
+          github-token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+          issue-inactive-days: '180'
+          add-issue-labels: 'outdated, archived'
+          issue-comment: >
+            This issue has been closed due to inactivity in the last 180 days.
+            Please open a new issue to bring it up again.
+          issue-lock-reason: 'resolved'
+          pr-inactive-days: '180'
+          include-all-pr-labels: 'done'
+          add-pr-labels: 'outdated, archived'
+          pr-comment: >
+            This pull request has been closed due to inactivity in the last 180 days.
+            Please open a new PR to bring it up again.
+          pr-lock-reason: 'resolved'
+          process-only: 'issues, prs'
+          log-output: false
