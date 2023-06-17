@@ -278,7 +278,7 @@ Finally note that this guide does mention and even recommends various commercial
     -   [Privacy Settings:]
 -   [Appendix B: Windows Additional Privacy Settings]
 -   [Appendix C: Windows Installation Media Creation]
--   [Appendix D: Using System Rescue to securely wipe an SSD drive.]
+-   [Appendix D: Using System Rescue to securely wipe an SSD drive]
 -   [Appendix E: Clonezilla]
 -   [Appendix F: Diskpart]
 -   [Appendix G: Safe Browser on the Host OS]
@@ -1523,11 +1523,17 @@ Here are some examples:
 
 -   Hashes:
 
-    -   Prefer: SHA-3 or BLAKE2[^265]
+    -   Prefer: SHA3-224, SHA-384 or BLAKE2[^265] (these are considered very Quantum Resistant based on an instance of the KECCAK algorithm), SHAKE128 and SHAKE256 (referred to as [extendable-output functions](https://csrc.nist.gov/publications/detail/fips/202/final) (XOFs) via FIPS 202);
 
-    -   Still relatively ok to use: SHA-2 (such as the widely used SHA-256 or SHA-512)
+        -   **Most digital signature algorithms are quantum-broken**;
 
-    -   Avoid: SHA-1, MD5 (unfortunately still widely used), CRC, MD6 (rarely used)
+        -   **Highly suspicious RBGs such as MS_DRBG still exist in standards such as ISO 18031**;
+
+        -   **The AES and SHA2 based DRBGs in current NIST standards are fine**
+
+    -   Still relatively safe to use: SHA-2 (e.g., SHA-256 or SHA-512, which are still considered mostly quantum-safe)
+
+    -   Avoid: SHA-0, SHA-1, MD5 (unfortunately still widely used), CRC, MD6 (rarely used); i.e., anything with known collisions, and/or a history of extensive, not one-off, cryptographic failures
 
 -   File/Disk Encryption:
 
@@ -1547,18 +1553,18 @@ Here are some examples:
 
 -   Password Storage:
 
-    -   Prefer: Argon2, scrypt
-      -   If these aren't options, use bcrypt, or if not possible at least PBKDF2 (only as a last resort)
-      -   Be skeptical of Argon2d, as it's vulnerable to some forms of side-channels. Prefer Argon2i or Argon2id
+    -   Prefer: Argon2
+      -   If these aren't options, use bcrypt, then scrypt (in that order)
+      -   Be skeptical of Argon2d, as it's vulnerable to some forms of side-channels. Prefer Argon2i or Argon2id.
 
-    -   Avoid: SHA-3, SHA-2, SHA-1, MD5
+    -   Avoid: SHA-3, SHA-2, SHA-1, MD5; PBKDF2 due to [concerns regarding brute-force](https://tails.boum.org/security/argon2id/index.en.html) <sup>[[Archive.org]](https://web.archive.org/web/20230613161809/https://tails.boum.org/security/argon2id/index.en.html)</sup>
 
 
 -   Browser Security (HTTPS):
 
     -   Prefer: TLS 1.3 (ideally TLS 1.3 with ECH/eSNI support) or at least TLS 1.2 (widely used)
 
-    -   Avoid: Anything Else (TLS =<1.1, SSL =<3)
+    -   Avoid: Anything Else (TLS <=1.1, SSL <=3)
 
 -   Signing messages/files with PGP/GPG:
 
@@ -1571,6 +1577,8 @@ Here are some examples:
 -   SSH keys:
 
     -   ED25519 (preferred) or RSA 4096 Bits*
+
+        -   But refer to [Attacking Deterministic Signature algorithms](https://eprint.iacr.org/2017/1014.pdf), which details fault injections "(varying the voltage supply) - mainly a threat to tamper-proof hardware and hardware security modules" such as Rowhammer, or templating attacks, etc.
 
     -   Avoid: RSA 2048 bits
 
@@ -8331,7 +8339,7 @@ If you can afford it, just buy Parted Magic for 11$ which provides an easy-to-us
 
 -   Option A: Check if your BIOS/UEFI has a built-in option to do so and if it does, use the correct option ("ATA/NVMe Secure Erase" or "ATA/NVMe Sanitize"). Do not use wipe with passes on an SSD drive.
 
--   Option B: See [Appendix D: Using System Rescue to securely wipe an SSD drive.]
+-   Option B: See [Appendix D: Using System Rescue to securely wipe an SSD drive]
 
 -   Option C: Wipe your disk and re-install Linux with new full disk encryption to overwrite all sectors with new encrypted data. **This method will be terribly slow compared to Option A and B as it will slowly overwrite your whole SSD. Also, note that this might not be the default behavior when using LUKS. You might have to check the option to also encrypt the empty space for this effectively wipe the drive.**
 
@@ -8385,7 +8393,7 @@ Unfortunately, you will not be able to wipe your Host OS using the Microsoft bui
 
 -   Option B: Check [Appendix J: Manufacturer tools for Wiping HDD and SSD drives.][Appendix J: Manufacturer tools for Wiping HDD and SSD drives:]
 
--   Option C: See [Appendix D: Using System Rescue to securely wipe an SSD drive.]
+-   Option C: See [Appendix D: Using System Rescue to securely wipe an SSD drive]
 
 -   Option D: Wipe your disk and re-install Windows before performing new full disk encryption (using Veracrypt or Bitlocker) to overwrite all sectors with new encrypted data. **This method will be slower compared to Option A and B as it will overwrite your whole SSD.**
 
@@ -8431,7 +8439,7 @@ Unfortunately, the macOS Recovery disk utility will not be able to perform a sec
 
 In most cases, if your disk was encrypted with Filevault and you just perform a normal erase, it should be "enough" according to them. It is not according to me, so you have no option besides re-installing macOS again and re-encrypt it with Filevault again after re-installing. This should perform a "crypto erase" by overwriting your earlier install and encryption. This method will be quite slow, unfortunately.
 
-If you want to do a faster secure erase (or have no time to perform a re-install and re-encryption), you can try using the method described in [Appendix D: Using System Rescue to securely wipe an SSD drive][Appendix D: Using System Rescue to securely wipe an SSD drive.] **(This will not work on M1 Macs)**. **Be careful tho as this will also erase your recovery partition which is needed to reinstall macOS.**
+If you want to do a faster secure erase (or have no time to perform a re-install and re-encryption), you can try using the method described in [Appendix D: Using System Rescue to securely wipe an SSD drive][Appendix D: Using System Rescue to securely wipe an SSD drive] **(This will not work on M1 Macs)**. **Be careful tho as this will also erase your recovery partition which is needed to reinstall macOS.**
 
 #### External SSD:
 
@@ -9956,7 +9964,7 @@ These are the steps to create a Windows 10 (21H1) Installation Media using this 
 
 - Go to https://www.microsoft.com/software-download/windows11 and download the ISO.
 
-# Appendix D: Using System Rescue to securely wipe an SSD drive.
+# Appendix D: Using System Rescue to securely wipe an SSD drive
 
 These instructions are valid for all Operating Systems:
 
@@ -13511,7 +13519,7 @@ In short, our opinion is that you may use Session Messenger on iOS due to the ab
   [Appendix A: Windows Installation]: #appendix-a-windows-installation
   [Appendix B: Windows Additional Privacy Settings]: #appendix-b-windows-additional-privacy-settings
   [Appendix C: Windows Installation Media Creation]: #appendix-c-windows-installation-media-creation
-  [Appendix D: Using System Rescue to securely wipe an SSD drive.]: #appendix-d-using-system-rescue-to-securely-wipe-an-ssd-drive.
+  [Appendix D: Using System Rescue to securely wipe an SSD drive]: #appendix-d-using-system-rescue-to-securely-wipe-an-ssd-drive
   [Appendix E: Clonezilla]: #appendix-e-clonezilla
   [Appendix F: Diskpart]: #appendix-f-diskpart
   [Appendix G: Safe Browser on the Host OS]: #appendix-g-safe-browser-on-the-host-os
