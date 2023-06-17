@@ -1,8 +1,10 @@
 v1.1.8-pre.1
 
 - Add AnarSec to links
-- Fix automatic VirusTotal scans
-- Invidious shutdown
+- [CI/CD] chore: fix automatic VT scans
+- Appendix D: remove trailing period in title
+- Add Quantum-resistance and update good crypto algos
+- [CI/CD] chore: lock old issues & pull requests
 
 v1.1.7
 
