@@ -1,0 +1,46 @@
+name: "Content Suggestion"
+description: Suggest something for the guide
+labels: ["next"]
+body:
+
+  - type: markdown
+    attributes:
+      value: |
+        Briefly describe your suggestion.
+        Note: you can also open a [discussion](https://github.com/Anon-Planet/thgtoa/discussions/new/choose).
+
+  - type: input
+    attributes:
+      label: Affected section of the guide
+      description: Please let us know which part of the guide is affected.
+      placeholder: "https://anonymousplanet.org/guide.html#persistent-plausible-deniability-using-whonix-within-tails"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Short description
+      description: Please let us know what should be fixed/changed.
+      placeholder: There is a typo in this line or mistake in this logic.
+    validations:
+      required: true
+
+  - type: textarea
+    id: source
+    attributes:
+      label: Research
+      description: Please do your own due diligence when suggesting changes.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Required checks
+      description: You are required to check that you have read the CoC.
+      options:
+        - label: This is not an opinion. It is fact. It is backed by [my own] research.
+          required: true
+        - label: I agree to the [PSA Code of Conduct](https://anonymousplanet.org/export/CODE_OF_CONDUCT.html).
+          required: true
