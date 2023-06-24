@@ -1523,17 +1523,11 @@ Here are some examples:
 
 -   Hashes:
 
-    -   Prefer: SHA3-224, SHA-384 or BLAKE2[^265] (these are considered very Quantum Resistant based on an instance of the KECCAK algorithm), SHAKE128 and SHAKE256 (referred to as [extendable-output functions](https://csrc.nist.gov/publications/detail/fips/202/final) (XOFs) via FIPS 202);
+    -   Prefer: SHA-3 or BLAKE2[^265]
 
-        -   **Most digital signature algorithms are quantum-broken**;
+    -   Still relatively ok to use: SHA-2 (such as the widely used SHA-256 or SHA-512)
 
-        -   **Highly suspicious RBGs such as MS_DRBG still exist in standards such as ISO 18031**;
-
-        -   **The AES and SHA2 based DRBGs in current NIST standards are fine**
-
-    -   Still relatively safe to use: SHA-2 (e.g., SHA-256 or SHA-512, which are still considered mostly quantum-safe)
-
-    -   Avoid: SHA-0, SHA-1, MD5 (unfortunately still widely used), CRC, MD6 (rarely used); i.e., anything with known collisions, and/or a history of extensive, not one-off, cryptographic failures
+    -   Avoid: SHA-1, MD5 (unfortunately still widely used), CRC, MD6 (rarely used)
 
 -   File/Disk Encryption:
 
@@ -1553,18 +1547,18 @@ Here are some examples:
 
 -   Password Storage:
 
-    -   Prefer: Argon2
-      -   If these aren't options, use bcrypt, then scrypt (in that order)
-      -   Be skeptical of Argon2d, as it's vulnerable to some forms of side-channels. Prefer Argon2i or Argon2id.
+    -   Prefer: Argon2, scrypt
+      -   If these aren't options, use bcrypt, or if not possible at least PBKDF2 (only as a last resort)
+      -   Be skeptical of Argon2d, as it's vulnerable to some forms of side-channels. Prefer Argon2i or Argon2id
 
-    -   Avoid: SHA-3, SHA-2, SHA-1, MD5; PBKDF2 due to [concerns regarding brute-force](https://tails.boum.org/security/argon2id/index.en.html) <sup>[[Archive.org]](https://web.archive.org/web/20230613161809/https://tails.boum.org/security/argon2id/index.en.html)</sup>
+    -   Avoid: SHA-3, SHA-2, SHA-1, MD5
 
 
 -   Browser Security (HTTPS):
 
     -   Prefer: TLS 1.3 (ideally TLS 1.3 with ECH/eSNI support) or at least TLS 1.2 (widely used)
 
-    -   Avoid: Anything Else (TLS <=1.1, SSL <=3)
+    -   Avoid: Anything Else (TLS =<1.1, SSL =<3)
 
 -   Signing messages/files with PGP/GPG:
 
@@ -1577,8 +1571,6 @@ Here are some examples:
 -   SSH keys:
 
     -   ED25519 (preferred) or RSA 4096 Bits*
-
-        -   But refer to [Attacking Deterministic Signature algorithms](https://eprint.iacr.org/2017/1014.pdf), which details fault injections "(varying the voltage supply) - mainly a threat to tamper-proof hardware and hardware security modules" such as Rowhammer, or templating attacks, etc.
 
     -   Avoid: RSA 2048 bits
 
