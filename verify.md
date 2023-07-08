@@ -84,8 +84,8 @@ To verify the files with Minisign:
 **Note: we do not endorse VirusTotal. It should be used with extreme caution, never with any sensitive files, due to their privacy policies. Do not upload sensitive files to VirusTotal.**
 
 The PDF and ODT files of this guide have been automatically scanned by VT, see the links below for an example but do not trust these hashes blindly. Check the hashes match and re-upload to VT if needed:
-- PDF file: [[VT Scan]](https://www.virustotal.com/gui/file/1f1f7af92ca7a3ce819b139a1c1de280d30cdcb0553b7692faa556eeb7084227?nocache=1)
-- ODT file: [[VT Scan]](https://www.virustotal.com/gui/file/c959fbb45b0984f9c6088eecbbd57d455e8284b4300e6423d6e99e70ffcfb472?nocache=1) 
+- PDF file: [[VT Scan]](https://www.virustotal.com/gui/file/c313970efc515cdc3e0546521f81ecc98d249d8ea1422184a67070e8d8351a78?nocache=1)
+- ODT file: [[VT Scan]](https://www.virustotal.com/gui/file/d066e40a3ad7328114d896f56894f3104f220c1cb346ac14fc8f4d06bda4c2b8?nocache=1) 
 
 ### Additional manual safety checks for the PDF files:
 
