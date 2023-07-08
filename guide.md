@@ -124,8 +124,7 @@ Finally note that this guide does mention and even recommends various commercial
         -   [Pixelized or Blurred Information:]
     -   [Your Cryptocurrencies transactions:]
     -   [Your Cloud backups/sync services:]
-    -   [Your Browser and Device Fingerprints:]
-        -   [Microarchitectural Side-channel Deanonymization Attacks:]
+    -   [Microarchitectural Side-channel Deanonymization Attacks:]
     -   [Local Data Leaks and Forensics:]
     -   [Bad Cryptography:]
     -   [No logging but logging anyway policies:]
@@ -1399,24 +1398,6 @@ Notable Examples:
 You should not trust cloud providers with your (not previously and locally encrypted) sensitive data and you should be wary of their privacy claims. In most cases, they can access your data and provide it to a third party if they want to[^250].
 
 The only way to mitigate this is to encrypt your data on your side and then only upload it to such services **or just not use them at all.**
-
-## Your Browser and Device Fingerprints:
-
-Your Browser and Device Fingerprints[^382] are a set of properties/capabilities of your System/Browser. These are used on most websites for invisible user tracking but also to adapt the website user experience depending on their browser. For instance, websites will be able to provide a "mobile experience" if you are using a mobile browser or propose a specific language/geographic version depending on your fingerprint. Most of those techniques work with recent Browsers like Chromium-based[^251] browsers (such as Chrome/Edge) or Firefox[^252] unless taking specific measures. Browser and Device[^382] Fingerprinting are usually integrated into the Captcha services but also in other various services.
-
-We will address [Browser and Device Fingerprinting][Browser and Device Fingerprinting:] further down but this is a basic introduction to the methodology behind it and why it is used in practice.
-
-It should also be noted that while some browsers and extensions will offer some fingerprint resistance, this resistance in itself can also be used to fingerprint you as explained here <https://palant.info/2020/12/10/how-anti-fingerprinting-extensions-tend-to-make-fingerprinting-easier/> <sup>[[Archive.org]](https://web.archive.org/web/https://palant.info/2020/12/10/how-anti-fingerprinting-extensions-tend-to-make-fingerprinting-easier/)</sup>
-
-This guide will mitigate these issues by randomizing or hiding many of those fingerprinting identifiers by:
-
--   Using Virtualization (See [Appendix W: Virtualization]);
-
--   Using specific recommendations (See [Appendix A5: Additional browser precautions with JavaScript enabled];
-
--   Using hardening [Appendix V1: Hardening your Browsers][Appendix V1: Hardening your Browsers:]);
-
--   and by using fingerprint-resistant browsers (like Brave or Tor Browser).
 
 ## Microarchitectural Side-channel Deanonymization Attacks:
 
@@ -5701,7 +5682,21 @@ For this reason, this guide does recommend the use of VPN over Tor (and not Tor 
 
 ### Browser and Device Fingerprinting:
 
+Your Browser and Device Fingerprints[^382] are a set of properties/capabilities of your System/Browser. These are used on most websites for invisible user tracking but also to adapt the website user experience depending on their browser. For instance, websites will be able to provide a "mobile experience" if you are using a mobile browser or propose a specific language/geographic version depending on your fingerprint. Most of those techniques work with recent Browsers like Chromium-based[^251] browsers (such as Chrome/Edge) or Firefox[^252] unless taking specific measures. Browser and Device[^382] Fingerprinting are usually integrated into the Captcha services but also in other various services.
+
 Many platforms (like Google[^383]) will check your browser for various capabilities and settings and block browsers they do not like. This is one of the reasons we recommend using Chromium-based browsers such as Brave Browser over Tor Browser within this VM.
+
+It should also be noted that while some browsers and extensions will offer some fingerprint resistance, this resistance in itself can also be used to fingerprint you as explained here <https://palant.info/2020/12/10/how-anti-fingerprinting-extensions-tend-to-make-fingerprinting-easier/> <sup>[[Archive.org]](https://web.archive.org/web/https://palant.info/2020/12/10/how-anti-fingerprinting-extensions-tend-to-make-fingerprinting-easier/)</sup>
+
+This guide will mitigate these issues by randomizing or hiding many of those fingerprinting identifiers by:
+
+-   Using Virtualization (See [Appendix W: Virtualization]);
+
+-   Using specific recommendations (See [Appendix A5: Additional browser precautions with JavaScript enabled];
+
+-   Using hardening [Appendix V1: Hardening your Browsers][Appendix V1: Hardening your Browsers:]);
+
+-   and by using fingerprint-resistant browsers (like Brave or Tor Browser).
 
 Here are some of the things they check within recent browsers:
 
@@ -13784,7 +13779,6 @@ In short, our opinion is that you may use Session Messenger on iOS due to the ab
   [Yandex:]: #yandex
   [Your Anonymized Tor/VPN traffic:]: #your-anonymized-torvpn-traffic
   [Your Bluetooth MAC address:]: #your-bluetooth-mac-address
-  [Your Browser and Device Fingerprints:]: #your-browser-and-device-fingerprints
   [Your CPU:]: #your-cpu
   [Your Cloud backups/sync services:]: #your-cloud-backupssync-services
   [Your Clues about your Real Life and OSINT:]: #your-clues-about-your-real-life-and-osint
