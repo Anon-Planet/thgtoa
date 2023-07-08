@@ -3,7 +3,8 @@
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta http-equiv="onion-location" content="{{ site.github.tor_mirror_url }}{{ page.url }}" />
+    <!-- Offline -->
+    <!-- <meta http-equiv="onion-location" content="{{ site.github.tor_mirror_url }}{{ page.url }}" /> -->
 	<meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline'; base-uri 'self'; form-action 'self'; object-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'">
 	<meta http-equiv=”X-XSS-Protection” content=”1">
 	<meta http-equiv="Permissions-Policy" content="interest-cohort=()"/>
@@ -18,15 +19,15 @@
       document.getElementById('light').media = "none";
       themeicon.innerHTML = '<svg height="24px" viewBox="0 0 24 24" width="24px" fill="#FFF"><path d="M0 0h24v24H0z" fill="none"/><path d="M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69zM12 18c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6zm0-10c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4z"/></svg>';
     }
-	  
+
     function SetLight() {
       document.getElementById('light').media = "";
       document.getElementById('dark').media = "none";
       themeicon.innerHTML = '<svg enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><rect fill="none" height="24" width="24"/><path d="M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36c-0.98,1.37-2.58,2.26-4.4,2.26 c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"/></svg>';
     }
-	  
-    window.addEventListener('load', 
-    function() { 
+
+    window.addEventListener('load',
+    function() {
       if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
 	if (localStorage.getItem("theme") == "light") {
           SetLight();
@@ -48,7 +49,7 @@
           document.getElementById('switch').checked = false;
       }
     }, false);
-    
+
     function switch_theme(state) {
       if (state) {
 	SetLight();
