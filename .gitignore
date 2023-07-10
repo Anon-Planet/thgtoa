@@ -1,4 +1,4 @@
 # Minimize global Ruby .gitignore
 Gemfile
 Gemfile.lock
-_site/
+_site/tex2pdf
