@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Offline -->
+    <!-- <meta http-equiv="onion-location" content="/" /> -->
+	<meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-inline'; base-uri 'self'; form-action 'self'; object-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'">
+	<meta http-equiv=”X-XSS-Protection” content=”1">
+	<meta http-equiv="Permissions-Policy" content="interest-cohort=()"/>
+	<meta name="referrer" content="no-referrer">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/style.css" id="dark">
+    <link rel="stylesheet" href="assets/css/light_style.css" media="none" id="light">
+    <link rel="shortcut icon" type="image/x-icon" href="media/favicon.ico">
+  <script>
+    function SetDark() {
+      document.getElementById('dark').media = "";
+      document.getElementById('light').media = "none";
+      themeicon.innerHTML = '<svg height="24px" viewBox="0 0 24 24" width="24px" fill="#FFF"><path d="M0 0h24v24H0z" fill="none"/><path d="M20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69zM12 18c-3.31 0-6-2.69-6-6s2.69-6 6-6 6 2.69 6 6-2.69 6-6 6zm0-10c-2.21 0-4 1.79-4 4s1.79 4 4 4 4-1.79 4-4-1.79-4-4-4z"/></svg>';
+    }
+
+    function SetLight() {
+      document.getElementById('light').media = "";
+      document.getElementById('dark').media = "none";
+      themeicon.innerHTML = '<svg enable-background="new 0 0 24 24" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><rect fill="none" height="24" width="24"/><path d="M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36c-0.98,1.37-2.58,2.26-4.4,2.26 c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"/></svg>';
+    }
+
+    window.addEventListener('load',
+    function() {
+      if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+	if (localStorage.getItem("theme") == "light") {
+          SetLight();
+          document.getElementById('switch').checked = true;
+	} else {
+          SetDark();
+          document.getElementById('switch').checked = false;
+	}
+      } else if (window.matchMedia("(prefers-color-scheme: light)").matches) {
+	if (localStorage.getItem("theme") == "dark") {
+          SetDark();
+          document.getElementById('switch').checked = false;
+	} else {
+          SetLight();
+          document.getElementById('switch').checked = true;
+	}
+	} else {
+          SetDark();
+          document.getElementById('switch').checked = false;
+      }
+    }, false);
+
+    function switch_theme(state) {
+      if (state) {
+	SetLight();
+	        localStorage.setItem("theme", "light");
+      } else {
+        SetDark();
+			localStorage.setItem("theme", "dark");
+      }
+    };
+  </script>
+  <style>
+.theme-switch-wrapper {
+  display: inline-block;
+  z-index: 100;
+  position: absolute;
+  right: 0;
+  top: -10px;
+}
+
+.jswarning {
+  display: inline-block;
+  border: 1px solid green;
+}
+
+.theme-switch-wrapper span {
+  margin-right: 2px;
+}
+
+.theme-switch {
+  display: inline-block;
+  height: 25px;
+  position: relative;
+  width: 40px;
+}
+
+.theme-switch input {
+  display: none;
+}
+
+.slider {
+  background: #696969;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transition: 0.5s;
+}
+
+.slider::before {
+  background: #fff;
+  bottom: 4px;
+  content: '';
+  height: 17px;
+  left: 4px;
+  position: absolute;
+  transition: 0.5s;
+  width: 17px;
+}
+
+input:checked + .slider {
+  background: #151515;
+}
+
+input:checked + .slider::before {
+  transform: translateX(15px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round::before {
+  border-radius: 50%;
+}
+
+.fas {
+  font-size: 30px;
+}
+  </style>
+  <noscript>
+    <style>.theme-switch-wrapper {display:none;}</style>
+  </noscript>
+
+<!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>The Hitchhiker’s Guide to Online Anonymity | The Hitchhiker’s Guide to Online Anonymity</title>
+<meta name="generator" content="Jekyll v3.9.3" />
+<meta property="og:title" content="The Hitchhiker’s Guide to Online Anonymity" />
+<meta name="author" content="AnonymousPlanet" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="The Hitchhiker’s Guide to Online Anonymity" />
+<meta property="og:description" content="The Hitchhiker’s Guide to Online Anonymity" />
+<link rel="canonical" href="http://localhost:4000/" />
+<meta property="og:url" content="http://localhost:4000/" />
+<meta property="og:site_name" content="The Hitchhiker’s Guide to Online Anonymity" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="The Hitchhiker’s Guide to Online Anonymity" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebSite","author":{"@type":"Person","name":"AnonymousPlanet"},"description":"The Hitchhiker’s Guide to Online Anonymity","headline":"The Hitchhiker’s Guide to Online Anonymity","name":"AnonymousPlanet","sameAs":["https://twitter.com/AnonyPla","https://github.com/Anon-Planet","https://matrix.to/#/#privacy-security-anonymity:matrix.org","https://mastodon.social/@anonymousplanet"],"url":"http://localhost:4000/"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+  <body style="transition: all 0.5s ease;">
+    <header>
+      <div class="container" style="position: relative;">
+        <div class="theme-switch-wrapper">
+          <!-- Icon -->
+          <span id="toggle-icon">
+            <i id="themeicon" class="fas fa-sun"></i>
+          </span>
+          <!-- Switch -->
+          <label class="theme-switch">
+            <input type="checkbox" id="switch" onclick="switch_theme(this.checked)">
+            <div class="slider round"></div>
+          </label>
+        </div>
+        <a id="a-title">
+			<h1>The Hitchhiker’s Guide to Online Anonymity</h1>
+        </a>
+        <h2>How I learned to start worrying and love <del>privacy</del> anonymity</h2>
+		<h4 class="project-version">The latest Version is v1.1.8. See the <a href="CHANGELOG.html" style="color:#ff4700">changelog.</a></h4>
+        <section id="downloads">
+			
+			
+				<a href="guide.html" class="btn_small" style="color:#FF0000">View Online</a>
+			
+				<a href="export/guide.pdf" class="btn_small">PDF</a>
+				<!--<a href="" class="btn_small">PDF (Dark)</a>-->
+				<a href="export/guide.odt" class="btn_small">OpenDocument</a>
+			
+				<a href="donations.html" class="btn_small">Donate</a>
+			
+			
+				<a href="constitution.html" class="btn_small">Constitution</a>
+			
+				<a href="https://github.com/nopeitsnothing/thgtoa-dev" target="_blank" class="btn_small">Repository</a>
+				<!--<a href="" target="_blank" class="btn_small">Keyoxide</a>-->
+				<a rel="me" href="https://mastodon.social/@anonymousplanet" target="_blank" class="btn_small">Mastodon</a>
+				<a rel="me" href="https://anonymousplanet.org/twitter.html" target="_blank" class="btn_small">Twitter</a>
+				<!--<a rel="me" href="https://mastodon.social/@anonymousplanet" target="_blank" class="btn_small">Mastodon</a>-->
+			
+				<a href="links.html" class="btn_small">Links</a>
+			
+			
+				<a href="about.html" class="btn_small">About</a>
+			
+        </section>
+		<h5>GPG Key Fingerprint: 9EA9 8278 639F 1CD8 53E0  96CB FF94 5075 87A6 A9B9 / Minisign public key: <a href="minisign.pub" style="color:#ff4700">minisign.pub</a></h5>
+		<noscript><p class="jswarning">JavaScript is required to toggle light mode. JavaScript is not used for any other purpose.</p></noscript>
+      </div>
+    </header>
+    <div class="container">
+      <section id="main_content">
+        <p>Welcome.</p>
+
+<p><strong><a href="briar.html">IMPORTANT RECOMMENDATION FOR UKRAINIANS. ВАЖЛИВА РЕКОМЕНДАЦІЯ ДЛЯ УКРАЇНЦІВ</a></strong></p>
+
+<p>This is a maintained guide with the aim of providing an introduction to various online tracking techniques, online ID verification techniques, and detailed guidance to creating and maintaining (truly) anonymous online identities. <span style="color: red"><strong>It is written with hope for activists, journalists, scientists, lawyers, whistle-blowers, and good people being oppressed, censored, harassed anywhere!</strong></span> This guide has no affiliation with the <a href="https://en.wikipedia.org/wiki/Anonymous_(hacker_group)">Anonymous</a> <sup><a href="https://wikiless.org/wiki/Anonymous_(hacker_group)">[Wikiless]</a></sup> <sup><a href="https://web.archive.org/web/https://en.wikipedia.org/wiki/Anonymous_(hacker_group)">[Archive.org]</a></sup> collective/movement.</p>
+
+<p>This guide is an open-source non-profit initiative, <a href="LICENSE.html">licensed</a> under <strong>Creative Commons Attribution-NonCommercial 4.0 International</strong> (<a href="https://creativecommons.org/licenses/by-nc/4.0/">cc-by-nc-4.0</a> <sup><a href="https://web.archive.org/web/https://creativecommons.org/licenses/by-nc/4.0/">[Archive.org]</a></sup>) and is <strong>not sponsored/endorsed by any commercial/governmental entity</strong>. This means that you are free to use our guide for pretty much any purpose <strong>excluding commercially</strong> as long as you do attribute it. There are no ads or any affiliate links.</p>
+
+<p><strong>If you would like to make a donation to help this project, you can do so from <a href="donations.html">here</a> where you will also find the project goals. All the donations will be strictly used within the context of this project. All donations and spendings are logged on the donations page.</strong></p>
+
+<p><strong>View the guide:</strong></p>
+<ul>
+  <li><a href="guide.html">In your browser</a></li>
+  <li><a href="/export/guide.pdf">PDF</a></li>
+  <li><a href="/export/guide.odt">OpenDocument (ODT)</a></li>
+  <li>Raw <a href="https://github.com/Anon-Planet/thgtoa/raw/master/guide.md">Markdown</a> text.</li>
+</ul>
+
+<p>Mirrors:</p>
+<ul>
+  <li>Tor Onion Mirror: <a href="http://thgtoa27ujspeqxasrfvcf5aozqdczvgmwgorrmblh6jn4nino3spcqd.onion/">http://thgtoa27ujspeqxasrfvcf5aozqdczvgmwgorrmblh6jn4nino3spcqd.onion/</a></li>
+</ul>
+
+<p>The guide and all the files are also readily available on Archive.org and Archive.today:</p>
+
+<ul>
+  <li>Archive.org: <a href="https://web.archive.org/web/https://anonymousplanet.org/">https://web.archive.org/web/https://anonymousplanet.org/</a></li>
+  <li>Archive.today: <a href="https://archive.ph/anonymousplanet.org/">https://archive.ph/anonymousplanet.org/</a></li>
+  <li>Archive.today over Tor: <a href="http://archiveiya74codqgiixo33q62qlrqtkgmcitqx5u2oeqnmn5bpcbiyd.onion/anonymousplanet.org/">http://archiveiya74codqgiixo33q62qlrqtkgmcitqx5u2oeqnmn5bpcbiyd.onion/anonymousplanet.org/</a></li>
+</ul>
+
+<p>If you want to access/see the original/legacy project, please see the <a href="legacy.html">legacy resources</a> page.</p>
+
+<p>If you want to see the changes between your PDF and the latest PDF, you could use one of these tools (we do not endorse those):</p>
+
+<ul>
+  <li><a href="https://tools.pdf24.org/en/compare-pdf">https://tools.pdf24.org/en/compare-pdf</a></li>
+  <li><a href="https://products.aspose.app/pdf/comparison">https://products.aspose.app/pdf/comparison</a></li>
+  <li><a href="https://draftable.com/compare">https://draftable.com/compare</a></li>
+</ul>
+
+<p>If you want to compare an older ODT file with a newer one, use the LibreWriter compare features as explained here: <a href="https://help.libreoffice.org/7.1/en-US/text/shared/guide/redlining_doccompare.html">https://help.libreoffice.org/7.1/en-US/text/shared/guide/redlining_doccompare.html</a> <sup><a href="https://web.archive.org/wen/https://help.libreoffice.org/7.1/en-US/text/shared/guide/redlining_doccompare.html">[Archive.org]</a></sup>)</p>
+
+<p><strong>If you want to check the files for integrity, safety, authenticity, please refer to this <a href="verify.html">“How To”</a>.</strong></p>
+
+<p>Feel free to submit issues using Github Issues with the repository link above. Criticism, opinions, and ideas are welcome!</p>
+
+<p>Follow or contact us on:</p>
+
+<p>Discussion Channels:</p>
+<ul>
+  <li>Matrix room: <code class="language-plaintext highlighter-rouge">#anonymity:matrix.org</code> <a href="https://matrix.to/#/#anonymity:matrix.org">https://matrix.to/#/#anonymity:matrix.org</a></li>
+  <li>Matrix space: <code class="language-plaintext highlighter-rouge">#privacy-security-anonymity:matrix.org</code> <a href="https://matrix.to/#/#privacy-security-anonymity:matrix.org">https://matrix.to/#/#privacy-security-anonymity:matrix.org</a></li>
+  <li>Twitter at https://twitter.com/AnonyPla</li>
+  <li>Mastodon at https://mastodon.social/@anonymousplanet</li>
+</ul>
+
+<p>Have a good read and feel free to share and/or recommend it!</p>
+
+      </section>
+    </div>
+  </body>
+</html>
