@@ -1,10 +1,12 @@
-v1.1.8-pre.1
+v1.1.8
 
 - Add AnarSec to links
-- [CI/CD] chore: fix automatic VT scans
+- CICD: fix automatic VT scans
 - Appendix D: remove trailing period in title
-- Add Quantum-resistance and update good crypto algos
-- [CI/CD] chore: lock old issues & pull requests
+- CICD: lock old issues & pull requests
+- Tor onion offline
+- CICD: update issues template
+- Revert "Quantum resistance and good crypto algos"
 
 v1.1.7
 
