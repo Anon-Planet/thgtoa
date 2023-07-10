@@ -2,7 +2,7 @@
 
 (Or "How I learned to start worrying and love ~~privacy~~ anonymity")
 
-Version v1.1.8-pre.1, June 2023 by Anonymous Planet
+Version v1.1.8, July 2023 by Anonymous Planet
 
 #### **IMPORTANT RECOMMENDATION FOR UKRAINIANS. ВАЖЛИВА РЕКОМЕНДАЦІЯ ДЛЯ УКРАЇНЦІВ**
 
