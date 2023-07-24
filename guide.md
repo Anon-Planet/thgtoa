@@ -1845,13 +1845,13 @@ Now that you know what is possible, you should also consider threats and adversa
 
         -   Low to Medium motivation: Any Route
 
-        -   High motivation: TAILS, Whonix, Qubes OS Routes
+        -   High motivation: Tails, Whonix, Qubes OS Routes
 
     -   High resources:
 
         -   Low motivation: Any route
 
-        -   Medium to High motivation: TAILS, Whonix, Qubes OS Routes
+        -   Medium to High motivation: Tails, Whonix, Qubes OS Routes
 
 -   Intermediate skills:
 
@@ -1859,17 +1859,17 @@ Now that you know what is possible, you should also consider threats and adversa
 
         -   Low motivation: Any Route
 
-        -   Medium to High motivation: TAILS, Whonix, Qubes OS Routes
+        -   Medium to High motivation: Tails, Whonix, Qubes OS Routes
 
     -   Medium resources:
 
         -   Low motivation: Any Route
 
-        -   Medium to High motivation: TAILS, Whonix, Qubes OS Routes
+        -   Medium to High motivation: Tails, Whonix, Qubes OS Routes
 
     -   High resources:
 
-        -   Low to High motivation: TAILS, Whonix, Qubes OS Routes
+        -   Low to High motivation: Tails, Whonix, Qubes OS Routes
 
 -   Highly skilled:
 
@@ -1877,15 +1877,15 @@ Now that you know what is possible, you should also consider threats and adversa
 
         -   Low motivation: Any Route
 
-        -   Medium to High motivation: TAILS, Whonix, Qubes OS Routes
+        -   Medium to High motivation: Tails, Whonix, Qubes OS Routes
 
     -   Medium resources:
 
-        -   Low to High motivation: TAILS, Whonix, Qubes OS Routes
+        -   Low to High motivation: Tails, Whonix, Qubes OS Routes
 
     -   High resources:
 
-        -   Low to High motivations: TAILS, Whonix, Qubes OS Routes **(but likely out of scope from this guide as this is probably a global adversary)**
+        -   Low to High motivations: Tails, Whonix, Qubes OS Routes **(but likely out of scope from this guide as this is probably a global adversary)**
 
 In all cases, you should read these two pages from the Whonix documentation that will give you in-depth insight into your choices:
 
