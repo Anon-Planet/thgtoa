@@ -11219,7 +11219,7 @@ The following are the recommended safest routes for each browser according to th
 
     -   Set "Trackers and Ads blocking" to **Aggressive**
 
-    -   Set Upgrade connections to HTTPS to **Strict**
+    -   Set "Upgrade connections to HTTPS" to **Strict**
 
     -   **Enable** "Block scripts"
 
