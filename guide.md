@@ -886,6 +886,10 @@ We will mitigate some of these issues in this guide by recommending the use of v
 
 **In addition, we recommend the use of AMD CPUs instead of Intel CPUs.**
 
+-   CPU vulnerabilities found in the past few years:
+
+    -   [Meltdown](https://en.wikipedia.org/wiki/Meltdown_(security_vulnerability)), [Spectre](https://en.wikipedia.org/wiki/Spectre_(security_vulnerability)), [Æpic](https://aepicleak.com/), [SGAxe](https://en.wikipedia.org/wiki/Software_Guard_Extensions#SGAxe), [LVI](https://en.wikipedia.org/wiki/Software_Guard_Extensions#LVI), [Plundervolt](https://en.wikipedia.org/wiki/Software_Guard_Extensions#Plundervolt), [MicroScope replay attack](https://en.wikipedia.org/wiki/Software_Guard_Extensions#MicroScope_replay_attack), [Enclave](https://en.wikipedia.org/wiki/Software_Guard_Extensions#Enclave_attack), [Prime+Probe](https://en.wikipedia.org/wiki/Software_Guard_Extensions#Prime+Probe_attack), [Crosstalk](https://www.vusec.net/projects/crosstalk/), [Hertzbleed](https://en.wikipedia.org/wiki/Hertzbleed), [Squip attack](https://www.securityweek.com/amd-processors-expose-sensitive-data-new-squip-attack/), [Zenbleed](https://lock.cmpxchg8b.com/zenbleed.html)
+
 ## Your Operating Systems and Apps telemetry services:
 
 Whether it is Android, iOS, Windows, macOS, or even Ubuntu. Most popular Operating Systems now collect telemetry information by default even if you never opt-in or opted-out[^112] from the start. Some like Windows will not even allow disabling telemetry completely without some technical tweaks. This information collection can be extensive and include a staggering number of details (metadata and data) on your devices and their usage.
