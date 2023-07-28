@@ -11205,7 +11205,7 @@ The following are the recommended safest routes for each browser according to th
 
 -   Go into **Settings** > **Appearances** (`brave://settings/appearance`)
 
-    -   **Disable** "Show Top Sites"
+    -   (optional) **Disable** "Show autocomplete suggestions in address bar"
 
     -   **Disable** "Show Brave Suggested Sites"
 
@@ -11219,25 +11219,31 @@ The following are the recommended safest routes for each browser according to th
 
     -   Set "Trackers and Ads blocking" to **Aggressive**
 
-    -   Set Upgrade connections to HTTPS to **Enabled**
+    -   Set Upgrade connections to HTTPS to **Strict**
 
-    -   Set Cookie blocking to **Only cross-site**
+    -   **Enable** "Block scripts"
 
-    -   Set Fingerprinting blocking to **Standard** or **Strict**
+    -   Set "Block fingerprinting" to **Standard** or **Strict, may break sites**
+
+    -   Set "Block cookies" to **Only cross-site**
 
 -   Go into **Settings** > **Social media blocking** (`brave://settings/socialBlocking`)
 
-    -   **Uncheck** everything unless needed
+    -   **Uncheck** the Facebook, Twitter, and LinkedIn embeds
 
 -   Go to **Settings** > **Search engine** (`brave://settings/search`)
 
-    -   See [Appendix A3: Search Engines]
+    -   Set "Normal Window" and "Private Window" to use a more private and trackerless search engine
+
+        -   See [Appendix A3: Search Engines] for best options
+
+    -   **Disable** "Web Discovery Project"
+
+    -   **Disable** "Index other search engines"
 
 -   Go into **Settings** > **Extensions** (`brave://settings/extensions`)
 
-    -   **Disable** everything except "Private Window with Tor"
-
-    -   Set both **Resolve** methods to "Ask"
+    -   **Disable** everything
 
 -   Go into **Settings** > **Wallet** (`brave://settings/wallet`)
 
@@ -11249,13 +11255,13 @@ The following are the recommended safest routes for each browser according to th
 
 -   Go into **Settings** > **Privacy and Security** (`brave://settings/privacy`)
 
-    -   Leave **WebRTC** to "Default"
+    -   **Disable** everything except "Private window with Tor"
 
-    -   **Disable** "Allow privacy-preserving product analytics (P3A)"
+        -   (optional) Turn on **Automatically redirect .onion sites**
 
-    -   **Disable** "Automatically send daily usage ping to Brave"
+    -   Set **WebRTC handling policy** to "Disable non-proxied UDP"
 
-    -   Go into "Clear Browsing Data"
+    -   Go into **Clear Browsing Data** (`brave://settings/clearBrowserData`)
 
         -   Select **On Exit**
 
@@ -11263,27 +11269,35 @@ The following are the recommended safest routes for each browser according to th
 
         -   **Click** "Save"
 
+    -   Go into **Cookies and other site data** (`brave://settings/cookies`)
+
+        -   **Check** "Block third-party cookies" or "Block all cookies" (not recommended)
+
+        -   **Enable** "Clear cookies and site data when you close all windows"
+
+        -   Under "Sites that can always use cookies", check that you need any of these
+
 -   Open a new Tab
 
 -   **Click** "Customize" in the lower right corner
 
     -   **Disable** everything in Customize Dashboard except maybe the clock
 
--   Go into **Settings** > **Shields** > **Content filters** (`brave://settings/shields/filters`)
+-   Go into **Settings** > **Shields** > **Content filtering** (`brave://settings/shields/filters`)
 
     -   Select any additional adblocking filter you want
 
-        -   Recommended: **CJX's Annoyance List**, **Easylist-Cookie List**, **Fanboy Annoyances List**, **Fanboy Social List**, **Fanboy's Mobile Notifications List**, and **uBlock Annoyances List**
+        -   Recommended: **CJX's Annoyance**, **Easylist-Cookie**, **Fanboy's Annoyances**, **Fanboy's Social**, **Fanboy's Mobile Notifications**, and **uBlock Annoyances**
 
     -   Add custom filter lists
 
-        -   Add the [Actually Legitimate URL Shortener Tool](https://raw.githubusercontent.com/DandelionSprout/adfilt/master/ClearURLs%20for%20uBo/clear_urls_uboified.txt) which uses the rules found in ClearURLs below
+        -   Add the [ClearURLs for uBo (unofficial)](https://raw.githubusercontent.com/DandelionSprout/adfilt/master/ClearURLs%20for%20uBo/clear_urls_uboified.txt) which uses the rules found in ClearURLs below
 
         -   Add the [AdGuard URL Tracking Protection](https://raw.githubusercontent.com/AdguardTeam/FiltersRegistry/master/filters/filter_17_TrackParam/filter.txt) which enables generic `$removeparam` rules
 
     -   To keep all applied filters, **click** "Save"
 
--   Do not ever enable Brave Rewards (button should be hidden on all sites)
+-   Do not ever enable Brave Rewards (button should now be hidden on all sites)
 
 Addons to consider on Brave if you want additional protections:
 
@@ -11299,7 +11313,7 @@ Addons to consider on Brave if you want additional protections:
 
 -   LibRedirect (<https://libredirect.github.io/>)
 
-That's it and you should be pretty much covered. For full paranoia, you can also just "Block Scripts" to disable Javascript. Note that even disabling Javascript might not protect you fully[^517].
+That's it and you should be pretty much covered. For full paranoia, you can also just "Block Scripts" to disable Javascript. Note that even disabling Javascript might not protect you fully[^517]. If you choose to disable JS, use the NoScript extension, not the Brave setting.
 
 ## Ungoogled-Chromium:
 
