@@ -1,3 +1,11 @@
+v1.1.9
+
+- Add dependency check action
+- Fixup Brave config settings
+- Add silent.link to Online Phone Number section
+- Fix Appendix K reference to itself
+- Rename "TAILS" to "Tails"
+
 v1.1.8
 
 - Add AnarSec to links
