@@ -1,4 +1,7 @@
 # Minimize global Ruby .gitignore
-Gemfile
-Gemfile.lock
-_site/tex2pdf*
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+.bundle/
+vendor/
