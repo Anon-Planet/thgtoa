@@ -3,12 +3,12 @@
 The PDF and ODT files of this guide are cryptographically signed using GPG and [Minisign](https://jedisct1.github.io/minisign). Their integrity can be verified with the published SHA256 Checksum hashes on this website. SHA256 checksums of all the PDF and ODT files are available here in the [sha256sum.txt](sha256sum.txt) file. SHA256 checksums, signatures, and VirusTotal ("VT") checks of the releases files (containing the whole repository) are available within the latest release information at <https://github.com/Anon-Planet/thgtoa/releases/latest> which will be available as soon as we have a stable release.
 
 The GPG signatures for each PDF and ODT files are available here:
-- PDF (Light Theme) Main and Mirrors: [guide.pdf.asc](guide.pdf.asc)
-- ODT Main and Mirrors: [guide.odt.asc](guide.odt.asc)
+- PDF (Light Theme) Main and Mirrors: [guide.pdf.asc](export/guide.pdf.asc)
+- ODT Main and Mirrors: [guide.odt.asc](export/guide.odt.asc)
 
 The Minisign signatures for each PDF and ODT files are available here:
-- PDF (Light Theme) Main and Mirrors: [guide.pdf.minisig](guide.pdf.minisig)
-- ODT Main and Mirrors: [guide.odt.minisig](guide.odt.minisig)
+- PDF (Light Theme) Main and Mirrors: [guide.pdf.minisig](export/guide.pdf.minisig)
+- ODT Main and Mirrors: [guide.odt.minisig](export/guide.odt.minisig)
 
 ### How to check the integrity of files using SHA256 checksums:
 
