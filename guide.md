@@ -10203,7 +10203,7 @@ If you want to use an external SSD drive for sensitive storage:
 
 -   Always use full disk encryption on those disks
 
--   **Use the manufacturer-provided tools to securely erase them if possible (see [Appendix K: Considerations for using external SSD drives]).**
+-   **Use the manufacturer-provided tools to securely erase them if possible.**
 
 -   Consider manually wiping data on them after use by doing a full decryption/encryption or filling them completely with random data.
 
