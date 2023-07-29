@@ -1,4 +1,4 @@
-name: release
+name: '🦠 VirusTotal Scan'
 
 on:
   pull_request:
@@ -8,13 +8,16 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: 📦 Checkout
+      - name: '📦 Checkout'
         uses: actions/checkout@v3
 
-      - name: 📦 Set up Go
-        uses: actions/setup-go@v3
+      - name: '📦 Set up Go'
+        uses: actions/setup-go@v4
+        with:
+          go-version: '1.20.6'
+      - run: go version
 
-      - name: 📦 Scan PDF files using VT
+      - name: '🦠 Scan PDF files using VT'
         uses: crazy-max/ghaction-virustotal@v3
         with:
           vt_api_key: ${{ secrets.VT_API_KEY }}

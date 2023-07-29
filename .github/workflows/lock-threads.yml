@@ -1,4 +1,4 @@
-name: 'Lock Threads'
+name: '🔒 Lock Threads'
 
 on:
   schedule:
@@ -16,6 +16,7 @@ jobs:
   action:
     runs-on: ubuntu-latest
     steps:
+      - name: '🔒 Lock Threads'
       - uses: dessant/lock-threads@v4
         with:
           github-token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
