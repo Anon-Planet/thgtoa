@@ -5,65 +5,284 @@
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <title>The Hitchhiker&#39;s Guide to Online Anonymity</title>
-  <style type="text/css">
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
 </head>
 <body>
 <header id="title-block-header">
 <h1 class="title">The Hitchhiker&#39;s Guide to Online Anonymity</h1>
 </header>
-<h2 id="how-to-check-files-for-safetyintegrity-and-authenticity">How to check files for safety/integrity and authenticity:</h2>
-<p>The PDF and ODT files of this guide are cryptographically signed using GPG and <a href="https://jedisct1.github.io/minisign">Minisign</a>. Their integrity can be verified with the published SHA256 Checksum hashes on this website. SHA256 checksums of all the PDF and ODT files are available here in the <a href="sha256sum.txt">sha256sum.txt</a> file. SHA256 checksums, signatures, and VirusTotal (“VT”) checks of the releases files (containing the whole repository) are available within the latest release information at <a href="https://github.com/Anon-Planet/thgtoa/releases/latest" class="uri">https://github.com/Anon-Planet/thgtoa/releases/latest</a> which will be available as soon as we have a stable release.</p>
-<p>The GPG signatures for each PDF and ODT files are available here: - PDF (Light Theme) Main and Mirrors: <a href="guide.pdf.asc">guide.pdf.asc</a> - ODT Main and Mirrors: <a href="guide.odt.asc">guide.odt.asc</a></p>
-<p>The Minisign signatures for each PDF and ODT files are available here: - PDF (Light Theme) Main and Mirrors: <a href="guide.pdf.minisig">guide.pdf.minisig</a> - ODT Main and Mirrors: <a href="guide.odt.minisig">guide.odt.minisig</a></p>
-<h3 id="how-to-check-the-integrity-of-files-using-sha256-checksums">How to check the integrity of files using SHA256 checksums:</h3>
-<p>First get the hash of your local file by following these steps for your OS:</p>
-<p>Windows: - From a command prompt, run <code>certutil -hashfile filename.txt sha256</code> - Compare the obtained hash result of your local file to the online file’s published hash. They should match.</p>
-<p>macOS: - From a terminal, run <code>shasum -a 256 /full/path/to/your/file</code> - Compare the obtained hash result of your local file to the online file’s published hash. They should match.</p>
-<p>Linux: - From a terminal, run <code>sha256sum /full/path/to/your/file</code> - Compare the obtained hash result of your local file to the online file’s published hash. They should match.</p>
-<p>All commits and releases on this repository are cryptographically signed and verified by each collaborator (check for the “Verified” tags on commits and releases).</p>
-<h3 id="how-to-verify-the-the-authenticity-and-integrity-of-files-using-gpg">How to verify the the authenticity and integrity of files using GPG:</h3>
-<p>To verify files with GPG signatures, you should first install gpg on your system: - Windows: Install gpg4win from <a href="https://www.gpg4win.org/download.html" class="uri">https://www.gpg4win.org/download.html</a> - MacOS: Install GPG Tools from <a href="https://gpgtools.org/" class="uri">https://gpgtools.org/</a> - Linux: gpg should be installed by default. If not, use your Linux package manager to install it such as apt (debian) or rpm (red hat).</p>
-<p>Import the master signing key from a trusted source of the publisher using the following command from a command prompt or terminal:</p>
+<h2 id="how-to-check-files-for-safetyintegrity-and-authenticity">How to
+check files for safety/integrity and authenticity:</h2>
+<p>The PDF and ODT files of this guide are cryptographically signed
+using GPG and <a href="https://jedisct1.github.io/minisign">Minisign</a>. Their integrity
+can be verified with the published SHA256 Checksum hashes on this
+website. SHA256 checksums of all the PDF and ODT files are available
+here in the <a href="sha256sum.txt">sha256sum.txt</a> file. SHA256
+checksums, signatures, and VirusTotal (“VT”) checks of the releases
+files (containing the whole repository) are available within the latest
+release information at <a href="https://github.com/Anon-Planet/thgtoa/releases/latest" class="uri">https://github.com/Anon-Planet/thgtoa/releases/latest</a>
+which will be available as soon as we have a stable release.</p>
+<p>The GPG signatures for each PDF and ODT files are available here: -
+PDF (Light Theme) Main and Mirrors: <a href="guide.pdf.asc">guide.pdf.asc</a> - ODT Main and Mirrors: <a href="guide.odt.asc">guide.odt.asc</a></p>
+<p>The Minisign signatures for each PDF and ODT files are available
+here: - PDF (Light Theme) Main and Mirrors: <a href="guide.pdf.minisig">guide.pdf.minisig</a> - ODT Main and Mirrors:
+<a href="guide.odt.minisig">guide.odt.minisig</a></p>
+<h3 id="how-to-check-the-integrity-of-files-using-sha256-checksums">How
+to check the integrity of files using SHA256 checksums:</h3>
+<p>First get the hash of your local file by following these steps for
+your OS:</p>
+<p>Windows: - From a command prompt, run
+<code>certutil -hashfile filename.txt sha256</code> - Compare the
+obtained hash result of your local file to the online file’s published
+hash. They should match.</p>
+<p>macOS: - From a terminal, run
+<code>shasum -a 256 /full/path/to/your/file</code> - Compare the
+obtained hash result of your local file to the online file’s published
+hash. They should match.</p>
+<p>Linux: - From a terminal, run
+<code>sha256sum /full/path/to/your/file</code> - Compare the obtained
+hash result of your local file to the online file’s published hash. They
+should match.</p>
+<p>All commits and releases on this repository are cryptographically
+signed and verified by each collaborator (check for the “Verified” tags
+on commits and releases).</p>
+<h3 id="how-to-verify-the-the-authenticity-and-integrity-of-files-using-gpg">How
+to verify the the authenticity and integrity of files using GPG:</h3>
+<p>To verify files with GPG signatures, you should first install gpg on
+your system: - Windows: Install gpg4win from <a href="https://www.gpg4win.org/download.html" class="uri">https://www.gpg4win.org/download.html</a> - MacOS: Install
+GPG Tools from <a href="https://gpgtools.org/" class="uri">https://gpgtools.org/</a> - Linux: gpg should be installed
+by default. If not, use your Linux package manager to install it such as
+apt (debian) or rpm (red hat).</p>
+<p>Import the master signing key from a trusted source of the publisher
+using the following command from a command prompt or terminal:</p>
 <p><code>gpg --auto-key-locate nodefault,wkd --locate-keys 9EA98278639F1CD853E096CBFF94507587A6A9B9</code></p>
-<p>In theory this command should fetch the key from the a default pool server. If this doesn’t work, you can also download/view it directly from here (in our case): <a href="https://anonymousplanet.org/pgp/AnonymousPlanet-Master-Signing-Key_9EA98278639F1CD853E096CBFF94507587A6A9B9.asc" class="uri">https://anonymousplanet.org/pgp/AnonymousPlanet-Master-Signing-Key_9EA98278639F1CD853E096CBFF94507587A6A9B9.asc</a></p>
-<p>As well as the published key on any keyserver below (search for the fingerprint <code>9EA98278639F1CD853E096CBFF94507587A6A9B9</code>): - <a href="https://pgp.mit.edu" class="uri">https://pgp.mit.edu</a> - <a href="https://keys.openpgp.org" class="uri">https://keys.openpgp.org</a> - <a href="https://keyserver.ubuntu.com" class="uri">https://keyserver.ubuntu.com</a></p>
-<p>You should then import it manually by issuing the following command on any OS:</p>
+<p>In theory this command should fetch the key from the a default pool
+server. If this doesn’t work, you can also download/view it directly
+from here (in our case): <a href="https://anonymousplanet.org/pgp/AnonymousPlanet-Master-Signing-Key_9EA98278639F1CD853E096CBFF94507587A6A9B9.asc" class="uri">https://anonymousplanet.org/pgp/AnonymousPlanet-Master-Signing-Key_9EA98278639F1CD853E096CBFF94507587A6A9B9.asc</a></p>
+<p>As well as the published key on any keyserver below (search for the
+fingerprint <code>9EA98278639F1CD853E096CBFF94507587A6A9B9</code>): - <a href="https://pgp.mit.edu" class="uri">https://pgp.mit.edu</a> - <a href="https://keys.openpgp.org" class="uri">https://keys.openpgp.org</a>
+- <a href="https://keyserver.ubuntu.com" class="uri">https://keyserver.ubuntu.com</a></p>
+<p>You should then import it manually by issuing the following command
+on any OS:</p>
 <p><code>gpg --import 9EA98278639F1CD853E096CBFF94507587A6A9B9.asc</code></p>
-<p>The master signing key allows you to verify all other project-related keys. Once you have the master signing key and are confident it’s the correct key (nobody has tampered with it), mark the key as trusted by locally signing it:</p>
+<p>The master signing key allows you to verify all other project-related
+keys. Once you have the master signing key and are confident it’s the
+correct key (nobody has tampered with it), mark the key as trusted by
+locally signing it:</p>
 <p><code>gpg --lsign-key 9EA98278639F1CD853E096CBFF94507587A6A9B9</code></p>
-<p>Alternatively, if you use Kleopatra, it will ask you to certify the key. Certify the key to mark it as trusted.</p>
-<p>Once you have the master key downloaded, imported, and certified, you will obtain a copy of the release key.</p>
-<p><code>gpg --auto-key-locate nodefault,wkd --locate-keys 83A6CF9EF57AC25B5C7F5D29285E6048A12321B2</code> (to import the release signing key)</p>
-<p><a href="https://anonymousplanet.org/pgp/AnonymousPlanet-Release-Signing-Key_83A6CF9EF57AC25B5C7F5D29285E6048A12321B2.asc" class="uri">https://anonymousplanet.org/pgp/AnonymousPlanet-Release-Signing-Key_83A6CF9EF57AC25B5C7F5D29285E6048A12321B2.asc</a> (to download the key yourself)</p>
-<p>If you use GPG directly, you won’t need to mark the release signing key as trusted, because it’s already signed by the master signing key. If you use Kleopatra, the process to import the release signing key is the same as importing the master signing key.</p>
-<p>Finally, verify the asc signature file (links above) against the PDF file by issuing the following example command:</p>
+<p>Alternatively, if you use Kleopatra, it will ask you to certify the
+key. Certify the key to mark it as trusted.</p>
+<p>Once you have the master key downloaded, imported, and certified, you
+will obtain a copy of the release key.</p>
+<p><code>gpg --auto-key-locate nodefault,wkd --locate-keys 83A6CF9EF57AC25B5C7F5D29285E6048A12321B2</code>
+(to import the release signing key)</p>
+<p><a href="https://anonymousplanet.org/pgp/AnonymousPlanet-Release-Signing-Key_83A6CF9EF57AC25B5C7F5D29285E6048A12321B2.asc" class="uri">https://anonymousplanet.org/pgp/AnonymousPlanet-Release-Signing-Key_83A6CF9EF57AC25B5C7F5D29285E6048A12321B2.asc</a>
+(to download the key yourself)</p>
+<p>If you use GPG directly, you won’t need to mark the release signing
+key as trusted, because it’s already signed by the master signing key.
+If you use Kleopatra, the process to import the release signing key is
+the same as importing the master signing key.</p>
+<p>Finally, verify the asc signature file (links above) against the PDF
+file by issuing the following example command:</p>
 <p><code>gpg --verify guide.pdf.asc guide.pdf</code></p>
-<p>This should output a result showing it matches a signature created by the release signing key, and is therefore a good result.</p>
-<h3 id="how-to-verify-the-the-authenticity-and-integrity-of-the-files-using-minisign">How to verify the the authenticity and integrity of the files using Minisign:</h3>
+<p>This should output a result showing it matches a signature created by
+the release signing key, and is therefore a good result.</p>
+<h3 id="how-to-verify-the-the-authenticity-and-integrity-of-the-files-using-minisign">How
+to verify the the authenticity and integrity of the files using
+Minisign:</h3>
 <p>To verify the files with Minisign:</p>
 <ul>
 <li>First, download minisign from <a href="https://jedisct1.github.io/minisign/" class="uri">https://jedisct1.github.io/minisign/</a>.</li>
-<li>Download the files along with their *.minisig signature file (these should be in the same directory).</li>
-<li>Download the Minisign public key available on the website and repository: <a href="minisign.pub">minisign.pub</a> (again, place it in the same directory for convenience).</li>
-<li>Run the following command in a command prompt or terminal within the directory with both files: <code>minisign -Vm guide.pdf -p minisign.pub</code>.</li>
-<li>Output should show <code>Signature and comment signature verified</code>.</li>
+<li>Download the files along with their *.minisig signature file (these
+should be in the same directory).</li>
+<li>Download the Minisign public key available on the website and
+repository: <a href="minisign.pub">minisign.pub</a> (again, place it in
+the same directory for convenience).</li>
+<li>Run the following command in a command prompt or terminal within the
+directory with both files:
+<code>minisign -Vm guide.pdf -p minisign.pub</code>.</li>
+<li>Output should show
+<code>Signature and comment signature verified</code>.</li>
 </ul>
-<h3 id="how-to-check-the-relative-safety-of-files-or-even-urls-such-as-httpsanonymousplanet.org-using-virustotal">How to check the relative safety of files or even URLs (such as https://anonymousplanet.org) using VirusTotal:</h3>
-<p><strong>Note: we do not endorse VirusTotal. It should be used with extreme caution, never with any sensitive files, due to their privacy policies. Do not upload sensitive files to VirusTotal.</strong></p>
-<p>The PDF and ODT files of this guide have been automatically scanned by VT, see the links below for an example but do not trust these hashes blindly. Check the hashes match and re-upload to VT if needed: - PDF file: <a href="https://www.virustotal.com/gui/file/8fefe9bc982aa3d89dd1d8f7bc5b89c17b7e5d212826c21c87f2c0795668fac3?nocache=1">[VT Scan]</a> - ODT file: <a href="https://www.virustotal.com/gui/file/19055de599deecbd9482b4bfba19abb3e44fa9c8b53fefee3d2bd9c587f6ac1e?nocache=1">[VT Scan]</a></p>
-<h3 id="additional-manual-safety-checks-for-the-pdf-files">Additional manual safety checks for the PDF files:</h3>
-<p>For additional safety, you can always double check the PDF files using the PDFID tool which you can download at <a href="https://blog.didierstevens.com/programs/pdf-tools/" class="uri">https://blog.didierstevens.com/programs/pdf-tools/</a>. (You might be wondering: “Why should I trust a random python script?” Well, it is open-source and well-known. It is also probably a safer bet than trusting a random PDF).</p>
+<h3 id="how-to-check-the-relative-safety-of-files-or-even-urls-such-as-httpsanonymousplanet.org-using-virustotal">How
+to check the relative safety of files or even URLs (such as
+https://anonymousplanet.org) using VirusTotal:</h3>
+<p><strong>Note: we do not endorse VirusTotal. It should be used with
+extreme caution, never with any sensitive files, due to their privacy
+policies. Do not upload sensitive files to VirusTotal.</strong></p>
+<p>The PDF and ODT files of this guide have been automatically scanned
+by VT, see the links below for an example but do not trust these hashes
+blindly. Check the hashes match and re-upload to VT if needed: - PDF
+file: <a href="https://www.virustotal.com/gui/file/2503891b2df0df9d7b6a38bb334f087ff4c1775a40a205117454c5f73da45825?nocache=1">[VT
+Scan]</a> - ODT file: <a href="https://www.virustotal.com/gui/file/6a25a4218510cf0da721a80b529f6fe233fc414b31cd4c9f8415c8fca435c847?nocache=1">[VT
+Scan]</a></p>
+<h3 id="additional-manual-safety-checks-for-the-pdf-files">Additional
+manual safety checks for the PDF files:</h3>
+<p>For additional safety, you can always double check the PDF files
+using the PDFID tool which you can download at <a href="https://blog.didierstevens.com/programs/pdf-tools/" class="uri">https://blog.didierstevens.com/programs/pdf-tools/</a>. (You
+might be wondering: “Why should I trust a random python script?” Well,
+it is open-source and well-known. It is also probably a safer bet than
+trusting a random PDF).</p>
 <p>Here are the steps:</p>
 <ul>
-<li>Install the latest version (e.g., 3.10.6 stable) of Python, download <a href="https://didierstevens.com/files/software/pdfid_v0_2_8.zip">pdfid</a> and, from a command prompt or terminal, run:</li>
+<li>Install the latest version (e.g., 3.10.6 stable) of Python, download
+<a href="https://didierstevens.com/files/software/pdfid_v0_2_8.zip">pdfid</a>
+and, from a command prompt or terminal, run:</li>
 </ul>
 <p><code>python pdfid.py file-to-check.pdf</code></p>
-<p>And you should see the following entries at <strong>0</strong> for safety, this 0 means there is no Javascript or any action that could possibly execute malicious macros, scripts, etc. Normally this won’t be necessary as most modern PDF readers won’t execute those scripts anyway.</p>
+<p>And you should see the following entries at <strong>0</strong> for
+safety, this 0 means there is no Javascript or any action that could
+possibly execute malicious macros, scripts, etc. Normally this won’t be
+necessary as most modern PDF readers won’t execute those scripts
+anyway.</p>
 <pre><code>/JS                    0 #This indicates the presence of Javascript which could be malicious
 /JavaScript            0 #This indicates the presence of Javascript which could be malicious
 /AA                    0 #This indicates the presence of automatic action on opening

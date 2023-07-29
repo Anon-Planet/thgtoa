@@ -5,19 +5,168 @@
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <title>The Hitchhiker&#39;s Guide to Online Anonymity</title>
-  <style type="text/css">
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
 </head>
 <body>
 <header id="title-block-header">
 <h1 class="title">The Hitchhiker&#39;s Guide to Online Anonymity</h1>
 </header>
-<p>Donations to support this project are welcome as the funding of this project is limited. Those donations are mainly used to pay for Tor onion hosting (VPS), mail hosting, domain name registration, and to maintain/run Tor exit nodes. <strong>No profit is ever being made</strong>. All donations and spendings are being logged here below for transparency.</p>
-<p><span style="color: red"><strong>Current project donation goals:</strong></span></p>
+<p>Donations to support this project are welcome as the funding of this
+project is limited. Those donations are mainly used to pay for Tor onion
+hosting (VPS), mail hosting, domain name registration, and to
+maintain/run Tor exit nodes. <strong>No profit is ever being
+made</strong>. All donations and spendings are being logged here below
+for transparency.</p>
+<p><span style="color: red"><strong>Current project donation
+goals:</strong></span></p>
 <ul>
 <li><del>
 Funding for a VPS for hosting our .onion website
@@ -39,18 +188,22 @@ Funding for extending our domain name
 <p><strong>Donate using Bitcoin (BTC):</strong></p>
 <p>Here are the addresses for the main project:</p>
 <ul>
-<li>SegWit address: <code>bc1qp9g2c6dquh5lnvft50esxsl97kupdpyqyd4kkv</code></li>
+<li>SegWit address:
+<code>bc1qp9g2c6dquh5lnvft50esxsl97kupdpyqyd4kkv</code></li>
 <li>Legacy address: <code>1BBgBSVe6w4DWq2BewUQhDEjsNovhfPswD</code></li>
 </ul>
 <p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJEAAACRCAYAAADD2FojAAADfElEQVR4nO3dzW7bMBCF0bro+7+yu9eiKv3xxwrO2SaOHONiPKCG1Ov9fr9/QfD79Bvg+YSITIjIhIhMiMiEiEyIyISITIjIhIhMiMiEiEyIyP58+sLX6zXzfdy6Dhtcr383jHD3fusww+y/f/rzHaESkQkRmRCRfdwTXc0ekBztMWpPUq+3uifb/fmOUInIhIhMiMim9URXo9+59Tt/tEcafX+z121Wr0vNvt6/qERkQkQmRGTLeqLTZvdYd+7WjX7yRmOViEyIyISI7Mf0RHc9Sb3XNboOdff3rp7cM6lEZEJEJkRky3qi3d/xoz3QaI90d72r2T3V6PV3UonIhIhMiMim9US790nVnuZp19/9+Y5QiciEiEyIyD7uib5pneJ/zF63Gd0nNtpDPenzVYnIhIhMiMiWnU9U98qPziyfvhe1el5p9V585xNxlBCRCRHZsnWi2T3Q7HWc2T1MVf//2ec1jVCJyISITIjIjq0Tze4B6vubbfY60Ojneff6mVQiMiEiEyKy1/vDL8u6bjN73aNa/eyN0//Pyp5JJSITIjIhItt2PtHousnpe29X9d7Zt92rm0klIhMiMiEimzZPtHvmetTsdaDd+8jsxedHEyIyISI79gzYOg80arQHW/38tN3PlF3ZU6lEZEJEJkRky+aJTt8bOj1jfTW757my74xHEyIyISJbtk60e+/46nmf2c8CWT0vZZ2IRxEiMiEiO/Zsj9X3fk7P38y+/u7nuY1QiciEiEyIyLbtO6vzOaufc3/3+6M/P71udsc51nwVISITIrJlPdG33Rv79p6jnlVwcq++SkQmRGRCRLZtnejq9HzQ3fuZva6z+t7f7OuPUInIhIhMiMg+3nd22u59ZatnnHefoz2TSkQmRGRCRLbseWez3Z0fdHX6eWqnz83e2eqqRGRCRCZEZMfObLxT7x3NPld6dQ82er36+zOpRGRCRCZEZMvmiVb3ALvPub6q517X649aOZOtEpEJEZkQkR2bsV5t9fzP3etXn7m4+gzIESoRmRCRCRHZY3ui3femRq8/ex3pm9ehVCIyISITIrJt5xPNtnpGevT6q89LWr1OVKhEZEJEJkRkx57tMdvpdaM7q+efTs5kq0RkQkQmRGSPPZ+I76ESkQkRmRCRCRGZEJEJEZkQkQkRmRCRCRGZEJEJEZkQkQkR2V+K0CtZ+qeX7AAAAABJRU5ErkJggg==" />____________________<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJEAAACRCAYAAADD2FojAAADb0lEQVR4nO3dwY4bKRSG0elR3v+VPdvIiyb0BxTOnLPtVLli/cJX1AW+Xq/X6x8I/n36Afh8QkQmRGRCRCZEZEJEJkRkQkQmRGRCRCZEZEJEJkRkv3564dfX18rnGHpvNnj//FEzwuh56/WzTn/eSGnmMBKRCRGZEJH9uCZ6t7pBcrYmmK153v99vb7WbCNPf7/fMRKRCRGZEJEtq4nezf7mzv7mz86z7K6ZTtdIu7/fGUYiMiEiEyKybTXRbXbP04xqqL95obGRiEyIyISI7GNrovpubTSPM3v97DzT31QjGYnIhIhMiMi21USnf/Of7rE+XfPcVFMZiciEiEyIyJbVRKfXSY3U/p6n//7utu/3d0YiMiEiEyKyH9dEN81T/IlaU6zuaa5/v4mRiEyIyISI7Nj+RE+/21p9/ekaa2T39/MdIxGZEJEJEdmxeaLb9kysdj/v6ndxq2u63xmJyISITIjIju1PtLqGqDXZqGYYXV+f59N6ur9jJCITIjIhIlv27mz1b/LutfL1+tPvDkf3e7JGMhKRCRGZEJF9vS5t5q37Ca2uYU7XLM47439FiMiEiOzHNdHpsyzq89R/P7r+3el+oycZiciEiEyIyK5diz9bs5yel1ndz7T7zNvZ55lhJCITIjIhIrtmH+vTeyS+W92/VO+/+v+3k5GITIjIhIhsWT/R7p7jp/cnmr3f6P61Rpr9vBHzRDxKiMiEiOzYPNHpteWn3+2NPv/0vI51Z3wUISITIrLH9rHe/S6o1iyj+z3dT1TpJ+IqQkQmRGTX7GM9uv/udWWr56nqvNj730+fOTvDSEQmRGRCRLZsLf6s3T3H757eE/H0uzL9RHwUISITIrJr92wceXreafb+I7v3R3IGLFcTIjIhIjvWT1TN9v/Muu2c+pvOMxsxEpEJEZkQkS1bd3a6Rjk9z7O7v2j0PNXOnm4jEZkQkQkR2ba1+LtrgNka5vZ5m93zbjvvbyQiEyIyISLbVhOdtnueZ3V/zum9CcwTcTUhIhMiso+tiVavtV+9bq3WOLvPMlnJSEQmRGRCRHbNeWfV02ei3rbvtn2s+ShCRCZEZMtqoifPIP0Tn/Z8p88msRafRwkRmRCRfez+RNzDSEQmRGRCRCZEZEJEJkRkQkQmRGRCRCZEZEJEJkRkQkQmRGT/AVL4KkVk6AkIAAAAAElFTkSuQmCC" /></p>
-<p><strong>Thank you for any contribution. All donations will be mentioned within this file.</strong></p>
+<p><strong>Thank you for any contribution. All donations will be
+mentioned within this file.</strong></p>
 <p>Donations log (UTC date/time):</p>
 <ul>
 <li>2021-02-06 16:48: 0.1 XMR</li>
 <li>2021-03-15 00:09: 1.24869 mBTC</li>
 <li>2021-03-15 08:41: 0.07896 mBTC</li>
-<li>2021-03-31 16:28: 1 XMR (Special thanks for this very generous donation)</li>
-<li>2021-04-03 22:31: 0.5 XMR (Special thanks for this very generous donation)</li>
+<li>2021-03-31 16:28: 1 XMR (Special thanks for this very generous
+donation)</li>
+<li>2021-04-03 22:31: 0.5 XMR (Special thanks for this very generous
+donation)</li>
 <li>2021-05-07 06:22: 0.010433355105 XMR</li>
 <li>2021-06-16 03:05: 0.03 XMR</li>
 <li>2021-06-27 18:39: 0.05 XMR</li>
@@ -67,13 +220,15 @@ Funding for extending our domain name
 <li>2021-08-30 17:32: 0.000000000001 XMR</li>
 <li>2021-09-17 14:34: 0.018 XMR</li>
 <li>2021-10-01 06:23: 0.000000002137 XMR</li>
-<li>2021-10-02 19:16: 1 XMR (Special thanks for this very generous donation)</li>
+<li>2021-10-02 19:16: 1 XMR (Special thanks for this very generous
+donation)</li>
 <li>2021-10-17 15:40: 0.02 XMR</li>
 <li>2021-10-18 16:06: 0.1958 XMR</li>
 <li>2021-11-12 20:42: 0.02 XMR</li>
 <li>2021-11-14 18:28: 0.018 XMR</li>
 <li>2021-12-03 21:38: 0.10134722595 XMR</li>
-<li>2021-12-16 01:16: 1 XMR (Special thanks for this very generous donation)</li>
+<li>2021-12-16 01:16: 1 XMR (Special thanks for this very generous
+donation)</li>
 <li>2021-12-16 18:06: 0.017 XMR</li>
 <li>2022-01-09 17:54: 0.045918219893 XMR</li>
 <li>2022-01-15 17:35: 0.014 XMR</li>
@@ -84,68 +239,93 @@ Funding for extending our domain name
 <li>2022-03-14 10:25: 0.0139887 XMR</li>
 <li>2022-07-30 03:51: 0.0222 XMR</li>
 <li>2022-09-28 05:13: 2 XMR</li>
-<li>2022-08-19 : SimpleLogin.io Premium Account for life (<strong>This is not sponsoring/advertising</strong>)</li>
-<li>2022-09-19 : 0.345024603905 XMR (Thanks to Rick Deckhard which is also one of our contributors)</li>
+<li>2022-08-19 : SimpleLogin.io Premium Account for life (<strong>This
+is not sponsoring/advertising</strong>)</li>
+<li>2022-09-19 : 0.345024603905 XMR (Thanks to Rick Deckhard which is
+also one of our contributors)</li>
 </ul>
-<p>Total Monero donations received: <strong>7.101317184263 XMR</strong> Total Bitcoin donations received: <strong>1.89353 mBTC</strong></p>
+<p>Total Monero donations received: <strong>7.101317184263 XMR</strong>
+Total Bitcoin donations received: <strong>1.89353 mBTC</strong></p>
 <p>Spendings log (UTC date):</p>
 <ul>
-<li>2021-03-12: 0.08181086 XMR (+fees) for domain anonymousplanet.org (1 year)</li>
-<li>2021-03-16: 1.20179 mBTC (+fees) for domain anonymousplanet.org renewal (extension 3 years totalling 4 years)</li>
-<li>2021-04-01: 0.8317 XMR (+fees) for basic VPS for Tor Mirror hosting</li>
+<li>2021-03-12: 0.08181086 XMR (+fees) for domain anonymousplanet.org (1
+year)</li>
+<li>2021-03-16: 1.20179 mBTC (+fees) for domain anonymousplanet.org
+renewal (extension 3 years totalling 4 years)</li>
+<li>2021-04-01: 0.8317 XMR (+fees) for basic VPS for Tor Mirror
+hosting</li>
 <li><del>
-2021-04-05: 0.99367 mBTC (+fees +exchange from XMR to BTC) for Mail Hosting (1 year): <span style="color: red"><strong>Lost</strong></span></li>
+2021-04-05: 0.99367 mBTC (+fees +exchange from XMR to BTC) for Mail
+Hosting (1 year): <span style="color: red"><strong>Lost</strong></span></li>
 <li><del>
-2021-04-13: 0.71895 mBTC (+fees +exchange from XMR to BTC) for Mail Hosting (extension to 2 years)
+2021-04-13: 0.71895 mBTC (+fees +exchange from XMR to BTC) for Mail
+Hosting (extension to 2 years)
 </del>
 : <span style="color: red"><strong>Lost</strong></span></li>
 <li>2021-04-25: 0.02892 mBTC (Wallet to Wallet transfer fee)</li>
-<li>2021-07-13: 0.78463 mBTC (+fees +exchange from BTC to XMR) for consoliation</li>
+<li>2021-07-13: 0.78463 mBTC (+fees +exchange from BTC to XMR) for
+consoliation</li>
 <li><del>
-2021-07-13: 0.067261698061 XMR (+fees) for a Tor Exit Node (01) Hosting (3 months)
+2021-07-13: 0.067261698061 XMR (+fees) for a Tor Exit Node (01) Hosting
+(3 months)
 </del>
 : <span style="color: red"><strong>Lost</strong></span></li>
 <li><del>
-2021-07-15: 0.151959953047 XMR (+fees) for a Tor Exit Node (02) Hosting (6 months)
+2021-07-15: 0.151959953047 XMR (+fees) for a Tor Exit Node (02) Hosting
+(6 months)
 </del>
 : <span style="color: red"><strong>Lost</strong></span></li>
 <li><del>
-2021-08-16: 0.253331471239 XMR (+fees) for a Tor Exit Node (03) Hosting (12 months)
+2021-08-16: 0.253331471239 XMR (+fees) for a Tor Exit Node (03) Hosting
+(12 months)
 </del>
 : <span style="color: red"><strong>Lost</strong></span></li>
-<li>2021-08-18: AtomicSwap conversion from remaining mBTC (-0.56588) to XMR (+0.081904862179)</li>
+<li>2021-08-18: AtomicSwap conversion from remaining mBTC (-0.56588) to
+XMR (+0.081904862179)</li>
 <li><del>
 2021-08-19: 0.0644 XMR (+fees) for Mail Hosting extension
 </del>
 : <span style="color: red"><strong>Lost</strong></span></li>
 <li><del>
-2021-09-18: 0.246971511836 XMR (+fees) for renewal 1 year of Tor Exit Node 01
+2021-09-18: 0.246971511836 XMR (+fees) for renewal 1 year of Tor Exit
+Node 01
 </del>
 : <span style="color: red"><strong>Lost</strong></span></li>
-<li>2021-10-04: 0.26954 XMR (+fees) for securing the anonymousplanet.org domain name until 2029</li>
+<li>2021-10-04: 0.26954 XMR (+fees) for securing the anonymousplanet.org
+domain name until 2029</li>
 <li><del>
-2021-10-06: 0.236073464623 XMR (+fees) for a Tor Exit Node (04) Hosting (12 months)
+2021-10-06: 0.236073464623 XMR (+fees) for a Tor Exit Node (04) Hosting
+(12 months)
 </del>
 : <span style="color: red"><strong>Lost</strong></span></li>
 <li><del>
-2021-10-18: 0.01952 XMR (+fees) for testing a new VPS hosting provider (Privex.io) for one month
+2021-10-18: 0.01952 XMR (+fees) for testing a new VPS hosting provider
+(Privex.io) for one month
 </del>
 : <span style="color: red"><strong>Ended</strong></span></li>
 <li><del>
-2021-10-30: 0.240787814495 XMR (+fees) for a Synapse Hosting VPS (12 months) with bots to help grow the community. This is a test program that will be converted into a Tor Exit Node in case of failure
+2021-10-30: 0.240787814495 XMR (+fees) for a Synapse Hosting VPS (12
+months) with bots to help grow the community. This is a test program
+that will be converted into a Tor Exit Node in case of failure
 </del>
 : <span style="color: red"><strong>Lost</strong></span></li>
 <li><del>
-2022-01-01: 0.28055816111 XMR (+fees) for renewal 1 year of Tor Exit Node 02
+2022-01-01: 0.28055816111 XMR (+fees) for renewal 1 year of Tor Exit
+Node 02
 </del>
 : <span style="color: red"><strong>Lost</strong></span></li>
 <li><del>
-2022-02-02: 0.966793601024 XMR (+fees) for sponsoring a related external special project in line with the Universal Declaration of Human Rights (details will remain indisclosed to protect project members)
+2022-02-02: 0.966793601024 XMR (+fees) for sponsoring a related external
+special project in line with the Universal Declaration of Human Rights
+(details will remain indisclosed to protect project members)
 </del>
 : <span style="color: red"><strong>Lost</strong></span></li>
-<li>2022-07-11: 0.503232784687 XMR (+fees) for 1984.is VPS (12 months):</li>
-<li>2022-09-19: 0.345024603905 XMR (+fees) for upgrading VPS RAM/Disk</li>
+<li>2022-07-11: 0.503232784687 XMR (+fees) for 1984.is VPS (12
+months):</li>
+<li>2022-09-19: 0.345024603905 XMR (+fees) for upgrading VPS
+RAM/Disk</li>
 </ul>
-<p>Total Monero remaining: <strong>2.059336719397 XMR</strong> Total Bitcoin remaining: <strong>0 mBTC</strong></p>
+<p>Total Monero remaining: <strong>2.059336719397 XMR</strong> Total
+Bitcoin remaining: <strong>0 mBTC</strong></p>
 </body>
 </html>

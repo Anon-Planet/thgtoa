@@ -5,23 +5,182 @@
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <title>The Hitchhiker&#39;s Guide to Online Anonymity</title>
-  <style type="text/css">
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
 </head>
 <body>
 <header id="title-block-header">
 <h1 class="title">The Hitchhiker&#39;s Guide to Online Anonymity</h1>
 </header>
-<p>The current maintainers of this project are Alex (they/them) and The Hidden (aka No).</p>
-<p>After unfortunate events, we have picked up maintenance of this guide in order to continue the project the original founder, Lena, started. Lena faked her death, then returned later. Before her <del>death</del>, she gave me access to her accounts to maintain the guide. I will be maintaining her guide, as well as running her Matrix space, from this point. As we’ve said before, we cannot guarantee we’ll do everything right, or how she would have done it, but we’re trying our best.</p>
-<p><strong>Update: Alex is taking an extended leave to acquire a more secure operating system and will not be actively involved for some time. They promise to return ASAP. Until then, No is spearheading the operation, including translations and research.</strong></p>
+<p>The current maintainers of this project are Alex (they/them) and The
+Hidden (aka No).</p>
+<p>After unfortunate events, we have picked up maintenance of this guide
+in order to continue the project the original founder, Lena, started.
+Lena faked her death, then returned later. Before her <del>death</del>,
+she gave me access to her accounts to maintain the guide. I will be
+maintaining her guide, as well as running her Matrix space, from this
+point. As we’ve said before, we cannot guarantee we’ll do everything
+right, or how she would have done it, but we’re trying our best.</p>
+<p><strong>Update: Alex is taking an extended leave to acquire a more
+secure operating system and will not be actively involved for some time.
+They promise to return ASAP. Until then, No is spearheading the
+operation, including translations and research.</strong></p>
 <hr />
-<p>Please share this project if you enjoy it and think it might be useful to others.</p>
-<p>Follow or contact us on: - Twitter: <a href="https://twitter.com/AnonyPla" class="uri">https://twitter.com/AnonyPla</a> - Mastodon: <a href="https://mastodon.social/@anonymousplanet" class="uri">https://mastodon.social/@anonymousplanet</a> - E-Mail: <a href="mailto:contact@anonymousplanet.org" class="email">contact@anonymousplanet.org</a> (You may use our <a href="https://anonymousplanet.org/pgp/AnonymousPlanet-Email-Key_B6D1757632A280F99F2DCBFDB9AB9D93AFF05B9C.asc">PGP public key</a> to encrypt e-mails. Do not forget to attach your PGP public key if you want an encrypted answer)</p>
-<p>Discussion Channels: - Matrix room: <code>#anonymity:matrix.org</code> <a href="https://matrix.to/#/#anonymity:matrix.org" class="uri">https://matrix.to/#/#anonymity:matrix.org</a> - Matrix space: <code>#privacy-security-anonymity:matrix.org</code> <a href="https://matrix.to/#/#privacy-security-anonymity:matrix.org" class="uri">https://matrix.to/#/#privacy-security-anonymity:matrix.org</a> - Github Discussions: <a href="https://github.com/Anon-Planet/thgtoa/discussions/" class="uri">https://github.com/Anon-Planet/thgtoa/discussions/</a></p>
+<p>Please share this project if you enjoy it and think it might be
+useful to others.</p>
+<p>Follow or contact us on: - Twitter: <a href="https://twitter.com/AnonyPla" class="uri">https://twitter.com/AnonyPla</a> - Mastodon: <a href="https://mastodon.social/@anonymousplanet" class="uri">https://mastodon.social/@anonymousplanet</a> - E-Mail: <a href="mailto:contact@anonymousplanet.org" class="email">contact@anonymousplanet.org</a> (You may use our <a href="https://anonymousplanet.org/pgp/AnonymousPlanet-Email-Key_B6D1757632A280F99F2DCBFDB9AB9D93AFF05B9C.asc">PGP
+public key</a> to encrypt e-mails. Do not forget to attach your PGP
+public key if you want an encrypted answer)</p>
+<p>Discussion Channels: - Matrix room:
+<code>#anonymity:matrix.org</code> <a href="https://matrix.to/#/#anonymity:matrix.org" class="uri">https://matrix.to/#/#anonymity:matrix.org</a> - Matrix
+space: <code>#privacy-security-anonymity:matrix.org</code> <a href="https://matrix.to/#/#privacy-security-anonymity:matrix.org" class="uri">https://matrix.to/#/#privacy-security-anonymity:matrix.org</a>
+- Github Discussions: <a href="https://github.com/Anon-Planet/thgtoa/discussions/" class="uri">https://github.com/Anon-Planet/thgtoa/discussions/</a></p>
 </body>
 </html>

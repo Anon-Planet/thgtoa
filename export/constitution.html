@@ -5,61 +5,247 @@
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <title>The Hitchhiker&#39;s Guide to Online Anonymity</title>
-  <style type="text/css">
-      code{white-space: pre-wrap;}
-      span.smallcaps{font-variant: small-caps;}
-      span.underline{text-decoration: underline;}
-      div.column{display: inline-block; vertical-align: top; width: 50%;}
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
   </style>
 </head>
 <body>
 <header id="title-block-header">
 <h1 class="title">The Hitchhiker&#39;s Guide to Online Anonymity</h1>
 </header>
-<h1 id="a-constitution-for-an-anonymous-planet.">A Constitution for an Anonymous Planet.</h1>
-<p>To amend the rules and regulations of the network and of the PSA community, this constitution is hereby set forth. It is applicable to all the projects of the initiative, especially the Hitchhiker’s Guide to Online Anonymity. All members/collaborators must abide by these lines when contributing within the context of the initiative.</p>
+<h1 id="a-constitution-for-an-anonymous-planet.">A Constitution for an
+Anonymous Planet.</h1>
+<p>To amend the rules and regulations of the network and of the PSA
+community, this constitution is hereby set forth. It is applicable to
+all the projects of the initiative, especially the Hitchhiker’s Guide to
+Online Anonymity. All members/collaborators must abide by these lines
+when contributing within the context of the initiative.</p>
 <h2 id="requirements">Requirements</h2>
 <blockquote>
-<p>Our content is licensed under <strong><a href="https://creativecommons.org/licenses/by-nc/3.0/">Creative Commons Attribution NonCommercial</a></strong> to prevent commercial usage.</p>
+<p>Our content is licensed under <strong><a href="https://creativecommons.org/licenses/by-nc/3.0/">Creative Commons
+Attribution NonCommercial</a></strong> to prevent commercial usage.</p>
 </blockquote>
 <h3 id="anonymity-above-everything">1. Anonymity above everything</h3>
-<p>Anonymity is necessary to maintain the balance of power, specifically to help journalists, whistleblowers, lawyers, scientists, and victims of oppression. Anonymity first, even if that means using non-free and/or proprietary means. Security and privacy are second, again, even if using non-free or non-open-source and/or proprietary means. In this sense, the ends may at times justify proprietary means.</p>
+<p>Anonymity is necessary to maintain the balance of power, specifically
+to help journalists, whistleblowers, lawyers, scientists, and victims of
+oppression. Anonymity first, even if that means using non-free and/or
+proprietary means. Security and privacy are second, again, even if using
+non-free or non-open-source and/or proprietary means. In this sense, the
+ends may at times justify proprietary means.</p>
 <h3 id="independence">2. Independence</h3>
-<p>The Anonymous Planet initiative has no affiliation with the “Anonymous” collective and does not endorse their activities.<br />
-Any overlap of their activities and our guide are purely coincidental.</p>
+<p>The Anonymous Planet initiative has no affiliation with the
+“Anonymous” collective and does not endorse their activities.<br />
+Any overlap of their activities and our guide are purely
+coincidental.</p>
 <h3 id="accessibility">3. Accessibility</h3>
-<p>We will strive to always keep available the following methods of reading the Hitchhiker’s Guide:<br />
+<p>We will strive to always keep available the following methods of
+reading the Hitchhiker’s Guide:<br />
 * online;<br />
 * offline (e.g., PDF, ODT, EPUB (in the future));<br />
 * via the Tor network</p>
 <h3 id="freedom">4. Freedom</h3>
-<p>Maintain free, open-source, and non-commercial nature of all our projects. This does not mean proprietary and/or closed-source tools won’t be recommendeded. All scientific knowledge should be free for anyone and we support and encourage Sci-Hub and LibGen. Any attempt to erode the freedom of information and flow of knowledge of our projects, in any manner, is hostile.</p>
-<h3 id="verifiability-falsifiability-and-reproducibility">5. Verifiability, falsifiability and reproducibility</h3>
-<p>We will make every effort to be transparent about any and all bias we have.<br />
-Anyone claiming to be unbiased is lying, therefore we will not falsely claim to be.</p>
-<p>All our content shall be verifiable, reproducible and fact-checked:<br />
-- academic references (e.g., studies, papers, and peer reviewed publications);<br />
-- reputable media references (e.g., articles, videos, and documentaries);<br />
-- official documentation (e.g., manuals, field guides, and technical documents);<br />
+<p>Maintain free, open-source, and non-commercial nature of all our
+projects. This does not mean proprietary and/or closed-source tools
+won’t be recommendeded. All scientific knowledge should be free for
+anyone and we support and encourage Sci-Hub and LibGen. Any attempt to
+erode the freedom of information and flow of knowledge of our projects,
+in any manner, is hostile.</p>
+<h3 id="verifiability-falsifiability-and-reproducibility">5.
+Verifiability, falsifiability and reproducibility</h3>
+<p>We will make every effort to be transparent about any and all bias we
+have.<br />
+Anyone claiming to be unbiased is lying, therefore we will not falsely
+claim to be.</p>
+<p>All our content shall be verifiable, reproducible and
+fact-checked:<br />
+- academic references (e.g., studies, papers, and peer reviewed
+publications);<br />
+- reputable media references (e.g., articles, videos, and
+documentaries);<br />
+- official documentation (e.g., manuals, field guides, and technical
+documents);<br />
 - renowned and reputable expert review;<br />
 - direct testing by our own collaborators for falsifiablity</p>
 <h3 id="innocence">6. Innocence</h3>
-<p>Suspected offenders are innocent until proven guilty, with zero tolerance for abuse of power or position.</p>
-<p>Any accusing/moderating member is: - Subject to the burden of proving the wrong-doing of the offender. - Required to motivate any sanction.</p>
-<p>Any offender has the right to: - Face their accuser (know who is accusing them). - Appeal sanctions to an uninvolved third party. - Participate in their own incrimination (the burden of proof lies with the accuser). - Due process of the above.</p>
+<p>Suspected offenders are innocent until proven guilty, with zero
+tolerance for abuse of power or position.</p>
+<p>Any accusing/moderating member is: - Subject to the burden of proving
+the wrong-doing of the offender. - Required to motivate any
+sanction.</p>
+<p>Any offender has the right to: - Face their accuser (know who is
+accusing them). - Appeal sanctions to an uninvolved third party. -
+Participate in their own incrimination (the burden of proof lies with
+the accuser). - Due process of the above.</p>
 <h3 id="freedom-of-thought">7. Freedom of thought</h3>
 <p>Open-minded and pragmatic - with no tolerance for gatekeeping.</p>
-<p>Critical thinking and fact-checking are strongly encouraged; we welcome criticism including of a harsh nature (excluding ad-hominem and slurs).</p>
-<h3 id="we-do-not-tolerate-intolerance">8. We do not tolerate intolerance</h3>
-<p>See the <a href="https://en.wikipedia.org/wiki/Paradox_of_tolerance">Paradox of Tolerance</a>, which includes hate speech.</p>
+<p>Critical thinking and fact-checking are strongly encouraged; we
+welcome criticism including of a harsh nature (excluding ad-hominem and
+slurs).</p>
+<h3 id="we-do-not-tolerate-intolerance">8. We do not tolerate
+intolerance</h3>
+<p>See the <a href="https://en.wikipedia.org/wiki/Paradox_of_tolerance">Paradox of
+Tolerance</a>, which includes hate speech.</p>
 <h3 id="no-analytics">9. No analytics</h3>
-<p>Note that, while we will never use analytics, the (now free) platforms hosting our content might be gathering such analytics outside of our control, such as Github pages. As the initiative progresses, we will strive to avoid these as soon as possible.</p>
+<p>Note that, while we will never use analytics, the (now free)
+platforms hosting our content might be gathering such analytics outside
+of our control, such as Github pages. As the initiative progresses, we
+will strive to avoid these as soon as possible.</p>
 <h3 id="no-profit">10. No profit</h3>
-<p>Any excess donations will only be used to support our main projects first and possibly support other intitiatives (like hosting Tor exit nodes). In all cases, we abide by the following principles:</p>
+<p>Any excess donations will only be used to support our main projects
+first and possibly support other intitiatives (like hosting Tor exit
+nodes). In all cases, we abide by the following principles:</p>
 <ul>
-<li>Funding transparency (i.e., all donations, spendings, source code, and future goals will be public).<br />
+<li>Funding transparency (i.e., all donations, spendings, source code,
+and future goals will be public).<br />
 </li>
-<li>Acceptance of donations from any entity anonymously or acknowledged (opt-in) will not have any influence on our content.<br />
+<li>Acceptance of donations from any entity anonymously or acknowledged
+(opt-in) will not have any influence on our content.<br />
 </li>
 <li>No sponsored content.<br />
 </li>
@@ -69,14 +255,25 @@ Anyone claiming to be unbiased is lying, therefore we will not falsely claim to 
 </li>
 <li>No advertising.</li>
 </ul>
-<p><strong>Disclaimer: it is possible that, coincidentally, a donation could correlate with a recommendation. It will then be clearly stated that while the donation was welcome, the donating entity will not be gaining visibility/coverage/endorsement/recommendations due to such a donation.</strong></p>
+<p><strong>Disclaimer: it is possible that, coincidentally, a donation
+could correlate with a recommendation. It will then be clearly stated
+that while the donation was welcome, the donating entity will not be
+gaining visibility/coverage/endorsement/recommendations due to such a
+donation.</strong></p>
 <h2 id="core-goals.">Core Goals.</h2>
 <ol start="0" type="1">
-<li>Help people in need of anonymity to maintain both their physical and digital safety.</li>
+<li>Help people in need of anonymity to maintain both their physical and
+digital safety.</li>
 </ol>
 <h2 id="non-goals">Non-Goals:</h2>
 <ol start="0" type="1">
-<li>Help any people who are using this knowledge for bad purposes. Helping people takes precedence and we know our content can be used nefariously. Our initiative believes in having one good person given an anonymous voice, safely, is worth the risk of having several using our content for evil. As we do adhere to a fair “rule of law” system which, having 9 criminals and 1 innocent person free, is much better than having one innocent person in prison among 9 criminals.</li>
+<li>Help any people who are using this knowledge for bad purposes.
+Helping people takes precedence and we know our content can be used
+nefariously. Our initiative believes in having one good person given an
+anonymous voice, safely, is worth the risk of having several using our
+content for evil. As we do adhere to a fair “rule of law” system which,
+having 9 criminals and 1 innocent person free, is much better than
+having one innocent person in prison among 9 criminals.</li>
 </ol>
 <p><strong>Yours faithfully, Anonymous Planet</strong></p>
 </body>
