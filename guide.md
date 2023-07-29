@@ -1721,8 +1721,6 @@ If you still do not think such information can be used by various actors to trac
 
 -   GitHub Transparency Report <https://github.blog/2021-02-25-2020-transparency-report/> <sup>[[Archive.org]](https://web.archive.org/web/https://github.blog/2021-02-25-2020-transparency-report/)</sup>
 
--   Snapchat Transparency Report <https://www.snap.com/en-US/privacy/transparency/> <sup>[[Archive.org]](https://web.archive.org/web/20220806141853/https://www.snap.com/en-US/privacy/transparency)</sup>
-
 -   TikTok Transparency Report <https://www.tiktok.com/transparency/en/information-requests-2021-2/> <sup>[[Archive.org]](https://web.archive.org/web/20220812054600/https://www.tiktok.com/transparency/en/information-requests-2021-2/)</sup>
 
 -   Reddit Transparency Report <https://www.redditinc.com/policies/transparency-report-2021> <sup>[[Archive.org]](https://web.archive.org/web/20220812054736/https://www.redditinc.com/policies/transparency-report-2021)</sup>
@@ -1849,13 +1847,13 @@ Now that you know what is possible, you should also consider threats and adversa
 
         -   Low to Medium motivation: Any Route
 
-        -   High motivation: TAILS, Whonix, Qubes OS Routes
+        -   High motivation: Tails, Whonix, Qubes OS Routes
 
     -   High resources:
 
         -   Low motivation: Any route
 
-        -   Medium to High motivation: TAILS, Whonix, Qubes OS Routes
+        -   Medium to High motivation: Tails, Whonix, Qubes OS Routes
 
 -   Intermediate skills:
 
@@ -1863,17 +1861,17 @@ Now that you know what is possible, you should also consider threats and adversa
 
         -   Low motivation: Any Route
 
-        -   Medium to High motivation: TAILS, Whonix, Qubes OS Routes
+        -   Medium to High motivation: Tails, Whonix, Qubes OS Routes
 
     -   Medium resources:
 
         -   Low motivation: Any Route
 
-        -   Medium to High motivation: TAILS, Whonix, Qubes OS Routes
+        -   Medium to High motivation: Tails, Whonix, Qubes OS Routes
 
     -   High resources:
 
-        -   Low to High motivation: TAILS, Whonix, Qubes OS Routes
+        -   Low to High motivation: Tails, Whonix, Qubes OS Routes
 
 -   Highly skilled:
 
@@ -1881,15 +1879,15 @@ Now that you know what is possible, you should also consider threats and adversa
 
         -   Low motivation: Any Route
 
-        -   Medium to High motivation: TAILS, Whonix, Qubes OS Routes
+        -   Medium to High motivation: Tails, Whonix, Qubes OS Routes
 
     -   Medium resources:
 
-        -   Low to High motivation: TAILS, Whonix, Qubes OS Routes
+        -   Low to High motivation: Tails, Whonix, Qubes OS Routes
 
     -   High resources:
 
-        -   Low to High motivations: TAILS, Whonix, Qubes OS Routes **(but likely out of scope from this guide as this is probably a global adversary)**
+        -   Low to High motivations: Tails, Whonix, Qubes OS Routes **(but likely out of scope from this guide as this is probably a global adversary)**
 
 In all cases, you should read these two pages from the Whonix documentation that will give you in-depth insight into your choices:
 
