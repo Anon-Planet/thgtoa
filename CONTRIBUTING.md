@@ -18,7 +18,7 @@ For those of you who are looking to add content to the guide, include the follow
 
 ##### <u>Pull Requests</u>
 
-- **Do** create a [topic branch] to work on instead of working directly on `master`. This helps to:
+- **Do** create a [topic branch] to work on instead of working directly on `main`. This helps to:
   - Protect the process.
   - Ensures users are aware of commits on the branch being considered for merge.
   - Allows for a location for more commits to be offered without mingling with other contributor changes.
@@ -26,7 +26,7 @@ For those of you who are looking to add content to the guide, include the follow
 - **Do** follow the [50/72 rule] for Git commit messages.
 - **Do** write "WIP" on your PR and/or open a [draft PR] if submitting unfinished changes..
 - **Do** make sure the title of a draft PR makes it immediately clear that it's a draft
-- **Do** target your pull request to the **master branch**.
+- **Do** target your pull request to the **main branch**.
 - **Do** specify a descriptive title to make searching for your pull request easier.
 - **Don't** leave your pull request description blank.
 - **Don't** abandon your pull request. Being responsive helps us land your changes faster.
