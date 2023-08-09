@@ -5629,7 +5629,7 @@ If you want to avoid communicating your anonymous e-mail addresses to various pa
 
 -   <https://simplelogin.io/> (preferred first choice due to more options available to the free tier)
 
--   <https://anonaddy.com/>
+-   <https://addy.io/>
 
 These services will allow creating random aliases for your anonymous e-mail (on Proton for example) and could increase your general privacy if you do not want to disclose that e-mail for any purpose. They are both recommended by Privacyguides.org and Privacytools.io. I'm recommending them as well.
 
