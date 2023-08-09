@@ -10401,13 +10401,21 @@ There are three VPN companies recommended by PrivacyGuides.org (<https://www.pri
     
 Here are their logging policies:
 
--   Mullvad: <https://mullvad.net/en/help/no-logging-data-policy/> <sup>[[Archive.org]](https://web.archive.org/web/https://mullvad.net/en/help/no-logging-data-policy/)</sup>
--   iVPN: <https://www.ivpn.net/privacy/> <sup>[[Archive.org]](https://web.archive.org/web/https://www.ivpn.net/privacy/)</sup>
--   ProtonVPN: <https://protonvpn.com/support/no-logs-vpn/> <sup>[[Archive.org]](https://web.archive.org/web/https://protonvpn.com/support/no-logs-vpn/)</sup>
+-   Mullvad: <https://mullvad.net/en/help/no-logging-data-policy/> <sup>[[Archive.org]](https://web.archive.org/web/20230804185207/https://mullvad.net/en/help/no-logging-data-policy/)</sup>
 
-In addition, we will also mention a newcomer to watch: Safing SPN <https://safing.io/> <sup>[[Archive.org]](https://web.archive.org/web/https://safing.io/)</sup>) which (while still in the alpha stage at the time of this writing) which also accepts cash and has a very distinct new concept for a VPN which provides benefits similar to Tor Stream isolation with their "SPN"). Note that Safing SPN is not available on macOS at the moment. This possibility is "provisional" and at your own risk, but we think was worth mentioning.
+    -   Audit by Radically Open Security, August 2023 <https://mullvad.net/en/blog/2023/8/9/infrastructure-audit-completed-by-radically-open-security/> <sup>[[Archive.org]](https://web.archive.org/web/20230809102621/https://mullvad.net/en/blog/2023/8/9/infrastructure-audit-completed-by-radically-open-security/)</sup>
 
-Personally, for now, we would recommend Mullvad due to personal experience.
+-   iVPN: <https://www.ivpn.net/privacy/> <sup>[[Archive.org]](https://web.archive.org/web/20230803174609/https://www.ivpn.net/privacy)</sup>
+
+    -   Audit by Cure53, March 2023 <https://www.ivpn.net/blog/ivpn-infrastructure-audit-concluded/> <sup>[[Archive.org]](https://web.archive.org/web/20230703163859/https://www.ivpn.net/blog/ivpn-infrastructure-audit-concluded/)</sup>
+
+-   ProtonVPN: <https://protonvpn.com/support/no-logs-vpn/> <sup>[[Archive.org]](https://web.archive.org/web/20230731142926/https://protonvpn.com/support/no-logs-vpn/)</sup>
+
+    -   Audits by SEC Consult, <https://protonvpn.com/blog/open-source/>  <sup>[[Archive.org]](https://web.archive.org/web/20230805163006/https://protonvpn.com/blog/open-source/)</sup>
+
+In addition, we will also mention a newcomer to watch: Safing SPN <https://safing.io/spn/> <sup>[[Archive.org]](https://web.archive.org/web/https://safing.io/spn/)</sup>) which also accepts cash and has a very distinct new concept for a VPN which provides benefits similar to Tor Stream isolation with their "SPN". This possibility is "provisional" and at your own risk. Note that Safing SPN is not available on macOS at the moment, nor is it free, but we think was worth mentioning.
+
+We are not affiliated with any brands as pointed out in our [Constitution](/constitution.html). Personally, for now, we would recommend Mullvad due to personal experience.
 
 **We would not recommend Proton VPN as much because they do require an e-mail for registration unlike Mullvad, iVPN, and Safing. Proton also has a tendency to require phone number verification for users who register over Tor.**
 
