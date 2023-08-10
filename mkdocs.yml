@@ -1,0 +1,112 @@
+site_name: The Hitchhiker’s Guide to Online Anonymity
+site_dir: '/site/'
+docs_dir: 'docs/'
+site_url: "https://www.anonymousplanet.org/"
+repo_url: "https://github.com/Anon-Planet/thgtoa"
+repo_name: ""
+#edit_uri: ""
+theme:
+  name: material
+  favicon: media/profile.png
+  icon:
+    logo: material/bird
+    repo: simple/github
+  font:
+    text: Public Sans
+    code: Liberation Mono
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+  language: en
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/eye-outline
+        name: Switch to dark mode
+      primary: green
+      accent: blue
+    - scheme: slate
+      toggle:
+        icon: material/eye
+        name: Switch to light mode
+      primary: grey
+      accent: teal
+
+plugins:
+  - social: {}
+  - search: {}
+#  macros: {}
+#  meta: {}
+#  git-latest-tag: {}
+#  git-authors: {}
+#  git-latest-release: {}
+
+extra:
+  social:
+    - icon: simple/mastodon
+      link: https://mastodon.social/@anonymousplanet
+      name: Mastodon
+    - icon: simple/matrix
+      link: https://matrix.to/#/#p-s-a:matrix.org
+      name: Matrix Space
+    - icon: simple/github
+      link: https://github.com/Anon-Planet/thgtoa
+      name: GitHub
+#    - icon: simple/torbrowser
+#      link: TODO
+#      name: Hidden service
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
+  - pymdownx.details
+  - pymdownx.mark
+  - attr_list
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.superfences:
+      custom_fences:
+      - name: mermaid
+        class: mermaid
+        format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+
+  - pymdownx.critic: {}
+  - pymdownx.caret: {}
+  - pymdownx.keys: {}
+  - pymdownx.mark: {}
+  - pymdownx.tilde: {}
+  - pymdownx.snippets: {}
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - attr_list: {}
+  - def_list: {}
+  - md_in_html: {}
+  - meta: {}
+  - abbr: {}
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - tables: {}
+  - footnotes: {}
+  - toc:
+      permalink: true
+      toc_depth: 3
+
+copyright: |
+  &copy; 2023 <a href="https://github.com/Anon-Planet"  target="_blank" rel="noopener">Anonymous Planet</a>

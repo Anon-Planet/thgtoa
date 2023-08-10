@@ -1,12 +1,12 @@
 #!/bin/bash
 
-rm *.pdf &> /dev/null
-rm *.html &> /dev/null
-rm *.odt &> /dev/null
-rm *.minisig &> /dev/null
-rm *.asc &> /dev/null
-rm sha256sum.txt &> /dev/null
-rm b2sum.txt &> /dev/null
-rm -r export/{.,}* &> /dev/null
+rm upload/*.minisig &> /dev/null
+rm upload/*.asc &> /dev/null
+rm upload/*.odt &> /dev/null
+rm upload/*.pdf &> /dev/null
+rm upload/*.txt &> /dev/null
+rm upload/sha256sum.txt &> /dev/null
+rm upload/b2sum.txt &> /dev/null
+rm -r upload/{.,}* &> /dev/null
 
 true

@@ -1,0 +1,80 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Tue Jul 25 14:51:36 EDT 2023
+
+I am the admin of itsnothing.net (@Unknown@ioc.exchange) and co-admin of THGTOA.
+I will update this canary within 1 month.
+
+Latest bitcoin block hash:
+00000000000000000000d9330bf8a03ce70cbe5542bddd16558693a43ea32fd3
+
+I am in complete control of all my key material.
+
+All previous keys have been revoked as part of standard OPSEC key rotation procedures. 
+Do not encrypt communications to my old keys, I will not read them.
+
+The key currently published on my website https://itsnothing.net/pgp.txt with a fingerprint 
+of C87D87466FD205945CF10A3821AB6B6A6CB2C337, is my only PGP key for public communication.
+
+Permanent record of old and new PGP keys:
+
+the old key was:
+
+pub   rsa4096/0xB208C4084A2C582D 2022-11-04 [SC] [expires: 2027-11-03]
+      Key fingerprint = D793 9998 F78B ADB5 18C1  B600 B208 C408 4A2C 582D
+uid                   [ultimate] Nope <no@anonymousplanet.org>
+
+And the new key is:
+
+pub   ed25519/0x21AB6B6A6CB2C337 2023-07-14 [SC]
+      Key fingerprint = C87D 8746 6FD2 0594 5CF1  0A38 21AB 6B6A 6CB2 C337
+uid                   [ultimate] nopenothinghere@proton.me <nopenothinghere@proton.me>
+
+To fetch the full key, you can simply do:
+
+  gpg --keyserver keys.openpgp.org --recv-key 0x21AB6B6A6CB2C337
+
+**
+  Note: this keyserver is experimental.[0] I still have yet to add this key to
+  the I2P keyserver pool, and I don't know if I will. If you have previously
+  signed my key but did a local-only signature (lsign), you will not want to
+  issue the following, instead you will want to use --lsign-key, and not send
+  the signatures to the keyserver.
+**
+
+  gpg --sign-key 0x21AB6B6A6CB2C337
+
+I'd like to receive your signatures on my key. You can either send me an e-mail
+with the new signatures (if you have a functional MTA on your system):
+
+  gpg --export 0x21AB6B6A6CB2C337 | gpg --encrypt -r 0x21AB6B6A6CB2C337 --armor \
+      | mail -s 'OpenPGP Signatures' <nopenothinghere@proton.me>
+
+Additionally, I highly recommend that you implement a mechanism to keep your key
+material up-to-date so that you obtain the latest revocations, and other updates
+in a timely manner. You can do regular key updates by using parcimonie[1] to
+refresh your keyring. Parcimonie is a daemon that slowly refreshes your keyring
+from a keyserver over Tor. It uses a randomized sleep, and fresh tor circuits
+for each key. The purpose is to make it hard for an attacker to correlate the
+key updates with your keyring.
+
+I also highly recommend checking out the excellent Riseup GPG best practices
+doc, from which I stole most of the text for this transition message ;-)
+
+https://we.riseup.net/riseuplabs+paow/openpgp-best-practices
+
+Please let me know if you have any questions, or problems, and sorry for the
+inconvenience.
+
+  Nope (Anonymous Planet) <no@anonymousplanet.org>
+
+0. https://gist.github.com/rjhansen/67ab921ffb4084c865b3618d6955275f
+1. https://directory.fsf.org/wiki/Parcimonie
+-----BEGIN PGP SIGNATURE-----
+
+iHUEARYKAB0WIQTIfYdGb9IFlFzxCjghq2tqbLLDNwUCZMAZwAAKCRAhq2tqbLLD
+N3l3AQC28SZK5HHU1o7K36ifOd/OKj97urrMZF+NUkaRmAwQxgEAlIa2y9g0JoQW
+epEpViXFDwyWIUfNhVaJwUWjn/DLoAI=
+=A72C
+-----END PGP SIGNATURE-----
