@@ -17,3 +17,10 @@ Discussion Channels:
 - Matrix room: ```#anonymity:matrix.org``` <https://matrix.to/#/#anonymity:matrix.org>
 - Matrix space: ```#privacy-security-anonymity:matrix.org``` <https://matrix.to/#/#privacy-security-anonymity:matrix.org>
 - Github Discussions: <https://github.com/Anon-Planet/thgtoa/discussions/>
+
+Git mirrors:
+- https://github.com/anon-planet
+- http://it7otdanqu7ktntxzm427cba6i53w6wlanlh23v5i3siqmos47pzhvyd.onion/anonymousplanetorg (darktea)
+- https://gitlab.com/anonymousplanetorg
+- https://0xacab.com/anonypla
+- https://codeberg.org/anonymousplanet
