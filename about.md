@@ -19,8 +19,8 @@ Discussion Channels:
 - Github Discussions: <https://github.com/Anon-Planet/thgtoa/discussions/>
 
 Git mirrors:
-- https://github.com/anon-planet
-- http://it7otdanqu7ktntxzm427cba6i53w6wlanlh23v5i3siqmos47pzhvyd.onion/anonymousplanetorg (darktea)
-- https://gitlab.com/anonymousplanetorg
-- https://0xacab.com/anonypla
-- https://codeberg.org/anonymousplanet
+- <https://github.com/anon-planet>
+- <http://it7otdanqu7ktntxzm427cba6i53w6wlanlh23v5i3siqmos47pzhvyd.onion/anonymousplanetorg> (darktea)
+- <https://gitlab.com/anonymousplanetorg>
+- <https://0xacab.com/anonypla>
+- <https://codeberg.org/anonymousplanet>
