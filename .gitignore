@@ -4,5 +4,6 @@ _site/
 .jekyll-cache/
 .jekyll-metadata
 .bundle/
+.cache/
 vendor/
 Gemfile*
