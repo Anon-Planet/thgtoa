@@ -1,4 +1,4 @@
-site_name: The Hitchhiker’s Guide to Online Anonymity
+site_name: Hitchhiker’s Guide
 site_dir: '/site/'
 docs_dir: 'docs/'
 site_url: "https://www.anonymousplanet.org/"
@@ -45,7 +45,7 @@ plugins:
 #  macros: {}
 #  meta: {}
 #  git-latest-tag: {}
-#  git-authors: {}
+  - git-authors: {}
 #  git-latest-release: {}
 
 extra:
@@ -56,9 +56,21 @@ extra:
     - icon: simple/matrix
       link: https://matrix.to/#/#p-s-a:matrix.org
       name: Matrix Space
+    - icon: simple/gitlab
+      link: http://wmj5kiic7b6kjplpbvwadnht2nh2qnkbnqtcv3dyvpqtz7ssbssftxid.onion/
+      name: "0xacab"
+    - icon: simple/gitea
+      link: http://it7otdanqu7ktntxzm427cba6i53w6wlanlh23v5i3siqmos47pzhvyd.onion/anonymousplanetorg
+      name: Darktea
     - icon: simple/github
-      link: https://github.com/Anon-Planet/thgtoa
-      name: GitHub
+      link: https://github.com/anon-planet
+      name: Github
+    - icon: simple/gitlab
+      link: https://gitlab.com/anonymousplanetorg
+      name: Gitlab
+    - icon: simple/codeberg
+      link: https://codeberg.org/anonymousplanet
+      name: Codeberg
 #    - icon: simple/torbrowser
 #      link: TODO
 #      name: Hidden service
@@ -109,4 +121,4 @@ markdown_extensions:
       toc_depth: 3
 
 copyright: |
-  &copy; 2023 <a href="https://github.com/Anon-Planet"  target="_blank" rel="noopener">Anonymous Planet</a>
+  &copy; 2023 <a href="https://anonymousplanet.org/"  target="_blank" rel="noopener">Anonymous Planet</a>

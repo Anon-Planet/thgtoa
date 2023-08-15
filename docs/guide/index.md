@@ -13,7 +13,7 @@ schema:
     - https://opencollective.com/anonymousplanetorg
     - https://mastodon.social/@anonymousplanet
 ---
-![Anonymous Planet logo](../media/logo-transparent.png){ align=right }
+![Anonymous Planet logo](../media/profile.png){ align=right }
 
 There are several ways you could read this guide:
 
