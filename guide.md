@@ -12203,7 +12203,7 @@ Find it online at:
 
 -   Original: <https://anonymousplanet.org>
     
--   Tor Onion Mirror: <http://thgtoa27ujspeqxasrfvcf5aozqdczvgmwgorrmblh6jn4nino3spcqd.onion>    
+-   Tor Onion Mirror: <http://thgtoa3muj7ybcrz6gnlrr4nopefo33eipoeptttllr2qbyddtvd5lad.onion>    
 
 -   Archive.org: <https://web.archive.org/web/https://anonymousplanet.org>
 
@@ -12211,9 +12211,9 @@ Find it online at:
 
 -   Archive.today over Tor: <http://archiveiya74codqgiixo33q62qlrqtkgmcitqx5u2oeqnmn5bpcbiyd.onion/anonymousplanet.org>
 
--   PDF: <https://anonymousplanet.org/export/guide.pdf> <sup>[[Archive.org]](https://web.archive.org/web/https://anonymousplanet.org/export/guide.pdf)</sup> <sup>[[Tor Mirror]](http://thgtoa27ujspeqxasrfvcf5aozqdczvgmwgorrmblh6jn4nino3spcqd.onion/export/guide.pdf)</sup>
+-   PDF: <https://anonymousplanet.org/export/guide.pdf> <sup>[[Archive.org]](https://web.archive.org/web/https://anonymousplanet.org/export/guide.pdf)</sup> <sup>[[Tor Mirror]](http://thgtoa3muj7ybcrz6gnlrr4nopefo33eipoeptttllr2qbyddtvd5lad.onion/export/guide.pdf)</sup>
 
--   OpenDocument Text (ODT) version at: <https://anonymousplanet.org/export/guide.odt> <sup>[[Archive.org]](https://web.archive.org/web/https://anonymousplanet.org/export/guide.odt)</sup> <sup>[[Tor Mirror]](http://thgtoa27ujspeqxasrfvcf5aozqdczvgmwgorrmblh6jn4nino3spcqd.onion/export/guide.odt)</sup>
+-   OpenDocument Text (ODT) version at: <https://anonymousplanet.org/export/guide.odt> <sup>[[Archive.org]](https://web.archive.org/web/https://anonymousplanet.org/export/guide.odt)</sup> <sup>[[Tor Mirror]](http://thgtoa3muj7ybcrz6gnlrr4nopefo33eipoeptttllr2qbyddtvd5lad.onion/export/guide.odt)</sup>
 
 
 # Appendix A7: Comparing versions
