@@ -20,7 +20,7 @@ Discussion Channels:
 
 Git mirrors:
 - Github: <https://github.com/anon-planet>
-- Darktea: <http://it7otdanqu7ktntxzm427cba6i53w6wlanlh23v5i3siqmos47pzhvyd.onion/anonymousplanetorg>
 - Gitlab: <https://gitlab.com/anonymousplanetorg>
 - 0xacab: <https://0xacab.org/anonypla>
 - Codeberg: <https://codeberg.org/anonymousplanet>
+- Hack Liberty: <http://vkp7367tcjpqdwwckigrdrvmwvispvbpg5rlsr2chjxvppfg7hipagyd.onion/nope/thgtoa.git>
