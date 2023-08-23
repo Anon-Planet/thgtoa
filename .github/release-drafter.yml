@@ -1,0 +1,44 @@
+name-template: '🌍 v$RESOLVED_VERSION'
+tag-template: 'v$NEXT_PATCH_VERSION'
+categories:
+  - title: '🚀 Features'
+    labels:
+      - 'feature'
+      - 'enhancement'
+  - title: '🐛 Bug Fixes'
+    labels:
+      - 'fix'
+      - 'bugfix'
+      - 'bug'
+  - title: '🧰 Maintenance'
+    labels:
+      - 'chore'
+      - 'ci'
+exclude-labels:
+  - 'skip-changelog'
+change-template:
+  '- $TITLE by @$AUTHOR [$URL](#$NUMBER): $BODY'
+change-title-escapes: '\<*_&' # You can add # and @ to disable mentions, and add ` to disable code blocks.
+version-resolver:
+  major:
+    labels:
+      - 'major'
+  minor:
+    labels:
+      - 'minor'
+  patch:
+    labels:
+      - 'patch'
+  default: patch
+template: |
+  ## 🧨 What's changed
+  $CHANGES
+
+  ## 👀 New Contributors
+  $CONTRIBUTORS
+
+  > **Optional release message goes here.**
+
+  ![](link-image-here)
+
+  **Full Changelog**: $REPOSITORY/compare/$PREVIOUS_TAG...$NEXT_PATCH_VERSION

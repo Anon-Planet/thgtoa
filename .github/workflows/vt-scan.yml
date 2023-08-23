@@ -1,11 +1,11 @@
 name: '🦠 VirusTotal Scan'
 
 on:
-  pull_request:
-  push:
+  - push
+  - pull_request
 
 jobs:
-  build:
+  virustotal-scan:
     runs-on: ubuntu-latest
     steps:
       - name: '📦 Checkout'

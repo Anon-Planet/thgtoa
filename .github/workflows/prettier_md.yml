@@ -1,0 +1,27 @@
+name: '📃 Prettier markdown files'
+
+on: # noqa: yaml[truthy]
+  push:
+    branches:
+      - master
+      - main
+      - mkdocs-rebuild
+    paths:
+      - '**.md'
+
+jobs:
+  prettier-md:
+    if: github.repository == 'Anon-Planet/thgtoa'
+    runs-on: ubuntu-latest
+    timeout-minutes: 1
+
+    steps:
+      - name: 'Git checkout'
+        uses: actions/checkout@v3
+        with:
+          ref: ${{ github.head_ref }}
+
+      - name: 'Prettify code'
+        uses: creyD/prettier_action@v4.3
+        with:
+          prettier_options: --write {**/*,*}.md
