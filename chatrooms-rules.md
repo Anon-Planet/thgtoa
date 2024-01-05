@@ -39,7 +39,7 @@ Just because the bot is down temporarily doesn't mean shit.Some exceptions can a
 - Be respectful
 
 ##### Mods:
-- Lucas: [@lucas:coinfundit.com](https://matrix.to/#/@lucas:coinfundit.com)
+- rawr: [@rawr:beeper.com](https://matrix.to/#/@rawr:beeper.com)
 - Prox: [@the_proxster:midov.pl](https://matrix.to/#/@the_proxster:midov.pl) (basically God)
 
 #### Rules for Modern Cryptography (```#moderncrypto:gnuradio.org```)<a name="moderncrypto"></a>
