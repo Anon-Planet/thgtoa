@@ -9372,7 +9372,7 @@ You must live by the simple rule that "loose lips sink ships" - but also that th
 
     - 2022, Master of OpSec Masters: A View Through the Prism of Time, <https://officercia.mirror.xyz/4x2-M4R2cSnID1wpsTO4CQNrMQ5JUFouR-rZ_N4xO-Q> <sup>[[Archive.org]](https://web.archive.org/web/20220714213939/https://officercia.mirror.xyz/4x2-M4R2cSnID1wpsTO4CQNrMQ5JUFouR-rZ_N4xO-Q)</sup>
     - 2022, How can you become a one-man-army OSINT specialist? <https://officercia.mirror.xyz/5KSkJOTgMtvgC36v1GqZ987N-_Oj_zwvGatOk0A47Ws> <sup>[[Archive.org]](https://web.archive.org/web/20220718231735/https://officercia.mirror.xyz/5KSkJOTgMtvgC36v1GqZ987N-_Oj_zwvGatOk0A47Ws)</sup>
-    - 2024, Github repository of bad opsec: <https://github.com/jermanuts/bad-opsec> <sup>[[Archive.org]](https://web.archive.org/web/https://github.com/jermanuts/bad-opsec)</sup>
+    - 2024, Github repository of bad opsec links (some might be redundant to the above links): <https://github.com/jermanuts/bad-opsec> <sup>[[Archive.org]](https://web.archive.org/web/https://github.com/jermanuts/bad-opsec)</sup>
 
 It is recommended that you learn about the common ways people mess up OPSEC <https://dan-kir.github.io/2022/05/26/OPSEC-notes.html> <sup>[[Archive.org]](https://web.archive.org/web/20220717064253/https://dan-kir.github.io/2022/05/26/OPSEC-notes.html)</sup>. Whatever you do, take OPSEC seriously, and [Don't Fuck It Up!](https://www.youtube.com/watch?v=J1q4Ir2J8P8)
 
