@@ -15,7 +15,7 @@ This guide is an open-source non-profit initiative, [licensed](LICENSE.html) und
 - Raw [Markdown](https://github.com/Anon-Planet/thgtoa/raw/master/guide.md) text.
 
 Mirrors:
-- Tor Onion Mirror: <http://thgtoa27ujspeqxasrfvcf5aozqdczvgmwgorrmblh6jn4nino3spcqd.onion/>
+- Tor Onion Mirror: <http://thgtoa3jzy3doku7hkna32htpghjijefscwvh4dyjgfydbbjkeiohgid.onion/>
 
 The guide and all the files are also readily available on Archive.org and Archive.today:
 
