@@ -1,11 +1,12 @@
 PGP/GPG key ID `7DFFD7471FB76E2A8ABBBCDDD769B3749E933B8A` is no longer active  
 PGP/GPG key ID `42FF35DB9DE7C088AB0FD4A70C216A52F6DF4920` is no longer active  
+PGP/GPG key ID `9EA98278639F1CD853E096CBFF94507587A6A9B9` is no longer active  
 
 This project now uses separate master, release signing, and email keys.  
 
-Current master key fingerprint: `9EA98278639F1CD853E096CBFF94507587A6A9B9`  
-Current release key fingerprint: `83A6CF9EF57AC25B5C7F5D29285E6048A12321B2`  
-Current email key fingerprint: `B6D1757632A280F99F2DCBFDB9AB9D93AFF05B9C`  
+Current master key fingerprint: `9FA5 436D 0EE3 6098 5157  3825 17EC A05F 768D EDF6`  
+Current release key fingerprint: `C302 3DBE A3FB 38C4 38BA  1EED CEC6 0AED E8B9 92A2`  
+Current email key fingerprint: `FCBD 2CAB DEFD 1FBA 2E9E  7591 A1A8 2CD2 DD2C F890`  
 
 The email and release keys should be signed by the master key.  
 The master key takes precedence over all other project keys.  

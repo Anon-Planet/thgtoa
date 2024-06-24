@@ -37,30 +37,30 @@ To verify files with GPG signatures, you should first install gpg on your system
 
 Import the master signing key from a trusted source of the publisher using the following command from a command prompt or terminal:
 
-```gpg --auto-key-locate nodefault,wkd --locate-keys 9EA98278639F1CD853E096CBFF94507587A6A9B9```
+```gpg --auto-key-locate nodefault,wkd --locate-keys 9FA5436D0EE360985157382517ECA05F768DEDF6```
 
-In theory this command should fetch the key from the a default pool server. If this doesn't work, you can also download/view it directly from here (in our case): <https://anonymousplanet.org/pgp/AnonymousPlanet-Master-Signing-Key_9EA98278639F1CD853E096CBFF94507587A6A9B9.asc>
+In theory this command should fetch the key from the a default pool server. If this doesn't work, you can also download/view it directly from here (in our case): <https://anonymousplanet.org/pgp/AnonymousPlanet-Master-Signing-Key_9FA5436D0EE360985157382517ECA05F768DEDF6.asc>
 
-As well as the published key on any keyserver below (search for the fingerprint ```9EA98278639F1CD853E096CBFF94507587A6A9B9```):
+As well as the published key on any keyserver below (search for the fingerprint ```9FA5436D0EE360985157382517ECA05F768DEDF6```):
 - <https://pgp.mit.edu>
 - <https://keys.openpgp.org>
 - <https://keyserver.ubuntu.com>
 
 You should then import it manually by issuing the following command on any OS:
 
-```gpg --import 9EA98278639F1CD853E096CBFF94507587A6A9B9.asc```
+```gpg --import 9FA5436D0EE360985157382517ECA05F768DEDF6.asc```
 
 The master signing key allows you to verify all other project-related keys. Once you have the master signing key and are confident it's the correct key (nobody has tampered with it), mark the key as trusted by locally signing it:
 
-```gpg --lsign-key 9EA98278639F1CD853E096CBFF94507587A6A9B9```
+```gpg --lsign-key 9FA5436D0EE360985157382517ECA05F768DEDF6```
 
 Alternatively, if you use Kleopatra, it will ask you to certify the key. Certify the key to mark it as trusted.
 
 Once you have the master key downloaded, imported, and certified, you will obtain a copy of the release key.
 
-```gpg --auto-key-locate nodefault,wkd --locate-keys 83A6CF9EF57AC25B5C7F5D29285E6048A12321B2``` (to import the release signing key)
+```gpg --auto-key-locate nodefault,wkd --locate-keys C3023DBEA3FB38C438BA1EEDCEC60AEDE8B992A2``` (to import the release signing key)
 
-<https://anonymousplanet.org/pgp/AnonymousPlanet-Release-Signing-Key_83A6CF9EF57AC25B5C7F5D29285E6048A12321B2.asc> (to download the key yourself)
+<https://anonymousplanet.org/pgp/AnonymousPlanet-Release-Signing-C3023DBEA3FB38C438BA1EEDCEC60AEDE8B992A2.asc> (to download the key yourself)
 
 If you use GPG directly, you won't need to mark the release signing key as trusted, because it's already signed by the master signing key. If you use Kleopatra, the process to import the release signing key is the same as importing the master signing key.
 
