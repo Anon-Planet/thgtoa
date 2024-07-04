@@ -16,5 +16,5 @@ jobs:
     steps:
       - name: '📦 Checkout Repository'
         uses: actions/checkout@v3
-      - name: '📦 Dependency Review'
+      - name: '📦 Dependency Reviews'
         uses: actions/dependency-review-action@v2
