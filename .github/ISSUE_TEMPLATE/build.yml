@@ -2,7 +2,7 @@ name: "CI/CD"
 description: Any changes/issues for the build process
 labels: ["chore"]
 assignees:
-  - nopenothinghere
+  - nopeitsnothing
 body:
 
   - type: markdown
