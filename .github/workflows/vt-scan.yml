@@ -1,4 +1,4 @@
-name: '🦠 VirusTotal Scan'
+name: '🦠 VirusTotal Scans'
 
 on:
   pull_request:
