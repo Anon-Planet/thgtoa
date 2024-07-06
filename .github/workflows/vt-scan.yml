@@ -22,5 +22,4 @@ jobs:
         with:
           vt_api_key: ${{ secrets.VT_API_KEY }}
           files: |
-            export/guide.pdf
-            export/guide.odt
+            export/*.pdf
