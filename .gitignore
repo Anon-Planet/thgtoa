@@ -7,3 +7,6 @@ _site/
 .cache/
 vendor/
 Gemfile*
+
+# Artifact from PDF tests
+*.log
