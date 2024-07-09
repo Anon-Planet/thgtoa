@@ -10,3 +10,4 @@ Gemfile*
 
 # Artifact from PDF tests
 *.log
+megalinter-reports/
