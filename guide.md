@@ -38,9 +38,9 @@ Feel free to come to discuss ideas at:
 
 -   Rules for our chatrooms: <https://anonymousplanet.org/chatrooms-rules.html>
 
--   Matrix/Element Room: ```#anonymity:matrix.org``` <https://matrix.to/#/#anonymity:matrix.org>
+-   Matrix/Element Room: [#anonymity:matrix.org](https://matrix.to/#/#anonymity:matrix.org)
 
--   Matrix Space regrouping several rooms with similar interests: ```#privacy-security-anonymity:matrix.org``` <https://matrix.to/#/#privacy-security-anonymity:matrix.org>.
+-   Matrix Space regrouping several rooms with similar interests: [#privacy-security-anonymity:matrix.org](https://matrix.to/#/#privacy-security-anonymity:matrix.org).
 
 Follow us on:
 
@@ -1074,7 +1074,7 @@ A real use and well-documented case of this was the arrest of the hacker Jeremy 
 
 There are also a few cases involving OSINT at Bellingcat[^154]. Have a look at their very informative (but slightly outdated) toolkit here: <https://docs.google.com/spreadsheets/d/18rtqh8EG2q1xBo2cLNyhIDuK9jrPGwYr9DI2UncoqJQ/edit#gid=930747607> <sup>[[Archive.org]](https://web.archive.org/web/https://docs.google.com/spreadsheets/d/18rtqh8EG2q1xBo2cLNyhIDuK9jrPGwYr9DI2UncoqJQ/edit)</sup>
 
-**We have an OSINT discussion room in our Matrix community. Feel free to join at ```#OSINT:matrix.org```.**
+**We have an OSINT discussion room in our Matrix community. Feel free to join at #OSINT:matrix.org.**
 
 You can also view some convenient lists of some available OSINT tools here if you want to try them on yourself for example:
 
@@ -2777,15 +2777,15 @@ The steps to achieve this are not yet integrated into this guide but can be foun
 
 -   Disable Bluetooth if enabled by following this guide <https://www.addictivetips.com/ubuntu-linux-tips/disable-bluetooth-in-ubuntu/> <sup>[[Archive.org]](https://web.archive.org/web/https://www.addictivetips.com/ubuntu-linux-tips/disable-bluetooth-in-ubuntu/)</sup> or issuing the following command:
 
-    -   ```sudo systemctl disable bluetooth.service --force```
+    -   **sudo systemctl disable bluetooth.service --force**
 
 -   Disable Indexing if enabled by default (Ubuntu >19.04) by following this guide <https://www.linuxuprising.com/2019/07/how-to-completely-disable-tracker.html> <sup>[[Archive.org]](https://web.archive.org/web/https://www.linuxuprising.com/2019/07/how-to-completely-disable-tracker.html)</sup> or issuing the following commands:
 
-    -   ```sudo systemctl --user mask tracker-store.service tracker-miner-fs.service tracker-miner-rss.service tracker-extract.service tracker-miner-apps.service tracker-writeback.service```
+    -   **sudo systemctl --user mask tracker-store.service tracker-miner-fs.service tracker-miner-rss.service tracker-extract.service tracker-miner-apps.service tracker-writeback.service**
 
         -   You can safely ignore any error if it says some service does not exist
 
-    -   ```sudo tracker reset -hard```
+    -   **sudo tracker reset -hard**
 
 ##### Hibernation:
 
@@ -2880,11 +2880,11 @@ Again, this is to prevent some cold-boot and evil-maid attacks by powering down 
 
 -   Open a Terminal
 
--   Run: ```sudo pmset -a destroyfvkeyonstandby 1```
+-   Run: **sudo pmset -a destroyfvkeyonstandby 1**
 
     -   This command will instruct macOS to destroy the Filevault key on Standby (sleep)
 
--   Run: ```sudo pmset -a hibernatemode 25```
+-   Run: **sudo pmset -a hibernatemode 25**
 
     -   This command will instruct macOS to power off the memory during sleep instead of doing a hybrid hibernate that keeps the memory powered on. It will result in slower wakes but will increase battery life.
 
@@ -2912,7 +2912,7 @@ These are the infamous "unblockable telemetry" calls from macOS Big Sur disclose
 
 You could block OCSP reporting by issuing the following command in Terminal:
 
--   ``` sudo sh -c 'echo "127.0.0.1 ocsp.apple.com" >> /etc/hosts'```
+-   **sudo sh -c 'echo "127.0.0.1 ocsp.apple.com" >> /etc/hosts'**
 
 But you should document yourself on the actual issue before acting. This page is a good place to start: <https://blog.jacopo.io/en/post/apple-ocsp/> <sup>[[Archive.org]](https://web.archive.org/web/https://blog.jacopo.io/en/post/apple-ocsp/)</sup>
 
@@ -2930,11 +2930,11 @@ Unfortunately, macOS does not offer a native convenient way of randomizing your 
 
 You can do this by issuing the following commands in terminal (without the parentheses):
 
--   (Turn the Wi-Fi off) ```networksetup -setairportpower en0 off```
+-   (Turn the Wi-Fi off) **networksetup -setairportpower en0 off**
 
--   (Change the MAC Address) ```sudo ifconfig en0 ether 88:63:11:11:11:11```
+-   (Change the MAC Address) **sudo ifconfig en0 ether 88:63:11:11:11:11**
 
--   (Turn the Wi-Fi back on) ```networksetup -setairportpower en0 on```
+-   (Turn the Wi-Fi back on) **networksetup -setairportpower en0 on**
 
 #### Setting up a safe Browser:
 
@@ -3062,13 +3062,13 @@ To mitigate this, you will have to enable a few more options as per the recommen
 
 -   Right Click on it and click "Run as Administrator"
 
--   Run ```manage-bde -protectors -delete c:``` (this will delete current protection: the recovery key you will not need)
+-   Run **manage-bde -protectors -delete c:** (this will delete current protection: the recovery key you will not need)
 
--   Run ```manage-bde -protectors -add c: -TPMAndPIN``` (this will prompt you for a pre-boot password)
+-   Run **manage-bde -protectors -add c: -TPMAndPIN** (this will prompt you for a pre-boot password)
 
     -   Enter a password or passphrase of your choice (a good one)
 
--   Run ```manage-bde -status```
+-   Run **manage-bde -status**
 
     -   You should now see at your C: drive below "Key Protectors" the option "TPM and PIN"
 
@@ -3098,7 +3098,7 @@ By default, Windows 10/11 might not offer you this possibility so you should ena
 
 -   Run: powercfg.exe /hibernate on
 
--   Now run the additional command: ```**powercfg /h /type full**```
+-   Now run the additional command: ****powercfg /h /type full****
 
     -   **This command will make sure your hibernate mode is full and will fully clean the memory (not securely tho).**
 
@@ -3793,7 +3793,7 @@ For ideal security, you should follow the recommendations provided here for each
 
 -   Do not enable Shared Folders.
 
--   Do not enable 2D acceleration. This one is done running the following command ```VBoxManage modifyvm "vm-id" --accelerate2dvideo on|off```
+-   Do not enable 2D acceleration. This one is done running the following command **VBoxManage modifyvm "vm-id" --accelerate2dvideo on|off**
 
 -   Do not enable 3D acceleration.
 
@@ -3807,7 +3807,7 @@ For ideal security, you should follow the recommendations provided here for each
 
 -   Enable PAE/NX (NX is a security feature).
 
--   Disable Advanced Configuration and Power Interface (ACPI). This one is done running the following command ```VBoxManage modifyvm "vm-id" --acpi on|off```
+-   Disable Advanced Configuration and Power Interface (ACPI). This one is done running the following command **VBoxManage modifyvm "vm-id" --acpi on|off**
 
 -   Do not attach USB devices.
 
@@ -3817,13 +3817,13 @@ Finally, also follow this recommendation to desync the clock you are your VM com
 
 This offset should be within a 60000-millisecond range and should be different for each VM and here are some examples (which can be later applied to any VM):
 
--   ```VBoxManage modifyvm "Whonix-Gateway-XFCE" --biossystemtimeoffset -35017```
+-   **VBoxManage modifyvm "Whonix-Gateway-XFCE" --biossystemtimeoffset -35017**
 
--   ```VBoxManage modifyvm "Whonix-Gateway-XFCE" --biossystemtimeoffset +27931```
+-   **VBoxManage modifyvm "Whonix-Gateway-XFCE" --biossystemtimeoffset +27931**
 
--   ```VBoxManage modifyvm "Whonix-Workstation-XFCE" --biossystemtimeoffset -35017```
+-   **VBoxManage modifyvm "Whonix-Workstation-XFCE" --biossystemtimeoffset -35017**
 
--   ```VBoxManage modifyvm "Whonix-Workstation-XFCE" --biossystemtimeoffset +27931```
+-   **VBoxManage modifyvm "Whonix-Workstation-XFCE" --biossystemtimeoffset +27931**
 
 Also, consider applying these mitigations from VirtualBox to mitigate Spectre[^356]/Meltdown[^357] vulnerabilities by running this command from the VirtualBox Program Directory. All of these are described here: <https://www.whonix.org/wiki/Spectre_Meltdown> <sup>[[Archive.org]](https://web.archive.org/web/https://www.whonix.org/wiki/Spectre_Meltdown)</sup> (be aware these can impact severely the performance of your VMs but should be done for best security).
 
@@ -3973,15 +3973,15 @@ Refer to this tutorial <https://www.whonix.org/wiki/Other_Operating_Systems> <su
 
 -   Windows 10: Enable IPv4 and set the following, Windows 11: Switch from DHCP to Manual and set the following:
 
-    -   IP address ```10.152.152.50``` (increase this IP by one for any other VM)
+    -   IP address **10.152.152.50** (increase this IP by one for any other VM)
 
-    -   Subnet prefix length ```18``` (```255.255.192.0```)
+    -   Subnet prefix length **18** (**255.255.192.0**)
 
-    -   Gateway ```10.152.152.10``` (this is the Whonix Gateway)
+    -   Gateway **10.152.152.10** (this is the Whonix Gateway)
 
-    -   (Windows 10) DNS ```10.152.152.10``` (this is again the Whonix Gateway)
+    -   (Windows 10) DNS **10.152.152.10** (this is again the Whonix Gateway)
 
-    -   (Windows 11) exit the IP assignment and select DNS server assignment and set it to ```10.152.152.10``` (this is again the Whonix Gateway)
+    -   (Windows 11) exit the IP assignment and select DNS server assignment and set it to **10.152.152.10** (this is again the Whonix Gateway)
 
     -   Save
 
@@ -4053,13 +4053,13 @@ Then on Android itself:
 
 -   Switch from DHCP to Static
 
-    -   IP address ```10.152.152.50``` (increase this IP by one for any other VM)
+    -   IP address **10.152.152.50** (increase this IP by one for any other VM)
 
-    -   Subnet prefix length ```18``` (```255.255.192.0```)
+    -   Subnet prefix length **18** (**255.255.192.0**)
 
-    -   Gateway ```10.152.152.10``` (this is the Whonix Gateway)
+    -   Gateway **10.152.152.10** (this is the Whonix Gateway)
 
-    -   DNS ```10.152.152.10``` (this is again the Whonix Gateway)
+    -   DNS **10.152.152.10** (this is again the Whonix Gateway)
 
 #### If you cannot use Tor:
 
@@ -4133,13 +4133,13 @@ Afterward, and during the install, you will need to input an IP address manually
 
 Use these settings when prompted in the macOS installation process:
 
--   IP address ```10.152.152.50``` (increase this IP by one for any other VM)
+-   IP address **10.152.152.50** (increase this IP by one for any other VM)
 
--   Subnet prefix length ```18``` (```255.255.192.0```)
+-   Subnet prefix length **18** (**255.255.192.0**)
 
--   Gateway ```10.152.152.10``` (this is the Whonix Gateway)
+-   Gateway **10.152.152.10** (this is the Whonix Gateway)
 
--   DNS ```10.152.152.10``` (this is again the Whonix Gateway)
+-   DNS **10.152.152.10** (this is again the Whonix Gateway)
 
 #### If you cannot use Tor:
 
@@ -4167,19 +4167,19 @@ There are some drawbacks to running macOS on Virtual Machines. The main one is t
 
 Note: We also ran in multiple issues with running these on AMD processors. This can be fixed so here is the configurationWeused which worked fine with Catalina, Big Sur and Monterey which will tell Virtualbox to emulate an Intel Processor instead:
 
--   ```VBoxManage modifyvm "macOSCatalina" ---cpuidset 00000001 000106e5 00100800 0098e3fd bfebfbff```
+-   **VBoxManage modifyvm "macOSCatalina" ---cpuidset 00000001 000106e5 00100800 0098e3fd bfebfbff**
 
--   ```VBoxManage setextradata "macOSCatalina" "VBoxInternal/Devices/efi/0/Config/DmiSystemProduct" "MacBookPro15,1" ```
+-   **VBoxManage setextradata "macOSCatalina" "VBoxInternal/Devices/efi/0/Config/DmiSystemProduct" "MacBookPro15,1" **
 
--   ```VBoxManage setextradata "macOSCatalina" "VBoxInternal/Devices/efi/0/Config/DmiBoardProduct" "Mac-551B86E5744E2388"```
+-   **VBoxManage setextradata "macOSCatalina" "VBoxInternal/Devices/efi/0/Config/DmiBoardProduct" "Mac-551B86E5744E2388"**
 
--   ```VBoxManage setextradata "macOSCatalina" "VBoxInternal/Devices/smc/0/Config/DeviceKey" "ourhardworkbythesewordsguardedpleasedontsteal(c)AppleComputerInc"```
+-   **VBoxManage setextradata "macOSCatalina" "VBoxInternal/Devices/smc/0/Config/DeviceKey" "ourhardworkbythesewordsguardedpleasedontsteal(c)AppleComputerInc"**
 
--   ```VBoxManage setextradata "macOSCatalina" "VBoxInternal/Devices/smc/0/Config/GetKeyFromRealSMC" 1```
+-   **VBoxManage setextradata "macOSCatalina" "VBoxInternal/Devices/smc/0/Config/GetKeyFromRealSMC" 1**
 
--   ```VBoxManage modifyvm "macOSCatalina" --cpu-profile "Intel Core i7-6700K"```
+-   **VBoxManage modifyvm "macOSCatalina" --cpu-profile "Intel Core i7-6700K"**
 
--   ```VBoxManage setextradata "macOSCatalina" VBoxInternal2/EfiGraphicsResolution 1920x1080```
+-   **VBoxManage setextradata "macOSCatalina" VBoxInternal2/EfiGraphicsResolution 1920x1080**
 
 #### Hardening macOS:
 
@@ -4286,25 +4286,25 @@ So here is how:
 
 -   Install a DHCP client on the Whonix Gateway VM using the following command:
 
-    -   ```sudo apt install dhcpcd5```
+    -   **sudo apt install dhcpcd5**
 
 -   Now edit the Whonix Gateway VM network configuration using the following command:
 
-    -   ```sudo nano /etc/network/interfaces.d/30_non-qubes-whonix```
+    -   **sudo nano /etc/network/interfaces.d/30_non-qubes-whonix**
 
 -   Within the file change the following lines:
 
-    -   ```# auto eth0``` to ```auto eth0```
+    -   **# auto eth0** to **auto eth0**
 
-    -   ```# iface eth0 inet dhcp``` to ```iface eth0 inet dhcp```
+    -   **# iface eth0 inet dhcp** to **iface eth0 inet dhcp**
 
-    -   ```iface eth0 inet static``` to ```# iface eth0 inet static```
+    -   **iface eth0 inet static** to **# iface eth0 inet static**
 
-    -   ``` address 10.0.2.15``` to ```# address 10.0.2.15```
+    -   ** address 10.0.2.15** to **# address 10.0.2.15**
 
-    -   ``` netmask 255.255.255.0``` to ```# netmask 255.255.255.0```
+    -   ** netmask 255.255.255.0** to **# netmask 255.255.255.0**
 
-    -   ``` gateway 10.0.2.2``` to ```# gateway 10.0.2.2```
+    -   ** gateway 10.0.2.2** to **# gateway 10.0.2.2**
 
 -   Save (using Ctrl+X and confirm with Y) and power off the VM from the top left menu
 
@@ -4332,7 +4332,7 @@ The goal here is to associate with a Wi-Fi network without having an internet co
 
 -   Open an administrative command prompt (right-click on Command Prompt and Run as Administrator)
 
--   Run the following command: ```route delete 0.0.0.0``` (this deletes the Gateway from your IP configuration)
+-   Run the following command: **route delete 0.0.0.0** (this deletes the Gateway from your IP configuration)
 
 -   You are done, your Host OS will now be unable to access the internet while still connected to the Wi-Fi
 
@@ -4350,7 +4350,7 @@ The goal here is to associate with a Wi-Fi network without having an internet co
 
 -   Open a Terminal
 
--   Run the following command: ```sudo ip route del default``` (this deletes the Gateway from your IP configuration)
+-   Run the following command: **sudo ip route del default** (this deletes the Gateway from your IP configuration)
 
 -   You are done, your Host OS will now be unable to access the internet while still connected to the Wi-Fi
 
@@ -4368,7 +4368,7 @@ The goal here is to associate with a Wi-Fi network without having an internet co
 
 -   Open a Terminal
 
--   Run the following command: ```sudo route delete default``` (this deletes the Gateway from your IP configuration)
+-   Run the following command: **sudo route delete default** (this deletes the Gateway from your IP configuration)
 
 -   You are done, your Host OS will now be unable to access the internet while still connected to the Wi-Fi
 
@@ -4480,25 +4480,25 @@ By default, the Whonix Gateway has no DHCP client and will require one to get an
 
 -   Install a DHCP client on the Whonix Gateway VM using the following command:
 
-    -   ```sudo apt install dhcpcd5```
+    -   **sudo apt install dhcpcd5**
 
 -   Now edit the Whonix Gateway VM network configuration using the following command:
 
-    -   ```sudo nano /etc/network/interfaces.d/30_non-qubes-whonix```
+    -   **sudo nano /etc/network/interfaces.d/30_non-qubes-whonix**
 
 -   Within the file change the following lines:
 
-    -   ```# auto eth0``` to ```auto eth0```
+    -   **# auto eth0** to **auto eth0**
 
-    -   ```# iface eth0 inet dhcp``` to ```iface eth0 inet dhcp```
+    -   **# iface eth0 inet dhcp** to **iface eth0 inet dhcp**
 
-    -   ```iface eth0 inet static``` to ```# iface eth0 inet static```
+    -   **iface eth0 inet static** to **# iface eth0 inet static**
 
-    -   ``` address 10.0.2.15``` to ```# address 10.0.2.15```
+    -   ** address 10.0.2.15** to **# address 10.0.2.15**
 
-    -   ``` netmask 255.255.255.0``` to ```# netmask 255.255.255.0```
+    -   ** netmask 255.255.255.0** to **# netmask 255.255.255.0**
 
-    -   ``` gateway 10.0.2.2``` to ```# gateway 10.0.2.2```
+    -   ** gateway 10.0.2.2** to **# gateway 10.0.2.2**
 
 -   Save (using Ctrl+X and confirm with Y) and power off the VM from the top left menu
 
@@ -4534,7 +4534,7 @@ The goal here is to associate with a Wi-Fi network without having an internet co
 
 -   Open an administrative command prompt (right-click on Command Prompt and Run as Administrator)
 
--   Run the following command: ```route delete 0.0.0.0``` (this deletes the Gateway from your IP configuration)
+-   Run the following command: **route delete 0.0.0.0** (this deletes the Gateway from your IP configuration)
 
 -   You are done, your Host OS will now be unable to access the internet while still connected to the Wi-Fi
 
@@ -4556,7 +4556,7 @@ The goal here is to associate with a Wi-Fi network without having an internet co
 
 -   Open a Terminal
 
--   Run the following command: ```sudo ip route del default``` (this deletes the Gateway from your IP configuration)
+-   Run the following command: **sudo ip route del default** (this deletes the Gateway from your IP configuration)
 
 -   You are done, your Host OS will now be unable to access the internet while still connected to the Wi-Fi
 
@@ -4578,7 +4578,7 @@ The goal here is to associate with a Wi-Fi network without having an internet co
 
 -   Open a Terminal
 
--   Run the following command: ```sudo route delete default``` (this deletes the Gateway from your IP configuration)
+-   Run the following command: **sudo route delete default** (this deletes the Gateway from your IP configuration)
 
 -   You are done, your Host OS will now be unable to access the internet while still connected to the Wi-Fi
 
@@ -4624,25 +4624,25 @@ By default, the Whonix Gateway has no DHCP client and will require one to get an
 
 -   Install a DHCP client on the Whonix Gateway VM using the following command:
 
-    -   ```sudo apt install dhcpcd5```
+    -   **sudo apt install dhcpcd5**
 
 -   Now edit the Whonix Gateway VM network configuration using the following command:
 
-    -   ```sudo nano /etc/network/interfaces.d/30_non-qubes-whonix```
+    -   **sudo nano /etc/network/interfaces.d/30_non-qubes-whonix**
 
 -   Within the file change the following lines:
 
-    -   ```# auto eth0``` to ```auto eth0```
+    -   **# auto eth0** to **auto eth0**
 
-    -   ```# iface eth0 inet dhcp``` to ```iface eth0 inet dhcp```
+    -   **# iface eth0 inet dhcp** to **iface eth0 inet dhcp**
 
-    -   ```iface eth0 inet static``` to ```# iface eth0 inet static```
+    -   **iface eth0 inet static** to **# iface eth0 inet static**
 
-    -   ``` address 10.0.2.15``` to ```# address 10.0.2.15```
+    -   ** address 10.0.2.15** to **# address 10.0.2.15**
 
-    -   ``` netmask 255.255.255.0``` to ```# netmask 255.255.255.0```
+    -   ** netmask 255.255.255.0** to **# netmask 255.255.255.0**
 
-    -   ``` gateway 10.0.2.2``` to ```# gateway 10.0.2.2```
+    -   ** gateway 10.0.2.2** to **# gateway 10.0.2.2**
 
 -   Save (using Ctrl+X and confirm with Y) and power off the VM from the top left menu
 
@@ -5220,13 +5220,13 @@ When you are done downloading the configuration files within the Disposable Brow
 
 -   Now select the VPN VM again and start a terminal
 
--   Install OpenVPN with the following command ```sudo apt-get install openvpn```
+-   Install OpenVPN with the following command **sudo apt-get install openvpn**
 
 -   Copy all the OpenVPN configuration files provided by your VPN provider in /etc/openvpn/
 
 -   For all the OpenVPN configuration files (for each location):
 
-    -   Edit each file using ```sudo nano configfile``` (do not forget sudo to edit the file within /etc)
+    -   Edit each file using **sudo nano configfile** (do not forget sudo to edit the file within /etc)
 
     -   Change the protocol from "udp" to "tcp" (Tor does not support UDP)
 
@@ -5234,9 +5234,9 @@ When you are done downloading the configuration files within the Disposable Brow
 
     -   Save and exit each file
 
--   Edit the OpenVPN config file (/etc/default/openvpn) by typing ```sudo nano /etc/default/openvpn``` 
+-   Edit the OpenVPN config file (/etc/default/openvpn) by typing **sudo nano /etc/default/openvpn** 
 
-    -   Change ```#AUTOSTART="all"``` to ```AUTOSTART="all"``` (in other words, remove the "#")
+    -   Change **#AUTOSTART="all"** to **AUTOSTART="all"** (in other words, remove the "#")
 
     -   Save and Exit
 
@@ -5244,45 +5244,45 @@ When you are done downloading the configuration files within the Disposable Brow
 
     -   Add the following lines (without the quotes and remarks in parentheses)
 
-        -   ```virtualif=10.137.0.17```
+        -   **virtualif=10.137.0.17**
 
 > (This is the IP of the ProxyVM, this is not dynamic, and you might need to change it at reboot)
 
--   ```vpndns1=10.8.0.1```
+-   **vpndns1=10.8.0.1**
 
 > (This is the first DNS server of your VPN provider; it should not change)
 
--   ```vpndns2=10.14.0.1```
+-   **vpndns2=10.14.0.1**
 
 > (This is the second DNS server of your VPN provider; it should not change)
 
--   ```iptables -F OUTPUT```
+-   **iptables -F OUTPUT**
 
--   ```iptables -I FORWARD -o eth0 -j DROP```
+-   **iptables -I FORWARD -o eth0 -j DROP**
 
--   ```iptables -I FORWARD -i eth0 -j DROP```
+-   **iptables -I FORWARD -i eth0 -j DROP**
 
--   ```ip6tables -I FORWARD -o eth0 -j DROP```
+-   **ip6tables -I FORWARD -o eth0 -j DROP**
 
--   ```ip6tables -I FORWARD -i eth0 -j DROP```
+-   **ip6tables -I FORWARD -i eth0 -j DROP**
 
 > (These will block outbound traffic when the VPN is down, it is a kill switch, more information here <https://linuxconfig.org/how-to-create-a-vpn-killswitch-using-iptables-on-linux> <sup>[[Archive.org]](https://web.archive.org/web/https://linuxconfig.org/how-to-create-a-vpn-killswitch-using-iptables-on-linux)</sup> )
 
--   ```iptables -A OUTPUT -d 10.8.0.1 -j ACCEPT```
+-   **iptables -A OUTPUT -d 10.8.0.1 -j ACCEPT**
 
--   ```iptables -A OUTPUT -d 10.14.0.1 -j ACCEPT```
+-   **iptables -A OUTPUT -d 10.14.0.1 -j ACCEPT**
 
 > (These will allow DNS requests to your VPN provider DNS to resolve the name of the VPN servers in the OpenVPN configuration files)
 
--   ```iptables -F PR-QBS -t nat```
+-   **iptables -F PR-QBS -t nat**
 
--   ```iptables -A PR-QBS -t nat -d $virtualif -p udp --dport 53 -j DNAT --to $vpndns1```
+-   **iptables -A PR-QBS -t nat -d $virtualif -p udp --dport 53 -j DNAT --to $vpndns1**
 
--   ```iptables -A PR-QBS -t nat -d $virtualif -p tcp --dport 53 -j DNAT --to $vpndns1```
+-   **iptables -A PR-QBS -t nat -d $virtualif -p tcp --dport 53 -j DNAT --to $vpndns1**
 
--   ```iptables -A PR-QBS -t nat -d $virtualif -p udp --dport 53 -j DNAT --to $vpndns2```
+-   **iptables -A PR-QBS -t nat -d $virtualif -p udp --dport 53 -j DNAT --to $vpndns2**
 
--   ```iptables -A PR-QBS -t nat -d $virtualif -p tcp --dport 53 -j DNAT --to $vpndns2```
+-   **iptables -A PR-QBS -t nat -d $virtualif -p tcp --dport 53 -j DNAT --to $vpndns2**
 
 > (These will redirect all DNS requests from the ProxyVM to the VPN provider DNS servers)
 
@@ -5398,14 +5398,14 @@ Within the Applications Menu (upper left), Select the Fedora-36 template:
 
 If you want to use Brave: apply the instructions from <https://brave.com/linux/> <sup>[[Archive.org]](https://web.archive.org/web/https://brave.com/linux/)</sup> and run the following commands:
 
--   ```sudo dnf install dnf-plugins-core```
+-   **sudo dnf install dnf-plugins-core**
 
--   ```sudo dnf config-manager --add-repo
-https://brave-browser-rpm-release.s3.brave.com/x86_64/```
+-   **sudo dnf config-manager --add-repo
+https://brave-browser-rpm-release.s3.brave.com/x86_64/**
 
--   ```sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc```
+-   **sudo rpm --import https://brave-browser-rpm-release.s3.brave.com/brave-core.asc**
 
--   ```sudo dnf install brave-browser```
+-   **sudo dnf install brave-browser**
 
 You should also consider hardening your browser, see [Appendix V1: Hardening your Browsers][Appendix V1: Hardening your Browsers:]
 
@@ -5463,11 +5463,11 @@ Now you will have to follow the instructions from here: <https://github.com/anbo
 
 -   Start by closing the AnBox Modules repository by running:
 
-    -   ```git clone https://github.com/anbox/anbox-modules.git```
+    -   **git clone https://github.com/anbox/anbox-modules.git**
 
     -   Go into the cloned directory
 
-    -   Run ```./INSTALL.sh``` (or follow the manual instructions on the tutorial)
+    -   Run **./INSTALL.sh** (or follow the manual instructions on the tutorial)
 
 -   Reboot the machine
 
@@ -5475,23 +5475,23 @@ Now you will have to follow the instructions from here: <https://github.com/anbo
 
 -   Install Snap by running:
 
-    -   ```sudo apt install snapd```
+    -   **sudo apt install snapd**
 
 Now you will follow their other tutorial from here: <https://github.com/anbox/anbox/blob/master/docs/install.md> <sup>[[Archive.org]](https://web.archive.org/web/https://github.com/anbox/anbox/blob/master/docs/install.md)</sup>:
 
 -   Install AnBox by running:
 
-    -   ```snap install --devmode --beta anbox```
+    -   **snap install --devmode --beta anbox**
 
 -   To update AnBox later, run:
 
-    -   ```snap refresh --beta --devmode anbox```
+    -   **snap refresh --beta --devmode anbox**
 
 -   Reboot the machine
 
 -   Open a terminal again and start the emulator by running:
 
-    -   ```anbox.appmgr```
+    -   **anbox.appmgr**
 
 This should pop up an Android interface. Sometimes it will crash, and you might have to run it twice to make it work.
 
@@ -5499,15 +5499,15 @@ If you want to install apps on this emulator:
 
 -   Install ADB by running:
 
-    -   ```sudo apt install android-tools-adb```
+    -   **sudo apt install android-tools-adb**
 
--   First start Anbox (run ```anbox.appmgr```)
+-   First start Anbox (run **anbox.appmgr**)
 
 -   Grab the APK of any app you want to install
 
 -   Now install any APK by running:
 
-    -   ```adb install my-app.apk```
+    -   **adb install my-app.apk**
 
 That's it, you should now have an Android Qube over Tor (or anything else) capable of running pretty much any App you can sideload with ADB. This is, for now, the easiest way to get Android emulation on Qubes OS.
 
@@ -5987,21 +5987,21 @@ Here is also a good guide on this specific topic: <https://gendersec.tacticaltec
 
 Note: If you are having trouble finding an exit node in the country of your choice you can force using specific countries for Exit Nodes (and therefore exit countries) on Tor by editing the torrc file on the Whonix Gateway or even the Tor Browser:
 
--   Whonix/Tails: Create/Edit a file ```/usr/local/etc/torrc.d/50_user.conf```[^396].
+-   Whonix/Tails: Create/Edit a file **/usr/local/etc/torrc.d/50_user.conf**[^396].
 
--   On Tor Browser: Edit the torrc file located at ```Browser/TorBrowser/Data/Tor```[^397].
+-   On Tor Browser: Edit the torrc file located at **Browser/TorBrowser/Data/Tor**[^397].
 
 Once you are in the file, you can do the following:
 
 -   Specify the Exit Nodes by adding those two lines (which will require an Exit Node in China/Russia/Ukraine:
 
-    -   ```ExitNodes {CH},{RU},{UA}```
+    -   **ExitNodes {CH},{RU},{UA}**
 
-    -   ```StrictNodes 1```
+    -   **StrictNodes 1**
 
 -   Exclude specific Exit Nodes by adding this line (which will exclude all Exit Nodes from France/Germany/USA/UK):
 
-    -   ```ExcludeNodes {FR},{DE},{US},{UK}```
+    -   **ExcludeNodes {FR},{DE},{US},{UK}**
 
 Always use uppercase letters for any setting.
 
@@ -8524,31 +8524,31 @@ If Trim is not supported or you are not sure, you might have to ensure secure da
 
 Just permanently delete the file (and empty recycle bin) and it should be unrecoverable due to Trim operations and garbage collection.
 
-If you do not want to wait for the periodic Trim (set to Weekly by default in Ubuntu), you could also force a disk-wide Trim by running ```fstrim --all``` from a terminal. This will issue an immediate trim and should ensure sufficient security. This utility is part of the ```util-linux``` package on Debian/Ubuntu and should be installed by default on Fedora.
+If you do not want to wait for the periodic Trim (set to Weekly by default in Ubuntu), you could also force a disk-wide Trim by running **fstrim --all** from a terminal. This will issue an immediate trim and should ensure sufficient security. This utility is part of the **util-linux** package on Debian/Ubuntu and should be installed by default on Fedora.
 
 If you want more security and do not trust the Trim operation, then you will have no option but to either:
 
 -   Decrypt and re-encrypt (using LUKS for instance following this tutorial <https://wiki.archlinux.org/index.php/dm-crypt/Device_encryption#Re-encrypting_devices> <sup>[[Archive.org]](https://web.archive.org/web/https://wiki.archlinux.org/index.php/dm-crypt/Device_encryption)</sup>) the whole drive to overwrite all free space after data deletion. This will ensure overwriting of all the free space.
 
--   Trim using ```fstrim --all``` and then fill up the entire free space of the disk using a utility such as:
+-   Trim using **fstrim --all** and then fill up the entire free space of the disk using a utility such as:
 
     -   BleachBit <https://www.bleachbit.org/download/linux> <sup>[[Archive.org]](https://web.archive.org/web/https://www.bleachbit.org/download/linux)</sup>
 
     -   Install secure-delete package and use sfill on the root of the drive:
 
-        -   ```sudo sfill -l -l /``` for instance should do the trick (this will take a substantial amount of time)
+        -   **sudo sfill -l -l /** for instance should do the trick (this will take a substantial amount of time)
 
     -   Use the old school dd method (taken from this answer <https://superuser.com/questions/19326/how-to-wipe-free-disk-space-in-linux> <sup>[[Archive.org]](https://web.archive.org/web/https://superuser.com/questions/19326/how-to-wipe-free-disk-space-in-linux)</sup>) run these commands on the drive you want to fill:
 
-        -   ```dd if=/dev/zero of=zero.small.file bs=1024 count=102400```
+        -   **dd if=/dev/zero of=zero.small.file bs=1024 count=102400**
 
-        -   ```dd if=/dev/zero of=zero.file bs=1024```
+        -   **dd if=/dev/zero of=zero.file bs=1024**
 
-        -   ```sync ; sleep 60 ; sync```
+        -   **sync ; sleep 60 ; sync**
 
-        -   ```rm zero.small.file```
+        -   **rm zero.small.file**
 
-        -   ```rm zero.file```
+        -   **rm zero.file**
 
 **Keep in mind all these options need to be applied on the entire physical drive and not on a specific partition/volume. If you do not, wear-leveling mechanisms might prevent this from working properly.**
 
@@ -8562,7 +8562,7 @@ If you want more security and do not trust the Trim operation, then you will hav
 
 First please see [Appendix K: Considerations for using external SSD drives]
 
-If Trim is supported and enabled by your Linux Distribution for your external SSD drive. There should be no issue in securely deleting data normally and just issue an ```fstrim --all``` from the terminal to trim the drive. This utility is part of the "util-linux" package on Debian/Ubuntu and should be installed by default on Fedora.
+If Trim is supported and enabled by your Linux Distribution for your external SSD drive. There should be no issue in securely deleting data normally and just issue an **fstrim --all** from the terminal to trim the drive. This utility is part of the "util-linux" package on Debian/Ubuntu and should be installed by default on Fedora.
 
 If Trim is not supported or you want to be sure, you might have to ensure secure data deletion by filling up the entire free space of the disk using a utility such as:
 
@@ -8574,19 +8574,19 @@ If Trim is not supported or you want to be sure, you might have to ensure secure
 
     -   Install secure-delete package and use sfill on the root of the drive:
 
-        -   ```sudo sfill -l -l /``` for instance should do the trick (this will take a substantial amount of time)
+        -   **sudo sfill -l -l /** for instance should do the trick (this will take a substantial amount of time)
 
     -   Use the old school dd method (taken from this answer <https://superuser.com/questions/19326/how-to-wipe-free-disk-space-in-linux> <sup>[[Archive.org]](https://web.archive.org/web/https://superuser.com/questions/19326/how-to-wipe-free-disk-space-in-linux)</sup>) run these commands:
 
-        -   ```dd if=/dev/zero of=zero.small.file bs=1024 count=102400```
+        -   **dd if=/dev/zero of=zero.small.file bs=1024 count=102400**
 
-        -   ```dd if=/dev/zero of=zero.file bs=1024```
+        -   **dd if=/dev/zero of=zero.file bs=1024**
 
-        -   ```sync ; sleep 60 ; sync```
+        -   **sync ; sleep 60 ; sync**
 
-        -   ```rm zero.small.file```
+        -   **rm zero.small.file**
 
-        -   ```rm zero.file```
+        -   **rm zero.file**
 
 **Keep in mind all these options need to be applied on the entire physical drive and not on a specific partition/volume. If you do not, wear-leveling mechanisms might prevent this from working properly.**
 
@@ -8608,19 +8608,19 @@ As with other Linux Systems, if you want more security and do not trust the Trim
 
     -   Install secure-delete package and use sfill on the root of the drive:
 
-        -   ```sudo sfill -l -l /``` for instance should do the trick (this will take a substantial amount of time)
+        -   **sudo sfill -l -l /** for instance should do the trick (this will take a substantial amount of time)
 
     -   Use the old school dd method (taken from this answer <https://superuser.com/questions/19326/how-to-wipe-free-disk-space-in-linux> <sup>[[Archive.org]](https://web.archive.org/web/https://superuser.com/questions/19326/how-to-wipe-free-disk-space-in-linux)</sup>) run these commands on the drive you want to fill:
 
-        -   ```dd if=/dev/zero of=zero.small.file bs=1024 count=102400```
+        -   **dd if=/dev/zero of=zero.small.file bs=1024 count=102400**
 
-        -   ```dd if=/dev/zero of=zero.file bs=1024```
+        -   **dd if=/dev/zero of=zero.file bs=1024**
 
-        -   ```sync ; sleep 60 ; sync```
+        -   **sync ; sleep 60 ; sync**
 
-        -   ```rm zero.small.file```
+        -   **rm zero.small.file**
 
-        -   ```rm zero.file```
+        -   **rm zero.file**
 
 **Keep in mind all these options need to be applied on the entire physical drive and not on a specific partition/volume. If you do not, wear-leveling mechanisms might prevent this from working properly.**
 
@@ -8648,21 +8648,21 @@ If Trim is not supported or you want to be sure, you might have to ensure secure
 
     -   Install secure-delete package and use sfill on the root of the drive:
 
-        -   ```sudo sfill -l -l /``` for instance should do the trick (this will take a substantial amount of time)
+        -   **sudo sfill -l -l /** for instance should do the trick (this will take a substantial amount of time)
 
     -   Use the old school dd method (taken from this answer <https://superuser.com/questions/19326/how-to-wipe-free-disk-space-in-linux> <sup>[[Archive.org]](https://web.archive.org/web/https://superuser.com/questions/19326/how-to-wipe-free-disk-space-in-linux)</sup>) run these commands:
 
-        -   ```dd if=/dev/zero of=zero.small.file bs=1024 count=102400```
+        -   **dd if=/dev/zero of=zero.small.file bs=1024 count=102400**
 
-        -   ```dd if=/dev/zero of=zero.file bs=1024```
+        -   **dd if=/dev/zero of=zero.file bs=1024**
 
 Repeat these steps on any other partition if there are separate partitions on the same SSD drive before deleting the files.
 
--   ```sync ; sleep 60 ; sync```
+-   **sync ; sleep 60 ; sync**
 
--   ```rm zero.small.file```
+-   **rm zero.small.file**
 
--   ```rm zero.file```
+-   **rm zero.file**
 
 Repeat these steps on any other partition if there are separate partitions on the same SSD drive.
 
@@ -8732,9 +8732,9 @@ Just install it from <https://exifcleaner.com/> <sup>[[Archive.org]](https://web
 
 It is actually simple, just install exiftool and run:
 
--   To display metadata: ```exiftool filename.jpg```
+-   To display metadata: **exiftool filename.jpg**
 
--   To remove all metadata: ```exiftool -All= filename.jpg```
+-   To remove all metadata: **exiftool -All= filename.jpg**
 
 **Remember that ExifTool is natively available on Tails and Whonix Workstation.**
 
@@ -8766,9 +8766,9 @@ Just install it from <https://exifcleaner.com/> <sup>[[Archive.org]](https://web
 
 It is actually simple, just install exiftool and run:
 
--   To display metadata: ```exiftool filename.pdf```
+-   To display metadata: **exiftool filename.pdf**
 
--   To remove all metadata: ```exiftool -All= filename.pdf```
+-   To remove all metadata: **exiftool -All= filename.pdf**
 
 #### MS Office Documents:
 
@@ -8784,9 +8784,9 @@ Just install it from <https://exifcleaner.com/> <sup>[[Archive.org]](https://web
 
 It is actually simple, just install exiftool and run:
 
--   To display metadata: ```exiftool filename.docx```
+-   To display metadata: **exiftool filename.docx**
 
--   To remove all metadata: ```exiftool -All= filename.docx```
+-   To remove all metadata: **exiftool -All= filename.docx**
 
 #### LibreOffice Documents:
 
@@ -8830,9 +8830,9 @@ Just install it from <https://exifcleaner.com/> <sup>[[Archive.org]](https://web
 
 It is actually simple, jut install exiftool and run:
 
--   To display metadata: ```exiftool filename.odt```
+-   To display metadata: **exiftool filename.odt**
 
--   To remove all metadata: ```exiftool -All= filename.odt```
+-   To remove all metadata: **exiftool -All= filename.odt**
 
 #### All-in-one Tool:
 
@@ -8864,37 +8864,37 @@ Most of the info from this section can also be found at this nice guide <https:/
 
 ##### Quarantine Database (used by Gatekeeper and XProtect):
 
-macOS (up to and including Big Sur) keeps a Quarantine SQL Database of all the files you ever downloaded from a Browser. This database is located at ```~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV2```.
+macOS (up to and including Big Sur) keeps a Quarantine SQL Database of all the files you ever downloaded from a Browser. This database is located at **~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV2**.
 
-You can query it yourself by running the following command from terminal: ``` sqlite3 ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV2 "select * from LSQuarantineEvent" ```
+You can query it yourself by running the following command from terminal: ** sqlite3 ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV2 "select * from LSQuarantineEvent" **
 
 This is a goldmine for forensics, and you should disable this:
 
--   Run the following command to clear the database completely: ```:>~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV2```
+-   Run the following command to clear the database completely: **:>~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV2**
 
--   Run the following command to lock the file and prevent further download history from being written there: ```sudo chflags schg ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV2```
+-   Run the following command to lock the file and prevent further download history from being written there: **sudo chflags schg ~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV2**
 
 Lastly, you can also disable Gatekeeper altogether by issuing the following command in the terminal[^448]:
 
--   ```sudo spctl --master-disable```
+-   **sudo spctl --master-disable**
 
 Refer to this section of this guide for further information <https://github.com/drduh/macOS-Security-and-Privacy-Guide#gatekeeper-and-xprotect> <sup>[[Archive.org]](https://web.archive.org/web/https://www.bejarano.io/hardening-macos/)</sup>
 
 In addition to this convenient database, each saved file will also carry detailed file system HFS+/APFS attributes showing for instance when it was downloaded, with what, and from where.
 
-You can view these just by opening a terminal and typing ```mdls filename``` and ```xattr -l filename``` on any downloaded file from any browser.
+You can view these just by opening a terminal and typing **mdls filename** and **xattr -l filename** on any downloaded file from any browser.
 
 To remove such attributes, you will have to do it manually from the terminal:
 
--   Run ```xattr -d com.apple.metadata:kMDItemWhereFroms filename``` to remove the origin
+-   Run **xattr -d com.apple.metadata:kMDItemWhereFroms filename** to remove the origin
 
     -   You can also just use -dr to do it recursively on a whole folder/disk
 
--   Run ```xattr -d com.apple.quarantine filename``` to remove the quarantine reference
+-   Run **xattr -d com.apple.quarantine filename** to remove the quarantine reference
 
     -   You can also just use -dr to do it recursively on a whole folder/disk
 
--   Verify by running ```xattr --l filename``` and there should be no output
+-   Verify by running **xattr --l filename** and there should be no output
 
 (Note that Apple has removed the convenient xattr --c option that would just remove all attributes at once so you will have to do this for each attribute on each file)
 
@@ -8951,7 +8951,7 @@ If you are using Whonix on Qubes OS, please consider following some of their gui
 
 #### Guest OS:
 
-Revert to an earlier snapshot of the Guest VM on Virtualbox (or any other VM software you are using) and perform a trim command on your laptop using ```fstrim --all```. This utility is part of the ```util-linux``` package on Debian/Ubuntu and should be installed by default on Fedora. Then switch to the next section.
+Revert to an earlier snapshot of the Guest VM on Virtualbox (or any other VM software you are using) and perform a trim command on your laptop using **fstrim --all**. This utility is part of the **util-linux** package on Debian/Ubuntu and should be installed by default on Fedora. Then switch to the next section.
 
 #### Host OS:
 
@@ -8959,7 +8959,7 @@ Normally you should not have traces to clean within the Host OS since you are do
 
 Nevertheless, you might want to clean some logs. Consider having a look this convenient (but unfortunately unmaintained) tool: <https://github.com/sundowndev/covermyass> <sup>[[Archive.org]](https://web.archive.org/web/https://github.com/sundowndev/covermyass)</sup>
 
-After cleaning up, make sure you have the fstrim utility installed (should be by default on Fedora) and part of the ```util-linux``` package on Debian/Ubuntu. Then just run ```fstrim --all``` on the Host OS. This should be sufficient on SSD drives as explained earlier.
+After cleaning up, make sure you have the fstrim utility installed (should be by default on Fedora) and part of the **util-linux** package on Debian/Ubuntu. Then just run **fstrim --all** on the Host OS. This should be sufficient on SSD drives as explained earlier.
 
 Consider the use of Linux Kernel Guard as an added measure <https://www.whonix.org/wiki/Linux_Kernel_Runtime_Guard_LKRG> <sup>[[Archive.org]](https://web.archive.org/web/https://www.whonix.org/wiki/Linux_Kernel_Runtime_Guard_LKRG)</sup>
 
@@ -9033,7 +9033,7 @@ Now it is time to clear the history of the Wi-Fi you connect to. Unfortunately, 
 
 -   Launch Regedit using this tutorial: <https://support.microsoft.com/en-us/windows/how-to-open-registry-editor-in-windows-10-deab38e6-91d6-e0aa-4b7c-8878d9e07b11> <sup>[[Archive.org]](https://web.archive.org/web/https://support.microsoft.com/en-us/windows/how-to-open-registry-editor-in-windows-10-deab38e6-91d6-e0aa-4b7c-8878d9e07b11)</sup>
 
--   Within Regedit, enter this to the address bar: ```Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\NetworkList\Profiles```
+-   Within Regedit, enter this to the address bar: **Computer\HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows NT\CurrentVersion\NetworkList\Profiles**
 
 -   There you will see a bunch of folders to the right. Each of those folders is a "Key". Each of those keys will contain information about your current known Wi-Fi or past networks you used. You can explore them one by one and see the description on the right side.
 
@@ -9736,7 +9736,7 @@ DO NOT CONNECT WINDOWS TO ANY NETWORK DURING THE INSTALLATION PROCESS (This will
 
 -   (Only for VirtualBox VM Install) Launch "regedit" in the command prompt
 
--   (Only for VirtualBox VM Install) When the Registry Editor opens, navigate to ```HKEY_LOCAL_MACHINE\SYSTEM\Setup```, right-click on the "Setup" key and select "New => Key". When prompted to name the key, enter "LabConfig" and press enter.
+-   (Only for VirtualBox VM Install) When the Registry Editor opens, navigate to **HKEY_LOCAL_MACHINE\SYSTEM\Setup**, right-click on the "Setup" key and select "New => Key". When prompted to name the key, enter "LabConfig" and press enter.
 
 -   (Only for VirtualBox VM Install) Now right-click on the "LabConfig" key and select "New => DWORD  (32-bit)" value and create a value named "BypassTPMCheck", and set its data to "1". With the same steps create the "BypassRAMCheck" and "BypassSecureBootCheck"
 
@@ -10027,11 +10027,11 @@ Diskpart can be run from any Windows environment using a command prompt. This in
 
     -   Run Diskpart to enter the Diskpart utility
 
-    -   Issue the ```list disk``` command to list the disks
+    -   Issue the **list disk** command to list the disks
 
-    -   Issue the ```sel disk x``` (replace x with your system disk) to select your system disk
+    -   Issue the **sel disk x** (replace x with your system disk) to select your system disk
 
-    -   Issue the ```detail disk``` to show the details of this disk
+    -   Issue the **detail disk** to show the details of this disk
 
     -   Take note of the disk ID (this should be done BEFORE backing up your disks).
 
@@ -10041,7 +10041,7 @@ Diskpart can be run from any Windows environment using a command prompt. This in
 
     -   Issue the same commands as above on the target new disk
 
-    -   Issue, in addition, the command ```uniqueid disk id=02345678``` (where you replace the id by the one you noted before)
+    -   Issue, in addition, the command **uniqueid disk id=02345678** (where you replace the id by the one you noted before)
 
 # Appendix G: Safe Browser on the Host OS
 
@@ -10297,41 +10297,41 @@ This is very lightweight, and we recommend doing it from a VM (VM inside a VM) t
 30. Select **/dev/sda** and continue.
 31. Complete the install and reboot.
 32. Log in with your **user** or **root**. You should never use root directly as a best security practice but in this case, it is okay.
-33. Update your install by running ```apt upgrade```. It should be upgraded since it is a net install, but we're double checking.
-34. Install the necessary packages for mat2 by running ```apt install ffmpeg uwsgi python3-pip uwsgi-plugin-python3 lib35rsvg2-dev git mat2 apache2 libapache2-mod-proxy-uwsgi```.
-35. Go to the **/var/www** directory by running ```cd /var/www/```.
-36. **Clone mat2-web** from the mat2-web repository by issuing ```git clone https://0xacab.org/jvoisin/mat2-web.git```.
-37. **Create a directory for uploads** by running ```mkdir ./mat2-web/uploads/```.
-38. **Give permissions to Apache2** to read the files by running ```chown -R www-data:www-data ./mat2-web```.
-39. **Enable apache2 uwsgi proxy** by running ```/usr/sbin/a2enmod proxy_uwsgi```.
-40. **Upgrade pip** by running ```python3 -m pip install pip --upgrade```.
-41. **Install these Python modules** by running ```python3 -m pip install flasgger pyyaml flask-restful flask cerberus flask-cors jinja2```.
-42. **Move to the config directory** of mat2 by running ```cd /var/www/mat2-web/config/```.
-43. **Copy the apache2 config file** to **/etc** by running ```cp apache2.config /etc/apache2/sites-enabled/apache2.conf```.
-44. **Remove the default config file** by running ```rm /etc/apache2/sites-enabled/000-default.conf```.
-45. **Edit the apache2 config file** provided by mat2-web by running ```nano /etc/apache2/sites-enabled/apache2.conf```.
-46. **Remove the first line** ```Listen 80``` by typing **Ctrl+K** to cut the line.
-47. **Change the uwsgi path** from ```/var/www/mat2-web/mat2-web.sock``` to ```/run/uwsgi/uwsgi.sock``` and type **Ctrl+X** to exit, followed by **Y** then **Enter**. 
-48. **Copy the uwsgi config file** to **/etc** by running ```cp uwsgi.config /etc/uwsgi/apps-enabled/uwsgi.ini```.
-49. **Edit the uwsgi config file** by typing ```nano /etc/uwsgi/apps-enabled/uwsgi.ini``` and change **uid** and **guid** to ```nobody``` and ```nogroup``` respectively. Save and exit with **Ctrl+X**, followed by **Y**, then **Enter**.
-50. Run ```chown -R 777 /var/www/mat2-web``` to change ownership to **mat2-web**.
-51. **Restart uwsgi** by running ```systemctl restart uwsgi```. There should be no errors.
-52. **Restart apache2** by running ```systemctl restart apache2```. There should be no errors.
+33. Update your install by running **apt upgrade**. It should be upgraded since it is a net install, but we're double checking.
+34. Install the necessary packages for mat2 by running **apt install ffmpeg uwsgi python3-pip uwsgi-plugin-python3 lib35rsvg2-dev git mat2 apache2 libapache2-mod-proxy-uwsgi**.
+35. Go to the **/var/www** directory by running **cd /var/www/**.
+36. **Clone mat2-web** from the mat2-web repository by issuing **git clone https://0xacab.org/jvoisin/mat2-web.git**.
+37. **Create a directory for uploads** by running **mkdir ./mat2-web/uploads/**.
+38. **Give permissions to Apache2** to read the files by running **chown -R www-data:www-data ./mat2-web**.
+39. **Enable apache2 uwsgi proxy** by running **/usr/sbin/a2enmod proxy_uwsgi**.
+40. **Upgrade pip** by running **python3 -m pip install pip --upgrade**.
+41. **Install these Python modules** by running **python3 -m pip install flasgger pyyaml flask-restful flask cerberus flask-cors jinja2**.
+42. **Move to the config directory** of mat2 by running **cd /var/www/mat2-web/config/**.
+43. **Copy the apache2 config file** to **/etc** by running **cp apache2.config /etc/apache2/sites-enabled/apache2.conf**.
+44. **Remove the default config file** by running **rm /etc/apache2/sites-enabled/000-default.conf**.
+45. **Edit the apache2 config file** provided by mat2-web by running **nano /etc/apache2/sites-enabled/apache2.conf**.
+46. **Remove the first line** **Listen 80** by typing **Ctrl+K** to cut the line.
+47. **Change the uwsgi path** from **/var/www/mat2-web/mat2-web.sock** to **/run/uwsgi/uwsgi.sock** and type **Ctrl+X** to exit, followed by **Y** then **Enter**. 
+48. **Copy the uwsgi config file** to **/etc** by running **cp uwsgi.config /etc/uwsgi/apps-enabled/uwsgi.ini**.
+49. **Edit the uwsgi config file** by typing **nano /etc/uwsgi/apps-enabled/uwsgi.ini** and change **uid** and **guid** to **nobody** and **nogroup** respectively. Save and exit with **Ctrl+X**, followed by **Y**, then **Enter**.
+50. Run **chown -R 777 /var/www/mat2-web** to change ownership to **mat2-web**.
+51. **Restart uwsgi** by running **systemctl restart uwsgi**. There should be no errors.
+52. **Restart apache2** by running **systemctl restart apache2**. There should be no errors.
 53. Now navigate to **Settings** > **Network** > **Attached to** and **select Host-only Adapter**. Click **OK** to save.
 54. Reboot the VM via **Machine** > **Reset**. Confirm the reset.
-55. Log into the VM as the **user** from **Step 19** and type ```ip a```. Note the IP address it was assigned under link/ether, the one that has **192.168.\*.\***.
+55. Log into the VM as the **user** from **Step 19** and type **ip a**. Note the IP address it was assigned under link/ether, the one that has **192.168.\*.\***.
 56. From the VM Host OS, **open a Browser** and navigate to the IP of your Debian VM. It will be something like: **http://192.168.1.55**.
 57. You should now see a Mat2-Web website running smoothly.
-58. **Shutdown the Mat2 guest VM** by running ```shutdown -h now``` to halt the machine.
+58. **Shutdown the Mat2 guest VM** by running **shutdown -h now** to halt the machine.
 59. **Take a snapshot of the VM** within Virtualbox while the guest VM is shutdown.
 
 **Restart the Mat2 VM* and you are ready to use Mat2-web to remove metadata from most files!**
 
 After use, shut down the VM and revert to the snapshot to remove traces of the uploaded files. This VM does not require any internet access unless you want to update it, in which case, you need to place it back on the **NAT network** and do the next steps.
 
-For updates of Debian, **start the VM** and run ```apt update``` followed by ```apt upgrade```.
+For updates of Debian, **start the VM** and run **apt update** followed by **apt upgrade**.
 
-For updates of mat2-web, type ```cd /var/www/mat2-web``` and run ```git pull```.
+For updates of mat2-web, type **cd /var/www/mat2-web** and run **git pull**.
 
 After updates, shutdown, change to the **Host-only Adapter**, take a new snapshot, remove the earlier one.
 
@@ -10497,7 +10497,7 @@ Here are the steps:
 
 -   Get your anonymous VPS set-up
 
--   From a terminal, SSH to your server by running: ```ssh -i ~/.ssh/id_rsa -D 8080 -f -C -q -N username@ip_of_your_server```
+-   From a terminal, SSH to your server by running: **ssh -i ~/.ssh/id_rsa -D 8080 -f -C -q -N username@ip_of_your_server**
 
 -   Configure your browser to use localhost:8080 as a Socks Proxy for Browsing
 
@@ -10729,7 +10729,7 @@ So how to check checksums? (In this case SHA-256 but you could change to SHA-512
 
     -   Open a Command Prompt
 
-    -   Run ```certutil -hashfile filename.txt sha256``` (replace sha256 by sha1 or sha512 or md5)
+    -   Run **certutil -hashfile filename.txt sha256** (replace sha256 by sha1 or sha512 or md5)
 
     -   Compare your result to one from a source you trust for that file
 
@@ -10737,9 +10737,9 @@ So how to check checksums? (In this case SHA-256 but you could change to SHA-512
 
     -   Open a Terminal
 
-    -   SHA: Run ```shasum -a 256 /full/path/to/your/file``` (replace 256 by 512 or 1 for SHA-1)
+    -   SHA: Run **shasum -a 256 /full/path/to/your/file** (replace 256 by 512 or 1 for SHA-1)
 
-    -   MD5: Run ```md5 /full/path/to/your/file```
+    -   MD5: Run **md5 /full/path/to/your/file**
 
     -   Compare your result to one from a source you trust for that file
 
@@ -10747,7 +10747,7 @@ So how to check checksums? (In this case SHA-256 but you could change to SHA-512
 
     -   Open a Terminal
 
-    -   Run ```shasum /full/path/to/your/file``` (replace shasum by sha256sum, sha512sum or md5sum)
+    -   Run **shasum /full/path/to/your/file** (replace shasum by sha256sum, sha512sum or md5sum)
 
     -   Compare your result to one from a source you trust for that file
 
@@ -10777,33 +10777,33 @@ In essence:
 
     -   Windows:
 
-        -   From a Command Prompt, Run ```gpg --import keyfile.asc```
+        -   From a Command Prompt, Run **gpg --import keyfile.asc**
 
     -   macOS:
 
-        -   From a Terminal, Run ```gpg --import keyfile.asc```
+        -   From a Terminal, Run **gpg --import keyfile.asc**
 
     -   Linux:
 
-        -   From a Terminal, Run ```gpg --import keyfile.asc```
+        -   From a Terminal, Run **gpg --import keyfile.asc**
 
 -   Verify the file signature against the imported (trusted) signature (replace filetoverify.asc by the signature file that was associated with the file, replace filetoverify.txt by the actual file to verify):
 
     -   Windows:
 
-        -   Run ```gpg --verify-options show-notations --verify filetoverify.asc filetoverify.txt```
+        -   Run **gpg --verify-options show-notations --verify filetoverify.asc filetoverify.txt**
 
         -   The result should show the signature is good and match the trusted signature you imported earlier.
 
     -   macOS:
 
-        -   Run ```gpg --verify-options show-notations --verify filetoverify.asc filetoverify.txt```
+        -   Run **gpg --verify-options show-notations --verify filetoverify.asc filetoverify.txt**
 
         -   The result should show the signature is good and match the trusted signature you imported earlier.
 
     -   Linux:
 
-        -   Run ```gpg --verify-options show-notations --verify filetoverify.asc filetoverify.txt```
+        -   Run **gpg --verify-options show-notations --verify filetoverify.asc filetoverify.txt**
 
         -   The result should show the signature is good and match the trusted signature you imported earlier.
 
@@ -10885,7 +10885,7 @@ Again, regarding the PDFs of this guide and as explained in the README of my rep
 
 -   Run "python pdfid.py file-to-check.pdf" and you should see these at 0 in the case of the PDF files in this repository:
 
-```
+**
 
 /JS 0 #This indicates the presence of Javascript
 
@@ -10907,7 +10907,7 @@ Again, regarding the PDFs of this guide and as explained in the README of my rep
 
 /XFA 0 #This indicates the presence of XML Forms within the PDF
 
-```
+**
 
 Now, what if you think the PDF is still suspicious? Fear not ... there are more things you can do to ensure it is not malicious:
 
@@ -12268,11 +12268,11 @@ Remember this should only be done on a secure environment such as VM behind the 
 
 -   Open a Terminal window and run the following commands (with the updated downloaded version if needed):
 
-    -   **```**sudo dpkg -i ./libindicator3-7_0.5.0-4_amd64.deb**```**
+    -   **sudo dpkg -i ./libindicator3-7_0.5.0-4_amd64.deb**
 
-    -   **```**sudo dpkg -i ./libappindicator3-1_0.4.92-7_amd64.deb**```**
+    -   **sudo dpkg -i ./libappindicator3-1_0.4.92-7_amd64.deb**
 
-    -   **```**sudo dpkg -i ./Zecwallet_Lite_1.7.5_amd64.deb**```**
+    -   **sudo dpkg -i ./Zecwallet_Lite_1.7.5_amd64.deb**
 
 -   Click the upper left menu, find then launch ZecWallet Lite
 
@@ -12286,7 +12286,7 @@ Remember this should only be done on a secure environment such as VM behind the 
 
 -   Open a Terminal window
 
--   Go to your download directory and run the following command (with the updated downloaded version if needed), for example: ```sudo apt install ./Zecwallet_Lite_1.7.5_amd64.deb```
+-   Go to your download directory and run the following command (with the updated downloaded version if needed), for example: **sudo apt install ./Zecwallet_Lite_1.7.5_amd64.deb**
 
 -   Click the upper left menu, find then launch ZecWallet Lite
 
@@ -12316,11 +12316,11 @@ Remember this should only be done on a secure environment such as VM behind the 
 
 -   Open a Terminal window and run the following commands (with the updated downloaded version if needed):
 
-    -   **```**sudo dpkg -i ./libindicator3-7_0.5.0-4_amd64.deb**```**
+    -   **sudo dpkg -i ./libindicator3-7_0.5.0-4_amd64.deb**
 
-    -   **```**sudo dpkg -i ./libappindicator3-1_0.4.92-7_amd64.deb**```**
+    -   **sudo dpkg -i ./libappindicator3-1_0.4.92-7_amd64.deb**
 
-    -   **```**sudo dpkg -i ./Zecwallet_Lite_1.7.5_amd64.deb**```**
+    -   **sudo dpkg -i ./Zecwallet_Lite_1.7.5_amd64.deb**
 
 -   Click the upper left menu and go to Development, then launch ZecWallet Lite
 

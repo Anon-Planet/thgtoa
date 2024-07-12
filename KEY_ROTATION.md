@@ -8,9 +8,13 @@ Current master key fingerprint: `9FA5 436D 0EE3 6098 5157  3825 17EC A05F 768D E
 Current release key fingerprint: `C302 3DBE A3FB 38C4 38BA  1EED CEC6 0AED E8B9 92A2`  
 Current email key fingerprint: `FCBD 2CAB DEFD 1FBA 2E9E  7591 A1A8 2CD2 DD2C F890`  
 
-The email and release keys should be signed by the master key.  
+You can import the current master signing key for Anonymous Planet from the repo root:  
+`gpg2 --import keys/*Master-Signing-Key_*.asc`  
+
+The email and release keys should be signed by the master keys.  
 The master key takes precedence over all other project keys.  
 ------------------------------------------------------------------------------------
+
 Minisign key  
 ```
 untrusted comment: minisign public key 902835EC74825934  

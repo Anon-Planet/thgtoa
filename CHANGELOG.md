@@ -1,3 +1,8 @@
+v1.2.0
+
+- Rotate GPG/PGP keys (See [Open Collective key rotation](https://opencollective.com/anonymousplanetorg/updates/key-rotation-update))
+- Switch to Megalinter in [#344](https://github.com/Anon-Planet/thgtoa/pull/344)
+
 v1.1.9
 
 - Add dependency check action
@@ -9,11 +14,11 @@ v1.1.9
 v1.1.8
 
 - Add AnarSec to links
-- CICD: fix automatic VT scans
+- CI/CD: fix automatic VT scans
 - Appendix D: remove trailing period in title
-- CICD: lock old issues & pull requests
+- CI/CD: lock old issues & pull requests
 - Tor onion offline
-- CICD: update issues template
+- CI/CD: update issues template
 - Revert "Quantum resistance and good crypto algos"
 
 v1.1.7
@@ -163,7 +168,7 @@ v1.1.1
 - Added a general disclaimer on the Links page about websites possibly using sponsorships, affiliate links, paid services, premium offers, and merchandising...
 - Re-Added a Discord server to provide easier access to the community through <https://discord.gg/V8dmd9y7mt> with all the rooms bridged to Matrix rooms
 - Changed the Matrix/Discord communities from being room focused (#anonymity) to a broader "Privacy Security Anonymity" space with a new #security focused room and an off-topic room.
-- Creation of a Matrix space at ```#privacy-security-anonymity:matrix.org``` <https://matrix.to/#/#privacy-security-anonymity:matrix.org>
+- Creation of a Matrix space at [#privacy-security-anonymity:matrix.org](https://matrix.to/#/#privacy-security-anonymity:matrix.org)
 - Added an RSS bot to those rooms relaying some relevant security and anonymity news within those rooms.
 - Started the test hosting of a small Synapse server with the domain anonymousplanet.org
 
@@ -512,7 +517,7 @@ v0.9.1
 
 v0.9.0
 - Various layout, spelling, and grammar fixes
-- Added new discussion channel on matrix ```#online-anonymity:matrix.org```
+- Added new discussion channel on matrix
 - Fixed connectivity methods table recommendations (VPN over Tor over VPN)
 - Removed the shark meme because it was a bit much
 - Added reference to the recent Spotify AI voice recognition patent <https://patents.justia.com/patent/10891948>

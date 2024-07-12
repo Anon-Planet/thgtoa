@@ -9,12 +9,12 @@ Please share this project if you enjoy it and think it might be useful to others
 Follow or contact us on: 
 - Twitter: <https://twitter.com/AnonyPla>
 - Mastodon: <https://mastodon.social/@anonymousplanet>
-- E-Mail: <contact@anonymousplanet.org> (You may use our [PGP public key](https://anonymousplanet.org/pgp/AnonymousPlanet-Email-Key_FCBD2CABDEFD1FBA2E9E7591A1A82CD2DD2CF890.asc) to encrypt e-mails. Do not forget to attach your PGP public key if you want an encrypted answer) 
+- E-Mail: <contact@anonymousplanet.org> (You may use our [PGP public key](keys/Email-Key_FCBD2CABDEFD1FBA2E9E7591A1A82CD2DD2CF890.asc) to encrypt e-mails. Do not forget to attach your PGP public key if you want an encrypted answer) 
 
 Discussion Channels:
-- Matrix room: ```#anonymity:matrix.org``` <https://matrix.to/#/#anonymity:matrix.org>
-- Matrix space: ```#privacy-security-anonymity:matrix.org``` <https://matrix.to/#/#privacy-security-anonymity:matrix.org>
-- Github Discussions: <https://github.com/Anon-Planet/thgtoa/discussions/>
+- Matrix room: [#anonymity:matrix.org](https://matrix.to/#/#anonymity:matrix.org)
+- Matrix space: [#privacy-security-anonymity:matrix.org](https://matrix.to/#/#privacy-security-anonymity:matrix.org)
+- Github Discussions: https://github.com/Anon-Planet/thgtoa/discussions/
 
 Git mirrors:
 - Github: <https://github.com/anon-planet>

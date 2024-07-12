@@ -14,7 +14,7 @@ You will find here the rules for the community.
 - [Ban Appeals](#appeals)
 
 #### General default rules for PSA rooms **unless specific rules are mentioned below**<a name="general"></a>
-These are currently enforced on **```#anonymity```**, **```#security```**, **```#OSINT```**, and are NOT applied in rooms with their own rules below.
+These are currently enforced on **#anonymity**, **#security**, **#OSINT**, and are NOT applied in rooms with their own rules below.
 
 - Keep it legal
 - English only
@@ -23,7 +23,7 @@ These are currently enforced on **```#anonymity```**, **```#security```**, **```
 - Avoid gatekeeping and try to remain welcoming to new users
 - No hate speech (no racism, no homophobia, no transphobia...)
 - No spam
-- No doxxing unless you have express permission and you move to ```#bnonymity```
+- No doxxing unless you have express permission and you move to **#bnonymity**
 - No trolling (this doesn't mean sarcasm is forbidden)
 - No NSFW content (no Porn, no Gore, no Hentai...)
 - No upload of any non-media files (binaries, executables, compressed files...)
@@ -32,7 +32,7 @@ These are currently enforced on **```#anonymity```**, **```#security```**, **```
 
 Just because the bot is down temporarily doesn't mean shit.Some exceptions can apply, see the [exceptions](#exceptions) section at the bottom of this page. Violations will be handled at the discretion of the acting moderator.
 
-#### Rules for Nothing To Hide Privacy (```#privacy:matrix.org```)<a name="nth"></a>
+#### Rules for Nothing To Hide Privacy (**#privacy:matrix.org**)<a name="nth"></a>
 - Zero tolerance for discussion of how to commit illicit acts
 - Limit political discussion to privacy-related topics **only**
 - No suspicious links or uploading of non-image binary files
@@ -42,13 +42,13 @@ Just because the bot is down temporarily doesn't mean shit.Some exceptions can a
 - Lucas: [@lucas:coinfundit.com](https://matrix.to/#/@lucas:coinfundit.com)
 - Prox: [@the_proxster:midov.pl](https://matrix.to/#/@the_proxster:midov.pl) (basically God)
 
-#### Rules for Modern Cryptography (```#moderncrypto:gnuradio.org```)<a name="moderncrypto"></a>
+#### Rules for Modern Cryptography (**#moderncrypto:gnuradio.org**)<a name="moderncrypto"></a>
 See <https://anonymousplanet.org/moderncrypto-rules.html>
 
 #### Rules for OS Security<a name="ossecurity"></a>
 See <https://artemislena.eu/coc.html>
 
-#### Rules for Bnonymity (```#bnonymity:matrix.org```)<a name="bnonymity"></a>
+#### Rules for Bnonymity (**#bnonymity:matrix.org**)<a name="bnonymity"></a>
 - Keep it legal (seriously)
 - English only
 - Be "somewhat" respectful to each other
