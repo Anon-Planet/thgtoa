@@ -1,0 +1,28 @@
+name: 📚 Docs to PDF
+
+on: 
+  push:
+    branches:
+      - main
+
+jobs:
+  convert_to_pdf:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - uses: ZacJW/markdown-html-action@1.1.0
+        with:
+          input_files: 'guide.md'
+          output_files: 'export/guide.html'
+          builtin_stylesheet: 'style.css'
+          packages: 'pymdown-extensions'
+          extensions: 'pymdownx.extra'
+
+      - name: html to pdf
+        uses: fifsky/html-to-pdf-action@master
+        with:
+          htmlFile: 'export/guide.html'
+          outputFile: 'export/guide.pdf'
+          pdfOptions: '{"format": "A4", "margin": {"top": "10mm", "left": "10mm", "right": "10mm", "bottom": "10mm"}}'

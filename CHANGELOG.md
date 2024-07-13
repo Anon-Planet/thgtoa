@@ -1,7 +1,7 @@
 v1.2.0
 
 - Rotate GPG/PGP keys (See [Open Collective key rotation](https://opencollective.com/anonymousplanetorg/updates/key-rotation-update))
-- Switch to Megalinter in [#344](https://github.com/Anon-Planet/thgtoa/pull/344)
+- Switch to Megalinter to diagnose repeatable PDF failures
 
 v1.1.9
 
