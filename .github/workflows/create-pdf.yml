@@ -15,7 +15,7 @@ jobs:
       with:
         markdown_dir: .
         output_dir: export
-    - uses: actions/upload-artifact@v1
+    - uses: actions/upload-artifact@v4
       with:
         name: platform-architecture-docs
         path: export
