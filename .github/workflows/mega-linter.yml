@@ -41,7 +41,7 @@ jobs:
       # MegaLinter
       - name: Run MegaLinter
         id: ml
-        uses: oxsecurity/megalinter/flavors/documentation@v7.12.0
+        uses: oxsecurity/megalinter/flavors/documentation@v7.13.0
         env:
           VALIDATE_ALL_CODEBASE: ${{ github.event_name == 'push' && github.ref == 'refs/heads/main' }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
