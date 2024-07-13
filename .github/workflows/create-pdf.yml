@@ -13,8 +13,11 @@ jobs:
     - uses: mkrakowitzer/actions-makepdfs@master
       if: github.ref == 'refs/heads/main'
       with:
-        markdown_dir: .
+        markdown_dir: export
         output_dir: export
+        media_dir:
+          required: true
+          default: 'images/'
     - uses: actions/upload-artifact@v4
       with:
         name: platform-architecture-docs
