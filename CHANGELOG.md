@@ -69,7 +69,7 @@ v1.1.5
 - Noted that https://mastodon.social/@anonypla is gone? added strike-through
 - Adapted Qubes OS hardware requirements that were too low for a decent experience (RAM) according to their recommendation
 - Put more incentive to use Tor Browser Safest mode as long as it does not break anything and switch to Safer if necessary and with precautions linked in an appendix
-- Precision that Anti-Evil Maid on Qubes OS is only available on Intel CPUs 
+- Precision that Anti-Evil Maid on Qubes OS is only available on Intel CPUs
 - Removed dead link of Centry Fork project
 - Added Windows 11 support to the guide
 - Partial additions of partial Qubes 4.1.X support but needs completion and testing (coming soon)
@@ -96,7 +96,7 @@ v1.1.4-pre2
 - Removal of removed content (dark pdf)
 - Fixed links to ODT file
 - Added recommendation to <https://z0ccc.github.io/extension-fingerprints/#> and <https://www.deviceinfo.me/>
-- Removed links to non-existant mirrors 
+- Removed links to non-existant mirrors
 - Updated some outdated references(old project)
 
 v1.1.4-pre1
@@ -889,3 +889,13 @@ v0.3.x Added MacOS information and various fixes
 v0.2.x Added Qubes OS information and various fixes
 
 v0.1.x Initial Release (missing Qubes OS details and MacOS support)
+
+## Unreleased
+
+## v1.1.9 (2023-08-23)
+
+## v1.1.8 (2023-08-23)
+
+## v1.1.7 (2023-08-23)
+
+## v1.1.6 (2023-08-23)
