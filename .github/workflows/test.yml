@@ -1,0 +1,51 @@
+---
+# MegaLinter GitHub Action configuration file
+# More info at https://megalinter.io
+name: '✏️ MegaLinter'
+
+on:
+  push:
+
+  pull_request:
+    branches:
+      - main
+
+concurrency:
+  group: ${{ github.ref }}-${{ github.workflow }}
+  cancel-in-progress: true
+
+jobs:
+  megalinter:
+    name: MegaLinter
+    runs-on: ubuntu-latest
+    steps:
+      - if: ${{ env.MAIN_BRANCH }}
+        uses: actions/checkout@v4
+
+      - if: ${{ env.MAIN_BRANCH == 0 }}
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      # MegaLinter
+      - id: ml
+
+        # You can override MegaLinter flavor used to have faster performances
+        # More info at https://megalinter.io/flavors/
+        uses: oxsecurity/megalinter/flavors/documentation@v7.13.0
+        env:
+          VALIDATE_ALL_CODEBASE: ${{ env.MAIN_BRANCH }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          DISABLE: COPYPASTE,SPELL,HTML
+          DISABLE_LINTERS: REPOSITORY_GITLEAKS,CSS_SCSS_LINT,BASH_SHELLCHECK,JSON_JSONLINT,MARKDOWN_MARKDOWN_TABLE_FORMATTER,REPOSITORY_GIT_DIFF,YAML_V8R,MARKDOWN_MARKDOWNLINT_NO_TRAILING_SPACES,MARKDOWN_MARKDOWNLINT_NO_DUPLICATE_HEADING
+          DISABLE_ERRORS_LINTERS: CSS_STYLELINT,MARKDOWN_MARKDOWN_LINK_CHECK,YAML_YAMLLINT,DOCKERFILE_HADOLINT,REPOSITORY_TRIVY,REPOSITORY_CHECKOV,REPOSITORY_GITLEAKS
+          MARKDOWN_MARKDOWNLINT_FILTER_REGEX_EXCLUDE: '(export/|briar\.md|donations\.md|LICENSE\.md)'
+
+      - name: Archive
+        uses: actions/upload-artifact@v4
+        if: success() || failure()
+        with:
+          name: MegaLinter reports
+          path: |
+            megalinter-reports
+            mega-linter.log
