@@ -1,0 +1,28 @@
+default: true
+line-length: false
+ul-indent:
+  indent: 4
+no-inline-html: false
+code-block-style: false
+no-hard-tabs: true
+emphasis-style:
+  style: "asterisk"
+no-duplicate-header: false
+reference-links-images: false
+table-pipe-style: leading_only
+list-marker-space: false
+MD001: false
+MD013:
+  line_length: 100
+  heading_line_length: 100
+  code_block_line_length: 200
+  code_blocks: false
+  tables: false
+  headings: false
+  strict: false
+  stern: false
+MD025:
+  level: 3
+MD026:
+  punctuation: ",;:!。，；："
+MD034: false
