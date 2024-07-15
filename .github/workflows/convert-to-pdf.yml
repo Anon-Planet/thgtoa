@@ -12,7 +12,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - uses: ZacJW/markdown-html-action@1.1.0
+      - uses: ZacJW/markdown-html-action@1.2.0
         with:
           input_files: 'guide.md'
           output_files: 'export/guide.html'
