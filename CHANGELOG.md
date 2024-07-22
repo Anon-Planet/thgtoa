@@ -1,3 +1,8 @@
+v1.2.0
+
+- Rotate GPG/PGP keys (See [Open Collective key rotation](https://opencollective.com/anonymousplanetorg/updates/key-rotation-update))
+- Switch to Megalinter to diagnose repeatable PDF failures
+
 v1.1.9
 
 - Add dependency check action
@@ -9,11 +14,11 @@ v1.1.9
 v1.1.8
 
 - Add AnarSec to links
-- CICD: fix automatic VT scans
+- CI/CD: fix automatic VT scans
 - Appendix D: remove trailing period in title
-- CICD: lock old issues & pull requests
+- CI/CD: lock old issues & pull requests
 - Tor onion offline
-- CICD: update issues template
+- CI/CD: update issues template
 - Revert "Quantum resistance and good crypto algos"
 
 v1.1.7
@@ -64,7 +69,7 @@ v1.1.5
 - Noted that https://mastodon.social/@anonypla is gone? added strike-through
 - Adapted Qubes OS hardware requirements that were too low for a decent experience (RAM) according to their recommendation
 - Put more incentive to use Tor Browser Safest mode as long as it does not break anything and switch to Safer if necessary and with precautions linked in an appendix
-- Precision that Anti-Evil Maid on Qubes OS is only available on Intel CPUs 
+- Precision that Anti-Evil Maid on Qubes OS is only available on Intel CPUs
 - Removed dead link of Centry Fork project
 - Added Windows 11 support to the guide
 - Partial additions of partial Qubes 4.1.X support but needs completion and testing (coming soon)
@@ -91,7 +96,7 @@ v1.1.4-pre2
 - Removal of removed content (dark pdf)
 - Fixed links to ODT file
 - Added recommendation to <https://z0ccc.github.io/extension-fingerprints/#> and <https://www.deviceinfo.me/>
-- Removed links to non-existant mirrors 
+- Removed links to non-existant mirrors
 - Updated some outdated references(old project)
 
 v1.1.4-pre1
@@ -163,7 +168,7 @@ v1.1.1
 - Added a general disclaimer on the Links page about websites possibly using sponsorships, affiliate links, paid services, premium offers, and merchandising...
 - Re-Added a Discord server to provide easier access to the community through <https://discord.gg/V8dmd9y7mt> with all the rooms bridged to Matrix rooms
 - Changed the Matrix/Discord communities from being room focused (#anonymity) to a broader "Privacy Security Anonymity" space with a new #security focused room and an off-topic room.
-- Creation of a Matrix space at ```#privacy-security-anonymity:matrix.org``` <https://matrix.to/#/#privacy-security-anonymity:matrix.org>
+- Creation of a Matrix space at [#privacy-security-anonymity:matrix.org](https://matrix.to/#/#privacy-security-anonymity:matrix.org)
 - Added an RSS bot to those rooms relaying some relevant security and anonymity news within those rooms.
 - Started the test hosting of a small Synapse server with the domain anonymousplanet.org
 
@@ -512,7 +517,7 @@ v0.9.1
 
 v0.9.0
 - Various layout, spelling, and grammar fixes
-- Added new discussion channel on matrix ```#online-anonymity:matrix.org```
+- Added new discussion channel on matrix
 - Fixed connectivity methods table recommendations (VPN over Tor over VPN)
 - Removed the shark meme because it was a bit much
 - Added reference to the recent Spotify AI voice recognition patent <https://patents.justia.com/patent/10891948>
@@ -884,3 +889,13 @@ v0.3.x Added MacOS information and various fixes
 v0.2.x Added Qubes OS information and various fixes
 
 v0.1.x Initial Release (missing Qubes OS details and MacOS support)
+
+## Unreleased
+
+## v1.1.9 (2023-08-23)
+
+## v1.1.8 (2023-08-23)
+
+## v1.1.7 (2023-08-23)
+
+## v1.1.6 (2023-08-23)

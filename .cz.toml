@@ -2,6 +2,6 @@
 bump_message = "release $current_version → $new_version []"
 update_changelog_on_bump = true
 changelog_incremental = true
-changelog_start_rev = "v1.1.9"
+changelog_start_rev = "v0.4.7"
 gpg_sign = true
 allow_abort = true

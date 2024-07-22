@@ -1,0 +1,16 @@
+repos:
+- hooks:
+  - id: end-of-file-fixer
+  - id: mixed-line-ending
+    args: [--fix=lf]
+  - id: trailing-whitespace
+    args: [--markdown-linebreak-ext=md]
+  repo: https://github.com/pre-commit/pre-commit-hooks
+  rev: v4.6.0
+- hooks:
+  - id: commitizen
+  - id: commitizen-branch
+    stages:
+    - push
+  repo: https://github.com/commitizen-tools/commitizen
+  rev: v3.27.0
