@@ -27,6 +27,7 @@ PANDOC_OPTIONS=--smart --standalone
 
 SOURCE_DOCS := $(wildcard *.md)
 
+# converts: e.g., verify.md -> verify.html
 EXPORTED_DOCS=\
  $(SOURCE_DOCS:.md=.html) \
  $(SOURCE_DOCS:.md=.pdf) \
@@ -65,7 +66,7 @@ clean:
 
 sigs:
 	mkdir -p export
-	./make.sh
+	./sigs.sh
 
 # target: documentation
 

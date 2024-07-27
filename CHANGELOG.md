@@ -891,7 +891,12 @@ v0.2.x Added Qubes OS information and various fixes
 
 v0.1.x Initial Release (missing Qubes OS details and MacOS support)
 
-## Unreleased
+## 2.0.1 (2024-07-26)
+
+### Refactor
+
+- **style**: fixup style
+- **style**: fixup commit
 
 ## v1.1.9 (2023-08-23)
 
