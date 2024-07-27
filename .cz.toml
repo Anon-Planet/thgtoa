@@ -1,0 +1,10 @@
+[tool.commitizen]
+bump_message = "release $current_version → $new_version []"
+annotated_tag = true
+version = "1.2.1"
+update_changelog_on_bump = false
+gpg_sign = true
+allow_abort = true
+version_files = [
+    "_config.yml:version"
+]

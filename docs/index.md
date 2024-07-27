@@ -1,5 +1,5 @@
 ---
-title: "Anonymous Planet"
+title: ""
 description: We are the maintainers of the Hitchhiker's Guide and the PSA Matrix space.
 schema:
   "@context": https://schema.org
@@ -15,7 +15,7 @@ schema:
 ---
 ![Anonymous Planet logo](media/profile.png){ align=right }
 
-**Welcome to Anonymous Planet's Hitchhiker's Guide.**
+**Welcome to the Hitchhiker's Guide.**
 
 Please share this project if you enjoy it and you think it might be useful to others.
 

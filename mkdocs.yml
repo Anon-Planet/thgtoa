@@ -88,8 +88,8 @@ markdown_extensions:
   - pymdownx.mark
   - attr_list
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: material.extensions.emoji.twemoji
+      emoji_generator: material.extensions.emoji.twemoji
   - pymdownx.superfences:
       custom_fences:
       - name: mermaid
