@@ -22,12 +22,13 @@ github:
   changelog_url: CHANGELOG.html
   license_url: LICENSE.html
   about_url: about.html
+  version: v1.2.0
   minisign_url: minisign.pub
   links_url: links.html
-  twitter_url: https://anonymousplanet.org/twitter.html
+  twitter_url: twitter.html
   mastodon_url: https://mastodon.social/@anonymousplanet
   constitution_url: constitution.html
-  # tor_mirror_url: http://thgtoa27ujspeqxasrfvcf5aozqdczvgmwgorrmblh6jn4nino3spcqd.onion
+  tor_mirror_url: http://thgtoa3jzy3doku7hkna32htpghjijefscwvh4dyjgfydbbjkeiohgid.onion
 defaults:
   -
     scope:

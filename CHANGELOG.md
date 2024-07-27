@@ -1,6 +1,7 @@
 v1.2.0
 
 - Rotate GPG/PGP keys (See [Open Collective key rotation](https://opencollective.com/anonymousplanetorg/updates/key-rotation-update))
+- Rename keys to email-key, master-signing-key, and release-signing-key respectively
 - Switch to Megalinter to diagnose repeatable PDF failures
 
 v1.1.9

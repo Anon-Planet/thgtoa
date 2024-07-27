@@ -15,7 +15,7 @@ This guide is an open-source non-profit initiative, [licensed](LICENSE.html) und
 - Raw [Markdown](https://github.com/Anon-Planet/thgtoa/raw/master/guide.md) text.
 
 Mirrors:
-- Tor Onion Mirror: <http://thgtoa27ujspeqxasrfvcf5aozqdczvgmwgorrmblh6jn4nino3spcqd.onion/>
+- Tor Onion Mirror: <http://thgtoa3jzy3doku7hkna32htpghjijefscwvh4dyjgfydbbjkeiohgid.onion/>
 
 The guide and all the files are also readily available on Archive.org and Archive.today:
 
@@ -40,9 +40,9 @@ Feel free to submit issues using Github Issues with the repository link above. C
 Follow or contact us on:
 
 Discussion Channels:
-- Matrix room: ```#anonymity:matrix.org``` <https://matrix.to/#/#anonymity:matrix.org>
-- Matrix space: ```#privacy-security-anonymity:matrix.org``` <https://matrix.to/#/#privacy-security-anonymity:matrix.org>
-- Twitter at https://twitter.com/AnonyPla 
+- Matrix room: `#anonymity:matrix.org` <https://matrix.to/#/#anonymity:matrix.org>
+- Matrix space: `#privacy-security-anonymity:matrix.org` <https://matrix.to/#/#privacy-security-anonymity:matrix.org>
+- Twitter at https://twitter.com/AnonyPla
 - Mastodon at https://mastodon.social/@anonymousplanet
 
 Have a good read and feel free to share and/or recommend it!
