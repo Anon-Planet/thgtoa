@@ -17,7 +17,7 @@ All the links below are listed in alphabetical order:
 - AnarSec: <https://www.anarsec.guide/> (Similar content to ours, but not affiliated or sponsored)
 - EFF Surveillance Self-Defense: <https://ssd.eff.org/>
 - Prism-Break: <https://prism-break.org/>
-- Privacy Guides: <https://privacyguides.org> 
+- Privacy Guides: <https://privacyguides.org>
 - Techlore: <https://techlore.tech> (May contain clearly marked sponsored products/services, premium content, and affiliate links)
 - The New Oil: <https://thenewoil.org> (May contain clearly marked sponsored products/services and affiliate links)
 - PrivacyTools.io: <https://privacytools.io> (May contain clearly marked sponsored products/services and affiliate links)
