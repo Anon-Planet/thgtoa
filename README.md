@@ -12,7 +12,7 @@ This guide is an open-source non-profit initiative, [licensed](LICENSE.html) und
 - [In your browser](guide.html)
 - [PDF](export/guide.pdf)
 - [OpenDocument (ODT)](export/guide.odt)
-- Raw [Markdown](https://github.com/Anon-Planet/thgtoa/raw/master/guide.md) text.
+- Raw [Markdown](https://raw.githubusercontent.com/Anon-Planet/thgtoa/main/guide.md).
 
 Mirrors:
 - Tor Onion Mirror: <http://thgtoa3jzy3doku7hkna32htpghjijefscwvh4dyjgfydbbjkeiohgid.onion/>

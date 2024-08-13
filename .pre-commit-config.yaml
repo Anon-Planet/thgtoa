@@ -1,16 +1,24 @@
 repos:
-- hooks:
-  - id: end-of-file-fixer
-  - id: mixed-line-ending
-    args: [--fix=lf]
-  - id: trailing-whitespace
-    args: [--markdown-linebreak-ext=md]
-  repo: https://github.com/pre-commit/pre-commit-hooks
-  rev: v4.6.0
-- hooks:
-  - id: commitizen
-  - id: commitizen-branch
-    stages:
-    - push
-  repo: https://github.com/commitizen-tools/commitizen
-  rev: v3.28.0
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+      - id: end-of-file-fixer
+        name: All files must end with an empty line
+      - id: mixed-line-ending
+        name: Fix mixed line endings in files (x-platform)
+        args: [--fix=lf]
+      - id: trailing-whitespace
+        name: Fix trailing space (ignore MD code)
+        args: [--markdown-linebreak-ext=md]
+
+  - repo: https://github.com/commitizen-tools/commitizen
+    rev: v3.28.0
+    hooks:
+      - id: commitizen
+        name: commitizen check
+        description: >
+          Check whether the current commit message follows committing rules. Allow
+          empty commit messages by default, because they typically indicate to Git
+          that the commit should be aborted.
+        entry: cz check
+        stages: [commit-msg]
