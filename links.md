@@ -24,6 +24,7 @@ All the links below are listed in alphabetical order:
 
 #### Blogs and personal websites:
 - CIA Officer's Blog: <https://officercia.mirror.xyz/>
+- Sovereignty Strategies: <letters.empiresec.co>
 - Continuing Ed: <https://edwardsnowden.substack.com/>
 - Madaidan's Insecurities: <https://madaidans-insecurities.github.io/>
 - Seirdy's Home: <https://seirdy.one/>
