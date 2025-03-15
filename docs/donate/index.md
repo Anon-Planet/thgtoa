@@ -1,7 +1,7 @@
 ---
 title: How to Get Involved
 ---
-Donations to support this project are welcome. Those donations are mainly used to pay for Tor onion hosting (VPS), mail hosting, domain name registration, and to maintain/run Tor exit nodes. **No profit is ever being made**. All donations and spendings are being logged here below for transparency.  
+Donations to support this project are welcome. Those donations are mainly used to pay for Tor onion hosting (VPS), mail hosting, domain name registration, and to maintain/run Tor exit nodes. **No profit is ever being made**. All donations and spendings are being logged here below for transparency.
 
 <span style="color: red">**Current project donation goals:**</span>
 
@@ -12,8 +12,8 @@ Donations to support this project are welcome. Those donations are mainly used t
 
 #### Donate using Monero (XMR)
 
-Total Monero donations received: **7.101317184263 XMR**  
-Total Monero remaining: **2.059336719397 XMR**  
+Total Monero donations received: **7.101317184263 XMR**
+Total Monero remaining: **2.059336719397 XMR**
 
 Here is the address for the main project:
 
@@ -23,19 +23,19 @@ Here is the address for the main project:
 
 #### Donate using Bitcoin (BTC)
 
-Total Bitcoin donations received: **1.89353 mBTC**  
-Total Bitcoin remaining: **0 mBTC**   
+Total Bitcoin donations received: **1.89353 mBTC**
+Total Bitcoin remaining: **0 mBTC**
 
 Here are the addresses for the main project:
 
-SegWit address: ```bc1qp9g2c6dquh5lnvft50esxsl97kupdpyqyd4kkv```  
-Legacy address: ```1BBgBSVe6w4DWq2BewUQhDEjsNovhfPswD```  
+SegWit address: ```bc1qp9g2c6dquh5lnvft50esxsl97kupdpyqyd4kkv```
+Legacy address: ```1BBgBSVe6w4DWq2BewUQhDEjsNovhfPswD```
 
 ![][2]_____________________![][3]
 
 
 **Thank you for any contribution. All donations will be mentioned on this page.**
-    
+
 #### Donations log
 
 - 2021-02-06 16:48: 0.1 XMR
@@ -49,7 +49,7 @@ Legacy address: ```1BBgBSVe6w4DWq2BewUQhDEjsNovhfPswD```
 - 2021-07-12 07:24: 0.02 XMR
 - 2021-07-16 14:31: 0.1 mBTC
 - 2021-07-20 21:01: 0.058981 XMR
-- 2021-07-24 15:16: 0.000000000001 XMR 
+- 2021-07-24 15:16: 0.000000000001 XMR
 - 2021-07-25 02:37: 0.000000000001 XMR
 - 2021-08-03 00:17: 0.04119191113 XMR
 - 2021-08-07 15:05: 0.206328241262 XMR
@@ -76,8 +76,8 @@ Legacy address: ```1BBgBSVe6w4DWq2BewUQhDEjsNovhfPswD```
 - 2022-03-14 10:25: 0.0139887 XMR
 - 2022-07-30 03:51: 0.0222 XMR
 - 2022-09-28 05:13: 2 XMR
-- 2022-08-19: SimpleLogin.io Lifetime Premium 
-- 2022-09-19: 0.345024603905 XMR (Special thanks to a previous maintainer)  
+- 2022-08-19: SimpleLogin.io Lifetime Premium
+- 2022-09-19: 0.345024603905 XMR (Special thanks to a previous maintainer)
 
 #### Spendings log
 
@@ -102,7 +102,7 @@ Legacy address: ```1BBgBSVe6w4DWq2BewUQhDEjsNovhfPswD```
 - <del>2022-02-02: 0.966793601024 XMR (+fees) to sponsor a special project (w/ Universal Declaration of Human Rights)</del>: <span style="color: red">**Lost**</span>
 - <del>2022-07-11: 0.503232784687 XMR (+fees) for 1984.is VPS (12 months)</del>: <span style="color: red">**Ended**</span>
 - <del>2022-09-19: 0.345024603905 XMR (+fees) for upgrading VPS RAM/Disk</del>: <span style="color: red">**Ended**</span>
- 
+
 
 [1]: ../media/monero.png
 [2]: ../media/bitcoin-segwit.png

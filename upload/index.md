@@ -17,13 +17,13 @@ schema:
 
 The PDF and ODT files of this guide are cryptographically signed using GPG and [Minisign](https://jedisct1.github.io/minisign). Their integrity can be verified with the published SHA256 Checksum hashes on this website. SHA256 checksums of all the PDF and ODT files are available here in the [sha256sum.txt](./sha256sum.txt) file. SHA256 checksums, signatures, and VirusTotal ("VT") checks of the releases files (containing the whole repository) are available within the latest release information at <https://github.com/Anon-Planet/thgtoa/releases/latest> which will be available as soon as we have a stable release.
 
-The GPG signatures for each PDF and ODT files are available here:  
-- PDF (Light Theme) Main and Mirrors: [guide.pdf.asc](./guide.pdf.asc)  
-- ODT Main and Mirrors: [guide.odt.asc](./guide.odt.asc)  
+The GPG signatures for each PDF and ODT files are available here:
+- PDF (Light Theme) Main and Mirrors: [guide.pdf.asc](./guide.pdf.asc)
+- ODT Main and Mirrors: [guide.odt.asc](./guide.odt.asc)
 
-The Minisign signatures for each PDF and ODT files are available here:  
-- PDF (Light Theme) Main and Mirrors: [guide.pdf.minisig](./guide.pdf.minisig)  
-- ODT Main and Mirrors: [guide.odt.minisig](./guide.odt.minisig)  
+The Minisign signatures for each PDF and ODT files are available here:
+- PDF (Light Theme) Main and Mirrors: [guide.pdf.minisig](./guide.pdf.minisig)
+- ODT Main and Mirrors: [guide.odt.minisig](./guide.odt.minisig)
 
 ## Using SHA256 checksums
 
@@ -115,7 +115,7 @@ The PDF and ODT files of this guide have been automatically scanned by VT, see t
 ??? Note "Verification"
 
     - PDF file: [[VT Scan]](https://www.virustotal.com/gui/file/8fefe9bc982aa3d89dd1d8f7bc5b89c17b7e5d212826c21c87f2c0795668fac3?nocache=1)
-    - ODT file: [[VT Scan]](https://www.virustotal.com/gui/file/19055de599deecbd9482b4bfba19abb3e44fa9c8b53fefee3d2bd9c587f6ac1e?nocache=1) 
+    - ODT file: [[VT Scan]](https://www.virustotal.com/gui/file/19055de599deecbd9482b4bfba19abb3e44fa9c8b53fefee3d2bd9c587f6ac1e?nocache=1)
 
 ## Manual safety checks
 

@@ -57,15 +57,15 @@ To contact me, see the updated information on the website or send an e-mail to <
 
 **Please consider [donating](/donate/) if you enjoy the project and want to support the hosting fees or support the funding of initiatives like the hosting of Tor Exit Nodes.**
 
-### Recommended Reading 
-Some of those resources may, in order to sustain their project, contain or propose:  
+### Recommended Reading
+Some of those resources may, in order to sustain their project, contain or propose:
 
-- Sponsored commercial content  
-- Monetized content through third party platforms (such as YouTube)  
-- Affiliate links to commercial services  
-- Paid Services such as consultancy  
-- Premium content such as ad-free content or updated content  
-- Merchandising  
+- Sponsored commercial content
+- Monetized content through third party platforms (such as YouTube)
+- Affiliate links to commercial services
+- Paid Services such as consultancy
+- Premium content such as ad-free content or updated content
+- Merchandising
 
 *Note that these websites could contain affiliate/sponsored content and/or merchandising. This guide does not endorse and is not sponsored by any commercial entity in any way.*
 

@@ -11,10 +11,10 @@ Latest bitcoin block hash:
 
 I am in complete control of all my key material.
 
-All previous keys have been revoked as part of standard OPSEC key rotation procedures. 
+All previous keys have been revoked as part of standard OPSEC key rotation procedures.
 Do not encrypt communications to my old keys, I will not read them.
 
-The key currently published on my website https://itsnothing.net/pgp.txt with a fingerprint 
+The key currently published on my website https://itsnothing.net/pgp.txt with a fingerprint
 of C87D87466FD205945CF10A3821AB6B6A6CB2C337, is my only PGP key for public communication.
 
 Permanent record of old and new PGP keys:

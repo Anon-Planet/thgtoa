@@ -36,4 +36,3 @@ fi
 #pandoc --self-contained "$bn".md -o upload/"$bn".pdf --metadata title="The Hitchhiker's Guide to Online Anonymity" -t context
 #echo "Generating ODT..."
 #pandoc --self-contained "$bn".md -o upload/"$bn".odt --metadata title="The Hitchhiker's Guide to Online Anonymity"
-

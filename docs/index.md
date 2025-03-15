@@ -19,9 +19,9 @@ schema:
 
 Please share this project if you enjoy it and you think it might be useful to others.
 
-Anonymous Planet is a collective of volunteers and contributors. No one person is considered more valuable than another, and no one person should be viewed as having "more impact" on Anonymous Planet. 
+Anonymous Planet is a collective of volunteers and contributors. No one person is considered more valuable than another, and no one person should be viewed as having "more impact" on Anonymous Planet.
 
-??? person "Anonymous Planet"  
+??? person "Anonymous Planet"
 
     - [:simple-matrix: Our Matrix Space](https://matrix.to/#/#privacy-security-anonymity:matrix.org)
 

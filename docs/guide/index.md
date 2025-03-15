@@ -17,7 +17,7 @@ schema:
 
 There are several ways you could read this guide:
 
-1.   **You want to understand the current state of online privacy and anonymity, not necessarily get too technical about it.** 
+1.   **You want to understand the current state of online privacy and anonymity, not necessarily get too technical about it.**
     -   Read the [Introduction](#introduction), [Requirements](#requirements-limitations), understanding some basics beginning with [your network](#your-network), and [the final notes](#a-small-final-editorial-note).
 
 2.   **You want to do the above but also learn how to remove some online information about you.**
@@ -268,7 +268,7 @@ Finally, even if you use a custom encrypted DNS server (DoH or DoT) with ECH/eSN
 
 One could also decide to use a Tor Hidden DNS Service or ODoH (Oblivious DNS over HTTPS[^53]) to further increase privacy/anonymity but **unfortunately**, as far as we know, these methods are only provided by Cloudflare as of this writing (<https://blog.cloudflare.com/welcome-hidden-resolver/> <sup>[[Archive.org]](https://web.archive.org/web/https://blog.cloudflare.com/welcome-hidden-resolver/)</sup>, <https://blog.cloudflare.com/oblivious-dns/> <sup>[[Archive.org]](https://web.archive.org/web/https://blog.cloudflare.com/oblivious-dns/)</sup>). These are workable and reasonably secure technical options but there is also a moral choice if you want to use Cloudflare or not (despite the risk posed by some researchers[^54]).
 
-**Note that Oblivious DNS addresses an adversary that eavesdrops on one of the connections listed here but not all. It does not address a global passive adversary (GPA) who can eavesdrop on many or all of these connections**: 
+**Note that Oblivious DNS addresses an adversary that eavesdrops on one of the connections listed here but not all. It does not address a global passive adversary (GPA) who can eavesdrop on many or all of these connections**:
 -   traffic between the client resolver and the recursive resolver
 -   the recursive resolver and the ODNS resolver
 -   the ODNS resolver and an authoritative server.
@@ -678,7 +678,7 @@ Here are some other resources on the topic if you cannot see this documentary:
 
 -   2016, A Survey on User Behavior Analysis in Social Networks <https://www.academia.edu/30936118/A_Survey_on_User_Behaviour_Analysis_in_Social_Networks> <sup>[[Archive.org]](https://web.archive.org/web/https://www.academia.edu/30936118/A_Survey_on_User_Behaviour_Analysis_in_Social_Networks)</sup>
 
--   2017, DEF CON 25 presentation: [DEF CON 25 - Svea Eckert, Andreas Dewes - Dark Data](https://www.youtube.com/watch?v=1nvYGi7-Lxo) <sup>[[Invidious]](https://yewtu.be/watch?v=1nvYGi7-Lxo)</sup>   
+-   2017, DEF CON 25 presentation: [DEF CON 25 - Svea Eckert, Andreas Dewes - Dark Data](https://www.youtube.com/watch?v=1nvYGi7-Lxo) <sup>[[Invidious]](https://yewtu.be/watch?v=1nvYGi7-Lxo)</sup>
 
 -   2019, Influence and Behavior Analysis in Social Networks and Social Media <https://sci-hub.se/10.1007/978-3-030-02592-2> <sup>[[Archive.org]](https://web.archive.org/web/https://web.archive.org/web/https://sci-hub.se/10.1007/978-3-030-02592-2)</sup>
 
@@ -1047,9 +1047,9 @@ There was an attack published that can deanonymize users if they have a known al
 
 The attack, published at <https://leakuidatorplusteam.github.io/> <sup>[[Archive.org]](https://web.archive.org/web/20220720023429/https://leakuidatorplusteam.github.io/)</sup>, can be mitigated using the well-known [NoScript](https://noscript.net/) extension and will be our preferred recommendation.
 
-One loosely documented attack might take the following approach to fingerprinting: Alice is browsing the web using Firefox. The website she has just visited is using an invisible `iframe` that creates long strings, e.g., sentences or hashes, to produce some non-user-viewable string. These strings are setting a certain font type, Arial. Whether the browser renders this is non-essential, it only matters if the font changes. The `iframe` in this case serves no purpose but to identify whether a user has installed a certain font on their machine. If Alice is using a font that this frame has tried to render, then it is reported back to the website and to the person in control of the website. 
+One loosely documented attack might take the following approach to fingerprinting: Alice is browsing the web using Firefox. The website she has just visited is using an invisible `iframe` that creates long strings, e.g., sentences or hashes, to produce some non-user-viewable string. These strings are setting a certain font type, Arial. Whether the browser renders this is non-essential, it only matters if the font changes. The `iframe` in this case serves no purpose but to identify whether a user has installed a certain font on their machine. If Alice is using a font that this frame has tried to render, then it is reported back to the website and to the person in control of the website.
 
-The font renders a box with a specific height and width around itself, so that means a specific height and width of the text contained within. The `iframe` keeps doing this for each installed font to create a list of installed fonts for Alice. Because of stylistic differences between each font family, the same string and the same font size will add up to a different height and a different width than Arial. It is used as a fallback font to display text that won't display otherwise, in the case of a user not having that font on their machine and thus non-viewable from their browser. 
+The font renders a box with a specific height and width around itself, so that means a specific height and width of the text contained within. The `iframe` keeps doing this for each installed font to create a list of installed fonts for Alice. Because of stylistic differences between each font family, the same string and the same font size will add up to a different height and a different width than Arial. It is used as a fallback font to display text that won't display otherwise, in the case of a user not having that font on their machine and thus non-viewable from their browser.
 
 If a font requested by an `iframe` is not available, Arial will be used to show that text to the user. Every time the font measurement (identified by the dimensions of the box produced) changed, it means the font is present on Alice's browser and her machine. By doing this for hundreds of fonts, websites can use this information to track users using their installed fonts across websites. Imagine a website then selling this “anonymized” information as a dataset to advertisement companies to serve you ads based on the websites you visit, because they know every font you have installed on your machine and can now track your identity across the internet. This attack is demonstrated here: [Everything you always wanted to know about web-based device fingerprinting (but were afraid to ask)](https://www.youtube.com/watch?v=5Y1Y96jC5AA) by Dr. Nick Nikiforakis, PhD in Computer Science from KU Leuven. He explains how his team of researchers identified which sites were using such techniques on Alexa's top 10,000 websites. Primarily, they found that of those, 145 were fingerprinting browsers. They were fingerprinted 100% of the time — whether they were using the Do Not Track header, a popular Privacy & Security setting in many browsers, did not matter.
 
@@ -1061,7 +1061,7 @@ Attacks such as invisible iframes and media elements can be avoided by blocking 
 
 **All others**
 
-Installing the [NoScript](https://noscript.net/) extension will prevent the attack **by default only in private Windows** using their new "TabGuard feature". But can be enabled in the NoScript options to work on all Windows. See: 
+Installing the [NoScript](https://noscript.net/) extension will prevent the attack **by default only in private Windows** using their new "TabGuard feature". But can be enabled in the NoScript options to work on all Windows. See:
 
 -  Release tweet: <https://twitter.com/ma1/status/1557751019945299969> <sup>[[Archive.org]](https://web.archive.org/web/https://twitter.com/ma1/status/1557751019945299969)</sup>
 -  User explanation: <https://noscript.net/usage/#crosstab-identity-leak-protection> <sup>[[Archive.org]](https://web.archive.org/web/https://noscript.net/usage/#crosstab-identity-leak-protection)</sup>
@@ -1074,7 +1074,7 @@ Installing the [NoScript](https://noscript.net/) extension will prevent the atta
 The researches who disclosed the issue also made an extension available below. Again, **nothing is required in Tor Browser**. This path is not our preferred path but is still available if you do not want to use NoScript.
 
 -   Leakuidator+ extension for Chromium based browsers (Brave, Chrome, Edge, and other Chromium-based browsers): <https://chrome.google.com/webstore/detail/leakuidator%2B/hhfpajcjkikoocmmhcimllpinjnbedll>
--   Leakuidator+ extension for Firefox (Firefox, and other Firefox-based browsers except Tor Browser): <https://addons.mozilla.org/en-US/firefox/addon/leakuidatorplus/> 
+-   Leakuidator+ extension for Firefox (Firefox, and other Firefox-based browsers except Tor Browser): <https://addons.mozilla.org/en-US/firefox/addon/leakuidatorplus/>
 
 Separating identities via separate browsers or even with VMs is not enough to avoid this attack. However, another solution is to make sure that when you start working with an anonymous identity, you entirely close all activities linked to other identities. The vulnerability only works if you're actively logged into a non-anonymous identity. The issue with this is that it can hinder effective workflow, as multitasking across multiple identities becomes impossible.
 
@@ -1697,7 +1697,7 @@ Please see [Appendix Y: Installing and using desktop Tor Browser].
 
 -   After launching, click the upper right **Settings** icon
 
--   Select **Settings** > **Privacy and security** > **Tor network** 
+-   Select **Settings** > **Privacy and security** > **Tor network**
 
 -   Select **Config Bridge**.
 
@@ -4417,7 +4417,7 @@ The reason for this RAM requirement is that each app will run in a different VM 
 
 You should also check their hardware compatibility here <https://www.qubes-os.org/hcl/> <sup>[[Archive.org]](https://web.archive.org/web/https://www.qubes-os.org/hcl/)</sup> before proceeding. Your mileage might vary, and you might experience several issues about hardware compatibility that you will have to troubleshoot and solve yourself.
 
-I think that if you can afford it and are comfortable with the idea of using Linux, you should go with this route as it is probably the best one in terms of security and privacy. The only disadvantage of this route is that it does not provide a way to enable OS-wide [plausible deniability](https://en.wikipedia.org/wiki/Plausible_deniability) <https://en.wikipedia.org/wiki/Plausible_deniability> <sup>[[Wikiless]](https://wikiless.org/wiki/Plausible_deniability)</sup>, unlike the Whonix route. 
+I think that if you can afford it and are comfortable with the idea of using Linux, you should go with this route as it is probably the best one in terms of security and privacy. The only disadvantage of this route is that it does not provide a way to enable OS-wide [plausible deniability](https://en.wikipedia.org/wiki/Plausible_deniability) <https://en.wikipedia.org/wiki/Plausible_deniability> <sup>[[Wikiless]](https://wikiless.org/wiki/Plausible_deniability)</sup>, unlike the Whonix route.
 
 ### Pick your connectivity method
 
@@ -4702,7 +4702,7 @@ Remember this should be done from a safe place (see [Find some safe places with 
 
 ### Upgrading Qubes OS from 4.0.x to 4.1.x (you should do it)
 
-Personally, we wouldn't do it in-place and do a fresh install. 
+Personally, we wouldn't do it in-place and do a fresh install.
 
 But if you really want to, it's technically possible by following this guide: <https://www.qubes-os.org/doc/upgrade/4.1/> <sup>[[Archive.org]](https://web.archive.org/web/https://www.qubes-os.org/doc/upgrade/4.1/)</sup>
 
@@ -4863,7 +4863,7 @@ When you are done downloading the configuration files within the Disposable Brow
 
     -   Save and exit each file
 
--   Edit the OpenVPN config file (/etc/default/openvpn) by typing ```sudo nano /etc/default/openvpn``` 
+-   Edit the OpenVPN config file (/etc/default/openvpn) by typing ```sudo nano /etc/default/openvpn```
 
     -   Change ```#AUTOSTART="all"``` to ```AUTOSTART="all"``` (in other words, remove the "#")
 
@@ -5165,9 +5165,9 @@ See their tutorial here: <https://github.com/Qubes-Community/Contents/blob/maste
 
 # Quick note: Correlation vs Attribution
 
-**Correlation** is a relationship between two or more variables or **[attributes](https://www.digitalshadows.com/blog-and-research/cyber-attacks-the-challenge-of-attribution-and-response/)**. How are attributions determined? During digital forensic and incident response (DFIR), analysts typically look for indicators of compromise (IoCs) following events that call them to act. These indicators usually consist of IP addresses, names, databases; all of which can prescribe a certain behavioral "tag" to an individual or group. This is called attribution. A principal in statistics is that "correlation does not infer causality". What this means is that, while you may leave certain traces on certain areas of a device or network, that only shows presence of action, i.e., not explicitly your presence. It doesn't show who you are, it only resolves that something occurred and *someone* has done *something*. 
+**Correlation** is a relationship between two or more variables or **[attributes](https://www.digitalshadows.com/blog-and-research/cyber-attacks-the-challenge-of-attribution-and-response/)**. How are attributions determined? During digital forensic and incident response (DFIR), analysts typically look for indicators of compromise (IoCs) following events that call them to act. These indicators usually consist of IP addresses, names, databases; all of which can prescribe a certain behavioral "tag" to an individual or group. This is called attribution. A principal in statistics is that "correlation does not infer causality". What this means is that, while you may leave certain traces on certain areas of a device or network, that only shows presence of action, i.e., not explicitly your presence. It doesn't show who you are, it only resolves that something occurred and *someone* has done *something*.
 
-Attribution is required to prove fault or guilt, and is the prime reason why people using the Tor network to access the dark web have been compromised: they left traces that were shown to be connected to their real identities. Your IP can be — but is usually not — a large enough indicator to attribute guilt. This is shown in the infamous NotPetya cyber attacks against the U.S., which were later also released upon Ukraine. Though the White House never *said* it was Russia's doing, they attributed the attack to Russia's [(GRU)](https://www.reuters.com/article/us-britain-russia-gru-factbox/what-is-russias-gru-military-intelligence-agency-idUSKCN1MF1VK) which is a direct office housing the Russian deniable warfare[^311] cyber divisions, uncommonly referred to as "spy makers" in the intelligence community (IC). 
+Attribution is required to prove fault or guilt, and is the prime reason why people using the Tor network to access the dark web have been compromised: they left traces that were shown to be connected to their real identities. Your IP can be — but is usually not — a large enough indicator to attribute guilt. This is shown in the infamous NotPetya cyber attacks against the U.S., which were later also released upon Ukraine. Though the White House never *said* it was Russia's doing, they attributed the attack to Russia's [(GRU)](https://www.reuters.com/article/us-britain-russia-gru-factbox/what-is-russias-gru-military-intelligence-agency-idUSKCN1MF1VK) which is a direct office housing the Russian deniable warfare[^311] cyber divisions, uncommonly referred to as "spy makers" in the intelligence community (IC).
 
 _What is the point_, you may ask? Well, bluntly speaking, this a perfect example because NotPetya, which is now undoubtedly the work of Russian cyber operations against foreign countries and governments, has still never been formally attributed to Russia, only to a known group within Russia (colloquially dubbed [Cozy Bear](https://wikiless.org/wiki/Cozy_Bear)) which can not be confirmed nor denied given that it is highly compartmentalized within the structure of Russia's military. And it's also in part because of the efforts used to disguise itself as a common Ransomware, and because it routinely used the servers of hacked foreign assets not linked to Russia or to its internal networks.
 
@@ -5298,7 +5298,7 @@ Many platforms' operators and administrators do not want traffic from these IPs 
 -   "Think of the children!";
 -   "Terrorism!";
 -   "Russian troll propaganda!";
--   "Well, it's noise in the data we sell to advertisers!" (e.g., AdSense or Facebook Ads). 
+-   "Well, it's noise in the data we sell to advertisers!" (e.g., AdSense or Facebook Ads).
 
 "Yet we still pay traffic for them so let us just deny them all instead."
 
@@ -5367,7 +5367,7 @@ Here are some of the things they check within recent browsers:
 Most of the time, those fingerprints will, unfortunately, be unique or nearly unique to your browser/system. This means that even If you log out from a website and then log back in using a different username, your fingerprint might remain the same if you did not take precautionary measures. An adversary could then use such fingerprints to track you across multiple services even if you have no account on any of them and are using adblocking. These fingerprints could in turn be used to de-anonymize you if you keep the same fingerprint between services.
 
 Here are services you can use to check your browser fingerprints:
-    
+
 -   <https://abrahamjuliot.github.io/creepjs/> (Probably the best overall)
 
 -   <https://coveryourtracks.eff.org/>
@@ -6926,13 +6926,13 @@ The ones that are preferred are recommended due to their stance on privacy, thei
 
 You can also consult the following external resources for more comparisons (**we do not necessarily endorse their opinions**):
 
--   SecuChart, <https://bkil.gitlab.io/secuchart/> <sup>[[Archive.org]](https://web.archive.org/web/https://bkil.gitlab.io/secuchart/)</sup> <sup>[[Repository]](https://github.com/bkil/secuchart)</sup> (Maintained open-source project)    
--   Wikipedia, <https://en.wikipedia.org/wiki/Comparison_of_cross-platform_instant_messaging_clients> <sup>[[Wikiless]](https://wikiless.org/wiki/Comparison_of_cross-platform_instant_messaging_clients)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Comparison_of_cross-platform_instant_messaging_clients)</sup>    
+-   SecuChart, <https://bkil.gitlab.io/secuchart/> <sup>[[Archive.org]](https://web.archive.org/web/https://bkil.gitlab.io/secuchart/)</sup> <sup>[[Repository]](https://github.com/bkil/secuchart)</sup> (Maintained open-source project)
+-   Wikipedia, <https://en.wikipedia.org/wiki/Comparison_of_cross-platform_instant_messaging_clients> <sup>[[Wikiless]](https://wikiless.org/wiki/Comparison_of_cross-platform_instant_messaging_clients)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Comparison_of_cross-platform_instant_messaging_clients)</sup>
     -   Wikipedia, <https://en.wikipedia.org/wiki/Comparison_of_instant_messaging_protocols> <sup>[[Wikiless]](https://wikiless.org/wiki/Comparison_of_instant_messaging_protocols)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Comparison_of_instant_messaging_protocols)</sup>
 -   Whonix Documentation, Instant Messenger Chat <https://www.whonix.org/wiki/Chat> <sup>[[Archive.org]](https://web.archive.org/web/https://www.whonix.org/wiki/Chat)</sup> (Outdated, Unmaintained but contains insightful information)
-    
+
 -   **Outdated, or unmaintained, or abandoned resources scheduled for removal from our guide in next release:**
-    
+
     -   <del>Secure Messaging Apps <https://www.securemessagingapps.com/> <sup>[[Archive.org]](https://web.archive.org/web/https://www.securemessagingapps.com/)</sup></del>
     -   <del>Proton Blog, <https://proton.me/blog/whatsapp-alternatives/> <sup>[[Archive.org]](https://web.archive.org/web/2022053117143/https://proton.me/blog/whatsapp-alternatives)</sup></del>
     -   <del>SecureChart.org, <https://securechatguide.org/featuresmatrix.html> <sup>[[Archive.org]](https://web.archive.org/web/https://securechatguide.org/featuresmatrix.html)</sup></del>
@@ -8452,7 +8452,7 @@ Most likely if someone went through your document to read it and re-placed it ca
 
 Wait, what is OPSEC? Well, OPSEC means Operations Security[^456]. The basic definition is: "OPSEC is the process of protecting individual pieces of data that could be grouped together to give the bigger picture."
 
-The important step here, and probably the easiest one, is a lesson you can take from the movie Fight Club: the first rule is that you **do not** talk about Fight Club. This applies to many aspects of your online operational security or OPSEC. Taking your time to go through this guide will reward you with the tools and knowledge to embrace a fuller, more secure experience on the internet. Rest assured that this guide will reveal things to you that will frustrate your enemy. You will learn how to protect your operating systems and lockdown your critical information and ensure mission success. But the one thing you must adhere to is this rule of thumb - do not talk about operation details. The biggest adversarial threat to you is OSINT (discussed below and throughout the document). The enemy will gather information on you based on what they observe about you and your activities online and in real life. 
+The important step here, and probably the easiest one, is a lesson you can take from the movie Fight Club: the first rule is that you **do not** talk about Fight Club. This applies to many aspects of your online operational security or OPSEC. Taking your time to go through this guide will reward you with the tools and knowledge to embrace a fuller, more secure experience on the internet. Rest assured that this guide will reveal things to you that will frustrate your enemy. You will learn how to protect your operating systems and lockdown your critical information and ensure mission success. But the one thing you must adhere to is this rule of thumb - do not talk about operation details. The biggest adversarial threat to you is OSINT (discussed below and throughout the document). The enemy will gather information on you based on what they observe about you and your activities online and in real life.
 
 Adversaries take many forms. To some, they are actors of a foreign government, while to others they may be simply a rival company's employee looking to find disgruntled workers to target for further pressuring. To most, the general task of OPSEC is that this is your ship - you must not do anything or say anything to sink your own ship. Simply expressing your frustration with your boss or your work conditions or your equipment, might be enough to generate not only a behavior profile but also a vector of attack. A disgruntled employee, in this example, is what generally provides enough information to warrant pressuring of that employee for further information and possibly even extortion, blackmail, or worse. Failure to implement basic OPSEC can lead to failure at various points. It can lead to serious injury or even death if your threat model is a determined attacker, foreign actor, and so on.
 
@@ -8469,7 +8469,7 @@ You must live by the simple rule that "loose lips sink ships" - but also that th
 -   Do not ever use biometrics alone to safeguard your secrets. Biometrics can be used without your consent.
 
 -   Do check the signatures and hashes of software and documents you download before installing/viewing them.
-    
+
 -   Do not have the same behavior such as visiting the same links on the clearnet then visit the same with the your anoynous online identity. Watch this DEF CON 25 presentation if you didn't before: [DEF CON 25 - Svea Eckert, Andreas Dewes - Dark Data](https://www.youtube.com/watch?v=1nvYGi7-Lxo) <sup>[[Invidious]](https://yewtu.be/watch?v=1nvYGi7-Lxo)</sup>.
 
 -   Encrypt everything but do not take it for granted. Remember the 5$ wrench.
@@ -8522,7 +8522,7 @@ You must live by the simple rule that "loose lips sink ships" - but also that th
     -   2015, DEF CON 22, Adrian Crenshaw, Dropping Docs on Darknets: How People Got Caught <https://www.youtube.com/watch?v=eQ2OZKitRwc> <sup>[[Invidious]](https://yewtu.be/watch?v=eQ2OZKitRwc)</sup> ([Slides](https://www.defcon.org/images/defcon-22/dc-22-presentations/Crenshaw/DEFCON-22-Adrian-Crenshaw-Dropping-Docs-on-Darknets-How-People-Got-Caught-UPDATED.pdf) <sup>[[Archive.org]](https://web.archive.org/web/https://www.defcon.org/images/defcon-22/dc-22-presentations/Crenshaw/DEFCON-22-Adrian-Crenshaw-Dropping-Docs-on-Darknets-How-People-Got-Caught-UPDATED.pdf)</sup>)
 
     -   2017, Ochko123 - How the Feds Caught Russian Mega-Carder Roman Seleznev <https://www.youtube.com/watch?v=6Chp12sEnWk> <sup>[[Invidious]](https://yewtu.be/watch?v=6Chp12sEnWk)</sup>
-    
+
     -   2017, [DEF CON 25 - Svea Eckert, Andreas Dewes - Dark Data](https://www.youtube.com/watch?v=1nvYGi7-Lxo) <sup>[[Invidious]](https://yewtu.be/watch?v=1nvYGi7-Lxo)</sup>
 
     -   2015, DEF CON 22, Zoz, Don't Fuck It Up! <https://www.youtube.com/watch?v=J1q4Ir2J8P8> <sup>[[Invidious]](https://yewtu.be/watch?v=J1q4Ir2J8P8)</sup>
@@ -9470,7 +9470,7 @@ This is very lightweight, and we recommend doing it from a VM (VM inside a VM) t
 44. **Remove the default config file** by running ```rm /etc/apache2/sites-enabled/000-default.conf```.
 45. **Edit the apache2 config file** provided by mat2-web by running ```nano /etc/apache2/sites-enabled/apache2.conf```.
 46. **Remove the first line** ```Listen 80``` by typing **Ctrl+K** to cut the line.
-47. **Change the uwsgi path** from ```/var/www/mat2-web/mat2-web.sock``` to ```/run/uwsgi/uwsgi.sock``` and type **Ctrl+X** to exit, followed by **Y** then **Enter**. 
+47. **Change the uwsgi path** from ```/var/www/mat2-web/mat2-web.sock``` to ```/run/uwsgi/uwsgi.sock``` and type **Ctrl+X** to exit, followed by **Y** then **Enter**.
 48. **Copy the uwsgi config file** to **/etc** by running ```cp uwsgi.config /etc/uwsgi/apps-enabled/uwsgi.ini```.
 49. **Edit the uwsgi config file** by typing ```nano /etc/uwsgi/apps-enabled/uwsgi.ini``` and change **uid** and **guid** to ```nobody``` and ```nogroup``` respectively. Save and exit with **Ctrl+X**, followed by **Y**, then **Enter**.
 50. Run ```chown -R 777 /var/www/mat2-web``` to change ownership to **mat2-web**.
@@ -9496,7 +9496,7 @@ After updates, shutdown, change to the **Host-only Adapter**, take a new snapsho
 
 You are done.
 
-Now you can just start this small Mat2 VM when needed. Browse to it from your Guest VM and use the interface to remove any metadata from most files. After each use of this VM, you should revert to the Snapshot to erase all traces. 
+Now you can just start this small Mat2 VM when needed. Browse to it from your Guest VM and use the interface to remove any metadata from most files. After each use of this VM, you should revert to the Snapshot to erase all traces.
 
 **Do not ever expose this VM to any network unless temporarily for updates. This web interface is not suitable for any direct external access.**
 
@@ -9557,7 +9557,7 @@ There are, two viable options:
 ## Cash/Monero-Paid VPN:
 
 There are three VPN companies recommended by PrivacyGuides.org (<https://www.privacyguides.org/vpn/> <sup>[[Archive.org]](https://web.archive.org/web/https://www.privacyguides.org/vpn/)</sup>) that accept cash payments: Mullvad, iVPN, and Proton VPN.
-    
+
 Here are their logging policies:
 
 -   Mullvad: <https://mullvad.net/en/help/no-logging-data-policy/> <sup>[[Archive.org]](https://web.archive.org/web/https://mullvad.net/en/help/no-logging-data-policy/)</sup>
@@ -10149,7 +10149,7 @@ If you are to resort to this, you should never do so from a monitored/known netw
 **Refer to the Tails route to achieve this. See [The Tails route][The Tor Browser route:] and [Appendix P: Accessing the internet as safely as possible when Tor and VPNs are not an option] sections.**
 
 # Appendix V: What browser to use in your Guest VM/Disposable VM
-    
+
 **Temporary Important Warning: Please see [Microarchitectural Side-channel Deanonymization Attacks:] for all browsers except Tor Browser.**
 
 There are 6 possibilities of browser to use on your guest/disposable VM:
@@ -10867,12 +10867,12 @@ Here's some host information that can be leaked through the Virtual Machine:
 
 -   Organizationally unique identifier or OUI - the unique identifier assigned to VMWare Guest VMs;
 
--   Virtual Windows registry keys like `ProductID` might show the Host Machine's environment:  
+-   Virtual Windows registry keys like `ProductID` might show the Host Machine's environment:
     `HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\ProductId XXXXX-123-1234567-12345`
 
 -   HDD, GPU, and mouse drivers can be exposed through: `HKEY_LOCAL_MACHINE\System\CurrentControlSet\`
 
--   Registry entries will show that this is a virtual mouse: `%WINDIR%\system32\drivers\vmmouse.sys`  
+-   Registry entries will show that this is a virtual mouse: `%WINDIR%\system32\drivers\vmmouse.sys`
 
 -   Descriptor Table Registers: <https://stackoverflow.com/questions/52505313/what-are-descriptor-registers/52505743#52505743>
 
@@ -10974,7 +10974,7 @@ This is valid for Windows, Linux, and macOS.
     -   Any media playback is "click to play" (disabled by default)
 
 We would recommend the "Safest" level by default. The "Safer" level should be enabled if you think you need access to a website not working without JavaScript. The Safest mode will  most likely break many websites that rely actively on JavaScript.
-    
+
 If you are extra paranoid, use the "Safest" level by default and consider downgrading to Safer is the website is unusable because of Javascript blocking.
 
 **Optional and not recommended by the Tor Project**: If you are not using the "Safest" level, we will diverge from some but agree with others (for instance the Tails project and others[^525]) and will actually recommend some modifications of the default Tor Browser in the addition of two extensions:
@@ -11007,7 +11007,7 @@ As mentioned before in this guide multiple times, we strongly recommend the use 
 -   **Stay away from so-called "private" mixers, tumblers and coinjoiners.** You might think this is a good idea, but not only are they useless with cryptocurrencies such as BTC/ETH/LTC, they are also dangerous. They take custody of your coins. Use Monero to anonymize your crypto. Do not use a normal KYC-enabled exchange to buy/sell your Monero (such as Kraken), since this information on your purchases and withdrawals (for intended use) are retained in the exchange. Instead, use a P2P exchange that doesn't require KYC such as what can be found on <https://kycnot.me/>.
 
 
--   **See [Warning about special tumbling, mixing, coinjoining privacy wallets and services].** 
+-   **See [Warning about special tumbling, mixing, coinjoining privacy wallets and services].**
 
 ## Using Bitcoin anonymously option:
 
@@ -11036,7 +11036,7 @@ Despite this, it is possible to safely anonymize Bitcoin through the use of non-
 
 5. From an anonymized browser (such as Tor Browser), use a non-KYC (Know Your Customer) service swapping service (see [Appendix A8: Crypto Swapping Services without Registration and KYC]) and convert your Monero to BTC and transfer those to the BTC Wallet you have on your anonymized VM
 
-6. You should now have an anonymized Bitcoin wallet that can be used for purchasing services that do not accept Monero. 
+6. You should now have an anonymized Bitcoin wallet that can be used for purchasing services that do not accept Monero.
 
 **You should never access this wallet from a non-anonymized environment. Always use well-thought OPSEC with your BTC transactions. Remember those can be traced back to you.**
 
@@ -11055,7 +11055,7 @@ Centralized "private" tumblers, mixers and coinjoiners are not recommended since
 
 Mixing BTC in this way should prevent any chain analysis on future transactions. This will *not* however hide any past transactions or the fact you purchased BTC from a KYC exchange. Instead we recommend to use Bitcoin wallets that utilize Whirlpool or Monero (preferred).
 
-    
+
 ## When converting from BTC to Monero:
 
 **Now, as part of any process above, if you want to convert BTC back to Monero**, we recommend not using a swapping service but instead recommend using the new Monero Atomic Swap Tool: <https://unstoppableswap.net/>. This will prevent unnecessary fees and intermediates when using a commercial swapping service. The website is self-explanatory with detailed instructions for all OSes.
@@ -11275,7 +11275,7 @@ You might also consider the use of something like AnonyMouth <https://web.archiv
 ## Bonus links:
 
 -  <https://seirdy.one/posts/2022/07/09/stylometric-fingerprinting-redux/> <sup>[[Archive.org]](https://web.archive.org/web/https://seirdy.one/posts/2022/07/09/stylometric-fingerprinting-redux/)</sup>: Stylometric fingerprinting redux
-    
+
 -   <https://www.whonix.org/wiki/Surfing_Posting_Blogging#Stylometry> <sup>[[Archive.org]](https://web.archive.org/web/https://www.whonix.org/wiki/Surfing_Posting_Blogging#Stylometry)</sup>: Whonix documentation about stylometry.
 
 -   <https://wikipedia.org/wiki/Forensic_linguistics> <sup>[[Wikiless]](https://wikiless.org/wiki/Forensic_linguistics)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://wikipedia.org/wiki/Forensic_linguistics)</sup>: Gives a brief rundown of the basics of forensic linguistics, not too informative.
@@ -11482,7 +11482,7 @@ We recommend the LINDDUN <https://www.linddun.org> threat modeling method <sup>[
   - It is focused on privacy but is clearly perfectly suitable for anonymity.
   - It is accessible to all skill levels including beginners (providing many tutorials) but also suitable for highly skilled readers.
   - It is used in the making of the Threat Modeling Manifesto: <https://www.threatmodelingmanifesto.org/> <sup>[[Archive.org]](https://web.archive.org/web/https://www.threatmodelingmanifesto.org/)</sup>
-    
+
 LINDDUN threat modeling tutorials and resources:
   - **We recommend the following quick tutorial video from "The Hated One" YouTube channel with the approval and review from LINDDUN designers: <https://www.youtube.com/watch?v=6AXkJ3dot2s>** <sup>[[Invidious]](https://yewtu.be/watch?v=6AXkJ3dot2s>)</sup> to get started.
   - More resources for deeper understanding and usage:
@@ -11496,7 +11496,7 @@ LINDDUN threat modeling tutorials and resources:
 (Illustration from [LINDDUN2015](https://lirias.kuleuven.be/retrieve/295669))
 
 Here are alternative resources and methodologies if LINDDUN doesn't suit you:
-    
+
 -   Online Operations Security: [https://github.com/devbret/online-OPSEC](https://web.archive.org/web/20210711215728/https://github.com/devbret/online-OPSEC)
 -   Microsoft's STRIDE: <https://en.wikipedia.org/wiki/STRIDE_%28security%29> <sup>[[Wikiless]](https://wikiless.org/wiki/STRIDE_%28security%29)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/STRIDE_%28security%29)</sup>
 -   PASTA: <https://versprite.com/tag/pasta-threat-modeling/> <sup>[[Archive.org]](https://web.archive.org/web/https://versprite.com/tag/pasta-threat-modeling/)</sup>
@@ -11505,7 +11505,7 @@ Here are alternative resources and methodologies if LINDDUN doesn't suit you:
 
 # Appendix B4: Important notes about evil-maid and tampering
 
-Your context needs to be taken into account. 
+Your context needs to be taken into account.
 
 Preventing an evil-maid attack attack or tampering might lead to bad consequences. Your adversary might then resort to other means to obtain the key.
 
@@ -11523,7 +11523,7 @@ Enter AEPIC (stylized ÆPIC), the first architectural CPU bug that leaks stale d
 Microarchitecture* which you can read here: [Borrello2022AEPIC](https://aepicleak.com/aepicleak.pdf) <sup>[[Archive.org]](https://web.archive.org/web/20220812101719/https://aepicleak.com/aepicleak.pdf)</sup>
 
 Model-specific registers (MSRs) and their configuration bits can also be detected automatically on Intel and AMD CPUs: [Kogler2022](https://github.com/IAIK/msrevelio) <sup>[[Archive.org]](https://web.archive.org/web/20220814125349/https://andreaskogler.com/papers/msrtemplating.pdf)</sup>. This allows an attacker (with heavy knowledge of CPU functionality) to view information about the MSRs, which are essentially special CPU registers allowing interaction with low-level CPU features and advanced configuration of the CPU's behavior. Modern x86 CPUs have hundreds of these, which are usually documented very little and in increasingly less verbosity over the past few years.
-    
+
 # Appendix B6: Warning for using Orbot on Android
 
 While this is often misunderstood, Orbot on Android does not make your Tor-enabled apps go through Tor if you add them to the list. Orbot is acting as a device-wide VPN (also known as a "transparent proxy"). The list of apps using Orbot is a whitelist. This list will not make some apps magically use Tor and unchecked ones use the clear-net. This only ensures the device-wide VPN is using Tor to route traffic. This means that Orbot can only control what app can access the VPN it creates. Other apps will lose connectivity.
@@ -11540,7 +11540,7 @@ And from [a post](https://tor.stackexchange.com/questions/427/is-running-tor-ove
 
 "The danger (beyond the performance hit) which keeps me from running Tor over Tor has to do with timing and congestion measurements. Adversaries watching your traffic at the exit(s) of your circuits have a better chance of linking your Whonix activity with your [Tor Browser Bundle] activity when those shared circuits slow down or drop packets at the same time. This can happen without Tor over Tor when your instances use a common upstream link. The linkage will be made tighter and more explicit if you run the Whonix Tor traffic through your TBB SOCKS5 Tor circuits. This tighter linkage raises the danger of successful correlation."
 
-# Appendix B7: Caution about Session Messenger 
+# Appendix B7: Caution about Session Messenger
 
 Here are our reasons:
 
@@ -12121,7 +12121,7 @@ In short, our opinion is that you may use Session Messenger on iOS due to the ab
 [^282]: Internet Archive, Invisibler, What Everybody Ought to Know About HideMyAss <https://archive.is/ag9w4#selection-136.0-136.1>
 
 [^283]: Wikipedia, Warrant Canary <https://en.wikipedia.org/wiki/Warrant_canary> <sup>[[Wikiless]](https://wikiless.org/wiki/Warrant_canary)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Warrant_canary)</sup>
-    
+
 [^284]: Washington Post, The intelligence coup of the century <https://www.washingtonpost.com/graphics/2020/world/national-security/cia-crypto-encryption-machines-espionage/> <sup>[[Archive.org]](https://web.archive.org/web/https://www.washingtonpost.com/graphics/2020/world/national-security/cia-crypto-encryption-machines-espionage/)</sup>
 
 [^285]: Swissinfo.ch, Second Swiss firm allegedly sold encrypted spying devices <https://www.swissinfo.ch/eng/second-swiss-firm-allegedly-sold-encrypted-spying-devices/46186432> <sup>[[Archive.org]](https://web.archive.org/web/https://www.swissinfo.ch/eng/second-swiss-firm-allegedly-sold-encrypted-spying-devices/46186432)</sup>
@@ -12613,11 +12613,11 @@ In short, our opinion is that you may use Session Messenger on iOS due to the ab
 [^534]: Wikipedia, Passphrase <https://en.wikipedia.org/wiki/Passphrase#Passphrase_selection> <sup>[[Wikiless]](https://wikiless.org/wiki/Passphrase#Passphrase_selection)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Passphrase#Passphrase_selection)</sup>
 
 [^535]: Monero Research Lab, Evaluating cryptocurrency security and privacy in a post-quantum world <https://github.com/insight-decentralized-consensus-lab/post-quantum-monero/blob/master/writeups/technical_note.pdf> <sup>[[Archive.org]](https://web.archive.org/web/https://github.com/insight-decentralized-consensus-lab/post-quantum-monero/blob/master/writeups/technical_note.pdf)</sup>
-    
+
 [^536]: Wikipedia, Privacy in Australian Law <https://en.wikipedia.org/wiki/Privacy_in_Australian_law> <sup>[[Wikiless]](https://wikiless.org/wiki/Privacy_in_Australian_law)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Privacy_in_Australian_law)</sup>
 
 [^537]: Parliament of Autralia, Surveillance Legislation Amendment (Identify and Disrupt) Bill 2021, <https://www.aph.gov.au/Parliamentary_Business/Bills_Legislation/Bills_Search_Results/Result?bId=r6623> <sup>[[Archive.org]](https://web.archive.org/web[/https://en.wikipedia.org/wiki/Privacy_in_Australian_law](https://www.aph.gov.au/Parliamentary_Business/Bills_Legislation/Bills_Search_Results/Result?bId=r6623))</sup>
- 
+
 [^538]: Lokinet Documentation, Service Nodes, <https://loki.network/service-nodes/> <sup>[[Archive.org]](https://web.archive.org/https://loki.network/service-nodes/)</sup>
 
 [^539]: Session Documentation, Session protocol explained, <https://getsession.org/session-protocol-explained> <sup>[[Archive.org]](https://web.archive.org/[https://loki.network/service-nodes/](https://getsession.org/session-protocol-explained))</sup>
