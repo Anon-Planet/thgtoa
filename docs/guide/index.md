@@ -339,7 +339,7 @@ Again, such an issue could only be mitigated by being in a room/building that wo
 
 Here is another video of the same kind of tech in action: <https://www.youtube.com/watch?v=FDZ39h-kCS8> <sup>[[Invidious]](https://yewtu.be/watch?v=FDZ39h-kCS8)</sup>
 
-See [Appendix N: Warning about smartphones and smart devices]
+See: [Appendix N: Warning about smartphones and smart devices](#appendix-n-warning-about-smartphones-and-smart-devices).
 
 There is not much you can do about these. Besides being non-identifiable in the first place.
 
@@ -364,6 +364,8 @@ This can be useful when you know someone you want to de-anonymize is in a crowde
 These can also be used to carefully craft and serve you advanced phishing webpages that would harvest your credentials or try to make you install a malicious certificate allowing them to see your encrypted traffic.
 
 How to mitigate those? If you do connect to a public wi-fi access point, use Tor, or use a VPN and then Tor (Tor over VPN) or even (VPN over Tor) to obfuscate your traffic from the rogue AP while still using it.
+
+In addition, you should see the BlackHat USA conference talk, [Surveilling the Masses with Wi-Fi Positioning Systems](https://www.youtube.com/watch?v=hlbjUvkoyBA) <sup>[[Invidious]](https://yewtu.be/watch?v=hlbjUvkoyBA)</sup>. The talk details a critical vulnerability in the Wi-Fi positioning API by Apple, which can be used to geofence the population using unique identifiers. See: [Appendix N: Warning about smartphones and smart devices](#appendix-n-warning-about-smartphones-and-smart-devices). Your neighbors' iPhones are a unique threat, too.
 
 ### Traffic Anonymization
 
@@ -391,7 +393,7 @@ There are ways to mitigate these such as:
 
 Be aware again that this might not be enough against a motivated global adversary[^74] with wide access to global mass surveillance. Such an adversary might have access to logs no matter where you are and could use those to de-anonymize you. Usually, these attacks are part of what is called a Sybil Attack[^75]. **These adversaries are out of the scope of this guide.**
 
-Be also aware that all the other methods described in this guide such as Behavioral analysis can also be used to deanonymize Tor users indirectly (see further [Your Digital Fingerprint, Footprint, and Online Behavior][Your Digital Fingerprint, Footprint, and Online Behavior:]).
+Be also aware that all the other methods described in this guide such as Behavioral analysis can also be used to deanonymize Tor users indirectly (see further [Your Digital Footprint](#your-digital-footprint).
 
 I also strongly recommend reading this very good, complete, and thorough (and more detailed) guide on most known Attack Vectors on Tor: <https://github.com/Attacks-on-Tor/Attacks-on-Tor> <sup>[[Archive.org]](https://web.archive.org/web/https://github.com/Attacks-on-Tor/Attacks-on-Tor)</sup> as well as this recent research publication <https://www.researchgate.net/publication/323627387_Shedding_Light_on_the_Dark_Corners_of_the_Internet_A_Survey_of_Tor_Research> <sup>[[Archive.org]](https://web.archive.org/web/https://www.researchgate.net/publication/323627387_Shedding_Light_on_the_Dark_Corners_of_the_Internet_A_Survey_of_Tor_Research)</sup>
 
@@ -5394,7 +5396,7 @@ Getting reported thousands of times does not matter when you are Donald Trump or
 
 ### Behavioral Analysis
 
-See [Your Digital Fingerprint, Footprint, and Online Behavior][Your Digital Fingerprint, Footprint, and Online Behavior:].
+See [Your Digital Footprint](#your-digital-footprint).
 
 ### Financial transactions
 
