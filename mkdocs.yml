@@ -42,20 +42,20 @@ theme:
 plugins:
   - social: {}
   - search: {}
-#  macros: {}
-#  meta: {}
-#  git-latest-tag: {}
-  - git-authors: {}
-#  git-latest-release: {}
+#  - macros: {}
+#  - meta: {}
+#  - git-latest-tag: {}
+#  - git-authors: {}
+#  - git-latest-release: {}
 
 extra:
   social:
     - icon: simple/mastodon
       link: https://mastodon.social/@anonymousplanet
       name: Mastodon
-    - icon: simple/matrix
-      link: https://matrix.to/#/#p-s-a:matrix.org
-      name: Matrix Space
+#    - icon: simple/matrix
+#      link: https://matrix.to/#/#p-s-a:matrix.org
+#      name: Matrix Space
     - icon: simple/gitlab
       link: http://wmj5kiic7b6kjplpbvwadnht2nh2qnkbnqtcv3dyvpqtz7ssbssftxid.onion/
       name: "0xacab"
@@ -88,13 +88,13 @@ markdown_extensions:
   - pymdownx.mark
   - attr_list
   - pymdownx.emoji:
-      emoji_index: material.extensions.emoji.twemoji
-      emoji_generator: material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
   - pymdownx.superfences:
       custom_fences:
       - name: mermaid
         class: mermaid
-        format: !!python/name:pymdownx.superfences.fence_code_format
+        format: materialx.superfences.fence_code_format
   - pymdownx.tabbed:
       alternate_style: true
 
@@ -111,9 +111,6 @@ markdown_extensions:
   - md_in_html: {}
   - meta: {}
   - abbr: {}
-  - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
   - tables: {}
   - footnotes: {}
   - toc:

@@ -17,11 +17,11 @@ schema:
 
 **Anonymous Planet** are the maintainers of the [*Hitchhiker's Guide*](https://anonymousplanet.org/guide.html) and the [*PSA Community*](https://psa.anonymousplanet.org). It is responsible for maintaining the projects and code repositories.
 
-The purpose: providing an introduction to various online tracking techniques, online ID verification techniques, and detailed guidance to creating and maintaining (truly) anonymous online identities. It is written in the hopes that activists, journalists, scientists, lawyers, whistle-blowers, etc. - i.e., good people - will be able to fight oppression, censorship and harassment! The website and projects are free (as in freedom) and not affiliated with any donor or projects discussed.
+The purpose: providing an introduction to various online tracking techniques, online ID verification techniques, and detailed guidance to creating and maintaining (truly) anonymous online identities. It is written with the hopes that good people (e.g., activists, journalists, scientists, lawyers, whistle-blowers, etc.) will be able to fight oppression, censorship and harassment! The website and projects are free (as in freedom) and not affiliated with any donor or projects discussed.
 
 ??? Note "Where do I start?"
 
-    Start either by going to [the beginning](/guide/) or using the search at top right of the page. It is also available at whatever point you are in your reading.
+    Start either by going to [the beginning](../guide/index.md) or using the search at top right of the page. It is also available at whatever point you are in your reading.
 
 ??? Note "Notes on the journey"
 
@@ -33,9 +33,9 @@ The purpose: providing an introduction to various online tracking techniques, on
 
 This guide is a non-profit open-source initiative, licensed under Creative Commons **Attribution-NonCommercial** 4.0 International ([cc-by-nc-4.0](https://creativecommons.org/licenses/by-nc/4.0/) <sup>[[Archive.org]](https://web.archive.org/web/https://creativecommons.org/licenses/by-nc/4.0/)</sup>).
 
--   For mirrors see [Mirrors](../mirrors) and the links at the bottom right of the page. You should see these on every page.
+-   For mirrors see [Mirrors](../mirrors/index.md) and the links at the bottom right of the page. You should see these on every page.
 
--   For help in comparing versions see [Comparing versions](/guide/#appendix-a7-comparing-versions)
+-   For help in comparing versions see [Comparing versions](../guide/index.md#appendix-a7-comparing-versions)
 
 Feel free to submit issues **(please do report anything wrong)** using GitHub Issues at: <https://github.com/Anon-Planet/thgtoa/issues>. We also accept Merge Requests (MR) from our Gitlab and many other places. Do not hesitate to report issues and suggestions!
 
@@ -55,7 +55,7 @@ Follow us on:
 
 To contact me, see the updated information on the website or send an e-mail to <contact@anonymousplanet.org>
 
-**Please consider [donating](/donate/) if you enjoy the project and want to support the hosting fees or support the funding of initiatives like the hosting of Tor Exit Nodes.**
+**Please consider [donating](../donate/index.md) if you enjoy the project and want to support the hosting fees or support the funding of initiatives like the hosting of Tor Exit Nodes.**
 
 ### Recommended Reading
 Some of those resources may, in order to sustain their project, contain or propose:
@@ -79,7 +79,7 @@ If you skipped those, you should really still consider viewing this YouTube play
     - AnarSec: <https://www.anarsec.guide/>
     - EFF Surveillance Self-Defense: <https://ssd.eff.org/>
     - Prism-Break: <https://prism-break.org/>
-    - Privacy Guides: <https://privacyguides.org> 
+    - Privacy Guides: <https://privacyguides.org>
     - Techlore: <https://techlore.tech>
     - The New Oil: <https://thenewoil.org>
     - PrivacyTools.io: <https://privacytools.io>
@@ -101,7 +101,7 @@ If you skipped those, you should really still consider viewing this YouTube play
     - Whonix Documentation: <https://www.whonix.org/wiki/Documentation>
 
 !!! Note "We are not affiliated with Anonymous or Riseup"
-    
+
     One or two of our community members uses or has used the resources of Riseup. We are not affiliated with Riseup in any manner.
 
     We also hold **no affiliation** with the [Anonymous](https://en.wikipedia.org/wiki/Anonymous_(hacker_group)) <sup>[[Wikiless]](https://wikiless.org/wiki/Anonymous_(hacker_group))</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Anonymous_(hacker_group))</sup> hacker collective.

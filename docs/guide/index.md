@@ -11040,7 +11040,7 @@ Despite this, it is possible to safely anonymize Bitcoin through the use of non-
 
 **You should never access this wallet from a non-anonymized environment. Always use well-thought OPSEC with your BTC transactions. Remember those can be traced back to you.**
 
-The origin of those BTC cannot be traced back to your real identity due to the use of Monero **unless Monero is broken** or if you consolidate outputs from spending at separate merchants. It is recommended to use privacy preserving wallets in the [Bitcoin section](Using Bitcoin anonymously option:). Please do read [Appendix B2: Monero Disclaimer].
+The origin of those BTC cannot be traced back to your real identity due to the use of Monero **unless Monero is broken** or if you consolidate outputs from spending at separate merchants. It is recommended to use privacy preserving wallets in the [Bitcoin section](../guide/index.md#using-bitcoin-anonymously-option). Please do read [Appendix B2: Monero Disclaimer].
 
 **Regarding Zcash: this section previously included use of Zcash but it has been removed in light of newer, more accurate information.**
 

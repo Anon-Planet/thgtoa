@@ -23,7 +23,7 @@ Anonymous Planet is a collective of volunteers and contributors. No one person i
 
 ??? person "Anonymous Planet"
 
-    - [:simple-matrix: Our Matrix Space](https://matrix.to/#/#privacy-security-anonymity:matrix.org)
+    We no longer have a safe recommendation for visiting Matrix.
 
 ??? person "@alex"
 
