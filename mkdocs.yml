@@ -1,4 +1,4 @@
-site_name: Hitchhiker’s Guide
+site_name: Hitchhiker's Guide
 site_dir: '/site/'
 docs_dir: 'docs/'
 site_url: "https://www.anonymousplanet.org/"
@@ -6,7 +6,7 @@ repo_url: "https://github.com/Anon-Planet/thgtoa"
 repo_name: ""
 #edit_uri: ""
 theme:
-  name: material
+  name: topdf
   favicon: media/profile.png
   icon:
     logo: material/bird
@@ -44,8 +44,8 @@ plugins:
   - search: {}
 #  - macros: {}
 #  - meta: {}
-#  - git-latest-tag: {}
-#  - git-authors: {}
+  - git-latest-tag: {}
+  - git-authors: {}
 #  - git-latest-release: {}
 
 extra:
