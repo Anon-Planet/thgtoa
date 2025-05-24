@@ -15,7 +15,7 @@ schema:
 ---
 ![Anonymous Planet logo](../media/profile.png){ align=right }
 
-**Anonymous Planet** are the maintainers of the [*Hitchhiker's Guide*](https://anonymousplanet.org/guide.html) and the [*PSA Community*](https://psa.anonymousplanet.org). It is responsible for maintaining the projects and code repositories.
+**Anonymous Planet** are the maintainers of the [_Hitchhiker's Guide_](https://anonymousplanet.org/guide.html) and the [_PSA Community_](https://psa.anonymousplanet.org). It is responsible for maintaining the projects and code repositories.
 
 The purpose: providing an introduction to various online tracking techniques, online ID verification techniques, and detailed guidance to creating and maintaining (truly) anonymous online identities. It is written with the hopes that good people (e.g., activists, journalists, scientists, lawyers, whistle-blowers, etc.) will be able to fight oppression, censorship and harassment! The website and projects are free (as in freedom) and not affiliated with any donor or projects discussed.
 
@@ -33,9 +33,9 @@ The purpose: providing an introduction to various online tracking techniques, on
 
 This guide is a non-profit open-source initiative, licensed under Creative Commons **Attribution-NonCommercial** 4.0 International ([cc-by-nc-4.0](https://creativecommons.org/licenses/by-nc/4.0/) <sup>[[Archive.org]](https://web.archive.org/web/https://creativecommons.org/licenses/by-nc/4.0/)</sup>).
 
--   For mirrors see [Mirrors](../mirrors/index.md) and the links at the bottom right of the page. You should see these on every page.
+- For mirrors see [Mirrors](../mirrors/index.md) and the links at the bottom right of the page. You should see these on every page.
 
--   For help in comparing versions see [Comparing versions](../guide/index.md#appendix-a7-comparing-versions)
+- For help in comparing versions see [Comparing versions](../guide/index.md#appendix-a7-comparing-versions)
 
 Feel free to submit issues **(please do report anything wrong)** using GitHub Issues at: <https://github.com/Anon-Planet/thgtoa/issues>. We also accept Merge Requests (MR) from our Gitlab and many other places. Do not hesitate to report issues and suggestions!
 
@@ -49,15 +49,16 @@ Feel free to submit issues **(please do report anything wrong)** using GitHub Is
 
 Follow us on:
 
--   Twitter at <https://twitter.com/AnonyPla>
+- Twitter at <https://twitter.com/AnonyPla>
 
--   Mastodon at <https://mastodon.social/@anonymousplanet>
+- Mastodon at <https://mastodon.social/@anonymousplanet>
 
 To contact me, see the updated information on the website or send an e-mail to <contact@anonymousplanet.org>
 
-**Please consider [donating](../donate/index.md) if you enjoy the project and want to support the hosting fees or support the funding of initiatives like the hosting of Tor Exit Nodes.**
+**Please consider [donating](../guide/index.md#donations) if you enjoy the project and want to support the hosting fees or support the funding of initiatives like the hosting of Tor Exit Nodes.**
 
 ### Recommended Reading
+
 Some of those resources may, in order to sustain their project, contain or propose:
 
 - Sponsored commercial content
@@ -67,12 +68,11 @@ Some of those resources may, in order to sustain their project, contain or propo
 - Premium content such as ad-free content or updated content
 - Merchandising
 
-*Note that these websites could contain affiliate/sponsored content and/or merchandising. This guide does not endorse and is not sponsored by any commercial entity in any way.*
+_Note that these websites could contain affiliate/sponsored content and/or merchandising. This guide does not endorse and is not sponsored by any commercial entity in any way._
 
 If you skipped those, you should really still consider viewing this YouTube playlist from the Techlore Go Incognito project (<https://github.com/techlore-official/go-incognito> <sup>[[Archive.org]](https://web.archive.org/web/https://github.com/techlore-official/go-incognito)</sup>) as an introduction before going further: <https://www.youtube.com/playlist?list=PL3KeV6Ui_4CayDGHw64OFXEPHgXLkrtJO> <sup>[[Invidious]](https://yewtu.be/playlist?list=PL3KeV6Ui_4CayDGHw64OFXEPHgXLkrtJO)</sup>. This guide will cover many of the topics in the videos of this playlist with more details and references as well as some added topics not covered within that series. This will just take you 2 or 3 hours to watch it all.
 
-
-*Anonymous Planet* **does not** participate in any sponsoring, endorsement, advertising, or other affiliate programs for any entity. We only rely on anonymous donations in a closed, transparent loop system.
+_Anonymous Planet_ **does not** participate in any sponsoring, endorsement, advertising, or other affiliate programs for any entity. We only rely on anonymous donations in a closed, transparent loop system.
 
 ??? Note "Privacy related"
 
@@ -100,7 +100,7 @@ If you skipped those, you should really still consider viewing this YouTube play
     - Terms of Service, Didn't Read: <https://tosdr.org>
     - Whonix Documentation: <https://www.whonix.org/wiki/Documentation>
 
-!!! Note "We are not affiliated with Anonymous or Riseup"
+??? Note "We are not affiliated with Anonymous or Riseup"
 
     One or two of our community members uses or has used the resources of Riseup. We are not affiliated with Riseup in any manner.
 

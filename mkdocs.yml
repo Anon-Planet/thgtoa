@@ -1,4 +1,6 @@
 site_name: Hitchhiker's Guide
+site_author: Anonymous Planet
+site_description: "The comprehensive guide for online anonymity and OpSec."
 site_dir: '/site/'
 docs_dir: 'docs/'
 site_url: "https://www.anonymousplanet.org/"
@@ -6,7 +8,7 @@ repo_url: "https://github.com/Anon-Planet/thgtoa"
 repo_name: ""
 #edit_uri: ""
 theme:
-  name: topdf
+  name: material
   favicon: media/profile.png
   icon:
     logo: material/bird
@@ -41,11 +43,13 @@ theme:
 
 plugins:
   - social: {}
-  - search: {}
+#  - with-pdf:
+  - search:
+      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
 #  - macros: {}
 #  - meta: {}
-  - git-latest-tag: {}
-  - git-authors: {}
+#  - git-latest-tag: {}
+# - git-authors: {}
 #  - git-latest-release: {}
 
 extra:
@@ -118,4 +122,4 @@ markdown_extensions:
       toc_depth: 3
 
 copyright: |
-  &copy; 2023 <a href="https://anonymousplanet.org/"  target="_blank" rel="noopener">Anonymous Planet</a>
+  &copy; 2023-2025 <a href="https://anonymousplanet.org/"  target="_blank" rel="noopener">Anonymous Planet</a>
