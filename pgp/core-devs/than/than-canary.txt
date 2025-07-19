@@ -1,54 +1,51 @@
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA512
 
-Tue Jul 25 14:51:36 EDT 2023
+Sat Jul 19 02:03:40 AM EDT 2025
 
-I am the admin of itsnothing.net (@Unknown@ioc.exchange) and co-admin of THGTOA.
-I will update this canary within 1 month.
+CEH v12 | (ISC)² | Linux+ | Cisco CCNA | Security+ | PenTest+
+
+Owner: My blog - https://itsnothing.net.
+Admin: The Hitchhiker's Guide to Online Anonymity - https://anonymousplanet.org
 
 Latest bitcoin block hash:
-00000000000000000000d9330bf8a03ce70cbe5542bddd16558693a43ea32fd3
+00000000000000000000b685887fe078cc9839294a91f8d38a3311864fc15418
 
-I am in complete control of all my key material.
+I positively confirm I am in complete control of all my key material and domains. 
 
-All previous keys have been revoked as part of standard OPSEC key rotation procedures.
-Do not encrypt communications to my old keys, I will not read them.
+All previous keys have been revoked as part of standard OPSEC key rotation
+procedures. Do NOT encrypt communications to my old keys, I will not read them.
 
-The key currently published on my website https://itsnothing.net/pgp.txt with a fingerprint
-of C87D87466FD205945CF10A3821AB6B6A6CB2C337, is my only PGP key for public communication.
+The key currently published on 
+https://keyoxide.org/8B3A74890536BAD50D9376EBF1CB32F67E3302A1 with a fingerprint
+of 8B3A74890536BAD50D9376EBF1CB32F67E3302A1, is my only PGP key for public
+communication. It IS published on public keyservers now. Please refrain from uploading it there
+(again). Someone already broke this rule.
 
 Permanent record of old and new PGP keys:
 
-the old key was:
-
-pub   rsa4096/0xB208C4084A2C582D 2022-11-04 [SC] [expires: 2027-11-03]
-      Key fingerprint = D793 9998 F78B ADB5 18C1  B600 B208 C408 4A2C 582D
-uid                   [ultimate] Nope <no@anonymousplanet.org>
-
-And the new key is:
-
-pub   ed25519/0x21AB6B6A6CB2C337 2023-07-14 [SC]
-      Key fingerprint = C87D 8746 6FD2 0594 5CF1  0A38 21AB 6B6A 6CB2 C337
+pub   ed25519/0xF1CB32F67E3302A1 2024-03-29 [SC]
+      Key fingerprint = 8B3A 7489 0536 BAD5 0D93  76EB F1CB 32F6 7E33 02A1
 uid                   [ultimate] nopenothinghere@proton.me <nopenothinghere@proton.me>
 
 To fetch the full key, you can simply do:
 
-  gpg --keyserver keys.openpgp.org --recv-key 0x21AB6B6A6CB2C337
+  gpg --keyserver keys.openpgp.org --recv-key 0xF1CB32F67E3302A1
 
 **
-  Note: this keyserver is experimental.[0] I still have yet to add this key to
-  the I2P keyserver pool, and I don't know if I will. If you have previously
+  Note: this keyserver is experimental.[0] I still have yet to add these keys
+  to the I2P keyserver pool, and I don't know if I will. If you have previously
   signed my key but did a local-only signature (lsign), you will not want to
   issue the following, instead you will want to use --lsign-key, and not send
   the signatures to the keyserver.
 **
 
-  gpg --sign-key 0x21AB6B6A6CB2C337
+  gpg --sign-key 0xF1CB32F67E3302A1
 
 I'd like to receive your signatures on my key. You can either send me an e-mail
 with the new signatures (if you have a functional MTA on your system):
 
-  gpg --export 0x21AB6B6A6CB2C337 | gpg --encrypt -r 0x21AB6B6A6CB2C337 --armor \
+  gpg --export 0xF1CB32F67E3302A1 | gpg --encrypt -r 0xF1CB32F67E3302A1 --armor \
       | mail -s 'OpenPGP Signatures' <nopenothinghere@proton.me>
 
 Additionally, I highly recommend that you implement a mechanism to keep your key
@@ -62,10 +59,9 @@ key updates with your keyring.
 I also highly recommend checking out the excellent Riseup GPG best practices
 doc, from which I stole most of the text for this transition message ;-)
 
-https://we.riseup.net/riseuplabs+paow/openpgp-best-practices
+https://riseup.net/en/security/message-security/openpgp/gpg-keys
 
-Please let me know if you have any questions, or problems, and sorry for the
-inconvenience.
+Please let me know if you have any questions on how to verify.
 
   Nope (Anonymous Planet) <no@anonymousplanet.org>
 
@@ -73,8 +69,8 @@ inconvenience.
 1. https://directory.fsf.org/wiki/Parcimonie
 -----BEGIN PGP SIGNATURE-----
 
-iHUEARYKAB0WIQTIfYdGb9IFlFzxCjghq2tqbLLDNwUCZMAZwAAKCRAhq2tqbLLD
-N3l3AQC28SZK5HHU1o7K36ifOd/OKj97urrMZF+NUkaRmAwQxgEAlIa2y9g0JoQW
-epEpViXFDwyWIUfNhVaJwUWjn/DLoAI=
-=A72C
+iHUEARYKAB0WIQSLOnSJBTa61Q2TduvxyzL2fjMCoQUCaHs1WgAKCRDxyzL2fjMC
+odrwAPsFcupXWVRha5k2BOZUvjg+nY27IG+5XM8w+IupueHVcAD7BL7MFWuJ11lb
+Bqk3pSyp6hTxlSJ1lnItXwQYnGBL6AE=
+=NQBO
 -----END PGP SIGNATURE-----

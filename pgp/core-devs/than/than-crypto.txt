@@ -1,0 +1,68 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+This is a signed summary of relevant cryptographic information for nopenothinghere.
+The latest version of this file is always located at:
+  https://itsnothing.net/crypto.txt
+
+This information is current as of Sat Jul 19 02:11:11 AM EDT 2025.
+
+Contact
+=======
+
+email:  contact@anonymousplanet.org
+web:    https://itsnothing.net/
+irc:    <{ long live relay chat! }>
+matrix: <{ violently nuked from orbit }>
+xmpp:   <{ n/a }>
+
+
+OpenPGP key
+===========
+
+pub   ed25519/0xF1CB32F67E3302A1 2024-03-29 [SC]
+      Key fingerprint = 8B3A 7489 0536 BAD5 0D93  76EB F1CB 32F6 7E33 02A1
+uid                   [ultimate] nopenothinghere@proton.me <nopenothinghere@proton.me>
+uid                   [ultimate] Nope Nothing (Anonymous Planet Contact) <no@anonymousplanet.org>
+uid                   [ultimate] Nope Nothing (Systems Administrator) <admin@itsnothing.net>
+ssb   cv25519/0x7F02B7DB19EAA7A0 2024-03-29 [E]
+
+The latest up to date key including signatures can be found at:
+   https://itsnothing.net/pgp.txt
+
+A positive identification of my alive status:
+   https://itsnothing.net/canary.txt
+
+
+OTR fingerprints
+================
+
+(N/A) I no longer use Off the Record messaging. No FPs available.
+
+
+Olm/Megolm matrix fingerprints (outdated)
+=========================================
+
+@thehidden:tchncs.de    CAKLUZIQFD    7fcn tb81 KPCH 3h4U KJvy L4H4 Zl+l khXs Fn6e O+FV DN4
+@t:netrunner-vault.de   KBJYGSJBXJ    2x5P 4CAu hWyp 5L7e tDPE tbpw w0Ii Q3/l HDrI fdP+ w3E
+@thehidden:tchncs.de    BYODXXYSCL    drPJ 4Vyl aze1 hTRt 3FhZ WnoL eoDm CZbv bBh3 uEQd Dog
+@thehidden:tchncs.de    PGNRTYGHKG    C2Px juxp 9Jx1 k03X uHPs uEx4 WUcB AJxV ZUMf IhVp dc0
+@thehidden:tchncs.de    RQTTASEWUR    xzJD 899S znyU xIId uwjR GI3e lvkh fQ98 tIMO HXwu t3o
+@thehidden:tchncs.de    ZWJXVXSCCL    gn4L Hrlf lelw WutP Jtw7 pWRa /rcg D7eN I4Q4 j/nR 1OQ
+
+OMEMO fingerprints (outdated)
+=============================
+
+sharptail@disroot.org/1302208566  42F72634 2D419951 E04BCF02 9E17B0C9 DFE073C0 97E16167 0972EEC3 05FDF262
+
+Session fingerprint
+===================
+
+053686ab7bbb2287dee2d9c1a87518ccc5c0dae76f5aa5d0b095293700c2eb730c
+-----BEGIN PGP SIGNATURE-----
+
+iHUEARYKAB0WIQSLOnSJBTa61Q2TduvxyzL2fjMCoQUCaHs3LAAKCRDxyzL2fjMC
+oY0DAQCxh0GknmrWuNL4dXOb8dPlmpi3AWTg3Gn439bp3rivEwEAnVEc+guTiOcm
+gE03jaq3uSVMFWTPxx7S+XiNiwZKMQs=
+=TQwt
+-----END PGP SIGNATURE-----
