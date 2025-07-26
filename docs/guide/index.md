@@ -11009,13 +11009,13 @@ As mentioned before in this guide multiple times, we strongly recommend the use 
 
 ## Using Bitcoin anonymously option
 
-Despite this, it is possible to safely anonymize Bitcoin through the use of non-custodial collaborative transactions and privacy-preserving spending tools. This is possible with a protocol called [ZeroLink](https://code.samourai.io/whirlpool/Whirlpool/-/blob/whirlpool/THEORY.md) and an implementation called Whirlpool which as two clients that utilize it and provide the necessary spending tools, detailed below. So, you might be wondering how? Well, it is actually pretty simple:
+Despite this, it is possible to safely anonymize Bitcoin through the use of non-custodial collaborative transactions and privacy-preserving spending tools. This is possible with a protocol called [ZeroLink](https://coinbureau.com/review/bitcoin-tumbling-zerolink-will-hide-coins/) and an implementation called [Whirlpool](https://bitcoiner.guide/whirlpool/) which has clients (applications for the user) that utilize it and provide the necessary spending tools, detailed below. So, you might be wondering how? Well, it is actually pretty simple:
 
 1. Purchase Bitcoin at a non-KYC exchange (such as one found on <https://kycnot.me/>)
 
-2. Create a wallet with [Samourai Wallet](https://www.samouraiwallet.com/) (Android) or [Sparrow Wallet](https://www.sparrowwallet.com/) (Desktop). Both of these use the Whirlpool protocol to gain the user forward-facing on-chain privacy on Bitcoin.
+2. Create a wallet with [Sparrow Wallet](https://www.sparrowwallet.com/) (Desktop Linux, Windows and Mac are available). Sparrow uses the Whirlpool protocol to give the user forward-looking anonymity with BTC. You do not have anonymity by default when using BTC.
 
-3. Deposit coins into the wallet and follow the relevant instructions ([Samourai](https://docs.samourai.io/wallet/usage), [Sparrow](https://www.sparrowwallet.com/docs/mixing-whirlpool.html)) to remove their historic links.
+3. Deposit coins into the wallet and follow the relevant instructions here for [Sparrow](https://www.sparrowwallet.com/docs/quick-start.html).
 
 4. Funds should only be spent from the Postmix account, as that is the account with the coins that have gained anonymity through Whirlpool.
 
