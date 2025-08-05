@@ -34,7 +34,7 @@ Precautions while reading this guide and accessing the various links:
 
 - **Twitter** links have a **[Nitter]** link next to them for accessing content through a Nitter Instance (in this case nitter.net) for increased privacy. It is recommended to use these links when possible. See <https://github.com/zedeus/nitter> <sup>[[Archive.org]](https://web.archive.org/web/https://github.com/zedeus/nitter)</sup> for more information.
 
-- **Wikipedia** links have a **[Wikiless]** link next to them for accessing content through a Wikiless Instance (in this case Wikiless.org) for increased privacy. It is recommended to use these links when possible. See <https://codeberg.org/orenom/wikiless> <sup>[[Archive.org]](https://web.archive.org/web/https://codeberg.org/orenom/wikiless)</sup> for more information.
+- **Wikipedia** links have a **[Wikiless]** link next to them for accessing content through a Wikiless Instance (in this case wikiless.com) for increased privacy. It is recommended to use these links when possible. See <https://codeberg.org/orenom/wikiless> <sup>[[Archive.org]](https://web.archive.org/web/https://codeberg.org/orenom/wikiless)</sup> for more information.
 
 - **Medium** links have **[Scribe.rip]** link next to them for accessing content through a Scribe.rip Instance for increased privacy. Again, it is recommended to use these links when possible. See <https://scribe.rip/> <sup>[[Archive.org]](https://web.archive.org/web/https://scribe.rip/)</sup> for more information.
 
@@ -44,7 +44,7 @@ You could also install the [LibRedirect](https://libredirect.github.io/) extensi
 
 - Chromium-based browsers (Chrome, Brave, Edge): <https://github.com/libredirect/libredirect/blob/master/chromium.md>
 
-**If you are having trouble accessing any of the many academic articles referenced in this guide due to paywalls, feel free to use Sci-Hub (<https://en.wikipedia.org/wiki/Sci-Hub>** <sup>[[Wikiless]](https://wikiless.org/wiki/Sci-Hub)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Sci-Hub)</sup>**) or LibGen (<https://en.wikipedia.org/wiki/Library_Genesis>** <sup>[[Wikiless]](https://wikiless.org/wiki/Library_Genesis)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Library_Genesis)</sup>**) for finding and reading them. Because Science should be free. All of it. If you are faced with a paywall accessing some resources, consider using <https://12ft.io/>.**
+**If you are having trouble accessing any of the many academic articles referenced in this guide due to paywalls, feel free to use Sci-Hub (<https://en.wikipedia.org/wiki/Sci-Hub>** <sup>[[Wikiless]](https://wikiless.com/wiki/Sci-Hub)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Sci-Hub)</sup>**) or LibGen (<https://en.wikipedia.org/wiki/Library_Genesis>** <sup>[[Wikiless]](https://wikiless.com/wiki/Library_Genesis)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Library_Genesis)</sup>**) for finding and reading them. Because Science should be free. All of it. If you are faced with a paywall accessing some resources, consider using <https://12ft.io/>.**
 
 Finally note that this guide does mention and even recommends various commercial services (such as VPNs, CDNs, e-mail providers, hosting providers...) **but is not endorsed or sponsored by any of them in any way. There are no referral links and no commercial ties with any of these providers. This project is 100% non-profit and only relying on donations.**
 
@@ -292,7 +292,7 @@ But unfortunately, this is not limited to your smartphone, and you also probably
 
 While all these cannot be used to de-anonymize you from a remote online adversary, they can be used to narrow down a search if your approximate location at a certain time is known. For instance, you cannot rule out that some stores will effectively scan (and log) all RFID chips passing through the door. They might be looking for their loyalty cards but are also logging others along the way. Such RFID tags could be traced to your identity and allow for de-anonymization.
 
-More information over at Wikipedia: <https://en.wikipedia.org/wiki/Radio-frequency_identification#Security_concerns> <sup>[[Wikiless]](https://wikiless.org/wiki/Radio-frequency_identification)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://web.archive.org/web/20220530073225/https://en.wikipedia.org/wiki/Radio-frequency_identification)</sup> and <https://en.wikipedia.org/wiki/Radio-frequency_identification#Privacy> <sup>[[Wikiless]](https://wikiless.org/wiki/Radio-frequency_identification)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://web.archive.org/web/20220530073225/https://en.wikipedia.org/wiki/Radio-frequency_identification)</sup>
+More information over at Wikipedia: <https://en.wikipedia.org/wiki/Radio-frequency_identification#Security_concerns> <sup>[[Wikiless]](https://wikiless.com/wiki/Radio-frequency_identification)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://web.archive.org/web/20220530073225/https://en.wikipedia.org/wiki/Radio-frequency_identification)</sup> and <https://en.wikipedia.org/wiki/Radio-frequency_identification#Privacy> <sup>[[Wikiless]](https://wikiless.com/wiki/Radio-frequency_identification)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://web.archive.org/web/20220530073225/https://en.wikipedia.org/wiki/Radio-frequency_identification)</sup>
 
 The only way to mitigate this problem is to have no RFID tags on you or to shield them again using a type of Faraday cage. You could also use specialized wallets/pouches that specifically block RFID communications. Many of those are now made by well-known brands such as Samsonite[^57]. You should just not carry such RFID devices while conducting sensitive activities.
 
@@ -494,7 +494,7 @@ Check yourself:
 
 - If you are using Windows, you can check the vulnerability status of your CPU using inSpectre <https://www.grc.com/inspectre.htm> <sup>[[Archive.org]](https://web.archive.org/web/https://www.grc.com/inspectre.htm)</sup>
 
-Some CPUs have unfixable flaws (especially Intel CPUs) that could be exploited by various malware. Here is a good current list of such vulnerabilities affecting recent widespread CPUs: <https://en.wikipedia.org/wiki/Transient_execution_CPU_vulnerability> <sup>[[Wikiless]](https://wikiless.org/wiki/Transient_execution_CPU_vulnerability)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Transient_execution_CPU_vulnerability)</sup>
+Some CPUs have unfixable flaws (especially Intel CPUs) that could be exploited by various malware. Here is a good current list of such vulnerabilities affecting recent widespread CPUs: <https://en.wikipedia.org/wiki/Transient_execution_CPU_vulnerability> <sup>[[Wikiless]](https://wikiless.com/wiki/Transient_execution_CPU_vulnerability)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Transient_execution_CPU_vulnerability)</sup>
 
 Some of these can be avoided using Virtualization Software settings that can mitigate such exploits. See this guide for more information <https://www.whonix.org/wiki/Spectre_Meltdown> <sup>[[Archive.org]](https://web.archive.org/web/https://www.whonix.org/wiki/Spectre_Meltdown)</sup> (warning: these can severely impact the performance of your VMs).
 
@@ -828,7 +828,7 @@ A typical case is an adversary using a man-in-the-middle[^97] attack or a fake e
 
 Such attacks can also be used to de-anonymize someone by tricking them into downloading malware or revealing personal information over time. The only defense against those is not to fall for them and common sense.
 
-These have been used countless times since the early days of the internet and the usual one is called the "419 scam" (see <https://en.wikipedia.org/wiki/Advance-fee_scam> <sup>[[Wikiless]](https://wikiless.org/wiki/Advance-fee_scam)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Advance-fee_scam)</sup>).
+These have been used countless times since the early days of the internet and the usual one is called the "419 scam" (see <https://en.wikipedia.org/wiki/Advance-fee_scam> <sup>[[Wikiless]](https://wikiless.com/wiki/Advance-fee_scam)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Advance-fee_scam)</sup>).
 
 Here is a good video if you want to learn a bit more about phishing types: Black Hat, Ichthyology: Phishing as a Science <https://www.youtube.com/watch?v=Z20XNp-luNA> <sup>[[Invidious]](https://yewtu.be/watch?v=Z20XNp-luNA)</sup>.
 
@@ -1313,7 +1313,7 @@ Here is also a good video from the same authors to explain those topics: Black H
 
 - Have a look at <https://www.eff.org/issues/privacy> <sup>[[Archive.org]](https://web.archive.org/web/https://www.eff.org/issues/privacy)</sup> for some more resources.
 
-- Have a look at <https://en.wikipedia.org/wiki/List_of_government_mass_surveillance_projects> <sup>[[Wikiless]](https://wikiless.org/wiki/List_of_government_mass_surveillance_projects)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/List_of_government_mass_surveillance_projects)</sup> to have an overview of all known mass-surveillance projects, current, and past.
+- Have a look at <https://en.wikipedia.org/wiki/List_of_government_mass_surveillance_projects> <sup>[[Wikiless]](https://wikiless.com/wiki/List_of_government_mass_surveillance_projects)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/List_of_government_mass_surveillance_projects)</sup> to have an overview of all known mass-surveillance projects, current, and past.
 
 - Have a look at <https://www.gwern.net/Death-Note-Anonymity> <sup>[[Archive.org]](https://web.archive.org/web/https://www.gwern.net/Death-Note-Anonymity)</sup> (even if you don't know about Death Note).
 
@@ -1967,7 +1967,7 @@ Remember that encryption with or without plausible deniability is not a silver b
 
 **Plausible deniability is only effective against soft lawful adversaries that will not resort to physical means.**
 
-**See <https://en.wikipedia.org/wiki/Rubber-hose_cryptanalysis>** <sup>[[Wikiless]](https://wikiless.org/wiki/Rubber-hose_cryptanalysis)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Rubber-hose_cryptanalysis)</sup>
+**See <https://en.wikipedia.org/wiki/Rubber-hose_cryptanalysis>** <sup>[[Wikiless]](https://wikiless.com/wiki/Rubber-hose_cryptanalysis)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Rubber-hose_cryptanalysis)</sup>
 
 CAUTION: Please see [**Appendix K: Considerations for using external SSD drives**][Appendix K: Considerations for using external SSD drives] and [**Understanding HDD vs SSD**][Understanding HDD vs SSD:] sections if you consider storing such hidden VMs on an external SSD drive:
 
@@ -2215,7 +2215,7 @@ Remember that encryption with or without plausible deniability is not a silver b
 
 Plausible deniability is only effective against soft lawful adversaries that will not resort to physical means. **Avoid, if possible, the use of plausible deniability-capable software (such as Veracrypt) if your threat model includes hard adversaries. So, Windows users should in that case install Windows Pro as a Host OS and use Bitlocker instead.**
 
-See <https://en.wikipedia.org/wiki/Rubber-hose_cryptanalysis> <sup>[[Wikiless]](https://wikiless.org/wiki/Rubber-hose_cryptanalysis)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Rubber-hose_cryptanalysis)</sup>
+See <https://en.wikipedia.org/wiki/Rubber-hose_cryptanalysis> <sup>[[Wikiless]](https://wikiless.com/wiki/Rubber-hose_cryptanalysis)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Rubber-hose_cryptanalysis)</sup>
 
 ##### Evil-Maid Attack
 
@@ -2809,7 +2809,7 @@ Now you will have to pick your next step between two options:
 
         + No use with an SSD drive due to the requirement of disabling Trim[^339] Operations[^340]. This will severely degrade the performance/health of your SSD drive over time.
 
-**As you can see, Route C only offers two privacy advantages over the others, and it will only be of use against a soft lawful adversary. Remember <https://en.wikipedia.org/wiki/Rubber-hose_cryptanalysis>** <sup>[[Wikiless]](https://wikiless.org/wiki/Rubber-hose_cryptanalysis)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Rubber-hose_cryptanalysis)</sup>**.**
+**As you can see, Route C only offers two privacy advantages over the others, and it will only be of use against a soft lawful adversary. Remember <https://en.wikipedia.org/wiki/Rubber-hose_cryptanalysis>** <sup>[[Wikiless]](https://wikiless.com/wiki/Rubber-hose_cryptanalysis)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Rubber-hose_cryptanalysis)</sup>**.**
 
 Deciding which route you will take is up to you. Route A is a minimum.
 
@@ -4404,7 +4404,7 @@ The reason for this RAM requirement is that each app will run in a different VM 
 
 You should also check their hardware compatibility here <https://www.qubes-os.org/hcl/> <sup>[[Archive.org]](https://web.archive.org/web/https://www.qubes-os.org/hcl/)</sup> before proceeding. Your mileage might vary, and you might experience several issues about hardware compatibility that you will have to troubleshoot and solve yourself.
 
-I think that if you can afford it and are comfortable with the idea of using Linux, you should go with this route as it is probably the best one in terms of security and privacy. The only disadvantage of this route is that it does not provide a way to enable OS-wide [plausible deniability](https://en.wikipedia.org/wiki/Plausible_deniability) <https://en.wikipedia.org/wiki/Plausible_deniability> <sup>[[Wikiless]](https://wikiless.org/wiki/Plausible_deniability)</sup>, unlike the Whonix route.
+I think that if you can afford it and are comfortable with the idea of using Linux, you should go with this route as it is probably the best one in terms of security and privacy. The only disadvantage of this route is that it does not provide a way to enable OS-wide [plausible deniability](https://en.wikipedia.org/wiki/Plausible_deniability) <https://en.wikipedia.org/wiki/Plausible_deniability> <sup>[[Wikiless]](https://wikiless.com/wiki/Plausible_deniability)</sup>, unlike the Whonix route.
 
 ### Pick your connectivity method
 
@@ -5156,7 +5156,7 @@ See their tutorial here: <https://github.com/Qubes-Community/Contents/blob/maste
 
 Attribution is required to prove fault or guilt, and is the prime reason why people using the Tor network to access the dark web have been compromised: they left traces that were shown to be connected to their real identities. Your IP can be — but is usually not — a large enough indicator to attribute guilt. This is shown in the infamous NotPetya cyber attacks against the U.S., which were later also released upon Ukraine. Though the White House never _said_ it was Russia's doing, they attributed the attack to Russia's [(GRU)](https://www.reuters.com/article/us-britain-russia-gru-factbox/what-is-russias-gru-military-intelligence-agency-idUSKCN1MF1VK) which is a direct office housing the Russian deniable warfare[^311] cyber divisions, uncommonly referred to as "spy makers" in the intelligence community (IC).
 
-_What is the point_, you may ask? Well, bluntly speaking, this a perfect example because NotPetya, which is now undoubtedly the work of Russian cyber operations against foreign countries and governments, has still never been formally attributed to Russia, only to a known group within Russia (colloquially dubbed [Cozy Bear](https://wikiless.org/wiki/Cozy_Bear)) which can not be confirmed nor denied given that it is highly compartmentalized within the structure of Russia's military. And it's also in part because of the efforts used to disguise itself as a common Ransomware, and because it routinely used the servers of hacked foreign assets not linked to Russia or to its internal networks.
+_What is the point_, you may ask? Well, bluntly speaking, this a perfect example because NotPetya, which is now undoubtedly the work of Russian cyber operations against foreign countries and governments, has still never been formally attributed to Russia, only to a known group within Russia (colloquially dubbed [Cozy Bear](https://wikiless.com/wiki/Cozy_Bear)) which can not be confirmed nor denied given that it is highly compartmentalized within the structure of Russia's military. And it's also in part because of the efforts used to disguise itself as a common Ransomware, and because it routinely used the servers of hacked foreign assets not linked to Russia or to its internal networks.
 
 It's all to show you the lengths that state actors will go to. You may not be aware of it, but foreign governments use concealment techniques such as the ones discussed in the sections of this guide. They routinely use Tor, VPNs to conceal traffic; they use hacked devices and access to stolen equipment to perform cyber espionage every day and it makes attribution incredibly difficult, if not improbable, from a forensic examiner's point of view. The problem of correlation is trivial, and you can solve it by simply using IP hiding tools such as a VPN and the Tor network, but still be connected to your IRL name and IP through data leaks or other factors. You can not easily be attributed to your activities if you carefully follow and adopt the given techniques and skills discussed below.
 
@@ -5674,7 +5674,7 @@ Unfortunately, not using your real identity is against the Terms of Services ("T
 
 This does not mean that it is illegal in other places but that it might be a breach of their TOS if you do not have the law on your side. **Remember this guide only endorses this for German people residing in Germany.**
 
-On my side, we strongly condemn this type of real-name policy. See for instance this Wikipedia article giving some examples: <https://en.wikipedia.org/wiki/Facebook_real-name_policy_controversy> <sup>[[Wikiless]](https://wikiless.org/wiki/Facebook_real-name_policy_controversy)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Facebook_real-name_policy_controversy)</sup>
+On my side, we strongly condemn this type of real-name policy. See for instance this Wikipedia article giving some examples: <https://en.wikipedia.org/wiki/Facebook_real-name_policy_controversy> <sup>[[Wikiless]](https://wikiless.com/wiki/Facebook_real-name_policy_controversy)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Facebook_real-name_policy_controversy)</sup>
 
 Here are some more references about the German case for reference:
 
@@ -5694,7 +5694,7 @@ Alternatively, you could be an adult resident of any other country where you can
 
 Other countries where this was ruled illegal:
 
-- South Korea (see <https://en.wikipedia.org/wiki/Real-name_system#South_Korea> <sup>[[Wikiless]](https://wikiless.org/wiki/Real-name_system)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Real-name_system)</sup>)
+- South Korea (see <https://en.wikipedia.org/wiki/Real-name_system#South_Korea> <sup>[[Wikiless]](https://wikiless.com/wiki/Real-name_system)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Real-name_system)</sup>)
 
 - If you know any other, please let us know with references in the GitHub issues.
 
@@ -6809,13 +6809,13 @@ Finally, Open-Source apps should always be preferred because they allow third pa
 <ol>
 <li id="fn1" role="doc-endnote"><p>Briar Documentation, Bramble Transport Protocol version 4 <a href="https://code.briarproject.org/briar/briar-spec/blob/master/protocols/BTP.md">https://code.briarproject.org/briar/briar-spec/blob/master/protocols/BTP.md</a> <a href="https://web.archive.org/web/https://code.briarproject.org/briar/briar-spec/blob/master/protocols/BTP.md"><sup>[Archive.org]</sup></a><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn2" role="doc-endnote"><p>Serpentsec, Matrix <a href="https://web.archive.org/web/https://serpentsec.1337.cx/matrix">https://web.archive.org/web/https://serpentsec.1337.cx/matrix</a><a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn3" role="doc-endnote"><p>Wikipedia, GnuTLS, <a href="https://en.wikipedia.org/wiki/GnuTLS">https://en.wikipedia.org/wiki/GnuTLS</a> <a href="https://wikiless.org/wiki/GnuTLS"><sup>[Wikiless]</sup></a> <a href="https://web.archive.org/web/https://en.wikipedia.org/wiki/GnuTLS"><sup>[Archive.org]</sup></a><a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3" role="doc-endnote"><p>Wikipedia, GnuTLS, <a href="https://en.wikipedia.org/wiki/GnuTLS">https://en.wikipedia.org/wiki/GnuTLS</a> <a href="https://wikiless.com/wiki/GnuTLS"><sup>[Wikiless]</sup></a> <a href="https://web.archive.org/web/https://en.wikipedia.org/wiki/GnuTLS"><sup>[Archive.org]</sup></a><a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn4" role="doc-endnote"><p>KTH ROYAL INSTITUTE OF TECHNOLOGYSCHOOL OF ELECTRICAL ENGINEERING, A Security and Privacy Audit of KakaoTalk’s End-to-End Encryption <a href="http://www.diva-portal.org/smash/get/diva2:1046438/FULLTEXT01.pdf">www.diva-portal.org/smash/get/diva2:1046438/FULLTEXT01.pdf</a> <a href="https://web.archive.org/web/http://www.diva-portal.org/smash/get/diva2:1046438/FULLTEXT01.pdf"><sup>[Archive.org]</sup></a><a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn5" role="doc-endnote"><p>Wikipedia, OTR <a href="https://en.wikipedia.org/wiki/Off-the-Record_Messaging">https://en.wikipedia.org/wiki/Off-the-Record_Messaging</a> <a href="https://wikiless.org/wiki/Off-the-Record_Messaging"><sup>[Wikiless]</sup></a> <a href="https://web.archive.org/web/https://en.wikipedia.org/wiki/Off-the-Record_Messaging"><sup>[Archive.org]</sup></a><a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5" role="doc-endnote"><p>Wikipedia, OTR <a href="https://en.wikipedia.org/wiki/Off-the-Record_Messaging">https://en.wikipedia.org/wiki/Off-the-Record_Messaging</a> <a href="https://wikiless.com/wiki/Off-the-Record_Messaging"><sup>[Wikiless]</sup></a> <a href="https://web.archive.org/web/https://en.wikipedia.org/wiki/Off-the-Record_Messaging"><sup>[Archive.org]</sup></a><a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn6" role="doc-endnote"><p>Pidgin Security Advisories, <a href="https://www.pidgin.im/about/security/advisories/">https://www.pidgin.im/about/security/advisories/</a> <a href="https://web.archive.org/web/https://www.pidgin.im/about/security/advisories/"><sup>[Archive.org]</sup></a><a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn7" role="doc-endnote"><p>Whonix Forum, Tox Integration <a href="https://forums.whonix.org/t/tox-qtox-whonix-integration/1219">https://forums.whonix.org/t/tox-qtox-whonix-integration/1219</a> <a href="https://web.archive.org/web/https://forums.whonix.org/t/tox-qtox-whonix-integration/1219"><sup>[Archive.org]</sup></a><a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn8" role="doc-endnote"><p>Telegram Documentation, MTProto Mobile Protocol <a href="https://core.telegram.org/mtproto">https://core.telegram.org/mtproto</a> <a href="https://web.archive.org/web/https://core.telegram.org/mtproto"><sup>[Archive.org]</sup></a><a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn9" role="doc-endnote"><p>Wikipedia, Telegram Security Breaches, <a href="https://en.wikipedia.org/wiki/Telegram_(software)#Security_breaches">https://en.wikipedia.org/wiki/Telegram_(software)#Security_breaches</a> <a href="https://wikiless.org/wiki/Telegram_(software)"><sup>[Wikiless]</sup></a> <a href="https://web.archive.org/web/https://en.wikipedia.org/wiki/Telegram_(software)#Security_breaches"><sup>[Archive.org]</sup></a><a href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn9" role="doc-endnote"><p>Wikipedia, Telegram Security Breaches, <a href="https://en.wikipedia.org/wiki/Telegram_(software)#Security_breaches">https://en.wikipedia.org/wiki/Telegram_(software)#Security_breaches</a> <a href="https://wikiless.com/wiki/Telegram_(software)"><sup>[Wikiless]</sup></a> <a href="https://web.archive.org/web/https://en.wikipedia.org/wiki/Telegram_(software)#Security_breaches"><sup>[Archive.org]</sup></a><a href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn10" role="doc-endnote"><p>TechCrunch, Maybe we shouldn’t use Zoom after all, <a href="https://techcrunch.com/2020/03/31/zoom-at-your-own-risk/">https://techcrunch.com/2020/03/31/zoom-at-your-own-risk/</a> <a href="https://web.archive.org/web/https://techcrunch.com/2020/03/31/zoom-at-your-own-risk/"><sup>[Archive.org]</sup></a><a href="#fnref10" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn11" role="doc-endnote"><p>The Incercept, Zoom Meetings Aren’t End-to-End Encrypted, Despite Misleading Marketing <a href="https://theintercept.com/2020/03/31/zoom-meeting-encryption/">https://theintercept.com/2020/03/31/zoom-meeting-encryption/</a> <a href="http://27m3p2uv7igmj6kvd4ql3cct5h3sdwrsajovkkndeufumzyfhlfev4qd.onion/2020/03/31/zoom-meeting-encryption/"><sup>[Tor Mirror]</sup></a> <a href="https://web.archive.org/web/https://theintercept.com/2020/03/31/zoom-meeting-encryption/"><sup>[Archive.org]</sup></a><a href="#fnref11" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 <li id="fn12" role="doc-endnote"><p>Serpentsec, Secure Messaging: Choosing a chat app <a href="https://web.archive.org/web/https://serpentsec.1337.cx/secure-messaging-choosing-a-chat-app">https://web.archive.org/web/https://serpentsec.1337.cx/secure-messaging-choosing-a-chat-app</a><a href="#fnref12" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
@@ -6932,8 +6932,8 @@ The ones that are preferred are recommended due to their stance on privacy, thei
 You can also consult the following external resources for more comparisons (**we do not necessarily endorse their opinions**):
 
 - SecuChart, <https://bkil.gitlab.io/secuchart/> <sup>[[Archive.org]](https://web.archive.org/web/https://bkil.gitlab.io/secuchart/)</sup> <sup>[[Repository]](https://github.com/bkil/secuchart)</sup> (Maintained open-source project)
-- Wikipedia, <https://en.wikipedia.org/wiki/Comparison_of_cross-platform_instant_messaging_clients> <sup>[[Wikiless]](https://wikiless.org/wiki/Comparison_of_cross-platform_instant_messaging_clients)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Comparison_of_cross-platform_instant_messaging_clients)</sup>
-    - Wikipedia, <https://en.wikipedia.org/wiki/Comparison_of_instant_messaging_protocols> <sup>[[Wikiless]](https://wikiless.org/wiki/Comparison_of_instant_messaging_protocols)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Comparison_of_instant_messaging_protocols)</sup>
+- Wikipedia, <https://en.wikipedia.org/wiki/Comparison_of_cross-platform_instant_messaging_clients> <sup>[[Wikiless]](https://wikiless.com/wiki/Comparison_of_cross-platform_instant_messaging_clients)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Comparison_of_cross-platform_instant_messaging_clients)</sup>
+    - Wikipedia, <https://en.wikipedia.org/wiki/Comparison_of_instant_messaging_protocols> <sup>[[Wikiless]](https://wikiless.com/wiki/Comparison_of_instant_messaging_protocols)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Comparison_of_instant_messaging_protocols)</sup>
 - Whonix Documentation, Instant Messenger Chat <https://www.whonix.org/wiki/Chat> <sup>[[Archive.org]](https://web.archive.org/web/https://www.whonix.org/wiki/Chat)</sup> (Outdated, Unmaintained but contains insightful information)
 
 - **Outdated, or unmaintained, or abandoned resources scheduled for removal from our guide in next release:**
@@ -7390,7 +7390,7 @@ Here is an illustration from Wikipedia showing how it works on an SSD drive:
 
 ![image43](../media/image43.png)
 
-As you can see in the above illustration, data (from a file) will be written to the four first pages of Block X. Later new data will be written to the remaining pages and the data from the first files will be marked as invalid (for instance by a Trim operation when deleting a file). As explained on <https://en.wikipedia.org/wiki/Trim_(computing)> <sup>[[Wikiless]](https://wikiless.org/wiki/Trim_(computing))</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Trim_(computing))</sup>; the erase operation can only be done on entire blocks (and not on single pages).
+As you can see in the above illustration, data (from a file) will be written to the four first pages of Block X. Later new data will be written to the remaining pages and the data from the first files will be marked as invalid (for instance by a Trim operation when deleting a file). As explained on <https://en.wikipedia.org/wiki/Trim_(computing)> <sup>[[Wikiless]](https://wikiless.com/wiki/Trim_(computing))</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Trim_(computing))</sup>; the erase operation can only be done on entire blocks (and not on single pages).
 
 In addition to marking files for deletion (on reputable SSD drives), Trim usually makes those unreadable using a method called "Deterministic Read After Trim" or "Deterministic Zeroes After Trim". This means that if an adversary tries to read data from a trimmed page/block and somehow manages to disable garbage collection, the controller will not return any meaningful data.
 
@@ -8311,7 +8311,7 @@ Here are the steps for BleachBit:
 
 With this Native Windows 10/11 utility, you can just trigger a Trim on your SSD which should be more than enough to securely clean all deleted files that somehow would have escaped Trim when deleting them.
 
-Just open Windows Explorer, Right Click on your System Drive and click Properties. Select Tools. Click Optimize and Defragment. You are done as this will not defragment but only optimize. Meaning it will initiate a Trim operation (<https://en.wikipedia.org/wiki/Trim_(computing)> <sup>[[Wikiless]](https://wikiless.org/wiki/Trim_(computing))</sup> <sup>[[Archive.org]](https://web.archive.org/web/20220804150134/https://en.wikipedia.org/wiki/Trim_(computing))).
+Just open Windows Explorer, Right Click on your System Drive and click Properties. Select Tools. Click Optimize and Defragment. You are done as this will not defragment but only optimize. Meaning it will initiate a Trim operation (<https://en.wikipedia.org/wiki/Trim_(computing)> <sup>[[Wikiless]](https://wikiless.com/wiki/Trim_(computing))</sup> <sup>[[Archive.org]](https://web.archive.org/web/20220804150134/https://en.wikipedia.org/wiki/Trim_(computing))).
 
 ![image45](../media/image45.png)
 
@@ -8387,7 +8387,7 @@ As far asWeknow, there is no readily available tool to force this unless you con
 
 **Wikipedia**
 
-As far asWeknow, there is no way to remove information from Wikipedia articles themselves but if you just want to remove traces of your username from it (as a user that contributed), you can do so by following these steps: <https://en.wikipedia.org/wiki/Wikipedia:Courtesy_vanishing> <sup>[[Wikiless]](https://wikiless.org/wiki/Wikipedia:Courtesy_vanishing)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Wikipedia:Courtesy_vanishing)</sup>
+As far asWeknow, there is no way to remove information from Wikipedia articles themselves but if you just want to remove traces of your username from it (as a user that contributed), you can do so by following these steps: <https://en.wikipedia.org/wiki/Wikipedia:Courtesy_vanishing> <sup>[[Wikiless]](https://wikiless.com/wiki/Wikipedia:Courtesy_vanishing)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Wikipedia:Courtesy_vanishing)</sup>
 
 This will not remove any information about your online identities that could appear in other articles but only your own identity on Wikipedia as a user.
 
@@ -8501,7 +8501,7 @@ You must live by the simple rule that "loose lips sink ships" - but also that th
 
 - Keep plausible deniability as an option but remember it will not help against the 5$ wrench either.
 
-- Never ever leave your laptop unattended/on/unlocked anywhere when conducting sensitive activities. Remember the story of Ross Ulbricht and his arrest <https://en.wikipedia.org/wiki/Ross_Ulbricht#Silk_Road,_arrest_and_trial> <sup>[[Wikiless]](https://wikiless.org/wiki/Ross_Ulbricht)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Ross_Ulbricht)</sup>.
+- Never ever leave your laptop unattended/on/unlocked anywhere when conducting sensitive activities. Remember the story of Ross Ulbricht and his arrest <https://en.wikipedia.org/wiki/Ross_Ulbricht#Silk_Road,_arrest_and_trial> <sup>[[Wikiless]](https://wikiless.com/wiki/Ross_Ulbricht)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Ross_Ulbricht)</sup>.
 
 - Check for tampering regularly (not only your devices but also your home/room).
 
@@ -8578,7 +8578,7 @@ It is recommended that you learn about the common ways people mess up OPSEC <htt
 
 - Contact a lawyer if possible and hope for the best and if you cannot contact one (yet), **try to remain silent (if your country allows it) until you have a lawyer to help you and if your law allows you to remain silent.**
 
-Keep in mind that many countries have specific laws to compel you to reveal your passwords that could override your "right to remain silent". See this Wikipedia article: <https://en.wikipedia.org/wiki/Key_disclosure_law> <sup>[[Wikiless]](https://wikiless.org/wiki/Key_disclosure_law)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Key_disclosure_law)</sup> and this other visual resource with law references <https://www.gp-digital.org/world-map-of-encryption/> <sup>[[Archive.org]](https://web.archive.org/web/https://www.gp-digital.org/world-map-of-encryption/)</sup>.
+Keep in mind that many countries have specific laws to compel you to reveal your passwords that could override your "right to remain silent". See this Wikipedia article: <https://en.wikipedia.org/wiki/Key_disclosure_law> <sup>[[Wikiless]](https://wikiless.com/wiki/Key_disclosure_law)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Key_disclosure_law)</sup> and this other visual resource with law references <https://www.gp-digital.org/world-map-of-encryption/> <sup>[[Archive.org]](https://web.archive.org/web/https://www.gp-digital.org/world-map-of-encryption/)</sup>.
 
 ## A small final editorial note
 
@@ -8636,7 +8636,7 @@ This project for instance is running several Tor Exit nodes using donations to f
 
 # Acknowledgments
 
-- **Very Special Thanks to Edward Snowden and who inspired us to write this guide (buy and read his book please <https://en.wikipedia.org/wiki/Permanent_Record_(autobiography)>** <sup>[[Wikiless]](https://wikiless.org/wiki/Permanent_Record_(autobiography))</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Permanent_Record_(autobiography))</sup>**)**
+- **Very Special Thanks to Edward Snowden and who inspired us to write this guide (buy and read his book please <https://en.wikipedia.org/wiki/Permanent_Record_(autobiography)>** <sup>[[Wikiless]](https://wikiless.com/wiki/Permanent_Record_(autobiography))</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Permanent_Record_(autobiography))</sup>**)**
 
 - **Huge thanks to the people who donated to this project anonymously**
 
@@ -9544,9 +9544,9 @@ Additionally, if using a smartphone as a burner, know that they send a lot of di
 
 - **AN0M: <https://www.theguardian.com/australia-news/2021/sep/11/inside-story-most-daring-surveillance-sting-in-history>** <sup>[[Archive.org]](https://web.archive.org/web/https://www.theguardian.com/australia-news/2021/sep/11/inside-story-most-daring-surveillance-sting-in-history)</sup>
 
-- **Encrochat: <https://en.wikipedia.org/wiki/EncroChat>** <sup>[[Wikiless]](https://wikiless.org/wiki/EncroChat)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/EncroChat)</sup>
+- **Encrochat: <https://en.wikipedia.org/wiki/EncroChat>** <sup>[[Wikiless]](https://wikiless.com/wiki/EncroChat)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/EncroChat)</sup>
 
-- **Sky ECC: <https://en.wikipedia.org/wiki/Sky_ECC>** <sup>[[Wikiless]](https://wikiless.org/wiki/Sky_ECC)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Sky_ECC)</sup>
+- **Sky ECC: <https://en.wikipedia.org/wiki/Sky_ECC>** <sup>[[Wikiless]](https://wikiless.com/wiki/Sky_ECC)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Sky_ECC)</sup>
 
 **You should never rely on an external commercial service to ensure your first line of anonymity. But you will see that paid services can still be used later from an already anonymous identity if bought anonymously while observing good operational security.**
 
@@ -11041,7 +11041,7 @@ The origin of those BTC cannot be traced back to your real identity due to the u
 
 **Regarding Zcash: this section previously included use of Zcash but it has been removed in light of newer, more accurate information.**
 
-## Warning about special tumbling, mixing, coinjoining privacy wallets and services: <sup>[Wikiless](https://wikiless.org/wiki/Cryptocurrency_tumbler) [Archive.org](https://web.archive.org/web/https://wikiless.org/wiki/Cryptocurrency_tumbler)</sup>
+## Warning about special tumbling, mixing, coinjoining privacy wallets and services: <sup>[Wikiless](https://wikiless.com/wiki/Cryptocurrency_tumbler) [Archive.org](https://web.archive.org/web/https://wikiless.com/wiki/Cryptocurrency_tumbler)</sup>
 
 Centralized "private" tumblers, mixers and coinjoiners are not recommended since they do not provide anonymity in a way that truly unlinks an output from its history.  Here are some references about this issue:
 
@@ -11273,23 +11273,23 @@ You might also consider the use of something like AnonyMouth <https://web.archiv
 
 - <https://www.whonix.org/wiki/Surfing_Posting_Blogging#Stylometry> <sup>[[Archive.org]](https://web.archive.org/web/https://www.whonix.org/wiki/Surfing_Posting_Blogging#Stylometry)</sup>: Whonix documentation about stylometry.
 
-- <https://wikipedia.org/wiki/Forensic_linguistics> <sup>[[Wikiless]](https://wikiless.org/wiki/Forensic_linguistics)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://wikipedia.org/wiki/Forensic_linguistics)</sup>: Gives a brief rundown of the basics of forensic linguistics, not too informative.
+- <https://wikipedia.org/wiki/Forensic_linguistics> <sup>[[Wikiless]](https://wikiless.com/wiki/Forensic_linguistics)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://wikipedia.org/wiki/Forensic_linguistics)</sup>: Gives a brief rundown of the basics of forensic linguistics, not too informative.
 
-- <https://wikipedia.org/wiki/Writeprint> <sup>[[Wikiless]](https://wikiless.org/wiki/Writeprint)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://wikipedia.org/wiki/Writeprint)</sup>: Gives a brief and informative rundown of forensic linguistics applied to internet investigations.
+- <https://wikipedia.org/wiki/Writeprint> <sup>[[Wikiless]](https://wikiless.com/wiki/Writeprint)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://wikipedia.org/wiki/Writeprint)</sup>: Gives a brief and informative rundown of forensic linguistics applied to internet investigations.
 
-- <https://wikipedia.org/wiki/Stylometry> <sup>[[Wikiless]](https://wikiless.org/wiki/Stylometry)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://wikipedia.org/wiki/Stylometry)</sup>: Gives a brief overview of Stylometry.
+- <https://wikipedia.org/wiki/Stylometry> <sup>[[Wikiless]](https://wikiless.com/wiki/Stylometry)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://wikipedia.org/wiki/Stylometry)</sup>: Gives a brief overview of Stylometry.
 
-- <https://wikipedia.org/wiki/Content_similarity_detection> <sup>[[Wikiless]](https://wikiless.org/wiki/Content_similarity_detection)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://wikipedia.org/wiki/Content_similarity_detection)</sup>: We would recommend reading this, quite informative.
+- <https://wikipedia.org/wiki/Content_similarity_detection> <sup>[[Wikiless]](https://wikiless.com/wiki/Content_similarity_detection)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://wikipedia.org/wiki/Content_similarity_detection)</sup>: We would recommend reading this, quite informative.
 
-- <https://wikipedia.org/wiki/Author_profiling> <sup>[[Wikiless]](https://wikiless.org/wiki/Author_profiling)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://wikipedia.org/wiki/Author_profiling)</sup>: Read through this as well if you are interested in this topic.
+- <https://wikipedia.org/wiki/Author_profiling> <sup>[[Wikiless]](https://wikiless.com/wiki/Author_profiling)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://wikipedia.org/wiki/Author_profiling)</sup>: Read through this as well if you are interested in this topic.
 
-- <https://wikipedia.org/wiki/Native-language_identification> <sup>[[Wikiless]](https://wikiless.org/wiki/Native-language_identification)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://wikipedia.org/wiki/Native-language_identification)</sup>: This is less important if you use a translator, but if you do not use a translator to communicate on forums that are not in your native language, consider giving this a quick read through.
+- <https://wikipedia.org/wiki/Native-language_identification> <sup>[[Wikiless]](https://wikiless.com/wiki/Native-language_identification)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://wikipedia.org/wiki/Native-language_identification)</sup>: This is less important if you use a translator, but if you do not use a translator to communicate on forums that are not in your native language, consider giving this a quick read through.
 
-- <https://wikipedia.org/wiki/Computational_linguistics> <sup>[[Wikiless]](https://wikiless.org/wiki/Computational_linguistics)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://wikipedia.org/wiki/Computational_linguistics)</sup>: Only read through this if this topic is interesting to you.
+- <https://wikipedia.org/wiki/Computational_linguistics> <sup>[[Wikiless]](https://wikiless.com/wiki/Computational_linguistics)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://wikipedia.org/wiki/Computational_linguistics)</sup>: Only read through this if this topic is interesting to you.
 
 - <https://regmedia.co.uk/2017/09/27/gal_vallerius.pdf> <sup>[[Archive.org]](https://web.archive.org/web/https://regmedia.co.uk/2017/09/27/gal_vallerius.pdf)</sup>: Explains how authorities used forensic linguistics to help arrest OxyMonster (pages 13 -- 14).
 
-- <https://wikipedia.org/wiki/Ted_Kaczynski#After_publication> <sup>[[Wikiless]](https://wikiless.org/wiki/Ted_Kaczynski#After_publication)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://wikipedia.org/wiki/Ted_Kaczynski#After_publication)</sup>: May have an IQ of 167, but he was caught primarily based on forensic linguistics.
+- <https://wikipedia.org/wiki/Ted_Kaczynski#After_publication> <sup>[[Wikiless]](https://wikiless.com/wiki/Ted_Kaczynski#After_publication)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://wikipedia.org/wiki/Ted_Kaczynski#After_publication)</sup>: May have an IQ of 167, but he was caught primarily based on forensic linguistics.
 
 - <https://i.blackhat.com/USA-19/Wednesday/us-19-Wixey-Im-Unique-Just-Like-You-Human-Side-Channels-And-Their-Implications-For-Security-And-Privacy.pdf> <sup>[[Archive.org]](https://web.archive.org/web/https://i.blackhat.com/USA-19/Wednesday/us-19-Wixey-Im-Unique-Just-Like-You-Human-Side-Channels-And-Their-Implications-For-Security-And-Privacy.pdf)</sup>: Explains how your writing style can be used to track you, we highly recommend reading through these slides, or watching the accompanying presentation on YouTube.
 
@@ -11493,7 +11493,7 @@ LINDDUN threat modeling tutorials and resources:
 Here are alternative resources and methodologies if LINDDUN doesn't suit you:
 
 - Online Operations Security: [https://github.com/devbret/online-OPSEC](https://web.archive.org/web/20210711215728/https://github.com/devbret/online-OPSEC)
-- Microsoft's STRIDE: <https://en.wikipedia.org/wiki/STRIDE_%28security%29> <sup>[[Wikiless]](https://wikiless.org/wiki/STRIDE_%28security%29)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/STRIDE_%28security%29)</sup>
+- Microsoft's STRIDE: <https://en.wikipedia.org/wiki/STRIDE_%28security%29> <sup>[[Wikiless]](https://wikiless.com/wiki/STRIDE_%28security%29)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/STRIDE_%28security%29)</sup>
 - PASTA: <https://versprite.com/tag/pasta-threat-modeling/> <sup>[[Archive.org]](https://web.archive.org/web/https://versprite.com/tag/pasta-threat-modeling/)</sup>
 - Threat Modeling: 12 Available Methods: <https://insights.sei.cmu.edu/blog/threat-modeling-12-available-methods> <sup>[[Archive.org]](https://web.archive.org/web/https://insights.sei.cmu.edu/blog/threat-modeling-12-available-methods/)</sup>
 - Threat Modelling: <https://www.geeksforgeeks.org/threat-modelling/> <sup>[[Archive.org]](https://web.archive.org/web/https://www.geeksforgeeks.org/threat-modelling/)</sup>
@@ -11551,17 +11551,17 @@ In short, our opinion is that you may use Session Messenger on iOS due to the ab
 
 [^1]: English translation of German Telemedia Act <https://www.huntonprivacyblog.com/wp-content/uploads/sites/28/2016/02/Telemedia_Act__TMA_.pdf> <sup>[[Archive.org]](https://web.archive.org/web/https://www.huntonprivacyblog.com/wp-content/uploads/sites/28/2016/02/Telemedia_Act__TMA_.pdf)</sup>. Section 13, Article 6, "The service provider must enable the use of Telemedia and payment for them to occur anonymously or via a pseudonym where this is technically possible and reasonable. The recipient of the service is to be informed about this possibility. ".
 
-[^2]: Wikipedia, Real-Name System Germany <https://en.wikipedia.org/wiki/Real-name_system#Germany> <sup>[[Wikiless]](https://wikiless.org/wiki/Real-name_system)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Real-name_system)</sup>
+[^2]: Wikipedia, Real-Name System Germany <https://en.wikipedia.org/wiki/Real-name_system#Germany> <sup>[[Wikiless]](https://wikiless.com/wiki/Real-name_system)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Real-name_system)</sup>
 
-[^3]: Wikipedia, Don't be evil <https://en.wikipedia.org/wiki/Don%27t_be_evil> <sup>[[Wikiless]](https://wikiless.org/wiki/Don%27t_be_evil)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Don%27t_be_evil)</sup>
+[^3]: Wikipedia, Don't be evil <https://en.wikipedia.org/wiki/Don%27t_be_evil> <sup>[[Wikiless]](https://wikiless.com/wiki/Don%27t_be_evil)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Don%27t_be_evil)</sup>
 
 [^4]: YouTube, WarGames - "The Only Winning Move" <https://www.youtube.com/watch?v=6DGNZnfKYnU> <sup>[[Invidious]](https://yewtu.be/watch?v=6DGNZnfKYnU)</sup>
 
-[^5]: Wikipedia, OSINT <https://en.wikipedia.org/wiki/Open-source_intelligence> <sup>[[Wikiless]](https://wikiless.org/wiki/Open-source_intelligence)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Open-source_intelligence)</sup>
+[^5]: Wikipedia, OSINT <https://en.wikipedia.org/wiki/Open-source_intelligence> <sup>[[Wikiless]](https://wikiless.com/wiki/Open-source_intelligence)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Open-source_intelligence)</sup>
 
 [^6]: YouTube Internet Historian Playlist, HWNDU <https://www.youtube.com/playlist?list=PLna1KTNJu3y09Tu70U6yPn28sekaNhOMY> <sup>[[Invidious]](https://yewtu.be/playlist?list=PLna1KTNJu3y09Tu70U6yPn28sekaNhOMY)</sup>
 
-[^7]: Wikipedia, 4chan <https://en.wikipedia.org/wiki/4chan> <sup>[[Wikiless]](https://wikiless.org/wiki/4chan)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/4chan)</sup>
+[^7]: Wikipedia, 4chan <https://en.wikipedia.org/wiki/4chan> <sup>[[Wikiless]](https://wikiless.com/wiki/4chan)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/4chan)</sup>
 
 [^8]: PIA, See this good article on the matter <https://www.privateinternetaccess.com/blog/how-does-privacy-differ-from-anonymity-and-why-are-both-important/> <sup>[[Archive.org]](https://web.archive.org/web/https://www.privateinternetaccess.com/blog/how-does-privacy-differ-from-anonymity-and-why-are-both-important/)</sup> (disclaimer: this is not an endorsement or recommendation for this commercial service).
 
@@ -11571,11 +11571,11 @@ In short, our opinion is that you may use Session Messenger on iOS due to the ab
 
 [^11]: XKCD, Security <https://xkcd.com/538/> <sup>[[Archive.org]](https://web.archive.org/web/20220530073225/https://xkcd.com/538/)</sup>
 
-[^12]: Wikipedia, Threat Model <https://en.wikipedia.org/wiki/Threat_model> <sup>[[Wikiless]](https://wikiless.org/wiki/Threat_model)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Threat_model)</sup>
+[^12]: Wikipedia, Threat Model <https://en.wikipedia.org/wiki/Threat_model> <sup>[[Wikiless]](https://wikiless.com/wiki/Threat_model)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Threat_model)</sup>
 
 [^13]: Bellingcat <https://www.bellingcat.com/> <sup>[[Archive.org]](https://web.archive.org/web/https://www.bellingcat.com/)</sup>
 
-[^14]: Wikipedia, Doxing <https://en.wikipedia.org/wiki/Doxing> <sup>[[Wikiless]](https://wikiless.org/wiki/Doxing)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Doxing)</sup>
+[^14]: Wikipedia, Doxing <https://en.wikipedia.org/wiki/Doxing> <sup>[[Wikiless]](https://wikiless.com/wiki/Doxing)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Doxing)</sup>
 
 [^15]: YouTube, Internet Historian, The Bikelock Fugitive of Berkeley <https://www.youtube.com/watch?v=muoR8Td44UE> <sup>[[Invidious]](https://yewtu.be/watch?v=muoR8Td44UE)</sup>
 
@@ -11595,23 +11595,23 @@ In short, our opinion is that you may use Session Messenger on iOS due to the ab
 
 [^23]: PIA Blog, 50 Key Stats About Freedom of the Internet Around the World <https://www.privateinternetaccess.com/blog/internet-freedom-around-the-world-in-50-stats/> <sup>[[Archive.org]](https://web.archive.org/web/https://www.privateinternetaccess.com/blog/internet-freedom-around-the-world-in-50-stats/)</sup>
 
-[^24]: Wikipedia, IANAL <https://en.wikipedia.org/wiki/IANAL> <sup>[[Wikiless]](https://wikiless.org/wiki/IANAL)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/IANAL)</sup>
+[^24]: Wikipedia, IANAL <https://en.wikipedia.org/wiki/IANAL> <sup>[[Wikiless]](https://wikiless.com/wiki/IANAL)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/IANAL)</sup>
 
-[^25]: Wikipedia, Trust but verify <https://en.wikipedia.org/wiki/Trust,_but_verify> <sup>[[Wikiless]](https://wikiless.org/wiki/Trust,_but_verify)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Trust,_but_verify)</sup>
+[^25]: Wikipedia, Trust but verify <https://en.wikipedia.org/wiki/Trust,_but_verify> <sup>[[Wikiless]](https://wikiless.com/wiki/Trust,_but_verify)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Trust,_but_verify)</sup>
 
-[^26]: Wikipedia, IP Address <https://en.wikipedia.org/wiki/IP_address> <sup>[[Wikiless]](https://wikiless.org/wiki/IP_address)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/IP_address)</sup>
+[^26]: Wikipedia, IP Address <https://en.wikipedia.org/wiki/IP_address> <sup>[[Wikiless]](https://wikiless.com/wiki/IP_address)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/IP_address)</sup>
 
-[^27]: Wikipedia; Data Retention <https://en.wikipedia.org/wiki/Data_retention> <sup>[[Wikiless]](https://wikiless.org/wiki/Data_retention)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Data_retention)</sup>
+[^27]: Wikipedia; Data Retention <https://en.wikipedia.org/wiki/Data_retention> <sup>[[Wikiless]](https://wikiless.com/wiki/Data_retention)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Data_retention)</sup>
 
-[^28]: Wikipedia, Tor Anonymity Network <https://en.wikipedia.org/wiki/Tor_(anonymity_network)> <sup>[[Wikiless]](https://wikiless.org/wiki/Tor_(anonymity_network))</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Tor_(anonymity_network))</sup>
+[^28]: Wikipedia, Tor Anonymity Network <https://en.wikipedia.org/wiki/Tor_(anonymity_network)> <sup>[[Wikiless]](https://wikiless.com/wiki/Tor_(anonymity_network))</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Tor_(anonymity_network))</sup>
 
-[^29]: Wikipedia, VPN <https://en.wikipedia.org/wiki/Virtual_private_network> <sup>[[Wikiless]](https://wikiless.org/wiki/Virtual_private_network)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Virtual_private_network)</sup>
+[^29]: Wikipedia, VPN <https://en.wikipedia.org/wiki/Virtual_private_network> <sup>[[Wikiless]](https://wikiless.com/wiki/Virtual_private_network)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Virtual_private_network)</sup>
 
 [^30]: Ieee.org, Anonymity Trilemma: Strong Anonymity, Low Bandwidth Overhead, Low Latency - Choose Two <https://ieeexplore.ieee.org/document/8418599> <sup>[[Archive.org]](https://web.archive.org/web/https://ieeexplore.ieee.org/document/8418599)</sup>
 
-[^31]: Wikipedia, DNS <https://en.wikipedia.org/wiki/Domain_Name_System> <sup>[[Wikiless]](https://wikiless.org/wiki/Domain_Name_System)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Domain_Name_System)</sup>
+[^31]: Wikipedia, DNS <https://en.wikipedia.org/wiki/Domain_Name_System> <sup>[[Wikiless]](https://wikiless.com/wiki/Domain_Name_System)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Domain_Name_System)</sup>
 
-[^32]: Wikipedia, DNS Blocking <https://en.wikipedia.org/wiki/DNS_blocking> <sup>[[Wikiless]](https://wikiless.org/wiki/DNS_blocking)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/DNS_blocking)</sup>
+[^32]: Wikipedia, DNS Blocking <https://en.wikipedia.org/wiki/DNS_blocking> <sup>[[Wikiless]](https://wikiless.com/wiki/DNS_blocking)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/DNS_blocking)</sup>
 
 [^33]: CensoredPlanet <https://censoredplanet.org/> <sup>[[Archive.org]](https://web.archive.org/web/https://censoredplanet.org/)</sup>
 
@@ -11619,21 +11619,21 @@ In short, our opinion is that you may use Session Messenger on iOS due to the ab
 
 [^35]: Labzilla.io, Your Smart TV is probably ignoring your Pi-Hole <https://labzilla.io/blog/force-dns-pihole> <sup>[[Archive.org]](https://web.archive.org/web/https://labzilla.io/blog/force-dns-pihole)</sup>
 
-[^36]: Wikipedia, DNS over HTTPS: <https://en.wikipedia.org/wiki/DNS_over_HTTPS> <sup>[[Wikiless]](https://wikiless.org/wiki/DNS_over_HTTPS)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/DNS_over_HTTPS)</sup>
+[^36]: Wikipedia, DNS over HTTPS: <https://en.wikipedia.org/wiki/DNS_over_HTTPS> <sup>[[Wikiless]](https://wikiless.com/wiki/DNS_over_HTTPS)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/DNS_over_HTTPS)</sup>
 
-[^37]: Wikipedia, DNS over TLS, <https://en.wikipedia.org/wiki/DNS_over_TLS> <sup>[[Wikiless]](https://wikiless.org/wiki/DNS_over_TLS)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/DNS_over_TLS)</sup>
+[^37]: Wikipedia, DNS over TLS, <https://en.wikipedia.org/wiki/DNS_over_TLS> <sup>[[Wikiless]](https://wikiless.com/wiki/DNS_over_TLS)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/DNS_over_TLS)</sup>
 
-[^38]: Wikipedia, Pi-Hole <https://en.wikipedia.org/wiki/Pi-hole> <sup>[[Wikiless]](https://wikiless.org/wiki/Pi-hole)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Pi-hole)</sup>
+[^38]: Wikipedia, Pi-Hole <https://en.wikipedia.org/wiki/Pi-hole> <sup>[[Wikiless]](https://wikiless.com/wiki/Pi-hole)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Pi-hole)</sup>
 
-[^39]: Wikipedia, SNI <https://en.wikipedia.org/wiki/Server_Name_Indication> <sup>[[Wikiless]](https://wikiless.org/wiki/Server_Name_Indication)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Server_Name_Indication)</sup>
+[^39]: Wikipedia, SNI <https://en.wikipedia.org/wiki/Server_Name_Indication> <sup>[[Wikiless]](https://wikiless.com/wiki/Server_Name_Indication)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Server_Name_Indication)</sup>
 
-[^40]: Wikipedia, ECH <https://en.wikipedia.org/wiki/Server_Name_Indication#Encrypted_Client_Hello> <sup>[[Wikiless]](https://wikiless.org/wiki/Server_Name_Indication)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Server_Name_Indication)</sup>
+[^40]: Wikipedia, ECH <https://en.wikipedia.org/wiki/Server_Name_Indication#Encrypted_Client_Hello> <sup>[[Wikiless]](https://wikiless.com/wiki/Server_Name_Indication)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Server_Name_Indication)</sup>
 
-[^41]: Wikipedia, eSNI <https://en.wikipedia.org/wiki/Server_Name_Indication#Encrypted_Client_Hello> <sup>[[Wikiless]](https://wikiless.org/wiki/Server_Name_Indication)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Server_Name_Indication)</sup>
+[^41]: Wikipedia, eSNI <https://en.wikipedia.org/wiki/Server_Name_Indication#Encrypted_Client_Hello> <sup>[[Wikiless]](https://wikiless.com/wiki/Server_Name_Indication)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Server_Name_Indication)</sup>
 
 [^42]: Usenix.org, On the Importance of Encrypted-SNI (ESNI) to Censorship Circumvention <https://www.usenix.org/system/files/foci19-paper_chai_0.pdf> <sup>[[Archive.org]](https://web.archive.org/web/https://www.usenix.org/system/files/foci19-paper_chai_0.pdf)</sup>
 
-[^43]: Wikipedia, CDN <https://en.wikipedia.org/wiki/Content_delivery_network> <sup>[[Wikiless]](https://wikiless.org/wiki/Content_delivery_network)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Content_delivery_network)</sup>
+[^43]: Wikipedia, CDN <https://en.wikipedia.org/wiki/Content_delivery_network> <sup>[[Wikiless]](https://wikiless.com/wiki/Content_delivery_network)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Content_delivery_network)</sup>
 
 [^44]: Cloudflare, Good-bye ESNI, hello ECH! <https://blog.cloudflare.com/encrypted-client-hello/> <sup>[[Archive.org]](https://web.archive.org/web/https://blog.cloudflare.com/encrypted-client-hello/)</sup>
 
@@ -11641,11 +11641,11 @@ In short, our opinion is that you may use Session Messenger on iOS due to the ab
 
 [^46]: ZDNET, China is now blocking all encrypted HTTPS traffic that uses TLS 1.3 and ESNI <https://www.zdnet.com/article/china-is-now-blocking-all-encrypted-https-traffic-using-tls-1-3-and-esni/> <sup>[[Archive.org]](https://web.archive.org/web/https://www.zdnet.com/article/china-is-now-blocking-all-encrypted-https-traffic-using-tls-1-3-and-esni/)</sup>
 
-[^47]: Wikipedia, OCSP <https://en.wikipedia.org/wiki/Online_Certificate_Status_Protocol> <sup>[[Wikiless]](https://wikiless.org/wiki/Online_Certificate_Status_Protocol)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Online_Certificate_Status_Protocol)</sup>
+[^47]: Wikipedia, OCSP <https://en.wikipedia.org/wiki/Online_Certificate_Status_Protocol> <sup>[[Wikiless]](https://wikiless.com/wiki/Online_Certificate_Status_Protocol)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Online_Certificate_Status_Protocol)</sup>
 
 [^48]: Madaidans Insecurities, Why encrypted DNS is ineffective <https://madaidans-insecurities.github.io/encrypted-dns.html> <sup>[[Archive.org]](https://web.archive.org/web/https://madaidans-insecurities.github.io/encrypted-dns.html)</sup>
 
-[^49]: Wikipedia, OCSP Stapling <https://en.wikipedia.org/wiki/OCSP_stapling> <sup>[[Wikiless]](https://wikiless.org/wiki/OCSP_stapling)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/OCSP_stapling)</sup>
+[^49]: Wikipedia, OCSP Stapling <https://en.wikipedia.org/wiki/OCSP_stapling> <sup>[[Wikiless]](https://wikiless.com/wiki/OCSP_stapling)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/OCSP_stapling)</sup>
 
 [^50]: Chromium Documentation, CRLSets <https://dev.chromium.org/Home/chromium-security/crlsets> <sup>[[Archive.org]](https://web.archive.org/web/https://dev.chromium.org/Home/chromium-security/crlsets)</sup>
 
@@ -11657,9 +11657,9 @@ In short, our opinion is that you may use Session Messenger on iOS due to the ab
 
 [^54]: Nymity.ch, The Effect of DNS on Tor's Anonymity <https://nymity.ch/tor-dns/> <sup>[[Archive.org]](https://web.archive.org/web/https://nymity.ch/tor-dns/)</sup>
 
-[^55]: Wikipedia, RFID <https://en.wikipedia.org/wiki/Radio-frequency_identification> <sup>[[Wikiless]](https://wikiless.org/wiki/Radio-frequency_identification)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://web.archive.org/web/20220530073225/https://en.wikipedia.org/wiki/Radio-frequency_identification)</sup>
+[^55]: Wikipedia, RFID <https://en.wikipedia.org/wiki/Radio-frequency_identification> <sup>[[Wikiless]](https://wikiless.com/wiki/Radio-frequency_identification)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://web.archive.org/web/20220530073225/https://en.wikipedia.org/wiki/Radio-frequency_identification)</sup>
 
-[^56]: Wikipedia, NFC <https://en.wikipedia.org/wiki/Near-field_communication> <sup>[[Wikiless]](https://wikiless.org/wiki/Near-field_communication)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Near-field_communication)</sup>
+[^56]: Wikipedia, NFC <https://en.wikipedia.org/wiki/Near-field_communication> <sup>[[Wikiless]](https://wikiless.com/wiki/Near-field_communication)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Near-field_communication)</sup>
 
 [^57]: Samsonite Online Shop, RFID accessories <https://shop.samsonite.com/accessories/rfid-accessories/> <sup>[[Archive.org]](https://web.archive.org/web/https://shop.samsonite.com/accessories/rfid-accessories/)</sup>
 
@@ -11679,9 +11679,9 @@ In short, our opinion is that you may use Session Messenger on iOS due to the ab
 
 [^65]: Hak5 Shop, Wi-Fi Pineapple <https://shop.hak5.org/products/wifi-pineapple> <sup>[[Archive.org]](https://web.archive.org/web/https://shop.hak5.org/products/wifi-pineapple)</sup>
 
-[^66]: Wikipedia, Deautentication Attack <https://en.wikipedia.org/wiki/Wi-Fi_deauthentication_attack> <sup>[[Wikiless]](https://wikiless.org/wiki/Wi-Fi_deauthentication_attack)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Wi-Fi_deauthentication_attack)</sup>
+[^66]: Wikipedia, Deautentication Attack <https://en.wikipedia.org/wiki/Wi-Fi_deauthentication_attack> <sup>[[Wikiless]](https://wikiless.com/wiki/Wi-Fi_deauthentication_attack)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Wi-Fi_deauthentication_attack)</sup>
 
-[^67]: Wikipedia, Capture Portal <https://en.wikipedia.org/wiki/Captive_portal> <sup>[[Wikiless]](https://wikiless.org/wiki/Captive_portal)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Captive_portal)</sup>
+[^67]: Wikipedia, Capture Portal <https://en.wikipedia.org/wiki/Captive_portal> <sup>[[Wikiless]](https://wikiless.com/wiki/Captive_portal)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Captive_portal)</sup>
 
 [^68]: HackerFactor Blog, Deanonymizing Tor Circuits <https://www.hackerfactor.com/blog/index.php?/archives/868-Deanonymizing-Tor-Circuits.html> <sup>[[Archive.org]](https://web.archive.org/web/https://www.hackerfactor.com/blog/index.php?/archives/868-Deanonymizing-Tor-Circuits.html)</sup>
 
@@ -11697,7 +11697,7 @@ In short, our opinion is that you may use Session Messenger on iOS due to the ab
 
 [^74]: ArsTechnica, How the NSA can break trillions of encrypted Web and VPN connections <https://arstechnica.com/information-technology/2015/10/how-the-nsa-can-break-trillions-of-encrypted-web-and-vpn-connections/> <sup>[[Archive.org]](https://web.archive.org/web/https://arstechnica.com/information-technology/2015/10/how-the-nsa-can-break-trillions-of-encrypted-web-and-vpn-connections/)</sup>
 
-[^75]: Wikipedia, Sybil Attack <https://en.wikipedia.org/wiki/Sybil_attack> <sup>[[Wikiless]](https://wikiless.org/wiki/Sybil_attack)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Sybil_attack)</sup>
+[^75]: Wikipedia, Sybil Attack <https://en.wikipedia.org/wiki/Sybil_attack> <sup>[[Wikiless]](https://wikiless.com/wiki/Sybil_attack)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Sybil_attack)</sup>
 
 [^76]: ArsTechnica, Does Tor provide more benefit or harm? New paper says it depends <https://arstechnica.com/gadgets/2020/11/does-tor-provide-more-benefit-or-harm-new-paper-says-it-depends/> <sup>[[Archive.org]](https://web.archive.org/web/https://arstechnica.com/gadgets/2020/11/does-tor-provide-more-benefit-or-harm-new-paper-says-it-depends/)</sup>
 
@@ -11711,63 +11711,63 @@ In short, our opinion is that you may use Session Messenger on iOS due to the ab
 
 [^81]: Apple Support, If your Mac is lost or stolen <https://support.apple.com/en-us/HT204756> <sup>[[Archive.org]](https://web.archive.org/web/https://support.apple.com/en-us/HT204756)</sup>
 
-[^82]: Wikipedia, BLE <https://en.wikipedia.org/wiki/Bluetooth_Low_Energy> <sup>[[Wikiless]](https://wikiless.org/wiki/Bluetooth_Low_Energy)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Bluetooth_Low_Energy)</sup>
+[^82]: Wikipedia, BLE <https://en.wikipedia.org/wiki/Bluetooth_Low_Energy> <sup>[[Wikiless]](https://wikiless.com/wiki/Bluetooth_Low_Energy)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Bluetooth_Low_Energy)</sup>
 
 [^83]: Cryptography Engineering Blog, How does Apple (privately) find your offline devices? <https://blog.cryptographyengineering.com/2019/06/05/how-does-apple-privately-find-your-offline-devices/> <sup>[[Archive.org]](https://web.archive.org/web/https://blog.cryptographyengineering.com/2019/06/05/how-does-apple-privately-find-your-offline-devices/)</sup>
 
-[^84]: Wikipedia, IMEI <https://en.wikipedia.org/wiki/International_Mobile_Equipment_Identity> <sup>[[Wikiless]](https://wikiless.org/wiki/International_Mobile_Equipment_Identity)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/International_Mobile_Equipment_Identity)</sup>
+[^84]: Wikipedia, IMEI <https://en.wikipedia.org/wiki/International_Mobile_Equipment_Identity> <sup>[[Wikiless]](https://wikiless.com/wiki/International_Mobile_Equipment_Identity)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/International_Mobile_Equipment_Identity)</sup>
 
-[^85]: Wikipedia, IMSI <https://en.wikipedia.org/wiki/International_mobile_subscriber_identity> <sup>[[Wikiless]](https://wikiless.org/wiki/International_mobile_subscriber_identity)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/International_mobile_subscriber_identity)</sup>
+[^85]: Wikipedia, IMSI <https://en.wikipedia.org/wiki/International_mobile_subscriber_identity> <sup>[[Wikiless]](https://wikiless.com/wiki/International_mobile_subscriber_identity)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/International_mobile_subscriber_identity)</sup>
 
 [^86]: Android Documentation, Device Identifiers <https://source.android.com/devices/tech/config/device-identifiers> <sup>[[Archive.org]](https://web.archive.org/web/https://source.android.com/devices/tech/config/device-identifiers)</sup>
 
 [^87]: Google Privacy Policy, Look for IMEI <https://policies.google.com/privacy/embedded?hl=en-US> <sup>[[Archive.org]](https://web.archive.org/web/https://policies.google.com/privacy/embedded?hl=en-US)</sup>
 
-[^88]: Wikipedia, IMEI and the Law <https://en.wikipedia.org/wiki/International_Mobile_Equipment_Identity#IMEI_and_the_law> <sup>[[Wikiless]](https://wikiless.org/wiki/International_Mobile_Equipment_Identity)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/International_Mobile_Equipment_Identity)</sup>
+[^88]: Wikipedia, IMEI and the Law <https://en.wikipedia.org/wiki/International_Mobile_Equipment_Identity#IMEI_and_the_law> <sup>[[Wikiless]](https://wikiless.com/wiki/International_Mobile_Equipment_Identity)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/International_Mobile_Equipment_Identity)</sup>
 
 [^89]: Bellingcat, The GRU Globetrotters: Mission London <https://www.bellingcat.com/news/uk-and-europe/2019/06/28/the-gru-globetrotters-mission-london/> <sup>[[Archive.org]](https://web.archive.org/web/https://www.bellingcat.com/news/uk-and-europe/2019/06/28/the-gru-globetrotters-mission-london/)</sup>
 
 [^90]: Bellingcat,"V" For "Vympel": FSB's Secretive Department "V" Behind Assassination Of Georgian Asylum Seeker In Germany <https://www.bellingcat.com/news/uk-and-europe/2020/02/17/v-like-vympel-fsbs-secretive-department-v-behind-assassination-of-zelimkhan-khangoshvili/> <sup>[[Archive.org]](https://web.archive.org/web/https://www.bellingcat.com/news/uk-and-europe/2020/02/17/v-like-vympel-fsbs-secretive-department-v-behind-assassination-of-zelimkhan-khangoshvili/)</sup>
 
-[^91]: Wikipedia, CCTV <https://en.wikipedia.org/wiki/Closed-circuit_television> <sup>[[Wikiless]](https://wikiless.org/wiki/Closed-circuit_television)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Closed-circuit_television)</sup>
+[^91]: Wikipedia, CCTV <https://en.wikipedia.org/wiki/Closed-circuit_television> <sup>[[Wikiless]](https://wikiless.com/wiki/Closed-circuit_television)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Closed-circuit_television)</sup>
 
 [^92]: Apple, Transparency Report, Device Requests <https://www.apple.com/legal/transparency/device-requests.html> <sup>[[Archive.org]](https://web.archive.org/web/https://www.apple.com/legal/transparency/device-requests.html)</sup>
 
 [^93]: The Intercept, How Cops Can Secretly Track Your Phone <https://theintercept.com/2020/07/31/protests-surveillance-stingrays-dirtboxes-phone-tracking/> <sup>[[Tor Mirror]](http://27m3p2uv7igmj6kvd4ql3cct5h3sdwrsajovkkndeufumzyfhlfev4qd.onion/2020/07/31/protests-surveillance-stingrays-dirtboxes-phone-tracking/)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://theintercept.com/2020/07/31/protests-surveillance-stingrays-dirtboxes-phone-tracking/)</sup>
 
-[^94]: Wikipedia, IMSI Catcher <https://en.wikipedia.org/wiki/IMSI-catcher> <sup>[[Wikiless]](https://wikiless.org/wiki/IMSI-catcher)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/IMSI-catcher)</sup>
+[^94]: Wikipedia, IMSI Catcher <https://en.wikipedia.org/wiki/IMSI-catcher> <sup>[[Wikiless]](https://wikiless.com/wiki/IMSI-catcher)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/IMSI-catcher)</sup>
 
-[^95]: Wikipedia, Stingray <https://en.wikipedia.org/wiki/Stingray_phone_tracker> <sup>[[Wikiless]](https://wikiless.org/wiki/Stingray_phone_tracker)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Stingray_phone_tracker)</sup>
+[^95]: Wikipedia, Stingray <https://en.wikipedia.org/wiki/Stingray_phone_tracker> <sup>[[Wikiless]](https://wikiless.com/wiki/Stingray_phone_tracker)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Stingray_phone_tracker)</sup>
 
 [^96]: Gizmodo, Cops Turn to Canadian Phone-Tracking Firm After Infamous 'Stingrays' Become 'Obsolete' <https://gizmodo.com/american-cops-turns-to-canadian-phone-tracking-firm-aft-1845442778> <sup>[[Archive.org]](https://web.archive.org/web/https://gizmodo.com/american-cops-turns-to-canadian-phone-tracking-firm-aft-1845442778)</sup>
 
-[^97]: Wikipedia, MITM <https://en.wikipedia.org/wiki/Man-in-the-middle_attack> <sup>[[Wikiless]](https://wikiless.org/wiki/Man-in-the-middle_attack)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Man-in-the-middle_attack)</sup>
+[^97]: Wikipedia, MITM <https://en.wikipedia.org/wiki/Man-in-the-middle_attack> <sup>[[Wikiless]](https://wikiless.com/wiki/Man-in-the-middle_attack)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Man-in-the-middle_attack)</sup>
 
 [^98]: Purism, Librem 5 <https://shop.puri.sm/shop/librem-5/> <sup>[[Archive.org]](https://web.archive.org/web/https://shop.puri.sm/shop/librem-5/)</sup>
 
-[^99]: Wikipedia, MAC Address <https://en.wikipedia.org/wiki/MAC_address> <sup>[[Wikiless]](https://wikiless.org/wiki/MAC_address)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/MAC_address)</sup>
+[^99]: Wikipedia, MAC Address <https://en.wikipedia.org/wiki/MAC_address> <sup>[[Wikiless]](https://wikiless.com/wiki/MAC_address)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/MAC_address)</sup>
 
 [^100]: Acyclica Road Trend Product Sheet, <https://web.archive.org/web/https://amsignalinc.com/data-sheets/Acyclica/Acyclica-RoadTrend-Product-Sheet.pdf> <sup>[[Archive.org]](https://web.archive.org/web/https://amsignalinc.com/data-sheets/Acyclica/Acyclica-RoadTrend-Product-Sheet.pdf)</sup>
 
 [^101]: ResearchGate, Tracking Anonymized Bluetooth Devices <https://www.researchgate.net/publication/334590931_Tracking_Anonymized_Bluetooth_Devices/fulltext/5d3308db92851cd04675a469/Tracking-Anonymized-Bluetooth-Devices.pdf> <sup>[[Archive.org]](https://web.archive.org/web/https://www.researchgate.net/publication/334590931_Tracking_Anonymized_Bluetooth_Devices/fulltext/5d3308db92851cd04675a469/Tracking-Anonymized-Bluetooth-Devices.pdf)</sup>
 
-[^102]: Wikipedia, CPU <https://en.wikipedia.org/wiki/Central_processing_unit> <sup>[[Wikiless]](https://wikiless.org/wiki/Central_processing_unit)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Central_processing_unit)</sup>
+[^102]: Wikipedia, CPU <https://en.wikipedia.org/wiki/Central_processing_unit> <sup>[[Wikiless]](https://wikiless.com/wiki/Central_processing_unit)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Central_processing_unit)</sup>
 
-[^103]: Wikipedia, Intel Management Engine <https://en.wikipedia.org/wiki/Intel_Management_Engine> <sup>[[Wikiless]](https://wikiless.org/wiki/Intel_Management_Engine)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Intel_Management_Engine)</sup>
+[^103]: Wikipedia, Intel Management Engine <https://en.wikipedia.org/wiki/Intel_Management_Engine> <sup>[[Wikiless]](https://wikiless.com/wiki/Intel_Management_Engine)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Intel_Management_Engine)</sup>
 
-[^104]: Wikipedia, AMD Platform Security Processor <https://en.wikipedia.org/wiki/AMD_Platform_Security_Processor> <sup>[[Wikiless]](https://wikiless.org/wiki/AMD_Platform_Security_Processor)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/AMD_Platform_Security_Processor)</sup>
+[^104]: Wikipedia, AMD Platform Security Processor <https://en.wikipedia.org/wiki/AMD_Platform_Security_Processor> <sup>[[Wikiless]](https://wikiless.com/wiki/AMD_Platform_Security_Processor)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/AMD_Platform_Security_Processor)</sup>
 
-[^105]: Wikipedia, IME, Security Vulnerabilities <https://en.wikipedia.org/wiki/Intel_Management_Engine#Security_vulnerabilities> <sup>[[Wikiless]](https://wikiless.org/wiki/Intel_Management_Engine)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Intel_Management_Engine)</sup>
+[^105]: Wikipedia, IME, Security Vulnerabilities <https://en.wikipedia.org/wiki/Intel_Management_Engine#Security_vulnerabilities> <sup>[[Wikiless]](https://wikiless.com/wiki/Intel_Management_Engine)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Intel_Management_Engine)</sup>
 
-[^106]: Wikipedia, IME, Assertions that ME is a backdoor <https://en.wikipedia.org/wiki/Intel_Management_Engine#Assertions_that_ME_is_a_backdoor> <sup>[[Wikiless]](https://wikiless.org/wiki/Intel_Management_Engine)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Intel_Management_Engine)</sup>
+[^106]: Wikipedia, IME, Assertions that ME is a backdoor <https://en.wikipedia.org/wiki/Intel_Management_Engine#Assertions_that_ME_is_a_backdoor> <sup>[[Wikiless]](https://wikiless.com/wiki/Intel_Management_Engine)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Intel_Management_Engine)</sup>
 
-[^107]: Wikipedia, IME, Disabling the ME <https://en.wikipedia.org/wiki/Intel_Management_Engine#Disabling_the_ME> <sup>[[Wikiless]](https://wikiless.org/wiki/Intel_Management_Engine)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Intel_Management_Engine)</sup>
+[^107]: Wikipedia, IME, Disabling the ME <https://en.wikipedia.org/wiki/Intel_Management_Engine#Disabling_the_ME> <sup>[[Wikiless]](https://wikiless.com/wiki/Intel_Management_Engine)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Intel_Management_Engine)</sup>
 
 [^108]: Libreboot, <https://libreboot.org/> <sup>[[Archive.org]](https://web.archive.org/web/https://libreboot.org/)</sup> / Coreboot, <https://www.coreboot.org/> <sup>[[Archive.org]](https://web.archive.org/web/20220501042320/https://www.coreboot.org/)</sup>
 
 [^109]: Apple, Differential Privacy White Paper <https://www.apple.com/privacy/docs/Differential_Privacy_Overview.pdf> <sup>[[Archive.org]](https://web.archive.org/web/https://www.apple.com/privacy/docs/Differential_Privacy_Overview.pdf)</sup>
 
-[^110]: Wikipedia, Differential Privacy <https://en.wikipedia.org/wiki/Differential_privacy> <sup>[[Wikiless]](https://wikiless.org/wiki/Differential_privacy)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Differential_privacy)</sup>
+[^110]: Wikipedia, Differential Privacy <https://en.wikipedia.org/wiki/Differential_privacy> <sup>[[Wikiless]](https://wikiless.com/wiki/Differential_privacy)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Differential_privacy)</sup>
 
 [^111]: Continuing Ed, The All-Seeing "i": Apple Just Declared War on Your Privacy <https://edwardsnowden.substack.com/p/all-seeing-i> <sup>[[Archive.org]](https://web.archive.org/web/https://edwardsnowden.substack.com/p/all-seeing-i)</sup>
 
@@ -11795,7 +11795,7 @@ In short, our opinion is that you may use Session Messenger on iOS due to the ab
 
 [^123]: Using Metadata to find Paul Revere (<https://kieranhealy.org/blog/archives/2013/06/09/using-metadata-to-find-paul-revere/> <sup>[[Archive.org]](https://web.archive.org/web/https://kieranhealy.org/blog/archives/2013/06/09/using-metadata-to-find-paul-revere/)</sup>)
 
-[^124]: Wikipedia, Google SensorVault, <https://en.wikipedia.org/wiki/Sensorvault> <sup>[[Wikiless]](https://wikiless.org/wiki/Sensorvault)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Sensorvault)</sup>
+[^124]: Wikipedia, Google SensorVault, <https://en.wikipedia.org/wiki/Sensorvault> <sup>[[Wikiless]](https://wikiless.com/wiki/Sensorvault)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Sensorvault)</sup>
 
 [^125]: NRKBeta, My Phone Was Spying on Me, so I Tracked Down the Surveillants <https://nrkbeta.no/2020/12/03/my-phone-was-spying-on-me-so-i-tracked-down-the-surveillants/> <sup>[[Archive.org]](https://web.archive.org/web/https://nrkbeta.no/2020/12/03/my-phone-was-spying-on-me-so-i-tracked-down-the-surveillants/)</sup>
 
@@ -11803,7 +11803,7 @@ In short, our opinion is that you may use Session Messenger on iOS due to the ab
 
 [^127]: Sophos, Google data puts innocent man at the scene of a crime <https://nakedsecurity.sophos.com/2020/03/10/google-data-puts-innocent-man-at-the-scene-of-a-crime/> <sup>[[Archive.org]](https://web.archive.org/web/https://nakedsecurity.sophos.com/2020/03/10/google-data-puts-innocent-man-at-the-scene-of-a-crime/)</sup>
 
-[^128]: Wikipedia, Geofence Warrant <https://en.wikipedia.org/wiki/Geo-fence_warrant> <sup>[[Wikiless]](https://wikiless.org/wiki/Geo-fence_warrant)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Geo-fence_warrant)</sup>
+[^128]: Wikipedia, Geofence Warrant <https://en.wikipedia.org/wiki/Geo-fence_warrant> <sup>[[Wikiless]](https://wikiless.com/wiki/Geo-fence_warrant)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Geo-fence_warrant)</sup>
 
 [^129]: Vice.com, Military Unit That Conducts Drone Strikes Bought Location Data From Ordinary Apps <https://www.vice.com/en/article/y3g97x/location-data-apps-drone-strikes-iowa-national-guard> <sup>[[Archive.org]](https://web.archive.org/web/https://www.vice.com/en/article/y3g97x/location-data-apps-drone-strikes-iowa-national-guard)</sup>
 
@@ -11813,23 +11813,23 @@ In short, our opinion is that you may use Session Messenger on iOS due to the ab
 
 [^132]: Vice.com, Here's the FBI's Internal Guide for Getting Data from AT&T, T-Mobile, Verizon <https://www.vice.com/en/article/m7vqkv/how-fbi-gets-phone-data-att-tmobile-verizon> <sup>[[Archive.org]](https://web.archive.org/web/https://www.vice.com/en/article/m7vqkv/how-fbi-gets-phone-data-att-tmobile-verizon)</sup>
 
-[^133]: Wikipedia, Room 641A <https://en.wikipedia.org/wiki/Room_641A> <sup>[[Wikiless]](https://wikiless.org/wiki/Room_641A)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Room_641A)</sup>
+[^133]: Wikipedia, Room 641A <https://en.wikipedia.org/wiki/Room_641A> <sup>[[Wikiless]](https://wikiless.com/wiki/Room_641A)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Room_641A)</sup>
 
-[^134]: Wikipedia, Edward Snowden <https://en.wikipedia.org/wiki/Edward_Snowden> <sup>[[Wikiless]](https://wikiless.org/wiki/Edward_Snowden)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Edward_Snowden)</sup>
+[^134]: Wikipedia, Edward Snowden <https://en.wikipedia.org/wiki/Edward_Snowden> <sup>[[Wikiless]](https://wikiless.com/wiki/Edward_Snowden)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Edward_Snowden)</sup>
 
-[^135]: Wikipedia, Permanent Record <https://en.wikipedia.org/wiki/Permanent_Record_(autobiography)> <sup>[[Wikiless]](https://wikiless.org/wiki/Permanent_Record_(autobiography))</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Permanent_Record_(autobiography))</sup>
+[^135]: Wikipedia, Permanent Record <https://en.wikipedia.org/wiki/Permanent_Record_(autobiography)> <sup>[[Wikiless]](https://wikiless.com/wiki/Permanent_Record_(autobiography))</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Permanent_Record_(autobiography))</sup>
 
-[^136]: Wikipedia, XKEYSCORE <https://en.wikipedia.org/wiki/XKeyscore> <sup>[[Wikiless]](https://wikiless.org/wiki/XKeyscore)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/XKeyscore)</sup>
+[^136]: Wikipedia, XKEYSCORE <https://en.wikipedia.org/wiki/XKeyscore> <sup>[[Wikiless]](https://wikiless.com/wiki/XKeyscore)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/XKeyscore)</sup>
 
 [^137]: ElectroSpaces, Danish military intelligence uses XKEYSCORE to tap cables in cooperation with the NSA <https://www.electrospaces.net/2020/10/danish-military-intelligence-uses.html> <sup>[[Archive.org]](https://web.archive.org/web/https://www.electrospaces.net/2020/10/danish-military-intelligence-uses.html)</sup>
 
 [^138]: Wikipedia, MUSCULAR <https://en.wikipedia.org/wiki/MUSCULAR_(surveillance_program)> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/MUSCULAR_(surveillance_program))</sup>
 
-[^139]: Wikipedia, SORM <https://en.wikipedia.org/wiki/SORM> <sup>[[Wikiless]](https://wikiless.org/wiki/SORM)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/SORM)</sup>
+[^139]: Wikipedia, SORM <https://en.wikipedia.org/wiki/SORM> <sup>[[Wikiless]](https://wikiless.com/wiki/SORM)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/SORM)</sup>
 
-[^140]: Wikipedia, Tempora <https://en.wikipedia.org/wiki/Tempora> <sup>[[Wikiless]](https://wikiless.org/wiki/Tempora)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Tempora)</sup>
+[^140]: Wikipedia, Tempora <https://en.wikipedia.org/wiki/Tempora> <sup>[[Wikiless]](https://wikiless.com/wiki/Tempora)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Tempora)</sup>
 
-[^141]: Wikipedia, PRISM <https://en.wikipedia.org/wiki/PRISM_(surveillance_program)> <sup>[[Wikiless]](https://wikiless.org/wiki/PRISM_(surveillance_program))</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/PRISM_(surveillance_program))</sup>
+[^141]: Wikipedia, PRISM <https://en.wikipedia.org/wiki/PRISM_(surveillance_program)> <sup>[[Wikiless]](https://wikiless.com/wiki/PRISM_(surveillance_program))</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/PRISM_(surveillance_program))</sup>
 
 [^142]: Justsecurity, General Hayden <https://www.justsecurity.org/10318/video-clip-director-nsa-cia-we-kill-people-based-metadata/> <sup>[[Archive.org]](https://web.archive.org/web/https://www.justsecurity.org/10318/video-clip-director-nsa-cia-we-kill-people-based-metadata/)</sup>
 
@@ -11837,11 +11837,11 @@ In short, our opinion is that you may use Session Messenger on iOS due to the ab
 
 [^144]: ArsTechnica, How the way you type can shatter anonymity---even on Tor <https://arstechnica.com/information-technology/2015/07/how-the-way-you-type-can-shatter-anonymity-even-on-tor/> <sup>[[Archive.org]](https://web.archive.org/web/https://arstechnica.com/information-technology/2015/07/how-the-way-you-type-can-shatter-anonymity-even-on-tor/)</sup>
 
-[^145]: Wikipedia, Stylometry <https://en.wikipedia.org/wiki/Stylometry> <sup>[[Wikiless]](https://wikiless.org/wiki/Stylometry)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Stylometry)</sup>
+[^145]: Wikipedia, Stylometry <https://en.wikipedia.org/wiki/Stylometry> <sup>[[Wikiless]](https://wikiless.com/wiki/Stylometry)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Stylometry)</sup>
 
 [^146]: Paul Moore Blog, Behavioral Profiling: The password you can't change. <https://paul.reviews/behavioral-profiling-the-password-you-cant-change/> <sup>[[Archive.org]](https://web.archive.org/web/https://paul.reviews/behavioral-profiling-the-password-you-cant-change/)</sup>
 
-[^147]: Wikipedia, Sentiment Analysis <https://en.wikipedia.org/wiki/Sentiment_analysis> <sup>[[Wikiless]](https://wikiless.org/wiki/Sentiment_analysis)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Sentiment_analysis)</sup>
+[^147]: Wikipedia, Sentiment Analysis <https://en.wikipedia.org/wiki/Sentiment_analysis> <sup>[[Wikiless]](https://wikiless.com/wiki/Sentiment_analysis)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Sentiment_analysis)</sup>
 
 [^148]: EFF, CoverYourTracks <https://coveryourtracks.eff.org/> <sup>[[Archive.org]](https://web.archive.org/web/https://coveryourtracks.eff.org/)</sup>
 
@@ -11935,11 +11935,11 @@ In short, our opinion is that you may use Session Messenger on iOS due to the ab
 
 [^193]: IMDB, Minority Report 2002, <https://www.imdb.com/title/tt0181689> <sup>[[Archive.org]](https://web.archive.org/web/https://www.imdb.com/title/tt0181689)</sup>
 
-[^194]: Wikipedia, Deepfake <https://en.wikipedia.org/wiki/Deepfake> <sup>[[Wikiless]](https://wikiless.org/wiki/Deepfake)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Deepfake)</sup>
+[^194]: Wikipedia, Deepfake <https://en.wikipedia.org/wiki/Deepfake> <sup>[[Wikiless]](https://wikiless.com/wiki/Deepfake)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Deepfake)</sup>
 
 [^195]: Econotimes, Deepfake Voice Technology: The Good. The Bad. The Future <https://www.econotimes.com/Deepfake-Voice-Technology-The-Good-The-Bad-The-Future-1601278> <sup>[[Archive.org]](https://web.archive.org/web/https://www.econotimes.com/Deepfake-Voice-Technology-The-Good-The-Bad-The-Future-1601278)</sup>
 
-[^196]: Wikipedia, Deepfake Events <https://en.wikipedia.org/wiki/Deepfake#Example_events> <sup>[[Wikiless]](https://wikiless.org/wiki/Deepfake)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Deepfake)</sup>
+[^196]: Wikipedia, Deepfake Events <https://en.wikipedia.org/wiki/Deepfake#Example_events> <sup>[[Wikiless]](https://wikiless.com/wiki/Deepfake)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Deepfake)</sup>
 
 [^197]: Forbes, A Voice Deepfake Was Used To Scam A CEO Out Of $243,000 <https://www.forbes.com/sites/jessedamiani/2019/09/03/a-voice-deepfake-was-used-to-scam-a-ceo-out-of-243000/> <sup>[[Archive.org]](https://web.archive.org/web/https://www.forbes.com/sites/jessedamiani/2019/09/03/a-voice-deepfake-was-used-to-scam-a-ceo-out-of-243000/)</sup>
 
@@ -11951,45 +11951,45 @@ In short, our opinion is that you may use Session Messenger on iOS due to the ab
 
 [^201]: University of Wisconsin, Exploring Reflectacles As Anti-Surveillance Glasses and for Adversarial Machine Learning in Computer Vision <http://diglib.uwgb.edu/digital/api/collection/p17003coll4/id/71/download> <sup>[[Archive.org]](https://web.archive.org/web/http://diglib.uwgb.edu/digital/api/collection/p17003coll4/id/71/download)</sup>
 
-[^202]: Wikipedia, Phishing <https://en.wikipedia.org/wiki/Phishing> <sup>[[Wikiless]](https://wikiless.org/wiki/Phishing)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Phishing)</sup>
+[^202]: Wikipedia, Phishing <https://en.wikipedia.org/wiki/Phishing> <sup>[[Wikiless]](https://wikiless.com/wiki/Phishing)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Phishing)</sup>
 
-[^203]: Wikipedia, Social Engineering <https://en.wikipedia.org/wiki/Social_engineering_(security)> <sup>[[Wikiless]](https://wikiless.org/wiki/Social_engineering_(security))</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Social_engineering_(security))</sup>
+[^203]: Wikipedia, Social Engineering <https://en.wikipedia.org/wiki/Social_engineering_(security)> <sup>[[Wikiless]](https://wikiless.com/wiki/Social_engineering_(security))</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Social_engineering_(security))</sup>
 
 [^204]: BBC, Spy pixels in emails have become endemic <https://www.bbc.com/news/technology-56071437> <sup>[[Archive.org]](https://web.archive.org/web/https://www.bbc.com/news/technology-56071437)</sup>
 
 [^205]: Vice, Facebook Helped the FBI Hack a Child Predator <https://www.vice.com/en/article/v7gd9b/facebook-helped-fbi-hack-child-predator-buster-hernandez> <sup>[[Archive.org]](https://web.archive.org/web/https://www.vice.com/en/article/v7gd9b/facebook-helped-fbi-hack-child-predator-buster-hernandez)</sup>
 
-[^206]: Wikipedia, Exploit <https://en.wikipedia.org/wiki/Exploit_(computer_security)> <sup>[[Wikiless]](https://wikiless.org/wiki/Exploit_(computer_security))</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Exploit_(computer_security))</sup>
+[^206]: Wikipedia, Exploit <https://en.wikipedia.org/wiki/Exploit_(computer_security)> <sup>[[Wikiless]](https://wikiless.com/wiki/Exploit_(computer_security))</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Exploit_(computer_security))</sup>
 
-[^207]: Wikipedia, Freedom Hosting <https://en.wikipedia.org/wiki/Freedom_Hosting> <sup>[[Wikiless]](https://wikiless.org/wiki/Freedom_Hosting)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Freedom_Hosting)</sup>
+[^207]: Wikipedia, Freedom Hosting <https://en.wikipedia.org/wiki/Freedom_Hosting> <sup>[[Wikiless]](https://wikiless.com/wiki/Freedom_Hosting)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Freedom_Hosting)</sup>
 
 [^208]: Wired, 2013 FBI Admits It Controlled Tor Servers Behind Mass Malware Attack <https://www.wired.com/2013/09/freedom-hosting-fbi/> <sup>[[Archive.org]](https://web.archive.org/web/https://www.wired.com/2013/09/freedom-hosting-fbi/)</sup>
 
-[^209]: Wikipedia, 2020 United States federal government data breach <https://en.wikipedia.org/wiki/2020_United_States_federal_government_data_breach> <sup>[[Wikiless]](https://wikiless.org/wiki/2020_United_States_federal_government_data_breach)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/2020_United_States_federal_government_data_breach)</sup>
+[^209]: Wikipedia, 2020 United States federal government data breach <https://en.wikipedia.org/wiki/2020_United_States_federal_government_data_breach> <sup>[[Wikiless]](https://wikiless.com/wiki/2020_United_States_federal_government_data_breach)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/2020_United_States_federal_government_data_breach)</sup>
 
 [^210]: BBC, China social media: WeChat and the Surveillance State <https://www.bbc.com/news/blogs-china-blog-48552907> <sup>[[Archive.org]](https://web.archive.org/web/https://www.bbc.com/news/blogs-china-blog-48552907)</sup>
 
 [^211]: The Intercept, Revealed: Massive Chinese Police Database <https://theintercept.com/2021/01/29/china-uyghur-muslim-surveillance-police/> <sup>[[Tor Mirror]](http://27m3p2uv7igmj6kvd4ql3cct5h3sdwrsajovkkndeufumzyfhlfev4qd.onion/2021/01/29/china-uyghur-muslim-surveillance-police/)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://theintercept.com/2021/01/29/china-uyghur-muslim-surveillance-police/)</sup>
 
-[^212]: Wikipedia, Sandbox <https://en.wikipedia.org/wiki/Sandbox_(computer_security)> <sup>[[Wikiless]](https://wikiless.org/wiki/Sandbox_(computer_security))</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Sandbox_(computer_security))</sup>
+[^212]: Wikipedia, Sandbox <https://en.wikipedia.org/wiki/Sandbox_(computer_security)> <sup>[[Wikiless]](https://wikiless.com/wiki/Sandbox_(computer_security))</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Sandbox_(computer_security))</sup>
 
 [^213]: Wired, Why the Security of USB Is Fundamentally Broken <https://www.wired.com/2014/07/usb-security/> <sup>[[Archive.org]](https://web.archive.org/web/https://www.wired.com/2014/07/usb-security/)</sup>
 
-[^214]: Wikipedia, Stuxnet <https://en.wikipedia.org/wiki/Stuxnet> <sup>[[Wikiless]](https://wikiless.org/wiki/Stuxnet)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Stuxnet)</sup>
+[^214]: Wikipedia, Stuxnet <https://en.wikipedia.org/wiki/Stuxnet> <sup>[[Wikiless]](https://wikiless.com/wiki/Stuxnet)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Stuxnet)</sup>
 
 [^215]: Superuser.com, How do I safely investigate a USB stick found in the parking lot at work? <https://superuser.com/questions/1206321/how-do-i-safely-investigate-a-usb-stick-found-in-the-parking-lot-at-work> <sup>[[Archive.org]](https://web.archive.org/web/https://superuser.com/questions/1206321/how-do-i-safely-investigate-a-usb-stick-found-in-the-parking-lot-at-work)</sup>
 
 [^216]: The Guardian, Glenn Greenwald: how the NSA tampers with US-made internet routers <https://www.theguardian.com/books/2014/may/12/glenn-greenwald-nsa-tampers-us-internet-routers-snowden> <sup>[[Archive.org]](https://web.archive.org/web/https://www.theguardian.com/books/2014/may/12/glenn-greenwald-nsa-tampers-us-internet-routers-snowden)</sup>
 
-[^217]: Wikipedia, Rootkit <https://en.wikipedia.org/wiki/Rootkit> <sup>[[Wikiless]](https://wikiless.org/wiki/Rootkit)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Rootkit)</sup>
+[^217]: Wikipedia, Rootkit <https://en.wikipedia.org/wiki/Rootkit> <sup>[[Wikiless]](https://wikiless.com/wiki/Rootkit)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Rootkit)</sup>
 
-[^218]: Wikipedia, Userspace <https://en.wikipedia.org/wiki/User_space> <sup>[[Wikiless]](https://wikiless.org/wiki/User_space)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/User_space)</sup>
+[^218]: Wikipedia, Userspace <https://en.wikipedia.org/wiki/User_space> <sup>[[Wikiless]](https://wikiless.com/wiki/User_space)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/User_space)</sup>
 
-[^219]: Wikipedia, Firmware <https://en.wikipedia.org/wiki/Firmware> <sup>[[Wikiless]](https://wikiless.org/wiki/Firmware)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Firmware)</sup>
+[^219]: Wikipedia, Firmware <https://en.wikipedia.org/wiki/Firmware> <sup>[[Wikiless]](https://wikiless.com/wiki/Firmware)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Firmware)</sup>
 
-[^220]: Wikipedia, BIOS <https://en.wikipedia.org/wiki/BIOS> <sup>[[Wikiless]](https://wikiless.org/wiki/BIOS)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/BIOS)</sup>
+[^220]: Wikipedia, BIOS <https://en.wikipedia.org/wiki/BIOS> <sup>[[Wikiless]](https://wikiless.com/wiki/BIOS)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/BIOS)</sup>
 
-[^221]: Wikipedia, UEFI <https://en.wikipedia.org/wiki/Unified_Extensible_Firmware_Interface> <sup>[[Wikiless]](https://wikiless.org/wiki/Unified_Extensible_Firmware_Interface)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Unified_Extensible_Firmware_Interface)</sup>
+[^221]: Wikipedia, UEFI <https://en.wikipedia.org/wiki/Unified_Extensible_Firmware_Interface> <sup>[[Wikiless]](https://wikiless.com/wiki/Unified_Extensible_Firmware_Interface)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Unified_Extensible_Firmware_Interface)</sup>
 
 [^222]: Bellingcat, Joseph Mifsud: Rush for the EXIF <https://www.bellingcat.com/news/americas/2018/10/26/joseph-mifsud-rush-exif/> <sup>[[Archive.org]](https://web.archive.org/web/https://www.bellingcat.com/news/americas/2018/10/26/joseph-mifsud-rush-exif/)</sup>
 
@@ -12007,7 +12007,7 @@ In short, our opinion is that you may use Session Messenger on iOS due to the ab
 
 [^229]: Imatag, <https://www.imatag.com/> <sup>[[Archive.org]](https://web.archive.org/web/https://www.imatag.com/)</sup>
 
-[^230]: Wikipedia, Steganography <https://en.wikipedia.org/wiki/Steganography> <sup>[[Wikiless]](https://wikiless.org/wiki/Steganography)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Steganography)</sup>
+[^230]: Wikipedia, Steganography <https://en.wikipedia.org/wiki/Steganography> <sup>[[Wikiless]](https://wikiless.com/wiki/Steganography)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Steganography)</sup>
 
 [^231]: IEEExplore, A JPEG compression resistant steganography scheme for raster graphics images <https://ieeexplore.ieee.org/document/4428921> <sup>[[Archive.org]](https://web.archive.org/web/https://ieeexplore.ieee.org/document/4428921)</sup>
 
@@ -12017,7 +12017,7 @@ In short, our opinion is that you may use Session Messenger on iOS due to the ab
 
 [^234]: Google Scholar, source camera identification <https://scholar.google.com/scholar?q=source+camera+identification> <sup>[[Archive.org]](https://web.archive.org/web/https://scholar.google.com/scholar?q=source+camera+identification)</sup>
 
-[^235]: Wikipedia, Printing Steganography <https://en.wikipedia.org/wiki/Machine_Identification_Code> <sup>[[Wikiless]](https://wikiless.org/wiki/Machine_Identification_Code)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Machine_Identification_Code)</sup>
+[^235]: Wikipedia, Printing Steganography <https://en.wikipedia.org/wiki/Machine_Identification_Code> <sup>[[Wikiless]](https://wikiless.com/wiki/Machine_Identification_Code)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Machine_Identification_Code)</sup>
 
 [^236]: MIT, SeeingYellow, <https://web.archive.org/web/20220224174025/http://seeingyellow.com/> <sup>[[Archive.org]](https://web.archive.org/web/https://web.archive.org/web/20220224174025/http://seeingyellow.com/)</sup>
 
@@ -12027,7 +12027,7 @@ In short, our opinion is that you may use Session Messenger on iOS due to the ab
 
 [^239]: CoinDesk, Leaked Slides Show How Chainalysis Flags Crypto Suspects for Cops <https://www.coindesk.com/business/2021/09/21/leaked-slides-show-how-chainalysis-flags-crypto-suspects-for-cops/> <sup>[[Archive.org]](https://web.archive.org/web/https://www.coindesk.com/business/2021/09/21/leaked-slides-show-how-chainalysis-flags-crypto-suspects-for-cops/)</sup>
 
-[^240]: Wikipedia, KYC <https://en.wikipedia.org/wiki/Know_your_customer> <sup>[[Wikiless]](https://wikiless.org/wiki/Know_your_customer)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Know_your_customer)</sup>
+[^240]: Wikipedia, KYC <https://en.wikipedia.org/wiki/Know_your_customer> <sup>[[Wikiless]](https://wikiless.com/wiki/Know_your_customer)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Know_your_customer)</sup>
 
 [^241]: arXiv.org, Probing the Mystery of Cryptocurrency Theft: An Investigation into Methods for Taint Analysis <https://arxiv.org/pdf/1906.05754.pdf> <sup>[[Archive.org]](https://web.archive.org/web/https://arxiv.org/pdf/1906.05754.pdf)</sup>
 
@@ -12035,9 +12035,9 @@ In short, our opinion is that you may use Session Messenger on iOS due to the ab
 
 [^243]: Monero, Monero vs Princeton Researchers, <https://monero.org/monero-vs-princeton-researchers/> <sup>[[Archive.org]](https://web.archive.org/web/https://monero.org/monero-vs-princeton-researchers/)</sup>
 
-[^244]: Wikipedia, Cryptocurrency Tumbler <https://en.wikipedia.org/wiki/Cryptocurrency_tumbler> <sup>[[Wikiless]](https://wikiless.org/wiki/Cryptocurrency_tumbler)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Cryptocurrency_tumbler)</sup>
+[^244]: Wikipedia, Cryptocurrency Tumbler <https://en.wikipedia.org/wiki/Cryptocurrency_tumbler> <sup>[[Wikiless]](https://wikiless.com/wiki/Cryptocurrency_tumbler)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Cryptocurrency_tumbler)</sup>
 
-[^245]: Wikipedia, Security Through Obscurity <https://en.wikipedia.org/wiki/Security_through_obscurity> <sup>[[Wikiless]](https://wikiless.org/wiki/Security_through_obscurity)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Security_through_obscurity)</sup>
+[^245]: Wikipedia, Security Through Obscurity <https://en.wikipedia.org/wiki/Security_through_obscurity> <sup>[[Wikiless]](https://wikiless.com/wiki/Security_through_obscurity)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Security_through_obscurity)</sup>
 
 [^246]: ArXiv, Tracking Mixed Bitcoins <https://arxiv.org/pdf/2009.14007.pdf> <sup>[[Archive.org]](https://web.archive.org/web/https://arxiv.org/pdf/2009.14007.pdf)</sup>
 
@@ -12077,23 +12077,23 @@ In short, our opinion is that you may use Session Messenger on iOS due to the ab
 
 [^264]: IronCoreLabs Blog, "Military Grade Encryption" <https://blog.ironcorelabs.com/military-grade-encryption-69aae0145588> <sup>[[Archive.org]](https://web.archive.org/web/https://blog.ironcorelabs.com/military-grade-encryption-69aae0145588)</sup>
 
-[^265]: Wikipedia, BLAKE2, <https://en.wikipedia.org/wiki/BLAKE_(hash_function)#BLAKE2> <sup>[[Wikiless]](https://wikiless.org/wiki/BLAKE_(hash_function)#BLAKE2)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/BLAKE_(hash_function)#BLAKE2)</sup>
+[^265]: Wikipedia, BLAKE2, <https://en.wikipedia.org/wiki/BLAKE_(hash_function)#BLAKE2> <sup>[[Wikiless]](https://wikiless.com/wiki/BLAKE_(hash_function)#BLAKE2)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/BLAKE_(hash_function)#BLAKE2)</sup>
 
-[^266]: Wikipedia, AES Instruction Set, <https://en.wikipedia.org/wiki/AES_instruction_set> <sup>[[Wikiless]](https://wikiless.org/wiki/AES_instruction_set)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/AES_instruction_set)</sup>
+[^266]: Wikipedia, AES Instruction Set, <https://en.wikipedia.org/wiki/AES_instruction_set> <sup>[[Wikiless]](https://wikiless.com/wiki/AES_instruction_set)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/AES_instruction_set)</sup>
 
-[^267]: Wikipedia, ChaCha Variants, <https://en.wikipedia.org/wiki/Salsa20#ChaCha_variant> <sup>[[Wikiless]](https://wikiless.org/wiki/Salsa20#ChaCha_variant)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Salsa20#ChaCha_variant)</sup>
+[^267]: Wikipedia, ChaCha Variants, <https://en.wikipedia.org/wiki/Salsa20#ChaCha_variant> <sup>[[Wikiless]](https://wikiless.com/wiki/Salsa20#ChaCha_variant)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Salsa20#ChaCha_variant)</sup>
 
-[^268]: Wikipedia, Serpent, <https://en.wikipedia.org/wiki/Serpent_(cipher)> <sup>[[Wikiless]](https://wikiless.org/wiki/Serpent_(cipher))</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Serpent_(cipher))</sup>
+[^268]: Wikipedia, Serpent, <https://en.wikipedia.org/wiki/Serpent_(cipher)> <sup>[[Wikiless]](https://wikiless.com/wiki/Serpent_(cipher))</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Serpent_(cipher))</sup>
 
-[^269]: Wikipedia, TwoFish, <https://en.wikipedia.org/wiki/Twofish> <sup>[[Wikiless]](https://wikiless.org/wiki/Twofish)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Twofish)</sup>
+[^269]: Wikipedia, TwoFish, <https://en.wikipedia.org/wiki/Twofish> <sup>[[Wikiless]](https://wikiless.com/wiki/Twofish)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Twofish)</sup>
 
 [^270]: Lacatora, The PGP Problem <https://latacora.singles/2019/07/16/the-pgp-problem.html> <sup>[[Archive.org]](https://web.archive.org/web/https://latacora.singles/2019/07/16/the-pgp-problem.html)</sup>
 
-[^271]: Wikipedia, Shor's Algorithm, <https://en.wikipedia.org/wiki/Shor%27s_algorithm> <sup>[[Wikiless]](https://wikiless.org/wiki/Shor%27s_algorithm)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Shor%27s_algorithm)</sup>
+[^271]: Wikipedia, Shor's Algorithm, <https://en.wikipedia.org/wiki/Shor%27s_algorithm> <sup>[[Wikiless]](https://wikiless.com/wiki/Shor%27s_algorithm)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Shor%27s_algorithm)</sup>
 
-[^272]: Wikipedia, Gag Order, <https://en.wikipedia.org/wiki/Gag_order> <sup>[[Wikiless]](https://wikiless.org/wiki/Gag_order)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Gag_order)</sup>
+[^272]: Wikipedia, Gag Order, <https://en.wikipedia.org/wiki/Gag_order> <sup>[[Wikiless]](https://wikiless.com/wiki/Gag_order)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Gag_order)</sup>
 
-[^273]: Wikipedia, National Security Letter <https://en.wikipedia.org/wiki/National_security_letter> <sup>[[Wikiless]](https://wikiless.org/wiki/National_security_letter)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/National_security_letter)</sup>
+[^273]: Wikipedia, National Security Letter <https://en.wikipedia.org/wiki/National_security_letter> <sup>[[Wikiless]](https://wikiless.com/wiki/National_security_letter)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/National_security_letter)</sup>
 
 [^275]: ArsTechnica, VPN servers seized by Ukrainian authorities weren't encrypted <https://arstechnica.com/gadgets/2021/07/vpn-servers-seized-by-ukrainian-authorities-werent-encrypted/> <sup>[[Archive.org]](https://web.archive.org/web/https://arstechnica.com/gadgets/2021/07/vpn-servers-seized-by-ukrainian-authorities-werent-encrypted/)</sup>
 
@@ -12107,17 +12107,17 @@ In short, our opinion is that you may use Session Messenger on iOS due to the ab
 
 [^280]: Internet Archive, Wipeyourdata, "No logs" EarthVPN user arrested after police finds logs <https://archive.is/XNuVw#selection-230.0-230.1> <sup>[[Archive.org]](https://web.archive.org/web/https://archive.is/XNuVw)</sup>
 
-[^281]: Wikipedia, Lavabit Suspension and Gag order, <https://en.wikipedia.org/wiki/Lavabit#Suspension_and_gag_order> <sup>[[Wikiless]](https://wikiless.org/wiki/Lavabit)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Lavabit)</sup>
+[^281]: Wikipedia, Lavabit Suspension and Gag order, <https://en.wikipedia.org/wiki/Lavabit#Suspension_and_gag_order> <sup>[[Wikiless]](https://wikiless.com/wiki/Lavabit)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Lavabit)</sup>
 
 [^282]: Internet Archive, Invisibler, What Everybody Ought to Know About HideMyAss <https://archive.is/ag9w4#selection-136.0-136.1>
 
-[^283]: Wikipedia, Warrant Canary <https://en.wikipedia.org/wiki/Warrant_canary> <sup>[[Wikiless]](https://wikiless.org/wiki/Warrant_canary)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Warrant_canary)</sup>
+[^283]: Wikipedia, Warrant Canary <https://en.wikipedia.org/wiki/Warrant_canary> <sup>[[Wikiless]](https://wikiless.com/wiki/Warrant_canary)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Warrant_canary)</sup>
 
 [^284]: Washington Post, The intelligence coup of the century <https://www.washingtonpost.com/graphics/2020/world/national-security/cia-crypto-encryption-machines-espionage/> <sup>[[Archive.org]](https://web.archive.org/web/https://www.washingtonpost.com/graphics/2020/world/national-security/cia-crypto-encryption-machines-espionage/)</sup>
 
 [^285]: Swissinfo.ch, Second Swiss firm allegedly sold encrypted spying devices <https://www.swissinfo.ch/eng/second-swiss-firm-allegedly-sold-encrypted-spying-devices/46186432> <sup>[[Archive.org]](https://web.archive.org/web/https://www.swissinfo.ch/eng/second-swiss-firm-allegedly-sold-encrypted-spying-devices/46186432)</sup>
 
-[^286]: Wikipedia, Das Leben der Anderen <https://en.wikipedia.org/wiki/The_Lives_of_Others> <sup>[[Wikiless]](https://wikiless.org/wiki/The_Lives_of_Others)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/The_Lives_of_Others)</sup>
+[^286]: Wikipedia, Das Leben der Anderen <https://en.wikipedia.org/wiki/The_Lives_of_Others> <sup>[[Wikiless]](https://wikiless.com/wiki/The_Lives_of_Others)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/The_Lives_of_Others)</sup>
 
 [^287]: Wired, Mind the Gap: This Researcher Steals Data With Noise, Light, and Magnets <https://www.wired.com/story/air-gap-researcher-mordechai-guri/> <sup>[[Archive.org]](https://web.archive.org/web/https://www.wired.com/story/air-gap-researcher-mordechai-guri/)</sup>
 
@@ -12137,7 +12137,7 @@ In short, our opinion is that you may use Session Messenger on iOS due to the ab
 
 [^295]: Defuse.ca, TrueCrypt's Plausible Deniability is Theoretically Useless <https://defuse.ca/truecrypt-plausible-deniability-useless-by-game-theory.htm> <sup>[[Archive.org]](https://web.archive.org/web/https://defuse.ca/truecrypt-plausible-deniability-useless-by-game-theory.htm)</sup>
 
-[^296]: Wikipedia, OONI, <https://en.wikipedia.org/wiki/OONI> <sup>[[Wikiless]](https://wikiless.org/wiki/OONI)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/OONI)</sup>
+[^296]: Wikipedia, OONI, <https://en.wikipedia.org/wiki/OONI> <sup>[[Wikiless]](https://wikiless.com/wiki/OONI)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/OONI)</sup>
 
 [^297]: Privacy International, Timeline of SIM Card Registration Laws <https://privacyinternational.org/long-read/3018/timeline-sim-card-registration-laws> <sup>[[Archive.org]](https://web.archive.org/web/https://privacyinternational.org/long-read/3018/timeline-sim-card-registration-laws)</sup>
 
@@ -12147,7 +12147,7 @@ In short, our opinion is that you may use Session Messenger on iOS due to the ab
 
 [^300]: TorProject.org, Can I run Tor Browser on an iOS device? <https://support.torproject.org/tormobile/tormobile-3/> <sup>[[Archive.org]](https://web.archive.org/web/https://support.torproject.org/tormobile/tormobile-3/)</sup>
 
-[^301]: Wikipedia, Tails <https://en.wikipedia.org/wiki/Tails_(operating_system)> <sup>[[Wikiless]](https://wikiless.org/wiki/Tails_(operating_system))</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Tails_(operating_system))</sup>
+[^301]: Wikipedia, Tails <https://en.wikipedia.org/wiki/Tails_(operating_system)> <sup>[[Wikiless]](https://wikiless.com/wiki/Tails_(operating_system))</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Tails_(operating_system))</sup>
 
 [^302]: Vice.com, Facebook Helped the FBI Hack a Child Predator <https://www.vice.com/en/article/v7gd9b/facebook-helped-fbi-hack-child-predator-buster-hernandez> <sup>[[Archive.org]](https://web.archive.org/web/https://www.vice.com/en/article/v7gd9b/facebook-helped-fbi-hack-child-predator-buster-hernandez)</sup>
 
@@ -12159,31 +12159,31 @@ In short, our opinion is that you may use Session Messenger on iOS due to the ab
 
 [^306]: QubesOS FAQ, <https://www.qubes-os.org/faq/#is-secure-boot-supported> <sup>[[Archive.org]](https://web.archive.org/web/https://www.qubes-os.org/faq/)</sup>
 
-[^307]: Wikipedia, Secure Boot <https://en.wikipedia.org/wiki/Unified_Extensible_Firmware_Interface#Secure_boot> <sup>[[Wikiless]](https://wikiless.org/wiki/Unified_Extensible_Firmware_Interface)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Unified_Extensible_Firmware_Interface)</sup>
+[^307]: Wikipedia, Secure Boot <https://en.wikipedia.org/wiki/Unified_Extensible_Firmware_Interface#Secure_boot> <sup>[[Wikiless]](https://wikiless.com/wiki/Unified_Extensible_Firmware_Interface)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Unified_Extensible_Firmware_Interface)</sup>
 
-[^308]: Wikipedia, Booting <https://en.wikipedia.org/wiki/Booting> <sup>[[Wikiless]](https://wikiless.org/wiki/Booting)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Booting)</sup>
+[^308]: Wikipedia, Booting <https://en.wikipedia.org/wiki/Booting> <sup>[[Wikiless]](https://wikiless.com/wiki/Booting)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Booting)</sup>
 
 [^309]: Wired, Don't Want Your Laptop Tampered With? Just Add Glitter Nail Polish <https://www.wired.com/2013/12/better-data-security-nail-polish/> <sup>[[Archive.org]](https://web.archive.org/web/https://www.wired.com/2013/12/better-data-security-nail-polish/)</sup>
 
-[^310]: Wikipedia, Virtual Machine <https://en.wikipedia.org/wiki/Virtual_machine> <sup>[[Wikiless]](https://wikiless.org/wiki/Virtual_machine)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Virtual_machine)</sup>
+[^310]: Wikipedia, Virtual Machine <https://en.wikipedia.org/wiki/Virtual_machine> <sup>[[Wikiless]](https://wikiless.com/wiki/Virtual_machine)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Virtual_machine)</sup>
 
-[^311]: Wikipedia, Plausible Deniability <https://en.wikipedia.org/wiki/Plausible_deniability> <sup>[[Wikiless]](https://wikiless.org/wiki/Plausible_deniability)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Plausible_deniability)</sup>
+[^311]: Wikipedia, Plausible Deniability <https://en.wikipedia.org/wiki/Plausible_deniability> <sup>[[Wikiless]](https://wikiless.com/wiki/Plausible_deniability)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Plausible_deniability)</sup>
 
-[^312]: Wikipedia, Deniable Encryption <https://en.wikipedia.org/wiki/Deniable_encryption> <sup>[[Wikiless]](https://wikiless.org/wiki/Deniable_encryption)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Deniable_encryption)</sup>
+[^312]: Wikipedia, Deniable Encryption <https://en.wikipedia.org/wiki/Deniable_encryption> <sup>[[Wikiless]](https://wikiless.com/wiki/Deniable_encryption)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Deniable_encryption)</sup>
 
 [^313]: PrivacyGuides.org, Don't use Windows 10 - It's a privacy nightmare <https://web.archive.org/web/20220313023015/https://www.privacyguides.org/tools/#operating-systems#win10> <sup>[[Archive.org]](https://web.archive.org/web/https://www.privacyguides.org/tools/#operating-systems)</sup>
 
-[^314]: Wikipedia, Deniable Encryption <https://en.wikipedia.org/wiki/Deniable_encryption> <sup>[[Wikiless]](https://wikiless.org/wiki/Deniable_encryption)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Deniable_encryption)</sup>
+[^314]: Wikipedia, Deniable Encryption <https://en.wikipedia.org/wiki/Deniable_encryption> <sup>[[Wikiless]](https://wikiless.com/wiki/Deniable_encryption)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Deniable_encryption)</sup>
 
-[^315]: Wikipedia, Key Disclosure Laws <https://en.wikipedia.org/wiki/Key_disclosure_law> <sup>[[Wikiless]](https://wikiless.org/wiki/Key_disclosure_law)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Key_disclosure_law)</sup>
+[^315]: Wikipedia, Key Disclosure Laws <https://en.wikipedia.org/wiki/Key_disclosure_law> <sup>[[Wikiless]](https://wikiless.com/wiki/Key_disclosure_law)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Key_disclosure_law)</sup>
 
 [^316]: GP Digital, World map of encryption laws and policies <https://www.gp-digital.org/world-map-of-encryption/> <sup>[[Archive.org]](https://web.archive.org/web/https://www.gp-digital.org/world-map-of-encryption/)</sup>
 
-[^317]: Wikipedia, Bitlocker <https://en.wikipedia.org/wiki/BitLocker> <sup>[[Wikiless]](https://wikiless.org/wiki/BitLocker)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/BitLocker)</sup>
+[^317]: Wikipedia, Bitlocker <https://en.wikipedia.org/wiki/BitLocker> <sup>[[Wikiless]](https://wikiless.com/wiki/BitLocker)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/BitLocker)</sup>
 
-[^318]: Wikipedia, Evil Maid Attack <https://en.wikipedia.org/wiki/Evil_maid_attack> <sup>[[Wikiless]](https://wikiless.org/wiki/Evil_maid_attack)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Evil_maid_attack)</sup>
+[^318]: Wikipedia, Evil Maid Attack <https://en.wikipedia.org/wiki/Evil_maid_attack> <sup>[[Wikiless]](https://wikiless.com/wiki/Evil_maid_attack)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Evil_maid_attack)</sup>
 
-[^319]: Wikipedia, Cold Boot Attack <https://en.wikipedia.org/wiki/Cold_boot_attack> <sup>[[Wikiless]](https://wikiless.org/wiki/Cold_boot_attack)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Cold_boot_attack)</sup>
+[^319]: Wikipedia, Cold Boot Attack <https://en.wikipedia.org/wiki/Cold_boot_attack> <sup>[[Wikiless]](https://wikiless.com/wiki/Cold_boot_attack)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Cold_boot_attack)</sup>
 
 [^320]: CITP 2008 (<https://www.youtube.com/watch?v=JDaicPIgn9U>) <sup>[[Invidious]](https://yewtu.be/watch?v=JDaicPIgn9U)</sup>
 
@@ -12201,11 +12201,11 @@ In short, our opinion is that you may use Session Messenger on iOS due to the ab
 
 [^327]: A forensic insight into Windows 10 Jump Lists <https://web.archive.org/web/https://cyberforensicator.com/wp-content/uploads/2017/01/1-s2.0-S1742287616300202-main.2-14.pdf> <sup>[[Archive.org]](https://web.archive.org/web/https://cyberforensicator.com/wp-content/uploads/2017/01/1-s2.0-S1742287616300202-main.2-14.pdf)</sup>
 
-[^328]: Wikipedia, Gatekeeper <https://en.wikipedia.org/wiki/Gatekeeper_(macOS)> <sup>[[Wikiless]](https://wikiless.org/wiki/Gatekeeper_(macOS))</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Gatekeeper_(macOS))</sup>
+[^328]: Wikipedia, Gatekeeper <https://en.wikipedia.org/wiki/Gatekeeper_(macOS)> <sup>[[Wikiless]](https://wikiless.com/wiki/Gatekeeper_(macOS))</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Gatekeeper_(macOS))</sup>
 
 [^329]: Alpine Linux Wiki, Setting up a laptop <https://wiki.alpinelinux.org/wiki/Setting_up_a_laptop> <sup>[[Archive.org]](https://web.archive.org/web/https://wiki.alpinelinux.org/wiki/Setting_up_a_laptop)</sup>
 
-[^330]: Wikipedia Veracrypt <https://en.wikipedia.org/wiki/VeraCrypt> <sup>[[Wikiless]](https://wikiless.org/wiki/VeraCrypt)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/VeraCrypt)</sup>
+[^330]: Wikipedia Veracrypt <https://en.wikipedia.org/wiki/VeraCrypt> <sup>[[Wikiless]](https://wikiless.com/wiki/VeraCrypt)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/VeraCrypt)</sup>
 
 [^331]: OSTIF Veracrypt Audit, 2016 <https://web.archive.org/web/https://ostif.org/the-veracrypt-audit-results/>
 
@@ -12223,7 +12223,7 @@ In short, our opinion is that you may use Session Messenger on iOS due to the ab
 
 [^338]: Microsoft, BitLocker Countermeasures, Attacker countermeasures <https://docs.microsoft.com/en-us/windows/security/information-protection/bitlocker/bitlocker-countermeasures> <sup>[[Archive.org]](https://web.archive.org/web/https://docs.microsoft.com/en-us/windows/security/information-protection/bitlocker/bitlocker-countermeasures)</sup>
 
-[^339]: Wikipedia, Trim <https://en.wikipedia.org/wiki/Trim_(computing)> <sup>[[Wikiless]](https://wikiless.org/wiki/Trim_(computing))</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Trim_(computing))</sup>
+[^339]: Wikipedia, Trim <https://en.wikipedia.org/wiki/Trim_(computing)> <sup>[[Wikiless]](https://wikiless.com/wiki/Trim_(computing))</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Trim_(computing))</sup>
 
 [^340]: Veracrypt Documentation, Trim Operations <https://www.veracrypt.fr/en/Trim%20Operation.html> <sup>[[Archive.org]](https://web.archive.org/web/https://www.veracrypt.fr/en/Trim%20Operation.html)</sup>
 
@@ -12241,7 +12241,7 @@ In short, our opinion is that you may use Session Messenger on iOS due to the ab
 
 [^347]: Veracrypt Documentation, Rescue Disk <https://www.veracrypt.fr/en/VeraCrypt%20Rescue%20Disk.html> <sup>[[Archive.org]](https://web.archive.org/web/https://www.veracrypt.fr/en/VeraCrypt%20Rescue%20Disk.html)</sup>
 
-[^348]: Wikipedia, Virtualbox <https://en.wikipedia.org/wiki/VirtualBox> <sup>[[Wikiless]](https://wikiless.org/wiki/VirtualBox)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/VirtualBox)</sup>
+[^348]: Wikipedia, Virtualbox <https://en.wikipedia.org/wiki/VirtualBox> <sup>[[Wikiless]](https://wikiless.com/wiki/VirtualBox)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/VirtualBox)</sup>
 
 [^349]: VirtualBox Ticket 17987 <https://www.virtualbox.org/ticket/17987> <sup>[[Archive.org]](https://web.archive.org/web/https://www.virtualbox.org/ticket/17987)</sup>
 
@@ -12251,21 +12251,21 @@ In short, our opinion is that you may use Session Messenger on iOS due to the ab
 
 [^352]: Whonix Documentation, Tunnels Comparison Table <https://www.whonix.org/wiki/Tunnels/Introduction#Comparison_Table> <sup>[[Archive.org]](https://web.archive.org/web/https://www.whonix.org/wiki/Tunnels/Introduction#Comparison_Table)</sup>
 
-[^353]: Wikipedia, Whonix <https://en.wikipedia.org/wiki/Whonix> <sup>[[Wikiless]](https://wikiless.org/wiki/Whonix)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Whonix)</sup>
+[^353]: Wikipedia, Whonix <https://en.wikipedia.org/wiki/Whonix> <sup>[[Wikiless]](https://wikiless.com/wiki/Whonix)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Whonix)</sup>
 
 [^354]: Oracle Virtualbox Manual, Snapshots <https://docs.oracle.com/en/virtualization/virtualbox/6.0/user/snapshots.html> <sup>[[Archive.org]](https://web.archive.org/web/https://docs.oracle.com/en/virtualization/virtualbox/6.0/user/snapshots.html)</sup>
 
 [^355]: Utica College, Forensic Recovery Of Evidence From Deleted Oracle Virtualbox Virtual Machines <https://web.archive.org/web/https://programs.online.utica.edu/sites/default/files/Neal_6_Gonnella_Forensic_Recovery_of_Evidence_from_Deleted_Oracle_VirtualBox_Virtual_Machine.pdf>
 
-[^356]: Wikipedia, Spectre <https://en.wikipedia.org/wiki/Spectre_(security_vulnerability)> <sup>[[Wikiless]](https://wikiless.org/wiki/Spectre_(security_vulnerability))</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Spectre_(security_vulnerability))</sup>
+[^356]: Wikipedia, Spectre <https://en.wikipedia.org/wiki/Spectre_(security_vulnerability)> <sup>[[Wikiless]](https://wikiless.com/wiki/Spectre_(security_vulnerability))</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Spectre_(security_vulnerability))</sup>
 
-[^357]: Wikipedia, Meltdown <https://en.wikipedia.org/wiki/Meltdown_(security_vulnerability)> <sup>[[Wikiless]](https://wikiless.org/wiki/Meltdown_(security_vulnerability))</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Meltdown_(security_vulnerability))</sup>
+[^357]: Wikipedia, Meltdown <https://en.wikipedia.org/wiki/Meltdown_(security_vulnerability)> <sup>[[Wikiless]](https://wikiless.com/wiki/Meltdown_(security_vulnerability))</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Meltdown_(security_vulnerability))</sup>
 
 [^358]: Whonix Documentation, Stream Isolation, By Settings <https://www.whonix.org/wiki/Stream_Isolation#By_Settings> <sup>[[Archive.org]](https://web.archive.org/web/https://www.whonix.org/wiki/Stream_Isolation#By_Settings)</sup>
 
-[^359]: Wikipedia, TOTP <https://en.wikipedia.org/wiki/Time-based_One-time_Password_algorithm> <sup>[[Wikiless]](https://wikiless.org/wiki/Time-based_One-time_Password_algorithm)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Time-based_One-time_Password_algorithm)</sup>
+[^359]: Wikipedia, TOTP <https://en.wikipedia.org/wiki/Time-based_One-time_Password_algorithm> <sup>[[Wikiless]](https://wikiless.com/wiki/Time-based_One-time_Password_algorithm)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Time-based_One-time_Password_algorithm)</sup>
 
-[^360]: Wikipedia, Multi-Factor Authentication <https://en.wikipedia.org/wiki/Multi-factor_authentication> <sup>[[Wikiless]](https://wikiless.org/wiki/Multi-factor_authentication)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Multi-factor_authentication)</sup>
+[^360]: Wikipedia, Multi-Factor Authentication <https://en.wikipedia.org/wiki/Multi-factor_authentication> <sup>[[Wikiless]](https://wikiless.com/wiki/Multi-factor_authentication)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Multi-factor_authentication)</sup>
 
 [^361]: Whonix Documentation, Bridged Adapters Warning <https://www.whonix.org/wiki/Whonix-Gateway_Security#Warning:_Bridged_Networking> <sup>[[Archive.org]](https://web.archive.org/web/https://www.whonix.org/wiki/Whonix-Gateway_Security#Warning:_Bridged_Networking)</sup>
 
@@ -12279,17 +12279,17 @@ In short, our opinion is that you may use Session Messenger on iOS due to the ab
 
 [^366]: Qubes OS Issues, Simulate Hibernation / Suspend-To-Disk (Issue #2414) <https://github.com/QubesOS/qubes-issues/issues/2414> <sup>[[Archive.org]](https://web.archive.org/web/https://github.com/QubesOS/qubes-issues/issues/2414)</sup>
 
-[^367]: Wikipedia, AppArmor <https://en.wikipedia.org/wiki/AppArmor> <sup>[[Wikiless]](https://wikiless.org/wiki/AppArmor)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/AppArmor)</sup>
+[^367]: Wikipedia, AppArmor <https://en.wikipedia.org/wiki/AppArmor> <sup>[[Wikiless]](https://wikiless.com/wiki/AppArmor)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/AppArmor)</sup>
 
-[^368]: Wikipedia, SELinux <https://en.wikipedia.org/wiki/Security-Enhanced_Linux> <sup>[[Wikiless]](https://wikiless.org/wiki/Security-Enhanced_Linux)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Security-Enhanced_Linux)</sup>
+[^368]: Wikipedia, SELinux <https://en.wikipedia.org/wiki/Security-Enhanced_Linux> <sup>[[Wikiless]](https://wikiless.com/wiki/Security-Enhanced_Linux)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Security-Enhanced_Linux)</sup>
 
-[^369]: Wikipedia, TOTP <https://en.wikipedia.org/wiki/Time-based_One-time_Password_algorithm> <sup>[[Wikiless]](https://wikiless.org/wiki/Time-based_One-time_Password_algorithm)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Time-based_One-time_Password_algorithm)</sup>
+[^369]: Wikipedia, TOTP <https://en.wikipedia.org/wiki/Time-based_One-time_Password_algorithm> <sup>[[Wikiless]](https://wikiless.com/wiki/Time-based_One-time_Password_algorithm)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Time-based_One-time_Password_algorithm)</sup>
 
-[^370]: Wikipedia, Multi-Factor Authentication <https://en.wikipedia.org/wiki/Multi-factor_authentication> <sup>[[Wikiless]](https://wikiless.org/wiki/Multi-factor_authentication)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Multi-factor_authentication)</sup>
+[^370]: Wikipedia, Multi-Factor Authentication <https://en.wikipedia.org/wiki/Multi-factor_authentication> <sup>[[Wikiless]](https://wikiless.com/wiki/Multi-factor_authentication)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Multi-factor_authentication)</sup>
 
-[^371]: Wikipedia, Captcha <https://en.wikipedia.org/wiki/CAPTCHA> <sup>[[Wikiless]](https://wikiless.org/wiki/CAPTCHA)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/CAPTCHA)</sup>
+[^371]: Wikipedia, Captcha <https://en.wikipedia.org/wiki/CAPTCHA> <sup>[[Wikiless]](https://wikiless.com/wiki/CAPTCHA)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/CAPTCHA)</sup>
 
-[^372]: Wikipedia, Turing Test <https://en.wikipedia.org/wiki/Turing_test> <sup>[[Wikiless]](https://wikiless.org/wiki/Turing_test)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Turing_test)</sup>
+[^372]: Wikipedia, Turing Test <https://en.wikipedia.org/wiki/Turing_test> <sup>[[Wikiless]](https://wikiless.com/wiki/Turing_test)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Turing_test)</sup>
 
 [^373]: Google reCAPTCHA <https://www.google.com/recaptcha/about/> <sup>[[Archive.org]](https://web.archive.org/web/https://www.google.com/recaptcha/about/)</sup>
 
@@ -12309,13 +12309,13 @@ In short, our opinion is that you may use Session Messenger on iOS due to the ab
 
 [^381]: Privacy International, Timeline of SIM Card Registration Laws <https://privacyinternational.org/long-read/3018/timeline-sim-card-registration-laws> <sup>[[Archive.org]](https://web.archive.org/web/https://privacyinternational.org/long-read/3018/timeline-sim-card-registration-laws)</sup>
 
-[^382]: Wikipedia, Device Fingerprinting <https://en.wikipedia.org/wiki/Device_fingerprint> <sup>[[Wikiless]](https://wikiless.org/wiki/Device_fingerprint)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Device_fingerprint)</sup>
+[^382]: Wikipedia, Device Fingerprinting <https://en.wikipedia.org/wiki/Device_fingerprint> <sup>[[Wikiless]](https://wikiless.com/wiki/Device_fingerprint)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Device_fingerprint)</sup>
 
 [^383]: Developers Google Blog, Guidance to developers affected by our effort to block less secure browsers and applications <https://developers.googleblog.com/2020/08/guidance-for-our-effort-to-block-less-secure-browser-and-apps.html> <sup>[[Archive.org]](https://web.archive.org/web/https://developers.googleblog.com/2020/08/guidance-for-our-effort-to-block-less-secure-browser-and-apps.html)</sup>
 
 [^384]: Google Help, Access age-restricted content & features <https://support.google.com/accounts/answer/10071085> <sup>[[Archive.org]](https://web.archive.org/web/https://support.google.com/accounts/answer/10071085)</sup>
 
-[^385]: Wikipedia, Dark Pattern <https://en.wikipedia.org/wiki/Dark_pattern> <sup>[[Wikiless]](https://wikiless.org/wiki/Dark_pattern)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Dark_pattern)</sup>
+[^385]: Wikipedia, Dark Pattern <https://en.wikipedia.org/wiki/Dark_pattern> <sup>[[Wikiless]](https://wikiless.com/wiki/Dark_pattern)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Dark_pattern)</sup>
 
 [^386]: The Verge, Tinder will give you a verified blue check mark if you pass its catfishing test <https://www.theverge.com/2020/1/23/21077423/tinder-photo-verification-blue-checkmark-safety-center-launch-noonlight> <sup>[[Archive.org]](https://web.archive.org/web/https://www.theverge.com/2020/1/23/21077423/tinder-photo-verification-blue-checkmark-safety-center-launch-noonlight)</sup>
 
@@ -12325,17 +12325,17 @@ In short, our opinion is that you may use Session Messenger on iOS due to the ab
 
 [^389]: Variety, China Launches Hotline to Report Online Comments That 'Distort' History or 'Deny' Its Cultural Excellence <https://variety.com/2021/digital/news/china-censorship-hotline-historical-nihilism-1234950554/> <sup>[[Archive.org]](https://web.archive.org/web/https://variety.com/2021/digital/news/china-censorship-hotline-historical-nihilism-1234950554/)</sup>
 
-[^390]: Wikipedia, Trust but verify <https://en.wikipedia.org/wiki/Trust,_but_verify> <sup>[[Wikiless]](https://wikiless.org/wiki/Trust,_but_verify)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Trust,_but_verify)</sup>
+[^390]: Wikipedia, Trust but verify <https://en.wikipedia.org/wiki/Trust,_but_verify> <sup>[[Wikiless]](https://wikiless.com/wiki/Trust,_but_verify)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Trust,_but_verify)</sup>
 
-[^391]: Wikipedia, Zero-trust Security Model <https://en.wikipedia.org/wiki/Zero_trust_security_model> <sup>[[Wikiless]](https://wikiless.org/wiki/Zero_trust_security_model)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Zero_trust_security_model)</sup>
+[^391]: Wikipedia, Zero-trust Security Model <https://en.wikipedia.org/wiki/Zero_trust_security_model> <sup>[[Wikiless]](https://wikiless.com/wiki/Zero_trust_security_model)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Zero_trust_security_model)</sup>
 
-[^392]: Wikipedia, Espionage, Organization <https://en.wikipedia.org/wiki/Espionage#Organization> <sup>[[Wikiless]](https://wikiless.org/wiki/Espionage)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Espionage)</sup>
+[^392]: Wikipedia, Espionage, Organization <https://en.wikipedia.org/wiki/Espionage#Organization> <sup>[[Wikiless]](https://wikiless.com/wiki/Espionage)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Espionage)</sup>
 
 [^393]: Medium.com, Kyle McDonald, How to recognize fake AI-generated images <https://kcimc.medium.com/how-to-recognize-fake-ai-generated-images-4d1f6f9a2842><sup>[[Scribe.rip]](https://scribe.rip/@kcimc/how-to-recognize-fake-ai-generated-images-4d1f6f9a2842)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://kcimc.medium.com/how-to-recognize-fake-ai-generated-images-4d1f6f9a2842)</sup>
 
 [^394]: Jayway Blog, Using ML to detect fake face images created by AI <https://blog.jayway.com/2020/03/06/using-ml-to-detect-fake-face-images-created-by-ai/> <sup>[[Archive.org]](https://web.archive.org/web/https://blog.jayway.com/2020/03/06/using-ml-to-detect-fake-face-images-created-by-ai/)</sup>
 
-[^395]: Wikipedia, Sim Swapping <https://en.wikipedia.org/wiki/SIM_swap_scam> <sup>[[Wikiless]](https://wikiless.org/wiki/SIM_swap_scam)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/SIM_swap_scam)</sup>
+[^395]: Wikipedia, Sim Swapping <https://en.wikipedia.org/wiki/SIM_swap_scam> <sup>[[Wikiless]](https://wikiless.com/wiki/SIM_swap_scam)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/SIM_swap_scam)</sup>
 
 [^396]: Whonix Documentation, Tor Configuration <https://www.whonix.org/wiki/Tor#Edit_Tor_Configuration> <sup>[[Archive.org]](https://web.archive.org/web/https://www.whonix.org/wiki/Tor)</sup>
 
@@ -12363,13 +12363,13 @@ In short, our opinion is that you may use Session Messenger on iOS due to the ab
 
 [^408]: KnowYourMeme, Good Luck, I'm Behind 7 Proxies <https://knowyourmeme.com/memes/good-luck-im-behind-7-proxies> <sup>[[Archive.org]](https://web.archive.org/web/https://knowyourmeme.com/memes/good-luck-im-behind-7-proxies)</sup>
 
-[^409]: Wikipedia, end-to-end encryption <https://en.wikipedia.org/wiki/End-to-end_encryption> <sup>[[Wikiless]](https://wikiless.org/wiki/End-to-end_encryption)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/End-to-end_encryption)</sup>
+[^409]: Wikipedia, end-to-end encryption <https://en.wikipedia.org/wiki/End-to-end_encryption> <sup>[[Wikiless]](https://wikiless.com/wiki/End-to-end_encryption)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/End-to-end_encryption)</sup>
 
-[^410]: Wikipedia, Forward Secrecy <https://en.wikipedia.org/wiki/Forward_secrecy> <sup>[[Wikiless]](https://wikiless.org/wiki/Forward_secrecy)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Forward_secrecy)</sup>
+[^410]: Wikipedia, Forward Secrecy <https://en.wikipedia.org/wiki/Forward_secrecy> <sup>[[Wikiless]](https://wikiless.com/wiki/Forward_secrecy)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Forward_secrecy)</sup>
 
 [^411]: Proton Blog, What is zero-access encryption? <https://proton.me/blog/zero-access-encryption/> <sup>[[Archive.org]](https://web.archive.org/web/https://proton.me/blog/zero-access-encryption/)</sup>
 
-[^412]: Wikipedia, Cambridge Analytica Scandal <https://en.wikipedia.org/wiki/Facebook%E2%80%93Cambridge_Analytica_data_scandal> <sup>[[Wikiless]](https://wikiless.org/wiki/Facebook%E2%80%93Cambridge_Analytica_data_scandal)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Facebook%E2%80%93Cambridge_Analytica_data_scandal)</sup>
+[^412]: Wikipedia, Cambridge Analytica Scandal <https://en.wikipedia.org/wiki/Facebook%E2%80%93Cambridge_Analytica_data_scandal> <sup>[[Wikiless]](https://wikiless.com/wiki/Facebook%E2%80%93Cambridge_Analytica_data_scandal)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Facebook%E2%80%93Cambridge_Analytica_data_scandal)</sup>
 
 [^413]: Signal Blog, Technology preview: Sealed sender for Signal <https://signal.org/blog/sealed-sender/> <sup>[[Archive.org]](https://web.archive.org/web/https://signal.org/blog/sealed-sender/)</sup>
 
@@ -12387,25 +12387,25 @@ In short, our opinion is that you may use Session Messenger on iOS due to the ab
 
 [^420]: Techlore, Top 5 BEST Messengers For Privacy <https://www.youtube.com/watch?v=aVwl892hqb4> <sup>[[Invidious]](https://yewtu.be/watch?v=aVwl892hqb4)</sup>
 
-[^421]: Wikipedia, IPFS <https://en.wikipedia.org/wiki/InterPlanetary_File_System> <sup>[[Wikiless]](https://wikiless.org/wiki/InterPlanetary_File_System)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/InterPlanetary_File_System)</sup>
+[^421]: Wikipedia, IPFS <https://en.wikipedia.org/wiki/InterPlanetary_File_System> <sup>[[Wikiless]](https://wikiless.com/wiki/InterPlanetary_File_System)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/InterPlanetary_File_System)</sup>
 
 [^422]: Praxis Films, Open Letter from Laura Poitras <https://www.praxisfilms.org/open-letter-from-laura-poitras/> <sup>[[Archive.org]](https://web.archive.org/web/https://www.praxisfilms.org/open-letter-from-laura-poitras/)</sup>
 
-[^423]: Wikipedia, SecureDrop <https://en.wikipedia.org/wiki/SecureDrop> <sup>[[Wikiless]](https://wikiless.org/wiki/SecureDrop)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/SecureDrop)</sup>
+[^423]: Wikipedia, SecureDrop <https://en.wikipedia.org/wiki/SecureDrop> <sup>[[Wikiless]](https://wikiless.com/wiki/SecureDrop)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/SecureDrop)</sup>
 
-[^424]: Wikipedia, TPM <https://en.wikipedia.org/wiki/Trusted_Platform_Module> <sup>[[Wikiless]](https://wikiless.org/wiki/Trusted_Platform_Module)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Trusted_Platform_Module)</sup>
+[^424]: Wikipedia, TPM <https://en.wikipedia.org/wiki/Trusted_Platform_Module> <sup>[[Wikiless]](https://wikiless.com/wiki/Trusted_Platform_Module)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Trusted_Platform_Module)</sup>
 
-[^425]: Wikipedia, Pastebin <https://en.wikipedia.org/wiki/Pastebin> <sup>[[Wikiless]](https://wikiless.org/wiki/Pastebin)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Pastebin)</sup>
+[^425]: Wikipedia, Pastebin <https://en.wikipedia.org/wiki/Pastebin> <sup>[[Wikiless]](https://wikiless.com/wiki/Pastebin)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Pastebin)</sup>
 
-[^426]: Wikipedia, Wear Leveling <https://en.wikipedia.org/wiki/Wear_leveling> <sup>[[Wikiless]](https://wikiless.org/wiki/Wear_leveling)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Wear_leveling)</sup>
+[^426]: Wikipedia, Wear Leveling <https://en.wikipedia.org/wiki/Wear_leveling> <sup>[[Wikiless]](https://wikiless.com/wiki/Wear_leveling)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Wear_leveling)</sup>
 
-[^427]: Wikipedia, Trim <https://en.wikipedia.org/wiki/Write_amplification#TRIM> <sup>[[Wikiless]](https://wikiless.org/wiki/Write_amplification)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Write_amplification)</sup>
+[^427]: Wikipedia, Trim <https://en.wikipedia.org/wiki/Write_amplification#TRIM> <sup>[[Wikiless]](https://wikiless.com/wiki/Write_amplification)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Write_amplification)</sup>
 
-[^428]: Wikipedia, Write Amplification <https://en.wikipedia.org/wiki/Write_amplification> <sup>[[Wikiless]](https://wikiless.org/wiki/Write_amplification)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Write_amplification)</sup>
+[^428]: Wikipedia, Write Amplification <https://en.wikipedia.org/wiki/Write_amplification> <sup>[[Wikiless]](https://wikiless.com/wiki/Write_amplification)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Write_amplification)</sup>
 
-[^429]: Wikipedia, Trim Disadvantages <https://en.wikipedia.org/wiki/Trim_(computing)#Disadvantages> <sup>[[Wikiless]](https://wikiless.org/wiki/Trim_(computing))</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Trim_(computing))</sup>
+[^429]: Wikipedia, Trim Disadvantages <https://en.wikipedia.org/wiki/Trim_(computing)#Disadvantages> <sup>[[Wikiless]](https://wikiless.com/wiki/Trim_(computing))</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Trim_(computing))</sup>
 
-[^430]: Wikipedia, Garbage Collection <https://en.wikipedia.org/wiki/Write_amplification#Garbage_collection> <sup>[[Wikiless]](https://wikiless.org/wiki/Write_amplification)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Write_amplification)</sup>
+[^430]: Wikipedia, Garbage Collection <https://en.wikipedia.org/wiki/Write_amplification#Garbage_collection> <sup>[[Wikiless]](https://wikiless.com/wiki/Write_amplification)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Write_amplification)</sup>
 
 [^431]: Techgage, Too TRIM? When SSD Data Recovery is Impossible <https://techgage.com/article/too_trim_when_ssd_data_recovery_is_impossible/> <sup>[[Archive.org]](https://web.archive.org/web/https://techgage.com/article/too_trim_when_ssd_data_recovery_is_impossible/)</sup>
 
@@ -12419,9 +12419,9 @@ In short, our opinion is that you may use Session Messenger on iOS due to the ab
 
 [^436]: BleepingComputer, Firmware attack can drop persistent malware in hidden SSD area <https://www.bleepingcomputer.com/news/security/firmware-attack-can-drop-persistent-malware-in-hidden-ssd-area/> <sup>[[Archive.org]](https://web.archive.org/web/https://www.bleepingcomputer.com/news/security/firmware-attack-can-drop-persistent-malware-in-hidden-ssd-area/)</sup>
 
-[^437]: Wikipedia, Parted Magic <https://en.wikipedia.org/wiki/Parted_Magic> <sup>[[Wikiless]](https://wikiless.org/wiki/Parted_Magic)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Parted_Magic)</sup>
+[^437]: Wikipedia, Parted Magic <https://en.wikipedia.org/wiki/Parted_Magic> <sup>[[Wikiless]](https://wikiless.com/wiki/Parted_Magic)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Parted_Magic)</sup>
 
-[^438]: Wikipedia, hdparm <https://en.wikipedia.org/wiki/Hdparm> <sup>[[Wikiless]](https://wikiless.org/wiki/Hdparm)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Hdparm)</sup>
+[^438]: Wikipedia, hdparm <https://en.wikipedia.org/wiki/Hdparm> <sup>[[Wikiless]](https://wikiless.com/wiki/Hdparm)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Hdparm)</sup>
 
 [^439]: GitHub, nvme-cli <https://github.com/linux-nvme/nvme-cli> <sup>[[Archive.org]](https://web.archive.org/web/https://github.com/linux-nvme/nvme-cli)</sup>
 
@@ -12447,17 +12447,17 @@ In short, our opinion is that you may use Session Messenger on iOS due to the ab
 
 [^450]: DuckDuckGo help, Sources <https://help.duckduckgo.com/duckduckgo-help-pages/results/sources/> <sup>[[Archive.org]](https://web.archive.org/web/https://help.duckduckgo.com/duckduckgo-help-pages/results/sources/)</sup>
 
-[^451]: Wikipedia, Dead Drop <https://en.wikipedia.org/wiki/Dead_drop> <sup>[[Wikiless]](https://wikiless.org/wiki/Dead_drop)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Dead_drop)</sup>
+[^451]: Wikipedia, Dead Drop <https://en.wikipedia.org/wiki/Dead_drop> <sup>[[Wikiless]](https://wikiless.com/wiki/Dead_drop)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Dead_drop)</sup>
 
-[^452]: Wikipedia, Secure Communication Obfuscation <https://en.wikipedia.org/wiki/Obfuscation#Secure_communication> <sup>[[Wikiless]](https://wikiless.org/wiki/Obfuscation)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Obfuscation)</sup>
+[^452]: Wikipedia, Secure Communication Obfuscation <https://en.wikipedia.org/wiki/Obfuscation#Secure_communication> <sup>[[Wikiless]](https://wikiless.com/wiki/Obfuscation)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Obfuscation)</sup>
 
-[^453]: Wikipedia, Steganography <https://en.wikipedia.org/wiki/Steganography> <sup>[[Wikiless]](https://wikiless.org/wiki/Steganography)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Steganography)</sup>
+[^453]: Wikipedia, Steganography <https://en.wikipedia.org/wiki/Steganography> <sup>[[Wikiless]](https://wikiless.com/wiki/Steganography)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Steganography)</sup>
 
-[^454]: Wikipedia, Kleptography <https://en.wikipedia.org/wiki/Kleptography> <sup>[[Wikiless]](https://wikiless.org/wiki/Kleptography)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Kleptography)</sup>
+[^454]: Wikipedia, Kleptography <https://en.wikipedia.org/wiki/Kleptography> <sup>[[Wikiless]](https://wikiless.com/wiki/Kleptography)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Kleptography)</sup>
 
-[^455]: Wikipedia, Koalang <https://en.wikipedia.org/wiki/Koalang> <sup>[[Wikiless]](https://wikiless.org/wiki/Koalang)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Koalang)</sup>
+[^455]: Wikipedia, Koalang <https://en.wikipedia.org/wiki/Koalang> <sup>[[Wikiless]](https://wikiless.com/wiki/Koalang)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Koalang)</sup>
 
-[^456]: Wikipedia, OPSEC <https://en.wikipedia.org/wiki/Operations_security> <sup>[[Wikiless]](https://wikiless.org/wiki/Operations_security)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Operations_security)</sup>
+[^456]: Wikipedia, OPSEC <https://en.wikipedia.org/wiki/Operations_security> <sup>[[Wikiless]](https://wikiless.com/wiki/Operations_security)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Operations_security)</sup>
 
 [^457]: Quote Investigator, A Lie Can Travel Halfway Around the World While the Truth Is Putting On Its Shoes <https://quoteinvestigator.com/2014/07/13/truth/> <sup>[[Archive.org]](https://web.archive.org/web/https://quoteinvestigator.com/2014/07/13/truth/)</sup>
 
@@ -12471,7 +12471,7 @@ In short, our opinion is that you may use Session Messenger on iOS due to the ab
 
 [^464]: NYTimes, Lost Passwords Lock Millionaires Out of Their Bitcoin Fortunes <https://www.nytimes.com/2021/01/12/technology/bitcoin-passwords-wallets-fortunes.html> <sup>[[Archive.org]](https://web.archive.org/web/https://www.nytimes.com/2021/01/12/technology/bitcoin-passwords-wallets-fortunes.html)</sup>
 
-[^466]: Wikipedia, Faraday Cage, <https://en.wikipedia.org/wiki/Faraday_cage> <sup>[[Wikiless]](https://wikiless.org/wiki/Faraday_cage)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Faraday_cage)</sup>
+[^466]: Wikipedia, Faraday Cage, <https://en.wikipedia.org/wiki/Faraday_cage> <sup>[[Wikiless]](https://wikiless.com/wiki/Faraday_cage)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Faraday_cage)</sup>
 
 [^467]: Edith Cowan University, A forensic examination of several mobile device Faraday bags & materials to test their effectiveness materials to test their effectiveness <https://web.archive.org/web/https://ro.ecu.edu.au/cgi/viewcontent.cgi?article=1165&context=adf> <sup>[[Archive.org]](https://web.archive.org/web/20211011220410/https://ro.ecu.edu.au/cgi/viewcontent.cgi?article=1165&context=adf)</sup>
 
@@ -12481,35 +12481,35 @@ In short, our opinion is that you may use Session Messenger on iOS due to the ab
 
 [^470]: YouTube, Fingerprinting Paper - Forensic Education <https://www.youtube.com/watch?v=sO98kDLkh-M> <sup>[[Invidious]](https://yewtu.be/watch?v=sO98kDLkh-M)</sup>
 
-[^471]: Wikipedia, Touch DNA, <https://en.wikipedia.org/wiki/Touch_DNA> <sup>[[Wikiless]](https://wikiless.org/wiki/Touch_DNA)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Touch_DNA)</sup>
+[^471]: Wikipedia, Touch DNA, <https://en.wikipedia.org/wiki/Touch_DNA> <sup>[[Wikiless]](https://wikiless.com/wiki/Touch_DNA)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Touch_DNA)</sup>
 
 [^472]: TheDNAGuide, DNA from Postage Stamps or Hair Samples? Yeeesssss..... <https://www.yourdnaguide.com/ydgblog/dna-hair-samples-postage-stamps> <sup>[[Archive.org]](https://web.archive.org/web/https://www.yourdnaguide.com/ydgblog/dna-hair-samples-postage-stamps)</sup>
 
 [^473]: GitHub, Mhinkie, OONI-Detection <https://github.com/mhinkie/ooni-detection> <sup>[[Archive.org]](https://web.archive.org/web/https://github.com/mhinkie/ooni-detection)</sup>
 
-[^474]: Wikipedia, File Verification <https://en.wikipedia.org/wiki/File_verification> <sup>[[Wikiless]](https://wikiless.org/wiki/File_verification)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/File_verification)</sup>
+[^474]: Wikipedia, File Verification <https://en.wikipedia.org/wiki/File_verification> <sup>[[Wikiless]](https://wikiless.com/wiki/File_verification)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/File_verification)</sup>
 
-[^475]: Wikipedia, CRC <https://en.wikipedia.org/wiki/Cyclic_redundancy_check> <sup>[[Wikiless]](https://wikiless.org/wiki/Cyclic_redundancy_check)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Cyclic_redundancy_check)</sup>
+[^475]: Wikipedia, CRC <https://en.wikipedia.org/wiki/Cyclic_redundancy_check> <sup>[[Wikiless]](https://wikiless.com/wiki/Cyclic_redundancy_check)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Cyclic_redundancy_check)</sup>
 
-[^476]: Wikipedia, MD5 <https://en.wikipedia.org/wiki/MD5> <sup>[[Wikiless]](https://wikiless.org/wiki/MD5)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/MD5)</sup>
+[^476]: Wikipedia, MD5 <https://en.wikipedia.org/wiki/MD5> <sup>[[Wikiless]](https://wikiless.com/wiki/MD5)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/MD5)</sup>
 
-[^477]: Wikipedia, MD5 Security <https://en.wikipedia.org/wiki/MD5#Security> <sup>[[Wikiless]](https://wikiless.org/wiki/MD5)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/MD5)</sup>
+[^477]: Wikipedia, MD5 Security <https://en.wikipedia.org/wiki/MD5#Security> <sup>[[Wikiless]](https://wikiless.com/wiki/MD5)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/MD5)</sup>
 
-[^478]: Wikipedia, Collisions <https://en.wikipedia.org/wiki/Collision_(computer_science)> <sup>[[Wikiless]](https://wikiless.org/wiki/Collision_(computer_science))</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Collision_(computer_science))</sup>
+[^478]: Wikipedia, Collisions <https://en.wikipedia.org/wiki/Collision_(computer_science)> <sup>[[Wikiless]](https://wikiless.com/wiki/Collision_(computer_science))</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Collision_(computer_science))</sup>
 
-[^479]: Wikipedia, SHA <https://en.wikipedia.org/wiki/Secure_Hash_Algorithms> <sup>[[Wikiless]](https://wikiless.org/wiki/Secure_Hash_Algorithms)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Secure_Hash_Algorithms)</sup>
+[^479]: Wikipedia, SHA <https://en.wikipedia.org/wiki/Secure_Hash_Algorithms> <sup>[[Wikiless]](https://wikiless.com/wiki/Secure_Hash_Algorithms)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Secure_Hash_Algorithms)</sup>
 
-[^480]: Wikipedia, SHA-2 <https://en.wikipedia.org/wiki/SHA-2> <sup>[[Wikiless]](https://wikiless.org/wiki/SHA-2)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/SHA-2)</sup>
+[^480]: Wikipedia, SHA-2 <https://en.wikipedia.org/wiki/SHA-2> <sup>[[Wikiless]](https://wikiless.com/wiki/SHA-2)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/SHA-2)</sup>
 
-[^481]: Wikipedia, Collision Resistance <https://en.wikipedia.org/wiki/Collision_resistance> <sup>[[Wikiless]](https://wikiless.org/wiki/Collision_resistance)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Collision_resistance)</sup>
+[^481]: Wikipedia, Collision Resistance <https://en.wikipedia.org/wiki/Collision_resistance> <sup>[[Wikiless]](https://wikiless.com/wiki/Collision_resistance)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Collision_resistance)</sup>
 
 [^482]: GnuPG Gpg4win Wiki, Check integrity of Gpg4win packages <https://wiki.gnupg.org/Gpg4win/CheckIntegrity> <sup>[[Archive.org]](https://web.archive.org/web/https://wiki.gnupg.org/Gpg4win/CheckIntegrity)</sup>
 
-[^484]: Wikipedia, GPG <https://en.wikipedia.org/wiki/GNU_Privacy_Guard> <sup>[[Wikiless]](https://wikiless.org/wiki/GNU_Privacy_Guard)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/GNU_Privacy_Guard)</sup>
+[^484]: Wikipedia, GPG <https://en.wikipedia.org/wiki/GNU_Privacy_Guard> <sup>[[Wikiless]](https://wikiless.com/wiki/GNU_Privacy_Guard)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/GNU_Privacy_Guard)</sup>
 
-[^485]: Wikipedia, Public-Key Cryptography <https://en.wikipedia.org/wiki/Public-key_cryptography> <sup>[[Wikiless]](https://wikiless.org/wiki/Public-key_cryptography)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Public-key_cryptography)</sup>
+[^485]: Wikipedia, Public-Key Cryptography <https://en.wikipedia.org/wiki/Public-key_cryptography> <sup>[[Wikiless]](https://wikiless.com/wiki/Public-key_cryptography)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Public-key_cryptography)</sup>
 
-[^486]: Wikipedia, Polymorphic Code <https://en.wikipedia.org/wiki/Polymorphic_code> <sup>[[Wikiless]](https://wikiless.org/wiki/Polymorphic_code)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Polymorphic_code)</sup>
+[^486]: Wikipedia, Polymorphic Code <https://en.wikipedia.org/wiki/Polymorphic_code> <sup>[[Wikiless]](https://wikiless.com/wiki/Polymorphic_code)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Polymorphic_code)</sup>
 
 [^487]: Whonix Documentation, Use of AV, <https://www.whonix.org/wiki/Malware_and_Firmware_Trojans#The_Utility_of_Antivirus_Tools> <sup>[[Archive.org]](https://web.archive.org/web/https://www.whonix.org/wiki/Malware_and_Firmware_Trojans)</sup>
 
@@ -12523,9 +12523,9 @@ In short, our opinion is that you may use Session Messenger on iOS due to the ab
 
 [^492]: Immunify, HiddenWasp: How to detect malware hidden on Linux & IoT <https://blog.imunify360.com/hiddenwasp-how-to-detect-malware-hidden-on-linux-iot> <sup>[[Archive.org]](https://web.archive.org/web/https://blog.imunify360.com/hiddenwasp-how-to-detect-malware-hidden-on-linux-iot)</sup>
 
-[^493]: Wikipedia, Linux Malware <https://en.wikipedia.org/wiki/Linux_malware> <sup>[[Wikiless]](https://wikiless.org/wiki/Linux_malware)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Linux_malware)</sup>
+[^493]: Wikipedia, Linux Malware <https://en.wikipedia.org/wiki/Linux_malware> <sup>[[Wikiless]](https://wikiless.com/wiki/Linux_malware)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Linux_malware)</sup>
 
-[^494]: Wikipedia, macOS Malware <https://en.wikipedia.org/wiki/macOS_malware> <sup>[[Wikiless]](https://wikiless.org/wiki/MacOS_malware)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/MacOS_malware)</sup>
+[^494]: Wikipedia, macOS Malware <https://en.wikipedia.org/wiki/macOS_malware> <sup>[[Wikiless]](https://wikiless.com/wiki/MacOS_malware)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/MacOS_malware)</sup>
 
 [^495]: MacWorld, List of Mac viruses, malware and security flaws <https://www.macworld.co.uk/feature/mac-viruses-list-3668354/> <sup>[[Archive.org]](https://web.archive.org/web/https://www.macworld.co.uk/feature/mac-viruses-list-3668354/)</sup>
 
@@ -12541,7 +12541,7 @@ In short, our opinion is that you may use Session Messenger on iOS due to the ab
 
 [^501]: Lenny Zeltser, Analyzing Malicious Documents Cheat Sheet <https://zeltser.com/analyzing-malicious-documents/> <sup>[[Archive.org]](https://web.archive.org/web/https://zeltser.com/analyzing-malicious-documents/)</sup>
 
-[^502]: Wikipedia, Portable Applications <https://en.wikipedia.org/wiki/Portable_application> <sup>[[Wikiless]](https://wikiless.org/wiki/Portable_application)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Portable_application)</sup>
+[^502]: Wikipedia, Portable Applications <https://en.wikipedia.org/wiki/Portable_application> <sup>[[Wikiless]](https://wikiless.com/wiki/Portable_application)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Portable_application)</sup>
 
 [^503]: Brave Help, What is a Private Window with Tor Connectivity? <https://support.brave.com/hc/en-us/articles/360018121491-What-is-a-Private-Window-with-Tor> <sup>[[Archive.org]](https://web.archive.org/web/https://support.brave.com/hc/en-us/articles/360018121491-What-is-a-Private-Window-with-Tor)</sup>
 
@@ -12575,7 +12575,7 @@ In short, our opinion is that you may use Session Messenger on iOS due to the ab
 
 [^518]: Duck's pond, Ungoogled-Chromium <https://qua3k.github.io/ungoogled/> <sup>[[Archive.org]](https://web.archive.org/web/https://qua3k.github.io/ungoogled/)</sup>
 
-[^519]: Wikipedia, Virtualization <https://en.wikipedia.org/wiki/Virtualization> <sup>[[Wikiless]](https://wikiless.org/wiki/Virtualization)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Virtualization)</sup>
+[^519]: Wikipedia, Virtualization <https://en.wikipedia.org/wiki/Virtualization> <sup>[[Wikiless]](https://wikiless.com/wiki/Virtualization)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Virtualization)</sup>
 
 [^520]: Tor Project, Project Snowflake <https://snowflake.torproject.org/> <sup>[[Archive.org]](https://web.archive.org/web/https://snowflake.torproject.org/)</sup>
 
@@ -12583,7 +12583,7 @@ In short, our opinion is that you may use Session Messenger on iOS due to the ab
 
 [^523]: Tor Browser Manual, Pluggable Transport <https://tb-manual.torproject.org/circumvention/> <sup>[[Archive.org]](https://web.archive.org/web/https://tb-manual.torproject.org/circumvention/)</sup>
 
-[^524]: Wikipedia, Domain Fronting <https://en.wikipedia.org/wiki/Domain_fronting> <sup>[[Wikiless]](https://wikiless.org/wiki/Domain_fronting)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Domain_fronting)</sup>
+[^524]: Wikipedia, Domain Fronting <https://en.wikipedia.org/wiki/Domain_fronting> <sup>[[Wikiless]](https://wikiless.com/wiki/Domain_fronting)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Domain_fronting)</sup>
 
 [^525]: GitLab, Tor Browser Issues, Add uBlock Origin to the Tor Browser <https://gitlab.torproject.org/tpo/applications/tor-browser/-/issues/17569> <sup>[[Archive.org]](https://web.archive.org/web/https://gitlab.torproject.org/tpo/applications/tor-browser/-/issues/17569)</sup>
 
@@ -12601,11 +12601,11 @@ In short, our opinion is that you may use Session Messenger on iOS due to the ab
 
 [^533]: YouTube, How to Choose a Password -- Computerphile <https://www.youtube.com/watch?v=3NjQ9b3pgIg> <sup>[[Invidious]](https://yewtu.be/watch?v=3NjQ9b3pgIg)</sup>
 
-[^534]: Wikipedia, Passphrase <https://en.wikipedia.org/wiki/Passphrase#Passphrase_selection> <sup>[[Wikiless]](https://wikiless.org/wiki/Passphrase#Passphrase_selection)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Passphrase#Passphrase_selection)</sup>
+[^534]: Wikipedia, Passphrase <https://en.wikipedia.org/wiki/Passphrase#Passphrase_selection> <sup>[[Wikiless]](https://wikiless.com/wiki/Passphrase#Passphrase_selection)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Passphrase#Passphrase_selection)</sup>
 
 [^535]: Monero Research Lab, Evaluating cryptocurrency security and privacy in a post-quantum world <https://github.com/insight-decentralized-consensus-lab/post-quantum-monero/blob/master/writeups/technical_note.pdf> <sup>[[Archive.org]](https://web.archive.org/web/https://github.com/insight-decentralized-consensus-lab/post-quantum-monero/blob/master/writeups/technical_note.pdf)</sup>
 
-[^536]: Wikipedia, Privacy in Australian Law <https://en.wikipedia.org/wiki/Privacy_in_Australian_law> <sup>[[Wikiless]](https://wikiless.org/wiki/Privacy_in_Australian_law)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Privacy_in_Australian_law)</sup>
+[^536]: Wikipedia, Privacy in Australian Law <https://en.wikipedia.org/wiki/Privacy_in_Australian_law> <sup>[[Wikiless]](https://wikiless.com/wiki/Privacy_in_Australian_law)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Privacy_in_Australian_law)</sup>
 
 [^537]: Parliament of Autralia, Surveillance Legislation Amendment (Identify and Disrupt) Bill 2021, <https://www.aph.gov.au/Parliamentary_Business/Bills_Legislation/Bills_Search_Results/Result?bId=r6623> <sup>[[Archive.org]](https://web.archive.org/web[/https://en.wikipedia.org/wiki/Privacy_in_Australian_law](https://www.aph.gov.au/Parliamentary_Business/Bills_Legislation/Bills_Search_Results/Result?bId=r6623))</sup>
 

@@ -94,9 +94,9 @@ _Anonymous Planet_ **does not** participate in any sponsoring, endorsement, adve
 ??? Note "Useful resources"
 
     - KYC? Not me: <https://kycnot.me/>
-    - Library Genesis: <https://en.wikipedia.org/wiki/Library_Genesis> <sup>[[Wikiless]](https://wikiless.org/wiki/Library_Genesis)</sup> (see their latest known URL in the Wikipedia article)
+    - Library Genesis: <https://en.wikipedia.org/wiki/Library_Genesis> <sup>[[Wikiless]](https://wikiless.com/wiki/Library_Genesis)</sup> (see their latest known URL in the Wikipedia article)
     - Real World Onion Sites: <https://github.com/alecmuffett/real-world-onion-sites>
-    - Sci-Hub <https://en.wikipedia.org/wiki/Sci-Hub> <sup>[[Wikiless]](https://wikiless.org/wiki/Sci-Hub)</sup> (see their latest known URL in the main Wikipedia article)
+    - Sci-Hub <https://en.wikipedia.org/wiki/Sci-Hub> <sup>[[Wikiless]](https://wikiless.com/wiki/Sci-Hub)</sup> (see their latest known URL in the main Wikipedia article)
     - Terms of Service, Didn't Read: <https://tosdr.org>
     - Whonix Documentation: <https://www.whonix.org/wiki/Documentation>
 
@@ -104,7 +104,7 @@ _Anonymous Planet_ **does not** participate in any sponsoring, endorsement, adve
 
     One or two of our community members uses or has used the resources of Riseup. We are not affiliated with Riseup in any manner.
 
-    We also hold **no affiliation** with the [Anonymous](https://en.wikipedia.org/wiki/Anonymous_(hacker_group)) <sup>[[Wikiless]](https://wikiless.org/wiki/Anonymous_(hacker_group))</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Anonymous_(hacker_group))</sup> hacker collective.
+    We also hold **no affiliation** with the [Anonymous](https://en.wikipedia.org/wiki/Anonymous_(hacker_group)) <sup>[[Wikiless]](https://wikiless.com/wiki/Anonymous_(hacker_group))</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Anonymous_(hacker_group))</sup> hacker collective.
 
 ## License
 

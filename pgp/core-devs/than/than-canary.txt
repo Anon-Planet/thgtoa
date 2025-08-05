@@ -11,12 +11,12 @@ Admin: The Hitchhiker's Guide to Online Anonymity - https://anonymousplanet.org
 Latest bitcoin block hash:
 00000000000000000000b685887fe078cc9839294a91f8d38a3311864fc15418
 
-I positively confirm I am in complete control of all my key material and domains. 
+I positively confirm I am in complete control of all my key material and domains.
 
 All previous keys have been revoked as part of standard OPSEC key rotation
 procedures. Do NOT encrypt communications to my old keys, I will not read them.
 
-The key currently published on 
+The key currently published on
 https://keyoxide.org/8B3A74890536BAD50D9376EBF1CB32F67E3302A1 with a fingerprint
 of 8B3A74890536BAD50D9376EBF1CB32F67E3302A1, is my only PGP key for public
 communication. It IS published on public keyservers now. Please refrain from uploading it there
