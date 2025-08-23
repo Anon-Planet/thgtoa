@@ -25,7 +25,7 @@ Anonymous Planet is a collective of volunteers and contributors. No one person i
 
     - [:simple-github: GitHub](https://github.com/NobodySpecial256 "@NobodySpecial256")
     - [:fontawesome-solid-envelope: E-mail](mailto:contact@anonymousplanet.org)
-    - [:simple-matrix: Matrix](https://matrix.to/#/@memorysafetybelike:envs.net)
+    - [:simple-matrix: Matrix](https://matrix.to/#/@daskolburn:thomcat.rocks "@daskolburn:thomcat.rocks")
 
 ??? person "Nope"
 
