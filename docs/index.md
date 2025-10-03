@@ -33,5 +33,4 @@ Anonymous Planet is a collective of volunteers and contributors. No one person i
     - [:simple-mastodon: Mastodon](https://ioc.exchange/@unknown "@unknown@ioc.exchange"){rel=me}
     - [:fontawesome-solid-house: Homepage](https://www.itsnothing.net)
     - [:fontawesome-solid-envelope: E-mail](mailto:contact@anonymousplanet.org)
-    - [:simple-matrix: Matrix](https://matrix.to/#/@thehidden:tchncs.de)
-    - [:fontawesome-solid-shield: Canary](https://itsnothing.net/canary.txt)
+    - [:simple-matrix: Matrix](https://matrix.to/#/@nope:anonymousplanet.net)
