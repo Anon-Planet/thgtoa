@@ -7,15 +7,15 @@ This is a maintained guide with the aim of providing an introduction to various 
 This guide is an open-source non-profit initiative, [licensed](LICENSE.html) under **Creative Commons Attribution-NonCommercial 4.0 International** ([cc-by-nc-4.0](https://creativecommons.org/licenses/by-nc/4.0/) <sup>[[Archive.org]](https://web.archive.org/web/https://creativecommons.org/licenses/by-nc/4.0/)</sup>) and is **not sponsored/endorsed by any commercial/governmental entity**. This means that you are free to use our guide for pretty much any purpose **excluding commercially** as long as you do attribute it. There are no ads or any affiliate links.
 
 **If you would like to make a donation to help this project, you can do so from [here](donations.html) where you will also find the project goals. All the donations will be strictly used within the context of this project. All donations and spendings are logged on the donations page.**
-
+<!--
 **View the guide:**
 - [In your browser](guide.html)
 - [PDF](export/guide.pdf)
 - [OpenDocument (ODT)](export/guide.odt)
-- Raw [Markdown](https://raw.githubusercontent.com/Anon-Planet/thgtoa/main/guide.md).
+- Raw [Markdown](https://raw.githubusercontent.com/Anon-Planet/thgtoa/main/guide.md). -->
 
-Mirrors:
-- Tor Onion Mirror: <http://thgtoa3jzy3doku7hkna32htpghjijefscwvh4dyjgfydbbjkeiohgid.onion/>
+<!-- Mirrors:
+- Tor Onion Mirror: <http://thgtoa3jzy3doku7hkna32htpghjijefscwvh4dyjgfydbbjkeiohgid.onion/> -->
 
 The guide and all the files are also readily available on Archive.org and Archive.today:
 

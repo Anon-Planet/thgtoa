@@ -21,7 +21,3 @@ repos:
     hooks:
       - id: markdownlint
       - id: markdownlint-fix
-  - hooks:
-    - id: commitizen
-    repo: https://github.com/commitizen-tools/commitizen
-    rev: v3.28.0
