@@ -7,11 +7,10 @@ schema:
   "@id": https://www.anonymousplanet.org/
   name: Anonymous Planet
   url: https://www.anonymousplanet.org/guide/
-  logo: ../media/favicon.png
+  logo: ../media/favicon.ico
   sameAs:
     - https://github.com/Anon-Planet
     - https://opencollective.com/anonymousplanetorg
-    - https://mastodon.social/@anonymousplanet
 ---
 ![Anonymous Planet logo](../media/profile.png){ align=right }
 
@@ -27,8 +26,6 @@ There are several ways you could read this guide:
     - Read the whole thing. A specific list of the most vital things to read in the guide will be coming later, but you should read the whole thing.
 
 Precautions while reading this guide and accessing the various links:
-
-- **Documents/Files** have a **[Archive.org]** link next to them for accessing content through Archive.org for increased privacy and in case the content goes missing. Some links are not yet archived or outdated on archive.org in which case we encourage you to ask for a new save if possible.
 
 - **YouTube Videos** have a **[Invidious]** link next to them for accessing content through an Invidious Instance (in this case yewtu.be hosted in the Netherlands) for increased privacy. It is recommended to use these links when possible. See <https://github.com/iv-org/invidious> <sup>[[Archive.org]](https://web.archive.org/web/https://github.com/iv-org/invidious)</sup> for more information.
 
