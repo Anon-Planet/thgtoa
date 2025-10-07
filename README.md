@@ -17,32 +17,12 @@ This guide is an open-source non-profit initiative, [licensed](LICENSE.html) und
 <!-- Mirrors:
 - Tor Onion Mirror: <http://thgtoa3jzy3doku7hkna32htpghjijefscwvh4dyjgfydbbjkeiohgid.onion/> -->
 
-The guide and all the files are also readily available on Archive.org and Archive.today:
-
-- Archive.org: <https://web.archive.org/web/https://anonymousplanet.org/>
-- Archive.today: <https://archive.ph/anonymousplanet.org/>
-- Archive.today over Tor: <http://archiveiya74codqgiixo33q62qlrqtkgmcitqx5u2oeqnmn5bpcbiyd.onion/anonymousplanet.org/>
-
-If you want to access/see the original/legacy project, please see the [legacy resources](legacy.html) page.
-
-If you want to see the changes between your PDF and the latest PDF, you could use one of these tools (we do not endorse those):
-
-- <https://tools.pdf24.org/en/compare-pdf>
-- <https://products.aspose.app/pdf/comparison>
-- <https://draftable.com/compare>
-
-If you want to compare an older ODT file with a newer one, use the LibreWriter compare features as explained here: <https://help.libreoffice.org/7.1/en-US/text/shared/guide/redlining_doccompare.html> <sup>[[Archive.org]](https://web.archive.org/wen/https://help.libreoffice.org/7.1/en-US/text/shared/guide/redlining_doccompare.html)</sup>)
-
-**If you want to check the files for integrity, safety, authenticity, please refer to this ["How To"](verify.html).**
-
 Feel free to submit issues using Github Issues with the repository link above. Criticism, opinions, and ideas are welcome!
 
 Follow or contact us on:
 
 Discussion Channels:
-- Matrix room: `#anonymity:matrix.org` <https://matrix.to/#/#anonymity:matrix.org>
-- Matrix space: `#privacy-security-anonymity:matrix.org` <https://matrix.to/#/#privacy-security-anonymity:matrix.org>
-- Twitter at https://twitter.com/AnonyPla
-- Mastodon at https://mastodon.social/@anonymousplanet
+- Matrix room: <https://matrix.to/#/#anonymity:anonymousplanet.net>
+- Matrix space: <https://matrix.to/#/#psa:anonymousplanet.net>
 
 Have a good read and feel free to share and/or recommend it!
