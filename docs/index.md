@@ -19,13 +19,13 @@ schema:
 
 Please share this project if you enjoy it and you think it might be useful to others.
 
-Anonymous Planet is a collective of volunteers and contributors. No one person is considered more valuable than another, and no one person should be viewed as having "more impact" on Anonymous Planet. We have moved away from Matrix. Please avoid it as it contains harmful (illegal) spam. We are not moderating the rooms in PSA at present. It is likely that we will see a complete move away from Matrix in the future.
+Anonymous Planet is a collective of volunteers and contributors. No one person is considered more valuable than another, and no one person should be viewed as having "more impact" on Anonymous Planet.
 
 ??? person "Das Kolburn"
 
     - [:simple-github: GitHub](https://github.com/NobodySpecial256 "@NobodySpecial256")
     - [:fontawesome-solid-envelope: E-mail](mailto:contact@anonymousplanet.org)
-    - [:simple-matrix: Matrix](https://matrix.to/#/@daskolburn:thomcat.rocks "@daskolburn:thomcat.rocks")
+    - @daskolburn:thomcat.rocks, @daskolburn:anonymousplanet.net
 
 ??? person "Nope"
 
@@ -33,4 +33,4 @@ Anonymous Planet is a collective of volunteers and contributors. No one person i
     - [:simple-mastodon: Mastodon](https://ioc.exchange/@unknown "@unknown@ioc.exchange"){rel=me}
     - [:fontawesome-solid-house: Homepage](https://www.itsnothing.net)
     - [:fontawesome-solid-envelope: E-mail](mailto:contact@anonymousplanet.org)
-    - [:simple-matrix: Matrix](https://matrix.to/#/@nope:anonymousplanet.net)
+    - @nope:anonymousplanet.net

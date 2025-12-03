@@ -43,9 +43,10 @@ Feel free to submit issues **(please do report anything wrong)** using GitHub Is
 
     We offer a Matrix.org hosted space of our own. Check it out!
 
-    - Read [the rules](https://anonymousplanet.org/chatrooms-rules.html), please
-    - Matrix Room: [#anonymity:matrix.org](https://matrix.to/#/#anonymity:matrix.org)
-    - Matrix Space: [#privacy-security-anonymity:matrix.org](https://matrix.to/#/#privacy-security-anonymity:matrix.org)
+    - Read [the rules](https://psa.anonymousplanet.org/), please
+    - Matrix Room: https://matrix.to/#/#nth:anonymousplanet.net
+    - Matrix Space: https://matrix.to/#/#psa:anonymousplanet.net
+    - @daskolburn:anonymousplanet.net and @nope:anonymousplanet.net are the only administrators
 
 Follow us on:
 
