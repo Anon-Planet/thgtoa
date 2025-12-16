@@ -75,9 +75,9 @@ extra:
     - icon: simple/codeberg
       link: https://codeberg.org/anonymousplanet
       name: Codeberg
-#    - icon: simple/torbrowser
-#      link: TODO
-#      name: Hidden service
+    - icon: simple/torbrowser
+      link: http://thgtoa3jzy3doku7hkna32htpghjijefscwvh4dyjgfydbbjkeiohgid.onion/
+      name: Hidden service
 
 markdown_extensions:
   - pymdownx.highlight:
