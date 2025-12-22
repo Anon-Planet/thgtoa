@@ -2310,7 +2310,7 @@ Here are some examples of such leaks:
 
 - Linux Logs
 
-Forensics could' use all those leaks (see [Local Data Leaks and Forensics][Local Data Leaks and Forensics:]) to prove the existence of hidden data and defeat your attempts at using plausible deniability and to find out about your various sensitive activities.
+Forensics could' use all those leaks (see [Local Data Leaks and Forensics](#local-data-leaks-and-forensics)) to prove the existence of hidden data and defeat your attempts at using plausible deniability and to find out about your various sensitive activities.
 
 It will be therefore important to apply various steps to prevent forensics from doing this by preventing and cleaning these leaks/traces and more importantly by using whole disk encryption, virtualization, and compartmentalization.
 
@@ -7197,7 +7197,7 @@ To do this, when mounting the Decoy Volume, select Mount Options and Check the "
 
 **Be extremely cautious with these file containers:**
 
-- **Do not store multiple versions of them or store them anywhere where some versioning is being done (by the file system or the storage system). These file containers should be identical everywhere you store them. If you have a backup of such containers somewhere, it needs to be absolutely identical to the one you are using. If you do not take this precaution, an adversary could compare two different versions of this container and prove the existence of hidden data. Follow carefully the recommendations here <https://www.veracrypt.fr/en/Security%20Requirements%20for%20Hidden%20Volumes.html>** <sup>[[Archive.org]](https://web.archive.org/web/https://www.veracrypt.fr/en/Security%20Requirements%20for%20Hidden%20Volumes.html)</sup>**. Remember the [Local Data Leaks and Forensics:] section.**
+- **Do not store multiple versions of them or store them anywhere where some versioning is being done (by the file system or the storage system). These file containers should be identical everywhere you store them. If you have a backup of such containers somewhere, it needs to be absolutely identical to the one you are using. If you do not take this precaution, an adversary could compare two different versions of this container and prove the existence of hidden data. Follow carefully the recommendations here <https://www.veracrypt.fr/en/Security%20Requirements%20for%20Hidden%20Volumes.html>** <sup>[[Archive.org]](https://web.archive.org/web/https://www.veracrypt.fr/en/Security%20Requirements%20for%20Hidden%20Volumes.html)</sup>**. Remember the [Local Data Leaks and Forensics](#local-data-leaks-and-forensics) section.**
 
 - We strongly recommend storing such containers on external USB keys that you will only mount from your guest VMs and never from your Host OS. **After each modification to the files, you should clean the free space on the USB disk and make sure that any backup of such containers is absolutely identical on each key and your computer. See the [How to securely delete specific files/folders/data on your HDD/SSD and Thumb drives][How to securely delete specific files/folders/data on your HDD/SSD and Thumb drives:] section of this guide for help on doing this.**
 
