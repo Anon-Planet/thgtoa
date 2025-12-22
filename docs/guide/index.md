@@ -9594,7 +9594,7 @@ For extra-security consider:
 
 - Do not use the currency you just got from an ATM that could record dispensed bills serial numbers.
 
-- Be careful if you print anything that it is not watermarked by your printer (See [Printing Watermarking]).
+- Be careful if you print anything that it is not watermarked by your printer (See [Printer Watermarking](#printer-watermarking)).
 
 - Do not lick the envelope or the stamps[^472] if you use them to avoid leaving DNA traces.
 
@@ -11442,7 +11442,7 @@ Here is a checklist of things to verify before sharing information to anyone:
 
 - Check the files for anything malicious: see [Appendix T: Checking files for malware](#appendix-t-checking-files-for-malware)
 
-- Check the files for any watermarking: see [Watermarking][Watermarking:]
+- Check the files for any watermarking: see [Watermarking](#watermarking)
 
 - Check any writing for possible forensics analysis: see [Appendix A4: Counteracting Forensic Linguistics](#appendix-a4-counteracting-forensic-linguistics)
 
