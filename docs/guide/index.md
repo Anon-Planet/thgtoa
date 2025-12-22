@@ -1942,7 +1942,7 @@ This would allow the creation of a hybrid system mixing Tails with the Virtualiz
 
 ![image19](../media/image19.png)
 
-**Note: See** [Pick your connectivity method][Pick your connectivity method:] **in the Whonix Route for more explanations about Stream Isolation**
+**Note: See** [Pick your connectivity method](#pick-your-connectivity-method) **in the Whonix Route for more explanations about Stream Isolation**
 
 In short:
 
