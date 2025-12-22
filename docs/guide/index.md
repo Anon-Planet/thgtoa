@@ -5326,7 +5326,7 @@ This guide will mitigate these issues by randomizing or hiding many of those fin
 
 - Using specific recommendations (See [Appendix A5: Additional browser precautions with JavaScript enabled](#appendix-a5-additional-browser-precautions-with-javascript-enabled);
 
-- Using hardening [Appendix V1: Hardening your Browsers](#appendix-v1-hardening-your-browsers));
+- Using hardening [Appendix V1: Hardening your Browsers](#appendix-v1-hardening-your-browsers);
 
 - and by using fingerprint-resistant browsers (like Brave or Tor Browser).
 
