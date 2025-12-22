@@ -5667,7 +5667,7 @@ If the Exit Node is "clean" (in few lists), proceed to go back to the first tab 
 
 ### The Real-Name System
 
-Unfortunately, not using your real identity is against the Terms of Services ("TOS") of many services, especially those owned by Microsoft and Facebook. But don't despair, as explained in the [Requirements][Pre-requisites and limitations:], it's still legal in Germany where the courts have upheld the legality of not using real names on online platforms (§13 VI of the German Telemedia Act of 2007[^1]'[^2]). **Fortunately, ToS cannot override laws** **(yet)**.
+Unfortunately, not using your real identity is against the Terms of Services ("TOS") of many services, especially those owned by Microsoft and Facebook. But don't despair, as explained in the [Requirements](#requirements-limitations), it's still legal in Germany where the courts have upheld the legality of not using real names on online platforms (§13 VI of the German Telemedia Act of 2007[^1]'[^2]). **Fortunately, ToS cannot override laws** **(yet)**.
 
 This does not mean that it is illegal in other places but that it might be a breach of their TOS if you do not have the law on your side. **Remember this guide only endorses this for German people residing in Germany.**
 
@@ -5815,7 +5815,7 @@ When people stand behind their opinions and actions, our community is safer and 
 
 - Can you create accounts through Tor? Yes, but it is very difficult and their onion address[^398] will not help. In most cases, you'll just have a random error at sign-up and your account suspended after sign-in."
 
-But this clause of their ToS is illegal in Germany (see [Requirements][Pre-requisites and limitations:]).
+But this clause of their ToS is illegal in Germany (see [Requirements](#requirements-limitations)).
 
 Facebook is one of the most aggressive platforms with identity verification and is pushing hard their "real name policy". It is why this guide is only advised to German residents.
 
@@ -5975,7 +5975,7 @@ After sign-up, do the following:
 
 "To use the Services, you agree that: (1) you must be the "_Minimum Age_" (described below) or older; (2) **you will only have one LinkedIn account, which must be in your real name**; and (3) you are not already restricted by LinkedIn from using the Services. **Creating an account with false information is a violation of our terms**, including accounts registered on behalf of others or persons under the age of sixteen. "
 
-But this clause of their ToS is illegal in Germany (see [Requirements][Pre-requisites and limitations:]).
+But this clause of their ToS is illegal in Germany (see [Requirements](#requirements-limitations)).
 
 - Will they require a phone number? Yes, they will.
 
@@ -6023,7 +6023,7 @@ Signing-in does require an e-mail every time.
 
 "i. Creating an Account. You can create a Microsoft account by signing up online. **You agree not to use any false, inaccurate, or misleading information when signing up for your Microsoft account".**
 
-But this clause of their ToS is illegal in Germany (see [Requirements][Pre-requisites and limitations:]).
+But this clause of their ToS is illegal in Germany (see [Requirements](#requirements-limitations)).
 
 - Will they require a phone number? Likely but not always. Depending on your luck with your Tor exit node, they may only require e-mail verification. If you use a VPN over Tor, they will likely only ask for an e-mail.
 
