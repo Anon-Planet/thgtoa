@@ -1850,7 +1850,7 @@ Now, you are really done, and you can now surf the web anonymously from your iOS
 
 ### Important Warning
 
-**This route is the easiest but is not designed to resist highly skilled adversaries. It is however usable on any device regardless of the configuration. This route is also vulnerable to correlation attacks (See [Your Anonymized Tor/VPN traffic][Your Anonymized Tor/VPN traffic:]) and is blind to anything that might be on your device (this could be any malware, exploit, virus, remote administration software, parental controls...). Yet, if your threat model is quite low, it is probably sufficient for most people.**
+**This route is the easiest but is not designed to resist highly skilled adversaries. It is however usable on any device regardless of the configuration. This route is also vulnerable to correlation attacks (See [Your Anonymized Tor/VPN traffic](#traffic-anonymization)) and is blind to anything that might be on your device (this could be any malware, exploit, virus, remote administration software, parental controls...). Yet, if your threat model is quite low, it is probably sufficient for most people.**
 
 If you have time and want to learn, we recommend going for other routes instead as they offer far better security and mitigate far more risks while lowering your attack surface considerably.
 
@@ -3234,7 +3234,7 @@ VPN/Proxy over Tor falls on the right-side[^352] meaning using a VPN/Proxy over 
 
 - When you do not mind using a shared Tor circuit for various services. For instance, when using various authenticated services.
 
-**You should however consider not using this method when your aim is just to browse random various unauthenticated websites as you will not benefit from Stream Isolation and this could make correlation attacks easier over time for an adversary between each of your sessions (see [Your Anonymized Tor/VPN traffic][Your Anonymized Tor/VPN traffic:]). If your goal however is to use the same identity at each session on the same authenticated services, the value of Stream isolation is lessened as you can be correlated through other means.**
+**You should however consider not using this method when your aim is just to browse random various unauthenticated websites as you will not benefit from Stream Isolation and this could make correlation attacks easier over time for an adversary between each of your sessions (see [Your Anonymized Tor/VPN traffic](#traffic-anonymization)). If your goal however is to use the same identity at each session on the same authenticated services, the value of Stream isolation is lessened as you can be correlated through other means.**
 
 You should also know that Stream Isolation is not necessarily configured by default on Whonix Workstation. It is only pre-configured for some applications (including Tor Browser).
 
@@ -4477,7 +4477,7 @@ VPN/Proxy over Tor falls on the right-side[^365] meaning using a VPN/Proxy over 
 
 - When you do not mind using a shared Tor circuit for various services. For instance for using various authenticated services.
 
-**You should however consider not using this method when your aim is just to browse random various unauthenticated websites as you will not benefit from Stream Isolation and this could make correlation attacks easier for an adversary between each of your sessions (see [Your Anonymized Tor/VPN traffic][Your Anonymized Tor/VPN traffic:]).**
+**You should however consider not using this method when your aim is just to browse random various unauthenticated websites as you will not benefit from Stream Isolation and this could make correlation attacks easier for an adversary between each of your sessions (see [Your Anonymized Tor/VPN traffic](#traffic-anonymization)).**
 
 More information at:
 
