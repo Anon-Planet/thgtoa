@@ -2012,7 +2012,7 @@ Here is my guide on how to achieve this:
 
 - When it is done, it should automatically start Virtualbox Manager.
 
-- Import the Whonix OVA files (see [Whonix Virtual Machines:])
+- Import the Whonix OVA files (see [Whonix Virtual Machines](#whonix-virtual-machines))
 
 Note, if during the import you are having issues such as "NS_ERROR_INVALID_ARG (0x80070057)", this is probably because there is not enough disk space on your Hidden volume for Whonix. Whonix themselves recommend 32GB of free space but that's probably not necessary and 10GB should be enough for a start. You can try working around this error by renaming the Whonix \*.OVA file to \*.TAR and decompressing it within Tails. When you are done with decompression, delete the OVA file and import the other files with the Import wizard. This time it might work.
 
