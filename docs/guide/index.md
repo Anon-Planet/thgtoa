@@ -2044,7 +2044,7 @@ The laptop should have at least 250GB of Disk Space **at least 6GB (ideally 8GB 
 
 This laptop could have an HDD (7200rpm) or an SSD/NVMe drive. Both possibilities have their benefits and issues that will be detailed later.
 
-All future online steps performed with this laptop should ideally be done from a safe network such as Public Wi-Fi in a safe place (see [Find some safe places with decent public Wi-Fi][Find some safe places with decent public Wi-Fi:]). But several steps will have to be taken offline first.
+All future online steps performed with this laptop should ideally be done from a safe network such as Public Wi-Fi in a safe place (see [Find some safe places with decent public Wi-Fi](#find-some-safe-places-with-decent-public-wi-fi)). But several steps will have to be taken offline first.
 
 ### Some laptop recommendations
 
@@ -4652,7 +4652,7 @@ See the following links for more details and installation instructions:
 
 ### Connect to a Public Wi-Fi
 
-Remember this should be done from a safe place (see [Find some safe places with decent public Wi-Fi][Find some safe places with decent public Wi-Fi:] and [Appendix Q: Using long-range Antenna to connect to Public Wi-Fis from a safe distance](#appendix-q-using-long-range-antenna-to-connect-to-public-wi-fis-from-a-safe-distance):
+Remember this should be done from a safe place (see [Find some safe places with decent public Wi-Fi](#find-some-safe-places-with-decent-public-wi-fi) and [Appendix Q: Using long-range Antenna to connect to Public Wi-Fis from a safe distance](#appendix-q-using-long-range-antenna-to-connect-to-public-wi-fis-from-a-safe-distance):
 
 - In the upper right corner, Left-click the network icon and note the Wi-Fi SSID you want to connect to
 
@@ -5488,7 +5488,7 @@ So what? Well instead of not trusting anyone or anything, we would advise to **"
 
 - **You are aware of your threat model.**
 
-- **You are in a safe place with public Wi-Fi without your smartphone or any other smart device on you. And preferably in a place without CCTV filming you (remember to [Find some safe places with decent public Wi-Fi][Find some safe places with decent public Wi-Fi:]** **and [Appendix Q: Using long-range Antenna to connect to Public Wi-Fis from a safe distance](#appendix-q-using-long-range-antenna-to-connect-to-public-wi-fis-from-a-safe-distance)**
+- **You are in a safe place with public Wi-Fi without your smartphone or any other smart device on you. And preferably in a place without CCTV filming you (remember to [Find some safe places with decent public Wi-Fi](#find-some-safe-places-with-decent-public-wi-fi)** **and [Appendix Q: Using long-range Antenna to connect to Public Wi-Fis from a safe distance](#appendix-q-using-long-range-antenna-to-connect-to-public-wi-fis-from-a-safe-distance)**
 
 - **You are fully done and preparing one of the routes.**
 
@@ -9221,7 +9221,7 @@ Because it is too dangerous/risky/suspicious. We would recommend as a last resor
 
 See [Appendix P: What about when Tor and VPNs aren't possible?](#appendix-p-what-about-when-tor-and-vpns-arent-possible) before continuing.
 
-Only do this from a different safe public Wi-Fi every time (See [Find some safe places with decent public Wi-Fi][Find some safe places with decent public Wi-Fi:]) and using a long-range connection (See [Appendix Q: Using long-range Antenna to connect to Public Wi-Fis from a safe distance:](#appendix-q-using-long-range-antenna-to-connect-to-public-wi-fis-from-a-safe-distance)).
+Only do this from a different safe public Wi-Fi every time (See [Find some safe places with decent public Wi-Fi](#find-some-safe-places-with-decent-public-wi-fi)) and using a long-range connection (See [Appendix Q: Using long-range Antenna to connect to Public Wi-Fis from a safe distance:](#appendix-q-using-long-range-antenna-to-connect-to-public-wi-fis-from-a-safe-distance)).
 
 Clean all the data from the browser after each use.
 
@@ -9695,7 +9695,7 @@ Now, there might also be situations where simply using Tor or a VPN alone could 
 
 But you still want to do something anonymously without disclosing/leaking any information.
 
-In that case, my last resort recommendation is to connect safely **from a distance** to a Public Wi-Fi (See [Find some safe places with decent public Wi-Fi][Find some safe places with decent public Wi-Fi:]) using your laptop and Tails "unsafe browser". See <https://tails.boum.org/contribute/design/Unsafe_Browser/> <sup>[[Archive.org]](https://web.archive.org/web/https://tails.boum.org/contribute/design/Unsafe_Browser/)</sup>.
+In that case, my last resort recommendation is to connect safely **from a distance** to a Public Wi-Fi (See [Find some safe places with decent public Wi-Fi](#find-some-safe-places-with-decent-public-wi-fi)) using your laptop and Tails "unsafe browser". See <https://tails.boum.org/contribute/design/Unsafe_Browser/> <sup>[[Archive.org]](https://web.archive.org/web/https://tails.boum.org/contribute/design/Unsafe_Browser/)</sup>.
 
 **If Tor usage alone is suspicious or risky, you should NOT allow Tails to try establishing a Tor connection at start-up by doing the following:**
 
@@ -10141,7 +10141,7 @@ While you might be able to bypass local restrictions easily using a Live System 
 
 Unusual network activities showing up from a computer at the same time your computer is seemingly powered off might raise suspicions.
 
-If you are to resort to this, you should never do so from a monitored/known network but only from a safe different network. Ideally a safe public wi-fi (See [Find some safe places with decent public Wi-Fi][Find some safe places with decent public Wi-Fi:]).
+If you are to resort to this, you should never do so from a monitored/known network but only from a safe different network. Ideally a safe public wi-fi (See [Find some safe places with decent public Wi-Fi](#find-some-safe-places-with-decent-public-wi-fi)).
 
 **Do not use a live system on a Software supervised/monitored device on a known network.**
 
