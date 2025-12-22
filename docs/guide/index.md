@@ -3304,7 +3304,7 @@ If you cannot use VPN nor Tor where you are, you probably are in a very hostile 
 
 Just do not, it is not worth it and too risky. You can be de-anonymized almost instantly by any motivated adversary that could get to your physical location in a matter of minutes.
 
-Do not forget to check back on [Adversaries (threats)] and [Appendix S: Check your network for surveillance/censorship using OONI](#appendix-s-check-your-network-for-surveillancecensorship-using-ooni).
+Do not forget to check back on [Adversaries (threats)](#adversarial-considerations) and [Appendix S: Check your network for surveillance/censorship using OONI](#appendix-s-check-your-network-for-surveillancecensorship-using-ooni).
 
 If you have absolutely no other option and still want to do something, see [Appendix P: What about when Tor and VPNs aren't possible?](#appendix-p-what-about-when-tor-and-vpns-arent-possible) **(at your own risk) and consider [the Tails route](#the-tails-route) instead.**
 
@@ -4541,7 +4541,7 @@ If you cannot use VPN nor Tor where you are, you probably are in a very hostile 
 
 Just do not, it is not worth it and too risky. You can be de-anonymized almost instantly by any motivated adversary that could get to your physical location in a matter of minutes.
 
-Do not forget to check back on [Adversaries (threats)] and [Appendix S: Check your network for surveillance/censorship using OONI](#appendix-s-check-your-network-for-surveillancecensorship-using-ooni).
+Do not forget to check back on [Adversaries (threats)](#adversarial-considerations) and [Appendix S: Check your network for surveillance/censorship using OONI](#appendix-s-check-your-network-for-surveillancecensorship-using-ooni).
 
 If you have absolutely no other option and still want to do something, see [Appendix P: What about when Tor and VPNs aren't possible?](#appendix-p-what-about-when-tor-and-vpns-arent-possible) **(at your own risk)**
 
