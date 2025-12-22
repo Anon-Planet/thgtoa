@@ -437,7 +437,7 @@ The IMEI and IMSI can be traced back to you in at least six ways:
 
 Here is also a good YouTube video on this topic: [DEFCON Safe Mode - Cooper Quintin - Detecting Fake 4G Base Stations in Real-Time](https://www.youtube.com/watch?v=siCk4pGGcqA) <sup>[[Invidious]](https://yewtu.be/watch?v=siCk4pGGcqA)</sup>
 
- **For these reasons, it is crucial to get a dedicated anonymous phone number and/or an anonymous burner phone with a cash-bought pre-paid sim card that is not tied to you in any way (past or present) for conducting sensitive activities. It is also possible to get an anonymous pre-paid but preferably dedicated number from free and paid online services accepting anonymous cryptocurrencies like Monero. Get more practical guidance here: [Getting an anonymous Phone number](getting-an-anonymous-phone-number).**
+ **For these reasons, it is crucial to get a dedicated anonymous phone number and/or an anonymous burner phone with a cash-bought pre-paid sim card that is not tied to you in any way (past or present) for conducting sensitive activities. It is also possible to get an anonymous pre-paid but preferably dedicated number from free and paid online services accepting anonymous cryptocurrencies like Monero. Get more practical guidance here: [Getting an anonymous Phone number](#getting-an-anonymous-phone-number).**
 
 While there are some smartphones manufacturers like Purism with their Librem series[^98] who claim to have your privacy in mind, they still do not allow IMEI randomization which we believe is a key anti-tracking feature that should be provided by such manufacturers. While this measure will not prevent IMSI tracking within the SIM card, it would at least allow you to keep the same "burner phone" and only switch SIM cards instead of having to switch both for privacy.
 
@@ -889,7 +889,7 @@ To mitigate this, you should never trust such devices and plug them into sensiti
 
 ### Malware and backdoors in your Hardware Firmware and Operating System
 
-This might sound a bit familiar as this was already partially covered previously in the [Your CPU][Your CPU:] section.
+This might sound a bit familiar as this was already partially covered previously in the [Your CPU](#your-cpu) section.
 
 Malware and backdoors can be embedded directly into your hardware components. Sometimes those backdoors are implemented by the manufacturer itself such as the IME in the case of Intel CPUs. And in other cases, such backdoors can be implemented by a third party that places itself between orders of new hardware and customer delivery[^216].
 
@@ -2102,7 +2102,7 @@ Once you are in there, you will need to apply a few recommended settings:
 
 - Disable Intel ME if you can (odds are very high you can't).
 
-- Disable AMD PSP if you can (AMD's equivalent to IME, see [Your CPU][Your CPU:])
+- Disable AMD PSP if you can (AMD's equivalent to IME, see [Your CPU](#your-cpu))
 
 - Disable Secure Boot if you intend to use Qubes OS as they do not support it out of the box[^306]. Keep it on if you intend to use Linux/Windows.
 
@@ -9577,7 +9577,7 @@ How does this work?
 
 - This page will give you an account ID, a token ID (for payment reference), and the details of where to send the money by post.
 
-- Send the required cash amount for the subscription you want in a sealed postal envelope to their offices, including a paper with the Token ID without a return address, or pay with Monero if available. If they do not accept Monero but do accept BTC, consider [Appendix Z: Paying anonymously online with BTC](#appendix-z-paying-anonymously-online-with-btc).
+- Send the required cash amount for the subscription you want in a sealed postal envelope to their offices, including a paper with the Token ID without a return address, or pay with Monero if available. If they do not accept Monero but do accept BTC, consider [Appendix Z: Paying anonymously online with BTC](#appendix-z-online-anonymous-payments-using-cryptocurrencies).
 
 - Wait for them to receive the payment and enable your account (this can take a while).
 
@@ -10659,7 +10659,7 @@ That's about it. Unfortunately, you will not be able to add extensions as those 
 
 ### Advanced settings
 
-Consider [Arkenfox/user.js](https://github.com/arkenfox/user.js/), a heavily maintained and very easy to use browser config which uses a "user.js" to set all the privacy settings and disk avoidance values. Below we recommend that if you are not setting the Arkenfox config, at least setting the **about:config** values below. Arkenfox applies many others but these are the bare minimum for your protection while browsing. Remember: doing nothing and using a browser with its defaults will already be leaking many identifiable and trackable characteristics which are unique to you. See [Browser and Device Fingerprinting][Browser and Device Fingerprinting:] for more details on why default settings in browsers are unsafe.
+Consider [Arkenfox/user.js](https://github.com/arkenfox/user.js/), a heavily maintained and very easy to use browser config which uses a "user.js" to set all the privacy settings and disk avoidance values. Below we recommend that if you are not setting the Arkenfox config, at least setting the **about:config** values below. Arkenfox applies many others but these are the bare minimum for your protection while browsing. Remember: doing nothing and using a browser with its defaults will already be leaking many identifiable and trackable characteristics which are unique to you. See [Browser and Device Fingerprinting](#browser-and-device-fingerprinting) for more details on why default settings in browsers are unsafe.
 
 Those settings are explained on the following resources in order of recommendation if you want more details about what each setting does:
 
@@ -11078,7 +11078,7 @@ Lastly, you could pick one (at your own risk) from the list here that does accep
 
 **Please do read [Appendix B2: Monero Disclaimer](#appendix-b2-monero-disclaimer).**
 
-If the service does not accept Monero but does accept BTC, consider the following appendix: [Appendix Z: Paying anonymously online with BTC](#appendix-z-paying-anonymously-online-with-btc).
+If the service does not accept Monero but does accept BTC, consider the following appendix: [Appendix Z: Paying anonymously online with BTC](#appendix-z-online-anonymous-payments-using-cryptocurrencies).
 
 # Appendix A2: Guidelines for passwords and passphrases
 
