@@ -1456,7 +1456,7 @@ Now that you know what is possible, you should also consider threats and adversa
 
 - If your main concerns are remote adversaries that might uncover your online identity on various platforms, you should consider the Tails, Whonix, or Qubes OS routes (listed in order of difficulty).
 
-- If you want system-wide plausible deniability[^311]'[^294] despite the risks[^295]'[^314], consider the Tails route, including the persistent plausible deniability section (see [Persistent Plausible Deniability using Whonix within Tails][Persistent Plausible Deniability using Whonix within Tails:]).**
+- If you want system-wide plausible deniability[^311]'[^294] despite the risks[^295]'[^314], consider the Tails route, including the persistent plausible deniability section (see [Persistent Plausible Deniability using Whonix & Tails](#persistent-plausible-deniability-using-whonix-tails)).**
 
 - If you are in a hostile environment where Tor/VPN usage alone is impossible/dangerous/suspicious, consider the Tails route (without actually using Tor), or more advanced routes like Whonix or Qubes OS.
 
