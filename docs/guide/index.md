@@ -1930,7 +1930,7 @@ If you are extra paranoid, use the "Safest" level by default and consider downgr
 
 Lastly, while using Tor Browser on Tails on the "Safer" level, please consider [Appendix A5: Additional browser precautions with JavaScript enabled](#appendix-a5-additional-browser-precautions-with-javascript-enabled).
 
-When you are done and have a working Tails on your laptop, go to the [Creating your anonymous online identities][Creating your anonymous online identities:] step much further in this guide or if you want persistence and plausible deniability, continue with the next section.
+When you are done and have a working Tails on your laptop, go to the [Creating your anonymous online identities](#creating-your-anonymous-online-identities) step much further in this guide or if you want persistence and plausible deniability, continue with the next section.
 
 ### Persistent Plausible Deniability using Whonix & Tails
 
@@ -5141,7 +5141,7 @@ In the context of Qubes OS you should store your sensitive information within th
 
 - From the list of available applications, add KeePassXC to the list of selected applications.
 
-You are done and can now skip the rest to go to the "[Creating your anonymous online identities][Creating new identities:]" part.
+You are done and can now skip the rest to go to the "[Creating your anonymous online identities](#creating-your-anonymous-online-identities)" part.
 
 ### Tutorial for installing Windows based VMs on Qubes OS
 
