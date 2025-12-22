@@ -1378,7 +1378,7 @@ First, here is a small basic UML diagram showing your available options accordin
 
 - You have extremely limited time to learn and need a fast-working solution:
 
-    - **Your best option is to go for the Tails route (excluding the persistent plausible deniability section).**
+    - **Your best option is to go for [the Tails route](#the-tails-route) (excluding the persistent plausible deniability section).**
 
 - You have time and more importantly motivation to learn:
 
@@ -1392,13 +1392,13 @@ First, here is a small basic UML diagram showing your available options accordin
 
 - You only have one laptop available and cannot afford anything else. You use this laptop for either work, family, or your personal stuff (or both):
 
-    - **Your best option is to go for the Tails route.**
+    - **Your best option is to go for [the Tails route](#the-tails-route).**
 
 - You can afford a spare dedicated unsupervised/unmonitored laptop for your sensitive activities:
 
     - But it is old, slow, and has bad specs (less than 6GB of RAM, less than 250GB disk space, old/slow CPU):
 
-        + **You should go for the Tails route.**
+        + **You should go for [the Tails route](#the-tails-route).**
 
     - It is not that old, and it has decent specs (at least 8GB of RAM, 250GB of disk space or more, decent CPU):
 
@@ -1430,7 +1430,7 @@ First, here is a small basic UML diagram showing your available options accordin
 
     - **The Tor Browser route (simplest of all)**
 
-    - **The Tails route (excluding the persistent plausible deniability section).**
+    - **[The Tails route](#the-tails-route) (excluding the persistent plausible deniability section).**
 
 - You have some IT skills and mostly understand this guide so far, consider:
 
@@ -1452,7 +1452,7 @@ Now that you know what is possible, you should also consider threats and adversa
 
 #### Threats
 
-- If your main concern is a forensic examination of your devices, you should consider the Tor Browser route or the Tails route.
+- If your main concern is a forensic examination of your devices, you should consider the Tor Browser route or [the Tails route](#the-tails-route).
 
 - If your main concerns are remote adversaries that might uncover your online identity on various platforms, you should consider the Tails, Whonix, or Qubes OS routes (listed in order of difficulty).
 
@@ -2330,7 +2330,7 @@ In the case of Windows, this data could for instance be used to prove the existe
 
 You should never conduct sensitive activities from a non-encrypted system. And even if it is encrypted, you should never conduct sensitive activities from the Host OS itself. Instead, you should use a VM to be able to efficiently isolate and compartmentalize your activities and prevent local data leaks.
 
-If you have little to no knowledge of Linux or if you want to use OS-wide plausible deniability, we recommend going for Windows (or back to the Tails route) for convenience. This guide will help you hardening it as much as possible to prevent leaks. This guide will also help you hardening macOS and Linux as much as possible to prevent similar leaks.
+If you have little to no knowledge of Linux or if you want to use OS-wide plausible deniability, we recommend going for Windows (or back to [the Tails route](#the-tails-route)) for convenience. This guide will help you hardening it as much as possible to prevent leaks. This guide will also help you hardening macOS and Linux as much as possible to prevent similar leaks.
 
 If you have no interest in OS-wide plausible deniability and want to learn to use Linux, we will strongly recommend going for Linux or the Qubes OS route if your hardware allows it.
 
@@ -2462,7 +2462,7 @@ See [Appendix G: Safe Browser on the Host OS](#appendix-g-safe-browser-on-the-ho
 
 **Note: Mac M1/M2 chips are now supported natively, or, if you wish to use commercial tools like VMWare Fusion or Parallels Desktop, but those are not covered in this guide. Seek this information yourself.**
 
-As mentioned earlier, we do not recommend using your daily laptop for sensitive activities. Or at least we do not recommend using your in-place OS for these. Doing that might result in unwanted data leaks that could be used to de-anonymize you. If you have a dedicated laptop for this, you should reinstall a fresh clean OS. If you do not want to wipe your laptop and start over, you should consider the Tails route or proceed at your own risk.
+As mentioned earlier, we do not recommend using your daily laptop for sensitive activities. Or at least we do not recommend using your in-place OS for these. Doing that might result in unwanted data leaks that could be used to de-anonymize you. If you have a dedicated laptop for this, you should reinstall a fresh clean OS. If you do not want to wipe your laptop and start over, you should consider [the Tails route](#the-tails-route) or proceed at your own risk.
 
 We also recommend that you do the initial installation completely offline to avoid any data leak.
 
@@ -2560,7 +2560,7 @@ See [Appendix G: Safe Browser on the Host OS](#appendix-g-safe-browser-on-the-ho
 
 ### Windows Host OS
 
-As mentioned earlier, we do not recommend using your daily laptop for sensitive activities. Or at leastWedo not recommend using your in-place OS for these. Doing that might result in unwanted data leaks that could be used to de-anonymize you. If you have a dedicated laptop for this, you should reinstall a fresh clean OS. If you do not want to wipe your laptop and start over, you should consider the Tails route or proceed at your own risk.
+As mentioned earlier, we do not recommend using your daily laptop for sensitive activities. Or at leastWedo not recommend using your in-place OS for these. Doing that might result in unwanted data leaks that could be used to de-anonymize you. If you have a dedicated laptop for this, you should reinstall a fresh clean OS. If you do not want to wipe your laptop and start over, you should consider [the Tails route](#the-tails-route) or proceed at your own risk.
 
 I also recommend that you do the initial installation completely offline to avoid any data leak.
 
@@ -3306,7 +3306,7 @@ Just do not, it is not worth it and too risky. You can be de-anonymized almost i
 
 Do not forget to check back on [Adversaries (threats)] and [Appendix S: Check your network for surveillance/censorship using OONI](#appendix-s-check-your-network-for-surveillancecensorship-using-ooni).
 
-If you have absolutely no other option and still want to do something, see [Appendix P: What about when Tor and VPNs aren't possible?](#appendix-p-what-about-when-tor-and-vpns-arent-possible) **(at your own risk) and consider [The Tails route][The Tor Browser route:] instead.**
+If you have absolutely no other option and still want to do something, see [Appendix P: What about when Tor and VPNs aren't possible?](#appendix-p-what-about-when-tor-and-vpns-arent-possible) **(at your own risk) and consider [the Tails route](#the-tails-route) instead.**
 
 | Connection Type                    | Anonymity | Ease of Access to online resources | Tor Stream isolation | Safer where Tor is suspicious/dangerous | Speed      | Cost                      | Recommended                                      |
 |------------------------------------|-----------|------------------------------------|----------------------|-----------------------------------------|------------|---------------------------|--------------------------------------------------|
@@ -10145,7 +10145,7 @@ If you are to resort to this, you should never do so from a monitored/known netw
 
 **Do not use a live system on a Software supervised/monitored device on a known network.**
 
-**Refer to the Tails route to achieve this. See [The Tails route][The Tor Browser route:] and [Appendix P: What about when Tor and VPNs aren't possible?](#appendix-p-what-about-when-tor-and-vpns-arent-possible) sections.**
+**Refer to the Tails route to achieve this. See [the Tails route](#the-tails-route) and [Appendix P: What about when Tor and VPNs aren't possible?](#appendix-p-what-about-when-tor-and-vpns-arent-possible) sections.**
 
 # Appendix V: What browser to use in your Guest VM/Disposable VM
 
