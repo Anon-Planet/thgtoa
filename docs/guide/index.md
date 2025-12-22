@@ -11503,7 +11503,7 @@ Preventing an evil-maid attack attack or tampering might lead to bad consequence
 
 On the other hand, allowing the attack but detecting it will not let your adversary know that you are aware of the tampering. You can then take steps safely to not reveal information and possibly leave.
 
-See the [Some last OPSEC thoughts][Some last OPSEC thoughts:] section for some tips.
+See the [Some last OPSEC thoughts](#some-last-opsec-thoughts) section for some tips.
 
 # Appendix B5: Types of CPU attacks
 
