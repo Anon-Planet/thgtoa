@@ -35,7 +35,7 @@ This guide is a non-profit open-source initiative, licensed under Creative Commo
 
 - For mirrors see [Mirrors](../mirrors/index.md) and the links at the bottom right of the page. You should see these on every page.
 
-- For help in comparing versions see [Comparing versions](../guide/index.md#appendix-a7-comparing-versions)
+- For help in comparing versions see [Comparing versions](../guide/index.md#appendix-a6-comparing-versions)
 
 Feel free to submit issues **(please do report anything wrong)** using GitHub Issues at: <https://github.com/Anon-Planet/thgtoa/issues>. We also accept Merge Requests (MR) from our Gitlab and many other places. Do not hesitate to report issues and suggestions!
 
