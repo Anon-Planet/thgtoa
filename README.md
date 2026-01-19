@@ -15,7 +15,7 @@ This guide is an open-source non-profit initiative, [licensed](LICENSE.html) und
 - Raw [Markdown](https://raw.githubusercontent.com/Anon-Planet/thgtoa/main/guide.md)
 
 **Mirrors:**
-- Hiden service: <http://thgtoa3jzy3doku7hkna32htpghjijefscwvh4dyjgfydbbjkeiohgid.onion/>
+- Hidden service: <del><http://thgtoa3jzy3doku7hkna32htpghjijefscwvh4dyjgfydbbjkeiohgid.onion/></del> **Host down**
 
 Feel free to submit issues using Github Issues with the repository link above. Criticism, opinions, and ideas are welcome!
 

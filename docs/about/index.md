@@ -46,7 +46,7 @@ Feel free to submit issues **(please do report anything wrong)** using GitHub Is
     - Read [the rules](https://psa.anonymousplanet.org/), please
     - Matrix Room: https://matrix.to/#/#nth:anonymousplanet.net
     - Matrix Space: https://matrix.to/#/#psa:anonymousplanet.net
-    - @daskolburn:anonymousplanet.net and @nope:anonymousplanet.net are the only administrators
+    - Admins: @daskolburn:thomcat.rocks and @thehidden:tchncs.de
 
 Follow us on:
 
