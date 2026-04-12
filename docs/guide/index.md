@@ -12,7 +12,13 @@ schema:
     - https://github.com/Anon-Planet
     - https://opencollective.com/anonymousplanetorg
 ---
-![Anonymous Planet logo](../media/profile.png){ align=right }
+<div class="pdf-title-page" aria-hidden="true">
+<p class="pdf-title-page__title">The Hitchhiker's Guide to Online Anonymity</p>
+<p class="pdf-title-page__subtitle"><em>(Or "How I learned to start worrying and love privacy anonymity")</em></p>
+<p class="pdf-title-page__meta">Version 1.2.1, April 2026 by Anonymous Planet</p>
+</div>
+<div class="guide-intro-lead" markdown="1">
+![Anonymous Planet logo](../media/profile.png)
 
 There are several ways you could read this guide:
 
@@ -44,6 +50,8 @@ You could also install the [LibRedirect](https://libredirect.github.io/) extensi
 **If you are having trouble accessing any of the many academic articles referenced in this guide due to paywalls, feel free to use Sci-Hub (<https://en.wikipedia.org/wiki/Sci-Hub>** <sup>[[Wikiless]](https://wikiless.com/wiki/Sci-Hub)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Sci-Hub)</sup>**) or LibGen (<https://en.wikipedia.org/wiki/Library_Genesis>** <sup>[[Wikiless]](https://wikiless.com/wiki/Library_Genesis)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Library_Genesis)</sup>**) for finding and reading them. Because Science should be free. All of it. If you are faced with a paywall accessing some resources, consider using <https://12ft.io/>.**
 
 Finally note that this guide does mention and even recommends various commercial services (such as VPNs, CDNs, e-mail providers, hosting providers...) **but is not endorsed or sponsored by any of them in any way. There are no referral links and no commercial ties with any of these providers. This project is 100% non-profit and only relying on donations.**
+
+</div>
 
 ## Requirements & Limitations
 
@@ -719,7 +727,7 @@ As well as those interesting podcasts:
 
 <https://www.inteltechniques.com/podcast.html>
 
-You should never share real individual experiences/details using your anonymous identities that could later lead to finding your real identity. You will see more details about this in the [Creating new identities][Creating new identities:] section.
+You should never share real individual experiences/details using your anonymous identities that could later lead to finding your real identity. You will see more details about this in the [Creating new identities](#creating-new-identities) section.
 
 ### Your Face, Voice, Biometrics, and Pictures
 
@@ -1966,7 +1974,7 @@ Remember that encryption with or without plausible deniability is not a silver b
 
 **See <https://en.wikipedia.org/wiki/Rubber-hose_cryptanalysis>** <sup>[[Wikiless]](https://wikiless.com/wiki/Rubber-hose_cryptanalysis)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Rubber-hose_cryptanalysis)</sup>
 
-CAUTION: Please see [**Appendix K: Considerations for using external SSD drives**](#appendix-k-considerations-for-using-external-ssd-drives) and [**Understanding HDD vs SSD**][Understanding HDD vs SSD:] sections if you consider storing such hidden VMs on an external SSD drive:
+CAUTION: Please see [**Appendix K: Considerations for using external SSD drives**](#appendix-k-considerations-for-using-external-ssd-drives) and [**Understanding HDD vs SSD**](#understanding-hdd-vs-ssd) sections if you consider storing such hidden VMs on an external SSD drive:
 
 - **Do not use hidden volumes on SSD drives as this is not supported/recommended by Veracrypt**[^303]**.**
 
@@ -2226,7 +2234,7 @@ You can mitigate this attack by doing the following (as recommended earlier):
 
 - Set up BIOS/UEFI/Firmware passwords to prevent any unauthorized boot of an unauthorized device.
 
-- Some OSes and Encryption software have the [Anti Evil Maid (AEM)][Anti Evil Maid (AEM):] protection that can be enabled. This is the case with Windows/Veracrypt and QubeOS (only on Intel CPUs).
+- Some OSes and Encryption software have the [Anti Evil Maid (AEM)](#anti-evil-maid-aem) protection that can be enabled. This is the case with Windows/Veracrypt and QubeOS (only on Intel CPUs).
 
 ##### Cold-Boot Attack
 
@@ -3323,7 +3331,7 @@ Unfortunately, using Tor alone will raise the suspicion of many destinations' pl
 
 - If you intend to create persistent shared and authenticated identities on various services where access from Tor is hard, we recommend the **VPN over Tor** and **VPS VPN/Proxy over Tor** options (or VPN over Tor over VPN if needed). It might be a bit less secure against correlation attacks due to breaking Tor Stream isolation but provides much better convenience in accessing online resources than just using Tor. It is an "acceptable" trade-off IMHP if you are careful enough with your identity.
 
-    - **Note: It is becoming more common that mainstream services and CDNS are also blocking or hindering VPN users with captchas and other various obstacles**. **In that case, a self-hosted VPS with a VPN/Proxy over Tor is the best solution for this as having your own dedicated VPS guarantees you are the sole user of your IP and encounter little to no obstacles.** Consider a [Self-hosted VPN/Proxy on a Monero/Cash-paid VPS (for users more familiar with Linux)][Self-hosted VPN/Proxy on a Monero/Cash-paid VPS (for users more familiar with Linux):] if you want the least amount of issues (this will be explained in the next section in more details).
+    - **Note: It is becoming more common that mainstream services and CDNS are also blocking or hindering VPN users with captchas and other various obstacles**. **In that case, a self-hosted VPS with a VPN/Proxy over Tor is the best solution for this as having your own dedicated VPS guarantees you are the sole user of your IP and encounter little to no obstacles.** Consider a [Self-hosted VPN/Proxy on a Monero/Cash-paid VPS (for users more familiar with Linux)](#self-hosted-vpnproxy-on-a-monerocash-paid-vps-for-users-more-familiar-with-linux) if you want the least amount of issues (this will be explained in the next section in more details).
 
 - If your intent however is just to browse random services anonymously without creating specific shared identities, using tor friendly services; or if you do not want to accept that trade-off in the earlier option. **Then we recommend using the Tor Only route to keep the full benefits of Stream Isolation (or Tor over VPN if you need to).**
 
@@ -4371,7 +4379,7 @@ All the VMs behind the Whonix Gateway should now work fine without additional co
 
 **Take a post-install VirtualBox snapshot of your VMs.**
 
-You are done and can now skip the rest to go to the [Getting Online][Getting Online:] part.
+You are done and can now skip the rest to go to the [Getting Online](#getting-online) part.
 
 ## The Qubes Route
 
@@ -4560,7 +4568,7 @@ Unfortunately, using Tor alone will raise the suspicion of many destinations' pl
 
 - If you intend to create persistent shared and authenticated identities on various services where access from Tor is hard, we recommend the **VPN over Tor** and **VPS VPN/Proxy over Tor** options (or VPN over Tor over VPN if needed). It might be a bit less secure against correlation attacks due to breaking Tor Stream isolation but provides much better convenience in accessing online resources than just using Tor. It is an "acceptable" trade-off IMHP if you are careful enough with your identity.
 
-    - **Note: It is becoming more common that mainstream services and CDNS are also blocking or hindering VPN users with captchas and other various obstacles**. **In that case, a self-hosted VPS with a VPN/Proxy over Tor is the best solution for this as having your own dedicated VPS guarantees you are the sole user of your IP and encounter little to no obstacles.** Consider a [Self-hosted VPN/Proxy on a Monero/Cash-paid VPS (for users more familiar with Linux)][Self-hosted VPN/Proxy on a Monero/Cash-paid VPS (for users more familiar with Linux):] if you want the least amount of issues (this will be explained in the next section in more details).
+    - **Note: It is becoming more common that mainstream services and CDNS are also blocking or hindering VPN users with captchas and other various obstacles**. **In that case, a self-hosted VPS with a VPN/Proxy over Tor is the best solution for this as having your own dedicated VPS guarantees you are the sole user of your IP and encounter little to no obstacles.** Consider a [Self-hosted VPN/Proxy on a Monero/Cash-paid VPS (for users more familiar with Linux)](#self-hosted-vpnproxy-on-a-monerocash-paid-vps-for-users-more-familiar-with-linux) if you want the least amount of issues (this will be explained in the next section in more details).
 
 - If your intent however is just to browse random services anonymously without creating specific shared identities, using tor friendly services; or if you do not want to accept that trade-off in the earlier option. **Then we recommend using the Tor Only route to keep the full benefits of Stream Isolation (or Tor over VPN if you need to).**
 
@@ -5223,7 +5231,7 @@ Phone verification is advertised by most platforms to verify you are human. But 
 
 Most platforms (including the privacy-oriented ones such as Signal/Telegram/Proton will require a phone number to register, and most countries now make it mandatory to submit a proof of ID to register[^381].
 
-Fortunately, this guide explained earlier how to get a number for these cases: [Getting an anonymous Phone number][Getting an anonymous Phone number:].
+Fortunately, this guide explained earlier how to get a number for these cases: [Getting an anonymous Phone number](#getting-an-anonymous-phone-number).
 
 ### E-Mail verification
 
@@ -5731,7 +5739,7 @@ Legend:
 
 - "Indirectly": This means they do require something but indirectly through a third-party system (Financial KYC for example).
 
-- **See [The Real-Name System][Checking if your Tor Exit Node is terrible:] for essential information. See below for details.**
+- **See [The Real-Name System](#the-real-name-system) for essential information. See below for details.**
 
 **Below you'll find a list of "problematic services". If they're not below, it means there are no issues at all with anything (like Briar for example)**
 
@@ -6215,7 +6223,7 @@ You are going to have to find a separate way to post there using at least seven 
 
 **Crypto Wallets**
 
-Use any crypto wallet app within the Windows Virtual Machine. But be careful not to transfer anything toward an Exchange or a known Wallet. Crypto is in most cases NOT anonymous and can be traced back to you when you buy/sell any (remember the [Your Cryptocurrencies transactions][Your Cryptocurrencies transactions:] section).
+Use any crypto wallet app within the Windows Virtual Machine. But be careful not to transfer anything toward an Exchange or a known Wallet. Crypto is in most cases NOT anonymous and can be traced back to you when you buy/sell any (remember the [Your Crypto Transactions](#your-crypto-transactions) section).
 
 **If you really want to use Crypto, use Monero which is the only one with reasonable privacy/anonymity.**
 
@@ -6269,7 +6277,7 @@ For these reasons, it is always important to check the claims of various apps. O
 
 #### Roll your own crypto
 
-See the [Bad Cryptography][Bad Cryptography:] section at the start of this guide.
+See the [Bad Cryptography](#bad-cryptography) section at the start of this guide.
 
 **Always be cautious of apps rolling their own crypto until it has been reviewed by many in the crypto community (or even better published and peer-reviewed academically)**. Again, this is harder to verify with closed-source proprietary apps.
 
@@ -6293,7 +6301,7 @@ Zero-Access Encryption[^411] at rest is used when you store data at some provide
 
 Zero-Access encryption is an added feature/companion to e2ee but is applied mainly to data at rest and not communications.
 
-Examples of this issue would be iMessage and WhatsApp, see the [Your Cloud backups/sync services][Your Cloud backups/sync services:] at the start of this guide.
+Examples of this issue would be iMessage and WhatsApp, see the [Your Cloud Backup & Sync Services](#your-cloud-backup-sync-services) at the start of this guide.
 
 So again, it is best to prefer Apps/Providers that do offer Zero-Access Encryption at rest and cannot read/access any of your data/metadata even at rest and not only limited to communications.
 
@@ -6301,7 +6309,7 @@ Such a feature would have prevented important hacks such as the Cambridge Analyt
 
 #### Metadata Protection
 
-Remember the [Your Metadata including your Geo-Location][Your Metadata including your Geo-Location:] section. End-to-end Encryption is one thing, but it does not necessarily protect your metadata.
+Remember the [Your Metadata](#your-metadata) section (including geo-location). End-to-end Encryption is one thing, but it does not necessarily protect your metadata.
 
 For Instance, WhatsApp might not know what you are saying but they might know who you are talking to, how long and when you have been talking to someone, who else is in groups with you, and if you transferred data with them (such as large files).
 
@@ -7087,7 +7095,7 @@ Here is a comparative table of recommended/included software compiled from vario
 
 **Legend:** * Not recommended but mentioned. N/A = Not Included or absence of recommendation for that software type. (L)= Linux Only but can maybe be used on Windows/macOS through other means (HomeBrew, Virtualization, Cygwin). (?)= Not tested but open-source and could be considered.
 
-**In all cases, we strongly recommend only using such applications from within a VM or Tails to prevent as much leaking as possible. If you do not, you will have to sanitize those documents carefully before publishing (See [Removing Metadata from Files/Documents/Pictures][Removing Metadata from Files/Documents/Pictures:]).**
+**In all cases, we strongly recommend only using such applications from within a VM or Tails to prevent as much leaking as possible. If you do not, you will have to sanitize those documents carefully before publishing (See [Removing Metadata from Files/Documents/Pictures](#removing-metadata-from-filesdocumentspictures)).**
 
 ### Communicating sensitive information
 
@@ -7123,7 +7131,7 @@ Without SecureDrop you could consider:
 
 What you should avoid:
 
-- Do not send physical materials using the post due to the risk of leaving DNA/Fingerprints or other traceable information (see [Cash-Paid VPN (preferred)][Cash/Monero-Paid VPN:]).
+- Do not send physical materials using the post due to the risk of leaving DNA/Fingerprints or other traceable information (see [Cash-Paid VPN (preferred)](#cashmonero-paid-vpn)).
 
 - Do not use methods linked to a phone number (even a burner one) such as Signal/WhatsApp/Telegram.
 
@@ -7207,7 +7215,7 @@ To do this, when mounting the Decoy Volume, select Mount Options and Check the "
 
 - If you are mounting the hidden volume from your Host OS (**not recommended**), you should erase all traces of this hidden volume everywhere after use. There could be traces in various places (system logs, file systems journaling, recent documents in your applications, indexing, registry entries...). Refer to the [Some additional measures against forensics](#some-additional-measures-against-forensics) section of this guide to remove such artifacts. Especially on Windows. Instead, you should mount them on your Guest VMs. With Virtualbox for instance, you could take a snapshot of the VM before opening/working the hidden volume and then restore the snapshot before opening/working on it after use. This should erase the traces of its presence and mitigate the issue. Your Host OS might keep logs of the USB key being inserted but not of the hidden volume usage. Therefore, we do not recommend using these from your host OS.
 
-- Do not store these on external SSD drives if you are not sure you can use Trim on them (see the [Understanding HDD vs SSD][Understanding HDD vs SSD:] section).
+- Do not store these on external SSD drives if you are not sure you can use Trim on them (see the [Understanding HDD vs SSD](#understanding-hdd-vs-ssd) section).
 
 ### Full Disk/System Backups
 
@@ -8599,7 +8607,7 @@ Please keep thinking for yourself, use critical thinking, and keep an open mind.
 
 **"In the end the Party would announce that two and two made five, and you would have to believe it" -- George Orwell, 1984, Book One, Chapter Seven.**
 
-Consider helping others (see [Helping others staying anonymous][Helping others staying anonymous:])
+Consider helping others (see [Helping others staying anonymous](#helping-others-staying-anonymous))
 
 # Donations
 
@@ -9259,7 +9267,7 @@ Both these tools can be used for cleaning many things such as:
 
 - Various logs
 
-- The free (unallocated) space of your hard drive][^462].
+- The free (unallocated) space of your hard drive[^462].
 
 - Secure deletion of files
 
@@ -10109,7 +10117,7 @@ Even the most basic controls (supervision or parental) will send out detailed ap
 
 This method is the one we would recommend in those cases.
 
-It is relatively easy for your adversary to prevent this by setting up firmware BIOS/UEFI (see [Bios/UEFI/Firmware Settings of your laptop][Bios/UEFI/Firmware Settings of your laptop:]) controls but usually most adversaries will overlook this possibility which requires more technical knowledge than just relying on Software.
+It is relatively easy for your adversary to prevent this by setting up firmware BIOS/UEFI (see [Bios/UEFI/Firmware Settings of your laptop](#biosuefifirmware-settings-of-your-laptop)) controls but usually most adversaries will overlook this possibility which requires more technical knowledge than just relying on Software.
 
 This method could even decrease suspicion and increase your plausible deniability as your adversaries think they have things under control and that everything appears normal in their reports.
 
@@ -10998,7 +11006,7 @@ As mentioned before in this guide multiple times, we strongly recommend the use 
 
 - But what if the service you want does not accept Monero but does accept a more mainstream cryptocurrency such as Bitcoin (BTC) or Ethereum (ETH)?
 
-**Bitcoin and other "mainstream cryptocurrencies" are not anonymous at all (Remember [Your Cryptocurrencies transactions][Your Cryptocurrencies transactions:]) and you should never ever purchase, for example, Bitcoin from an exchange and then use these directly for purchasing services anonymously. This will not work, and the transaction can be traced easily.**
+**Bitcoin and other "mainstream cryptocurrencies" are not anonymous at all (Remember [Your Crypto Transactions](#your-crypto-transactions)) and you should never ever purchase, for example, Bitcoin from an exchange and then use these directly for purchasing services anonymously. This will not work, and the transaction can be traced easily.**
 
 - **Stay away from so-called "private" mixers, tumblers and coinjoiners.** You might think this is a good idea, but not only are they useless with cryptocurrencies such as BTC/ETH/LTC, they are also dangerous. They take custody of your coins. Use Monero to anonymize your crypto. Do not use a normal KYC-enabled exchange to buy/sell your Monero (such as Kraken), since this information on your purchases and withdrawals (for intended use) are retained in the exchange. Instead, use a P2P exchange that doesn't require KYC such as what can be found on <https://kycnot.me/>.
 
@@ -11438,7 +11446,7 @@ Remember this should only be done on a secure environment such as VM behind the 
 
 Here is a checklist of things to verify before sharing information to anyone:
 
-- Check the files for any metadata: see [Removing Metadata from Files/Documents/Pictures][Removing Metadata from Files/Documents/Pictures:]
+- Check the files for any metadata: see [Removing Metadata from Files/Documents/Pictures](#removing-metadata-from-filesdocumentspictures)
 
 - Check the files for anything malicious: see [Appendix T: Checking files for malware](#appendix-t-checking-files-for-malware)
 

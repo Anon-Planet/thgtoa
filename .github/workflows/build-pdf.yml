@@ -1,0 +1,55 @@
+name: 🚀 Build guide PDF
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - "docs/**"
+      - "mkdocs.yml"
+      - "scripts/build_guide_pdf.py"
+      - ".github/workflows/build-pdf.yml"
+  push:
+    branches:
+      - main
+    paths:
+      - "docs/**"
+      - "mkdocs.yml"
+      - "scripts/build_guide_pdf.py"
+      - ".github/workflows/build-pdf.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  pdf:
+    name: MkDocs + print to PDF
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install MkDocs Material
+        run: pip install mkdocs-material
+
+      - name: Install Chromium
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends chromium
+
+      - name: Build PDF
+        env:
+          CI: true
+        run: python scripts/build_guide_pdf.py
+
+      - name: Upload PDF artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: guide-pdf
+          path: export/guide.pdf
+          if-no-files-found: error
+          retention-days: 90

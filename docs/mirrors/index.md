@@ -25,6 +25,12 @@ schema:
       -   [Archive.today](https://archive.fo/anonymousplanet.org)
       -   [Archive.today over Tor](http://archiveiya74codqgiixo33q62qlrqtkgmcitqx5u2oeqnmn5bpcbiyd.onion/anonymousplanet.org)
 
+!!! Note "PDF export (single file)"
+
+    The guide is also available as a **PDF** (images and layout preserved). It is built automatically in GitHub Actions: open [**Build guide PDF**](https://github.com/Anon-Planet/thgtoa/actions/workflows/build-pdf.yml) on the [**thgtoa** source repository](https://github.com/Anon-Planet/thgtoa), pick a successful run, and download the **`guide-pdf`** artifact. You can start a fresh build anytime (**Actions** → **Build guide PDF** → **Run workflow**).
+
+    To produce the same file locally, clone the repository and run `python scripts/build_guide_pdf.py` (Python, [MkDocs Material](https://squidfunk.github.io/mkdocs-material/getting-started/), and **Google Chrome** or **Microsoft Edge** required). More detail is in the [repository README](https://github.com/Anon-Planet/thgtoa#ways-to-read-or-export-the-guide).
+
 !!! Note "Our official git mirrors"
 
       - [Github](https://github.com/anon-planet)

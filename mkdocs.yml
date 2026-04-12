@@ -52,6 +52,9 @@ plugins:
 # - git-authors: {}
 #  - git-latest-release: {}
 
+extra_css:
+  - stylesheets/extra.css
+
 extra:
   social:
     - icon: simple/mastodon
