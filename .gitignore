@@ -20,3 +20,4 @@ site/
 _site/
 _site_test/
 export/
+build/

@@ -31,7 +31,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v6
         with:
-          python-version: "3.12"
+          python-version: "3.13"
 
       - name: Install MkDocs Material
         run: pip install mkdocs-material
@@ -44,13 +44,22 @@ jobs:
       - name: Build PDF
         env:
           CI: true
-        run: python scripts/build_guide_pdf.py
+        run: python scripts/build_guide_pdf.py --both
 
       - name: Upload PDF artifact
         uses: actions/upload-artifact@v7
         with:
-          name: guide-pdf
-          path: export/guide.pdf
+          name: light-pdf
+          path: export/thgtoa.pdf
+          archive: false
+          if-no-files-found: error
+          retention-days: 90
+
+      - name: Upload PDF artifact (Dark Mode)
+        uses: actions/upload-artifact@v7
+        with:
+          name: dark-pdf
+          path: export/thgtoa-dark.pdf
           archive: false
           if-no-files-found: error
           retention-days: 90

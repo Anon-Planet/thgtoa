@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+
+- Refactored GitHub Actions workflow **Build guide PDF** (`scripts\build_guide_pdf.py`): now builds both light and dark mode PDFs (`export/thgtoa.pdf` and `export/thgtoa-dark.pdf` respectively).
+
 ## [1.2.1] - 2026-04-11
 
 ### Added
