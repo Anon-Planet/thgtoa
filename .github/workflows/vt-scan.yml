@@ -1,20 +1,24 @@
 name: '🦠 VirusTotal Scan'
 
 on:
-    release:
-      types: [published]
+    workflow_dispatch:
+    push:
       branches:
-        - main
+        - 'main'
+      tags:
+        - 'v*'
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: '📦 Checkout'
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
 
       - name: '📦 Set up Go'
-        uses: actions/setup-go@v4
+        uses: actions/setup-go@v6
         with:
             go-version: '1.26.2'
       - run: go version
@@ -23,6 +27,7 @@ jobs:
         uses: crazy-max/ghaction-virustotal@v5
         with:
           vt_api_key: ${{ secrets.VT_API_KEY }}
+          update_release_body: true
           files: |
             ./export/thgtoa.pdf
             ./export/thgtoa-dark.pdf
