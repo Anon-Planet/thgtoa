@@ -1,0 +1,28 @@
+name: '🦠 VirusTotal Scan'
+
+on:
+    release:
+      types: [published]
+      branches:
+        - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: '📦 Checkout'
+        uses: actions/checkout@v6
+
+      - name: '📦 Set up Go'
+        uses: actions/setup-go@v4
+        with:
+            go-version: '1.26.2'
+      - run: go version
+
+      - name: '🦠 Scan PDF files using VT'
+        uses: crazy-max/ghaction-virustotal@v3
+        with:
+          vt_api_key: ${{ secrets.VT_API_KEY }}
+          files: |
+            ./export/thgtoa.pdf
+            ./export/thgtoa-dark.pdf

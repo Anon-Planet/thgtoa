@@ -18,9 +18,9 @@ This guide is an open-source non-profit initiative, [licensed](LICENSE.html) und
   python scripts/build_guide_pdf.py
   ```
 
-  This runs `mkdocs build` (output defaults to `./site`), then uses **Google Chrome** or **Microsoft Edge** in headless mode to print `site/guide/index.html` to **`export/guide.pdf`** (images and styling preserved). If the site is already built: `python scripts/build_guide_pdf.py --skip-mkdocs`. Other options: `--site-dir`, `--pdf`, and `python scripts/build_guide_pdf.py --help`.
+  This runs `mkdocs build` (output defaults to `./site`), then uses **Google Chrome** or **Microsoft Edge** in headless mode to print `site/guide/index.html` to **`export/thgtoa.pdf`** (images and styling preserved). If the site is already built: `python scripts/build_guide_pdf.py --skip-mkdocs`. Other options: `--site-dir`, `--pdf`, and `python scripts/build_guide_pdf.py --help`.
 
-  On **GitHub Actions**, the [Build guide PDF](https://github.com/Anon-Planet/thgtoa/actions/workflows/build-pdf.yml) workflow does the same using Chromium on Ubuntu when you push to `main` or open a pull request that touches the guide or build inputs; download the **`guide-pdf`** artifact from a successful run. You can also run it manually (**Actions** → **Build guide PDF** → **Run workflow**).
+  On **GitHub Actions**, the [Build guide PDF](https://github.com/Anon-Planet/thgtoa/actions/workflows/build-pdf.yml) workflow does the same using Chromium on Ubuntu when you push to `main` or open a pull request that touches the guide or build inputs; download the **`thgtoa.pdf`** artifact from a successful run. You can also run it manually (**Actions** → **Build guide PDF** → **Run workflow**).
 - **OpenDocument (ODT):** not produced by this repository (previous hosted export removed).
 - **Raw Markdown (very large):** [docs/guide/index.md on GitHub](https://raw.githubusercontent.com/Anon-Planet/thgtoa/refs/heads/main/docs/guide/index.md)
 

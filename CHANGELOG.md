@@ -9,13 +9,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-- Refactored GitHub Actions workflow **Build guide PDF** (`scripts\build_guide_pdf.py`): now builds both light and dark mode PDFs (`export/thgtoa.pdf` and `export/thgtoa-dark.pdf` respectively).
+- Refactored GitHub Actions workflow **Build PDF** (`scripts\build_guide_pdf.py`): now builds both light and dark mode PDFs (`export/thgtoa.pdf` and `export/thgtoa-dark.pdf` respectively).
+- Restored previous VT scans workflow **VirusTotal Scan** (`.github/workflows/vt-scan.yml`): submit files to VT for malware scanning. Links will be published on the site.
 
 ## [1.2.1] - 2026-04-11
 
 ### Added
 
-- GitHub Actions workflow **Build guide PDF** (`.github/workflows/build-pdf.yml`): installs Chromium on `ubuntu-latest`, runs `scripts/build_guide_pdf.py`, uploads `export/guide.pdf` as the `guide-pdf` artifact. Runs on `workflow_dispatch`, on pushes to `main` that touch docs or build inputs, and on matching pull requests.
+- GitHub Actions workflow **Build PDF** (`.github/workflows/build-pdf.yml`): installs Chromium on `ubuntu-latest`, runs `scripts/build_guide_pdf.py`, uploads `export/guide.pdf` as the `guide-pdf` artifact. Runs on `workflow_dispatch`, on pushes to `main` that touch docs or build inputs, and on matching pull requests.
 
 - `scripts/build_guide_pdf.py` to build the MkDocs site and render the guide to a single PDF (`export/guide.pdf` by default) using a Chromium-based browser (Chrome or Edge) headless print-to-PDF.
 - `docs/stylesheets/extra.css` and `extra_css` in `mkdocs.yml` for shared site styling.
@@ -27,7 +28,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Guide landing layout: wrap the opening block in `docs/guide/index.md` with a `guide-intro-lead` container so the logo and first sections share one layout context for web and print.
 - `.gitignore` to exclude local build outputs `export/`, `site/`, and `_site_test/`.
 - `scripts/build_guide_pdf.py`: when the `CI` environment variable is set, pass Chromium flags (`--no-sandbox`, `--disable-setuid-sandbox`, `--disable-dev-shm-usage`) so headless print works on typical CI images.
-- `README.md`: note the **Build guide PDF** GitHub Actions workflow and the `guide-pdf` artifact.
+- `README.md`: note the **Build PDF** GitHub Actions workflow and the `guide-pdf` artifact.
 
 ### Fixed
 
