@@ -36,7 +36,7 @@ jobs:
       - name: '📊 Extract VT scan results'
         id: vt-scan
         run: |
-          echo "scan completed" >> $GITHUB_OUTPUT
+          echo "status=completed" >> $GITHUB_OUTPUT
 
       - name: '🔗 Generate VT report links'
         run: |
