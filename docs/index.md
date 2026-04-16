@@ -13,11 +13,16 @@ schema:
     - https://opencollective.com/anonymousplanetorg
     - https://mastodon.social/@anonymousplanet
 ---
+
+# **Hello, and welcome to the Hitchhiker's Guide.**
+
+**9FA5 436D 0EE3 6098 5157  3825 17EC A05F 768D EDF6**
+
+This is the master signing key fingerprint for Anonymous Planet.  
+    You'll use it to [**verify the checksum** and **GPG signature** of this file for authenticity.](verify/index.md)  
+    Please share this project if you enjoy it and you think it might be useful to others.
+
 ![Anonymous Planet logo](media/profile.png){ align=right }
-
-**Welcome to the Hitchhiker's Guide.**
-
-Please share this project if you enjoy it and you think it might be useful to others.
 
 Anonymous Planet is a collective of volunteers and contributors. No one person is considered more valuable than another, and no one person should be viewed as having "more impact" on Anonymous Planet.
 
@@ -34,3 +39,4 @@ Anonymous Planet is a collective of volunteers and contributors. No one person i
     - [:fontawesome-solid-house: Homepage](https://www.itsnothing.net)
     - [:fontawesome-solid-envelope: E-mail](mailto:contact@anonymousplanet.org)
     - [:simple-matrix: Personal Matrix](https://matrix.to/#/@thehidden:tchncs.de "@thehidden:tchncs.de"), [:simple-matrix: Org Matrix](https://matrix.to/#/@nope:anonymousplanet.net "@nope:anonymousplanet.net")
+
