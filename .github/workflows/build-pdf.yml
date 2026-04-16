@@ -18,48 +18,120 @@ on:
       - ".github/workflows/build-pdf.yml"
 
 permissions:
-  contents: read
+  contents: write
+  id-token: write
 
 jobs:
   pdf:
-    name: MkDocs + print to PDF
+    name: PDF build and sign
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v6
+      - name: 🛠️ Checkout
+        uses: actions/checkout@v4
 
-      - name: Set up Python
-        uses: actions/setup-python@v6
+      - name: 🐍 Set up Python
+        uses: actions/setup-python@v5
         with:
           python-version: "3.13"
 
-      - name: Install MkDocs Material
+      - name: 📦 Install MkDocs Material
         run: pip install mkdocs-material
 
-      - name: Install Chromium
+      - name: 🌐 Install Chromium
         run: |
           sudo apt-get update
           sudo apt-get install -y --no-install-recommends chromium
 
-      - name: Build PDF
+      - name: 🔑 Install GPG tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install gnupg
+
+      - name: 🖨️ Build PDF
         env:
           CI: true
         run: python scripts/build_guide_pdf.py --both
 
-      - name: Upload PDF artifact
-        uses: actions/upload-artifact@v7
+      - name: 🔢 Generate SHA256 hashes for root directory
+        run: |
+          cd ${{ github.workspace }}
+          sha256sum export/thgtoa.pdf > sha256sum-light.txt
+          sha256sum export/thgtoa-dark.pdf >> sha256sum-light.txt
+
+          # Create separate hash files for each PDF
+          sha256sum export/thgtoa.pdf > thgtoa.pdf.sha256
+          sha256sum export/thgtoa-dark.pdf > thgtoa-dark.pdf.sha256
+
+      - name: 🔒 Sign PDFs with GPG key
+        env:
+          GPG_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
+          GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
+        run: |
+          cd ${{ github.workspace }}
+
+          # Import GPG key
+          echo "$GPG_KEY" | gpg --batch --import 2>/dev/null || true
+
+          # Sign the PDFs (detach signature)
+          gpg --batch --yes --armor --detach-sign --output export/thgtoa.pdf.sig export/thgtoa.pdf
+          gpg --batch --yes --armor --detach-sign --output export/thgtoa-dark.pdf.sig export/thgtoa-dark.pdf
+
+          # Also sign the hash files
+          gpg --batch --yes --armor --detach-sign --output sha256sum-light.txt.sig sha256sum-light.txt
+
+  upload:
+    name: Upload artifacts
+    runs-on: ubuntu-latest
+    needs: pdf
+    steps:
+      - name: 📤 Upload PDF artifact (Light Mode)
+        uses: actions/upload-artifact@v4
         with:
-          name: light-pdf
-          path: export/thgtoa.pdf
+          name: light-pdf-files
+          path: |
+            export/thgtoa.pdf
+            export/thgtoa.pdf.sig
+            thgtoa.pdf.sha256
           archive: false
           if-no-files-found: error
           retention-days: 90
 
-      - name: Upload PDF artifact (Dark Mode)
-        uses: actions/upload-artifact@v7
+      - name: 📤 Upload PDF artifact (Dark Mode)
+        uses: actions/upload-artifact@v4
         with:
-          name: dark-pdf
-          path: export/thgtoa-dark.pdf
+          name: dark-pdf-files
+          path: |
+            export/thgtoa-dark.pdf
+            export/thgtoa-dark.pdf.sig
+            thgtoa-dark.pdf.sha256
           archive: false
           if-no-files-found: error
           retention-days: 90
+
+      - name: 📤 Upload combined hash file to root
+        uses: actions/upload-artifact@v4
+        with:
+          name: hash-files
+          path: |
+            sha256sum-light.txt
+          archive: false
+          if-no-files-found: error
+          retention-days: 90
+
+  release:
+    name: Create Release
+    runs-on: ubuntu-latest
+    needs: pdf
+    steps:
+      - name: 🚀 Create Release (if tag exists)
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v1
+        with:
+          files: |
+            export/thgtoa.pdf
+            export/thgtoa-dark.pdf
+            export/thgtoa.pdf.sig
+            export/thgtoa-dark.pdf.sig
+            sha256sum-light.txt
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
