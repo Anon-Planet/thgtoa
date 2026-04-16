@@ -1,16 +1,16 @@
 #!/usr/bin/env python3
-"""Extended version of build_guide_pdf.py with dark mode support.
+"""Experimental dark mode support.
 
 This script builds both light and dark mode MkDocs site, then renders docs/guide/ to single PDFs via Chromium.
 
 Usage:
-  python scripts/build_guide_pdf_extended.py                    # Generate light mode PDF only
-  python scripts/build_guide_pdf_extended.py --dark-mode        # Generate dark mode PDF only
-  python scripts/build_guide_pdf_extended.py --both             # Generate both light and dark mode PDFs
+  python scripts/build_guide_pdf.py                    # Generate light mode PDF only
+  python scripts/build_guide_pdf.py --dark-mode        # Generate dark mode PDF only
+  python scripts/build_guide_pdf.py --both             # Generate both light and dark mode PDFs
 
 Examples:
-  python scripts/build_guide_pdf_extended.py --site-dir build/html --pdf-light export/thgtoa.pdf
-  python scripts/build_guide_pdf_extended.py --dark-mode --pdf-dark export/thgtoa-dark.pdf
+  python scripts/build_guide_pdf.py --site-dir build/html --pdf-light export/thgtoa.pdf
+  python scripts/build_guide_pdf.py --dark-mode --pdf-dark export/thgtoa-dark.pdf
 """
 
 from __future__ import annotations

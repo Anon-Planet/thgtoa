@@ -125,7 +125,9 @@ nav:
   - Home: index.md
   - About: about/index.md
   - Verify: verify/index.md
-  - Guide: guide/index.md
+  - Guide:
+    - guide/index.md
+    - Workflow Documentation: guide/dev-workflow.md
   - Code: code/index.md
   - Contribute: contribute/index.md
   - Constitution: constitution/index.md

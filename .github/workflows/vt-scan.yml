@@ -75,4 +75,3 @@ jobs:
 
           # Update the release with VT results
           gh release edit ${{ github.ref_name }} --notes-file vt-results.md
-

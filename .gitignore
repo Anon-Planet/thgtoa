@@ -19,5 +19,9 @@ ENV/
 site/
 _site/
 _site_test/
-export/
 build/
+
+# Export directory - but track hash files and signatures
+export/thgtoa.pdf.sha256
+export/thgtoa-dark.pdf.sha256
+*.sig

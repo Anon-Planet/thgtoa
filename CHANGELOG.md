@@ -7,10 +7,23 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Add ways to verify the files
+
 ### Changed
 
 - Refactored GitHub Actions workflow **Build PDF** (`scripts\build_guide_pdf.py`): now builds both light and dark mode PDFs (`export/thgtoa.pdf` and `export/thgtoa-dark.pdf` respectively).
 - Restored previous VT scans workflow **VirusTotal Scan** (`.github/workflows/vt-scan.yml`): submit files to VT for malware scanning. Links will be published on the site.
+
+## Fixed
+
+- `docs/about/index.md`: replace broken reference-style internal links
+- `docs/guide/index.md`: Appendix A6: comment out deprecated ODT information because we don't and probably won't use it in the future
+
+### Feature
+
+- Updated `scripts/build_guide_pdf.py` to use `--print-to-pdf` instead of `--save-as` for PDF generation, and added a new `--dark-mode` flag to generate dark mode PDFs. The script now supports generating both light and dark mode PDFs with a single command invocation by using the `--both` flag. This change improves the PDF generation process and provides better support for dark mode users. Save your eyes - you only get one pair.
 
 ## [1.2.1] - 2026-04-11
 
