@@ -15,7 +15,7 @@ schema:
 ---
 ![Anonymous Planet logo](../media/profile.png){ align=right }
 
-**Anonymous Planet** are the maintainers of the [_Hitchhiker's Guide_](../guide) and the [_PSA Community_](https://psa.anonymousplanet.org). It is responsible for maintaining the projects and code repositories. This project is part of our ongoing efforts to provide open-source tools and resources for the community, with regular updates and improvements added to the changelog.
+**Anonymous Planet** are the maintainers of the [_Hitchhiker's Guide_](../guide/index.md) and the [_PSA Community_](https://psa.anonymousplanet.org). It is responsible for maintaining the projects and code repositories. This project is part of our ongoing efforts to provide open-source tools and resources for the community, with regular updates and improvements added to the changelog.
 
 The purpose: providing an introduction to various online tracking techniques, online ID verification techniques, and detailed guidance to creating and maintaining (truly) anonymous online identities. It is written with the hopes that good people (e.g., activists, journalists, scientists, lawyers, whistle-blowers, etc.) will be able to fight oppression, censorship and harassment! The website and projects are free (as in freedom) and not affiliated with any donor or projects discussed.
 
