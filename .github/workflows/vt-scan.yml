@@ -17,17 +17,62 @@ jobs:
       - name: '📦 Checkout'
         uses: actions/checkout@v6
 
-      - name: '📦 Set up Go'
-        uses: actions/setup-go@v6
+      - name: '🔍 Download PDF artifacts from build workflow'
+        uses: actions/download-artifact@v7
         with:
-            go-version: '1.26.2'
-      - run: go version
+          pattern: light-pdf-files,dark-pdf-files
+          path: pdfs
+          merge-multiple: true
 
       - name: '🦠 Scan PDF files using VT'
         uses: crazy-max/ghaction-virustotal@v5
         with:
           vt_api_key: ${{ secrets.VT_API_KEY }}
-          update_release_body: true
+          update_release_body: false  # We'll handle this manually in the next step
           files: |
-            ./export/thgtoa.pdf
-            ./export/thgtoa-dark.pdf
+            ./pdfs/thgtoa.pdf
+            ./pdfs/thgtoa-dark.pdf
+
+      - name: '📊 Extract VT scan results'
+        id: vt-scan
+        run: |
+          echo "scan completed" >> $GITHUB_OUTPUT
+
+      - name: '🔗 Generate VT report links'
+        run: |
+          # Create a markdown file with VT scan results and links
+          cat > vt-results.md << EOF
+          ## VirusTotal Scan Results
+
+          **Scan Date:** $(date -u +"%Y-%m-%d %H:%M UTC")
+
+          ### thgtoa.pdf (Light Mode)
+          - **VT Report:** https://www.virustotal.com/gui/file/$(sha256sum pdfs/thgtoa.pdf | cut -d' ' -f1)
+
+          ### thgtoa-dark.pdf (Dark Mode)
+          - **VT Report:** https://www.virustotal.com/gui/file/$(sha256sum pdfs/thgtoa-dark.pdf | cut -d' ' -f1)
+
+          ---
+          *Scan performed automatically by GitHub Actions*
+          EOF
+
+      - name: '📝 Update release with VT results (if tag exists)'
+        if: startsWith(github.ref, 'refs/tags/')
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          # Get the latest release notes
+          RELEASE_NOTES=$(gh release view ${{ github.ref_name }} --json body --jq .body 2>/dev/null || echo "")
+
+          # Append VT results to release notes
+          if [ -n "$RELEASE_NOTES" ]; then
+            echo "" >> vt-results.md
+            echo "---" >> vt-results.md
+            echo "### Previous Release Notes" >> vt-results.md
+            echo "$RELEASE_NOTES" >> vt-results.md
+          fi
+
+          # Update the release with VT results
+          gh release edit ${{ github.ref_name }} --notes-file vt-results.md
+
