@@ -37,10 +37,12 @@ jobs:
       - name: 📦 Install MkDocs Material
         run: pip install mkdocs-material
 
-      - name: 🌐 Install Chromium
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y --no-install-recommends chromium
+      - name: Setup Chrome
+        uses: browser-actions/setup-chrome@v2
+        with:
+          chrome-version: 120
+          install-dependencies: true
+          install-chromedriver: true
 
       - name: 🔑 Install GPG tools
         run: |
@@ -70,7 +72,11 @@ jobs:
           cd ${{ github.workspace }}
 
           # Import GPG key
-          echo "$GPG_KEY" | gpg --batch --import 2>/dev/null || true
+          export GPG_TTY=$(tty)
+          echo "$GPG_KEY" | gpg --batch --import
+
+          # Verify the key was imported
+          gpg --list-secret-keys
 
           # Sign the PDFs (detach signature)
           gpg --batch --yes --armor --detach-sign --output export/thgtoa.pdf.sig export/thgtoa.pdf
