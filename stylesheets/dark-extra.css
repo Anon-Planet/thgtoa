@@ -1,0 +1,130 @@
+/* Generate dark mode PDF of the HTML at guide/index.html */
+
+/*
+  DARK_MODE_PDF.CSS
+  Use this stylesheet when generating a PDF from HTML.
+*/
+
+:root {
+  /* Color Palette */
+  --bg-color: #121212;           /* Deep dark grey (easier on eyes than pure black) */
+  --text-primary: #e0e0e0;       /* Off-white for readability */
+  --text-secondary: #a0a0a0;     /* Grey for captions/metadata */
+  --accent-color: #bb86fc;       /* Light purple accent (optional) */
+  --border-color: #333333;       /* Subtle borders */
+
+  /* Fonts - System fonts ensure best rendering across PDF engines */
+  --font-main: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* --- RESET & BASE STYLES --- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  font-family: var(--font-main);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* --- TYPOGRAPHY & HEADINGS --- */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-primary);
+  font-weight: 700;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+p {
+  margin-bottom: 1rem;
+  color: var(--text-secondary); /* Slightly dimmer text for body copy */
+}
+
+a {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+/* --- CONTAINER & LAYOUT --- */
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+/* Cards / Sections with dark backgrounds */
+.card {
+  background-color: #1e1e1e;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+/* --- TABLES (Common in PDFs) --- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  color: var(--text-primary);
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+}
+
+th {
+  background-color: #2c2c2c;
+  font-weight: bold;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+/* --- IMAGES --- */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px 0;
+  /* This ensures high contrast images don't get washed out */
+  filter: brightness(1.1);
+}
+
+/* --- CRITICAL FOR PDF GENERATORS --- */
+/* Forces the browser/PDF engine to print background colors and graphics */
+@media print {
+  @page {
+    size: A4; /* Change to 'Letter' if preferred */
+    margin: 20mm;
+  }
+
+  body {
+    background-color: var(--bg-color) !important;
+    color: var(--text-primary) !important;
+  }
+
+  .card, table th {
+    -webkit-print-color-adjust: exact !important; /* Chrome/Safari */
+    print-color-adjust: exact !important;          /* Firefox/Standard */
+    background-color: #1e1e1e !important;
+    color: var(--text-primary) !important;
+  }
+
+  /* Prevent page breaks in the middle of a sentence or card if possible */
+  .card {
+    break-inside: avoid;
+  }
+
+  /* Hide elements you don't want in PDF (like navigation bars) */
+  nav, footer, button {
+    display: none !important;
+  }
+}
