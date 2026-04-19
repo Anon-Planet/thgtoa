@@ -1,29 +1,41 @@
-name: 📖 Build PDF
+name: 📖 Build, Scan & Release PDF
 
 on:
   workflow_dispatch:
-  pull_request:
-    paths:
-      - "docs/**"
-      - "mkdocs.yml"
-      - "scripts/build_guide_pdf.py"
-      - ".github/workflows/build-pdf.yml"
+    inputs:
+      build_mode:
+        description: 'PDF build mode'
+        required: true
+        default: 'both'
+        type: choice
+        options:
+          - light
+          - dark
+          - both
+      release_mode:
+        description: 'Release update mode'
+        required: false
+        default: 'tag'
+        type: choice
+        options:
+          - tag
+          - latest
   push:
     branches:
       - main
     paths:
       - "docs/**"
       - "mkdocs.yml"
-      - "scripts/build_guide_pdf.py"
-      - ".github/workflows/build-pdf.yml"
+      - "scripts/**"
+      - ".github/workflows/**"
 
 permissions:
   contents: write
   id-token: write
 
 jobs:
-  pdf:
-    name: PDF build and sign
+  build:
+    name: Build PDFs (${{ inputs.build_mode || 'both' }})
     runs-on: ubuntu-latest
     steps:
       - name: 🛠️ Checkout
@@ -49,20 +61,10 @@ jobs:
           sudo apt-get update
           sudo apt-get install gnupg
 
-      - name: 🖨️ Build PDF
+      - name: 🖨️ Build PDFs
         env:
           CI: true
-        run: python scripts/build_guide_pdf.py --both
-
-      - name: 🔢 Generate SHA256 hashes for root directory
-        run: |
-          cd ${{ github.workspace }}
-          sha256sum export/thgtoa.pdf > sha256sum-light.txt
-          sha256sum export/thgtoa-dark.pdf >> sha256sum-light.txt
-
-          # Create separate hash files for each PDF
-          sha256sum export/thgtoa.pdf > thgtoa.pdf.sha256
-          sha256sum export/thgtoa-dark.pdf > thgtoa-dark.pdf.sha256
+        run: python scripts/build_guide_pdf.py --${{ inputs.build_mode || 'both' }}
 
       - name: 🔒 Sign PDFs with GPG key
         env:
@@ -73,71 +75,84 @@ jobs:
 
           # Import GPG key
           export GPG_TTY=$(tty)
-          echo "$GPG_KEY" | gpg --batch --import
+          echo "$GPG_KEY" | gpg --batch --import 2>/dev/null || true
 
           # Verify the key was imported
-          gpg --list-secret-keys
+          if gpg --list-secret-keys &>/dev/null; then
+            # Sign the PDFs (detach signature)
+            gpg --batch --yes --armor --detach-sign --output export/thgtoa.pdf.sig export/thgtoa.pdf 2>/dev/null || true
+            gpg --batch --yes --armor --detach-sign --output export/thgtoa-dark.pdf.sig export/thgtoa-dark.pdf 2>/dev/null || true
 
-          # Sign the PDFs (detach signature)
-          gpg --batch --yes --armor --detach-sign --output export/thgtoa.pdf.sig export/thgtoa.pdf
-          gpg --batch --yes --armor --detach-sign --output export/thgtoa-dark.pdf.sig export/thgtoa-dark.pdf
+            # Create combined hash file and sign it
+            sha256sum export/thgtoa.pdf > export/thgtoa.pdf.sha256
+            sha256sum export/thgtoa-dark.pdf > export/thgtoa-dark.sha256
+            gpg --batch --yes --armor --detach-sign --output export/thgtoa.pdf.sig export/thgtoa.pdf.sha256 2>/dev/null || true
+            gpg --batch --yes --armor --detach-sign --output export/thgtoa-dark.pdf.sig export/thgtoa-dark.pdf.sha256 2>/dev/null || true
 
-          # Also sign the hash files
-          gpg --batch --yes --armor --detach-sign --output sha256sum-light.txt.sig sha256sum-light.txt
+            # Create individual hash files
+            sha256sum export/thgtoa.pdf > export/thgtoa.pdf.sha256
+            sha256sum export/thgtoa-dark.pdf > export/thgtoa-dark.pdf.sha256
+          fi
 
-  upload:
-    name: Upload artifacts
+      - name: 📤 Upload PDF artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: pdf-artifacts-${{ inputs.build_mode || 'both' }}
+          path: |
+            export/*.pdf
+            export/*.sig
+            export/*.sha256
+          if-no-files-found: error
+          retention-days: 90
+          archive: false
+
+  scan-and-release:
+    name: Scan & Release
     runs-on: ubuntu-latest
-    needs: pdf
+    needs: build
+    if: always() && contains(needs.build.result, 'success')
+
     steps:
-      - name: 📤 Upload PDF artifact (Light Mode)
-        uses: actions/upload-artifact@v4
-        with:
-          name: light-pdf-files
-          path: |
-            export/thgtoa.pdf
-            export/thgtoa.pdf.sig
-            thgtoa.pdf.sha256
-          archive: false
-          if-no-files-found: error
-          retention-days: 90
+      - name: 🚀 Checkout
+        uses: actions/checkout@v4
 
-      - name: 📤 Upload PDF artifact (Dark Mode)
-        uses: actions/upload-artifact@v4
+      - name: 🔽 Download PDF artifacts
+        uses: actions/download-artifact@v4
         with:
-          name: dark-pdf-files
-          path: |
-            export/thgtoa-dark.pdf
-            export/thgtoa-dark.pdf.sig
-            thgtoa-dark.pdf.sha256
-          archive: false
-          if-no-files-found: error
-          retention-days: 90
+          pattern: pdf-artifacts
+          path: export/
+          merge-multiple: true
 
-      - name: 📤 Upload combined hash file to root
-        uses: actions/upload-artifact@v4
-        with:
-          name: hash-files
-          path: |
-            sha256sum-light.txt
-          archive: false
-          if-no-files-found: error
-          retention-days: 90
-
-  release:
-    name: Create Release
-    runs-on: ubuntu-latest
-    needs: pdf
-    steps:
-      - name: 🚀 Create Release (if tag exists)
-        if: startsWith(github.ref, 'refs/tags/')
-        uses: softprops/action-gh-release@v1
-        with:
-          files: |
-            export/thgtoa.pdf
-            export/thgtoa-dark.pdf
-            export/thgtoa.pdf.sig
-            export/thgtoa-dark.pdf.sig
-            sha256sum-light.txt
+      - name: 🦠 VirusTotal Scan & Release Update
         env:
+          VT_API_KEY: ${{ secrets.VT_API_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_REPOSITORY: ${{ github.repository }}
+          GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
+          GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
+        run: |
+          chmod +x scripts/pdf_release.sh
+
+          # Determine build mode from input or default to both
+          BUILD_MODE="${{ inputs.build_mode || 'both' }}"
+          RELEASE_MODE="${{ inputs.release_mode || 'tag' }}"
+
+          echo "Running PDF release script..."
+          echo "Build Mode: $BUILD_MODE"
+          echo "Release Mode: $RELEASE_MODE"
+
+          # Run the release script
+          ./scripts/pdf_release.sh \
+            --build "$BUILD_MODE" \
+            --release "$RELEASE_MODE" \
+            --vt-api-key "$VT_API_KEY" \
+            --github-token "$GITHUB_TOKEN"
+
+      - name: 📊 Upload scan results artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: vt-scan-results-${{ inputs.build_mode || 'both' }}
+          path: |
+            export/virus-total-results.md
+          if-no-files-found: warn
+          retention-days: 30
