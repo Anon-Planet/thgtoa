@@ -98,9 +98,6 @@ jobs:
 
           # Verify signatures were created
           ls -la export/*.sig 2>/dev/null || echo "No signature files found in export/"
-        env:
-          GPG_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
-          GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
 
       - name: 🦠 Upload PDFs to VirusTotal
         uses: crazy-max/ghaction-virustotal@v5
