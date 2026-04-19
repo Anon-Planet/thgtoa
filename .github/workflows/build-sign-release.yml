@@ -69,12 +69,7 @@ jobs:
           export GPG_TTY=$(tty)
           echo "$GPG_KEY" | gpg --batch --import 2>/dev/null || true
 
-          # Create combined hash file with all PDFs
-          sha256sum export/thgtoa.pdf > export/checksums.sha256
-          sha256sum export/thgtoa-dark.pdf >> export/checksums.sha256
 
-          # Sign the checksum file
-          gpg --batch --yes --armor --detach-sign --output export/checksums.sha256.sig export/checksums.sha256 2>/dev/null || true
 
       - name: 🔒 Sign PDF files with GPG
         env:
@@ -86,6 +81,13 @@ jobs:
           # Import GPG key if not already imported
           export GPG_TTY=$(tty)
           echo "$GPG_KEY" | gpg --batch --import 2>/dev/null || true
+
+          # Create combined hash file with all PDFs
+          sha256sum export/thgtoa.pdf > export/checksums.sha256
+          sha256sum export/thgtoa-dark.pdf >> export/checksums.sha256
+
+          # Sign the checksum file
+          gpg --batch --yes --armor --detach-sign --output export/checksums.sha256.sig export/checksums.sha256 2>/dev/null || true
 
           # Sign each PDF file individually with detached signature
           for pdf_file in export/*.pdf; do
@@ -137,8 +139,7 @@ jobs:
           path: |
             export/*.pdf
             export/*.sig
-            export/checksums.sha256
-            export/checksums.sha256.sig
+            export/*.sha256
             export/virus-total-results.md
           if-no-files-found: error
           retention-days: 90
