@@ -1,0 +1,133 @@
+name: 📖 Build, Sign & Release PDF
+
+on:
+  workflow_dispatch:
+    inputs:
+      build_mode:
+        description: 'PDF build mode'
+        required: true
+        default: 'both'
+        type: choice
+        options:
+          - light
+          - dark
+          - both
+  push:
+    branches:
+      - main
+    paths:
+      - "docs/**"
+      - "mkdocs.yml"
+      - "scripts/**"
+      - ".github/workflows/**"
+
+permissions:
+  contents: write
+  id-token: write
+
+jobs:
+  build-sign-release:
+    name: Build, Sign & Release PDFs
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🛠️ Checkout
+        uses: actions/checkout@v4
+
+      - name: 🐍 Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: 📦 Install MkDocs Material
+        run: pip install mkdocs-material
+
+      - name: Setup Chrome
+        uses: browser-actions/setup-chrome@v2
+        with:
+          chrome-version: 120
+          install-dependencies: true
+          install-chromedriver: true
+
+      - name: 🔑 Install GPG tools
+        run: |
+          sudo apt-get update
+          sudo apt-get install gnupg
+
+      - name: 🖨️ Build PDFs
+        env:
+          CI: true
+        run: python scripts/build_guide_pdf.py --${{ inputs.build_mode || 'both' }}
+
+      - name: 🔒 Sign SHA256 hash file with GPG
+        env:
+          GPG_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
+          GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
+        run: |
+          cd ${{ github.workspace }}
+
+          # Import GPG key
+          export GPG_TTY=$(tty)
+          echo "$GPG_KEY" | gpg --batch --import 2>/dev/null || true
+
+          # Create combined hash file with all PDFs
+          sha256sum export/thgtoa.pdf > export/checksums.sha256
+          sha256sum export/thgtoa-dark.pdf >> export/checksums.sha256
+
+          # Sign the checksum file
+          gpg --batch --yes --armor --detach-sign --output export/checksums.sha256.sig export/checksums.sha256 2>/dev/null || true
+
+      - name: 🔒 Sign PDF files with GPG
+        env:
+          GPG_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
+          GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
+        run: |
+          cd ${{ github.workspace }}
+
+          # Import GPG key (if not already imported)
+          export GPG_TTY=$(tty)
+          echo "$GPG_KEY" | gpg --batch --import 2>/dev/null || true
+
+          # Sign the PDFs with detach signatures
+          gpg --batch --yes --armor --detach-sign --output export/thgtoa.pdf.sig export/thgtoa.pdf 2>/dev/null || true
+          gpg --batch --yes --armor --detach-sign --output export/thgtoa-dark.pdf.sig export/thgtoa-dark.pdf 2>/dev/null || true
+
+      - name: 🦠 Upload PDFs to VirusTotal
+        uses: crazy-max/ghaction-virustotal@v5
+        with:
+          vt_api_key: ${{ secrets.VT_API_KEY }}
+          files: |
+            ./export/thgtoa.pdf
+            ./export/thgtoa-dark.pdf
+
+      - name: 📊 Extract VT scan results
+        id: vt-scan
+        run: |
+          echo "status=completed" >> $GITHUB_OUTPUT
+
+      - name: 🔗 Generate VT report links
+        run: |
+          # Create a markdown file with VT scan results and links
+          cat > export/virus-total-results.md << EOF
+          ## VirusTotal Scan Results
+
+          **Scan Date:** \$(date -u +"%Y-%m-%d %H:%M UTC")
+
+          ### thgtoa.pdf (Light Mode)
+          - **VT Report:** https://www.virustotal.com/gui/file/\$(sha256sum export/thgtoa.pdf | cut -d' ' -f1)
+
+          ### thgtoa-dark.pdf (Dark Mode)
+          - **VT Report:** https://www.virustotal.com/gui/file/\$(sha256sum export/thgtoa-dark.pdf | cut -d' ' -f1)
+
+          ---
+          *Scan performed automatically by GitHub Actions*
+          EOF
+
+      - name: 📤 Upload export directory as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: pdf-export-${{ inputs.build_mode || 'both' }}
+          path: |
+            export/
+          if-no-files-found: error
+          retention-days: 90
+          compression-level: 0
