@@ -127,7 +127,11 @@ jobs:
         with:
           name: pdf-export-${{ inputs.build_mode || 'both' }}
           path: |
-            export/**
+            export/*.pdf
+            export/*.sig
+            export/checksums.sha256
+            export/checksums.sha256.sig
+            export/virus-total-results.md
           if-no-files-found: error
           retention-days: 90
           compression-level: 0
