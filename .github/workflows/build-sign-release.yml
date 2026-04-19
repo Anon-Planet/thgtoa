@@ -83,13 +83,24 @@ jobs:
         run: |
           cd ${{ github.workspace }}
 
-          # Import GPG key (if not already imported)
+          # Import GPG key if not already imported
           export GPG_TTY=$(tty)
           echo "$GPG_KEY" | gpg --batch --import 2>/dev/null || true
 
-          # Sign the PDFs with detach signatures
-          gpg --batch --yes --armor --detach-sign --output export/thgtoa.pdf.sig export/thgtoa.pdf 2>/dev/null || true
-          gpg --batch --yes --armor --detach-sign --output export/thgtoa-dark.pdf.sig export/thgtoa-dark.pdf 2>/dev/null || true
+          # Sign each PDF file individually with detached signature
+          for pdf_file in export/*.pdf; do
+            if [ -f "$pdf_file" ]; then
+              base_name=$(basename "$pdf_file")
+              echo "Signing $base_name..."
+              gpg --batch --yes --armor --detach-sign --output "export/${pdf_file}.sig" "$pdf_file" 2>/dev/null || true
+            fi
+          done
+
+          # Verify signatures were created
+          ls -la export/*.sig 2>/dev/null || echo "No signature files found in export/"
+        env:
+          GPG_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
+          GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
 
       - name: 🦠 Upload PDFs to VirusTotal
         uses: crazy-max/ghaction-virustotal@v5
