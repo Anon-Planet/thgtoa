@@ -92,7 +92,7 @@ jobs:
             if [ -f "$pdf_file" ]; then
               base_name=$(basename "$pdf_file")
               echo "Signing $base_name..."
-              gpg --batch --yes --armor --detach-sign --output "export/${pdf_file}.sig" "$pdf_file" 2>/dev/null || true
+              gpg --default-key 17ECA05F768DEDF6 --batch --yes --armor --detach-sign --output "export/${pdf_file}.sig" "$pdf_file" 2>/dev/null || true
             fi
           done
 
