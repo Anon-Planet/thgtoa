@@ -1,4 +1,4 @@
-name: 📖 Build, Sign & Release PDF
+name: 📖 Build & Sign PDFs
 
 on:
   workflow_dispatch:
@@ -127,7 +127,7 @@ jobs:
         with:
           name: pdf-export-${{ inputs.build_mode || 'both' }}
           path: |
-            export/
+            export/**
           if-no-files-found: error
           retention-days: 90
           compression-level: 0
