@@ -6,7 +6,7 @@ on:
       build_mode:
         description: 'PDF build mode'
         required: true
-        default: 'both'
+        default: 'light'
         type: choice
         options:
           - light
@@ -57,57 +57,19 @@ jobs:
         env:
           CI: true
         run: python scripts/build_guide_pdf.py --${{ inputs.build_mode || 'both' }}
-
-      - name: 🔒 Sign SHA256 hash file with GPG
-        env:
-          GPG_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
-          GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
+      
+      - name: 🛡️ Sign PDFs
         run: |
-          cd ${{ github.workspace }}
-
-          # Import GPG key
-          export GPG_TTY=$(tty)
-          echo "$GPG_KEY" | gpg --batch --import 2>/dev/null || true
-
-
-
-      - name: 🔒 Sign PDF files with GPG
-        env:
-          GPG_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
-          GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
-        run: |
-          cd ${{ github.workspace }}
-
-          # Import GPG key if not already imported
-          export GPG_TTY=$(tty)
-          echo "$GPG_KEY" | gpg --batch --import 2>/dev/null || true
-
-          # Create combined hash file with all PDFs
-          sha256sum export/thgtoa.pdf > export/checksums.sha256
-          sha256sum export/thgtoa-dark.pdf >> export/checksums.sha256
-
-          # Sign the checksum file
-          gpg --batch --yes --armor --detach-sign --output export/checksums.sha256.sig export/checksums.sha256 2>/dev/null || true
-
-          # Sign each PDF file individually with detached signature
-          for pdf_file in export/*.pdf; do
-            if [ -f "$pdf_file" ]; then
-              base_name=$(basename "$pdf_file")
-              echo "Signing $base_name..."
-              gpg --default-key 17ECA05F768DEDF6 --batch --yes --armor --detach-sign --output "export/${pdf_file}.sig" "$pdf_file" 2>/dev/null || true
-            fi
-          done
-
-          # Verify signatures were created
-          ls -la export/*.sig 2>/dev/null || echo "No signature files found in export/"
+          chmod +x scripts/sign-pdfs.sh
+          ./scripts/sign-pdfs.sh
 
       - name: 🦠 Upload PDFs to VirusTotal
         uses: crazy-max/ghaction-virustotal@v5
         with:
           vt_api_key: ${{ secrets.VT_API_KEY }}
           files: |
-            ./export/thgtoa.pdf
-            ./export/thgtoa-dark.pdf
+            export/thgtoa.pdf
+            export/thgtoa-dark.pdf
 
       - name: 📊 Extract VT scan results
         id: vt-scan
@@ -125,7 +87,7 @@ jobs:
           ### thgtoa.pdf (Light Mode)
           - **VT Report:** https://www.virustotal.com/gui/file/\$(sha256sum export/thgtoa.pdf | cut -d' ' -f1)
 
-          ### thgtoa-dark.pdf (Dark Mode)
+          ### thgtoa-dark.pdf (Dark Mode) (currently broken)
           - **VT Report:** https://www.virustotal.com/gui/file/\$(sha256sum export/thgtoa-dark.pdf | cut -d' ' -f1)
 
           ---
@@ -135,12 +97,9 @@ jobs:
       - name: 📤 Upload export directory as artifact
         uses: actions/upload-artifact@v4
         with:
-          name: pdf-export-${{ inputs.build_mode || 'both' }}
+          name: export
           path: |
-            export/*.pdf
-            export/*.sig
-            export/*.sha256
-            export/virus-total-results.md
+            export/*
           if-no-files-found: error
           retention-days: 90
           compression-level: 0

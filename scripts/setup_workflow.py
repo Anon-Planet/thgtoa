@@ -169,44 +169,12 @@ GitHub repository:
 
 3. VT_API_KEY (optional but recommended)
    - VirusTotal API key for malware scanning
-   - Get a free key at: https://www.virustotal.com/gui/join-us
-
-
-HOW TO ADD SECRETS:
-
-1. Go to your repository on GitHub
-2. Click 'Settings' → 'Secrets and variables' → 'Actions'
-3. Click 'New repository secret' for each secret below:
-
-   Secret Name          | Value Format
-   ---------------------|--------------------------------------------------
-   GPG_PRIVATE_KEY      | Paste the entire ASCII armored key (BEGIN PGP...)
-   GPG_PASSPHRASE       | Your key's passphrase (no special characters issues)
-   VT_API_KEY           | Your VirusTotal API key
-
-
-VERIFYING YOUR SETUP:
-
-After adding secrets, you can test by:
-1. Going to 'Actions' tab
-2. Selecting 'Build guide PDF' workflow
-3. Clicking 'Run workflow'
-4. Checking if the workflow completes successfully
-
 
 TROUBLESHOOTING:
 
 - If GPG signing fails: Check that your key has signing capability ('s' flag)
 - If passphrase is wrong: Verify you're using the correct passphrase
 - If VT scan fails: Ensure API key is valid and within rate limits
-
-
-SECURITY NOTES:
-
-⚠ NEVER share your private key or passphrase publicly
-⚠ Always use repository secrets, never hardcode in scripts
-⚠ Rotate keys periodically if compromised
-⚠ Use strong passphrases (12+ characters recommended)
 """)
 
 
@@ -220,8 +188,6 @@ def main() -> int:
         print("⚠ WARNING: GPG is not installed or not in PATH")
         print("Please install GPG before continuing:")
         print("  - Linux: sudo apt install gnupg")
-        print("  - macOS: brew install gnupg")
-        print("  - Windows: https://www.gpg4win.org/")
         print("\nContinuing anyway...")
 
     # List available keys
@@ -313,7 +279,7 @@ To get your private key for the GPG_PRIVATE_KEY secret:
     print("1. Export your private key (see instructions above)")
     print("2. Add all three secrets to GitHub repository settings")
     print("3. Test the workflow by triggering a manual build")
-    print("\nFor more information, see: docs/guide/pdf-workflow.md\n")
+    print("\nFor more information, see: docs/guide/dev-workflow.md\n")
 
     return 0
 

@@ -62,9 +62,12 @@ gpg --verify export/thgtoa-dark.pdf.sig export/thgtoa-dark.pdf
 
 Expected output for successful verification:
 ```
-gpg: Signature made [date]
-gpg:                using RSA key [key-id]
-gpg: Good signature from "[owner]"
+gpg: Signature made Mon 20 Apr 2026 01:46:40 AM EDT
+gpg:                using EDDSA key 9FA5436D0EE360985157382517ECA05F768DEDF6
+gpg: Good signature from "Anonymous Planet Master Signing Key" [unknown]
+gpg: WARNING: This key is not certified with a trusted signature!
+gpg:          There is no indication that the signature belongs to the owner.
+Primary key fingerprint: 9FA5 436D 0EE3 6098 5157  3825 17EC A05F 768D EDF6
 ```
 
 #### 3. Check VirusTotal Status
@@ -114,9 +117,9 @@ The GitHub Actions workflows automatically:
 
 ## Key Information
 
-**Signing Key:** Anonymous Planet Master Key
-**Key ID:** See `pgp/anonymousplanet-master.asc` for details
-**Fingerprint:** Verify from the repository's official documentation
+**Signing Key:** Anonymous Planet Master Signing Key ("MSK")  
+**Key ID:** See `pgp/anonymousplanet-master.asc` for details  
+**Fingerprint:** Verify from the repository's official documentation  
 
 ---
 

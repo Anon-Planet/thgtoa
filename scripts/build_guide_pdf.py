@@ -177,13 +177,13 @@ def main() -> int:
         "--pdf-light",
         type=Path,
         default=root / "export" / "thgtoa.pdf",
-        help="Output PDF path for light mode (default: ./export/guide.pdf)",
+        help="Output PDF path for light mode (default: ./export/thgtoa.pdf)",
     )
     ap.add_argument(
         "--pdf-dark",
         type=Path,
         default=root / "export" / "thgtoa-dark.pdf",
-        help="Output PDF path for dark mode (default: ./export/guide-dark.pdf)",
+        help="Output PDF path for dark mode (default: ./export/thgtoa-dark.pdf)",
     )
     ap.add_argument("--skip-mkdocs", action="store_true", help="Reuse existing site dir; only run print-to-pdf.")
     ap.add_argument("--dark-mode", action="store_true", help="Generate dark mode PDF only")

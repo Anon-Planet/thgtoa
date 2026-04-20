@@ -26,10 +26,8 @@ import subprocess
 import sys
 from pathlib import Path
 
-
 def repo_root() -> Path:
     return Path(__file__).resolve().parent.parent
-
 
 def calculate_sha256(file_path: Path) -> str:
     """Calculate SHA256 hash of a file."""
@@ -38,7 +36,6 @@ def calculate_sha256(file_path: Path) -> str:
         for byte_block in iter(lambda: f.read(4096), b""):
             sha256_hash.update(byte_block)
     return sha256_hash.hexdigest()
-
 
 def verify_hash(file_path: Path, expected_hash: str) -> bool:
     """Verify file hash against expected value."""
@@ -49,7 +46,6 @@ def verify_hash(file_path: Path, expected_hash: str) -> bool:
     print(f"  Expected: {expected_hash}")
     print(f"  Actual:   {actual_hash}")
     return is_valid
-
 
 def verify_signature(file_path: Path, sig_file: Path) -> bool:
     """Verify GPG signature of a file."""
@@ -81,7 +77,6 @@ def verify_signature(file_path: Path, sig_file: Path) -> bool:
         print("⚠ WARNING: GPG not installed. Skipping signature verification.")
         return None
 
-
 def verify_from_hash_file(file_path: Path, hash_file: Path) -> bool:
     """Verify file hash from a hash file."""
     if not hash_file.exists():
@@ -101,7 +96,6 @@ def verify_from_hash_file(file_path: Path, hash_file: Path) -> bool:
         return False
 
     return verify_hash(file_path, expected_hash)
-
 
 def check_virustotal(file_hash: str, api_key: str | None = None) -> dict | None:
     """Check VirusTotal scan status for a file hash."""
@@ -127,16 +121,15 @@ def check_virustotal(file_hash: str, api_key: str | None = None) -> dict | None:
 
             if stats:
                 print(f"  Malicious:    {stats.get('malicious', 0)}")
-                print(f"  Suspicious:   {stats.get('suspicious', 0)}")
-                print(f"  Undetected:   {stats.get('undetected', 0)}")
-                print(f"  Clean:        {stats.get('harmless', 0)}")
+            print(f"  Suspicious:   {stats.get('suspicious', 0)}")
+            print(f"  Undetected:   {stats.get('undetected', 0)}")
+            print(f"  Clean:        {stats.get('harmless', 0)}")
 
             return data
 
     except Exception as e:
         print(f"⚠ ERROR checking VirusTotal: {e}")
         return None
-
 
 def main() -> int:
     root = repo_root()
@@ -158,7 +151,7 @@ def main() -> int:
     ap.add_argument(
         "--hash-file",
         type=Path,
-        default=root / "sha256sum-light.txt",
+        default=root / "export" / "thgtoa.pdf.sha256",
         help="Hash file to verify against",
     )
 
@@ -216,7 +209,6 @@ def main() -> int:
     else:
         print("✗ Some verifications FAILED")
         return 1
-
 
 if __name__ == "__main__":
     raise SystemExit(main())
