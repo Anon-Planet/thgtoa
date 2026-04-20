@@ -56,8 +56,11 @@ jobs:
       - name: 🖨️ Build PDFs
         env:
           CI: true
-        run: python scripts/build_guide_pdf.py --${{ inputs.build_mode || 'both' }}
-
+        run: |
+          python scripts/build_guide_pdf.py --${{ inputs.build_mode || 'both' }}
+          for f in ./export/*.pdf; do
+            echo "Hashing: $f"; sha256sum "$f"; done
+            
       - name: 🦠 Upload PDFs to VirusTotal
         uses: crazy-max/ghaction-virustotal@v5
         with:
