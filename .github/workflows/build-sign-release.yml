@@ -59,8 +59,8 @@ jobs:
         run: |
           python scripts/build_guide_pdf.py --${{ inputs.build_mode || 'both' }}
           for f in ./export/*.pdf; do
-            echo "Hashing: $f"; sha256sum "$f"; done
-            
+            echo "Hashing: $f"; sha256sum "$f" >> export/sha256sums.txt; done
+
       - name: 🦠 Upload PDFs to VirusTotal
         uses: crazy-max/ghaction-virustotal@v5
         with:
