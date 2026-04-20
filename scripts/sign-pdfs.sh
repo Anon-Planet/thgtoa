@@ -43,30 +43,30 @@ check_dependencies() {
     done
 
     # Check GPG key availability
-    if [ -z "$GPG_KEY_ID" ]; then
-        GPG_KEY_ID="${SIGN_PDF_GPG_KEY:-}"
-    fi
+    # if [ -z "$GPG_KEY_ID" ]; then
+    #     GPG_KEY_ID="${SIGN_PDF_GPG_KEY:-}"
+    # fi
 
-    if [ -n "$GPG_KEY_ID" ]; then
-        if ! gpg --list-keys "$GPG_KEY_ID" &> /dev/null; then
-            print_error "GPG key '$GPG_KEY_ID' not found in your keyring."
-            exit 1
-        fi
-    else
-        # List available keys and prompt user
-        print_warn "No GPG key ID specified. Listing available secret keys:"
-        gpg --list-secret-keys --keyid-format LONG
+    # if [ -n "$GPG_KEY_ID" ]; then
+    #     if ! gpg --list-keys "$GPG_KEY_ID" &> /dev/null; then
+    #         print_error "GPG key '$GPG_KEY_ID' not found in your keyring."
+    #         exit 1
+    #     fi
+    # else
+    #     # List available keys and prompt user
+    #     print_warn "No GPG key ID specified. Listing available secret keys:"
+    #     gpg --list-secret-keys --keyid-format LONG
 
-        read -p "Enter the GPG key ID to use for signing (or press Enter to skip): " GPG_KEY_ID
-        if [ -n "$GPG_KEY_ID" ]; then
-            if ! gpg --list-keys "$GPG_KEY_ID" &> /dev/null; then
-                print_error "GPG key '$GPG_KEY_ID' not found in your keyring."
-                exit 1
-            fi
-        else
-            print_warn "No GPG signing will be performed. Set SIGN_PDF_GPG_KEY environment variable or pass key ID as argument."
-        fi
-    fi
+    #     read -p "Enter the GPG key ID to use for signing (or press Enter to skip): " GPG_KEY_ID
+    #     if [ -n "$GPG_KEY_ID" ]; then
+    #         if ! gpg --list-keys "$GPG_KEY_ID" &> /dev/null; then
+    #             print_error "GPG key '$GPG_KEY_ID' not found in your keyring."
+    #             exit 1
+    #         fi
+    #     else
+    #         print_warn "No GPG signing will be performed. Set SIGN_PDF_GPG_KEY environment variable or pass key ID as argument."
+    #     fi
+    # fi
 
     print_info "All dependencies checked successfully!"
 }
@@ -109,21 +109,21 @@ generate_b2sum() {
 }
 
 # GPG sign a file
-gpg_sign() {
-    local file="$1"
-    local filename=$(basename "$file")
+# gpg_sign() {
+#     local file="$1"
+#     local filename=$(basename "$file")
 
-    if [ -z "$GPG_KEY_ID" ]; then
-        print_warn "Skipping GPG signing for '$filename' (no key ID provided)"
-        return 0
-    fi
+#     if [ -z "$GPG_KEY_ID" ]; then
+#         print_warn "Skipping GPG signing for '$filename' (no key ID provided)"
+#         return 0
+#     fi
 
-    # Sign the file in detached mode with ASCII armor
-    gpg --batch --yes --detach-sign --armor --local-user "$GPG_KEY_ID" \
-        --output "${file}.sig" "$file"
+#     # Sign the file in detached mode with ASCII armor
+#     gpg --batch --yes --detach-sign --armor --local-user "$GPG_KEY_ID" \
+#         --output "${file}.sig" "$file"
 
-    print_info "GPG signature generated: ${file}.sig"
-}
+#     print_info "GPG signature generated: ${file}.sig"
+# }
 
 # Process a single PDF file
 process_pdf() {
@@ -137,7 +137,7 @@ process_pdf() {
     generate_b2sum "$pdf_file"
 
     # GPG sign if key is available
-    gpg_sign "$pdf_file"
+    # gpg_sign "$pdf_file"
 }
 
 # Main function
