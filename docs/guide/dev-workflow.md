@@ -29,6 +29,7 @@
     - Each PDF gets a unique SHA256 hash calculated at build time
     - Hash stored in `.sha256` files alongside the PDFs
     - Combined `sha256sum.txt` for batch verification
+
 ### GPG Signature Verification
 
 **Purpose:** Verify authenticity and prevent tampering
