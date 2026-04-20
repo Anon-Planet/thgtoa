@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Script to generate checksums (SHA256, B2SUM) and GPG sign PDF files
+# Script to generate checksums (SHA256, B2SUM) and eventually GPG sign PDF files
 # Usage: ./sign-pdfs.sh [input_directory] [output_directory]
 # If directories are not provided, defaults will be used
 
@@ -10,7 +10,7 @@ set -e  # Exit on error
 INPUT_DIR="${1:-./export}"           # Default: build-output directory
 OUTPUT_DIR="${2:-./export}"           # Default: signed-pdfs directory
 CHECKSUMS_DIR="${3:-./export}"          # Default: checksums directory
-GPG_KEY_ID="9FA5436D0EE360985157382517ECA05F768DEDF6"
+# GPG_KEY_ID="9FA5436D0EE360985157382517ECA05F768DEDF6"
 
 # Colors for output
 RED='\033[0;31m'
@@ -30,45 +30,6 @@ print_warn() {
 print_error() {
     echo -e "${RED}[ERROR]${NC} $1"
 }
-
-# Check if required tools are available
-# check_dependencies() {
-#     print_info "Checking dependencies..."
-
-#     for cmd in sha256sum b2sum; do
-#         if ! command -v "$cmd" &> /dev/null; then
-#             print_error "$cmd is not installed. Please install it and try again."
-#             exit 1
-#         fi
-#     done
-
-#     # Check GPG key availability
-#     # if [ -z "$GPG_KEY_ID" ]; then
-#     #     GPG_KEY_ID="${SIGN_PDF_GPG_KEY:-}"
-#     # fi
-
-#     # if [ -n "$GPG_KEY_ID" ]; then
-#     #     if ! gpg --list-keys "$GPG_KEY_ID" &> /dev/null; then
-#     #         print_error "GPG key '$GPG_KEY_ID' not found in your keyring."
-#     #         exit 1
-#     #     fi
-#     # else
-#     #     # List available keys and prompt user
-#     #     print_warn "No GPG key ID specified. Listing available secret keys:"
-#     #     gpg --list-secret-keys --keyid-format LONG
-
-#     #     read -p "Enter the GPG key ID to use for signing (or press Enter to skip): " GPG_KEY_ID
-#     #     if [ -n "$GPG_KEY_ID" ]; then
-#     #         if ! gpg --list-keys "$GPG_KEY_ID" &> /dev/null; then
-#     #             print_error "GPG key '$GPG_KEY_ID' not found in your keyring."
-#     #             exit 1
-#     #         fi
-#     #     else
-#     #         print_warn "No GPG signing will be performed. Set SIGN_PDF_GPG_KEY environment variable or pass key ID as argument."
-#     #     fi
-
-#     print_info "All dependencies checked successfully!"
-# }
 
 # Create output directories
 setup_directories() {
@@ -134,15 +95,11 @@ process_pdf() {
     # Generate checksums
     generate_sha256 "$pdf_file"
     generate_b2sum "$pdf_file"
-
-    # GPG sign if key is available
-    # gpg_sign "$pdf_file"
 }
 
 # Main function
 main() {
     echo ""
-    # check_dependencies
     setup_directories
 
     # Find all PDF files in input directory (recursively)
