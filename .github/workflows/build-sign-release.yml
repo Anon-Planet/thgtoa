@@ -6,7 +6,7 @@ on:
       build_mode:
         description: 'PDF build mode'
         required: true
-        default: 'light'
+        default: 'both'
         type: choice
         options:
           - light
@@ -61,8 +61,8 @@ jobs:
       # - name: 🛡️ Hash/Sign PDFs
       #   env:
       #     GPG_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
-      #     GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}                # I'm just gonna do this locally because GPG signing in CI
-        run: |                                                         # is a pain and I don't want to deal with it right now.
+      #     GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }} # I'm just gonna do this locally because GPG signing in CI
+        run: |                                            # is a pain and I don't want to deal with it right now.
       #     cd ${{ github.workspace }}
       #     # Import GPG key
       #     export GPG_TTY=$(tty)
