@@ -59,12 +59,6 @@ jobs:
         run: python scripts/build_guide_pdf.py --${{ inputs.build_mode || 'both' }}
 
       - name: 🦠 Upload PDFs to VirusTotal
-      #     cd ${{ github.workspace }}
-      #     # Import GPG key
-      #     export GPG_TTY=$(tty)
-      #     echo "$GPG_KEY" | gpg --batch --import 2>/dev/null || true
-      
-      - name: 🦠 Upload PDFs to VirusTotal
         uses: crazy-max/ghaction-virustotal@v5
         with:
           vt_api_key: ${{ secrets.VT_API_KEY }}
