@@ -53,13 +53,15 @@ jobs:
           sudo apt-get update
           sudo apt-get install gnupg
 
-      - name: 🖨️ Build PDFs
+      - name: 🖨️ Build & Hash PDFs
         env:
           CI: true
         run: |
           python scripts/build_guide_pdf.py --${{ inputs.build_mode || 'both' }}
           for f in ./export/*.pdf; do
-            echo "Hashing: $f"; sha256sum "$f" >> export/sha256sums.txt; done
+            echo "sha256sums: $f"; sha256sum "$f" >> export/sha256sums.txt; done
+          for f in ./export/*.pdf; do
+            echo "b2sums: $f"; b2sum "$f" >> export/b2sums.txt; done
 
       - name: 🦠 Upload PDFs to VirusTotal
         uses: crazy-max/ghaction-virustotal@v5
