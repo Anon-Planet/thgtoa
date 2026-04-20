@@ -56,21 +56,14 @@ jobs:
       - name: 🖨️ Build PDFs
         env:
           CI: true
-        run: |
-            python scripts/build_guide_pdf.py --${{ inputs.build_mode || 'both' }}
+        run: python scripts/build_guide_pdf.py --${{ inputs.build_mode || 'both' }}
 
-      # - name: 🛡️ Hash/Sign PDFs
-      #   env:
-      #     GPG_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
-      #     GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }} # I'm just gonna do this locally because GPG signing in CI
-        run: |                                            # is a pain and I don't want to deal with it right now.
+      - name: 🦠 Upload PDFs to VirusTotal
       #     cd ${{ github.workspace }}
       #     # Import GPG key
       #     export GPG_TTY=$(tty)
       #     echo "$GPG_KEY" | gpg --batch --import 2>/dev/null || true
-          chmod +x scripts/sign-pdfs.sh
-          ./scripts/sign-pdfs.sh
-
+      
       - name: 🦠 Upload PDFs to VirusTotal
         uses: crazy-max/ghaction-virustotal@v5
         with:
