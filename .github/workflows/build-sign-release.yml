@@ -56,7 +56,8 @@ jobs:
       - name: 🖨️ Build PDFs
         env:
           CI: true
-        run: python scripts/build_guide_pdf.py --${{ inputs.build_mode || 'both' }}
+        run: |
+            python scripts/build_guide_pdf.py --${{ inputs.build_mode || 'both' }}
 
       # - name: 🛡️ Hash/Sign PDFs
       #   env:
