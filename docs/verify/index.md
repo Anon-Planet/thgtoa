@@ -117,9 +117,9 @@ The GitHub Actions workflows automatically:
 
 ## Key Information
 
-**Signing Key:** Anonymous Planet Master Signing Key ("MSK")  
-**Key ID:** See `pgp/anonymousplanet-master.asc` for details  
-**Fingerprint:** Verify from the repository's official documentation  
+**Signing Key:** Anonymous Planet Master Signing Key ("MSK")
+**Key ID:** See `pgp/anonymousplanet-master.asc` for details
+**Fingerprint:** Verify from the repository's official documentation
 
 ---
 

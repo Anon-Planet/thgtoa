@@ -28,7 +28,7 @@ All notable changes to this project will be documented in this file.
 ### Changed
 
 - Refactored GitHub Actions workflow **Build PDF** (`scripts\build_guide_pdf.py`): now builds both light and dark mode PDFs (`export/thgtoa.pdf` and `export/thgtoa-dark.pdf` respectively).
-- Restored previous VT scans 
+- Restored previous VT scans
 
 ## Fixed
 

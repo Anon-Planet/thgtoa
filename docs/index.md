@@ -17,13 +17,13 @@ schema:
 # **Hello, and welcome to the Hitchhiker's Guide.**
 
 **9FA5 436D 0EE3 6098 5157  3825 17EC A05F 768D EDF6**
- 
-You'll use it to [**verify the checksum** and **GPG signature** of all files for authenticity.](verify/index.md)  
-Please share this project if you enjoy it and you think it might be useful to others.  
+
+You'll use it to [**verify the checksum** and **GPG signature** of all files for authenticity.](verify/index.md)
+Please share this project if you enjoy it and you think it might be useful to others.
 
 ![Anonymous Planet logo](media/profile.png){ align=right }
 
-Anonymous Planet is a collective of volunteers.  
+Anonymous Planet is a collective of volunteers.
 
 ??? person "Das Kolburn"
 
