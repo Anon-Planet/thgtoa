@@ -17,6 +17,8 @@ theme:
     text: Public Sans
     code: Liberation Mono
   features:
+    - navigation.instant
+    - navigation.instant.prefetch
     - navigation.tabs
     - navigation.sections
     - toc.integrate
@@ -122,7 +124,7 @@ markdown_extensions:
       toc_depth: 3
 
 nav:
-  - Home: index.md
+  - Welcome: index.md
   - About: about/index.md
   - Verify: verify/index.md
   - Guide:
@@ -133,7 +135,7 @@ nav:
   - Constitution: constitution/index.md
   - Mirrors: mirrors/index.md
   - Twitter: twitter/index.md
-  - TBA: changelog/index.md
+  - Releases: changelog/index.md
 
 copyright: |
   &copy; 2023-2026 <a href="https://anonymousplanet.org/"  target="_blank" rel="noopener">Anonymous Planet</a>

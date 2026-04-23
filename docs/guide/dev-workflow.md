@@ -8,11 +8,11 @@
     **VirusTotal Scanning:** - Automatically scans PDFs and updates release notes
     **Release Automation:** - Packages everything into GitHub releases
 
-## Workflow Architecture
+## Architecture
 
 ### Build PDF Workflow (`build-sign-release.yml`)
 
-??? Note "Steps"
+!!! Note "Steps"
 
     - Checkout repository
     - Set up Python and MkDocs Material
@@ -34,7 +34,7 @@
 
 **Purpose:** Verify authenticity and prevent tampering
 
-??? Note "How it works"
+!!! Note "How it works"
 
     - Detached signatures created for each PDF and hash file
     - Public keys available in `/pgp/` directory

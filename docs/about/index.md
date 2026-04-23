@@ -1,5 +1,5 @@
 ---
-title: "About Anonymous Planet"
+title: "Anonymous Planet"
 description: We are the maintainers of the Hitchhiker's Guide and the PSA Matrix space.
 schema:
   "@context": https://schema.org
