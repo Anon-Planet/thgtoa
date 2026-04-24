@@ -7,7 +7,7 @@ schema:
   "@id": https://www.anonymousplanet.org/
   name: Anonymous Planet
   url: https://www.anonymousplanet.org/mirrors/
-  logo: ../media/favicon.png
+  logo: ../media/profile.png
   sameAs:
     - https://github.com/Anon-Planet
     - https://opencollective.com/anonymousplanetorg
@@ -27,7 +27,7 @@ schema:
 
 !!! Note "PDF export (single file)"
 
-    The guide is also available as a **PDF** (images and layout preserved). It is built automatically in GitHub Actions: open [**Build guide PDF**](https://github.com/Anon-Planet/thgtoa/actions/workflows/build-pdf.yml) on the [**source repository**](https://github.com/Anon-Planet/thgtoa), pick a successful run, and download the **`thgtoa`** and **`thgtoa-dark`** artifacts. You can start a fresh build anytime (**Actions** → **Build guide PDF** → **Run workflow**).
+    The guide is also available as a **PDF** (images and layout preserved). It is built automatically in GitHub Actions: open [**Build guide PDF**](https://github.com/Anon-Planet/thgtoa/actions/workflows/build-sign-release.yml) on the [**source repository**](https://github.com/Anon-Planet/thgtoa), pick a successful run, and download the **`thgtoa`** and **`thgtoa-dark`** artifacts. You can start a fresh build anytime (**Actions** → **Build guide PDF** → **Run workflow**).
 
     To produce the same file locally, clone the repository and run `python3 scripts/build_guide_pdf.py --both` (Python, [MkDocs Material](https://squidfunk.github.io/mkdocs-material/getting-started/), and **Google Chrome** or **Microsoft Edge** required). More detail is in the [repository README](https://github.com/Anon-Planet/thgtoa#ways-to-read-or-export-the-guide).
 

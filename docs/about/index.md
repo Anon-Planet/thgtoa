@@ -7,7 +7,7 @@ schema:
   "@id": https://www.anonymousplanet.org/
   name: Anonymous Planet
   url: https://www.anonymousplanet.org/about/
-  logo: ../media/favicon.png
+  logo: ../media/profile.png
   sameAs:
     - https://github.com/Anon-Planet
     - https://opencollective.com/anonymousplanetorg

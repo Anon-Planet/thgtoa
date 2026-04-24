@@ -9,6 +9,7 @@ repo_name: ""
 #edit_uri: ""
 theme:
   name: material
+  locale: en
   favicon: media/profile.png
   icon:
     logo: material/bird
