@@ -97,7 +97,7 @@ jobs:
       - name: 📤 Upload export directory as artifact
         uses: actions/upload-artifact@v4
         with:
-          name: export
+          name: upload pdf artifact
           path: |
             export/*
           if-no-files-found: error

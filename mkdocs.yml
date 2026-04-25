@@ -130,8 +130,9 @@ nav:
   - Verify: verify/index.md
   - Guide:
     - guide/index.md
-    - Workflow Documentation: guide/dev-workflow.md
-  - Code: code/index.md
+  - Code:
+    - code/index.md
+    - Develop: code/develop.md
   - Contribute: contribute/index.md
   - Constitution: constitution/index.md
   - Mirrors: mirrors/index.md
@@ -139,4 +140,4 @@ nav:
   - Releases: changelog/index.md
 
 copyright: |
-  &copy; 2023-2026 <a href="https://anonymousplanet.org/"  target="_blank" rel="noopener">Anonymous Planet</a>
+  <a href="https://anonymousplanet.org/">The Hitchhiker's Guide</a> ©2023-2026 by <a href="https://psa.anonymousplanet.org/">Anonymous Planet</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"></a>
