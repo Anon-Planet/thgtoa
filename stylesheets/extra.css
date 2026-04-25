@@ -1,0 +1,55 @@
+/* Title sheet: visible only when printing / generating PDF (not on screen). */
+.pdf-title-page {
+  display: none;
+}
+
+@media print {
+  .pdf-title-page {
+    display: block;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 5rem 2rem 4rem;
+    page-break-after: always;
+  }
+
+  .pdf-title-page__title {
+    font-size: 1.65rem;
+    font-weight: 700;
+    line-height: 1.25;
+    margin: 0 0 1.25rem;
+  }
+
+  .pdf-title-page__subtitle {
+    font-size: 1.05rem;
+    line-height: 1.4;
+    margin: 0 0 2rem;
+  }
+
+  .pdf-title-page__meta {
+    font-size: 0.95rem;
+    font-style: normal;
+    margin: 0;
+  }
+}
+
+/* Guide landing: small floating logo so opening copy flows beside it (HTML + PDF). */
+.guide-intro-lead {
+  overflow: auto;
+}
+
+.guide-intro-lead > p:first-child {
+  margin-top: 0;
+}
+
+.guide-intro-lead > p:first-child img {
+  float: right;
+  max-width: 6.5rem;
+  height: auto;
+  margin: 0 0 0.5rem 1rem;
+}
+
+@media print {
+  .guide-intro-lead > p:first-child img {
+    max-width: 5rem;
+  }
+}
