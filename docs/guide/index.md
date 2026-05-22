@@ -14,8 +14,8 @@ schema:
 ---
 <div class="pdf-title-page" aria-hidden="true">
 <p class="pdf-title-page__title">The Hitchhiker's Guide to Online Anonymity</p>
-<p class="pdf-title-page__subtitle"><em>(Or "How I learned to start worrying and love privacy anonymity")</em></p>
-<p class="pdf-title-page__meta">Version 1.2.1, April 2026 by Anonymous Planet</p>
+<p class="pdf-title-page__subtitle"><em>(Or "How I learned to start worrying and love privacy and anonymity")</em></p>
+<p class="pdf-title-page__meta">v1.2.2, May 2026 by Anonymous Planet</p>
 </div>
 <div class="guide-intro-lead" markdown="1">
 ![Anonymous Planet logo](../media/profile.png)
