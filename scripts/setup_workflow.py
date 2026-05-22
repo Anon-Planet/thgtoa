@@ -18,17 +18,21 @@ What it does:
   3. Provides instructions for adding secrets to GitHub
 """
 
+# The Hitchhiker's Guide to Online Anonymity © 2026 by Anonymous Planet is licensed under Creative
+# Commons Attribution-NonCommercial 4.0 International
+
+
 from __future__ import annotations
 
 import subprocess
 import sys
 from pathlib import Path
 
-
+# Computes the root directory of the repository based on the current file’s location
 def repo_root() -> Path:
     return Path(__file__).resolve().parent.parent
 
-
+# Determines whether the GPG command-line tool is available on the current system
 def check_gpg_installed() -> bool:
     """Check if GPG is installed and accessible."""
     try:
@@ -42,7 +46,8 @@ def check_gpg_installed() -> bool:
     except (FileNotFoundError, subprocess.TimeoutExpired):
         return False
 
-
+# Checks whether the GPG tool is installed and accessible on the system
+# Export public keys, parse, and read selection of keys from the GPG keyring
 def list_gpg_keys() -> list[dict]:
     """List all GPG keys in the keyring."""
     try:
@@ -82,7 +87,6 @@ def list_gpg_keys() -> list[dict]:
         print(f"Error listing GPG keys: {e}")
         return []
 
-
 def export_public_key(key_id: str, output_file: Path | None = None) -> str | None:
     """Export a public key in ASCII armor format."""
     try:
@@ -103,7 +107,7 @@ def export_public_key(key_id: str, output_file: Path | None = None) -> str | Non
         print(f"Error exporting public key: {e}")
         return None
 
-
+# Exporting the given private key in ASCII armor format (requires passphrase)
 def export_private_key(key_id: str, output_file: Path | None = None) -> str | None:
     """Export a private key in ASCII armor format (requires passphrase)."""
     try:
@@ -120,12 +124,12 @@ def export_private_key(key_id: str, output_file: Path | None = None) -> str | No
             print(f"✓ Private key exported to {output_file}")
 
         return result.stdout
-
+    # return None if export fails (e.g. wrong passphrase, key not found)
     except subprocess.CalledProcessError as e:
         print(f"Error exporting private key: {e}")
         return None
 
-
+# Validate that the selected GPG key has signing capability
 def validate_gpg_key(key_id: str) -> bool:
     """Validate that a GPG key has signing capability."""
     try:
@@ -147,7 +151,7 @@ def validate_gpg_key(key_id: str) -> bool:
     except subprocess.CalledProcessError:
         return False
 
-
+# Print instructions for configuring GitHub Secrets
 def print_setup_instructions():
     """Print instructions for configuring GitHub Secrets."""
     print("\n" + "="*70)
@@ -176,7 +180,6 @@ TROUBLESHOOTING:
 - If passphrase is wrong: Verify you're using the correct passphrase
 - If VT scan fails: Ensure API key is valid and within rate limits
 """)
-
 
 def main() -> int:
     print("\n" + "="*70)
