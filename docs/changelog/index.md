@@ -16,54 +16,60 @@ schema:
 
 # Release Notes
 
-All notable changes to this project will be documented in this file.
+Notable changes to the guide and its tooling. Follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+---
 
-!!! Note "Added"
+## [v1.2.3] — 2026-05-22
 
-    - This changelog page
-    - Add ways to verify the files
+CI/CD pipeline split into independent stages, dark PDF quality improved, and the changelog is now updated automatically on every release. v1.2.2 was just a placeholder, this is a minor but CI breaking change.
 
-!!! Note "Changed"
+!!! success "Added"
 
-    - Refactored GitHub Actions workflow **Build PDF** (`scripts\build_guide_pdf.py`): now builds both light and dark mode PDFs
-    - Restored previous VT scans
+    - **Dark mode PDF** (`scripts/convert.py`): pixel-level converter replaces the broken `--prefers-color-scheme=dark` Chromium flag. Produces a 200 DPI hacker-themed PDF (`#1f1f31` background, `#e0e0e0` text, `#5e8bde` links) with batched page processing to avoid OOM.
+    - **Three independent CI workflows** replacing the old monolithic `build-sign-release.yml`:
+        - `build.yml` — builds PDFs and uploads them as an artifact; no secrets required.
+        - `sign.yml` — downloads the PDF artifact, computes SHA-256 and BLAKE2b hashes, GPG-signs all outputs, and uploads a `signatures` artifact. Can be re-run against any historical build.
+        - `release.yml` — downloads both artifacts, uploads to VirusTotal, and publishes a tagged GitHub Release with all 12 assets attached. **Can be triggered manually against any previous sign run**.
+    - **`scripts/update_changelog.py`**: reads `git log` since the last version tag, categorises commits by conventional-commit prefix, and prepends a new entry here automatically after each successful build.
+    - **`changelog.yml`** workflow: commits the auto-generated changelog entry back to `main` after every build, with `dry_run` and `manual_version` dispatch inputs for testing.
 
-!!! Note "Fixed"
+!!! warning "Changed"
 
-    - `docs/about/index.md`: replace broken reference-style internal links
-    - `docs/guide/index.md`: Appendix A6: comment out deprecated ODT information because we don't and probably won't use it in the future
+    - `build-sign-release.yml` is now deprecated — push triggers removed, manual dispatch only. Will be deleted once in-flight runs complete.
+    - The full pipeline (build → sign → release) now chains automatically via `workflow_run` on every push to `main`.
+    - GPG signing uses `--pinentry-mode loopback` and `--passphrase-fd 0` to avoid interactive prompts on headless runners.
+    - VirusTotal scans moved to the release stage so they run once per release, not once per build.
 
-!!! Note "Feature"
+!!! bug "Fixed"
 
-    - Updated `scripts/build_guide_pdf.py` to use `--print-to-pdf` instead of `--save-as` for PDF generation
-    - Added a new `--dark-mode` flag to generate dark mode PDFs. Save your eyes - you only get one pair.
+    - Broken internal links and a mismatched cross-reference in `docs/about/index.md`.
+    - Deprecated ODT section commented out in Appendix A6 of the guide.
 
-## [v1.2.1]
+---
 
-!!! Note "Added"
+## [v1.2.1] — 2025
 
-    - GitHub Actions workflow **Build PDF** (`.github/workflows/build-pdf.yml`): installs Chromium on `ubuntu-latest`, runs `scripts/build_guide_pdf.py`, uploads `export/guide.pdf` as the `guide-pdf` artifact. Runs on `workflow_dispatch`, on pushes to `main` that touch docs or build inputs, and on matching pull requests.
+First automated PDF build and the start of the CI pipeline.
 
-    - `scripts/build_guide_pdf.py` to build the MkDocs site and render the guide to a single PDF (`export/guide.pdf` by default) using a Chromium-based browser (Chrome or Edge) headless print-to-PDF.
-    - `docs/stylesheets/extra.css` and `extra_css` in `mkdocs.yml` for shared site styling.
-    - This `CHANGELOG.md`.
+!!! success "Added"
 
-!!! Note "Changed"
+    - `scripts/build_guide_pdf.py`: builds the MkDocs site and renders the full guide to a single PDF via headless Chromium (Chrome or Edge). Supports `--dark`, `--light`, and `--both` modes.
+    - GitHub Actions workflow that installs Chromium, runs the build script, and uploads `export/thgtoa.pdf` as an artifact on every push to `main` or manual dispatch.
+    - `docs/stylesheets/extra.css` for shared site styling.
+    - This changelog.
 
-    - `README.md` “Ways to read or export the guide”: hosted link, local `mkdocs serve`, PDF build via the script, ODT note, raw Markdown link.
-    - Guide landing layout: wrap the opening block in `docs/guide/index.md` with a `guide-intro-lead` container so the logo and first sections share one layout context for web and print.
-    - `.gitignore` to exclude local build outputs `export/`, `site/`, and `_site_test/`.
-    - `scripts/build_guide_pdf.py`: when the `CI` environment variable is set, pass Chromium flags (`--no-sandbox`, `--disable-setuid-sandbox`, `--disable-dev-shm-usage`) so headless print works on typical CI images.
-    - `README.md`: note the **Build PDF** GitHub Actions workflow and the `guide-pdf` artifact.
+!!! warning "Changed"
 
-!!! Note "Fixed"
+    - `README.md` updated with instructions for local PDF export and a note about the GitHub Actions artifact.
+    - `.gitignore` updated to exclude local build outputs (`export/`, `site/`, `_site_test/`).
 
-    - `docs/guide/index.md`: replace broken reference-style internal links (`[label][label:]`) with working same-page fragment links to the correct headings; correct the mismatched “Real-Name System” cross-reference; fix a broken footnote marker on the “free (unallocated) space of your hard drive” list item.
+!!! bug "Fixed"
 
-[Unreleased]: https://github.com/Anon-Planet/thgtoa/compare/v1.2.1...HEAD
+    - Broken reference-style internal links throughout `docs/guide/index.md` replaced with correct fragment links.
+    - Broken footnote marker on the "free (unallocated) space" list item in the guide.
+
+---
+
+[v1.2.3]: https://github.com/Anon-Planet/thgtoa/releases/tag/v1.2.3
 [v1.2.1]: https://github.com/Anon-Planet/thgtoa/releases/tag/v1.2.1
-
-***The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),***
-***and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).***
