@@ -92,6 +92,27 @@ def apply_dark_theme(
     return Image.fromarray((out * 255).clip(0, 255).astype('uint8'))
 
 
+def _save_images_as_pdf(images: list, output_path: str) -> None:
+    """Save a list of RGB PIL images as a PDF using PNG compression via qpdf.
+
+    Pillow's built-in PDF writer defaults to JPEG encoding for RGB images,
+    which fails when libjpeg is not available in the environment. Instead we
+    write each page as a lossless PNG to a temp directory and assemble them
+    with qpdf, which embeds the PNGs directly without re-encoding.
+    """
+    import tempfile as _tempfile
+    with _tempfile.TemporaryDirectory() as staging:
+        png_paths = []
+        for i, img in enumerate(images):
+            p = os.path.join(staging, f'p{i:05d}.png')
+            img.save(p, format='PNG')
+            png_paths.append(p)
+        subprocess.run(
+            ['qpdf', '--empty', '--pages'] + png_paths + ['--', output_path],
+            check=True,
+        )
+
+
 def _check_qpdf() -> bool:
     return subprocess.run(
         ['qpdf', '--version'], capture_output=True
@@ -163,7 +184,7 @@ def convert_pdf_to_dark(
                 )
 
                 dark = [apply_dark_theme(Image.open(p), bg, text, link) for p in batch]
-                dark[0].save(batch_path, save_all=True, append_images=dark[1:])
+                _save_images_as_pdf(dark, batch_path)
                 batch_files.append(batch_path)
                 del dark
 
@@ -182,11 +203,7 @@ def convert_pdf_to_dark(
                     print(f"  Page {i}/{total}", flush=True)
                 dark_pages.append(apply_dark_theme(Image.open(p), bg, text, link))
 
-            dark_pages[0].save(
-                output_path,
-                save_all=True,
-                append_images=dark_pages[1:],
-            )
+            _save_images_as_pdf(dark_pages, output_path)
 
     size_mb = os.path.getsize(output_path) / 1024 / 1024
     print(f"  Saved → {output_path} ({size_mb:.1f} MB)")
