@@ -1,0 +1,80 @@
+name: 📖 Build PDFs
+
+on:
+  workflow_dispatch:
+    inputs:
+      build_mode:
+        description: 'PDF build mode'
+        required: true
+        default: 'both'
+        type: choice
+        options:
+          - light
+          - dark
+          - both
+  push:
+    branches:
+      - main
+    paths:
+      - "docs/**"
+      - "mkdocs.yml"
+      - "scripts/**"
+      - ".github/workflows/build.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    name: Build PDFs
+    runs-on: ubuntu-latest
+    outputs:
+      build_mode: ${{ steps.mode.outputs.build_mode }}
+      run_id:     ${{ github.run_id }}
+
+    steps:
+      - name: 🛠️ Checkout
+        uses: actions/checkout@v4
+
+      - name: 🐍 Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: 📦 Install Python dependencies
+        run: pip install mkdocs-material pillow numpy
+
+      - name: 🖼️ Install poppler and qpdf
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y poppler-utils qpdf
+
+      - name: Setup Chrome
+        uses: browser-actions/setup-chrome@v2
+        with:
+          chrome-version: 120
+          install-dependencies: true
+          install-chromedriver: true
+
+      - name: 🖨️ Resolve build mode
+        id: mode
+        run: |
+          MODE="${{ inputs.build_mode || 'both' }}"
+          echo "build_mode=$MODE" >> $GITHUB_OUTPUT
+          echo "Building in mode: $MODE"
+
+      - name: 🖨️ Build PDFs
+        env:
+          CI: true
+        run: python scripts/build_guide_pdf.py --${{ steps.mode.outputs.build_mode }}
+
+      - name: 📤 Upload PDF artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: pdfs
+          path: |
+            export/thgtoa.pdf
+            export/thgtoa-dark.pdf
+          if-no-files-found: warn
+          retention-days: 90
+          compression-level: 0

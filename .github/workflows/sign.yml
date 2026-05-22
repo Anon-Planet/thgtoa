@@ -1,0 +1,165 @@
+name: 🔏 Sign PDFs
+
+# Can be triggered:
+#   1. Automatically after build.yml completes on main
+#   2. Manually, pointing at a specific build run to pull PDFs from
+on:
+  workflow_run:
+    workflows: ["📖 Build PDFs"]
+    types: [completed]
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      build_run_id:
+        description: 'build.yml run ID to download PDFs from (leave blank for latest)'
+        required: false
+        type: string
+
+permissions:
+  actions:  read    # download artifacts from other runs
+  contents: read
+
+jobs:
+  sign:
+    name: Hash & Sign PDFs
+    # On workflow_run, only proceed if the build actually succeeded
+    if: >
+      github.event_name == 'workflow_dispatch' ||
+      github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+    outputs:
+      light_sha256: ${{ steps.hashes.outputs.light_sha256 }}
+      dark_sha256:  ${{ steps.hashes.outputs.dark_sha256 }}
+      light_b2:     ${{ steps.hashes.outputs.light_b2 }}
+      dark_b2:      ${{ steps.hashes.outputs.dark_b2 }}
+
+    steps:
+      - name: 🛠️ Checkout (for pgp/ key reference only)
+        uses: actions/checkout@v4
+        with:
+          sparse-checkout: pgp
+
+      - name: 🔑 Install GPG
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y gnupg
+
+      # Download PDFs from the triggering build run, or a manually specified one
+      - name: 📥 Resolve source run ID
+        id: src
+        run: |
+          if [ -n "${{ inputs.build_run_id }}" ]; then
+            echo "run_id=${{ inputs.build_run_id }}" >> $GITHUB_OUTPUT
+          else
+            echo "run_id=${{ github.event.workflow_run.id }}" >> $GITHUB_OUTPUT
+          fi
+
+      - name: 📥 Download PDF artifacts
+        uses: actions/download-artifact@v4
+        with:
+          name:    pdfs
+          path:    export/
+          run-id:  ${{ steps.src.outputs.run_id }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: 📋 List downloaded files
+        run: ls -lh export/
+
+      # ------------------------------------------------------------------ #
+      #  Hash
+      # ------------------------------------------------------------------ #
+      - name: #️⃣ Hash PDFs
+        id: hashes
+        run: |
+          cd export
+
+          for f in thgtoa.pdf thgtoa-dark.pdf; do
+            [ -f "$f" ] || continue
+            sha256sum "$f" | awk '{print $1}' > "${f}.sha256"
+            b2sum     "$f" | awk '{print $1}' > "${f}.b2"
+          done
+
+          # Combined files (only include files that exist)
+          sha256sum thgtoa.pdf thgtoa-dark.pdf 2>/dev/null > sha256sums.txt || \
+            sha256sum thgtoa.pdf               2>/dev/null > sha256sums.txt
+          b2sum     thgtoa.pdf thgtoa-dark.pdf 2>/dev/null > b2sums.txt     || \
+            b2sum     thgtoa.pdf               2>/dev/null > b2sums.txt
+
+          # Expose individual hashes as outputs (empty string if file absent)
+          light_sha256=$(cat thgtoa.pdf.sha256      2>/dev/null || echo "")
+          dark_sha256=$(cat  thgtoa-dark.pdf.sha256 2>/dev/null || echo "")
+          light_b2=$(cat     thgtoa.pdf.b2          2>/dev/null || echo "")
+          dark_b2=$(cat      thgtoa-dark.pdf.b2     2>/dev/null || echo "")
+
+          echo "light_sha256=$light_sha256" >> $GITHUB_OUTPUT
+          echo "dark_sha256=$dark_sha256"   >> $GITHUB_OUTPUT
+          echo "light_b2=$light_b2"         >> $GITHUB_OUTPUT
+          echo "dark_b2=$dark_b2"           >> $GITHUB_OUTPUT
+
+          echo "--- SHA-256 ---"
+          cat sha256sums.txt
+          echo "--- BLAKE2b ---"
+          cat b2sums.txt
+
+      # ------------------------------------------------------------------ #
+      #  GPG sign
+      # ------------------------------------------------------------------ #
+      - name: 🔏 Import GPG signing key
+        env:
+          GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
+          GPG_PASSPHRASE:  ${{ secrets.GPG_PASSPHRASE }}
+        run: |
+          echo "$GPG_PRIVATE_KEY" | gpg --batch --import
+          # Pre-cache passphrase to prevent interactive prompt
+          echo "$GPG_PASSPHRASE" | gpg --batch --yes --passphrase-fd 0 \
+            --pinentry-mode loopback --list-secret-keys
+
+      - name: 🔏 Sign PDFs and hash files
+        env:
+          GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
+        run: |
+          sign() {
+            local file="$1"
+            [ -f "$file" ] || return 0
+            echo "$GPG_PASSPHRASE" | gpg --batch --yes --passphrase-fd 0 \
+              --pinentry-mode loopback \
+              --detach-sign --armor --output "${file}.sig" "$file"
+            echo "Signed: $file"
+          }
+          sign export/thgtoa.pdf
+          sign export/thgtoa-dark.pdf
+          sign export/sha256sums.txt
+          sign export/b2sums.txt
+
+      # ------------------------------------------------------------------ #
+      #  Upload — PDFs + all signatures and hashes together
+      # ------------------------------------------------------------------ #
+      - name: 📤 Upload signatures artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: signatures
+          path: |
+            export/sha256sums.txt
+            export/b2sums.txt
+            export/thgtoa.pdf.sha256
+            export/thgtoa-dark.pdf.sha256
+            export/thgtoa.pdf.b2
+            export/thgtoa-dark.pdf.b2
+            export/thgtoa.pdf.sig
+            export/thgtoa-dark.pdf.sig
+            export/sha256sums.txt.sig
+            export/b2sums.txt.sig
+          if-no-files-found: error
+          retention-days: 90
+          compression-level: 0
+
+      - name: 📤 Upload signed PDFs artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: pdfs-signed
+          path: |
+            export/thgtoa.pdf
+            export/thgtoa-dark.pdf
+          if-no-files-found: warn
+          retention-days: 90
+          compression-level: 0

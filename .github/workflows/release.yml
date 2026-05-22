@@ -1,0 +1,215 @@
+name: 🚀 Release
+
+# Can be triggered:
+#   1. Automatically after sign.yml completes on main
+#   2. Manually, pointing at specific build/sign runs to pull artifacts from
+on:
+  workflow_run:
+    workflows: ["🔏 Sign PDFs"]
+    types: [completed]
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      sign_run_id:
+        description: 'sign.yml run ID to pull signatures from'
+        required: true
+        type: string
+      build_run_id:
+        description: 'build.yml run ID to pull PDFs from (leave blank to use pdfs-signed from sign run)'
+        required: false
+        type: string
+      prerelease:
+        description: 'Mark as pre-release?'
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: write  # create releases and tags
+  actions:  read   # download artifacts from other runs
+
+jobs:
+  release:
+    name: Publish GitHub Release
+    if: >
+      github.event_name == 'workflow_dispatch' ||
+      github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🛠️ Checkout (for commit metadata only)
+        uses: actions/checkout@v4
+        with:
+          sparse-checkout: pgp
+
+      # ------------------------------------------------------------------ #
+      #  Resolve which run IDs to pull artifacts from
+      # ------------------------------------------------------------------ #
+      - name: 🔍 Resolve run IDs
+        id: runs
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            SIGN_RUN="${{ inputs.sign_run_id }}"
+            BUILD_RUN="${{ inputs.build_run_id }}"
+          else
+            SIGN_RUN="${{ github.event.workflow_run.id }}"
+            BUILD_RUN=""
+          fi
+          echo "sign_run=$SIGN_RUN"   >> $GITHUB_OUTPUT
+          echo "build_run=$BUILD_RUN" >> $GITHUB_OUTPUT
+          echo "Sign run:  $SIGN_RUN"
+          echo "Build run: ${BUILD_RUN:-'(using pdfs-signed from sign run)'}"
+
+      # ------------------------------------------------------------------ #
+      #  Download artifacts
+      # ------------------------------------------------------------------ #
+      - name: 📥 Download signatures artifact
+        uses: actions/download-artifact@v4
+        with:
+          name:         signatures
+          path:         release/
+          run-id:       ${{ steps.runs.outputs.sign_run }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: 📥 Download PDFs (from sign run)
+        uses: actions/download-artifact@v4
+        with:
+          name:         pdfs-signed
+          path:         release/
+          run-id:       ${{ steps.runs.outputs.sign_run }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: 📋 List release assets
+        run: ls -lh release/
+
+      # ------------------------------------------------------------------ #
+      #  Read hashes for the release body
+      # ------------------------------------------------------------------ #
+      - name: #️⃣ Read hashes
+        id: hashes
+        run: |
+          read_hash() { cat "release/$1" 2>/dev/null || echo "(not built)"; }
+
+          echo "light_sha256=$(read_hash thgtoa.pdf.sha256)"      >> $GITHUB_OUTPUT
+          echo "dark_sha256=$(read_hash thgtoa-dark.pdf.sha256)"  >> $GITHUB_OUTPUT
+          echo "light_b2=$(read_hash thgtoa.pdf.b2)"              >> $GITHUB_OUTPUT
+          echo "dark_b2=$(read_hash thgtoa-dark.pdf.b2)"          >> $GITHUB_OUTPUT
+
+      # ------------------------------------------------------------------ #
+      #  VirusTotal — upload whichever PDFs are present
+      # ------------------------------------------------------------------ #
+      - name: 🦠 Upload PDFs to VirusTotal
+        id: vt
+        uses: crazy-max/ghaction-virustotal@v5
+        with:
+          vt_api_key: ${{ secrets.VT_API_KEY }}
+          files: |
+            release/thgtoa.pdf
+            release/thgtoa-dark.pdf
+
+      - name: 🔗 Build VT report URLs
+        id: vt_urls
+        run: |
+          light_hash=$(cat release/thgtoa.pdf.sha256      2>/dev/null || echo "")
+          dark_hash=$(cat  release/thgtoa-dark.pdf.sha256 2>/dev/null || echo "")
+          [ -n "$light_hash" ] && \
+            echo "light_vt=https://www.virustotal.com/gui/file/${light_hash}" >> $GITHUB_OUTPUT || \
+            echo "light_vt=(not built)"                                        >> $GITHUB_OUTPUT
+          [ -n "$dark_hash" ] && \
+            echo "dark_vt=https://www.virustotal.com/gui/file/${dark_hash}" >> $GITHUB_OUTPUT || \
+            echo "dark_vt=(not built)"                                       >> $GITHUB_OUTPUT
+
+      # ------------------------------------------------------------------ #
+      #  Tag + Release
+      # ------------------------------------------------------------------ #
+      - name: 🏷️ Generate release tag
+        id: tag
+        run: |
+          TAG="v$(date -u +'%Y.%m.%d')-$(echo ${{ github.sha }} | cut -c1-7)"
+          echo "tag=$TAG"                                           >> $GITHUB_OUTPUT
+          echo "name=Release $(date -u +'%Y-%m-%d') (${TAG})"     >> $GITHUB_OUTPUT
+
+      - name: 🚀 Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name:   ${{ steps.tag.outputs.tag }}
+          name:       ${{ steps.tag.outputs.name }}
+          prerelease: ${{ inputs.prerelease || false }}
+          draft:      false
+          fail_on_unmatched_files: false
+          body: |
+            ## 📖 The Hitchhiker's Guide to Online Anonymity
+
+            Built from [`${{ github.sha }}`](${{ github.server_url }}/${{ github.repository }}/commit/${{ github.sha }}) on `${{ github.ref_name }}`.
+
+            ---
+
+            ### 📄 Release assets
+
+            | File | Description |
+            |------|-------------|
+            | `thgtoa.pdf` | Light mode PDF |
+            | `thgtoa-dark.pdf` | Dark mode PDF (hacker theme) |
+            | `sha256sums.txt` | SHA-256 checksums (both files) |
+            | `b2sums.txt` | BLAKE2b checksums (both files) |
+            | `thgtoa.pdf.sha256` | SHA-256 — light PDF |
+            | `thgtoa-dark.pdf.sha256` | SHA-256 — dark PDF |
+            | `thgtoa.pdf.b2` | BLAKE2b — light PDF |
+            | `thgtoa-dark.pdf.b2` | BLAKE2b — dark PDF |
+            | `*.sig` | GPG detached signatures (ASCII armor) |
+
+            ---
+
+            ### #️⃣ Hashes
+
+            **thgtoa.pdf** (light)
+            ```
+            SHA-256  ${{ steps.hashes.outputs.light_sha256 }}
+            BLAKE2b  ${{ steps.hashes.outputs.light_b2 }}
+            ```
+
+            **thgtoa-dark.pdf** (dark)
+            ```
+            SHA-256  ${{ steps.hashes.outputs.dark_sha256 }}
+            BLAKE2b  ${{ steps.hashes.outputs.dark_b2 }}
+            ```
+
+            ---
+
+            ### 🔏 Verifying GPG signatures
+
+            ```bash
+            # Import the release signing key
+            gpg --import pgp/anonymousplanet-release.asc
+
+            # Verify PDFs
+            gpg --verify thgtoa.pdf.sig      thgtoa.pdf
+            gpg --verify thgtoa-dark.pdf.sig thgtoa-dark.pdf
+
+            # Verify hash files
+            gpg --verify sha256sums.txt.sig sha256sums.txt
+            gpg --verify b2sums.txt.sig     b2sums.txt
+            ```
+
+            ---
+
+            ### 🦠 VirusTotal scans
+
+            | File | Report |
+            |------|--------|
+            | `thgtoa.pdf` | ${{ steps.vt_urls.outputs.light_vt }} |
+            | `thgtoa-dark.pdf` | ${{ steps.vt_urls.outputs.dark_vt }} |
+
+          files: |
+            release/thgtoa.pdf
+            release/thgtoa-dark.pdf
+            release/sha256sums.txt
+            release/b2sums.txt
+            release/thgtoa.pdf.sha256
+            release/thgtoa-dark.pdf.sha256
+            release/thgtoa.pdf.b2
+            release/thgtoa-dark.pdf.b2
+            release/thgtoa.pdf.sig
+            release/thgtoa-dark.pdf.sig
+            release/sha256sums.txt.sig
+            release/b2sums.txt.sig
