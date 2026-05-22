@@ -1,0 +1,64 @@
+name: 📝 Update Changelog
+
+# Runs after build.yml completes on main — at that point we know what changed.
+# Can also be triggered manually to backfill a missing entry.
+on:
+  workflow_run:
+    workflows: ["📖 Build PDFs"]
+    types: [completed]
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version string (e.g. v1.2.4) — leave blank to auto-increment'
+        required: false
+        type: string
+      dry_run:
+        description: 'Dry run — print entry without committing'
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: write  # commit changelog back to main
+
+jobs:
+  changelog:
+    name: Prepend changelog entry
+    if: >
+      github.event_name == 'workflow_dispatch' ||
+      github.event.workflow_run.conclusion == 'success'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🛠️ Checkout
+        uses: actions/checkout@v4
+        with:
+          # Use a PAT so the commit triggers downstream workflows (GITHUB_TOKEN won't)
+          token: ${{ secrets.CHANGELOG_PAT || secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: 🐍 Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: 📝 Generate and prepend changelog entry
+        env:
+          DRY_RUN:         ${{ inputs.dry_run || 'false' }}
+          MANUAL_VERSION:  ${{ inputs.version || '' }}
+          GH_SHA:          ${{ github.sha }}
+          GH_REF:          ${{ github.ref_name }}
+          TRIGGERING_SHA:  ${{ github.event.workflow_run.head_sha || github.sha }}
+        run: python scripts/update_changelog.py
+
+      - name: 📤 Commit changelog
+        if: ${{ inputs.dry_run != 'true' }}
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add docs/changelog/index.md
+          # Only commit if there's actually a change
+          git diff --cached --quiet && echo "No changelog change to commit." || \
+            git commit -m "docs: update changelog [skip ci]"
+          git push

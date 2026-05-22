@@ -1,0 +1,216 @@
+#!/usr/bin/env python3
+"""Auto-generate and prepend a changelog entry to docs/changelog/index.md.
+
+Called by .github/workflows/changelog.yml. Reads git log since the last
+changelog version tag, categorises commits by conventional-commit prefix,
+and prepends a new ## [vX.Y.Z] section in the MkDocs admonition format used
+by the rest of the file.
+
+Environment variables (all optional — reasonable defaults apply):
+  MANUAL_VERSION   Override the auto-incremented version string.
+  TRIGGERING_SHA   The commit SHA that triggered this run (used as range end).
+  DRY_RUN          If "true", print the entry and exit without writing.
+"""
+
+from __future__ import annotations
+
+import os
+import re
+import subprocess
+import sys
+from datetime import datetime, timezone
+from pathlib import Path
+
+
+CHANGELOG = Path(__file__).resolve().parent.parent / "docs" / "changelog" / "index.md"
+
+# Conventional-commit prefixes → changelog bucket
+BUCKET_MAP: dict[str, str] = {
+    "feat":     "Added",
+    "feature":  "Added",
+    "add":      "Added",
+    "fix":      "Fixed",
+    "bugfix":   "Fixed",
+    "perf":     "Changed",
+    "refactor": "Changed",
+    "change":   "Changed",
+    "chore":    "Changed",
+    "ci":       "Changed",
+    "docs":     "Changed",
+    "style":    "Changed",
+    "test":     "Changed",
+    "revert":   "Fixed",
+    "security": "Fixed",
+    "build":    "Changed",
+}
+
+BUCKET_ORDER = ["Added", "Changed", "Fixed"]
+
+
+def run(cmd: list[str]) -> str:
+    result = subprocess.run(cmd, capture_output=True, text=True)
+    return result.stdout.strip()
+
+
+def latest_version_tag() -> str | None:
+    """Return the most recent vX.Y.Z tag reachable from HEAD, or None."""
+    out = run(["git", "tag", "--sort=-version:refname", "--list", "v*"])
+    for line in out.splitlines():
+        if re.match(r"^v\d+\.\d+\.\d+", line):
+            return line
+    return None
+
+
+def auto_increment_version(current: str | None) -> str:
+    """Bump the patch number of the current version, or default to v1.0.0."""
+    if not current:
+        return "v1.0.0"
+    m = re.match(r"^v?(\d+)\.(\d+)\.(\d+)", current)
+    if not m:
+        return "v1.0.0"
+    major, minor, patch = int(m.group(1)), int(m.group(2)), int(m.group(3))
+    return f"v{major}.{minor}.{patch + 1}"
+
+
+def version_from_changelog() -> str | None:
+    """Parse the most recent ## [vX.Y.Z] heading from the changelog file."""
+    if not CHANGELOG.exists():
+        return None
+    for line in CHANGELOG.read_text(encoding="utf-8").splitlines():
+        m = re.match(r"^## \[(v\d+\.\d+\.\d+)\]", line)
+        if m:
+            return m.group(1)
+    return None
+
+
+def commits_since(ref: str | None, until: str) -> list[str]:
+    """Return one-line commit messages between ref and until (exclusive/inclusive)."""
+    if ref:
+        log_range = f"{ref}..{until}"
+    else:
+        log_range = until
+    out = run(["git", "log", "--pretty=format:%s", log_range])
+    return [line.strip() for line in out.splitlines() if line.strip()]
+
+
+def categorise(messages: list[str]) -> dict[str, list[str]]:
+    """Sort commit messages into Added / Changed / Fixed buckets."""
+    buckets: dict[str, list[str]] = {b: [] for b in BUCKET_ORDER}
+
+    for msg in messages:
+        # Skip automated / noise commits
+        if re.search(r"\[skip ci\]|^Merge |^chore: bump|update changelog", msg, re.I):
+            continue
+
+        # Strip conventional-commit prefix to get the plain description
+        m = re.match(r"^(\w+)(?:\([^)]+\))?!?:\s*(.+)$", msg)
+        if m:
+            prefix = m.group(1).lower()
+            description = m.group(2).strip()
+            bucket = BUCKET_MAP.get(prefix, "Changed")
+        else:
+            description = msg
+            bucket = "Changed"
+
+        # Capitalise first letter
+        description = description[0].upper() + description[1:] if description else description
+        buckets[bucket].append(description)
+
+    return buckets
+
+
+def format_admonition(bucket: str, items: list[str]) -> str:
+    lines = [f'!!! Note "{bucket}"', ""]
+    for item in items:
+        lines.append(f"    - {item}")
+    lines.append("")
+    return "\n".join(lines)
+
+
+def build_entry(version: str, buckets: dict[str, list[str]], sha: str) -> str:
+    date = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    lines = [f"## [{version}]", ""]
+    lines.append(f'!!! Note "Meta"')
+    lines.append("")
+    lines.append(f"    - Released {date} from [`{sha[:7]}`](https://github.com/Anon-Planet/thgtoa/commit/{sha})")
+    lines.append("")
+
+    for bucket in BUCKET_ORDER:
+        if buckets.get(bucket):
+            lines.append(format_admonition(bucket, buckets[bucket]))
+
+    # If no commits were categorised, add a placeholder
+    if not any(buckets[b] for b in BUCKET_ORDER):
+        lines.append('!!! Note "Changed"')
+        lines.append("")
+        lines.append("    - Minor updates and maintenance")
+        lines.append("")
+
+    return "\n".join(lines)
+
+
+def prepend_entry(entry: str) -> None:
+    """Insert the new entry after the # Release Notes heading."""
+    content = CHANGELOG.read_text(encoding="utf-8")
+
+    # Find the first ## heading and insert before it
+    insert_at = content.find("\n## ")
+    if insert_at == -1:
+        # No existing version section — append after the header block
+        content = content.rstrip() + "\n\n" + entry + "\n"
+    else:
+        content = content[: insert_at + 1] + entry + "\n" + content[insert_at + 1 :]
+
+    CHANGELOG.write_text(content, encoding="utf-8")
+
+
+def already_has_version(version: str) -> bool:
+    if not CHANGELOG.exists():
+        return False
+    return f"## [{version}]" in CHANGELOG.read_text(encoding="utf-8")
+
+
+def main() -> int:
+    dry_run        = os.environ.get("DRY_RUN", "false").lower() == "true"
+    manual_version = os.environ.get("MANUAL_VERSION", "").strip()
+    triggering_sha = os.environ.get("TRIGGERING_SHA", "HEAD").strip() or "HEAD"
+
+    # Determine version
+    last_tag      = latest_version_tag()
+    last_cl_ver   = version_from_changelog()
+    base_version  = last_tag or last_cl_ver
+    new_version   = manual_version or auto_increment_version(base_version)
+
+    print(f"Last tag:         {last_tag or '(none)'}")
+    print(f"Last CL version:  {last_cl_ver or '(none)'}")
+    print(f"New version:      {new_version}")
+    print(f"Triggering SHA:   {triggering_sha}")
+
+    if already_has_version(new_version) and not manual_version:
+        print(f"Changelog already contains {new_version} — nothing to do.")
+        return 0
+
+    # Collect commits since the last tag (or all commits if no tag)
+    messages = commits_since(last_tag, triggering_sha)
+    print(f"Commits found:    {len(messages)}")
+    for m in messages:
+        print(f"  {m}")
+
+    buckets = categorise(messages)
+    entry   = build_entry(new_version, buckets, triggering_sha)
+
+    print("\n--- Generated entry ---")
+    print(entry)
+    print("-----------------------\n")
+
+    if dry_run:
+        print("DRY RUN — not writing to file.")
+        return 0
+
+    prepend_entry(entry)
+    print(f"Prepended {new_version} to {CHANGELOG}")
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())
