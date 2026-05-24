@@ -20,32 +20,6 @@ Notable changes to the guide and its tooling. Follows [Keep a Changelog](https:/
 
 ---
 
-## [v2026.5.25]
-
-!!! Note "Meta"
-
-    - Released 2026-05-24 from [`ccc9746`](https://github.com/Anon-Planet/thgtoa/commit/ccc97461c94f5898dc44ca015dc8121640837a00)
-
-!!! Note "Added"
-
-    - Explain missing v1.2.2 tag
-
-!!! Note "Fixed"
-
-    - Prevent history dump and filter noise commits
-    - Actually save per-page PDFs for qpdf, not PNGs
-
-## [v1.2.4]
-
-!!! Note "Meta"
-
-    - Released 2026-05-24 from [`f71e5e2`](https://github.com/Anon-Planet/thgtoa/commit/f71e5e2a28f1412a3c2c26917e5b094e8cc2f51a)
-
-!!! Note "Fixed"
-
-    - Prevent history dump and filter noise commits
-    - Actually save per-page PDFs for qpdf, not PNGs
-
 ## [v1.2.3]
 
 CI/CD pipeline split into independent stages, dark PDF quality improved, release signing automated, and the changelog now updates itself on every build. Skipping v1.2.2 which was a placeholder and contained broken Python unsuitable for a tag/release.
