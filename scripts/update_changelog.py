@@ -84,11 +84,25 @@ def version_from_changelog() -> str | None:
 
 
 def commits_since(ref: str | None, until: str) -> list[str]:
-    """Return one-line commit messages between ref and until (exclusive/inclusive)."""
+    """Return one-line commit messages between ref and until (exclusive/inclusive).
+
+    When no ref is given (no prior tag exists) we fall back to the merge-base
+    between HEAD and origin/main rather than walking the entire history, which
+    would otherwise dump every commit ever made into the changelog.
+    """
     if ref:
         log_range = f"{ref}..{until}"
     else:
-        log_range = until
+        # No previous tag — scope to commits not yet on origin/main
+        merge_base = run(
+            ["git", "merge-base", "HEAD", "origin/main"], check=False
+        ).stdout.strip()
+        if merge_base:
+            log_range = f"{merge_base}..{until}"
+        else:
+            # Truly brand new repo with no remote — limit to last 50 commits
+            # to avoid dumping the whole history
+            log_range = f"-50 {until}"
     out = run(["git", "log", "--pretty=format:%s", log_range])
     return [line.strip() for line in out.splitlines() if line.strip()]
 
@@ -97,9 +111,30 @@ def categorise(messages: list[str]) -> dict[str, list[str]]:
     """Sort commit messages into Added / Changed / Fixed buckets."""
     buckets: dict[str, list[str]] = {b: [] for b in BUCKET_ORDER}
 
+    # Patterns that are never useful in a human-readable changelog
+    NOISE = re.compile(
+        r"""
+        \[skip\ ci\]                    # CI skip marker
+        | ^Merge\ (pull\ request|branch) # merge commits
+        | ^chore:\ bump                  # version bump chores
+        | update\ changelog              # self-referential
+        | ^\d+/\d+                       # numbered commit series (e.g. 3/8)
+        | ^Tweaking                      # vague WIP messages
+        | ^Moving\ some                  # vague WIP messages
+        | \ pt\d+$                       # "...pt2", "...pt3" suffixes
+        | ^Fix\ (workflow|path|README)$  # one-word infrastructure fixes
+        | ^Still\ broken                 # embarrassing mid-fix notes
+        | ^WIP\b                         # work in progress
+        | ^Forgot\ to                    # oops commits
+        | ^Revert\ "                     # reverts (surface the original instead)
+        | ^One\ job\ to\ rule            # joke commit messages
+        """,
+        re.VERBOSE | re.IGNORECASE,
+    )
+
     for msg in messages:
-        # Skip automated / noise commits
-        if re.search(r"\[skip ci\]|^Merge |^chore: bump|update changelog", msg, re.I):
+        # Skip noise
+        if NOISE.search(msg):
             continue
 
         # Strip conventional-commit prefix to get the plain description
