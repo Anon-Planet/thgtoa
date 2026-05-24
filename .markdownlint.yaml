@@ -62,24 +62,7 @@ MD012:
   # Consecutive blank lines
   maximum: 1
 # MD013/line-length - Line length
-#
-MD013:
-  # Number of characters
-  line_length: 80
-  # Number of characters for headings
-  heading_line_length: 80
-  # Number of characters for code blocks
-  code_block_line_length: 160
-  # Include code blocks
-  code_blocks: false
-  # Include tables
-  tables: false
-  # Include headings
-  headings: true
-  # Strict length checking (e.g. allow for longer URLs)
-  strict: false
-  # Stern length checking
-  stern: false
+MD013: false
 
 # MD014/commands-show-output - Dollar signs used before commands without showing output
 # TODO: set false for now but we should consider enabling it
