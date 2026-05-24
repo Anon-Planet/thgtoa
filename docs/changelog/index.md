@@ -20,6 +20,30 @@ Notable changes to the guide and its tooling. Follows [Keep a Changelog](https:/
 
 ---
 
+## [v2026.5.25]
+
+!!! Note "Meta"
+
+    - Released 2026-05-24 from [`3b55011`](https://github.com/Anon-Planet/thgtoa/commit/3b550119a8f70129096774b3303278b50fed1529)
+
+!!! Note "Added"
+
+    - Explain missing v1.2.2 tag
+
+!!! Note "Changed"
+
+    - Commitizen passes
+    - V1.2.3
+    - Auto-increment using [vX.X.X]
+    - Only use "vX.X.X" in version tags
+
+!!! Note "Fixed"
+
+    - We use the Anonymous Planet RSK for releases
+    - Sign using RSK instead
+    - Prevent history dump and filter noise commits
+    - Actually save per-page PDFs for qpdf, not PNGs
+
 ## [v1.2.3]
 
 CI/CD pipeline split into independent stages, dark PDF quality improved, release signing automated, and the changelog now updates itself on every build. Skipping v1.2.2 which was a placeholder and contained broken Python unsuitable for a tag/release.
