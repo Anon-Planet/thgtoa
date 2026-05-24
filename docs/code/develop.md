@@ -49,7 +49,7 @@ You also need **Google Chrome** or **Microsoft Edge** installed for the light-mo
 
 ## Repository layout
 
-```
+```bash
 .github/
   workflows/
     build.yml        ← builds PDFs, uploads artifact
@@ -120,7 +120,7 @@ Opens at `http://127.0.0.1:8000`.
 
 The pipeline triggers automatically when you push to `main` — no manual steps are needed for normal contributions.
 
-```
+```bash
 push to main
     │
     ▼
@@ -294,7 +294,7 @@ b2sum     -c b2sums.txt
 
 A successful verify looks like:
 
-```
+```bash
 gpg: Signature made ...
 gpg: Good signature from "Anonymous Planet (Release) ..."
 ```

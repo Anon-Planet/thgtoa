@@ -10043,28 +10043,17 @@ Again, regarding the PDFs of this guide and as explained in the README of my rep
 
 - Run "python pdfid.py file-to-check.pdf" and you should see these at 0 in the case of the PDF files in this repository:
 
-```
-
+```text
 /JS 0 #This indicates the presence of Javascript
-
 /JavaScript 0 #This indicates the presence of Javascript
-
 /AA 0 #This indicates the presence of automatic action on opening
-
 /OpenAction 0 #This indicates the presence of automatic action on opening
-
 /AcroForm 0 #This indicates the presence of AcroForm which could contain JavaScript
-
 /JBIG2Decode 0 #This indicates the use of JBIG2 compression which could be used for obfuscating content
-
 /RichMedia 0 #This indicates the presence of rich media within the PDF such as Flash
-
 /Launch 0 #This counts the launch actions
-
 /EmbeddedFile 0 #This indicates there are embedded files within the PDF
-
 /XFA 0 #This indicates the presence of XML Forms within the PDF
-
 ```
 
 Now, what if you think the PDF is still suspicious? Fear not ... there are more things you can do to ensure it is not malicious:
