@@ -93,22 +93,28 @@ def apply_dark_theme(
 
 
 def _save_images_as_pdf(images: list, output_path: str) -> None:
-    """Save a list of RGB PIL images as a PDF using PNG compression via qpdf.
+    """Save a list of RGB PIL images as a PDF without requiring libjpeg.
 
-    Pillow's built-in PDF writer defaults to JPEG encoding for RGB images,
-    which fails when libjpeg is not available in the environment. Instead we
-    write each page as a lossless PNG to a temp directory and assemble them
-    with qpdf, which embeds the PNGs directly without re-encoding.
+    Pillow's PDF writer defaults to JPEG encoding for RGB images, which
+    fails when libjpeg is absent in the environment. Fix: quantize each
+    image to palette mode (256 colours, FASTOCTREE) so Pillow uses
+    zlib/deflate instead of JPEG, save each as an individual single-page
+    PDF, then merge the page PDFs with qpdf.
+
+    Colour fidelity is preserved — the hacker theme uses only a handful
+    of distinct colours so 256-colour quantization is visually lossless.
     """
     import tempfile as _tempfile
     with _tempfile.TemporaryDirectory() as staging:
-        png_paths = []
+        page_pdfs = []
         for i, img in enumerate(images):
-            p = os.path.join(staging, f'p{i:05d}.png')
-            img.save(p, format='PNG')
-            png_paths.append(p)
+            page_path = os.path.join(staging, f'p{i:05d}.pdf')
+            img.quantize(colors=256, method=Image.Quantize.FASTOCTREE).save(
+                page_path, format='PDF'
+            )
+            page_pdfs.append(page_path)
         subprocess.run(
-            ['qpdf', '--empty', '--pages'] + png_paths + ['--', output_path],
+            ['qpdf', '--empty', '--pages'] + page_pdfs + ['--', output_path],
             check=True,
         )
 
