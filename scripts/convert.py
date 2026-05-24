@@ -119,6 +119,25 @@ def _check_qpdf() -> bool:
     ).returncode == 0
 
 
+def _check_dependencies() -> None:
+    """Verify required system tools are available before doing any work."""
+    missing = []
+    for tool in ('pdftoppm', 'qpdf'):
+        if subprocess.run(['which', tool], capture_output=True).returncode != 0:
+            missing.append(tool)
+    if missing:
+        tools = ', '.join(missing)
+        instructions = (
+            f"Install with:\n"
+            f"  Linux/WSL:  sudo apt install poppler-utils qpdf\n"
+            f"  macOS:      brew install poppler qpdf\n"
+            f"  Windows:    see docs/code/develop.md"
+        )
+        raise RuntimeError(
+            f"Missing required system tool(s): {tools}\n{instructions}"
+        )
+
+
 def convert_pdf_to_dark(
     input_path: str | Path,
     output_path: str | Path,
@@ -137,6 +156,8 @@ def convert_pdf_to_dark(
     """
     input_path  = str(input_path)
     output_path = str(output_path)
+
+    _check_dependencies()
 
     with tempfile.TemporaryDirectory() as tmp:
         # 1. Rasterize all pages
