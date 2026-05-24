@@ -155,7 +155,7 @@ The ASCII-armored private key used to sign PDFs and hash files.
 
 ```bash
 # Export the release signing key
-gpg --armor --export-secret-keys 9FA5436D0EE360985157382517ECA05F768DEDF6
+gpg --armor --export-secret-keys C3023DBEA3FB38C438BA1EEDCEC60AEDE8B992A2
 ```
 
 Copy the entire output (including `-----BEGIN PGP PRIVATE KEY BLOCK-----` and the closing line) and paste it as the secret value.
