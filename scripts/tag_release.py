@@ -38,7 +38,7 @@ from pathlib import Path
 
 # Default release signing key fingerprint.
 # Maintainers with a different key can pass --key on the CLI.
-DEFAULT_SIGNING_KEY = "9FA5436D0EE360985157382517ECA05F768DEDF6"
+DEFAULT_SIGNING_KEY = "C3023DBEA3FB38C438BA1EEDCEC60AEDE8B992A2"
 
 CHANGELOG = Path(__file__).resolve().parent.parent / "docs" / "changelog" / "index.md"
 

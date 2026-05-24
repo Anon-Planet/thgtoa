@@ -213,7 +213,7 @@ Releases are tagged manually by maintainers. The `tag_release.py` script handles
 
 ### Requirements
 
-- Your GPG keyring must contain the release signing key (`9FA5436D0EE360985157382517ECA05F768DEDF6`)
+- Your GPG keyring must contain the release signing key (`C302 3DBE A3FB 38C4 38BA  1EED CEC6 0AED E8B9 92A2`)
 - The working tree must be clean
 - You must be on the `main` branch
 - A `## [vX.Y.Z]` entry must exist in `docs/changelog/index.md` for the version you are tagging
