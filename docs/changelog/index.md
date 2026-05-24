@@ -33,7 +33,7 @@ Notable changes to the guide and its tooling. Follows [Keep a Changelog](https:/
 
 ## [v1.2.3] — 2026-05-24
 
-CI/CD pipeline split into independent stages, dark PDF quality improved, release signing automated, and the changelog now updates itself on every build.
+CI/CD pipeline split into independent stages, dark PDF quality improved, release signing automated, and the changelog now updates itself on every build. Skipping v1.2.2 which was a placeholder and contained broken Python unsuitable for a tag/release.
 
 !!! success "Added"
 
