@@ -20,6 +20,17 @@ Notable changes to the guide and its tooling. Follows [Keep a Changelog](https:/
 
 ---
 
+## [v2026.5.25]
+
+!!! Note "Meta"
+
+    - Released 2026-05-24 from [`f71e5e2`](https://github.com/Anon-Planet/thgtoa/commit/f71e5e2a28f1412a3c2c26917e5b094e8cc2f51a)
+
+!!! Note "Fixed"
+
+    - Prevent history dump and filter noise commits
+    - Actually save per-page PDFs for qpdf, not PNGs
+
 ## [v1.2.3] — 2026-05-24
 
 CI/CD pipeline split into independent stages, dark PDF quality improved, release signing automated, and the changelog now updates itself on every build.
