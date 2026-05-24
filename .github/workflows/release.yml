@@ -37,9 +37,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 🛠️ Checkout (for commit metadata only)
+      - name: 🛠️ Checkout (for tags and pgp/)
         uses: actions/checkout@v4
         with:
+          fetch-depth: 0
           sparse-checkout: pgp
 
       # ------------------------------------------------------------------ #
@@ -85,11 +86,10 @@ jobs:
       # ------------------------------------------------------------------ #
       #  Read hashes for the release body
       # ------------------------------------------------------------------ #
-      - name: #️⃣ Read hashes
+      - name: "#️⃣ Read hashes"
         id: hashes
         run: |
           read_hash() { cat "release/$1" 2>/dev/null || echo "(not built)"; }
-
           echo "light_sha256=$(read_hash thgtoa.pdf.sha256)"      >> $GITHUB_OUTPUT
           echo "dark_sha256=$(read_hash thgtoa-dark.pdf.sha256)"  >> $GITHUB_OUTPUT
           echo "light_b2=$(read_hash thgtoa.pdf.b2)"              >> $GITHUB_OUTPUT
@@ -112,22 +112,39 @@ jobs:
         run: |
           light_hash=$(cat release/thgtoa.pdf.sha256      2>/dev/null || echo "")
           dark_hash=$(cat  release/thgtoa-dark.pdf.sha256 2>/dev/null || echo "")
-          [ -n "$light_hash" ] && \
-            echo "light_vt=https://www.virustotal.com/gui/file/${light_hash}" >> $GITHUB_OUTPUT || \
-            echo "light_vt=(not built)"                                        >> $GITHUB_OUTPUT
-          [ -n "$dark_hash" ] && \
-            echo "dark_vt=https://www.virustotal.com/gui/file/${dark_hash}" >> $GITHUB_OUTPUT || \
-            echo "dark_vt=(not built)"                                       >> $GITHUB_OUTPUT
+          if [ -n "$light_hash" ]; then
+            echo "light_vt=https://www.virustotal.com/gui/file/${light_hash}" >> $GITHUB_OUTPUT
+          else
+            echo "light_vt=(not built)" >> $GITHUB_OUTPUT
+          fi
+          if [ -n "$dark_hash" ]; then
+            echo "dark_vt=https://www.virustotal.com/gui/file/${dark_hash}" >> $GITHUB_OUTPUT
+          else
+            echo "dark_vt=(not built)" >> $GITHUB_OUTPUT
+          fi
 
       # ------------------------------------------------------------------ #
-      #  Tag + Release
+      #  Tag + Release — auto-increment vX.Y.Z from latest semver tag
       # ------------------------------------------------------------------ #
       - name: 🏷️ Generate release tag
         id: tag
         run: |
-          TAG="v$(date -u +'%Y.%m.%d')-$(echo ${{ github.sha }} | cut -c1-7)"
-          echo "tag=$TAG"                                           >> $GITHUB_OUTPUT
-          echo "name=Release $(date -u +'%Y-%m-%d') (${TAG})"     >> $GITHUB_OUTPUT
+          git fetch --tags --quiet
+
+          LATEST=$(git tag --list 'v*' --sort=-version:refname \
+            | grep -E '^v[0-9]+\.[0-9]+\.[0-9]+$' \
+            | head -1)
+          LATEST=${LATEST:-v0.0.0}
+
+          MAJOR=$(echo "$LATEST" | cut -d. -f1 | tr -d 'v')
+          MINOR=$(echo "$LATEST" | cut -d. -f2)
+          PATCH=$(echo "$LATEST" | cut -d. -f3)
+          PATCH=$((PATCH + 1))
+
+          TAG="v${MAJOR}.${MINOR}.${PATCH}"
+          echo "Previous tag: $LATEST → New tag: $TAG"
+          echo "tag=$TAG"  >> $GITHUB_OUTPUT
+          echo "name=$TAG" >> $GITHUB_OUTPUT
 
       - name: 🚀 Create GitHub Release
         uses: softprops/action-gh-release@v2
