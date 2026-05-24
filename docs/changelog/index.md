@@ -20,7 +20,7 @@ Notable changes to the guide and its tooling. Follows [Keep a Changelog](https:/
 
 ---
 
-## [v2026.5.25]
+## [v1.2.4]
 
 !!! Note "Meta"
 
@@ -31,7 +31,7 @@ Notable changes to the guide and its tooling. Follows [Keep a Changelog](https:/
     - Prevent history dump and filter noise commits
     - Actually save per-page PDFs for qpdf, not PNGs
 
-## [v1.2.3] — 2026-05-24
+## [v1.2.3]
 
 CI/CD pipeline split into independent stages, dark PDF quality improved, release signing automated, and the changelog now updates itself on every build. Skipping v1.2.2 which was a placeholder and contained broken Python unsuitable for a tag/release.
 
@@ -67,7 +67,7 @@ CI/CD pipeline split into independent stages, dark PDF quality improved, release
 
 ---
 
-## [v1.2.1] — 2025
+## [v1.2.1]
 
 First automated PDF build and the start of the CI pipeline.
 
