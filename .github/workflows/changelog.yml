@@ -1,12 +1,9 @@
 name: 📝 Update Changelog
 
-# Runs after build.yml completes on main — at that point we know what changed.
-# Can also be triggered manually to backfill a missing entry.
+# Manual only — automatic triggering is disabled to prevent version mismatches
+# between the generated PDF and the GitHub release. Run this manually after
+# a release is published and the version is confirmed.
 on:
-  workflow_run:
-    workflows: ["📖 Build PDFs"]
-    types: [completed]
-    branches: [main]
   workflow_dispatch:
     inputs:
       version:
@@ -25,9 +22,6 @@ permissions:
 jobs:
   changelog:
     name: Prepend changelog entry
-    if: >
-      github.event_name == 'workflow_dispatch' ||
-      github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
 
     steps:

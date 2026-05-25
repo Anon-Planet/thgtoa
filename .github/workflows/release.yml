@@ -1,22 +1,17 @@
 name: 🚀 Release
 
-# Can be triggered:
-#   1. Automatically after sign.yml completes on main
-#   2. Manually, pointing at specific build/sign runs to pull artifacts from
+# Manual only — run this deliberately after build and sign are confirmed good.
+# Provide the exact version tag and the sign.yml run ID to pull artifacts from.
 on:
-  workflow_run:
-    workflows: ["🔏 Sign PDFs"]
-    types: [completed]
-    branches: [main]
   workflow_dispatch:
     inputs:
-      sign_run_id:
-        description: 'sign.yml run ID to pull signatures from'
+      version:
+        description: 'Release version tag (e.g. v1.2.4) — must not already exist'
         required: true
         type: string
-      build_run_id:
-        description: 'build.yml run ID to pull PDFs from (leave blank to use pdfs-signed from sign run)'
-        required: false
+      sign_run_id:
+        description: 'sign.yml run ID to pull signatures and PDFs from'
+        required: true
         type: string
       prerelease:
         description: 'Mark as pre-release?'
@@ -31,9 +26,6 @@ permissions:
 jobs:
   release:
     name: Publish GitHub Release
-    if: >
-      github.event_name == 'workflow_dispatch' ||
-      github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
 
     steps:
@@ -44,40 +36,22 @@ jobs:
           sparse-checkout: pgp
 
       # ------------------------------------------------------------------ #
-      #  Resolve which run IDs to pull artifacts from
-      # ------------------------------------------------------------------ #
-      - name: 🔍 Resolve run IDs
-        id: runs
-        run: |
-          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
-            SIGN_RUN="${{ inputs.sign_run_id }}"
-            BUILD_RUN="${{ inputs.build_run_id }}"
-          else
-            SIGN_RUN="${{ github.event.workflow_run.id }}"
-            BUILD_RUN=""
-          fi
-          echo "sign_run=$SIGN_RUN"   >> $GITHUB_OUTPUT
-          echo "build_run=$BUILD_RUN" >> $GITHUB_OUTPUT
-          echo "Sign run:  $SIGN_RUN"
-          echo "Build run: ${BUILD_RUN:-'(using pdfs-signed from sign run)'}"
-
-      # ------------------------------------------------------------------ #
-      #  Download artifacts
+      #  Download artifacts from the specified sign run
       # ------------------------------------------------------------------ #
       - name: 📥 Download signatures artifact
         uses: actions/download-artifact@v4
         with:
           name:         signatures
           path:         release/
-          run-id:       ${{ steps.runs.outputs.sign_run }}
+          run-id:       ${{ inputs.sign_run_id }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: 📥 Download PDFs (from sign run)
+      - name: 📥 Download signed PDFs artifact
         uses: actions/download-artifact@v4
         with:
           name:         pdfs-signed
           path:         release/
-          run-id:       ${{ steps.runs.outputs.sign_run }}
+          run-id:       ${{ inputs.sign_run_id }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: 📋 List release assets
@@ -96,7 +70,7 @@ jobs:
           echo "dark_b2=$(read_hash thgtoa-dark.pdf.b2)"          >> $GITHUB_OUTPUT
 
       # ------------------------------------------------------------------ #
-      #  VirusTotal — upload whichever PDFs are present
+      #  VirusTotal
       # ------------------------------------------------------------------ #
       - name: 🦠 Upload PDFs to VirusTotal
         id: vt
@@ -124,28 +98,34 @@ jobs:
           fi
 
       # ------------------------------------------------------------------ #
-      #  Tag + Release — auto-increment vX.Y.Z from latest semver tag
+      #  Validate explicit version input — refuse to auto-increment or
+      #  overwrite an existing tag
       # ------------------------------------------------------------------ #
-      - name: 🏷️ Generate release tag
+      - name: 🏷️ Validate release tag
         id: tag
         run: |
           git fetch --tags --quiet
+          VERSION="${{ inputs.version }}"
 
-          LATEST=$(git tag --list 'v*' --sort=-version:refname \
-            | grep -E '^v[0-9]+\.[0-9]+\.[0-9]+$' \
-            | head -1)
-          LATEST=${LATEST:-v0.0.0}
+          # Enforce vX.Y.Z format
+          if ! echo "$VERSION" | grep -qE '^v[0-9]+\.[0-9]+\.[0-9]+$'; then
+            echo "::error::Version '$VERSION' is not valid semver. Use format: v1.2.3"
+            exit 1
+          fi
 
-          MAJOR=$(echo "$LATEST" | cut -d. -f1 | tr -d 'v')
-          MINOR=$(echo "$LATEST" | cut -d. -f2)
-          PATCH=$(echo "$LATEST" | cut -d. -f3)
-          PATCH=$((PATCH + 1))
+          # Refuse to overwrite an existing tag
+          if git tag --list | grep -qx "$VERSION"; then
+            echo "::error::Tag '$VERSION' already exists. Bump the version."
+            exit 1
+          fi
 
-          TAG="v${MAJOR}.${MINOR}.${PATCH}"
-          echo "Previous tag: $LATEST → New tag: $TAG"
-          echo "tag=$TAG"  >> $GITHUB_OUTPUT
-          echo "name=$TAG" >> $GITHUB_OUTPUT
+          echo "tag=$VERSION"  >> $GITHUB_OUTPUT
+          echo "name=$VERSION" >> $GITHUB_OUTPUT
+          echo "Tag: $VERSION"
 
+      # ------------------------------------------------------------------ #
+      #  Create GitHub Release
+      # ------------------------------------------------------------------ #
       - name: 🚀 Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
@@ -180,13 +160,13 @@ jobs:
             ### #️⃣ Hashes
 
             **thgtoa.pdf** (light)
-            ```
+            ```text
             SHA-256  ${{ steps.hashes.outputs.light_sha256 }}
             BLAKE2b  ${{ steps.hashes.outputs.light_b2 }}
             ```
 
             **thgtoa-dark.pdf** (dark)
-            ```
+            ```text
             SHA-256  ${{ steps.hashes.outputs.dark_sha256 }}
             BLAKE2b  ${{ steps.hashes.outputs.dark_b2 }}
             ```

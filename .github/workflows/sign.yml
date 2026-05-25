@@ -4,10 +4,10 @@ name: 🔏 Sign PDFs
 #   1. Automatically after build.yml completes on main
 #   2. Manually, pointing at a specific build run to pull PDFs from
 on:
-  workflow_run:
-    workflows: ["📖 Build PDFs"]
-    types: [completed]
-    branches: [main]
+  # workflow_run:
+  #   workflows: ["📖 Build PDFs"]
+  #   types: [completed]
+  #   branches: [main]
   workflow_dispatch:
     inputs:
       build_run_id:
@@ -17,15 +17,15 @@ on:
 
 permissions:
   actions:  read    # download artifacts from other runs
-  contents: read
+  contents: write   # needed to commit export/ files back to the repo
 
 jobs:
   sign:
     name: Hash & Sign PDFs
     # On workflow_run, only proceed if the build actually succeeded
-    if: >
-      github.event_name == 'workflow_dispatch' ||
-      github.event.workflow_run.conclusion == 'success'
+    # if: >
+    #   github.event_name == 'workflow_dispatch' ||
+    #   github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
     outputs:
       light_sha256: ${{ steps.hashes.outputs.light_sha256 }}
@@ -39,20 +39,15 @@ jobs:
         with:
           sparse-checkout: pgp
 
-      - name: 🔑 Install GPG
-        run: |
-          sudo apt-get update -qq
-          sudo apt-get install -y gnupg
-
-      # Download PDFs from the triggering build run, or a manually specified one
+      # Download PDFs from the manually specified run ID (required for manual dispatch)
       - name: 📥 Resolve source run ID
         id: src
         run: |
-          if [ -n "${{ inputs.build_run_id }}" ]; then
-            echo "run_id=${{ inputs.build_run_id }}" >> $GITHUB_OUTPUT
-          else
-            echo "run_id=${{ github.event.workflow_run.id }}" >> $GITHUB_OUTPUT
+          if [ -z "${{ inputs.build_run_id }}" ]; then
+            echo "::error::build_run_id is required — provide the build.yml run ID to pull PDFs from."
+            exit 1
           fi
+          echo "run_id=${{ inputs.build_run_id }}" >> $GITHUB_OUTPUT
 
       - name: 📥 Download PDF artifacts
         uses: actions/download-artifact@v4
@@ -102,15 +97,19 @@ jobs:
           cat b2sums.txt
 
       # ------------------------------------------------------------------ #
-      #  GPG sign
+      #  GPG sign (maintainer-verifiable detached signatures for release)
       # ------------------------------------------------------------------ #
+      - name: 🔑 Install GPG
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y gnupg
+
       - name: 🔏 Import GPG signing key
         env:
           GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
           GPG_PASSPHRASE:  ${{ secrets.GPG_PASSPHRASE }}
         run: |
           echo "$GPG_PRIVATE_KEY" | gpg --batch --import
-          # Pre-cache passphrase to prevent interactive prompt
           echo "$GPG_PASSPHRASE" | gpg --batch --yes --passphrase-fd 0 \
             --pinentry-mode loopback --list-secret-keys
 
@@ -130,6 +129,41 @@ jobs:
           sign export/thgtoa-dark.pdf
           sign export/sha256sums.txt
           sign export/b2sums.txt
+
+      # ------------------------------------------------------------------ #
+      #  Commit export/ back to main
+      # ------------------------------------------------------------------ #
+      - name: 📦 Checkout full repo for commit
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+          path: repo
+
+      - name: 📂 Copy export files into repo
+        run: cp -v export/* repo/export/
+
+      - name: 🔏 Configure SSH commit signing
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.ACTIONS_SSH_SIGNING_KEY }}" > ~/.ssh/signing_key
+          chmod 600 ~/.ssh/signing_key
+          git config --global gpg.format ssh
+          git config --global user.signingKey ~/.ssh/signing_key
+          git config --global commit.gpgSign true
+          git config --global user.name  "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: 📤 Commit and push export/ to main
+        working-directory: repo
+        run: |
+          git add export/
+          if git diff --cached --quiet; then
+            echo "Nothing to commit — export/ is already up to date."
+          else
+            git commit -S -m "chore(export): update PDFs, hashes and signatures [skip ci]"
+            git push origin main
+          fi
 
       # ------------------------------------------------------------------ #
       #  Upload — PDFs + all signatures and hashes together

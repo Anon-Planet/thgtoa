@@ -1,3 +1,8 @@
+# 1. Push to main → build.yml runs automatically → note the run ID
+# 2. Manually trigger sign.yml with that build run ID → note the sign run ID
+# 3. Manually trigger release.yml with: version=v1.2.5, sign_run_id=<id>
+# 4. Manually trigger changelog.yml with: version=v1.2.5
+
 name: 📖 Build PDFs
 
 on:
