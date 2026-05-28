@@ -20,3 +20,11 @@ repos:
     hooks:
       - id: commitizen
         stages: [commit-msg]
+
+  - repo: local
+    hooks:
+      - id: require-commit-body
+        name: Avoid bad commits
+        language: script
+        entry: scripts/hooks/require-commit-body.sh
+        stages: [commit-msg]

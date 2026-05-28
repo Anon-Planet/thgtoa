@@ -1,10 +1,9 @@
 [tool.commitizen]
 name = "cz_conventional_commits"
 
-# Version management is handled manually via the changelog.
-# commitizen is used here only to enforce conventional commit message format.
-# -S ensures SSH signing is applied to every commit regardless of global git config state.
-extra_arguments = ["-S"]
+# enforce sign-off below as well
+extra_arguments = ["-S", "--signoff"]
 
+# harmless redundancy
 [tool.commitizen.customize]
-schema_pattern = '^(feat|feature|add|fix|bugfix|revert|security|perf|refactor|change|chore|ci|docs|style|test|build)(\(.+\))?(!)?: .{1,72}(\n.*)*$'
+schema_pattern = '^(feat|add|fix|bugfix|revert|security|perf|refactor|change|chore|ci|docs|style|test|build)(\(.+\))?(!)?: .{1,72}(\n.*)*\nSigned-off-by: .+ <.+@.+>'
