@@ -1,14 +1,12 @@
 name: 🚀 Release
 
 # Manual only — run this deliberately after build and sign are confirmed good.
-# Provide the exact version tag and the sign.yml run ID to pull artifacts from.
+# Provide the sign.yml run ID to pull artifacts from. The release tag is
+# generated automatically as release-YYYYMMDD-<short-sha> — no version input
+# needed, no semver drift possible.
 on:
   workflow_dispatch:
     inputs:
-      version:
-        description: 'Release version tag (e.g. v1.2.4) — must not already exist'
-        required: true
-        type: string
       sign_run_id:
         description: 'sign.yml run ID to pull signatures and PDFs from'
         required: true
@@ -29,7 +27,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 🛠️ Checkout (for tags and pgp/)
+      - name: 🛠️ Checkout (for pgp/)
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
@@ -66,8 +64,8 @@ jobs:
           read_hash() { cat "release/$1" 2>/dev/null || echo "(not built)"; }
           echo "light_sha256=$(read_hash thgtoa.pdf.sha256)"      >> $GITHUB_OUTPUT
           echo "dark_sha256=$(read_hash thgtoa-dark.pdf.sha256)"  >> $GITHUB_OUTPUT
-          echo "light_b2=$(read_hash thgtoa.pdf.b2)"              >> $GITHUB_OUTPUT
-          echo "dark_b2=$(read_hash thgtoa-dark.pdf.b2)"          >> $GITHUB_OUTPUT
+          echo "light_b2=$(read_hash thgtoa.pdf.b2sum)"           >> $GITHUB_OUTPUT
+          echo "dark_b2=$(read_hash thgtoa-dark.pdf.b2sum)"       >> $GITHUB_OUTPUT
 
       # ------------------------------------------------------------------ #
       #  VirusTotal
@@ -98,30 +96,18 @@ jobs:
           fi
 
       # ------------------------------------------------------------------ #
-      #  Validate explicit version input — refuse to auto-increment or
-      #  overwrite an existing tag
+      #  Generate release tag — timestamp + short SHA, always unique
       # ------------------------------------------------------------------ #
-      - name: 🏷️ Validate release tag
+      - name: 🏷️ Generate release tag
         id: tag
         run: |
-          git fetch --tags --quiet
-          VERSION="${{ inputs.version }}"
-
-          # Enforce vX.Y.Z format
-          if ! echo "$VERSION" | grep -qE '^v[0-9]+\.[0-9]+\.[0-9]+$'; then
-            echo "::error::Version '$VERSION' is not valid semver. Use format: v1.2.3"
-            exit 1
-          fi
-
-          # Refuse to overwrite an existing tag
-          if git tag --list | grep -qx "$VERSION"; then
-            echo "::error::Tag '$VERSION' already exists. Bump the version."
-            exit 1
-          fi
-
-          echo "tag=$VERSION"  >> $GITHUB_OUTPUT
-          echo "name=$VERSION" >> $GITHUB_OUTPUT
-          echo "Tag: $VERSION"
+          SHORT_SHA=$(echo "${{ github.sha }}" | cut -c1-7)
+          DATE=$(date -u +'%Y%m%d')
+          TAG="release-${DATE}-${SHORT_SHA}"
+          NAME="Release ${DATE} (${SHORT_SHA})"
+          echo "tag=$TAG"   >> $GITHUB_OUTPUT
+          echo "name=$NAME" >> $GITHUB_OUTPUT
+          echo "Tag: $TAG"
 
       # ------------------------------------------------------------------ #
       #  Create GitHub Release
@@ -151,9 +137,9 @@ jobs:
             | `b2sums.txt` | BLAKE2b checksums (both files) |
             | `thgtoa.pdf.sha256` | SHA-256 — light PDF |
             | `thgtoa-dark.pdf.sha256` | SHA-256 — dark PDF |
-            | `thgtoa.pdf.b2` | BLAKE2b — light PDF |
-            | `thgtoa-dark.pdf.b2` | BLAKE2b — dark PDF |
-            | `*.sig` | GPG detached signatures (ASCII armor) |
+            | `thgtoa.pdf.b2sum` | BLAKE2b — light PDF |
+            | `thgtoa-dark.pdf.b2sum` | BLAKE2b — dark PDF |
+            | `*.asc` | GPG detached signatures (ASCII armor) |
 
             ---
 
@@ -180,12 +166,12 @@ jobs:
             gpg --import pgp/anonymousplanet-release.asc
 
             # Verify PDFs
-            gpg --verify thgtoa.pdf.sig      thgtoa.pdf
-            gpg --verify thgtoa-dark.pdf.sig thgtoa-dark.pdf
+            gpg --verify thgtoa.pdf.asc      thgtoa.pdf
+            gpg --verify thgtoa-dark.pdf.asc thgtoa-dark.pdf
 
             # Verify hash files
-            gpg --verify sha256sums.txt.sig sha256sums.txt
-            gpg --verify b2sums.txt.sig     b2sums.txt
+            gpg --verify sha256sums.txt.asc sha256sums.txt
+            gpg --verify b2sums.txt.asc     b2sums.txt
             ```
 
             ---
@@ -204,9 +190,9 @@ jobs:
             release/b2sums.txt
             release/thgtoa.pdf.sha256
             release/thgtoa-dark.pdf.sha256
-            release/thgtoa.pdf.b2
-            release/thgtoa-dark.pdf.b2
-            release/thgtoa.pdf.sig
-            release/thgtoa-dark.pdf.sig
-            release/sha256sums.txt.sig
-            release/b2sums.txt.sig
+            release/thgtoa.pdf.b2sum
+            release/thgtoa-dark.pdf.b2sum
+            release/thgtoa.pdf.asc
+            release/thgtoa-dark.pdf.asc
+            release/sha256sums.txt.asc
+            release/b2sums.txt.asc

@@ -1,14 +1,14 @@
 name: 📝 Update Changelog
 
-# Manual only — automatic triggering is disabled to prevent version mismatches
-# between the generated PDF and the GitHub release. Run this manually after
-# a release is published and the version is confirmed.
+# Manual only — run after a release is published. Provide the exact version
+# string (e.g. v1.2.4) to prepend to the changelog. Version is required to
+# prevent silent auto-increment drift from release tags.
 on:
   workflow_dispatch:
     inputs:
       version:
-        description: 'Version string (e.g. v1.2.4) — leave blank to auto-increment'
-        required: false
+        description: 'Version string to record (e.g. v1.2.4) — required'
+        required: true
         type: string
       dry_run:
         description: 'Dry run — print entry without committing'
@@ -40,7 +40,7 @@ jobs:
       - name: 📝 Generate and prepend changelog entry
         env:
           DRY_RUN:         ${{ inputs.dry_run || 'false' }}
-          MANUAL_VERSION:  ${{ inputs.version || '' }}
+          MANUAL_VERSION:  ${{ inputs.version }}
           GH_SHA:          ${{ github.sha }}
           GH_REF:          ${{ github.ref_name }}
           TRIGGERING_SHA:  ${{ github.event.workflow_run.head_sha || github.sha }}

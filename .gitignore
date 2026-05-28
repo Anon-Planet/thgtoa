@@ -21,9 +21,9 @@ _site/
 _site_test/
 build/
 
-# Export directory - but track hash files and signatures
+# Export directory — track only hashes and signatures, not the PDFs themselves
 export/thgtoa.pdf.sha256
 export/thgtoa-dark.pdf.sha256
-export/thgtoa.pdf.b2
-export/thgtoa-dark.pdf.b2
-*.sig
+export/thgtoa.pdf.b2sum
+export/thgtoa-dark.pdf.b2sum
+export/*.asc

@@ -1,6 +1,6 @@
 # Developer Guide
 
-This page covers everything you need to contribute to the project, run the build pipeline locally, configure GitHub secrets, and cut a signed release.
+This page covers everything you need to contribute to the project, run the build pipeline locally, configure GitHub Secrets, and publish a release.
 
 ---
 
@@ -49,27 +49,29 @@ You also need **Google Chrome** or **Microsoft Edge** installed for the light-mo
 
 ## Repository layout
 
-```bash
+```
 .github/
   workflows/
-    build.yml        ← builds PDFs, uploads artifact
-    sign.yml         ← hashes + GPG signs, uploads signatures artifact
-    release.yml      ← publishes GitHub Release with all assets
-    changelog.yml    ← auto-updates docs/changelog/index.md
-    publish.yml      ← deploys MkDocs site to GitHub Pages
+    build.yml             ← builds PDFs, uploads artifact
+    sign.yml              ← hashes + GPG signs, uploads signatures artifact
+    release.yml           ← publishes GitHub Release with all assets
+    changelog.yml         ← prepends a new entry to docs/changelog/index.md
+    publish.yml           ← deploys MkDocs site to GitHub Pages
+    build-sign-release.yml← DEPRECATED — fails on trigger, kept for reference
 docs/
-  guide/index.md     ← the guide (single Markdown file)
-  changelog/         ← release notes
-  code/              ← this page
-export/              ← PDF output (gitignored except .sha256, .b2, .sig)
-pgp/                 ← public signing keys
+  guide/index.md          ← the guide (single Markdown file)
+  changelog/              ← release notes
+  code/                   ← this page
+export/                   ← PDF output (PDFs gitignored; .sha256, .b2sum, .asc tracked)
+pgp/                      ← public signing keys
 scripts/
-  build_guide_pdf.py ← MkDocs + Chromium PDF builder
-  convert.py         ← pixel-based dark mode PDF converter
-  tag_release.py     ← interactive signed-tag helper for maintainers
-  update_changelog.py← auto-generates changelog entries from git log
-  setup_workflow.py  ← GitHub Secrets setup assistant
-  verify_pdf.py      ← signature verification helper
+  build_guide_pdf.py      ← MkDocs + Chromium PDF builder
+  convert.py              ← pixel-based dark mode PDF converter
+  update_changelog.py     ← auto-generates changelog entries from git log
+  setup_workflow.py       ← GitHub Secrets setup assistant
+  verify_pdf.py           ← signature verification helper
+  archived/
+    tag_release.py        ← ARCHIVED — GPG tag helper (not used in current flow)
 ```
 
 ---
@@ -116,26 +118,41 @@ Opens at `http://127.0.0.1:8000`.
 
 ---
 
-## Pushing changes
+## CI/CD pipeline overview
 
-The pipeline triggers automatically when you push to `main` — no manual steps are needed for normal contributions.
+The pipeline is fully manual after the initial build — no step automatically triggers the next. This prevents version mismatches between what was built, what was signed, and what gets released.
 
-```bash
-push to main
-    │
-    ▼
-build.yml          builds thgtoa.pdf + thgtoa-dark.pdf
-    │ (workflow_run on success)
-    ▼
-sign.yml           SHA-256 + BLAKE2b hashes, GPG detached signatures
-    │ (workflow_run on success)
-    ▼
-release.yml        VirusTotal scan → tagged GitHub Release
-    │
-changelog.yml      prepends new ## [vX.Y.Z] entry → commits back to main
+```
+push to main  (or manual trigger)
+      │
+      ▼
+  build.yml
+  Builds thgtoa.pdf + thgtoa-dark.pdf.
+  Uploads artifact: pdfs
+  Note the run ID.
+      │
+      │  ← manually trigger sign.yml with the build run ID
+      ▼
+  sign.yml
+  Downloads pdfs artifact. Hashes (SHA-256 + BLAKE2b) and GPG-signs
+  all files. Commits export/ back to main. Uploads artifacts:
+  signatures, pdfs-signed
+  Note the run ID.
+      │
+      │  ← manually trigger release.yml with the sign run ID
+      ▼
+  release.yml
+  Downloads signatures + pdfs-signed artifacts. Runs VirusTotal.
+  Creates GitHub Release tagged release-YYYYMMDD-<short-sha>.
+      │
+      │  ← manually trigger changelog.yml with the version string
+      ▼
+  changelog.yml
+  Runs update_changelog.py, prepends a new ## [vX.Y.Z] entry,
+  commits back to main.
 ```
 
-Each stage runs independently and can be re-triggered manually from the Actions tab. If the build succeeds but signing fails (e.g. an expired key), you can re-run only `sign.yml` pointing at the existing build artifact without rebuilding the PDFs.
+Each stage is independent. If signing fails (e.g. an expired key), re-run only `sign.yml` pointing at the existing build artifact — no need to rebuild the PDFs.
 
 !!! warning "Before you push"
 
@@ -145,16 +162,127 @@ Each stage runs independently and can be re-triggered manually from the Actions 
 
 ---
 
+## Release process (step by step)
+
+### 1. Trigger a build
+
+Push to `main` — `build.yml` runs automatically when `docs/`, `mkdocs.yml`, or `scripts/` change. You can also trigger it manually from **Actions → Build PDFs → Run workflow**.
+
+Once it completes successfully, **note the run ID** from the URL or the Actions list.
+
+---
+
+### 2. Sign the PDFs
+
+Go to **Actions → Sign PDFs → Run workflow**.
+
+| Input | Value |
+|-------|-------|
+| `build_run_id` | The run ID from step 1 |
+
+`sign.yml` will:
+
+- Download the PDFs artifact from the build run
+- Compute SHA-256 and BLAKE2b hashes, writing `thgtoa.pdf.sha256`, `thgtoa.pdf.b2sum`, `sha256sums.txt`, `b2sums.txt`, and the dark equivalents
+- GPG-sign all PDFs and hash files, writing `.asc` detached signature files
+- Commit the updated `export/` directory back to `main`
+- Upload two artifacts: `signatures` and `pdfs-signed`
+
+Once it completes successfully, **note the run ID**.
+
+---
+
+### 3. Publish the release
+
+Go to **Actions → Release → Run workflow**.
+
+| Input | Value |
+|-------|-------|
+| `sign_run_id` | The run ID from step 2 |
+| `prerelease` | `false` for a normal release |
+
+`release.yml` will:
+
+- Download `signatures` and `pdfs-signed` artifacts from the sign run
+- Upload both PDFs to VirusTotal
+- Auto-generate a release tag in the format `release-YYYYMMDD-<short-sha>` (e.g. `release-20260527-abc1234`)
+- Create a GitHub Release with all PDFs, hash files, and signatures attached, and the VirusTotal report URLs in the body
+
+No version number needs to be chosen at this step — the tag is derived from the date and commit SHA, so it is always unique and always traceable.
+
+---
+
+### 4. Update the changelog
+
+Go to **Actions → Update Changelog → Run workflow**.
+
+| Input | Value |
+|-------|-------|
+| `version` | The human-readable version string, e.g. `v1.2.4` |
+| `dry_run` | `true` to preview without committing |
+
+`changelog.yml` runs `scripts/update_changelog.py`, which:
+
+- Reads git log since the last `## [vX.Y.Z]` heading in the changelog
+- Categorises commits into Added / Changed / Fixed using conventional-commit prefixes
+- Prepends a new `## [version]` admonition block to `docs/changelog/index.md`
+- Commits the result back to `main`
+
+The version string is the only human decision in the release process. It goes into the changelog only — it does not affect the release tag.
+
+!!! tip "Previewing the changelog entry"
+    Run with `dry_run: true` first to review the generated entry before it is committed.
+
+---
+
+## Release tag format
+
+Release tags use the format `release-YYYYMMDD-<short-sha>`, for example:
+
+```
+release-20260527-abc1234
+```
+
+This format is always unique, requires no version decision at release time, and is directly traceable to the commit that was built. The version string (e.g. `v1.2.4`) is a separate, human-assigned label that lives only in the changelog.
+
+---
+
+## Commit message format
+
+All commits must follow the [Conventional Commits](https://www.conventionalcommits.org) format. This is enforced by the `commitizen` pre-commit hook.
+
+```
+<type>(<scope>): <description>
+```
+
+Accepted types and their changelog bucket:
+
+| Type | Bucket |
+|------|--------|
+| `feat`, `feature`, `add` | Added |
+| `fix`, `bugfix`, `revert`, `security` | Fixed |
+| `perf`, `refactor`, `change`, `chore`, `ci`, `docs`, `style`, `test`, `build` | Changed |
+
+Examples:
+
+```bash
+feat: add dark-mode PDF export
+fix(scripts): handle locked PDF on Windows
+docs: update developer workflow guide
+chore(ci): pin Chrome version to 120
+```
+
+---
+
 ## GitHub Secrets
 
-These must be configured in **Settings → Secrets and variables → Actions** before the pipeline will fully work. The build step requires no secrets; signing and releasing require all of them.
+Configure these in **Settings → Secrets and variables → Actions** before the pipeline will fully work. The build step requires no secrets; signing and releasing require all of them.
 
 ### `GPG_PRIVATE_KEY`
 
 The ASCII-armored private key used to sign PDFs and hash files.
 
 ```bash
-# Export the release signing key
 gpg --armor --export-secret-keys C3023DBEA3FB38C438BA1EEDCEC60AEDE8B992A2
 ```
 
@@ -163,111 +291,39 @@ Copy the entire output (including `-----BEGIN PGP PRIVATE KEY BLOCK-----` and th
 !!! danger "Key security"
     This is the release signing key. Only repository admins should have access to it. Never commit it to the repository or share it outside of GitHub Secrets.
 
----
-
 ### `GPG_PASSPHRASE`
 
 The passphrase protecting the private key above. Must match exactly — no trailing newline.
 
----
+### `ACTIONS_SSH_SIGNING_KEY`
+
+An SSH private key used by `sign.yml` to sign the commit that pushes `export/` back to `main`. Generate a dedicated key for this:
+
+```bash
+ssh-keygen -t ed25519 -C "github-actions signing key" -f actions_signing_key
+```
+
+Add the **private key** as the `ACTIONS_SSH_SIGNING_KEY` secret, and the **public key** to the repository's Deploy Keys (Settings → Deploy Keys) with write access.
 
 ### `VT_API_KEY`
 
-A [VirusTotal](https://www.virustotal.com) API key with file upload permissions. Used by `release.yml` to scan both PDFs before publishing the release.
-
-Get one by creating a free account at `virustotal.com` → API key under your profile. The free tier allows 4 lookups/minute and 500/day, which is sufficient for the two PDFs per release.
-
----
+A [VirusTotal](https://www.virustotal.com) API key with file upload permissions. Used by `release.yml` to scan both PDFs before publishing. Get one by creating a free account at `virustotal.com` → API key under your profile. The free tier (4 lookups/minute, 500/day) is sufficient.
 
 ### `CHANGELOG_PAT`
 
-A GitHub **Personal Access Token** with `contents: write` scope on this repository.
+A GitHub Personal Access Token with `contents: write` scope on this repository. Needed because `changelog.yml` commits back to `main` — commits made with the default `GITHUB_TOKEN` do not trigger further workflow runs (GitHub loop-prevention). A PAT bypasses this. If absent, falls back to `GITHUB_TOKEN` — the commit still happens, it just won't trigger downstream workflows.
 
-**Why it's needed:** `changelog.yml` commits back to `main` after each build. Commits made with the default `GITHUB_TOKEN` do not trigger further workflow runs (GitHub's loop-prevention policy). A PAT bypasses this so the changelog commit itself can be picked up by downstream workflows if needed.
-
-**Creating one:**
-
-1. Go to GitHub → Settings → Developer settings → Personal access tokens → Fine-grained tokens
-2. Set repository access to **Only select repositories** → this repo
-3. Under Permissions → Repository permissions, set **Contents** to **Read and write**
-4. Set an expiration and add it as the `CHANGELOG_PAT` secret
-
-If this secret is absent, `changelog.yml` falls back to `GITHUB_TOKEN` — the commit still happens, it just won't trigger further workflows.
-
----
+**Creating one:** GitHub → Settings → Developer settings → Personal access tokens → Fine-grained tokens → set Contents to Read and write for this repo only.
 
 ### Secrets summary
 
 | Secret | Required by | What happens if missing |
 |--------|------------|------------------------|
-| `GPG_PRIVATE_KEY` | `sign.yml` | Signing step fails — no `.sig` files produced |
+| `GPG_PRIVATE_KEY` | `sign.yml` | Signing step fails — no `.asc` files produced |
 | `GPG_PASSPHRASE` | `sign.yml` | GPG import succeeds but signing fails |
+| `ACTIONS_SSH_SIGNING_KEY` | `sign.yml` | Export commit is unsigned (may fail if branch protection requires signed commits) |
 | `VT_API_KEY` | `release.yml` | VirusTotal step fails — release is not published |
-| `CHANGELOG_PAT` | `changelog.yml` | Falls back to `GITHUB_TOKEN` — changelog still updates, but commit won't trigger downstream workflows |
-
----
-
-## Cutting a release
-
-Releases are tagged manually by maintainers. The `tag_release.py` script handles everything interactively.
-
-### Requirements
-
-- Your GPG keyring must contain the release signing key (`C302 3DBE A3FB 38C4 38BA  1EED CEC6 0AED E8B9 92A2`)
-- The working tree must be clean
-- You must be on the `main` branch
-- A `## [vX.Y.Z]` entry must exist in `docs/changelog/index.md` for the version you are tagging
-
-### Import the release key (first time only)
-
-```bash
-gpg --import pgp/anonymousplanet-release.asc
-```
-
-### Run the release tagger
-
-```bash
-python scripts/tag_release.py
-```
-
-The script will:
-
-1. Check the working tree is clean and you are on `main`
-2. Detect the latest tag and propose the next patch version
-3. Pull the matching changelog entry and format it as the tag message
-4. Show you the full tag message for review
-5. Ask for confirmation before creating anything
-6. Create a GPG-signed annotated tag with `git tag -s`
-7. Verify the signature
-8. Print the push command
-
-To specify a version explicitly:
-
-```bash
-python scripts/tag_release.py --version v1.2.4
-```
-
-To preview without creating the tag:
-
-```bash
-python scripts/tag_release.py --dry-run
-```
-
-To use a different signing key:
-
-```bash
-python scripts/tag_release.py --key <fingerprint>
-```
-
-### Push the tag
-
-```bash
-git push origin v1.2.4
-```
-
-### Trigger the release workflow
-
-Pushing a tag does **not** automatically trigger `release.yml` (it listens to `workflow_run` from `sign.yml`, not tag pushes). After pushing the tag, go to **Actions → Release → Run workflow** and paste the most recent `sign.yml` run ID to publish the GitHub Release.
+| `CHANGELOG_PAT` | `changelog.yml` | Falls back to `GITHUB_TOKEN` — changelog updates but commit won't trigger downstream workflows |
 
 ---
 
@@ -280,12 +336,12 @@ Anyone can verify the authenticity of a release download.
 gpg --import pgp/anonymousplanet-release.asc
 
 # Verify the PDFs
-gpg --verify thgtoa.pdf.sig      thgtoa.pdf
-gpg --verify thgtoa-dark.pdf.sig thgtoa-dark.pdf
+gpg --verify thgtoa.pdf.asc      thgtoa.pdf
+gpg --verify thgtoa-dark.pdf.asc thgtoa-dark.pdf
 
-# Verify the hash files themselves
-gpg --verify sha256sums.txt.sig sha256sums.txt
-gpg --verify b2sums.txt.sig     b2sums.txt
+# Verify the hash files
+gpg --verify sha256sums.txt.asc sha256sums.txt
+gpg --verify b2sums.txt.asc     b2sums.txt
 
 # Check the PDF hashes match
 sha256sum -c sha256sums.txt
@@ -294,7 +350,7 @@ b2sum     -c b2sums.txt
 
 A successful verify looks like:
 
-```bash
+```
 gpg: Signature made ...
 gpg: Good signature from "Anonymous Planet (Release) ..."
 ```
@@ -304,22 +360,28 @@ gpg: Good signature from "Anonymous Planet (Release) ..."
 ## Troubleshooting
 
 **`cairosvg` missing during MkDocs build**
-Install the imaging extras: `pip install "mkdocs-material[imaging]"`. This is required by the `social` plugin.
+Install the imaging extras: `pip install "mkdocs-material[imaging]"`. Required by the `social` plugin.
 
 **`KeyError: 'JPEG'` in convert.py**
-Pillow needs libjpeg for RGB→PDF encoding. The script works around this by quantizing to palette mode before saving, so this error should not appear with the current code. If it does, reinstall Pillow after installing libjpeg: `sudo apt install libjpeg-dev && pip install --force-reinstall pillow`.
+Pillow needs libjpeg. Reinstall after installing the system lib: `sudo apt install libjpeg-dev && pip install --force-reinstall pillow`.
 
 **`qpdf: can't find PDF header`**
-An older version of `convert.py` tried to pass PNG files to qpdf. Make sure you are running the current version — qpdf only accepts PDF inputs to `--pages`.
+Ensure you are on the current version of `convert.py` — qpdf only accepts PDF inputs, not PNG.
 
 **GPG signing fails on CI with `No secret key`**
-The `GPG_PRIVATE_KEY` secret is missing or malformed. Re-export with `gpg --armor --export-secret-keys <fingerprint>` and paste the full block including the header and footer lines.
+The `GPG_PRIVATE_KEY` secret is missing or malformed. Re-export with `gpg --armor --export-secret-keys <fingerprint>` and paste the full block including header and footer lines.
 
 **GPG signing fails with `Bad passphrase`**
-The `GPG_PASSPHRASE` secret has a trailing space or newline. Paste it again carefully with no surrounding whitespace.
+The `GPG_PASSPHRASE` secret has a trailing space or newline. Paste it again with no surrounding whitespace.
 
 **`release.yml` fails on VirusTotal**
-The `VT_API_KEY` is missing, invalid, or over the rate limit (500 requests/day on the free tier). Check the secret and re-run the workflow after a few minutes.
+The `VT_API_KEY` is missing, invalid, or over the rate limit (500 requests/day on the free tier). Check the secret and re-run after a few minutes.
+
+**`sign.yml` fails downloading PDF artifact**
+The `build_run_id` is wrong, or the artifact has expired (90-day retention). Trigger a new build and use the fresh run ID.
+
+**Changelog already contains version X**
+`update_changelog.py` will error if `MANUAL_VERSION` is set to a version already in the changelog. Choose the next version string.
 
 **Footnote warnings from MkDocs (`link '#fnref:N' has no anchor`)**
-A footnote definition `[^N]:` exists without a matching inline citation `[^N]` in the body text. Add the citation where it belongs in the guide, or remove the orphaned definition.
+A footnote definition `[^N]:` exists without a matching inline citation. Add the citation or remove the orphaned definition.

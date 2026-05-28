@@ -1,9 +1,10 @@
 [tool.commitizen]
 name = "cz_conventional_commits"
-version_scheme = "semver"
-tag_format = "v$version"
-update_changelog_on_bump = false
-major_version_zero = false
+
+# Version management is handled manually via the changelog.
+# commitizen is used here only to enforce conventional commit message format.
+# -S ensures SSH signing is applied to every commit regardless of global git config state.
+extra_arguments = ["-S"]
 
 [tool.commitizen.customize]
 schema_pattern = '^(feat|feature|add|fix|bugfix|revert|security|perf|refactor|change|chore|ci|docs|style|test|build)(\(.+\))?(!)?: .{1,72}(\n.*)*$'

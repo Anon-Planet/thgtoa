@@ -2,14 +2,18 @@
 """Auto-generate and prepend a changelog entry to docs/changelog/index.md.
 
 Called by .github/workflows/changelog.yml. Reads git log since the last
-changelog version tag, categorises commits by conventional-commit prefix,
+changelog version, categorises commits by conventional-commit prefix,
 and prepends a new ## [vX.Y.Z] section in the MkDocs admonition format used
 by the rest of the file.
 
-Environment variables (all optional — reasonable defaults apply):
-  MANUAL_VERSION   Override the auto-incremented version string.
+Environment variables:
+  MANUAL_VERSION   Version string to record (required when run from CI).
+                   Falls back to auto-increment from the changelog for local runs.
   TRIGGERING_SHA   The commit SHA that triggered this run (used as range end).
   DRY_RUN          If "true", print the entry and exit without writing.
+
+Note: version is sourced from the changelog file, not from git tags. Git tags
+are no longer used as the version authority. The changelog is the source of truth.
 """
 
 from __future__ import annotations
@@ -17,7 +21,6 @@ from __future__ import annotations
 import os
 import re
 import subprocess
-import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -52,15 +55,6 @@ def run(cmd: list[str]) -> str:
     return result.stdout.strip()
 
 
-def latest_version_tag() -> str | None:
-    """Return the most recent vX.Y.Z tag reachable from HEAD, or None."""
-    out = run(["git", "tag", "--sort=-version:refname", "--list", "v*"])
-    for line in out.splitlines():
-        if re.match(r"^v\d+\.\d+\.\d+", line):
-            return line
-    return None
-
-
 def auto_increment_version(current: str | None) -> str:
     """Bump the patch number of the current version, or default to v1.0.0."""
     if not current:
@@ -73,7 +67,11 @@ def auto_increment_version(current: str | None) -> str:
 
 
 def version_from_changelog() -> str | None:
-    """Parse the most recent ## [vX.Y.Z] heading from the changelog file."""
+    """Parse the most recent ## [vX.Y.Z] heading from the changelog file.
+
+    This is the primary version source — the changelog is the authority,
+    not git tags.
+    """
     if not CHANGELOG.exists():
         return None
     for line in CHANGELOG.read_text(encoding="utf-8").splitlines():
@@ -86,22 +84,17 @@ def version_from_changelog() -> str | None:
 def commits_since(ref: str | None, until: str) -> list[str]:
     """Return one-line commit messages between ref and until (exclusive/inclusive).
 
-    When no ref is given (no prior tag exists) we fall back to the merge-base
-    between HEAD and origin/main rather than walking the entire history, which
-    would otherwise dump every commit ever made into the changelog.
+    When no ref is given we fall back to the merge-base between HEAD and
+    origin/main to avoid dumping the entire history into the changelog.
     """
     if ref:
         log_range = f"{ref}..{until}"
     else:
-        # No previous tag — scope to commits not yet on origin/main
-        merge_base = run(
-            ["git", "merge-base", "HEAD", "origin/main"], check=False
-        ).stdout.strip()
+        merge_base = run(["git", "merge-base", "HEAD", "origin/main"])
         if merge_base:
             log_range = f"{merge_base}..{until}"
         else:
             # Truly brand new repo with no remote — limit to last 50 commits
-            # to avoid dumping the whole history
             log_range = f"-50 {until}"
     out = run(["git", "log", "--pretty=format:%s", log_range])
     return [line.strip() for line in out.splitlines() if line.strip()]
@@ -111,10 +104,9 @@ def categorise(messages: list[str]) -> dict[str, list[str]]:
     """Sort commit messages into Added / Changed / Fixed buckets."""
     buckets: dict[str, list[str]] = {b: [] for b in BUCKET_ORDER}
 
-    # Patterns that are never useful in a human-readable changelog
     NOISE = re.compile(
         r"""
-        \[skip\ ci\]                    # CI skip marker
+        \[skip\ ci\]                     # CI skip marker
         | ^Merge\ (pull\ request|branch) # merge commits
         | ^chore:\ bump                  # version bump chores
         | update\ changelog              # self-referential
@@ -133,11 +125,9 @@ def categorise(messages: list[str]) -> dict[str, list[str]]:
     )
 
     for msg in messages:
-        # Skip noise
         if NOISE.search(msg):
             continue
 
-        # Strip conventional-commit prefix to get the plain description
         m = re.match(r"^(\w+)(?:\([^)]+\))?!?:\s*(.+)$", msg)
         if m:
             prefix = m.group(1).lower()
@@ -147,7 +137,6 @@ def categorise(messages: list[str]) -> dict[str, list[str]]:
             description = msg
             bucket = "Changed"
 
-        # Capitalise first letter
         description = description[0].upper() + description[1:] if description else description
         buckets[bucket].append(description)
 
@@ -165,7 +154,7 @@ def format_admonition(bucket: str, items: list[str]) -> str:
 def build_entry(version: str, buckets: dict[str, list[str]], sha: str) -> str:
     date = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     lines = [f"## [{version}]", ""]
-    lines.append(f'!!! Note "Meta"')
+    lines.append('!!! Note "Meta"')
     lines.append("")
     lines.append(f"    - Released {date} from [`{sha[:7]}`](https://github.com/Anon-Planet/thgtoa/commit/{sha})")
     lines.append("")
@@ -174,7 +163,6 @@ def build_entry(version: str, buckets: dict[str, list[str]], sha: str) -> str:
         if buckets.get(bucket):
             lines.append(format_admonition(bucket, buckets[bucket]))
 
-    # If no commits were categorised, add a placeholder
     if not any(buckets[b] for b in BUCKET_ORDER):
         lines.append('!!! Note "Changed"')
         lines.append("")
@@ -188,10 +176,8 @@ def prepend_entry(entry: str) -> None:
     """Insert the new entry after the # Release Notes heading."""
     content = CHANGELOG.read_text(encoding="utf-8")
 
-    # Find the first ## heading and insert before it
     insert_at = content.find("\n## ")
     if insert_at == -1:
-        # No existing version section — append after the header block
         content = content.rstrip() + "\n\n" + entry + "\n"
     else:
         content = content[: insert_at + 1] + entry + "\n" + content[insert_at + 1 :]
@@ -210,13 +196,11 @@ def main() -> int:
     manual_version = os.environ.get("MANUAL_VERSION", "").strip()
     triggering_sha = os.environ.get("TRIGGERING_SHA", "HEAD").strip() or "HEAD"
 
-    # Determine version
-    last_tag      = latest_version_tag()
-    last_cl_ver   = version_from_changelog()
-    base_version  = last_tag or last_cl_ver
-    new_version   = manual_version or auto_increment_version(base_version)
+    # Version authority: MANUAL_VERSION (required in CI) → changelog → auto-increment.
+    # Git tags are intentionally not consulted.
+    last_cl_ver = version_from_changelog()
+    new_version = manual_version or auto_increment_version(last_cl_ver)
 
-    print(f"Last tag:         {last_tag or '(none)'}")
     print(f"Last CL version:  {last_cl_ver or '(none)'}")
     print(f"New version:      {new_version}")
     print(f"Triggering SHA:   {triggering_sha}")
@@ -225,8 +209,13 @@ def main() -> int:
         print(f"Changelog already contains {new_version} — nothing to do.")
         return 0
 
-    # Collect commits since the last tag (or all commits if no tag)
-    messages = commits_since(last_tag, triggering_sha)
+    if already_has_version(new_version) and manual_version:
+        print(f"::error::Changelog already contains {new_version}. Choose a different version.")
+        return 1
+
+    # Collect commits since the last changelog version (using it as a git ref
+    # is a best-effort — if the tag doesn't exist, commits_since handles it gracefully).
+    messages = commits_since(last_cl_ver, triggering_sha)
     print(f"Commits found:    {len(messages)}")
     for m in messages:
         print(f"  {m}")

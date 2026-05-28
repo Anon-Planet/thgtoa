@@ -1,218 +1,25 @@
+name: 🗑️ DEPRECATED — Build & Sign & Release (combined)
+
 # DEPRECATED — replaced by build.yml, sign.yml, and release.yml
-# This file is kept temporarily so in-flight runs are not broken.
-#
-# name: 📖 Build & Sign PDFs
+# This workflow is disabled. It is kept only as a reference until the
+# split workflows have been confirmed stable in production.
+# Do not trigger this workflow.
 
 on:
-  workflow_dispatch:  # manual only — no automatic triggers (deprecated)
-
-permissions:
-  contents: write
-  id-token: write
+  workflow_dispatch:
+    inputs:
+      _disabled:
+        description: 'This workflow is deprecated. Use build.yml → sign.yml → release.yml instead.'
+        required: false
+        type: string
 
 jobs:
-  build-sign-release:
-    name: Build, Sign & Release PDFs
+  noop:
+    name: Deprecated — no-op
     runs-on: ubuntu-latest
     steps:
-      - name: 🛠️ Checkout
-        uses: actions/checkout@v4
-
-      - name: 🐍 Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.13"
-
-      - name: 📦 Install Python dependencies
-        run: pip install mkdocs-material pillow numpy
-
-      - name: 🖼️ Install poppler (pdftoppm) and qpdf
+      - name: ❌ Workflow is deprecated
         run: |
-          sudo apt-get update
-          sudo apt-get install -y poppler-utils qpdf
-
-      - name: Setup Chrome
-        uses: browser-actions/setup-chrome@v2
-        with:
-          chrome-version: 120
-          install-dependencies: true
-          install-chromedriver: true
-
-      - name: 🔑 Install GPG tools
-        run: sudo apt-get install -y gnupg
-
-      # ------------------------------------------------------------------ #
-      #  Build PDFs
-      # ------------------------------------------------------------------ #
-      - name: 🖨️ Build PDFs
-        env:
-          CI: true
-        run: python scripts/build_guide_pdf.py --${{ inputs.build_mode || 'both' }}
-
-      # ------------------------------------------------------------------ #
-      #  Hash (SHA-256 + BLAKE2b)
-      # ------------------------------------------------------------------ #
-      - name: #️⃣ Hash PDFs
-        id: hashes
-        run: |
-          mkdir -p export
-
-          sha256sum export/thgtoa.pdf      | awk '{print $1}' > export/thgtoa.pdf.sha256
-          sha256sum export/thgtoa-dark.pdf | awk '{print $1}' > export/thgtoa-dark.pdf.sha256
-          b2sum     export/thgtoa.pdf      | awk '{print $1}' > export/thgtoa.pdf.b2
-          b2sum     export/thgtoa-dark.pdf | awk '{print $1}' > export/thgtoa-dark.pdf.b2
-
-          # Also write combined human-readable files
-          sha256sum export/thgtoa.pdf export/thgtoa-dark.pdf > export/sha256sums.txt
-          b2sum     export/thgtoa.pdf export/thgtoa-dark.pdf > export/b2sums.txt
-
-          # Expose hashes as step outputs for the release body
-          echo "light_sha256=$(cat export/thgtoa.pdf.sha256)"      >> $GITHUB_OUTPUT
-          echo "dark_sha256=$(cat export/thgtoa-dark.pdf.sha256)"  >> $GITHUB_OUTPUT
-          echo "light_b2=$(cat export/thgtoa.pdf.b2)"              >> $GITHUB_OUTPUT
-          echo "dark_b2=$(cat export/thgtoa-dark.pdf.b2)"          >> $GITHUB_OUTPUT
-
-      # ------------------------------------------------------------------ #
-      #  GPG sign (detached .sig for each PDF + each hash file)
-      # ------------------------------------------------------------------ #
-      - name: 🔏 Import GPG key
-        env:
-          GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
-          GPG_PASSPHRASE:  ${{ secrets.GPG_PASSPHRASE }}
-        run: |
-          echo "$GPG_PRIVATE_KEY" | gpg --batch --import
-          # Pre-cache the passphrase so signing doesn't prompt
-          echo "$GPG_PASSPHRASE" | gpg --batch --yes --passphrase-fd 0 \
-            --pinentry-mode loopback --list-secret-keys
-
-      - name: 🔏 GPG sign PDFs and hash files
-        env:
-          GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
-        run: |
-          sign() {
-            echo "$GPG_PASSPHRASE" | gpg --batch --yes --passphrase-fd 0 \
-              --pinentry-mode loopback \
-              --detach-sign --armor --output "${1}.sig" "$1"
-          }
-          sign export/thgtoa.pdf
-          sign export/thgtoa-dark.pdf
-          sign export/sha256sums.txt
-          sign export/b2sums.txt
-
-      # ------------------------------------------------------------------ #
-      #  VirusTotal
-      # ------------------------------------------------------------------ #
-      - name: 🦠 Upload PDFs to VirusTotal
-        id: vt
-        uses: crazy-max/ghaction-virustotal@v5
-        with:
-          vt_api_key: ${{ secrets.VT_API_KEY }}
-          files: |
-            export/thgtoa.pdf
-            export/thgtoa-dark.pdf
-
-      - name: 🔗 Build VT report URLs
-        id: vt_urls
-        run: |
-          light_hash=$(cat export/thgtoa.pdf.sha256)
-          dark_hash=$(cat export/thgtoa-dark.pdf.sha256)
-          echo "light_vt=https://www.virustotal.com/gui/file/${light_hash}" >> $GITHUB_OUTPUT
-          echo "dark_vt=https://www.virustotal.com/gui/file/${dark_hash}"   >> $GITHUB_OUTPUT
-
-      # ------------------------------------------------------------------ #
-      #  Create GitHub Release
-      # ------------------------------------------------------------------ #
-      - name: 🏷️ Generate release tag
-        id: tag
-        run: |
-          TAG="release-$(date -u +'%Y%m%d-%H%M%S')"
-          echo "tag=$TAG" >> $GITHUB_OUTPUT
-          echo "name=Release $(date -u +'%Y-%m-%d %H:%M UTC')" >> $GITHUB_OUTPUT
-
-      - name: 🚀 Create GitHub Release
-        uses: softprops/action-gh-release@v2
-        with:
-          tag_name: ${{ steps.tag.outputs.tag }}
-          name:     ${{ steps.tag.outputs.name }}
-          body: |
-            ## 📖 The Hitchhiker's Guide to Online Anonymity
-
-            Built from commit ${{ github.sha }} on `${{ github.ref_name }}`.
-
-            ---
-
-            ### 📄 Files
-
-            | File | Description |
-            |------|-------------|
-            | `thgtoa.pdf` | Light mode PDF |
-            | `thgtoa-dark.pdf` | Dark mode PDF (hacker theme) |
-            | `sha256sums.txt` | SHA-256 checksums |
-            | `b2sums.txt` | BLAKE2b checksums |
-            | `*.sig` | GPG detached signatures (ASCII armor) |
-
-            ---
-
-            ### #️⃣ Hashes
-
-            #### thgtoa.pdf (Light)
-            ```
-            SHA-256:  ${{ steps.hashes.outputs.light_sha256 }}
-            BLAKE2b:  ${{ steps.hashes.outputs.light_b2 }}
-            ```
-
-            #### thgtoa-dark.pdf (Dark)
-            ```
-            SHA-256:  ${{ steps.hashes.outputs.dark_sha256 }}
-            BLAKE2b:  ${{ steps.hashes.outputs.dark_b2 }}
-            ```
-
-            ---
-
-            ### 🔏 GPG Signatures
-
-            Detached signatures (`.sig`) are included in the release assets.
-            Verify with:
-            ```bash
-            gpg --verify thgtoa.pdf.sig      thgtoa.pdf
-            gpg --verify thgtoa-dark.pdf.sig thgtoa-dark.pdf
-            ```
-            The signing key is published at `pgp/anonymousplanet-release.asc`.
-
-            ---
-
-            ### 🦠 VirusTotal Scans
-
-            | File | Report |
-            |------|--------|
-            | `thgtoa.pdf` | ${{ steps.vt_urls.outputs.light_vt }} |
-            | `thgtoa-dark.pdf` | ${{ steps.vt_urls.outputs.dark_vt }} |
-
-          files: |
-            export/thgtoa.pdf
-            export/thgtoa-dark.pdf
-            export/sha256sums.txt
-            export/b2sums.txt
-            export/thgtoa.pdf.sha256
-            export/thgtoa-dark.pdf.sha256
-            export/thgtoa.pdf.b2
-            export/thgtoa-dark.pdf.b2
-            export/thgtoa.pdf.sig
-            export/thgtoa-dark.pdf.sig
-            export/sha256sums.txt.sig
-            export/b2sums.txt.sig
-          draft: false
-          prerelease: false
-          fail_on_unmatched_files: true
-
-      # ------------------------------------------------------------------ #
-      #  Upload everything as a workflow artifact (90-day archive)
-      # ------------------------------------------------------------------ #
-      - name: 📤 Upload export as workflow artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: pdf-release-${{ steps.tag.outputs.tag }}
-          path: export/*
-          if-no-files-found: error
-          retention-days: 90
-          compression-level: 0
+          echo "This workflow is deprecated."
+          echo "Use build.yml → sign.yml → release.yml instead."
+          exit 1
