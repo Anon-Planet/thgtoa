@@ -11112,7 +11112,7 @@ As mentioned before in this guide multiple times, we strongly recommend the use 
 
 - **Stay away from so-called "private" mixers, tumblers and coinjoiners.** You might think this is a good idea, but not only are they useless with cryptocurrencies such as BTC/ETH/LTC, they are also dangerous. They take custody of your coins. Use Monero to anonymize your crypto. Do not use a normal KYC-enabled exchange to buy/sell your Monero (such as Kraken), since this information on your purchases and withdrawals (for intended use) are retained in the exchange. Instead, use a P2P exchange that doesn't require KYC such as what can be found on <https://kycnot.me/>.
 
-- **See [Warning about special tumbling, mixing, coinjoining privacy wallets and services].**
+- **See [Warning about special tumbling, mixing, coinjoining privacy wallets and services](#warning-about-special-tumbling-mixing-coinjoining-privacy-wallets-and-services).**
 
 ## Using Bitcoin anonymously option
 
@@ -11148,7 +11148,7 @@ The origin of those BTC cannot be traced back to your real identity due to the u
 
 **Regarding Zcash: this section previously included use of Zcash but it has been removed in light of newer, more accurate information.**
 
-## Warning about special tumbling, mixing, coinjoining privacy wallets and services: <sup>[Wikiless](https://wikiless.com/wiki/Cryptocurrency_tumbler) [Archive.org](https://web.archive.org/web/https://wikiless.com/wiki/Cryptocurrency_tumbler)</sup>
+## Warning about special tumbling, mixing, coinjoining privacy wallets and services
 
 Centralized "private" tumblers, mixers and coinjoiners are not recommended since they do not provide anonymity in a way that truly unlinks an output from its history.  Here are some references about this issue:
 
