@@ -57,16 +57,16 @@ To contact me, see the updated information on the website or send an e-mail to <
 
 **Please consider [donating](../guide/index.md#donations) if you enjoy the project and want to support the hosting fees or support the funding of initiatives like the hosting of Tor Exit Nodes.**
 
-### Recommended Reading
+???+ example "Recommended Reading"
 
-Some of those resources may, in order to sustain their project, contain or propose:
+    Some of those resources may, in order to sustain their project, contain or propose:
 
-- Sponsored commercial content
-- Monetized content through third party platforms (such as YouTube)
-- Affiliate links to commercial services
-- Paid Services such as consultancy
-- Premium content such as ad-free content or updated content
-- Merchandising
+    - Sponsored commercial content
+    - Monetized content through third party platforms (such as YouTube)
+    - Affiliate links to commercial services
+    - Paid Services such as consultancy
+    - Premium content such as ad-free content or updated content
+    - Merchandising
 
 _Note that these websites could contain affiliate/sponsored content and/or merchandising. This guide does not endorse and is not sponsored by any commercial entity in any way._
 
@@ -74,7 +74,7 @@ If you skipped those, you should really still consider viewing this YouTube play
 
 _Anonymous Planet_ **does not** participate in any sponsoring, endorsement, advertising, or other affiliate programs for any entity. We only rely on anonymous donations in a closed, transparent loop system.
 
-??? Note "Privacy related"
+??? tip "Privacy related"
 
     - AnarSec: <https://www.anarsec.guide/>
     - EFF Surveillance Self-Defense: <https://ssd.eff.org/>
@@ -84,14 +84,14 @@ _Anonymous Planet_ **does not** participate in any sponsoring, endorsement, adve
     - The New Oil: <https://thenewoil.org>
     - PrivacyTools.io: <https://privacytools.io>
 
-??? Note "Blogs and personal websites"
+??? tip "Blogs and personal websites"
 
     - CIA Officer's Blog: <https://officercia.mirror.xyz/>
     - Continuing Ed: <https://edwardsnowden.substack.com/>
     - Madaidan's Insecurities: <https://madaidans-insecurities.github.io/>
     - Seirdy's Home: <https://seirdy.one/>
 
-??? Note "Useful resources"
+??? tip "Useful resources"
 
     - KYC? Not me: <https://kycnot.me/>
     - Library Genesis: <https://en.wikipedia.org/wiki/Library_Genesis> <sup>[[Wikiless]](https://wikiless.com/wiki/Library_Genesis)</sup> (see their latest known URL in the Wikipedia article)
@@ -100,7 +100,7 @@ _Anonymous Planet_ **does not** participate in any sponsoring, endorsement, adve
     - Terms of Service, Didn't Read: <https://tosdr.org>
     - Whonix Documentation: <https://www.whonix.org/wiki/Documentation>
 
-??? Note "We are not affiliated with Anonymous or Riseup"
+??? note "We are not affiliated with Anonymous or Riseup"
 
     One or two of our community members uses or has used the resources of Riseup. We are not affiliated with Riseup in any manner.
 
