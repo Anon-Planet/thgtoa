@@ -39,7 +39,7 @@ This guide is a non-profit open-source initiative, licensed under Creative Commo
 
 Feel free to submit issues **(please do report anything wrong)** using GitHub Issues at: <https://github.com/Anon-Planet/thgtoa/issues>. We also accept Merge Requests (MR) from our Gitlab and many other places. Do not hesitate to report issues and suggestions!
 
-??? Note "Discuss ideas on Matrix for real-time chat"
+??? tip "Discuss ideas on Matrix for real-time chat"
 
     We offer a Matrix.org hosted space of our own. Check it out!
 
@@ -48,11 +48,10 @@ Feel free to submit issues **(please do report anything wrong)** using GitHub Is
     - Matrix Space: https://matrix.to/#/#psa:anonymousplanet.net
     - Admins: @daskolburn:thomcat.rocks and @thehidden:tchncs.de
 
-Follow us on:
+???+ tip "Follow us on"
 
-- Twitter at <https://twitter.com/AnonyPla>
-
-- Mastodon at <https://mastodon.social/@anonymousplanet>
+    - Twitter at <https://twitter.com/AnonyPla>
+    - Mastodon at <https://mastodon.social/@anonymousplanet>
 
 To contact me, see the updated information on the website or send an e-mail to <contact@anonymousplanet.org>
 

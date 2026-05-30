@@ -18,8 +18,8 @@ on:
         type: boolean
 
 permissions:
-  contents: write  # create releases and tags
-  actions:  read   # download artifacts from other runs
+  contents: write # create releases and tags
+  actions:  read  # download artifacts from other runs
 
 jobs:
   release:
@@ -33,9 +33,7 @@ jobs:
           fetch-depth: 0
           sparse-checkout: pgp
 
-      # ------------------------------------------------------------------ #
-      #  Download artifacts from the specified sign run
-      # ------------------------------------------------------------------ #
+      # Download artifacts from the specified sign run
       - name: 📥 Download signatures artifact
         uses: actions/download-artifact@v4
         with:
@@ -55,9 +53,7 @@ jobs:
       - name: 📋 List release assets
         run: ls -lh release/
 
-      # ------------------------------------------------------------------ #
-      #  Read hashes for the release body
-      # ------------------------------------------------------------------ #
+      # Read hashes for the release body
       - name: "#️⃣ Read hashes"
         id: hashes
         run: |
@@ -67,9 +63,7 @@ jobs:
           echo "light_b2=$(read_hash thgtoa.pdf.b2sum)"           >> $GITHUB_OUTPUT
           echo "dark_b2=$(read_hash thgtoa-dark.pdf.b2sum)"       >> $GITHUB_OUTPUT
 
-      # ------------------------------------------------------------------ #
-      #  VirusTotal
-      # ------------------------------------------------------------------ #
+      # VirusTotal
       - name: 🦠 Upload PDFs to VirusTotal
         id: vt
         uses: crazy-max/ghaction-virustotal@v5
@@ -95,9 +89,7 @@ jobs:
             echo "dark_vt=(not built)" >> $GITHUB_OUTPUT
           fi
 
-      # ------------------------------------------------------------------ #
-      #  Generate release tag — timestamp + short SHA, always unique
-      # ------------------------------------------------------------------ #
+      # Generate release tag — timestamp + short SHA, always unique
       - name: 🏷️ Generate release tag
         id: tag
         run: |
@@ -109,9 +101,7 @@ jobs:
           echo "name=$NAME" >> $GITHUB_OUTPUT
           echo "Tag: $TAG"
 
-      # ------------------------------------------------------------------ #
-      #  Create GitHub Release
-      # ------------------------------------------------------------------ #
+      # Create GitHub Release
       - name: 🚀 Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:

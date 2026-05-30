@@ -16,12 +16,22 @@ schema:
 
 # **Hello, and welcome to the Hitchhiker's Guide.**
 
-**9FA5 436D 0EE3 6098 5157  3825 17EC A05F 768D EDF6**
-
-You'll use it to [**verify the checksum** and **GPG signature** of all files for authenticity.](verify/index.md)
+You'll use these keys to [**verify the checksum and GPG signature of all files for authenticity**](verify/index.md).
 Please share this project if you enjoy it and you think it might be useful to others.
 
 ![Anonymous Planet logo](media/profile.png){ align=right }
+
+??? tip "GPG Signing Keys for Verification"
+
+    <div style="padding: 1em; border-radius: 0.3em;">
+    <strong>Anonymous Planet Master Signing Key (MSK):</strong>
+
+        9FA5 436D 0EE3 6098 5157 3825 17EC A05F 768D EDF6
+
+    <strong>Anonymous Planet Release Signing Key (RSK):</strong>
+
+        C302 3DBE A3FB 38C4 38BA 1EED CEC6 0AED E8B9 92A2
+    </div>
 
 Anonymous Planet is a collective of volunteers.
 

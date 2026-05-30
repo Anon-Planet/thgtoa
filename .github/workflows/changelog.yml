@@ -17,7 +17,7 @@ on:
         type: boolean
 
 permissions:
-  contents: write  # commit changelog back to main
+  contents: write # commit changelog back to main
 
 jobs:
   changelog:

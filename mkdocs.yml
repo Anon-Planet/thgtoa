@@ -1,6 +1,6 @@
-site_name: Hitchhiker's Guide
+site_name: The Hitchhiker's Guide
 site_author: Anonymous Planet
-site_description: "The comprehensive guide for online anonymity and OpSec."
+site_description: "The comprehensive guide for online #anonymity and #opsec."
 site_dir: '/site/'
 docs_dir: 'docs/'
 site_url: "https://www.anonymousplanet.org/"

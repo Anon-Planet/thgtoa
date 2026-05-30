@@ -15,12 +15,12 @@ Install these before anything else.
     python3 --version
 
     # poppler (pdftoppm) and qpdf
-    sudo apt install poppler-utils qpdf       # Debian / Ubuntu
-    brew install poppler qpdf                 # macOS
+    sudo apt install poppler-utils qpdf # Debian/Ubuntu
+    brew install poppler qpdf           # macOS
 
     # GPG
-    sudo apt install gnupg                    # Debian / Ubuntu
-    brew install gnupg                        # macOS
+    sudo apt install gnupg # Debian/Ubuntu
+    brew install gnupg     # macOS
 
     # Python dependencies
     pip install "mkdocs-material[imaging]" pillow numpy
@@ -31,13 +31,13 @@ Install these before anything else.
     ```powershell
     # Python 3.11+ from https://python.org
 
-    # poppler — download from https://github.com/oschwartz10612/poppler-windows/releases
+    # poppler: download from https://github.com/oschwartz10612/poppler-windows/releases
     # Extract and add the bin\ folder to PATH
 
-    # qpdf — download from https://github.com/qpdf/qpdf/releases
+    # qpdf: download from https://github.com/qpdf/qpdf/releases
     # Extract and add the bin\ folder to PATH
 
-    # GPG — download Gpg4win from https://gpg4win.org
+    # GPG: download Gpg4win from https://gpg4win.org
 
     # Python dependencies
     pip install "mkdocs-material[imaging]" pillow numpy
@@ -52,26 +52,26 @@ You also need **Google Chrome** or **Microsoft Edge** installed for the light-mo
 ```
 .github/
   workflows/
-    build.yml             ← builds PDFs, uploads artifact
-    sign.yml              ← hashes + GPG signs, uploads signatures artifact
-    release.yml           ← publishes GitHub Release with all assets
-    changelog.yml         ← prepends a new entry to docs/changelog/index.md
-    publish.yml           ← deploys MkDocs site to GitHub Pages
-    build-sign-release.yml← DEPRECATED — fails on trigger, kept for reference
+    build.yml              # builds PDFs, uploads artifact
+    sign.yml               # hashes + GPG signs, uploads signatures artifact
+    release.yml            # publishes GitHub Release with all assets
+    changelog.yml          # prepends a new entry to docs/changelog/index.md
+    publish.yml            # deploys MkDocs site to GitHub Pages
+    build-sign-release.yml # DEPRECATED - fails on trigger, kept for reference
 docs/
-  guide/index.md          ← the guide (single Markdown file)
-  changelog/              ← release notes
-  code/                   ← this page
-export/                   ← PDF output (PDFs gitignored; .sha256, .b2sum, .asc tracked)
-pgp/                      ← public signing keys
+  guide/index.md           # the guide (single Markdown file)
+  changelog/               # release notes
+  code/                    # this page
+export/                    # PDF output (PDFs gitignored; .sha256, .b2sum, .asc tracked)
+pgp/                       # public signing keys
 scripts/
-  build_guide_pdf.py      ← MkDocs + Chromium PDF builder
-  convert.py              ← pixel-based dark mode PDF converter
-  update_changelog.py     ← auto-generates changelog entries from git log
-  setup_workflow.py       ← GitHub Secrets setup assistant
-  verify_pdf.py           ← signature verification helper
+  build_guide_pdf.py       # MkDocs + Chromium PDF builder
+  convert.py               # pixel-based dark mode PDF converter
+  update_changelog.py      # auto-generates changelog entries from git log
+  setup_workflow.py        # GitHub Secrets setup assistant
+  verify_pdf.py            # signature verification helper
   archived/
-    tag_release.py        ← ARCHIVED — GPG tag helper (not used in current flow)
+    tag_release.py         # ARCHIVED - GPG tag helper (not used in current flow)
 ```
 
 ---
@@ -120,7 +120,7 @@ Opens at `http://127.0.0.1:8000`.
 
 ## CI/CD pipeline overview
 
-The pipeline is fully manual after the initial build — no step automatically triggers the next. This prevents version mismatches between what was built, what was signed, and what gets released.
+The pipeline is fully manual after the initial build - no step automatically triggers the next. This prevents version mismatches between what was built, what was signed, and what gets released.
 
 ```
 push to main  (or manual trigger)
@@ -131,7 +131,7 @@ push to main  (or manual trigger)
   Uploads artifact: pdfs
   Note the run ID.
       │
-      │  ← manually trigger sign.yml with the build run ID
+      │  # manually trigger sign.yml with the build run ID
       ▼
   sign.yml
   Downloads pdfs artifact. Hashes (SHA-256 + BLAKE2b) and GPG-signs
@@ -139,20 +139,20 @@ push to main  (or manual trigger)
   signatures, pdfs-signed
   Note the run ID.
       │
-      │  ← manually trigger release.yml with the sign run ID
+      │  # manually trigger release.yml with the sign run ID
       ▼
   release.yml
   Downloads signatures + pdfs-signed artifacts. Runs VirusTotal.
   Creates GitHub Release tagged release-YYYYMMDD-<short-sha>.
       │
-      │  ← manually trigger changelog.yml with the version string
+      │  # manually trigger changelog.yml with the version string
       ▼
   changelog.yml
   Runs update_changelog.py, prepends a new ## [vX.Y.Z] entry,
   commits back to main.
 ```
 
-Each stage is independent. If signing fails (e.g. an expired key), re-run only `sign.yml` pointing at the existing build artifact — no need to rebuild the PDFs.
+Each stage is independent. If signing fails (e.g. an expired key), re-run only `sign.yml` pointing at the existing build artifact - no need to rebuild the PDFs.
 
 !!! warning "Before you push"
 
@@ -166,7 +166,7 @@ Each stage is independent. If signing fails (e.g. an expired key), re-run only `
 
 ### 1. Trigger a build
 
-Push to `main` — `build.yml` runs automatically when `docs/`, `mkdocs.yml`, or `scripts/` change. You can also trigger it manually from **Actions → Build PDFs → Run workflow**.
+Push to `main` - `build.yml` runs automatically when `docs/`, `mkdocs.yml`, or `scripts/` change. You can also trigger it manually from **Actions → Build PDFs → Run workflow**.
 
 Once it completes successfully, **note the run ID** from the URL or the Actions list.
 
@@ -208,7 +208,7 @@ Go to **Actions → Release → Run workflow**.
 - Auto-generate a release tag in the format `release-YYYYMMDD-<short-sha>` (e.g. `release-20260527-abc1234`)
 - Create a GitHub Release with all PDFs, hash files, and signatures attached, and the VirusTotal report URLs in the body
 
-No version number needs to be chosen at this step — the tag is derived from the date and commit SHA, so it is always unique and always traceable.
+No version number needs to be chosen at this step - the tag is derived from the date and commit SHA, so it is always unique and always traceable.
 
 ---
 
@@ -228,7 +228,7 @@ Go to **Actions → Update Changelog → Run workflow**.
 - Prepends a new `## [version]` admonition block to `docs/changelog/index.md`
 - Commits the result back to `main`
 
-The version string is the only human decision in the release process. It goes into the changelog only — it does not affect the release tag.
+The version string is the only human decision in the release process. It goes into the changelog only - it does not affect the release tag.
 
 !!! tip "Previewing the changelog entry"
     Run with `dry_run: true` first to review the generated entry before it is committed.
@@ -293,7 +293,7 @@ Copy the entire output (including `-----BEGIN PGP PRIVATE KEY BLOCK-----` and th
 
 ### `GPG_PASSPHRASE`
 
-The passphrase protecting the private key above. Must match exactly — no trailing newline.
+The passphrase protecting the private key above. Must match exactly - no trailing newline.
 
 ### `ACTIONS_SSH_SIGNING_KEY`
 
@@ -311,7 +311,7 @@ A [VirusTotal](https://www.virustotal.com) API key with file upload permissions.
 
 ### `CHANGELOG_PAT`
 
-A GitHub Personal Access Token with `contents: write` scope on this repository. Needed because `changelog.yml` commits back to `main` — commits made with the default `GITHUB_TOKEN` do not trigger further workflow runs (GitHub loop-prevention). A PAT bypasses this. If absent, falls back to `GITHUB_TOKEN` — the commit still happens, it just won't trigger downstream workflows.
+A GitHub Personal Access Token with `contents: write` scope on this repository. Needed because `changelog.yml` commits back to `main` - commits made with the default `GITHUB_TOKEN` do not trigger further workflow runs (GitHub loop-prevention). A PAT bypasses this. If absent, falls back to `GITHUB_TOKEN` - the commit still happens, it just won't trigger downstream workflows.
 
 **Creating one:** GitHub → Settings → Developer settings → Personal access tokens → Fine-grained tokens → set Contents to Read and write for this repo only.
 
@@ -319,11 +319,11 @@ A GitHub Personal Access Token with `contents: write` scope on this repository. 
 
 | Secret | Required by | What happens if missing |
 |--------|------------|------------------------|
-| `GPG_PRIVATE_KEY` | `sign.yml` | Signing step fails — no `.asc` files produced |
+| `GPG_PRIVATE_KEY` | `sign.yml` | Signing step fails - no `.asc` files produced |
 | `GPG_PASSPHRASE` | `sign.yml` | GPG import succeeds but signing fails |
 | `ACTIONS_SSH_SIGNING_KEY` | `sign.yml` | Export commit is unsigned (may fail if branch protection requires signed commits) |
-| `VT_API_KEY` | `release.yml` | VirusTotal step fails — release is not published |
-| `CHANGELOG_PAT` | `changelog.yml` | Falls back to `GITHUB_TOKEN` — changelog updates but commit won't trigger downstream workflows |
+| `VT_API_KEY` | `release.yml` | VirusTotal step fails - release is not published |
+| `CHANGELOG_PAT` | `changelog.yml` | Falls back to `GITHUB_TOKEN` - changelog updates but commit won't trigger downstream workflows |
 
 ---
 
@@ -366,7 +366,7 @@ Install the imaging extras: `pip install "mkdocs-material[imaging]"`. Required b
 Pillow needs libjpeg. Reinstall after installing the system lib: `sudo apt install libjpeg-dev && pip install --force-reinstall pillow`.
 
 **`qpdf: can't find PDF header`**
-Ensure you are on the current version of `convert.py` — qpdf only accepts PDF inputs, not PNG.
+Ensure you are on the current version of `convert.py` - qpdf only accepts PDF inputs, not PNG.
 
 **GPG signing fails on CI with `No secret key`**
 The `GPG_PRIVATE_KEY` secret is missing or malformed. Re-export with `gpg --armor --export-secret-keys <fingerprint>` and paste the full block including header and footer lines.

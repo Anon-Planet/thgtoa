@@ -15,7 +15,7 @@ schema:
 <div class="pdf-title-page" aria-hidden="true">
 <p class="pdf-title-page__title">The Hitchhiker's Guide to Online Anonymity</p>
 <p class="pdf-title-page__subtitle"><em>(Or "How I learned to start worrying and love privacy and anonymity")</em></p>
-<p class="pdf-title-page__meta">v1.2.3, May 2026 by Anonymous Planet</p>
+<p class="pdf-title-page__meta">v1.2.4, Jun 2026 by Anonymous Planet</p>
 </div>
 <div class="guide-intro-lead" markdown="1">
 ![Anonymous Planet logo](../media/profile.png)
@@ -391,7 +391,45 @@ Lastly, do remember that using Tor can already be considered suspicious activity
 
 This guide will later propose some mitigations to such attacks by changing your origin from the start (using public wi-fi's for instance). Remember that such attacks are usually carried by highly skilled, highly resourceful, and motivated adversaries and are out of scope from this guide. It is also recommended that you learn about practical correlation attacks, as performed by intelligence agencies: <https://officercia.mirror.xyz/WeAilwJ9V4GIVUkYa7WwBwV2II9dYwpdPTp3fNsPFjo> <sup>[[Archive.org]](https://web.archive.org/web/20220516000616/https://officercia.mirror.xyz/WeAilwJ9V4GIVUkYa7WwBwV2II9dYwpdPTp3fNsPFjo)</sup>
 
-**Disclaimer: it should also be noted that Tor is not designed to protect against a global adversary. For more information see <https://svn-archive.torproject.org/svn/projects/design-paper/tor-design.pdf> <sup>[[Archive.org]](https://web.archive.org/web/https://svn-archive.torproject.org/svn/projects/design-paper/tor-design.pdf)</sup> and specifically, "Part 3. Design goals and assumptions.".**
+**Disclaimer: it should also be noted that Tor is not designed to protect against a global adversary.**[^550]
+
+### Traffic analysis and the limits of Tor
+
+**Note: This section expands on the [Traffic Anonymization](#traffic-anonymization) above. What follows is a more detailed treatment of the specific attack classes that matter in practice.**
+
+Tor[^28] provides strong anonymity against most adversaries most of the time. It is not, however, unconditional. Understanding what that means in practice, and who realistically is such an adversary, is more useful than either dismissing the concern or being paralyzed by it.
+
+#### Timing correlation attacks
+
+The foundational attack against anonymity networks is traffic correlation: if an adversary can observe the traffic entering the Tor network from your computer and the traffic exiting toward a destination, they can correlate the two streams by timing, volume, and packet patterns - without ever breaking Tor's encryption.
+
+Murdoch and Danezis demonstrated in 2005[^551] that a relatively low-resource adversary controlling even a small number of Tor nodes could use timing analysis to identify which node a hidden service was using, dramatically narrowing the anonymity set. This was an early result and the Tor network has evolved significantly since, but the underlying principle - that correlation across observation points does not require decrypting anything - has only been confirmed by subsequent research.
+
+**RAPTOR**[^552] (2015) showed that Autonomous System (AS) level adversaries - large ISPs and internet exchanges, not just intelligence agencies - could perform traffic analysis by observing BGP routing and inferring path overlap between a Tor user and their destination. The key insight is that the same AS may carry both the user's traffic to the guard node and the exit node's traffic to the destination, making correlation possible without any Tor node compromise.
+
+**DeepCorr** (2018) used deep learning to correlate Tor flows with significantly higher accuracy than prior methods, achieving correlation rates above 96% in controlled conditions. The authors are careful to note that their evaluation was performed in a closed-world lab setting - a fixed set of websites, controlled conditions - and that real-world performance against a large open network with diverse traffic would be substantially harder. This distinction matters: closed-world accuracy figures are frequently misquoted as if they apply to real-world deployments. They do not, at least not yet.
+
+#### Who is a global passive adversary in practice?
+
+A true global passive adversary - one who can observe arbitrary internet traffic worldwide simultaneously - does not exist in the form often imagined. What does exist is a collection of national intelligence agencies with broad but not unlimited visibility into internet traffic (GCHQ's TEMPORA, NSA's PRISM and upstream collection programmes), large ISPs and internet exchanges that carry a disproportionate share of global traffic, and cloud providers whose infrastructure spans most of the world's AS paths.
+
+For the vast majority of Tor users, none of these entities are targeting them specifically. For a journalist communicating with a source inside a country whose intelligence services have close partnerships with major Western agencies, or an activist whose traffic transits only a small number of AS paths, the picture is more concerning. The honest answer is: **if a Five Eyes agency is specifically targeting you, Tor alone is probably not sufficient. For everyone else, Tor provides strong protection.**
+
+#### Website fingerprinting
+
+Website fingerprinting attacks attempt to identify which website a Tor user is visiting by analysing the pattern of encrypted traffic - packet sizes, timing, direction sequences - without decrypting it. Accuracy in closed-world evaluations (where the attacker knows the user is visiting one of N monitored sites) has reached high levels in research settings. In open-world conditions, where the user may be visiting any of millions of sites, false positive rates make these attacks far less practical. WTF-PAD and related padding defences, partially deployed in Tor Browser, further degrade fingerprinting accuracy. This is an active research area and the situation will evolve.
+
+#### Guard node persistence and what it means
+
+Tor uses **guard nodes** - a small, stable set of entry nodes that your client reuses over weeks - specifically to limit timing correlation exposure. If you used a random entry node for every circuit, an adversary who controls even a modest fraction of Tor nodes would eventually observe you entering the network directly. By persisting a small guard set, Tor limits the probability that any given adversary controls your entry point. The tradeoff is that if your guard node is malicious or observed, it remains so for the duration of the guard period. On balance, the Tor Project's research shows guard persistence improves anonymity for most people most of the time.
+
+#### When Tor is and is not sufficient
+
+Tor is sufficient against: local network observers (your ISP, your university, a café Wi-Fi), most law enforcement agencies without intelligence partnerships, commercial data brokers, and advertisers.
+
+Tor is not sufficient against: a targeted operation by a well-resourced national intelligence agency with upstream internet visibility, an adversary who controls both your guard node and the destination's exit node simultaneously, or an adversary who can correlate your Tor usage timing with known real-world events (you were the only person in a particular location at a particular time).
+
+The most practical mitigation beyond Tor itself is changing your entry point: connecting to Tor from public Wi-Fi rather than your home connection removes the most reliable correlation anchor - your ISP-assigned IP - from the equation entirely. This guide recommends this approach for high-sensitivity activities throughout.
 
 ### Some Devices can be tracked even when offline
 
@@ -491,7 +529,7 @@ There are some not so straightforward ways[^107] to disable the Intel IME on som
 
 Note that, to AMD's defense, there were no security vulnerabilities found for ASP and no backdoors either. See <https://www.youtube.com/watch?v=bKH5nGLgi08&t=2834s> <sup>[[Invidious]](https://yewtu.be/watch?v=bKH5nGLgi08&t=2834s)</sup>. In addition, AMD PSP does not provide any remote management capabilities contrary to Intel IME.
 
-If you are feeling a bit more adventurous, you could install your own BIOS using Coreboot[^108] or Libreboot (a distribution of Coreboot) if your laptop supports it. Coreboot allows users to add their own microcode or other firmware blobs in order for the machine to function, but this is based upon user choice, and as of Dec 2022, Libreboot has adopted a similar pragmatic approach in order to support newer devices in the Coreboot tree. (Thanks, kind Anon who corrected previous information in this paragraph.)
+If you are feeling a bit more adventurous, you could install your own BIOS using Coreboot[^108] or Libreboot (a distribution of Coreboot) if your laptop supports it. Coreboot allows you to add your own microcode or other firmware blobs in order for the machine to function, but this is based upon user choice, and as of Dec 2022, Libreboot has adopted a similar pragmatic approach in order to support newer devices in the Coreboot tree. (Thanks, kind Anon who corrected previous information in this paragraph.)
 
 Check yourself:
 
@@ -619,6 +657,10 @@ Conclusion: Do not bring your smart devices with you when conducting sensitive a
 
 ### Your Metadata
 
+What's metadata? Every file you create or share carries metadata - structured data embedded in or alongside the content that describes how, when, where, and with what the file was created. This metadata is invisible in normal use and routinely overlooked. It has burned journalistic sources, identified whistleblowers, and linked anonymous documents to their authors. The tools to strip it exist and are not difficult to use. The failure is almost always one of not knowing it was there.
+
+The most frequently cited case is the 2013 identification of a leaker at a US government contractor through metadata in a Word document sent to The Intercept.[^542] The document's print metadata included a serial number traceable to a specific printer, combined with microdot tracking patterns in the printout itself - but the principle applies equally to digital metadata. Earlier, in 2003, a UK government dossier on Iraqi weapons capabilities was found to contain revision history showing the names of the civil servants who had edited it, causing significant political embarrassment[^543] and demonstrating that the problem predates widespread awareness.
+
 Your metadata is all the information about your activities without the actual content of those activities. For instance, it is like knowing you had a call from an oncologist before then calling your family and friends successively. You do not know what was said during the conversation, but you can guess what it was just from the metadata[^123].
 
 This metadata will also often include your location that is being harvested by Smartphones, Operating Systems (Android[^124]/IOS), Browsers, Apps, Websites. Odds are several companies are knowing exactly where you are at any time[^125] because of your smartphone[^126].
@@ -635,13 +677,13 @@ Have you heard of Edward Snowden[^134]? Now is the time to google him and read h
 
 See "We kill people based on Metadata"[^142] or this famous tweet from the IDF <https://twitter.com/idf/status/1125066395010699264> <sup>[[Archive.org]](https://web.archive.org/web/https://twitter.com/idf/status/1125066395010699264)</sup> <sup>[[Nitter]](https://nitter.net/idf/status/1125066395010699264)</sup>.
 
-See [Appendix N: Warning about smartphones and smart devices](#appendix-n-warning-about-smartphones-and-smart-devices)
+See [Appendix N](#appendix-n-warning-about-smartphones-and-smart-devices) for a warning on using smartphones and other smart devices. See [Metadata auditing](#metadata-auditing) for a way to get rid of the metadata - which is probably what brought you to this section anyway.
 
 ### Your Digital Footprint
 
 This is the part where you should watch the documentary "The Social Dilemma"[^143] on Netflix as they cover this topic much better than anyone else.
 
-This includes is the way you write (stylometry) [^144]'[^145], the way you behave[^146]'[^147]. The way you click. The way you browse. The fonts you use on your browser[^148]. Fingerprinting is being used to guess who someone is by the way that user is behaving. You might be using specific pedantic words or making specific spelling mistakes that could give you away using a simple Google search for similar features because you typed comparably on some Reddit post 5 years ago using a not so anonymous Reddit account[^149]. The words you type in a search engine alone can be used against you as the authorities now have warrants to find users who used specific keywords in search engines[^150].
+This includes is the way you write (stylometry) [^144]'[^145], the way you behave[^146]'[^147]. The way you click. The way you browse. The fonts you use on your browser[^148]. Fingerprinting is being used to guess who someone is by the way that user is behaving. You might be using specific pedantic words or making specific spelling mistakes that could give you away using a simple Google search for similar features because you typed comparably on some Reddit post 5 years ago using a not so anonymous Reddit account[^149]. The words you type in a search engine alone can be used against you as the authorities now have warrants to find people who used specific keywords in search engines[^150].
 
 Social Media platforms such as Facebook/Google can go a step further and can register your behavior in the browser itself. For instance, they can register everything you type even if you do not send it / save it. Think of when you draft an e-mail in Gmail. It is saved automatically as you type. They can register your clicks and cursor movements as well.
 
@@ -659,7 +701,7 @@ Here are some examples:
 
 - See [Appendix A4: Counteracting Forensic Linguistics](#appendix-a4-counteracting-forensic-linguistics).
 
-Analysis algorithms could then be used to match these patterns with other users and match you to a different known user. It is unclear whether such data is already used or not by Governments and Law Enforcement agencies, but it might be in the future. And while this is mostly used for advertising/marketing/captchas purposes now. It could and probably will be used for investigations in the short or mid-term future to deanonymize users.
+Analysis algorithms could then be used to match these patterns with other people and match you to a different known user. It is unclear whether such data is already used or not by Governments and Law Enforcement agencies, but it might be in the future. And while this is mostly used for advertising/marketing/captchas purposes now. It could and probably will be used for investigations in the short or mid-term future to deanonymize users.
 
 Here is a fun example you try yourself to see some of those things in action: <https://clickclickclick.click> (no archive links for this one sorry). You will see it becoming interesting over time (this requires Javascript enabled).
 
@@ -909,6 +951,52 @@ These can allow remote management and are capable of enabling full control of a 
 
 As mentioned previously, these are harder to detect by users but some limited steps that can be taken to mitigate some of those by protecting your device from tampering and use some measures (like re-flashing the bios for example). Unfortunately, if such malware or backdoor is implemented by the manufacturer itself, it becomes extremely difficult to detect and disable those.
 
+**Note: The threats described in this section are almost exclusively relevant to high-value targets of nation-state adversaries. If your threat model is a stalker, a corporate competitor, or even most law enforcement agencies, you can skip this section. If you are a journalist, dissident, or activist operating against a state-level adversary, read it.**
+
+Most guides to anonymity focus on software and network-layer threats. Physical and hardware-level attacks are rarer, more expensive to execute, and require either physical access to your device or interference with your supply chain. That cost means they are not deployed casually. But for the right target, they are devastatingly effective - because no amount of software configuration protects you if the hardware underneath is compromised.
+
+#### Firmware implants
+
+Firmware implants are malicious code inserted into the low-level software that runs before your operating system boots - in the UEFI/BIOS[^544], storage controller firmware, or network card firmware. Because they live below the OS, they survive reinstallation of the operating system, disk wiping, and most forensic examination.
+
+**LoJax**[^545], discovered by ESET in 2018, was the first publicly documented in-the-wild UEFI rootkit, attributed to the APT28 (Fancy Bear) group. It wrote a malicious module directly into the SPI flash memory of the UEFI firmware, persisting across OS reinstalls and even hard drive replacements. **MosaicRegressor**[^546], documented by Kaspersky in 2020, was similarly implanted into UEFI and discovered on devices belonging to NGO staff and journalists in contact with North Korea.
+
+Who faces this threat? In both documented cases, targets were NGO workers, journalists, and diplomatic personnel - people whose devices passed through the hands of state actors, or who were targeted by sophisticated spear-phishing that enabled remote firmware write access. This is not a threat that scales to mass deployment. It is used surgically, against specific high-value individuals.
+
+Mitigations are limited but worth understanding. **UEFI Secure Boot**[^307] verifies the cryptographic signatures of bootloader and OS components before execution, preventing unsigned code from running at boot. It does not, however, protect against a compromise of the firmware itself - if the UEFI has already been modified, Secure Boot can be disabled or bypassed from within. It is a meaningful defence against attackers who have not yet achieved firmware-level access, but it is not a root of trust in the presence of a firmware implant. **Intel Boot Guard** and AMD's equivalent go further by fusing a hash of the initial firmware into the hardware at manufacture time, making firmware modification detectable. **Heads**[^547] is an open-source firmware alternative for supported hardware (primarily Thinkpads and select System76 machines) that provides measured boot, TPM-backed attestation, and tamper detection - and is the most practical option for a high-risk user who needs verifiable firmware integrity. See also: [About Secure Boot](#about-secure-boot).
+
+#### USB attack hardware
+
+USB-based attack tools are commercially available and widely understood. The **O.MG Cable** is a USB cable with an embedded wireless implant - visually and functionally indistinguishable from a legitimate charging cable - that can execute keystrokes, exfiltrate data, and accept remote commands over Wi-Fi. The **USB Rubber Ducky** and broader Hak5 product family present themselves to a target computer as a keyboard, executing pre-loaded keystroke injection payloads at speeds no human typist could match. See also: [Malicious USB devices](#malicious-usb-devices).
+
+Recognition is difficult. O.MG cables are designed specifically to defeat visual inspection. Practical mitigations include: **never using cables or USB devices you did not purchase yourself and receive sealed**, using a USB data blocker ("USB condom") when charging from untrusted ports, and configuring your operating system to require confirmation before trusting new USB devices (USBGuard on Linux[^548]; this is not natively available on Windows without third-party tools).
+
+#### Evil Maid attacks
+
+For more on Evil Maid attacks, see: [Evil Maid attack](#evil-maid-attack).
+
+Mitigations:
+
+- **Never leave your device unattended in a high-risk environment.** This is the only complete mitigation.
+- **Measured boot with TPM attestation** (as provided by Heads or a correctly configured UEFI + TPM setup) will detect bootloader tampering by comparing measurements against known-good values stored in the TPM.
+- **A tamper-evident seal** on the device chassis (nail varnish applied across screws and photographed, or commercial tamper-evident stickers) provides a low-tech detection layer that is surprisingly effective against unsophisticated adversaries.
+
+#### Supply chain compromise
+
+Supply chain attacks target your device before it reaches you - at the manufacturer, distributor, or shipping stage. The NSA's ANT catalogue[^549], leaked by Snowden in 2013, documented hardware implants installed in Cisco routers and other network equipment in transit. For most users, this threat is not realistic. For a senior dissident, human rights lawyer, or intelligence source in a country whose government has influence over hardware supply chains, it deserves consideration.
+
+Practical mitigations are limited. Purchasing devices in person from a retail store (rather than having them shipped) reduces the interception window. Preferring hardware from vendors outside adversary supply chain reach, and using Heads-supported hardware with verified firmware, provides some assurance. For the highest-risk cases, consider that any device that has left your control - even briefly - should be treated as potentially compromised.
+
+#### Physical inspection checklist
+
+For high-risk individuals receiving or returning to a device:
+
+- Inspect port openings (USB, Thunderbolt, SD card slot) for signs of foreign objects or residue.
+- Check screws for scratches inconsistent with factory assembly; apply a tamper-evident seal after inspection.
+- Compare the cable you are about to use against a known-good reference; if in doubt, discard it.
+- On first boot after any period of unattended access, verify firmware measurements if your platform supports it (Heads TPM event log; `tpm2-tools` on Linux).
+- If Secure Boot is unexpectedly disabled in UEFI settings, treat the device as compromised.
+
 ## Your files, documents, pictures, and videos
 
 ### Properties and Metadata
@@ -1045,7 +1133,7 @@ One loosely documented attack might take the following approach to fingerprintin
 
 The font renders a box with a specific height and width around itself, so that means a specific height and width of the text contained within. The `iframe` keeps doing this for each installed font to create a list of installed fonts for Alice. Because of stylistic differences between each font family, the same string and the same font size will add up to a different height and a different width than Arial. It is used as a fallback font to display text that won't display otherwise, in the case of a user not having that font on their machine and thus non-viewable from their browser.
 
-If a font requested by an `iframe` is not available, Arial will be used to show that text to the user. Every time the font measurement (identified by the dimensions of the box produced) changed, it means the font is present on Alice's browser and her machine. By doing this for hundreds of fonts, websites can use this information to track users using their installed fonts across websites. Imagine a website then selling this “anonymized” information as a dataset to advertisement companies to serve you ads based on the websites you visit, because they know every font you have installed on your machine and can now track your identity across the internet. This attack is demonstrated here: [Everything you always wanted to know about web-based device fingerprinting (but were afraid to ask)](https://www.youtube.com/watch?v=5Y1Y96jC5AA) by Dr. Nick Nikiforakis, PhD in Computer Science from KU Leuven. He explains how his team of researchers identified which sites were using such techniques on Alexa's top 10,000 websites. Primarily, they found that of those, 145 were fingerprinting browsers. They were fingerprinted 100% of the time — whether they were using the Do Not Track header, a popular Privacy & Security setting in many browsers, did not matter.
+If a font requested by an `iframe` is not available, Arial will be used to show that text to the user. Every time the font measurement (identified by the dimensions of the box produced) changed, it means the font is present on Alice's browser and her machine. By doing this for hundreds of fonts, websites can use this information to track users using their installed fonts across websites. Imagine a website then selling this “anonymized” information as a dataset to advertisement companies to serve you ads based on the websites you visit, because they know every font you have installed on your machine and can now track your identity across the internet. This attack is demonstrated here: [Everything you always wanted to know about web-based device fingerprinting (but were afraid to ask)](https://www.youtube.com/watch?v=5Y1Y96jC5AA) by Dr. Nick Nikiforakis, PhD in Computer Science from KU Leuven. He explains how his team of researchers identified which sites were using such techniques on Alexa's top 10,000 websites. Primarily, they found that of those, 145 were fingerprinting browsers. They were fingerprinted 100% of the time - whether they were using the Do Not Track header, a popular Privacy & Security setting in many browsers, did not matter.
 
 Attacks such as invisible iframes and media elements can be avoided by blocking all scripts globally by using something like uBlock Origin <https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm> or by using NoScript <https://chrome.google.com/webstore/detail/noscript/doojmbjmlfjjnbmnoijecmcbfeoakpjm>. This is highly encouraged, not only to those wishing to be anonymous, but also to general web users.
 
@@ -5159,7 +5247,7 @@ See their tutorial here: <https://github.com/Qubes-Community/Contents/blob/maste
 
 **Correlation** is a relationship between two or more variables or **[attributes](https://www.digitalshadows.com/blog-and-research/cyber-attacks-the-challenge-of-attribution-and-response/)**. How are attributions determined? During digital forensic and incident response (DFIR), analysts typically look for indicators of compromise (IoCs) following events that call them to act. These indicators usually consist of IP addresses, names, databases; all of which can prescribe a certain behavioral "tag" to an individual or group. This is called attribution. A principal in statistics is that "correlation does not infer causality". What this means is that, while you may leave certain traces on certain areas of a device or network, that only shows presence of action, i.e., not explicitly your presence. It doesn't show who you are, it only resolves that something occurred and _someone_ has done _something_.
 
-Attribution is required to prove fault or guilt, and is the prime reason why people using the Tor network to access the dark web have been compromised: they left traces that were shown to be connected to their real identities. Your IP can be — but is usually not — a large enough indicator to attribute guilt. This is shown in the infamous NotPetya cyber attacks against the U.S., which were later also released upon Ukraine. Though the White House never _said_ it was Russia's doing, they attributed the attack to Russia's [(GRU)](https://www.reuters.com/article/us-britain-russia-gru-factbox/what-is-russias-gru-military-intelligence-agency-idUSKCN1MF1VK) which is a direct office housing the Russian deniable warfare[^311] cyber divisions, uncommonly referred to as "spy makers" in the intelligence community (IC).
+Attribution is required to prove fault or guilt, and is the prime reason why people using the Tor network to access the dark web have been compromised: they left traces that were shown to be connected to their real identities. Your IP can be - but is usually not - a large enough indicator to attribute guilt. This is shown in the infamous NotPetya cyber attacks against the U.S., which were later also released upon Ukraine. Though the White House never _said_ it was Russia's doing, they attributed the attack to Russia's [(GRU)](https://www.reuters.com/article/us-britain-russia-gru-factbox/what-is-russias-gru-military-intelligence-agency-idUSKCN1MF1VK) which is a direct office housing the Russian deniable warfare[^311] cyber divisions, uncommonly referred to as "spy makers" in the intelligence community (IC).
 
 _What is the point_, you may ask? Well, bluntly speaking, this a perfect example because NotPetya, which is now undoubtedly the work of Russian cyber operations against foreign countries and governments, has still never been formally attributed to Russia, only to a known group within Russia (colloquially dubbed [Cozy Bear](https://wikiless.com/wiki/Cozy_Bear)) which can not be confirmed nor denied given that it is highly compartmentalized within the structure of Russia's military. And it's also in part because of the efforts used to disguise itself as a common Ransomware, and because it routinely used the servers of hacked foreign assets not linked to Russia or to its internal networks.
 
@@ -7095,7 +7183,7 @@ Here is a comparative table of recommended/included software compiled from vario
 
 **Legend:** * Not recommended but mentioned. N/A = Not Included or absence of recommendation for that software type. (L)= Linux Only but can maybe be used on Windows/macOS through other means (HomeBrew, Virtualization, Cygwin). (?)= Not tested but open-source and could be considered.
 
-**In all cases, we strongly recommend only using such applications from within a VM or Tails to prevent as much leaking as possible. If you do not, you will have to sanitize those documents carefully before publishing (See [Removing Metadata from Files/Documents/Pictures](#removing-metadata-from-filesdocumentspictures)).**
+**In all cases, we strongly recommend only using such applications from within a VM or Tails to prevent as much leaking as possible. If you do not, you will have to sanitize those documents carefully before publishing (See [Metadata auditing](#metadata-auditing)).**
 
 ### Communicating sensitive information
 
@@ -7885,43 +7973,40 @@ In addition, most of these measures here should not be needed since your whole d
 
 Consider also reading this documentation if you're going with Whonix <https://www.whonix.org/wiki/Anti-Forensics_Precautions> <sup>[[Archive.org]](https://web.archive.org/web/https://www.whonix.org/wiki/Anti-Forensics_Precautions)</sup> as well as their general hardening tutorial for all platforms here <https://www.whonix.org/wiki/System_Hardening_Checklist> <sup>[[Archive.org]](https://web.archive.org/web/https://www.whonix.org/wiki/System_Hardening_Checklist)</sup>
 
-### Removing Metadata from Files/Documents/Pictures
+### Metadata auditing
+
+**Format conversion does not reliably strip metadata.** Converting a DOCX to PDF using Word embeds the Word document metadata into the PDF. Printing to PDF is somewhat cleaner but still retains producer information. The safe path is to use a purpose-built tool.
+
+| File type | Tool | What to check and remove |
+|-----------|------|--------------------------|
+| JPEG / TIFF / HEIC | `exiftool -all= file.jpg` | EXIF, XMP, IPTC - all containers |
+| PNG | `exiftool -all= file.png` | tEXt/iTXt chunks, XMP |
+| DOCX / XLSX / PPTX | MAT2 or Word's Document Inspector | Author, revision history, tracked changes, template path, comments |
+| PDF | `exiftool -all= file.pdf` or MAT2 | XMP packet, producer string, author, keywords |
+| Any untrusted file | Dangerzone[^446] | Convert to safe PDF via isolated container, stripping all metadata |
+| Video (MP4 / MOV) | `exiftool -all= file.mp4` | GPS, device info, creation time, encoder version |
+
+**The safest workflow for sharing sensitive documents:** open the original in Dangerzone, which renders it in an isolated container and exports a clean PDF with metadata stripped. For images, run `exiftool -all= -overwrite_original filename` and verify with `exiftool filename` that the output is clean before sharing.
 
 #### Pictures and videos
+
+EXIF[^222] (Exchangeable Image File Format) is the metadata standard used by digital cameras and smartphones. A typical smartphone photo contains: GPS coordinates at the moment of capture (latitude, longitude, altitude, and sometimes bearing); camera make, model, and serial number; lens focal length; timestamp including timezone offset; and software version used to process the image.
+
+The GPS data alone is frequently sufficient to identify a specific room in a specific building. Several high-profile source identification cases have turned on EXIF geolocation in images sent to journalists or posted online.
+
+**Why stripping EXIF is not always enough:** EXIF is one metadata container. JPEG and TIFF files also support **XMP** (Extensible Metadata Platform)[^540], an Adobe-developed metadata format embedded as an XML packet inside the file. Tools that strip EXIF do not necessarily strip XMP. XMP can carry the same geolocation, authorship, and device information - sometimes more. ExifTool reads and writes both; many simpler "EXIF removers" do not touch XMP at all. Additionally, some camera manufacturers embed proprietary metadata in their own namespace inside XMP that persists even after standard EXIF removal.
+
+A further subtlety: some platforms (notably older versions of Twitter and Facebook) strip EXIF server-side before serving images - but they store the original. Do not rely on platform stripping as a privacy control.
 
 On Windows, macOS, and Linux we would recommend ExifTool (<https://exiftool.org/> <sup>[[Archive.org]](https://web.archive.org/web/https://exiftool.org/)</sup>) and/or ExifCleaner (<https://exifcleaner.com/> <sup>[[Archive.org]](https://web.archive.org/web/https://exifcleaner.com/)</sup>) that allows viewing and/or removing those properties.
 
 **ExifTool is natively available on Tails and Whonix Workstation.**
 
-##### ExifCleaner
+#### PDF metadata
 
-Just install it from <https://exifcleaner.com/> <sup>[[Archive.org]](https://web.archive.org/web/https://exifcleaner.com/)</sup>, run and drag and drop the files into the GUI.
+PDFs carry their own metadata layer. The **XMP packet** in a PDF can contain author, creator application (including version number), producer (the software that generated the PDF, e.g. "Microsoft Word 16.0.1" or a specific version of LibreOffice), creation and modification timestamps, and document title. The **producer string** is particularly useful to investigators because specific software versions are associated with specific time windows and installations.
 
-##### ExifTool
-
-It is actually simple, just install exiftool and run:
-
-- To display metadata: ```exiftool filename.jpg```
-
-- To remove all metadata: ```exiftool -All= filename.jpg```
-
-**Remember that ExifTool is natively available on Tails and Whonix Workstation.**
-
-##### Windows Native tool
-
-Here is a tutorial to remove metadata from a Picture using OS provided tools: <https://www.purevpn.com/internet-privacy/how-to-remove-metadata-from-photos> <sup>[[Archive.org]](https://web.archive.org/web/https://www.purevpn.com/internet-privacy/how-to-remove-metadata-from-photos)</sup>
-
-##### Cloaking/Obfuscating to prevent picture recognition
-
-Consider the use of Fawkes <https://sandlab.cs.uchicago.edu/fawkes/> <sup>[[Archive.org]](https://web.archive.org/web/https://sandlab.cs.uchicago.edu/fawkes/)</sup> (<https://github.com/Shawn-Shan/fawkes> <sup>[[Archive.org]](https://web.archive.org/web/https://github.com/Shawn-Shan/fawkes)</sup>) to cloak the images from picture recognition tech on various platforms.
-
-Or if you want online versions, consider:
-
-- <https://lowkey.umiacs.umd.edu/> <sup>[[Archive.org]](https://web.archive.org/web/https://lowkey.umiacs.umd.edu/)</sup>
-
-- <https://adversarial.io/> <sup>[[Archive.org]](https://web.archive.org/web/https://adversarial.io/)</sup>
-
-#### PDF Documents
+Less obviously, **font embedding** in PDFs can fingerprint a document to a specific installation. Font subsets - the specific character outlines embedded in the PDF - vary slightly depending on which fonts are installed, which renderer is used, and which version of the software generated the file. Comparing embedded font data across multiple documents can link them to the same author even with no other identifying metadata present.[^541]
 
 ##### PDFParanoia (Linux/Windows/macOS/QubesOS)
 
@@ -7939,9 +8024,39 @@ It is actually simple, just install exiftool and run:
 
 - To remove all metadata: ```exiftool -All= filename.pdf```
 
-#### MS Office Documents
+#### ExifCleaner
 
-First, here is a tutorial to remove metadata from Office documents: <https://support.microsoft.com/en-us/office/remove-hidden-data-and-personal-information-by-inspecting-documents-presentations-or-workbooks-356b7b5d-77af-44fe-a07f-9aa4d085966f> <sup>[[Archive.org]](https://web.archive.org/web/https://support.microsoft.com/en-us/office/remove-hidden-data-and-personal-information-by-inspecting-documents-presentations-or-workbooks-356b7b5d-77af-44fe-a07f-9aa4d085966f)</sup>. Make sure however that you do use the latest version of Office with the latest security updates.
+Just install it from <https://exifcleaner.com/> <sup>[[Archive.org]](https://web.archive.org/web/https://exifcleaner.com/)</sup>, run and drag and drop the files into the GUI.
+
+#### ExifTool
+
+It is actually simple, just install exiftool and run:
+
+- To display metadata: ```exiftool filename.jpg```
+
+- To remove all metadata: ```exiftool -All= filename.jpg```
+
+**Remember that ExifTool is natively available on Tails and Whonix Workstation.**
+
+#### Windows Native tool
+
+Here is a tutorial to remove metadata from a Picture using OS provided tools: <https://www.purevpn.com/internet-privacy/how-to-remove-metadata-from-photos> <sup>[[Archive.org]](https://web.archive.org/web/https://www.purevpn.com/internet-privacy/how-to-remove-metadata-from-photos)</sup>
+
+#### Cloaking/Obfuscating to prevent picture recognition
+
+Consider the use of Fawkes <https://sandlab.cs.uchicago.edu/fawkes/> <sup>[[Archive.org]](https://web.archive.org/web/https://sandlab.cs.uchicago.edu/fawkes/)</sup> (<https://github.com/Shawn-Shan/fawkes> <sup>[[Archive.org]](https://web.archive.org/web/https://github.com/Shawn-Shan/fawkes)</sup>) to cloak the images from picture recognition tech on various platforms.
+
+Or if you want online versions, consider:
+
+- <https://lowkey.umiacs.umd.edu/> <sup>[[Archive.org]](https://web.archive.org/web/https://lowkey.umiacs.umd.edu/)</sup>
+
+- <https://adversarial.io/> <sup>[[Archive.org]](https://web.archive.org/web/https://adversarial.io/)</sup>
+
+#### DOCX and Office Documents
+
+Microsoft Office documents are ZIP archives containing XML files, and those XML files contain extensive metadata. This includes: author name and initials (from the Office profile at creation time); last-modified-by name; creation and modification timestamps; revision count; total editing time; company name from the Office installation; the path of the document template used at creation (which can include a username or network path); and, critically, **revision history and tracked changes** - deletions and edits that the author thought were removed may be stored in the document and recoverable by anyone who opens it in a sufficiently capable viewer.
+
+Several cases of documents leaked to journalists have resulted in source identification because the author's name or network username was embedded in the XML. John Doe metadata has identified real people. The fix is to use **File → Inspect Document** in Word before sharing (it will show hidden data and offer to remove it) or to use MAT2[^446] to strip metadata entirely. Converting to PDF does not reliably remove this information - see below.
 
 Alternatively, on Windows, macOS, Qubes OS, and Linux we would recommend ExifTool (<https://exiftool.org/> <sup>[[Archive.org]](https://web.archive.org/web/https://exiftool.org/)</sup>) and/or ExifCleaner (<https://exifcleaner.com/> <sup>[[Archive.org]](https://web.archive.org/web/https://exifcleaner.com/)</sup>) that allows viewing and/or removing those properties
 
@@ -7957,7 +8072,7 @@ It is actually simple, just install exiftool and run:
 
 - To remove all metadata: ```exiftool -All= filename.docx```
 
-#### LibreOffice Documents
+##### LibreOffice Documents
 
 - select Files in the upper menu
 
@@ -10060,15 +10175,13 @@ Now, what if you think the PDF is still suspicious? Fear not ... there are more 
 
 - **Qubes OS:** Consider using <https://github.com/QubesOS/qubes-app-linux-pdf-converter> <sup>[[Archive.org]](https://web.archive.org/web/https://github.com/QubesOS/qubes-app-linux-pdf-converter)</sup> which will convert your PDF into a flattened image file. This should theoretically remove any malicious code in it. Note that this will also render the PDF formatting useless (such as links, headings, bookmarks, and references).
 
-- **(Deprecated) Linux/Qubes OS** (or possibly macOS through Homebrew or Windows through Cygwin): Consider not using <https://github.com/firstlook../media/pdf-redact-tools> <sup>[[Archive.org]](https://web.archive.org/web/https://github.com/firstlook../media/pdf-redact-tools)</sup> which will also turn your PDF into a flattened image file. Again, this should theoretically remove any malicious code in it. Again, this will also render the PDF formatting useless (such as links, headings, bookmarks, and references). **Note that this tool is deprecated and relies on a library called "ImageMagick" which is known for several security issues**[^498]**. You should not use this tool even if it is recommended in some other guides.**
-
-- **Windows/Linux/Qubes/OS/macOS:** Consider using <https://github.com/firstlook../media/dangerzone> <sup>[[Archive.org]](https://web.archive.org/web/https://github.com/firstlook../media/dangerzone)</sup> which was inspired by Qubes PDF Converted above and does the same but is well maintained and works on all OSes. This tool also works with Images, ODF files, and Office files (Warning: On Windows, this tool requires Docker-Desktop installed and this might (will) interfere with Virtualbox and other Virtualization software because it requires enabling Hyper-V. VirtualBox and Hyper-V do not play nice together[^499]. Consider installing this within a Linux VM for convenience instead of a Windows OS).
+- **(Deprecated) Linux/Qubes OS** (or possibly macOS through Homebrew or Windows through Cygwin): This should *theoretically* remove any malicious code in it, but will also render the PDF formatting useless (such as links, headings, bookmarks, and references). Something similar to how rasterizing this website into a PDF works when swtiching to dark-mode. **Note that this tool is deprecated and relies on a library called "ImageMagick" which is known for several security issues**[^498]**. You should not use this tool even if it is recommended in some other guides.**
 
 #### Other types of files
 
 Here are some various resources for this purpose where you will find what tool to use for what type:
 
-- **For Documents/Pictures:** Consider using <https://github.com/firstlook../media/dangerzone> <sup>[[Archive.org]](https://web.archive.org/web/https://github.com/firstlook../media/dangerzone)</sup> which was inspired by Qubes PDF Converted above and does the same but is well maintained and works on all OSes. This tool also works with Images, ODF files, and Office files (Warning: On Windows, this tool requires Docker-Desktop installed and this might (will) interfere with Virtualbox and other Virtualization software because it requires enabling Hyper-V. VirtualBox and Hyper-V do not play nice together[^500]. Consider installing this within a Linux VM for convenience instead of a Windows OS).
+- **For Documents/Pictures:** Consider using <https://github.com/freedomofpress/dangerzone> <sup>[[Archive.org]](https://web.archive.org/web/https://github.com/freedomofpress/dangerzone)</sup> which was inspired by Qubes PDF Converted above and does the same but is well maintained and works on all OSes. This tool also works with Images, ODF files, and Office files (Warning: On Windows, this tool requires Docker-Desktop installed and this might (will) interfere with Virtualbox and other Virtualization software because it requires enabling Hyper-V. VirtualBox and Hyper-V do not play nice together[^499]. Consider installing this within a Linux VM for convenience instead of a Windows OS).
 
 - **For Videos:** Be extremely careful, use an up-to-date player in a sandboxed environment. Remember <https://www.vice.com/en/article/v7gd9b/facebook-helped-fbi-hack-child-predator-buster-hernandez> <sup>[[Archive.org]](https://web.archive.org/web/https://www.vice.com/en/article/v7gd9b/facebook-helped-fbi-hack-child-predator-buster-hernandez)</sup>
 
@@ -11435,7 +11548,7 @@ Remember this should only be done on a secure environment such as VM behind the 
 
 Here is a checklist of things to verify before sharing information to anyone:
 
-- Check the files for any metadata: see [Removing Metadata from Files/Documents/Pictures](#removing-metadata-from-filesdocumentspictures)
+- Check the files for any metadata: see [Metadata auditing](#metadata-auditing)
 
 - Check the files for anything malicious: see [Appendix T: Checking files for malware](#appendix-t-checking-files-for-malware)
 
@@ -11540,6 +11653,138 @@ And from [a post](https://tor.stackexchange.com/questions/427/is-running-tor-ove
 - Their funding is completely opaque.
 
 In short, our opinion is that you may use Session Messenger on iOS due to the absence of a better alternative (such as Briar). But if Briar or another app (maybe Cwtch in the future) becomes available, we will recommend going away from Session messenger as soon as possible. It is a last resort.
+
+# Appendix B8: operational security failure case studies
+
+The following cases are drawn from public court records, journalism, and post-mortems. They are included not to gloat over people who were caught, but because each illustrates a specific, repeatable failure mode that is directly relevant to the guidance elsewhere in this guide. In every case, the technical anonymity tools available were sufficient - the failures were human.
+
+## Hector Monsegur (Sabu) - LulzSec, 2011
+
+**Context:** Monsegur was a core member and de facto leader of LulzSec, a high-profile hacking group responsible for breaches of Sony, the FBI, and others. He was arrested in June 2011 and subsequently became an FBI informant.
+
+**The failure:** On a single occasion, Monsegur logged into an IRC channel associated with Anonymous/LulzSec without routing his connection through Tor. His real IP address - assigned to his home internet connection in New York - was logged by the IRC server. The FBI subpoenaed those logs.
+
+**What it demonstrates:** A single lapse in a single session is sufficient to de-anonymize an otherwise disciplined operator. Tor is only effective if it is used *every time* without exception. There is no "just this once" at the operational level. The value of anonymity is destroyed the moment it is broken, even once.
+
+**What he should have done:** Used Tor or a trusted VPN for every IRC connection without exception, ideally from hardware and a network not associated with his identity. A single dedicated device used exclusively for sensitive activities would have prevented cross-contamination.
+
+## Ross Ulbricht - Silk Road, 2013
+
+**Context:** Ulbricht operated Silk Road, the pseudonymous darknet market, under the name "Dread Pirate Roberts" for approximately two years before his arrest in October 2013.
+
+**The failure:** Multiple compounding errors over time, not a single incident. Before Silk Road existed, Ulbricht posted to a Bitcoin forum under the username "altoid" advertising the site - and separately used the same "altoid" username to post a job listing that included his personal Gmail address. Investigators matched the username across posts. Additionally, early posts on Stack Overflow linked to his real identity. His laptop, when seized at arrest, was open and unlocked - meaning his encrypted drives were fully accessible at the moment of capture.
+
+**What it demonstrates:** Username reuse across contexts is one of the most reliable de-anonymization vectors available to investigators. A pseudonym used for sensitive activity must never appear in any context connected to your real identity - not a job post, not a forum question, not a throwaway comment years earlier. Compartmentalization must be total and must precede the activity, not follow it.
+
+**What he should have done:** Used entirely separate identities, devices, and communication channels for Silk Road administration and personal activity, with no shared usernames, email addresses, or writing contexts. Pre-arrest, encrypted his working drive with a passphrase so that seizure of an open laptop would not yield plaintext access.
+
+## "Defcon" (Blake Benthall) - Silk Road 2.0, 2014
+
+**Context:** Silk Road 2.0 launched shortly after the original Silk Road was seized. Its administrator, operating as "Defcon," was arrested in November 2014.
+
+**The failure:** According to the criminal complaint, an FBI undercover agent had achieved a position inside the site's staff. More technically, the complaint describes the use of login timing correlation: investigators observed that "Defcon" logged into the site at times that correlated with other identifiable online activity. Additionally, the server infrastructure was identified through misconfigured hidden service configurations that leaked real IP addresses - a recurring operational failure in darknet markets.
+
+**What it demonstrates:** Two distinct lessons. First, human infiltration of trusted circles is often more effective than technical attacks - no cryptography protects against a trusted insider. Second, server-side operational security (correctly configuring Tor hidden services so they do not leak their real IP under any condition) is as important as client-side anonymity. A perfectly anonymous administrator is irrelevant if the server itself is identifiable.
+
+**What he should have done:** Audited all server configurations for IP leakage before launch and regularly thereafter. Treated all staff as potential informants at the operational level, compartmentalizing information accordingly.
+
+## Jeremy Hammond - AntiSec, 2012
+
+**Context:** Hammond was a member of AntiSec, an offshoot of Anonymous, responsible for the Stratfor breach. He was arrested in March 2012.
+
+**The failure:** Monsegur (Sabu), by this point an FBI informant, directed Hammond toward targets chosen by the FBI while gathering evidence against him. Hammond used strong technical practices but was socially engineered through a trusted relationship. He also reused a password pattern that investigators were able to identify across accounts.
+
+**What it demonstrates:** A complementary lesson to the Monsegur case: even technically disciplined operators are vulnerable to compromise through trusted human relationships. Password reuse or patterned passwords across identities provides a correlation vector even when no single credential is directly compromised.
+
+**What he should have done:** Used unique, randomly generated credentials for every identity and service with no shared patterns. The more important lesson - that operational trust in individuals cannot be verified cryptographically - has no clean technical solution, but compartmentalizing what each collaborator knows limits the damage any single compromise can cause.
+
+## Common threads
+
+Reading across these cases, several patterns repeat:
+
+- **Single-session lapses break long-term anonymity.** Consistency is not optional.
+- **Cross-context identity linkage is the most common investigative vector.** Usernames, writing style, email addresses, and posting history are all searchable and correlated.
+- **Server-side and client-side security are both required.** Strong client anonymity does not compensate for a leaking server.
+- **Human relationships are the most reliable attack surface.** Infiltration and informants feature in the majority of significant darknet takedowns.
+- **Physical capture with an unlocked device undoes everything.** Disk encryption only helps if the device is locked at the moment of seizure.
+
+# Appendix B9: Post-quantum cryptography
+
+**Note: This section deals with a threat that is not immediate for most users. If your threat model involves a nation-state adversary or communications whose sensitivity extends years into the future, read carefully. If you are an average user, you can skim this section for now but should revisit it as the technology matures.**
+
+Most of the encryption protecting your communications today - including the key exchanges inside Signal, HTTPS connections, VPNs, and PGP - relies on mathematical problems that are computationally infeasible for any classical computer to solve. A sufficiently powerful quantum computer[^553] running Shor's algorithm[^271] would break these problems efficiently. No such computer exists yet. The largest current machines are still far from the scale needed. But that is not a reason to ignore the problem.
+
+The threat is called **"harvest now, decrypt later"** (HNDL). It works like this: an adversary - a government intelligence agency is the realistic candidate here - records and stores your encrypted traffic today, at scale. They cannot read it now. But if a capable quantum computer is built in the next 10-20 years, they decrypt that archived traffic retroactively. For most people reading this, that is not a pressing concern. For a journalist protecting a source whose identity would still be dangerous to expose in 2035, or an activist living under a government that keeps very long institutional memories, it is worth taking seriously.
+
+The good news is that the cryptographic community has been aware of this problem for over a decade, and the tooling is arriving. In 2024, NIST finalized the first post-quantum cryptographic standards[^555]:
+
+- **ML-KEM** (Module-Lattice-Based Key-Encapsulation Mechanism, formerly known as Kyber[^556]) - replaces the classical key exchange step in protocols such as TLS and Signal's X3DH. It is based on the hardness of the Module Learning With Errors (MLWE) problem, which is believed to resist both classical and quantum attacks.
+
+- **ML-DSA** (Module-Lattice-Based Digital Signature Algorithm, formerly Dilithium) - a post-quantum replacement for RSA and ECDSA signatures used to authenticate identities and sign software.
+
+- **SPHINCS+** (now standardized as SLH-DSA) - a hash-based signature scheme. Slower and larger than ML-DSA, but it relies only on the security of hash functions rather than lattice assumptions, making it a conservative fallback if lattice-based cryptography is ever weakened.
+
+NIST explicitly recommends deploying these in **hybrid mode** during the transition period - meaning alongside classical algorithms rather than replacing them outright. This way, an attacker would need to break both simultaneously.
+
+## Signal's PQXDH
+
+In September 2023, Signal deployed **PQXDH**[^557] (Post-Quantum Extended Diffie-Hellman), upgrading its X3DH key agreement protocol to combine ML-KEM-1024 with the classical X25519 Diffie-Hellman exchange. The result is hybrid: security holds as long as either component remains unbroken.
+
+For Signal users, **this was automatic and transparent**. No configuration is required. New conversations started after the rollout use PQXDH by default. This directly addresses the HNDL threat for forward secrecy - an adversary who recorded your Signal traffic cannot use a future quantum computer to derive your session keys.
+
+Note that this only covers the key exchange layer. The authentication layer (identity keys) is not yet post-quantum hardened in Signal, though this is an active area of development.
+
+## What you should do now
+
+For most threat models, the practical steps are straightforward:
+
+- **Use Signal.** PQXDH is already deployed, no action required.
+
+- **Keep your browser updated.** Chrome and Firefox have had hybrid post-quantum key exchange (X25519 + ML-KEM) in TLS enabled by default since 2024[^558]. This protects your HTTPS connections against HNDL at the transport layer.
+
+- **Do not rely on PGP/GPG for long-term confidentiality of highly sensitive material.** PGP key exchanges (RSA, ECDH) are not post-quantum hardened. Messages encrypted to a PGP key today could be decrypted retroactively by a quantum-capable adversary who has stored them. If you must use PGP, treat it as protection against present-day adversaries only.
+
+- **Check your VPN provider.** Most commercial VPNs have not yet deployed post-quantum key exchange. Some (Mullvad, ProtonVPN) have added it. If HNDL is in your threat model, check your provider's documentation or switch to one that supports it.
+
+For those with genuinely high-risk profiles: communications whose exposure would still be dangerous in ten or more years deserve attention now. Switching to Signal and establishing fresh sessions (rather than relying on long-running session state from before the PQXDH rollout) is the most practical near-term step.
+
+## A note on Monero
+
+Monero's cryptographic primitives - specifically its use of Ed25519 and Curve25519 - are vulnerable to Shor's algorithm on a sufficiently powerful quantum computer. The Monero Research Lab has studied this problem[^535] and no post-quantum upgrade has been deployed. The community regards this as a medium-term concern, not an immediate one, given the current state of quantum hardware. For operational anonymity today, Monero remains appropriate. Do not assume long-term financial privacy against a quantum-capable adversary.
+
+# Appendix C1: Stylometric analysis and writing style
+
+**Note: Stylometric de-anonymization is a real but narrow threat. It is relevant to people who publish substantial amounts of text under a pseudonym over time, or who are suspected leakers being compared against a known corpus of their writing. It is not a realistic threat for most users of this guide. Read this section if you write publicly under a pseudonym, communicate repeatedly with the same adversary, or are a potential whistleblower whose writing may be compared against internal documents.**
+
+Stylometry[^559] is the statistical analysis of writing style for authorship attribution. The core insight is that people write in consistent, measurable ways that persist across topics and contexts - and that these patterns are difficult to suppress consciously. An author who habitually uses the Oxford comma, prefers "however" to "but," writes sentences averaging 22 words, and rarely uses exclamation marks will tend to do so whether writing a forum post, an email, or a leaked document.
+
+## What features are measured
+
+Modern stylometric systems analyse dozens to hundreds of features simultaneously. The most discriminating are **function words** - articles, prepositions, conjunctions - which are used largely unconsciously and are highly consistent per author.[^560] Content words (nouns, verbs, topic-specific vocabulary) are poor stylometric features because they vary with subject matter; function words do not. Other features include: sentence length distribution; punctuation habits (comma frequency, semicolon use, dash preference); paragraph length; vocabulary richness (type-token ratio); character-level n-grams; and syntactic patterns such as passive voice frequency.
+
+In controlled academic evaluations, state-of-the-art systems achieve attribution accuracy above 80% across corpora of 50 or more candidate authors when each author has contributed several thousand words.[^561] Accuracy degrades significantly with shorter texts (under 500 words), larger candidate sets, or when the candidate corpus and the anonymous text are from different genres or contexts.
+
+## Deployed tools and real cases
+
+**JGAAP** (Java Graphical Authorship Attribution Program)[^562], developed at Duquesne University, is the most widely used open academic tool and has been applied in legal proceedings. **Burner** is a more recent system designed specifically for adversarial de-anonymization of online pseudonyms.
+
+The most documented real-world case is the 2013 identification of J.K. Rowling as the author of *The Cuckoo's Calling*, published under the pseudonym Robert Galbraith.[^563] Stylometric analysis by Peter Millican and Patrick Juola comparing the novel against Rowling's known work and a set of candidate authors produced a strong match before the identification was confirmed through other means. The corpus in this case was large - full novels - which is the condition under which stylometry works best.
+
+In national security contexts, stylometric analysis has been used or attempted in leak investigations to compare anonymous documents against the known writing of suspected sources, though specific cases are rarely publicly confirmed.
+
+## What works and what does not
+
+**Naive countermeasures fail.** Synonym substitution - replacing words with alternatives of similar meaning - does not affect function word patterns, sentence structure, or punctuation habits, which are the most discriminating features. Simply trying to "write differently" without a specific method is ineffective because the unconscious habits that stylometry measures are, by definition, ones the author does not notice.
+
+**What has some effectiveness:** writing in a register genuinely unlike your natural style (e.g., formal legal prose when you normally write casually) does degrade attribution accuracy, because register shift affects multiple feature classes simultaneously. Keeping texts short - under 300-400 words - meaningfully reduces attribution confidence. Collaborative writing, where multiple authors contribute to a single document, degrades single-author attribution significantly.
+
+**AI rewriting as a countermeasure** is an active area of research with mixed results.[^564] Large language models do alter function word distributions and sentence structure when rewriting text, and early studies suggest this degrades stylometric attribution accuracy to some degree. However, LLM rewriting does not reliably remove all stylistic signal - some author-specific patterns survive paraphrasing - and introduces a new signal: the statistical fingerprint of the specific model and prompt used. Whether this trade is favourable depends on the adversary's capabilities. LLM rewriting is probably useful as one layer in a defence-in-depth approach for high-risk writers, but should not be relied upon as a complete solution.
+
+## Honest threat model
+
+Stylometry requires a reasonably large text sample from the anonymous author (ideally 1,000+ words), a candidate set of known authors to compare against, and a known writing corpus for those candidates. This limits realistic deployment to: leak investigations where investigators have a short list of suspects with known writing samples; de-anonymization of long-running pseudonymous authors with substantial published output; and academic or forensic authorship disputes.
+
+It is not a practical threat for: one-off anonymous communications; users whose adversary does not have a comparison corpus of their writing; or short messages where the text sample is insufficient for reliable analysis. For most people reading this guide, the other threats documented here - metadata, network-layer identification, device fingerprinting - are far more likely vectors than stylometry. Address those first.
 
 # References
 
@@ -12531,8 +12776,6 @@ In short, our opinion is that you may use Session Messenger on iOS due to the ab
 
 [^499]: Oracle Virtualbox Documentation, <https://docs.oracle.com/en/virtualization/virtualbox/6.0/admin/hyperv-support.html> <sup>[[Archive.org]](https://web.archive.org/web/https://docs.oracle.com/en/virtualization/virtualbox/6.0/admin/hyperv-support.html)</sup>
 
-[^500]: Oracle Virtualbox Documentation, <https://docs.oracle.com/en/virtualization/virtualbox/6.0/admin/hyperv-support.html> <sup>[[Archive.org]](https://web.archive.org/web/https://docs.oracle.com/en/virtualization/virtualbox/6.0/admin/hyperv-support.html)</sup>
-
 [^501]: Lenny Zeltser, Analyzing Malicious Documents Cheat Sheet <https://zeltser.com/analyzing-malicious-documents/> <sup>[[Archive.org]](https://web.archive.org/web/https://zeltser.com/analyzing-malicious-documents/)</sup>
 
 [^502]: Wikipedia, Portable Applications <https://en.wikipedia.org/wiki/Portable_application> <sup>[[Wikiless]](https://wikiless.com/wiki/Portable_application)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Portable_application)</sup>
@@ -12606,3 +12849,51 @@ In short, our opinion is that you may use Session Messenger on iOS due to the ab
 [^538]: Lokinet Documentation, Service Nodes, <https://loki.network/service-nodes/> <sup>[[Archive.org]](https://web.archive.org/https://loki.network/service-nodes/)</sup>
 
 [^539]: Session Documentation, Session protocol explained, <https://getsession.org/session-protocol-explained> <sup>[[Archive.org]](https://web.archive.org/[https://loki.network/service-nodes/](https://getsession.org/session-protocol-explained))</sup>
+
+[^540]: Adobe, XMP Specification <https://www.adobe.com/devnet/xmp.html> <sup>[[Archive.org]](https://web.archive.org/web/https://www.adobe.com/devnet/xmp.html)</sup>
+
+[^541]: Proceedings on Privacy Enhancing Technologies, Linking Documents via Font Metadata (2019) <https://petsymposium.org/2019/files/papers/issue4/popets-2019-0062.pdf> <sup>[[Archive.org]](https://web.archive.org/web/https://petsymposium.org/2019/files/papers/issue4/popets-2019-0062.pdf)</sup>
+
+[^542]: The Intercept, NSA Leaker Reality Winner Identified in Part Through Printer Tracking Dots <https://theintercept.com/2017/06/06/how-secret-nsa-document-was-identified-via-printer-tracking-dots/> <sup>[[Archive.org]](https://web.archive.org/web/https://theintercept.com/2017/06/06/how-secret-nsa-document-was-identified-via-printer-tracking-dots/)</sup>
+
+[^543]: BBC News, Downing Street dossier 'was plagiarised' <https://news.bbc.co.uk/1/hi/uk_politics/2727471.stm> <sup>[[Archive.org]](https://web.archive.org/web/https://news.bbc.co.uk/1/hi/uk_politics/2727471.stm)</sup>
+
+[^544]: Wikipedia, UEFI <https://en.wikipedia.org/wiki/UEFI> <sup>[[Wikiless]](https://wikiless.com/wiki/UEFI)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/UEFI)</sup>
+
+[^545]: ESET, LoJax: First UEFI rootkit found in the wild <https://www.eset.com/int/about/newsroom/press-releases/eset-discovers-first-ever-uefi-rootkit-in-the-wild-raising-the-stakes-in-targeted-attacks/> <sup>[[Archive.org]](https://web.archive.org/web/https://www.eset.com/int/about/newsroom/press-releases/eset-discovers-first-ever-uefi-rootkit-in-the-wild-raising-the-stakes-in-targeted-attacks/)</sup>
+
+[^546]: Kaspersky, MosaicRegressor: Lurking in the Shadows of UEFI <https://securelist.com/mosaicregressor-lurking-in-the-shadows-of-uefi/98236/> <sup>[[Archive.org]](https://web.archive.org/web/https://securelist.com/mosaicregressor-lurking-in-the-shadows-of-uefi/98236/)</sup>
+
+[^547]: Heads firmware project <https://osresearch.net/> <sup>[[Archive.org]](https://web.archive.org/web/https://osresearch.net/)</sup>
+
+[^548]: GitHub, USBGuard <https://github.com/USBGuard/usbguard> <sup>[[Archive.org]](https://web.archive.org/web/https://github.com/USBGuard/usbguard)</sup>
+
+[^549]: Der Spiegel, NSA ANT catalogue <https://www.spiegel.de/international/world/the-nsa-uses-powerful-toolbox-in-effort-to-spy-on-global-networks-a-940969.html> <sup>[[Archive.org]](https://web.archive.org/web/https://www.spiegel.de/international/world/the-nsa-uses-powerful-toolbox-in-effort-to-spy-on-global-networks-a-940969.html)</sup>
+
+[^550]: Tor Project, Tor design paper <https://svn-archive.torproject.org/svn/projects/design-paper/tor-design.pdf> <sup>[[Archive.org]](https://web.archive.org/web/https://svn-archive.torproject.org/svn/projects/design-paper/tor-design.pdf)</sup>
+
+[^551]: Murdoch & Danezis, Low-Cost Traffic Analysis of Tor (2005) <https://www.cl.cam.ac.uk/~rja14/Papers/tor-attack.pdf> <sup>[[Archive.org]](https://web.archive.org/web/https://www.cl.cam.ac.uk/~rja14/Papers/tor-attack.pdf)</sup>
+
+[^552]: Sun et al., RAPTOR: Routing Attacks on Privacy in Tor (2015) <https://www.usenix.org/system/files/conference/usenixsecurity15/sec15-paper-sun.pdf> <sup>[[Archive.org]](https://web.archive.org/web/https://www.usenix.org/system/files/conference/usenixsecurity15/sec15-paper-sun.pdf)</sup>
+
+[^553]: Wikipedia, Quantum computing <https://en.wikipedia.org/wiki/Quantum_computing> <sup>[[Wikiless]](https://wikiless.com/wiki/Quantum_computing)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Quantum_computing)</sup>
+
+[^555]: NIST, Post-Quantum Cryptography Standardization <https://csrc.nist.gov/projects/post-quantum-cryptography> <sup>[[Archive.org]](https://web.archive.org/web/https://csrc.nist.gov/projects/post-quantum-cryptography)</sup>
+
+[^556]: NIST, NIST Releases First 3 Finalized Post-Quantum Encryption Standards <https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards> <sup>[[Archive.org]](https://web.archive.org/web/https://www.nist.gov/news-events/news/2024/08/nist-releases-first-3-finalized-post-quantum-encryption-standards)</sup>
+
+[^557]: Signal Blog, PQXDH Key Agreement Protocol <https://signal.org/docs/specifications/pqxdh/> <sup>[[Archive.org]](https://web.archive.org/web/https://signal.org/docs/specifications/pqxdh/)</sup>
+
+[^558]: Chromium Blog, Protecting Chrome Traffic with Hybrid Kyber KEM <https://blog.chromium.org/2023/08/protecting-chrome-traffic-with-hybrid.html> <sup>[[Archive.org]](https://web.archive.org/web/https://blog.chromium.org/2023/08/protecting-chrome-traffic-with-hybrid.html)</sup>
+
+[^559]: Wikipedia, Stylometry <https://en.wikipedia.org/wiki/Stylometry> <sup>[[Wikiless]](https://wikiless.com/wiki/Stylometry)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Stylometry)</sup>
+
+[^560]: Mosteller & Wallace, Inference and Disputed Authorship: The Federalist (1964) - the foundational study establishing function words as the primary stylometric signal <https://www.jstor.org/stable/2283270> <sup>[[Archive.org]](https://web.archive.org/web/https://www.jstor.org/stable/2283270)</sup>
+
+[^561]: Koppel, Schler & Argamon, Computational Methods in Authorship Attribution, Journal of the American Society for Information Science and Technology, 2009 <https://onlinelibrary.wiley.com/doi/10.1002/asi.20961> <sup>[[Archive.org]](https://web.archive.org/web/https://onlinelibrary.wiley.com/doi/10.1002/asi.20961)</sup>
+
+[^562]: Juola et al., JGAAP: A System for Comparative Authorship Attribution <https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.440.8174&rep=rep1&type=pdf> <sup>[[Archive.org]](https://web.archive.org/web/https://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.440.8174&rep=rep1&type=pdf)</sup>
+
+[^563]: Patrick Juola, How a computer program helped reveal J.K. Rowling as author of A Cuckoo's Calling, Scientific American, 2013 <https://www.scientificamerican.com/article/how-a-computer-program-helped-show-jk-rowling-write-a-cuckoo-s-calling/> <sup>[[Archive.org]](https://web.archive.org/web/https://www.scientificamerican.com/article/how-a-computer-program-helped-show-jk-rowling-write-a-cuckoo-s-calling/)</sup>
+
+[^564]: Mahmood et al., This is not my writing: LLMs as Authorship Obfuscation Tools, arXiv 2023 <https://arxiv.org/abs/2305.12605> <sup>[[Archive.org]](https://web.archive.org/web/https://arxiv.org/abs/2305.12605)</sup>
