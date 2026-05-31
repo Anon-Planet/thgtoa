@@ -396,7 +396,7 @@ def main() -> int:
     print("\n" + "=" * 70)
     print("  ✓ All done. Push the tag with:")
     print(f"\n    git push origin {version}\n")
-    print("  The release.yml workflow can then be triggered manually from")
+    print("  The 03-release.yml workflow can then be triggered manually from")
     print("  GitHub Actions to publish the GitHub Release for this tag.")
     print("=" * 70 + "\n")
 

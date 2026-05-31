@@ -142,7 +142,7 @@ jobs:
             git push origin main
           fi
 
-      # Upload artifacts for release.yml and verify job to consume
+      # Upload artifacts for 03-release.yml and verify job to consume
       - name: 📤 Upload signatures artifact
         uses: actions/upload-artifact@v4
         with:

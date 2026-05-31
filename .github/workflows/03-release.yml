@@ -1,14 +1,13 @@
 name: 🚀 Release
 
 # Manual only — run this deliberately after build and sign are confirmed good.
-# Provide the sign.yml run ID to pull artifacts from. The release tag is
-# generated automatically as release-YYYYMMDD-<short-sha> — no version input
-# needed, no semver drift possible.
+# Provide the 02-sign.yml run ID to pull artifacts from. The release tag is
+# automatically passed to the tag input. Exports "inputs.version" to $TAG.
 on:
   workflow_dispatch:
     inputs:
       sign_run_id:
-        description: 'sign.yml run ID to pull signatures and PDFs from'
+        description: '02-sign.yml run ID to pull signatures and PDFs from'
         required: true
         type: string
       prerelease:
@@ -16,6 +15,10 @@ on:
         required: false
         default: false
         type: boolean
+      version:
+        description: 'Version string to record (e.g. v1.2.4) — required'
+        required: true
+        type: string
 
 permissions:
   contents: write # create releases and tags
@@ -95,7 +98,7 @@ jobs:
         run: |
           SHORT_SHA=$(echo "${{ github.sha }}" | cut -c1-7)
           DATE=$(date -u +'%Y%m%d')
-          TAG="release-${DATE}-${SHORT_SHA}"
+          TAG="${{ inputs.version }}"
           NAME="Release ${DATE} (${SHORT_SHA})"
           echo "tag=$TAG"   >> $GITHUB_OUTPUT
           echo "name=$NAME" >> $GITHUB_OUTPUT
@@ -108,12 +111,12 @@ jobs:
           tag_name:   ${{ steps.tag.outputs.tag }}
           name:       ${{ steps.tag.outputs.name }}
           prerelease: ${{ inputs.prerelease || false }}
-          draft:      false
+          draft:      true
           fail_on_unmatched_files: false
           body: |
             ## 📖 The Hitchhiker's Guide to Online Anonymity
 
-            Built from [`${{ github.sha }}`](${{ github.server_url }}/${{ github.repository }}/commit/${{ github.sha }}) on `${{ github.ref_name }}`.
+            Built from [`${{ inputs.version }}`](${{ github.server_url }}/${{ github.repository }}/releases/tag/${{ inputs.version }}).
 
             ---
 

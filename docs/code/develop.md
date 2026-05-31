@@ -52,26 +52,25 @@ You also need **Google Chrome** or **Microsoft Edge** installed for the light-mo
 ```
 .github/
   workflows/
-    build.yml              # builds PDFs, uploads artifact
-    sign.yml               # hashes + GPG signs, uploads signatures artifact
-    release.yml            # publishes GitHub Release with all assets
-    changelog.yml          # prepends a new entry to docs/changelog/index.md
-    publish.yml            # deploys MkDocs site to GitHub Pages
-    build-sign-release.yml # DEPRECATED - fails on trigger, kept for reference
+    01-build.yml      # builds PDFs, uploads artifact
+    02-sign.yml       # hashes + GPG signs, uploads signatures artifact
+    03-release.yml    # publishes GitHub Release with all assets
+    04-changelog.yml  # prepends a new entry to docs/changelog/index.md
+    publish.yml       # deploys MkDocs site to GitHub Pages
 docs/
-  guide/index.md           # the guide (single Markdown file)
-  changelog/               # release notes
-  code/                    # this page
-export/                    # PDF output (PDFs gitignored; .sha256, .b2sum, .asc tracked)
-pgp/                       # public signing keys
+  guide/index.md      # the guide (single Markdown file)
+  changelog/          # release notes
+  code/               # this page
+export/               # PDF output (PDFs gitignored; .sha256, .b2sum, .asc tracked)
+pgp/                  # public signing keys
 scripts/
-  build_guide_pdf.py       # MkDocs + Chromium PDF builder
-  convert.py               # pixel-based dark mode PDF converter
-  update_changelog.py      # auto-generates changelog entries from git log
-  setup_workflow.py        # GitHub Secrets setup assistant
-  verify_pdf.py            # signature verification helper
+  build_guide_pdf.py  # MkDocs + Chromium PDF builder
+  convert.py          # pixel-based dark mode PDF converter
+  update_changelog.py # auto-generates changelog entries from git log
+  setup_workflow.py   # GitHub Secrets setup assistant
+  verify_pdf.py       # signature verification helper
   archived/
-    tag_release.py         # ARCHIVED - GPG tag helper (not used in current flow)
+    tag_release.py    # ARCHIVED - GPG tag helper (not used in current flow)
 ```
 
 ---
@@ -120,39 +119,39 @@ Opens at `http://127.0.0.1:8000`.
 
 ## CI/CD pipeline overview
 
-The pipeline is fully manual after the initial build - no step automatically triggers the next. This prevents version mismatches between what was built, what was signed, and what gets released.
+The pipeline is fully manual after the initial build - no step automatically triggers the next. This prevents version mismatches between what was built, what was signed, and what gets released. The workflows are numbered to help guide you.
 
 ```
 push to main  (or manual trigger)
       │
       ▼
-  build.yml
+  01-build.yml
   Builds thgtoa.pdf + thgtoa-dark.pdf.
   Uploads artifact: pdfs
   Note the run ID.
       │
-      │  # manually trigger sign.yml with the build run ID
+      │  # manually trigger 02-sign.yml with the build run ID
       ▼
-  sign.yml
+  02-sign.yml
   Downloads pdfs artifact. Hashes (SHA-256 + BLAKE2b) and GPG-signs
   all files. Commits export/ back to main. Uploads artifacts:
   signatures, pdfs-signed
   Note the run ID.
       │
-      │  # manually trigger release.yml with the sign run ID
+      │  # manually trigger 03-release.yml with the sign run ID
       ▼
-  release.yml
+  03-release.yml
   Downloads signatures + pdfs-signed artifacts. Runs VirusTotal.
   Creates GitHub Release tagged release-YYYYMMDD-<short-sha>.
       │
-      │  # manually trigger changelog.yml with the version string
+      │  # manually trigger 04-changelog.yml with the version string
       ▼
-  changelog.yml
+  04-changelog.yml
   Runs update_changelog.py, prepends a new ## [vX.Y.Z] entry,
   commits back to main.
 ```
 
-Each stage is independent. If signing fails (e.g. an expired key), re-run only `sign.yml` pointing at the existing build artifact - no need to rebuild the PDFs.
+Each stage is independent. If signing fails (e.g. an expired/revoked key, other problems in CI), re-run only `02-sign.yml` pointing at the existing build artifact - no need to rebuild the PDFs.
 
 !!! warning "Before you push"
 
@@ -166,7 +165,7 @@ Each stage is independent. If signing fails (e.g. an expired key), re-run only `
 
 ### 1. Trigger a build
 
-Push to `main` - `build.yml` runs automatically when `docs/`, `mkdocs.yml`, or `scripts/` change. You can also trigger it manually from **Actions → Build PDFs → Run workflow**.
+Push to `main` - `01-build.yml` runs automatically when `docs/`, `mkdocs.yml`, or `scripts/` change. You can also trigger it manually from **Actions → Build PDFs → Run workflow**.
 
 Once it completes successfully, **note the run ID** from the URL or the Actions list.
 
@@ -180,7 +179,7 @@ Go to **Actions → Sign PDFs → Run workflow**.
 |-------|-------|
 | `build_run_id` | The run ID from step 1 |
 
-`sign.yml` will:
+`02-sign.yml` will:
 
 - Download the PDFs artifact from the build run
 - Compute SHA-256 and BLAKE2b hashes, writing `thgtoa.pdf.sha256`, `thgtoa.pdf.b2sum`, `sha256sums.txt`, `b2sums.txt`, and the dark equivalents
@@ -201,7 +200,7 @@ Go to **Actions → Release → Run workflow**.
 | `sign_run_id` | The run ID from step 2 |
 | `prerelease` | `false` for a normal release |
 
-`release.yml` will:
+`03-release.yml` will:
 
 - Download `signatures` and `pdfs-signed` artifacts from the sign run
 - Upload both PDFs to VirusTotal
@@ -221,7 +220,7 @@ Go to **Actions → Update Changelog → Run workflow**.
 | `version` | The human-readable version string, e.g. `v1.2.4` |
 | `dry_run` | `true` to preview without committing |
 
-`changelog.yml` runs `scripts/update_changelog.py`, which:
+`04-changelog.yml` runs `scripts/update_changelog.py`, which:
 
 - Reads git log since the last `## [vX.Y.Z]` heading in the changelog
 - Categorises commits into Added / Changed / Fixed using conventional-commit prefixes
@@ -249,7 +248,7 @@ This format is always unique, requires no version decision at release time, and 
 
 ## Commit message format
 
-All commits must follow the [Conventional Commits](https://www.conventionalcommits.org) format. This is enforced by the `commitizen` pre-commit hook.
+All commits must follow the [Conventional Commits](https://www.conventionalcommits.org) format. This is enforced by the `commitizen` pre-commit hook. Not because we want to limit cooperation with others, but becasue it promotes a cleaner Changelog; we can avoid all the noise by doing this programatically.
 
 ```
 <type>(<scope>): <description>
@@ -297,7 +296,7 @@ The passphrase protecting the private key above. Must match exactly - no trailin
 
 ### `ACTIONS_SSH_SIGNING_KEY`
 
-An SSH private key used by `sign.yml` to sign the commit that pushes `export/` back to `main`. Generate a dedicated key for this:
+An SSH private key used by `02-sign.yml` to sign the commit that pushes `export/` back to `main`. Generate a dedicated key for this:
 
 ```bash
 ssh-keygen -t ed25519 -C "github-actions signing key" -f actions_signing_key
@@ -307,11 +306,11 @@ Add the **private key** as the `ACTIONS_SSH_SIGNING_KEY` secret, and the **publi
 
 ### `VT_API_KEY`
 
-A [VirusTotal](https://www.virustotal.com) API key with file upload permissions. Used by `release.yml` to scan both PDFs before publishing. Get one by creating a free account at `virustotal.com` → API key under your profile. The free tier (4 lookups/minute, 500/day) is sufficient.
+A [VirusTotal](https://www.virustotal.com) API key with file upload permissions. Used by `03-release.yml` to scan both PDFs before publishing. Get one by creating a free account at `virustotal.com` → API key under your profile. The free tier (4 lookups/minute, 500/day) is sufficient.
 
 ### `CHANGELOG_PAT`
 
-A GitHub Personal Access Token with `contents: write` scope on this repository. Needed because `changelog.yml` commits back to `main` - commits made with the default `GITHUB_TOKEN` do not trigger further workflow runs (GitHub loop-prevention). A PAT bypasses this. If absent, falls back to `GITHUB_TOKEN` - the commit still happens, it just won't trigger downstream workflows.
+A GitHub Personal Access Token with `contents: write` scope on this repository. Needed because `04-changelog.yml` commits back to `main` - commits made with the default `GITHUB_TOKEN` do not trigger further workflow runs (GitHub loop-prevention). A PAT bypasses this. If absent, falls back to `GITHUB_TOKEN` - the commit still happens, it just won't trigger downstream workflows.
 
 **Creating one:** GitHub → Settings → Developer settings → Personal access tokens → Fine-grained tokens → set Contents to Read and write for this repo only.
 
@@ -319,11 +318,11 @@ A GitHub Personal Access Token with `contents: write` scope on this repository. 
 
 | Secret | Required by | What happens if missing |
 |--------|------------|------------------------|
-| `GPG_PRIVATE_KEY` | `sign.yml` | Signing step fails - no `.asc` files produced |
-| `GPG_PASSPHRASE` | `sign.yml` | GPG import succeeds but signing fails |
-| `ACTIONS_SSH_SIGNING_KEY` | `sign.yml` | Export commit is unsigned (may fail if branch protection requires signed commits) |
-| `VT_API_KEY` | `release.yml` | VirusTotal step fails - release is not published |
-| `CHANGELOG_PAT` | `changelog.yml` | Falls back to `GITHUB_TOKEN` - changelog updates but commit won't trigger downstream workflows |
+| `GPG_PRIVATE_KEY` | `02-sign.yml` | Signing step fails - no `.asc` files produced |
+| `GPG_PASSPHRASE` | `02-sign.yml` | GPG import succeeds but signing fails |
+| `ACTIONS_SSH_SIGNING_KEY` | `02-sign.yml` | Export commit is unsigned (may fail if branch protection requires signed commits) |
+| `VT_API_KEY` | `03-release.yml` | VirusTotal step fails - release is not published |
+| `CHANGELOG_PAT` | `04-changelog.yml` | Falls back to `GITHUB_TOKEN` - changelog updates but commit won't trigger downstream workflows |
 
 ---
 
@@ -350,9 +349,27 @@ b2sum     -c b2sums.txt
 
 A successful verify looks like:
 
+```txt
+gpg: Signature made Sun 31 May 2026 03:23:26 AM EDT
+gpg:                using EDDSA key C3023DBEA3FB38C438BA1EEDCEC60AEDE8B992A2
+gpg: Good signature from "Anonymous Planet Release Signing Key" [ultimate]
+Primary key fingerprint: C302 3DBE A3FB 38C4 38BA  1EED CEC6 0AED E8B9 92A2
 ```
-gpg: Signature made ...
-gpg: Good signature from "Anonymous Planet (Release) ..."
+
+You can safely ignore Github, Codeberg, etc. warnings like "The email in this signature doesn’t match the committer email."
+
+```txt
+λ > git tag -v v1.2.3
+object cdc54d8b3bc2b286827b23921d8d4062f85295cf
+type commit
+tag v1.2.3
+tagger nopeitsnothing <no@anonymousplanet.org> 1780212206 -0400
+
+v1.2.3
+gpg: Signature made Sun 31 May 2026 03:23:26 AM EDT
+gpg:                using EDDSA key C3023DBEA3FB38C438BA1EEDCEC60AEDE8B992A2
+gpg: Good signature from "Anonymous Planet Release Signing Key" [ultimate]
+Primary key fingerprint: C302 3DBE A3FB 38C4 38BA  1EED CEC6 0AED E8B9 92A2
 ```
 
 ---
@@ -374,10 +391,10 @@ The `GPG_PRIVATE_KEY` secret is missing or malformed. Re-export with `gpg --armo
 **GPG signing fails with `Bad passphrase`**
 The `GPG_PASSPHRASE` secret has a trailing space or newline. Paste it again with no surrounding whitespace.
 
-**`release.yml` fails on VirusTotal**
+**`03-release.yml` fails on VirusTotal**
 The `VT_API_KEY` is missing, invalid, or over the rate limit (500 requests/day on the free tier). Check the secret and re-run after a few minutes.
 
-**`sign.yml` fails downloading PDF artifact**
+**`02-sign.yml` fails downloading PDF artifact**
 The `build_run_id` is wrong, or the artifact has expired (90-day retention). Trigger a new build and use the fresh run ID.
 
 **Changelog already contains version X**

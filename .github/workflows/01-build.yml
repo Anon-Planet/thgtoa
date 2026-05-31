@@ -1,7 +1,7 @@
-# 1. Push to main → build.yml runs automatically → note the run ID
-# 2. Manually trigger sign.yml with that build run ID → note the sign run ID
-# 3. Manually trigger release.yml with: version=v1.2.5, sign_run_id=<id>
-# 4. Manually trigger changelog.yml with: version=v1.2.5
+# 1. Push to main → 01-build.yml runs automatically → note the run ID
+# 2. Manually trigger 02-sign.yml with that build run ID → note the sign run ID
+# 3. Manually trigger 03-release.yml with: version=v1.2.5, sign_run_id=<id>
+# 4. Manually trigger 04-changelog.yml with: version=v1.2.5
 
 name: 📖 Build PDFs
 
@@ -24,7 +24,7 @@ on:
       - "docs/**"
       - "mkdocs.yml"
       - "scripts/**"
-      - ".github/workflows/build.yml"
+      - ".github/workflows/01-build.yml"
 
 permissions:
   contents: read

@@ -20,6 +20,28 @@ Notable changes to the guide and its tooling. Follows [Keep a Changelog](https:/
 
 ---
 
+## [v1.2.4]
+
+!!! Note "Meta"
+
+    - Rename workflows (GH - now we can know the order)
+
+!!! Note "Changed"
+
+    - Change the repo URL for our tor mirror
+    - Fix recommended reading admonition
+    - Refactoring some things and removing others
+    - More meta changes to the pipeline
+    - Rewrite developer guide for current pipeline
+
+!!! Note "Fixed"
+
+    - Fix an inline reference
+    - Use the Anonymous Planet RSK for releases (we used the MSK for testing)
+    - Prevent history dump and filter noise commits
+    - Actually save per-page PDFs for qpdf, not PNGs
+    - Fail fast with helpful message if pdftoppm or qpdf missing
+
 ## [v1.2.3]
 
 CI/CD pipeline split into independent stages, dark PDF quality improved, release signing automated, and the changelog now updates itself on every build. Skipping v1.2.2 which was a placeholder and contained broken Python unsuitable for a tag/release.
@@ -28,17 +50,17 @@ CI/CD pipeline split into independent stages, dark PDF quality improved, release
 
     - **Dark mode PDF** (`scripts/convert.py`): pixel-level converter replaces the broken `--prefers-color-scheme=dark` Chromium flag. Produces a 200 DPI hacker-themed PDF (`#1f1f31` background, `#e0e0e0` text, `#5e8bde` links) with batched page processing to avoid OOM on large documents.
     - **Three independent CI workflows** replacing the old monolithic `build-sign-release.yml`:
-        - `build.yml`: builds PDFs and uploads them as an artifact; no secrets required, can be re-run freely.
-        - `sign.yml`: downloads the PDF artifact, computes SHA-256 and BLAKE2b hashes, GPG-signs all outputs, and uploads a `signatures` artifact. Can be re-run against any historical build.
-        - `release.yml`: downloads both artifacts, uploads to VirusTotal, and publishes a tagged GitHub Release with all 12 assets attached. Can be triggered manually against any previous sign run.
+        - `01-build.yml`: builds PDFs and uploads them as an artifact; no secrets required, can be re-run freely.
+        - `02-sign.yml`: downloads the PDF artifact, computes SHA-256 and BLAKE2b hashes, GPG-signs all outputs, and uploads a `signatures` artifact. Can be re-run against any historical build.
+        - `03-release.yml`: downloads both artifacts, uploads to VirusTotal, and publishes a tagged GitHub Release with all 12 assets attached. Can be triggered manually against any previous sign run.
     - **`scripts/update_changelog.py`**: reads `git log` since the last version tag, categorises commits by conventional-commit prefix, and prepends a new entry to this file automatically after each successful build.
-    - **`changelog.yml`** workflow: commits the auto-generated changelog entry back to `main` after every build, with `dry_run` and `manual_version` dispatch inputs for safe local testing.
+    - **`04-changelog.yml`** workflow: commits the auto-generated changelog entry back to `main` after every build, with `dry_run` and `manual_version` dispatch inputs for safe local testing.
     - **`scripts/tag_release.py`**: interactive guided helper for maintainers to create GPG-signed annotated tags. Checks clean tree and branch, auto-increments the version, pulls the message from the changelog, resolves the release signing key, creates and verifies the tag, then prints the push command.
     - **`docs/code/develop.md`**: full developer reference covering prerequisites, local build instructions, the pipeline flow, all required GitHub Secrets, the release process, verification steps, and a troubleshooting section for every known CI failure mode.
 
 !!! warning "Changed"
 
-    - `build-sign-release.yml` deprecated - push triggers removed, manual dispatch only. Will be deleted once in-flight runs complete.
+    - `build-sign-release.yml` deprecated (now removed) - push triggers removed, manual dispatch only. Will be deleted once in-flight runs complete.
     - The full pipeline (build → sign → release → changelog) now chains automatically via `workflow_run` on every push to `main`.
     - GPG signing uses `--pinentry-mode loopback` and `--passphrase-fd 0` to avoid interactive prompts on headless runners.
     - VirusTotal scans moved to the release stage so they run once per release, not once per build.
@@ -79,5 +101,6 @@ First automated PDF build and the start of the CI pipeline.
 
 ---
 
+[v1.2.4]: https://github.com/Anon-Planet/thgtoa/releases/tag/v1.2.4
 [v1.2.3]: https://github.com/Anon-Planet/thgtoa/releases/tag/v1.2.3
 [v1.2.1]: https://github.com/Anon-Planet/thgtoa/releases/tag/v1.2.1

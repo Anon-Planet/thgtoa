@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Auto-generate and prepend a changelog entry to docs/changelog/index.md.
 
-Called by .github/workflows/changelog.yml. Reads git log since the last
+Called by .github/workflows/04-changelog.yml. Reads git log since the last
 changelog version, categorises commits by conventional-commit prefix,
 and prepends a new ## [vX.Y.Z] section in the MkDocs admonition format used
 by the rest of the file.
