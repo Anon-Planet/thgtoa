@@ -4,9 +4,9 @@ description: Maintainers of the Hitchhiker's Guide and the PSA Community.
 schema:
   "@context": https://schema.org
   "@type": Organization
-  "@id": https://www.anonymousplanet.org/
+  "@id": https://www.anonymousplanet.net/
   name: Anonymous Planet
-  url: https://www.anonymousplanet.org/mirrors/
+  url: https://www.anonymousplanet.net/mirrors/
   logo: ../media/profile.png
   sameAs:
     - https://github.com/Anon-Planet
@@ -19,11 +19,11 @@ schema:
 
 ???+ tip "Where to find the Hitchhiker's Guide"
 
-      -   [Original](https://anonymousplanet.org)
+      -   [Original](https://anonymousplanet.net)
       -   [Tor v3](http://thgtoa3jzy3doku7hkna32htpghjijefscwvh4dyjgfydbbjkeiohgid.onion) **Down**
-      -   [Archive.org](https://web.archive.org/web/https://anonymousplanet.org)
-      -   [Archive.today](https://archive.fo/anonymousplanet.org)
-      -   [Archive.today over Tor](http://archiveiya74codqgiixo33q62qlrqtkgmcitqx5u2oeqnmn5bpcbiyd.onion/anonymousplanet.org)
+      -   [Archive.org](https://web.archive.org/web/https://anonymousplanet.net)
+      -   [Archive.today](https://archive.fo/anonymousplanet.net)
+      -   [Archive.today over Tor](http://archiveiya74codqgiixo33q62qlrqtkgmcitqx5u2oeqnmn5bpcbiyd.onion/anonymousplanet.net)
 
 !!! Note "PDF export (single file)"
 

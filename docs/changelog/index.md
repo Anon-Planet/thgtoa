@@ -4,9 +4,9 @@ description: "Release Notes"
 schema:
   "@context": https://schema.org
   "@type": Organization
-  "@id": https://www.anonymousplanet.org/
+  "@id": https://www.anonymousplanet.net/
   name: Anonymous Planet
-  url: https://www.anonymousplanet.org/authors/
+  url: https://www.anonymousplanet.net/authors/
   logo: ../media/profile.png
   sameAs:
     - https://github.com/Anon-Planet
@@ -19,6 +19,37 @@ schema:
 Notable changes to the guide and its tooling. Follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
+## [v1.2.5]
+
+!!! Note "Changed"
+
+    - Comprehensive updates throughout the guide reflecting the transition to Whonix 18.x as the default version
+    - Replaced outdated Whonix.org wiki docs links with GitHub releases mirror and Archive.org backups
+    - Updated Virtualbox hardening instructions (e.g., network time desync offsets, Spectre/Meltdown mitigations)
+    - Added AppArmor enabling guidance for Debian-based Whonix 18.x Workstation VMs
+    - Upgraded download instructions to use GitHub Releases as primary source with Archive.org fallback
+    - Added new "Whonix Improvements" section documenting key changes from 17.x to 18.x (automated release upgrade, improved Qubes integration)
+    - Updated Qubes OS compatibility notes: Whonix 18.x officially supported on R4.3+, Whonix 17.x compatible with R4.2+
+    - Enhanced system verification instructions after upgrades (checkvm, tor --verify)
+    - Improved documentation links to use clean markdown format with Archive.org mirrors for resilience
+    - Added comprehensive upgrade path guidance with backup procedures
+    - Updated 196 Wikipedia reference links throughout the entire guide (All links now point to https://wikiless.tiekoetter.com/wiki/)
+
+!!! Note "Added"
+
+    - All Whonix.org/wiki links now have Archive.org mirror backups for availability
+    - Upgrade path documented: Whonix 17 to 18 with automated release-upgrade support
+    - Detailed Qubes OS compatibility notes for both Whonix versions
+    - Memory file `whonix-docs-comprehensive-update.md` with full changelog of modifications
+    - Memory file `whonix-18x-upgrade-notes.md` with upgrade guidance and best practices
+    - You can now get the RSK and MSK from the navbar
+
+!!! Note "Improved"
+
+    - Virtualbox hardening section reorganized with bullet points for better readability
+    - AppArmor configuration guidance added where applicable (Whonix 18.x)
+    - KVM alternative documented in Appendix N for Linux users seeking better security than VirtualBox
+    - Whonix Improvements subsection added before "Pick your guest workstation" VMs section
 
 ## [v1.2.4]
 
@@ -101,6 +132,7 @@ First automated PDF build and the start of the CI pipeline.
 
 ---
 
+[v1.2.5]: https://github.com/Anon-Planet/thgtoa/releases/tag/v1.2.5
 [v1.2.4]: https://github.com/Anon-Planet/thgtoa/releases/tag/v1.2.4
 [v1.2.3]: https://github.com/Anon-Planet/thgtoa/releases/tag/v1.2.3
 [v1.2.1]: https://github.com/Anon-Planet/thgtoa/releases/tag/v1.2.1

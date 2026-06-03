@@ -4,9 +4,9 @@ description: We are the maintainers of the Hitchhiker's Guide and the PSA Matrix
 schema:
   "@context": https://schema.org
   "@type": Organization
-  "@id": https://www.anonymousplanet.org/
+  "@id": https://www.anonymousplanet.net/
   name: Anonymous Planet
-  url: https://www.anonymousplanet.org/about/
+  url: https://www.anonymousplanet.net/about/
   logo: ../media/profile.png
   sameAs:
     - https://github.com/Anon-Planet
@@ -15,7 +15,7 @@ schema:
 ---
 ![Anonymous Planet logo](../media/profile.png){ align=right }
 
-**Anonymous Planet** are the maintainers of the [_Hitchhiker's Guide_](../guide/index.md) and the [_PSA Community_](https://psa.anonymousplanet.org). It is responsible for maintaining the projects and code repositories. This project is part of our ongoing efforts to provide open-source tools and resources for the community, with regular updates and improvements added to the changelog.
+**Anonymous Planet** are the maintainers of the [_Hitchhiker's Guide_](../guide/index.md) and the [_PSA Community_](https://psa.anonymousplanet.net). It is responsible for maintaining the projects and code repositories. This project is part of our ongoing efforts to provide open-source tools and resources for the community, with regular updates and improvements added to the changelog.
 
 The purpose: providing an introduction to various online tracking techniques, online ID verification techniques, and detailed guidance to creating and maintaining (truly) anonymous online identities. It is written with the hopes that good people (e.g., activists, journalists, scientists, lawyers, whistle-blowers, etc.) will be able to fight oppression, censorship and harassment! The website and projects are free (as in freedom) and not affiliated with any donor or projects discussed.
 
@@ -43,7 +43,7 @@ Feel free to submit issues **(please do report anything wrong)** using GitHub Is
 
     We offer a Matrix.org hosted space of our own. Check it out!
 
-    - Read [the rules](https://psa.anonymousplanet.org/), please
+    - Read [the rules](https://psa.anonymousplanet.net/), please
     - Matrix Room: https://matrix.to/#/#nth:anonymousplanet.net
     - Matrix Space: https://matrix.to/#/#psa:anonymousplanet.net
     - Admins: @daskolburn:thomcat.rocks and @thehidden:tchncs.de
@@ -53,7 +53,7 @@ Feel free to submit issues **(please do report anything wrong)** using GitHub Is
     - Twitter at <https://twitter.com/AnonyPla>
     - Mastodon at <https://mastodon.social/@anonymousplanet>
 
-To contact me, see the updated information on the website or send an e-mail to <contact@anonymousplanet.org>
+To contact me, see the updated information on the website or send an e-mail to <contact@anonymousplanet.net>
 
 **Please consider [donating](../guide/index.md#donations) if you enjoy the project and want to support the hosting fees or support the funding of initiatives like the hosting of Tor Exit Nodes.**
 
@@ -94,17 +94,17 @@ _Anonymous Planet_ **does not** participate in any sponsoring, endorsement, adve
 ??? tip "Useful resources"
 
     - KYC? Not me: <https://kycnot.me/>
-    - Library Genesis: <https://en.wikipedia.org/wiki/Library_Genesis> <sup>[[Wikiless]](https://wikiless.com/wiki/Library_Genesis)</sup> (see their latest known URL in the Wikipedia article)
+    - Library Genesis: <https://en.wikipedia.org/wiki/Library_Genesis> <sup>[[Wikiless]](https://wikiless.tiekoetter.com/wiki/Library_Genesis)</sup> (see their latest known URL in the Wikipedia article)
     - Real World Onion Sites: <https://github.com/alecmuffett/real-world-onion-sites>
-    - Sci-Hub <https://en.wikipedia.org/wiki/Sci-Hub> <sup>[[Wikiless]](https://wikiless.com/wiki/Sci-Hub)</sup> (see their latest known URL in the main Wikipedia article)
+    - Sci-Hub <https://en.wikipedia.org/wiki/Sci-Hub> <sup>[[Wikiless]](https://wikiless.tiekoetter.com/wiki/Sci-Hub)</sup> (see their latest known URL in the main Wikipedia article)
     - Terms of Service, Didn't Read: <https://tosdr.org>
-    - Whonix Documentation: <https://www.whonix.org/wiki/Documentation>
+    - Whonix Documentation: [Whonix Wiki](https://www.whonix.org/wiki/Documentation) [[Archive.org]](https://web.archive.org/web/https://www.whonix.org/wiki/Documentation)
 
 ??? note "We are not affiliated with Anonymous or Riseup"
 
     One or two of our community members uses or has used the resources of Riseup. We are not affiliated with Riseup in any manner.
 
-    We also hold **no affiliation** with the [Anonymous](https://en.wikipedia.org/wiki/Anonymous_(hacker_group)) <sup>[[Wikiless]](https://wikiless.com/wiki/Anonymous_(hacker_group))</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Anonymous_(hacker_group))</sup> hacker collective.
+    We also hold **no affiliation** with the [Anonymous](https://en.wikipedia.org/wiki/Anonymous_(hacker_group)) <sup>[[Wikiless]](https://wikiless.tiekoetter.com/wiki/Anonymous_(hacker_group))</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Anonymous_(hacker_group))</sup> hacker collective.
 
 ## License
 

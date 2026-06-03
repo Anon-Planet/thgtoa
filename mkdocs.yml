@@ -3,7 +3,7 @@ site_author: Anonymous Planet
 site_description: "The comprehensive guide for online #anonymity and #opsec."
 site_dir: '/site/'
 docs_dir: 'docs/'
-site_url: "https://www.anonymousplanet.org/"
+site_url: "https://www.anonymousplanet.net/"
 repo_url: "https://github.com/Anon-Planet/thgtoa"
 repo_name: ""
 #edit_uri: ""
@@ -140,4 +140,4 @@ nav:
   - Releases: changelog/index.md
 
 copyright: |
-  <a href="https://anonymousplanet.org/">The Hitchhiker's Guide</a> ©2023-2026 by <a href="https://psa.anonymousplanet.org/">Anonymous Planet</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"></a>
+  <a href="https://anonymousplanet.net/">The Hitchhiker's Guide</a> ©2023-2026 by <a href="https://psa.anonymousplanet.net/">Anonymous Planet</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"></a>

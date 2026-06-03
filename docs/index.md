@@ -4,9 +4,9 @@ description: We are the maintainers of the Hitchhiker's Guide and the PSA Matrix
 schema:
   "@context": https://schema.org
   "@type": Organization
-  "@id": https://www.anonymousplanet.org/
+  "@id": https://www.anonymousplanet.net/
   name: Anonymous Planet
-  url: https://www.anonymousplanet.org/authors/
+  url: https://www.anonymousplanet.net/authors/
   logo: ../media/profile.png
   sameAs:
     - https://github.com/Anon-Planet
@@ -38,7 +38,7 @@ Anonymous Planet is a collective of volunteers.
 ??? person "Das Kolburn"
 
     - [:simple-github: GitHub](https://github.com/NobodySpecial256 "@NobodySpecial256")
-    - [:fontawesome-solid-envelope: E-mail](mailto:contact@anonymousplanet.org)
+    - [:fontawesome-solid-envelope: E-mail](mailto:contact@anonymousplanet.net)
     - [:simple-matrix: Personal Matrix](https://matrix.to/#/@daskolburn:thomcat.rocks "@daskolburn:thomcat.rocks"),  [:simple-matrix: Org Matrix](https://matrix.to/#/@daskolburn:anonymousplanet.net "@daskolburn:anonymousplanet.net")
 
 ??? person "Nope"
@@ -46,5 +46,5 @@ Anonymous Planet is a collective of volunteers.
     - [:simple-github: GitHub](https://github.com/nopeitsnothing "@nopeitsnothing")
     - [:simple-mastodon: Mastodon](https://ioc.exchange/@unknown "@unknown@ioc.exchange"){rel=me}
     - [:fontawesome-solid-house: Homepage](https://www.itsnothing.net)
-    - [:fontawesome-solid-envelope: E-mail](mailto:contact@anonymousplanet.org)
+    - [:fontawesome-solid-envelope: E-mail](mailto:contact@anonymousplanet.net)
     - [:simple-matrix: Personal Matrix](https://matrix.to/#/@thehidden:tchncs.de "@thehidden:tchncs.de"), [:simple-matrix: Org Matrix](https://matrix.to/#/@nope:anonymousplanet.net "@nope:anonymousplanet.net")

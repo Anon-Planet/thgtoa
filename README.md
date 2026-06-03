@@ -1,8 +1,18 @@
+<div align="center">
+  <a href="https://anonymousplanet.net">
+    <img src="https://anonymousplanet.net/media/profile.png"></a>
+
+  <p><em>The comprehensive guide for online anonymity and OpSec.</em></p>
+
+  <a href="https://github.com/Anon-Planet/thgtoa/stargazers">
+    <img src="https://img.shields.io/github/stars/Anon-Planet?style=social"></a>
+  <a href="https://github.com/Anon-Planet/thgtoa/releases/latest">
+    <img src="https://img.shields.io/badge/MkDocs_Material-526CFE?logo=MaterialForMkDocs&logoColor=green"></a>
+  <a href="https://github.com/Anon-Planet/thgtoa/actions/workflows/release.yml">
+    <img src="https://img.shields.io/github/actions/workflow/status/Anon-Planet/thgtoa/release.yml?label=release"></a></p>
+</div>
+
 Welcome.
-
-## Star History
-
-[![Star History Chart](https://api.star-history.com/chart?repos=Anon-Planet/thgtoa&type=date&logscale&legend=top-left)](https://www.star-history.com/?repos=Anon-Planet%2Fthgtoa&type=date&logscale=&legend=bottom-right)
 
 This is a guide with the aim of providing an introduction to various online tracking techniques, online ID verification techniques, and detailed guidance to creating and maintaining (truly) anonymous online identities. <span style="color: red">**It is written with hope for activists, journalists, scientists, lawyers, whistle-blowers, and good people being oppressed, censored, harassed anywhere!**</span> This guide has no affiliation with the [Anonymous](https://en.wikipedia.org/wiki/Anonymous_(hacker_group)) <sup>[[Wikiless]](https://wikiless.com/wiki/Anonymous_(hacker_group))</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Anonymous_(hacker_group))</sup> collective/movement.
 
@@ -12,5 +22,5 @@ This guide is an open-source non-profit initiative, [licensed](LICENSE.html) und
 
 **Ways to read or export the guide**
 
-- **In your browser:** [Hitchhiker's Guide](https://www.anonymousplanet.org/guide/) (hosted site). After a local build you can also open `site/guide/index.html` directly.
+- **In your browser:** [Hitchhiker's Guide](https://www.anonymousplanet.net/) (hosted site). After a local build you can also open `site/guide/index.html` directly.
 - **Local HTML preview:** from the repository root, with Python 3 and [MkDocs Material](https://squidfunk.github.io/mkdocs-material/getting-started/) installed (`pip install mkdocs-material`), run `mkdocs serve` and open the URL printed in the terminal (for example `http://127.0.0.1:8000`).

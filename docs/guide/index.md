@@ -4,9 +4,9 @@ description: We are the maintainers of the Hitchhiker's Guide and the PSA Matrix
 schema:
   "@context": https://schema.org
   "@type": Organization
-  "@id": https://www.anonymousplanet.org/
+  "@id": https://www.anonymousplanet.net/
   name: Anonymous Planet
-  url: https://www.anonymousplanet.org/guide/
+  url: https://www.anonymousplanet.net/guide/
   logo: ../media/profile.png
   sameAs:
     - https://github.com/Anon-Planet

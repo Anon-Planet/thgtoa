@@ -84,8 +84,8 @@ You can easily contribute code or information suggestions at our code repositori
 
 #### Spendings log
 
-- 2021-03-12: 0.08181086 XMR (+fees) for domain anonymousplanet.org (1 year)
-- 2021-03-16: 1.20179 mBTC (+fees) for domain anonymousplanet.org renewal (extension 3 years totalling 4 years)
+- 2021-03-12: 0.08181086 XMR (+fees) for domain anonymousplanet.net (1 year)
+- 2021-03-16: 1.20179 mBTC (+fees) for domain anonymousplanet.net renewal (extension 3 years totalling 4 years)
 - 2021-04-01: 0.8317 XMR (+fees) for basic VPS for Tor Mirror hosting
 - <del>2021-04-05: 0.99367 mBTC (+fees +exchange from XMR to BTC) for Mail Hosting (1 year): <span style="color: red">**Lost**</span>
 - <del>2021-04-13: 0.71895 mBTC (+fees +exchange from XMR to BTC) for Mail Hosting (extension to 2 years)</del>: <span style="color: red">**Lost**</span>
@@ -97,7 +97,7 @@ You can easily contribute code or information suggestions at our code repositori
 - 2021-08-18: AtomicSwap conversion from remaining mBTC (-0.56588) to XMR (+0.081904862179)
 - <del>2021-08-19: 0.0644 XMR (+fees) for Mail Hosting extension</del>: <span style="color: red">**Lost**</span>
 - <del>2021-09-18: 0.246971511836 XMR (+fees) for renewal 1 year of Tor Exit Node 01</del>: <span style="color: red">**Lost**</span>
-- 2021-10-04: 0.26954 XMR (+fees) for domain anonymousplanet.org extension until 2029
+- 2021-10-04: 0.26954 XMR (+fees) for domain anonymousplanet.net extension until 2029
 - <del>2021-10-06: 0.236073464623 XMR (+fees) for a Tor Exit Node (04) Hosting (12 months)</del>: <span style="color: red">**Lost**</span>
 - <del>2021-10-18: 0.01952 XMR (+fees) for testing a new VPS hosting provider (Privex.io) for one month</del>: <span style="color: red">**Ended**</span>
 - <del>2021-10-30: 0.240787814495 XMR (+fees) for a Synapse Hosting VPS (12 months) with bots to help grow the community. This is a test program that will be converted into a Tor Exit Node in case of failure</del>: <span style="color: red">**Lost**</span>
