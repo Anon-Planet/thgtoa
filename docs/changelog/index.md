@@ -4,9 +4,9 @@ description: "Release Notes"
 schema:
   "@context": https://schema.org
   "@type": Organization
-  "@id": https://www.anonymousplanet.org/
+  "@id": https://www.anonymousplanet.net/
   name: Anonymous Planet
-  url: https://www.anonymousplanet.org/authors/
+  url: https://www.anonymousplanet.net/authors/
   logo: ../media/profile.png
   sameAs:
     - https://github.com/Anon-Planet

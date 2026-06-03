@@ -363,7 +363,7 @@ You can safely ignore Github, Codeberg, etc. warnings like "The email in this si
 object cdc54d8b3bc2b286827b23921d8d4062f85295cf
 type commit
 tag v1.2.3
-tagger nopeitsnothing <no@anonymousplanet.org> 1780212206 -0400
+tagger nopeitsnothing <no@anonymousplanet.net> 1780212206 -0400
 
 v1.2.3
 gpg: Signature made Sun 31 May 2026 03:23:26 AM EDT
