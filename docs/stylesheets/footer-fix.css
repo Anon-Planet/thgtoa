@@ -136,6 +136,52 @@ footer > :nth-child(1),
   }
 }
 
+/* === SOCIAL LINKS INLINE DISPLAY FIX === */
+
+/* Force all social links to display inline on same line */
+.social,
+.social__link {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: flex-start;
+  white-space: nowrap;
+  vertical-align: middle;
+  margin-right: 0.75em !important;
+}
+
+.social svg {
+  width: 24px !important;
+  height: 24px !important;
+}
+
+/* Ensure no line breaks between social icons */
+#social {
+  display: flex !important;
+  flex-wrap: nowrap !important;
+  gap: 0.75em !important;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Wrap inline with main content instead of creating separate line */
+.md-social,
+[data-md-color-scheme="slate"] .md-typeset a[href*="social"] {
+  display: inline !important;
+  vertical-align: middle;
+  margin-right: 0.5em;
+}
+
+@media (max-width: 60em) {
+  .social {
+    margin-right: 0.5em !important;
+  }
+
+  .social svg {
+    width: 20px !important;
+    height: 20px !important;
+  }
+}
+
 /* === ACCESSIBILITY FIXES FOR FOOTER === */
 
 @media (prefers-reduced-motion: reduce) {
