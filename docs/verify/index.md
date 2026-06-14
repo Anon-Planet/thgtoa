@@ -3,15 +3,21 @@ title: "Verify"
 description: How to verify the authenticity of our files and check virus scans
 ---
 
-# PDF Verification Guide
+# Verify Files
+
+<div style="font-family: var(--code-font); color: var(--accent-green); font-size: 0.9rem; margin-bottom: 2em;">
+> <span style="color: var(--text-primary);">>_</span> Integrity first. Always verify before trusting.
+</div>
 
 ## Files Provided
 
-For each PDF release, you'll receive:
+For each release, you'll receive:
 
-- **PDF file** (`thgtoa.pdf` or `thgtoa-dark.pdf`) - The actual document
-- **Signature file** (`.sig`) - GPG detached signature for authenticity verification
-- **Hash file** (`.sha256`) - SHA256 checksum for integrity verification
+| File Type | Purpose | Verification Command |
+|-----------|---------|---------------------|
+| **PDF** (`thgtoa.pdf`) | The actual guide document | Check hash + signature |
+| **.sig file** | GPG detached signature for authenticity | `gpg --verify file.sig file.pdf` |
+| **.sha256** | SHA256 checksum for integrity | `sha256sum -c file.sha256` |
 
 ## Quick Verification
 
@@ -54,7 +60,7 @@ Get-FileHash -Algorithm SHA256 export\thgtoa.pdf | Select-Object Hash
 First, import the public key:
 
 ```bash
-gpg --import pgp/anonymousplanet-master.asc
+gpg --import pgp/anonymousplanet.asc
 ```
 
 Then verify the signature:
@@ -64,16 +70,18 @@ gpg --verify export/thgtoa.pdf.sig export/thgtoa.pdf
 gpg --verify export/thgtoa-dark.pdf.sig export/thgtoa-dark.pdf
 ```
 
-Expected output for successful verification:
+**Expected output for successful verification:**
 
 ```text
 gpg: Signature made Mon 20 Apr 2026 01:46:40 AM EDT
-gpg:                using EDDSA key 9FA5436D0EE360985157382517ECA05F768DEDF6
+gpg:                using EDDSA key 9FA5436D0EE360985157382517ECA05F768DEFDA
 gpg: Good signature from "Anonymous Planet Master Signing Key" [unknown]
 gpg: WARNING: This key is not certified with a trusted signature!
-gpg:          There is no indication that the signature belongs to the owner.
+gpg:           There is no indication that the signature belongs to the owner.
 Primary key fingerprint: 9FA5 436D 0EE3 6098 5157  3825 17EC A05F 768D EDF6
 ```
+
+**Note:** The "WARNING" is expected - it means the key hasn't been signed by another trusted key. This is normal for independent signing keys.
 
 #### 3. Check VirusTotal Status
 
@@ -110,26 +118,30 @@ The GitHub Actions workflows automatically:
 
 ### "Good signature" but wrong owner?
 
-- Ensure you imported the correct public key
-- Check the key fingerprint matches the official one from the repository
+- Ensure you imported the correct public key from [`pgp/`](../pgp/index.md)
+- Check the key fingerprint matches the official one from the repository announcements
 
 ### Hash mismatch?
 
 - Re-download the file (corruption during transfer)
-- Verify you're checking against the correct hash file
+- Verify you're checking against the correct hash file for the mode (light/dark)
 - Check for disk errors on your system
 
 ### GPG not found?
 
-- Install GPG: `sudo apt install gnupg` (Debian/Ubuntu) or `brew install gnupg` (macOS)
-- On Windows, use [Gpg4win](https://www.gpg4win.org/)
+- **Linux/Debian:** `sudo apt install gnupg`
+- **Linux/RHEL/CentOS:** `sudo yum install gnupg2` or `sudo dnf install gnupg2`
+- **macOS:** `brew install gnupg` or use Homebrew Casks: `brew install --cask gnupg`
+- **Windows:** Use [Gpg4win](https://www.gpg4win.org/)
 
 ## Key Information
 
-**Signing Key:** Anonymous Planet Master Signing Key ("MSK")
-**Key ID:** See `pgp/anonymousplanet-master.asc` for details
-**Fingerprint:** Verify from the repository's official documentation
+| Item | Value |
+|------|-------|
+| **Signing Key** | Anonymous Planet Master Signing Key ("MSK") |
+| **Key ID** | See [`pgp/anonymousplanet.asc`](../pgp/anonymousplanet.asc) for details |
+| **Fingerprint** | `9FA5436D0EE360985157382517ECA05F768DEFDA` |
 
 ---
 
-_For questions or issues with verification, please open an issue on GitHub._
+_For questions or issues with verification, please open an issue on [GitHub](https://github.com/Anon-Planet/thgtoa/issues)._

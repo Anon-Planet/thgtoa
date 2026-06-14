@@ -4,9 +4,9 @@ description: We are the maintainers of the Hitchhiker's Guide and the PSA Matrix
 schema:
   "@context": https://schema.org
   "@type": Organization
-  "@id": https://www.anonymousplanet.net/
+  "@id": https://anonymousplanet.net/
   name: Anonymous Planet
-  url: https://www.anonymousplanet.net/about/
+  url: https://anonymousplanet.net/about/
   logo: ../media/profile.png
   sameAs:
     - https://github.com/Anon-Planet
@@ -98,16 +98,10 @@ _Anonymous Planet_ **does not** participate in any sponsoring, endorsement, adve
     - Real World Onion Sites: <https://github.com/alecmuffett/real-world-onion-sites>
     - Sci-Hub <https://en.wikipedia.org/wiki/Sci-Hub> <sup>[[Wikiless]](https://wikiless.tiekoetter.com/wiki/Sci-Hub)</sup> (see their latest known URL in the main Wikipedia article)
     - Terms of Service, Didn't Read: <https://tosdr.org>
-    - Whonix Documentation: [Whonix Wiki](https://www.whonix.org/wiki/Documentation) [[Archive.org]](https://web.archive.org/web/https://www.whonix.org/wiki/Documentation)
+    - Whonix Documentation: <https://www.whonix.org/wiki/Documentation> <sup>[[Archive.org]](https://web.archive.org/web/https://www.whonix.org/wiki/Documentation)</sup>
 
 ??? note "We are not affiliated with Anonymous or Riseup"
 
     One or two of our community members uses or has used the resources of Riseup. We are not affiliated with Riseup in any manner.
 
     We also hold **no affiliation** with the [Anonymous](https://en.wikipedia.org/wiki/Anonymous_(hacker_group)) <sup>[[Wikiless]](https://wikiless.tiekoetter.com/wiki/Anonymous_(hacker_group))</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Anonymous_(hacker_group))</sup> hacker collective.
-
-## License
-
-!!! Danger ""
-
-:fontawesome-brands-creative-commons: :fontawesome-brands-creative-commons-by: :fontawesome-brands-creative-commons-nd: This guide is an open-source non-profit initiative, licensed under [Creative Commons Attribution-NonCommercial 4.0 International](https://github.com/Anon-Planet/thgtoa/blob/master/LICENSE.md) and is not sponsored/endorsed by any commercial/governmental entity. This means that you are free to use our guide for pretty much any purpose excluding commercially as long as you do attribute it. There are no ads or any affiliate links.

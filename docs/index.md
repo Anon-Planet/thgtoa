@@ -1,50 +1,74 @@
 ---
 title: ""
-description: We are the maintainers of the Hitchhiker's Guide and the PSA Matrix space.
+description: "The Hitchhiker's Guide to Online Anonymity"
 schema:
   "@context": https://schema.org
-  "@type": Organization
-  "@id": https://www.anonymousplanet.net/
+  "@type": WebPage
+  "@id": https://anonymousplanet.net/
   name: Anonymous Planet
-  url: https://www.anonymousplanet.net/authors/
-  logo: ../media/profile.png
+  url: https://anonymousplanet.net/
+  logo: media/profile.png
   sameAs:
     - https://github.com/Anon-Planet
     - https://opencollective.com/anonymousplanetorg
     - https://mastodon.social/@anonymousplanet
 ---
 
-# **Hello, and welcome to the Hitchhiker's Guide.**
+<div style="text-align: center; padding: 4em 2em;">
 
-You'll use these keys to [**verify the checksum and GPG signature of all files for authenticity**](verify/index.md).
-Please share this project if you enjoy it and you think it might be useful to others.
+<h1 style="font-family: var(--code-font); font-size: 1.5rem; color: var(--accent-green); letter-spacing: 0.1em; margin-bottom: 2em;">
+// THE HITCHHIKER'S GUIDE TO ONLINE ANONYMITY
+</h1>
 
-![Anonymous Planet logo](media/profile.png){ align=right }
+<div style="font-size: 3.5rem; font-weight: 700; line-height: 1.2; margin: 2em 0;">
+<span style="color: var(--text-primary);">Privacy.</span><br>
+<span style="color: var(--accent-green);">Security.</span><br>
+<span style="color: var(--text-primary);">Anonymity.</span>
+</div>
 
-??? tip "GPG Signing Keys for Verification"
+<p style="max-width: 60ch; margin: 2.5em auto; color: var(--text-secondary); font-size: 1.05rem;">
+A comprehensive open-source guide for activists, journalists, scientists, lawyers, whistle-blowers — and anyone seeking true digital anonymity. No ads. No affiliates. No BS.
+</p>
 
-    <div style="padding: 1em; border-radius: 0.3em;">
-    <strong>Anonymous Planet Master Signing Key (MSK):</strong>
+<div style="margin: 3em auto; display: flex; gap: 1em; justify-content: center;">
+<a href="guide/index.md" class="btn-download" style="min-width: auto !important;">- Read the Guide</a>
+<a href="https://github.com/Anon-Planet/thgtoa" class="btn-download" style="min-width: auto !important; border-color: var(--accent-green) !important; color: var(--accent-green) !important; background: transparent !important;">&#128197; GitHub</a>
+</div>
 
-        9FA5 436D 0EE3 6098 5157 3825 17EC A05F 768D EDF6
+<div style="background: rgba(255, 0, 0, 0.1); border: 1px solid rgba(255, 0, 0, 0.3); border-left: 4px solid #ff4444; padding: 1em; max-width: 70ch; margin: 3em auto; color: #ff6b6b;">
+<span style="color: #ff6b6b;">&#9888;</span> <strong style="color: #ff6b6b;">NOTICE:</strong> Anonymous Planet has been the target of fake look-alike domains. Always verify you are on <a href="https://anonymousplanet.net/" style="color: #ff6b6b; text-decoration: underline;">anonymousplanet.net</a>. Bookmark the official site and check the URL before trusting any content.
+</div>
 
-    <strong>Anonymous Planet Release Signing Key (RSK):</strong>
+<div style="border-top: 2px solid var(--border-color); padding-top: 3em; margin-top: 3em;">
+<div style="font-family: var(--code-font); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted); margin-bottom: 1.5em;">Quick Access</div>
 
-        C302 3DBE A3FB 38C4 38BA 1EED CEC6 0AED E8B9 92A2
-    </div>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5em; max-width: 1000px; margin: 0 auto;">
 
-Anonymous Planet is a collective of volunteers.
+<!-- The Full Guide Card -->
+<div class="quick-access-card">
+<span class="md-icon" style="font-size: 2.5rem; display: block;">📖</span>
+<h3 style="font-family: var(--code-font); font-size: 1.1rem; margin: 0;">The Full Guide</h3>
+<p style="margin: 0 0 1em;">The Hitchhiker's Guide to Online Anonymity — comprehensive coverage of tracking techniques, ID verification, and how to create truly anonymous identities.</p>
+<a href="guide/index.md" style="font-family: var(--code-font); font-size: 0.85rem; color: var(--accent-green);">Read online <span style="font-size: 0.7em;">→</span></a>
+</div>
 
-??? person "Das Kolburn"
+<!-- PDF/ODT Downloads Card -->
+<div class="quick-access-card">
+<span class="md-icon" style="font-size: 2.5rem; display: block;">📄</span>
+<h3 style="font-family: var(--code-font); font-size: 1.1rem; margin: 0;">PDF / ODT Downloads</h3>
+<p style="margin: 0 0 1em;">Download the guide as a PDF (best for readability) or ODT. Verify integrity with the provided public key before trusting any downloaded file.</p>
+<a href="pgp/index.md" class="btn-download" style="min-width: auto !important;">Get the files <span style="font-size: 0.7em;">→</span></a>
+</div>
 
-    - [:simple-github: GitHub](https://github.com/NobodySpecial256 "@NobodySpecial256")
-    - [:fontawesome-solid-envelope: E-mail](mailto:contact@anonymousplanet.net)
-    - [:simple-matrix: Personal Matrix](https://matrix.to/#/@daskolburn:thomcat.rocks "@daskolburn:thomcat.rocks"),  [:simple-matrix: Org Matrix](https://matrix.to/#/@daskolburn:anonymousplanet.net "@daskolburn:anonymousplanet.net")
+<!-- Tor Mirror Card -->
+<div class="quick-access-card">
+<span class="md-icon" style="font-size: 2.5rem; display: block;">🌐</span>
+<h3 style="font-family: var(--code-font); font-size: 1.1rem; margin: 0;">Tor Mirror</h3>
+<p style="margin: 0 0 1em;">Access the guide over the Tor network for maximum privacy. The .onion address ensures you reach us without exposing your IP or destination.</p>
+<a href="mirrors/index.md" style="font-family: var(--code-font); font-size: 0.85rem; color: var(--accent-green);">Open .onion <span style="font-size: 0.7em;">→</span></a>
+</div>
 
-??? person "Nope"
+</div>
+</div>
 
-    - [:simple-github: GitHub](https://github.com/nopeitsnothing "@nopeitsnothing")
-    - [:simple-mastodon: Mastodon](https://ioc.exchange/@unknown "@unknown@ioc.exchange"){rel=me}
-    - [:fontawesome-solid-house: Homepage](https://www.itsnothing.net)
-    - [:fontawesome-solid-envelope: E-mail](mailto:contact@anonymousplanet.net)
-    - [:simple-matrix: Personal Matrix](https://matrix.to/#/@thehidden:tchncs.de "@thehidden:tchncs.de"), [:simple-matrix: Org Matrix](https://matrix.to/#/@nope:anonymousplanet.net "@nope:anonymousplanet.net")
+</div>

@@ -1,0 +1,157 @@
+/*
+ * FOOTER CLEANUP & LICENSE DISPLAY FIXES
+ * Removes CRT overlay effects from footer and improves license display
+ */
+
+/* === REMOVE CRT OVERLAY EFFECTS FROM FOOTER === */
+
+/* Exclude footer from CRT scanline effect */
+.md-footer::before,
+#md-footer::before {
+  display: none !important;
+}
+
+/* Exclude footer from CRT curvature effect */
+.md-footer::after {
+  display: none !important;
+}
+
+/* Exclude footer from phosphor decay effect */
+.md-footer::after::before {
+  display: none !important;
+}
+
+/* Exclude footer from vignette effect */
+body > .md-footer::before {
+  display: none !important;
+}
+
+/* === FOOTER LAYOUT FIXES === */
+
+/* Clean footer container - remove any unwanted spacing or overflow */
+.md-footer,
+#md-footer {
+  margin: 0;
+  padding: 1.5em 2em;
+  background: linear-gradient(180deg,
+    var(--bg-secondary) 0%,
+    var(--bg-primary) 100%
+  ) !important;
+  border-top: 2px solid var(--accent-green) !important;
+  overflow: visible;
+}
+
+/* Footer meta container - clean layout for copyright/license */
+.md-footer-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 0.5em;
+  text-align: center;
+}
+
+/* Make sure footer meta has proper background (not transparent) */
+.md-footer-meta__inner {
+  background: none !important;
+}
+
+/* Copyright text - centered and clean */
+.md-footer-copyright {
+  font-size: 0.85rem;
+  color: var(--text-secondary) !important;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* License link styling */
+.md-footer-copyright a,
+.md-footer-copyright a:hover {
+  color: var(--accent-green) !important;
+  text-decoration: none;
+}
+
+.md-footer-copyright a:hover {
+  text-decoration: underline;
+}
+
+/* Footer meta background - ensure it doesn't have CRT effects */
+.md-footer__meta,
+.md-typeset .md-footer-meta {
+  background-color: var(--bg-secondary) !important;
+  border-top: 1px solid var(--border-color);
+}
+
+/* Center content in footer properly */
+footer > :nth-child(1),
+.md-footer-meta {
+  text-align: center !important;
+}
+
+/* === ENSURE LICENSE TEXT IS READING CORRECTLY === */
+
+/* Make license badge and text readable without CRT overlay */
+#md-footer-copyright > a,
+#md-footer-copyright__indent .md-footer-copyright__license a {
+  position: relative; /* Ensure effects don't bleed into footer */
+}
+
+/* Remove any potential z-index stacking issues */
+.md-footer {
+  z-index: 10 !important; /* Above CRT overlays which are at z-index 9997-9999 */
+}
+
+/* === FOOTER SEPARATOR LINES (if needed) === */
+
+.footer-separator {
+  border-color: var(--border-color) !important;
+  opacity: 0.5;
+}
+
+/* === RESPONSIVE FOOTER FIXES === */
+
+@media (max-width: 91.42857143em) {
+  .md-footer-meta {
+    gap: 0.75em;
+    padding-top: 1em;
+  }
+
+  .md-footer-copyright {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 60em) {
+  .md-footer,
+  #md-footer {
+    padding: 1em 1.5em;
+  }
+
+  .md-footer-copyright {
+    font-size: 0.8rem;
+  }
+}
+
+/* === ACCESSIBILITY FIXES FOR FOOTER === */
+
+@media (prefers-reduced-motion: reduce) {
+  /* Remove animations in footer area */
+  .md-footer h4,
+  .md-footer p {
+    animation: none !important;
+  }
+}
+
+@media (prefers-contrast: high) {
+  .md-footer {
+    border-top-color: var(--text-primary) !important;
+  }
+
+  .md-footer-copyright {
+    color: var(--text-primary) !important;
+  }
+}

@@ -3,7 +3,7 @@ site_author: Anonymous Planet
 site_description: "The comprehensive guide for online #anonymity and #opsec."
 site_dir: '/site/'
 docs_dir: 'docs/'
-site_url: "https://www.anonymousplanet.net/"
+site_url: "https://anonymousplanet.net/"
 repo_url: "https://github.com/Anon-Planet/thgtoa"
 repo_name: ""
 #edit_uri: ""
@@ -31,21 +31,13 @@ theme:
     - content.code.copy
   language: en
   palette:
-    - scheme: default
-      toggle:
-        icon: material/eye-outline
-        name: Switch to dark mode
-      primary: green
-      accent: blue
     - scheme: slate
-      toggle:
-        icon: material/eye
-        name: Switch to light mode
-      primary: grey
-      accent: teal
+      primary: black
+      accent: green
 
 plugins:
   - social: {}
+  # - include-markdown: {}
 #  - with-pdf:
   - search:
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
@@ -56,7 +48,12 @@ plugins:
 #  - git-latest-release: {}
 
 extra_css:
-  - stylesheets/extra.css
+  - stylesheets/hacker-theme.css
+  # - stylesheets/search-extra.css
+  - stylesheets/accessibility-fixes.css
+  - stylesheets/nav-extra.css
+  - stylesheets/dark-extra.css
+  - stylesheets/footer-fix.css
 
 extra:
   social:
@@ -125,19 +122,16 @@ markdown_extensions:
       toc_depth: 3
 
 nav:
-  - Welcome: index.md
+  - Home: index.md
   - About: about/index.md
   - Verify: verify/index.md
-  - Guide:
-    - guide/index.md
-  - Code:
-    - code/index.md
-    - Develop: code/develop.md
-  - Contribute: contribute/index.md
+  - Guide: guide/index.md
+  - Code: code/index.md
+  - Donations: contribute/index.md
   - Constitution: constitution/index.md
   - Mirrors: mirrors/index.md
   - Twitter: twitter/index.md
   - Releases: changelog/index.md
 
-copyright: |
-  <a href="https://anonymousplanet.net/">The Hitchhiker's Guide</a> ©2023-2026 by <a href="https://psa.anonymousplanet.net/">Anonymous Planet</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"></a>
+# copyright: |
+#   <a href="https://anonymousplanet.net/">The Hitchhiker's Guide</a> ©2026 by <a href="https://psa.anonymousplanet.net/">Anonymous Planet</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"></a>

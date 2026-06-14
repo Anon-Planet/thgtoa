@@ -1,55 +1,201 @@
-/* Title sheet: visible only when printing / generating PDF (not on screen). */
-.pdf-title-page {
-  display: none;
+/* 
+*/
+
+:root {
+  /* Core Colors - Terminal/Hacker Theme */
+  --bg-primary: #0a0f0a;           /* Very dark green-black */
+  --bg-secondary: #0d140d;         /* Slightly lighter background */
+  --bg-card: #0f180f;              /* Card backgrounds */
+
+  --text-primary: #e0e0e0;         /* Main text (off-white) */
+  --text-secondary: #8a9a8a;       /* Secondary text (dimmed green-gray) */
+  --text-muted: #5c6a5c;           /* Muted metadata */
+
+  --accent-green: #0f0;            /* Terminal green */
+  --accent-green-dim: rgba(0, 255, 0, 0.1);
+  --accent-green-light: rgba(0, 255, 0, 0.3);
+
+  --border-color: #1a2a1a;         /* Subtle borders */
+  --border-highlight: #1f3a1f;     /* Highlighted borders */
+
+  --code-font: 'JetBrains Mono', 'Fira Code', 'Liberation Mono', Consolas, monospace;
+  --body-font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
 }
 
-@media print {
-  .pdf-title-page {
-    display: block;
-    box-sizing: border-box;
-    text-align: center;
-    padding: 5rem 2rem 4rem;
-    page-break-after: always;
-  }
-
-  .pdf-title-page__title {
-    font-size: 1.65rem;
-    font-weight: 700;
-    line-height: 1.25;
-    margin: 0 0 1.25rem;
-  }
-
-  .pdf-title-page__subtitle {
-    font-size: 1.05rem;
-    line-height: 1.4;
-    margin: 0 0 2rem;
-  }
-
-  .pdf-title-page__meta {
-    font-size: 0.95rem;
-    font-style: normal;
-    margin: 0;
-  }
+/* Background with subtle grid pattern */
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: var(--body-font);
+  line-height: 1.7;
+  background-image:
+    linear-gradient(rgba(0, 255, 0, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 255, 0, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+  background-position: center center;
 }
 
-/* Guide landing: small floating logo so opening copy flows beside it (HTML + PDF). */
-.guide-intro-lead {
-  overflow: auto;
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--code-font);
+  color: var(--text-primary);
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
 }
 
-.guide-intro-lead > p:first-child {
-  margin-top: 0;
+h1 { font-size: 2.25rem; font-weight: 700; }
+h2 { font-size: 1.85rem; font-weight: 600; border-bottom: 1px solid var(--border-color); padding-bottom: 0.5em; }
+h3 { font-size: 1.4rem; font-weight: 500; }
+
+p {
+  color: var(--text-secondary);
+  margin-bottom: 1.25em;
 }
 
-.guide-intro-lead > p:first-child img {
-  float: right;
-  max-width: 6.5rem;
-  height: auto;
-  margin: 0 0 0.5rem 1rem;
+a {
+  color: var(--accent-green);
+  text-decoration: none;
+  transition: all 0.2s ease;
 }
 
-@media print {
-  .guide-intro-lead > p:first-child img {
-    max-width: 5rem;
-  }
+a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* Code blocks - terminal style */
+pre, code, kbd {
+  font-family: var(--code-font) !important;
+}
+
+pre {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 1.25em;
+  overflow-x: auto;
+}
+
+/* Cards with subtle borders */
+.md-typeset__table, .md-typeset table:not([class]) {
+  border-collapse: collapse;
+}
+
+.md-typeset__table tr {
+  background-color: var(--bg-secondary);
+  transition: background-color 0.2s ease;
+}
+
+/* PGP download button - matching site theme */
+.btn-download {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  padding: 0.7em 1.25em;
+  border-radius: 4px;
+  text-decoration: none !important;
+  font-weight: 600;
+  color: var(--accent-green);
+  background: transparent;
+  border: 2px solid var(--accent-green);
+  font-family: var(--code-font) !important;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.btn-download:hover {
+  background-color: var(--accent-green-dim);
+  border-color: var(--accent-green);
+  transform: translateY(-2px);
+  box-shadow: 0 2px 6px rgba(0, 255, 0, 0.2);
+}
+
+.btn-download:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Link styling */
+.md-typeset a:not(.btn):not([class]) {
+  color: var(--accent-green);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.md-typeset a:not(.btn):not([class]):hover {
+  background-color: var(--accent-green-dim);
+  text-decoration: none;
+}
+
+/* Alerts/Admonitions - terminal warnings */
+.admonition-title,
+div.admonition > div:first-of-type::before {
+  font-family: var(--code-font) !important;
+}
+
+/* Card-style containers (like the reference site's quick access section) */
+.md-typeset details,
+.md-typeset summary,
+div[data-md-component="content"] {
+  /* Subtle card effect */
+}
+
+/* Table styling */
+.md-typeset__table th,
+.md-typeset__table td {
+  padding: 0.75em 0.5em;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.md-typeset__table th {
+  background-color: var(--bg-secondary);
+  font-family: var(--code-font);
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+/* Footer customization */
+.footer {
+  border-top: 1px solid var(--border-color);
+  padding-top: 1.5em;
+}
+
+/* Admonition styling */
+.md-typeset details summary {
+  list-style: none;
+}
+
+.md-typeset details[open] > summary::after {
+  content: '+';
+  font-family: var(--code-font);
+  position: absolute;
+  right: 1em;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Smooth theme toggle transition */
+[data-md-color-scheme="slate"] .md-header__title {
+  color: var(--accent-green);
+}
+
+/* Selection color */
+::selection {
+  background-color: var(--accent-green-light);
+  color: #000;
+}
+
+/* Focus styles for accessibility */
+a:focus, button:focus {
+  outline: 2px solid var(--accent-green);
+  outline-offset: 2px;
+}
+
+/* Smooth highlight effect on links */
+.md-typeset a::selection {
+  background-color: var(--accent-green-light);
 }

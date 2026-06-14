@@ -22,5 +22,5 @@ This guide is an open-source non-profit initiative, [licensed](LICENSE.html) und
 
 **Ways to read or export the guide**
 
-- **In your browser:** [Hitchhiker's Guide](https://www.anonymousplanet.net/) (hosted site). After a local build you can also open `site/guide/index.html` directly.
+- **In your browser:** [Hitchhiker's Guide](https://anonymousplanet.net/) (hosted site). After a local build you can also open `site/guide/index.html` directly.
 - **Local HTML preview:** from the repository root, with Python 3 and [MkDocs Material](https://squidfunk.github.io/mkdocs-material/getting-started/) installed (`pip install mkdocs-material`), run `mkdocs serve` and open the URL printed in the terminal (for example `http://127.0.0.1:8000`).

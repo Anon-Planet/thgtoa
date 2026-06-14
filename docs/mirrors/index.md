@@ -4,9 +4,9 @@ description: Maintainers of the Hitchhiker's Guide and the PSA Community.
 schema:
   "@context": https://schema.org
   "@type": Organization
-  "@id": https://www.anonymousplanet.net/
+  "@id": https://anonymousplanet.net/
   name: Anonymous Planet
-  url: https://www.anonymousplanet.net/mirrors/
+  url: https://anonymousplanet.net/mirrors/
   logo: ../media/profile.png
   sameAs:
     - https://github.com/Anon-Planet
