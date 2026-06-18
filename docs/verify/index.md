@@ -1,12 +1,18 @@
 ---
-title: "Verify"
-description: How to verify the authenticity of our files and check virus scans
+title: "Verifying authenticity"
 ---
 
-# Verify Files
+<div style="font-family: var(--code-font); color: var(--crt-red); font-size: 0.9rem; margin-bottom: 2em;">
+Never blindly trust the information you see online.
+</div>
 
-<div style="font-family: var(--code-font); color: var(--accent-green); font-size: 0.9rem; margin-bottom: 2em;">
-> <span style="color: var(--text-primary);">>_</span> Integrity first. Always verify before trusting.
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5em; max-width: 1000px; margin: 0 auto;">
+
+<div class="quick-access-card">
+<h4 style="font-family: var(--code-font); font-size: 1.1rem; margin: 0;">Get our keyring</h4>
+<p style="margin: 0 0 1em;">The Anonymous Planet MSK and other keys in our keyring can be found here.</p>
+<a href="../../pgp/" style="font-family: var(--code-font); font-size: 0.85rem; color: var(--crt-amber);">Access our public keyring <span style="font-size: 0.7em;"></span></a>
+</div>
 </div>
 
 ## Files Provided
@@ -23,7 +29,7 @@ For each release, you'll receive:
 
 ### Using Python Script (Recommended)
 
-```bash
+```sh
 # Verify everything (hashes, signatures, and optionally VirusTotal)
 python scripts/verify_pdf.py --all
 
@@ -43,7 +49,7 @@ python scripts/verify_pdf.py --vt
 
 **Linux/macOS:**
 
-```bash
+```sh
 cd /path/to/repo
 sha256sum -c sha256sum-light.txt
 ```
@@ -59,18 +65,18 @@ Get-FileHash -Algorithm SHA256 export\thgtoa.pdf | Select-Object Hash
 
 First, import the public key:
 
-```bash
+```sh
 gpg --import pgp/anonymousplanet.asc
 ```
 
 Then verify the signature:
 
-```bash
+```sh
 gpg --verify export/thgtoa.pdf.sig export/thgtoa.pdf
 gpg --verify export/thgtoa-dark.pdf.sig export/thgtoa-dark.pdf
 ```
 
-**Expected output for successful verification:**
+**Example output for successful verification:**
 
 ```text
 gpg: Signature made Mon 20 Apr 2026 01:46:40 AM EDT
@@ -91,7 +97,7 @@ Visit the VirusTotal report links (automatically generated in release notes):
 
 Or use the Python script with API key:
 
-```bash
+```sh
 export VT_API_KEY=your_vt_api_key
 python scripts/verify_pdf.py --vt
 ```
@@ -133,15 +139,3 @@ The GitHub Actions workflows automatically:
 - **Linux/RHEL/CentOS:** `sudo yum install gnupg2` or `sudo dnf install gnupg2`
 - **macOS:** `brew install gnupg` or use Homebrew Casks: `brew install --cask gnupg`
 - **Windows:** Use [Gpg4win](https://www.gpg4win.org/)
-
-## Key Information
-
-| Item | Value |
-|------|-------|
-| **Signing Key** | Anonymous Planet Master Signing Key ("MSK") |
-| **Key ID** | See [`pgp/anonymousplanet.asc`](../pgp/anonymousplanet.asc) for details |
-| **Fingerprint** | `9FA5436D0EE360985157382517ECA05F768DEFDA` |
-
----
-
-_For questions or issues with verification, please open an issue on [GitHub](https://github.com/Anon-Planet/thgtoa/issues)._

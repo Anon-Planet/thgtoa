@@ -1,0 +1,122 @@
+:root {
+  --md-primary-fg-color:#4052b500;
+  --bg-color: #020307;
+  --text-primary: #c5c5c5;
+  --text-secondary: #a0a0a0;
+  --accent-color: #039634;
+  --border-color: #0b85005d;
+  --font-main: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.no-js .md-sidebar {
+    align-self: auto;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  font-family: var(--font-main);
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: var(--crt-green);
+  font-weight: 700;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+h2, h3, h4, h5, h6 {
+  color: var(--crt-green);
+  font-weight: 600;
+  margin-top: 1.25em;
+  margin-bottom: 0.5em;
+}
+
+p {
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+a {
+  color: var(--crt-green);
+}
+
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.card {
+  background-color: var(--bg-color);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  color: var(--text-secondary);
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+}
+
+th {
+  background-color: var(--bg-color);
+  font-weight: bold;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px 0;
+  filter: brightness(1.1);
+  animation: none !important;
+  background: none !important;
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 20mm;
+  }
+
+  body {
+    background-color: var(--bg-color) !important;
+    color: var(--text-primary) !important;
+  }
+
+  .card, table th {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    background-color: var(--bg-card) !important;
+    color: var(--text-primary) !important;
+  }
+
+  .card {
+    break-inside: avoid;
+  }
+
+  nav, footer, button {
+    display: none !important;
+  }
+}

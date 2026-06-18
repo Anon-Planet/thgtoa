@@ -154,7 +154,7 @@ jobs:
 
             ### 🔏 Verifying GPG signatures
 
-            ```bash
+            ```sh
             # Import the release signing key
             gpg --import pgp/anonymousplanet-release.asc
 

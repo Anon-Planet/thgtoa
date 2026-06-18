@@ -1,6 +1,7 @@
 ---
 title: How to Get Involved
 ---
+
 There are multiple ways you can add to the guide. Donations to support this project are welcome but are entirely optional. Those donations are mainly used to pay for Tor onion hosting (VPS), mail hosting, domain name registration, and to maintain/run Tor exit nodes. **No profit is ever being made**. All donations and spendings are being logged here below for transparency. Some costs for load balancer servers have been omitted for privacy reasons, but are not paid for with existing Anonymous Planet finances.
 
 <span style="color: red">**Current project donation goals:**</span>
@@ -35,7 +36,7 @@ Legacy address: ```1BBgBSVe6w4DWq2BewUQhDEjsNovhfPswD```
 
 ## Content Contributions
 
-You can easily contribute code or information suggestions at our code repositories listed at the bottom of the website and on the [Mirrors](../mirrors/index.md) tab above. We have many options that are easily accessible. Please follow our [contributing guidelines](../code/index.md) and use good PR syntax.
+You can easily contribute code or information suggestions at our code repositories listed at the bottom of the website and on the [Mirrors](../mirrors/index.md) tab above. We have many options that are easily accessible. Please follow our [contributing guidelines](../code/index.md) and use good PR syntax. Be sure to go to the [developer guide](../code/index.md) first.
 
 **Thank you for any contribution. All donations will be mentioned on this page.**
 

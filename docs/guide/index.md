@@ -1,5 +1,5 @@
 ---
-title: "./"
+title: "The Hitchhiker's Guide"
 description: We are the maintainers of the Hitchhiker's Guide and the PSA Matrix space.
 schema:
   "@context": https://schema.org
@@ -12,26 +12,29 @@ schema:
     - https://github.com/Anon-Planet
     - https://opencollective.com/anonymousplanetorg
 ---
-<div class="pdf-title-page" aria-hidden="true">
-<p class="pdf-title-page__title">The Hitchhiker's Guide to Online Anonymity</p>
-<p class="pdf-title-page__subtitle"><em>(Or "How I learned to start worrying and love privacy and anonymity")</em></p>
-<p class="pdf-title-page__meta">v1.2.4, Jun 2026 by Anonymous Planet</p>
+<div style="text-align: center; padding: 4em 2em;">
+
+<h4 style="font-family: var(--code-font); font-size: 2rem; color: var(--crt-green); letter-spacing: 0.1em; margin-bottom: 2em;">
+"We kill people based on metadata."
+</h3>
+
 </div>
+
 <div class="guide-intro-lead" markdown="1">
-![Anonymous Planet logo](../media/profile.png)
 
-There are several ways you could read this guide:
-
-1. **You want to understand the current state of online privacy and anonymity, not necessarily get too technical about it.**
+1. **Do you want to understand the current state of online privacy and anonymity, while not necessarily getting too technical about it?**
     - Read the [Introduction](#introduction), [Requirements](#requirements-limitations), understanding some basics beginning with [your network](#your-network), and [the final notes](#a-small-final-editorial-note).
 
-2. **You want to do the above but also learn how to remove some online information about you.**
+2. **Do you want to learn, but also learn how to remove some online information about you?**
     - All of the items in no. 1 and [how to clean your identities from search engines and other platforms](#removing-your-identities-from-search-engines-and-other-platforms) to get a good idea of how to clean your data off the web.
 
-3. **You want to do the above and create online anonymous identities online safely and securely.**
+3. **Do you want to do the above and create online anonymous identities online safely and securely.**
     - Read the whole thing. A specific list of the most vital things to read in the guide will be coming later, but you should read the whole thing.
 
+<div style="font-family: var(--code-font); color: var(--text-primary); font-size: 0.9rem; margin-bottom: 2em;">
 Precautions while reading this guide and accessing the various links:
+</div>
+
 
 - **YouTube Videos** have a **[Invidious]** link next to them for accessing content through an Invidious Instance (in this case yewtu.be hosted in the Netherlands) for increased privacy. It is recommended to use these links when possible. See <https://github.com/iv-org/invidious> <sup>[[Archive.org]](https://web.archive.org/web/https://github.com/iv-org/invidious)</sup> for more information.
 
@@ -675,7 +678,7 @@ The question is: Is there someone somewhere that would have both pieces of infor
 
 Have you heard of Edward Snowden[^134]? Now is the time to google him and read his book[^135]. Also read about XKEYSCORE[^136]'[^137], MUSCULAR[^138], SORM[^139], Tempora[^140] , and PRISM[^141].
 
-See "We kill people based on Metadata"[^142] or this famous tweet from the IDF <https://twitter.com/idf/status/1125066395010699264> <sup>[[Archive.org]](https://web.archive.org/web/https://twitter.com/idf/status/1125066395010699264)</sup> <sup>[[Nitter]](https://nitter.net/idf/status/1125066395010699264)</sup>.
+See "We kill people based on Metadata"[^142] or this famous tweet from the IDF <https://twitter.com/idf/status/1125066395010699264> <sup>[[Archive.org]](https://web.archive.org/web/20210519061345/https://twitter.com/idf/status/1125066395010699264)</sup> <sup>[[Nitter]](https://nitter.net/idf/status/1125066395010699264)</sup>.
 
 See [Appendix N](#appendix-n-warning-about-smartphones-and-smart-devices) for a warning on using smartphones and other smart devices. See [Metadata auditing](#metadata-auditing) for a way to get rid of the metadata - which is probably what brought you to this section anyway.
 
@@ -1890,51 +1893,11 @@ As with the desktop version, you need to know there are safety levels in Onion B
 
 - You will have three levels to pick from
 
-    - 1. Gold: Ideal if you are suspicious, paranoid, or accessing what you think are dangerous resources.
-
-        + JavaScript is disabled
-
-        + WebSockets, Geolocation, and XHR are disabled
-
-        + No Video or Audio
-
-        + Links cannot open Apps
-
-        + WebRTC is blocked
-
-        + Mixed HTTP/HTTPS is blocked
-
-        + Ads and Pop-Ups are blocked
-
-    - 2. Silver:
-
-        + JavaScript partially allowed
-
-        + WebSockets, Geolocation, and XHR are disabled
-
-        + No Video or Audio
-
-        + Links cannot open Apps
-
-        + WebRTC is blocked
-
-        + Mixed HTTP/HTTPS is blocked
-
-        + Ads and Pop-Ups are blocked
-
-    - 3. Bronze (not recommended):
-
-        + JavaScript allowed
-
-        + Audio and Video allowed
-
-        + Links cannot open Apps
-
-        + WebRTC is not blocked
-
-        + Mixed HTTP/HTTPS is not blocked
-
-        + Ads and Pop-Ups are blocked
+| Security Level | JavaScript | WS/XHR/Geo | A/V | Apps | WebRTC | HTTP↔HTTPS | Ads/Pop-ups |
+  |-------|------------|-------------|------|------|---------|------------|-------------|
+  | **Gold** | Disabled | Disabled | No | Blocked | Blocked | Blocked | Blocked |
+  | Silver | Partially allowed | Disabled | No | Blocked | Blocked | Blocked | Blocked |
+  | Bronze | Allowed | Enabled | Allowed | Blocked | Not blocked | Not blocked | Blocked |
 
 We would recommend the "Silver" level for most cases. The Gold level should only be enabled if you think you are accessing suspicious or dangerous websites or if you are extra paranoid. The Gold mode will also most likely break many websites that rely actively on JavaScript.
 
@@ -3522,7 +3485,7 @@ For ideal security, follow the [Whonix Hardening Guide](https://www.whonix.org/w
 **Network Time Desync:**
 Desync VM clocks to prevent synchronization attacks (see [[Whonix Documentation - Network Time Synchronization]](https://www.whonix.org/wiki/Network_Time_Synchronization) <sup>[[Archive.org]](https://web.archive.org/web/https://www.whonix.org/wiki/Network_Time_Synchronization)</sup>):
 
-    ```bash
+    ```sh
     # Example offsets (choose different values for each VM)
     VBoxManage modifyvm "Whonix-Gateway-XFCE" --biossystemtimeoffset -35017
     VBoxManage modifyvm "Whonix-Workstation-XFCE" --biossystemtimeoffset +27931
@@ -4853,30 +4816,35 @@ After you are connected to a Wi-Fi you need to update Qubes OS and Whonix. You m
 
 1. **Backup all data** — Clone the VMs before upgrading using Virtualbox snapshots or your preferred method.
 
-2. **Upgrade your Qubes host first:**
+1. **Upgrade your Qubes host first:**
     - Ensure you're running at least Qubes R4.2 (for Whonix 17 compatibility)
     - Update to Qubes R4.3+ if possible (recommended for Whonix 18 support)
 
-3. Run standard updates per OS instructions on your templates:
-    ```bash
+1. **Run standard updates per OS instructions on your templates:**
+
+    ```sh
     sudo unattended-upgrade --auto-run
     ```
 
-4. Execute the automated upgrade:
-    ```bash
+1. **Execute the automated upgrade:**
+
+    ```sh
     sudo release-upgrade
     ```
-    This will handle the upgrade automatically without requiring user input.
 
-5. **Reboot VMs** and run `systemcheck` to verify system integrity after the upgrade:
-    ```bash
+    - This will handle the upgrade automatically without requiring user input.
+
+1. **Reboot VMs and run** `systemcheck` **to verify system integrity after the upgrade:**
+
+    ```sh
     sudo checkvm --all
     sudo tor --verify
     ```
 
-6. For Qubes, update APT repo sources post-upgrade (optional later).
+1. **For Qubes, update APT repo sources post-upgrade (optional later).**
 
 **Important Notes:**
+
 - **Qubes R4.2+ with Whonix 18 is now officially supported**. See <https://www.whonix.org/wiki/Release_Upgrade_17_to_18> <sup>[[Archive.org]](https://web.archive.org/web/https://www.whonix.org/wiki/Release_Upgrade_17_to_18)</sup> for detailed instructions.
 - Always verify system integrity after upgrade using `systemcheck` and Tor verification tools.
 - If you're not using Qubes OS, follow the general [Whonix Upgrade Guide](https://www.whonix.org/wiki/Release_Upgrade_17_to_18) <sup>[[Archive.org]](https://web.archive.org/web/https://www.whonix.org/wiki/Release_Upgrade_17_to_18)</sup>.

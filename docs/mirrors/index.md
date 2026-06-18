@@ -13,9 +13,6 @@ schema:
     - https://opencollective.com/anonymousplanetorg
     - https://mastodon.social/@anonymousplanet
 ---
-![metadata](../media/profile.png){ align=right }
-
----
 
 ???+ tip "Where to find the Hitchhiker's Guide"
 

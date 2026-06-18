@@ -14,16 +14,20 @@ schema:
     - https://mastodon.social/@anonymousplanet
 ---
 
-# Release Notes
-
-Notable changes to the guide and its tooling. Follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+Notable changes to the guide. Follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
+
 ## [v1.2.5]
+
+!!! Note "Meta"
+
+    - Website theme customization
+    - License change to accomodate our fiscal host Open Source Collective
 
 !!! Note "Changed"
 
-    - Comprehensive updates throughout the guide reflecting the transition to Whonix 18.x as the default version
+    - Comprehensive updates throughout the guide reflecting the transition to Whonix 18.x as the newest version
     - Replaced outdated Whonix.org wiki docs links with GitHub releases mirror and Archive.org backups
     - Updated Virtualbox hardening instructions (e.g., network time desync offsets, Spectre/Meltdown mitigations)
     - Added AppArmor enabling guidance for Debian-based Whonix 18.x Workstation VMs
@@ -33,20 +37,18 @@ Notable changes to the guide and its tooling. Follows [Keep a Changelog](https:/
     - Enhanced system verification instructions after upgrades (checkvm, tor --verify)
     - Improved documentation links to use clean markdown format with Archive.org mirrors for resilience
     - Added comprehensive upgrade path guidance with backup procedures
-    - Updated 196 Wikipedia reference links throughout the entire guide (All links now point to https://wikiless.tiekoetter.com/wiki/)
+    - Updated 196! Wikipedia reference links throughout the entire guide
 
 !!! Note "Added"
 
     - All Whonix.org/wiki links now have Archive.org mirror backups for availability
     - Upgrade path documented: Whonix 17 to 18 with automated release-upgrade support
     - Detailed Qubes OS compatibility notes for both Whonix versions
-    - Memory file `whonix-docs-comprehensive-update.md` with full changelog of modifications
-    - Memory file `whonix-18x-upgrade-notes.md` with upgrade guidance and best practices
-    - You can now get the RSK and MSK from the navbar
+    - You can now get the Anonymous Planet PGP keyring from the site (copy/paste or download)
 
 !!! Note "Improved"
 
-    - Virtualbox hardening section reorganized with bullet points for better readability
+    - Virtualbox hardening section reorganized
     - AppArmor configuration guidance added where applicable (Whonix 18.x)
     - KVM alternative documented in Appendix N for Linux users seeking better security than VirtualBox
     - Whonix Improvements subsection added before "Pick your guest workstation" VMs section

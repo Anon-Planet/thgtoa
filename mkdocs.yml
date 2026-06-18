@@ -1,8 +1,8 @@
 site_name: The Hitchhiker's Guide
 site_author: Anonymous Planet
 site_description: "The comprehensive guide for online #anonymity and #opsec."
-site_dir: '/site/'
-docs_dir: 'docs/'
+site_dir: "site"
+docs_dir: "docs"
 site_url: "https://anonymousplanet.net/"
 repo_url: "https://github.com/Anon-Planet/thgtoa"
 repo_name: ""
@@ -22,6 +22,7 @@ theme:
     - navigation.instant.prefetch
     - navigation.tabs
     - navigation.sections
+    - navigation.path
     - toc.integrate
     - navigation.top
     - search.suggest
@@ -32,28 +33,29 @@ theme:
   language: en
   palette:
     - scheme: slate
-      primary: black
+      primary: hacker
       accent: green
 
 plugins:
   - social: {}
-  # - include-markdown: {}
-#  - with-pdf:
   - search:
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
-#  - macros: {}
-#  - meta: {}
-#  - git-latest-tag: {}
-# - git-authors: {}
-#  - git-latest-release: {}
+  # - meta: {}
 
+# Soon this will all be minified (It's a personal WIP)
 extra_css:
-  - stylesheets/hacker-theme.css
-  # - stylesheets/search-extra.css
-  - stylesheets/accessibility-fixes.css
-  - stylesheets/nav-extra.css
-  - stylesheets/dark-extra.css
-  - stylesheets/footer-fix.css
+  - stylesheets/hacker.css
+  - stylesheets/hacker-extra.css
+  - stylesheets/going-dark.css
+  - stylesheets/navigation.css
+  - stylesheets/footer.css
+  - stylesheets/accessibility.css
+
+# extra_css:
+#   - stylesheets/hacker-core.css
+#   - stylesheets/components.css
+#   - stylesheets/accessibility.css
+#   - stylesheets/print-and-utilities.css
 
 extra:
   social:
@@ -118,20 +120,17 @@ markdown_extensions:
   - tables: {}
   - footnotes: {}
   - toc:
-      permalink: true
+      permalink: "λ"
       toc_depth: 3
 
 nav:
-  - Home: index.md
-  - About: about/index.md
-  - Verify: verify/index.md
-  - Guide: guide/index.md
-  - Code: code/index.md
-  - Donations: contribute/index.md
-  - Constitution: constitution/index.md
-  - Mirrors: mirrors/index.md
-  - Twitter: twitter/index.md
-  - Releases: changelog/index.md
-
-# copyright: |
-#   <a href="https://anonymousplanet.net/">The Hitchhiker's Guide</a> ©2026 by <a href="https://psa.anonymousplanet.net/">Anonymous Planet</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"></a>
+  - "Home": index.md
+  - "Verify": verify/index.md
+  - "Guide": guide/index.md
+  - "Code": code/index.md
+  - "Donations": contribute/index.md
+  - "A Constitution": constitution/index.md
+  - "Mirrors": mirrors/index.md
+  - "Changelog": changelog/index.md
+  - "About": about/index.md
+  - "PGP": pgp/index.md

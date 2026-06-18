@@ -13,11 +13,8 @@ schema:
     - https://opencollective.com/anonymousplanetorg
     - https://mastodon.social/@anonymousplanet
 ---
-![Anonymous Planet logo](../media/profile.png){ align=right }
 
-**Anonymous Planet** are the maintainers of the [_Hitchhiker's Guide_](../guide/index.md) and the [_PSA Community_](https://psa.anonymousplanet.net). It is responsible for maintaining the projects and code repositories. This project is part of our ongoing efforts to provide open-source tools and resources for the community, with regular updates and improvements added to the changelog.
-
-The purpose: providing an introduction to various online tracking techniques, online ID verification techniques, and detailed guidance to creating and maintaining (truly) anonymous online identities. It is written with the hopes that good people (e.g., activists, journalists, scientists, lawyers, whistle-blowers, etc.) will be able to fight oppression, censorship and harassment! The website and projects are free (as in freedom) and not affiliated with any donor or projects discussed.
+**Anonymous Planet** are the maintainers of [_The Hitchhiker's Guide_](../guide/index.md) and the [_PSA Community_](https://psa.anonymousplanet.net). This project is part of our ongoing efforts to provide open-source tools and resources for the community, made by people with extensive knowledge in signals and forensics, and expertise in various distributions of Linux. We are providing an introduction to various online tracking techniques, online ID verification techniques, and detailed guidance to creating and maintaining (truly) anonymous online identities. It is written with the hopes that good people (e.g., activists, journalists, scientists, lawyers, whistle-blowers, etc.) will be able to fight oppression, censorship and harassment! The website and projects are free (as in freedom). We are high at risk individuals. We are not simply hackers with a bunch of recommendations and affiliate links like privacytools. To be blunt like Linus Torvalds with a bullshit Merge Request, we don't do that. Here, you will find a trove of information compiled into a single, cohesive set of instructions and sub-guides.
 
 ??? Note "Where do I start?"
 
@@ -25,13 +22,11 @@ The purpose: providing an introduction to various online tracking techniques, on
 
 ??? Note "Notes on the journey"
 
-    This guide is a work in progress. It will probably never be "finished". You may (will) find broken links when you click on some search results and during some navigation steps. Please report these. Otherwise, most of the search functionality is a great experience and can help you find linked topics. Try to search for something in one section of the reading. It will show up in many other places.
+    This guide is a work in progress. It will probably never be "finished". You may find broken links when you click on some search results and during some navigation steps. Please report these. Otherwise, most of the search functionality is a great experience and can help you find linked topics. Try to search for something in one section of the reading. It will show up in many other places.
 
 ??? Note "Disclaimer"
 
     There might be some wrong or outdated information in this guide because no one is perfect. Your experience may vary. Remember, check regularly for an updated version of this guide. Please do your own independent, well-thought research. There is no one resource online that can provide 100% security, anonymity, and/or privacy.
-
-This guide is a non-profit open-source initiative, licensed under Creative Commons **Attribution-NonCommercial** 4.0 International ([cc-by-nc-4.0](https://creativecommons.org/licenses/by-nc/4.0/) <sup>[[Archive.org]](https://web.archive.org/web/https://creativecommons.org/licenses/by-nc/4.0/)</sup>).
 
 - For mirrors see [Mirrors](../mirrors/index.md) and the links at the bottom right of the page. You should see these on every page.
 

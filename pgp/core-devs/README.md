@@ -1,12 +1,12 @@
 # Import
 
-```bash
+```sh
 $ gpg --import pgp/core-devs/*
 ```
 
 # Verify
 
-```bash
+```sh
 $ gpg --verify pgp/core-devs/than/than-crypto.txt
 
 
