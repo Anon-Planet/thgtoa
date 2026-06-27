@@ -86,4 +86,4 @@ We know our content can be misused. We believe that giving one good person a saf
 
 ---
 
-*Yours faithfully, Anonymous Planet*
+_Yours faithfully, Anonymous Planet_
