@@ -15,6 +15,7 @@ on:
 permissions:
   actions:  read
   contents: write
+  pull-requests: write
 
 jobs:
   sign:
@@ -28,7 +29,7 @@ jobs:
 
     steps:
       - name: 🛠️ Checkout (for pgp/ key reference only)
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           sparse-checkout: pgp
 
@@ -43,7 +44,6 @@ jobs:
       - name: 📋 List downloaded files
         run: ls -lh export/
 
-      # Hash - extensions match export/ conventions: .sha256, .b2sum
       - name: "#️⃣ Hash PDFs"
         id: hashes
         run: |
@@ -110,7 +110,7 @@ jobs:
 
       # Commit export/ back to main
       - name: 📦 Checkout full repo for commit
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           ref: main
           fetch-depth: 0
@@ -119,14 +119,13 @@ jobs:
       - name: 📂 Copy export files into repo
         run: cp -v export/* repo/export/
 
-      - name: 🔏 Configure SSH commit signing
+      - name: 🔏 Configure GPG commit signing
         run: |
-          mkdir -p ~/.ssh
-          echo "${{ secrets.ACTIONS_SSH_SIGNING_KEY }}" > ~/.ssh/signing_key
-          chmod 600 ~/.ssh/signing_key
-          git config --global gpg.format ssh
-          git config --global user.signingKey ~/.ssh/signing_key
+          mkdir -p ~/.gnupg
+          echo "$GPG_PRIVATE_KEY" | gpg --batch --quiet --import > /dev/null 2>&1 || true
           git config --global commit.gpgSign true
+          git config --global gpg.program gpg
+          git config --global gpg.exectimeout 180
           git config --global user.name  "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
@@ -138,7 +137,10 @@ jobs:
           if git diff --cached --quiet; then
             echo "Nothing to commit — export/ is already up to date."
           else
+            export GNUPGHOME=~/.gnupg
+            gpg --list-secret-keys --with-colons > /dev/null 2>&1 || true
             git commit -S -m "chore(export): update PDFs, hashes and signatures [skip ci]"
+            git config --global credential.helper 'cache --timeout=600'
             git push origin main
           fi
 
@@ -183,7 +185,7 @@ jobs:
 
     steps:
       - name: 🛠️ Checkout scripts and public key
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           sparse-checkout: |
             scripts/verify_pdf.py
