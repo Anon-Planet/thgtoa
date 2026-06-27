@@ -14,60 +14,50 @@ schema:
     - https://mastodon.social/@anonymousplanet
 ---
 
-<div style="text-align: center; font-size: 3.9rem; font-weight: 700; line-height: 1; margin: 2em 0;">
-<span>Privacy.</span><br>
-<span style="color: var(--crt-green);">Security.</span><br>
-<span>Anonymity.</span>
+<div class="hero-block">
+  <div class="hero-eyebrow">Anonymous Planet presents</div>
+  <h1 class="hero-title">The Hitchhiker's Guide<br><span class="hero-subtitle">to Online Anonymity (and Privacy)</span></h1>
+  <p class="hero-tagline">
+    You are being tracked. Your metadata is being sold. Your identity is a product. This guide is your manual out.
+  </p>
+  <div class="hero-cta-row">
+    <a href="guide/" class="hero-cta hero-cta--primary">Read the Guide</a>
+    <a href="verify/" class="hero-cta hero-cta--secondary">Verify &amp; Download</a>
+  </div>
 </div>
 
-<div style="text-align: center; font-size: 3.0rem; font-weight: 400; line-height: 0.9; margin: 2em 0;">
-<span style="color: var(--crt-green);">No ads.</span><br>
-<span style="color: var(--crt-amber);">No affiliate links.</span><br>
-<span style="color: var(--crt-red);">No bullshit.</span>
-
+<div class="principles-strip">
+  <span class="principle"><span class="principle-no">No ads.</span></span>
+  <span class="principle-sep">/</span>
+  <span class="principle"><span class="principle-no">No affiliate links.</span></span>
+  <span class="principle-sep">/</span>
+  <span class="principle"><span class="principle-no">No bullshit.</span></span>
 </div>
 
-<div style="text-align: center; background: rgba(255, 0, 0, 0.1); border: 1px solid rgba(255, 0, 0, 0.3);
-border-left: 4px solid #ff4444; padding: 1em; max-width: 70ch; margin: 3em auto; color: var(--crt-red)">
-<span style="color: #ff6b6b;">&#9888;</span> <strong style="color: var(--status-error);">NOTICE:</strong> Always
-verify you are on <a href="https://anonymousplanet.net/" style="color:
-var(--status-error);">anonymousplanet.net</a><strong style="color: #ff6b6b;"> &#9888;</strong>
-</div>
+<div class="index-grid">
 
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5em; max-width:
-1000px; margin: 0 auto;">
+  <div class="index-card">
+    <h3 class="index-card__title">Read Online</h3>
+    <p class="index-card__body">The full guide — tracking techniques, ID verification, anonymous identity creation, and operational security from first principles.</p>
+    <a href="guide/" class="index-card__link">Open guide</a>
+  </div>
 
-<div class="quick-access-card">
-<h3 style="font-family: var(--code-font); font-size: 1.1rem; margin: 0;">Online</h3>
-<p style="margin: 0 0 1em;">Comprehensive coverage of tracking techniques, ID verification, and how to create
-truly anonymous identities.</p>
-<a href="guide/" style="font-family: var(--code-font); font-size: 0.85rem; color: var(--crt-amber);">Read online
-</a>
-</div>
+  <div class="index-card">
+    <h3 class="index-card__title">Download PDF</h3>
+    <p class="index-card__body">Offline copy as PDF or ODT. Verify the file's integrity with the provided SHA256 checksum and GPG signature before trusting it.</p>
+    <a href="export/thgtoa.pdf" class="index-card__link">Get the files</a>
+  </div>
 
-<div class="quick-access-card">
-<h3 style="font-family: var(--code-font); font-size: 1.1rem; margin: 0;">PDF</h3>
-<p style="margin: 0 0 1em;">Download the guide as a PDF (best for readability) or ODT. Verify integrity with the
-provided public key before trusting any downloaded file.</p>
-<a href="export/thgtoa.pdf" class="btn-download" style="min-width: auto !important; color: var(--crt-amber);">Get
-the files </a>
-</div>
+  <div class="index-card">
+    <h3 class="index-card__title">Tor Mirror</h3>
+    <p class="index-card__body">Access over the Tor network. The .onion address means your IP and destination stay private — no exit node exposure.</p>
+    <a href="mirrors/" class="index-card__link">View mirrors</a>
+  </div>
 
-<div class="quick-access-card">
-<h3 style="font-family: var(--code-font); font-size: 1.1rem; margin: 0;">Tor</h3>
-<p style="margin: 0 0 1em;">Access the guide over the Tor network for maximum privacy. The .onion address ensures
-you reach us without exposing your IP or destination.</p>
-<a href="mirrors/" style="font-family: var(--code-font); font-size: 0.85rem; color: var(--crt-amber);">Open .onion
-</a>
-</div>
-
-</div>
-
-<div style="text-align: center; font-family: var(--code-font); font-size: 0.8rem; padding: 1.5em 0; border-top:
-1px solid rgba(255,255,255,0.1); margin-top: 4em; color: var(--crt-green); opacity: 0.9;">
-<strong>The Hitchhiker's Guide</strong> is
-licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" style="color: var(--crt-amber);">CC BY-SA
-4.0</a>.
-</div>
+  <div class="index-card">
+    <h3 class="index-card__title">Verify Authenticity</h3>
+    <p class="index-card__body">Check GPG signatures, SHA256 hashes, and fetch our public keyring. Never trust a download you haven't verified.</p>
+    <a href="verify/" class="index-card__link">How to verify</a>
+  </div>
 
 </div>

@@ -1,6 +1,8 @@
 ---
 title: "PGP"
 description: "Import our GPG keys to verify our releases and signed content."
+hide:
+  - toc
 schema:
   "@context": https://schema.org
   "@type": Organization
@@ -14,31 +16,61 @@ schema:
     - https://mastodon.social/@anonymousplanet
 ---
 
-# PGP
-
-<div style="font-family: var(--text-primary); color: var(--crt-green); font-size: 1.1rem; margin-bottom: 2em;">
-<a href="anonymousplanet.asc" class="btn-download">
-    >>Download Our Public Keyring<<
-</a>
+<div class="hero-block">
+  <div class="hero-eyebrow">Trust, but verify.</div>
+  <h1 class="hero-title">Our Public Keys<span class="hero-subtitle">Import. Verify. Trust nothing blindly.</span></h1>
+  <p class="hero-tagline">
+    Anonymous Planet signs all releases and communications with GnuPG (PGP) keys.
+    Verify fingerprints against multiple independent sources before importing.
+  </p>
+  <div class="hero-cta-row">
+    <a href="anonymousplanet.asc" class="hero-cta hero-cta--primary">Download Public Keyring</a>
+    <a href="#keys" class="hero-cta hero-cta--secondary">View Fingerprints</a>
+  </div>
 </div>
 
-Anonymous Planet uses GnuPG keys as the standard for encryption/signing. Import this keyring to verify the authenticity of our releases, signed content, and secure your emails to us.
+---
 
-## Anonymous Planet Keys
+## Our Keys { #keys }
 
-Our entire keyring is available at <https://anonymousplanet.net/pgp/anonymousplanet.asc> (click the above button to get it). It is also pasted below.
+The full keyring is at `https://anonymousplanet.net/pgp/anonymousplanet.asc`.<br>Always verify fingerprints against our [GitHub releases](https://github.com/Anon-Planet/thgtoa/releases) before importing.
 
-| Name | Key ID | Purpose |
-|------|--------|---------|
-| Master Signing Key (MSK) | `9FA5436D0EE360985157382517ECA05F768DEFDA` | Announcements, signing subkeys, etc. |
-| Release Signing Key (RSK) | `C3023DBEA3FB38C438BA1EECEC60AEDE8B992A2` | Release signing, occasional commit signing |
-| Email Encryption/Signing Key (ESK) | `FCBD2CABDEFD1FBA2E9E7591A1A82CD2DD2CF890` | Secure email |
+<div class="index-grid">
 
-**Fingerprint verification:** Always verify key fingerprints against our [GitHub announcements](https://github.com/Anon-Planet/thgtoa/releases) before importing.
+  <div class="index-card">
+    <h3 class="index-card__title">Master Signing Key (MSK)</h3>
+    <p class="index-card__body">Announcements, signing subkeys, and trust anchoring. The root of our web of trust.</p>
+    <code class="pgp-fingerprint">9FA5 436D 0EE3 6098 5157 3825 17EC A05F 768D EDF6</code>
+  </div>
 
-## Key Rotation
+  <div class="index-card">
+    <h3 class="index-card__title">Release Signing Key (RSK)</h3>
+    <p class="index-card__body">Signs all guide releases and distribution artifacts. Check this against every release.</p>
+    <code class="pgp-fingerprint">C302 3DBE A3FB 38C4 38BA 1EED CEC6 0AED E8B9 92A2</code>
+  </div>
 
-We may rotate keys periodically. Check our [GitHub Releases](https://github.com/Anon-Planet/thgtoa/releases) and [changelog](../changelog/index.md) for announcements.
+  <div class="index-card">
+    <h3 class="index-card__title">Email Encryption / Signing Key (ESK)</h3>
+    <p class="index-card__body">Use this to send us encrypted mail or verify signed correspondence from us.</p>
+    <code class="pgp-fingerprint">FCBD 2CAB DEFD 1FBA 2E9E 7591 A1A8 2CD2 DD2C F890</code>
+  </div>
+
+</div>
+
+---
+
+## Key Rotation { #rotation }
+
+Keys may be rotated periodically. Rotation is always announced via [GitHub Releases](https://github.com/Anon-Planet/thgtoa/releases) and the [changelog](../changelog/index.md). If a key you have on file does not appear here, treat it as compromised and re-import.
+
+---
+
+## Public Keyring { #keyring }
+
+<div class="donate-address-block">
+  <div class="donate-address-label">Keyring URL</div>
+  <code class="donate-address">https://anonymousplanet.net/pgp/anonymousplanet.asc</code>
+</div>
 
 ```txt
 -----BEGIN PGP PUBLIC KEY BLOCK-----

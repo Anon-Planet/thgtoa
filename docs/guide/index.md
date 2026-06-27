@@ -12,29 +12,19 @@ schema:
     - https://github.com/Anon-Planet
     - https://opencollective.com/anonymousplanetorg
 ---
-<div style="text-align: center; padding: 4em 2em;">
-
-<h4 style="font-family: var(--code-font); font-size: 2rem; color: var(--crt-green); letter-spacing: 0.1em; margin-bottom: 2em;">
-"We kill people based on metadata."
-</h3>
-
-</div>
 
 <div class="guide-intro-lead" markdown="1">
 
 1. **Do you want to understand the current state of online privacy and anonymity, while not necessarily getting too technical about it?**
-    - Read the [Introduction](#introduction), [Requirements](#requirements-limitations), understanding some basics beginning with [your network](#your-network), and [the final notes](#a-small-final-editorial-note).
+    - Read the [Introduction](#introduction), [Requirements](#requirements-limitations), understanding some basics beginning with [your network](#network), and [the final notes](#final-note).
 
 2. **Do you want to learn, but also learn how to remove some online information about you?**
-    - All of the items in no. 1 and [how to clean your identities from search engines and other platforms](#removing-your-identities-from-search-engines-and-other-platforms) to get a good idea of how to clean your data off the web.
+    - All of the items in no. 1 and [how to clean your identities from search engines and other platforms](#removing-identities) to get a good idea of how to clean your data off the web.
 
 3. **Do you want to do the above and create online anonymous identities online safely and securely.**
     - Read the whole thing. A specific list of the most vital things to read in the guide will be coming later, but you should read the whole thing.
 
-<div style="font-family: var(--code-font); color: var(--text-primary); font-size: 0.9rem; margin-bottom: 2em;">
-Precautions while reading this guide and accessing the various links:
-</div>
-
+## Precautions while reading this guide and accessing the various links { #precautions }
 
 - **YouTube Videos** have a **[Invidious]** link next to them for accessing content through an Invidious Instance (in this case yewtu.be hosted in the Netherlands) for increased privacy. It is recommended to use these links when possible. See <https://github.com/iv-org/invidious> <sup>[[Archive.org]](https://web.archive.org/web/https://github.com/iv-org/invidious)</sup> for more information.
 
@@ -56,7 +46,7 @@ Finally note that this guide does mention and even recommends various commercial
 
 </div>
 
-## Requirements & Limitations
+## Requirements & Limitations { #requirements-limitations }
 
 - Understanding of the English language (in this case American English).
 
@@ -84,7 +74,7 @@ This guide is not intended for:
 
 - Use by minors.
 
-## Introduction
+## Introduction { #introduction }
 
 **TLDR for the whole guide: "A strange game. The only winning move is not to play"** [^4]**.**
 
@@ -124,7 +114,7 @@ Disclaimer: Jokes aside (magical amulet...). Of course, there are also advanced 
 
 The EFF provides a few security scenarios of what you should consider depending on your activity. While some of those tips might not be within the scope of this guide (more about Privacy than Anonymity), they are still worth reading as examples. See <https://ssd.eff.org/en/module-categories/security-scenarios> <sup>[[Archive.org]](https://web.archive.org/web/https://ssd.eff.org/en/module-categories/security-scenarios)</sup>.
 
-If you want to go deeper into threat modeling, see [Appendix B3: Threat modeling resources](#appendix-b3-threat-modeling-resources).
+If you want to go deeper into threat modeling, see [Threat modeling resources](#threat-modeling-resources).
 
 You might think this guide has no legitimate use but there are many[^16]'[^17]'[^18]'[^19]'[^20]'[^21]'[^22] such as:
 
@@ -144,9 +134,9 @@ This guide is written with hope for those **good-intended individuals** who migh
 
 **Now, here is a non-exhaustive list of some of the many ways you could be tracked and de-anonymized:**
 
-## Your Network
+## Your Network { #network }
 
-### Your IP address
+### Your IP address { #ip-addresses }
 
 **Disclaimer: this whole paragraph is about your public-facing Internet IP and not your local network IP.**
 
@@ -204,7 +194,7 @@ Do note that, unfortunately, these solutions are not perfect, and you will exper
 
 All those will be explained later in this guide.
 
-### Your DNS and IP requests
+### Your DNS and IP requests { #dns-requests }
 
 DNS stands for "Domain Name System"[^31] and is a service used by your browser (and other apps) to find the IP addresses of a service. It is a huge "contact list" (phone book for older people) that works like asking it a name and it returns the number to call. Except it returns an IP instead.
 
@@ -281,9 +271,9 @@ As for your normal daily use (non-sensitive), remember that only Firefox-based b
 
 But the story does not stop there right. Now because after all this, even if you encrypt your DNS and use all possible mitigations. Simple IP requests to any server will probably allow an adversary to still detect which site you are visiting. And this is simply because the majority of websites have unique IPs tied to them as explained here: <https://blog.apnic.net/2019/08/23/what-can-you-learn-from-an-ip-address/> <sup>[[Archive.org]](https://web.archive.org/web/https://blog.apnic.net/2019/08/23/what-can-you-learn-from-an-ip-address/)</sup>. This means that an adversary can create a dataset of known websites for instance including their IPs and then match this dataset against the IP you ask for. In most cases, this will result in a correct guess of the website you are visiting. This means that despite OCSP stapling, despite ECH/eSNI, despite using Encrypted DNS ... An adversary can still guess the website you are visiting anyway.
 
-Therefore, to mitigate all these issues (as much as possible and as best as we can), this guide will later recommend two solutions: Using Tor and a virtualized (See [Appendix W: Virtualization](#appendix-w-virtualization)) multi-layered solution of VPN over Tor solution (DNS over VPN over Tor or DNS over TOR). Other options will also be explained (Tor over VPN, VPN only, No Tor/VPN) but are less recommended.
+Therefore, to mitigate all these issues (as much as possible and as best as we can), this guide will later recommend two solutions: Using Tor and a virtualized (See [Virtualization](#virtualization)) multi-layered solution of VPN over Tor solution (DNS over VPN over Tor or DNS over TOR). Other options will also be explained (Tor over VPN, VPN only, No Tor/VPN) but are less recommended.
 
-### Your RFID enabled devices
+### Your RFID enabled devices { #rfid-devices }
 
 RFID stands for Radio-frequency identification[^55], it is the technology used for instance for contactless payments and various identification systems. Of course, your smartphone is among those devices and has RFID contactless payment capabilities through NFC[^56]. As with everything else, such capabilities can be used for tracking by various actors.
 
@@ -304,9 +294,9 @@ More information over at Wikipedia: <https://en.wikipedia.org/wiki/Radio-frequen
 
 The only way to mitigate this problem is to have no RFID tags on you or to shield them again using a type of Faraday cage. You could also use specialized wallets/pouches that specifically block RFID communications. Many of those are now made by well-known brands such as Samsonite[^57]. You should just not carry such RFID devices while conducting sensitive activities.
 
-See [Appendix N: Warning about smartphones and smart devices](#appendix-n-warning-about-smartphones-and-smart-devices)
+See [Warning about smartphones and smart devices](#smartphones-warning)
 
-### The Wi-Fi and Bluetooth devices around you
+### The Wi-Fi and Bluetooth devices around you { #wifi-bluetooth-tracking }
 
 Geolocation is not only done by using mobile antennas triangulation. It is also done using the Wi-Fi and Bluetooth devices around you. Operating systems makers like Google (Android[^58]) and Apple (IOS[^59]) maintain a convenient database of most Wi-Fi access points, Bluetooth devices, and their location. When your Android smartphone or iPhone is on (and not in Plane mode), it will scan actively (unless you specifically disable this feature in the settings) Wi-Fi access points, and Bluetooth devices around you and will be able to geolocate you with more precision than when using a GPS.
 
@@ -328,11 +318,11 @@ Again, such an issue could only be mitigated by being in a room/building that wo
 
 Here is another video of the same kind of tech in action: <https://www.youtube.com/watch?v=FDZ39h-kCS8> <sup>[[Invidious]](https://yewtu.be/watch?v=FDZ39h-kCS8)</sup>
 
-See: [Appendix N: Warning about smartphones and smart devices](#appendix-n-warning-about-smartphones-and-smart-devices).
+See: [Warning about smartphones and smart devices](#smartphones-warning).
 
 There is not much you can do about these. Besides being non-identifiable in the first place.
 
-### Rogue Wi-Fi Access Points
+### Rogue Wi-Fi Access Points { #rogue-wifi }
 
 These have been used at least since 2008 using an attack called "Jasager"[^64] and can be done by anyone using self-built tools or using commercially available devices such as Wi-Fi Pineapple[^65].
 
@@ -354,9 +344,9 @@ These techniques can also be employed to design sophisticated phishing websites 
 
 How to mitigate those? If you do connect to a public wi-fi access point, use Tor, or use a VPN and then Tor (Tor over VPN) or even (VPN over Tor) to obfuscate your traffic from the rogue AP while still using it.
 
-In addition, you should see the BlackHat USA conference talk, [Surveilling the Masses with Wi-Fi Positioning Systems](https://www.youtube.com/watch?v=hlbjUvkoyBA) <sup>[[Invidious]](https://yewtu.be/watch?v=hlbjUvkoyBA)</sup>. The talk details a critical vulnerability in the Wi-Fi positioning API by Apple, which can be used to geofence the population using unique identifiers. See: [Appendix N: Warning about smartphones and smart devices](#appendix-n-warning-about-smartphones-and-smart-devices). Your neighbors' iPhones are a unique threat, too.
+In addition, you should see the BlackHat USA conference talk, [Surveilling the Masses with Wi-Fi Positioning Systems](https://www.youtube.com/watch?v=hlbjUvkoyBA) <sup>[[Invidious]](https://yewtu.be/watch?v=hlbjUvkoyBA)</sup>. The talk details a critical vulnerability in the Wi-Fi positioning API by Apple, which can be used to geofence the population using unique identifiers. See: [Warning about smartphones and smart devices](#smartphones-warning). Your neighbors' iPhones are a unique threat, too.
 
-### Traffic Anonymization
+### Traffic Anonymization { #traffic-anonymization }
 
 Tor and VPNs are not silver bullets. Many advanced techniques have been developed and studied to de-anonymize encrypted Tor traffic over the years[^68]. Most of those techniques are Correlation attacks that will correlate your network traffic in one way or another to logs or datasets. Here are some examples:
 
@@ -382,7 +372,7 @@ There are ways to mitigate these such as:
 
 Be aware again that this might not be enough against a motivated global adversary[^74] with wide access to global mass surveillance. Such an adversary might have access to logs no matter where you are and could use those to de-anonymize you. Usually, these attacks are part of what is called a Sybil Attack[^75]. **These adversaries are out of the scope of this guide.**
 
-Be also aware that all the other methods described in this guide such as Behavioral analysis can also be used to deanonymize Tor users indirectly (also see [Your Digital Footprint](#your-digital-footprint).
+Be also aware that all the other methods described in this guide such as Behavioral analysis can also be used to deanonymize Tor users indirectly (also see [Your Digital Footprint](#digital-footprint).
 
 I also strongly recommend reading this very good, complete, and thorough (and more detailed) guide on most known Attack Vectors on Tor: <https://github.com/Attacks-on-Tor/Attacks-on-Tor> <sup>[[Archive.org]](https://web.archive.org/web/https://github.com/Attacks-on-Tor/Attacks-on-Tor)</sup> as well as this recent research publication <https://www.researchgate.net/publication/323627387_Shedding_Light_on_the_Dark_Corners_of_the_Internet_A_Survey_of_Tor_Research> <sup>[[Archive.org]](https://web.archive.org/web/https://www.researchgate.net/publication/323627387_Shedding_Light_on_the_Dark_Corners_of_the_Internet_A_Survey_of_Tor_Research)</sup>
 
@@ -396,13 +386,13 @@ This guide will later propose some mitigations to such attacks by changing your 
 
 **Disclaimer: it should also be noted that Tor is not designed to protect against a global adversary.**[^550]
 
-### Traffic analysis and the limits of Tor
+### Traffic analysis and the limits of Tor { #traffic-analysis-tor }
 
 **Note: This section expands on the [Traffic Anonymization](#traffic-anonymization) above. What follows is a more detailed treatment of the specific attack classes that matter in practice.**
 
 Tor[^28] provides strong anonymity against most adversaries most of the time. It is not, however, unconditional. Understanding what that means in practice, and who realistically is such an adversary, is more useful than either dismissing the concern or being paralyzed by it.
 
-#### Timing correlation attacks
+#### Timing correlation attacks { #timing-correlation }
 
 The foundational attack against anonymity networks is traffic correlation: if an adversary can observe the traffic entering the Tor network from your computer and the traffic exiting toward a destination, they can correlate the two streams by timing, volume, and packet patterns - without ever breaking Tor's encryption.
 
@@ -412,21 +402,21 @@ Murdoch and Danezis demonstrated in 2005[^551] that a relatively low-resource ad
 
 **DeepCorr** (2018) used deep learning to correlate Tor flows with significantly higher accuracy than prior methods, achieving correlation rates above 96% in controlled conditions. The authors are careful to note that their evaluation was performed in a closed-world lab setting - a fixed set of websites, controlled conditions - and that real-world performance against a large open network with diverse traffic would be substantially harder. This distinction matters: closed-world accuracy figures are frequently misquoted as if they apply to real-world deployments. They do not, at least not yet.
 
-#### Who is a global passive adversary in practice?
+#### Who is a global passive adversary in practice? { #global-passive-adversary }
 
 A true global passive adversary - one who can observe arbitrary internet traffic worldwide simultaneously - does not exist in the form often imagined. What does exist is a collection of national intelligence agencies with broad but not unlimited visibility into internet traffic (GCHQ's TEMPORA, NSA's PRISM and upstream collection programmes), large ISPs and internet exchanges that carry a disproportionate share of global traffic, and cloud providers whose infrastructure spans most of the world's AS paths.
 
 For the vast majority of Tor users, none of these entities are targeting them specifically. For a journalist communicating with a source inside a country whose intelligence services have close partnerships with major Western agencies, or an activist whose traffic transits only a small number of AS paths, the picture is more concerning. The honest answer is: **if a Five Eyes agency is specifically targeting you, Tor alone is probably not sufficient. For everyone else, Tor provides strong protection.**
 
-#### Website fingerprinting
+#### Website fingerprinting { #website-fingerprinting }
 
 Website fingerprinting attacks attempt to identify which website a Tor user is visiting by analysing the pattern of encrypted traffic - packet sizes, timing, direction sequences - without decrypting it. Accuracy in closed-world evaluations (where the attacker knows the user is visiting one of N monitored sites) has reached high levels in research settings. In open-world conditions, where the user may be visiting any of millions of sites, false positive rates make these attacks far less practical. WTF-PAD and related padding defences, partially deployed in Tor Browser, further degrade fingerprinting accuracy. This is an active research area and the situation will evolve.
 
-#### Guard node persistence and what it means
+#### Guard node persistence and what it means { #guard-node-persistence }
 
 Tor uses **guard nodes** - a small, stable set of entry nodes that your client reuses over weeks - specifically to limit timing correlation exposure. If you used a random entry node for every circuit, an adversary who controls even a modest fraction of Tor nodes would eventually observe you entering the network directly. By persisting a small guard set, Tor limits the probability that any given adversary controls your entry point. The tradeoff is that if your guard node is malicious or observed, it remains so for the duration of the guard period. On balance, the Tor Project's research shows guard persistence improves anonymity for most people most of the time.
 
-#### When Tor is and is not sufficient
+#### When Tor is and is not sufficient { #tor-sufficiency }
 
 Tor is sufficient against: local network observers (your ISP, your university, a café Wi-Fi), most law enforcement agencies without intelligence partnerships, commercial data brokers, and advertisers.
 
@@ -434,7 +424,7 @@ Tor is not sufficient against: a targeted operation by a well-resourced national
 
 The most practical mitigation beyond Tor itself is changing your entry point: connecting to Tor from public Wi-Fi rather than your home connection removes the most reliable correlation anchor - your ISP-assigned IP - from the equation entirely. This guide recommends this approach for high-sensitivity activities throughout.
 
-### Some Devices can be tracked even when offline
+### Some Devices can be tracked even when offline { #offline-tracking }
 
 You have seen this in action/spy/Sci-Fi movies and shows, the protagonists always remove the battery of their phones to make sure it cannot be used. Most people would think that's overkill. Well, unfortunately, no, this is now becoming true at least for some devices:
 
@@ -448,13 +438,13 @@ Such devices will continue to broadcast identity information to nearby devices e
 
 They could now find such devices and keep the location in some database that could then be used by third parties or themselves for various purposes (including analytics, advertising, or evidence/intelligence gathering).
 
-See [Appendix N: Warning about smartphones and smart devices](#appendix-n-warning-about-smartphones-and-smart-devices)
+See [Warning about smartphones and smart devices](#smartphones-warning)
 
 TLDR: Do not take such devices with you when conducting sensitive activities.
 
-## Your Hardware Identifiers
+## Your Hardware Identifiers { #hardware-identifiers }
 
-### Your IMEI and IMSI
+### Your IMEI and IMSI { #imei-imsi }
 
 The IMEI (International Mobile Equipment Identity[^84]) and the IMSI (International Mobile Subscriber Identity[^85]) are unique numbers created by cell phone manufacturers and cell phone operators.
 
@@ -486,13 +476,13 @@ The IMEI and IMSI can be traced back to you in at least six ways:
 
 Here is also a good YouTube video on this topic: [DEFCON Safe Mode - Cooper Quintin - Detecting Fake 4G Base Stations in Real-Time](https://www.youtube.com/watch?v=siCk4pGGcqA) <sup>[[Invidious]](https://yewtu.be/watch?v=siCk4pGGcqA)</sup>
 
- **For these reasons, it is crucial to get a dedicated anonymous phone number and/or an anonymous burner phone with a cash-bought pre-paid sim card that is not tied to you in any way (past or present) for conducting sensitive activities. It is also possible to get an anonymous pre-paid but preferably dedicated number from free and paid online services accepting anonymous cryptocurrencies like Monero. Get more practical guidance here: [Getting an anonymous Phone number](#getting-an-anonymous-phone-number).**
+ **For these reasons, it is crucial to get a dedicated anonymous phone number and/or an anonymous burner phone with a cash-bought pre-paid sim card that is not tied to you in any way (past or present) for conducting sensitive activities. It is also possible to get an anonymous pre-paid but preferably dedicated number from free and paid online services accepting anonymous cryptocurrencies like Monero. Get more practical guidance here: [Getting an anonymous Phone number](#anonymous-phone).**
 
 While there are some smartphones manufacturers like Purism with their Librem series[^98] who claim to have your privacy in mind, they still do not allow IMEI randomization which we believe is a key anti-tracking feature that should be provided by such manufacturers. While this measure will not prevent IMSI tracking within the SIM card, it would at least allow you to keep the same "burner phone" and only switch SIM cards instead of having to switch both for privacy.
 
-See [Appendix N: Warning about smartphones and smart devices](#appendix-n-warning-about-smartphones-and-smart-devices)
+See [Warning about smartphones and smart devices](#smartphones-warning)
 
-### Your Wi-Fi or Ethernet MAC address
+### Your Wi-Fi or Ethernet MAC address { #mac-address }
 
 The MAC address[^99] is a unique identifier tied to your physical Network Interface (Wired Ethernet or Wi-Fi) and could of course be used to track you if it is not randomized. As it was the case with the IMEI, manufacturers of computers and network cards usually keep logs of their sales (usually including things like serial number, IMEI, Mac Addresses, ...) and it is possible again for them to track where and when the computer with the MAC address in question was sold and to whom. Even if you bought it with cash in a supermarket, the supermarket might still have CCTV (or a CCTV just outside that shop) and again the time/date of sale could be used to find out who was there using the Mobile Provider antenna logs at that time (IMEI/IMSI).
 
@@ -504,9 +494,9 @@ Some commercial devices will keep a record of MAC addresses roaming around for v
 
 **So, it is important again not to bring your phone along when/where you conduct sensitive activities. If you use your own laptop, then it is crucial to hide that MAC address (and Bluetooth address) anywhere you use it and be extra careful not to leak any information. Thankfully many recent OSes now feature or allow the possibility to randomize MAC addresses (Android, IOS, Linux, and Windows 10/11)** with the notable exception of macOS which does not support this feature even in its latest Big Sur version.
 
-See [Appendix N: Warning about smartphones and smart devices](#appendix-n-warning-about-smartphones-and-smart-devices)
+See [Warning about smartphones and smart devices](#smartphones-warning)
 
-### Your Bluetooth MAC address
+### Your Bluetooth MAC address { #bluetooth-mac }
 
 Your Bluetooth MAC is like the earlier MAC address except it is for Bluetooth. Again, it can be used to track you as manufacturers and operating system makers keep logs of such information. It could be tied to a sale place/time/date or accounts and then could be used to track you with such information, the shop billing information, the CCTV, or the mobile antenna logs in correlation.
 
@@ -518,9 +508,9 @@ On Windows 10, you will need to disable and enable the Bluetooth device in the d
 
 In general, this should not be too much of a concern compared to MAC Addresses. BT Addresses are randomized quite often.
 
-See [Appendix N: Warning about smartphones and smart devices](#appendix-n-warning-about-smartphones-and-smart-devices)
+See [Warning about smartphones and smart devices](#smartphones-warning)
 
-## Your CPU
+## Your CPU { #cpu }
 
 All modern CPUs[^102] are now integrating hidden management platforms such as the now infamous Intel Management Engine[^103] and the AMD Platform Security Processor[^104].
 
@@ -548,7 +538,7 @@ This guide won't go too deep into side-channel and microarchitecture attacks but
 
 We will mitigate some of these issues in this guide by recommending the use of virtual machines on a dedicated anonymous laptop for your sensitive activities that will only be used from an anonymous public network.
 
-**In addition, we recommend the use of AMD CPUs instead of Intel CPUs. See [Appendix B5: Types of CPU attacks](#appendix-b5-types-of-cpu-attacks) for more information.**
+**In addition, we recommend the use of AMD CPUs instead of Intel CPUs. See [Types of CPU attacks](#cpu-attacks) for more information.**
 
 - CPU vulnerabilities found in the past few years:
 
@@ -566,7 +556,7 @@ We will mitigate some of these issues in this guide by recommending the use of v
     - [Squip attack](https://www.securityweek.com/amd-processors-expose-sensitive-data-new-squip-attack/)
     - [Zenbleed](https://lock.cmpxchg8b.com/zenbleed.html)
 
-## Your OS and App telemetry services
+## Your OS and App telemetry services { #os-telemetry }
 
 Whether it is Android, iOS, Windows, macOS, or even Ubuntu. Most popular Operating Systems now collect telemetry information by default even if you never opt-in or opted-out[^112] from the start. Some like Windows will not even allow disabling telemetry completely without some technical tweaks. This information collection can be extensive and include a staggering number of details (metadata and data) on your devices and their usage.
 
@@ -608,9 +598,9 @@ This does not mean for example that Apple devices are terrible choices for good 
 
 Later in this guide, we will use all the means at our disposal to disable and block as much telemetry as possible to mitigate this attack vector in the Operating Systems supported in this guide. These will include Windows, macOS, and even Linux in some regard.
 
-See [Appendix N: Warning about smartphones and smart devices](#appendix-n-warning-about-smartphones-and-smart-devices)
+See [Warning about smartphones and smart devices](#smartphones-warning)
 
-## Your Smart Devices
+## Your Smart Devices { #smart-devices }
 
 You got it; your smartphone is an advanced spying/tracking device that:
 
@@ -652,13 +642,13 @@ But that is not all, this section is not called "Smartphones" but "Smart devices
 
     - <https://www.zoomeye.org/>
 
-See [Appendix N: Warning about smartphones and smart devices](#appendix-n-warning-about-smartphones-and-smart-devices)
+See [Warning about smartphones and smart devices](#smartphones-warning)
 
 Conclusion: Do not bring your smart devices with you when conducting sensitive activities.
 
-## Yourself
+## Yourself { #yourself }
 
-### Your Metadata
+### Your Metadata { #metadata }
 
 What's metadata? Every file you create or share carries metadata - structured data embedded in or alongside the content that describes how, when, where, and with what the file was created. This metadata is invisible in normal use and routinely overlooked. It has burned journalistic sources, identified whistleblowers, and linked anonymous documents to their authors. The tools to strip it exist and are not difficult to use. The failure is almost always one of not knowing it was there.
 
@@ -680,9 +670,9 @@ Have you heard of Edward Snowden[^134]? Now is the time to google him and read h
 
 See "We kill people based on Metadata"[^142] or this famous tweet from the IDF <https://twitter.com/idf/status/1125066395010699264> <sup>[[Archive.org]](https://web.archive.org/web/20210519061345/https://twitter.com/idf/status/1125066395010699264)</sup> <sup>[[Nitter]](https://nitter.net/idf/status/1125066395010699264)</sup>.
 
-See [Appendix N](#appendix-n-warning-about-smartphones-and-smart-devices) for a warning on using smartphones and other smart devices. See [Metadata auditing](#metadata-auditing) for a way to get rid of the metadata - which is probably what brought you to this section anyway.
+See [Smartphones](#smartphones-warning) for a warning on using smartphones and other smart devices. See [Metadata auditing](#metadata-auditing) for a way to get rid of the metadata - which is probably what brought you to this section anyway.
 
-### Your Digital Footprint
+### Your Digital Footprint { #digital-footprint }
 
 This is the part where you should watch the documentary "The Social Dilemma"[^143] on Netflix as they cover this topic much better than anyone else.
 
@@ -702,7 +692,7 @@ Here are some examples:
 
 - This technology is also widely used in CAPTCHAS[^371] services to verify that you are "human" and can be used to fingerprint a user.
 
-- See [Appendix A4: Counteracting Forensic Linguistics](#appendix-a4-counteracting-forensic-linguistics).
+- See [Counteracting Forensic Linguistics](#forensic-linguistics).
 
 Analysis algorithms could then be used to match these patterns with other people and match you to a different known user. It is unclear whether such data is already used or not by Governments and Law Enforcement agencies, but it might be in the future. And while this is mostly used for advertising/marketing/captchas purposes now. It could and probably will be used for investigations in the short or mid-term future to deanonymize users.
 
@@ -744,9 +734,9 @@ So, how can you mitigate these?
 
 You need to act and fully adopt a role as an actor would do for a performance. You need to become a different person, think, and act like that person. This is not a technical mitigation but a human one. You can only rely on yourself for that.
 
-Ultimately, it is mostly up to you to fool those algorithms by adopting new habits and not revealing real information when using your anonymous identities. See [Appendix A4: Counteracting Forensic Linguistics](#appendix-a4-counteracting-forensic-linguistics).
+Ultimately, it is mostly up to you to fool those algorithms by adopting new habits and not revealing real information when using your anonymous identities. See [Counteracting Forensic Linguistics](#forensic-linguistics).
 
-### IRL and OSINT
+### IRL and OSINT { #irl-osint }
 
 These are clues you might give over time that could point to your real identity. You might be talking to someone or posting on some board/forum/Reddit. In those posts, you might over time leak some information about your real life. These might be memories, experiences, or clues you shared that could then allow a motivated adversary to build a profile to narrow their search.
 
@@ -774,7 +764,7 @@ As well as those interesting podcasts:
 
 You should never share real individual experiences/details using your anonymous identities that could later lead to finding your real identity. You will see more details about this in the [Creating new identities](#creating-new-identities) section.
 
-### Your Face, Voice, Biometrics, and Pictures
+### Your Face, Voice, Biometrics, and Pictures { #biometrics }
 
 "Hell is other people", even if you evade every method listed above, you are not out of the woods yet thanks to the widespread use of advanced Face recognition by everyone.
 
@@ -804,7 +794,7 @@ Here are a few resources for even trying this yourself:
 
 - Bellingcat, Digital Research Tutorial: Geolocating (Allegedly) Corrupt Venezuelan Officials in Europe <https://www.youtube.com/watch?v=bS6gYWM4kzY> <sup>[[Invidious]](https://yewtu.be/watch?v=bS6gYWM4kzY)</sup>
 
-### Gait Recognition and Other Long-Range Biometrics
+### Gait Recognition and Other Long-Range Biometrics { #gait-recognition }
 
 Even if you are not looking at the camera, they can still figure out who you are[^161], make out your emotions[^162], analyze your gait[^163]'[^164]'[^165], read your lips[^166], analyze the behavior of your eyes[^167], and probably guess your political affiliation[^168]'[^169].
 
@@ -870,7 +860,7 @@ At this time, there are a few steps[^198] you can use to mitigate (and only miti
 
 (Note that if you intend to use these where advanced facial recognition systems have been installed, these measures could also flag as you as suspicious by themselves and trigger a human check)
 
-### Phishing and Social Engineering
+### Phishing and Social Engineering { #phishing }
 
 Phishing[^202] is a social engineering[^203] type of attack where an adversary could try to extract information from you by pretending or impersonating something/someone else.
 
@@ -882,9 +872,9 @@ These have been used countless times since the early days of the internet and th
 
 Here is a good video if you want to learn a bit more about phishing types: Black Hat, Ichthyology: Phishing as a Science <https://www.youtube.com/watch?v=Z20XNp-luNA> <sup>[[Invidious]](https://yewtu.be/watch?v=Z20XNp-luNA)</sup>.
 
-## Malware, exploits, and viruses
+## Malware, exploits, and viruses { #malware }
 
-### Malware in your files/documents/e-mails
+### Malware in your files/documents/e-mails { #malware-files }
 
 Using steganography or other techniques, it is easy to embed malware into common file formats such as Office Documents, Pictures, Videos, PDF documents...
 
@@ -900,11 +890,11 @@ See these good videos for more explanations on the matter:
 
 - Ange Albertini: Funky File Formats: <https://www.youtube.com/watch?v=hdCs6bPM4is> <sup>[[Invidious]](https://yewtu.be/watch?v=hdCs6bPM4is)</sup>
 
-You should always use extreme caution. See [Appendix W: Virtualization](#appendix-w-virtualization) to mitigate leaking any information even in case of opening such a malicious file.
+You should always use extreme caution. See [Virtualization](#virtualization) to mitigate leaking any information even in case of opening such a malicious file.
 
-If you want to learn how to try detecting such malware, see [Appendix T: Checking files for malware](#appendix-t-checking-files-for-malware)
+If you want to learn how to try detecting such malware, see [Checking files for malware](#checking-files-malware)
 
-### Malware and Exploits in your apps and services
+### Malware and Exploits in your apps and services { #malware-apps }
 
 So, you are using Tor Browser or Brave Browser over Tor. You could be using those over a VPN for added security. But you should keep in mind that there are exploits[^206] (hacks) that could be known by an adversary (but unknown to the App/Browser provider). Such exploits could be used to compromise your system and reveal details to de-anonymize you such as your IP address or other details.
 
@@ -920,9 +910,9 @@ Here are some steps to mitigate this type of attack:
 - You should always check that you are using the updated version of such apps before use and ideally validate each download using their signature if available.
 - You should not use such apps directly from a hardware system but instead, use a Virtual Machine for compartmentalization.
 
-To reflect these recommendations, this guide will therefore later guide you in the use of Virtualization (See [Appendix W: Virtualization](#appendix-w-virtualization) so that even if your Browser/Apps get compromised by a skilled adversary, that adversary will find himself stuck in a sandbox[^212] without being able to access identifying information or compromise your system.
+To reflect these recommendations, this guide will therefore later guide you in the use of Virtualization (See [Virtualization](#virtualization) so that even if your Browser/Apps get compromised by a skilled adversary, that adversary will find himself stuck in a sandbox[^212] without being able to access identifying information or compromise your system.
 
-### Malicious USB devices
+### Malicious USB devices { #malicious-usb }
 
 There are readily available commercial and cheap "badUSB" [^213]devices that can take deploy malware, log your typing, geolocate you, listen to you or gain control of your laptop just by plugging them in. Here are some examples that you can already buy yourself:
 
@@ -940,9 +930,9 @@ While you could inspect a USB key physically, scan it with various utilities, ch
 
 To mitigate this, you should never trust such devices and plug them into sensitive equipment. If you use a charging device, you should consider the use of a USB data blocking device that will only allow charging but not any data transfer. Such data blocking devices are now readily available in many online shops. You should also consider disabling USB ports completely within the BIOS of your computer unless you need them (if you can).
 
-### Malware and backdoors in your Hardware Firmware and Operating System
+### Malware and backdoors in your Hardware Firmware and Operating System { #firmware-backdoors }
 
-This might sound a bit familiar as this was already partially covered previously in the [Your CPU](#your-cpu) section.
+This might sound a bit familiar as this was already partially covered previously in the [Your CPU](#cpu) section.
 
 Malware and backdoors can be embedded directly into your hardware components. Sometimes those backdoors are implemented by the manufacturer itself such as the IME in the case of Intel CPUs. And in other cases, such backdoors can be implemented by a third party that places itself between orders of new hardware and customer delivery[^216].
 
@@ -958,7 +948,7 @@ As mentioned previously, these are harder to detect by users but some limited st
 
 Most guides to anonymity focus on software and network-layer threats. Physical and hardware-level attacks are rarer, more expensive to execute, and require either physical access to your device or interference with your supply chain. That cost means they are not deployed casually. But for the right target, they are devastatingly effective - because no amount of software configuration protects you if the hardware underneath is compromised.
 
-#### Firmware implants
+#### Firmware implants { #firmware-implants }
 
 Firmware implants are malicious code inserted into the low-level software that runs before your operating system boots - in the UEFI/BIOS[^544], storage controller firmware, or network card firmware. Because they live below the OS, they survive reinstallation of the operating system, disk wiping, and most forensic examination.
 
@@ -966,15 +956,15 @@ Firmware implants are malicious code inserted into the low-level software that r
 
 Who faces this threat? In both documented cases, targets were NGO workers, journalists, and diplomatic personnel - people whose devices passed through the hands of state actors, or who were targeted by sophisticated spear-phishing that enabled remote firmware write access. This is not a threat that scales to mass deployment. It is used surgically, against specific high-value individuals.
 
-Mitigations are limited but worth understanding. **UEFI Secure Boot**[^307] verifies the cryptographic signatures of bootloader and OS components before execution, preventing unsigned code from running at boot. It does not, however, protect against a compromise of the firmware itself - if the UEFI has already been modified, Secure Boot can be disabled or bypassed from within. It is a meaningful defence against attackers who have not yet achieved firmware-level access, but it is not a root of trust in the presence of a firmware implant. **Intel Boot Guard** and AMD's equivalent go further by fusing a hash of the initial firmware into the hardware at manufacture time, making firmware modification detectable. **Heads**[^547] is an open-source firmware alternative for supported hardware (primarily Thinkpads and select System76 machines) that provides measured boot, TPM-backed attestation, and tamper detection - and is the most practical option for a high-risk user who needs verifiable firmware integrity. See also: [About Secure Boot](#about-secure-boot).
+Mitigations are limited but worth understanding. **UEFI Secure Boot**[^307] verifies the cryptographic signatures of bootloader and OS components before execution, preventing unsigned code from running at boot. It does not, however, protect against a compromise of the firmware itself - if the UEFI has already been modified, Secure Boot can be disabled or bypassed from within. It is a meaningful defence against attackers who have not yet achieved firmware-level access, but it is not a root of trust in the presence of a firmware implant. **Intel Boot Guard** and AMD's equivalent go further by fusing a hash of the initial firmware into the hardware at manufacture time, making firmware modification detectable. **Heads**[^547] is an open-source firmware alternative for supported hardware (primarily Thinkpads and select System76 machines) that provides measured boot, TPM-backed attestation, and tamper detection - and is the most practical option for a high-risk user who needs verifiable firmware integrity. See also: [About Secure Boot](#secure-boot).
 
-#### USB attack hardware
+#### USB attack hardware { #usb-attack-hardware }
 
-USB-based attack tools are commercially available and widely understood. The **O.MG Cable** is a USB cable with an embedded wireless implant - visually and functionally indistinguishable from a legitimate charging cable - that can execute keystrokes, exfiltrate data, and accept remote commands over Wi-Fi. The **USB Rubber Ducky** and broader Hak5 product family present themselves to a target computer as a keyboard, executing pre-loaded keystroke injection payloads at speeds no human typist could match. See also: [Malicious USB devices](#malicious-usb-devices).
+USB-based attack tools are commercially available and widely understood. The **O.MG Cable** is a USB cable with an embedded wireless implant - visually and functionally indistinguishable from a legitimate charging cable - that can execute keystrokes, exfiltrate data, and accept remote commands over Wi-Fi. The **USB Rubber Ducky** and broader Hak5 product family present themselves to a target computer as a keyboard, executing pre-loaded keystroke injection payloads at speeds no human typist could match. See also: [Malicious USB devices](#malicious-usb).
 
 Recognition is difficult. O.MG cables are designed specifically to defeat visual inspection. Practical mitigations include: **never using cables or USB devices you did not purchase yourself and receive sealed**, using a USB data blocker ("USB condom") when charging from untrusted ports, and configuring your operating system to require confirmation before trusting new USB devices (USBGuard on Linux[^548]; this is not natively available on Windows without third-party tools).
 
-#### Evil Maid attacks
+#### Evil Maid attacks { #evil-maid }
 
 For more on Evil Maid attacks, see: [Evil Maid attack](#evil-maid-attack).
 
@@ -984,13 +974,13 @@ Mitigations:
 - **Measured boot with TPM attestation** (as provided by Heads or a correctly configured UEFI + TPM setup) will detect bootloader tampering by comparing measurements against known-good values stored in the TPM.
 - **A tamper-evident seal** on the device chassis (nail varnish applied across screws and photographed, or commercial tamper-evident stickers) provides a low-tech detection layer that is surprisingly effective against unsophisticated adversaries.
 
-#### Supply chain compromise
+#### Supply chain compromise { #supply-chain }
 
 Supply chain attacks target your device before it reaches you - at the manufacturer, distributor, or shipping stage. The NSA's ANT catalogue[^549], leaked by Snowden in 2013, documented hardware implants installed in Cisco routers and other network equipment in transit. For most users, this threat is not realistic. For a senior dissident, human rights lawyer, or intelligence source in a country whose government has influence over hardware supply chains, it deserves consideration.
 
 Practical mitigations are limited. Purchasing devices in person from a retail store (rather than having them shipped) reduces the interception window. Preferring hardware from vendors outside adversary supply chain reach, and using Heads-supported hardware with verified firmware, provides some assurance. For the highest-risk cases, consider that any device that has left your control - even briefly - should be treated as potentially compromised.
 
-#### Physical inspection checklist
+#### Physical inspection checklist { #physical-inspection }
 
 For high-risk individuals receiving or returning to a device:
 
@@ -1000,9 +990,9 @@ For high-risk individuals receiving or returning to a device:
 - On first boot after any period of unattended access, verify firmware measurements if your platform supports it (Heads TPM event log; `tpm2-tools` on Linux).
 - If Secure Boot is unexpectedly disabled in UEFI settings, treat the device as compromised.
 
-## Your files, documents, pictures, and videos
+## Your files, documents, pictures, and videos { #your-files }
 
-### Properties and Metadata
+### Properties and Metadata { #file-metadata }
 
 This can be obvious to many but not to all. Most files have metadata attached to them. Good examples are pictures that store EXIF[^222] information which can hold a lot of information such as GPS coordinates, which camera/phone model took it, and when it was taken precisely. While this information might not directly give out who you are, it could tell exactly where you were at a certain moment which could allow others to use various sources to find you (CCTV or other footage taken at the same place at the same time during a protest for instance). You must verify any file you would put on those platforms for any properties that might hold any information that might lead back to you.
 
@@ -1016,11 +1006,11 @@ This also works for videos. Yes, videos too have geo-tagging, and many are very 
 
 For this reason, you will always have to be incredibly careful when uploading files using your anonymous identities and check the metadata of those files.
 
-**Even if you publish a plain text file, you should always double or triple-check it for any information leakage before publishing. You will find some guidance about this in the [Some additional measures against forensics](#some-additional-measures-against-forensics) section at the end of the guide.**
+**Even if you publish a plain text file, you should always double or triple-check it for any information leakage before publishing. You will find some guidance about this in the [Some additional measures against forensics](#anti-forensics) section at the end of the guide.**
 
-### Watermarking
+### Watermarking { #watermarking }
 
-#### Pictures, Video and Audio
+#### Pictures, Video and Audio { #media-watermarking }
 
 Pictures/Videos often contain visible watermarks indicating who is the owner/creator but there are also invisible watermarks in various products aiming at identifying the viewer itself.
 
@@ -1036,7 +1026,7 @@ In addition to watermarks, the camera used for filming (and therefore the device
 
 Be extremely careful when publishing videos/pictures/audio files from known commercial platforms as they might contain such invisible watermarks in addition to details in the images themselves. There is no guaranteed 100% protection against those. You will have to use common sense.
 
-#### Printer Watermarking
+#### Printer Watermarking { #printer-watermarking }
 
 Did you know your printer is most likely spying on you too? Even if it is not connected to any network? This is usually a known fact by many people in the IT community but few outside people.
 
@@ -1052,7 +1042,7 @@ Here are also some tips from the Whonix documentation ([Printing and Scanning](h
 
 **Do not ever print in Color, usually, watermarks are not present without color toners/cartridges**[^236]**.**
 
-### Pixelized or Blurred Information
+### Pixelized or Blurred Information { #pixelized-info }
 
 Did you ever see a document with blurred text? Did you ever make fun of those movies/series where they "enhance" an image to recover seemingly impossible-to-read information?
 
@@ -1084,7 +1074,7 @@ There are also techniques to deblur/depixelate parts in videos: see <https://pos
 
 For this reason, it is always extremely important that you correctly redact and curate any document you might want to publish. Blurring is not enough, and you should always completely blacken/remove any sensitive data to avoid any attempt at recovering data from any adversary. Do not pixelized, do not blur, just put a hard black rectangle to redact information.
 
-## Your Crypto Transactions
+## Your Crypto Transactions { #crypto-transactions }
 
 Contrary to widespread belief, Crypto transactions (such as Bitcoin and Ethereum) are not anonymous[^237]. Most cryptocurrencies can be tracked accurately through various methods[^238]'[^239].
 
@@ -1096,13 +1086,13 @@ There are some cryptocurrencies with privacy/anonymity in mind like Monero but e
 
 Use of "private" mixers, tumblers[^244] (centralized services that specialize in "anonymizing" cryptocurrencies by "mixing them") and coinjoiners are risky as you don't know what's happening on them[^245] and can be trivially de-mixed[^246]. Their centrally-controlled nature could also put you in trouble as they are more susceptible to money-laundering laws[^247].
 
-This does not mean you cannot use Bitcoin anonymously at all. You can actually use Bitcoin anonymously as long as you do not convert it to actual currency, use a Bitcoin wallet from a safe anonymous network, and do not reuse addresses or consolidate outputs that were used when spending at different merchants. Meaning you should avoid KYC/AML regulations by various exchanges, avoid using the Bitcoin network from any known IP address, and use a wallet that provides privacy-preserving tools. See [Appendix Z: Online anonymous payments using cryptocurrencies](#appendix-z-online-anonymous-payments-using-cryptocurrencies).
+This does not mean you cannot use Bitcoin anonymously at all. You can actually use Bitcoin anonymously as long as you do not convert it to actual currency, use a Bitcoin wallet from a safe anonymous network, and do not reuse addresses or consolidate outputs that were used when spending at different merchants. Meaning you should avoid KYC/AML regulations by various exchanges, avoid using the Bitcoin network from any known IP address, and use a wallet that provides privacy-preserving tools. See [Anonymous crypto payments](#anonymous-crypto-payments).
 
-**Overall, the best option for using Crypto with reasonable anonymity and privacy is still Monero and you should ideally not use any other for sensitive transactions unless you are aware of the limitations and risks involved. Please do read** [Appendix B2: Monero Disclaimer](#appendix-b2-monero-disclaimer)**.**
+**Overall, the best option for using Crypto with reasonable anonymity and privacy is still Monero and you should ideally not use any other for sensitive transactions unless you are aware of the limitations and risks involved. Please do read** [Monero Disclaimer](#monero-disclaimer)**.**
 
 **TLDR: Use Monero!**
 
-## Your Cloud Backup & Sync Services
+## Your Cloud Backup & Sync Services { #cloud-backups }
 
 All companies are advertising their use of end-to-end encryption (E2EE). This is true for almost every messaging app and website (HTTPS). Apple and Google are advertising their use of encryption on their Android devices and their iPhones.
 
@@ -1126,7 +1116,7 @@ You should not trust cloud providers with your (not previously and locally encry
 
 The only way to mitigate this is to encrypt your data on your side and then only upload it to such services **or just not use them at all.**
 
-## Microarchitectural Side-channel Deanonymization Attacks
+## Microarchitectural Side-channel Deanonymization Attacks { #side-channel-attacks }
 
 There was an attack published that can deanonymize users if they have a known alias. For example, an attacker trying to track the activities of a journalist can use that journalist's public Twitter handle to link their anonymous identities with their public one. This breaks compartmentalization of identities and can lead to complete deanonymization, even of users who practice proper OPSEC.
 
@@ -1154,7 +1144,7 @@ Installing the [NoScript](https://noscript.net/) extension will prevent the atta
 - NoScript extension for Firefox (Firefox, and other Firefox-based browsers except Tor Browser): <https://addons.mozilla.org/en-US/firefox/addon/noscript/>
 - NoScript extension for Chromium based browsers (Brave, Chrome, Edge, and other Chromium-based browsers): <https://chrome.google.com/webstore/detail/noscript/doojmbjmlfjjnbmnoijecmcbfeoakpjm?hl=en>
 
-### Alternative to NoScript for all other browsers
+### Alternative to NoScript for all other browsers { #noscript-alternative }
 
 The researches who disclosed the issue also made an extension available below. Again, **nothing is required in Tor Browser**. This path is not our preferred path but is still available if you do not want to use NoScript.
 
@@ -1163,7 +1153,7 @@ The researches who disclosed the issue also made an extension available below. A
 
 Separating identities via separate browsers or even with VMs is not enough to avoid this attack. However, another solution is to make sure that when you start working with an anonymous identity, you entirely close all activities linked to other identities. The vulnerability only works if you're actively logged into a non-anonymous identity. The issue with this is that it can hinder effective workflow, as multitasking across multiple identities becomes impossible.
 
-## Local Data Leaks and Forensics
+## Local Data Leaks and Forensics { #local-data-leaks }
 
 Most of you have probably seen enough Crime dramas on Netflix or TV to know what forensics are. These are technicians (usually working for law enforcement) that will perform various analysis of evidence. This of course could include your smartphone or laptop.
 
@@ -1189,9 +1179,9 @@ I also highly recommend that you read some documents from a forensics examiner p
 
 And finally, here is this very instructive detailed paper on the current state of IOS/Android security from the John Hopkins University: https://securephones.io/main.html[^254].
 
-When it comes to your laptop, the forensics techniques are many and widespread. Many of those issues can be mitigated by using full disk encryption, virtualization (See [Appendix W: Virtualization](#appendix-w-virtualization)), and compartmentalization. This guide will later detail such threats and techniques to mitigate them.
+When it comes to your laptop, the forensics techniques are many and widespread. Many of those issues can be mitigated by using full disk encryption, virtualization (See [Virtualization](#virtualization)), and compartmentalization. This guide will later detail such threats and techniques to mitigate them.
 
-## Bad Cryptography
+## Bad Cryptography { #on-bad-cryptography }
 
 There is a frequent adage among the infosec community: "Don't roll your own crypto!".
 
@@ -1295,7 +1285,7 @@ Here are some real cases of issues bad cryptography:
 
 Later this guide will not recommend "bad cryptography" and that should hopefully be enough to protect you?
 
-## No Log Policies
+## No Log Policies { #no-log-policies }
 
 Many people have the idea that privacy-oriented services such as VPN or E-Mail providers are safe due to their no-logging policies or their encryption schemes. Unfortunately, many of those same people forget that all those providers are legal commercial entities subject to the laws of the countries in which they operate.
 
@@ -1329,7 +1319,7 @@ To mitigate this, in cases where you want to use a VPN, we will recommend the us
 
 If the VPN provider knows nothing about you, it should mitigate any issue due to them not logging but logging anyway.
 
-## Some Advanced targeted techniques
+## Some Advanced targeted techniques { #advanced-techniques }
 
 ![image17](../media/image17.png)
 
@@ -1401,7 +1391,7 @@ Here is also a good video from the same authors to explain those topics: Black H
 
 - Do not let anyone access your air-gapped computers except trusted people.
 
-## Some bonus resources
+## Some bonus resources { #bonus-resources }
 
 - Have a look at the Whonix Documentation concerning Data Collection techniques here: [Data Collection Techniques](https://www.whonix.org/wiki/Data_Collection_Techniques) <sup>[[Archive.org]](https://web.archive.org/web/https://www.whonix.org/wiki/Data_Collection_Techniques)</sup>
 
@@ -1451,7 +1441,7 @@ If you still do not think such information can be used by various actors to trac
 
 - Twitter Transparency Report <https://transparency.twitter.com/> <sup>[[Archive.org]](https://web.archive.org/web/20220812054839/https://transparency.twitter.com/)</sup>
 
-# General Preparations
+# General Preparations { #general-preparations }
 
 Personally, in the context of this guide, it is also interesting to have a look at your security model. And in this context,we only have one to recommend:
 
@@ -1463,13 +1453,13 @@ Here are some various resources about what Zero-Trust Security is:
 
 - From the NSA themselves, Embracing a Zero Trust Security Model, <https://media.defense.gov/2021/Feb/25/2002588479/-1/-1/0/CSI_EMBRACING_ZT_SECURITY_MODEL_UOO115131-21.PDF> <sup>[[Archive.org]](https://web.archive.org/web/https://media.defense.gov/2021/Feb/25/2002588479/-1/-1/0/CSI_EMBRACING_ZT_SECURITY_MODEL_UOO115131-21.PDF)</sup>
 
-## Picking your route
+## Picking your route { #picking-route }
 
 First, here is a small basic UML diagram showing your available options according to your skills/budget/time/resources.
 
 ![image18](../media/image18.png)
 
-### Timing limitations
+### Timing limitations { #timing-limitations }
 
 - You have no time at all:
 
@@ -1477,13 +1467,13 @@ First, here is a small basic UML diagram showing your available options accordin
 
 - You have extremely limited time to learn and need a fast-working solution:
 
-    - **Your best option is to go for [the Tails route](#the-tails-route) (excluding the persistent plausible deniability section).**
+    - **Your best option is to go for [the Tails route](#tails-route) (excluding the persistent plausible deniability section).**
 
 - You have time and more importantly motivation to learn:
 
     - **Go with any route.**
 
-### Budget & Material limitations
+### Budget & Material limitations { #budget-limitations }
 
 - You have no budget and even accessing a laptop is complicated or you only have your smartphone:
 
@@ -1491,13 +1481,13 @@ First, here is a small basic UML diagram showing your available options accordin
 
 - You only have one laptop available and cannot afford anything else. You use this laptop for either work, family, or your personal stuff (or both):
 
-    - **Your best option is to go for [the Tails route](#the-tails-route).**
+    - **Your best option is to go for [the Tails route](#tails-route).**
 
 - You can afford a spare dedicated unsupervised/unmonitored laptop for your sensitive activities:
 
     - But it is old, slow, and has bad specs (less than 6GB of RAM, less than 250GB disk space, old/slow CPU):
 
-        + **You should go for [the Tails route](#the-tails-route).**
+        + **You should go for [the Tails route](#tails-route).**
 
     - It is not that old, and it has decent specs (at least 8GB of RAM, 250GB of disk space or more, decent CPU):
 
@@ -1523,13 +1513,13 @@ First, here is a small basic UML diagram showing your available options accordin
 
 **The general advice in this guide regarding virtualization software is that it's costly. That said, you should probably get a dedicated laptop, capable of running virtualization software, preferably a 64-bit architecture, to be used for more sensitive activities and testing.**
 
-### Skills
+### Skills { #skills }
 
 - Do you have no IT skills at all the content of this guide look like an alien language to you? Consider:
 
     - **The Tor Browser route (simplest of all)**
 
-    - **[The Tails route](#the-tails-route) (excluding the persistent plausible deniability section).**
+    - **[The Tails route](#tails-route) (excluding the persistent plausible deniability section).**
 
 - You have some IT skills and mostly understand this guide so far, consider:
 
@@ -1545,21 +1535,21 @@ First, here is a small basic UML diagram showing your available options accordin
 
     - **This guide is not meant for you and will not help you with your HardenedBSD on your hardened Libreboot laptop ;-)**
 
-### Adversarial considerations
+### Adversarial considerations { #adversarial-considerations }
 
 Now that you know what is possible, you should also consider threats and adversaries before picking the right route.
 
-#### Threats
+#### Threats { #threats }
 
-- If your main concern is a forensic examination of your devices, you should consider the Tor Browser route or [the Tails route](#the-tails-route).
+- If your main concern is a forensic examination of your devices, you should consider the Tor Browser route or [the Tails route](#tails-route).
 
 - If your main concerns are remote adversaries that might uncover your online identity on various platforms, you should consider the Tails, Whonix, or Qubes OS routes (listed in order of difficulty).
 
-- If you want system-wide plausible deniability[^311]'[^294] despite the risks[^295]'[^314], consider the Tails route, including the persistent plausible deniability section (see [Persistent Plausible Deniability using Whonix & Tails](#persistent-plausible-deniability-using-whonix-tails)).**
+- If you want system-wide plausible deniability[^311]'[^294] despite the risks[^295]'[^314], consider the Tails route, including the persistent plausible deniability section (see [Persistent Plausible Deniability using Whonix & Tails](#whonix-tails-deniability)).**
 
 - If you are in a hostile environment where Tor/VPN usage alone is impossible/dangerous/suspicious, consider the Tails route (without actually using Tor), or more advanced routes like Whonix or Qubes OS.
 
-#### Adversaries
+#### Adversaries { #adversaries }
 
 - Low skills:
 
@@ -1631,19 +1621,19 @@ You might be asking yourself: "How do I know if I'm in a hostile online environm
 
 - Test for yourself using OONI (this can be risky in a hostile environment).
 
-## Steps for all routes
+## Steps for all routes { #steps-all-routes }
 
-### Getting used to using better passwords
+### Getting used to using better passwords { #better-passwords }
 
-See [Appendix A2: Guidelines for passwords and passphrases](#appendix-a2-guidelines-for-passwords-and-passphrases).
+See [Guidelines for passwords and passphrases](#password-guidelines).
 
-### Getting an anonymous Phone number
+### Getting an anonymous Phone number { #anonymous-phone }
 
 **Skip this step if you have no intention of creating anonymous accounts on most mainstream platforms but just want anonymous browsing or if the platforms you will use allow registration without a phone number.**
 
-#### Physical Burner Phone and prepaid SIM card
+#### Physical Burner Phone and prepaid SIM card { #burner-phone }
 
-##### Get a burner phone
+##### Get a burner phone { #get-burner-phone }
 
 This is rather easy. Leave your smartphone on and at home. Have some cash and go to some random flea market or small shop (ideally one without CCTV inside or outside and while avoiding being photographed/filmed) and just buy the cheapest phone you can find with cash and without providing any personal information. It only needs to be in working order.
 
@@ -1651,17 +1641,17 @@ _A note regarding your current phone:_ The point of leaving your smartphone on i
 
 We would recommend getting an old "dumbphone" with a removable battery (old Nokia if your mobile networks still allow those to connect as some countries phased out 1G-2G completely). This is to avoid the automatic sending/gathering of any telemetry/diagnostic data on the phone itself. You should never connect that phone to any Wi-Fi.
 
-**Site Note: Be careful of some sellers as shown here <https://therecord.../media/malware-found-preinstalled-in-classic-push-button-phones-sold-in-russia/>** <sup>[[Archive.org]](https://web.archive.org/web/https://therecord.../media/malware-found-preinstalled-in-classic-push-button-phones-sold-in-russia/)</sup>
+**Site Note: Be careful of some sellers as shown here <https://therecord.media/malware-found-preinstalled-in-classic-push-button-phones-sold-in-russia>** <sup>[[Archive.org]](https://therecord.media/malware-found-preinstalled-in-classic-push-button-phones-sold-in-russia)</sup>
 
 It will also be crucial not to power on that burner phone ever (not even without the SIM card) in any geographical location that could lead to you (at your home/work for instance) and never at the same location as your other known smartphone (because that one has an IMEI/IMSI that will easily lead to you). This might seem like a big burden, but it is not as these phones are only being used during the setup/sign-up process and for verification from time to time.
 
-See [Appendix N: Warning about smartphones and smart devices](#appendix-n-warning-about-smartphones-and-smart-devices)
+See [Warning about smartphones and smart devices](#smartphones-warning)
 
 You should test that the phone is in working order before going to the next step. But we will repeat ourselves and state that it is important to leave your smartphone at home when going (or turn it off before leaving if you must keep it) and that you test the phone at a random location that cannot be tracked back to you (and again, do not do that in front of a CCTV, avoid cameras, be aware of your surroundings). No need for Wi-Fi at this place either.
 
 When you are certain the phone is in working order, disable Bluetooth then power it off (remove the battery if you can) and go back home and resume your normal activities. Go to the next step.
 
-##### Getting an anonymous pre-paid SIM card
+##### Getting an anonymous pre-paid SIM card { #prepaid-sim }
 
 This is the hardest part of the whole guide. It is a SPOF (Single Point of Failure). The places where you can still buy prepaid SIM cards without ID registration are getting increasingly limited due to various KYC type regulations[^297].
 
@@ -1669,7 +1659,7 @@ So here is a list of places where you can still get them now: <https://prepaid-d
 
 You should be able to find a place that is "not too far" and just go there physically to buy some pre-paid cards and top-up vouchers with cash. Do verify that no law was passed before going that would make registration mandatory (in case the above wiki was not updated). Try to avoid CCTV and cameras and do not forget to buy a Top-Up voucher with the SIM card (if it is not a package) as most pre-paid cards will require a top-up before use.
 
-See [Appendix N: Warning about smartphones and smart devices](#appendix-n-warning-about-smartphones-and-smart-devices)
+See [Warning about smartphones and smart devices](#smartphones-warning)
 
 Double-check that the mobile operators selling the pre-paid SIM cards will accept the SIM activation and top-up without any ID registration of any kind before going there. Ideally, they should accept SIM activation and top-up from the country you live in.
 
@@ -1677,7 +1667,7 @@ We would recommend GiffGaff in the UK as they are "affordable", do not require i
 
 Power off the phone after activation/top-up and before going home. Do not ever power it on again unless you are not at a place that can be used to reveal your identity and ideally leave your real phone on but at home before going to the safe place with only your burner phone.
 
-#### Online Phone Number
+#### Online Phone Number { #online-phone-number }
 
 **DISCLAIMER: Do not attempt this until you are done setting up a secure environment according to one of the selected routes. This step will require online access and should only be done from an anonymous network. Do not do this from any known/unsecured environment. Skip this until you have finished one of the routes.**
 
@@ -1711,11 +1701,11 @@ Now, what if you have no money? Well, in that case, you will have to try your lu
 
 - <https://sms24.me>
 
-**Disclaimer: We cannot vouch for any of these providers. We recommend doing it yourself physically. In this case, you will have to rely on the anonymity of Monero and you should not use any service that requires any kind of identification using your real identity. Please do read [Appendix B2: Monero Disclaimer](#appendix-b2-monero-disclaimer).**
+**Disclaimer: We cannot vouch for any of these providers. We recommend doing it yourself physically. In this case, you will have to rely on the anonymity of Monero and you should not use any service that requires any kind of identification using your real identity. Please do read [Monero Disclaimer](#monero-disclaimer).**
 
 It is more convenient, cheaper, and less risky to just get a pre-paid SIM card from one of the physical places that still sell them for cash without ID.
 
-### Get a USB key
+### Get a USB key { #usb-key }
 
 **Skip this step if you have no intention of creating anonymous accounts on most mainstream platforms, but you will want anonymous browsing; or if the platforms which you will use allow registration without a phone number.**
 
@@ -1725,7 +1715,7 @@ Please do not buy or use gimmicky self-encrypting devices such as these: <https:
 
 Some might be very efficient[^298] but many are gimmicky gadgets that offer no real protection[^299].
 
-### Find some safe places with decent public Wi-Fi
+### Find some safe places with decent public Wi-Fi { #safe-wifi }
 
 You need to find safe places where you will be able to do your sensitive activities using some publicly accessible Wi-Fi (without any account/ID registration, avoid CCTVs).
 
@@ -1743,9 +1733,9 @@ While this will not be available yet to your local police officers, it could be 
 
 You will ideally need a set of 3-5 separate places such as this to avoid using the same place twice. Several trips will be needed over the weeks for the various steps in this guide.
 
-You could also consider connecting to these places from a safe distance for added security. See [Appendix Q: Using long-range Antenna to connect to Public Wi-Fis from a safe distance.](#appendix-q-using-long-range-antenna-to-connect-to-public-wi-fis-from-a-safe-distance)
+You could also consider connecting to these places from a safe distance for added security. See [Using long-range Antenna to connect to Public Wi-Fis from a safe distance.](#long-range-wifi)
 
-## The Tor Browser route
+## The Tor Browser route { #tor-browser-route }
 
 This part of the guide will help you in setting up the simplest and easiest way to browse the web anonymously. It is not necessarily the best method and there are more advanced methods below with (much) better security and (much) better mitigations against various adversaries. Yet, this is a straightforward way of accessing resources anonymously and quickly with no budget, no time, no skills, and limited usage.
 
@@ -1757,11 +1747,11 @@ Here are several ways to set it up for all main OSes.
 
 **Warning:** You should avoid installing extensions in Tor Browser, as they can be used to fingerprint and identify you.
 
-### Windows, Linux, and macOS
+### Windows, Linux, and macOS { #tor-windows-linux-macos }
 
-Please see [Appendix Y: Installing and using desktop Tor Browser](#appendix-y-installing-and-using-desktop-tor-browser).
+Please see [Installing and using desktop Tor Browser](#desktop-tor-browser).
 
-### Android
+### Android { #tor-android }
 
 **Note on Tor Browser for Android: The development of Tor Browser for Android is behind desktop Tor Browser Bundle (TBB). Some features are not available yet. E.g., the desktop version of Tor now enables automatic bridges using Moat:**
 
@@ -1783,7 +1773,7 @@ Please see [Appendix Y: Installing and using desktop Tor Browser](#appendix-y-in
 
 - Select **Config Bridge**.
 
-- Read [Appendix X: Using Tor bridges in hostile environments](#appendix-x-using-tor-bridges-in-hostile-environments).
+- Read [Using Tor bridges in hostile environments](#tor-bridges).
 
 - **If needed (after reading the appendix above)**, activate the option and select the type of bridge you want:
 
@@ -1843,13 +1833,13 @@ We would recommend the "Safer" level for most cases. The Safest level should be 
 
 If you are extra paranoid, use the "Safest" level by default and consider downgrading to Safer is the website is unusable because of Javascript blocking.
 
-However, the Safer level should be used with some extra precautions while using some websites: see [Appendix A5: Additional browser precautions with JavaScript enabled](#appendix-a5-additional-browser-precautions-with-javascript-enabled).
+However, the Safer level should be used with some extra precautions while using some websites: see [Additional browser precautions with JavaScript enabled](#browser-precautions-js).
 
 Now, you are really done, and you can now surf the web anonymously from your Android device.
 
-**Please see** [Warning for using Orbot on Android](#appendix-b6-warning-for-using-orbot-on-android).
+**Please see** [Warning for using Orbot on Android](#orbot-android-warning).
 
-### iOS
+### iOS { #tor-ios }
 
 **Disclaimer: Onion Browser, following a 2018 release on iOS, has had IP leaks via WebRTC. It is still the only officially endorsed browser for the Tor network for iOS. Users should exercise caution when using the browser and check for any DNS leaks.**
 
@@ -1865,7 +1855,7 @@ While the official Tor Browser is not yet available for iOS, there is an alterna
 
 - After Launching, click the upper right Settings icon (Disabling Wi-Fi and Mobile Data previously were to prevent Onion Browser from connecting automatically and to allow access to these options).
 
-- Select "Bridge Configuration" and read [Appendix X: Using Tor bridges in hostile environments](#appendix-x-using-tor-bridges-in-hostile-environments)
+- Select "Bridge Configuration" and read [Using Tor bridges in hostile environments](#tor-bridges)
 
 - **If needed (after reading the appendix above)**, activate the option and select the type of bridge you want:
 
@@ -1901,17 +1891,17 @@ As with the desktop version, you need to know there are safety levels in Onion B
 
 We would recommend the "Silver" level for most cases. The Gold level should only be enabled if you think you are accessing suspicious or dangerous websites or if you are extra paranoid. The Gold mode will also most likely break many websites that rely actively on JavaScript.
 
-As JavaScript is enabled in the Silver mode, please see [Appendix A5: Additional browser precautions with JavaScript enabled](#appendix-a5-additional-browser-precautions-with-javascript-enabled).
+As JavaScript is enabled in the Silver mode, please see [Additional browser precautions with JavaScript enabled](#browser-precautions-js).
 
 Now, you are really done, and you can now surf the web anonymously from your iOS device.
 
-### Important Warning
+### Important Warning { #important-warning }
 
 **This route is the easiest but is not designed to resist highly skilled adversaries. It is however usable on any device regardless of the configuration. This route is also vulnerable to correlation attacks (See [Your Anonymized Tor/VPN traffic](#traffic-anonymization)) and is blind to anything that might be on your device (this could be any malware, exploit, virus, remote administration software, parental controls...). Yet, if your threat model is quite low, it is probably sufficient for most people.**
 
 If you have time and want to learn, we recommend going for other routes instead as they offer far better security and mitigate far more risks while lowering your attack surface considerably.
 
-## The Tails route
+## The Tails route { #tails-route }
 
 This part of the guide will help you in setting up Tails if one of the following is true:
 
@@ -1945,7 +1935,7 @@ It does however have some drawbacks:
 
 - Tor in itself might not be enough to protect you from an adversary with enough resources as explained earlier.
 
-**Important Note: If your laptop is monitored/supervised and some local restrictions are in place, please read** [Appendix U: How to bypass (some) local restrictions on supervised computers](#appendix-u-how-to-bypass-some-local-restrictions-on-supervised-computers)**.**
+**Important Note: If your laptop is monitored/supervised and some local restrictions are in place, please read** [How to bypass (some) local restrictions on supervised computers](#bypass-local-restrictions)**.**
 
 You should also read Tails Documentation, Warnings, and limitations, before going further <https://tails.boum.org/doc/about/warnings/index.en.html> <sup>[[Archive.org]](https://web.archive.org/web/https://tails.boum.org/doc/about/warnings/index.en.html)</sup>
 
@@ -1955,9 +1945,9 @@ Taking all this into account and the fact that their documentation is great, we 
 
 If you're having an issue accessing Tor due to censorship or other issues, you can try using Tor Bridges by following this Tails tutorial: <https://tails.boum.org/doc/anonymous_internet/tor/index.en.html> <sup>[[Archive.org]](https://web.archive.org/web/https://tails.boum.org/doc/anonymous_internet/tor/index.en.html)</sup> and find more information about these on Tor Documentation <https://2019.www.torproject.org/docs/bridges> <sup>[[Archive.org]](https://web.archive.org/web/https://2019.www.torproject.org/docs/bridges)</sup>
 
-**If you think using Tor alone is dangerous/suspicious, see [Appendix P: What about when Tor and VPNs aren't possible?](#appendix-p-what-about-when-tor-and-vpns-arent-possible)**
+**If you think using Tor alone is dangerous/suspicious, see [What about when Tor and VPNs aren't possible?](#tor-vpn-not-possible)**
 
-### Tor Browser settings on Tails
+### Tor Browser settings on Tails { #tails-tor-settings }
 
 When using Tor Browser, you should click the little shield Icon (upper right, next to the Address bar) and select your Security level (see <https://tb-manual.torproject.org/security-settings/> <sup>[[Archive.org]](https://web.archive.org/web/https://tb-manual.torproject.org/security-settings/)</sup> for details). Basically, there are three.
 
@@ -1985,21 +1975,21 @@ We would recommend the "Safer" level for most cases. The Safest level should be 
 
 If you are extra paranoid, use the "Safest" level by default and consider downgrading to Safer is the website is unusable because of Javascript blocking.
 
-Lastly, while using Tor Browser on Tails on the "Safer" level, please consider [Appendix A5: Additional browser precautions with JavaScript enabled](#appendix-a5-additional-browser-precautions-with-javascript-enabled).
+Lastly, while using Tor Browser on Tails on the "Safer" level, please consider [Additional browser precautions with JavaScript enabled](#browser-precautions-js).
 
-When you are done and have a working Tails on your laptop, go to the [Creating your anonymous online identities](#creating-your-anonymous-online-identities) step much further in this guide or if you want persistence and plausible deniability, continue with the next section.
+When you are done and have a working Tails on your laptop, go to the [Creating your anonymous online identities](#creating-identities) step much further in this guide or if you want persistence and plausible deniability, continue with the next section.
 
-### Persistent Plausible Deniability using Whonix & Tails
+### Persistent Plausible Deniability using Whonix & Tails { #whonix-tails-deniability }
 
 Consider checking the <https://github.com/aforensics/HiddenVM> <sup>[[Archive.org]](https://web.archive.org/web/https://github.com/aforensics/HiddenVM)</sup> project for Tails.
 
-This project is a clever idea of a one-click self-contained VM solution that you could store on an encrypted disk using plausible deniability[^311] (see [The Whonix route](#the-whonix-route) first chapters and also for some explanations about Plausible deniability, as well as the [How to securely delete specific files/folders/data on your HDD/SSD and Thumb drives:] section at the end of this guide for more understanding).
+This project is a clever idea of a one-click self-contained VM solution that you could store on an encrypted disk using plausible deniability[^311] (see [The Whonix route](#whonix-route) first chapters and also for some explanations about Plausible deniability, as well as the [How to securely delete specific files/folders/data on your HDD/SSD and Thumb drives:] section at the end of this guide for more understanding).
 
 This would allow the creation of a hybrid system mixing Tails with the Virtualization options of the Whonix route in this guide.
 
 ![image19](../media/image19.png)
 
-**Note: See** [Pick your connectivity method](#pick-your-connectivity-method) **in the Whonix Route for more explanations about Stream Isolation**
+**Note: See** [Pick your connectivity method](#whonix-connectivity) **in the Whonix Route for more explanations about Stream Isolation**
 
 In short:
 
@@ -2023,7 +2013,7 @@ Remember that encryption with or without plausible deniability is not a silver b
 
 **See <https://en.wikipedia.org/wiki/Rubber-hose_cryptanalysis>** <sup>[[Wikiless]](https://wikiless.tiekoetter.com/wiki/Rubber-hose_cryptanalysis)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Rubber-hose_cryptanalysis)</sup>
 
-CAUTION: Please see [**Appendix K: Considerations for using external SSD drives**](#appendix-k-considerations-for-using-external-ssd-drives) and [**Understanding HDD vs SSD**](#understanding-hdd-vs-ssd) sections if you consider storing such hidden VMs on an external SSD drive:
+CAUTION: Please see [**Considerations for using external SSD drives**](#on-external-ssd) and [**Understanding HDD vs SSD**](#hdd-vs-ssd) sections if you consider storing such hidden VMs on an external SSD drive:
 
 - **Do not use hidden volumes on SSD drives as this is not supported/recommended by Veracrypt**[^303]**.**
 
@@ -2039,7 +2029,7 @@ Here is my guide on how to achieve this:
 
 - Download the latest Whonix XFCE release from [GitHub Releases](https://github.com/Whonix/whonix-gw-ga/releases/latest) <sup>[[Archive.org]](https://web.archive.org/web/https://www.whonix.org/wiki/Download/VirtualBox/XFCE)</sup>
 
-**Note:** As of guide v1.2.5, Whonix has been upgraded from version 17 to 18 (Whonix 18.1.4.x). See [[Upgrading to Whonix 18]](#upgrade-to-whonix-18) for the upgrade path if you currently use Whonix 17.x.
+**Note:** As of guide v1.2.5, Whonix has been upgraded from version 17 to 18 (Whonix 18.1.4.x). See [[Upgrading to Whonix 18]](#qubes-whonix18) for the upgrade path if you currently use Whonix 17.x.
 
 - Prepare a USB Key/Drive with Veracrypt
 
@@ -2071,7 +2061,7 @@ Here is my guide on how to achieve this:
 
 - When it is done, it should automatically start Virtualbox Manager.
 
-- Import the Whonix OVA files (see [Whonix Virtual Machines](#whonix-virtual-machines))
+- Import the Whonix OVA files (see [Whonix Virtual Machines](#whonix-vms))
 
 Note, if during the import you are having issues such as "NS_ERROR_INVALID_ARG (0x80070057)", this is probably because there is not enough disk space on your Hidden volume for Whonix. Whonix themselves recommend 32GB of free space but that's probably not necessary and 10GB should be enough for a start. You can try working around this error by renaming the Whonix \*.OVA file to \*.TAR and decompressing it within Tails. When you are done with decompression, delete the OVA file and import the other files with the Import wizard. This time it might work.
 
@@ -2087,9 +2077,9 @@ Note, if during the import you are having issues such as "NS_ERROR_INVALID_ARG (
 
 - This should automatically open VirtualBox manager and show your earlier VMs from the first run
 
-## Steps for all other routes
+## Steps for all other routes { #steps-other-routes }
 
-### Get a dedicated laptop
+### Get a dedicated laptop { #dedicated-laptop }
 
 Ideally, you should get a dedicated laptop that will not be tied to you in any effortless way (ideally paid with cash anonymously and using the same precautions as previously mentioned for the phone and the SIM card). It is recommended but not mandatory. This guide will help you harden your laptop as much as possible to prevent data leaks through various means. There will be several lines of defense standing between your online identities and yourself which should prevent most adversaries from de-anonymizing you - besides state/global actors. It will take considerable resources.
 
@@ -2103,9 +2093,9 @@ The laptop should have at least 250GB of Disk Space **at least 6GB (ideally 8GB 
 
 This laptop could have an HDD (7200rpm) or an SSD/NVMe drive. Both possibilities have their benefits and issues that will be detailed later.
 
-All future online steps performed with this laptop should ideally be done from a safe network such as Public Wi-Fi in a safe place (see [Find some safe places with decent public Wi-Fi](#find-some-safe-places-with-decent-public-wi-fi)). But several steps will have to be taken offline first.
+All future online steps performed with this laptop should ideally be done from a safe network such as Public Wi-Fi in a safe place (see [Find some safe places with decent public Wi-Fi](#safe-wifi)). But several steps will have to be taken offline first.
 
-### Some laptop recommendations
+### Some laptop recommendations { #laptop-recommendations }
 
 We would strongly recommend getting a "business grade" laptop (meaning not consumer/gaming-grade laptop) if you can. For instance, some ThinkPad from Lenovo (my personal favorite).
 
@@ -2117,7 +2107,7 @@ This is because those business laptops usually offer better and more customizabl
 
 - AMD laptops could be more interesting as some provide the ability to disable AMD PSP (the AMD equivalent of Intel IME) from the BIOS/UEFI settings by default. And, because AFAIK, AMD PSP was audited and contrary to IME was not found to have any "evil" functionalities[^304]. However, if you are going for the Qubes OS Route consider Intel CPUs as Qubes OS does not support AMD with their anti-evil-maid system[^305].
 
-- Secure Wipe tools from the BIOS (especially useful for SSD/NVMe drives, see [Appendix M: BIOS/UEFI options to wipe disks in various Brands](#appendix-m-biosuefi-options-to-wipe-disks-in-various-brands)).
+- Secure Wipe tools from the BIOS (especially useful for SSD/NVMe drives, see [BIOS/UEFI options to wipe disks in various Brands](#bios-disk-wipe-options)).
 
 - Better control over the disabling/enabling of select peripherals (USB ports, Wi-Fis, Bluetooth, Camera, Microphone ...).
 
@@ -2129,9 +2119,9 @@ This is because those business laptops usually offer better and more customizabl
 
 - Some are supported by Libreboot
 
-### Bios/UEFI/Firmware Settings of your laptop
+### Bios/UEFI/Firmware Settings of your laptop { #bios-uefi-settings }
 
-#### PC
+#### PC { #bios-pc }
 
 These settings can be accessed through the boot menu of your laptop. Here is a good tutorial from HP explaining all the ways to access the BIOS on various computers: <https://store.hp.com/us/en/tech-takes/how-to-enter-bios-setup-windows-pcs> <sup>[[Archive.org]](https://web.archive.org/web/https://store.hp.com/us/en/tech-takes/how-to-enter-bios-setup-windows-pcs)</sup>
 
@@ -2161,7 +2151,7 @@ Once you are in there, you will need to apply a few recommended settings:
 
 - Disable Intel ME if you can (odds are very high you can't).
 
-- Disable AMD PSP if you can (AMD's equivalent to IME, see [Your CPU](#your-cpu))
+- Disable AMD PSP if you can (AMD's equivalent to IME, see [Your CPU](#cpu))
 
 - Disable Secure Boot if you intend to use Qubes OS as they do not support it out of the box[^306]. Keep it on if you intend to use Linux/Windows.
 
@@ -2169,7 +2159,7 @@ Once you are in there, you will need to apply a few recommended settings:
 
 Only enable those on a "need to use" basis and disable them again after use. This can help mitigate some attacks in case your laptop is seized while locked but still on OR if you had to shut it down rather quickly and someone took possession of it (this topic will be explained later in this guide).
 
-##### About Secure boot
+##### About Secure boot { #secure-boot }
 
 So, what is Secure Boot[^307]? In short, it is a UEFI security feature designed to prevent your computer from booting an operating system from which the bootloader was not signed by specific keys stored in the UEFI firmware of your laptop.
 
@@ -2205,7 +2195,7 @@ Additionally, several attacks could be possible against Secure Boot as explained
 
 **I still recommend you keep it on if you can.**
 
-#### Mac
+#### Mac { #bios-mac }
 
 Take a moment to set a firmware password according to the tutorial here: <https://support.apple.com/en-au/HT204455> <sup>[[Archive.org]](https://web.archive.org/web/https://support.apple.com/en-au/HT204455)</sup>
 
@@ -2213,7 +2203,7 @@ You should also enable firmware password reset protection (available from Catali
 
 This feature will mitigate the possibility for some adversaries to use hardware hacks to disable/bypass your firmware password. Note that this will also prevent Apple themselves from accessing the firmware in case of repair.
 
-### Physically Tamper protect your laptop
+### Physically Tamper protect your laptop { #tamper-protection }
 
 At some point, you will inevitably leave this laptop alone somewhere. You will not sleep with it and take it everywhere every single day. You should make it as hard as possible for anyone to tamper with it without you noticing it. This is mostly useful against some limited adversaries that will not use a 5$ wrench against you[^11].
 
@@ -2231,11 +2221,11 @@ The same techniques can be used with USB ports where you could just put a tiny a
 
 In riskier environments, check your laptop for tampering before using it regularly.
 
-## The Whonix route
+## The Whonix route { #whonix-route }
 
-**Note on Whonix Version**: Whonix has been upgraded from version 17 to 18 (Whonix 18.1.4.x at the time of writing) with automated release upgrade support. See [Upgrading to Whonix 18](#upgrade-to-whonix-18) for the upgrade path if you currently use Whonix 17.x or earlier versions.
+**Note on Whonix Version**: Whonix has been upgraded from version 17 to 18 (Whonix 18.1.4.x at the time of writing) with automated release upgrade support. See [Upgrading to Whonix 18](#qubes-whonix18) for the upgrade path if you currently use Whonix 17.x or earlier versions.
 
-### Picking your Host OS
+### Picking your Host OS { #host-os-choice }
 
 This route will make extensive use of Virtual Machines[^310], they will require a host OS to run the Virtualization software. You have three recommended choices in this part of the guide:
 
@@ -2257,7 +2247,7 @@ You could then reveal a password, but that password will only give access to "pl
 
 This feature can be used at the OS level (a plausible OS and a hidden OS) or at the files level where you will have an encrypted file container (similar to a zip file) where different files will be shown depending on the encryption password you use.
 
-This also means you could set up your own advanced "plausible deniability" setup using any Host OS by storing for instance Virtual Machines on a Veracrypt hidden volume container (be careful of traces in the Host OS tho that would need to be cleaned if the host OS is persistent, see [Some additional measures against forensics](#some-additional-measures-against-forensics) section later). There is a project for achieving this within Tails (<https://github.com/aforensics/HiddenVM> <sup>[[Archive.org]](https://web.archive.org/web/https://github.com/aforensics/HiddenVM)</sup>) which would make your Host OS non-persistent and use plausible deniability within Tails.
+This also means you could set up your own advanced "plausible deniability" setup using any Host OS by storing for instance Virtual Machines on a Veracrypt hidden volume container (be careful of traces in the Host OS tho that would need to be cleaned if the host OS is persistent, see [Some additional measures against forensics](#anti-forensics) section later). There is a project for achieving this within Tails (<https://github.com/aforensics/HiddenVM> <sup>[[Archive.org]](https://web.archive.org/web/https://github.com/aforensics/HiddenVM)</sup>) which would make your Host OS non-persistent and use plausible deniability within Tails.
 
 In the case of Windows, plausible deniability is also the reason you should ideally have Windows 10/11 Home (and not Pro). This is because Windows 10/11 Pro natively offers a full-disk encryption system (Bitlocker[^317]) where Windows 10/11 Home offers no full-disk encryption at all. You will later use third-party open-source software for encryption that will allow full-disk encryption on Windows 10/11 Home. This will give you a good (plausible) excuse to use this software. While using this software on Windows 10/11 Pro would be suspicious.
 
@@ -2265,7 +2255,7 @@ In the case of Windows, plausible deniability is also the reason you should idea
 
 Unfortunately, encryption is not magic and there are some risks involved:
 
-#### Threats with encryption
+#### Threats with encryption { #encryption-threats }
 
 **The 5$ Wrench Attack**
 
@@ -2275,7 +2265,7 @@ Plausible deniability is only effective against soft lawful adversaries that wil
 
 See <https://en.wikipedia.org/wiki/Rubber-hose_cryptanalysis> <sup>[[Wikiless]](https://wikiless.tiekoetter.com/wiki/Rubber-hose_cryptanalysis)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Rubber-hose_cryptanalysis)</sup>
 
-##### Evil-Maid Attack
+##### Evil-Maid Attack { #evil-maid-attack }
 
 Evil Maid Attacks[^318] are conducted when someone tampers with your laptop while you are away. To install to clone your hard drive, install malware or a key logger. If they can clone your hard drive, they can compare one image of your hard drive at the time they took it while you were away with the hard drive when they seize it from you. If you used the laptop again in between, forensics examiners might be able to prove the existence of the hidden data by looking at the variations between the two images in what should be an empty/unused space. This could lead to compelling evidence of the existence of hidden data. If they install a key logger or malware within your laptop (software or hardware), they will be able to simply get the password from you for later use when they seize it. Such attacks can be done at your home, your hotel, a border crossing, or anywhere you leave your devices unattended.
 
@@ -2287,9 +2277,9 @@ You can mitigate this attack by doing the following (as recommended earlier):
 
 - Set up BIOS/UEFI/Firmware passwords to prevent any unauthorized boot of an unauthorized device.
 
-- Some OSes and Encryption software have the [Anti Evil Maid (AEM)](#anti-evil-maid-aem) protection that can be enabled. This is the case with Windows/Veracrypt and QubeOS (only on Intel CPUs).
+- Some OSes and Encryption software have the [Anti Evil Maid (AEM)](#qubes-aem) protection that can be enabled. This is the case with Windows/Veracrypt and QubeOS (only on Intel CPUs).
 
-##### Cold-Boot Attack
+##### Cold-Boot Attack { #cold-boot-attack }
 
 Cold Boot attacks[^319] are trickier than the Evil Maid Attack but can be part of an Evil Maid attack as it requires an adversary to come into possession of your laptop while you are actively using your device or shortly afterward.
 
@@ -2319,13 +2309,13 @@ Here are also some interesting tools to consider for Linux users to defend again
 
 - (Qubes OS, Intel CPU only) <https://github.com/QubesOS/qubes-antievilmaid> <sup>[[Archive.org]](https://web.archive.org/web/https://github.com/QubesOS/qubes-antievilmaid)</sup>
 
-##### About Sleep, Hibernation, and Shutdown
+##### About Sleep, Hibernation, and Shutdown { #sleep-hibernation-shutdown }
 
 If you want better security, you should shut down your laptop completely every time you leave it unattended or close the lid. This should clean and/or release the RAM and provide mitigations against cold boot attacks. However, this can be a bit inconvenient as you will have to reboot completely and type in a ton of passwords into various apps. Restart various VMs and other apps. So instead, you could also use hibernation (not supported on Qubes OS). Since the whole disk is encrypted, hibernation in itself should not pose a large security risk but will still shut down your laptop and clear the memory while allowing you to conveniently resume your work afterward. **What you should never do is using the standard sleep feature which will keep your computer on, and the memory powered. This is an attack vector against evil-maid and cold-boot attacks discussed earlier. This is because your powered-on memory holds the encryption keys to your disk (encrypted or not) and could then be accessed by a skilled adversary.**
 
 This guide will provide guidance later on how to enable hibernation on various host OSes (except Qubes OS) if you do not want to shut down every time.
 
-##### Local Data Leaks (traces) and forensics examination
+##### Local Data Leaks (traces) and forensics examination { #host-local-data-leaks }
 
 As mentioned briefly earlier, these are data leaks and traces from your operating system and apps when you perform any activity on your computer. These mostly apply to encrypted file containers (with or without plausible deniability) than OS-wide encryption. Such leaks are less "important" if your whole OS is encrypted (if you are not compelled to reveal the password).
 
@@ -2337,7 +2327,7 @@ Well, all those Apps and your Operating System might keep logs and traces of tha
 
 Here are some examples of such leaks:
 
-###### Windows
+###### Windows { #host-local-leaks-windows }
 
 - Windows ShellBags that are stored within the Windows Registry silently storing various histories of accessed volumes/files/folders[^325].
 
@@ -2347,7 +2337,7 @@ Here are some examples of such leaks:
 
 - Many more traces in various logs, please see this convenient interesting poster for more insight: <https://www.sans.org/security-resources/posters/windows-forensic-analysis/170/download> <sup>[[Archive.org]](https://web.archive.org/web/https://www.sans.org/security-resources/posters/windows-forensic-analysis/170/download)</sup>
 
-###### macOS
+###### macOS { #host-local-leaks-macos }
 
 - Gatekeeper[^328] and XProtect keeping track of your download history in a local database and file attributes.
 
@@ -2359,7 +2349,7 @@ Here are some examples of such leaks:
 
 - macOS Logs
 
-###### Linux
+###### Linux { #host-local-leaks-linux }
 
 - Tracker Indexing
 
@@ -2371,7 +2361,7 @@ Here are some examples of such leaks:
 
 - Linux Logs
 
-Forensics could' use all those leaks (see [Local Data Leaks and Forensics](#local-data-leaks-and-forensics)) to prove the existence of hidden data and defeat your attempts at using plausible deniability and to find out about your various sensitive activities.
+Forensics could' use all those leaks (see [Local Data Leaks and Forensics](#local-data-leaks)) to prove the existence of hidden data and defeat your attempts at using plausible deniability and to find out about your various sensitive activities.
 
 It will be therefore important to apply various steps to prevent forensics from doing this by preventing and cleaning these leaks/traces and more importantly by using whole disk encryption, virtualization, and compartmentalization.
 
@@ -2379,7 +2369,7 @@ Forensics cannot extract local data leaks from an OS they cannot access. And you
 
 Some cleaning techniques will nevertheless be covered in the "Cover your Tracks" part of this guide at the very end.
 
-##### Online Data Leaks
+##### Online Data Leaks { #host-online-data-leaks }
 
 Whether you are using simple encryption or plausible deniability encryption. Even if you covered your tracks on the computer itself. There is still a risk of online data leaks that could reveal the presence of hidden data.
 
@@ -2387,11 +2377,11 @@ Whether you are using simple encryption or plausible deniability encryption. Eve
 
 In the case of Windows, this data could for instance be used to prove the existence of a hidden OS / Volume on a computer and would be readily available at Microsoft. Therefore, it is critically important that you disable and block telemetry with all the means at your disposal. No matter what OS you are using.
 
-#### Conclusion
+#### Conclusion { #host-os-conclusion }
 
 You should never conduct sensitive activities from a non-encrypted system. And even if it is encrypted, you should never conduct sensitive activities from the Host OS itself. Instead, you should use a VM to be able to efficiently isolate and compartmentalize your activities and prevent local data leaks.
 
-If you have little to no knowledge of Linux or if you want to use OS-wide plausible deniability, we recommend going for Windows (or back to [the Tails route](#the-tails-route)) for convenience. This guide will help you hardening it as much as possible to prevent leaks. This guide will also help you hardening macOS and Linux as much as possible to prevent similar leaks.
+If you have little to no knowledge of Linux or if you want to use OS-wide plausible deniability, we recommend going for Windows (or back to [the Tails route](#tails-route)) for convenience. This guide will help you hardening it as much as possible to prevent leaks. This guide will also help you hardening macOS and Linux as much as possible to prevent similar leaks.
 
 If you have no interest in OS-wide plausible deniability and want to learn to use Linux, we will strongly recommend going for Linux or the Qubes OS route if your hardware allows it.
 
@@ -2399,7 +2389,7 @@ If you have no interest in OS-wide plausible deniability and want to learn to us
 
 Consider also reading **<https://www.whonix.org/wiki/Full_Disk_Encryption#Encrypting_Whonix_VMs>** <sup>[[Archive.org]](https://web.archive.org/web/https://www.whonix.org/wiki/Full_Disk_Encryption)</sup>
 
-### Linux Host OS
+### Linux Host OS { #linux-host-os }
 
 As mentioned earlier, we do not recommend using your daily laptop for sensitive activities. Or at least we do not recommend using your in-place OS for these. Doing that might result in unwanted data leaks that could be used to de-anonymize you. If you have a dedicated laptop for this, you should reinstall a fresh clean OS. If you do not want to wipe your laptop and start over, you should consider the Tails route or proceed at your own risk.
 
@@ -2407,7 +2397,7 @@ I also recommend that you do the initial installation completely offline to avoi
 
 You should always remember that despite the reputation, Linux mainstream distributions (Ubuntu for instance) are not necessarily better at security than other systems such as macOS and Windows. See this reference to understand why <https://madaidans-insecurities.github.io/linux.html> <sup>[[Archive.org]](https://web.archive.org/web/https://madaidans-insecurities.github.io/linux.html)</sup>.
 
-#### Full disk encryption
+#### Full disk encryption { #linux-fde }
 
 There are two routes here with Ubuntu or Debian based distros:
 
@@ -2431,21 +2421,21 @@ There are two routes here with Ubuntu or Debian based distros:
 
 For other distros, you will have to document yourself, but it will likely be similar. Encryption during install is just much easier in the context of this guide.
 
-#### Note about plausible deniability on Linux
+#### Note about plausible deniability on Linux { #linux-deniability-note }
 
 There are several ways to achieve plausible deniability on Linux[^329] and it is possible to achieve. Here are some more details about some of the ways we would recommend. All these options require some higher level of skills at using Linux.
 
-##### The Detached Headers Way
+##### The Detached Headers Way { #detached-headers }
 
 While not supported yet by this guide, it is possible to achieve a form of deniability on Linux using LUKS by using detached LUKS headers. For now, we will redirect you toward this page for more information: <https://wiki.archlinux.org/title/Dm-crypt/Specialties#Encrypted_system_using_a_detached_LUKS_header> <sup>[[Archive.org]](https://web.archive.org/web/https://wiki.archlinux.org/title/Dm-crypt/Specialties#Encrypted_system_using_a_detached_LUKS_header)</sup>
 
-##### The Veracrypt Way
+##### The Veracrypt Way { #veracrypt-way }
 
 It is technically possible to not only use Veracrypt but also to achieve plausible deniability on a Linux Host OS by using Veracrypt for system full-disk encryption (instead of LUKS). This is not supported by Veracrypt (System encryption is only supported on Windows) and requires some tinkering with various commands. This is not recommended at all for unskilled users and should only be used at your own risk.
 
 The steps to achieve this are not yet integrated into this guide but can be found here: <http://dreadytofatroptsdj6io7l3xptbet6onoyno2yv7jicoxknyazubrad.onion/post/5779e55aae7fc06e4758> (this is a .onion address and requires Tor Browser).
 
-#### Reject/Disable any telemetry
+#### Reject/Disable any telemetry { #linux-disable-telemetry }
 
 - During the install, just make sure you do not allow any data collection if prompted.
 
@@ -2453,7 +2443,7 @@ The steps to achieve this are not yet integrated into this guide but can be foun
 
 - Any other distro: you will need to document yourself and find out how to disable telemetry.
 
-#### Disable anything unnecessary
+#### Disable anything unnecessary { #linux-disable-unnecessary }
 
 - Disable Bluetooth if enabled by following this guide <https://www.addictivetips.com/ubuntu-linux-tips/disable-bluetooth-in-ubuntu/> <sup>[[Archive.org]](https://web.archive.org/web/https://www.addictivetips.com/ubuntu-linux-tips/disable-bluetooth-in-ubuntu/)</sup> or issuing the following command:
 
@@ -2467,7 +2457,7 @@ The steps to achieve this are not yet integrated into this guide but can be foun
 
     - ```sudo tracker reset -hard```
 
-##### Hibernation
+##### Hibernation { #linux-hibernation }
 
 As explained previously, you should not use the sleep features but shut down or hibernate your laptop to mitigate some evil-maid and cold-boot attacks. Unfortunately, this feature is disabled by default on many Linux distros including Ubuntu. It is possible to enable it, but it might not work as expected. Follow this information at your own risk. If you do not want to do this, you should never use the sleep function and power off instead (and set the lid closing behavior to power off instead of sleep).
 
@@ -2485,13 +2475,13 @@ Unfortunately, this will not clean the key from memory directly when hibernating
 
 These settings should mitigate cold boot attacks if you can hibernate fast enough.
 
-#### Enable MAC address randomization
+#### Enable MAC address randomization { #linux-mac-randomization }
 
 - For Ubuntu, follow these steps <https://help.ubuntu.com/community/AnonymizingNetworkMACAddresses> <sup>[[Archive.org]](https://web.archive.org/web/https://help.ubuntu.com/community/AnonymizingNetworkMACAddresses)</sup>.
 
 - Consider this tutorial which should still work: <https://josh.works/shell-script-basics-change-mac-address> <sup>[[Archive.org]](https://web.archive.org/web/https://josh.works/shell-script-basics-change-mac-address)</sup>
 
-#### Hardening Linux
+#### Hardening Linux { #hardening-linux }
 
 As a light introduction for new Linux users, consider <https://www.youtube.com/watch?v=Sa0KqbpLye4> <sup>[[Invidious]](https://yewtu.be/watch?v=Sa0KqbpLye4)</sup>
 
@@ -2515,21 +2505,21 @@ For more in-depth and advanced options, refer to:
 
 - This interesting article: <http://0pointer.net/blog/authenticated-boot-and-disk-encryption-on-linux.html> <sup>[[Archive.org]](https://web.archive.org/web/http://0pointer.net/blog/authenticated-boot-and-disk-encryption-on-linux.html)</sup>
 
-#### Setting up a safe Browser
+#### Setting up a safe Browser { #linux-safe-browser }
 
-See [Appendix G: Safe Browser on the Host OS](#appendix-g-safe-browser-on-the-host-os)
+See [Safe Browser on the Host OS](#safe-browser-host-os)
 
-### macOS Host OS
+### macOS Host OS { #macos-host-os }
 
 **Note: Mac M1/M2 chips are now supported natively, or, if you wish to use commercial tools like VMWare Fusion or Parallels Desktop, but those are not covered in this guide. Seek this information yourself.**
 
-As mentioned earlier, we do not recommend using your daily laptop for sensitive activities. Or at least we do not recommend using your in-place OS for these. Doing that might result in unwanted data leaks that could be used to de-anonymize you. If you have a dedicated laptop for this, you should reinstall a fresh clean OS. If you do not want to wipe your laptop and start over, you should consider [the Tails route](#the-tails-route) or proceed at your own risk.
+As mentioned earlier, we do not recommend using your daily laptop for sensitive activities. Or at least we do not recommend using your in-place OS for these. Doing that might result in unwanted data leaks that could be used to de-anonymize you. If you have a dedicated laptop for this, you should reinstall a fresh clean OS. If you do not want to wipe your laptop and start over, you should consider [the Tails route](#tails-route) or proceed at your own risk.
 
 We also recommend that you do the initial installation completely offline to avoid any data leak.
 
 **Do not ever sign in with your Apple account using that Mac.**
 
-#### During the install
+#### During the install { #macos-install }
 
 - Stay Offline
 
@@ -2539,7 +2529,7 @@ We also recommend that you do the initial installation completely offline to avo
 
 - Do not enable Siri
 
-#### Hardening macOS
+#### Hardening macOS { #hardening-macos }
 
 As a light introduction for new macOS users, consider <https://www.youtube.com/watch?v=lFx5icuE6Io> <sup>[[Invidious]](https://yewtu.be/watch?v=lFx5icuE6Io)</sup>
 
@@ -2547,13 +2537,13 @@ Now to go more in-depth in securing and hardening your macOS, we recommend readi
 
 Here are the basic steps you should take after your offline installation:
 
-##### Enable Firmware password with "disable-reset-capability" option
+##### Enable Firmware password with "disable-reset-capability" option { #macos-firmware-password }
 
 First, you should set up a firmware password following this guide from Apple: <https://support.apple.com/en-us/HT204455> <sup>[[Archive.org]](https://web.archive.org/web/https://support.apple.com/en-us/HT204455)</sup>
 
 Unfortunately, some attacks are still possible and an adversary could disable this password so you should also follow this guide to prevent disabling the firmware password from anyone including Apple: <https://support.apple.com/en-gb/guide/security/sec28382c9ca/web> <sup>[[Archive.org]](https://web.archive.org/web/https://support.apple.com/en-gb/guide/security/sec28382c9ca/web)</sup>
 
-##### Enable Hibernation instead of sleep
+##### Enable Hibernation instead of sleep { #macos-hibernation }
 
 Again, this is to prevent some cold-boot and evil-maid attacks by powering down your RAM and cleaning the encryption key when you close the lid. You should always either hibernate or shut down. On macOS, the hibernate feature even has a special option to specifically clear the encryption key from memory when hibernating (while you might have to wait for the memory to decay on other Operating Systems). Once again there are no easy options to do this within the settings so instead, we will have to do this by running a few commands to enable hibernation:
 
@@ -2571,7 +2561,7 @@ Now when you close the lid of your MacBook, it should hibernate instead of sleep
 
 In addition, you should also set up an automatic sleep (Settings > Energy) so that your MacBook will hibernate automatically if left unattended.
 
-##### Disable unnecessary services
+##### Disable unnecessary services { #macos-disable-services }
 
 Disable some unnecessary settings within the settings:
 
@@ -2585,7 +2575,7 @@ Disable some unnecessary settings within the settings:
 
 - Disable Indexing
 
-##### Prevent Apple OCSP calls
+##### Prevent Apple OCSP calls { #macos-ocsp }
 
 These are the infamous "unblockable telemetry" calls from macOS Big Sur disclosed here: <https://sneak.berlin/20201112/your-computer-isnt-yours/> <sup>[[Archive.org]](https://web.archive.org/web/https://sneak.berlin/20201112/your-computer-isnt-yours/)</sup>
 
@@ -2597,13 +2587,13 @@ But you should document yourself on the actual issue before acting. This page is
 
 Up to you really. We would block it because we do not want any telemetry at all from my OS to the mothership without my specific consent. None.
 
-##### Enable Full Disk encryption (Filevault)
+##### Enable Full Disk encryption (Filevault) { #filevault }
 
 You should enable full disk encryption on your Mac using Filevault according to this part of the guide: <https://github.com/drduh/macOS-Security-and-Privacy-Guide#full-disk-encryption> <sup>[[Archive.org]](https://web.archive.org/web/https://www.bejarano.io/hardening-macos/)</sup>
 
 **Be careful when enabling. Do not store the recovery key at Apple if prompted (should not be an issue since you should be offline at this stage). You do not want a third party to have your recovery key.**
 
-##### MAC Address Randomization
+##### MAC Address Randomization { #macos-mac-randomization }
 
 Unfortunately, macOS does not offer a native convenient way of randomizing your MAC Address and so you will have to do this manually. This will be reset at each reboot, and you will have to re-do it each time to ensure you do not use your actual MAC Address when connecting to various Wi-Fis
 
@@ -2615,23 +2605,23 @@ You can do this by issuing the following commands in terminal (without the paren
 
 - (Turn the Wi-Fi back on) ```networksetup -setairportpower en0 on```
 
-#### Setting up a safe Browser
+#### Setting up a safe Browser { #macos-safe-browser }
 
-See [Appendix G: Safe Browser on the Host OS](#appendix-g-safe-browser-on-the-host-os)
+See [Safe Browser on the Host OS](#safe-browser-host-os)
 
-### Windows Host OS
+### Windows Host OS { #windows-host-os }
 
-As mentioned earlier, we do not recommend using your daily laptop for sensitive activities. Or at leastWedo not recommend using your in-place OS for these. Doing that might result in unwanted data leaks that could be used to de-anonymize you. If you have a dedicated laptop for this, you should reinstall a fresh clean OS. If you do not want to wipe your laptop and start over, you should consider [the Tails route](#the-tails-route) or proceed at your own risk.
+As mentioned earlier, we do not recommend using your daily laptop for sensitive activities. Or at leastWedo not recommend using your in-place OS for these. Doing that might result in unwanted data leaks that could be used to de-anonymize you. If you have a dedicated laptop for this, you should reinstall a fresh clean OS. If you do not want to wipe your laptop and start over, you should consider [the Tails route](#tails-route) or proceed at your own risk.
 
 I also recommend that you do the initial installation completely offline to avoid any data leak.
 
-#### Installation
+#### Installation { #windows-host-install }
 
-You should follow [Appendix A: Windows Installation](#appendix-a-windows-installation)
+You should follow [Windows Installation](#windows-installation)
 
 As a light introduction, consider watching <https://www.youtube.com/watch?v=vNRics7tlqw> <sup>[[Invidious]](https://yewtu.be/watch?v=vNRics7tlqw)</sup>
 
-#### Enable MAC address randomization
+#### Enable MAC address randomization { #windows-mac-randomization }
 
 You should randomize your MAC address as explained earlier in this guide:
 
@@ -2639,17 +2629,17 @@ Go into Settings > Network & Internet > Wi-Fi > Enable Random hardware addresses
 
 Alternatively, you could use this free piece of software: <https://technitium.com/tmac/> <sup>[[Archive.org]](https://web.archive.org/web/https://technitium.com/tmac/)</sup>
 
-#### Setting up a safe Browser
+#### Setting up a safe Browser { #windows-safe-browser }
 
-See [Appendix G: Safe Browser on the Host OS](#appendix-g-safe-browser-on-the-host-os)
+See [Safe Browser on the Host OS](#safe-browser-host-os)
 
-#### Enable some additional privacy settings on your Host OS
+#### Enable some additional privacy settings on your Host OS { #windows-privacy-settings }
 
-See [Appendix B: Windows Additional Privacy Settings](#appendix-b-windows-additional-privacy-settings)
+See [Windows Additional Privacy Settings](#win-additional-privacy)
 
-##### Windows Host OS encryption
+##### Windows Host OS encryption { #windows-encryption }
 
-###### If you intend to use system-wide plausible deniability
+###### If you intend to use system-wide plausible deniability { #windows-with-deniability }
 
 Veracrypt[^330] is the software we will recommend for full-disk encryption, file encryption, and plausible deniability. It is a fork of the well-known but deprecated and unmaintained TrueCrypt. It can be used for:
 
@@ -2679,7 +2669,7 @@ If you do not want to use encrypted memory (because performance might be an issu
 
 More details later in [Route A and B: Simple Encryption using Veracrypt (Windows tutorial)].
 
-###### If you do not intend to use system-wide plausible deniability
+###### If you do not intend to use system-wide plausible deniability { #windows-no-deniability }
 
 For this case, we will recommend the use of BitLocker instead of Veracrypt for the full disk encryption. The reasoning is that BitLocker does not offer a plausible deniability possibility contrary to Veracrypt. A hard adversary has then no incentive in pursuing his "enhanced" interrogation if you reveal the passphrase.
 
@@ -2763,7 +2753,7 @@ Now when you reboot your computer, you should ideally be prompted for:
 
 - And finally, the Windows Logon Screen where you can enter the credentials you set-up earlier
 
-##### Enable Hibernation (optional)
+##### Enable Hibernation (optional) { #windows-hibernation }
 
 Again, as explained earlier. You should never use the sleep/stand-by feature to mitigate some cold-boot and evil-maid attacks. Instead, you should Shut down or hibernate. You should therefore switch your laptop from sleeping to hibernating when closing the lid or when your laptop goes to sleep.
 
@@ -2777,7 +2767,7 @@ By default, Windows 10/11 might not offer you this possibility so you should ena
 
 - Run: powercfg.exe /hibernate on
 
-- Now run the additional command: ```**powercfg /h /type full**```
+- Now run the additional command: ```powercfg /h /type full```
 
     - **This command will make sure your hibernate mode is full and will fully clean the memory (not securely tho).**
 
@@ -2807,7 +2797,7 @@ After that you should go into your power settings:
 
 - Disable all the Wake timers
 
-#### Deciding which sub-route you will take
+#### Deciding which sub-route you will take { #windows-subroute }
 
 Now you will have to pick your next step between two options:
 
@@ -2875,7 +2865,7 @@ Deciding which route you will take is up to you. Route A is a minimum.
 
 **NOTE THAT BY DEFAULT VERACRYPT WILL ALWAYS PROPOSE A SYSTEM PASSWORD IN QWERTY (display the password as a test). This can cause issues if your boot input is using your laptop's keyboard (AZERTY for example) as you will have set up your password in QWERTY and will input it at boot time in AZERTY. So, make sure you check when doing the test boot what keyboard layout your BIOS is using. You could fail to log in just because of the QWERTY/AZERTY mix-up. If your BIOS boots using AZERTY, you will need to type the password in QWERTY within Veracrypt.**
 
-##### Route A and B: Simple Encryption using Veracrypt (Windows tutorial)
+##### Route A and B: Simple Encryption using Veracrypt (Windows tutorial) { #veracrypt-simple-encryption }
 
 **Skip this step if you used BitLocker instead earlier.**
 
@@ -2905,7 +2895,7 @@ This route is rather straightforward and will just encrypt your current Operatin
 
 - Select SHA-512 as hash Algorithm (because why not)
 
-- Enter a strong passphrase (longer the better, remember [Appendix A2: Guidelines for passwords and passphrases](#appendix-a2-guidelines-for-passwords-and-passphrases))
+- Enter a strong passphrase (longer the better, remember [Guidelines for passwords and passphrases](#password-guidelines))
 
 - Collect some entropy by randomly moving your cursor around until the bar is full
 
@@ -2931,7 +2921,7 @@ This route is rather straightforward and will just encrypt your current Operatin
 
 There will be another section on creating encrypted file containers with Plausible Deniability on Windows.
 
-##### Route B: Plausible Deniability Encryption with a Hidden OS (Windows only)
+##### Route B: Plausible Deniability Encryption with a Hidden OS (Windows only) { #veracrypt-hidden-os }
 
 **This is only supported on Windows.**
 
@@ -2967,21 +2957,21 @@ This process will do the following:
 
 **Mandatory if you have an SSD drive and you still want to do this against the recommendation: Disable SSD Trim in Windows**[^343] **(again this is NOT recommended at all as** **disabling Trim in itself is highly suspicious**). **Also** **as mentioned earlier, disabling Trim will reduce the lifetime of your SSD drive and will significantly impact its performance over time (your laptop will become slower and slower over several months of use until it becomes almost unusable, you will then have to clean the drive and re-install everything). But you must do it to prevent data leaks**[^344] **that could allow forensics to defeat your plausible deniability**[^345][^346]**. The only way around this at the moment is to have a laptop with a classic HDD drive instead.**
 
-###### Step 1: Create a Windows 10/11 install USB key
+###### Step 1: Create a Windows 10/11 install USB key { #hidden-os-step1 }
 
-See [Appendix C: Windows Installation Media Creation](#appendix-c-windows-installation-media-creation-windows-10-or-download-windows-11) and go with the USB key route.
+See [Windows Installation Media Creation](#win-installation-media) and go with the USB key route.
 
-###### Step 2: Boot the USB key and start the Windows 10/11 install process (Hidden OS)
+###### Step 2: Boot the USB key and start the Windows 10/11 install process (Hidden OS) { #hidden-os-step2 }
 
 - Insert the USB key into your laptop
 
-- See [Appendix A: Windows Installation](#appendix-a-windows-installation) and proceed with installing Windows 10/11 Home.
+- See [Windows Installation](#windows-installation) and proceed with installing Windows 10/11 Home.
 
-###### Step 3: Privacy Settings (Hidden OS)
+###### Step 3: Privacy Settings (Hidden OS) { #hidden-os-step3 }
 
-See [Appendix B: Windows Additional Privacy Settings](#appendix-b-windows-additional-privacy-settings)
+See [Windows Additional Privacy Settings](#win-additional-privacy)
 
-###### Step 4: Veracrypt installation and encryption process start (Hidden OS)
+###### Step 4: Veracrypt installation and encryption process start (Hidden OS) { #hidden-os-step4 }
 
 Remember to read <https://www.veracrypt.fr/en/VeraCrypt%20Hidden%20Operating%20System.html> <sup>[[Archive.org]](https://web.archive.org/web/https://www.veracrypt.fr/en/VeraCrypt%20Hidden%20Operating%20System.html)</sup>
 
@@ -3009,7 +2999,7 @@ Do not connect this OS to your known Wi-Fi. You should download the Veracrypt in
 
 - Use all the space available on the second partition for the Outer Volume
 
-- Use a strong passphrase (remember [Appendix A2: Guidelines for passwords and passphrases](#appendix-a2-guidelines-for-passwords-and-passphrases))
+- Use a strong passphrase (remember [Guidelines for passwords and passphrases](#password-guidelines))
 
 - Select yes to Large Files
 
@@ -3043,19 +3033,19 @@ Do not connect this OS to your known Wi-Fi. You should download the Veracrypt in
 
 - Now your Hidden OS will be installed, proceed to the next step
 
-###### Step 5: Reboot and boot the USB key and start the Windows 10/11 install process again (Decoy OS)
+###### Step 5: Reboot and boot the USB key and start the Windows 10/11 install process again (Decoy OS) { #decoy-os-step5 }
 
 Now that the Hidden OS is fully installed, you will need to install a Decoy OS:
 
 - Insert the USB key into your laptop
 
-- See [Appendix A: Windows Installation](#appendix-a-windows-installation) and proceed with installing Windows 10/11 Home again (do not install a different version and stick with Home).
+- See [Windows Installation](#windows-installation) and proceed with installing Windows 10/11 Home again (do not install a different version and stick with Home).
 
-###### Step 6: Privacy settings (Decoy OS)
+###### Step 6: Privacy settings (Decoy OS) { #decoy-os-step6 }
 
-See [Appendix B: Windows Additional Privacy Settings](#appendix-b-windows-additional-privacy-settings)
+See [Windows Additional Privacy Settings](#win-additional-privacy)
 
-###### Step 7: Veracrypt installation and encryption process start (Decoy OS)
+###### Step 7: Veracrypt installation and encryption process start (Decoy OS) { #decoy-os-step7 }
 
 Now you will encrypt the Decoy OS:
 
@@ -3093,7 +3083,7 @@ Now you will encrypt the Decoy OS:
 
 - Your Decoy OS is now ready for use.
 
-###### Step 8: Test your setup (Boot in Both)
+###### Step 8: Test your setup (Boot in Both) { #veracrypt-step8-test }
 
 Time to test your setup:
 
@@ -3103,7 +3093,7 @@ Time to test your setup:
 
 - Launch Veracrypt on the Decoy OS and mount the second partition using the Outer Volume Passphrase (mount it as read-only, by going into Mount Options and Selecting Read-Only) and it should mount the second partition as a read-only displaying your decoy data (your Anime/Porn collection). You are mounting it as read-only now because if you were to write data on it, you could override content from your Hidden OS.
 
-###### Step 9: Changing the decoy data on your Outer Volume safely
+###### Step 9: Changing the decoy data on your Outer Volume safely { #veracrypt-step9-decoy-data }
 
 Before going to the next step, you should learn the way to mount your Outer Volume safely for writing content on it. This is also explained in this official Veracrypt Documentation <https://www.veracrypt.fr/en/Protection%20of%20Hidden%20Volumes.html> <sup>[[Archive.org]](https://web.archive.org/web/https://www.veracrypt.fr/en/Protection%20of%20Hidden%20Volumes.html)</sup>
 
@@ -3133,7 +3123,7 @@ Basically, you are going to mount your Outer Volume while also providing the Hid
 
 This operation will not actually mount the Hidden Volume and should prevent the creation of any forensic evidence that could lead to the discovery of the Hidden OS. However, while you are performing this operation, both passwords will be stored in your RAM. You could still be vulnerable to a Cold-Boot Attack. To mitigate this, be sure to have the option to encrypt your RAM as instructed before.
 
-###### Step 10: Leave some forensics evidence of your Outer Volume (with the decoy Data) within your Decoy OS
+###### Step 10: Leave some forensics evidence of your Outer Volume (with the decoy Data) within your Decoy OS { #veracrypt-step10-forensics }
 
 We must make the Decoy OS as plausible as possible. We also want your adversary to underestimate your intelligence.
 
@@ -3169,7 +3159,7 @@ Do not put anything suspicious on the Decoy OS such as:
 
 The intention is to make your adversary believe you are not as smart as they thought, to deter them from searching deeper.
 
-###### Notes
+###### Notes { #veracrypt-notes }
 
 **Remember that you will need valid excuses for this plausible deniability scenario to work:**
 
@@ -3185,7 +3175,7 @@ Take some time to read again the "Possible Explanations for Existence of Two Ver
 
 **Be careful:**
 
-- **You should never mount the Hidden Volume from the Decoy OS (NEVER EVER). If you did this, it would create forensic evidence of the Hidden Volume within the Decoy OS which could jeopardize your attempt at plausible deniability**. If you did this anyway (intentionally or by mistake) from the Decoy OS, there are ways to erase forensic evidence that will be explained later at the end of this guide, so this mistake alone isn't a huge deal if you follow the steps in [Some additional measures against forensics](#some-additional-measures-against-forensics).
+- **You should never mount the Hidden Volume from the Decoy OS (NEVER EVER). If you did this, it would create forensic evidence of the Hidden Volume within the Decoy OS which could jeopardize your attempt at plausible deniability**. If you did this anyway (intentionally or by mistake) from the Decoy OS, there are ways to erase forensic evidence that will be explained later at the end of this guide, so this mistake alone isn't a huge deal if you follow the steps in [Some additional measures against forensics](#anti-forensics).
 
 - **Never use the Decoy OS from the same network (public Wi-Fi) as the Hidden OS.**
 
@@ -3197,9 +3187,9 @@ Take some time to read again the "Possible Explanations for Existence of Two Ver
 
 - **Be careful of any tampering with your laptop. Evil-Maid Attacks can reveal your Hidden OS.**
 
-### Virtualbox on your Host OS
+### Virtualbox on your Host OS { #virtualbox-host }
 
-Remember [Appendix W: Virtualization](#appendix-w-virtualization).
+Remember [Virtualization](#virtualization).
 
 This step and the following steps should be done from within the Host OS. This can either be your Host OS with simple encryption (Windows/Linux/macOS) or your Hidden OS with plausible deniability (Windows only).
 
@@ -3221,7 +3211,7 @@ This has a few advantages that will help you remain anonymous:
 
 - DNS Leaks will be impossible because the VM is on an isolated network that must go through Tor no matter what.
 
-### Pick your connectivity method
+### Pick your connectivity method { #whonix-connectivity }
 
 There are seven possibilities within this route:
 
@@ -3251,7 +3241,7 @@ There are seven possibilities within this route:
 
 ![image23](../media/image23.png)
 
-#### Tor only
+#### Tor only { #whonix-tor-only }
 
 This is the preferred and most recommended solution.
 
@@ -3263,7 +3253,7 @@ There is one main drawback tho: **Some services block/ban Tor Exit nodes outrigh
 
 To mitigate this, you might have to consider the next option: VPN over Tor but consider some risks associated with it explained in the next section.
 
-#### VPN/Proxy over Tor
+#### VPN/Proxy over Tor { #whonix-vpn-over-tor }
 
 This solution can bring some benefits in some specific cases vs using Tor only where accessing the destination service would be impossible from a Tor Exit node. This is because many services will just outright ban, hinder, or block Tor Exit Nodes (see <https://gitlab.torproject.org/legacy/trac/-/wikis/org/doc/ListOfServicesBlockingTor> <sup>[[Archive.org]](https://web.archive.org/web/https://gitlab.torproject.org/legacy/trac/-/wikis/org/doc/ListOfServicesBlockingTor)</sup>).
 
@@ -3309,7 +3299,7 @@ More information at:
 
 - <https://www.whonix.org/wiki/Tunnels/Introduction#Comparison_Table> <sup>[[Archive.org]](https://web.archive.org/web/https://www.whonix.org/wiki/Tunnels/Introduction#Comparison_Table)</sup>
 
-#### Tor over VPN
+#### Tor over VPN { #whonix-tor-over-vpn }
 
 You might be wondering: Well, what about using Tor over VPN instead of VPN over Tor? Well, we would not necessarily recommend it:
 
@@ -3327,7 +3317,7 @@ You might be wondering: Well, what about using Tor over VPN instead of VPN over 
 
     - This also hides your Tor activities from your main ISP.
 
-Note, if you are having issues accessing the Tor Network due to blocking/censorship, you could try using Tor Bridges. See [Appendix X: Using Tor bridges in hostile environments](#appendix-x-using-tor-bridges-in-hostile-environments).
+Note, if you are having issues accessing the Tor Network due to blocking/censorship, you could try using Tor Bridges. See [Using Tor bridges in hostile environments](#tor-bridges).
 
 It is also possible to consider **VPN over Tor over VPN (User > VPN > Tor > VPN > Internet)** using two cash/Monero paid VPNs instead. This means that you will connect the Host OS to a first VPN from your Public Wi-Fi, then Whonix will connect to Tor, and finally, your VM will connect to a second VPN over Tor over VPN (see <https://www.whonix.org/wiki/Tunnels/Connecting_to_a_VPN_before_Tor> <sup>[[Archive.org]](https://web.archive.org/web/https://www.whonix.org/wiki/Tunnels/Connecting_to_a_VPN_before_Tor)</sup>).
 
@@ -3337,7 +3327,7 @@ Achieving this technically is easy within this route, you need two separate anon
 
 Conclusion: Only do this if you think using Tor alone is risky/impossible but VPNs are okay. Or just because you can and so why not. This method will not lower your security/privacy/anonymity.
 
-#### VPN only
+#### VPN only { #whonix-vpn-only }
 
 This route will not be explained nor recommended.
 
@@ -3359,15 +3349,15 @@ For more info, please see the following references:
 
 **In the context of this guide, Tor is required somewhere to achieve reasonable and safe anonymity and you should use it if you can.**
 
-#### No VPN/Tor
+#### No VPN/Tor { #whonix-no-vpn-tor }
 
 If you cannot use VPN nor Tor where you are, you probably are in a very hostile environment where surveillance and control are extremely high.
 
 Just do not, it is not worth it and too risky. You can be de-anonymized almost instantly by any motivated adversary that could get to your physical location in a matter of minutes.
 
-Do not forget to check back on [Adversaries (threats)](#adversarial-considerations) and [Appendix S: Check your network for surveillance/censorship using OONI](#appendix-s-check-your-network-for-surveillancecensorship-using-ooni).
+Do not forget to check back on [Adversaries (threats)](#adversarial-considerations) and [Check your network for surveillance/censorship using OONI](#ooni-censorship-check).
 
-If you have absolutely no other option and still want to do something, see [Appendix P: What about when Tor and VPNs aren't possible?](#appendix-p-what-about-when-tor-and-vpns-arent-possible) **(at your own risk) and consider [the Tails route](#the-tails-route) instead.**
+If you have absolutely no other option and still want to do something, see [What about when Tor and VPNs aren't possible?](#tor-vpn-not-possible) **(at your own risk) and consider [the Tails route](#tails-route) instead.**
 
 | Connection Type                    | Anonymity | Ease of Access to online resources | Tor Stream isolation | Safer where Tor is suspicious/dangerous | Speed      | Cost                      | Recommended                                      |
 |------------------------------------|-----------|------------------------------------|----------------------|-----------------------------------------|------------|---------------------------|--------------------------------------------------|
@@ -3384,13 +3374,13 @@ Unfortunately, using Tor alone will raise the suspicion of many destinations' pl
 
 - If you intend to create persistent shared and authenticated identities on various services where access from Tor is hard, we recommend the **VPN over Tor** and **VPS VPN/Proxy over Tor** options (or VPN over Tor over VPN if needed). It might be a bit less secure against correlation attacks due to breaking Tor Stream isolation but provides much better convenience in accessing online resources than just using Tor. It is an "acceptable" trade-off IMHP if you are careful enough with your identity.
 
-    - **Note: It is becoming more common that mainstream services and CDNS are also blocking or hindering VPN users with captchas and other various obstacles**. **In that case, a self-hosted VPS with a VPN/Proxy over Tor is the best solution for this as having your own dedicated VPS guarantees you are the sole user of your IP and encounter little to no obstacles.** Consider a [Self-hosted VPN/Proxy on a Monero/Cash-paid VPS (for users more familiar with Linux)](#self-hosted-vpnproxy-on-a-monerocash-paid-vps-for-users-more-familiar-with-linux) if you want the least amount of issues (this will be explained in the next section in more details).
+    - **Note: It is becoming more common that mainstream services and CDNS are also blocking or hindering VPN users with captchas and other various obstacles**. **In that case, a self-hosted VPS with a VPN/Proxy over Tor is the best solution for this as having your own dedicated VPS guarantees you are the sole user of your IP and encounter little to no obstacles.** Consider a [Self-hosted VPN/Proxy on a Monero/Cash-paid VPS (for users more familiar with Linux)](#anonymous-self-hosted) if you want the least amount of issues (this will be explained in the next section in more details).
 
 - If your intent however is just to browse random services anonymously without creating specific shared identities, using tor friendly services; or if you do not want to accept that trade-off in the earlier option. **Then we recommend using the Tor Only route to keep the full benefits of Stream Isolation (or Tor over VPN if you need to).**
 
 - If cost is an issue, we recommend the Tor Only option if possible.
 
-- If both Tor and VPN access are impossible or dangerous then you have no choice but to rely on Public wi-fi safely. See [Appendix P: What about when Tor and VPNs aren't possible?](#appendix-p-what-about-when-tor-and-vpns-arent-possible)
+- If both Tor and VPN access are impossible or dangerous then you have no choice but to rely on Public wi-fi safely. See [What about when Tor and VPNs aren't possible?](#tor-vpn-not-possible)
 
 For more information, you can also see the discussions here that could help decide yourself:
 
@@ -3414,13 +3404,13 @@ For more information, you can also see the discussions here that could help deci
 
     - <https://www.researchgate.net/publication/324251041_Anonymity_communication_VPN_and_Tor_a_comparative_study> <sup>[[Archive.org]](https://web.archive.org/web/https://www.researchgate.net/publication/324251041_Anonymity_communication_VPN_and_Tor_a_comparative_study)</sup>
 
-### Getting an anonymous VPN/Proxy
+### Getting an anonymous VPN/Proxy { #whonix-anon-vpn }
 
 **Skip this step if you want to use Tor only.**
 
-See [Appendix O: Getting an anonymous VPN/Proxy](#appendix-o-getting-an-anonymous-vpnproxy)
+See [Getting an anonymous VPN/Proxy](#anonymous-vpn-proxy)
 
-### Whonix
+### Whonix { #whonix }
 
 **Skip this step if you cannot use Tor.**
 
@@ -3444,15 +3434,15 @@ You will be able to decide which flavor to use based on my recommendations. We r
 
 Whonix is well maintained and has extensive and incredibly detailed documentation.
 
-#### A note on Virtualbox Snapshots
+#### A note on Virtualbox Snapshots { #virtualbox-snapshots }
 
 Later, you will create and run several Virtual Machines within Virtualbox for your sensitive activities. Virtualbox provides a feature called "Snapshots"[^354] that allow for saving the state of a VM at any point in time. If for any reason later you want to go back to that state, you can restore that snapshot at any moment.
 
 **I strongly recommend that you do make use of this feature by creating a snapshot after the initial installation/update of each VM. This snapshot should be done before its use for any sensitive/anonymous activity.**
 
-This will allow you to turn your VMs into a kind of disposable "Live Operating Systems" (like Tails discussed earlier). Meaning that you will be able to erase all the traces of your activities within a VM by restoring a Snapshot to an earlier state. Of course, this will not be "as good" as Tails (where everything is stored in memory) as there might be traces of this activity left on your hard disk. Forensics studies have shown the ability to recover data from a reverted VM[^355]. Fortunately, there will be ways to remove those traces after the deletion or reverting to an earlier snapshot. Such techniques will be discussed in the [Some additional measures against forensics](#some-additional-measures-against-forensics) section of this guide.
+This will allow you to turn your VMs into a kind of disposable "Live Operating Systems" (like Tails discussed earlier). Meaning that you will be able to erase all the traces of your activities within a VM by restoring a Snapshot to an earlier state. Of course, this will not be "as good" as Tails (where everything is stored in memory) as there might be traces of this activity left on your hard disk. Forensics studies have shown the ability to recover data from a reverted VM[^355]. Fortunately, there will be ways to remove those traces after the deletion or reverting to an earlier snapshot. Such techniques will be discussed in the [Some additional measures against forensics](#anti-forensics) section of this guide.
 
-#### Download Virtualbox and Whonix utilities
+#### Download Virtualbox and Whonix utilities { #download-virtualbox-whonix }
 
 You should download a few things within the host OS:
 
@@ -3463,11 +3453,11 @@ You should download a few things within the host OS:
     - Or the official download mirror: <https://download.whonix.org/> (XFCE Desktop recommended for beginners)
 - (Optional) The [Whonix Text Client](https://www.whonix.org/wiki/Install#Text_Client_Version) <sup>[[Archive.org]](https://web.archive.org/web/https://www.whonix.org/wiki/Install)</sup> is available for advanced users who prefer a minimal setup.
 
-**Note on Whonix 18.x**: As of guide v1.2.5, Whonix has been upgraded from version 17 to 18 (Whonix 18.1.4.x). See [[Upgrading to Whonix 18]](#upgrade-to-whonix-18) for the upgrade path if you currently use Whonix 17.x.
+**Note on Whonix 18.x**: As of guide v1.2.5, Whonix has been upgraded from version 17 to 18 (Whonix 18.1.4.x). See [[Upgrading to Whonix 18]](#qubes-whonix18) for the upgrade path if you currently use Whonix 17.x.
 
 This will conclude the preparations and you should now be ready to start setting up the final environment that will protect your anonymity online.
 
-#### Virtualbox Hardening (Whonix 17.x & 18.x)
+#### Virtualbox Hardening (Whonix 17.x & 18.x) { #virtualbox-hardening }
 
 For ideal security, follow the [Whonix Hardening Guide](https://www.whonix.org/wiki/Virtualization_Platform_Security#VirtualBox_Hardening) <sup>[[Archive.org]](https://web.archive.org/web/https://www.whonix.org/wiki/Virtualization_Platform_Security)</sup> with these additional notes:
 
@@ -3516,19 +3506,19 @@ Also, consider applying these mitigations from VirtualBox to mitigate Spectre[^3
 
 Finally, consider the security advice from Virtualbox themselves here <https://www.virtualbox.org/manual/ch13.html> <sup>[[Archive.org]](https://web.archive.org/web/https://www.virtualbox.org/manual/ch13.html)</sup>
 
-### Tor over VPN
+### Tor over VPN { #whonix-setup-tor-over-vpn }
 
 **Skip this step if you do not intend to use Tor over VPN and only intend to use Tor or cannot.**
 
 If you intend to use Tor over VPN for any reason. You first must configure a VPN service on your host OS.
 
-Remember that in this case, we recommend having two VPN accounts. Both paid with cash/Monero (see [Appendix O: Getting an anonymous VPN/Proxy](#appendix-o-getting-an-anonymous-vpnproxy)). One will be used in the Host OS for the first VPN connection. The other could be used in the VM to achieve VPN over Tor over VPN (User > VPN > Tor > VPN).
+Remember that in this case, we recommend having two VPN accounts. Both paid with cash/Monero (see [Getting an anonymous VPN/Proxy](#anonymous-vpn-proxy)). One will be used in the Host OS for the first VPN connection. The other could be used in the VM to achieve VPN over Tor over VPN (User > VPN > Tor > VPN).
 
 If you intend to only use Tor over VPN, you only need one VPN account.
 
-See [Appendix R: Installing a VPN on your VM or Host OS](#appendix-r-installing-a-vpn-on-your-vm-or-host-os) for instructions.
+See [Installing a VPN on your VM or Host OS](#vpn-installation) for instructions.
 
-### Whonix Virtual Machines
+### Whonix Virtual Machines { #whonix-vms }
 
 **Skip this step if you cannot use Tor.**
 
@@ -3543,7 +3533,7 @@ Remember at this stage that if you are having issues connecting to Tor due to ce
 
 - Update the Whonix VMs by following the instructions on [Operating System Software and Updates](https://www.whonix.org/wiki/Operating_System_Software_and_Updates#Updates) <sup>[[Archive.org]](https://web.archive.org/web/https://www.whonix.org/wiki/Operating_System_Software_and_Updates)</sup>
 
-**Note:** For Qubes OS users, see the [[Upgrading to Whonix 18]](#upgrade-to-whonix-18) section for migration notes.
+**Note:** For Qubes OS users, see the [[Upgrading to Whonix 18]](#qubes-whonix18) section for migration notes.
 
 - Shutdown the Whonix VMs
 
@@ -3553,7 +3543,7 @@ Remember at this stage that if you are having issues connecting to Tor due to ce
 
 **Important Note: You should also read these very good recommendations over there <https://www.whonix.org/wiki/DoNot>** <sup>[[Archive.org]](https://web.archive.org/web/https://www.whonix.org/wiki/DoNot)</sup> **as most of those principles will also apply to this guide. You should also read their general documentation here <https://www.whonix.org/wiki/Documentation>** <sup>[[Archive.org]](https://web.archive.org/web/https://www.whonix.org/wiki/Documentation)</sup> **which will also provide tons of advice like this guide.**
 
-### Whonix 18.x Improvements and Best Practices
+### Whonix 18.x Improvements and Best Practices { #whonix-18-improvements }
 
 **Key Changes in Whonix 18.x:**
 - Automated Release Upgrade process for seamless version transitions from Whonix 17.x
@@ -3571,23 +3561,23 @@ Remember at this stage that if you are having issues connecting to Tor due to ce
 5. **Consider KVM instead of VirtualBox**
 
 **For Qubes OS Users:**
-Qubes R4.2+ with Whonix 18 is supported. Always verify system integrity after upgrade using `systemcheck`. For detailed migration instructions, see the [[Upgrading to Whonix 18]](#upgrade-to-whonix-18) section.
+Qubes R4.2+ with Whonix 18 is supported. Always verify system integrity after upgrade using `systemcheck`. For detailed migration instructions, see the [[Upgrading to Whonix 18]](#qubes-whonix18) section.
 
-### Pick your guest workstation Virtual Machine
+### Pick your guest workstation Virtual Machine { #guest-vm-choice }
 
 Using Whonix/Linux will require more skills on your side as these are Linux distributions. You will also encounter more difficulties if you intend to use specific software that might be harder to use on Whonix/Linux. Setting up a VPN over Tor on Whonix will also be more complicated than on Windows as well.
 
-#### If you can use Tor
+#### If you can use Tor { #guest-tor-yes }
 
 You can decide if you prefer to conduct your sensitive activities from the Whonix Workstation provided in the earlier section **(highly recommended)** or from a Custom VM that will use the Whonix Gateway like the Whonix Workstation (less secure but might be required depending on what you intend to do).
 
-#### If you cannot use Tor
+#### If you cannot use Tor { #guest-tor-no }
 
-If you cannot use Tor, you can use a Custom VM of your choice that will ideally use an anonymous VPN, if possible, to then connect to the Tor network. Or you could go with the risky route: See [Appendix P: What about when Tor and VPNs aren't possible?](#appendix-p-what-about-when-tor-and-vpns-arent-possible)
+If you cannot use Tor, you can use a Custom VM of your choice that will ideally use an anonymous VPN, if possible, to then connect to the Tor network. Or you could go with the risky route: See [What about when Tor and VPNs aren't possible?](#tor-vpn-not-possible)
 
-### Linux Virtual Machine (Whonix or Linux)
+### Linux Virtual Machine (Whonix or Linux) { #linux-vm }
 
-#### Whonix Workstation **(recommended and preferred)**
+#### Whonix Workstation **(recommended and preferred)** { #whonix-workstation }
 
 **Skip this step if you cannot use Tor.**
 
@@ -3603,11 +3593,11 @@ Do not forget to apply the VM hardening recommendations here: [Virtualbox Harden
 
 Consider using AppArmor on your Whonix Workstations by following this guide: <https://www.whonix.org/wiki/AppArmor> <sup>[[Archive.org]](https://web.archive.org/web/https://www.whonix.org/wiki/AppArmor)</sup>
 
-#### Linux (any distro)
+#### Linux (any distro) { #linux-any-distro }
 
 **Be careful, any customization you make to the non-Whonix guest VMs (keyboard layout, language, time zone, screen resolution, or other) could be used to fingerprint your VMs later. See <https://www.whonix.org/wiki/VM_Fingerprinting>** <sup>[[Archive.org]](https://web.archive.org/web/https://www.whonix.org/wiki/VM_Fingerprinting)</sup>
 
-##### If you can use Tor (natively or over a VPN)
+##### If you can use Tor (natively or over a VPN) { #linux-vm-tor }
 
 Use the Linux Distro of your choice. We would recommend Ubuntu or Fedora for convenience but any other would work too. Be sure to not enable any telemetry.
 
@@ -3615,31 +3605,31 @@ Refer to this tutorial <https://www.whonix.org/wiki/Other_Operating_Systems> <su
 
 Consider hardening the VM as recommended in [Hardening Linux].
 
-##### If you cannot use Tor
+##### If you cannot use Tor { #linux-vm-no-tor }
 
-Use the Linux Distro of your choice. We would recommend Ubuntu or Fedora for convenience but any other would work too. Be sure to not enable any telemetry. You could go with the risky route: See [Appendix P: What about when Tor and VPNs aren't possible?](#appendix-p-what-about-when-tor-and-vpns-arent-possible)
+Use the Linux Distro of your choice. We would recommend Ubuntu or Fedora for convenience but any other would work too. Be sure to not enable any telemetry. You could go with the risky route: See [What about when Tor and VPNs aren't possible?](#tor-vpn-not-possible)
 
-##### Choose a browser within the VM
+##### Choose a browser within the VM { #linux-vm-browser }
 
 This time, we will recommend Brave browser.
 
-See why here: [Appendix V: What browser to use in your Guest VM/Disposable VM](#appendix-v-what-browser-to-use-in-your-guest-vmdisposable-vm)
+See why here: [What browser to use in your Guest VM/Disposable VM](#guest-vm-browser-choice)
 
-See [Appendix V1: Hardening your Browsers](#appendix-v1-hardening-your-browsers) as well.
+See [Hardening your Browsers](#hardening-browsers) as well.
 
-### Windows 10/11 Virtual Machine
+### Windows 10/11 Virtual Machine { #windows-vm }
 
 **Be careful, any customization you make to the non-Whonix guest VMs (keyboard layout, language, time zone, screen resolution, or other) could be used to fingerprint your VMs later. See <https://www.whonix.org/wiki/VM_Fingerprinting>** <sup>[[Archive.org]](https://web.archive.org/web/https://www.whonix.org/wiki/VM_Fingerprinting)</sup>
 
-#### Windows 10 and 11 ISO download
+#### Windows 10 and 11 ISO download { #windows-iso-download }
 
-Go with the Official Windows 10/11 Pro VM and harden it yourself: see [Appendix C: Windows Installation Media Creation](#appendix-c-windows-installation-media-creation-windows-10-or-download-windows-11) and go with the ISO route.
+Go with the Official Windows 10/11 Pro VM and harden it yourself: see [Windows Installation Media Creation](#win-installation-media) and go with the ISO route.
 
-#### If you can use Tor (natively or over a VPN)
+#### If you can use Tor (natively or over a VPN) { #windows-vm-tor }
 
 Refer to this tutorial <https://www.whonix.org/wiki/Other_Operating_Systems> <sup>[[Archive.org]](https://web.archive.org/web/https://www.whonix.org/wiki/Other_Operating_Systems)</sup> for detailed instructions.
 
-##### Install
+##### Install { #windows-vm-install }
 
 - Shut down the Whonix Gateway VM (this will prevent Windows from sending out telemetry and allow you to create a local account).
 
@@ -3667,11 +3657,11 @@ Refer to this tutorial <https://www.whonix.org/wiki/Other_Operating_Systems> <su
 
 - Virtualbox will prompt you to either push a button to boot the ISO or ask you what to boot, select the ISO or click.
 
-- Follow the steps in [Appendix A: Windows Installation](#appendix-a-windows-installation)
+- Follow the steps in Windows Installation](#windows-installation)
 
 - Start the Whonix Gateway VM
 
-##### Network Settings
+##### Network Settings { #windows-vm-network }
 
 - Back to your Windows
 
@@ -3699,11 +3689,11 @@ Refer to this tutorial <https://www.whonix.org/wiki/Other_Operating_Systems> <su
 
 **Every time you will power on this VM in the future, you should make sure to change its Ethernet Mac Address before each boot. You can do this in Virtualbox > Settings > Network > Advanced > Click the refresh button next to the MAC address. You can only do this while the VM is powered off.**
 
-#### If you cannot use Tor
+#### If you cannot use Tor { #windows-vm-no-tor }
 
-See [Appendix P: What about when Tor and VPNs aren't possible?](#appendix-p-what-about-when-tor-and-vpns-arent-possible)
+See [What about when Tor and VPNs aren't possible?](#tor-vpn-not-possible)
 
-##### Install
+##### Install { #windows-vm-no-tor-install }
 
 - Open Virtualbox
 
@@ -3725,31 +3715,31 @@ See [Appendix P: What about when Tor and VPNs aren't possible?](#appendix-p-what
 
 - Virtualbox will prompt you to either push a button to boot the ISO or ask you what to boot, select the ISO or click.
 
-- Follow the steps in [Appendix A: Windows Installation](#appendix-a-windows-installation)
+- Follow the steps in [Windows Installation](#windows-installation)
 
-##### Network Settings
+##### Network Settings { #windows-vm-no-tor-network }
 
 - Windows will prompt you if you want to be discoverable on this network. Click NO.
 
 **Every time you will power on this VM in the future, you should make sure to change its Ethernet Mac Address before each boot. You can do this in Virtualbox > Settings > Network > Advanced > Click the refresh button next to the MAC address. You can only do this while the VM is powered off.**
 
-#### Choose a browser within the VM
+#### Choose a browser within the VM { #windows-vm-browser }
 
 This time, we will recommend Brave browser.
 
-See why here: [Appendix V: What browser to use in your Guest VM/Disposable VM](#appendix-v-what-browser-to-use-in-your-guest-vmdisposable-vm)
+See why here: [What browser to use in your Guest VM/Disposable VM](#guest-vm-browser-choice)
 
-See [Appendix V1: Hardening your Browsers](#appendix-v1-hardening-your-browsers) as well.
+See [Hardening your Browsers](#hardening-browsers) as well.
 
-#### Additional Privacy settings in Windows 10/11
+#### Additional Privacy settings in Windows 10/11 { #windows-vm-privacy }
 
-See [Appendix B: Windows Additional Privacy Settings](#appendix-b-windows-additional-privacy-settings)
+See [Windows Additional Privacy Settings](#win-additional-privacy)
 
-### Android Virtual Machine
+### Android Virtual Machine { #android-vm }
 
 Because sometimes you want to run mobile Apps anonymously too. You can also set up an Android VM for this purpose. As in other cases, ideally, this VM will also be sitting behind the Whonix Gateway for Tor network connectivity. But this can also be set up as VPN over Tor over VPN
 
-#### If you can use Tor (natively or over a VPN)
+#### If you can use Tor (natively or over a VPN) { #android-vm-tor }
 
 Later in the VM settings during creation, go into Network and select Internal Network, Whonix.
 
@@ -3771,23 +3761,23 @@ Then on Android itself:
 
     - DNS ```10.152.152.10``` (this is again the Whonix Gateway)
 
-#### If you cannot use Tor
+#### If you cannot use Tor { #android-vm-no-tor }
 
-Just use the tutorials as is and see [Appendix P: What about when Tor and VPNs aren't possible?](#appendix-p-what-about-when-tor-and-vpns-arent-possible)
+Just use the tutorials as is and see [What about when Tor and VPNs aren't possible?](#tor-vpn-not-possible)
 
-#### Installation
+#### Installation { #android-vm-install }
 
 Two possibilities: AnBox or Android-x86
 
 Personally, We would recommend AnBox over Android-x86 but it requires Linux
 
-##### AnBox
+##### AnBox { #anbox }
 
 Basically follow the tutorial here for installing AnBox on the Whonix Workstation: <https://www.whonix.org/wiki/Anbox> <sup>[[Archive.org]](https://web.archive.org/web/https://www.whonix.org/wiki/Anbox)</sup> for running Android Applications within an AnBox VM.
 
 Or follow the instructions here <https://anbox.io/> to install on any other VM **(Linux Only)**
 
-##### Android-x86
+##### Android-x86 { #android-x86 }
 
 Basically, follow the tutorial here: <https://www.android-x86.org/documentation/virtualbox.html> <sup>[[Archive.org]](https://web.archive.org/web/https://www.android-x86.org/documentation/virtualbox.html)</sup>
 
@@ -3827,11 +3817,11 @@ Basically, follow the tutorial here: <https://www.android-x86.org/documentation/
 
 You are now done and can now install any Android app.
 
-### macOS Virtual Machine
+### macOS Virtual Machine { #macos-vm }
 
 Yes, you can actually run macOS within Virtualbox (on Windows/Linux/macOS host systems) if you want to use macOS. You can run any version of macOS you want.
 
-#### If you can use Tor (natively or over a VPN)
+#### If you can use Tor (natively or over a VPN) { #macos-vm-tor }
 
 During the following tutorials, before starting the macOS VM, make sure you do put the macOS VMs on the Whonix Network.
 
@@ -3851,11 +3841,11 @@ Use these settings when prompted in the macOS installation process:
 
 - DNS ```10.152.152.10``` (this is again the Whonix Gateway)
 
-#### If you cannot use Tor
+#### If you cannot use Tor { #macos-vm-no-tor }
 
-Just use the tutorials as is and see [Appendix P: What about when Tor and VPNs aren't possible?](#appendix-p-what-about-when-tor-and-vpns-arent-possible)
+Just use the tutorials as is and see [What about when Tor and VPNs aren't possible?](#tor-vpn-not-possible)
 
-#### Installation
+#### Installation { #macos-vm-install }
 
 - Windows Host OS:
 
@@ -3891,19 +3881,19 @@ Note: We also ran in multiple issues with running these on AMD processors. This 
 
 - ```VBoxManage setextradata "macOSCatalina" VBoxInternal2/EfiGraphicsResolution 1920x1080```
 
-#### Hardening macOS
+#### Hardening macOS { #macos-vm-hardening }
 
 Refer to [Hardening macOS].
 
-#### Choose a browser within the VM
+#### Choose a browser within the VM { #macos-vm-browser }
 
 This time, we will recommend Brave browser.
 
-See why here: [Appendix V: What browser to use in your Guest VM/Disposable VM](#appendix-v-what-browser-to-use-in-your-guest-vmdisposable-vm)
+See why here: [What browser to use in your Guest VM/Disposable VM](#guest-vm-browser-choice)
 
-See [Appendix V1: Hardening your Browsers](#appendix-v1-hardening-your-browsers) as well.
+See [Hardening your Browsers](#hardening-browsers) as well.
 
-### KeepassXC
+### KeepassXC { #keepassxc }
 
 You will need something to store your data (logins/passwords, identities, and TOTP[^359] information).
 
@@ -3937,17 +3927,17 @@ Here are the tutorials:
 
 Test that KeePassXC is working before going to the next step.
 
-### VPN client installation (cash/Monero paid)
+### VPN client installation (cash/Monero paid) { #vpn-client-install }
 
 **If you decided to not use a cash-paid VPN and just want to use Tor, skip this step.**
 
 **If you cannot use a VPN at all in a hostile environment, skip this step.**
 
-Otherwise, see [Appendix R: Installing a VPN on your VM or Host OS](#appendix-r-installing-a-vpn-on-your-vm-or-host-os) to install a VPN client on your client VM.
+Otherwise, see [Installing a VPN on your VM or Host OS](#vpn-installation) to install a VPN client on your client VM.
 
 This should conclude the Route and you should now be ready.
 
-#### About VPN Client Data Mining/Leaks
+#### About VPN Client Data Mining/Leaks { #vpn-client-leaks }
 
 You might be asking yourself if those VPN clients are trustworthy not to leak any information about your local environment to the VPN provider when using them in the "VPN over Tor" context.
 
@@ -3957,7 +3947,7 @@ Remember that all VPN activities are happening from a sandboxed VM on an interna
 
 At best, the VPN client would know your local IP (internal IP) and some randomized identifiers but should not be able to get anything from the Host OS. And in theory, the VPN client should not send any telemetry back to the VPN provider. If your VPN client does this or asks this, you should consider changing the provider.
 
-### (Optional) VM kill switch
+### (Optional) VM kill switch { #vm-kill-switch }
 
 This step will allow you to configure your Host OS so that only the Whonix Gateway VM will have access to the internet. This will therefore prevent any "leak" from your Host OS while letting the Whonix Gateway establish the tor connectivity. The other VMs (Whonix Workstation or any other VM you installed behind it will not be affected)
 
@@ -3971,7 +3961,7 @@ There are three ways to do this:
 
 - The Best Way: Using an external USB Wi-Fi dongle and just disabling Wi-Fi on the Host OS/Computer.
 
-#### The Lazy Way
+#### The Lazy Way { #kill-switch-lazy }
 
 > Not supported by Whonix
 
@@ -3983,7 +3973,7 @@ The illustration below shows the result of this step:
 
 ![image29](../media/image29.png)
 
-##### Configuration of the Whonix Gateway VM
+##### Configuration of the Whonix Gateway VM { #lazy-whonix-gw-config }
 
 For this to work, we will need to change some configurations on the Whonix Gateway VM. we will need to add a DHCP client to the Whonix Gateway to receive IP addresses from the network. To do those changes the Host OS will still have to have internet access allowed for now.
 
@@ -4031,11 +4021,11 @@ So here is how:
 
 - Click OK and you are done with the VM configuration part
 
-##### Configuration of the Host OS
+##### Configuration of the Host OS { #lazy-host-config }
 
 Now you must block internet access from your Host OS while still allowing the VM to connect. This will be done by connecting to Wi-Fi with the Host OS but without assigning itself an IP address. The VM will then use your Wi-fi association to get an IP address.
 
-###### Windows Host OS
+###### Windows Host OS { #lazy-windows-host }
 
 The goal here is to associate with a Wi-Fi network without having an internet connection. You will achieve this by deleting the Gateway from the connection after you are connected:
 
@@ -4053,7 +4043,7 @@ The goal here is to associate with a Wi-Fi network without having an internet co
 
 - And finally, after that, you can start the Whonix Workstation VM (or any other VM you configured to work behind the Whonix Gateway VM) and it should be connected to the internet through Tor.
 
-###### Linux Host OS
+###### Linux Host OS { #lazy-linux-host }
 
 The goal here is to associate with a Wi-Fi network without having an internet connection. You will achieve this by deleting the Gateway from the connection after you are connected:
 
@@ -4071,7 +4061,7 @@ The goal here is to associate with a Wi-Fi network without having an internet co
 
 - And finally, after that, you can start the Whonix Workstation VM (or any other VM you configured to work behind the Whonix Gateway VM) and it should be connected to the internet through Tor.
 
-###### macOS Host OS
+###### macOS Host OS { #lazy-macos-host }
 
 The goal here is to associate with a Wi-Fi network without having an internet connection. You will achieve this by deleting the Gateway from the connection after you are connected:
 
@@ -4089,7 +4079,7 @@ The goal here is to associate with a Wi-Fi network without having an internet co
 
 - And finally, after that, you can start the Whonix Workstation VM (or any other VM you configured to work behind the Whonix Gateway VM) and it should be connected to the internet through Tor.
 
-#### The Better Way (recommended)
+#### The Better Way (recommended) { #kill-switch-better }
 
 This way will not go against Whonix recommendations (as it will not expose the Whonix Gateway to the Host OS) and will have the advantage of allowing connections not only to open Wi-Fis but also to the ones with a Captive Portal where you need to enter some information to access the internet.
 
@@ -4107,7 +4097,7 @@ This is how it will look at the end:
 
 ![image30](../media/image30.png)
 
-##### Installing XUbuntu VM
+##### Installing XUbuntu VM { #xubuntu-install }
 
 XUbuntu was picked due the performance of XFCE.
 
@@ -4181,7 +4171,7 @@ When you are done with the download, it is time to create a new VM:
 
 - You are now done setting up the XUbuntu Bridge VM
 
-##### Configuring the Whonix Gateway VM
+##### Configuring the Whonix Gateway VM { #better-whonix-gw-config }
 
 By default, the Whonix Gateway has no DHCP client and will require one to get an IP from a shared network you configured earlier:
 
@@ -4229,7 +4219,7 @@ By default, the Whonix Gateway has no DHCP client and will require one to get an
 
 - You are done configuring the Whonix Gateway VM
 
-##### Configuration of the Host OS
+##### Configuration of the Host OS { #better-host-config }
 
 Now you must block internet access from your Host OS while still allowing the XUbuntu Bridge VM to connect. This will be done by connecting to Wi-Fi with the Host OS but without assigning itself a gateway address. The VM will then use your Wi-fi association to get an IP address.
 
@@ -4237,7 +4227,7 @@ If necessary, from the XUbuntu Bridge VM, you will be able to launch a Browser t
 
 Only the XUbuntu Bridge VM should be able to access the internet. The Host OS will be limited to local traffic only.
 
-###### Windows Host OS
+###### Windows Host OS { #better-windows-host }
 
 The goal here is to associate with a Wi-Fi network without having an internet connection. You will achieve this by deleting the Gateway from the connection after you are connected:
 
@@ -4259,7 +4249,7 @@ The goal here is to associate with a Wi-Fi network without having an internet co
 
 - And finally, after that, you can start the Whonix Workstation VM (or any other VM you configured to work behind the Whonix Gateway VM) and it should be connected to the internet through Tor.
 
-###### Linux Host OS
+###### Linux Host OS { #better-linux-host }
 
 The goal here is to associate with a Wi-Fi network without having an internet connection. You will achieve this by deleting the Gateway from the connection after you are connected:
 
@@ -4281,7 +4271,7 @@ The goal here is to associate with a Wi-Fi network without having an internet co
 
 - And finally, after that, you can start the Whonix Workstation VM (or any other VM you configured to work behind the Whonix Gateway VM) and it should be connected to the internet through Tor.
 
-###### macOS Host OS
+###### macOS Host OS { #better-macos-host }
 
 The goal here is to associate with a Wi-Fi network without having an internet connection. You will achieve this by deleting the Gateway from the connection after you are connected:
 
@@ -4303,7 +4293,7 @@ The goal here is to associate with a Wi-Fi network without having an internet co
 
 - And finally, after that, you can start the Whonix Workstation VM (or any other VM you configured to work behind the Whonix Gateway VM) and it should be connected to the internet through Tor.
 
-#### The best way
+#### The best way { #kill-switch-best }
 
 This way will not go against Whonix recommendations (as it will not expose the Whonix Gateway to the Host OS) and will have the advantage of allowing connections not only to open Wi-Fis but also to the ones with a Captive Portal where you need to enter some information to access the internet. Yet this will still not be supported by the Whonix project, but it is fine as the main concern for the earlier Lazy Way is to have the Whonix Gateway VM exposed to the Host Network, and it will not be the case here. This option is the best because the network will be completely disabled on the Host OS from booting up.
 
@@ -4319,13 +4309,13 @@ This is how it will look at the end:
 
 ![image31](../media/image31.png)
 
-##### Configuration of the Host OS
+##### Configuration of the Host OS { #best-host-config }
 
 - Disable Networking on your Host OS completely (Turn off the on-board Wi-Fi completely)
 
 - Plug in and install your USB Wi-Fi Dongle. Connect it to a safe Public Wi-Fi. This should be easy and automatically installed by any recent OS (Windows 10/11, macOS, Linux).
 
-##### Configuring the Whonix Gateway VM
+##### Configuring the Whonix Gateway VM { #best-whonix-gw-config }
 
 By default, the Whonix Gateway has no DHCP client and will require one to get an IP from a shared network you will configure later, on a Bridge VM:
 
@@ -4357,7 +4347,7 @@ By default, the Whonix Gateway has no DHCP client and will require one to get an
 
 - Save (using Ctrl+X and confirm with Y) and power off the VM from the top left menu
 
-##### Installing XUbuntu VM
+##### Installing XUbuntu VM { #best-xubuntu-install }
 
 Make sure you are connected to a safe Wi-Fi for this operation.
 
@@ -4439,7 +4429,7 @@ When you are done with the download, it is time to create a new VM:
 
 At this stage, your Host OS should have no network at all and your XUbuntu VM should have a fully working Wi-Fi connection and this Wi-Fi connection will be shared to the Internal Network "XUbuntu Bridge".
 
-##### Additional configuration of the Whonix Gateway VM
+##### Additional configuration of the Whonix Gateway VM { #best-whonix-gw-extra }
 
 Now it is time to configure the Whonix Gateway VM to get access from the shared network from the bridge VM you just made on the earlier step:
 
@@ -4467,7 +4457,7 @@ All the VMs behind the Whonix Gateway should now work fine without additional co
 
 You are done and can now skip the rest to go to the [Getting Online](#getting-online) part.
 
-## The Qubes Route
+## The Qubes Route { #qubes-route }
 
 **Note that the guide has been updated to Qubes OS 4.1**
 
@@ -4497,7 +4487,7 @@ You should also check their hardware compatibility here <https://www.qubes-os.or
 
 I think that if you can afford it and are comfortable with the idea of using Linux, you should go with this route as it is probably the best one in terms of security and privacy. The only disadvantage of this route is that it does not provide a way to enable OS-wide [plausible deniability](https://en.wikipedia.org/wiki/Plausible_deniability) <https://en.wikipedia.org/wiki/Plausible_deniability> <sup>[[Wikiless]](https://wikiless.tiekoetter.com/wiki/Plausible_deniability)</sup>, unlike the Whonix route.
 
-### Pick your connectivity method
+### Pick your connectivity method { #qubes-connectivity }
 
 There are seven possibilities within this route:
 
@@ -4527,7 +4517,7 @@ There are seven possibilities within this route:
 
 ![image23](../media/image23.png)
 
-#### Tor only
+#### Tor only { #qubes-tor-only }
 
 This is the preferred and most recommended solution.
 
@@ -4539,7 +4529,7 @@ There is one main drawback tho: **Some services block/ban Tor Exit nodes outrigh
 
 To mitigate this, you might have to consider the next option: VPN over Tor but consider some risks associated with it explained in the next section.
 
-#### VPN/Proxy over Tor
+#### VPN/Proxy over Tor { #qubes-vpn-over-tor }
 
 This solution can bring some benefits in some specific cases vs using Tor only where accessing the destination service would be impossible from a Tor Exit node. This is because many services will just outright ban, hinder, or block Tor Exit Nodes (see <https://gitlab.torproject.org/legacy/trac/-/wikis/org/doc/ListOfServicesBlockingTor> <sup>[[Archive.org]](https://web.archive.org/web/https://gitlab.torproject.org/legacy/trac/-/wikis/org/doc/ListOfServicesBlockingTor)</sup>).
 
@@ -4581,7 +4571,7 @@ More information at:
 
 - <https://www.whonix.org/wiki/Tunnels/Introduction#Comparison_Table> <sup>[[Archive.org]](https://web.archive.org/web/https://www.whonix.org/wiki/Tunnels/Introduction#Comparison_Table)</sup>
 
-#### Tor over VPN
+#### Tor over VPN { #qubes-tor-over-vpn }
 
 You might be wondering: Well, what about using Tor over VPN instead of VPN over Tor?
 
@@ -4607,7 +4597,7 @@ Achieving this technically is easy within this route, you need two separate anon
 
 Conclusion: Only do this if you think using Tor alone is risky/impossible but VPNs are okay. Or just because you can and so why not. This method will not lower your security/privacy/anonymity.
 
-#### VPN only
+#### VPN only { #qubes-vpn-only }
 
 This route will not be explained nor recommended.
 
@@ -4629,15 +4619,15 @@ For more info, please see the following references:
 
 **In the context of this guide, Tor is required somewhere to achieve reasonable and safe anonymity and you should use it if you can.**
 
-#### No VPN/Tor
+#### No VPN/Tor { #qubes-no-vpn-tor }
 
 If you cannot use VPN nor Tor where you are, you probably are in a very hostile environment where surveillance and control are extremely high.
 
 Just do not, it is not worth it and too risky. You can be de-anonymized almost instantly by any motivated adversary that could get to your physical location in a matter of minutes.
 
-Do not forget to check back on [Adversaries (threats)](#adversarial-considerations) and [Appendix S: Check your network for surveillance/censorship using OONI](#appendix-s-check-your-network-for-surveillancecensorship-using-ooni).
+Do not forget to check back on [Adversaries (threats)](#adversarial-considerations) and [Check your network for surveillance/censorship using OONI](#ooni-censorship-check).
 
-If you have absolutely no other option and still want to do something, see [Appendix P: What about when Tor and VPNs aren't possible?](#appendix-p-what-about-when-tor-and-vpns-arent-possible) **(at your own risk)**
+If you have absolutely no other option and still want to do something, see [What about when Tor and VPNs aren't possible?](#tor-vpn-not-possible) **(at your own risk)**
 
 | Connection Type                    | Anonymity | Ease of Access to online resources | Tor Stream isolation | Safer where Tor is suspicious/dangerous | Speed      | Cost                      | Recommended                                      |
 |------------------------------------|-----------|------------------------------------|----------------------|-----------------------------------------|------------|---------------------------|--------------------------------------------------|
@@ -4654,13 +4644,13 @@ Unfortunately, using Tor alone will raise the suspicion of many destinations' pl
 
 - If you intend to create persistent shared and authenticated identities on various services where access from Tor is hard, we recommend the **VPN over Tor** and **VPS VPN/Proxy over Tor** options (or VPN over Tor over VPN if needed). It might be a bit less secure against correlation attacks due to breaking Tor Stream isolation but provides much better convenience in accessing online resources than just using Tor. It is an "acceptable" trade-off IMHP if you are careful enough with your identity.
 
-    - **Note: It is becoming more common that mainstream services and CDNS are also blocking or hindering VPN users with captchas and other various obstacles**. **In that case, a self-hosted VPS with a VPN/Proxy over Tor is the best solution for this as having your own dedicated VPS guarantees you are the sole user of your IP and encounter little to no obstacles.** Consider a [Self-hosted VPN/Proxy on a Monero/Cash-paid VPS (for users more familiar with Linux)](#self-hosted-vpnproxy-on-a-monerocash-paid-vps-for-users-more-familiar-with-linux) if you want the least amount of issues (this will be explained in the next section in more details).
+    - **Note: It is becoming more common that mainstream services and CDNS are also blocking or hindering VPN users with captchas and other various obstacles**. **In that case, a self-hosted VPS with a VPN/Proxy over Tor is the best solution for this as having your own dedicated VPS guarantees you are the sole user of your IP and encounter little to no obstacles.** Consider a [Self-hosted VPN/Proxy on a Monero/Cash-paid VPS (for users more familiar with Linux)](#anonymous-self-hosted) if you want the least amount of issues (this will be explained in the next section in more details).
 
 - If your intent however is just to browse random services anonymously without creating specific shared identities, using tor friendly services; or if you do not want to accept that trade-off in the earlier option. **Then we recommend using the Tor Only route to keep the full benefits of Stream Isolation (or Tor over VPN if you need to).**
 
 - If cost is an issue, we recommend the Tor Only option if possible.
 
-- If both Tor and VPN access are impossible or dangerous then you have no choice but to rely on Public wi-fi safely. See [Appendix P: What about when Tor and VPNs aren't possible?](#appendix-p-what-about-when-tor-and-vpns-arent-possible)
+- If both Tor and VPN access are impossible or dangerous then you have no choice but to rely on Public wi-fi safely. See [What about when Tor and VPNs aren't possible?](#tor-vpn-not-possible)
 
 For more information, you can also see the discussions here that could help decide yourself:
 
@@ -4684,17 +4674,17 @@ For more information, you can also see the discussions here that could help deci
 
     - <https://www.researchgate.net/publication/324251041_Anonymity_communication_VPN_and_Tor_a_comparative_study> <sup>[[Archive.org]](https://web.archive.org/web/https://www.researchgate.net/publication/324251041_Anonymity_communication_VPN_and_Tor_a_comparative_study)</sup>
 
-### Getting an anonymous VPN/Proxy
+### Getting an anonymous VPN/Proxy { #qubes-anon-vpn }
 
 **Skip this step if you want to use Tor only or VPN is not an option.**
 
-See [Appendix O: Getting an anonymous VPN/Proxy](#appendix-o-getting-an-anonymous-vpnproxy)
+See [Getting an anonymous VPN/Proxy](#anonymous-vpn-proxy)
 
-### Note about Plausible Deniability
+### Note about Plausible Deniability { #qubes-deniability }
 
 Qubes OS uses LUKS for full disk encryption and it is technically possible to achieve a form of deniability by using detached LUKS headers. This is not yet integrated into this guide but you will find an evolving tutorial on how to achieve this here: <https://forum.qubes-os.org/t/qubes-os-installation-detached-encrypted-boot-and-header/6205> and some more background information within the Linux Host OS section (see [Note about plausible deniability on Linux]).
 
-### Installation
+### Installation { #qubes-install }
 
 You will follow the instructions from their own guide <https://www.qubes-os.org/doc/installation-guide/> <sup>[[Archive.org]](https://web.archive.org/web/https://www.qubes-os.org/doc/installation-guide/)</sup>:
 
@@ -4722,11 +4712,11 @@ The Qubes master signing key fingerprint should match `427F 11FD 0FAA 4B08 0123 
 
 _Remember to read the guide to verifying signatures on the Qubes website: <https://www.qubes-os.org/security/verifying-signatures/> <sup>[[Archive.org]](https://web.archive.org/web/20220511015546/https://www.qubes-os.org/security/verifying-signatures/)</sup>._
 
-### Lid Closure Behavior
+### Lid Closure Behavior { #qubes-lid-closure }
 
 Unfortunately, Qubes OS does not support hibernation[^366] which is an issue regarding cold-boot attacks. To mitigate those, I highly recommend that you configure Qubes OS to shut down on any power action (power button, lid closure). You can do set this from the XFCE Power Manager. Do not use the sleep features.
 
-### Anti Evil Maid (AEM)
+### Anti Evil Maid (AEM) { #qubes-aem }
 
 **Warning**, this step only works with Intel CPUs, a legacy BIOS, TPM 1.2. If you do not meet those requirements, skip this step.
 
@@ -4734,7 +4724,7 @@ Anti Evil Maid is an implementation of a TPM-based static trusted boot with a pr
 
 The preference for mitigating any evil maid attack is to maintain physical control of your device at all times. If that is not possible, then this might be relevant to your threat model.
 
-Before deciding to use this system, please read [Appendix B4: Important notes about evil-maid and tampering](#appendix-b4-important-notes-about-evil-maid-and-tampering)
+Before deciding to use this system, please read [Important notes about evil-maid and tampering](#evil-maid-tampering-notes)
 
 See the following links for more details and installation instructions:
 
@@ -4744,9 +4734,9 @@ See the following links for more details and installation instructions:
 
 - <https://github.com/QubesOS/qubes-antievilmaid> <sup>[[Archive.org]](https://web.archive.org/web/https://github.com/QubesOS/qubes-antievilmaid)</sup>
 
-### Connect to a Public Wi-Fi
+### Connect to a Public Wi-Fi { #qubes-wifi }
 
-Remember this should be done from a safe place (see [Find some safe places with decent public Wi-Fi](#find-some-safe-places-with-decent-public-wi-fi) and [Appendix Q: Using long-range Antenna to connect to Public Wi-Fis from a safe distance](#appendix-q-using-long-range-antenna-to-connect-to-public-wi-fis-from-a-safe-distance):
+Remember this should be done from a safe place (see [Find some safe places with decent public Wi-Fi](#safe-wifi) and [Using long-range Antenna to connect to Public Wi-Fis from a safe distance](#long-range-wifi):
 
 - In the upper right corner, Left-click the network icon and note the Wi-Fi SSID you want to connect to
 
@@ -4778,13 +4768,13 @@ Remember this should be done from a safe place (see [Find some safe places with 
 
     - Open Firefox and register (anonymously) into the Wi-Fi
 
-### Upgrading Qubes OS from 4.0.x to 4.1.x (you should do it)
+### Upgrading Qubes OS from 4.0.x to 4.1.x (you should do it) { #qubes-upgrade }
 
 Personally, we wouldn't do it in-place and do a fresh install.
 
 But if you really want to, it's technically possible by following this guide: <https://www.qubes-os.org/doc/upgrade/4.1/> <sup>[[Archive.org]](https://web.archive.org/web/https://www.qubes-os.org/doc/upgrade/4.1/)</sup>
 
-### Updating Qubes OS
+### Updating Qubes OS { #qubes-updates }
 
 After you are connected to a Wi-Fi you need to update Qubes OS and Whonix. You must keep Qubes OS always updated before conducting any sensitive activities. Especially your Browser VMs. Normally, Qubes OS will warn you about updates in the upper right corner with a gear icon. As this might take a while in this case due to using Tor, you can force the process by doing the following:
 
@@ -4802,7 +4792,7 @@ After you are connected to a Wi-Fi you need to update Qubes OS and Whonix. You m
 
 - If you checked the Tor option during install, be patient as this might take a while over Tor
 
-### Upgrade to Whonix 18
+### Upgrade to Whonix 18 { #qubes-whonix18 }
 
 **Overview of Whonix 18.x Improvements:**
 
@@ -4849,15 +4839,15 @@ After you are connected to a Wi-Fi you need to update Qubes OS and Whonix. You m
 - Always verify system integrity after upgrade using `systemcheck` and Tor verification tools.
 - If you're not using Qubes OS, follow the general [Whonix Upgrade Guide](https://www.whonix.org/wiki/Release_Upgrade_17_to_18) <sup>[[Archive.org]](https://web.archive.org/web/https://www.whonix.org/wiki/Release_Upgrade_17_to_18)</sup>.
 
-### Hardening Qubes OS
+### Hardening Qubes OS { #qubes-hardening }
 
 **Disclaimer: This section is under construction and will be worked on heavily in the next releases. This section is for more advanced users.**
 
-#### Application Sandboxing
+#### Application Sandboxing { #qubes-sandboxing }
 
 While Qubes OS is already sandboxing everything by design, it is also useful to consider sandboxing apps themselves using AppArmor or SELinux.
 
-##### AppArmor
+##### AppArmor { #qubes-apparmor }
 
 "AppArmor is a Mandatory Access Control framework. When enabled, AppArmor confines programs according to a set of rules that specify what files a given program can access. This initiative-taking approach helps protect the system against both known and unknown vulnerabilities" (Debian.org).
 
@@ -4885,7 +4875,7 @@ Basically, AppArmor[^367] is an application sandboxing system. By default, it is
 
     - Secondly, you should head out again and read <https://www.whonix.org/wiki/Qubes/AppArmor> <sup>[[Archive.org]](https://web.archive.org/web/https://www.whonix.org/wiki/Qubes/AppArmor)</sup>
 
-##### SELinux
+##### SELinux { #qubes-selinux }
 
 SELinux[^368] is similar to AppArmor. The differences between SELinux and AppArmor are technical details into which we will not get.
 
@@ -4897,7 +4887,7 @@ So, head out and read <https://docs.fedoraproject.org/en-US/quick-docs/getting-s
 
 You could make use of SELinux on your Fedora Templates. But this is up to you. Again, this is for advanced users.
 
-### Setup the VPN ProxyVM
+### Setup the VPN ProxyVM { #qubes-vpn-proxyvm }
 
 **Skip this step if you do not want to use a VPN and just use Tor only or if VPN is not an option either.**
 
@@ -4907,7 +4897,7 @@ This is based on the tutorial provided by Qubes OS themselves (<https://github.c
 
 Alternatively, Mullvad also have a help article that guides you through setting up a Proxy VM <https://mullvad.net/en/help/qubes-os-4-and-mullvad-vpn/> <sup>[[Archive.org]](https://web.archive.org/web/https://mullvad.net/en/help/qubes-os-4-and-mullvad-vpn/)</sup>.
 
-#### Create the ProxyVM
+#### Create the ProxyVM { #qubes-create-proxyvm }
 
 - Click the Applications icon (upper left corner)
 
@@ -4938,21 +4928,21 @@ Alternatively, Mullvad also have a help article that guides you through setting 
     - If you are going for Tor over VPN, the opposite should be done, the ProxyVM should have its networking set as "sys-tor" and the "sys-tor" VM should have "sys-vpn" for its networking.
         + Test the VM connectivity to the internet by launching a Browser within the ProxyVM. Visit <https://check.torproject.org> <sup>[[Archive.org]](https://web.archive.org/web/https://check.torproject.org/)</sup> (It should say you are connected to Tor)
 
-#### Download the VPN configuration from your cash/Monero paid VPN provider
+#### Download the VPN configuration from your cash/Monero paid VPN provider { #qubes-vpn-config-download }
 
-##### If you can use Tor
+##### If you can use Tor { #qubes-vpn-tor }
 
 **Using Tor Browser (be careful not to use any Clearnet Browser for this),** download the necessary OpenVPN configuration files for Linux from your VPN provider.
 
 This can be done by using the Qubes OS integrated Tor Browser by accessing the Applications icon (upper left corner) and selecting the Disposable Tor Browser application.
 
-##### If you cannot use Tor
+##### If you cannot use Tor { #qubes-vpn-no-tor }
 
-Launch a browser from a DisposableVM and download the necessary OpenVPN configuration files for Linux from your VPN provider. See [Appendix P: What about when Tor and VPNs aren't possible?](#appendix-p-what-about-when-tor-and-vpns-arent-possible)
+Launch a browser from a DisposableVM and download the necessary OpenVPN configuration files for Linux from your VPN provider. See [What about when Tor and VPNs aren't possible?](#tor-vpn-not-possible)
 
 When you are done downloading the configuration files within the Disposable Browser (usually a zip file), copy them to your ProxyVM VPN Gateway machine (using right-click on the file and send to another AppVM).
 
-#### Configure the ProxyVM
+#### Configure the ProxyVM { #qubes-configure-proxyvm }
 
 **Skip this step if you are not going to use a VPN**
 
@@ -5044,9 +5034,9 @@ When you are done downloading the configuration files within the Disposable Brow
 
     - Proton VPN: Follow their instructions here <https://protonvpn.com/support/vpn-ip-change/> <sup>[[Archive.org]](https://web.archive.org/web/https://protonvpn.com/support/vpn-ip-change/)</sup>
 
-#### VPN over Tor
+#### VPN over Tor { #qubes-vpn-over-tor-setup }
 
-##### Set up a disposable Browser Qube for VPN over Tor use
+##### Set up a disposable Browser Qube for VPN over Tor use { #qubes-browser-qube }
 
 - Within the Applications Menu (upper left corner), Select the Disposable Fedora VM
 
@@ -5068,7 +5058,7 @@ When you are done downloading the configuration files within the Disposable Brow
 
 You should now have a Disposable Browser VM that works with your cash/Monero paid VPN over Tor.
 
-#### Tor Over VPN
+#### Tor Over VPN { #qubes-tor-over-vpn-setup }
 
 Reconfigure your Whonix Gateway VM to use your ProxyVM as NetVM instead of sys-firewall:
 
@@ -5106,7 +5096,7 @@ Alternatively, you can also create any other type of disposable VM (but less sec
 
 You should now have a Disposable Browser VM that works with Tor over a cash/Monero paid VPN.
 
-#### Any other combination?
+#### Any other combination? { #qubes-other-combo }
 
 **E.g., VPN over Tor over VPN**
 
@@ -5126,11 +5116,11 @@ You could have:
 
 This would result in User > VPN > Tor > VPN > Internet (VPN over Tor over VPN). Experiment for yourself. Qubes OS is great for these things.
 
-### Setup a safe Browser within Qubes OS
+### Setup a safe Browser within Qubes OS { #qubes-safe-browser }
 
-See: [Appendix V: What browser to use in your Guest VM/Disposable VM](#appendix-v-what-browser-to-use-in-your-guest-vmdisposable-vm)
+See: [What browser to use in your Guest VM/Disposable VM](#guest-vm-browser-choice)
 
-#### Fedora Disposable VM
+#### Fedora Disposable VM { #qubes-fedora-vm }
 
 Within the Applications Menu (upper left), Select the Fedora-36 template:
 
@@ -5156,25 +5146,25 @@ If you want to use Brave: apply the instructions from [their documentation](http
 
 ```sudo dnf install brave-browser```
 
-You should also consider hardening your browser, see [Appendix V1: Hardening your Browsers](#appendix-v1-hardening-your-browsers)
+You should also consider hardening your browser, see [Hardening your Browsers](#hardening-browsers)
 
-#### Whonix Disposable VM
+#### Whonix Disposable VM { #qubes-whonix-vm }
 
 Edit the Whonix Disposable VM template and follow instructions here <https://www.whonix.org/wiki/Install_Software> <sup>[[Archive.org]](https://web.archive.org/web/https://www.whonix.org/wiki/Install_Software)</sup>
 
-#### Additional browser precautions
+#### Additional browser precautions { #qubes-browser-precautions }
 
-- See: [Appendix V1: Hardening your Browsers](#appendix-v1-hardening-your-browsers)
+- See: [Hardening your Browsers](#hardening-browsers)
 
-- See: [Appendix A5: Additional browser precautions with JavaScript enabled](#appendix-a5-additional-browser-precautions-with-javascript-enabled)
+- See: [Additional browser precautions with JavaScript enabled](#browser-precautions-js)
 
-### Setup an Android VM
+### Setup an Android VM { #qubes-android-vm }
 
 Because sometimes you want to run mobile Apps anonymously too. You can also set up an Android VM for this purpose. As in other cases, ideally, this VM will also be sitting behind the Whonix Gateway for Tor network connectivity. But this can also be set up as VPN over Tor over VPN.
 
 Since the Android-x86 does not work "well" with Qubes OS (my own experience). We will instead recommend using AnBox (<https://anbox.io/> <sup>[[Archive.org]](https://web.archive.org/web/https://anbox.io/)</sup>) which works "well enough" with Qubes OS. More information can also be found at <https://www.whonix.org/wiki/Anbox> <sup>[[Archive.org]](https://web.archive.org/web/https://www.whonix.org/wiki/Anbox)</sup>
 
-#### If you can use Tor
+#### If you can use Tor { #qubes-android-tor }
 
 Later in the Qubes settings during creation:
 
@@ -5182,9 +5172,9 @@ Later in the Qubes settings during creation:
 
 - Change to sys-whonix to put it behind the Whonix Gateway (over Tor).
 
-#### If you cannot use Tor
+#### If you cannot use Tor { #qubes-android-no-tor }
 
-Just use the tutorials as is. See [Appendix P: What about when Tor and VPNs aren't possible?](#appendix-p-what-about-when-tor-and-vpns-arent-possible).
+Just use the tutorials as is. See [What about when Tor and VPNs aren't possible?](#tor-vpn-not-possible).
 
 **Installation**
 
@@ -5260,7 +5250,7 @@ If you want to install apps on this emulator:
 
 That's it, you should now have an Android Qube over Tor (or anything else) capable of running pretty much any App you can sideload with ADB. This is, for now, the easiest way to get Android emulation on Qubes OS.
 
-### KeePassXC
+### KeePassXC { #qubes-keepassxc }
 
 You will need somewhere to store your data (logins/passwords, identities, and TOTP[^369] information).
 
@@ -5276,13 +5266,13 @@ In the context of Qubes OS you should store your sensitive information within th
 
 - From the list of available applications, add KeePassXC to the list of selected applications.
 
-You are done and can now skip the rest to go to the "[Creating your anonymous online identities](#creating-your-anonymous-online-identities)" part.
+You are done and can now skip the rest to go to the "[Creating your anonymous online identities](#creating-identities)" part.
 
-### Tutorial for installing Windows based VMs on Qubes OS
+### Tutorial for installing Windows based VMs on Qubes OS { #qubes-windows-vm-tutorial }
 
 See their tutorial here: <https://github.com/Qubes-Community/Contents/blob/master/docs/os/windows/windows-tools41.md> <sup>[[Archive.org]](https://web.archive.org/web/https://github.com/Qubes-Community/Contents/blob/master/docs/os/windows/windows-tools41.md)</sup>
 
-# Quick note: Correlation vs Attribution
+# Quick note: Correlation vs Attribution { #correlation-vs-attribution }
 
 **Correlation** is a relationship between two or more variables or **[attributes](https://www.digitalshadows.com/blog-and-research/cyber-attacks-the-challenge-of-attribution-and-response/)**. How are attributions determined? During digital forensic and incident response (DFIR), analysts typically look for indicators of compromise (IoCs) following events that call them to act. These indicators usually consist of IP addresses, names, databases; all of which can prescribe a certain behavioral "tag" to an individual or group. This is called attribution. A principal in statistics is that "correlation does not infer causality". What this means is that, while you may leave certain traces on certain areas of a device or network, that only shows presence of action, i.e., not explicitly your presence. It doesn't show who you are, it only resolves that something occurred and _someone_ has done _something_.
 
@@ -5292,9 +5282,9 @@ _What is the point_, you may ask? Well, bluntly speaking, this a perfect example
 
 It's all to show you the lengths that state actors will go to. You may not be aware of it, but foreign governments use concealment techniques such as the ones discussed in the sections of this guide. They routinely use Tor, VPNs to conceal traffic; they use hacked devices and access to stolen equipment to perform cyber espionage every day and it makes attribution incredibly difficult, if not improbable, from a forensic examiner's point of view. The problem of correlation is trivial, and you can solve it by simply using IP hiding tools such as a VPN and the Tor network, but still be connected to your IRL name and IP through data leaks or other factors. You can not easily be attributed to your activities if you carefully follow and adopt the given techniques and skills discussed below.
 
-# Creating your anonymous online identities
+# Creating your anonymous online identities { #creating-identities }
 
-## Methodology to Prevent Anonymity
+## Methodology to Prevent Anonymity { #deanon-methodology }
 
 If you often use VPNs or Tor, you will quickly encounter many captchas everywhere. Quite often when using Tor or a VPN, even if you succeed in solving all the puzzles (sometimes dozens in a row), you will still be denied after solving it.
 
@@ -5352,15 +5342,15 @@ Fortunately, as far as we are aware, these are not yet officially/publicly used 
 
 To not have those issues, you should consider using a VPN over Tor. And the best option to avoid those is likely to use a self-hosted VPN/Proxy over Tor on a cash/Monero paid VPS server.
 
-### Phone verification
+### Phone verification { #phone-verification }
 
 Phone verification is advertised by most platforms to verify you are human. But do not be fooled, the main reason for phone verification is not only to check if you are human but also to be able to de-anonymize you if needed.
 
 Most platforms (including the privacy-oriented ones such as Signal/Telegram/Proton will require a phone number to register, and most countries now make it mandatory to submit a proof of ID to register[^381].
 
-Fortunately, this guide explained earlier how to get a number for these cases: [Getting an anonymous Phone number](#getting-an-anonymous-phone-number).
+Fortunately, this guide explained earlier how to get a number for these cases: [Getting an anonymous Phone number](#anonymous-phone).
 
-### E-Mail verification
+### E-Mail verification { #email-verification }
 
 E-Mail verification is what used to be enough but is not anymore in most cases. What is important to know is that open e-mail providers (disposable e-mail providers for instance) are flagged as much as open proxies (like Tor).
 
@@ -5386,7 +5376,7 @@ _Also see: <https://forums.whonix.org/t/riseup-net-likely-compromised/3195>_
 
 <sub>For the <https://riseup.net> [[Tor Mirror]](http://vww6ybal4bd7szmgncyruucpgfkqahzddi37ktceo3ah7ngmcopnpyyd.onion/) (It has come to my attention that the site now, unfortunately, requires an invitation from a current registered user)</sub>
 
-#### Aliasing services
+#### Aliasing services { #email-aliasing }
 
 If you want to avoid communicating your anonymous e-mail addresses to various parties. We would strongly suggest considering using e-mail aliasing services such as:
 
@@ -5396,7 +5386,7 @@ If you want to avoid communicating your anonymous e-mail addresses to various pa
 
 These services will allow creating random aliases for your anonymous e-mail (on Proton for example) and could increase your general privacy if you do not want to disclose that e-mail for any purpose. They are both recommended by Privacyguides.org and Privacytools.io. I'm recommending them as well.
 
-### User details checking
+### User details checking { #user-details-check }
 
 Obviously, Reddit does not do this (yet), but Facebook most likely does and will look for "suspicious" things in your details (which could include face recognition).
 
@@ -5416,7 +5406,7 @@ Some examples:
 
 - Name that does not match the correct ethnicity/language/country?
 
-### Proof of ID verification
+### Proof of ID verification { #id-verification }
 
 The deal-breaker in most cases. As far as we know, only Facebook and LinkedIn (outside of financial services) have requested such verifications which involve sending pictures of some form of identification (passport, national ID card, driver's license ...). The only way to do this would involve creating fake official documents (forgery) using some decent Photoshop skills and this might be illegal in most places.
 
@@ -5426,7 +5416,7 @@ In many countries, only law enforcement, some specific processes (such as GDPR r
 
 In few countries (like Germany), this practice is illegal and online platforms such as Facebook or LinkedIn are legally bound to allow you to use a pseudonym and remain anonymous.
 
-### IP Filters
+### IP Filters { #ip-filters }
 
 As stated previously in this guide, many platforms will apply IP-based filtering. Tor exit nodes are publicly listed, and VPN exit servers are "well known". There are many commercial and free services providing the ability to block those IPs with ease (hi Cloudflare).
 
@@ -5447,7 +5437,7 @@ The tolerance is much higher with VPNs as they are not considered "open proxies"
 
 For this reason, this guide does recommend the use of VPN over Tor (and not Tor over VPN) in certain use cases. **Remember that the best option to avoid those is to use a self-hosted VPN/Proxy over Tor on a cash/Monero paid VPS**.
 
-### Browser and Device Fingerprinting
+### Browser and Device Fingerprinting { #fingerprinting }
 
 Your Browser and Device Fingerprints[^382] are a set of properties/capabilities of your System/Browser. These are used on most websites for invisible user tracking but also to adapt the website user experience depending on their browser. For instance, websites will be able to provide a "mobile experience" if you are using a mobile browser or propose a specific language/geographic version depending on your fingerprint. Most of those techniques work with recent Browsers like Chromium-based[^251] browsers (such as Chrome/Edge) or Firefox[^252] unless taking specific measures. Browser and Device[^382] Fingerprinting are usually integrated into the Captcha services but also in other various services.
 
@@ -5457,11 +5447,11 @@ It should also be noted that while some browsers and extensions will offer some 
 
 This guide will mitigate these issues by randomizing or hiding many of those fingerprinting identifiers by:
 
-- Using Virtualization (See [Appendix W: Virtualization](#appendix-w-virtualization));
+- Using Virtualization (See [Virtualization](#virtualization));
 
-- Using specific recommendations (See [Appendix A5: Additional browser precautions with JavaScript enabled](#appendix-a5-additional-browser-precautions-with-javascript-enabled));
+- Using specific recommendations (See [Additional browser precautions with JavaScript enabled](#browser-precautions-js));
 
-- Using hardening [Appendix V1: Hardening your Browsers](#appendix-v1-hardening-your-browsers);
+- Using hardening [Hardening your Browsers](#hardening-browsers);
 
 - and by using fingerprint-resistant browsers (like Brave or Tor Browser).
 
@@ -5519,23 +5509,23 @@ Here are services you can use to check your browser fingerprints:
 
 Chances are you will find your browser fingerprint unique no matter what you do.
 
-### Human interaction
+### Human interaction { #human-interaction }
 
 Some platforms will add this as a bonus step and require you to have an actual human interaction with a customer care representative. Usually by e-mail but sometimes by chat/phone. They will want to verify that you exist by asking you to reply to an e-mail/chat/phone call.
 
 It is annoying but quite easy to deal with in our case. We are not making bots. This guide is for humans making human accounts.
 
-### User Moderation
+### User Moderation { #user-moderation }
 
 Many platforms will delegate and rely on their users to moderate the others and their content. These are the "report" features that you will find on most platforms.
 
 Getting reported thousands of times does not matter when you are Donald Trump or Kim Kardashian but if you as a sole "friendless" anonymous user gets reported even once, you might get suspended/flagged/banned instantly.
 
-### Behavioral Analysis
+### Behavioral Analysis { #behavioral-analysis }
 
-See [Your Digital Footprint](#your-digital-footprint).
+See [Your Digital Footprint](#digital-footprint).
 
-### Financial transactions
+### Financial transactions { #financial-transactions }
 
 Simple and efficient, some platforms will require you to perform a financial transaction to verify your account sometimes under the pretext of verifying your age. This could be a credit card verification or an exceedingly small amount bank wire. Some will accept a donation in a main cryptocurrency like Bitcoin or Ethereum.
 
@@ -5545,7 +5535,7 @@ E.g., this is now the case on YouTube for some European Users[^384], but it is a
 
 ![image36](../media/image36.png)
 
-### Sign-in with some platform
+### Sign-in with some platform { #sso-signin }
 
 "Why do this user-verification ourselves when we can just ask others to deal with it?"
 
@@ -5557,7 +5547,7 @@ This method will delegate the verification process on those platforms instead of
 
 Fortunately, it is still possible to this day to create those.
 
-### Facial Recognition and Biometrics
+### Facial Recognition and Biometrics { #facial-recognition }
 
 This is a common method used on some Crypto trading platforms and some dating Apps.
 
@@ -5577,7 +5567,7 @@ This verification is extremely hard to defeat but possible. A method to possibly
 
 Unfortunately, some apps require direct access to a smartphone camera to process the verification. In that case, you will need to find a way to do such "face swaps" on the fly using a filter and another way to feed this into the camera used by the app. A possible approach would be similar to this impressive project <https://github.com/iperov/DeepFaceLive> <sup>[[Archive.org]](https://web.archive.org/web/https://github.com/iperov/DeepFaceLive)</sup>.
 
-### Manual reviews
+### Manual reviews { #manual-reviews }
 
 These can be triggered by any of the above and just means someone (usually specialized employees) will review your profile manually and decide whether it is real or not based on their subjective opinion.
 
@@ -5587,7 +5577,7 @@ Pros: Usually that verdict is "final", and you will probably avoid further issue
 
 Cons: Usually that verdict is "final", and you will probably be banned without any appeal possibility if you are not good. Sometimes those reviews end up on the platform just ghosting you and cancel you without any reason whatsoever. Any appeal will be left unanswered, ignored, or will generate some random dark pattern bug when trying to appeal that specific identity (this happens on Instagram for instance where if your account gets "suspended" obviously by some manual review, trying to complete the appeal form will just throw an error and tell you to try again later (We have been trying this same appeal for that identity for the past 6 months at least).
 
-## Getting Online
+## Getting Online { #getting-online }
 
 Now that you have a basic understanding of all the ways you can be de-anonymized, tracked, and verified. Let us get started at evading these while staying anonymous. Remember:
 
@@ -5623,15 +5613,15 @@ So what? Well instead of not trusting anyone or anything, we would advise to **"
 
 - **You are aware of your threat model.**
 
-- **You are in a safe place with public Wi-Fi without your smartphone or any other smart device on you. And preferably in a place without CCTV filming you (remember to [Find some safe places with decent public Wi-Fi](#find-some-safe-places-with-decent-public-wi-fi)** **and [Appendix Q: Using long-range Antenna to connect to Public Wi-Fis from a safe distance](#appendix-q-using-long-range-antenna-to-connect-to-public-wi-fis-from-a-safe-distance)**
+- **You are in a safe place with public Wi-Fi without your smartphone or any other smart device on you. And preferably in a place without CCTV filming you (remember to [Find some safe places with decent public Wi-Fi](#safe-wifi)** **and [Using long-range Antenna to connect to Public Wi-Fis from a safe distance](#long-range-wifi)**
 
 - **You are fully done and preparing one of the routes.**
 
 - **Again, it is crucially important to understand that you will be unable to create most accounts without a valid phone number. Therefore, most of your anonymity on mainstream platforms depends on the anonymity of your online phone number and/or the burner phone with its pre-paid SIM card (if you use one). If your phone number is not anonymous or your burner phone can be traced back to you then you can be de-anonymized. If you cannot get this anonymous phone number and/or a physical SIM with a Burner phone, then you will have to restrict yourself to platforms not asking for phone number verification.**
 
-**Remember to see [Appendix N: Warning about smartphones and smart devices](#appendix-n-warning-about-smartphones-and-smart-devices)**
+**Remember to see [Warning about smartphones and smart devices](#smartphones-warning)**
 
-### Creating new identities
+### Creating new identities { #creating-new-identities }
 
 This is the fun part where you will now create your identities from thin air. These identities do not exist but should be plausible and look "organic". They should ideally have a story, a "legend" (yes this is the real term for this[^392]).
 
@@ -5740,11 +5730,11 @@ Note: If you make several pictures of the same identity using some of the tools 
 
 - Use a different phone number for each identity. Online platforms do keep track of phone number usage and if one identity/number gets flagged for violating Community Guidelines or Terms of Services, it might also get the other identities using the same number flagged/banned as well.
 
-- Adapt your language/writing to the identity to not raise suspicions and lower your chances of being fingerprinted by online platforms. Be especially careful with using pedantic words and figures of speech/quotes that could allow some people to guess your writing is very similar to that person with this Twitter handle or this Reddit user. See [Appendix A4: Counteracting Forensic Linguistics](#appendix-a4-counteracting-forensic-linguistics).
+- Adapt your language/writing to the identity to not raise suspicions and lower your chances of being fingerprinted by online platforms. Be especially careful with using pedantic words and figures of speech/quotes that could allow some people to guess your writing is very similar to that person with this Twitter handle or this Reddit user. See [Counteracting Forensic Linguistics](#forensic-linguistics).
 
 - **Always use TOTP 2FA (not SMS to prevent Sim Swapping attacks**[^395] **and to keep your identity working when your pre-paid card expires) using KeePassXC when available to secure your logins to various platforms.**
 
-- Remember [Appendix A2: Guidelines for passwords and passphrases](#appendix-a2-guidelines-for-passwords-and-passphrases).
+- Remember [Guidelines for passwords and passphrases](#password-guidelines).
 
 Here is also a good guide on this specific topic: <https://gendersec.tacticaltech.org/wiki/index.php/Complete_manual#.22Real.22_names> <sup>[[Archive.org]](https://web.archive.org/web/https://gendersec.tacticaltech.org/wiki/index.php/Complete_manual)</sup>
 
@@ -5772,7 +5762,7 @@ Always use uppercase letters for any setting.
 
 Here is the list of possibilities (this is a general list and many of those countries might not have Exit nodes at all): <https://web.archive.org/web/https://b3rn3d.herokuapp.com/blog/2014/03/05/tor-country-codes/>
 
-### Checking if your Tor Exit Node is terrible
+### Checking if your Tor Exit Node is terrible { #tor-exit-node-check }
 
 **Skip this if you are using a VPN/Proxy over Tor (tho you can also do the same checks with a VPN exit node if you want).**
 
@@ -5800,7 +5790,7 @@ This works whether you're using Tor Browser on a Host OS, in a VM, with Whonix o
 
 If the Exit Node is "clean" (in few lists), proceed to go back to the first tab and open the site you want to use to sign up.
 
-### The Real-Name System
+### The Real-Name System { #real-name-system }
 
 Unfortunately, not using your real identity is against the Terms of Services ("TOS") of many services, especially those owned by Microsoft and Facebook. But don't despair, as explained in the [Requirements](#requirements-limitations), it's still legal in Germany where the courts have upheld the legality of not using real names on online platforms (§13 VI of the German Telemedia Act of 2007[^1]'[^2]). **Fortunately, ToS cannot override laws** **(yet)**.
 
@@ -5832,11 +5822,11 @@ Other countries where this was ruled illegal:
 
 Some platforms are bypassing this requirement altogether by requiring a valid payment method instead (see [Financial transactions:]). While this does not directly require a real name through their ToS, this has the same results as they usually only accept mainstream (not Monero/Cash) payment methods (such as Visa/MasterCard/Maestro or PayPal) which do require a real-name legally as part of their KYC[^240] regulations. The result is the same and even better than a simple real-name policy you could ignore in some countries such as Germany.
 
-### About paid services
+### About paid services { #paid-services }
 
 If you intend to use paid services, privilege those accepting cash payments or Monero payments which you can do directly and safely while keeping your anonymity.
 
-If the service you intend to buy does not accept those but accepts Bitcoin (BTC), consider the following appendix: [Appendix Z: Paying anonymously online with BTC (or any other cryptocurrency)](#appendix-z-online-anonymous-payments-using-cryptocurrencies).
+If the service you intend to buy does not accept those but accepts Bitcoin (BTC), consider the following appendix: [Paying anonymously online with BTC (or any other cryptocurrency)](#anonymous-crypto-payments).
 
 This section will show you an overview of the current various requirements on some platforms:
 
@@ -5866,7 +5856,7 @@ Legend:
 
 - "Indirectly": This means they do require something but indirectly through a third-party system (Financial KYC for example).
 
-- **See [The Real-Name System](#the-real-name-system) for essential information. See below for details.**
+- **See [The Real-Name System](#real-name-system) for essential information. See below for details.**
 
 **Below you'll find a list of "problematic services". If they're not below, it means there are no issues at all with anything (like Briar for example)**
 
@@ -6350,7 +6340,7 @@ You are going to have to find a separate way to post there using at least seven 
 
 **Crypto Wallets**
 
-Use any crypto wallet app within the Windows Virtual Machine. But be careful not to transfer anything toward an Exchange or a known Wallet. Crypto is in most cases NOT anonymous and can be traced back to you when you buy/sell any (remember the [Your Crypto Transactions](#your-crypto-transactions) section).
+Use any crypto wallet app within the Windows Virtual Machine. But be careful not to transfer anything toward an Exchange or a known Wallet. Crypto is in most cases NOT anonymous and can be traced back to you when you buy/sell any (remember the [Your Crypto Transactions](#crypto-transactions) section).
 
 **If you really want to use Crypto, use Monero which is the only one with reasonable privacy/anonymity.**
 
@@ -6380,13 +6370,13 @@ It should work in most cases with most platforms. **The hardest platform to use 
 
 This will obviously not work with banks and most financial platforms (such as PayPal or Crypto Exchanges) requiring actual real official and existing identification. This guide will not help you there as this would be illegal in most places.
 
-### How to Chat & Share Files Anonymously
+### How to Chat & Share Files Anonymously { #anonymous-chat-files }
 
 There are plenty of messaging apps everywhere. Some have excellent UI and UX and terrible Security/Privacy. Some have excellent Security/Privacy but terrible UI and UX. It is not easy to pick the ones that you should use for sensitive activities. So, this section will help you do that.
 
 Before going further, there are also some key basic concepts you should understand:
 
-#### E2E Encryption
+#### E2E Encryption { #on-e2e-encryption }
 
 End-to-end Encryption[^409] (aka e2ee) is a rather simple concept. It just means only you and your destination know each-others public encryption keys and no one in between that would be eavesdropping would be able to decrypt the communication.
 
@@ -6402,15 +6392,15 @@ However, the term is often used differently depending on the provider:
 
 For these reasons, it is always important to check the claims of various apps. Open-Source apps should always be preferred to verify what kind of encryption they are using and if their claims are true. If not open source, such apps should have an openly available independent (made by a reputable third party) report confirming their claims.
 
-#### Roll your own crypto
+#### Roll your own crypto { #roll-your-own-crypto }
 
-See the [Bad Cryptography](#bad-cryptography) section at the start of this guide.
+See the [Bad Cryptography](#on-bad-cryptography) section at the start of this guide.
 
 **Always be cautious of apps rolling their own crypto until it has been reviewed by many in the crypto community (or even better published and peer-reviewed academically)**. Again, this is harder to verify with closed-source proprietary apps.
 
 It is not that rolling your own crypto is bad in essence, it is that good cryptography needs real peer-reviewing, auditing, testing... And since you are probably not a cryptanalyst (and we are not either), chances are high we are not competent to assess the cryptography of some apps.
 
-#### Forward Secrecy
+#### Forward Secrecy { #forward-secrecy }
 
 Forward Secrecy[^410] (FS aka PFS for Perfect Forward Secrecy) is a property of the key agreement protocol of some of those messaging apps and is a companion feature of e2ee. This happens before you establish communication with the destination. The "Forward" refers to the future in time and means that every time you establish a new e2ee communication, a new set of keys will be generated for that specific session. The goal of forward secrecy is to maintain the secrecy of past communications (sessions) even if the current one is compromised. If an adversary manages to get hold of your current e2ee keys, that adversary will then be limited to the content of the single session and will not be able to easily decrypt past ones.
 
@@ -6422,21 +6412,21 @@ More on this topic on this YouTube video: <https://www.youtube.com/watch?v=zSQty
 
 Some providers and apps claiming to offer e2ee do not offer FS/PFS sometimes for usability reasons (group messaging for instance is more complex with PFS). It is therefore important to prefer open-source apps providing forward secrecy to those that do not.
 
-#### Zero-Access Encryption at rest
+#### Zero-Access Encryption at rest { #zero-access-encryption }
 
 Zero-Access Encryption[^411] at rest is used when you store data at some provider (let us say your chat history or chat backups) but this history or backup is encrypted on your side and cannot be read or decrypted by the provider hosting it.
 
 Zero-Access encryption is an added feature/companion to e2ee but is applied mainly to data at rest and not communications.
 
-Examples of this issue would be iMessage and WhatsApp, see the [Your Cloud Backup & Sync Services](#your-cloud-backup-sync-services) at the start of this guide.
+Examples of this issue would be iMessage and WhatsApp, see the [Your Cloud Backup & Sync Services](#cloud-backups) at the start of this guide.
 
 So again, it is best to prefer Apps/Providers that do offer Zero-Access Encryption at rest and cannot read/access any of your data/metadata even at rest and not only limited to communications.
 
 Such a feature would have prevented important hacks such as the Cambridge Analytica scandal[^412] if it were implemented.
 
-#### Metadata Protection
+#### Metadata Protection { #metadata-protection }
 
-Remember the [Your Metadata](#your-metadata) section (including geo-location). End-to-end Encryption is one thing, but it does not necessarily protect your metadata.
+Remember the [Your Metadata](#metadata) section (including geo-location). End-to-end Encryption is one thing, but it does not necessarily protect your metadata.
 
 For Instance, WhatsApp might not know what you are saying but they might know who you are talking to, how long and when you have been talking to someone, who else is in groups with you, and if you transferred data with them (such as large files).
 
@@ -6456,7 +6446,7 @@ Most apps however and especially closed-source proprietary commercial apps will 
 
 Again, it is important to prefer open-source apps with privacy in mind and various methods in place to protect not only the content of communications but all the associated metadata.
 
-#### Open-Source
+#### Open-Source { #open-source }
 
 Finally, Open-Source apps should always be preferred because they allow third parties to check actual capabilities and weaknesses vs claims of marketing departments. Open-Source does not mean the app should be free or non-commercial. It just means transparency.
 
@@ -6983,9 +6973,9 @@ Finally, Open-Source apps should always be preferred because they allow third pa
 
 **Some apps like Threema and Wire were excluded from this comparison due to not being free and not accepting anonymous cash methods such as Cash/Monero.**
 
-#### Conclusion
+#### Conclusion { #comms-conclusion }
 
-**Remember: [Appendix B1: Checklist of things to verify before sharing information](#appendix-b1-checklist-of-things-to-verify-before-sharing-information).**
+**Remember: [Checklist of things to verify before sharing information](#pre-sharing-checklist).**
 
 We will recommend these options in that order (as also recommend by Privacyguides.org[^416]'[^417] except for Session and Cwtch):
 
@@ -7053,7 +7043,7 @@ Any safe options for mobile devices? **Yes, but these are not endorsed/recommend
 
 - iOS:
 
-    - Due to the lack of any better option and while it is **normally not recommended**: Session Messenger: <https://getsession.org/> <sup>[[Archive.org]](https://web.archive.org/web/https://getsession.org/)</sup>. Why is it not recommended these days within the privacy community? **See: [Appendix B7: Caution about Session messenger](#appendix-b7-caution-about-session-messenger) to find out why we are cautious about Session Messenger**.
+    - Due to the lack of any better option and while it is **normally not recommended**: Session Messenger: <https://getsession.org/> <sup>[[Archive.org]](https://web.archive.org/web/https://getsession.org/)</sup>. Why is it not recommended these days within the privacy community? **See: [Caution about Session messenger](#session-messenger-caution) to find out why we are cautious about Session Messenger**.
 
 **Note that all the non-native Tor options must be used over Tor for safety (from Tails or a guest OS running behind the Whonix Gateway such as the Whonix Workstation or an Android-x86 VM).**
 
@@ -7077,9 +7067,9 @@ You can also consult the following external resources for more comparisons (**we
 
 **We do not endorse or recommend some mainstream platforms for anonymity including the much-praised Signal which to this date still requires a phone number to register and contact others. In the context of this guide, we strongly recommend against using Signal if possible. The same recommendation applies to popular forks of Signal such as Molly (<https://molly.im><sup>[[Archive.org]](https://web.archive.org/web/https://molly.im)</sup>)**
 
-### How to share files publicly
+### How to share files publicly { #share-files-publicly }
 
-**Warning: before sharing anything publicly, make sure your files are curated of any information that could compromise your identity. See [Appendix B1: Checklist of things to verify before sharing information](#appendix-b1-checklist-of-things-to-verify-before-sharing-information).**
+**Warning: before sharing anything publicly, make sure your files are curated of any information that could compromise your identity. See [Checklist of things to verify before sharing information](#pre-sharing-checklist).**
 
 Consider the following platforms:
 
@@ -7094,7 +7084,7 @@ Consider the use of IPFS[^421]:
 
 - Pinata (<https://www.pinata.cloud/>): Free tier limited to 1GB total
 
-### Redacting Documents Safely
+### Redacting Documents Safely { #redacting-documents }
 
 You might want to self-publish some information safely and anonymously in the form of writing, pictures, videos, ...
 
@@ -7224,11 +7214,11 @@ Here is a comparative table of recommended/included software compiled from vario
 
 **In all cases, we strongly recommend only using such applications from within a VM or Tails to prevent as much leaking as possible. If you do not, you will have to sanitize those documents carefully before publishing (See [Metadata auditing](#metadata-auditing)).**
 
-### Communicating sensitive information
+### Communicating sensitive information { #sensitive-communication }
 
 You might be interested in communicating information to some organization such as the press anonymously.
 
-If you must do so, you should take some steps because you cannot trust any organization to protect your anonymity[^422]. See [Appendix B1: Checklist of things to verify before sharing information](#appendix-b1-checklist-of-things-to-verify-before-sharing-information).
+If you must do so, you should take some steps because you cannot trust any organization to protect your anonymity[^422]. See [Checklist of things to verify before sharing information](#pre-sharing-checklist).
 
 For this, we strongly recommend the use of SecureDrop[^423] (<https://securedrop.org/> <sup>[[Archive.org]](https://web.archive.org/web/https://securedrop.org/)</sup>) which is an open-source project from the Freedom of the Press Foundation.
 
@@ -7258,7 +7248,7 @@ Without SecureDrop you could consider:
 
 What you should avoid:
 
-- Do not send physical materials using the post due to the risk of leaving DNA/Fingerprints or other traceable information (see [Cash-Paid VPN (preferred)](#cashmonero-paid-vpn)).
+- Do not send physical materials using the post due to the risk of leaving DNA/Fingerprints or other traceable information (see [Cash-Paid VPN (preferred)](#anonymous-cash-vpn)).
 
 - Do not use methods linked to a phone number (even a burner one) such as Signal/WhatsApp/Telegram.
 
@@ -7284,27 +7274,27 @@ If you intend to break your anonymity to protect your safety:
 
 - Check regularly the eventual appearance of compromise of any of your identities using <https://haveibeenpwned.com/> <sup>[[Archive.org]](https://web.archive.org/web/https://haveibeenpwned.com/)</sup> (obviously from a safe environment).
 
-# Backing up your work securely
+# Backing up your work securely { #secure-backups }
 
 **Do not ever upload encrypted file containers with plausible deniability (hidden containers within them) to most cloud services (iCloud, Google Drive, OneDrive, Dropbox) without safety precautions. This is because most cloud services keep backups/versioning of your files, and such backups/versioning of your encrypted containers can be used for differential analysis to prove the existence of a hidden container.**
 
 Instead, this guide will recommend other methods of backing up your stuff safely.
 
-## Offline Backups
+## Offline Backups { #offline-backups }
 
 These backups can be done on an external hard drive or a USB key. Here are the various possibilities.
 
-### Selected Files Backups
+### Selected Files Backups { #selected-files-backup }
 
 **Requirements**
 
 For these back-ups, you will need a USB key or an external hard drive with enough storage capacity to store the files you want to back up.
 
-#### Veracrypt
+#### Veracrypt { #backup-veracrypt }
 
 For this purpose, we will recommend the use of Veracrypt on all platforms (Linux/Windows/macOS) for convenience, security, and portability.
 
-#### Normal File containers
+#### Normal File containers { #normal-file-containers }
 
 The process is fairly simple and all you will need is to follow Veracrypt tutorial here: <https://www.veracrypt.fr/en/Beginner%27s%20Tutorial.html> <sup>[[Archive.org]](https://web.archive.org/web/https://www.veracrypt.fr/en/Beginner%27s%20Tutorial.html)</sup>
 
@@ -7312,7 +7302,7 @@ In this container, you can then store sensitive data manually and or use any bac
 
 You can then store this container anywhere safely.
 
-#### Hidden File containers with plausible deniability
+#### Hidden File containers with plausible deniability { #hidden-file-containers }
 
 The process is also fairly simple and similar to the earlier tutorial except for this time you will use the Veracrypt wizard to create a Hidden Veracrypt Volume instead of a Standard Veracrypt Volume.
 
@@ -7332,19 +7322,19 @@ To do this, when mounting the Decoy Volume, select Mount Options and Check the "
 
 **Be extremely cautious with these file containers:**
 
-- **Do not store multiple versions of them or store them anywhere where some versioning is being done (by the file system or the storage system). These file containers should be identical everywhere you store them. If you have a backup of such containers somewhere, it needs to be absolutely identical to the one you are using. If you do not take this precaution, an adversary could compare two different versions of this container and prove the existence of hidden data. Follow carefully the recommendations here <https://www.veracrypt.fr/en/Security%20Requirements%20for%20Hidden%20Volumes.html>** <sup>[[Archive.org]](https://web.archive.org/web/https://www.veracrypt.fr/en/Security%20Requirements%20for%20Hidden%20Volumes.html)</sup>**. Remember the [Local Data Leaks and Forensics](#local-data-leaks-and-forensics) section.**
+- **Do not store multiple versions of them or store them anywhere where some versioning is being done (by the file system or the storage system). These file containers should be identical everywhere you store them. If you have a backup of such containers somewhere, it needs to be absolutely identical to the one you are using. If you do not take this precaution, an adversary could compare two different versions of this container and prove the existence of hidden data. Follow carefully the recommendations here <https://www.veracrypt.fr/en/Security%20Requirements%20for%20Hidden%20Volumes.html>** <sup>[[Archive.org]](https://web.archive.org/web/https://www.veracrypt.fr/en/Security%20Requirements%20for%20Hidden%20Volumes.html)</sup>**. Remember the [Local Data Leaks and Forensics](#local-data-leaks) section.**
 
-- We strongly recommend storing such containers on external USB keys that you will only mount from your guest VMs and never from your Host OS. **After each modification to the files, you should clean the free space on the USB disk and make sure that any backup of such containers is absolutely identical on each key and your computer. See the [How to securely delete specific files/folders/data on your HDD/SSD and Thumb drives](#appendix-m-biosuefi-options-to-wipe-disks-in-various-brands) section of this guide for help on doing this.**
+- We strongly recommend storing such containers on external USB keys that you will only mount from your guest VMs and never from your Host OS. **After each modification to the files, you should clean the free space on the USB disk and make sure that any backup of such containers is absolutely identical on each key and your computer. See the [How to securely delete specific files/folders/data on your HDD/SSD and Thumb drives](#bios-disk-wipe-options) section of this guide for help on doing this.**
 
 - If you have time, **We will even recommend that you delete wipe the keys completely before making any modification on such containers on your computer (if you do not work from the USB key directly).** This is to prevent an adversary that would seize your assets before you could update the keys from having multiple versions of the containers that could lead to proving the existence of hidden data using forensics techniques.
 
 - **Do not ever store such containers on cloud storage platforms that have backups and where you have no direct control over permanent deletion. They might keep "old versions" of your files which can then also be used by forensics to prove the existence of hidden data.**
 
-- If you are mounting the hidden volume from your Host OS (**not recommended**), you should erase all traces of this hidden volume everywhere after use. There could be traces in various places (system logs, file systems journaling, recent documents in your applications, indexing, registry entries...). Refer to the [Some additional measures against forensics](#some-additional-measures-against-forensics) section of this guide to remove such artifacts. Especially on Windows. Instead, you should mount them on your Guest VMs. With Virtualbox for instance, you could take a snapshot of the VM before opening/working the hidden volume and then restore the snapshot before opening/working on it after use. This should erase the traces of its presence and mitigate the issue. Your Host OS might keep logs of the USB key being inserted but not of the hidden volume usage. Therefore, we do not recommend using these from your host OS.
+- If you are mounting the hidden volume from your Host OS (**not recommended**), you should erase all traces of this hidden volume everywhere after use. There could be traces in various places (system logs, file systems journaling, recent documents in your applications, indexing, registry entries...). Refer to the [Some additional measures against forensics](#anti-forensics) section of this guide to remove such artifacts. Especially on Windows. Instead, you should mount them on your Guest VMs. With Virtualbox for instance, you could take a snapshot of the VM before opening/working the hidden volume and then restore the snapshot before opening/working on it after use. This should erase the traces of its presence and mitigate the issue. Your Host OS might keep logs of the USB key being inserted but not of the hidden volume usage. Therefore, we do not recommend using these from your host OS.
 
-- Do not store these on external SSD drives if you are not sure you can use Trim on them (see the [Understanding HDD vs SSD](#understanding-hdd-vs-ssd) section).
+- Do not store these on external SSD drives if you are not sure you can use Trim on them (see the [Understanding HDD vs SSD](#hdd-vs-ssd) section).
 
-### Full Disk/System Backups
+### Full Disk/System Backups { #full-disk-backup }
 
 **TLDR version: Just use Clonezilla as it worked reliably and consistently with all my tests on all operating systems except for Macs where you should probably use native utilities (Time Machine/Disk utility instead) to avoid compatibility issues and since you are using Native macOS encryption. When using Windows, do not back up a partition containing a hidden OS in case you use Plausible Deniability** (as explained before, this backup could allow an adversary to prove the existence of the hidden OS by comparing the last backup to the current system where data will have changed and defeat plausible deniability, use file containers instead).
 
@@ -7374,31 +7364,31 @@ We made extensive testing using live backups utilities (Macrium Reflect, EaseUS 
 
 For backing up single files while you work, we recommend using file containers or encrypted media directly and manually as explained in the earlier section.
 
-#### Requirements
+#### Requirements { #backup-requirements }
 
 You will need a separate external drive with at least the same or more free space available than your source disk. If your laptop has a 250GB disk. You will need at least 250GB of free disk space for the full image backup. Sometimes this will be reduced significantly with compression by the backup utility but as a safety rule, you should have at least the same or more space on your backup drive.
 
-#### Some general warnings and considerations
+#### Some general warnings and considerations { #backup-warnings }
 
 - If you use Secure Boot, you will need a backup utility that supports Secure Boot which includes Clonezilla AMD64 versions.
 
 - Consider the use of exFAT as the file system for your backup drives as those will provide better compatibility between various OSes (macOS, Linux, and Windows) vs NTFS/HFS/ext4...
 
-#### Linux
+#### Linux { #backup-linux }
 
-##### Ubuntu
+##### Ubuntu { #backup-ubuntu }
 
 We will recommend the use of the open-source Clonezilla utility for convenience and reliability but there are many other native Linux utilities and methods you could use for this purpose.
 
-So, you should follow the steps in [Appendix E: Clonezilla](#appendix-e-clonezilla)
+So, you should follow the steps in [Clonezilla](#clonezilla)
 
-##### QubesOS
+##### QubesOS { #backup-qubes }
 
 Qubes OS recommends using their own utility for backups as documented here <https://www.qubes-os.org/doc/backup-restore/> <sup>[[Archive.org]](https://web.archive.org/web/https://www.qubes-os.org/doc/backup-restore/)</sup>. But it is just a hassle and provides limited added value unless you just want to back up a single Qube. So instead, we are also recommending just making a full image with Clonezilla which will remove all the hassle and bring you back a working system in a few simple steps.
 
-So, you should follow the steps in [Appendix E: Clonezilla](#appendix-e-clonezilla)
+So, you should follow the steps in [Clonezilla](#clonezilla)
 
-#### Windows
+#### Windows { #backup-windows }
 
 We will only recommend the use of the open-source and free Clonezilla utility for this purpose. There are commercial utilities that offer the same functionality, but we do not see any advantage in using any of them vs Clonezilla.
 
@@ -7408,13 +7398,13 @@ Some warnings:
 
 - You should always have a backup of your Veracrypt rescue disk at hand somewhere to be able to resolve some issues that might still appear after a restore. Remember this rescue disk does not contain your passphrase or any sensitive information. You can store it as is.
 
-- If you changed the HDD/SSD after a failure, Windows 10/11 may refuse to boot if your hard drive ID is changed. You should also save this ID before backing up as you might need to change the ID of the new drive as Windows 10/11 might require a matching ID before booting. See [Appendix F: Diskpart.](#appendix-f-diskpart)
+- If you changed the HDD/SSD after a failure, Windows 10/11 may refuse to boot if your hard drive ID is changed. You should also save this ID before backing up as you might need to change the ID of the new drive as Windows 10/11 might require a matching ID before booting. See [Diskpart.](#diskpart)
 
 - **In case you are using Plausible Deniability on Windows. DO NOT back up the hidden OS partition as this image could be used by Forensics to prove the existence of the hidden volume as explained earlier. It is okay to back up the Decoy OS partition without issues, but you should never back up the partition containing the Hidden OS.**
 
-Follow the steps in [Appendix E: Clonezilla](#appendix-e-clonezilla)
+Follow the steps in [Clonezilla](#clonezilla)
 
-#### macOS
+#### macOS { #backup-macos }
 
 we would recommend just using the native Time Machine backup with encryption (and a strong passphrase that could be the same as your OS) as per the guides provided at Apple: <https://support.apple.com/en-ie/guide/mac-help/mh21241/mac> <sup>[[Archive.org]](https://web.archive.org/web/https://support.apple.com/en-ie/guide/mac-help/mh21241/mac)</sup> and <https://support.apple.com/en-ie/guide/mac-help/mh11421/11.0/mac/11.0> <sup>[[Archive.org]](https://web.archive.org/web/https://support.apple.com/en-ie/guide/mac-help/mh11421/11.0/mac/11.0)</sup>.
 
@@ -7426,9 +7416,9 @@ It is just simpler and will work online while you work. You will be able to reco
 
 It is possible to also use Clonezilla to clone your Mac Hard Drive, but it could bring hardware compatibility issues and probably will not add much in terms of security. So, for macOS, We are not specifically recommending Clonezilla.
 
-## Online Backups
+## Online Backups { #online-backups }
 
-### Files
+### Files { #online-backup-files }
 
 This is a tricky one. The problem is that it depends on your threat model.
 
@@ -7438,15 +7428,15 @@ This is a tricky one. The problem is that it depends on your threat model.
 
 Obviously do not ever do/access those backups from unsecured/unsafe devices but only from the secure environments, you picked before.
 
-#### Self-hosting
+#### Self-hosting { #self-hosting-backup }
 
 Self-hosting (using Nextcloud for instance) is also a possibility provided you do have an anonymous hosting
 
-**Please see [Appendix A1: Recommended VPS hosting providers](#appendix-a1-recommended-vps-hosting-providers).**
+**Please see [Recommended VPS hosting providers](#vps-hosting-providers).**
 
-Please also consider [Appendix B2: Monero Disclaimer](#appendix-b2-monero-disclaimer).
+Please also consider [Monero Disclaimer](#monero-disclaimer).
 
-#### Cloud-hosting
+#### Cloud-hosting { #cloud-hosting-backup }
 
 For smaller files, consider:
 
@@ -7458,7 +7448,7 @@ We are currently not aware of any online storage/hosting platform accepting cash
 
 If you do intend to store sensitive data on "mainstream platforms" (Dropbox, Google Drive, OneDrive...), **remember not to ever store plausible deniability containers on those and remember to encrypt and check (for metadata...) anything locally before uploading there**. Either with software like Veracrypt or with a software like Cryptomator (<https://cryptomator.org/>). Do not ever upload non-encrypted files on those platforms and repeating myself, only access them from a secure shielded VM.
 
-### Information
+### Information { #online-backup-info }
 
 If you just want to save information (text), we will recommend the use of secure and private pastebins[^425]. Mostly we will stick to the ones recommended by PrivacyGuides.org (<https://www.privacyguides.org/productivity/#paste-services> <sup>[[Archive.org]](https://web.archive.org/web/https://www.privacyguides.org/productivity/#paste-services)</sup> ) :
 
@@ -7470,15 +7460,15 @@ On these providers, you can just create a password-protected pad with the inform
 
 Just create a pad, protect it with a password and write your info in it. Remember the address of the pad.
 
-## Synchronizing your files between devices Online
+## Synchronizing your files between devices Online { #file-sync }
 
 To that, the answer is very simple and a clear consensus for everyone: <https://syncthing.net/> <sup>[[Archive.org]](https://web.archive.org/web/https://syncthing.net/)</sup>
 
 Just use SyncThing, it is the safest and most secure way to synchronize between devices, it is free and open-source, and it can easily be used in a portable way without install from a container that needs syncing.
 
-# Covering your tracks
+# Covering your tracks { #covering-tracks }
 
-## Understanding HDD vs SSD
+## Understanding HDD vs SSD { #hdd-vs-ssd }
 
 ![image41](../media/image41.png)
 
@@ -7500,7 +7490,7 @@ The methods and utilities to manage/wipe them will vary depending on the type of
 
 **On most recent laptops, chances are high that it will be one of the middle options (M.2 SATA or M.2 NVMe).**
 
-### Wear-Leveling
+### Wear-Leveling { #wear-leveling }
 
 These drives use a technique called wear leveling[^426]. At a high level, wear leveling works as follows. The space on every disk is divided into blocks that are themselves divided into pages, like the chapters in a book are made of pages. When a file is written to disk, it is assigned to a certain set of pages and blocks. If you wanted to overwrite the file in an HDD, then all you would have to do is tell the disk to overwrite those blocks. But in SSDs and USB drives, erasing and re-writing the same block can wear it out. Each block can only be erased and rewritten a limited number of times before that block just will not work anymore (the same way if you keep writing and erasing with a pencil and paper, eventually the paper might rip and be useless). To counteract this, SSDs and USB drives will try to make sure that the number of times each block has been erased and rewritten is about the same so that the drive will last as long as possible (thus the term wear leveling). As a side effect, sometimes instead of erasing and writing the block, a file was originally stored on, the drive will instead leave that block alone, mark it as invalid, and just write the modified file to a different block. This is like leaving the chapter in the book unchanged, writing the modified file on a different page, and then just updating the book's table of contents to point to the new location. All of this occurs at a very low level in the electronics of the disk, so the operating system does not even realize it has happened. This means, however, that even if you try to overwrite a file, there is no guarantee the drive will actually overwrite it, and that's why secure deletion with SSDs is so much harder.
 
@@ -7508,7 +7498,7 @@ Wear-leveling alone can therefore be a disadvantage for security and an advantag
 
 Most of those old secure deletion utilities were written with HDD in mind and have no control over wear-leveling and are completely pointless when using an SSD. Avoid them on an SSD drive.
 
-### Trim Operations
+### Trim Operations { #trim-operations }
 
 So, what now? Well here comes the Trim[^427] operation. When you delete data on your SSD, your OS should support what is called a Trim operation command and **could (should)** issue this Trim command to the SSD drive periodically (daily, weekly, monthly...). This Trim command will then let know the SSD drive controller that there are pages within blocks containing data that are now free to be really deleted without deleting anything itself.
 
@@ -7528,19 +7518,19 @@ In addition to marking files for deletion (on reputable SSD drives), Trim usuall
 
 **Trim is your ally and should always be enabled when using an SSD drive and should offer sufficient reasonable protection**. And this is also the reason you should not use Veracrypt Plausible deniability on a Trim enabled SSD as this feature is incompatible with Trim[^429].
 
-### Garbage Collection
+### Garbage Collection { #garbage-collection }
 
 Garbage collection[^430] is an internal process running within your SSD drive that looks for data marked for erasure. This process is done by the SSD controller, and you have no control over it. If you go back to the illustration above, you will see that Garbage collection is the last step and will notice that some pages are marked for deletion in a specific block, then copy the valid pages (not marked for deletion) to a different free destination block and then will be able to erase the source block entirely.
 
 Garbage collection in itself does NOT require Trim to function, but it will be much faster and more efficient if Trim is performed. Garbage collection is one of the processes that will actually erase data from your SSD drive permanently.
 
-### Conclusion
+### Conclusion { #storage-conclusion }
 
 So, the fact is that it is very unlikely[^431]'[^432] and difficult for a forensic examiner to be able to recover data from a Trimmed SSD but it is not completely impossible either[^433]'[^434]'[^435] if they are fast enough and have access to extensive equipment, skills, and motivation[^436].
 
 Within the context of this guide which also uses full disk encryption. Deletion and Trim should be reasonably secure enough on any SSD drive and will be recommended as the standard method of deletion.
 
-## How to securely wipe your whole Laptop/Drives
+## How to securely wipe your whole Laptop/Drives { #secure-wipe-drives }
 
 ![image44](../media/image44.png)
 
@@ -7618,23 +7608,23 @@ This guide will therefore recommend the use of the free utilities hdparm and nvm
 
 If you can afford it, just buy Parted Magic for 11$ which provides an easy-to-use graphical tool for wiping SSD drives using the option of your choice[^440]'[^441].
 
-**Note:** **Again, before proceeding, you should check your BIOS as some will offer a built-in tool to securely erase your drive (ATA/NVMe Secure Erase or ATA/NVMe Sanitize). If this is available, you should use that, and the following steps will not be necessary. Check this before going ahead to avoid the hassle, see [Appendix M: BIOS/UEFI options to wipe disks in various Brands](#appendix-m-biosuefi-options-to-wipe-disks-in-various-brands)).**
+**Note:** **Again, before proceeding, you should check your BIOS as some will offer a built-in tool to securely erase your drive (ATA/NVMe Secure Erase or ATA/NVMe Sanitize). If this is available, you should use that, and the following steps will not be necessary. Check this before going ahead to avoid the hassle, see [BIOS/UEFI options to wipe disks in various Brands](#bios-disk-wipe-options)).**
 
-### Linux (all versions including Qubes OS)
+### Linux (all versions including Qubes OS) { #wipe-linux }
 
-#### System/Internal SSD
+#### System/Internal SSD { #wipe-linux-ssd }
 
 - Option A: Check if your BIOS/UEFI has a built-in option to do so and if it does, use the correct option ("ATA/NVMe Secure Erase" or "ATA/NVMe Sanitize"). Do not use wipe with passes on an SSD drive.
 
-- Option B: See [Appendix D: Using System Rescue to securely wipe an SSD drive](#appendix-d-using-system-rescue-to-securely-wipe-an-ssd-drive)
+- Option B: See [Using System Rescue to securely wipe an SSD drive](#system-rescue-ssd-wipe)
 
 - Option C: Wipe your disk and re-install Linux with new full disk encryption to overwrite all sectors with new encrypted data. **This method will be terribly slow compared to Option A and B as it will slowly overwrite your whole SSD. Also, note that this might not be the default behavior when using LUKS. You might have to check the option to also encrypt the empty space for this effectively wipe the drive.**
 
 **Keep in mind all these options need to be applied on the entire physical drive and not on a specific partition/volume. If you do not, wear-leveling mechanisms might prevent this from working properly.**
 
-#### External SSD
+#### External SSD { #wipe-linux-ext-ssd }
 
-First please see [Appendix K: Considerations for using external SSD drives](#appendix-k-considerations-for-using-external-ssd-drives)
+First please see [Considerations for using external SSD drives](#on-external-ssd)
 
 Trim should be sufficient in most cases and you could just use the blkdiscard command to force an entire device trim as explained here: <https://wiki.archlinux.org/index.php/Solid_state_drive#Trim_an_entire_device> <sup>[[Archive.org]](https://web.archive.org/web/https://wiki.archlinux.org/index.php/Solid_state_drive)</sup>
 
@@ -7646,15 +7636,15 @@ Alternatively, you could also (not securely) wipe the disk normally and then fil
 
 **Keep in mind all these options need to be applied on the entire physical drive and not on a specific partition/volume. If you do not, wear-leveling mechanisms might prevent this from working properly.**
 
-#### Internal/System HDD
+#### Internal/System HDD { #wipe-linux-hdd }
 
 - Option A: Check if your BIOS/UEFI has a built-in option and use them and if it does, use the correct option (Wipe + Passes in the case of an HDD).
 
-- Option B: See [Appendix I: Using ShredOS to securely wipe an HDD drive](#appendix-i-using-shredos-to-securely-wipe-an-hdd-drive)
+- Option B: See [Using ShredOS to securely wipe an HDD drive](#shredos-hdd-wipe)
 
 - Option C: Wipe your disk and re-install Linux with new full disk encryption to overwrite all sectors with new encrypted data. **This method will be terribly slow compared to Option A and B as it will slowly overwrite your whole HDD.**
 
-#### External/Secondary HDD and Thumb Drives
+#### External/Secondary HDD and Thumb Drives { #wipe-linux-ext-hdd }
 
 - Option A: Follow one of these tutorials:
 
@@ -7668,29 +7658,29 @@ I recommend using dd or shred for this purpose.
 
 - Option B: Install and use BleachBit <https://www.bleachbit.org/download/linux> <sup>[[Archive.org]](https://web.archive.org/web/https://www.bleachbit.org/download/linux)</sup> or follow this EFF tutorial <https://ssd.eff.org/en/module/how-delete-your-data-securely-linux> <sup>[[Archive.org]](https://web.archive.org/web/https://ssd.eff.org/en/module/how-delete-your-data-securely-linux)</sup>
 
-- Option C: See [Appendix I: Using ShredOS to securely wipe an HDD drive](#appendix-i-using-shredos-to-securely-wipe-an-hdd-drive)
+- Option C: See [Using ShredOS to securely wipe an HDD drive](#shredos-hdd-wipe)
 
-### Windows
+### Windows { #wipe-windows }
 
 Unfortunately, you will not be able to wipe your Host OS using the Microsoft built-in tools within the settings. This is because your bootloader was modified with Veracrypt and will make the operation fail. In addition, this method would not be effective with an SSD drive.
 
-#### System/Internal SSD
+#### System/Internal SSD { #wipe-windows-ssd }
 
 - Option A: Check if your BIOS/UEFI has a built-in option to do so and if it does, use the correct option ("ATA/NVMe Secure Erase" or "ATA/NVMe Sanitize"). Do not use wipe with passes on an SSD drive.
 
-- Option B: Check [Appendix J: Manufacturer tools for Wiping HDD and SSD drives.](#appendix-j-manufacturer-tools-for-wiping-hdd-and-ssd-drives)
+- Option B: Check [Manufacturer tools for Wiping HDD and SSD drives.](#manufacturer-wipe-tools)
 
-- Option C: See [Appendix D: Using System Rescue to securely wipe an SSD drive](#appendix-d-using-system-rescue-to-securely-wipe-an-ssd-drive)
+- Option C: See [Using System Rescue to securely wipe an SSD drive](#system-rescue-ssd-wipe)
 
 - Option D: Wipe your disk and re-install Windows before performing new full disk encryption (using Veracrypt or Bitlocker) to overwrite all sectors with new encrypted data. **This method will be slower compared to Option A and B as it will overwrite your whole SSD.**
 
 **Keep in mind all these options need to be applied on the entire physical drive and not on a specific partition/volume. If you do not, wear-leveling mechanisms might prevent this from working properly.**
 
-#### External SSD
+#### External SSD { #wipe-windows-ext-ssd }
 
-First please see [Appendix K: Considerations for using external SSD drives](#appendix-k-considerations-for-using-external-ssd-drives)
+First please see [Considerations for using external SSD drives](#on-external-ssd)
 
-Use the manufacturer-provided tools if possible. Those tools should provide support for safe secure erase or sanitize over USB and are available for most brands: See [Appendix J: Manufacturer tools for Wiping HDD and SSD drives.](#appendix-j-manufacturer-tools-for-wiping-hdd-and-ssd-drives)
+Use the manufacturer-provided tools if possible. Those tools should provide support for safe secure erase or sanitize over USB and are available for most brands: See [Manufacturer tools for Wiping HDD and SSD drives.](#manufacturer-wipe-tools)
 
 If you are not sure about the Trim support on your USB disk, (not securely) wipe it normally (simple quick format will do) and then encrypt the disk again using Veracrypt or Bitlocker. The full disk decryption and re-encryption process will overwrite the entirety of the SSD disk and should ensure a secure wipe.
 
@@ -7698,17 +7688,17 @@ Alternatively, you could also (not securely) wipe the disk normally and then fil
 
 **Keep in mind all these options need to be applied on the entire physical drive and not on a specific partition/volume. If you do not, wear-leveling mechanisms might prevent this from working properly.**
 
-#### Internal/System HDD
+#### Internal/System HDD { #wipe-windows-hdd }
 
 - Option A: Check if your BIOS/UEFI has a built-in option to do so and if it does, use the correct option (Wipe + Passes).
 
-- Option B: Check [Appendix J: Manufacturer tools for Wiping HDD and SSD drives](#appendix-j-manufacturer-tools-for-wiping-hdd-and-ssd-drives)
+- Option B: Check [Manufacturer tools for Wiping HDD and SSD drives](#manufacturer-wipe-tools)
 
-- Option C: See [Appendix I: Using ShredOS to securely wipe an HDD drive](#appendix-i-using-shredos-to-securely-wipe-an-hdd-drive)
+- Option C: See [Using ShredOS to securely wipe an HDD drive](#shredos-hdd-wipe)
 
-#### External/Secondary HDD and Thumb Drives
+#### External/Secondary HDD and Thumb Drives { #wipe-windows-ext-hdd }
 
-- Option A: Check [Appendix J: Manufacturer tools for Wiping HDD and SSD drives](#appendix-j-manufacturer-tools-for-wiping-hdd-and-ssd-drives)
+- Option A: Check [Manufacturer tools for Wiping HDD and SSD drives](#manufacturer-wipe-tools)
 
 - Option B: Use external tools such as:
 
@@ -7716,21 +7706,21 @@ Alternatively, you could also (not securely) wipe the disk normally and then fil
 
     - KillDisk Free: <http://killdisk.com/killdisk-freeware.htm> <sup>[[Archive.org]](https://web.archive.org/web/http://killdisk.com/killdisk-freeware.htm)</sup>
 
-- Option C: See [Appendix I: Using ShredOS to securely wipe an HDD drive](#appendix-i-using-shredos-to-securely-wipe-an-hdd-drive)
+- Option C: See [Using ShredOS to securely wipe an HDD drive](#shredos-hdd-wipe)
 
-### macOS
+### macOS { #wipe-macos }
 
-#### System/Internal SSD
+#### System/Internal SSD { #wipe-macos-ssd }
 
 Unfortunately, the macOS Recovery disk utility will not be able to perform a secure erase of your SSD drive as stated in Apple documentation <https://support.apple.com/en-gb/guide/disk-utility/dskutl14079/mac> <sup>[[Archive.org]](https://web.archive.org/web/https://support.apple.com/en-gb/guide/disk-utility/dskutl14079/mac)</sup>.
 
 In most cases, if your disk was encrypted with Filevault and you just perform a normal erase, it should be "enough" according to them. It is not according to me, so you have no option besides re-installing macOS again and re-encrypt it with Filevault again after re-installing. This should perform a "crypto erase" by overwriting your earlier install and encryption. This method will be quite slow, unfortunately.
 
-If you want to do a faster secure erase (or have no time to perform a re-install and re-encryption), you can try using the method described in [Appendix D: Using System Rescue to securely wipe an SSD drive](#appendix-d-using-system-rescue-to-securely-wipe-an-ssd-drive) **(This will not work on M1 Macs)**. **Be careful tho as this will also erase your recovery partition which is needed to reinstall macOS.**
+If you want to do a faster secure erase (or have no time to perform a re-install and re-encryption), you can try using the method described in [Using System Rescue to securely wipe an SSD drive](#system-rescue-ssd-wipe) **(This will not work on M1 Macs)**. **Be careful tho as this will also erase your recovery partition which is needed to reinstall macOS.**
 
-#### External SSD
+#### External SSD { #wipe-macos-ext-ssd }
 
-First please see [Appendix K: Considerations for using external SSD drives](#appendix-k-considerations-for-using-external-ssd-drives)
+First please see [Considerations for using external SSD drives](#on-external-ssd)
 
 If your USB controller and USB SSD disk support Trim and ATA secure erase, and if Trim is enabled on the disk by macOS, you can just wipe the whole disk normally and data should not be recoverable on recent disks.
 
@@ -7744,11 +7734,11 @@ The full disk re-encryption process will overwrite the entirety of the SSD disk 
 
 **Keep in mind all these options need to be applied on the entire physical drive and not on a specific partition/volume. If you do not, wear-leveling mechanisms might prevent this from working properly.**
 
-#### External HDD and Thumb Drives
+#### External HDD and Thumb Drives { #wipe-macos-ext-hdd }
 
 Follow this tutorial: <https://support.apple.com/guide/disk-utility/erase-and-reformat-a-storage-device-dskutl14079/mac> <sup>[[Archive.org]](https://web.archive.org/web/https://support.apple.com/guide/disk-utility/erase-and-reformat-a-storage-device-dskutl14079/mac)</sup> and use the secure erase option from Disk Utility which should work fine on HDD and Thumb drives.
 
-## How to securely delete specific files/folders/data on your HDD/SSD and Thumb drives
+## How to securely delete specific files/folders/data on your HDD/SSD and Thumb drives { #secure-delete-files }
 
 The same principles from the earlier chapters apply to this one. The same issues arise too.
 
@@ -7758,17 +7748,17 @@ With an SSD drive, however, again everything becomes a bit complicated because y
 
 Since the Trim operation is not continuous on most recent hard drives but scheduled, simply forcing a Trim operation should be enough. But again, the only way to be 100% sure a file is securely deleted from your unlocked encrypted SSD is to again overwrite all the free space after deletion of the files in question or to decrypt/re-encrypt the drive. But this is overkill and not necessary. A simple disk-wide Trim should be sufficient.
 
-**Remember tho that no matter the deletion method you use for any file on any medium (HDD drive, SSD, USB Thumb drive). It will probably leave other traces (logs, indexing, shellbags ...) within your system and those traces will also need to be cleaned. Also, remember that your drives should be fully encrypted and so this is most likely an extra measure. More on that later in the [Some additional measures against forensics](#some-additional-measures-against-forensics) section.**
+**Remember tho that no matter the deletion method you use for any file on any medium (HDD drive, SSD, USB Thumb drive). It will probably leave other traces (logs, indexing, shellbags ...) within your system and those traces will also need to be cleaned. Also, remember that your drives should be fully encrypted and so this is most likely an extra measure. More on that later in the [Some additional measures against forensics](#anti-forensics) section.**
 
-### Windows
+### Windows { #secure-delete-windows }
 
 **Remember you cannot use Trim at all if you are using Plausible Deniability on an SSD drive against all recommendations.**
 
-#### System/Internal SSD drive
+#### System/Internal SSD drive { #secure-delete-windows-ssd }
 
 At this stage, and just delete the file permanently (empty the recycle bin) and trim/garbage collection will do the rest. This should be sufficient.
 
-If you do not want to wait for the periodic Trim (set to Weekly by default in Windows 10/11), you could also force a disk-wide Trim using the Windows native Optimize tool (see [Appendix H: Windows Cleaning Tools](#appendix-h-windows-cleaning-tools)).
+If you do not want to wait for the periodic Trim (set to Weekly by default in Windows 10/11), you could also force a disk-wide Trim using the Windows native Optimize tool (see [Windows Cleaning Tools](#windows-cleaning-tools)).
 
 If data were deleted by some utility (for instance by Virtualbox when reverting a snapshot), you could also issue a disk-wide Trim to clean anything remaining using the same Optimize tool.
 
@@ -7784,9 +7774,9 @@ If you want more security and do not trust the Trim operation, then you will hav
 
 **Keep in mind all these options need to be applied on the entire physical drive and not on a specific partition/volume. If you do not, wear-leveling mechanisms might prevent this from working properly.**
 
-#### Internal/External HDD or a USB Thumb Drive
+#### Internal/External HDD or a USB Thumb Drive { #secure-delete-windows-hdd }
 
-Please refer to [Appendix H: Windows Cleaning Tools](#appendix-h-windows-cleaning-tools) and pick a utility before going ahead.
+Please refer to [Windows Cleaning Tools](#windows-cleaning-tools) and pick a utility before going ahead.
 
 The process is quite simple depending on the tool you picked from the Appendix:
 
@@ -7798,11 +7788,11 @@ The process is quite simple depending on the tool you picked from the Appendix:
 
 In the case of USB thumb drives, consider wiping free space using one of the above utilities after file deletion or wiping them completely using Eraser / KillDisk as instructed previously.
 
-#### External SSD drive
+#### External SSD drive { #secure-delete-windows-ext-ssd }
 
-First please see [Appendix K: Considerations for using external SSD drives](#appendix-k-considerations-for-using-external-ssd-drives)
+First please see [Considerations for using external SSD drives](#on-external-ssd)
 
-If Trim is supported and enabled by Windows for your external SSD drive. There should be no issue in securely deleting data normally just with normal delete commands. Additionally, you could also force a Trim using the Windows native Optimize tool (see [Appendix H: Windows Cleaning Tools](#appendix-h-windows-cleaning-tools)):
+If Trim is supported and enabled by Windows for your external SSD drive. There should be no issue in securely deleting data normally just with normal delete commands. Additionally, you could also force a Trim using the Windows native Optimize tool (see [Windows Cleaning Tools](#windows-cleaning-tools)):
 
 Just open Windows Explorer, Right Click on your System Drive and click Properties. Select Tools. Click Optimize and then Optimize again to force a Trim. You are done. That is probably enough in my opinion.
 
@@ -7814,9 +7804,9 @@ If Trim is not supported or you are not sure, you might have to ensure secure da
 
 **Keep in mind all these options need to be applied on the entire physical drive and not on a specific partition/volume. If you do not, wear-leveling mechanisms might prevent this from working properly.**
 
-### Linux (non-Qubes OS)
+### Linux (non-Qubes OS) { #secure-delete-linux }
 
-#### System/Internal SSD drive
+#### System/Internal SSD drive { #secure-delete-linux-ssd }
 
 Just permanently delete the file (and empty recycle bin) and it should be unrecoverable due to Trim operations and garbage collection.
 
@@ -7848,15 +7838,15 @@ If you want more security and do not trust the Trim operation, then you will hav
 
 **Keep in mind all these options need to be applied on the entire physical drive and not on a specific partition/volume. If you do not, wear-leveling mechanisms might prevent this from working properly.**
 
-#### Internal/External HDD drive or a Thumb Drive
+#### Internal/External HDD drive or a Thumb Drive { #secure-delete-linux-hdd }
 
 - You can do this the graphical way with BleachBit following this tutorial from the EFF: <https://ssd.eff.org/en/module/how-delete-your-data-securely-linux> <sup>[[Archive.org]](https://web.archive.org/web/https://ssd.eff.org/en/module/how-delete-your-data-securely-linux)</sup>
 
 - Or you can do this from the command line following this tutorial: <https://linuxhint.com/completely_wipe_hard_drive_ubuntu/> <sup>[[Archive.org]](https://web.archive.org/web/https://linuxhint.com/completely_wipe_hard_drive_ubuntu/)</sup> (For this purpose we recommend wipe and shred).
 
-#### External SSD drive
+#### External SSD drive { #secure-delete-linux-ext-ssd }
 
-First please see [Appendix K: Considerations for using external SSD drives](#appendix-k-considerations-for-using-external-ssd-drives)
+First please see [Considerations for using external SSD drives](#on-external-ssd)
 
 If Trim is supported and enabled by your Linux Distribution for your external SSD drive. There should be no issue in securely deleting data normally and just issue an ```fstrim --all``` from the terminal to trim the drive. This utility is part of the "util-linux" package on Debian/Ubuntu and should be installed by default on Fedora.
 
@@ -7886,9 +7876,9 @@ If Trim is not supported or you want to be sure, you might have to ensure secure
 
 **Keep in mind all these options need to be applied on the entire physical drive and not on a specific partition/volume. If you do not, wear-leveling mechanisms might prevent this from working properly.**
 
-### Linux (Qubes OS)
+### Linux (Qubes OS) { #secure-delete-qubes }
 
-#### System/Internal SSD drive
+#### System/Internal SSD drive { #secure-delete-qubes-ssd }
 
 As with other Linux distros, normal deletion and trim should be sufficient on most SSD drives. So just permanently delete the file (and empty any recycle bin) and it should be unrecoverable due to periodic Trim operations and garbage collection.
 
@@ -7920,7 +7910,7 @@ As with other Linux Systems, if you want more security and do not trust the Trim
 
 **Keep in mind all these options need to be applied on the entire physical drive and not on a specific partition/volume. If you do not, wear-leveling mechanisms might prevent this from working properly.**
 
-#### Internal/External HDD drive or a Thumb Drive
+#### Internal/External HDD drive or a Thumb Drive { #secure-delete-qubes-hdd }
 
 Use the same method as Linux from a Qube connected to that specific USB device
 
@@ -7928,9 +7918,9 @@ Use the same method as Linux from a Qube connected to that specific USB device
 
 - Or you can do this from the command line following this tutorial: <https://linuxhint.com/completely_wipe_hard_drive_ubuntu/> <sup>[[Archive.org]](https://web.archive.org/web/https://linuxhint.com/completely_wipe_hard_drive_ubuntu/)</sup> (For this purpose we recommend wipe and shred).
 
-#### External SSD drive
+#### External SSD drive { #secure-delete-qubes-ext-ssd }
 
-First please see [Appendix K: Considerations for using external SSD drives](#appendix-k-considerations-for-using-external-ssd-drives)
+First please see [Considerations for using external SSD drives](#on-external-ssd)
 
 If Trim is supported and enabled by your Linux Distribution for your external SSD drive. There should be no issue in securely deleting data normally and just issue a "fstrim --all" from the terminal to trim the drive. Refer to this Documentation (<https://github.com/Qubes-Community/Contents/blob/master/docs/configuration/disk-trim.md> <sup>[[Archive.org]](https://web.archive.org/web/https://github.com/Qubes-Community/Contents/blob/master/docs/configuration/disk-trim.md)</sup>) to enable trim on a drive.
 
@@ -7964,9 +7954,9 @@ Repeat these steps on any other partition if there are separate partitions on th
 
 **Keep in mind all these options need to be applied on the entire physical drive and not on a specific partition/volume. If you do not, wear-leveling mechanisms might prevent this from working properly.**
 
-### macOS
+### macOS { #secure-delete-macos }
 
-#### System/Internal SSD drive
+#### System/Internal SSD drive { #secure-delete-macos-ssd }
 
 Just permanently delete the file (and empty recycle bin) and it should be unrecoverable due to trim operations and garbage collection.
 
@@ -7980,7 +7970,7 @@ Yes. TRIM operations are issued asynchronously from when files are deleted or fr
 
 ![image46](../media/image46.png)
 
-#### System/Internal, External HDD drive or a Thumb Drive
+#### System/Internal, External HDD drive or a Thumb Drive { #secure-delete-macos-hdd }
 
 Unfortunately, Apple has removed the secure erase options from the trash bin even for HDD drives[^444]. So, you are left with using other tools:
 
@@ -7990,9 +7980,9 @@ Unfortunately, Apple has removed the secure erase options from the trash bin eve
 
 In the case of USB thumb drives, consider wiping them completely using Disk Utility as instructed previously.
 
-#### External SSD drive
+#### External SSD drive { #secure-delete-macos-ext-ssd }
 
-First please see [Appendix K: Considerations for using external SSD drives](#appendix-k-considerations-for-using-external-ssd-drives)
+First please see [Considerations for using external SSD drives](#on-external-ssd)
 
 If Trim is supported and enabled by macOS for your external SSD drive. There should be no issue in securely deleting data.
 
@@ -8002,7 +7992,7 @@ If Trim is not supported, you might have to ensure secure data deletion by:
 
 - Decrypt and Re-encrypt the disk with a different key after each deletion (using Disk Utility or Veracrypt).
 
-## Some additional measures against forensics
+## Some additional measures against forensics { #anti-forensics }
 
 Note that the same SSD issue discussed in the earlier section will arise here. You can never really be 100% sure your SSD data is deleted when you ask it to do so unless you wipe the whole drive using specific methods above.
 
@@ -8012,7 +8002,7 @@ In addition, most of these measures here should not be needed since your whole d
 
 Consider also reading this documentation if you're going with Whonix <https://www.whonix.org/wiki/Anti-Forensics_Precautions> <sup>[[Archive.org]](https://web.archive.org/web/https://www.whonix.org/wiki/Anti-Forensics_Precautions)</sup> as well as their general hardening tutorial for all platforms here <https://www.whonix.org/wiki/System_Hardening_Checklist> <sup>[[Archive.org]](https://web.archive.org/web/https://www.whonix.org/wiki/System_Hardening_Checklist)</sup>
 
-### Metadata auditing
+### Metadata auditing { #metadata-auditing }
 
 **Format conversion does not reliably strip metadata.** Converting a DOCX to PDF using Word embeds the Word document metadata into the PDF. Printing to PDF is somewhat cleaner but still retains producer information. The safe path is to use a purpose-built tool.
 
@@ -8027,7 +8017,7 @@ Consider also reading this documentation if you're going with Whonix <https://ww
 
 **The safest workflow for sharing sensitive documents:** open the original in Dangerzone, which renders it in an isolated container and exports a clean PDF with metadata stripped. For images, run `exiftool -all= -overwrite_original filename` and verify with `exiftool filename` that the output is clean before sharing.
 
-#### Pictures and videos
+#### Pictures and videos { #exif-pictures-video }
 
 EXIF[^222] (Exchangeable Image File Format) is the metadata standard used by digital cameras and smartphones. A typical smartphone photo contains: GPS coordinates at the moment of capture (latitude, longitude, altitude, and sometimes bearing); camera make, model, and serial number; lens focal length; timestamp including timezone offset; and software version used to process the image.
 
@@ -8041,21 +8031,21 @@ On Windows, macOS, and Linux we would recommend ExifTool (<https://exiftool.org/
 
 **ExifTool is natively available on Tails and Whonix Workstation.**
 
-#### PDF metadata
+#### PDF metadata { #pdf-metadata }
 
 PDFs carry their own metadata layer. The **XMP packet** in a PDF can contain author, creator application (including version number), producer (the software that generated the PDF, e.g. "Microsoft Word 16.0.1" or a specific version of LibreOffice), creation and modification timestamps, and document title. The **producer string** is particularly useful to investigators because specific software versions are associated with specific time windows and installations.
 
 Less obviously, **font embedding** in PDFs can fingerprint a document to a specific installation. Font subsets - the specific character outlines embedded in the PDF - vary slightly depending on which fonts are installed, which renderer is used, and which version of the software generated the file. Comparing embedded font data across multiple documents can link them to the same author even with no other identifying metadata present.[^541]
 
-##### PDFParanoia (Linux/Windows/macOS/QubesOS)
+##### PDFParanoia (Linux/Windows/macOS/QubesOS) { #pdfparanoia }
 
 Consider using <https://github.com/kanzure/pdfparanoia> <sup>[[Archive.org]](https://web.archive.org/web/https://github.com/kanzure/pdfparanoia)</sup> which will remove metadata and watermarks on any PDF.
 
-##### ExifCleaner (Linux/Windows/macOS/QubesOS)
+##### ExifCleaner (Linux/Windows/macOS/QubesOS) { #exifcleaner-pdf }
 
 Just install it from <https://exifcleaner.com/> <sup>[[Archive.org]](https://web.archive.org/web/https://exifcleaner.com/)</sup>, run and drag and drop the files into the GUI.
 
-##### ExifTool (Linux/Windows/macOS/QubesOS)
+##### ExifTool (Linux/Windows/macOS/QubesOS) { #exiftool-pdf }
 
 It is actually simple, just install exiftool and run:
 
@@ -8063,11 +8053,11 @@ It is actually simple, just install exiftool and run:
 
 - To remove all metadata: ```exiftool -All= filename.pdf```
 
-#### ExifCleaner
+#### ExifCleaner { #exifcleaner }
 
 Just install it from <https://exifcleaner.com/> <sup>[[Archive.org]](https://web.archive.org/web/https://exifcleaner.com/)</sup>, run and drag and drop the files into the GUI.
 
-#### ExifTool
+#### ExifTool { #exiftool }
 
 It is actually simple, just install exiftool and run:
 
@@ -8077,11 +8067,11 @@ It is actually simple, just install exiftool and run:
 
 **Remember that ExifTool is natively available on Tails and Whonix Workstation.**
 
-#### Windows Native tool
+#### Windows Native tool { #windows-exif-native }
 
 Here is a tutorial to remove metadata from a Picture using OS provided tools: <https://www.purevpn.com/internet-privacy/how-to-remove-metadata-from-photos> <sup>[[Archive.org]](https://web.archive.org/web/https://www.purevpn.com/internet-privacy/how-to-remove-metadata-from-photos)</sup>
 
-#### Cloaking/Obfuscating to prevent picture recognition
+#### Cloaking/Obfuscating to prevent picture recognition { #image-cloaking }
 
 Consider the use of Fawkes <https://sandlab.cs.uchicago.edu/fawkes/> <sup>[[Archive.org]](https://web.archive.org/web/https://sandlab.cs.uchicago.edu/fawkes/)</sup> (<https://github.com/Shawn-Shan/fawkes> <sup>[[Archive.org]](https://web.archive.org/web/https://github.com/Shawn-Shan/fawkes)</sup>) to cloak the images from picture recognition tech on various platforms.
 
@@ -8091,7 +8081,7 @@ Or if you want online versions, consider:
 
 - <https://adversarial.io/> <sup>[[Archive.org]](https://web.archive.org/web/https://adversarial.io/)</sup>
 
-#### DOCX and Office Documents
+#### DOCX and Office Documents { #office-metadata }
 
 Microsoft Office documents are ZIP archives containing XML files, and those XML files contain extensive metadata. This includes: author name and initials (from the Office profile at creation time); last-modified-by name; creation and modification timestamps; revision count; total editing time; company name from the Office installation; the path of the document template used at creation (which can include a username or network path); and, critically, **revision history and tracked changes** - deletions and edits that the author thought were removed may be stored in the document and recoverable by anyone who opens it in a sufficiently capable viewer.
 
@@ -8099,11 +8089,11 @@ Several cases of documents leaked to journalists have resulted in source identif
 
 Alternatively, on Windows, macOS, Qubes OS, and Linux we would recommend ExifTool (<https://exiftool.org/> <sup>[[Archive.org]](https://web.archive.org/web/https://exiftool.org/)</sup>) and/or ExifCleaner (<https://exifcleaner.com/> <sup>[[Archive.org]](https://web.archive.org/web/https://exifcleaner.com/)</sup>) that allows viewing and/or removing those properties
 
-##### ExifCleaner
+##### ExifCleaner { #exifcleaner-office }
 
 Just install it from <https://exifcleaner.com/> <sup>[[Archive.org]](https://web.archive.org/web/https://exifcleaner.com/)</sup>, run and drag and drop the files into the GUI.
 
-##### ExifTool
+##### ExifTool { #exiftool-office }
 
 It is actually simple, just install exiftool and run:
 
@@ -8111,7 +8101,7 @@ It is actually simple, just install exiftool and run:
 
 - To remove all metadata: ```exiftool -All= filename.docx```
 
-##### LibreOffice Documents
+##### LibreOffice Documents { #libreoffice-metadata }
 
 - select Files in the upper menu
 
@@ -8145,11 +8135,11 @@ It is actually simple, just install exiftool and run:
 
 In addition, on Windows, macOS, Qubes OS, and Linux we would recommend ExifTool (<https://exiftool.org/> <sup>[[Archive.org]](https://web.archive.org/web/https://exiftool.org/)</sup>) and/or ExifCleaner (<https://exifcleaner.com/> <sup>[[Archive.org]](https://web.archive.org/web/https://exifcleaner.com/)</sup>) that allows viewing and/or removing additional properties
 
-##### ExifCleaner
+##### ExifCleaner { #exifcleaner-libreoffice }
 
 Just install it from <https://exifcleaner.com/> <sup>[[Archive.org]](https://web.archive.org/web/https://exifcleaner.com/)</sup>, run and drag and drop the files into the GUI.
 
-##### ExifTool
+##### ExifTool { #exiftool-libreoffice }
 
 It is actually simple, jut install exiftool and run:
 
@@ -8157,35 +8147,35 @@ It is actually simple, jut install exiftool and run:
 
 - To remove all metadata: ```exiftool -All= filename.odt```
 
-#### All-in-one Tool
+#### All-in-one Tool { #allinone-metadata-tool }
 
 Another option good tool to remove metadata from various documents is the open-source mat2 recommended by privacyguides.org[^445] (<https://0xacab.org/jvoisin/mat2> <sup>[[Archive.org]](https://web.archive.org/web/https://0xacab.org/jvoisin/mat2)</sup>) which you can use on Linux quite easily. I never managed to make it work properly within Windows due to various dependencies issues despite the provided instructions. It is however very straightforward to install and use on Linux.
 
-So, we would suggest creating a small Debian VM within Virtualbox (behind your Whonix Gateway) which you can then use from your other VMs to analyze various files from a convenient web interface. For this see [Appendix L: Creating a mat2-web guest VM for removing metadata from files](#appendix-l-creating-a-mat2-web-guest-vm-for-removing-metadata-from-files)
+So, we would suggest creating a small Debian VM within Virtualbox (behind your Whonix Gateway) which you can then use from your other VMs to analyze various files from a convenient web interface. For this see [Creating a mat2-web guest VM for removing metadata from files](#mat2-web-metadata)
 
 ![image47](../media/image47.png)
 
 Mat2 is also pre-installed on the Whonix Workstation VM[^446] and available on Tails by default[^447].
 
-### Tails
+### Tails { #metadata-tails }
 
 Tails is great for this; you have nothing to worry about even if you use an SSD drive. Shut it down and it is all gone as soon as the memory decays.
 
-### Whonix
+### Whonix { #metadata-whonix }
 
 Note that it's possible to run Whonix in Live mode leaving no traces when you shut down the VMs. For more information, see their [VM Live Mode](https://www.whonix.org/wiki/VM_Live_Mode) <sup>[[Archive.org]](https://web.archive.org/web/https://www.whonix.org/wiki/VM_Live_Mode)</sup> and [Warning](https://www.whonix.org/wiki/Warning#Whonix_—_Persistence_vs_Live_vs_Amnesic) <sup>[[Archive.org]](https://web.archive.org/web/https://www.whonix.org/wiki/Warning)</sup>.
 
-### macOS
+### macOS { #metadata-macos }
 
-#### Guest OS
+#### Guest OS { #macos-guest-os }
 
 Revert to an earlier snapshot on Virtualbox (or any other VM software you are using) and perform a Trim command on your Mac using Disk Utility by executing a first-aid on the Host OS again as explained at the end of the next section.
 
-#### Host OS
+#### Host OS { #macos-host-os-tracks }
 
 Most of the info from this section can also be found at this nice guide <https://github.com/drduh/macOS-Security-and-Privacy-Guide> <sup>[[Archive.org]](https://web.archive.org/web/https://www.bejarano.io/hardening-macos/)</sup>
 
-##### Quarantine Database (used by Gatekeeper and XProtect)
+##### Quarantine Database (used by Gatekeeper and XProtect) { #macos-quarantine-db }
 
 macOS (up to and including Big Sur) keeps a Quarantine SQL Database of all the files you ever downloaded from a Browser. This database is located at ```~/Library/Preferences/com.apple.LaunchServices.QuarantineEventsV2```.
 
@@ -8242,7 +8232,7 @@ As you can see for yourself the easiest mitigation is to just use Private Window
 
 Clearing the QuarantineEventsV2 is easy as explained above. Removing the attributes takes some work. **Brave is the only tested browser that will not store those attributes by default in normal operations.**
 
-##### Various Artifacts
+##### Various Artifacts { #macos-artifacts }
 
 In addition, macOS keeps various logs of mounted devices, connected devices, known networks, analytics, documents revisions...
 
@@ -8250,7 +8240,7 @@ See this section of this guide for guidance on where to find and how to delete s
 
 Many of those can be deleted using various commercial third-party tools but we would personally recommend using the free and well-known Onyx which you can find here: <https://www.titanium-software.fr/en/onyx.html> <sup>[[Archive.org]](https://web.archive.org/web/https://www.titanium-software.fr/en/onyx.html)</sup>. Unfortunately, it is closed-source, but it is notarized, signed, and has been trusted for many years.
 
-##### Force a Trim operation after cleaning
+##### Force a Trim operation after cleaning { #macos-trim }
 
 - If your file system is APFS, you do not need to worry about Trim, it happens asynchronously as the OS writes data.
 
@@ -8258,7 +8248,7 @@ Many of those can be deleted using various commercial third-party tools but we w
 
 ![image46](../media/image46.png)
 
-### Linux (Qubes OS)
+### Linux (Qubes OS) { #tracks-qubes }
 
 Please consider their guidelines <https://github.com/Qubes-Community/Contents/blob/master/docs/security/security-guidelines.md> <sup>[[Archive.org]](https://web.archive.org/web/https://github.com/Qubes-Community/Contents/blob/master/docs/security/security-guidelines.md)</sup>
 
@@ -8270,13 +8260,13 @@ If you are using Whonix on Qubes OS, please consider following some of their gui
 
 - Also, consider the use of Linux Kernel Guard <https://www.whonix.org/wiki/Linux_Kernel_Runtime_Guard_LKRG> <sup>[[Archive.org]](https://web.archive.org/web/https://www.whonix.org/wiki/Linux_Kernel_Runtime_Guard_LKRG)</sup>
 
-### Linux (non-Qubes)
+### Linux (non-Qubes) { #tracks-linux }
 
-#### Guest OS
+#### Guest OS { #linux-guest-os-tracks }
 
 Revert to an earlier snapshot of the Guest VM on Virtualbox (or any other VM software you are using) and perform a trim command on your laptop using ```fstrim --all```. This utility is part of the ```util-linux``` package on Debian/Ubuntu and should be installed by default on Fedora. Then switch to the next section.
 
-#### Host OS
+#### Host OS { #linux-host-os-tracks }
 
 Normally you should not have traces to clean within the Host OS since you are doing everything from a VM if you follow this guide.
 
@@ -8286,17 +8276,17 @@ After cleaning up, make sure you have the fstrim utility installed (should be by
 
 Consider the use of Linux Kernel Guard as an added measure <https://www.whonix.org/wiki/Linux_Kernel_Runtime_Guard_LKRG> <sup>[[Archive.org]](https://web.archive.org/web/https://www.whonix.org/wiki/Linux_Kernel_Runtime_Guard_LKRG)</sup>
 
-### Windows
+### Windows { #tracks-windows }
 
-#### Guest OS
+#### Guest OS { #windows-guest-os-tracks }
 
 Revert to an earlier snapshot on Virtualbox (or any other VM software you are using) and perform a trim command on your Windows using the Optimize as explained at the end of the next section
 
-#### Host OS
+#### Host OS { #windows-host-os-tracks }
 
 Now that you had a bunch of activities with your VMs or Host OS, you should take a moment to cover your tracks. **Most of these steps should not be undertaken on the Decoy OS in case of the use of plausible deniability. This is because you want to keep decoy/plausible traces of sensible but not secret activities available for your adversary. If everything is clean, then you might raise suspicion.**
 
-##### Diagnostic Data and Telemetry
+##### Diagnostic Data and Telemetry { #windows-telemetry-tracks }
 
 First, let us get rid of any diagnostic data that could still be there:
 
@@ -8308,7 +8298,7 @@ Then let us re-randomize the MAC addresses of your Virtual Machines and the Blue
 
 - After each use of your Host OS Windows (your VM should not have Bluetooth at all), Go into the Device Manager, Select Bluetooth, Disable the Device and Re-Enable the device (this will force a randomization of the Bluetooth Address).
 
-##### Event logs
+##### Event logs { #windows-event-logs }
 
 Windows Event logs will keep many various pieces of information that could contain traces of your activities such as the devices that were mounted (including Veracrypt NTFS volumes for instance[^333]), your network connections, app crash information, and various errors. It is always best to clean those up regularly. Do not do this on the Decoy OS.
 
@@ -8318,7 +8308,7 @@ Windows Event logs will keep many various pieces of information that could conta
 
     - Select and clear all five logs using a right-click.
 
-##### Veracrypt History
+##### Veracrypt History { #windows-veracrypt-history }
 
 By default, Veracrypt saves a history of recently mounted volumes and files. You should make sure Veracrypt never saves History. Again, do not do this on the Decoy OS if you are using plausible deniability for the OS. We need to keep the history of mounting the decoy Volume as part of the plausible deniability:
 
@@ -8328,7 +8318,7 @@ By default, Veracrypt saves a history of recently mounted volumes and files. You
 
 Now you should clean the history within any app that you used including Browser history, Cookies, Saved Passwords, Sessions, and Form History.
 
-##### Browser History
+##### Browser History { #windows-browser-history }
 
 - Brave (in case you did not enable cleaning on exit)
 
@@ -8350,7 +8340,7 @@ Now you should clean the history within any app that you used including Browser 
 
     - Just close the Browser and everything is cleaned
 
-##### Wi-Fi History
+##### Wi-Fi History { #windows-wifi-history }
 
 Now it is time to clear the history of the Wi-Fi you connect to. Unfortunately, Windows keeps storing a list of past Networks in the registry even if you "forgot" those in the Wi-Fi settings. As far as we know, no utilities clean those yet (BleachBit or PrivaZer for instance) so you will have to do it the manual way:
 
@@ -8362,7 +8352,7 @@ Now it is time to clear the history of the Wi-Fi you connect to. Unfortunately, 
 
 - Delete all those keys.
 
-##### Shellbags
+##### Shellbags { #windows-shellbags }
 
 As explained earlier, Shellbags are basically histories of accessed volumes/files on your computer. Remember that shellbags are exceptionally useful sources of information for forensics[^325] and you need to clean those. Especially if you mounted any "hidden volume" anywhere. Again, you should not do this on the Decoy OS:
 
@@ -8390,13 +8380,13 @@ As explained earlier, Shellbags are basically histories of accessed volumes/file
 
         + Clean
 
-##### Extra Tools Cleaning
+##### Extra Tools Cleaning { #windows-extra-cleaning }
 
 After cleaning those earlier traces, you should also use third-party utilities that can be used to clean various traces. These include the traces of the files/folders you deleted.
 
-Please refer to [Appendix H: Windows Cleaning Tools](#appendix-h-windows-cleaning-tools) before continuing.
+Please refer to [Windows Cleaning Tools](#windows-cleaning-tools) before continuing.
 
-###### PrivaZer
+###### PrivaZer { #privazer }
 
 Here are the steps for PrivaZer:
 
@@ -8442,7 +8432,7 @@ Here are the steps for PrivaZer:
 
     - Click Clean and wait for cleaning to finish. Could take a while and will fill your whole free space with data.
 
-###### BleachBit
+###### BleachBit { #bleachbit }
 
 Here are the steps for BleachBit:
 
@@ -8466,7 +8456,7 @@ Here are the steps for BleachBit:
 
     - Click Clean and wait. This will take a while and will fill your whole free space with data on both HDD and SSD drives.
 
-##### Force a Trim with Windows Optimize (for SSD drives)
+##### Force a Trim with Windows Optimize (for SSD drives) { #windows-trim }
 
 With this Native Windows 10/11 utility, you can just trigger a Trim on your SSD which should be more than enough to securely clean all deleted files that somehow would have escaped Trim when deleting them.
 
@@ -8474,7 +8464,7 @@ Just open Windows Explorer, Right Click on your System Drive and click Propertie
 
 ![image45](../media/image45.png)
 
-## Removing your identities from search engines and other platforms
+## Removing your identities from search engines and other platforms { #removing-identities }
 
 Chances are your actions (such as posts on various platforms, your profiles) will be indexed (and cached) by many search engines.
 
@@ -8574,9 +8564,9 @@ Have a look at those websites:
 
 - <https://inteltechniques.com/workbook.html> <sup>[[Archive.org]](https://web.archive.org/web/https://inteltechniques.com/workbook.html)</sup>
 
-# Some low-tech old-school tricks
+# Some low-tech old-school tricks { #low-tech-tricks }
 
-## Hide Communications in Plain Sight
+## Hide Communications in Plain Sight { #steganography }
 
 You must keep in mind that using all those security measures (encryption, plausible deniability, VPN, tor, secure operating systems ...) can make you suspicious just by using them. Using could be the equivalent of stating openly "I something to hide" to an observer which could then motivate some adversaries to investigate/survey you further.
 
@@ -8596,7 +8586,7 @@ This could be a set of specific emojis or a specifically worded mundane comment.
 
 You do not even have to go that far. A simple "Last seen" time on a specific account could be enough to trigger a message agreed upon. If your interlocutor sees that this account was online. It could mean there is an issue.
 
-## How to spot if someone has been searching your stuff
+## How to spot if someone has been searching your stuff { #detect-searching }
 
 There are some old tricks that you can use to spot if people have been messing with your stuff while you were away.
 
@@ -8612,7 +8602,7 @@ What if it is a printed document or book and you want to know if someone read it
 
 Most likely if someone went through your document to read it and re-placed it carefully, this residue will fall off or be moved significantly. It is a simple old-school trick that could tell you someone searched a document you had.
 
-# Some last OPSEC thoughts
+# Some last OPSEC thoughts { #opsec-thoughts }
 
 Wait, what is OPSEC? Well, OPSEC means Operations Security[^456]. The basic definition is: "OPSEC is the process of protecting individual pieces of data that could be grouped together to give the bigger picture."
 
@@ -8622,9 +8612,9 @@ Adversaries take many forms. To some, they are actors of a foreign government, w
 
 You must live by the simple rule that "loose lips sink ships" - but also that they are usually your lips which will do the sinking. OPSEC is often just applying common sense and being cautious about your activities including in the physical world:
 
-## Digital and Online OPSEC
+## Digital and Online OPSEC { #digital-opsec }
 
-- **Remember to use passphrases or suits of words instead of short passwords and use a different one for each service. See [Appendix A2: Guidelines for passwords and passphrases](#appendix-a2-guidelines-for-passwords-and-passphrases).**
+- **Remember to use passphrases or suits of words instead of short passwords and use a different one for each service. See [Guidelines for passwords and passphrases](#password-guidelines).**
 
 - Make sure you are not keeping a copy of this guide anywhere unsafe after. The sole presence of this guide will most likely defeat all your plausible deniability possibilities.
 
@@ -8638,17 +8628,17 @@ You must live by the simple rule that "loose lips sink ships" - but also that th
 
 - Encrypt everything but do not take it for granted. Remember the $5 wrench.
 
-## Physical and IRL OPSEC
+## Physical and IRL OPSEC { #physical-opsec }
 
-- Remember to ["Physically Tamper protect your laptop"](#physically-tamper-protect-your-laptop).
+- Remember to ["Physically Tamper protect your laptop"](#tamper-protection).
 
-- See [Appendix B4: Important notes about evil-maid and tampering](#appendix-b4-important-notes-about-evil-maid-and-tampering).
+- See [Important notes about evil-maid and tampering](#evil-maid-tampering-notes).
 
-- Check out [How to spot if someone has been searching your stuff](#how-to-spot-if-someone-has-been-searching-your-stuff).
+- Check out [How to spot if someone has been searching your stuff](#detect-searching).
 
 - Consider the use of Haven <https://guardianproject.github.io/haven/> <sup>[[Archive.org]](https://web.archive.org/web/https://guardianproject.github.io/haven/)</sup> on some old android phone to keep watch on your home/room while you are away.
 
-- Remember [Appendix N: Warning about smartphones and smart devices](#appendix-n-warning-about-smartphones-and-smart-devices). Do not forget your smart devices can compromise your anonymity.
+- Remember [Warning about smartphones and smart devices](#smartphones-warning). Do not forget your smart devices can compromise your anonymity.
 
 - Do not ever travel with those devices if you must pass strong border checks and where they could be illegal or raise suspicion.
 
@@ -8699,7 +8689,7 @@ It is recommended that you learn about the common ways people mess up OPSEC <htt
 
 **FINAL OPSEC DISCLAIMER: KEEP YOUR ANONYMOUS IDENTITIES COMPLETELY SANDBOXED FROM YOUR NORMAL ENVIRONMENT AND REAL IDENTITY. DO NOT SHARE ANYTHING BETWEEN THE ANONYMOUS ENVIRONMENTS AND THE REAL IDENTITY ENVIRONMENT. KEEP THEM COMPLETELY COMPARTMENTALIZED ON EVERY LEVEL. MOST OPSEC FAILURES ARE DUE TO SOMEONE ACCIDENTALLY LEAKING INFORMATION RATHER THAN TECHNICAL FAILURES.**
 
-# What to do if you detected tampering or searching
+# What to do if you detected tampering or searching { #detect-tampering }
 
 - In the case of a laptop, they likely placed a key-logger, and possible network and gps capabilities. We recommend to open your laptop take the drive (which should be fully encrypted) and leave for a safe place and abandonning the laptop. Do not try to remove the "bug" as this could put you in physical danger.
 
@@ -8707,9 +8697,9 @@ It is recommended that you learn about the common ways people mess up OPSEC <htt
 
 - Do your best to not let your adversary suspect or know you detected the search and/or the tampering. Be creative. Call a friend for example just to tell you're gonna go to the supermarket to buy food.
 
-# **If you think you got burned**
+# **If you think you got burned** { #got-burned }
 
-## If you have some time
+## If you have some time { #burned-have-time }
 
 - Don't Panic.
 
@@ -8729,7 +8719,7 @@ It is recommended that you learn about the common ways people mess up OPSEC <htt
 
 - Return to your normal activities and hope for the best.
 
-## If you have no time
+## If you have no time { #burned-no-time }
 
 - Don't Panic.
 
@@ -8739,7 +8729,7 @@ It is recommended that you learn about the common ways people mess up OPSEC <htt
 
 Keep in mind that many countries have specific laws to compel you to reveal your passwords that could override your "right to remain silent". See this Wikipedia article: <https://en.wikipedia.org/wiki/Key_disclosure_law> <sup>[[Wikiless]](https://wikiless.tiekoetter.com/wiki/Key_disclosure_law)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Key_disclosure_law)</sup> and this other visual resource with law references <https://www.gp-digital.org/world-map-of-encryption/> <sup>[[Archive.org]](https://web.archive.org/web/https://www.gp-digital.org/world-map-of-encryption/)</sup>. Australia in particular has broad privacy laws[^536] and passed the Surveillance Legislation Amendment (Identify and Disrupt) Act 2021[^537], which grants authorities powers to modify, add, copy, and delete data on a suspect's devices and accounts.
 
-## A small final editorial note
+## A small final editorial note { #final-note }
 
 After reading this whole guide, we hope you will have gained some additional beneficial insight about privacy and anonymity. It is clear now, in my humble opinion, that the world we live in has only a few safe harbors remaining where one could have a reasonable expectation of privacy and even less so anonymity. Many will often say that 1984 by George Orwell was not meant to be an instruction book. Yet today this guide and its many references should, we hope, reveal to you how far down we are in the rabbit hole.
 
@@ -8761,9 +8751,9 @@ Please keep thinking for yourself, use critical thinking, and keep an open mind.
 
 **"In the end the Party would announce that two and two made five, and you would have to believe it" -- George Orwell, 1984, Book One, Chapter Seven.**
 
-Consider helping others (see [Helping others staying anonymous](#helping-others-staying-anonymous))
+Consider helping others (see [Helping others staying anonymous](#help-others))
 
-# Donations
+# Donations { #donations }
 
 **This project has no funding or sponsoring, and donations are more than welcome.**
 
@@ -8771,7 +8761,7 @@ See: [Contribute](../contribute/index.md) at the top of the website.
 
 **(Please do verify the checksum and GPG signature of this file for authenticity, this is explained in the README of the repository if you do not know how to do that)**.
 
-# Helping others staying anonymous
+# Helping others staying anonymous { #help-others }
 
 If you want to give a hand to users facing censorship and oppression, please consider helping them by helping the Tor Network. You can do so in several ways:
 
@@ -8793,7 +8783,7 @@ For this, see <https://blog.torproject.org/tips-running-exit-node> <sup>[[Archiv
 
 This project for instance is running several Tor Exit nodes using donations to fund. You can see them here: <https://metrics.torproject.org/rs.html#search/family:970814F267BF3DE9DFF2A0F8D4019F80C68AEE26>
 
-# Acknowledgments
+# Acknowledgments { #acknowledgments }
 
 - **Very Special Thanks to Edward Snowden and who inspired us to write this guide (buy and read his book please <https://en.wikipedia.org/wiki/Permanent_Record_(autobiography)>** <sup>[[Wikiless]](https://wikiless.tiekoetter.com/wiki/Permanent_Record_(autobiography))</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Permanent_Record_(autobiography))</sup>**)**
 
@@ -8881,13 +8871,13 @@ This project for instance is running several Tor Exit nodes using donations to f
 
     - Mahanihaka
 
-# Appendix A: Windows Installation
+# Windows Installation { #windows-installation }
 
 This is the Windows 10/11 installation process that should be valid for any Windows 10/11  install within this guide.
 
-### Windows 10 (See below for Windows 11)
+### Windows 10 (See below for Windows 11) { #using-win10 }
 
-## Installation
+## Installation { #installing-win10 }
 
 DO NOT CONNECT WINDOWS TO ANY NETWORK DURING THE INSTALLATION PROCESS (This will allow us to create a Local Account and not use a Microsoft account and it will also prevent any telemetry from being sent out during the install process).
 
@@ -8963,7 +8953,7 @@ DO NOT CONNECT WINDOWS TO ANY NETWORK DURING THE INSTALLATION PROCESS (This will
 
 - Select "Now" at the Cortana prompt
 
-## Privacy Settings
+## Privacy Settings { #win10-privacy }
 
 - When the install is finished, get into Settings > Go on the top left menu icon and sekect Privacy and Security
 
@@ -9041,9 +9031,9 @@ DO NOT CONNECT WINDOWS TO ANY NETWORK DURING THE INSTALLATION PROCESS (This will
 
 - (Host OS Only) Go into Settings > Network & Internet > Wi-Fi and Enable Random Hardware Address.
 
-### Windows 11
+### Windows 11 { #using-win11 }
 
-## Installation
+## Installation { #win11-install }
 
 DO NOT CONNECT WINDOWS TO ANY NETWORK DURING THE INSTALLATION PROCESS (This will allow us to create a Local Account and not use a Microsoft account and it will also prevent any telemetry from being sent out during the install process).
 
@@ -9131,7 +9121,7 @@ DO NOT CONNECT WINDOWS TO ANY NETWORK DURING THE INSTALLATION PROCESS (This will
 
 - Click Accept
 
-## Privacy Settings
+## Privacy Settings { #win11-privacy }
 
 - When the install is finished, get into Settings > Privacy and do the following:
 
@@ -9209,7 +9199,7 @@ DO NOT CONNECT WINDOWS TO ANY NETWORK DURING THE INSTALLATION PROCESS (This will
 
 - (Host OS Only) Go into Settings > Network & Internet > Wi-Fi and Enable Random Hardware Address.
 
-# Appendix B: Windows Additional Privacy Settings
+# Windows Additional Privacy Settings { #win-additional-privacy }
 
 As written earlier in this guide and as noted by PrivacyGuides.org[^458], Windows 10/11 is a privacy nightmare. And disabling everything during and after the installation using the settings available to you is not enough. The amount of telemetry data collected by Microsoft is staggering and could defeat your attempts at keeping secrets. You will need to download and use a couple of utilities to (hopefully) force Windows 10/11 into not sending data back to Microsoft.
 
@@ -9247,9 +9237,9 @@ These measures added to the settings during installation should be hopefully suf
 
 **As a bonus, it could be interesting to also consider Hardening your Windows Host OS somewhat. See <https://github.com/beerisgood/windows10_hardening>** <sup>[[Archive.org]](https://web.archive.org/web/https://github.com/beerisgood/windows10_hardening)</sup> (This is a security guide, not a privacy guide. If you use this guide, do not enable Hyper-V as it does not play well with Virtualbox, and do not enable features that were specifically disabled for privacy reasons earlier. Such as SmartScreen, cloud protection...)
 
-# Appendix C: Windows Installation Media Creation (Windows 10) or Download (Windows 11)
+# Windows Installation Media Creation { #win-installation-media }
 
-## Windows 10
+## Windows 10 { #installation-media-win10 }
 
 These are the steps to create a Windows 10 (21H1) Installation Media using this tool and instructions:
 
@@ -9271,11 +9261,11 @@ These are the steps to create a Windows 10 (21H1) Installation Media using this 
 
 - Proceed
 
-## Windows 11
+## Windows 11 { #installation-media-win11 }
 
 - Go to https://www.microsoft.com/software-download/windows11 and download the ISO.
 
-# Appendix D: Using System Rescue to securely wipe an SSD drive
+# Secure Wiping an SSD with System Rescue { #system-rescue-ssd-wipe }
 
 These instructions are valid for all Operating Systems:
 
@@ -9319,7 +9309,7 @@ These instructions are valid for all Operating Systems:
 
         + <https://tinyapps.org/docs/nvme-sanitize.html> <sup>[[Archive.org]](https://web.archive.org/web/https://tinyapps.org/docs/nvme-sanitize.html)</sup>
 
-# Appendix E: Clonezilla
+# Clonezilla { #clonezilla }
 
 - Get Clonezilla by just following these instructions: <https://clonezilla.org/liveusb.php> <sup>[[Archive.org]](https://web.archive.org/web/https://clonezilla.org/liveusb.php)</sup> (I recommend the Alternative version AMD64 that should work with most recent laptops)
 
@@ -9335,7 +9325,7 @@ These instructions are valid for all Operating Systems:
 
 Each backup could take a while depending on the speed of your laptop and the speed of your external drive. In my experience, expect about 1 hour per backup depending on the drive size and the write speed of your backup media (my tests were done backing up 256GB SSDs on a USB 3.0 7200rpm HDD).
 
-# Appendix F: Diskpart
+# Diskpart { #diskpart }
 
 Diskpart is a Windows utility that can be used to perform various operations on your hard drive. In this case, You will use Diskpart to show the Disk ID but also change it if necessary.
 
@@ -9363,33 +9353,33 @@ Diskpart can be run from any Windows environment using a command prompt. This in
 
     - Issue, in addition, the command ```uniqueid disk id=02345678``` (where you replace the id by the one you noted before)
 
-# Appendix G: Safe Browser on the Host OS
+# Safe Browser on the Host OS { #safe-browser-host-os }
 
-## If you can use Tor
+## If you can use Tor { #safe-browser-tor }
 
 This guide will **only recommend** using Tor Browser within the host OS because it has the best protection by default. The only other acceptable option in my opinion would be to use Brave Browser with a Tor tab **but keep in mind that Brave themselves recommend the use of Tor Browser if you feel your safety depends on being anonymous** <sup>[[Archive.org]](https://web.archive.org/web/https://www.whonix.org/wiki/Chat)</sup>**: "If your personal safety depends on remaining anonymous, we highly recommend using Tor Browser instead of Brave Tor windows. ".**
 
 This Browser on the host OS will only be used to download various utilities and will never be used for actual sensitive activities.
 
-Refer to [Appendix Y: Installing and using desktop Tor Browser](#appendix-y-installing-and-using-desktop-tor-browser).
+Refer to [Installing and using desktop Tor Browser](#desktop-tor-browser).
 
 If you are experiencing issues connecting to Tor due to Censorship or Blocking, you might consider using Tor bridges as explained here: <https://bridges.torproject.org/> <sup>[[Archive.org]](https://web.archive.org/web/https://bridges.torproject.org/)</sup>
 
 **Use this browser for all the next steps within the host OS unless instructed otherwise.**
 
-## If you cannot use Tor
+## If you cannot use Tor { #safe-browser-no-tor }
 
 Because it is too dangerous/risky/suspicious. We would recommend as a last resort using Firefox, or Brave only using Private Windows for now.
 
-See [Appendix P: What about when Tor and VPNs aren't possible?](#appendix-p-what-about-when-tor-and-vpns-arent-possible) before continuing.
+See [What about when Tor and VPNs aren't possible?](#tor-vpn-not-possible) before continuing.
 
-Only do this from a different safe public Wi-Fi every time (See [Find some safe places with decent public Wi-Fi](#find-some-safe-places-with-decent-public-wi-fi)) and using a long-range connection (See [Appendix Q: Using long-range Antenna to connect to Public Wi-Fis from a safe distance:](#appendix-q-using-long-range-antenna-to-connect-to-public-wi-fis-from-a-safe-distance)).
+Only do this from a different safe public Wi-Fi every time (See [Find some safe places with decent public Wi-Fi](#safe-wifi)) and using a long-range connection (See [Using long-range Antenna to connect to Public Wi-Fis from a safe distance:](#long-range-wifi)).
 
 Clean all the data from the browser after each use.
 
 **Use this method for all the next steps within the host OS unless instructed otherwise.**
 
-# Appendix H: Windows Cleaning Tools
+# Windows Cleaning Tools { #windows-cleaning-tools }
 
 In this guide we will recommend two-third native tools and two third-party tools:
 
@@ -9429,7 +9419,7 @@ Both these tools can be used for cleaning many things such as:
 
 Both these utilities can delete files and can overwrite the free space after deletion to improve secure deletion even on SSD drives. Remember this can reduce the lifespan of your SSD drives a bit.
 
-# Appendix I: Using ShredOS to securely wipe an HDD drive
+# Secure Wiping an HDD with ShredOS { #shredos-hdd-wipe }
 
 Several utilities are recommended (like the old unmaintained DBAN[^463] or System Rescue CD (<https://www.system-rescue.org/> <sup>[[Archive.org]](https://web.archive.org/web/https://www.system-rescue.org/)</sup>)) for this but we will recommend the use of ShredOS.
 
@@ -9437,7 +9427,7 @@ Feel free to go with DBAN instead if you want (using this tutorial: <https://www
 
 If you want to go with System-Rescue, just head to their website and follow the instructions.
 
-## Windows
+## Windows { #secure-wipe-windows }
 
 - Download ShredOS from <https://github.com/PartialVolume/shredos.x86_64> <sup>[[Archive.org]](https://web.archive.org/web/https://github.com/PartialVolume/shredos.x86_64)</sup>
 
@@ -9455,7 +9445,7 @@ If you want to go with System-Rescue, just head to their website and follow the 
 
 - Follow the instructions on the screen
 
-## Linux
+## Linux { #secure-wipe-linux }
 
 - Follow instructions on <https://github.com/PartialVolume/shredos.2020.02> <sup>[[Archive.org]](https://web.archive.org/web/https://github.com/PartialVolume/shredos.x86_64)</sup>
 
@@ -9463,7 +9453,7 @@ If you want to go with System-Rescue, just head to their website and follow the 
 
 - Follow the instructions on the screen
 
-# Appendix J: Manufacturer tools for Wiping HDD and SSD drives
+# Manufacturer Tools for Wiping HDD and SSD Drives { #manufacturer-wipe-tools }
 
 **Always check your laptop BIOS/UEFI for native utilities first.**
 
@@ -9471,7 +9461,7 @@ If you want to go with System-Rescue, just head to their website and follow the 
 
 Unfortunately, most of these tools are Windows only.
 
-## Tools that provide a boot disk for wiping from boot
+## Tools that provide a boot disk for wiping from boot { #boot-wipe }
 
 - SanDisk DashBoard: <https://kb.sandisk.com/app/answers/detail/a_id/15108/~/dashboard-support-information> <sup>[[Archive.org]](https://web.archive.org/web/https://kb.sandisk.com/app/answers/detail/a_id/15108/~/dashboard-support-information)</sup>
 
@@ -9499,11 +9489,11 @@ Unfortunately, most of these tools are Windows only.
 
     - Most likely native utility available within the BIOS/UEFI, please check <https://www.dell.com/support/kbdoc/en-us/000134997/using-the-dell-bios-data-wipe-function-for-optiplex-precision-and-latitude-systems-built-after-november-2015?lwp=rt> <sup>[[Archive.org]](https://web.archive.org/web/https://www.dell.com/support/kbdoc/en-us/000134997/using-the-dell-bios-data-wipe-function-for-optiplex-precision-and-latitude-systems-built-after-november-2015?lwp=rt)</sup>
 
-## Tools that provide only support from running OS (for external drives)
+## Tools that provide only support from running OS (for external drives) { #boot-wipe-running-os }
 
 - Toshiba Storage Tools: <https://www.toshiba-storage.com/downloads/> <sup>[[Archive.org]](https://web.archive.org/web/https://www.toshiba-storage.com/downloads/)</sup>
 
-# Appendix K: Considerations for using external SSD drives
+# External SSD Drive Considerations { #on-external-ssd }
 
 **I do not recommend using external SSDs due to the uncertainty about their support for Trim, ATA Secure Erase, and Sanitize options through USB controllers. Instead, we recommend using external HDD disks which can be cleaned/wiped safely and securely without hassle (albeit much slower than SSD drives).**
 
@@ -9521,31 +9511,31 @@ If you want to use an external SSD drive for sensitive storage:
 
 - Always use full disk encryption on those disks
 
-- **Use the manufacturer-provided tools to securely erase them if possible (see [Appendix K: Considerations for using external SSD drives](#appendix-k-considerations-for-using-external-ssd-drives)).**
+- **Use the manufacturer-provided tools to securely erase them if possible (see [Considerations for using external SSD drives](#on-external-ssd)).**
 
 - Consider manually wiping data on them after use by doing a full decryption/encryption or filling them completely with random data.
 
 So how to check if your external USB SSD supports Trim and other ATA/NVMe operations from your Host OS?
 
-## Windows
+## Windows { #external-windows }
 
-### Trim Support
+### Trim Support { #external-win-trim }
 
-It is possible Windows will detect your external SSD properly and enable Trim by default. Check if Optimize Works using the Windows Native disk utility as explained in the internal SSD section of Windows.
+It is possible Windows will detect your external SSD properly and enable Trim by default. Check if Optimize works using the Windows Native disk utility as explained in the internal SSD section of Windows.
 
-### ATA/NVMe Operations (Secure Erase/Sanitize)
+### ATA/NVMe Operations (Secure Erase/Sanitize) { #external-win-ata }
 
-**Use the manufacturer-provided tools to check and perform these operations** ... It is pretty much the only way to be sure it is not only supported but actually works. Some utilities can tell you whether it is supported or not like CrystalDiskInfo <sup>[[Archive.org]](https://web.archive.org/web/https://element.io/)</sup> but will not actually check if it is working. See [Appendix J: Manufacturer tools for Wiping HDD and SSD drives](#appendix-j-manufacturer-tools-for-wiping-hdd-and-ssd-drives).
+**Use the manufacturer-provided tools to check and perform these operations** ... It is pretty much the only way to be sure it is not only supported but actually works. Some utilities can tell you whether it is supported or not like CrystalDiskInfo <sup>[[Archive.org]](https://web.archive.org/web/https://element.io/)</sup> but will not actually check if it is working. See [Manufacturer tools for Wiping HDD and SSD drives](#manufacturer-wipe-tools).
 
 If it does not work. Just decrypt and re-encrypt the whole drive or fill up the free space as instructed in the guide. There is no other way AFAIK. Besides booting up a System Rescue Linux CD and see the next section.
 
-## Linux
+## Linux { #external-linux }
 
-### Trim Support
+### Trim Support { #external-linux-trim }
 
 Follow this good tutorial: <https://www.glump.net/howto/desktop/enable-trim-on-an-external-ssd-on-linux> <sup>[[Archive.org]](https://web.archive.org/web/https://www.glump.net/howto/desktop/enable-trim-on-an-external-ssd-on-linux)</sup>
 
-### ATA/NVMe Operations (Secure Erase/Sanitize)
+### ATA/NVMe Operations (Secure Erase/Sanitize) { #external-linux-ata }
 
 **It is not "recommended". Please read the disclaimers here <https://ata.wiki.kernel.org/index.php/ATA_Secure_Erase>** <sup>[[Archive.org]](https://web.archive.org/web/https://ata.wiki.kernel.org/index.php/ATA_Secure_Erase)</sup> **and here <https://wiki.archlinux.org/index.php/Solid_state_drive/Memory_cell_clearing>** <sup>[[Archive.org]](https://web.archive.org/web/https://wiki.archlinux.org/index.php/Solid_state_drive/Memory_cell_clearing)</sup>
 
@@ -9555,9 +9545,9 @@ See also this tutorial <https://code.mendhak.com/securely-wipe-ssd/> <sup>[[Arch
 
 **Your mileage may vary. Use at your own risk.**
 
-## macOS
+## macOS { #external-macos }
 
-### Trim Support
+### Trim Support { #external-macos-trim }
 
 According to Apple Documentation[^455], Trim is supported on APFS (asynchronously) and HFS+ (through period trim or first-aid).
 
@@ -9567,7 +9557,7 @@ If your disk supports it but it is not enabled in macOS. You could try issuing a
 
 If it does not work, we are not aware of any reliable method to enable TRIM besides the commercial utility Trim Enabler here <https://cindori.org/trimenabler/> <sup>[[Archive.org]](https://web.archive.org/web/https://cindori.org/trimenabler/)</sup> which claims support for external drives.
 
-### ATA/NVMe Operations (Secure Erase/Sanitize)
+### ATA/NVMe Operations (Secure Erase/Sanitize) { #external-macos-ata }
 
 We are not aware of any method of doing so reliably and safely on macOS. So, you will have to try one of these options:
 
@@ -9577,7 +9567,7 @@ We are not aware of any method of doing so reliably and safely on macOS. So, you
 
 - Fill up the free space of the disk using the Linux method (dd)
 
-# Appendix L: Creating a mat2-web guest VM for removing metadata from files
+# Removing Metadata with mat2-web { #mat2-web-metadata }
 
 Download the latest Debian testing amd64 netinst ISO from <https://www.debian.org/CD/netinst/> <sup>[[Archive.org]](https://web.archive.org/web/https://www.debian.org/CD/netinst/)</sup>
 
@@ -9661,7 +9651,7 @@ Now you can just start this small Mat2 VM when needed. Browse to it from your Gu
 
 **Do not ever expose this VM to any network unless temporarily for updates. This web interface is not suitable for any direct external access.**
 
-# Appendix M: BIOS/UEFI options to wipe disks in various Brands
+# BIOS/UEFI Disk Wipe Options by Brand { #bios-disk-wipe-options }
 
 Here are some links on how to securely wipe your drive (HDD/SSD) from the BIOS for various brands:
 
@@ -9681,7 +9671,7 @@ Here are some links on how to securely wipe your drive (HDD/SSD) from the BIOS f
 
 - Huawei: no option AFAIK
 
-# Appendix N: Warning about smartphones and smart devices
+# Smartphones and Smart Devices Warning { #smartphones-warning }
 
 When conducting sensitive activities, remember that:
 
@@ -9709,13 +9699,13 @@ Additionally, if using a smartphone as a burner, know that they send a lot of di
 
 **You should never rely on an external commercial service to ensure your first line of anonymity. But you will see that paid services can still be used later from an already anonymous identity if bought anonymously while observing good operational security.**
 
-# Appendix O: Getting an anonymous VPN/Proxy
+# Getting an Anonymous VPN or Proxy { #anonymous-vpn-proxy }
 
 If you follow our advice, you will also need a VPN subscription but this time you will need an anonymous one that cannot be tied to you by the financial system. Meaning you will need to buy a VPN subscription with cash or a reasonably private cryptocurrency (for example Monero). You will later be able to use this VPN to connect to various services anonymously but **never directly from your IP**. This VPN can never be used in any other non-anonymous context without jeopardzing your anonymity.
 
 There are, two viable options:
 
-## Cash/Monero-Paid VPN
+## Cash/Monero-Paid VPN { #anonymous-cash-vpn }
 
 There are three VPN companies recommended by PrivacyGuides.org (<https://www.privacyguides.org/vpn/> <sup>[[Archive.org]](https://web.archive.org/web/https://www.privacyguides.org/vpn/)</sup>) that accept cash payments: Mullvad, iVPN, and Proton VPN.
 
@@ -9733,13 +9723,13 @@ Personally, for now, we would recommend Mullvad due to personal experience.
 
 How does this work?
 
-- Access the VPN website with a Safe Browser (see [Appendix G: Safe Browser.](#appendix-g-safe-browser-on-the-host-os)
+- Access the VPN website with a Safe Browser (see [Safe Browser.](#safe-browser-host-os)
 
 - Go to iVPN, Mullvad, or Safing website and create a new Account ID (on the login page).
 
 - This page will give you an account ID, a token ID (for payment reference), and the details of where to send the money by post.
 
-- Send the required cash amount for the subscription you want in a sealed postal envelope to their offices, including a paper with the Token ID without a return address, or pay with Monero if available. If they do not accept Monero but do accept BTC, consider [Appendix Z: Paying anonymously online with BTC](#appendix-z-online-anonymous-payments-using-cryptocurrencies).
+- Send the required cash amount for the subscription you want in a sealed postal envelope to their offices, including a paper with the Token ID without a return address, or pay with Monero if available. If they do not accept Monero but do accept BTC, consider [Paying anonymously online with BTC](#anonymous-crypto-payments).
 
 - Wait for them to receive the payment and enable your account (this can take a while).
 
@@ -9769,7 +9759,7 @@ For extra-security consider:
 
 **Do not in any circumstance use this new VPN account unless instructed or connect to that new VPN account using your known connections. This VPN will only be used later in a secure way as we do not trust VPN providers' "no-logging policies". This VPN provider should ideally never know your real origin IP (your home/work one for instance).**
 
-## Self-hosted VPN/Proxy on a Monero/Cash-paid VPS (for users more familiar with Linux)
+## Self-hosted VPN/Proxy on a Monero/Cash-paid VPS (for users more familiar with Linux) { #anonymous-self-hosted }
 
 The other alternative is setting up your own VPN/Proxy using a VPS (Virtual Private Server) on a hosting platform that accepts Monero (recommended).
 
@@ -9779,13 +9769,13 @@ This does also offer some disadvantages as Monero is not perfect as explained ea
 
 **Do not in any circumstance use this new VPS/VPN/Proxy using your known connections. Only access it through Tor using Whonix Workstation for instance (this is explained later). This VPN will only be used later within a Virtual Machin over the Tor Network in a secure way as we do not trust VPN providers' "no-logging policies". This VPN provider should never know your real origin IP.**
 
-Please see [Appendix A1: Recommended VPS hosting providers](#appendix-a1-recommended-vps-hosting-providers)
+Please see [Recommended VPS hosting providers](#vps-hosting-providers)
 
-### VPN VPS
+### VPN VPS { #anonymous-vpn-vps }
 
 There are plenty of tutorials on how to do this like this one <https://proprivacy.com/vpn/guides/create-your-own-vpn-server> <sup>[[Archive.org]](https://web.archive.org/web/https://proprivacy.com/vpn/guides/create-your-own-vpn-server)</sup>
 
-### Socks Proxy VPS
+### Socks Proxy VPS { #anonymous-socks }
 
 This is also an option obviously if you prefer to skip the VPN part.
 
@@ -9803,7 +9793,7 @@ Here are a few tutorials on how to do this very quickly:
 
 Here is my basic tutorial:
 
-#### Linux/macOS
+#### Linux/macOS { #anonymous-linux-macos }
 
 Here are the steps:
 
@@ -9829,7 +9819,7 @@ Explanation of arguments:
 
 - -N: Tells SSH that no command will be sent once the tunnel is up
 
-#### Windows
+#### Windows { #anonymous-windows }
 
 Here are the steps:
 
@@ -9847,17 +9837,17 @@ Here are the steps:
 
 - Done!
 
-# Appendix P: What about when Tor and VPNs aren't possible?
+# When Tor and VPNs Aren't Possible { #tor-vpn-not-possible }
 
 **USE EXTREME CAUTION: THIS IS HIGHLY RISKY.**
 
-There might be worst-case situations where using Tor and VPNs are not possible due to extensive active censorship or blocking. Even when using Tor Bridges (see [Appendix X: Using Tor bridges in hostile environments](#appendix-x-using-tor-bridges-in-hostile-environments))
+There might be worst-case situations where using Tor and VPNs are not possible due to extensive active censorship or blocking. Even when using Tor Bridges (see [Using Tor bridges in hostile environments](#tor-bridges))
 
 Now, there might also be situations where simply using Tor or a VPN alone could be suspicious and could be dangerous for your safety. If this is the case, you could be in a very hostile environment where surveillance and control are high.
 
 But you still want to do something anonymously without disclosing/leaking any information.
 
-In that case, my last resort recommendation is to connect safely **from a distance** to a Public Wi-Fi (See [Find some safe places with decent public Wi-Fi](#find-some-safe-places-with-decent-public-wi-fi)) using your laptop and Tails "unsafe browser". See <https://tails.boum.org/contribute/design/Unsafe_Browser/> <sup>[[Archive.org]](https://web.archive.org/web/https://tails.boum.org/contribute/design/Unsafe_Browser/)</sup>.
+In that case, my last resort recommendation is to connect safely **from a distance** to a Public Wi-Fi (See [Find some safe places with decent public Wi-Fi](#safe-wifi)) using your laptop and Tails "unsafe browser". See <https://tails.boum.org/contribute/design/Unsafe_Browser/> <sup>[[Archive.org]](https://web.archive.org/web/https://tails.boum.org/contribute/design/Unsafe_Browser/)</sup>.
 
 **If Tor usage alone is suspicious or risky, you should NOT allow Tails to try establishing a Tor connection at start-up by doing the following:**
 
@@ -9873,7 +9863,7 @@ In that case, my last resort recommendation is to connect safely **from a distan
 
 - Start and use the Unsafe Browser
 
-**We would strongly recommend the use of a long-range "Yagi" type directional Antenna with a suitable USB Wi-Fi Adapter. At least this will allow you to connect to public Wi-Fis from a "safe distance" but keep in mind that triangulation by a motivated adversary is still possible with the right equipment. So, this option should not be used during an extended period (minutes at best). See [Appendix Q: Using long-range Antenna to connect to Public Wi-Fis from a safe distance](#appendix-q-using-long-range-antenna-to-connect-to-public-wi-fis-from-a-safe-distance).**
+**We would strongly recommend the use of a long-range "Yagi" type directional Antenna with a suitable USB Wi-Fi Adapter. At least this will allow you to connect to public Wi-Fis from a "safe distance" but keep in mind that triangulation by a motivated adversary is still possible with the right equipment. So, this option should not be used during an extended period (minutes at best). See [Using long-range Antenna to connect to Public Wi-Fis from a safe distance](#long-range-wifi).**
 
 Using Tails should prevent local data leaks (such as MAC addresses or telemetry) and allow you to use a Browser to get what you want (utilities, VPN account) before leaving that place as fast as possible.
 
@@ -9885,7 +9875,7 @@ You could also use the other routes (Whonix and Qubes OS without using Tor/VPN) 
 
 Consider reading this older but still relevant guide <https://archive.flossmanuals.net/bypassing-censorship/index.html> <sup>[[Archive.org]](https://web.archive.org/web/https://archive.flossmanuals.net/bypassing-censorship/index.html)</sup>
 
-# Appendix Q: Using long-range Antenna to connect to Public Wi-Fis from a safe distance
+# Connecting to Public Wi-Fi from a Safe Distance { #long-range-wifi }
 
 It is possible to access/connect to remote distant Public Wi-Fis from a distance using a cheap directional Antenna that looks like this:
 
@@ -9917,7 +9907,7 @@ The process is simple:
 
 Ideally, this should "not be an issue" since this guide provides multiple ways of hiding your origin IP using VPNs and Tor. But if you are in a situation where VPN and Tor are not an option, then this could be your only security.
 
-# Appendix R: Installing a VPN on your VM or Host OS
+# Installing a VPN on Your VM or Host OS { #vpn-installation }
 
 Download the VPN client installer of your cash paid VPN service and install it on Host OS (Tor over VPN, VPN over Tor over VPN) or the VM of your choice (VPN over Tor):
 
@@ -9993,7 +9983,7 @@ Here are some guides provided by the recommended VPN providers in this guide:
 
         + <https://www.ivpn.net/knowledgebase/linux/linux-kill-switch-using-the-uncomplicated-firewall-ufw/> <sup>[[Archive.org]](https://web.archive.org/web/https://www.ivpn.net/knowledgebase/linux/linux-kill-switch-using-the-uncomplicated-firewall-ufw/)</sup>
 
-# Appendix S: Check your network for surveillance/censorship using OONI
+# Network Surveillance and Censorship Detection with OONI { #ooni-censorship-check }
 
 So, what is OONI? OONI stands for Open Observatory of Network Interference and is a sub-project of the Tor Project[^296].
 
@@ -10015,13 +10005,13 @@ While this might not be important in a normal environment, this could put you at
 
     - **You should only do this with the Qubes OS route or the Whonix Route of this guide after completing one of the routes.**
 
-- **Only consider running these tests quickly from a Public Wi-Fi from a safe distance (see [Appendix P: What about when Tor and VPNs aren't possible?](#appendix-p-what-about-when-tor-and-vpns-arent-possible)).**
+- **Only consider running these tests quickly from a Public Wi-Fi from a safe distance (see [What about when Tor and VPNs aren't possible?](#tor-vpn-not-possible)).**
 
 The probe can be found here: <https://ooni.org/install/> <sup>[[Archive.org]](https://web.archive.org/web/https://ooni.org/install/)</sup> for various platforms (iOS, Android, Windows, macOS, and Linux).
 
-# Appendix T: Checking files for malware
+# Checking Files for Malware { #checking-files-malware }
 
-## Integrity (if available)
+## Integrity (if available) { #check-file-integrity }
 
 Usually, integrity checks[^474] are done using hashes of files (usually stored within checksum files). Older files could use CRC[^475], more recently MD5[^476] but those present several weaknesses (CRC, MD5 [^477] that make them unreliable for file integrity checks (which does not mean they are not still widely used in other contexts).
 
@@ -10065,7 +10055,7 @@ So how to check checksums? (In this case SHA-256 but you could change to SHA-512
 
 **Remember that checksums are just checksums. Having a matching checksum does not mean the file is safe.**
 
-## Authenticity (if available)
+## Authenticity (if available) { #check-file-authenticity }
 
 Integrity is one thing. Authenticity is another thing. This is a process where you can verify some information is authentic and from the expected source. This is usually done by signing information (using GPG[^484] for instance) using public-key cryptography[^485].
 
@@ -10129,11 +10119,11 @@ For some other tutorials, please see:
 
 All these guides should also apply to any other file with any other key.
 
-## Security (checking for actual malware)
+## Security (checking for actual malware) { #check-file-security }
 
 **Every check should ideally happen in sandboxed/hardened Virtual Machines. This is to mitigate the possibilities for malware to access your Host computer.**
 
-### Anti-Virus Software
+### Anti-Virus Software { #on-antivirus }
 
 You might be asking yourself, what about Anti-Virus solutions? Well, no ... these are not perfect solutions against many modern malware and viruses using polymorphic code[^486]. But it does not mean they cannot help against less sophisticated and known attacks. It depends on how to use them as AV software can become an attack vector in itself.
 
@@ -10181,13 +10171,13 @@ So, if you are in doubt:
 
 For instance, this guide's PDF files were submitted to VirusTotal because it is meant to be public knowledge and we see no valid argument against it. It does not guarantee the absence of malware, but it does not hurt to add this check.
 
-### Manual Reviews
+### Manual Reviews { #manual-malware-checks }
 
 You can also try to check various files for malware using various tools. This can be done as an extra measure and is especially useful with documents rather than apps and various executables.
 
 These methods require more tinkering but can be useful if you want to go the extra length.
 
-#### PDF files
+#### PDF files { #check-pdf-manual }
 
 Again, regarding the PDFs of this guide and as explained in the README of my repository, you could check for [anomalies](https://www.bleepingcomputer.com/news/security/critical-rce-found-in-popular-ghostscript-open-source-pdf-library/) using PDFID which you can download at <https://blog.didierstevens.com/programs/pdf-tools/> <sup>[[Archive.org]](https://web.archive.org/web/https://blog.didierstevens.com/programs/pdf-tools/)</sup>:
 
@@ -10216,7 +10206,7 @@ Now, what if you think the PDF is still suspicious? Fear not ... there are more 
 
 - **(Deprecated) Linux/Qubes OS** (or possibly macOS through Homebrew or Windows through Cygwin): This should *theoretically* remove any malicious code in it, but will also render the PDF formatting useless (such as links, headings, bookmarks, and references). Something similar to how rasterizing this website into a PDF works when swtiching to dark-mode. **Note that this tool is deprecated and relies on a library called "ImageMagick" which is known for several security issues**[^498]**. You should not use this tool even if it is recommended in some other guides.**
 
-#### Other types of files
+#### Other types of files { #check-other-files }
 
 Here are some various resources for this purpose where you will find what tool to use for what type:
 
@@ -10232,7 +10222,7 @@ Here are some various resources for this purpose where you will find what tool t
 
 **Even with all those resources, keep in mind you might still get advanced malware if those are not detected by those various tools. Be careful and remember to handle these files within isolated Virtual Machines, if possible, to limit the attack surface and vectors.**
 
-# Appendix U: How to bypass (some) local restrictions on supervised computers
+# Bypassing Local Restrictions on Supervised Computers { #bypass-local-restrictions }
 
 There might be situations where the only device you have at your disposal is not really yours such as:
 
@@ -10244,7 +10234,7 @@ There might be situations where the only device you have at your disposal is not
 
 The situation might look desperate, but it is not necessarily the case as there are some safe ways to bypass these depending on how well your adversaries did their job securing your computer.
 
-## Portable Apps
+## Portable Apps { #use-portable-apps }
 
 There are plenty of methods you could use to bypass those restrictions locally. One of them would be to use portable apps[^502]. Those apps do not require installation on your system and can be run from a USB key or anywhere else.
 
@@ -10254,11 +10244,11 @@ This is because those portable apps will not necessarily hide themselves (or be 
 
 Even the most basic controls (supervision or parental) will send out detailed app usage to your adversary.
 
-## Bootable Live Systems
+## Bootable Live Systems { #use-live-os }
 
 This method is the one we would recommend in those cases.
 
-It is relatively easy for your adversary to prevent this by setting up firmware BIOS/UEFI (see [Bios/UEFI/Firmware Settings of your laptop](#biosuefifirmware-settings-of-your-laptop)) controls but usually most adversaries will overlook this possibility which requires more technical knowledge than just relying on Software.
+It is relatively easy for your adversary to prevent this by setting up firmware BIOS/UEFI (see [Bios/UEFI/Firmware Settings of your laptop](#bios-uefi-settings)) controls but usually most adversaries will overlook this possibility which requires more technical knowledge than just relying on Software.
 
 This method could even decrease suspicion and increase your plausible deniability as your adversaries think they have things under control and that everything appears normal in their reports.
 
@@ -10284,19 +10274,19 @@ Again, this feature is usually overlooked by most unskilled/lazy adversaries and
 
 The reason is that most of the controls are within your main Operating System software and only monitor what happens within the Operating System. Those measures will not be able to monitor what happened at the Hardware/Firmware level before the Operating System loads.
 
-## Precautions
+## Precautions { #live-os-precautions }
 
 While you might be able to bypass local restrictions easily using a Live System such as Tails, remember that your network might also be monitored for unusual activities.
 
 Unusual network activities showing up from a computer at the same time your computer is seemingly powered off might raise suspicions.
 
-If you are to resort to this, you should never do so from a monitored/known network but only from a safe different network. Ideally a safe public wi-fi (See [Find some safe places with decent public Wi-Fi](#find-some-safe-places-with-decent-public-wi-fi)).
+If you are to resort to this, you should never do so from a monitored/known network but only from a safe different network. Ideally a safe public wi-fi (See [Find some safe places with decent public Wi-Fi](#safe-wifi)).
 
 **Do not use a live system on a Software supervised/monitored device on a known network.**
 
-**Refer to the Tails route to achieve this. See [the Tails route](#the-tails-route) and [Appendix P: What about when Tor and VPNs aren't possible?](#appendix-p-what-about-when-tor-and-vpns-arent-possible) sections.**
+**Refer to the Tails route to achieve this. See [the Tails route](#tails-route) and [What about when Tor and VPNs aren't possible?](#tor-vpn-not-possible) sections.**
 
-# Appendix V: What browser to use in your Guest VM/Disposable VM
+# Choosing a Browser for Your Guest VM { #guest-vm-browser-choice }
 
 **Temporary Important Warning: Please see [Microarchitectural Side-channel Deanonymization Attacks:] for all browsers except Tor Browser.**
 
@@ -10392,7 +10382,7 @@ Here is a comparison table of one fingerprinting test of various browsers with t
 
 Another useful resource to be considered for comparing browsers is: <https://privacytests.org/> <sup>[[Archive.org]](https://web.archive.org/web/https://privacytests.org/)</sup>
 
-## Brave
+## Brave { guest-vm-brave }
 
 **This is my recommended/preferred choice for a Browser within your guest VMs. This is not my recommended choice for a Browser within your Host OS where we strictly recommend Tor Browser as they recommend it themselves**[^503]**.**
 
@@ -10416,13 +10406,13 @@ Why Brave despite the controversies[^504]?
 
 - Brave was found to be sending no identifiable telemetry compared to other browsers[^510].
 
-## Ungoogled-Chromium
+## Ungoogled-Chromium { guest-vm-ungoogled }
 
 **This browser is considered a security liability due to their systemic lagging on security patches**[^511]**.**
 
 **It is strongly advised not to use Ungoogled-Chromium.**
 
-## Edge
+## Edge { guest-vm-edge }
 
 This is for Windows users only. Edge is a solid choice too.
 
@@ -10442,7 +10432,7 @@ Cons:
 
 - You will have to disable some telemetry within the Browser
 
-## Safari
+## Safari { guest-vm-safari }
 
 The macOS default browser.
 
@@ -10460,7 +10450,7 @@ Cons:
 
 Overall, we would not recommend using Safari on a macOS VM but instead, go for another Browser such as Brave or Firefox.
 
-## Firefox
+## Firefox { guest-vm-firefox }
 
 And of course, lastly, you could go with Firefox,
 
@@ -10482,13 +10472,13 @@ Security (especially sandboxing) of Firefox is arguably weaker than Chromium-bas
 
 - You will experience more captchas (this is based on my tests).
 
-## Tor Browser
+## Tor Browser { guest-vm-tor-browser }
 
 If you are extra paranoid and want to use Tor Browser and have "Tor over VPN over Tor", you could go with Tor Browser within the VM as well. This is completely pointless/useless.
 
 We would not recommend this option. It is just silly.
 
-# Appendix V1: Hardening your Browsers
+# Hardening Your Browsers { #hardening-browsers }
 
 In this section, we'll discuss hardening your browsers. This has a heavy focus on the difference between Tracking Reduction and Tracking Evasion, and the pros and cons of either. First, let's define what they are [as described by Rohan Kumar](https://seirdy.one/posts/2022/06/25/two-types-of-privacy/):
 
@@ -10498,13 +10488,13 @@ In this section, we'll discuss hardening your browsers. This has a heavy focus o
 - Tracking evasion (TE)
     - TE reduces the amount of data exposed by a user. Rather than eliminating data collection itself, TE prevents useful data from being made available in the first place. In other words, it reduces a footprint’s size.
 
-Browsers that provide Tracking Reduction are to be used for a more casual [Threat Model][Appendix B3: Threat modeling resources](#appendix-b3-threat-modeling-resources) whereas Tracking Evasion is more complex. But both need to be explored. Tracking Reduction focuses on browsing with less tracking. It involves things like content-blocking, firewalls, opt-outs, flipping telemetry buttons, etc. If you're this far into the guide, you likely have a very good understanding of this already. Tracking Evasion, however, involves techniques like using the portable Tor Browser Bundle to anonymize your footprint and online identity, avoiding identifiable extensions, and using randomized keystroke delays. It's more about minimizing your online footprint, to give you a less fingerprintable browsing environment and internet usage.
+Browsers that provide Tracking Reduction are to be used for a more casual [Threat Model][Threat modeling resources](#threat-modeling-resources) whereas Tracking Evasion is more complex. But both need to be explored. Tracking Reduction focuses on browsing with less tracking. It involves things like content-blocking, firewalls, opt-outs, flipping telemetry buttons, etc. If you're this far into the guide, you likely have a very good understanding of this already. Tracking Evasion, however, involves techniques like using the portable Tor Browser Bundle to anonymize your footprint and online identity, avoiding identifiable extensions, and using randomized keystroke delays. It's more about minimizing your online footprint, to give you a less fingerprintable browsing environment and internet usage.
 
 A brief mention of this is necessary in determining operation needs for both. You need a certain level of understanding in both to achieve good standards and develop better browsing habits. This can and will overall provide you with a more viable solution to public trackers, government organizations looking to trace/track your browsing habits back to you, even just trolls attempting to doxx you.
 
 The following are the recommended safest routes for each browser according to the current versions of their respective software and the ability each one has to become more secure. In the guide we will provide both Tracking Reduction & Evasion and it will not require you to write even a single line of code.
 
-## Brave
+## Brave { #hardening-brave }
 
 - Download and install Brave browser from <https://brave.com/download/> <sup>[[Archive.org]](https://web.archive.org/web/https://brave.com/download/)</sup>
 
@@ -10538,7 +10528,7 @@ The following are the recommended safest routes for each browser according to th
 
 - Go to **Settings** > **Search engine** (`brave://settings/search`)
 
-    - See [Appendix A3: Search Engines](#appendix-a3-search-engines)
+    - See [Search Engines](#search-engines)
 
 - Go into **Settings** > **Extensions** (`brave://settings/extensions`)
 
@@ -10608,13 +10598,13 @@ Addons to consider on Brave if you want additional protections:
 
 That's it and you should be pretty much covered. For full paranoia, you can also just "Block Scripts" to disable Javascript. Note that even disabling Javascript might not protect you fully[^517].
 
-## Ungoogled-Chromium
+## Ungoogled-Chromium { #hardening-ungoogled-chromium }
 
 **This browser is considered a security liability due to their systemic lagging on security patches**[^518]**.**
 
 **It is strongly advised not to use Ungoogled-Chromium.**
 
-## Edge
+## Edge { #hardening-edge }
 
 Windows only:
 
@@ -10656,7 +10646,7 @@ Windows only:
 
         + In Address Bar and Search:
 
-            * Disable everything and change the search engine (see [Appendix A3: Search Engines](#appendix-a3-search-engines))
+            * Disable everything and change the search engine (see [Search Engines](#search-engines))
 
     - Go to Cookies and Sites Permissions:
 
@@ -10706,7 +10696,7 @@ That's about it for Edge but you are also free to add extensions from the Chrome
 
 - LibRedirect (<https://libredirect.github.io/>)
 
-## Safari
+## Safari { #hardening-safari }
 
 macOS Only:
 
@@ -10740,13 +10730,13 @@ macOS Only:
 
         + Check the "Show full website address"
 
-Consider [Appendix A5: Additional browser precautions with JavaScript enabled](#appendix-a5-additional-browser-precautions-with-javascript-enabled)
+Consider [Additional browser precautions with JavaScript enabled](#browser-precautions-js)
 
 That's about it. Unfortunately, you will not be able to add extensions as those will require you to sign in into the App Store which you cannot do from a macOS VM. Again, we would not recommend sticking to Safari in a macOS VM but instead switching to Brave or Firefox.
 
-## Firefox
+## Firefox { #hardening-firefox }
 
-### Normal settings
+### Normal settings { #hardening-firefox-normal }
 
 - Open Firefox
 
@@ -10760,7 +10750,7 @@ That's about it. Unfortunately, you will not be able to add extensions as those 
 
     - Go into Search
 
-        + Change the search engine (See [Appendix A3: Search Engines](#appendix-a3-search-engines))
+        + Change the search engine (See [Search Engines](#search-engines))
 
     - Go into Privacy & Security
 
@@ -10806,9 +10796,9 @@ That's about it. Unfortunately, you will not be able to add extensions as those 
 
         + Enable it on all Windows
 
-### Advanced settings
+### Advanced settings { #hardening-firefox-advanced }
 
-Consider [Arkenfox/user.js](https://github.com/arkenfox/user.js/), a heavily maintained and very easy to use browser config which uses a "user.js" to set all the privacy settings and disk avoidance values. Below we recommend that if you are not setting the Arkenfox config, at least setting the **about:config** values below. Arkenfox applies many others but these are the bare minimum for your protection while browsing. Remember: doing nothing and using a browser with its defaults will already be leaking many identifiable and trackable characteristics which are unique to you. See [Browser and Device Fingerprinting](#browser-and-device-fingerprinting) for more details on why default settings in browsers are unsafe.
+Consider [Arkenfox/user.js](https://github.com/arkenfox/user.js/), a heavily maintained and very easy to use browser config which uses a "user.js" to set all the privacy settings and disk avoidance values. Below we recommend that if you are not setting the Arkenfox config, at least setting the **about:config** values below. Arkenfox applies many others but these are the bare minimum for your protection while browsing. Remember: doing nothing and using a browser with its defaults will already be leaking many identifiable and trackable characteristics which are unique to you. See [Browser and Device Fingerprinting](#fingerprinting) for more details on why default settings in browsers are unsafe.
 
 Those settings are explained on the following resources in order of recommendation if you want more details about what each setting does:
 
@@ -10960,7 +10950,7 @@ Here are most of the steps combined from the sources above (some have been omitt
 
         + Set "change network.cookie.lifetimePolicy" to 2 (this deletes all cookies after each session)
 
-### Addons to install/consider
+### Addons to install/consider { #hardened-firefox-addons }
 
 - uBlock Origin (<https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/>)
 
@@ -10980,7 +10970,7 @@ Here are most of the steps combined from the sources above (some have been omitt
 
 - Skip Redirect (<https://github.com/sblask/webextension-skip-redirect>)
 
-### Bonus resources
+### Bonus resources { #hardened-firefox-guides }
 
 Here are also two recent guides to harden Firefox:
 
@@ -10988,7 +10978,7 @@ Here are also two recent guides to harden Firefox:
 
 - <https://ebin.city/~werwolf/posts/firefox-hardening-guide/> <sup>[[Archive.org]](https://web.archive.org/web/https://ebin.city/~werwolf/posts/firefox-hardening-guide/)</sup>
 
-# Appendix W: Virtualization
+# Virtualization { #virtualization }
 
 So, you might ask yourself, what is Virtualization[^519]?
 
@@ -11006,7 +10996,7 @@ Each Virtual Machine is a sandbox. Remember the reasons for using them are to pr
 
 - Mitigate online data leaks by being able to enforce strict network rules on Virtual Machines for accessing the network (such as passing through the Tor Network).
 
-## Nested virtualization risks
+## Nested virtualization risks { #nested-virtualization-risks }
 
 **There is an inherently larger attack surface when nesting virtualization.**
 
@@ -11029,7 +11019,7 @@ Here's some host information that can be leaked through the Virtual Machine:
 
 See <https://www.malwarebytes.com/blog/news/2014/02/a-look-at-malware-with-virtual-machine-detection> for more techniques used by malware to detect virtualization. These techniques are mostly prevented by appending some settings to your VM config file (.vmx). <https://blog.talosintelligence.com/2009/10/how-does-malware-know-difference.html>
 
-# Appendix X: Using Tor bridges in hostile environments
+# Using Tor Bridges in Hostile Environments { #tor-bridges }
 
 In some environments, your ISPs might be trying to prevent you from accessing Tor. Or accessing Tor openly might be a safety risk.
 
@@ -11073,11 +11063,11 @@ Finally, you could also request a bridge request by e-mail to <bridges@torprojec
 
 Hopefully, these bridges should be enough to get you connected even in a hostile environment.
 
-If not, consider [Appendix P: What about when Tor and VPNs aren't possible?](#appendix-p-what-about-when-tor-and-vpns-arent-possible)
+If not, consider [What about when Tor and VPNs aren't possible?](#tor-vpn-not-possible)
 
-# Appendix Y: Installing and using desktop Tor Browser
+# Installing and Using Desktop Tor Browser { #desktop-tor-browser }
 
-## Installation
+## Installation { #tor-browser-install }
 
 This is valid for Windows, Linux, and macOS.
 
@@ -11085,9 +11075,9 @@ This is valid for Windows, Linux, and macOS.
 
 - Open Tor Browser
 
-## Usage and Precautions
+## Usage and Precautions { #tor-browser-precautions }
 
-- After opening Tor Browser, you will see an option to **Connect**, a checkbox to **Always connect automatically** and a button to **Configure connection**. The Tor Network settings are there for you to possibly configure Bridges to connect to Tor if you are experiencing issues connecting to Tor due to Censorship or Blocking. As explained here: [Appendix X: Using Tor bridges in hostile environments](#appendix-x-using-tor-bridges-in-hostile-environments), this is now done automatically by the Tor Browser on Desktop.
+- After opening Tor Browser, you will see an option to **Connect**, a checkbox to **Always connect automatically** and a button to **Configure connection**. The Tor Network settings are there for you to possibly configure Bridges to connect to Tor if you are experiencing issues connecting to Tor due to Censorship or Blocking. As explained here: [Using Tor bridges in hostile environments](#tor-bridges), this is now done automatically by the Tor Browser on Desktop.
 
 ![image55](../media/image55.png)
 
@@ -11135,11 +11125,11 @@ If you are extra paranoid, use the "Safest" level by default and consider downgr
 
 Let's keep in mind that even 3 letters agencies recommend blocking ads for their internal users in order to improve security[^526].
 
-If you did not go for the above **personal and not officially recommended options**, the Safer level should still be used with some extra precautions while using some websites: see [Appendix A5: Additional browser precautions with JavaScript enabled](#appendix-a5-additional-browser-precautions-with-javascript-enabled).
+If you did not go for the above **personal and not officially recommended options**, the Safer level should still be used with some extra precautions while using some websites: see [Additional browser precautions with JavaScript enabled](#browser-precautions-js).
 
 Now, you are really done, and you can now surf the web anonymously from your desktop device.
 
-# Appendix Z: Online anonymous payments using cryptocurrencies
+# Anonymous Cryptocurrency Payments { #anonymous-crypto-payments }
 
 There are many services that you might want to use (VPS hosting, mail hosting, domain names...) but require payment of some kind.
 
@@ -11147,13 +11137,13 @@ As mentioned before in this guide multiple times, we strongly recommend the use 
 
 - But what if the service you want does not accept Monero but does accept a more mainstream cryptocurrency such as Bitcoin (BTC) or Ethereum (ETH)?
 
-**Bitcoin and other "mainstream cryptocurrencies" are not anonymous at all (Remember [Your Crypto Transactions](#your-crypto-transactions)) and you should never ever purchase, for example, Bitcoin from an exchange and then use these directly for purchasing services anonymously. This will not work, and the transaction can be traced easily.**
+**Bitcoin and other "mainstream cryptocurrencies" are not anonymous at all (Remember [Your Crypto Transactions](#crypto-transactions)) and you should never ever purchase, for example, Bitcoin from an exchange and then use these directly for purchasing services anonymously. This will not work, and the transaction can be traced easily.**
 
 - **Stay away from so-called "private" mixers, tumblers and coinjoiners.** You might think this is a good idea, but not only are they useless with cryptocurrencies such as BTC/ETH/LTC, they are also dangerous. They take custody of your coins. Use Monero to anonymize your crypto. Do not use a normal KYC-enabled exchange to buy/sell your Monero (such as Kraken), since this information on your purchases and withdrawals (for intended use) are retained in the exchange. Instead, use a P2P exchange that doesn't require KYC such as what can be found on <https://kycnot.me/>.
 
-- **See [Warning about special tumbling, mixing, coinjoining privacy wallets and services](#warning-about-special-tumbling-mixing-coinjoining-privacy-wallets-and-services).**
+- **See [Warning about special tumbling, mixing, coinjoining privacy wallets and services](#on-tumbling).**
 
-## Using Bitcoin anonymously option
+## Using Bitcoin anonymously option { #use-bitcoin-anonymously }
 
 Despite this, it is possible to safely anonymize Bitcoin through the use of non-custodial collaborative transactions and privacy-preserving spending tools. This is possible with a protocol called [ZeroLink](https://code.samourai.io/whirlpool/Whirlpool/-/blob/whirlpool/THEORY.md) and an implementation called Whirlpool which as two clients that utilize it and provide the necessary spending tools, detailed below. So, you might be wondering how? Well, it is actually pretty simple:
 
@@ -11167,7 +11157,7 @@ Despite this, it is possible to safely anonymize Bitcoin through the use of non-
 
 - **You should run your own node when using Bitcoin and always use that for connecting from your wallet. You do not need to purchase separate hardware to do so, and it's simple to [do so by using the Tor Network](https://bitcoincoredocs.com/tor.html) as well.**
 
-## Using Monero anonymously option
+## Using Monero anonymously option { #use-monero-anonymously }
 
 1. Purchase Monero at a non-KYC exchange (such as one found on <https://kycnot.me/>)
 
@@ -11177,17 +11167,17 @@ Despite this, it is possible to safely anonymize Bitcoin through the use of non-
 
 4. On the same VM (for instance again the Whonix Workstation), create a Bitcoin Wallet (again this is provided natively within the Whonix Workstation)
 
-5. From an anonymized browser (such as Tor Browser), use a non-KYC (Know Your Customer) service swapping service (see [Appendix A7: Crypto Swapping Services without Registration and KYC](#appendix-a7-crypto-swapping-services-without-registration-and-kyc)) and convert your Monero to BTC and transfer those to the BTC Wallet you have on your anonymized VM
+5. From an anonymized browser (such as Tor Browser), use a non-KYC (Know Your Customer) service swapping service (see [Crypto Swapping Services without Registration and KYC](#crypto-swapping-no-kyc)) and convert your Monero to BTC and transfer those to the BTC Wallet you have on your anonymized VM
 
 6. You should now have an anonymized Bitcoin wallet that can be used for purchasing services that do not accept Monero.
 
 **You should never access this wallet from a non-anonymized environment. Always use well-thought OPSEC with your BTC transactions. Remember those can be traced back to you.**
 
-The origin of those BTC cannot be traced back to your real identity due to the use of Monero **unless Monero is broken** or if you consolidate outputs from spending at separate merchants. It is recommended to use privacy preserving wallets in the [Bitcoin section](../guide/index.md#using-bitcoin-anonymously-option). Please do read [Appendix B2: Monero Disclaimer](#appendix-b2-monero-disclaimer).
+The origin of those BTC cannot be traced back to your real identity due to the use of Monero **unless Monero is broken** or if you consolidate outputs from spending at separate merchants. It is recommended to use privacy preserving wallets in the [Bitcoin section](#use-bitcoin-anonymously). Please do read [Monero Disclaimer](#monero-disclaimer).
 
 **Regarding Zcash: this section previously included use of Zcash but it has been removed in light of newer, more accurate information.**
 
-## Warning about special tumbling, mixing, coinjoining privacy wallets and services
+## Warning about special tumbling, mixing, coinjoining privacy wallets and services { #on-tumbling }
 
 Centralized "private" tumblers, mixers and coinjoiners are not recommended since they do not provide anonymity in a way that truly unlinks an output from its history.  Here are some references about this issue:
 
@@ -11197,11 +11187,11 @@ Centralized "private" tumblers, mixers and coinjoiners are not recommended since
 
 Mixing BTC in this way should prevent any chain analysis on future transactions. This will _not_ however hide any past transactions or the fact you purchased BTC from a KYC exchange. Instead we recommend to use Bitcoin wallets that utilize Whirlpool or Monero (preferred).
 
-## When converting from BTC to Monero
+## When converting from BTC to Monero { #atomic-swap-xmr }
 
 **Now, as part of any process above, if you want to convert BTC back to Monero**, we recommend not using a swapping service but instead recommend using the new Monero Atomic Swap Tool: <https://unstoppableswap.net/>. This will prevent unnecessary fees and intermediates when using a commercial swapping service. The website is self-explanatory with detailed instructions for all OSes.
 
-# Appendix A1: Recommended VPS hosting providers
+# Recommended VPS Hosting Providers { #vps-hosting-providers }
 
 We will only recommend providers that accept Monero as payment and here is my personal shortlist:
 
@@ -11225,11 +11215,11 @@ Also consider these lists:
 
 Lastly, you could pick one (at your own risk) from the list here that does accept Monero: <https://www.getmonero.org/community/merchants/#hosting> <sup>[[Archive.org]](https://web.archive.org/web/https://www.getmonero.org/community/merchants/)</sup>
 
-**Please do read [Appendix B2: Monero Disclaimer](#appendix-b2-monero-disclaimer).**
+**Please do read [Monero Disclaimer](#monero-disclaimer).**
 
-If the service does not accept Monero but does accept BTC, consider the following appendix: [Appendix Z: Paying anonymously online with BTC](#appendix-z-online-anonymous-payments-using-cryptocurrencies).
+If the service does not accept Monero but does accept BTC, consider the following appendix: [Paying anonymously online with BTC](#anonymous-crypto-payments).
 
-# Appendix A2: Guidelines for passwords and passphrases
+# Password and Passphrase Guidelines { #password-guidelines }
 
 My opinion (and the one of many[^528]'[^529]'[^530]'[^531]'[^532]'[^533]) is that passphrases are generally better than passwords. So instead of thinking of better passwords, forget them altogether and use passphrases instead (when possible). Or just use a password manager with very long passwords (such as KeePassXC, the preferred password manager in this guide).
 
@@ -11263,7 +11253,7 @@ Watch this insightful video by Computerphile: <https://www.youtube.com/watch?v=3
 
 **You might ask how? Simple: use a password manager such as the recommended KeePassXC. Only remember the passphrase to unlock the database and then store everything else in the KeePassXC database. Within KeePassXC you can then create extremely long passwords (30+ random characters) for each different service.**
 
-# Appendix A3: Search Engines
+# Search Engines { #search-engines }
 
 Which search engine to pick in your VMs?
 
@@ -11283,17 +11273,17 @@ Note that some of those have a convenient ".onion" address:
 
 In the end, we were often not satisfied with the results of both those search engines and still ended up on Bing or Google.
 
-# Appendix A4: Counteracting Forensic Linguistics
+# Counteracting Forensic Linguistics { #forensic-linguistics }
 
 **Note that this information is taken and adapted from a Dread Post available here:** <http://dreadytofatroptsdj6io7l3xptbet6onoyno2yv7jicoxknyazubrad.onion/post/aad54fe83b33a8a45920/>
 
 No plagiarism is intended but some important adaptations and modifications have been made to improve the source post in various ways.
 
-## Introduction
+## Introduction { #forensic-linguistics-intro }
 
 Stylometry is our personal and unique writing style. No matter who you are, you have a unique finger printable, and traceable writing style. This has been understood for a while now, and a branch of forensics is built off of this principle: forensic linguistics. In this field, the particular name for forensic linguistics applied to internet crime is called "Writeprint". Writeprint primarily aims to determine author identification over the internet by comparing a suspect's text to a known collection of writer invariant (normally written) texts, and even without comparison texts, this forensic technique can yield personal information about an author such as gender, age, and personality.
 
-## What does an adversary look for when examining your writing?
+## What does an adversary look for when examining your writing? { #forensic-linguistics-adversary }
 
 1. Lexical features: analysis of word choice.
 
@@ -11305,7 +11295,7 @@ Stylometry is our personal and unique writing style. No matter who you are, you 
 
 5. Idiosyncratic features: analysis of grammatical errors, this is the most important factor to consider because it provides relatively high accuracy in author identification
 
-## Examples
+## Examples { #forensic-linguistics-examples }
 
 You might think that this is not something that an adversary pays attention to? Think again! There have been multiple cases where adversaries such as law enforcement have used Writeprint techniques to help catch and sentence people. Here are some examples:
 
@@ -11319,7 +11309,7 @@ Do not use the same writing style for your sensitive activities as for your norm
 
 Pay attention to the little things that might add up. If you usually reply with "ok" to people, maybe try to reply with "okay" for your sensitive activities. You should NEVER use words or phrases from your sensitive activities (even if they are not in a public post) for normal purposes, and vice versa. Ross Ulbricht used "frosty" as the name for his Silk Road servers, and for his YouTube account, which helped convince law enforcement that Dread Pirate Roberts was in fact, Ross Ulbricht.
 
-## How to counteract the efforts of your adversary
+## How to counteract the efforts of your adversary { #forensic-linguistics-countermeasures }
 
 1. Reduce the amount of comparison text for adversaries to compare you with. This goes with having a small online footprint for your normal activities.
 
@@ -11337,9 +11327,9 @@ Pay attention to the little things that might add up. If you usually reply with 
 
 8. Consider what symbols you use in your writing. Do you use €, £ or $? Do you use "dd-mm-yyyy" or "mm-dd-yyyy" for dates? Do you use "08:00 pm" or "20:00" for time?
 
-## What different linguistic choices could say about you
+## What different linguistic choices could say about you { #forensic-linguistics-meta }
 
-### Emoticons
+### Emoticons { #emoticons }
 
 1. Russians for example use ")" instead of ":-)" or ":)" to express a smiley face.
 
@@ -11347,7 +11337,7 @@ Pay attention to the little things that might add up. If you usually reply with 
 
 3. Younger people generally do not use a hyphen in their smiley faces and just use ":)".
 
-### Structural features
+### Structural features { #forensic-linguistics-structure }
 
 1. Two spaces after a period give off the impression that you are quite older because this is how typing was taught to people learning to type with typewriters.
 
@@ -11357,7 +11347,7 @@ US: 1,000.00$
 
 > Europe: 1.000,00€
 
-### Spelling slang and symbols
+### Spelling slang and symbols { #forensic-linguistics-spelling }
 
 1. Obviously, people in different nations use different slang. This is even more pronounced when you use slang that is not as well known in other places such as someone from the UK mentioning a "headmaster" when in other nations it is referred to as a "principal".
 
@@ -11367,29 +11357,29 @@ US: 1,000.00$
 
 4. Of course, the symbols you use on your keyboard can give a lot of information away, such as £'s or $'s.
 
-## Techniques to prevent writeprinting
+## Techniques to prevent writeprinting { #forensic-linguistics-prevention }
 
 Here are some techniques in order of use:
 
-### Spelling and grammar checking
+### Spelling and grammar checking { #forensic-linguistics-grammar }
 
 This helps prevent some fingerprinting done using your spelling and grammar mistakes
 
-#### Offline using a word processor
+#### Offline using a word processor { #forensic-linguistics-offline }
 
 Use a word processor such as LibreWriter and use the spelling and grammar checks features to fix mistakes you might have typed.
 
-#### Online using an online service
+#### Online using an online service { #forensic-linguistics-online }
 
 If you do nothave a word processor available or don't want to use one, you can also use an online spelling and grammar checker such as Grammarly (this requires an e-mail and an account creation).
 
-### Translation technique
+### Translation technique { #forensic-linguistics-translation }
 
 **Disclaimer: a study archived here: <https://web.archive.org/web/20181125133942/https://www.cs.drexel.edu/~sa499/papers/adversarial_stylometry.pdf> seems to indicate the translation technique is inefficient to prevent stylometry. This step might be useless.**
 
 After being done with spelling and grammar fixes. Use a website or software such as Google Translate (or for a more privacy-friendly version, <https://simplytranslate.org/>) to translate between several different languages before translating back to your original language. These translations back and forth will alter your messages and make fingerprinting more difficult.
 
-### Search and replace
+### Search and replace { #forensic-linguistics-search-replace }
 
 Finally, and optionally, add some salt by purposefully adding some mistakes to your messages.
 
@@ -11403,7 +11393,7 @@ First off, you need to decide where you want to give the impression of your loca
 
 After you have decided upon a good location that your identity is from, research the differences in language between the two languages (in this case between UK English and US English). Thanks to the internet, this is quite easy, and you can find Wikipedia pages conveniently highlighting the regional differences of a language between two nations. Pay attention to how certain words are spelled ("metre" > "meter") and what words are exchanged with each other ("boot" > "trunk"). Now that you have a list of words that can be exchanged with each other, and a list of spelling that are different, use the "Search and Replace" in your editor and change the words such as "colour" into "color", and "lorry" into "truck". **Again, do not use an AutoCorrect feature or "Replace All" as some changes might not make sense. Review each proposed change. As an example, if you were to use AutoCorrect or "Replace all" on the word "boot" to change into "trunk", this would make perfect sense in the context of cars. But it would not make any sense in the context of shoes.**
 
-### Final advice
+### Final advice { #forensic-linguistics-note }
 
 Understand that you have to constantly think of what you type and how you type while conducting sensitive activities.
 
@@ -11413,7 +11403,7 @@ Proofread yourself at least one time after you are done writing anything to veri
 
 You might also consider the use of something like AnonyMouth <https://web.archive.org/web/https://github.com/psal/anonymouth> <sup>[[Archive.org]](https://web.archive.org/web/https://github.com/psal/anonymouth)</sup> which is a tool that you can use to anonymize your documents, developed by PSAL, Drexel University's Privacy, Security, and Automation Laboratory <https://psal.cs.drexel.edu/index.php/Main_Page> <sup>[[Archive.org]](https://web.archive.org/web/https://psal.cs.drexel.edu/index.php/Main_Page)</sup>. Such tools can prove invaluable.
 
-## Bonus links
+## Bonus links { #forensic-linguistics-guides }
 
 - <https://seirdy.one/posts/2022/07/09/stylometric-fingerprinting-redux/> <sup>[[Archive.org]](https://web.archive.org/web/https://seirdy.one/posts/2022/07/09/stylometric-fingerprinting-redux/)</sup>: Stylometric fingerprinting redux
 
@@ -11443,7 +11433,7 @@ You might also consider the use of something like AnonyMouth <https://web.archiv
 
 - <https://i.blackhat.com/us-18/Wed-August-8/us-18-Wixey-Every-ROSE-Has-Its-Thorn-The-Dark-Art-Of-Remote-Online-Social-Engineering.pdf> <sup>[[Archive.org]](https://web.archive.org/web/https://i.blackhat.com/us-18/Wed-August-8/us-18-Wixey-Every-ROSE-Has-Its-Thorn-The-Dark-Art-Of-Remote-Online-Social-Engineering.pdf)</sup>: This goes over how to potentially spot deception through the internet, and presents a checklist to see how trustworthy someone is. We would advise reading the slides or watching the presentation on YouTube.
 
-# Appendix A5: Additional browser precautions with JavaScript enabled
+# Additional Browser Precautions with JavaScript Enabled { #browser-precautions-js }
 
 To avoid Browser and User Fingerprinting through JavaScript but while keeping JavaScript enabled, some additional safety measures should be observed at least on some websites:
 
@@ -11475,7 +11465,7 @@ These recommendations are similar to the ones at the beginning of the guide and 
 
 **(Optional)** Consider the use of the <https://libredirect.github.io/> <sup>[[Archive.org]](https://web.archive.org/web/20220509220021/https://libredirect.github.io/)</sup> extension to automate the use of the above services.
 
-# Appendix A6: Comparing versions
+# Comparing Guide Versions { #comparing-versions }
 
 If you want to compare an older version of the PDF with a newer version, consider these online tools (note that we do not endorse those tools in relation to their privacy policies, but it should not matter since these PDFs are public):
 
@@ -11487,9 +11477,9 @@ If you want to compare an older version of the PDF with a newer version, conside
 
 <!-- If you want to compare the older version of the ODT format with a newer version, use the LibreWriter compare features as explained here: <https://help.libreoffice.org/7.1/en-US/text/shared/guide/redlining_doccompare.html> <sup>[[Archive.org]](https://web.archive.org/web/https://help.libreoffice.org/7.1/en-US/text/shared/guide/redlining_doccompare.html)</sup> -->
 
-# Appendix A7: Crypto Swapping Services without Registration and KYC
+# Crypto Swapping Without Registration or KYC { #crypto-swapping-no-kyc }
 
-## General Crypto Swapping
+## General Crypto Swapping { #crypto-swapping-general }
 
 **Skip to next section for BTC to Monero. Do not use swapping services for BTC to Monero.**
 
@@ -11503,17 +11493,17 @@ Here is a small list of non-KYC crypto swapping services, remember they all have
 
 **Consider having a look at <https://kycnot.me/> which is an open-source project listing non-KYC exchanges/swapping services (repository at <https://codeberg.org/pluja/kycnot.me>).**
 
-## BTC to Monero only
+## BTC to Monero only { #swapping-btc-xmr }
 
 **Do not use any swapping service, use their Atomic Swap feature.** See this Monero Atomic Swap Tool: <https://unstoppableswap.net/>.
 
 This will prevent unnecessary fees and intermediates when using a commercial swapping service. The website is self-explanatory with detailed instructions for all OSes.
 
-# Appendix A8: Installing a Zcash wallet
+# Installing a Zcash Wallet { #zcash-wallet }
 
 Remember this should only be done on a secure environment such as VM behind the Whonix Gateway.
 
-## Debian 11 VM
+## Debian 11 VM { #zcash-debian }
 
 - Load the Debian VM
 
@@ -11527,15 +11517,15 @@ Remember this should only be done on a secure environment such as VM behind the 
 
 - Open a Terminal window and run the following commands (with the updated downloaded version if needed):
 
-    - **```**sudo dpkg -i ./libindicator3-7_0.5.0-4_amd64.deb**```**
+    - ```sudo dpkg -i ./libindicator3-7_0.5.0-4_amd64.deb```
 
-    - **```**sudo dpkg -i ./libappindicator3-1_0.4.92-7_amd64.deb**```**
+    - ```sudo dpkg -i ./libappindicator3-1_0.4.92-7_amd64.deb```
 
-    - **```**sudo dpkg -i ./Zecwallet_Lite_1.7.5_amd64.deb**```**
+    - ```sudo dpkg -i ./Zecwallet_Lite_1.7.5_amd64.deb```
 
 - Click the upper left menu, find then launch ZecWallet Lite
 
-## Ubuntu 20.04/21.04/21.10 VM
+## Ubuntu 20.04/21.04/21.10 VM { #zcash-ubuntu }
 
 - Load the Ubuntu VM
 
@@ -11549,7 +11539,7 @@ Remember this should only be done on a secure environment such as VM behind the 
 
 - Click the upper left menu, find then launch ZecWallet Lite
 
-## Windows 10/11 VM
+## Windows 10/11 VM { #zcash-windows }
 
 - Load the Windows VM
 
@@ -11561,7 +11551,7 @@ Remember this should only be done on a secure environment such as VM behind the 
 
 - Launch ZecWallet Lite
 
-## Whonix Workstation 16 VM
+## Whonix Workstation 16 VM { #zcash-whonix }
 
 - Load the Whonix Workstation VM
 
@@ -11575,25 +11565,25 @@ Remember this should only be done on a secure environment such as VM behind the 
 
 - Open a Terminal window and run the following commands (with the updated downloaded version if needed):
 
-    - **```**sudo dpkg -i ./libindicator3-7_0.5.0-4_amd64.deb**```**
+    - ```sudo dpkg -i ./libindicator3-7_0.5.0-4_amd64.deb```
 
-    - **```**sudo dpkg -i ./libappindicator3-1_0.4.92-7_amd64.deb**```**
+    - ```sudo dpkg -i ./libappindicator3-1_0.4.92-7_amd64.deb```
 
-    - **```**sudo dpkg -i ./Zecwallet_Lite_1.7.5_amd64.deb**```**
+    - ```sudo dpkg -i ./Zecwallet_Lite_1.7.5_amd64.deb```
 
 - Click the upper left menu and go to Development, then launch ZecWallet Lite
 
-# Appendix B1: Checklist of things to verify before sharing information
+# Pre-Sharing Information Checklist { #pre-sharing-checklist }
 
 Here is a checklist of things to verify before sharing information to anyone:
 
 - Check the files for any metadata: see [Metadata auditing](#metadata-auditing)
 
-- Check the files for anything malicious: see [Appendix T: Checking files for malware](#appendix-t-checking-files-for-malware)
+- Check the files for anything malicious: see [Checking files for malware](#checking-files-malware)
 
 - Check the files for any watermarking: see [Watermarking](#watermarking)
 
-- Check any writing for possible forensics analysis: see [Appendix A4: Counteracting Forensic Linguistics](#appendix-a4-counteracting-forensic-linguistics)
+- Check any writing for possible forensics analysis: see [Counteracting Forensic Linguistics](#forensic-linguistics)
 
 - Have a look at this part of the Whonix documentation: <https://www.whonix.org/wiki/Surfing_Posting_Blogging#Anonymous_File_Sharing> <sup>[[Archive.org]](https://web.archive.org/web/https://www.whonix.org/wiki/Surfing_Posting_Blogging#Anonymous_File_Sharing)</sup>
 
@@ -11601,7 +11591,7 @@ Here is a checklist of things to verify before sharing information to anyone:
 
 **After curating the files for anything you want to leave out. Double-check and even Triple check them. Then you could consider sending them to an organization such as a press organization or others.**
 
-# Appendix B2: Monero Disclaimer
+# Monero Disclaimer { #monero-disclaimer }
 
 First, please read this small introduction video to Monero: <https://www.youtube.com/watch?v=H33ggs7bh8M> <sup>[[Invidious]](https://yewtu.be/watch?v=H33ggs7bh8M)</sup>
 
@@ -11611,13 +11601,14 @@ You may want to watch this insightful video for more details: <https://www.youtu
 
 Also please consider reading: [Privacy Limitations in Anonymity Networks with Monero](https://github.com/monero-project/monero/blob/master/docs/ANONYMITY_NETWORKS.md#privacy-limitations) <sup>[[Archive.org]](https://web.archive.org/web/https://github.com/monero-project/monero/blob/master/docs/ANONYMITY_NETWORKS.md#privacy-limitations)</sup>
 
-**Use these at your own risk, sending cash payments to providers accepting cash (through the postal service) is always a better solution if/when possible.**
+**Use these at your own risk. Sending cash payments to providers through the postal service is always a better solution if/when possible.**
 
-# Appendix B3: Threat modeling resources
+# Threat Modeling Resources { #threat-modeling-resources }
 
 Here are various threat modeling resources if you want to go deeper in threat modeling.
 
 We recommend the LINDDUN <https://www.linddun.org> threat modeling method <sup>[[Archive.org]](https://web.archive.org/web/https://www.linddun.org/)</sup>:
+
 - Researchers created an online tool to help make your threat model at <https://www.linddun.org/go> <sup>[[Archive.org]](https://web.archive.org/web/https://www.linddun.org/go)</sup>.
 - It is synergistic with STRIDE below.
 - It is focused on privacy but is clearly perfectly suitable for anonymity.
@@ -11625,6 +11616,7 @@ We recommend the LINDDUN <https://www.linddun.org> threat modeling method <sup>[
 - It is used in the making of the Threat Modeling Manifesto: <https://www.threatmodelingmanifesto.org/> <sup>[[Archive.org]](https://web.archive.org/web/https://www.threatmodelingmanifesto.org/)</sup>
 
 LINDDUN threat modeling tutorials and resources:
+
 - **We recommend the following quick tutorial video from "The Hated One" YouTube channel with the approval and review from LINDDUN designers: <https://www.youtube.com/watch?v=6AXkJ3dot2s>** <sup>[[Invidious]](https://yewtu.be/watch?v=6AXkJ3dot2s>)</sup> to get started.
 - More resources for deeper understanding and usage:
 
@@ -11644,7 +11636,7 @@ Here are alternative resources and methodologies if LINDDUN doesn't suit you:
 - Threat Modeling: 12 Available Methods: <https://insights.sei.cmu.edu/blog/threat-modeling-12-available-methods> <sup>[[Archive.org]](https://web.archive.org/web/https://insights.sei.cmu.edu/blog/threat-modeling-12-available-methods/)</sup>
 - Threat Modelling: <https://www.geeksforgeeks.org/threat-modelling/> <sup>[[Archive.org]](https://web.archive.org/web/https://www.geeksforgeeks.org/threat-modelling/)</sup>
 
-# Appendix B4: Important notes about evil-maid and tampering
+# Evil-Maid and Tampering Notes { #evil-maid-tampering-notes }
 
 Your context needs to be taken into account.
 
@@ -11652,9 +11644,9 @@ Preventing an evil-maid attack attack or tampering might lead to bad consequence
 
 On the other hand, allowing the attack but detecting it will not let your adversary know that you are aware of the tampering. You can then take steps safely to not reveal information and possibly leave.
 
-See the [Some last OPSEC thoughts](#some-last-opsec-thoughts) section for some tips.
+See the [Some last OPSEC thoughts](#opsec-thoughts) section for some tips.
 
-# Appendix B5: Types of CPU attacks
+# Types of CPU Attacks { #cpu-attacks }
 
 Select security issues plague many Intel CPUs, such as transient execution attacks (formerly called speculative execution side channel methods). Here you can check your CPU against affected micro-processors with known bugs <https://www.intel.com/content/www/us/en/developer/topic-technology/software-security-guidance/processors-affected-consolidated-product-cpu-model.html> <sup>[[Archive.org]](https://web.archive.org/web/20220814123250/https://www.intel.com/content/www/us/en/developer/topic-technology/software-security-guidance/processors-affected-consolidated-product-cpu-model.html)</sup>.
 
@@ -11665,7 +11657,7 @@ Microarchitecture_ which you can read here: [Borrello2022AEPIC](https://aepiclea
 
 Model-specific registers (MSRs) and their configuration bits can also be detected automatically on Intel and AMD CPUs: [Kogler2022](https://github.com/IAIK/msrevelio) <sup>[[Archive.org]](https://web.archive.org/web/20220814125349/https://andreaskogler.com/papers/msrtemplating.pdf)</sup>. This allows an attacker (with heavy knowledge of CPU functionality) to view information about the MSRs, which are essentially special CPU registers allowing interaction with low-level CPU features and advanced configuration of the CPU's behavior. Modern x86 CPUs have hundreds of these, which are usually documented very little and in increasingly less verbosity over the past few years.
 
-# Appendix B6: Warning for using Orbot on Android
+# Orbot on Android Warning { #orbot-android-warning }
 
 While this is often misunderstood, Orbot on Android does not make your Tor-enabled apps go through Tor if you add them to the list. Orbot is acting as a device-wide VPN (also known as a "transparent proxy"). The list of apps using Orbot is a whitelist. This list will not make some apps magically use Tor and unchecked ones use the clear-net. This only ensures the device-wide VPN is using Tor to route traffic. This means that Orbot can only control what app can access the VPN it creates. Other apps will lose connectivity.
 
@@ -11681,7 +11673,7 @@ And from [a post](https://tor.stackexchange.com/questions/427/is-running-tor-ove
 
 "The danger (beyond the performance hit) which keeps me from running Tor over Tor has to do with timing and congestion measurements. Adversaries watching your traffic at the exit(s) of your circuits have a better chance of linking your Whonix activity with your [Tor Browser Bundle] activity when those shared circuits slow down or drop packets at the same time. This can happen without Tor over Tor when your instances use a common upstream link. The linkage will be made tighter and more explicit if you run the Whonix Tor traffic through your TBB SOCKS5 Tor circuits. This tighter linkage raises the danger of successful correlation."
 
-# Appendix B7: Caution about Session Messenger
+# Session Messenger Caution { #session-messenger-caution }
 
 - They use LokiNet, which requires Oxen to run nodes to route Session traffic, and it costs 15,000 \$OXEN or 3,750 \$OXEN for a shared node[^538], which is about \~\$1,800 US dollars or \~\$500 US dollars, respectively. This high cost creates a barrier to entry for running nodes, potentially centralizing the network and limiting its accessibility.
     - The price of running nodes essentially puts their network behind a paywall if you want to run a node, even just to contribute bandwidth to the network like you might with Tor. But there is a stakeless fork of Lokinet.
@@ -11693,13 +11685,13 @@ And from [a post](https://tor.stackexchange.com/questions/427/is-running-tor-ove
 
 In short, our opinion is that you may use Session Messenger on iOS due to the absence of a better alternative (such as Briar). But if Briar or another app (maybe Cwtch in the future) becomes available, we will recommend going away from Session messenger as soon as possible. It is a last resort.
 
-# Appendix B8: operational security failure case studies
+# OPSEC Failure Case Studies { #opsec-failure-cases }
 
 The following cases are drawn from public court records, journalism, and post-mortems. They are included not to gloat over people who were caught, but because each illustrates a specific, repeatable failure mode that is directly relevant to the guidance elsewhere in this guide. In every case, the technical anonymity tools available were sufficient - the failures were human.
 
-## Hector Monsegur (Sabu) - LulzSec, 2011
+## Hector Monsegur (Sabu) - LulzSec, 2011 { #on-lulzsec }
 
-**Context:** Monsegur was a core member and de facto leader of LulzSec, a high-profile hacking group responsible for breaches of Sony, the FBI, and others. He was arrested in June 2011 and subsequently became an FBI informant.
+**Context:** Monsegur was a core member and de facto leader of LulzSec, a high-profile hacking group responsible for breaches of Sony, the FBI, and others. He was arrested in June 2011 and subsequently became an FBI informant when they threatened to take his kids away.
 
 **The failure:** On a single occasion, Monsegur logged into an IRC channel associated with Anonymous/LulzSec without routing his connection through Tor. His real IP address - assigned to his home internet connection in New York - was logged by the IRC server. The FBI subpoenaed those logs.
 
@@ -11707,7 +11699,7 @@ The following cases are drawn from public court records, journalism, and post-mo
 
 **What he should have done:** Used Tor or a trusted VPN for every IRC connection without exception, ideally from hardware and a network not associated with his identity. A single dedicated device used exclusively for sensitive activities would have prevented cross-contamination.
 
-## Ross Ulbricht - Silk Road, 2013
+## Ross Ulbricht - Silk Road, 2013 { #on-silk-road }
 
 **Context:** Ulbricht operated Silk Road, the pseudonymous darknet market, under the name "Dread Pirate Roberts" for approximately two years before his arrest in October 2013.
 
@@ -11717,7 +11709,7 @@ The following cases are drawn from public court records, journalism, and post-mo
 
 **What he should have done:** Used entirely separate identities, devices, and communication channels for Silk Road administration and personal activity, with no shared usernames, email addresses, or writing contexts. Pre-arrest, encrypted his working drive with a passphrase so that seizure of an open laptop would not yield plaintext access.
 
-## "Defcon" (Blake Benthall) - Silk Road 2.0, 2014
+## "Defcon" (Blake Benthall) - Silk Road 2.0, 2014 { #on-defcon }
 
 **Context:** Silk Road 2.0 launched shortly after the original Silk Road was seized. Its administrator, operating as "Defcon," was arrested in November 2014.
 
@@ -11727,7 +11719,7 @@ The following cases are drawn from public court records, journalism, and post-mo
 
 **What he should have done:** Audited all server configurations for IP leakage before launch and regularly thereafter. Treated all staff as potential informants at the operational level, compartmentalizing information accordingly.
 
-## Jeremy Hammond - AntiSec, 2012
+## Jeremy Hammond - AntiSec, 2012 { #on-jeremy-hammond }
 
 **Context:** Hammond was a member of AntiSec, an offshoot of Anonymous, responsible for the Stratfor breach. He was arrested in March 2012.
 
@@ -11737,7 +11729,7 @@ The following cases are drawn from public court records, journalism, and post-mo
 
 **What he should have done:** Used unique, randomly generated credentials for every identity and service with no shared patterns. The more important lesson - that operational trust in individuals cannot be verified cryptographically - has no clean technical solution, but compartmentalizing what each collaborator knows limits the damage any single compromise can cause.
 
-## Common threads
+## Common threads { #common-opsec-fail-threads }
 
 Reading across these cases, several patterns repeat:
 
@@ -11747,7 +11739,7 @@ Reading across these cases, several patterns repeat:
 - **Human relationships are the most reliable attack surface.** Infiltration and informants feature in the majority of significant darknet takedowns.
 - **Physical capture with an unlocked device undoes everything.** Disk encryption only helps if the device is locked at the moment of seizure.
 
-# Appendix B9: Post-quantum cryptography
+# Post-Quantum Cryptography { #post-quantum-cryptography }
 
 **Note: This section deals with a threat that is not immediate for most users. If your threat model involves a nation-state adversary or communications whose sensitivity extends years into the future, read carefully. If you are an average user, you can skim this section for now but should revisit it as the technology matures.**
 
@@ -11765,7 +11757,7 @@ The good news is that the cryptographic community has been aware of this problem
 
 NIST explicitly recommends deploying these in **hybrid mode** during the transition period - meaning alongside classical algorithms rather than replacing them outright. This way, an attacker would need to break both simultaneously.
 
-## Signal's PQXDH
+## Signal's PQXDH { #on-signal-post-quantum }
 
 In September 2023, Signal deployed **PQXDH**[^557] (Post-Quantum Extended Diffie-Hellman), upgrading its X3DH key agreement protocol to combine ML-KEM-1024 with the classical X25519 Diffie-Hellman exchange. The result is hybrid: security holds as long as either component remains unbroken.
 
@@ -11773,7 +11765,7 @@ For Signal users, **this was automatic and transparent**. No configuration is re
 
 Note that this only covers the key exchange layer. The authentication layer (identity keys) is not yet post-quantum hardened in Signal, though this is an active area of development.
 
-## What you should do now
+## What you should do now { #pqc-next-action }
 
 For most threat models, the practical steps are straightforward:
 
@@ -11787,23 +11779,23 @@ For most threat models, the practical steps are straightforward:
 
 For those with genuinely high-risk profiles: communications whose exposure would still be dangerous in ten or more years deserve attention now. Switching to Signal and establishing fresh sessions (rather than relying on long-running session state from before the PQXDH rollout) is the most practical near-term step.
 
-## A note on Monero
+## A note on Monero { #on-monero }
 
 Monero's cryptographic primitives - specifically its use of Ed25519 and Curve25519 - are vulnerable to Shor's algorithm on a sufficiently powerful quantum computer. The Monero Research Lab has studied this problem[^535] and no post-quantum upgrade has been deployed. The community regards this as a medium-term concern, not an immediate one, given the current state of quantum hardware. For operational anonymity today, Monero remains appropriate. Do not assume long-term financial privacy against a quantum-capable adversary.
 
-# Appendix C1: Stylometric analysis and writing style
+# Stylometric Analysis and Writing Style { #stylometric-analysis }
 
 **Note: Stylometric de-anonymization is a real but narrow threat. It is relevant to people who publish substantial amounts of text under a pseudonym over time, or who are suspected leakers being compared against a known corpus of their writing. It is not a realistic threat for most users of this guide. Read this section if you write publicly under a pseudonym, communicate repeatedly with the same adversary, or are a potential whistleblower whose writing may be compared against internal documents.**
 
-Stylometry[^559] is the statistical analysis of writing style for authorship attribution. The core insight is that people write in consistent, measurable ways that persist across topics and contexts - and that these patterns are difficult to suppress consciously. An author who habitually uses the Oxford comma, prefers "however" to "but," writes sentences averaging 22 words, and rarely uses exclamation marks will tend to do so whether writing a forum post, an email, or a leaked document.
+Stylometry[^559] is the statistical analysis of writing style for authorship attribution. The core insight is that people write in consistent, measurable ways that persist across topics and contexts - and that these patterns are difficult to suppress consciously. An author who habitually uses the Oxford comma, prefers "however" to "but," writes sentences averaging 22 words, and rarely uses exclamation marks will tend to do so whether writing a forum post, an email, or a leaked document. Even one time that you might forget to anonymize your writing could be your downfall. In 2026 Vitalik Buterin, Ethereum co-founder, is attempting to have AI de-anonymize himself _intentionally_ to show this is highly probable in the near future.[^565]
 
-## What features are measured
+## What features are measured { #stylometry-tells }
 
 Modern stylometric systems analyse dozens to hundreds of features simultaneously. The most discriminating are **function words** - articles, prepositions, conjunctions - which are used largely unconsciously and are highly consistent per author.[^560] Content words (nouns, verbs, topic-specific vocabulary) are poor stylometric features because they vary with subject matter; function words do not. Other features include: sentence length distribution; punctuation habits (comma frequency, semicolon use, dash preference); paragraph length; vocabulary richness (type-token ratio); character-level n-grams; and syntactic patterns such as passive voice frequency.
 
 In controlled academic evaluations, state-of-the-art systems achieve attribution accuracy above 80% across corpora of 50 or more candidate authors when each author has contributed several thousand words.[^561] Accuracy degrades significantly with shorter texts (under 500 words), larger candidate sets, or when the candidate corpus and the anonymous text are from different genres or contexts.
 
-## Deployed tools and real cases
+## Deployed tools and real cases { #stylometry-tools }
 
 **JGAAP** (Java Graphical Authorship Attribution Program)[^562], developed at Duquesne University, is the most widely used open academic tool and has been applied in legal proceedings. **Burner** is a more recent system designed specifically for adversarial de-anonymization of online pseudonyms.
 
@@ -11811,7 +11803,7 @@ The most documented real-world case is the 2013 identification of J.K. Rowling a
 
 In national security contexts, stylometric analysis has been used or attempted in leak investigations to compare anonymous documents against the known writing of suspected sources, though specific cases are rarely publicly confirmed.
 
-## What works and what does not
+## What works and what does not { #stylometry-effectiveness }
 
 **Naive countermeasures fail.** Synonym substitution - replacing words with alternatives of similar meaning - does not affect function word patterns, sentence structure, or punctuation habits, which are the most discriminating features. Simply trying to "write differently" without a specific method is ineffective because the unconscious habits that stylometry measures are, by definition, ones the author does not notice.
 
@@ -11819,13 +11811,13 @@ In national security contexts, stylometric analysis has been used or attempted i
 
 **AI rewriting as a countermeasure** is an active area of research with mixed results.[^564] Large language models do alter function word distributions and sentence structure when rewriting text, and early studies suggest this degrades stylometric attribution accuracy to some degree. However, LLM rewriting does not reliably remove all stylistic signal - some author-specific patterns survive paraphrasing - and introduces a new signal: the statistical fingerprint of the specific model and prompt used. Whether this trade is favourable depends on the adversary's capabilities. LLM rewriting is probably useful as one layer in a defence-in-depth approach for high-risk writers, but should not be relied upon as a complete solution.
 
-## Honest threat model
+## Honest threat model { #stylometry-threat-model }
 
 Stylometry requires a reasonably large text sample from the anonymous author (ideally 1,000+ words), a candidate set of known authors to compare against, and a known writing corpus for those candidates. This limits realistic deployment to: leak investigations where investigators have a short list of suspects with known writing samples; de-anonymization of long-running pseudonymous authors with substantial published output; and academic or forensic authorship disputes.
 
 It is not a practical threat for: one-off anonymous communications; users whose adversary does not have a comparison corpus of their writing; or short messages where the text sample is insufficient for reliable analysis. For most people reading this guide, the other threats documented here - metadata, network-layer identification, device fingerprinting - are far more likely vectors than stylometry. Address those first.
 
-# References
+# References { #references }
 
 [^1]: English translation of German Telemedia Act <https://www.huntonprivacyblog.com/wp-content/uploads/sites/28/2016/02/Telemedia_Act__TMA_.pdf> <sup>[[Archive.org]](https://web.archive.org/web/https://www.huntonprivacyblog.com/wp-content/uploads/sites/28/2016/02/Telemedia_Act__TMA_.pdf)</sup>. Section 13, Article 6, "The service provider must enable the use of Telemedia and payment for them to occur anonymously or via a pseudonym where this is technically possible and reasonable. The recipient of the service is to be informed about this possibility. ".
 
@@ -12936,3 +12928,5 @@ It is not a practical threat for: one-off anonymous communications; users whose 
 [^563]: Patrick Juola, How a computer program helped reveal J.K. Rowling as author of A Cuckoo's Calling, Scientific American, 2013 <https://www.scientificamerican.com/article/how-a-computer-program-helped-show-jk-rowling-write-a-cuckoo-s-calling/> <sup>[[Archive.org]](https://web.archive.org/web/https://www.scientificamerican.com/article/how-a-computer-program-helped-show-jk-rowling-write-a-cuckoo-s-calling/)</sup>
 
 [^564]: Mahmood et al., This is not my writing: LLMs as Authorship Obfuscation Tools, arXiv 2023 <https://arxiv.org/abs/2305.12605> <sup>[[Archive.org]](https://web.archive.org/web/https://arxiv.org/abs/2305.12605)</sup>
+
+[^565]: Binance Square, Vitalik Buterin Says He Wrote an Anonymous Ethereum Document to Test AI De-Anonymization <https://www.binance.com/en/square/post/06-22-2026-vitalik-buterin-says-he-wrote-an-anonymous-ethereum-document-to-test-ai-de-anonymization-336906051847538> <sup>[[Archive.org]](https://web.archive.org/web/https://www.binance.com/en/square/post/06-22-2026-vitalik-buterin-says-he-wrote-an-anonymous-ethereum-document-to-test-ai-de-anonymization-336906051847538)</sup>

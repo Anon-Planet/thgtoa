@@ -1,94 +1,89 @@
 ---
-title: Impressum
+title: "A Constitution"
+description: "The rules, values, and principles governing the Anonymous Planet initiative and PSA community."
+hide:
+  - toc
 ---
 
-To amend the rules and regulations of the network and of the PSA community, this constitution is hereby set forth. It is applicable to all the projects of the initiative, especially the Hitchhiker's Guide to Online Anonymity. All members/collaborators must abide by these lines when contributing within the context of the initiative.
+<div class="hero-block">
+  <div class="hero-eyebrow">Applicable to all projects of the initiative.</div>
+  <h1 class="hero-title">A Constitution<span class="hero-subtitle">The rules we hold ourselves to.</span></h1>
+  <div class="hero-cta-row">
+    <a href="#principles" class="hero-cta hero-cta--primary">Our Principles</a>
+    <a href="#goals" class="hero-cta hero-cta--secondary">Core Goals</a>
+  </div>
+</div>
 
-## Requirements
+---
 
-### Anonymity above everything
+## Principles { #principles }
 
-Anonymity is necessary to maintain the balance of power, specifically to help journalists, whistleblowers, lawyers, scientists, and victims of oppression. Anonymity first, even if that means using non-free and/or proprietary means. Security and privacy are second, again, even if using non-free or non-open-source and/or proprietary means. In this sense, the ends may at times justify proprietary means.
+<div class="index-grid">
 
-### Independence
+  <div class="index-card">
+    <h3 class="index-card__title">Anonymity Above Everything</h3>
+    <p class="index-card__body">Anonymity is necessary to maintain the balance of power — for journalists, whistleblowers, lawyers, scientists, and victims of oppression. Anonymity first, even if that means using proprietary means. Security and privacy are second. The ends may at times justify proprietary means.</p>
+  </div>
 
-The Anonymous Planet initiative has no affiliation with the "Anonymous" collective and does not endorse their activities
-Any overlap of their activities and our guide are purely coincidental.
+  <div class="index-card">
+    <h3 class="index-card__title">Independence</h3>
+    <p class="index-card__body">Anonymous Planet has no affiliation with the "Anonymous" collective and does not endorse their activities. Any overlap between their activities and this guide is purely coincidental.</p>
+  </div>
 
-### Accessibility
+  <div class="index-card">
+    <h3 class="index-card__title">Accessibility</h3>
+    <p class="index-card__body">The Hitchhiker's Guide will always be available online, offline (PDF, ODT), and via the Tor network. Removing any of these access methods is hostile to the mission.</p>
+  </div>
 
-We will strive to always keep available the following methods of reading the Hitchhiker's Guide:
+  <div class="index-card">
+    <h3 class="index-card__title">Freedom</h3>
+    <p class="index-card__body">All projects are and will remain free, open-source, and non-commercial. Proprietary tools may be recommended where they serve anonymity. All scientific knowledge should be free — we support Sci-Hub and LibGen. Any attempt to erode the freedom of information in our projects is hostile.</p>
+  </div>
 
-- online;
-- offline (e.g., PDF, ODT);
-- via the Tor network
+  <div class="index-card">
+    <h3 class="index-card__title">Verifiability &amp; Reproducibility</h3>
+    <p class="index-card__body">We will be transparent about our biases — anyone claiming to be unbiased is lying. All content shall be verifiable and fact-checked via academic references, reputable media, official documentation, expert review, and direct testing by collaborators.</p>
+  </div>
 
-### Freedom
+  <div class="index-card">
+    <h3 class="index-card__title">Innocence</h3>
+    <p class="index-card__body">Suspected offenders are innocent until proven guilty. Zero tolerance for abuse of power. Accusers bear the burden of proof. Offenders have the right to face their accuser, appeal to an uninvolved third party, and receive due process.</p>
+  </div>
 
-Maintain free, open-source, and non-commercial nature of all our projects. This does not mean proprietary and/or closed-source tools won't be recommendeded. All scientific knowledge should be free for anyone and we support and encourage Sci-Hub and LibGen. Any attempt to erode the freedom of information and flow of knowledge of our projects, in any manner, is hostile.
+  <div class="index-card">
+    <h3 class="index-card__title">Freedom of Thought</h3>
+    <p class="index-card__body">Open-minded and pragmatic — no gatekeeping. Critical thinking and harsh criticism are welcome. Ad-hominem attacks and slurs are not.</p>
+  </div>
 
-### Verifiability, falsifiability and reproducibility
+  <div class="index-card">
+    <h3 class="index-card__title">No Tolerance for Intolerance</h3>
+    <p class="index-card__body">See the <a href="https://en.wikipedia.org/wiki/Paradox_of_tolerance">Paradox of Tolerance</a>. Hate speech is included.</p>
+  </div>
 
-We will make every effort to be transparent about any and all bias we have.
-Anyone claiming to be unbiased is lying, therefore we will not falsely claim to be.
+  <div class="index-card">
+    <h3 class="index-card__title">No Analytics</h3>
+    <p class="index-card__body">We will never use analytics. Hosting platforms (e.g. GitHub Pages) may gather analytics outside our control. As the initiative grows, we will move away from these platforms where possible.</p>
+  </div>
 
-All our content shall be verifiable, reproducible and fact-checked:
+  <div class="index-card">
+    <h3 class="index-card__title">No Profit</h3>
+    <p class="index-card__body">Excess donations fund our projects first, then initiatives like Tor exit nodes. All donations, spendings, source code, and goals are public. No sponsored content, no affiliate links, no product placements, no advertising. Donations never influence recommendations.</p>
+  </div>
 
-- academic references (e.g., studies, papers, and peer reviewed publications);
-- reputable media references (e.g., articles, videos, and documentaries);
-- official documentation (e.g., manuals, field guides, and technical documents);
-- renowned and reputable expert review;
-- direct testing by our own collaborators for falsifiablity
+</div>
 
-### Innocence
+It is possible that, coincidentally, a donation could correlate with a recommendation. Where this occurs it will be clearly stated that the donation was welcome, but confers no visibility, coverage, endorsement, or preferential recommendation.
 
-Suspected offenders are innocent until proven guilty, with zero tolerance for abuse of power or position.
+---
 
-Any accusing/moderating member is:
+## Goals { #goals }
 
-- Subject to the burden of proving the wrong-doing of the offender
-- Required to motivate any sanction
+**Core goal:** Help people who need anonymity maintain their physical and digital safety.
 
-Any offender has the right to:
+**Non-goal:** Help people use this knowledge for harmful purposes.
 
-- Face their accuser (know who is accusing them)
-- Appeal sanctions to an uninvolved third party
-- Participate in their own incrimination (the burden of proof lies with the accuser)
-- Due process of the above
+We know our content can be misused. We believe that giving one good person a safe, anonymous voice is worth the risk of a few using it for ill — in the same way that a fair rule of law accepts that freeing nine criminals is better than imprisoning one innocent person.
 
-### Freedom of thought
+---
 
-Open-minded and pragmatic - with no tolerance for gatekeeping.
-
-Critical thinking and fact-checking are strongly encouraged; we welcome criticism including of a harsh nature (excluding ad-hominem and slurs).
-
-### We do not tolerate intolerance
-
-See the [Paradox of Tolerance](https://en.wikipedia.org/wiki/Paradox_of_tolerance), which includes hate speech.
-
-### No analytics
-
-Note that, while we will never use analytics, the (now free) platforms hosting our content might be gathering such analytics outside of our control, such as Github pages. As the initiative progresses, we will strive to avoid these as soon as possible.
-
-### No profit
-
-Any excess donations will only be used to support our main projects first and possibly support other intitiatives (like hosting Tor exit nodes). In all cases, we abide by the following principles:
-
-- Funding transparency (i.e., all donations, spendings, source code, and future goals will be public)
-- Acceptance of donations from any entity anonymously or acknowledged (opt-in) will not have any influence on our content
-- No sponsored content
-- No affiliate links
-- No product placements
-- No advertising
-
-**Disclaimer: it is possible that, coincidentally, a donation could correlate with a recommendation. It will then be clearly stated that while the donation was welcome, the donating entity will not be gaining visibility/coverage/endorsement/recommendations due to such a donation.**
-
-## Core Goals
-
-Help people in need of anonymity to maintain both their physical and digital safety.
-
-## Non-Goals
-
-Help any people who are using this knowledge for bad purposes. Helping people takes precedence and we know our content can be used nefariously. Our initiative believes in having one good person given an anonymous voice, safely, is worth the risk of having several using our content for evil. As we do adhere to a fair "rule of law" system which, having 9 criminals and 1 innocent person free, is much better than having one innocent person in prison among 9 criminals.
-
-**Yours faithfully, Anonymous Planet**
+*Yours faithfully, Anonymous Planet*

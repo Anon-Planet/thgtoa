@@ -15,6 +15,8 @@ Usage:
 Examples:
   python scripts/convert.py export/thgtoa.pdf export/thgtoa-dark.pdf
   python scripts/convert.py export/thgtoa.pdf --dpi 150 --bg 0d1117
+
+Note: Adds a cover page at the start with title/subtitle/version info.
 """
 
 from __future__ import annotations
@@ -54,42 +56,73 @@ def apply_dark_theme(
 ) -> Image.Image:
     """
     Remap a white-background page image to a dark theme.
-    - Near-white pixels      → bg color
-    - Dark pixels (ink/text) → text color
-    - Blue-ish pixels        → link color
+
+    Strategy:
+    - Near-white pixels (page background)  → bg color
+    - Dark, low-saturation pixels (text)    → text color
+    - Blue-dominant dark pixels (links)     → link color
+    - High-saturation pixels (photos/images) → preserved exactly as-is
+      (no dark remapping; images stay at natural colors)
+
+    The key fix vs. the old version: output is initialized from the *original*
+    pixels, so any pixel that doesn't match a remap mask keeps its source color.
+    This prevents the "black blobs" bug where image regions fell through to the
+    zero-initialized buffer.
     """
     arr  = np.array(img.convert('RGB'), dtype=np.float32)
-    orig = arr.copy()
     norm = arr / 255.0
 
-    lightness = (
-        0.299 * norm[:, :, 0]
-        + 0.587 * norm[:, :, 1]
-        + 0.114 * norm[:, :, 2]
+    # Luminance (Rec. 601)
+    lum = (
+        0.299 * norm[:, :, 0] +
+        0.587 * norm[:, :, 1] +
+        0.114 * norm[:, :, 2]
     )
 
-    r, g, b = orig[:, :, 0], orig[:, :, 1], orig[:, :, 2]
-    link_mask = (
-        (b > 100)
-        & (b > r * 1.3)
-        & (b > g * 0.9)
-        & (lightness < 0.85)
+    # Saturation (HSV model, vectorised)
+    ch_min = np.min(norm, axis=2)
+    ch_max = np.max(norm, axis=2)
+    sat = np.where(ch_max > 0.001, (ch_max - ch_min) / ch_max, 0.0).astype(np.float32)
+
+    # --- Masks ---
+    # High-saturation = image/photo content — leave untouched
+    is_image = sat > 0.20
+
+    # Near-white page background
+    is_bg = (lum > 0.88) & ~is_image
+
+    # Blue-ish hyperlinks: blue channel dominant, dark, not an image
+    is_link = (
+        ~is_image &
+        ~is_bg &
+        (norm[:, :, 2] > 0.30) &
+        (norm[:, :, 2] > norm[:, :, 0] * 1.20) &
+        (lum < 0.75)
     )
-    content_mask = (lightness < 0.85) & ~link_mask
-    blend = ((1.0 - lightness) / 0.85).clip(0, 1)
 
-    bg_f   = [c / 255.0 for c in bg]
-    text_f = [c / 255.0 for c in text]
-    link_f = [c / 255.0 for c in link]
+    # Dark ink (text, borders, rules): not image, not bg, not link
+    is_text = ~is_image & ~is_bg & ~is_link & (lum < 0.85)
 
-    out = np.zeros_like(norm)
-    for i, (b_c, t, lc) in enumerate(zip(bg_f, text_f, link_f)):
-        channel = np.full(lightness.shape, b_c)
-        channel = np.where(content_mask, b_c + blend * (t - b_c), channel)
-        channel = np.where(link_mask,    b_c + blend * (lc - b_c), channel)
-        out[:, :, i] = channel
+    # --- Build output from original pixels ---
+    # Start from a copy so anything not matched keeps source color.
+    out = arr.copy()
 
-    return Image.fromarray((out * 255).clip(0, 255).astype('uint8'))
+    bg_f   = np.array(bg,   dtype=np.float32)
+    text_f = np.array(text, dtype=np.float32)
+    link_f = np.array(link, dtype=np.float32)
+
+    # Full-strength remap for text: anything that was dark ink becomes text_color
+    # at full brightness. No partial blend — partial blends leave mid-gray elements
+    # (captions, borders, muted labels) at unreadable intermediate values.
+    bg_mask3   = is_bg[..., np.newaxis]
+    text_mask3 = is_text[..., np.newaxis]
+    link_mask3 = is_link[..., np.newaxis]
+
+    out = np.where(bg_mask3,   bg_f,   out)
+    out = np.where(text_mask3, text_f, out)
+    out = np.where(link_mask3, link_f, out)
+
+    return Image.fromarray(out.clip(0, 255).astype(np.uint8))
 
 
 def _save_images_as_pdf(images: list, output_path: str) -> None:
@@ -144,6 +177,106 @@ def _check_dependencies() -> None:
         )
 
 
+def create_cover_page(tmp_dir: str, is_dark: bool) -> str:
+    """Create a research-style text-only cover page for Chromium rendering."""
+    if is_dark:
+        bg_color    = '#1f1f31'
+        text_color  = '#e0e0e0'
+        rule_color  = '#4a4a6a'
+        meta_color  = '#a0a0c0'
+    else:
+        bg_color    = '#ffffff'
+        text_color  = '#1a1a1a'
+        rule_color  = '#cccccc'
+        meta_color  = '#555555'
+
+    html_path = os.path.join(tmp_dir, 'cover.html')
+    with open(html_path, 'w', encoding='utf-8') as f:
+        f.write(f"""<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+* {{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}}
+@page {{
+    size: A4;
+    margin: 0;
+}}
+html, body {{
+    width: 210mm;
+    height: 297mm;
+    background: {bg_color};
+    color: {text_color};
+    font-family: 'EB Garamond', Georgia, 'Times New Roman', serif;
+}}
+.page {{
+    width: 210mm;
+    height: 297mm;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30mm 25mm;
+    text-align: center;
+}}
+.title {{
+    font-size: 28pt;
+    font-weight: normal;
+    line-height: 1.25;
+    letter-spacing: 0.01em;
+    margin-bottom: 10mm;
+}}
+.rule {{
+    width: 80mm;
+    height: 1px;
+    background: {rule_color};
+    margin: 0 auto 10mm auto;
+}}
+.subtitle {{
+    font-size: 13pt;
+    font-weight: normal;
+    font-style: italic;
+    color: {meta_color};
+    margin-bottom: 14mm;
+}}
+.meta {{
+    font-size: 11pt;
+    color: {meta_color};
+    line-height: 1.9;
+}}
+.meta strong {{
+    color: {text_color};
+    font-weight: normal;
+}}
+.version {{
+    font-size: 11pt;
+    color: {meta_color};
+    margin-top: 12mm;
+    letter-spacing: 0.05em;
+}}
+</style>
+</head>
+<body>
+<div class="page">
+  <p class="title">The Hitchhiker&#8217;s Guide<br>to Online Anonymity</p>
+  <div class="rule"></div>
+  <p class="subtitle">The comprehensive guide for online anonymity and OpSec.</p>
+  <div class="meta">
+    <p><strong>Author</strong> &nbsp; Anonymous Planet</p>
+    <p><strong>License</strong> &nbsp; Creative Commons BY-SA 4.0</p>
+    <p><strong>Source</strong> &nbsp; https://anonymousplanet.net</p>
+  </div>
+  <p class="version">v1.2.5 &mdash; June 2026</p>
+</div>
+</body>
+</html>""")
+    return html_path
+
+
 def convert_pdf_to_dark(
     input_path: str | Path,
     output_path: str | Path,
@@ -159,6 +292,8 @@ def convert_pdf_to_dark(
     For large documents, pages are processed in batches of `batch_size` to
     avoid OOM, then merged with qpdf. Falls back to single-pass Pillow save
     if qpdf is not available (fine for small documents).
+
+    Adds a cover page at the start with title/subtitle/version info.
     """
     input_path  = str(input_path)
     output_path = str(output_path)
@@ -191,7 +326,51 @@ def convert_pdf_to_dark(
         if out_dir:
             os.makedirs(out_dir, exist_ok=True)
 
-        # 2. Process in batches
+        # Determine theme from filename for cover page
+        pdf_output = Path(output_path)
+        pdf_name = pdf_output.stem.lower()
+        is_dark = 'dark' in pdf_name
+
+        print(f"  Theme: {'Going dark' if is_dark else 'Light mode'}")
+
+        # 2. Build front matter: cover + ToC
+        # Import ToC helpers from build_guide_pdf.py (single source of truth).
+        scripts_dir = str(Path(__file__).resolve().parent)
+        if scripts_dir not in sys.path:
+            sys.path.insert(0, scripts_dir)
+        from build_guide_pdf import parse_toc_headings, create_toc_html  # noqa: PLC0415
+
+        cover_html_path = create_cover_page(tmp, is_dark)
+        browser = find_chromium_executable()
+
+        if not browser:
+            raise RuntimeError(
+                "No Chromium-based browser found; needed for cover page rendering.\n"
+                "Install Chrome, Edge, or add Chromium to PATH."
+            )
+
+        cover_pdf = os.path.join(tmp, 'cover.pdf')
+        cmd = [str(browser), "--headless=new", "--disable-gpu",
+               "--no-pdf-header-footer", "--print-background", "--no-margins",
+               f"--print-to-pdf={cover_pdf}", cover_html_path]
+        subprocess.run(cmd, check=True, capture_output=True)
+
+        guide_md = Path(__file__).resolve().parent.parent / 'docs' / 'guide' / 'index.md'
+        if guide_md.is_file():
+            print("  Building ToC...", flush=True)
+            headings = parse_toc_headings(guide_md)
+            toc_html_path = create_toc_html(tmp, headings, is_dark)
+            toc_pdf = os.path.join(tmp, 'toc.pdf')
+            cmd_toc = [str(browser), "--headless=new", "--disable-gpu",
+                       "--no-pdf-header-footer", "--print-background", "--no-margins",
+                       f"--print-to-pdf={toc_pdf}", toc_html_path]
+            subprocess.run(cmd_toc, check=True, capture_output=True)
+            front_pages = [cover_pdf, toc_pdf]
+        else:
+            print("  Warning: guide/index.md not found, skipping ToC.", file=sys.stderr)
+            front_pages = [cover_pdf]
+
+        # 3. Process pages with theme remapping
         use_batches = total > batch_size and _check_qpdf()
 
         if use_batches:
@@ -213,12 +392,11 @@ def convert_pdf_to_dark(
                 dark = [apply_dark_theme(Image.open(p), bg, text, link) for p in batch]
                 _save_images_as_pdf(dark, batch_path)
                 batch_files.append(batch_path)
-                del dark
 
-            # 3. Merge batches with qpdf
-            print("  Merging batches…", flush=True)
+            # Merge batches with front matter using qpdf
+            print("  Merging batches and front matter...", flush=True)
             subprocess.run(
-                ['qpdf', '--empty', '--pages'] + batch_files + ['--', output_path],
+                ['qpdf', '--empty', '--pages'] + front_pages + batch_files + ['--', output_path],
                 check=True,
             )
 
@@ -232,8 +410,65 @@ def convert_pdf_to_dark(
 
             _save_images_as_pdf(dark_pages, output_path)
 
+        # Prepend front matter to the single-pass output
+        if not use_batches:
+            tmp_body = os.path.join(tmp, 'body_only.pdf')
+            os.rename(output_path, tmp_body)
+            subprocess.run(
+                ['qpdf', '--empty', '--pages'] + front_pages + [tmp_body] + ['--', output_path],
+                check=True,
+            )
+
     size_mb = os.path.getsize(output_path) / 1024 / 1024
     print(f"  Saved → {output_path} ({size_mb:.1f} MB)")
+
+
+def find_chromium_executable() -> Path | None:
+    """Find a Chromium-based browser on the system (prioritizes WSL/Linux paths).
+
+    On WSL Windows, checks WSL tools first, then falls back to Windows paths.
+    """
+    import os as _os
+    import shutil
+    import sys
+
+    # First, check WSL/Linux locations (common for WSL Windows)
+    wsl_paths = [
+        "/usr/bin/google-chrome",
+        "/usr/bin/google-chrome-stable",
+        "/usr/bin/chromium-browser",
+        "/usr/bin/chromium",
+        "/usr/bin/microsoft-edge",
+        "/usr/bin/microsoft-edge-stable",
+        "/usr/bin/microsoft-edge-dev",
+        "/snap/bin/chromium",
+        "/usr/local/bin/chrome",
+        "/opt/google-chrome/",
+    ]
+
+    for p in wsl_paths:
+        if _os.path.isfile(p):
+            return Path(p)
+
+    # Then check shutil.which (standard PATH, includes WSL paths)
+    for name in ("google-chrome-stable", "google-chrome", "chromium-browser", "chromium",
+                 "microsoft-edge-stable", "microsoft-edge", "msedge", "chrome"):
+        w = shutil.which(name)
+        if w:
+            return Path(w)
+
+    # Finally, Windows-specific paths (if running natively on Windows)
+    if sys.platform == "win32":
+        paths = [
+            Path(_os.environ.get("PROGRAMFILES(X86)", "")) / "Microsoft/Edge/Application/msedge.exe",
+            Path(_os.environ.get("LOCALAPPDATA", "")) / "Microsoft/Edge/Application/msedge.exe",
+            Path(_os.environ.get("PROGRAMFILES", "")) / "Google/Chrome/Application/chrome.exe",
+        ]
+        for p in paths:
+            if p.is_file():
+                return p
+
+    return None
 
 
 # --------------------------------------------------------------------------- #

@@ -1,6 +1,8 @@
 ---
 title: "Anonymous Planet"
-description: We are the maintainers of the Hitchhiker's Guide and the PSA Matrix space.
+description: "We are the maintainers of the Hitchhiker's Guide and the PSA Matrix space."
+hide:
+  - toc
 schema:
   "@context": https://schema.org
   "@type": Organization
@@ -14,89 +16,109 @@ schema:
     - https://mastodon.social/@anonymousplanet
 ---
 
-**Anonymous Planet** are the maintainers of [_The Hitchhiker's Guide_](../guide/index.md) and the [_PSA Community_](https://psa.anonymousplanet.net). This project is part of our ongoing efforts to provide open-source tools and resources for the community, made by people with extensive knowledge in signals and forensics, and expertise in various distributions of Linux. We are providing an introduction to various online tracking techniques, online ID verification techniques, and detailed guidance to creating and maintaining (truly) anonymous online identities. It is written with the hopes that good people (e.g., activists, journalists, scientists, lawyers, whistle-blowers, etc.) will be able to fight oppression, censorship and harassment! The website and projects are free (as in freedom). We are high at risk individuals. We are not simply hackers with a bunch of recommendations and affiliate links like privacytools. To be blunt like Linus Torvalds with a bullshit Merge Request, we don't do that. Here, you will find a trove of information compiled into a single, cohesive set of instructions and sub-guides.
+<div class="hero-block">
+  <div class="hero-eyebrow">Made by people with skin in the game.</div>
+  <h1 class="hero-title">Anonymous Planet<span class="hero-subtitle">Open source. No ads. No affiliates. No profit.</span></h1>
+  <p class="hero-tagline">
+    Written by people with backgrounds in signals intelligence, forensics, and Linux systems,
+    not influencers with affiliate links.
+  </p>
+  <div class="hero-cta-row">
+    <a href="../guide/" class="hero-cta hero-cta--primary">Read the Guide</a>
+    <a href="../contribute/" class="hero-cta hero-cta--secondary">Support the Project</a>
+  </div>
+</div>
 
-??? Note "Where do I start?"
+---
 
-    Start either by going to [the beginning](../guide/index.md) or using the search at top right of the page. It is also available at whatever point you are in your reading.
+## Who We Are { #who }
 
-??? Note "Notes on the journey"
+Anonymous Planet are the maintainers of [_The Hitchhiker's Guide_](../guide/index.md) and the [_PSA Community_](https://psa.anonymousplanet.net). The project exists to provide open-source tools and resources for people who need them: activists, journalists, scientists, lawyers, whistleblowers, and anyone facing oppression, censorship, or harassment.
 
-    This guide is a work in progress. It will probably never be "finished". You may find broken links when you click on some search results and during some navigation steps. Please report these. Otherwise, most of the search functionality is a great experience and can help you find linked topics. Try to search for something in one section of the reading. It will show up in many other places.
+We have extensive backgrounds in signals intelligence, forensics, and various Linux distributions. We are not a privacy influencer operation with a bunch of recommendations and affiliate links. Everything here is compiled into a single, cohesive set of instructions and sub-guides — free as in freedom.
 
-??? Note "Disclaimer"
+We are high-risk individuals. We do this because it matters.
 
-    There might be some wrong or outdated information in this guide because no one is perfect. Your experience may vary. Remember, check regularly for an updated version of this guide. Please do your own independent, well-thought research. There is no one resource online that can provide 100% security, anonymity, and/or privacy.
+!!! note "Disclaimer"
+    This guide is a work in progress and will probably never be "finished". Some information may be outdated. Always cross-reference independently and check for updated versions regularly. No single resource can provide 100% security, anonymity, or privacy.
 
-- For mirrors see [Mirrors](../mirrors/index.md) and the links at the bottom right of the page. You should see these on every page.
+!!! tip "Where to start"
+    Go to [the beginning of the guide](../guide/index.md) or use the search at the top right. The [Techlore Go Incognito playlist](https://www.youtube.com/playlist?list=PL3KeV6Ui_4CayDGHw64OFXEPHgXLkrtJO) is also a good 2–3 hour introduction before diving in.
 
-- For help in comparing versions see [Comparing versions](../guide/index.md#appendix-a6-comparing-versions)
+---
 
-Feel free to submit issues **(please do report anything wrong)** using GitHub Issues at: <https://github.com/Anon-Planet/thgtoa/issues>. We also accept Merge Requests (MR) from our Gitlab and many other places. Do not hesitate to report issues and suggestions!
+## Community { #community }
 
-??? tip "Discuss ideas on Matrix for real-time chat"
+<div class="index-grid">
 
-    We offer a Matrix.org hosted space of our own. Check it out!
+  <!-- <div class="index-card">
+    <h3 class="index-card__title">Matrix Space</h3>
+    <p class="index-card__body">Our Matrix.org hosted community space. Read the rules before joining. Admins: <code>@daskolburn:thomcat.rocks</code> and <code>@thehidden:tchncs.de</code>.</p>
+    <a href="https://matrix.to/#/#psa:anonymousplanet.net" class="index-card__link">Join the Space</a>
+    <a href="https://matrix.to/#/#nth:anonymousplanet.net" class="index-card__link" style="margin-top:0.4em;">Join the Room</a>
+    <a href="https://psa.anonymousplanet.net/" class="index-card__link" style="margin-top:0.4em;">Read the Rules</a>
+  </div> -->
 
-    - Read [the rules](https://psa.anonymousplanet.net/), please
-    - Matrix Room: https://matrix.to/#/#nth:anonymousplanet.net
-    - Matrix Space: https://matrix.to/#/#psa:anonymousplanet.net
-    - Admins: @daskolburn:thomcat.rocks and @thehidden:tchncs.de
+  <div class="index-card">
+    <h3 class="index-card__title">Mastodon</h3>
+    <p class="index-card__body">Follow us for announcements on the Fediverse.</p>
+    <a href="https://ioc.exchange/@anonymousplanet" class="index-card__link" rel="me">@anonymousplanet@ioc.exchange</a>
+  </div>
 
-???+ tip "Follow us on"
+  <div class="index-card">
+    <h3 class="index-card__title">X / Twitter</h3>
+    <p class="index-card__body">Announcements also cross-posted to X.</p>
+    <a href="https://x.com/anonplanetorg" class="index-card__link">@anonplanetorg</a>
+  </div>
 
-    - Twitter at <https://twitter.com/AnonyPla>
-    - Mastodon at <https://mastodon.social/@anonymousplanet>
+  <div class="index-card">
+    <h3 class="index-card__title">GitHub Issues</h3>
+    <p class="index-card__body">Report errors, broken links, or outdated content. Pull requests welcome across all our mirrors.</p>
+    <a href="https://github.com/Anon-Planet/thgtoa/issues" class="index-card__link">Open an issue</a>
+  </div>
 
-To contact me, see the updated information on the website or send an e-mail to <contact@anonymousplanet.net>
+</div>
 
-**Please consider [donating](../guide/index.md#donations) if you enjoy the project and want to support the hosting fees or support the funding of initiatives like the hosting of Tor Exit Nodes.**
+---
 
-???+ example "Recommended Reading"
+## Contact { #contact }
 
-    Some of those resources may, in order to sustain their project, contain or propose:
+Email: <contact@anonymousplanet.net>
 
-    - Sponsored commercial content
-    - Monetized content through third party platforms (such as YouTube)
-    - Affiliate links to commercial services
-    - Paid Services such as consultancy
-    - Premium content such as ad-free content or updated content
-    - Merchandising
+For mirrors, see the [Mirrors](../mirrors/index.md) page and the links in the site footer.
+For version comparison, see [Comparing Guide Versions](../guide/index.md#comparing-versions).
 
-_Note that these websites could contain affiliate/sponsored content and/or merchandising. This guide does not endorse and is not sponsored by any commercial entity in any way._
+---
 
-If you skipped those, you should really still consider viewing this YouTube playlist from the Techlore Go Incognito project (<https://github.com/techlore-official/go-incognito> <sup>[[Archive.org]](https://web.archive.org/web/https://github.com/techlore-official/go-incognito)</sup>) as an introduction before going further: <https://www.youtube.com/playlist?list=PL3KeV6Ui_4CayDGHw64OFXEPHgXLkrtJO> <sup>[[Invidious]](https://yewtu.be/playlist?list=PL3KeV6Ui_4CayDGHw64OFXEPHgXLkrtJO)</sup>. This guide will cover many of the topics in the videos of this playlist with more details and references as well as some added topics not covered within that series. This will just take you 2 or 3 hours to watch it all.
+## Recommended Reading { #reading }
 
-_Anonymous Planet_ **does not** participate in any sponsoring, endorsement, advertising, or other affiliate programs for any entity. We only rely on anonymous donations in a closed, transparent loop system.
+!!! warning "Disclosure"
+    Some linked resources may contain sponsored content, affiliate links, paid services, or monetized content. Anonymous Planet does not endorse and is not sponsored by any commercial entity. We do not participate in any affiliate programs.
 
-??? tip "Privacy related"
+??? tip "Privacy & security"
+    - [AnarSec](https://www.anarsec.guide/)
+    - [EFF Surveillance Self-Defense](https://ssd.eff.org/)
+    - [Prism-Break](https://prism-break.org/)
+    - [Privacy Guides](https://privacyguides.org)
+    - [Techlore](https://techlore.tech)
+    - [The New Oil](https://thenewoil.org)
+    - [PrivacyTools.io](https://privacytools.io)
 
-    - AnarSec: <https://www.anarsec.guide/>
-    - EFF Surveillance Self-Defense: <https://ssd.eff.org/>
-    - Prism-Break: <https://prism-break.org/>
-    - Privacy Guides: <https://privacyguides.org>
-    - Techlore: <https://techlore.tech>
-    - The New Oil: <https://thenewoil.org>
-    - PrivacyTools.io: <https://privacytools.io>
-
-??? tip "Blogs and personal websites"
-
-    - CIA Officer's Blog: <https://officercia.mirror.xyz/>
-    - Continuing Ed: <https://edwardsnowden.substack.com/>
-    - Madaidan's Insecurities: <https://madaidans-insecurities.github.io/>
-    - Seirdy's Home: <https://seirdy.one/>
+??? tip "Blogs"
+    - [CIA Officer's Blog](https://officercia.mirror.xyz/)
+    - [Edward Snowden — Continuing Ed](https://edwardsnowden.substack.com/)
+    - [Madaidan's Insecurities](https://madaidans-insecurities.github.io/)
+    - [Seirdy's Home](https://seirdy.one/)
 
 ??? tip "Useful resources"
+    - [KYC? Not me](https://kycnot.me/)
+    - [Library Genesis](https://en.wikipedia.org/wiki/Library_Genesis)
+    - [Real World Onion Sites](https://github.com/alecmuffett/real-world-onion-sites)
+    - [Sci-Hub](https://en.wikipedia.org/wiki/Sci-Hub)
+    - [Terms of Service, Didn't Read](https://tosdr.org)
+    - [Whonix Documentation](https://www.whonix.org/wiki/Documentation)
 
-    - KYC? Not me: <https://kycnot.me/>
-    - Library Genesis: <https://en.wikipedia.org/wiki/Library_Genesis> <sup>[[Wikiless]](https://wikiless.tiekoetter.com/wiki/Library_Genesis)</sup> (see their latest known URL in the Wikipedia article)
-    - Real World Onion Sites: <https://github.com/alecmuffett/real-world-onion-sites>
-    - Sci-Hub <https://en.wikipedia.org/wiki/Sci-Hub> <sup>[[Wikiless]](https://wikiless.tiekoetter.com/wiki/Sci-Hub)</sup> (see their latest known URL in the main Wikipedia article)
-    - Terms of Service, Didn't Read: <https://tosdr.org>
-    - Whonix Documentation: <https://www.whonix.org/wiki/Documentation> <sup>[[Archive.org]](https://web.archive.org/web/https://www.whonix.org/wiki/Documentation)</sup>
+---
 
-??? note "We are not affiliated with Anonymous or Riseup"
-
-    One or two of our community members uses or has used the resources of Riseup. We are not affiliated with Riseup in any manner.
-
-    We also hold **no affiliation** with the [Anonymous](https://en.wikipedia.org/wiki/Anonymous_(hacker_group)) <sup>[[Wikiless]](https://wikiless.tiekoetter.com/wiki/Anonymous_(hacker_group))</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Anonymous_(hacker_group))</sup> hacker collective.
+!!! note "We are not affiliated with Anonymous or Riseup"
+    We hold no affiliation with the [Anonymous](https://en.wikipedia.org/wiki/Anonymous_(hacker_group)) hacker collective or with Riseup. One or two community members uses Riseup resources personally — that is the full extent of any connection.

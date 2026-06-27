@@ -6,7 +6,7 @@ docs_dir: "docs"
 site_url: "https://anonymousplanet.net/"
 repo_url: "https://github.com/Anon-Planet/thgtoa"
 repo_name: ""
-#edit_uri: ""
+#edit_uri: ""blob/main/docs/{path}?plain=1""
 theme:
   name: material
   locale: en
@@ -14,9 +14,7 @@ theme:
   icon:
     logo: material/bird
     repo: simple/github
-  font:
-    text: Public Sans
-    code: Liberation Mono
+  font: false  # all fonts self-hosted in docs/fonts/
   features:
     - navigation.instant
     - navigation.instant.prefetch
@@ -35,6 +33,15 @@ theme:
     - scheme: slate
       primary: hacker
       accent: green
+      toggle:
+        icon: material/monitor-off
+        name: Printing Press
+    - scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/monitor
+        name: Monitor
 
 plugins:
   - social: {}
@@ -42,7 +49,7 @@ plugins:
       separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
   # - meta: {}
 
-# Soon this will all be minified (It's a personal WIP)
+# Soon this will all be minified (It's a personal WIP that I already have stashed in git)
 extra_css:
   - stylesheets/hacker.css
   - stylesheets/hacker-extra.css
@@ -50,6 +57,7 @@ extra_css:
   - stylesheets/navigation.css
   - stylesheets/footer.css
   - stylesheets/accessibility.css
+  # print-light.css is NOT included here - it's only injected during PDF builds via build_guide_pdf.py
 
 # extra_css:
 #   - stylesheets/hacker-core.css
@@ -57,11 +65,18 @@ extra_css:
 #   - stylesheets/accessibility.css
 #   - stylesheets/print-and-utilities.css
 
+copyright: >-
+  &copy; 2023-2026 Anonymous Planet & contributors &mdash;
+  licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="license">CC BY-SA 4.0</a>.
+
 extra:
   social:
     - icon: simple/mastodon
-      link: https://mastodon.social/@anonymousplanet
+      link: https://ioc.exchange/@anonymousplanet
       name: Mastodon
+    - icon: simple/x
+      link: https://x.com/anonplanetorg
+      name: X
     - icon: simple/gitlab
       link: http://wmj5kiic7b6kjplpbvwadnht2nh2qnkbnqtcv3dyvpqtz7ssbssftxid.onion/
       name: "0xacab"
@@ -78,7 +93,7 @@ extra:
       link: https://codeberg.org/anonymousplanet
       name: Codeberg
     # - icon: simple/torbrowser
-    #   link: http://thgtoa3jzy3doku7hkna32htpghjijefscwvh4dyjgfydbbjkeiohgid.onion/
+    #   link: http://thgtoa3jzy3doku7hkna32htpghjijefscwvh4dyjgfydbbjkeiohgid.onion/ (defunct)
     #   name: Hidden service
 
 markdown_extensions:
@@ -132,5 +147,5 @@ nav:
   - "A Constitution": constitution/index.md
   - "Mirrors": mirrors/index.md
   - "Changelog": changelog/index.md
-  - "About": about/index.md
+  - "Anonymous Planet": about/index.md
   - "PGP": pgp/index.md

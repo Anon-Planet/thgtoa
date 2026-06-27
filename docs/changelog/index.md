@@ -1,12 +1,12 @@
 ---
-title: "Release Notes"
-description: "Release Notes"
+title: "Changelog"
+description: "Release notes for the Hitchhiker's Guide to Online Anonymity."
 schema:
   "@context": https://schema.org
   "@type": Organization
   "@id": https://anonymousplanet.net/
   name: Anonymous Planet
-  url: https://anonymousplanet.net/
+  url: https://anonymousplanet.net/changelog/
   logo: ../media/profile.png
   sameAs:
     - https://github.com/Anon-Planet
@@ -14,8 +14,21 @@ schema:
     - https://mastodon.social/@anonymousplanet
 ---
 
-Notable changes to the guide. Follows [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) and [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+<div class="hero-block">
+  <div class="hero-eyebrow">Auto-generated after every release.</div>
+  <h1 class="hero-title">Changelog<span class="hero-subtitle">What changed, and when.</span></h1>
+  <p class="hero-tagline">
+    Follows <a href="https://keepachangelog.com/en/1.1.0/">Keep a Changelog</a> and
+    <a href="https://semver.org/spec/v2.0.0.html">Semantic Versioning</a>.
+    Generated from conventional commits by machine, only.
+  </p>
+  <div class="hero-cta-row">
+    <a href="https://github.com/Anon-Planet/thgtoa/releases" class="hero-cta hero-cta--primary">GitHub Releases</a>
+    <a href="../verify/" class="hero-cta hero-cta--secondary">Verify a Release</a>
+  </div>
+</div>
 
+<!-- Change nothing below this line, please. -->
 ---
 
 ## [v1.2.5]
@@ -52,6 +65,7 @@ Notable changes to the guide. Follows [Keep a Changelog](https://keepachangelog.
     - AppArmor configuration guidance added where applicable (Whonix 18.x)
     - KVM alternative documented in Appendix N for Linux users seeking better security than VirtualBox
     - Whonix Improvements subsection added before "Pick your guest workstation" VMs section
+    - Removed appendix-style writing
 
 ## [v1.2.4]
 

@@ -1,141 +1,146 @@
 ---
-title: "Verifying authenticity"
+title: "Verify"
+description: "Verify the authenticity and integrity of Anonymous Planet releases."
+hide:
+  - toc
+schema:
+  "@context": https://schema.org
+  "@type": Organization
+  "@id": https://anonymousplanet.net/
+  name: Anonymous Planet
+  url: https://anonymousplanet.net/verify/
+  logo: ../media/profile.png
 ---
 
-<div style="font-family: var(--code-font); color: var(--crt-red); font-size: 0.9rem; margin-bottom: 2em;">
-Never blindly trust the information you see online.
+<div class="hero-block">
+  <div class="hero-eyebrow">Never blindly trust anything you download.</div>
+  <h1 class="hero-title">Verify Releases<span class="hero-subtitle">Signatures. Hashes. Trust nothing blindly.</span></h1>
+  <p class="hero-tagline">
+    Every release is GPG-signed and hashed. Verify before you read.
+  </p>
+  <div class="hero-cta-row">
+    <a href="#quick-verification" class="hero-cta hero-cta--primary">Quick Verification</a>
+    <a href="../pgp/" class="hero-cta hero-cta--secondary">Import Our Keys</a>
+  </div>
 </div>
 
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5em; max-width: 1000px; margin: 0 auto;">
+---
 
-<div class="quick-access-card">
-<h4 style="font-family: var(--code-font); font-size: 1.1rem; margin: 0;">Get our keyring</h4>
-<p style="margin: 0 0 1em;">The Anonymous Planet MSK and other keys in our keyring can be found here.</p>
-<a href="../../pgp/" style="font-family: var(--code-font); font-size: 0.85rem; color: var(--crt-amber);">Access our public keyring <span style="font-size: 0.7em;"></span></a>
+## What We Publish { #artifacts }
+
+<div class="index-grid">
+
+  <div class="index-card">
+    <h3 class="index-card__title">PDF Guide</h3>
+    <p class="index-card__body"><code>thgtoa.pdf</code> and <code>thgtoa-dark.pdf</code> — the full guide in light and dark mode. The only canonical single-file export.</p>
+    <a href="https://github.com/Anon-Planet/thgtoa/releases" class="index-card__link">Latest release</a>
+  </div>
+
+  <div class="index-card">
+    <h3 class="index-card__title">Detached Signatures</h3>
+    <p class="index-card__body"><code>.asc</code> files for every PDF and hash file, signed with the Release Signing Key (RSK). Verify with <code>gpg --verify</code>.</p>
+    <a href="../pgp/" class="index-card__link">Our keys</a>
+  </div>
+
+  <div class="index-card">
+    <h3 class="index-card__title">Hash Files</h3>
+    <p class="index-card__body"><code>sha256sums.txt</code> and <code>b2sums.txt</code> for integrity. Both are also signed. Check with <code>sha256sum -c</code> or <code>b2sum -c</code>.</p>
+    <a href="#manual-verification" class="index-card__link">Manual steps</a>
+  </div>
+
 </div>
-</div>
 
-## Files Provided
+---
 
-For each release, you'll receive:
+## Quick Verification { #quick-verification }
 
-| File Type | Purpose | Verification Command |
-|-----------|---------|---------------------|
-| **PDF** (`thgtoa.pdf`) | The actual guide document | Check hash + signature |
-| **.sig file** | GPG detached signature for authenticity | `gpg --verify file.sig file.pdf` |
-| **.sha256** | SHA256 checksum for integrity | `sha256sum -c file.sha256` |
-
-## Quick Verification
-
-### Using Python Script (Recommended)
+### Using the Python Script (Recommended)
 
 ```sh
-# Verify everything (hashes, signatures, and optionally VirusTotal)
+# Verify everything — hashes, signatures, and optionally VirusTotal
 python scripts/verify_pdf.py --all
 
-# Only verify hashes
+# Hashes only
 python scripts/verify_pdf.py --hashes
 
-# Only verify GPG signatures
+# GPG signatures only
 python scripts/verify_pdf.py --signatures
 
-# Check VirusTotal scan status (requires VT_API_KEY environment variable)
+# VirusTotal scan status (requires VT_API_KEY env var)
 python scripts/verify_pdf.py --vt
 ```
 
-### Manual Verification
+---
 
-#### 1. Verify SHA256 Hash
+## Manual Verification { #manual-verification }
 
-**Linux/macOS:**
-
-```sh
-cd /path/to/repo
-sha256sum -c sha256sum-light.txt
-```
-
-**Windows (PowerShell):**
-
-```powershell
-Get-FileHash -Algorithm SHA256 export\thgtoa.pdf | Select-Object Hash
-# Compare with the hash in thgtoa.pdf.sha256
-```
-
-#### 2. Verify GPG Signature
-
-First, import the public key:
+### 1. Import the key
 
 ```sh
 gpg --import pgp/anonymousplanet.asc
 ```
 
-Then verify the signature:
+Verify the fingerprint against our [PGP page](../pgp/index.md) and [GitHub releases](https://github.com/Anon-Planet/thgtoa/releases) before trusting it.
+
+### 2. Verify the PDFs
 
 ```sh
-gpg --verify export/thgtoa.pdf.sig export/thgtoa.pdf
-gpg --verify export/thgtoa-dark.pdf.sig export/thgtoa-dark.pdf
+gpg --verify export/thgtoa.pdf.asc      export/thgtoa.pdf
+gpg --verify export/thgtoa-dark.pdf.asc export/thgtoa-dark.pdf
 ```
 
-**Example output for successful verification:**
+Expected output:
 
 ```text
-gpg: Signature made Mon 20 Apr 2026 01:46:40 AM EDT
-gpg:                using EDDSA key 9FA5436D0EE360985157382517ECA05F768DEFDA
-gpg: Good signature from "Anonymous Planet Master Signing Key" [unknown]
-gpg: WARNING: This key is not certified with a trusted signature!
-gpg:           There is no indication that the signature belongs to the owner.
-Primary key fingerprint: 9FA5 436D 0EE3 6098 5157  3825 17EC A05F 768D EDF6
+gpg: Signature made Sun 31 May 2026 03:23:26 AM EDT
+gpg:                using EDDSA key C3023DBEA3FB38C438BA1EEDCEC60AEDE8B992A2
+gpg: Good signature from "Anonymous Planet Release Signing Key" [ultimate]
+Primary key fingerprint: C302 3DBE A3FB 38C4 38BA  1EED CEC6 0AED E8B9 92A2
 ```
 
-**Note:** The "WARNING" is expected - it means the key hasn't been signed by another trusted key. This is normal for independent signing keys.
+!!! note "About the WARNING"
+    `WARNING: This key is not certified with a trusted signature` is expected. It means the key has not been co-signed by another key in your web of trust — not that the signature is invalid.
 
-#### 3. Check VirusTotal Status
+### 3. Check hashes
 
-Visit the VirusTotal report links (automatically generated in release notes):
-- Light mode: `https://www.virustotal.com/gui/file/[hash]`
-- Dark mode: `https://www.virustotal.com/gui/file/[hash]`
+=== "Linux / macOS"
 
-Or use the Python script with API key:
+    ```sh
+    sha256sum -c sha256sums.txt
+    b2sum     -c b2sums.txt
+    ```
+
+=== "Windows (PowerShell)"
+
+    ```powershell
+    Get-FileHash -Algorithm SHA256 export\thgtoa.pdf | Select-Object Hash
+    # Compare with the value in thgtoa.pdf.sha256
+    ```
+
+### 4. VirusTotal (optional)
 
 ```sh
 export VT_API_KEY=your_vt_api_key
 python scripts/verify_pdf.py --vt
 ```
 
-## Automated Verification in CI/CD
+Or open the VirusTotal report URLs listed in the release notes directly.
 
-The GitHub Actions workflows automatically:
+---
 
-1. **Build PDFs** from MkDocs source
-2. **Generate SHA256 hashes** and save to root directory
-3. **Sign files with GPG** using the repository's private key
-4. **Scan with VirusTotal** and update release notes
-5. **Create releases** with all verification artifacts
+## Troubleshooting { #troubleshooting }
 
-## Security Best Practices
+**"Good signature" but wrong owner?**
+Ensure you imported the correct key from [`pgp/`](../pgp/index.md). Check the fingerprint matches the RSK: `C302 3DBE A3FB 38C4 38BA  1EED CEC6 0AED E8B9 92A2`.
 
-1. **Always verify signatures** before opening PDFs from untrusted sources
-2. **Check hashes** to ensure files weren't corrupted during download
-3. **Review VirusTotal results** for any suspicious detections
-4. **Import keys securely** - verify key fingerprints with the project maintainers
-5. **Keep verification scripts updated** to match current security standards
+**Hash mismatch?**
+Re-download the file. Verify you are using the correct hash file for the edition (light vs dark). Check for disk errors.
 
-## Troubleshooting
+**GPG not installed?**
 
-### "Good signature" but wrong owner?
-
-- Ensure you imported the correct public key from [`pgp/`](../pgp/index.md)
-- Check the key fingerprint matches the official one from the repository announcements
-
-### Hash mismatch?
-
-- Re-download the file (corruption during transfer)
-- Verify you're checking against the correct hash file for the mode (light/dark)
-- Check for disk errors on your system
-
-### GPG not found?
-
-- **Linux/Debian:** `sudo apt install gnupg`
-- **Linux/RHEL/CentOS:** `sudo yum install gnupg2` or `sudo dnf install gnupg2`
-- **macOS:** `brew install gnupg` or use Homebrew Casks: `brew install --cask gnupg`
-- **Windows:** Use [Gpg4win](https://www.gpg4win.org/)
+| Platform | Command |
+|---|---|
+| Debian / Ubuntu | `sudo apt install gnupg` |
+| RHEL / Fedora | `sudo dnf install gnupg2` |
+| macOS | `brew install gnupg` |
+| Windows | [Gpg4win](https://gpg4win.org) |

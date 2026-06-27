@@ -1,0 +1,309 @@
+@media print {
+
+  /* Reset all custom properties to light values */
+  :root,
+  [data-md-color-scheme],
+  [data-md-color-scheme="slate"] {
+    --bg-color:      #ffffff;
+    --bg-primary:    #ffffff;
+    --bg-secondary:  #f8f8f8;
+    --bg-card:       #f4f4f4;
+
+    --text-primary:   #1a1a1a;
+    --text-secondary: #2c2c2c;
+    --text-muted:     #555555;
+
+    --accent-green:     #005c2e;
+    --accent-green-dim: #007a3d;
+
+    --crt-green: #005c2e;
+    --crt-amber: #5c4000;
+    --crt-blue:  #00487a;
+    --crt-red:   #8b0000;
+
+    --border-color:          #cccccc;
+    --terminal-green-glow:   transparent;
+    --terminal-line-color:   #aaaaaa;
+    --terminal-border-faint: #dddddd;
+
+    --status-success: #1a5c2e;
+    --status-warning: #7a4f00;
+    --status-error:   #8b0000;
+    --status-info:    #003d6b;
+
+    --md-default-bg-color: #ffffff;
+    --md-default-fg-color: #1a1a1a;
+    --md-primary-fg-color: #1a1a1a;
+    --md-typeset-color:    #1a1a1a;
+    --md-typeset-a-color:  #00487a;
+  }
+
+  html, body {
+    background: #ffffff !important;
+    color: #1a1a1a !important;
+    font-family: 'EB Garamond', Georgia, 'Times New Roman', serif !important;
+    font-size: 11pt !important;
+    line-height: 1.65 !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  body::before,
+  body::after {
+    display: none !important;
+    content: none !important;
+    background: none !important;
+    animation: none !important;
+  }
+
+  @page {
+    size: A4;
+    margin: 25mm 28mm 28mm 28mm;
+  }
+
+  @page :first {
+    margin-top: 30mm;
+  }
+
+  *, *::before, *::after {
+    animation: none !important;
+    transition: none !important;
+    text-shadow: none !important;
+    box-shadow: none !important;
+  }
+
+  /* Hide footnotes and inline reference superscripts in PDF output */
+  .footnote,
+  .md-typeset .footnote,
+  section.footnotes,
+  .md-typeset section.footnotes,
+  [id^="fn:"],
+  .md-typeset [id^="fn:"] {
+    display: none !important;
+  }
+
+  /* Hide inline footnote back-reference superscripts [^N] */
+  sup.footnote-ref,
+  .md-typeset sup.footnote-ref,
+  a.footnote-backref,
+  .md-typeset a.footnote-backref,
+  sup > a[href^="#fn"],
+  .md-typeset sup > a[href^="#fn"],
+  sup > a[href^="#fnref"],
+  .md-typeset sup > a[href^="#fnref"] {
+    display: none !important;
+  }
+
+  .md-header,
+  .md-footer,
+  .md-sidebar,
+  .md-nav,
+  .md-search,
+  .md-tabs,
+  .md-social,
+  .md-top,
+  [data-md-component="header"],
+  [data-md-component="sidebar"],
+  [data-md-component="footer"],
+  [data-md-component="toc"],
+  .headerlink,
+  .md-content__button {
+    display: none !important;
+  }
+
+  .md-main,
+  .md-main__inner,
+  .md-content {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    float: none !important;
+  }
+
+  .md-content__inner {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 0 0 12mm !important;
+    float: none !important;
+  }
+
+  h1, h2, h3, h4, h5, h6,
+  .md-typeset h1,
+  .md-typeset h2,
+  .md-typeset h3,
+  .md-typeset h4,
+  .md-typeset h5,
+  .md-typeset h6 {
+    color: #1a1a1a !important;
+    font-family: 'EB Garamond', Georgia, serif !important;
+    font-weight: 700 !important;
+    page-break-after: avoid;
+    break-after: avoid;
+  }
+
+  .md-typeset h1::before,
+  .md-typeset h2::before {
+    content: none !important;
+  }
+
+  h1, .md-typeset h1 { font-size: 20pt !important; margin: 18pt 0 6pt !important; }
+  h2, .md-typeset h2 { font-size: 15pt !important; margin: 14pt 0 5pt !important; }
+  h3, .md-typeset h3 { font-size: 12pt !important; margin: 10pt 0 4pt !important; }
+  h4, .md-typeset h4 { font-size: 11pt !important; margin: 8pt  0 3pt !important; }
+  h5, h6,
+  .md-typeset h5,
+  .md-typeset h6    { font-size: 10pt !important; margin: 6pt  0 2pt !important; }
+
+  p, li, dt, dd, blockquote p,
+  .md-typeset p,
+  .md-typeset li,
+  .md-typeset dt,
+  .md-typeset dd {
+    color: #1a1a1a !important;
+    font-family: 'EB Garamond', Georgia, serif !important;
+    font-size: 11pt !important;
+    line-height: 1.65 !important;
+    orphans: 3;
+    widows: 3;
+  }
+
+  a, .md-typeset a {
+    color: #00487a !important;
+    text-decoration: underline !important;
+  }
+
+  code, .md-typeset code {
+    font-family: 'Fira Code VF', 'Fira Code', 'Courier New', monospace !important;
+    font-size: 9pt !important;
+    background: #f4f4f4 !important;
+    color: #1a1a1a !important;
+    border: 1px solid #cccccc !important;
+    padding: 0.1em 0.3em !important;
+    border-radius: 2px !important;
+  }
+
+  pre, .md-typeset pre {
+    font-family: 'Fira Code VF', 'Fira Code', 'Courier New', monospace !important;
+    font-size: 8.5pt !important;
+    background: #f8f8f8 !important;
+    color: #1a1a1a !important;
+    border: 1px solid #cccccc !important;
+    border-left: 3px solid #555555 !important;
+    padding: 0.75em 1em !important;
+    white-space: pre-wrap !important;
+    word-break: break-all !important;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  pre code, .md-typeset pre code {
+    background: none !important;
+    border: none !important;
+    padding: 0 !important;
+    font-size: inherit !important;
+  }
+
+  table, .md-typeset table {
+    border-collapse: collapse !important;
+    width: 100% !important;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    font-size: 10pt !important;
+  }
+
+  th, .md-typeset th {
+    background: #eeeeee !important;
+    color: #1a1a1a !important;
+    border: 1px solid #aaaaaa !important;
+    padding: 5pt 8pt !important;
+    font-weight: 700 !important;
+  }
+
+  td, .md-typeset td {
+    color: #1a1a1a !important;
+    border: 1px solid #cccccc !important;
+    padding: 4pt 8pt !important;
+  }
+
+  tr:nth-child(even) td {
+    background: #f9f9f9 !important;
+  }
+
+  .admonition,
+  .md-typeset .admonition,
+  details.admonition {
+    background: #f8f8f8 !important;
+    border-left: 4px solid #555555 !important;
+    border: 1px solid #cccccc !important;
+    color: #1a1a1a !important;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+
+  .admonition-title,
+  .md-typeset .admonition-title {
+    background: #eeeeee !important;
+    color: #1a1a1a !important;
+  }
+
+  blockquote, .md-typeset blockquote {
+    border-left: 3px solid #999999 !important;
+    background: none !important;
+    color: #333333 !important;
+    padding-left: 1em !important;
+    margin: 0.75em 0 !important;
+  }
+
+  blockquote p::before,
+  .md-typeset blockquote p:first-of-type::before {
+    content: none !important;
+  }
+
+  img,
+  .md-typeset img,
+  figure img,
+  [data-md-color-scheme="slate"] img,
+  [data-md-color-scheme="slate"] .md-typeset img {
+    display: block !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    max-width: 100% !important;
+    height: auto !important;
+    page-break-inside: avoid;
+    break-inside: avoid;
+    filter: none !important;
+    -webkit-filter: none !important;
+    opacity: 1 !important;
+    mix-blend-mode: normal !important;
+    image-rendering: auto !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+
+  html::before, html::after,
+  body::before, body::after,
+  [data-md-color-scheme="slate"] body::before,
+  [data-md-color-scheme="slate"] body::after,
+  .md-header::before, .md-header::after {
+    display: none !important;
+    content: none !important;
+    background: none !important;
+    animation: none !important;
+    opacity: 0 !important;
+    position: static !important;
+  }
+
+  kbd, .md-typeset kbd {
+    background: #eeeeee !important;
+    border: 1px solid #aaaaaa !important;
+    border-bottom: 2px solid #888888 !important;
+    color: #1a1a1a !important;
+    font-family: 'Fira Code VF', 'Fira Code', monospace !important;
+    text-shadow: none !important;
+    box-shadow: none !important;
+  }
+}

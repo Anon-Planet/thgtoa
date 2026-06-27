@@ -1,3 +1,12 @@
+.md-typeset code,
+.md-typeset .admonition code {
+  background-color: rgba(30, 10, 40, 0.80);
+  border: 1px solid rgba(125, 70, 152, 0.30);
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  color: var(--crt-amber);
+}
+
 .md-typeset a::after,
 a:not(.btn)::after {
   content: "";
@@ -15,81 +24,48 @@ a:not(.btn):hover::after {
   width: 100%;
 }
 
-.md-typeset code {
-  background-color: rgba(0, 26, 3, 0.226) !important;
-  padding: 0.2em 0.4em;
-  border-radius: 3px;
-  color: var(--text-primary);
-}
-
-.md-typeset .admonition code {
-  background-color: rgba(0, 26, 3, 0.226) !important;
-}
-
-.admonition {
-  border-left: 4px solid var(--crt-amber);
-  background: linear-gradient(180deg, transparent 0%, rgba(0, 255, 0, 0.03) 100%);
-}
-
 .admonition-note,
 .admonition-todo,
 .admonition-important {
-  background: linear-gradient(180deg, var(--bg-secondary) 0%, rgba(0, 255, 0, 0.05) 100%) !important;
+  background: linear-gradient(180deg,
+    var(--bg-secondary) 0%,
+    rgba(0, 255, 0, 0.05) 100%
+  ) !important;
 }
 
 .admonition-tip,
 .admonition-hint,
-.admonition-important,
 .admonition-new {
-  background: linear-gradient(180deg, var(--bg-secondary) 0%, rgba(0, 255, 0, 0.05) 100%) !important;
+  background: linear-gradient(180deg,
+    var(--bg-secondary) 0%,
+    rgba(0, 255, 0, 0.05) 100%
+  ) !important;
 }
 
 .admonition-caution,
-.admonition-warning,
-.admonition-failure {
-  background: linear-gradient(180deg, var(--bg-secondary) 0%, rgba(255, 165, 0, 0.08) 100%) !important;
+.admonition-warning {
+  background: linear-gradient(180deg,
+    var(--bg-secondary) 0%,
+    rgba(255, 165, 0, 0.08) 100%
+  ) !important;
 }
 
 .admonition-error,
 .admonition-failure {
-  background: linear-gradient(180deg, var(--bg-secondary) 0%, rgba(239, 68, 68, 0.08) 100%) !important;
-}
-
-.md-typeset__table th {
-  background-color: var(--bg-primary) !important;
-  border-bottom: 2px solid var(--accent-green);
+  background: linear-gradient(180deg,
+    var(--bg-secondary) 0%,
+    rgba(239, 68, 68, 0.08) 100%
+  ) !important;
 }
 
 .md-typeset h1,
 .md-typeset h2,
-.md-typeset h3 {
-  animation: fadeIn 0.4s ease-out;
+.md-typeset h3,
+.md-footer h4,
+.md-footer p {
+  animation: none !important;
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(-10px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-[data-md-color-scheme="slate"] .md-search__overlay .md-search__scrollwrap .md-search__form {
-  background-color: var(--bg-card) !important;
-}
-
-[data-md-color-scheme="slate"] .md-search__overlay .md-search__scrollwrap .md-search__form input {
-  background-color: var(--bg-card) !important;
-  color: var(--text-primary) !important;
-}
-
-[data-md-color-scheme="slate"] .md-search__overlay .md-search__results {
-  background-color: var(--bg-card) !important;
-}
-
-.md-footer {
-  background: linear-gradient(180deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
-  border-top: 2px solid var(--accent-green);
-}
-
-/* High contrast mode overrides */
 @media (prefers-contrast: high) {
   .admonition-note,
   .admonition-tip,
@@ -98,8 +74,35 @@ a:not(.btn):hover::after {
     background: var(--bg-color) !important;
   }
 
-  nav[data-md-level="1"] .md-nav__link,
-  nav[data-md-level="2"] .md-nav__link {
-    color: var(--bg-color) !important;
+  .md-nav__link {
+    color: var(--text-primary) !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .md-typeset h1,
+  .md-typeset h2,
+  .md-typeset h3,
+  .md-footer h4,
+  .md-footer p {
+    animation: none !important;
+  }
+}
+
+code, pre, kbd,
+.md-typeset code,
+.md-typeset pre,
+.md-typeset kbd {
+  font-family: 'Fira Code VF', 'Fira Code', monospace;
+  font-feature-settings: "calt" 1;
+  font-variant-ligatures: contextual;
+}
+
+@supports not (font-variation-settings: normal) {
+  code, pre, kbd,
+  .md-typeset code,
+  .md-typeset pre,
+  .md-typeset kbd {
+    font-family: 'Fira Code', monospace;
   }
 }
