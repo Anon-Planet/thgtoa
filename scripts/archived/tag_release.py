@@ -377,7 +377,7 @@ def main() -> int:
     if not key:
         print("\n✗ Could not resolve a signing key. Aborting.")
         print("  Import the release key with:")
-        print("    gpg --import pgp/anonymousplanet-release.asc")
+        print("    gpg --import pgp/anonymousplanet.asc")
         return 1
     print(f"  Resolved to:  {key}")
 
