@@ -118,7 +118,9 @@ jobs:
           path: repo
 
       - name: 📂 Copy export files into repo
-        run: cp -v export/* repo/export/
+        run: |
+          mkdir -p repo/export
+          cp -v export/* repo/export/
 
       - name: 🔏 Configure GPG commit signing
         env:

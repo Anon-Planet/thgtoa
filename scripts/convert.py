@@ -82,7 +82,10 @@ def apply_dark_theme(
     # Saturation (HSV model, vectorised)
     ch_min = np.min(norm, axis=2)
     ch_max = np.max(norm, axis=2)
-    sat = np.where(ch_max > 0.001, (ch_max - ch_min) / ch_max, 0.0).astype(np.float32)
+    # Suppress the numpy divide error, idc
+    # division happens on all elements including the zero ones
+    with np.errstate(divide='ignore', invalid='ignore'):
+        sat = np.where(ch_max > 0.001, (ch_max - ch_min) / ch_max, 0.0).astype(np.float32)
 
     # --- Masks ---
     # High-saturation = image/photo content — leave untouched
