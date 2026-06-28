@@ -31,10 +31,11 @@ jobs:
 
     steps:
       - name: 🛠️ Checkout (for pgp/)
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           fetch-depth: 0
           sparse-checkout: pgp
+          sparse-checkout-cone-mode: true
 
       # Download artifacts from the specified sign run
       - name: 📥 Download signatures artifact

@@ -29,9 +29,10 @@ jobs:
 
     steps:
       - name: 🛠️ Checkout (for pgp/ key reference only)
-        uses: actions/checkout@v5
+        uses: actions/checkout@v7
         with:
           sparse-checkout: pgp
+          sparse-checkout-cone-mode: true
 
       - name: 📥 Download PDF artifacts
         uses: actions/download-artifact@v4
@@ -110,7 +111,7 @@ jobs:
 
       # Commit export/ back to main
       - name: 📦 Checkout full repo for commit
-        uses: actions/checkout@v5
+        uses: actions/checkout@v7
         with:
           ref: main
           fetch-depth: 0
@@ -120,6 +121,8 @@ jobs:
         run: cp -v export/* repo/export/
 
       - name: 🔏 Configure GPG commit signing
+        env:
+          GPG_PRIVATE_KEY: ${{ secrets.GPG_PRIVATE_KEY }}
         run: |
           mkdir -p ~/.gnupg
           echo "$GPG_PRIVATE_KEY" | gpg --batch --quiet --import > /dev/null 2>&1 || true
@@ -182,10 +185,10 @@ jobs:
     needs: sign
     # Always run so the summary is visible even if sign partially failed
     if: always()
-
+    # Do a sparse checkout on given patterns. Each pattern should be separated with new lines
     steps:
       - name: 🛠️ Checkout scripts and public key
-        uses: actions/checkout@v5
+        uses: actions/checkout@v7
         with:
           sparse-checkout: |
             scripts/verify_pdf.py
