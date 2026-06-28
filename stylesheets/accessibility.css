@@ -1,0 +1,108 @@
+.md-typeset code,
+.md-typeset .admonition code {
+  background-color: rgba(30, 10, 40, 0.80);
+  border: 1px solid rgba(125, 70, 152, 0.30);
+  padding: 0.2em 0.4em;
+  border-radius: 3px;
+  color: var(--crt-amber);
+}
+
+.md-typeset a::after,
+a:not(.btn)::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--bg-card);
+  transition: width 0.2s ease;
+}
+
+.md-typeset a:hover::after,
+a:not(.btn):hover::after {
+  width: 100%;
+}
+
+.admonition-note,
+.admonition-todo,
+.admonition-important {
+  background: linear-gradient(180deg,
+    var(--bg-secondary) 0%,
+    rgba(0, 255, 0, 0.05) 100%
+  ) !important;
+}
+
+.admonition-tip,
+.admonition-hint,
+.admonition-new {
+  background: linear-gradient(180deg,
+    var(--bg-secondary) 0%,
+    rgba(0, 255, 0, 0.05) 100%
+  ) !important;
+}
+
+.admonition-caution,
+.admonition-warning {
+  background: linear-gradient(180deg,
+    var(--bg-secondary) 0%,
+    rgba(255, 165, 0, 0.08) 100%
+  ) !important;
+}
+
+.admonition-error,
+.admonition-failure {
+  background: linear-gradient(180deg,
+    var(--bg-secondary) 0%,
+    rgba(239, 68, 68, 0.08) 100%
+  ) !important;
+}
+
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-footer h4,
+.md-footer p {
+  animation: none !important;
+}
+
+@media (prefers-contrast: high) {
+  .admonition-note,
+  .admonition-tip,
+  .admonition-important,
+  .md-typeset details.admonition {
+    background: var(--bg-color) !important;
+  }
+
+  .md-nav__link {
+    color: var(--text-primary) !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .md-typeset h1,
+  .md-typeset h2,
+  .md-typeset h3,
+  .md-footer h4,
+  .md-footer p {
+    animation: none !important;
+  }
+}
+
+code, pre, kbd,
+.md-typeset code,
+.md-typeset pre,
+.md-typeset kbd {
+  font-family: 'Fira Code VF', 'Fira Code', monospace;
+  font-feature-settings: "calt" 1;
+  font-variant-ligatures: contextual;
+}
+
+@supports not (font-variation-settings: normal) {
+  code, pre, kbd,
+  .md-typeset code,
+  .md-typeset pre,
+  .md-typeset kbd {
+    font-family: 'Fira Code', monospace;
+  }
+}
