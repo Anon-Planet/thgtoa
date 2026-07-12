@@ -13,7 +13,6 @@ schema:
   sameAs:
     - https://github.com/Anon-Planet
     - https://opencollective.com/anonymousplanetorg
-    - https://mastodon.social/@anonymousplanet
 ---
 
 <div class="hero-block">

@@ -11,7 +11,6 @@ schema:
   sameAs:
     - https://github.com/Anon-Planet
     - https://opencollective.com/anonymousplanetorg
-    - https://mastodon.social/@anonymousplanet
 ---
 
 <div class="hero-block">
@@ -30,6 +29,29 @@ schema:
 
 <!-- Change nothing below this line, please. -->
 ---
+
+## [v1.2.6-pre1]
+
+!!! Note "Meta"
+
+    - Various website improvements (CSS)
+
+!!! Note "Changed"
+
+    - Adjust keyring path use the new relative path: pgp/anonymousplanet.asc
+    - 02-sign.yml: use a fpr match to lock a specific key
+    - 02-sign.yml: quick mkdir -p repo/export before copying files to the dir
+    - Moved the Acknowledgements section to the bottom
+
+!!! Note "Added"
+
+    - COM Class Identifiers (CLSID/GUID) (NEW)
+    - Windows Global Device Identifier (GDID) (NEW)
+    - USB bus telemetry (device enumeration history) (NEW)
+
+!!! Note "Improved"
+
+    - Glossary (`docs/includes/glossary.md`) and removed inline expansions where applicable
 
 ## [v1.2.5]
 
@@ -148,6 +170,7 @@ First automated PDF build and the start of the CI pipeline.
 
 ---
 
+[v1.2.6-pre1]: https://github.com/Anon-Planet/thgtoa/releases/tag/v1.2.6-pre1
 [v1.2.5]: https://github.com/Anon-Planet/thgtoa/releases/tag/v1.2.5
 [v1.2.4]: https://github.com/Anon-Planet/thgtoa/releases/tag/v1.2.4
 [v1.2.3]: https://github.com/Anon-Planet/thgtoa/releases/tag/v1.2.3

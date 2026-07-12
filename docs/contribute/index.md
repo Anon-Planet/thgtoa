@@ -19,7 +19,7 @@ hide:
 </div>
 
 <div class="donate-goals-block">
-  <h2 class="donate-goals-title">Current Goals</h2>
+  <h3 class="donate-goals-title">Current Goals</h3>
   <ul class="donate-goals-list">
     <li class="donate-goal donate-goal--done"><span class="donate-goal-icon">✓</span> VPS for .onion hosting <strong>funded</strong></li>
     <li class="donate-goal donate-goal--done"><span class="donate-goal-icon">✓</span> Domain <code>anonymousplanet.net</code> — <strong>secured until 2029</strong></li>

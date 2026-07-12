@@ -7,15 +7,12 @@ schema:
   "@id": https://anonymousplanet.net/
   name: Anonymous Planet
   url: https://anonymousplanet.net/
-  logo: media/profile.png
+  logo: media/profile.svg
   sameAs:
     - https://github.com/Anon-Planet
     - https://opencollective.com/anonymousplanetorg
-    - https://mastodon.social/@anonymousplanet
 ---
-
 <div class="hero-block">
-  <div class="hero-eyebrow">Anonymous Planet presents</div>
   <h1 class="hero-title">The Hitchhiker's Guide<br><span class="hero-subtitle">to Online Anonymity (and Privacy)</span></h1>
   <p class="hero-tagline">
     You are being tracked. Your metadata is being sold. Your identity is a product. This guide is your manual out.

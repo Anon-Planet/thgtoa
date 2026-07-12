@@ -1,0 +1,36 @@
+<svg width="220" height="150" viewBox="0 0 220 150" role="img" xmlns="http://www.w3.org/2000/svg">
+  <title>Anonymous Planet mark: a simplified eye with a striated iris and crosshair reticle</title>
+  <desc>A standalone eye mark with a radially striated iris and a crosshair target reticle over the pupil, used as a compact icon without the full seal border.</desc>
+  <path d="M 29,72 Q 110,29 191,72" fill="none" stroke="#00f080" stroke-width="1" opacity="0.45"/>
+  <path d="M 25,80 Q 110,34 195,80 Q 110,126 25,80 Z" fill="none" stroke="#00f080" stroke-width="2.6" stroke-linejoin="round"/>
+  <g stroke="#00f080" stroke-width="1" opacity="0.6" stroke-linecap="round">
+    <line x1="30.4" y1="83.9" x2="18.7" y2="89.1"/>
+    <line x1="34.3" y1="89.1" x2="25.2" y2="97.0"/>
+    <line x1="39.6" y1="93.0" x2="33.0" y2="103.5"/>
+  </g>
+  <circle cx="110" cy="80" r="32" fill="none" stroke="#00f080" stroke-width="0.8" opacity="0.5"/>
+  <line x1="110" y1="63" x2="110" y2="48" transform="rotate(0.0 110 80)" stroke="#00f080" stroke-width="0.7" opacity="0.55"/>
+  <line x1="110" y1="63" x2="110" y2="48" transform="rotate(22.5 110 80)" stroke="#00f080" stroke-width="0.7" opacity="0.55"/>
+  <line x1="110" y1="63" x2="110" y2="48" transform="rotate(45.0 110 80)" stroke="#00f080" stroke-width="0.7" opacity="0.55"/>
+  <line x1="110" y1="63" x2="110" y2="48" transform="rotate(67.5 110 80)" stroke="#00f080" stroke-width="0.7" opacity="0.55"/>
+  <line x1="110" y1="63" x2="110" y2="48" transform="rotate(90.0 110 80)" stroke="#00f080" stroke-width="0.7" opacity="0.55"/>
+  <line x1="110" y1="63" x2="110" y2="48" transform="rotate(112.5 110 80)" stroke="#00f080" stroke-width="0.7" opacity="0.55"/>
+  <line x1="110" y1="63" x2="110" y2="48" transform="rotate(135.0 110 80)" stroke="#00f080" stroke-width="0.7" opacity="0.55"/>
+  <line x1="110" y1="63" x2="110" y2="48" transform="rotate(157.5 110 80)" stroke="#00f080" stroke-width="0.7" opacity="0.55"/>
+  <line x1="110" y1="63" x2="110" y2="48" transform="rotate(180.0 110 80)" stroke="#00f080" stroke-width="0.7" opacity="0.55"/>
+  <line x1="110" y1="63" x2="110" y2="48" transform="rotate(202.5 110 80)" stroke="#00f080" stroke-width="0.7" opacity="0.55"/>
+  <line x1="110" y1="63" x2="110" y2="48" transform="rotate(225.0 110 80)" stroke="#00f080" stroke-width="0.7" opacity="0.55"/>
+  <line x1="110" y1="63" x2="110" y2="48" transform="rotate(247.5 110 80)" stroke="#00f080" stroke-width="0.7" opacity="0.55"/>
+  <line x1="110" y1="63" x2="110" y2="48" transform="rotate(270.0 110 80)" stroke="#00f080" stroke-width="0.7" opacity="0.55"/>
+  <line x1="110" y1="63" x2="110" y2="48" transform="rotate(292.5 110 80)" stroke="#00f080" stroke-width="0.7" opacity="0.55"/>
+  <line x1="110" y1="63" x2="110" y2="48" transform="rotate(315.0 110 80)" stroke="#00f080" stroke-width="0.7" opacity="0.55"/>
+  <line x1="110" y1="63" x2="110" y2="48" transform="rotate(337.5 110 80)" stroke="#00f080" stroke-width="0.7" opacity="0.55"/>
+  <circle cx="110" cy="80" r="17" fill="#060d06"/>
+  <g stroke="#00f080" stroke-width="1.6" stroke-linecap="round">
+    <line x1="110" y1="56" x2="110" y2="70"/>
+    <line x1="110" y1="90" x2="110" y2="104"/>
+    <line x1="86" y1="80" x2="100" y2="80"/>
+    <line x1="134" y1="80" x2="120" y2="80"/>
+  </g>
+  <circle cx="110" cy="80" r="2.1" fill="#00f080"/>
+</svg>
