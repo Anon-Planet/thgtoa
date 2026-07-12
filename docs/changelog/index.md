@@ -1,6 +1,8 @@
 ---
 title: "Changelog"
 description: "Release notes for the Hitchhiker's Guide to Online Anonymity."
+hide:
+  - navigation
 schema:
   "@context": https://schema.org
   "@type": Organization
@@ -32,35 +34,35 @@ schema:
 
 ## [v1.2.6-pre1]
 
-!!! Note "Meta"
+!!! abstract "Meta"
 
     - Various website improvements (CSS)
 
-!!! Note "Changed"
+!!! info "Changed"
 
     - Adjust keyring path use the new relative path: pgp/anonymousplanet.asc
     - 02-sign.yml: use a fpr match to lock a specific key
     - 02-sign.yml: quick mkdir -p repo/export before copying files to the dir
     - Moved the Acknowledgements section to the bottom
 
-!!! Note "Added"
+!!! tip "Added"
 
     - COM Class Identifiers (CLSID/GUID) (NEW)
     - Windows Global Device Identifier (GDID) (NEW)
     - USB bus telemetry (device enumeration history) (NEW)
 
-!!! Note "Improved"
+!!! info "Improved"
 
     - Glossary (`docs/includes/glossary.md`) and removed inline expansions where applicable
 
 ## [v1.2.5]
 
-!!! Note "Meta"
+!!! abstract "Meta"
 
     - Website theme customization
     - License change to accomodate our fiscal host Open Source Collective
 
-!!! Note "Changed"
+!!! info "Changed"
 
     - Comprehensive updates throughout the guide reflecting the transition to Whonix 18.x as the newest version
     - Replaced outdated Whonix.org wiki docs links with GitHub releases mirror and Archive.org backups
@@ -74,14 +76,14 @@ schema:
     - Added comprehensive upgrade path guidance with backup procedures
     - Updated 196! Wikipedia reference links throughout the entire guide
 
-!!! Note "Added"
+!!! tip "Added"
 
     - All Whonix.org/wiki links now have Archive.org mirror backups for availability
     - Upgrade path documented: Whonix 17 to 18 with automated release-upgrade support
     - Detailed Qubes OS compatibility notes for both Whonix versions
     - You can now get the Anonymous Planet PGP keyring from the site (copy/paste or download)
 
-!!! Note "Improved"
+!!! info "Improved"
 
     - Virtualbox hardening section reorganized
     - AppArmor configuration guidance added where applicable (Whonix 18.x)
@@ -91,11 +93,11 @@ schema:
 
 ## [v1.2.4]
 
-!!! Note "Meta"
+!!! abstract "Meta"
 
     - Rename workflows (GH - now we can know the order)
 
-!!! Note "Changed"
+!!! info "Changed"
 
     - Change the repo URL for our tor mirror
     - Fix recommended reading admonition
@@ -115,7 +117,7 @@ schema:
 
 CI/CD pipeline split into independent stages, dark PDF quality improved, release signing automated, and the changelog now updates itself on every build. Skipping v1.2.2 which was a placeholder and contained broken Python unsuitable for a tag/release.
 
-???+ tip "Added"
+!!! tip "Added"
 
     - **Dark mode PDF** (`scripts/convert.py`): pixel-level converter replaces the broken `--prefers-color-scheme=dark` Chromium flag. Produces a 200 DPI hacker-themed PDF (`#1f1f31` background, `#e0e0e0` text, `#5e8bde` links) with batched page processing to avoid OOM on large documents.
     - **Three independent CI workflows** replacing the old monolithic `build-sign-release.yml`:
@@ -151,7 +153,7 @@ CI/CD pipeline split into independent stages, dark PDF quality improved, release
 
 First automated PDF build and the start of the CI pipeline.
 
-???+ tip "Added"
+!!! tip "Added"
 
     - `scripts/build_guide_pdf.py`: builds the MkDocs site and renders the full guide to a single PDF via headless Chromium (Chrome or Edge). Supports `--dark`, `--light`, and `--both` modes.
     - GitHub Actions workflow that installs Chromium, runs the build script, and uploads `export/thgtoa.pdf` as an artifact on every push to `main` or manual dispatch.

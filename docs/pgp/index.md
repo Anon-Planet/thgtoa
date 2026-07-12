@@ -2,7 +2,7 @@
 title: "PGP"
 description: "Import our GPG keys to verify our releases and signed content."
 hide:
-  - toc
+  - navigation
 schema:
   "@context": https://schema.org
   "@type": Organization

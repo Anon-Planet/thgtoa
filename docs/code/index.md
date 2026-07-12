@@ -3,6 +3,7 @@ title: "Content Contributions"
 description: "How to contribute to the Hitchhiker's Guide — building, signing, releasing, and writing."
 hide:
   - toc
+  - navigation
 schema:
   "@context": https://schema.org
   "@type": Organization

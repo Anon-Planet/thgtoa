@@ -2,7 +2,7 @@
 title: "Verify"
 description: "Verify the authenticity and integrity of Anonymous Planet releases."
 hide:
-  - toc
+  - navigation
 schema:
   "@context": https://schema.org
   "@type": Organization

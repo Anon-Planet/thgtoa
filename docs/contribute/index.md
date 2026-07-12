@@ -2,7 +2,7 @@
 title: Contribute & Donate
 description: "Support the Anonymous Planet project through crypto donations or content contributions. No fiat. No tracking. No profit."
 hide:
-  - toc
+  - navigation
 ---
 
 <div class="hero-block">

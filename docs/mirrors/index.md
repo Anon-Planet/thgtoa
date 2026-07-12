@@ -3,6 +3,7 @@ title: "Mirrors"
 description: "Every place you can read or download the Hitchhiker's Guide."
 hide:
   - toc
+  - navigation
 schema:
   "@context": https://schema.org
   "@type": Organization

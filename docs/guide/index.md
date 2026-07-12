@@ -1,6 +1,8 @@
 ---
 title: "The Hitchhiker's Guide"
 description: We are the maintainers of the Hitchhiker's Guide and the PSA Matrix space.
+hide:
+  - navigation
 schema:
   "@context": https://schema.org
   "@type": Organization

@@ -3,6 +3,7 @@ title: "A Constitution"
 description: "The rules, values, and principles governing the Anonymous Planet initiative and PSA community."
 hide:
   - toc
+  - navigation
 ---
 
 <div class="hero-block">

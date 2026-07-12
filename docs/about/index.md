@@ -2,6 +2,7 @@
 title: "Anonymous Planet"
 description: "We are the maintainers of the Hitchhiker's Guide and the PSA Matrix space."
 hide:
+  - navigation
   - toc
 schema:
   "@context": https://schema.org

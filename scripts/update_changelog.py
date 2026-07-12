@@ -143,8 +143,18 @@ def categorise(messages: list[str]) -> dict[str, list[str]]:
     return buckets
 
 
+# Distinct admonition type per bucket so icons/colors differ (not all blue "note")
+ADMONITION_TYPE: dict[str, str] = {
+    "Meta":    "abstract",
+    "Added":   "tip",
+    "Changed": "info",
+    "Fixed":   "success",
+}
+
+
 def format_admonition(bucket: str, items: list[str]) -> str:
-    lines = [f'!!! Note "{bucket}"', ""]
+    adm_type = ADMONITION_TYPE.get(bucket, "note")
+    lines = [f'!!! {adm_type} "{bucket}"', ""]
     for item in items:
         lines.append(f"    - {item}")
     lines.append("")
@@ -154,7 +164,7 @@ def format_admonition(bucket: str, items: list[str]) -> str:
 def build_entry(version: str, buckets: dict[str, list[str]], sha: str) -> str:
     date = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     lines = [f"## [{version}]", ""]
-    lines.append('!!! Note "Meta"')
+    lines.append('!!! abstract "Meta"')
     lines.append("")
     lines.append(f"    - Released {date} from [`{sha[:7]}`](https://github.com/Anon-Planet/thgtoa/commit/{sha})")
     lines.append("")
