@@ -13,7 +13,6 @@ schema:
   sameAs:
     - https://github.com/Anon-Planet
     - https://opencollective.com/anonymousplanetorg
-    - https://mastodon.social/@anonymousplanet
 ---
 
 <div class="hero-block">
@@ -47,6 +46,28 @@ We are high-risk individuals. We do this because it matters.
 
 ---
 
+## Maintainers { #maintainers }
+
+<div class="maintainer-bio">
+<img src="../media/nope-keyoxide-profile.png" alt="nope" class="maintainer-avatar">
+<div class="maintainer-text" markdown="1">
+
+Nope -- background in signals intelligence (SIGINT), software engineering, "hacking", privacy software engineering, operational security, drone piloting and repair. Years ago, I realized there really wasn't a definitive guide for whistleblowers, without having to dig on various sites including darknet locations that could provide potentially incorrect or misleading information. I haven't stopped working on that since. We're the people this guide is written for - the threat model isn't hypothetical for us. I stay anonymous by necessity, not preference. Previously this project was ran by Lena, the founder and a few other people with various backgrounds. Obviously, not much else can be said, but we are active members of the intelligence community (IC) and privacy/security circles. We strive to be the definitive source, not just a glorified recommendation website.
+
+</div>
+</div>
+
+<!-- <div class="maintainer-bio">
+<img src="../media/daskolburn-keyoxide-profile.png" alt="daskolburn" class="maintainer-avatar">
+<div class="maintainer-text" markdown="1">
+
+<>
+
+</div>
+</div> -->
+
+---
+
 ## Community { #community }
 
 <div class="index-grid">
@@ -62,7 +83,7 @@ We are high-risk individuals. We do this because it matters.
   <div class="index-card">
     <h3 class="index-card__title">Mastodon</h3>
     <p class="index-card__body">Follow us for announcements on the Fediverse.</p>
-    <a href="https://ioc.exchange/@anonymousplanet" class="index-card__link" rel="me">@anonymousplanet@ioc.exchange</a>
+    <a href="https://ioc.exchange/@unknown" class="index-card__link" rel="me">@unknown@ioc.exchange</a>
   </div>
 
   <div class="index-card">

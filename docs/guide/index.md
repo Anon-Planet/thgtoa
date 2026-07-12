@@ -42,7 +42,7 @@ You could also install the [LibRedirect](https://libredirect.github.io/) extensi
 
 **If you are having trouble accessing any of the many academic articles referenced in this guide due to paywalls, feel free to use Sci-Hub (<https://en.wikipedia.org/wiki/Sci-Hub>** <sup>[[Wikiless]](https://wikiless.tiekoetter.com/wiki/Sci-Hub)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Sci-Hub)</sup>**) or LibGen (<https://en.wikipedia.org/wiki/Library_Genesis>** <sup>[[Wikiless]](https://wikiless.tiekoetter.com/wiki/Library_Genesis)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Library_Genesis)</sup>**) for finding and reading them. Because Science should be free. All of it. If you are faced with a paywall accessing some resources, consider using <https://12ft.io/>.**
 
-Finally note that this guide does mention and even recommends various commercial services (such as VPNs, CDNs, e-mail providers, hosting providers...) **but is not endorsed or sponsored by any of them in any way. There are no referral links and no commercial ties with any of these providers. This project is 100% non-profit and only relying on donations.**
+Finally note that this guide does mention and even recommends various commercial services (such as VPNs, CDNs[^43], e-mail providers, hosting providers...) **but is not endorsed or sponsored by any of them in any way. There are no referral links and no commercial ties with any of these providers. This project is 100% non-profit and only relying on donations.**
 
 </div>
 
@@ -78,7 +78,7 @@ This guide is not intended for:
 
 **TLDR for the whole guide: "A strange game. The only winning move is not to play"** [^4]**.**
 
-Making a social media account with a pseudonym or artist/brand name is easy. And it is enough in most use cases to protect your identity as the next George Orwell. There are plenty of people using pseudonyms all over Facebook/Instagram/Twitter/LinkedIn/TikTok/Snapchat/Reddit/... But the vast majority of those are anything but anonymous and can easily be traced to their real identity by your local police officers, random people within the OSINT[^5] (Open-Source Intelligence) community, and trolls[^6] on 4chan[^7].
+Making a social media account with a pseudonym or artist/brand name is easy. And it is enough in most use cases to protect your identity as the next George Orwell. There are plenty of people using pseudonyms all over Facebook/Instagram/Twitter/LinkedIn/TikTok/Snapchat/Reddit/... But the vast majority of those are anything but anonymous and can easily be traced to their real identity by your local police officers, random people within the OSINT[^5] community, and trolls[^6] on 4chan[^7].
 
 This is a good thing as most criminals/trolls are not tech-savvy and will usually be identified with ease. But this is also a terrible thing as most political dissidents, human rights activists and whistleblowers can also be tracked rather easily.
 
@@ -140,7 +140,7 @@ This guide is written with hope for those **good-intended individuals** who migh
 
 **Disclaimer: this whole paragraph is about your public-facing Internet IP and not your local network IP.**
 
-Your IP address[^26] is the most known and obvious way you can be tracked. That IP is the IP you are using at the source. This is where you connect to the internet. That IP is usually provided by your ISP (Internet Service Provider) (xDSL, Mobile, Cable, Fiber, Cafe, Bar, Friend, Neighbor). Most countries have data retention regulations[^27] that mandate keeping logs of who is using what IP at a certain time/date for up to several years or indefinitely. Your ISP can tell a third party that you were using a specific IP at a specific date and time, years after the fact. If that IP (the original one) leaks at any point for any reason, it can be used to track down you directly. In many countries, you will not be able to have internet access without providing some form of identification to the provider (address, ID, real name, e-mail ...).
+Your IP address[^26] is the most known and obvious way you can be tracked. That IP is the IP you are using at the source. This is where you connect to the internet. That IP is usually provided by your ISP (xDSL, Mobile, Cable, Fiber, Cafe, Bar, Friend, Neighbor). Most countries have data retention regulations[^27] that mandate keeping logs of who is using what IP at a certain time/date for up to several years or indefinitely. Your ISP can tell a third party that you were using a specific IP at a specific date and time, years after the fact. If that IP (the original one) leaks at any point for any reason, it can be used to track down you directly. In many countries, you will not be able to have internet access without providing some form of identification to the provider (address, ID, real name, e-mail ...).
 
 Needless to say, that most platforms (such as social networks) will also keep (sometimes indefinitely) the IP addresses you used to sign-up and sign into their services.
 
@@ -196,82 +196,73 @@ All those will be explained later in this guide.
 
 ### Your DNS and IP requests { #dns-requests }
 
-DNS stands for "Domain Name System"[^31] and is a service used by your browser (and other apps) to find the IP addresses of a service. It is a huge "contact list" (phone book for older people) that works like asking it a name and it returns the number to call. Except it returns an IP instead.
+DNS[^31] is the internet's address book: every time your browser opens a connection to `www.google.com`, it first asks a DNS server to translate that name into an IP address. Your browser, and most other apps on your device, do this constantly in the background.
 
-Every time your browser wants to access a certain service such as Google through www.google.com. Your Browser (Chrome or Firefox) will query a DNS service to find the IP addresses of the Google web servers.
+For a visual introduction to how DNS works, see: <https://www.youtube.com/watch?v=vrxwXXytEuI> <sup>[[Invidious]](https://yewtu.be/watch?v=vrxwXXytEuI)</sup>
 
-Here is a video explaining DNS visually if you are already lost: <https://www.youtube.com/watch?v=vrxwXXytEuI> <sup>[[Invidious]](https://yewtu.be/watch?v=vrxwXXytEuI)</sup>
+#### The default DNS problem { #dns-default-problem }
 
-Usually, the DNS service is provided by your ISP and automatically configured by the network you are connecting to. This DNS service could also be subject to data retention regulations or will just keep logs for other reasons (data collection for advertising purposes for instance). Therefore, this ISP will be capable of telling everything you did online just by looking at those logs which can, in turn, be provided to an adversary. Conveniently this is also the easiest way for many adversaries to apply censoring or parental control by using DNS blocking[^32]. The provided DNS servers will give you a different address (than their real one) for some websites (like redirecting thepiratebay.org to some government website). Such blocking is widely applied worldwide for certain sites[^33].
+By default, your DNS queries go to your ISP's resolver. This creates several compounding problems:
 
-Using a private DNS service or your own DNS service would mitigate these issues, but the other problem is that most of those DNS requests are by default still sent in clear text (unencrypted) over the network. Even if you browse PornHub in an incognito Window, using HTTPS and using a private DNS service, chances are exceedingly high that your browser will send a clear text unencrypted DNS request to some DNS servers asking basically "So what's the IP address of www.pornhub.com?".
+- **Logging.** ISPs are often subject to data retention laws and may log every domain you resolve, building a complete record of your browsing history. That log can be subpoenaed, sold, or breached.
+- **Censorship.** DNS blocking is the most common censorship mechanism worldwide[^32][^33] - ISPs simply return a false address for blocked domains.
+- **Tampering.** Even if you configure a private DNS resolver, your ISP can intercept and rewrite DNS responses in transit, because standard DNS traffic is unencrypted.
+- **Hardcoded resolvers.** Many devices bypass system DNS settings entirely. Roughly 70% of Smart TVs and 46% of game consoles[^34] use hardcoded DNS servers that cannot be changed through OS settings - you have to block them at the network level[^35] or accept the exposure.
 
-Because it is not encrypted, your ISP and/or any other adversary could still intercept (using a Man-in-the-middle attack[^97]) your request will know and possibly log what your IP was looking for. The same ISP can also tamper with the DNS responses even if you are using a private DNS. Rendering the use of a private DNS service useless.
+#### Encrypted DNS (DoH / DoT) { #dns-encrypted }
 
-As a bonus, many devices and apps will use hardcoded DNS servers bypassing any system setting you could set. This is for example the case with most (70%) Smart TVs and a large part (46%) of Game Consoles[^34]. For these devices, you will have to force them[^35] to stop using their hardcoded DNS service which could make them stop working properly.
+Encrypting your DNS queries using DoH (DNS over HTTPS)[^36] or DoT (DNS over TLS)[^37] prevents your ISP from reading or tampering with them in transit. You can run this:
 
-A solution to this is to use encrypted DNS using DoH (DNS over HTTPS[^36]), DoT (DNS over TLS[^37]) with a private DNS server (this can be self-hosted locally with a solution like pi-hole[^38], remotely hosted with a solution like nextdns.io or using the solutions provided by your VPN provider or the Tor network). This should prevent your ISP or some go-between from snooping on your requests ... except it might not.
+- **Locally**, with a self-hosted resolver such as Pi-hole[^38].
+- **Remotely**, via a privacy-focused provider such as nextdns.io.
+- **Automatically**, through your VPN provider's DNS, or through the Tor network.
 
-Small in-between Disclaimer: **This guide does not necessarily endorse or recommend Cloudflare services even if it is mentioned several times in this section for technical understanding.**
+This is a meaningful improvement over plaintext DNS - but it is not sufficient on its own.
 
-Unfortunately, the TLS protocol used in most HTTPS connections in most Browsers (Chrome/Brave among them) will leak the Domain Name again through SNI[^39] handshakes (this can be checked here at Cloudflare: <https://www.cloudflare.com/ssl/encrypted-sni/> <sup>[[Archive.org]](https://web.archive.org/web/https://www.cloudflare.com/ssl/encrypted-sni/)</sup> ). **As of the writing of this guide, only Firefox-based browsers supports ECH (Encrypted Client Hello**[^40] **previously known as eSNI**[^41]**) on some websites which will encrypt everything end to end (in addition to using a secure private DNS over TLS/HTTPS) and will allow you to hide your DNS requests from a third party**[^42]**.** And this option is not enabled by default either so you will have to enable it yourself.
+> **Note:** This guide does not endorse or recommend Cloudflare services. Cloudflare is referenced here only for technical context.
+
+#### SNI leakage and ECH { #dns-sni-ech }
+
+Even with encrypted DNS, the TLS handshake itself leaks the destination domain name through Server Name Indication (SNI)[^39]. An observer watching your connection - your ISP, a network monitor, or a rogue access point - can see which domain you are connecting to from the SNI field, even though the DNS query itself was encrypted.
 
 ![](../media/image04.png)
 
-In addition to limited browser support, only web Services and CDNs[^43] behind Cloudflare CDN support ECH/eSNI at this stage[^44]. This means that ECH and eSNI are not supported (as of the writing of this guide) by most mainstream platforms such as:
+Encrypted Client Hello (ECH)[^40] (formerly eSNI[^41]) is the fix: it encrypts the SNI field so the destination domain is hidden from network observers[^42]. However, ECH has significant deployment constraints[^44]:
 
-- Amazon (including AWS, Twitch...)
+- Only Firefox-based browsers support ECH. It is not enabled by default and must be turned on manually.
+- ECH only works with sites hosted behind Cloudflare's CDN. It is not supported by most major platforms, including Amazon (AWS, Twitch), Microsoft (Azure, OneDrive, Office 365), Google (Gmail, Google Cloud), Apple (iCloud, iMessage), Reddit, YouTube, Facebook, Instagram, Twitter, and GitHub.
+- Russia[^45] and China[^46] are reported to block ECH handshakes at the network level, preventing connections to any service that requires ECH to function.
 
-- Microsoft (including Azure, OneDrive, Outlook, Office 365...)
+#### OCSP leakage { #dns-ocsp }
 
-- Google (including Gmail, Google Cloud...)
+A separate leak occurs during TLS certificate validation. Firefox-based browsers use OCSP[^47] to check whether a site's certificate has been revoked. This check sends the certificate's serial number to a third-party OCSP responder - and that serial number can be matched against public certificate databases to identify exactly which site you are visiting[^48].
 
-- Apple (including iCloud, iMessage...)
+OCSP stapling[^49] mitigates this by having the server include a pre-signed OCSP response in the TLS handshake, removing the need for the browser to make a separate request. Firefox supports OCSP stapling but does not enforce it, and not all servers implement it. Chromium-based browsers use CRLSets[^50][^51] instead, which is arguably a cleaner approach.
 
-- Reddit
-
-- YouTube
-
-- Facebook
-
-- Instagram
-
-- Twitter
-
-- GitHub
-
-- ...
-
-Some countries like Russia[^45] and China[^46] might (unverified despite the articles) block ECH/eSNI handshakes at the network level to allow snooping and prevent bypassing censorship. Meaning you will not be able to establish an HTTPS connection with a service if you do not allow them to see what it was.
-
-The issues do not end here. Part of the HTTPS TLS validation is called OCSP[^47] and this protocol used by Firefox-based browsers will leak metadata in the form of the serial number of the certificate of the website you are visiting. An adversary can then easily find which website you are visiting by matching the certificate number[^48]. This issue can be mitigated by using OCSP stapling[^49]. Unfortunately, this is enabled but not enforced by default in Firefox/Tor Browser. But the website you are visiting must also be supporting it and not all do. Chromium-based browsers on the other hand use a different system called CRLSets[^50]'[^51] which is arguably better.
-
-Here is a list of how various browsers behave with OCSP: <https://www.ssl.com/blogs/how-do-browsers-handle-revoked-ssl-tls-certificates/> <sup>[[Archive.org]](https://web.archive.org/web/https://www.ssl.com/blogs/how-do-browsers-handle-revoked-ssl-tls-certificates/)</sup>
-
-Here is an illustration of the issue you could encounter on Firefox-based browsers:
+Browser comparison: <https://www.ssl.com/blogs/how-do-browsers-handle-revoked-ssl-tls-certificates/> <sup>[[Archive.org]](https://web.archive.org/web/https://www.ssl.com/blogs/how-do-browsers-handle-revoked-ssl-tls-certificates/)</sup>
 
 ![](../media/image05.png)
 
-Finally, even if you use a custom encrypted DNS server (DoH or DoT) with ECH/eSNI support and OCSP stapling, it might still not be enough as traffic analysis studies[^52] have shown it is still possible to reliably fingerprint and block unwanted requests. Only DNS over Tor was able to show efficient DNS Privacy in recent studies but even that can still be defeated by other means (see [Your Anonymized Tor/VPN traffic](#traffic-anonymization).
+#### Traffic analysis defeats all of the above { #dns-traffic-analysis }
 
-One could also decide to use a Tor Hidden DNS Service or ODoH (Oblivious DNS over HTTPS[^53]) to further increase privacy/anonymity but **unfortunately**, as far as we know, these methods are only provided by Cloudflare as of this writing (<https://blog.cloudflare.com/welcome-hidden-resolver/> <sup>[[Archive.org]](https://web.archive.org/web/https://blog.cloudflare.com/welcome-hidden-resolver/)</sup>, <https://blog.cloudflare.com/oblivious-dns/> <sup>[[Archive.org]](https://web.archive.org/web/https://blog.cloudflare.com/oblivious-dns/)</sup>). These are workable and reasonably secure technical options but there is also a moral choice if you want to use Cloudflare or not (despite the risk posed by some researchers[^54]).
+Even with encrypted DNS, ECH, and OCSP stapling all in place, traffic analysis[^52] can still identify the sites you visit by matching IP addresses - since most websites have unique IPs - or by fingerprinting traffic patterns. DNS over Tor shows the strongest DNS privacy in current research, but it can still be defeated by other methods (see [Traffic Anonymization](#traffic-anonymization)).
 
-**Note that Oblivious DNS addresses an adversary that eavesdrops on one of the connections listed here but not all. It does not address a global passive adversary (GPA) who can eavesdrop on many or all of these connections**:
-- traffic between the client resolver and the recursive resolver
-- the recursive resolver and the ODNS resolver
-- the ODNS resolver and an authoritative server.
+Two advanced options exist for DNS beyond standard DoH/DoT:
 
-Lastly, there is also this new possibility called DoHoT which stands for DNS over HTTPS over Tor which could also further increase your privacy/anonymity and which you could consider if you are more skilled with Linux. See <https://github.com/alecmuffett/dohot> <sup>[[Archive.org]](https://web.archive.org/web/https://github.com/alecmuffett/dohot)</sup>. This guide will not help you with this one at this stage, but it might be coming soon.
-
-Here is an illustration showing the current state of DNS and HTTPS privacy based on our current knowledge.
+- **Tor Hidden DNS / ODoH** (Oblivious DNS over HTTPS[^53]): separates the query from the requester so no single party knows both who is asking and what they are asking for. Currently only offered by Cloudflare[^54], which introduces its own trust tradeoff. ODoH does not protect against a global passive adversary (GPA) who can observe traffic between the client resolver and the recursive resolver, between the recursive and ODNS resolvers, or between the ODNS resolver and an authoritative server.
+- **DoHoT** (DNS over HTTPS over Tor): routes encrypted DNS queries through Tor for stronger anonymity. Requires Linux and more technical configuration. See <https://github.com/alecmuffett/dohot> <sup>[[Archive.org]](https://web.archive.org/web/https://github.com/alecmuffett/dohot)</sup>.
 
 ![](../media/image06.png)
 
-As for your normal daily use (non-sensitive), remember that only Firefox-based browsers support ECH (formerly eSNI) so far and that it is only useful with websites hosted behind Cloudflare CDN at this stage. If you prefer a Chrome-based version (which is understandable for some due to some better-integrated features like on-the-fly Translation), then we would recommend the use of Brave instead which supports all Chrome extensions and offers much better privacy than Chrome.
+#### Browser choice { #dns-browser-choice }
 
-But the story does not stop there right. Now because after all this, even if you encrypt your DNS and use all possible mitigations. Simple IP requests to any server will probably allow an adversary to still detect which site you are visiting. And this is simply because the majority of websites have unique IPs tied to them as explained here: <https://blog.apnic.net/2019/08/23/what-can-you-learn-from-an-ip-address/> <sup>[[Archive.org]](https://web.archive.org/web/https://blog.apnic.net/2019/08/23/what-can-you-learn-from-an-ip-address/)</sup>. This means that an adversary can create a dataset of known websites for instance including their IPs and then match this dataset against the IP you ask for. In most cases, this will result in a correct guess of the website you are visiting. This means that despite OCSP stapling, despite ECH/eSNI, despite using Encrypted DNS ... An adversary can still guess the website you are visiting anyway.
+For daily non-sensitive use: only Firefox-based browsers support ECH, and ECH only helps for Cloudflare-hosted sites. If you prefer a Chromium-based browser, Brave is the most privacy-preserving option - it supports all Chrome extensions while adding meaningful protections that Chrome lacks.
 
-Therefore, to mitigate all these issues (as much as possible and as best as we can), this guide will later recommend two solutions: Using Tor and a virtualized (See [Virtualization](#virtualization)) multi-layered solution of VPN over Tor solution (DNS over VPN over Tor or DNS over TOR). Other options will also be explained (Tor over VPN, VPN only, No Tor/VPN) but are less recommended.
+#### IP addresses remain a residual leak { #dns-ip-residual }
+
+Regardless of DNS encryption, the IP address your device connects to is visible to network observers. Since most websites have unique, publicly known IP addresses[^89], an adversary can match your connection destinations against a database of known site IPs and infer which sites you are visiting - without ever touching your DNS traffic. OCSP stapling, ECH, and encrypted DNS do not prevent this.
+
+This is why the guide ultimately recommends Tor, combined with a virtualized multi-layered architecture (see [Virtualization](#virtualization)), as the only realistic mitigation: VPN over Tor hides both DNS queries and IP destinations. Alternative configurations (Tor over VPN, VPN only, no Tor/VPN) are covered later but are less recommended for high-sensitivity use.
 
 ### Your RFID enabled devices { #rfid-devices }
 
@@ -342,7 +333,7 @@ This can be useful when you know someone you want to de-anonymize is in a crowde
 
 These techniques can also be employed to design sophisticated phishing websites aimed at capturing your credentials or persuading you to install a malicious certificate. Such a certificate could enable attackers to intercept and decrypt your encrypted traffic.
 
-How to mitigate those? If you do connect to a public wi-fi access point, use Tor, or use a VPN and then Tor (Tor over VPN) or even (VPN over Tor) to obfuscate your traffic from the rogue AP while still using it.
+How to mitigate those? If you do connect to a public wi-fi access point, use Tor, or use a VPN and then Tor or even VPN over Tor to obfuscate your traffic from the rogue AP while still using it.
 
 In addition, you should see the BlackHat USA conference talk, [Surveilling the Masses with Wi-Fi Positioning Systems](https://www.youtube.com/watch?v=hlbjUvkoyBA) <sup>[[Invidious]](https://yewtu.be/watch?v=hlbjUvkoyBA)</sup>. The talk details a critical vulnerability in the Wi-Fi positioning API by Apple, which can be used to geofence the population using unique identifiers. See: [Warning about smartphones and smart devices](#smartphones-warning). Your neighbors' iPhones are a unique threat, too.
 
@@ -444,9 +435,34 @@ TLDR: Do not take such devices with you when conducting sensitive activities.
 
 ## Your Hardware Identifiers { #hardware-identifiers }
 
+### Windows USB bus telemetry (device enumeration history) { #usb-bus-telemetry }
+
+Windows keeps a permanent enumeration history of every USB device ever connected, independent of whether the device is currently attached.
+
+!!! danger "Deanonymization vector"
+    Each USB mass storage device exposes a Vendor ID, Product ID, and, for most drives, a unique serial number at the descriptor level during enumeration. Windows records this under:
+
+    - `HKLM\SYSTEM\CurrentControlSet\Enum\USBSTOR`
+    - `HKLM\SYSTEM\CurrentControlSet\Enum\USB`
+    - `SetupAPI.dev.log`
+
+    This creates a durable, cross-reinstall link between a specific physical USB drive, phone, hardware key, or dongle, and every OS install it has ever touched, because the identifying data lives in the device's own firmware/descriptor, not in the OS.
+
+How it's exploited:
+
+- Physical device correlation. The same USB drive used across a "clean" VM and a personal machine carries its VID/PID/serial into both installs' registries, creating a link forensic analysis, or malware with sufficient privilege, can recover even if the OS itself was reinstalled or the VM rebuilt.
+- First-connected timestamps. Registry key metadata records first- and last-connected times per device, which can corroborate or contradict claimed usage timelines.
+- Persists across OS reinstall of the host, not the device. Reinstalling Windows resets the host's own identifiers, including the GDID, but does nothing to the USB device's own serial. Replugging it into a new install just writes a fresh, correlatable entry referencing the same hardware ID.
+
+Mitigations:
+
+- Never share USB storage media, security keys, or peripherals between anonymous and identified environments.
+- Where sharing is unavoidable, prefer devices that don't expose a unique serial in their descriptor, and treat any device that has ever touched an identified machine as burned for anonymous use.
+- Use write-blockers or a live OS (Tails) for cases where a USB device's provenance itself is sensitive, since USB enumeration history is written by the host OS regardless of read/write intent.
+
 ### Your IMEI and IMSI { #imei-imsi }
 
-The IMEI (International Mobile Equipment Identity[^84]) and the IMSI (International Mobile Subscriber Identity[^85]) are unique numbers created by cell phone manufacturers and cell phone operators.
+The IMEI and the IMSI are unique numbers created by cell phone manufacturers and cell phone operators.
 
 The IMEI is tied directly to the phone you are using. This number is known and tracked by the cell phone operators and known by the manufacturers. Every time your phone connects to the mobile network, it will register the IMEI on the network along with the IMSI (if a SIM card is inserted but that is not even needed). It is also used by many applications (Banking apps abusing the phone permission on Android for instance[^86]) and smartphone Operating Systems (Android/IOS) for identification of the device[^87]. It is possible but difficult (and not illegal in many jurisdictions[^88]) to change the IMEI on a phone but it is probably easier and cheaper to just find and buy some old (working) Burner phone for a few Euros (this guide is for Germany remember) at a flea market or some random small shop.
 
@@ -466,7 +482,7 @@ The IMEI and IMSI can be traced back to you in at least six ways:
 
 - The smartphone OS makers (Google/Apple for Android/IOs) also keep logs of IMEI/IMSI identifications tied to Google/Apple accounts and which user has been using them. They too can trace back the history of the phone and to which accounts it was tied in the past[^92].
 
-- Government agencies around the world interested in your phone number can and do use[^93] special devices called "IMSI catchers"[^94] like the Stingray[^95] or more recently the Nyxcell[^96]. These devices can impersonate (to spoof) a cell phone Antenna and force a specific IMSI (your phone) to connect to it to access the cell network. Once they do, they will be able to use various MITM[^97] (Man-In-The-Middle Attacks) that will allow them to:
+- Government agencies around the world interested in your phone number can and do use[^93] special devices called "IMSI catchers"[^94] like the Stingray[^95] or more recently the Nyxcell[^96]. These devices can impersonate (to spoof) a cell phone Antenna and force a specific IMSI to connect to it to access the cell network. Once they do, they will be able to use various MITM[^97] that will allow them to:
 
     - Tap your phone (voice calls and SMS).
 
@@ -512,15 +528,15 @@ See [Warning about smartphones and smart devices](#smartphones-warning)
 
 ## Your CPU { #cpu }
 
-All modern CPUs[^102] are now integrating hidden management platforms such as the now infamous Intel Management Engine[^103] and the AMD Platform Security Processor[^104].
+All modern CPUs[^102] are now integrating hidden management platforms such as the now infamous Intel Management Engine (IME)[^103] and the AMD Platform Security Processor (PSP)[^104].
 
-Those management platforms are small operating systems running directly on your CPU as long as they have power. These systems have full access to your computer's network and could be accessed by an adversary to de-anonymize you in various ways (using direct access or using malware for instance) as shown in this enlightening video: BlackHat, How to Hack a Turned-Off Computer, or Running Unsigned Code in Intel Management Engine <https://www.youtube.com/watch?v=9fhNokIgBMU> <sup>[[Invidious]](https://yewtu.be/watch?v=mYsTBPqbya8)</sup>.
+Those management platforms are small operating systems running directly on your CPU as long as they have power. These systems have full access to your computer's network and could be accessed by an adversary to de-anonymize you in various ways (using direct access or using malware for instance) as shown in this enlightening video: BlackHat, How to Hack a Turned-Off Computer, or Running Unsigned Code in IME <https://www.youtube.com/watch?v=9fhNokIgBMU> <sup>[[Invidious]](https://yewtu.be/watch?v=mYsTBPqbya8)</sup>.
 
 These have already been affected by several security vulnerabilities in the past[^105] that allowed malware to gain control of target systems. These are also accused by many privacy actors including the EFF and Libreboot of being a backdoor into any system[^106].
 
-There are some not so straightforward ways[^107] to disable the Intel IME on some CPUs and you should do so if you can. For some AMD laptops, you can disable it within the BIOS settings by disabling PSP.
+There are some not so straightforward ways[^107] to disable the IME on some CPUs and you should do so if you can. For some AMD laptops, you can disable it within the BIOS settings by disabling PSP.
 
-Note that, to AMD's defense, there were no security vulnerabilities found for ASP and no backdoors either. See <https://www.youtube.com/watch?v=bKH5nGLgi08&t=2834s> <sup>[[Invidious]](https://yewtu.be/watch?v=bKH5nGLgi08&t=2834s)</sup>. In addition, AMD PSP does not provide any remote management capabilities contrary to Intel IME.
+Note that, to AMD's defense, there were no security vulnerabilities found for ASP and no backdoors either. See <https://www.youtube.com/watch?v=bKH5nGLgi08&t=2834s> <sup>[[Invidious]](https://yewtu.be/watch?v=bKH5nGLgi08&t=2834s)</sup>. In addition, AMD PSP does not provide any remote management capabilities contrary to IME.
 
 If you are feeling a bit more adventurous, you could install your own BIOS using Coreboot[^108] or Libreboot (a distribution of Coreboot) if your laptop supports it. Coreboot allows you to add your own microcode or other firmware blobs in order for the machine to function, but this is based upon user choice, and as of Dec 2022, Libreboot has adopted a similar pragmatic approach in order to support newer devices in the Coreboot tree. (Thanks, kind Anon who corrected previous information in this paragraph.)
 
@@ -599,6 +615,75 @@ This does not mean for example that Apple devices are terrible choices for good 
 Later in this guide, we will use all the means at our disposal to disable and block as much telemetry as possible to mitigate this attack vector in the Operating Systems supported in this guide. These will include Windows, macOS, and even Linux in some regard.
 
 See [Warning about smartphones and smart devices](#smartphones-warning)
+
+### Windows COM Class Identifiers (CLSID) and GUIDs { #your-com-class-identifiers }
+
+Windows assigns a 128-bit GUID to every registered COM class (CLSID), interface (IID), and application (AppID). These are enumerable from user space via the registry (`HKEY_CLASSES_ROOT\CLSID\{GUID}`), no admin rights required, and in some cases can be probed from web content.
+
+**Deanonymization vector**: The specific set of CLSIDs registered on a machine reflects the exact installed software: codecs, shell extensions, Office components, VPN client integrations, security tools, browser helper objects. This is as unique a fingerprint as font or plugin enumeration, but it persists across browser profiles and sessions since it lives at the OS level, not in browser storage.
+
+How it's exploited:
+
+- Software inventory fingerprinting. Enumerating registered CLSIDs reveals installed applications with far more granularity than a User-Agent string.
+- Presence probing. A site can test for specific CLSIDs or associated custom URI protocol handlers to detect named applications: VPN clients, communication apps, forensic or analysis tools.
+- VM/sandbox detection. Certain CLSIDs and related registry artifacts are diagnostic of VirtualBox, VMware, or known anonymity-focused environments.
+- Cross-context correlation. Reusing one Windows install across anonymous and identified activity links the two, independent of browser-level compartmentalization.
+
+Mitigations:
+
+- Use a dedicated, minimal-install VM per identity or persona. Do not reuse one Windows install across anonymous and identified contexts.
+- Prefer Linux-based isolation (Whonix, Tails, Qubes-Whonix) for high-threat-model use. This attack class is COM/Windows-specific and has no direct equivalent there.
+- Revert to a clean snapshot between sessions rather than relying on manual cleanup.
+- Treat this as the same fingerprinting category as font and plugin enumeration: the fix is compartmentalization, not registry editing.
+
+### Windows Global Device Identifier (GDID) { #your-global-device-identifiers }
+
+The GDID is a persistent, server-assigned 64-bit device identifier tied to a Windows installation. It is almost entirely undocumented by Microsoft: the only public reference is a single line in the Azure Monitor schema for the `UCDOStatus` (Delivery Optimization) table, describing a `GlobalDeviceId` column as "Microsoft global device identifier. This is an identifier used by Microsoft internally." Independent reverse-engineering, confirmed against Windows 11 build 26200, has since mapped the full chain.
+
+!!! note "Sources"
+    - _United States v. Peter Stokes_, N.D. Ill. (2026). Federal criminal complaint; primary source for the GDID's real-world use in a law enforcement investigation. Highly encourage all readers of this document to consider that this obscure device telemetry vector was not documented prior to this court case, and is mentioned in passing.
+    - ["Windows GDID Fully Reverse Engineered: MSA Device PUID Exposed"](https://www.devdigest.org/articles/windows-gdid-fully-reverse-engineered-msa-device-puid-exposed), Devdigest.
+    - ["You can't fully disable Microsoft's GDID Windows 11 tracker, but these settings limit what it captures"](https://www.windowslatest.com/2026/07/10/you-cant-fully-disable-microsofts-gdid-windows-11-tracker-but-these-settings-limit-what-it-captures/), Windows Latest.
+    - [gdid-reversal](https://github.com/SmtimesIWndr/gdid-reversal), independent reverse-engineering write-up with ETW and registry evidence.
+
+    !!! warning "On the gdid-reversal source"
+        We have not vetted and will not vet this source, so exercise caution. This repository is user-created and its authorship is unverified. Content may be partly or wholly AI-generated. Treat specific technical claims (registry paths, binary symbols, ETW provider details) as unverified until cross-checked against a real Windows install or a more established source. It's included here because it's one of the only detailed technical accounts of an otherwise undocumented mechanism, not as an authoritative reference.
+
+!!! danger "How it works"
+    When a device signs in with a Microsoft Account, `wlidsvc` provisions it against `login.live.com` and gets back a Device PUID (Passport Unique ID): a server-assigned value, not derived from any local hardware serial. This is stored in the registry, read by the Connected Devices Platform (`cdp.dll` / `CDPSvc`), registered into Microsoft's Device Directory Service graph, and reported by Delivery Optimization as `UCDOStatus.GlobalDeviceId` whenever the machine participates in peer-to-peer update sharing.
+
+    Read your own GDID without admin rights:
+    ```powershell
+    (Get-ItemProperty 'HKCU:\SOFTWARE\Microsoft\IdentityCRL\ExtendedProperties').LID
+    ```
+    This is what the federal complaint used to place a Scattered Spider suspect at specific times and locations across multiple VPN sessions and four countries. Microsoft records matched a specific GDID to the moment an ngrok account was created, regardless of the VPN in use.
+
+Key properties for the threat model:
+
+- VPN/IP-agnostic. The GDID doesn't change with IP address, VPN provider, or exit node. It correlates sessions on the same OS install, not network paths.
+- Not disabled by telemetry opt-outs. It doesn't travel through the classic `DiagTrack` pipeline. Disabling standard diagnostic data settings has no effect on it.
+- Server-side persistence. Deleting the local registry value is cosmetic. The same identifier re-syncs from Microsoft's servers on the next authenticated request (opening the Microsoft Store, for example), because the canonical copy lives server-side, not on disk.
+- Local accounts don't prevent it. A local, non-MSA install still registers an anonymous device path through the Connected Devices Platform. It just isn't tied to an MSA identity unless one is added later.
+- A reinstall gets a new GDID, not a clean slate. A fresh install produces a new identifier, but account, OneDrive, and activation records give Microsoft a documented basis for linking the new GDID back to the old one through the same account.
+
+Mitigations:
+
+- Assume any Windows install signed into a Microsoft Account is linkable across all its sessions regardless of VPN discipline. This is a hard requirement for compartmentalization, not a tuning option.
+- For genuinely sensitive activity, don't use Windows at all. Use a Linux-based environment (Whonix, Tails, Qubes-Whonix) where this telemetry chain doesn't exist.
+- Never reuse a single Windows install, MSA, or even a "cleaned" reinstall on the same physical machine across separate personas.
+
+Reducing exposure, if Windows must be used:
+
+- Use a local account. CDP still creates an anonymous device path, but the GDID won't be tied to an MSA.
+- Block `dds.microsoft.com` and `activity.windows.com` via firewall rules or the hosts file, to cut the reporting channel at the network layer.
+- Delete the registry keys under `IdentityCRL` to clear the locally stored PUID. This only clears the local cache. It's recreated identical to before on the next MSA sign-in or even a background service touching a Microsoft app, since the canonical value lives server-side.
+- Disable the Delivery Optimization service (`DoSvc`). This service reports the GDID via `UCDOStatus.GlobalDeviceId` and is hardened against normal administrative control: `Stop-Service` and `Set-Service` return access-denied even when run elevated. The only reported workaround is disabling it directly in the registry by setting its `Start` value to `4` under its service key, since the Service Manager's block doesn't extend to direct registry writes. Disabling `DoSvc` alongside `CDPSvc`/`CDPUserSvc` breaks Delivery Optimization peer caching, Phone Link / "Continue on PC," and nearby sharing. These are expected tradeoffs, not bugs.
+
+!!! warning "What this does not do"
+    None of the above retracts a GDID already reported to Microsoft, and none of it makes the device anonymous. It only stops the local install from continuing to re-register and re-report going forward. The historical link between the device and any prior identified activity already exists on Microsoft's servers and can't be removed by a local user.
+
+!!! note "Further reading / tooling"
+    Independent write-ups and a defensive PowerShell toolkit implementing the steps above (read-only audit, preview mode, revert option) are publicly available and worth reviewing directly rather than treating this section as a complete implementation guide. The service-disabling steps carry real breakage tradeoffs and should be tested on a VM snapshot first.
 
 ## Your Smart Devices { #smart-devices }
 
@@ -768,7 +853,7 @@ You should never share real individual experiences/details using your anonymous 
 
 "Hell is other people", even if you evade every method listed above, you are not out of the woods yet thanks to the widespread use of advanced Face recognition by everyone.
 
-Companies like Facebook have used advanced face recognition for years[^155]'[^156] and have been using other means (Satellite imagery) to create maps of "people" around the world[^157]. This evolution has been going on for years to the point we can now say "we lost control of our faces"[^158].
+Companies like Facebook have used advanced face recognition for years[^155]'[^156] and have been using other means (GEOINT) to create maps of "people" around the world[^157]. This evolution has been going on for years to the point we can now say "we lost control of our faces"[^158].
 
 If you are walking in a touristy place, you will most likely appear in someone's selfie within minutes without knowing it. That person could then go ahead and upload that selfie to various platforms (Twitter, Google Photos, Instagram, Facebook, Snapchat ...). Those platforms will then apply face recognition algorithms to those pictures under the pretext of allowing better/easier tagging or to better organize your photo library. In addition to this, the same picture will provide a precise timestamp and in most cases geolocation of where it was taken. Even if the person does not provide a timestamp and geolocation, it can still be guessed with other means[^159]'[^160].
 
@@ -2105,7 +2190,7 @@ This is because those business laptops usually offer better and more customizabl
 
 - HDD/SSD passwords in addition to just BIOS/UEFI passwords.
 
-- AMD laptops could be more interesting as some provide the ability to disable AMD PSP (the AMD equivalent of Intel IME) from the BIOS/UEFI settings by default. And, because AFAIK, AMD PSP was audited and contrary to IME was not found to have any "evil" functionalities[^304]. However, if you are going for the Qubes OS Route consider Intel CPUs as Qubes OS does not support AMD with their anti-evil-maid system[^305].
+- AMD laptops could be more interesting as some provide the ability to disable AMD PSP (the AMD equivalent of IME) from the BIOS/UEFI settings by default. And, because AFAIK, AMD PSP was audited and contrary to IME was not found to have any "evil" functionalities[^304]. However, if you are going for the Qubes OS Route consider Intel CPUs as Qubes OS does not support AMD with their anti-evil-maid system[^305].
 
 - Secure Wipe tools from the BIOS (especially useful for SSD/NVMe drives, see [BIOS/UEFI options to wipe disks in various Brands](#bios-disk-wipe-options)).
 
@@ -4804,7 +4889,7 @@ After you are connected to a Wi-Fi you need to update Qubes OS and Whonix. You m
 
 **To upgrade Whonix 17 to Whonix 18:**
 
-1. **Backup all data** — Clone the VMs before upgrading using Virtualbox snapshots or your preferred method.
+1. **Backup all data** - Clone the VMs before upgrading using Virtualbox snapshots or your preferred method.
 
 1. **Upgrade your Qubes host first:**
     - Ensure you're running at least Qubes R4.2 (for Whonix 17 compatibility)
@@ -5764,7 +5849,7 @@ Here is the list of possibilities (this is a general list and many of those coun
 
 ### Checking if your Tor Exit Node is terrible { #tor-exit-node-check }
 
-**Skip this if you are using a VPN/Proxy over Tor (tho you can also do the same checks with a VPN exit node if you want).**
+**Skip this if you are using a VPN/Proxy over Tor.**
 
 Not all Tor Exit nodes are equal. This is mostly due to what type of "exit policy" their operator applies to them. Some Tor Exit nodes are seen are more or less "clean" and will only show up in the Tor Exit nodes lists. Some other Tor Exit nodes are seen as "dirty" and will show up in dozens of various blacklists. So how do you know if you are on a clean one or a bad one? It is not that simple.
 
@@ -8019,7 +8104,7 @@ Consider also reading this documentation if you're going with Whonix <https://ww
 
 #### Pictures and videos { #exif-pictures-video }
 
-EXIF[^222] (Exchangeable Image File Format) is the metadata standard used by digital cameras and smartphones. A typical smartphone photo contains: GPS coordinates at the moment of capture (latitude, longitude, altitude, and sometimes bearing); camera make, model, and serial number; lens focal length; timestamp including timezone offset; and software version used to process the image.
+EXIF[^222] is the metadata standard used by digital cameras and smartphones. A typical smartphone photo contains: GPS coordinates at the moment of capture (latitude, longitude, altitude, and sometimes bearing); camera make, model, and serial number; lens focal length; timestamp including timezone offset; and software version used to process the image.
 
 The GPS data alone is frequently sufficient to identify a specific room in a specific building. Several high-profile source identification cases have turned on EXIF geolocation in images sent to journalists or posted online.
 
@@ -8163,7 +8248,7 @@ Tails is great for this; you have nothing to worry about even if you use an SSD 
 
 ### Whonix { #metadata-whonix }
 
-Note that it's possible to run Whonix in Live mode leaving no traces when you shut down the VMs. For more information, see their [VM Live Mode](https://www.whonix.org/wiki/VM_Live_Mode) <sup>[[Archive.org]](https://web.archive.org/web/https://www.whonix.org/wiki/VM_Live_Mode)</sup> and [Warning](https://www.whonix.org/wiki/Warning#Whonix_—_Persistence_vs_Live_vs_Amnesic) <sup>[[Archive.org]](https://web.archive.org/web/https://www.whonix.org/wiki/Warning)</sup>.
+Note that it's possible to run Whonix in Live mode leaving no traces when you shut down the VMs. For more information, see their [VM Live Mode](https://www.whonix.org/wiki/VM_Live_Mode) <sup>[[Archive.org]](https://web.archive.org/web/https://www.whonix.org/wiki/VM_Live_Mode)</sup> and [Warning](https://www.whonix.org/wiki/Warning#Whonix_-_Persistence_vs_Live_vs_Amnesic) <sup>[[Archive.org]](https://web.archive.org/web/https://www.whonix.org/wiki/Warning)</sup>.
 
 ### macOS { #metadata-macos }
 
@@ -8783,99 +8868,11 @@ For this, see <https://blog.torproject.org/tips-running-exit-node> <sup>[[Archiv
 
 This project for instance is running several Tor Exit nodes using donations to fund. You can see them here: <https://metrics.torproject.org/rs.html#search/family:970814F267BF3DE9DFF2A0F8D4019F80C68AEE26>
 
-# Acknowledgments { #acknowledgments }
-
-- **Very Special Thanks to Edward Snowden and who inspired us to write this guide (buy and read his book please <https://en.wikipedia.org/wiki/Permanent_Record_(autobiography)>** <sup>[[Wikiless]](https://wikiless.tiekoetter.com/wiki/Permanent_Record_(autobiography))</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Permanent_Record_(autobiography))</sup>**)**
-
-- **Huge thanks to the people who donated to this project anonymously**
-
-- **Special Thanks to LiJu09 for helping with the Light theme of the website (**<https://github.com/LiJu09>**)**
-
-- **Special Thanks to Simplelogin.io people for providing a free lifetime premium access to their service**
-
-- Thanks to GitHub for hosting this project and the many people who starred it
-
-- Thanks to Njal.la for providing a domain name and VPS hosting anonymously
-
-- Thanks to 1984.is for providing VPS hosting anonymously
-
-- Thanks to all the people who contributed and shared this guide with others
-
-- Thanks to the people at the Internet Archive and Archive.today projects
-
-- Thanks to the people at the Monero project
-
-- Thanks to the people at the Zcash project
-
-- Thanks to the people at the Wikipedia project
-
-- Thanks to the people at the Tails project
-
-- Thanks to the people at the HiddenVM project
-
-- Thanks to the people at the Whonix project
-
-- Thanks to the people at the Qubes OS project
-
-- Thanks to the people at the Veracrypt project
-
-- Thanks to the people at the Tor and OONI Projects
-
-- Thanks to the people at the Briar project
-
-- Thanks to the people at the OnionShare project
-
-- Thanks to the people at the Element/Matrix project
-
-- Thanks to the people at the Jami project
-
-- Thanks to the people at the KeePass and KeePassXC projects
-
-- Thanks to the people at the Fawkes project
-
-- Thanks to the people at the VirtualBox project
-
-- Thanks to the people at the ExifCleaner, Mat2, and ExifTool projects
-
-- Thanks to the people at the Go Incognito Project from Techlore
-
-- Thanks to Didier Stevens for his pdf-tools
-
-- Thanks to the people at the EFF
-
-- Thanks to the people at the SANS
-
-- Thanks to the people at the OWASP Project
-
-- Thanks to the people at the Privacyguides.org project
-
-- Thanks to the people at BlackHat, DEF CON, and CCC
-
-- Thanks to the people at Bellingcat and other OSINT/Forensics researchers **(and sorry for making their life more difficult with this guide)**
-
-- Thanks to the makers of the Social Dilemma documentary **(go watch it if you did not yet)**
-
-- Thanks to Michael Bazzell and his great OSINT books which we recommend you **buy** at <https://inteltechniques.com>
-
-- Thanks to Randall Munroe at XKCD for his great and insightful webcomics.
-
-- Thanks to the people at the various few commercial entities who do take privacy seriously
-
-- Thanks to the whole open-source community and especially the Linux community
-
-- Thanks to the many researchers, journalists, lawyers, and individuals referenced in this guide for their various research and projects
-
-- Thanks to the following individuals for their input and help:
-
-    - NobodySpecial, <https://git.envs.net/NobodySpecial/whoami>
-
-    - Mahanihaka
-
 # Windows Installation { #windows-installation }
 
 This is the Windows 10/11 installation process that should be valid for any Windows 10/11  install within this guide.
 
-### Windows 10 (See below for Windows 11) { #using-win10 }
+## Windows 10 (See below for Windows 11) { #using-win10 }
 
 ## Installation { #installing-win10 }
 
@@ -8889,12 +8886,8 @@ DO NOT CONNECT WINDOWS TO ANY NETWORK DURING THE INSTALLATION PROCESS (This will
 
 - Select the flavor you want:
 
-    - Host OS: Use
-
-        + You intend to use Plausible Deniability: Windows Home
-
-        + You do not intend to use Plausible Deniability: Windows Pro
-
+    - You intend to use Plausible Deniability: Windows Home
+    - You do not intend to use Plausible Deniability: Windows Pro
     - VM OS: Use Windows Pro or Windows Pro N
 
 - Select Custom
@@ -9057,12 +9050,8 @@ DO NOT CONNECT WINDOWS TO ANY NETWORK DURING THE INSTALLATION PROCESS (This will
 
 - Select the flavor you want:
 
-    - Host OS: Use
-
-        + You intend to use Plausible Deniability: Windows Home
-
-        + You do not intend to use Plausible Deniability: Windows Pro
-
+    - You intend to use Plausible Deniability: Windows Home
+    - You do not intend to use Plausible Deniability: Windows Pro
     - VM OS: Use Windows Pro or Windows Pro N
 
 - Select Custom Install
@@ -10204,7 +10193,7 @@ Now, what if you think the PDF is still suspicious? Fear not ... there are more 
 
 - **Qubes OS:** Consider using <https://github.com/QubesOS/qubes-app-linux-pdf-converter> <sup>[[Archive.org]](https://web.archive.org/web/https://github.com/QubesOS/qubes-app-linux-pdf-converter)</sup> which will convert your PDF into a flattened image file. This should theoretically remove any malicious code in it. Note that this will also render the PDF formatting useless (such as links, headings, bookmarks, and references).
 
-- **(Deprecated) Linux/Qubes OS** (or possibly macOS through Homebrew or Windows through Cygwin): This should *theoretically* remove any malicious code in it, but will also render the PDF formatting useless (such as links, headings, bookmarks, and references). Something similar to how rasterizing this website into a PDF works when swtiching to dark-mode. **Note that this tool is deprecated and relies on a library called "ImageMagick" which is known for several security issues**[^498]**. You should not use this tool even if it is recommended in some other guides.**
+- **(Deprecated) Linux/Qubes OS** (or possibly macOS through Homebrew or Windows through Cygwin): This should _theoretically_ remove any malicious code in it, but will also render the PDF formatting useless (such as links, headings, bookmarks, and references). Something similar to how rasterizing this website into a PDF works when swtiching to dark-mode. **Note that this tool is deprecated and relies on a library called "ImageMagick" which is known for several security issues**[^498]**. You should not use this tool even if it is recommended in some other guides.**
 
 #### Other types of files { #check-other-files }
 
@@ -11695,7 +11684,7 @@ The following cases are drawn from public court records, journalism, and post-mo
 
 **The failure:** On a single occasion, Monsegur logged into an IRC channel associated with Anonymous/LulzSec without routing his connection through Tor. His real IP address - assigned to his home internet connection in New York - was logged by the IRC server. The FBI subpoenaed those logs.
 
-**What it demonstrates:** A single lapse in a single session is sufficient to de-anonymize an otherwise disciplined operator. Tor is only effective if it is used *every time* without exception. There is no "just this once" at the operational level. The value of anonymity is destroyed the moment it is broken, even once.
+**What it demonstrates:** A single lapse in a single session is sufficient to de-anonymize an otherwise disciplined operator. Tor is only effective if it is used _every time_ without exception. There is no "just this once" at the operational level. The value of anonymity is destroyed the moment it is broken, even once.
 
 **What he should have done:** Used Tor or a trusted VPN for every IRC connection without exception, ideally from hardware and a network not associated with his identity. A single dedicated device used exclusively for sensitive activities would have prevented cross-contamination.
 
@@ -11728,6 +11717,16 @@ The following cases are drawn from public court records, journalism, and post-mo
 **What it demonstrates:** A complementary lesson to the Monsegur case: even technically disciplined operators are vulnerable to compromise through trusted human relationships. Password reuse or patterned passwords across identities provides a correlation vector even when no single credential is directly compromised.
 
 **What he should have done:** Used unique, randomly generated credentials for every identity and service with no shared patterns. The more important lesson - that operational trust in individuals cannot be verified cryptographically - has no clean technical solution, but compartmentalizing what each collaborator knows limits the damage any single compromise can cause.
+
+## Peter Stokes - Scattered Spider, 2026 { #on-scattered-spider }
+
+**Context:** Stokes was accused, alongside other members of Scattered Spider, of over 100 corporate intrusions and more than $100 million in ransom payments (including the originally failed $8 million ransom). He used ngrok for tunneling and a commercial VPN service (Tzulo) to obscure network-layer traffic while conducting operations (See: [Traffic Anonymization](#traffic-anonymization)), on the assumption that IP obfuscation was sufficient to prevent correlation (See: [Correlation vs. Attribution](#correlation-vs-attribution)). Microsoft had already flagged him to the FBI once before, in an October 2024 criminal referral citing internal telemetry that researchers believed linked him to other members of the group.
+
+**The failure:** Stokes ran his operations from a single Windows installation, signed into a Microsoft Account, used across all his activity: legitimate use, ngrok configuration, and communications tied to the group. Every Windows install signed into an MSA is assigned a persistent Global Device Identifier (GDID), a server-side identifier that does not change with IP address, VPN provider, or exit node, and is not affected by disabling standard telemetry settings. Investigators obtained IP records from ngrok and the VPN provider, then obtained Microsoft records showing the same GDID accessing ngrok at the exact time the ngrok account was created, and showing that GDID recurring at matching times across accounts already known to be his, across four countries, over roughly eight months. The VPN changed his IP on every connection. It did nothing to change the GDID.
+
+**What it demonstrates:** Network-layer anonymization (VPN, tunneling) and identity-layer persistence (a single OS install tied to a personal Microsoft Account) are separate problems, and solving one does nothing for the other. A device-level identifier that survives IP rotation defeats the entire premise of "anonymous because the IP changed." It also shows that this class of identifier can pre-date public awareness of it by years: the GDID is described in exactly one line of Microsoft's public documentation, and had no meaningful public technical writeup until this case surfaced it. Assuming a mitigation is unnecessary because it isn't widely known is not a safe assumption. It also shows that using the same physical machine and OS install across both mundane, identified activity and sensitive activity is sufficient to link the two, independent of every precaution taken at the network layer.
+
+**What he should have done:** Never run sensitive operations from a Windows install signed into a personal or otherwise identifiable Microsoft Account. Use a dedicated, minimal, non-MSA-linked environment, ideally Linux-based (Whonix, Tails, Qubes-Whonix) rather than Windows, for anything requiring real separation between personas. Never mix identified daily-driver use and sensitive operational use on the same install, account, or physical device, regardless of network-layer precautions. Treat any identifier that persists independent of IP, cookies, or browser state (device IDs, hardware serials, account-tied telemetry) as the primary threat to compartmentalization, since VPNs and tunnels only address the network layer and do nothing to sever an identity-layer link that already exists. See: [Windows Global Device Identifier](#your-global-device-identifiers).
 
 ## Common threads { #common-opsec-fail-threads }
 
@@ -11799,7 +11798,7 @@ In controlled academic evaluations, state-of-the-art systems achieve attribution
 
 **JGAAP** (Java Graphical Authorship Attribution Program)[^562], developed at Duquesne University, is the most widely used open academic tool and has been applied in legal proceedings. **Burner** is a more recent system designed specifically for adversarial de-anonymization of online pseudonyms.
 
-The most documented real-world case is the 2013 identification of J.K. Rowling as the author of *The Cuckoo's Calling*, published under the pseudonym Robert Galbraith.[^563] Stylometric analysis by Peter Millican and Patrick Juola comparing the novel against Rowling's known work and a set of candidate authors produced a strong match before the identification was confirmed through other means. The corpus in this case was large - full novels - which is the condition under which stylometry works best.
+The most documented real-world case is the 2013 identification of J.K. Rowling as the author of _The Cuckoo's Calling_, published under the pseudonym Robert Galbraith.[^563] Stylometric analysis by Peter Millican and Patrick Juola comparing the novel against Rowling's known work and a set of candidate authors produced a strong match before the identification was confirmed through other means. The corpus in this case was large - full novels - which is the condition under which stylometry works best.
 
 In national security contexts, stylometric analysis has been used or attempted in leak investigations to compare anonymous documents against the known writing of suspected sources, though specific cases are rarely publicly confirmed.
 
@@ -11816,6 +11815,49 @@ In national security contexts, stylometric analysis has been used or attempted i
 Stylometry requires a reasonably large text sample from the anonymous author (ideally 1,000+ words), a candidate set of known authors to compare against, and a known writing corpus for those candidates. This limits realistic deployment to: leak investigations where investigators have a short list of suspects with known writing samples; de-anonymization of long-running pseudonymous authors with substantial published output; and academic or forensic authorship disputes.
 
 It is not a practical threat for: one-off anonymous communications; users whose adversary does not have a comparison corpus of their writing; or short messages where the text sample is insufficient for reliable analysis. For most people reading this guide, the other threats documented here - metadata, network-layer identification, device fingerprinting - are far more likely vectors than stylometry. Address those first.
+
+# Acknowledgments { #acknowledgments }
+
+- **Very Special Thanks to Edward Snowden and who inspired us to write this guide (buy and read his book please <https://en.wikipedia.org/wiki/Permanent_Record_(autobiography)>** <sup>[[Wikiless]](https://wikiless.tiekoetter.com/wiki/Permanent_Record_(autobiography))</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Permanent_Record_(autobiography))</sup>**)**
+- **Huge thanks to the people who donated to this project anonymously**
+- **Special Thanks to LiJu09 for helping with the Light theme of the website (**<https://github.com/LiJu09>**)**
+- **Special Thanks to Simplelogin.io people for providing a free lifetime premium access to their service**
+- Thanks to GitHub for hosting this project and the many people who starred it
+- Thanks to Njal.la for providing a domain name and VPS hosting anonymously
+- Thanks to 1984.is for providing VPS hosting anonymously
+- Thanks to all the people who contributed and shared this guide with others
+- Thanks to the people at the Internet Archive and Archive.today projects
+- Thanks to the people at the Monero project
+- Thanks to the people at the Zcash project
+- Thanks to the people at the Wikipedia project
+- Thanks to the people at the Tails project
+- Thanks to the people at the HiddenVM project
+- Thanks to the people at the Whonix project
+- Thanks to the people at the Qubes OS project
+- Thanks to the people at the Veracrypt project
+- Thanks to the people at the Tor and OONI Projects
+- Thanks to the people at the Briar project
+- Thanks to the people at the OnionShare project
+- Thanks to the people at the Element/Matrix project
+- Thanks to the people at the Jami project
+- Thanks to the people at the KeePass and KeePassXC projects
+- Thanks to the people at the Fawkes project
+- Thanks to the people at the VirtualBox project
+- Thanks to the people at the ExifCleaner, Mat2, and ExifTool projects
+- Thanks to the people at the Go Incognito Project from Techlore
+- Thanks to Didier Stevens for his pdf-tools
+- Thanks to the people at the EFF
+- Thanks to the people at the SANS
+- Thanks to the people at the OWASP Project
+- Thanks to the people at the Privacyguides.org project
+- Thanks to the people at BlackHat, DEF CON, and CCC
+- Thanks to the people at Bellingcat and other OSINT/Forensics researchers **(and sorry for making their life more difficult with this guide)**
+- Thanks to the makers of the Social Dilemma documentary **(go watch it if you did not yet)**
+- Thanks to Michael Bazzell and his great OSINT books which we recommend you **buy** at <https://inteltechniques.com>
+- Thanks to Randall Munroe at XKCD for his great and insightful webcomics.
+- Thanks to the people at the various few commercial entities who do take privacy seriously
+- Thanks to the whole open-source community and especially the Linux community
+- Thanks to the many researchers, journalists, lawyers, and individuals referenced in this guide for their various research and projects
 
 # References { #references }
 
@@ -11984,10 +12026,6 @@ It is not a practical threat for: one-off anonymous communications; users whose 
 [^82]: Wikipedia, BLE <https://en.wikipedia.org/wiki/Bluetooth_Low_Energy> <sup>[[Wikiless]](https://wikiless.tiekoetter.com/wiki/Bluetooth_Low_Energy)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/Bluetooth_Low_Energy)</sup>
 
 [^83]: Cryptography Engineering Blog, How does Apple (privately) find your offline devices? <https://blog.cryptographyengineering.com/2019/06/05/how-does-apple-privately-find-your-offline-devices/> <sup>[[Archive.org]](https://web.archive.org/web/https://blog.cryptographyengineering.com/2019/06/05/how-does-apple-privately-find-your-offline-devices/)</sup>
-
-[^84]: Wikipedia, IMEI <https://en.wikipedia.org/wiki/International_Mobile_Equipment_Identity> <sup>[[Wikiless]](https://wikiless.tiekoetter.com/wiki/International_Mobile_Equipment_Identity)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/International_Mobile_Equipment_Identity)</sup>
-
-[^85]: Wikipedia, IMSI <https://en.wikipedia.org/wiki/International_mobile_subscriber_identity> <sup>[[Wikiless]](https://wikiless.tiekoetter.com/wiki/International_mobile_subscriber_identity)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://en.wikipedia.org/wiki/International_mobile_subscriber_identity)</sup>
 
 [^86]: Android Documentation, Device Identifiers <https://source.android.com/devices/tech/config/device-identifiers> <sup>[[Archive.org]](https://web.archive.org/web/https://source.android.com/devices/tech/config/device-identifiers)</sup>
 

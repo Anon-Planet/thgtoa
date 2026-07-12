@@ -3,12 +3,15 @@ site_author: Anonymous Planet
 site_description: "The comprehensive guide for online #anonymity and #opsec."
 site_dir: "site"
 docs_dir: "docs"
+exclude_docs: |
+  includes/
 site_url: "https://anonymousplanet.net/"
 repo_url: "https://github.com/Anon-Planet/thgtoa"
 repo_name: ""
 #edit_uri: ""blob/main/docs/{path}?plain=1""
 theme:
   name: material
+  custom_dir: docs/overrides
   locale: en
   favicon: media/profile.png
   icon:
@@ -54,6 +57,7 @@ extra_css:
   - stylesheets/hacker.css
   - stylesheets/hacker-extra.css
   - stylesheets/going-dark.css
+  - stylesheets/toggle.css
   - stylesheets/navigation.css
   - stylesheets/footer.css
   - stylesheets/accessibility.css
@@ -72,7 +76,7 @@ copyright: >-
 extra:
   social:
     - icon: simple/mastodon
-      link: https://ioc.exchange/@anonymousplanet
+      link: https://ioc.exchange/@unknown
       name: Mastodon
     - icon: simple/x
       link: https://x.com/anonplanetorg
@@ -92,6 +96,9 @@ extra:
     - icon: simple/codeberg
       link: https://codeberg.org/anonymousplanet
       name: Codeberg
+    - icon: simple/torbrowser
+      link: https://gitlab.torproject.org/anonymousplanet/the-hitchhikers-guide
+      name: Gitlab at Tor Project
     # - icon: simple/torbrowser
     #   link: http://thgtoa3jzy3doku7hkna32htpghjijefscwvh4dyjgfydbbjkeiohgid.onion/ (defunct)
     #   name: Hidden service
@@ -124,14 +131,17 @@ markdown_extensions:
   - pymdownx.keys: {}
   - pymdownx.mark: {}
   - pymdownx.tilde: {}
-  - pymdownx.snippets: {}
+  - abbr
+  - pymdownx.snippets:
+      base_path: ["docs"]
+      auto_append:
+        - includes/glossary.md
   - pymdownx.tasklist:
       custom_checkbox: true
   - attr_list: {}
   - def_list: {}
   - md_in_html: {}
   - meta: {}
-  - abbr: {}
   - tables: {}
   - footnotes: {}
   - toc:
