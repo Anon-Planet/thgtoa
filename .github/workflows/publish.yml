@@ -1,19 +1,47 @@
 name: 🚀 Publish docs via GitHub Pages
+
 on:
   push:
     branches:
       - main
+    paths:
+      - "docs/**"
+      - "mkdocs.yml"
+      - "requirements.txt"
+      - ".github/workflows/publish.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
 
 jobs:
   build:
-    name: Publish the Hitchhiker's Guide
+    name: Build and deploy the Hitchhiker's Guide
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout main
+      - name: 🛠️ Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-      - name: Deploy docs
-        uses: mhausenblas/mkdocs-deploy-gh-pages@master
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          CUSTOM_DOMAIN: anonymousplanet.net
+      - name: 🐍 Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: "pip"
+
+      - name: 📦 Install pinned dependencies
+        run: pip install -r requirements.txt
+
+      - name: 🔍 Sanity-check the build (fail fast on broken markup/links)
+        run: mkdocs build --strict
+
+      - name: 🚀 Deploy to gh-pages
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          mkdocs gh-deploy --force --clean
