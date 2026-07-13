@@ -9,15 +9,7 @@ hide:
 <div class="hero-block">
   <div class="hero-eyebrow">Applicable to all projects of the initiative.</div>
   <h1 class="hero-title">A Constitution<span class="hero-subtitle">The rules we hold ourselves to.</span></h1>
-  <div class="hero-cta-row">
-    <a href="#principles" class="hero-cta hero-cta--primary">Our Principles</a>
-    <a href="#goals" class="hero-cta hero-cta--secondary">Core Goals</a>
-  </div>
 </div>
-
----
-
-## Principles { #principles }
 
 <div class="index-grid">
 

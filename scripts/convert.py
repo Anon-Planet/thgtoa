@@ -273,7 +273,7 @@ html, body {{
     <p><strong>License</strong> &nbsp; Creative Commons BY-SA 4.0</p>
     <p><strong>Source</strong> &nbsp; https://anonymousplanet.net</p>
   </div>
-  <p class="version">v1.2.5 &mdash; June 2026</p>
+  <p class="version">v1.2.6 &mdash; July 12 2026</p>
 </div>
 </body>
 </html>""")
