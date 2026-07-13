@@ -1,0 +1,70 @@
+<div class="toggle-container toggle-container--header" id="ap-palette-toggle">
+  <div class="toggle-wrap">
+    <input type="checkbox" class="toggle-input" id="ap-toggle-input" aria-label="Turn the monitor on or off">
+    <label for="ap-toggle-input" class="toggle-track">
+      <div class="holo-glow"></div>
+      <div class="track-lines"><div class="track-line"></div></div>
+      <div class="toggle-thumb">
+        <div class="thumb-core"></div>
+        <div class="thumb-inner"></div>
+        <div class="thumb-scan"></div>
+        <div class="thumb-particles">
+          <div class="thumb-particle"></div>
+          <div class="thumb-particle"></div>
+          <div class="thumb-particle"></div>
+          <div class="thumb-particle"></div>
+          <div class="thumb-particle"></div>
+        </div>
+      </div>
+      <div class="energy-rings">
+        <div class="energy-ring"></div>
+        <div class="energy-ring"></div>
+        <div class="energy-ring"></div>
+      </div>
+      <div class="toggle-data">
+        <div class="data-text off">On</div>
+        <div class="data-text on">Off</div>
+      </div>
+      <div class="toggle-status-dot off"></div>
+      <div class="toggle-status-dot on"></div>
+      <div class="interface-lines">
+        <div class="interface-line"></div>
+        <div class="interface-line"></div>
+        <div class="interface-line"></div>
+        <div class="interface-line"></div>
+        <div class="interface-line"></div>
+        <div class="interface-line"></div>
+      </div>
+      <div class="toggle-reflection"></div>
+    </label>
+  </div>
+</div>
+
+<script>
+(function () {
+  var KEY = "__palette";
+  var input = document.getElementById("ap-toggle-input");
+  if (!input) return;
+
+  function currentScheme() {
+    return document.body.getAttribute("data-md-color-scheme") || "slate";
+  }
+
+  function applyScheme(scheme) {
+    document.body.setAttribute("data-md-color-scheme", scheme);
+
+    var stored = { index: scheme === "default" ? 1 : 0 };
+    try {
+      localStorage.setItem(KEY, JSON.stringify(stored));
+    } catch (e) {
+      /* storage unavailable, fail silently */
+    }
+  }
+
+  input.checked = currentScheme() === "default";
+
+  input.addEventListener("change", function () {
+    applyScheme(input.checked ? "default" : "slate");
+  });
+})();
+</script>

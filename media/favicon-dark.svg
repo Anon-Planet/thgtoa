@@ -1,0 +1,7 @@
+<svg width="220" height="220" viewBox="0 0 220 220" role="img" xmlns="http://www.w3.org/2000/svg">
+  <title>Anonymous Planet favicon mark: a simplified eye outline with a solid pupil</title>
+  <desc>A minimal eye outline with a filled pupil, simplified for legibility at very small sizes such as a browser favicon.</desc>
+  <path d="M 25,110 Q 110,64 195,110 Q 110,156 25,110 Z" fill="none" stroke="#00f080" stroke-width="6" stroke-linejoin="round"/>
+  <circle cx="110" cy="110" r="17" fill="#060d06" stroke="#00f080" stroke-width="3"/>
+  <circle cx="110" cy="110" r="5" fill="#00f080"/>
+</svg>

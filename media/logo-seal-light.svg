@@ -1,0 +1,102 @@
+<svg width="340" height="340" viewBox="0 0 340 340" role="img" xmlns="http://www.w3.org/2000/svg">
+  <title>Anonymous Planet seal: an eye with a striated iris and crosshair reticle, under watch by two satellites, circuit traces and a subtle grid inside a ringed badge</title>
+  <desc>A circular seal mark. A horizontal eye sits at the center with a radially striated iris and a crosshair target reticle over the pupil. Two satellites float at different angles nearby, unconnected to the eye, representing observation from multiple vantage points. Short circuit-trace lines with node pads radiate toward the ring, and a faint coordinate grid sits behind everything, all inside a double-ring circular border with tick marks at the four cardinal points.</desc>
+  <defs>
+    <clipPath id="circleClip"><circle cx="170" cy="170" r="141"/></clipPath>
+    <clipPath id="eyeClip"><path d="M 85,170 Q 170,124 255,170 Q 170,216 85,170 Z"/></clipPath>
+  </defs>
+  <g clip-path="url(#circleClip)" stroke="#4a3800" stroke-width="0.5" opacity="0.08">
+    <line x1="66" y1="20" x2="66" y2="320"/>
+    <line x1="20" y1="66" x2="320" y2="66"/>
+    <line x1="118" y1="20" x2="118" y2="320"/>
+    <line x1="20" y1="118" x2="320" y2="118"/>
+    <line x1="170" y1="20" x2="170" y2="320"/>
+    <line x1="20" y1="170" x2="320" y2="170"/>
+    <line x1="222" y1="20" x2="222" y2="320"/>
+    <line x1="20" y1="222" x2="320" y2="222"/>
+    <line x1="274" y1="20" x2="274" y2="320"/>
+    <line x1="20" y1="274" x2="320" y2="274"/>
+  </g>
+  <g>
+    <line x1="224" y1="264" x2="237" y2="286" stroke="#4a3800" stroke-width="1" opacity="0.5"/>
+    <circle cx="237" cy="286" r="2.2" fill="#4a3800"/>
+    <circle cx="224" cy="264" r="1.1" fill="#4a3800"/>
+    <line x1="116" y1="264" x2="103" y2="286" stroke="#4a3800" stroke-width="1" opacity="0.5"/>
+    <circle cx="103" cy="286" r="2.2" fill="#4a3800"/>
+    <circle cx="116" cy="264" r="1.1" fill="#4a3800"/>
+    <line x1="77" y1="224" x2="54" y2="237" stroke="#4a3800" stroke-width="1" opacity="0.5"/>
+    <circle cx="54" cy="237" r="2.2" fill="#4a3800"/>
+    <circle cx="77" cy="224" r="1.1" fill="#4a3800"/>
+    <line x1="77" y1="116" x2="54" y2="103" stroke="#4a3800" stroke-width="1" opacity="0.5"/>
+    <circle cx="54" cy="103" r="2.2" fill="#4a3800"/>
+    <circle cx="77" cy="116" r="1.1" fill="#4a3800"/>
+    <line x1="142" y1="66" x2="135" y2="41" stroke="#4a3800" stroke-width="1" opacity="0.5"/>
+    <circle cx="135" cy="41" r="2.2" fill="#4a3800"/>
+    <circle cx="142" cy="66" r="1.1" fill="#4a3800"/>
+    <line x1="224" y1="77" x2="237" y2="54" stroke="#4a3800" stroke-width="1" opacity="0.5"/>
+    <circle cx="237" cy="54" r="2.2" fill="#4a3800"/>
+    <circle cx="224" cy="77" r="1.1" fill="#4a3800"/>
+  </g>
+  <circle cx="170" cy="170" r="150" fill="none" stroke="#4a3800" stroke-width="1.6"/>
+  <circle cx="170" cy="170" r="141" fill="none" stroke="#4a3800" stroke-width="0.6" opacity="0.5"/>
+  <g stroke="#4a3800" stroke-width="1.4" opacity="0.8" stroke-linecap="round">
+    <line x1="170" y1="20" x2="170" y2="32"/>
+    <line x1="170" y1="308" x2="170" y2="320"/>
+    <line x1="20" y1="170" x2="32" y2="170"/>
+    <line x1="308" y1="170" x2="320" y2="170"/>
+  </g>
+  <g clip-path="url(#eyeClip)">
+    <line x1="85" y1="130" x2="255" y2="130" stroke="#4a3800" stroke-width="0.5" opacity="0.15"/>
+    <line x1="85" y1="145" x2="255" y2="145" stroke="#4a3800" stroke-width="0.5" opacity="0.15"/>
+    <line x1="85" y1="160" x2="255" y2="160" stroke="#4a3800" stroke-width="0.5" opacity="0.15"/>
+    <line x1="85" y1="180" x2="255" y2="180" stroke="#4a3800" stroke-width="0.5" opacity="0.15"/>
+    <line x1="85" y1="195" x2="255" y2="195" stroke="#4a3800" stroke-width="0.5" opacity="0.15"/>
+    <line x1="85" y1="210" x2="255" y2="210" stroke="#4a3800" stroke-width="0.5" opacity="0.15"/>
+  </g>
+  <path d="M 89,162 Q 170,119 251,162" fill="none" stroke="#4a3800" stroke-width="1" opacity="0.45"/>
+  <path d="M 85,170 Q 170,124 255,170 Q 170,216 85,170 Z" fill="none" stroke="#4a3800" stroke-width="2.6" stroke-linejoin="round"/>
+  <g stroke="#4a3800" stroke-width="1" opacity="0.6" stroke-linecap="round">
+    <line x1="90.4" y1="173.9" x2="78.7" y2="179.1"/>
+    <line x1="94.3" y1="179.1" x2="85.2" y2="187.0"/>
+    <line x1="99.6" y1="183.0" x2="93.0" y2="193.5"/>
+  </g>
+  <circle cx="170" cy="170" r="32" fill="none" stroke="#4a3800" stroke-width="0.8" opacity="0.5"/>
+  <line x1="170" y1="153" x2="170" y2="138" transform="rotate(0.0 170 170)" stroke="#4a3800" stroke-width="0.7" opacity="0.55"/>
+  <line x1="170" y1="153" x2="170" y2="138" transform="rotate(22.5 170 170)" stroke="#4a3800" stroke-width="0.7" opacity="0.55"/>
+  <line x1="170" y1="153" x2="170" y2="138" transform="rotate(45.0 170 170)" stroke="#4a3800" stroke-width="0.7" opacity="0.55"/>
+  <line x1="170" y1="153" x2="170" y2="138" transform="rotate(67.5 170 170)" stroke="#4a3800" stroke-width="0.7" opacity="0.55"/>
+  <line x1="170" y1="153" x2="170" y2="138" transform="rotate(90.0 170 170)" stroke="#4a3800" stroke-width="0.7" opacity="0.55"/>
+  <line x1="170" y1="153" x2="170" y2="138" transform="rotate(112.5 170 170)" stroke="#4a3800" stroke-width="0.7" opacity="0.55"/>
+  <line x1="170" y1="153" x2="170" y2="138" transform="rotate(135.0 170 170)" stroke="#4a3800" stroke-width="0.7" opacity="0.55"/>
+  <line x1="170" y1="153" x2="170" y2="138" transform="rotate(157.5 170 170)" stroke="#4a3800" stroke-width="0.7" opacity="0.55"/>
+  <line x1="170" y1="153" x2="170" y2="138" transform="rotate(180.0 170 170)" stroke="#4a3800" stroke-width="0.7" opacity="0.55"/>
+  <line x1="170" y1="153" x2="170" y2="138" transform="rotate(202.5 170 170)" stroke="#4a3800" stroke-width="0.7" opacity="0.55"/>
+  <line x1="170" y1="153" x2="170" y2="138" transform="rotate(225.0 170 170)" stroke="#4a3800" stroke-width="0.7" opacity="0.55"/>
+  <line x1="170" y1="153" x2="170" y2="138" transform="rotate(247.5 170 170)" stroke="#4a3800" stroke-width="0.7" opacity="0.55"/>
+  <line x1="170" y1="153" x2="170" y2="138" transform="rotate(270.0 170 170)" stroke="#4a3800" stroke-width="0.7" opacity="0.55"/>
+  <line x1="170" y1="153" x2="170" y2="138" transform="rotate(292.5 170 170)" stroke="#4a3800" stroke-width="0.7" opacity="0.55"/>
+  <line x1="170" y1="153" x2="170" y2="138" transform="rotate(315.0 170 170)" stroke="#4a3800" stroke-width="0.7" opacity="0.55"/>
+  <line x1="170" y1="153" x2="170" y2="138" transform="rotate(337.5 170 170)" stroke="#4a3800" stroke-width="0.7" opacity="0.55"/>
+  <circle cx="170" cy="170" r="17" fill="#1a1a1a"/>
+  <g stroke="#4a3800" stroke-width="1.6" stroke-linecap="round">
+    <line x1="170" y1="146" x2="170" y2="160"/>
+    <line x1="170" y1="180" x2="170" y2="194"/>
+    <line x1="146" y1="170" x2="160" y2="170"/>
+    <line x1="194" y1="170" x2="180" y2="170"/>
+  </g>
+  <circle cx="170" cy="170" r="2.1" fill="#4a3800"/>
+  <g transform="translate(104,98) rotate(35)" stroke="#4a3800" fill="#4a3800" stroke-linecap="round">
+    <rect x="-3.0" y="-3.0" width="6.0" height="6.0" rx="1.2" stroke="none"/>
+    <rect x="-1.3" y="-9.0" width="2.6" height="6.0" rx="0.6" stroke="none" opacity="0.9"/>
+    <rect x="-1.3" y="3.0" width="2.6" height="6.0" rx="0.6" stroke="none" opacity="0.9"/>
+    <line x1="-3.0" y1="0" x2="-10.4" y2="0" stroke-width="1.1"/>
+    <line x1="3.0" y1="0" x2="10.4" y2="0" stroke-width="1.1"/>
+  </g>
+  <g transform="translate(242,237) rotate(-60)" stroke="#4a3800" fill="#4a3800" stroke-linecap="round">
+    <rect x="-3.0" y="-3.0" width="6.0" height="6.0" rx="1.2" stroke="none"/>
+    <rect x="-1.3" y="-9.0" width="2.6" height="6.0" rx="0.6" stroke="none" opacity="0.9"/>
+    <rect x="-1.3" y="3.0" width="2.6" height="6.0" rx="0.6" stroke="none" opacity="0.9"/>
+    <line x1="-3.0" y1="0" x2="-10.4" y2="0" stroke-width="1.1"/>
+    <line x1="3.0" y1="0" x2="10.4" y2="0" stroke-width="1.1"/>
+  </g>
+</svg>
