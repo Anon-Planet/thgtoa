@@ -580,33 +580,29 @@ Whether it is Android, iOS, Windows, macOS, or even Ubuntu. Most popular Operati
 
 Here are good overviews of what is being collected by those five popular OSes in their last versions:
 
-- Android/Google:
+**Android/Google:**
 
-    - Just have a read at their privacy policy <https://policies.google.com/privacy> <sup>[[Archive.org]](https://web.archive.org/web/https://policies.google.com/privacy)</sup>
+- Just have a read at their privacy policy <https://policies.google.com/privacy> <sup>[[Archive.org]](https://web.archive.org/web/https://policies.google.com/privacy)</sup>
+- School of Computer Science & Statistics, Trinity College Dublin, Ireland Mobile Handset Privacy: Measuring The Data iOS and Android Send to Apple And Google <https://www.scss.tcd.ie/doug.leith/apple_google.pdf> <sup>[[Archive.org]](https://web.archive.org/web/https://www.scss.tcd.ie/doug.leith/apple_google.pdf)</sup>
 
-    - School of Computer Science & Statistics, Trinity College Dublin, Ireland Mobile Handset Privacy: Measuring The Data iOS and Android Send to Apple And Google <https://www.scss.tcd.ie/doug.leith/apple_google.pdf> <sup>[[Archive.org]](https://web.archive.org/web/https://www.scss.tcd.ie/doug.leith/apple_google.pdf)</sup>
+**IOS/Apple:**
 
-- IOS/Apple:
+- More information at <https://www.apple.com/legal/privacy/en-ww/> <sup>[[Archive.org]](https://web.archive.org/web/https://www.apple.com/legal/privacy/en-ww/)</sup> and <https://support.apple.com/en-us/HT202100> <sup>[[Archive.org]](https://web.archive.org/web/https://support.apple.com/en-us/HT202100)</sup>
+- School of Computer Science & Statistics, Trinity College Dublin, Ireland Mobile Handset Privacy: Measuring The Data iOS and Android Send to Apple And Google <https://www.scss.tcd.ie/doug.leith/apple_google.pdf> <sup>[[Archive.org]](https://web.archive.org/web/https://www.scss.tcd.ie/doug.leith/apple_google.pdf)</sup>
+- Apple does claim[^109] that they anonymize this data using differential privacy[^110] but you will have to trust them on that.
 
-    - More information at <https://www.apple.com/legal/privacy/en-ww/> <sup>[[Archive.org]](https://web.archive.org/web/https://www.apple.com/legal/privacy/en-ww/)</sup> and <https://support.apple.com/en-us/HT202100> <sup>[[Archive.org]](https://web.archive.org/web/https://support.apple.com/en-us/HT202100)</sup>
+**Windows/Microsoft:**
 
-    - School of Computer Science & Statistics, Trinity College Dublin, Ireland Mobile Handset Privacy: Measuring The Data iOS and Android Send to Apple And Google <https://www.scss.tcd.ie/doug.leith/apple_google.pdf> <sup>[[Archive.org]](https://web.archive.org/web/https://www.scss.tcd.ie/doug.leith/apple_google.pdf)</sup>
+- Full list of required diagnostic data: <https://docs.microsoft.com/en-us/windows/privacy/required-windows-diagnostic-data-events-and-fields-2004> <sup>[[Archive.org]](https://web.archive.org/web/https://docs.microsoft.com/en-us/windows/privacy/required-windows-diagnostic-data-events-and-fields-2004)</sup>
+- Full list of optional diagnostic data: <https://docs.microsoft.com/en-us/windows/privacy/windows-diagnostic-data> <sup>[[Archive.org]](https://web.archive.org/web/https://docs.microsoft.com/en-us/windows/privacy/windows-diagnostic-data)</sup>
 
-    - Apple does claim[^109] that they anonymize this data using differential privacy[^110] but you will have to trust them on that.
+**macOS:**
 
-- Windows/Microsoft:
+- More details on <https://support.apple.com/guide/mac-help/share-analytics-information-mac-apple-mh27990/mac> <sup>[[Archive.org]](https://web.archive.org/web/https://support.apple.com/guide/mac-help/share-analytics-information-mac-apple-mh27990/mac)</sup>
 
-    - Full list of required diagnostic data: <https://docs.microsoft.com/en-us/windows/privacy/required-windows-diagnostic-data-events-and-fields-2004> <sup>[[Archive.org]](https://web.archive.org/web/https://docs.microsoft.com/en-us/windows/privacy/required-windows-diagnostic-data-events-and-fields-2004)</sup>
+**Ubuntu:**
 
-    - Full list of optional diagnostic data: <https://docs.microsoft.com/en-us/windows/privacy/windows-diagnostic-data> <sup>[[Archive.org]](https://web.archive.org/web/https://docs.microsoft.com/en-us/windows/privacy/windows-diagnostic-data)</sup>
-
-- macOS:
-
-    - More details on <https://support.apple.com/guide/mac-help/share-analytics-information-mac-apple-mh27990/mac> <sup>[[Archive.org]](https://web.archive.org/web/https://support.apple.com/guide/mac-help/share-analytics-information-mac-apple-mh27990/mac)</sup>
-
-- Ubuntu:
-
-    - Ubuntu despite being a Linux distribution also collects Telemetry Data nowadays. This data however is quite limited compared to the others. More details on <https://ubuntu.com/desktop/statistics> <sup>[[Archive.org]](https://web.archive.org/web/https://ubuntu.com/desktop/statistics)</sup>
+- Ubuntu despite being a Linux distribution also collects Telemetry Data nowadays. This data however is quite limited compared to the others. More details on <https://ubuntu.com/desktop/statistics> <sup>[[Archive.org]](https://web.archive.org/web/https://ubuntu.com/desktop/statistics)</sup>
 
 Not only are Operating Systems gathering telemetry services but so are Apps themselves like Browsers, Mail Clients, and Social Networking Apps installed on your system.
 

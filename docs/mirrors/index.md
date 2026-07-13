@@ -118,4 +118,10 @@ schema:
     <a href="http://it7otdanqu7ktntxzm427cba6i53w6wlanlh23v5i3siqmos47pzhvyd.onion/anonymousplanetorg" class="index-card__link">Onion only</a>
   </div>
 
+  <div class="index-card">
+    <h3 class="index-card__title">Tor Project</h3>
+    <p class="index-card__body">We are not affiliated with Tor Project, but we do love them.</p>
+    <a href="https://gitlab.torproject.org/anonymousplanet/the-hitchhikers-guide" class="index-card__link">Tor Project</a>
+  </div>
+
 </div>

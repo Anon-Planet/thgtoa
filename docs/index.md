@@ -1,6 +1,9 @@
 ---
 title: "Home"
 description: "The Hitchhiker's Guide to Online Anonymity"
+hide:
+  - toc
+  - navigation
 schema:
   "@context": https://schema.org
   "@type": WebPage

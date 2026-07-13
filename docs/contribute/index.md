@@ -172,5 +172,4 @@ All donations and spendings are recorded here. <span style="color:var(--status-e
 | 2022-07-11 | 0.503232 XMR | 1984.is VPS (12 mo) | <span class="status-indicator status-warning">Ended</span> |
 | 2022-09-19 | 0.345024 XMR | VPS RAM/disk upgrade | <span class="status-indicator status-warning">Ended</span> |
 
-!!! note "About lost funds"
-    Entries marked **Lost** represent funds spent on services that are no longer available.
+**Entries marked <span class="status-indicator status-error">Lost</span> represent funds spent on services that are no longer available.**

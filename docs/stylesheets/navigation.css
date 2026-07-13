@@ -83,6 +83,38 @@
   animation: none;
 }
 
+.md-header__inner {
+  flex-wrap: nowrap;
+}
+
+.md-header__button,
+.md-header__source,
+.toggle-container--header {
+  flex-shrink: 0;
+}
+
+.md-search {
+  flex-shrink: 1;
+  min-width: 0;
+}
+
+@media screen and (max-width: 76.1875em) {
+  .toggle-container--header {
+    width: 56px;
+    margin: 0 4px;
+  }
+
+  .toggle-container--header .toggle-wrap {
+    height: 28px;
+  }
+}
+
+@media screen and (max-width: 44.9375em) {
+  .toggle-container--header {
+    width: 44px;
+  }
+}
+
 .md-typeset {
   max-width: none;
 }
