@@ -9100,7 +9100,7 @@
 <p class="admonition-title">How it works</p>
 <p>When a device signs in with a Microsoft Account, <code>wlidsvc</code> provisions it against <code>login.live.com</code> and gets back a Device PUID (Passport Unique ID): a server-assigned value, not derived from any local hardware serial. This is stored in the registry, read by the Connected Devices Platform (<code>cdp.dll</code> / <code>CDPSvc</code>), registered into Microsoft's Device Directory Service graph, and reported by Delivery Optimization as <code>UCDOStatus.GlobalDeviceId</code> whenever the machine participates in peer-to-peer update sharing.</p>
 <p>Read your own <abbr title="Global Device Identifier (Windows OS)">GDID</abbr> without admin rights:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">(</span><span class="nb">Get-ItemProperty</span> <span class="s1">&#39;HKCU:\SOFTWARE\Microsoft\IdentityCRL\ExtendedProperties&#39;</span><span class="p">).</span><span class="n">LID</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">(</span><span class="nb">Get-ItemProperty</span> <span class="s1">'HKCU:\SOFTWARE\Microsoft\IdentityCRL\ExtendedProperties'</span><span class="p">).</span><span class="n">LID</span>
 </code></pre></div>
 This is what the federal complaint used to place a Scattered Spider suspect at specific times and locations across multiple <abbr title="Virtual Private Network">VPN</abbr> sessions and four countries. Microsoft records matched a specific <abbr title="Global Device Identifier (Windows OS)">GDID</abbr> to the moment an ngrok account was created, regardless of the <abbr title="Virtual Private Network">VPN</abbr> in use.</p>
 </div>
@@ -10304,7 +10304,7 @@ This is what the federal complaint used to place a Scattered Spider suspect at s
 <p>To this date, we do not know any reputable service that would offer this service and accept cash payments (by post for instance) like some <abbr title="Virtual Private Network">VPN</abbr> providers. But a few services are providing online phone numbers and do accept Monero which could be reasonably anonymous (yet less recommended than that physical way in the earlier chapter) that you could consider:</p>
 <ul>
 <li>
-<p><strong>Recommended</strong>: Do not require any identification (even e-mail):</p>
+<p><strong>Recommended</strong>: No name, no e-mail, and no <abbr title="Know Your Customer">KYC</abbr>:</p>
 <ul>
 <li>
 <p>(Iceland based, accepts Monero) <a href="https://crypton.sh">https://crypton.sh</a> <sup><a href="http://cryptonx6nsmspsnpicuihgmbbz3qvro4na35od3eht4vojdo7glm6yd.onion">[<abbr title="The Onion Router">Tor</abbr> Mirror]</a></sup> <sup><a href="https://web.archive.org/web/https://crypton.sh/">[Archive.org]</a></sup></p>
@@ -10312,10 +10312,13 @@ This is what the federal complaint used to place a Scattered Spider suspect at s
 <li>
 <p>(Ukraine based, accepts Monero) <a href="https://virtualsim.net/">https://virtualsim.net/</a> <sup><a href="https://web.archive.org/web/https://virtualsim.net/">[Archive.org]</a></sup></p>
 </li>
+<li>
+<p>(180+ countries, accepts crypto) <a href="https://cypheresim.com/esim-with-number">https://cypheresim.com/esim-with-number</a> <sup><a href="https://web.archive.org/web/https://cypheresim.com/esim-with-number">[Archive.org]</a></sup></p>
+</li>
 </ul>
 </li>
 <li>
-<p>Do require identification (valid e-mail):</p>
+<p>Require valid e-mail:</p>
 <ul>
 <li>
 <p>(US California based, accepts Monero) <a href="https://mobilesms.io">https://mobilesms.io</a> <sup><a href="https://web.archive.org/web/https://mobilesms.io/">[Archive.org]</a></sup></p>
@@ -12507,8 +12510,8 @@ This is what the federal complaint used to place a Scattered Spider suspect at s
 Desync VM clocks to prevent synchronization attacks (see <a href="https://www.whonix.org/wiki/Network_Time_Synchronization">[Whonix Documentation - Network Time Synchronization]</a> <sup><a href="https://web.archive.org/web/https://www.whonix.org/wiki/Network_Time_Synchronization">[Archive.org]</a></sup>):</p>
 <div class="highlight"><pre><span></span><code>```sh
 # Example offsets (choose different values for each VM)
-VBoxManage modifyvm &quot;Whonix-Gateway-XFCE&quot; --biossystemtimeoffset -35017
-VBoxManage modifyvm &quot;Whonix-Workstation-XFCE&quot; --biossystemtimeoffset +27931
+VBoxManage modifyvm "Whonix-Gateway-XFCE" --biossystemtimeoffset -35017
+VBoxManage modifyvm "Whonix-Workstation-XFCE" --biossystemtimeoffset +27931
 ```
 </code></pre></div>
 <p><strong>Spectre/Meltdown Mitigations:</strong> (optional, may impact performance)
@@ -15196,7 +15199,7 @@ Qubes R4.2+ with Whonix 18 is supported. Always verify system integrity after up
 <p>For every identity, you should have a matching profile picture associated with it. For this purpose, we recommend you just go to <a href="https://thispersondoesnotexist.com/">https://thispersondoesnotexist.com/</a> or <a href="https://generated.photos/face-generator">https://generated.photos/face-generator</a>* and generate a computer-generated profile picture (Do note that algorithms have been developed<sup id="fnref:393"><a class="footnote-ref" href="#fn:393">390</a></sup>'<sup id="fnref:394"><a class="footnote-ref" href="#fn:394">391</a></sup> to detect these and it might not work 100% of the time). You can also generate such pictures yourself from your computer if you prefer by using the open-source StyleGan project here <a href="https://github.com/NVlabs/stylegan2">https://github.com/NVlabs/stylegan2</a> <sup><a href="https://web.archive.org/web/https://github.com/NVlabs/stylegan2">[Archive.org]</a></sup>. Just refresh the page until you find a picture that matches your identity in all aspects (age, sex, and ethnicity) and save that picture. It would be even better to have several pictures associated with that identity, butWedo not have an "easy way" of doing that yet.</p>
 </li>
 </ul>
-<p><strong>*Warning:</strong> https://generated.photos/face-generator requires JavaScript to function and does a lot of fingerprinting. Most of it is being sent to Microsoft Clarity. Even with uBlock installed and on safer level, <abbr title="The Onion Router">Tor</abbr> Browser wasn't efficient at blocking the fingerprinting. This obviously does not work on Safest level. On our tests, only Brave with agressive fingerprinting/ad shields did not send analytics.</p>
+<p>*<strong>Warning:</strong> https://generated.photos/face-generator requires JavaScript to function and does a lot of fingerprinting. Most of it is being sent to Microsoft Clarity. Even with uBlock installed and on safer level, <abbr title="The Onion Router">Tor</abbr> Browser wasn't efficient at blocking the fingerprinting. This obviously does not work on Safest level. On our tests, only Brave with agressive fingerprinting/ad shields did not send analytics.</p>
 <ul>
 <li>
 <p><strong>Bonus</strong>, you could also make it more real by using this service (with an anonymous identity) <a href="https://www.myheritage.com/deep-nostalgia">https://www.myheritage.com/deep-nostalgia</a> <sup><a href="https://web.archive.org/web/https://www.myheritage.com/deep-nostalgia">[Archive.org]</a></sup> to make a picture more lifelike. Here is an example:</p>
@@ -19641,7 +19644,7 @@ Qubes R4.2+ with Whonix 18 is supported. Always verify system integrity after up
 <li><strong>Shutdown the Mat2 guest VM</strong> by running <code>shutdown -h now</code> to halt the machine.</li>
 <li><strong>Take a snapshot of the VM</strong> within Virtualbox while the guest VM is shutdown.</li>
 </ol>
-<p>__Restart the Mat2 VM_ and you are ready to use Mat2-web to remove metadata from most files!_*</p>
+<p><em><em>Restart the Mat2 VM</em> and you are ready to use Mat2-web to remove metadata from most files!</em>*</p>
 <p>After use, shut down the VM and revert to the snapshot to remove traces of the uploaded files. This VM does not require any internet access unless you want to update it, in which case, you need to place it back on the <strong><abbr title="Network Address Translation">NAT</abbr> network</strong> and do the next steps.</p>
 <p>For updates of Debian, <strong>start the VM</strong> and run <code>apt update</code> followed by <code>apt upgrade</code>.</p>
 <p>For updates of mat2-web, type <code>cd /var/www/mat2-web</code> and run <code>git pull</code>.</p>

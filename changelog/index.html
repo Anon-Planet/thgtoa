@@ -106,7 +106,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#v126-pre1" class="md-skip">
+        <a href="#v126" class="md-skip">
           Skip to content
         </a>
       
@@ -785,10 +785,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#v126-pre1" class="md-nav__link">
+  <a href="#v126" class="md-nav__link">
     <span class="md-ellipsis">
       
-        v1.2.6-pre1
+        [v1.2.6]
       
     </span>
   </a>
@@ -928,10 +928,10 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#v126-pre1" class="md-nav__link">
+  <a href="#v126" class="md-nav__link">
     <span class="md-ellipsis">
       
-        v1.2.6-pre1
+        [v1.2.6]
       
     </span>
   </a>
@@ -1030,11 +1030,13 @@
 
 <!-- Change nothing below this line, please. -->
 <hr />
-<h2 id="v126-pre1"><a href="https://github.com/Anon-Planet/thgtoa/releases/tag/v1.2.6-pre1">v1.2.6-pre1</a><a class="headerlink" href="#v126-pre1" title="Permanent link">λ</a></h2>
+<h2 id="v126">[v1.2.6]<a class="headerlink" href="#v126" title="Permanent link">λ</a></h2>
 <div class="admonition abstract">
 <p class="admonition-title">Meta</p>
 <ul>
+<li>Released 2026-10-24</li>
 <li>Various website improvements (CSS)</li>
+<li>PDF build overhaul: larger text, page numbers, tighter layout, and a new cover</li>
 </ul>
 </div>
 <div class="admonition info">
@@ -1044,6 +1046,12 @@
 <li>02-sign.yml: use a fpr match to lock a specific key</li>
 <li>02-sign.yml: quick mkdir -p repo/export before copying files to the dir</li>
 <li>Moved the Acknowledgements section to the bottom</li>
+<li>PDF body text enlarged to 13pt, with headings, code, and tables scaled to match</li>
+<li>PDF page margins reduced to 12 mm (16 mm at the bottom) and spacing tightened to cut the page count; the cover and Table of Contents use the same margins</li>
+<li>PDF tables, code blocks, and admonitions can now break across pages, and table header rows repeat on each page</li>
+<li>PDF Table of Contents shrinks slightly (down to 85%) when needed to avoid a nearly empty last page</li>
+<li>Glossary abbreviations are no longer underlined in the PDF; the website keeps the underline and tooltips</li>
+<li>PDF cover redesigned with Fira Code monospace, green and amber accents, in both light and dark builds</li>
 </ul>
 </div>
 <div class="admonition tip">
@@ -1052,6 +1060,8 @@
 <li>COM Class Identifiers (<abbr title="COM Class Identifiers">CLSID</abbr>/GUID) (NEW)</li>
 <li>Windows Global Device Identifier (<abbr title="Global Device Identifier (Windows OS)">GDID</abbr>) (NEW)</li>
 <li>USB bus telemetry (device enumeration history) (NEW)</li>
+<li>Page numbers on every page of both PDFs (bottom right)</li>
+<li>Page numbers in the PDF Table of Contents</li>
 </ul>
 </div>
 <div class="admonition info">
