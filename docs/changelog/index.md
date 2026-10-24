@@ -32,11 +32,13 @@ schema:
 <!-- Change nothing below this line, please. -->
 ---
 
-## [v1.2.6-pre1]
+## [v1.2.6]
 
 !!! abstract "Meta"
 
+    - Released 2026-10-24
     - Various website improvements (CSS)
+    - PDF build overhaul: larger text, page numbers, tighter layout, and a new cover
 
 !!! info "Changed"
 
@@ -44,12 +46,20 @@ schema:
     - 02-sign.yml: use a fpr match to lock a specific key
     - 02-sign.yml: quick mkdir -p repo/export before copying files to the dir
     - Moved the Acknowledgements section to the bottom
+    - PDF body text enlarged to 13pt, with headings, code, and tables scaled to match
+    - PDF page margins reduced to 12 mm (16 mm at the bottom) and spacing tightened to cut the page count; the cover and Table of Contents use the same margins
+    - PDF tables, code blocks, and admonitions can now break across pages, and table header rows repeat on each page
+    - PDF Table of Contents shrinks slightly (down to 85%) when needed to avoid a nearly empty last page
+    - Glossary abbreviations are no longer underlined in the PDF; the website keeps the underline and tooltips
+    - PDF cover redesigned with Fira Code monospace, green and amber accents, in both light and dark builds
 
 !!! tip "Added"
 
     - COM Class Identifiers (CLSID/GUID) (NEW)
     - Windows Global Device Identifier (GDID) (NEW)
     - USB bus telemetry (device enumeration history) (NEW)
+    - Page numbers on every page of both PDFs (bottom right)
+    - Page numbers in the PDF Table of Contents
 
 !!! info "Improved"
 
