@@ -58,9 +58,9 @@ def apply_dark_theme(
     Remap a white-background page image to a dark theme.
 
     Strategy:
-    - Near-white pixels (page background)  → bg color
-    - Dark, low-saturation pixels (text)    → text color
-    - Blue-dominant dark pixels (links)     → link color
+    - Near-white pixels (page background)    → bg color
+    - Dark, low-saturation pixels (text)     → text color
+    - Blue-dominant dark pixels (links)      → link color
     - High-saturation pixels (photos/images) → preserved exactly as-is
       (no dark remapping; images stay at natural colors)
 
@@ -181,17 +181,36 @@ def _check_dependencies() -> None:
 
 
 def create_cover_page(tmp_dir: str, is_dark: bool) -> str:
-    """Create a research-style text-only cover page for Chromium rendering."""
+    """Create the hacker-theme text cover page for Chromium rendering."""
+    # Hacker theme: monospace type with green/amber accents, drawn directly on
+    # the page so the cover matches the body pages in both builds.
     if is_dark:
-        bg_color    = '#1f1f31'
-        text_color  = '#e0e0e0'
-        rule_color  = '#4a4a6a'
-        meta_color  = '#a0a0c0'
+        bg_color  = '#1f1f31'
+        green     = '#33ff66'
+        amber     = '#ffb000'
+        muted     = '#a8b0c0'
+        glow      = '0 0 6px rgba(51, 255, 102, 0.45)'
     else:
-        bg_color    = '#ffffff'
-        text_color  = '#1a1a1a'
-        rule_color  = '#cccccc'
-        meta_color  = '#555555'
+        bg_color  = '#ffffff'
+        green     = '#005c2e'
+        amber     = '#8a5a00'
+        muted     = '#555555'
+        glow      = 'none'
+
+    # Embed Fira Code so the cover matches the site regardless of what the
+    # machine running Chromium has installed.
+    import base64
+    font_path = (Path(__file__).resolve().parent.parent / 'docs' / 'fonts'
+                 / 'fira-code' / 'fira-code-latin-wght-normal.woff2')
+    font_face = ''
+    if font_path.is_file():
+        b64 = base64.b64encode(font_path.read_bytes()).decode('ascii')
+        font_face = (
+            "@font-face { font-family: 'Fira Code Cover'; "
+            f"src: url(data:font/woff2;base64,{b64}) format('woff2'); "
+            "font-weight: 300 700; font-style: normal; }"
+        )
+    mono = "'Fira Code Cover', 'Fira Code', 'DejaVu Sans Mono', Consolas, 'Courier New', monospace"
 
     html_path = os.path.join(tmp_dir, 'cover.html')
     with open(html_path, 'w', encoding='utf-8') as f:
@@ -200,6 +219,7 @@ def create_cover_page(tmp_dir: str, is_dark: bool) -> str:
 <head>
 <meta charset="UTF-8">
 <style>
+{font_face}
 * {{
     box-sizing: border-box;
     margin: 0;
@@ -213,8 +233,9 @@ html, body {{
     width: 210mm;
     height: 297mm;
     background: {bg_color};
-    color: {text_color};
-    font-family: 'EB Garamond', Georgia, 'Times New Roman', serif;
+    font-family: {mono};
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
 }}
 .page {{
     width: 210mm;
@@ -223,41 +244,51 @@ html, body {{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 30mm 25mm;
+    padding: 12mm 12mm 16mm 12mm;
     text-align: center;
 }}
 .title {{
-    font-size: 28pt;
-    font-weight: normal;
+    font-size: 26pt;
+    font-weight: 700;
     line-height: 1.25;
-    letter-spacing: 0.01em;
-    margin-bottom: 10mm;
+    letter-spacing: -0.01em;
+    color: {green};
+    text-shadow: {glow};
+    margin-bottom: 12mm;
 }}
-.rule {{
-    width: 80mm;
-    height: 1px;
-    background: {rule_color};
-    margin: 0 auto 10mm auto;
+.cursor {{
+    display: inline-block;
+    width: 0.55em;
+    height: 0.95em;
+    margin-left: 0.15em;
+    background: {green};
+    vertical-align: -0.1em;
 }}
 .subtitle {{
-    font-size: 13pt;
-    font-weight: normal;
-    font-style: italic;
-    color: {meta_color};
+    font-size: 12pt;
+    line-height: 1.6;
+    color: {muted};
     margin-bottom: 14mm;
 }}
-.meta {{
-    font-size: 11pt;
-    color: {meta_color};
-    line-height: 1.9;
+.subtitle::before {{
+    content: "// ";
+    color: {amber};
 }}
-.meta strong {{
-    color: {text_color};
-    font-weight: normal;
+.info {{
+    align-self: flex-end;
+    text-align: right;
+    margin-right: 13mm;
+    position: relative;
+    top: 10mm;
+}}
+.meta {{
+    font-size: 11.5pt;
+    line-height: 1.9;
+    color: {green};
 }}
 .version {{
-    font-size: 11pt;
-    color: {meta_color};
+    font-size: 11.5pt;
+    color: {amber};
     margin-top: 12mm;
     letter-spacing: 0.05em;
 }}
@@ -265,15 +296,16 @@ html, body {{
 </head>
 <body>
 <div class="page">
-  <p class="title">The Hitchhiker&#8217;s Guide<br>to Online Anonymity</p>
-  <div class="rule"></div>
+  <h1 class="title">The Hitchhiker's Guide<br>to Online Anonymity</h1>
   <p class="subtitle">The comprehensive guide for online anonymity and OpSec.</p>
-  <div class="meta">
-    <p><strong>Author</strong> &nbsp; Anonymous Planet</p>
-    <p><strong>License</strong> &nbsp; Creative Commons BY-SA 4.0</p>
-    <p><strong>Source</strong> &nbsp; https://anonymousplanet.net</p>
+  <div class="info">
+    <div class="meta">
+      <p>Anonymous Planet</p>
+      <p>Creative Commons BY-SA 4.0</p>
+      <p>https://anonymousplanet.net</p>
+    </div>
+    <p class="version">v1.2.6 &mdash; October 24 2026</p>
   </div>
-  <p class="version">v1.2.6 &mdash; July 12 2026</p>
 </div>
 </body>
 </html>""")
@@ -296,7 +328,9 @@ def convert_pdf_to_dark(
     avoid OOM, then merged with qpdf. Falls back to single-pass Pillow save
     if qpdf is not available (fine for small documents).
 
-    Adds a cover page at the start with title/subtitle/version info.
+    Does not add a cover page or ToC. Pass a body-only PDF and prepend
+    front matter separately (build_guide_pdf.py does this for both the
+    light and dark builds so it's generated exactly once per PDF).
     """
     input_path  = str(input_path)
     output_path = str(output_path)
@@ -329,49 +363,14 @@ def convert_pdf_to_dark(
         if out_dir:
             os.makedirs(out_dir, exist_ok=True)
 
-        # Determine theme from filename for cover page
+        # 2. Determine theme from filename for downstream use by callers
+        # (front matter (cover + ToC) is prepended by build_guide_pdf.py,
+        # not here, so it's generated exactly once regardless of light/dark).
         pdf_output = Path(output_path)
         pdf_name = pdf_output.stem.lower()
         is_dark = 'dark' in pdf_name
 
         print(f"  Theme: {'Going dark' if is_dark else 'Light mode'}")
-
-        # 2. Build front matter: cover + ToC
-        # Import ToC helpers from build_guide_pdf.py (single source of truth).
-        scripts_dir = str(Path(__file__).resolve().parent)
-        if scripts_dir not in sys.path:
-            sys.path.insert(0, scripts_dir)
-        from build_guide_pdf import parse_toc_headings, create_toc_html  # noqa: PLC0415
-
-        cover_html_path = create_cover_page(tmp, is_dark)
-        browser = find_chromium_executable()
-
-        if not browser:
-            raise RuntimeError(
-                "No Chromium-based browser found; needed for cover page rendering.\n"
-                "Install Chrome, Edge, or add Chromium to PATH."
-            )
-
-        cover_pdf = os.path.join(tmp, 'cover.pdf')
-        cmd = [str(browser), "--headless=new", "--disable-gpu",
-               "--no-pdf-header-footer", "--print-background", "--no-margins",
-               f"--print-to-pdf={cover_pdf}", cover_html_path]
-        subprocess.run(cmd, check=True, capture_output=True)
-
-        guide_md = Path(__file__).resolve().parent.parent / 'docs' / 'guide' / 'index.md'
-        if guide_md.is_file():
-            print("  Building ToC...", flush=True)
-            headings = parse_toc_headings(guide_md)
-            toc_html_path = create_toc_html(tmp, headings, is_dark)
-            toc_pdf = os.path.join(tmp, 'toc.pdf')
-            cmd_toc = [str(browser), "--headless=new", "--disable-gpu",
-                       "--no-pdf-header-footer", "--print-background", "--no-margins",
-                       f"--print-to-pdf={toc_pdf}", toc_html_path]
-            subprocess.run(cmd_toc, check=True, capture_output=True)
-            front_pages = [cover_pdf, toc_pdf]
-        else:
-            print("  Warning: guide/index.md not found, skipping ToC.", file=sys.stderr)
-            front_pages = [cover_pdf]
 
         # 3. Process pages with theme remapping
         use_batches = total > batch_size and _check_qpdf()
@@ -396,10 +395,10 @@ def convert_pdf_to_dark(
                 _save_images_as_pdf(dark, batch_path)
                 batch_files.append(batch_path)
 
-            # Merge batches with front matter using qpdf
-            print("  Merging batches and front matter...", flush=True)
+            # Merge batches into the final output using qpdf
+            print("  Merging batches...", flush=True)
             subprocess.run(
-                ['qpdf', '--empty', '--pages'] + front_pages + batch_files + ['--', output_path],
+                ['qpdf', '--empty', '--pages'] + batch_files + ['--', output_path],
                 check=True,
             )
 
@@ -412,15 +411,6 @@ def convert_pdf_to_dark(
                 dark_pages.append(apply_dark_theme(Image.open(p), bg, text, link))
 
             _save_images_as_pdf(dark_pages, output_path)
-
-        # Prepend front matter to the single-pass output
-        if not use_batches:
-            tmp_body = os.path.join(tmp, 'body_only.pdf')
-            os.rename(output_path, tmp_body)
-            subprocess.run(
-                ['qpdf', '--empty', '--pages'] + front_pages + [tmp_body] + ['--', output_path],
-                check=True,
-            )
 
     size_mb = os.path.getsize(output_path) / 1024 / 1024
     print(f"  Saved → {output_path} ({size_mb:.1f} MB)")

@@ -1760,13 +1760,15 @@ There are some forums and subreddits (like r/phoneverification/) where users wil
 
 To this date, we do not know any reputable service that would offer this service and accept cash payments (by post for instance) like some VPN providers. But a few services are providing online phone numbers and do accept Monero which could be reasonably anonymous (yet less recommended than that physical way in the earlier chapter) that you could consider:
 
-- **Recommended**: Do not require any identification (even e-mail):
+- **Recommended**: No name, no e-mail, and no KYC:
 
     - (Iceland based, accepts Monero) <https://crypton.sh> <sup>[[Tor Mirror]](http://cryptonx6nsmspsnpicuihgmbbz3qvro4na35od3eht4vojdo7glm6yd.onion)</sup> <sup>[[Archive.org]](https://web.archive.org/web/https://crypton.sh/)</sup>
 
     - (Ukraine based, accepts Monero) <https://virtualsim.net/> <sup>[[Archive.org]](https://web.archive.org/web/https://virtualsim.net/)</sup>
 
-- Do require identification (valid e-mail):
+    - (180+ countries, accepts crypto) <https://cypheresim.com/esim-with-number> <sup>[[Archive.org]](https://web.archive.org/web/https://cypheresim.com/esim-with-number)</sup>
+
+- Require valid e-mail:
 
     - (US California based, accepts Monero) <https://mobilesms.io> <sup>[[Archive.org]](https://web.archive.org/web/https://mobilesms.io/)</sup>
 

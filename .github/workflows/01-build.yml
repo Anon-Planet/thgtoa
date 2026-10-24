@@ -71,8 +71,8 @@ jobs:
       - name: 🖨️ Build PDFs
         env:
           CI: true
-        run: python scripts/build_guide_pdf.py --${{ steps.mode.outputs.build_mode }}
-
+        run: python scripts/build_guide_pdf.py --${{ steps.mode.outputs.build_mode }} 2>/dev/null
+        # ignore stderr (DEPRECATED_ENDPOINT, etc.)
       - name: 📤 Upload PDF artifacts
         uses: actions/upload-artifact@v4
         with:

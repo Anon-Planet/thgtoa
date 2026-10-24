@@ -42,8 +42,8 @@
     background: #ffffff !important;
     color: #1a1a1a !important;
     font-family: 'EB Garamond', Georgia, 'Times New Roman', serif !important;
-    font-size: 11pt !important;
-    line-height: 1.65 !important;
+    font-size: 13pt !important;
+    line-height: 1.45 !important;
     margin: 0 !important;
     padding: 0 !important;
   }
@@ -58,11 +58,11 @@
 
   @page {
     size: A4;
-    margin: 25mm 28mm 28mm 28mm;
+    margin: 12mm 12mm 16mm 12mm;
   }
 
   @page :first {
-    margin-top: 30mm;
+    margin-top: 12mm;
   }
 
   *, *::before, *::after {
@@ -127,7 +127,7 @@
     width: 100% !important;
     max-width: 100% !important;
     margin: 0 !important;
-    padding: 0 0 0 12mm !important;
+    padding: 0 !important;
     float: none !important;
   }
 
@@ -150,13 +150,13 @@
     content: none !important;
   }
 
-  h1, .md-typeset h1 { font-size: 20pt !important; margin: 18pt 0 6pt !important; }
-  h2, .md-typeset h2 { font-size: 15pt !important; margin: 14pt 0 5pt !important; }
-  h3, .md-typeset h3 { font-size: 12pt !important; margin: 10pt 0 4pt !important; }
-  h4, .md-typeset h4 { font-size: 11pt !important; margin: 8pt  0 3pt !important; }
+  h1, .md-typeset h1 { font-size: 23pt !important; margin: 20pt 0 7pt !important; }
+  h2, .md-typeset h2 { font-size: 18pt !important; margin: 16pt 0 6pt !important; }
+  h3, .md-typeset h3 { font-size: 14.5pt !important; margin: 12pt 0 5pt !important; }
+  h4, .md-typeset h4 { font-size: 13pt !important; margin: 9pt  0 4pt !important; }
   h5, h6,
   .md-typeset h5,
-  .md-typeset h6    { font-size: 10pt !important; margin: 6pt  0 2pt !important; }
+  .md-typeset h6    { font-size: 12pt !important; margin: 7pt  0 3pt !important; }
 
   p, li, dt, dd, blockquote p,
   .md-typeset p,
@@ -165,10 +165,22 @@
   .md-typeset dd {
     color: #1a1a1a !important;
     font-family: 'EB Garamond', Georgia, serif !important;
-    font-size: 11pt !important;
-    line-height: 1.65 !important;
+    font-size: 13pt !important;
+    line-height: 1.45 !important;
     orphans: 3;
     widows: 3;
+  }
+
+  .md-typeset p,
+  .md-typeset ul,
+  .md-typeset ol,
+  .md-typeset dl {
+    margin-top: 0.55em !important;
+    margin-bottom: 0.55em !important;
+  }
+
+  .md-typeset li {
+    margin-bottom: 0.15em !important;
   }
 
   a, .md-typeset a {
@@ -176,9 +188,26 @@
     text-decoration: underline !important;
   }
 
+  /* Glossary abbreviations are stripped from the PDF */
+  abbr, abbr[title],
+  .md-typeset abbr,
+  .md-typeset abbr[title] {
+    border-bottom: none !important;
+    text-decoration: none !important;
+    cursor: auto !important;
+  }
+
+  abbr::before, abbr::after,
+  abbr[title]::before, abbr[title]::after,
+  .md-typeset abbr::before, .md-typeset abbr::after,
+  .md-typeset abbr[title]::before, .md-typeset abbr[title]::after {
+    content: none !important;
+    display: none !important;
+  }
+
   code, .md-typeset code {
     font-family: 'Fira Code VF', 'Fira Code', 'Courier New', monospace !important;
-    font-size: 9pt !important;
+    font-size: 10.5pt !important;
     background: #f4f4f4 !important;
     color: #1a1a1a !important;
     border: 1px solid #cccccc !important;
@@ -188,7 +217,7 @@
 
   pre, .md-typeset pre {
     font-family: 'Fira Code VF', 'Fira Code', 'Courier New', monospace !important;
-    font-size: 8.5pt !important;
+    font-size: 10pt !important;
     background: #f8f8f8 !important;
     color: #1a1a1a !important;
     border: 1px solid #cccccc !important;
@@ -196,8 +225,8 @@
     padding: 0.75em 1em !important;
     white-space: pre-wrap !important;
     word-break: break-all !important;
-    page-break-inside: avoid;
-    break-inside: avoid;
+    page-break-inside: auto;
+    break-inside: auto;
   }
 
   pre code, .md-typeset pre code {
@@ -210,23 +239,32 @@
   table, .md-typeset table {
     border-collapse: collapse !important;
     width: 100% !important;
+    page-break-inside: auto;
+    break-inside: auto;
+    font-size: 11.5pt !important;
+  }
+
+  tr, .md-typeset tr {
     page-break-inside: avoid;
     break-inside: avoid;
-    font-size: 10pt !important;
+  }
+
+  thead, .md-typeset thead {
+    display: table-header-group;
   }
 
   th, .md-typeset th {
     background: #eeeeee !important;
     color: #1a1a1a !important;
     border: 1px solid #aaaaaa !important;
-    padding: 5pt 8pt !important;
+    padding: 3pt 6pt !important;
     font-weight: 700 !important;
   }
 
   td, .md-typeset td {
     color: #1a1a1a !important;
     border: 1px solid #cccccc !important;
-    padding: 4pt 8pt !important;
+    padding: 2.5pt 6pt !important;
   }
 
   tr:nth-child(even) td {
@@ -240,8 +278,8 @@
     border-left: 4px solid #555555 !important;
     border: 1px solid #cccccc !important;
     color: #1a1a1a !important;
-    page-break-inside: avoid;
-    break-inside: avoid;
+    page-break-inside: auto;
+    break-inside: auto;
   }
 
   .admonition-title,

@@ -3,7 +3,9 @@
 
 Usage:
   python scripts/build_guide_pdf.py                    # Light PDF only (clean light theme)
-  python scripts/build_guide_pdf.py --dark             # Dark PDF only (requires light PDF to exist)
+  python scripts/build_guide_pdf.py --dark             # Dark PDF only (requires a body-only
+                                                         # cache from a prior light build in
+                                                         # this checkout, e.g. via --both)
   python scripts/build_guide_pdf.py --both             # Light PDF, then dark PDF
 
 Examples:
@@ -17,10 +19,12 @@ import argparse
 import html as _html_mod
 import os
 import re
+import shutil
 import subprocess
 import sys
 import tempfile
 import time
+import unicodedata
 from pathlib import Path
 
 
@@ -160,6 +164,76 @@ def print_to_pdf(browser: Path, html_file: Path, pdf_out: Path) -> Path:
     return pdf_out
 
 
+# Page numbers (stamped with qpdf; no extra Python dependencies)
+
+def stamp_page_numbers(pdf_path: Path) -> None:
+    """Stamp a right-aligned page number at the bottom of every page, in place.
+
+    Chromium's --print-to-pdf can't draw page numbers when the default
+    header/footer is disabled, and @page margin boxes need Chrome >= 131
+    (CI pins 120). So build a tiny overlay PDF by hand (standard Times font,
+    no dependencies) and merge it with `qpdf --overlay`.
+
+    Called on the body-only PDF, before the cached copy is taken and before
+    the cover + ToC are prepended, so the body starts at page 1 in both the
+    light and dark builds.
+    """
+    n_pages = int(
+        subprocess.run(
+            ["qpdf", "--show-npages", str(pdf_path)],
+            check=True, capture_output=True, text=True,
+        ).stdout.strip()
+    )
+
+    width, height = 595.28, 841.89      # A4 in points (matches @page size)
+    font_size = 10
+    baseline_y = 28                      # ~10 mm from the bottom edge (inside the 16 mm margin)
+    digit_w = 0.5 * font_size            # Times-Roman digits are 500/1000 em
+    right_x = width - 12 * 72 / 25.4     # right text edge (12 mm page margin)
+
+    objs: list[bytes] = [b""] * (3 + 2 * n_pages)
+    kids = " ".join(f"{4 + 2 * i} 0 R" for i in range(n_pages))
+    objs[0] = b"<< /Type /Catalog /Pages 2 0 R >>"
+    objs[1] = f"<< /Type /Pages /Kids [{kids}] /Count {n_pages} >>".encode()
+    objs[2] = b"<< /Type /Font /Subtype /Type1 /BaseFont /Times-Roman >>"
+    for i in range(n_pages):
+        label = str(i + 1)
+        x = right_x - digit_w * len(label)
+        stream = f"BT /F1 {font_size} Tf 0.33 g {x:.2f} {baseline_y} Td ({label}) Tj ET".encode()
+        objs[3 + 2 * i] = (
+            f"<< /Type /Page /Parent 2 0 R /MediaBox [0 0 {width} {height}] "
+            f"/Resources << /Font << /F1 3 0 R >> >> /Contents {5 + 2 * i} 0 R >>"
+        ).encode()
+        objs[4 + 2 * i] = (
+            f"<< /Length {len(stream)} >>\nstream\n".encode() + stream + b"\nendstream"
+        )
+
+    out = bytearray(b"%PDF-1.4\n")
+    offsets: list[int] = []
+    for num, body in enumerate(objs, start=1):
+        offsets.append(len(out))
+        out += f"{num} 0 obj\n".encode() + body + b"\nendobj\n"
+    xref_pos = len(out)
+    out += f"xref\n0 {len(objs) + 1}\n".encode()
+    out += b"0000000000 65535 f \n"
+    for off in offsets:
+        out += f"{off:010d} 00000 n \n".encode()
+    out += (
+        f"trailer\n<< /Size {len(objs) + 1} /Root 1 0 R >>\n"
+        f"startxref\n{xref_pos}\n%%EOF\n"
+    ).encode()
+
+    with tempfile.TemporaryDirectory() as tmp:
+        overlay = Path(tmp) / "page-numbers.pdf"
+        overlay.write_bytes(bytes(out))
+        stamped = Path(tmp) / "stamped.pdf"
+        subprocess.run(
+            ["qpdf", str(pdf_path), "--overlay", str(overlay), "--", str(stamped)],
+            check=True,
+        )
+        shutil.move(str(stamped), str(pdf_path))
+
+
 # ---------------------------------------------------------------------------
 # Front matter: ToC parsing + HTML generation
 # ---------------------------------------------------------------------------
@@ -198,7 +272,13 @@ def parse_toc_headings(guide_md: Path) -> list[tuple[int, str]]:
     return headings
 
 
-def create_toc_html(tmp_dir: str, headings: list[tuple[int, str]], is_dark: bool) -> str:
+def create_toc_html(
+    tmp_dir: str,
+    headings: list[tuple[int, str]],
+    pages: list[int | None],
+    is_dark: bool,
+    scale: float = 1.0,
+) -> str:
     """Write a research-style Table of Contents HTML file and return its path.
 
     H2 entries: full-width row with dot leader.
@@ -219,33 +299,31 @@ def create_toc_html(tmp_dir: str, headings: list[tuple[int, str]], is_dark: bool
         h3color = "#444466"
 
     rows: list[str] = []
-    for level, title in headings:
+    for (level, title), page in zip(headings, pages):
         safe = _html_mod.escape(title)
-        if level == 2:
-            rows.append(
-                f'<div class="toc-h2">'
-                f'<span class="toc-title">{safe}</span>'
-                f'<span class="toc-dots"></span>'
-                f"</div>"
-            )
-        else:
-            rows.append(f'<div class="toc-h3">{safe}</div>')
+        page_html = f'<span class="toc-page">{page}</span>' if page else ""
+        cls = "toc-h2" if level == 2 else "toc-h3"
+        rows.append(
+            f'<div class="{cls}">'
+            f'<span class="toc-title">{safe}</span>'
+            f'<span class="toc-dots"></span>'
+            f"{page_html}"
+            f"</div>"
+        )
 
     body = "\n".join(rows)
 
     css = (
         "* { box-sizing: border-box; margin: 0; padding: 0; }\n"
-        "@page { size: A4; margin: 0; }\n"
+        "@page { size: A4; margin: 12mm 12mm 16mm 12mm; }\n"
         "html, body {\n"
-        f"    width: 210mm;\n"
         f"    background: {bg};\n"
         f"    color: {fg};\n"
         "    font-family: 'EB Garamond', Georgia, 'Times New Roman', serif;\n"
         "}\n"
         ".page {\n"
-        "    width: 210mm;\n"
-        "    min-height: 297mm;\n"
-        "    padding: 25mm 28mm 28mm 28mm;\n"
+        "    padding: 0;\n"
+        f"    zoom: {scale};\n"
         "}\n"
         ".toc-heading {\n"
         "    font-size: 18pt;\n"
@@ -266,10 +344,14 @@ def create_toc_html(tmp_dir: str, headings: list[tuple[int, str]], is_dark: bool
         "    margin-bottom: 1.5pt;\n"
         "}\n"
         ".toc-title {\n"
-        "    white-space: nowrap;\n"
-        "    overflow: hidden;\n"
+        "    flex: 0 1 auto;\n"
+        "    max-width: 88%;\n"
+        "}\n"
+        ".toc-page {\n"
         "    flex-shrink: 0;\n"
-        "    max-width: 85%;\n"
+        "    padding-left: 4pt;\n"
+        "    font-style: normal;\n"
+        "    font-variant-numeric: tabular-nums;\n"
         "}\n"
         ".toc-dots {\n"
         "    flex: 1;\n"
@@ -280,6 +362,8 @@ def create_toc_html(tmp_dir: str, headings: list[tuple[int, str]], is_dark: bool
         "    min-width: 8pt;\n"
         "}\n"
         ".toc-h3 {\n"
+        "    display: flex;\n"
+        "    align-items: baseline;\n"
         "    font-size: 9pt;\n"
         f"    color: {h3color};\n"
         "    padding-left: 10mm;\n"
@@ -302,6 +386,76 @@ def create_toc_html(tmp_dir: str, headings: list[tuple[int, str]], is_dark: bool
     with open(html_path, "w", encoding="utf-8") as f:
         f.write(html)
     return html_path
+
+
+# ---------------------------------------------------------------------------
+# Locating headings in the built body PDF (for ToC page numbers)
+# ---------------------------------------------------------------------------
+
+def locate_heading_pages(
+    pdf_path: Path, headings: list[tuple[int, str]]
+) -> list[int | None]:
+    """Return the 1-based page each (level, title) heading starts on in pdf_path.
+
+    Uses pdftotext (poppler, already required by convert.py) and matches each
+    heading, in document order, against a whole line (or up to 3 consecutive
+    wrapped lines), so a passing mention in body text can't be mistaken for
+    the heading. Headings that can't be found get None: the ToC row then shows
+    dots only, and a warning is printed.
+    """
+    def norm(s: str) -> str:
+        s = unicodedata.normalize("NFKC", s).replace("­", "")
+        s = (s.replace("‘", "'").replace("’", "'")
+               .replace("“", '"').replace("”", '"')
+               .replace("–", "-").replace("—", "-"))
+        return " ".join(s.split()).casefold()
+
+    raw = subprocess.run(
+        ["pdftotext", "-enc", "UTF-8", str(pdf_path), "-"],
+        check=True, capture_output=True,
+    ).stdout.decode("utf-8", "replace")
+
+    lines: list[tuple[int, str]] = []
+    for page_no, page_text in enumerate(raw.split("\f"), start=1):
+        for line in page_text.splitlines():
+            n = norm(line)
+            if n:
+                lines.append((page_no, n))
+
+    result: list[int | None] = []
+    missing: list[str] = []
+    cursor = 0
+    for _level, title in headings:
+        target = norm(title)
+        hit: tuple[int, int] | None = None
+        for j in range(cursor, len(lines)):
+            joined = lines[j][1]
+            if not target.startswith(joined):
+                continue
+            for k in range(1, 4):
+                if k > 1:
+                    if j + k - 1 >= len(lines):
+                        break
+                    joined = joined + " " + lines[j + k - 1][1]
+                    if not target.startswith(joined):
+                        break
+                if joined == target:
+                    hit = (j, k)
+                    break
+            if hit:
+                break
+        if hit:
+            result.append(lines[hit[0]][0])
+            cursor = hit[0] + hit[1]
+        else:
+            result.append(None)
+            missing.append(title)
+
+    found = len(headings) - len(missing)
+    print(f"  Located {found}/{len(headings)} headings in the body PDF.", flush=True)
+    for t in missing:
+        print(f"  Warning: no page found for heading: {t!r}", file=sys.stderr)
+    return result
 
 
 # ---------------------------------------------------------------------------
@@ -331,7 +485,12 @@ def _render_html_to_pdf(
 # Front matter assembly: cover + ToC prepended to body PDF
 # ---------------------------------------------------------------------------
 
-def prepend_front_matter(browser: Path, pdf_path: Path, is_dark: bool) -> Path:
+def prepend_front_matter(
+    browser: Path,
+    pdf_path: Path,
+    is_dark: bool,
+    page_source: Path | None = None,
+) -> Path:
     """Render cover + ToC and prepend them to pdf_path in-place.
 
     - Cover HTML is sourced from convert.py (single definition).
@@ -350,6 +509,10 @@ def prepend_front_matter(browser: Path, pdf_path: Path, is_dark: bool) -> Path:
     n_h3 = sum(1 for l, _ in headings if l == 3)
     print(f"  Found {len(headings)} headings ({n_h2} H2, {n_h3} H3).", flush=True)
 
+    # Page numbers come from a text-bearing body PDF: pdf_path itself for the
+    # light build; the cached light body for dark (its pages are rasterised).
+    pages = locate_heading_pages(page_source or pdf_path, headings)
+
     with tempfile.TemporaryDirectory() as tmp:
         print("  Rendering cover page...", flush=True)
         cover_html = create_cover_page(tmp, is_dark=is_dark)
@@ -357,9 +520,26 @@ def prepend_front_matter(browser: Path, pdf_path: Path, is_dark: bool) -> Path:
         _render_html_to_pdf(browser, cover_html, cover_pdf, ci=ci)
 
         print("  Rendering ToC page...", flush=True)
-        toc_html = create_toc_html(tmp, headings, is_dark=is_dark)
-        toc_pdf  = os.path.join(tmp, "toc.pdf")
-        _render_html_to_pdf(browser, toc_html, toc_pdf, ci=ci)
+        toc_pdf = os.path.join(tmp, "toc.pdf")
+
+        def _render_toc(scale: float) -> int:
+            html_path = create_toc_html(tmp, headings, pages, is_dark=is_dark, scale=scale)
+            _render_html_to_pdf(browser, html_path, toc_pdf, ci=ci)
+            return int(subprocess.run(
+                ["qpdf", "--show-npages", toc_pdf],
+                check=True, capture_output=True, text=True,
+            ).stdout.strip())
+
+        # If the ToC spills onto an extra page, shrink it a little at a time
+        # (down to 85%) until it fits in one page fewer; otherwise keep 100%.
+        toc_pages = _render_toc(1.0)
+        if toc_pages > 1:
+            for scale in (0.97, 0.94, 0.91, 0.88, 0.85):
+                if _render_toc(scale) < toc_pages:
+                    print(f"  ToC scaled to {scale:.0%} to save a page.", flush=True)
+                    break
+            else:
+                _render_toc(1.0)
 
         merged = str(pdf_path.parent / f".{pdf_path.name}.with-front")
         subprocess.run(
@@ -373,19 +553,15 @@ def prepend_front_matter(browser: Path, pdf_path: Path, is_dark: bool) -> Path:
     return pdf_path
 
 
-# ---------------------------------------------------------------------------
-# Dark PDF build (delegates to convert.py which adds its own front matter)
-# ---------------------------------------------------------------------------
-
-def build_dark_pdf(light_pdf: Path, dark_pdf: Path) -> Path:
-    """Convert the light PDF to dark mode using scripts/convert.py."""
+def build_dark_pdf(browser: Path, body_pdf: Path, dark_pdf: Path) -> Path:
+    """Convert a body-only PDF to dark mode, then prepend fresh front matter."""
     convert_script = repo_root() / "scripts" / "convert.py"
-    print(f"Converting {light_pdf.name} -> {dark_pdf.name} (dark mode)...")
+    print(f"Converting {body_pdf.name} -> {dark_pdf.name} (dark mode)...")
     subprocess.run(
-        [sys.executable, str(convert_script), str(light_pdf), str(dark_pdf)],
+        [sys.executable, str(convert_script), str(body_pdf), str(dark_pdf)],
         check=True,
     )
-    return dark_pdf
+    return prepend_front_matter(browser, dark_pdf, is_dark=True, page_source=body_pdf)
 
 
 # ---------------------------------------------------------------------------
@@ -423,13 +599,23 @@ def main() -> int:
 
     mode = ap.add_mutually_exclusive_group()
     mode.add_argument("--dark", action="store_true",
-                      help="Dark PDF only (light PDF must already exist)")
+                      help="Dark PDF only (requires a body-only cache from a prior light build)")
     mode.add_argument("--both", action="store_true",
                       help="Build light PDF, then dark PDF")
     args = ap.parse_args()
 
     build_light = not args.dark
     build_dark  = args.dark or args.both
+    body_cache = args.pdf_light.parent / f".{args.pdf_light.stem}.body.pdf"
+
+    browser = find_chromium_executable()
+    if not browser:
+        print(
+            "No Chromium-based browser found (Chrome, Edge, or Chromium). "
+            "Install Google Chrome or Microsoft Edge, or add Chromium to PATH.",
+            file=sys.stderr,
+        )
+        return 1
 
     # --- Light PDF ---
     if build_light:
@@ -442,31 +628,30 @@ def main() -> int:
             print(f"Missing {guide_html}; run without --skip-mkdocs first.", file=sys.stderr)
             return 1
 
-        browser = find_chromium_executable()
-        if not browser:
-            print(
-                "No Chromium-based browser found (Chrome, Edge, or Chromium). "
-                "Install Google Chrome or Microsoft Edge, or add Chromium to PATH.",
-                file=sys.stderr,
-            )
-            return 1
-
         out_light = print_to_pdf(browser, guide_html, args.pdf_light)
+        print("  Stamping page numbers...", flush=True)
+        stamp_page_numbers(out_light)
+
+        import shutil as _shutil  # noqa: PLC0415
+        body_cache.parent.mkdir(parents=True, exist_ok=True)
+        _shutil.copy2(out_light, body_cache)
+
         out_light = prepend_front_matter(browser, out_light, is_dark=False)
         size_kb = out_light.stat().st_size // 1024
         print(f"Wrote {out_light.resolve()} ({size_kb} KiB) [Light Mode]")
 
     # --- Dark PDF ---
     if build_dark:
-        if not args.pdf_light.exists():
+        if not body_cache.exists():
             print(
-                f"Light PDF not found at {args.pdf_light}. "
-                "Run without --dark first, or use --both.",
+                f"No body-only PDF cached at {body_cache}. "
+                "Run with --both (or a plain light build first) so a fresh "
+                "body-only copy exists before converting to dark mode.",
                 file=sys.stderr,
             )
             return 1
 
-        out_dark = build_dark_pdf(args.pdf_light, args.pdf_dark)
+        out_dark = build_dark_pdf(browser, body_cache, args.pdf_dark)
         size_kb = out_dark.stat().st_size // 1024
         print(f"Wrote {out_dark.resolve()} ({size_kb} KiB) [Dark Mode]")
 

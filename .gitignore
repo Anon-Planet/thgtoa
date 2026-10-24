@@ -27,3 +27,4 @@ export/thgtoa-dark.pdf.sha256
 export/thgtoa.pdf.b2sum
 export/thgtoa-dark.pdf.b2sum
 export/*.asc
+export/.*.body.pdf
