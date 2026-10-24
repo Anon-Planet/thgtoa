@@ -182,7 +182,7 @@ First automated PDF build and the start of the CI pipeline.
 
 ---
 
-[v1.2.6-pre1]: https://github.com/Anon-Planet/thgtoa/releases/tag/v1.2.6-pre1
+[v1.2.6]: https://github.com/Anon-Planet/thgtoa/releases/tag/v1.2.6
 [v1.2.5]: https://github.com/Anon-Planet/thgtoa/releases/tag/v1.2.5
 [v1.2.4]: https://github.com/Anon-Planet/thgtoa/releases/tag/v1.2.4
 [v1.2.3]: https://github.com/Anon-Planet/thgtoa/releases/tag/v1.2.3
