@@ -139,6 +139,7 @@ For version comparison, see [Comparing Guide Versions](../guide/index.md#compari
     - [Sci-Hub](https://en.wikipedia.org/wiki/Sci-Hub)
     - [Terms of Service, Didn't Read](https://tosdr.org)
     - [Whonix Documentation](https://www.whonix.org/wiki/Documentation)
+    - [XMRList](https://xmrlist.com/)
 
 ---
 
